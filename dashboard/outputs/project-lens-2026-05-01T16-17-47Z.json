@@ -1,0 +1,52 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_article",
+        "text_body",
+        "story_link"
+      ]
+    },
+    "heading_article": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: In 93 Days, Every AI Agent in Europe Needs a Paper Trail",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_body": {
+      "type": "Text",
+      "props": {
+        "text": "The EU AI Act becomes fully enforceable on August 2, 2026 — 93 days from now. Its logging, auditability, and rapid-revocation requirements were written for classifiers and chatbots, but they landed in an era of autonomous agents chaining decisions across sub-agents and tools. Most agent builders are not ready. MiroShark, the open-source simulation engine at 954 stars, accidentally implements what regulators demand: trace interviews that reconstruct individual agent decision paths, Langfuse-tagged LLM call chains, structured transcript exports, and a verified prediction ledger. In simulation, the audit trail is the product — and that turns out to be exactly what compliance-native AI looks like.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/project-lens-2026-05-01.md",
+        "source": "project-lens"
+      },
+      "children": []
+    }
+  }
+}
