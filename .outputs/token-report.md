@@ -1,23 +1,10 @@
-Done. Here's the summary:
+*$MiroShark Daily — 2026-05-01*
 
-## Summary
+Price: $0.000003999 (+48.02% 24h)
+Liquidity: $243.7K | 24h Vol: $57.0K
+Buys/Sells: 156/79 (1.97x)
+7d: +49.5% | 30d: +627%
 
-**Token Report — $MiroShark — 2026-04-30**
+Recovery session after Apr 29 consolidation lows — buyers back in force, price within 16% of the Apr 26 ATH ($0.000004784).
 
-| Metric | Value |
-|--------|-------|
-| Price | $0.000003146 (+14.19% 24h) |
-| Liquidity | $208.2K |
-| 24h Volume | $44.1K |
-| 24h Buys/Sells | 129 / 55 (2.35x buy ratio) |
-| 24h High/Low | $0.000003146 / $0.000002525 |
-| FDV | $314.6K |
-| 7d | +14.6% |
-| 30d | +472% |
-
-**Notable:** A new all-time high of **$0.000004784** was set on April 26, surpassing the previous ATH of $0.000003815 from April 14. The token is currently -34.1% from that new ATH, with today showing strong buy-side dominance as it recovers.
-
-- Saved: `articles/token-report-2026-04-30.md`
-- Logged: `memory/logs/2026-04-30.md`
-- Committed: `50e4074`
-- Notification: `./notify` requires manual approval (no channels configured — would silently skip)
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
