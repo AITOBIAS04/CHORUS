@@ -1,23 +1,22 @@
-Feature Built — 2026-04-30
+*Feature Built — 2026-05-01*
 
-Atom Feed for Completed Simulations (/feed.xml)
+Pre-Run Cost Estimator
+MiroShark simulations now show you the estimated cost before you hit Start. A compact panel appears in Step 3 with the projected USD spend, total token count, wall-clock time, and the active model name — all computed instantly from a built-in pricing table covering OpenRouter, direct OpenAI, and local Ollama models. No LLM call needed, just arithmetic.
 
-MiroShark now publishes an Atom (RFC 4287) feed at /feed.xml listing the last 20 completed simulations. Teams subscribe via Feedly, n8n, Zapier, Slack RSS app, or any standard feed reader and get notified whenever a simulation completes — zero config, zero new dependencies.
-
-Why it matters: Every other output surface (share cards, transcripts, embeds) requires someone to visit the app. The feed flips it — simulations come to you. Wire it into n8n → Discord and your channel gets a post every time a sim finishes. Subscribe in Feedly and browse results over coffee. It's the missing push layer for teams that run MiroShark unattended.
+Why this matters:
+MiroShark supports six LLM configurations spanning two orders of magnitude in cost — GPT-4o at ~$12 for a 50-agent run down to Mimo V2 Flash at under $0.10. Until now, users launching their first simulation had no idea what they'd spend until the run completed. A 50-agent GPT-4o run could surprise someone with a $12 bill on what they thought was a test. The estimator closes this gap — new users see the cost upfront, academic users without corporate API budgets can pick the right model before committing, and everyone avoids the sticker shock that causes churn.
 
 What was built:
-• backend/app/api/feed.py — New Flask blueprint, stdlib XML, zero deps
-• backend/app/__init__.py + api/__init__.py — Blueprint registration
-• frontend/index.html — <link rel="alternate"> feed autodiscovery
-• frontend/src/views/Home.vue — RSS icon in navbar
-• frontend/src/components/HistoryDatabase.vue — Subscribe button (copies feed URL)
-• frontend/vite.config.js — Dev proxy for /feed.xml
-• backend/openapi.yaml — Endpoint documentation
-• README.md — New Integrations section + Features table row
-• docs/FEATURES.md — Full feature documentation
+- backend/app/services/cost_estimator.py: Pure-arithmetic estimation engine with pricing table for 15+ models. Computes input/output tokens, USD cost (simulation loop vs preparation), wall-clock time, and a cost tier badge (free/minimal/low/moderate/high).
+- backend/app/api/simulation.py: New POST /api/simulation/estimate-cost endpoint — accepts agent_count and total_rounds, returns the full estimate. No auth required.
+- frontend/src/components/Step3Simulation.vue: Cost panel between the events summary and platform rows, visible only before the sim starts. Colour-coded: green for <$0.10, yellow for <$1, orange for <$5, red for >$5.
+- backend/tests/test_unit_cost_estimator.py: 15 offline unit tests covering pricing lookup, format helpers, tier classification, scaling invariants.
+- backend/openapi.yaml + docs/API.md + docs/FEATURES.md + README.md: Full documentation.
 
-How it works: GET /feed.xml returns valid Atom XML. Each entry carries the scenario text, agent count, round count, total events, quality data, and a direct link. Public sims link to /share/<id>; private ones link to the internal view. 60s cache header keeps feed readers from hammering the endpoint.
+How it works:
+The estimator multiplies agent_count × total_rounds × empirical tokens-per-agent-round (1800 input + 300 output, from production run averages) against the active Wonderwall model's per-1K-token price from a static lookup table. Preparation costs (profile generation + config generation) are estimated separately using the default model's pricing. Wall-clock time uses 12 seconds per agent-round (empirical async gather average). The cost tier thresholds — free (0), minimal (<$0.10), low (<$1), moderate (<$5), high (>$5) — are deliberately conservative so users are never surprised by a bill higher than advertised.
 
-Branch: feat/atom-feed (commit 1a78a0f)
-Status: Code complete — push blocked (GH_GLOBAL secret not set; GITHUB_TOKEN lacks cross-repo push). PR will be created once the secret is available.
+What's next:
+Once actual token usage tracking is added (reading provider response headers), the estimator can be calibrated against real costs — turning the rough estimate into an increasingly accurate predictor.
+
+Branch: feat/pre-run-cost-estimator (push blocked — GH_GLOBAL not set)
