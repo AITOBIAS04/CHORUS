@@ -1,13 +1,12 @@
-HEARTBEAT_OK. Here's the full summary:
+Heartbeat 2026-05-01 (19:41 UTC) — 3 items flagged.
 
-## Summary
+Missing skills (>2h past scheduled time):
+• self-improve (scheduled 13:00 UTC) — skipped auto-trigger (meta skill)
+• repo-actions (scheduled 14:00 UTC) — dispatch blocked (GITHUB_TOKEN read-only)
+• repo-article (scheduled 16:00 UTC) — dispatch blocked (GITHUB_TOKEN read-only)
 
-**Status: All clear.**
+Stalled PRs (>24h, no update):
+• #1 improve: pre-flight health guard for systemic failure detection (32h old)
+• #2 improve: post-outage cron-state recovery (29h old)
 
-**Schedule audit (Wed Apr 30):** Every enabled skill ran successfully today — token-report, fetch-tweets, repo-pulse, project-lens, self-improve, repo-actions, push-recap, feature, memory-flush all completed; heartbeat in progress now.
-
-**PRs:** Two open (#1, #2), both created today — under 24h, not stalled.
-
-**ISS-001 closed:** All `consecutive_failures` counters are 0. The 15-day auth outage (Apr 16–30) is fully resolved. Updated `ISS-001.md` to resolved, moved to resolved table in `INDEX.md`, cleared Open Issues from `MEMORY.md`.
-
-No notification sent — morning heartbeat already reported the recovery; nothing new to escalate.
+Ran today: token-report ✓, fetch-tweets ✓, repo-pulse ✓, feature ✓, push-recap ✓, project-lens ✓

@@ -1,0 +1,232 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-05-01 (19:41 UTC) — 3 items flagged"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section_missing_skills",
+        "sep1",
+        "section_stalled_prs",
+        "sep2",
+        "section_ran_today"
+      ]
+    },
+    "section_missing_skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_missing",
+        "stack_missing_items"
+      ]
+    },
+    "heading_missing": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing skills (>2h past scheduled time)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_missing_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "alert_skill1",
+        "alert_skill2",
+        "alert_skill3"
+      ]
+    },
+    "alert_skill1": {
+      "type": "Alert",
+      "props": {
+        "title": "self-improve",
+        "message": "scheduled 13:00 UTC — skipped auto-trigger (meta skill)",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "alert_skill2": {
+      "type": "Alert",
+      "props": {
+        "title": "repo-actions",
+        "message": "scheduled 14:00 UTC — dispatch blocked (GITHUB_TOKEN read-only)",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "alert_skill3": {
+      "type": "Alert",
+      "props": {
+        "title": "repo-article",
+        "message": "scheduled 16:00 UTC — dispatch blocked (GITHUB_TOKEN read-only)",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_stalled_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_stalled",
+        "stack_stalled_items"
+      ]
+    },
+    "heading_stalled": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs (>24h, no update)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_stalled_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "alert_pr1",
+        "alert_pr2"
+      ]
+    },
+    "alert_pr1": {
+      "type": "Alert",
+      "props": {
+        "title": "#1 improve: pre-flight health guard for systemic failure detection",
+        "message": "32h old",
+        "type": "error"
+      },
+      "children": []
+    },
+    "alert_pr2": {
+      "type": "Alert",
+      "props": {
+        "title": "#2 improve: post-outage cron-state recovery",
+        "message": "29h old",
+        "type": "error"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_ran_today": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_ran",
+        "stack_ran_badges"
+      ]
+    },
+    "heading_ran": {
+      "type": "Heading",
+      "props": {
+        "text": "Ran today",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_ran_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1",
+        "badge2",
+        "badge3",
+        "badge4",
+        "badge5",
+        "badge6"
+      ]
+    },
+    "badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report ✓",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets ✓",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge3": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✓",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge4": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✓",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge5": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge6": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens ✓",
+        "variant": "secondary"
+      },
+      "children": []
+    }
+  }
+}
