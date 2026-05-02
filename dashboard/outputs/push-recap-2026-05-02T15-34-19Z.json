@@ -1,0 +1,305 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-05-02"
+      },
+      "children": [
+        "repo-section",
+        "sep1",
+        "feature-section",
+        "sep2",
+        "growth-section",
+        "sep3",
+        "community-section",
+        "sep4",
+        "changes-section",
+        "sep5",
+        "recap-link"
+      ]
+    },
+    "repo-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo-heading",
+        "repo-aeon",
+        "repo-miroshark"
+      ]
+    },
+    "repo-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h2"
+      }
+    },
+    "repo-aeon": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 34 commits by aeonframework (autonomous)"
+      }
+    },
+    "repo-miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 0 commits (quiet day on main branch)"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "feature-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "feature-heading",
+        "feature-text",
+        "feature-detail"
+      ]
+    },
+    "feature-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Feature Build",
+        "level": "h2"
+      }
+    },
+    "feature-text": {
+      "type": "Text",
+      "props": {
+        "text": "PR #67 — Live Spectator Watch Page: Aeon built and opened a full live-broadcast page at /watch/<id>. Server-rendered HTML, no SPA dependency — tweet the URL mid-simulation and it unfurls as a rich OG card. Vanilla-JS polls every 15s showing belief bars, round counter, and progress. Transitions to final result + Fork CTA when the sim ends. 7th share surface, zero new deps."
+      }
+    },
+    "feature-detail": {
+      "type": "Badge",
+      "props": {
+        "text": "No new dependencies",
+        "variant": "secondary"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "growth-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "growth-heading",
+        "growth-intro",
+        "ideas-stack",
+        "deployment-note"
+      ]
+    },
+    "growth-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Growth Intelligence",
+        "level": "h2"
+      }
+    },
+    "growth-intro": {
+      "type": "Text",
+      "props": {
+        "text": "5 New Feature Ideas (repo-actions generated):"
+      }
+    },
+    "ideas-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5"
+      ]
+    },
+    "idea1": {
+      "type": "Text",
+      "props": {
+        "text": "(1) 1-Click Cloud Deploy (Railway + Fly.io)"
+      }
+    },
+    "idea2": {
+      "type": "Text",
+      "props": {
+        "text": "(2) Gallery Full-Text Search"
+      }
+    },
+    "idea3": {
+      "type": "Text",
+      "props": {
+        "text": "(3) Pre-Run Cost Estimator Widget"
+      }
+    },
+    "idea4": {
+      "type": "Text",
+      "props": {
+        "text": "(4) Per-Agent Stance Sparklines"
+      }
+    },
+    "idea5": {
+      "type": "Text",
+      "props": {
+        "text": "(5) Pre-filled Scenario URL"
+      }
+    },
+    "deployment-note": {
+      "type": "Text",
+      "props": {
+        "text": "Deploy friction identified as highest-leverage gap before 1K.",
+        "variant": "lead"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "community-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "community-heading",
+        "community-grid",
+        "aaron-text"
+      ]
+    },
+    "community-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Community",
+        "level": "h2"
+      }
+    },
+    "community-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "stat-token"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "974",
+        "delta": "+30 today (26 to 1K milestone)",
+        "trend": "up"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "New Forks",
+        "value": "8"
+      }
+    },
+    "stat-token": {
+      "type": "Stat",
+      "props": {
+        "label": "Token Price",
+        "value": "$0.000003592",
+        "delta": "-9.66% (healthy pullback)",
+        "trend": "down"
+      }
+    },
+    "aaron-text": {
+      "type": "Text",
+      "props": {
+        "text": "Aaron active on X — \"just build on aeon\" positioning + fork engagement"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes-heading",
+        "watch-renderer",
+        "heartbeat-alert",
+        "stats-summary"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "watch-renderer": {
+      "type": "Text",
+      "props": {
+        "text": "watch_renderer.py (~600 LoC): Self-contained SSR HTML page with OG/Twitter meta, inline CSS, bootstrap JSON blob, vanilla-JS poller — works even with JS disabled"
+      }
+    },
+    "heartbeat-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Heartbeat Flagged",
+        "message": "3 missing skills (dispatch blocked by read-only GITHUB_TOKEN) + 2 stalled PRs",
+        "type": "warning"
+      }
+    },
+    "stats-summary": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: ~32 files changed, +2,775/-171 lines"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-02.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

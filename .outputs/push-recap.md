@@ -1,14 +1,17 @@
-*Push Recap — 2026-05-01*
-MiroShark — 7 commits by @aaronjmars
+*Push Recap — 2026-05-02*
+miroshark-aeon — 34 commits by aeonframework (autonomous)
+MiroShark — 0 commits (quiet day on main branch)
 
-Chinese (zh-CN) Internationalization (PRs #61–#65): MiroShark now ships a complete Chinese localization stack — not just translated buttons, but localized simulation agent prompts, 138 backend error messages, 10 translated documentation files, and a prompt registry architecture that makes adding new languages a folder drop. The use_locale context manager propagates locale through Flask, threads, and subprocesses. A warning banner surfaces for first-time Chinese users explaining experimental prompt quality.
+Feature Build (PR #67 — Live Spectator Watch Page): Aeon built and opened a full live-broadcast page at /watch/<id>. Server-rendered HTML, no SPA dependency — tweet the URL mid-simulation and it unfurls as a rich OG card. Vanilla-JS polls every 15s showing belief bars, round counter, and progress. Transitions to final result + Fork CTA when the sim ends. 7th share surface, zero new deps.
 
-Belief Trajectory CSV / JSONL Export (PR #66): The fifth share/export surface — two new API endpoints serve per-round belief data (bullish/neutral/bearish %, agent counts, posts, engagements) as RFC 4180 CSV or newline-delimited JSON. Designed for pandas.read_csv() one-liner consumption. 17 unit tests, zero new dependencies.
+Growth Intelligence (5 New Feature Ideas): Repo-actions generated — (1) 1-Click Cloud Deploy (Railway + Fly.io), (2) Gallery Full-Text Search, (3) Pre-Run Cost Estimator Widget, (4) Per-Agent Stance Sparklines, (5) Pre-filled Scenario URL. Deploy friction identified as highest-leverage gap before 1K.
+
+Community: 974 stars (+30 today, 26 to 1K milestone). 8 new forks. Token at $0.000003592 (-9.66%, healthy pullback). Aaron active on X — "just build on aeon" positioning + fork engagement.
 
 Key changes:
-- New prompt registry (app/prompts/) centralizes ~20 prompt sites into a locale-aware, cached, test-gated system — replaces 370 lines of hardcoded English strings across 8 service files
-- trajectory_export.py uses the same ±0.2 stance threshold as every other surface — CSV numbers match what the gallery, share card, and webhook report
-- contextvars-based locale propagation (use_locale) ensures Chinese mode works through async handlers, background threads, and simulation subprocesses
+- watch_renderer.py (~600 LoC): Self-contained SSR HTML page with OG/Twitter meta, inline CSS, bootstrap JSON blob, vanilla-JS poller — works even with JS disabled
+- 5 repo-actions ideas targeting the star-to-contributor conversion gap before 1K
+- Heartbeat flagged 3 missing skills (dispatch blocked by read-only GITHUB_TOKEN) + 2 stalled PRs
 
-Stats: ~90 files changed, +8,055/-2,441 lines
-Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-01.md
+Stats: ~32 files changed, +2,775/-171 lines
+Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-02.md
