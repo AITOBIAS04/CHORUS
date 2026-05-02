@@ -1,0 +1,208 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea",
+        "description": "2026-05-02"
+      },
+      "children": [
+        "date_badge",
+        "question_heading",
+        "sep1",
+        "coordination_section",
+        "sep2",
+        "why_now_section",
+        "sep3",
+        "resolution_section",
+        "sep4",
+        "scores_section",
+        "sep5",
+        "website_link"
+      ]
+    },
+    "date_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2026-05-02"
+      }
+    },
+    "question_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Will 5 independent forks of the Aeon framework ship custom skills (modified aeon.yml) by June 30, 2026?",
+        "level": "h2"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "coordination_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "coord_heading",
+        "coord_text",
+        "fork_stat",
+        "conversion_text"
+      ]
+    },
+    "coord_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h3"
+      }
+    },
+    "coord_text": {
+      "type": "Text",
+      "props": {
+        "text": "Right now, 187 people have forked miroshark-aeon. Exactly one has actually configured it. This market turns that embarrassing conversion rate into a call to action — every forker who sees the question realizes they are sitting on an unconfigured repo that could count toward the target."
+      }
+    },
+    "fork_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Public Forks",
+        "value": "187"
+      }
+    },
+    "conversion_text": {
+      "type": "Text",
+      "props": {
+        "text": "It requires humans to set up API keys, write custom skills, and configure GitHub Actions — the exact infrastructure work an AI agent cannot bootstrap for someone else."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "why_now_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "why_heading",
+        "why_text1",
+        "why_text2"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h3"
+      }
+    },
+    "why_text1": {
+      "type": "Text",
+      "props": {
+        "text": "The skill-leaderboard scan on Apr 30 revealed the 187:1 fork-to-deployment ratio. Aaron tweeted \"just build on aeon\" the same day."
+      }
+    },
+    "why_text2": {
+      "type": "Text",
+      "props": {
+        "text": "The framework has 40+ skills, Chinese i18n, and an Atom feed — the platform is ready for builders, but nobody is building yet."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "resolution_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "res_heading",
+        "res_text1",
+        "res_text2",
+        "res_text3"
+      ]
+    },
+    "res_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "res_text1": {
+      "type": "Text",
+      "props": {
+        "text": "On June 30, 2026, scan all public forks of aaronjmars/miroshark-aeon."
+      }
+    },
+    "res_text2": {
+      "type": "Text",
+      "props": {
+        "text": "Count forks where aeon.yml contains at least one skill definition not present in the upstream repo."
+      }
+    },
+    "res_text3": {
+      "type": "Text",
+      "props": {
+        "text": "Five or more unique forks = YES. Verified by the existing skill-leaderboard skill."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "scores_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "scores_heading",
+        "reflexivity_stat",
+        "viral_stat"
+      ]
+    },
+    "scores_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "reflexivity_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      }
+    },
+    "viral_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "website_link": {
+      "type": "Link",
+      "props": {
+        "label": "Soon on hyperstitions.com",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}

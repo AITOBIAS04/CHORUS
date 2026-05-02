@@ -1,13 +1,13 @@
-*Hyperstitions Idea — 2026-04-30*
+*Hyperstitions Idea — 2026-05-02*
 
-"Will MiroShark reach 1,000 GitHub stars by May 15, 2026?"
+"Will 5 independent forks of the Aeon framework ship custom skills (modified aeon.yml) by June 30, 2026?"
 
-The coordination play: MiroShark sits at 886 stars with 171 forks — meaning roughly 5x more people cloned the repo than starred it. The market turns passive fork-holders into active promoters: share the repo, write about it, demo it to your community, post a tutorial. No AI agent can star a repo or write a genuine tweet thread about why a simulation tool changed how they think. This needs humans who have actually used MiroShark to tell their networks. The 1,000 line is close enough to taste, far enough to require effort.
+The coordination play: Right now, 187 people have forked miroshark-aeon. Exactly one has actually configured it. This market turns that embarrassing conversion rate into a call to action — every forker who sees the question realizes they are sitting on an unconfigured repo that could count toward the target. It requires humans to set up API keys, write custom skills, and configure GitHub Actions — the exact infrastructure work an AI agent cannot bootstrap for someone else.
 
-Why now: MiroShark maintained ~13 stars/day growth even through a 15-day system outage where zero content was produced — no daily articles, no token reports, no tweet digests. The Aeon engine just came back online today with a massive architecture upgrade (90+ skills, chain orchestration, MCP/A2A servers). The content machine is restarting, but two weeks of silence means momentum needs a catalyst. This market is that catalyst.
+Why now: The skill-leaderboard scan on Apr 30 revealed the 187:1 fork-to-deployment ratio. Aaron tweeted "just build on aeon" the same day. The framework has 40+ skills, Chinese i18n, and an Atom feed — the platform is ready for builders, but nobody is building yet.
 
-Resolution: YES if github.com/aaronjmars/MiroShark shows ≥1,000 stargazers_count via the GitHub API at any point on or before May 15, 2026 23:59 UTC. NO otherwise.
+Resolution: On June 30, 2026, scan all public forks of aaronjmars/miroshark-aeon. Count forks where aeon.yml contains at least one skill definition not present in the upstream repo. Five or more unique forks = YES. Verified by the existing skill-leaderboard skill.
 
-Scores: Reflexivity 4/5 | Viral 4/5
+Scores: Reflexivity 5/5 | Viral 4/5
 
 Soon on https://www.hyperstitions.com/ ?
