@@ -31,6 +31,8 @@ Check the following:
   - Only flag a skill as missing if its scheduled time was **more than 2 hours ago**.
   - Also check `gh run list --workflow=aeon.yml --created=$(date -u +%Y-%m-%d) --json displayTitle,status` — if the skill is currently `in_progress` or `queued`, don't flag it.
   - For day-of-week schedules (e.g. `0 20 * * 0` for Sundays), only check on the matching day.
+  - For `*/N` day-of-month schedules (e.g. `0 13 */2 * *` — every N days), check if today matches before flagging. Run `date -u +%-d` to get the day of month (unpadded). A `*/N` pattern matches day D if `(D - 1) % N == 0`. Examples: `*/2` runs on odd days (1, 3, 5, 7…), `*/3` runs on days 1, 4, 7, 10… If today doesn't match, skip the skill entirely — it's not expected to run.
+  - When both day-of-month and day-of-week are restricted (neither is `*`), e.g. `0 16 */2 * 0,2,4,6`, the skill runs if **either** condition matches (standard POSIX cron OR behavior). Check both fields independently.
 
 Before sending any notification, grep the last 48h of logs for the same issue. If the same missing-skill or stalled-PR was already reported, skip it. Batch all findings into a single notification.
 
