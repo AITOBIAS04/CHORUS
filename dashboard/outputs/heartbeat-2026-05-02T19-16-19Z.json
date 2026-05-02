@@ -1,0 +1,143 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-05-02"
+      },
+      "children": [
+        "alert",
+        "reason",
+        "sep1",
+        "status",
+        "skills_stack",
+        "sep2",
+        "prs_label",
+        "prs_status"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "fetch-tweets MISSING",
+        "message": "Scheduled 06:30 UTC, 12h ago, never ran",
+        "type": "warning"
+      }
+    },
+    "reason": {
+      "type": "Text",
+      "props": {
+        "text": "Auto-dispatch blocked — GITHUB_TOKEN read-only (same limitation as May 1)",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status": {
+      "type": "Heading",
+      "props": {
+        "text": "All other scheduled skills ran successfully",
+        "level": "h3"
+      }
+    },
+    "skills_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill_1",
+        "skill_2",
+        "skill_3",
+        "skill_4",
+        "skill_5",
+        "skill_6",
+        "skill_7",
+        "skill_8"
+      ]
+    },
+    "skill_1": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "default"
+      }
+    },
+    "skill_2": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "default"
+      }
+    },
+    "skill_3": {
+      "type": "Badge",
+      "props": {
+        "text": "hyperstitions-ideas",
+        "variant": "default"
+      }
+    },
+    "skill_4": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "default"
+      }
+    },
+    "skill_5": {
+      "type": "Badge",
+      "props": {
+        "text": "self-improve",
+        "variant": "default"
+      }
+    },
+    "skill_6": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-actions",
+        "variant": "default"
+      }
+    },
+    "skill_7": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "default"
+      }
+    },
+    "skill_8": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article",
+        "variant": "default"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Request Status",
+        "level": "h3"
+      }
+    },
+    "prs_status": {
+      "type": "Text",
+      "props": {
+        "text": "No new stalled PRs (PRs #1/#2 already flagged yesterday)",
+        "variant": "body"
+      }
+    }
+  }
+}
