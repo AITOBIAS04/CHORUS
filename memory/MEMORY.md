@@ -13,8 +13,6 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
-| 2026-04-15 | Everyone Is Building AI Agents That Act. The Smarter Bet Might Be Agents That Don't. | Contrarian take: simulation-first vs. autonomous action; $9B agentic AI market; Bengio/Russell warnings |
-| 2026-03-30 | The Knowledge Graph Inside MiroShark | Technical deep-dive: Neo4j graph architecture, five-layer persona context, belief states, graph memory loop |
 | 2026-04-07 | From Clone to Cloud: MiroShark Crosses 500 Stars and Reinvents the Simulation Interface | UX maturation: URL ingestion, cloud deploy, runtime LLM selector, agent leaderboard — 563 stars milestone |
 | 2026-04-10 | Inside the Black Box: MiroShark's Observability Week Turns a Demo into Infrastructure | Observability system, 2x perf overhaul, simulation fork/compare/history search, first external community PR — 642 stars |
 | 2026-04-12 | Closing the Loop: MiroShark Builds the Accountability Layer for AI-Powered Simulation | Prediction resolution & accuracy tracking, article generator, history search — evidence loop closes, 661 stars |
@@ -23,6 +21,7 @@
 | 2026-04-30 | 906 Stars and a New Language: MiroShark's Quiet Bet on Distribution | Distribution angle: Chinese i18n (PR #61), RSS/Atom feeds (PR #60), distribution stack thesis, 906 stars, path to 1K |
 | 2026-04-30 | When AI Simulations Need Receipts: MiroShark's Accountability Turn | Accountability angle: verified predictions (#47), Langfuse observability (#51/#54), 57% token compaction (#55), admin auth, 913 stars |
 | 2026-05-01 | In 93 Days, Every AI Agent in Europe Needs a Paper Trail | Current events: EU AI Act Aug 2 deadline, agentic compliance gap, Article 12 logging mandates, MiroShark audit trail as regulatory template, 954 stars |
+| 2026-05-02 | When Simulation Becomes a Spectator Sport: MiroShark's Bet on Live AI | Spectator watch page (PR #67), seven share surfaces, simulation-as-medium thesis, research export pipeline, 977 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |
