@@ -1,0 +1,316 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "heading_main",
+        "text_subtitle",
+        "stack_ideas",
+        "separator_end",
+        "storylink_details"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Action Ideas — 2026-05-02",
+        "level": "h1"
+      }
+    },
+    "text_subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark at 976 stars — 5 new ideas for the feature skill, distinct from the 10 suggested on Apr 30.",
+        "variant": "lead"
+      }
+    },
+    "stack_ideas": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "idea_1",
+        "idea_2",
+        "idea_3",
+        "idea_4",
+        "idea_5"
+      ]
+    },
+    "idea_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_idea_1",
+        "badges_idea_1",
+        "text_idea_1"
+      ]
+    },
+    "heading_idea_1": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Community Scenario Template Gallery",
+        "level": "h3"
+      }
+    },
+    "badges_idea_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_growth_dx",
+        "badge_small"
+      ]
+    },
+    "badge_growth_dx": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth/DX",
+        "variant": "default"
+      }
+    },
+    "badge_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_idea_1": {
+      "type": "Text",
+      "props": {
+        "text": "Extend the 6 hardcoded presets into a user-created, browsable, forkable template gallery — each shared template is a domain-specific discovery entry point and the viral lever for the push to 1K stars.",
+        "variant": "body"
+      }
+    },
+    "idea_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_idea_2",
+        "badges_idea_2",
+        "text_idea_2"
+      ]
+    },
+    "heading_idea_2": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Fork / Counterfactual Diff View",
+        "level": "h3"
+      }
+    },
+    "badges_idea_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_feature",
+        "badge_medium"
+      ]
+    },
+    "badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "text_idea_2": {
+      "type": "Text",
+      "props": {
+        "text": "Side-by-side comparison of a fork against its parent simulation — overlaid belief drift chart, divergence round marker, final price delta, and agent overlap score. Closes the loop on the fork primitive as a publishable controlled-experiment surface.",
+        "variant": "body"
+      }
+    },
+    "idea_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_idea_3",
+        "badges_idea_3",
+        "text_idea_3"
+      ]
+    },
+    "heading_idea_3": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Programmatic Agent Interrogation API",
+        "level": "h3"
+      }
+    },
+    "badges_idea_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_integration",
+        "badge_small_2"
+      ]
+    },
+    "badge_integration": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      }
+    },
+    "badge_small_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_idea_3": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulation/:id/agents/:agent_id/query — API access to the Trace Interview feature (currently UI-only since PR #26). Unlocks agent interrogation for GitHub Actions, n8n, and research pipelines. Rate-limited; multi-turn via session_id.",
+        "variant": "body"
+      }
+    },
+    "idea_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_idea_4",
+        "badges_idea_4",
+        "text_idea_4"
+      ]
+    },
+    "heading_idea_4": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Mid-Run Belief Threshold Alert Webhooks",
+        "level": "h3"
+      }
+    },
+    "badges_idea_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_integration_2",
+        "badge_small_3"
+      ]
+    },
+    "badge_integration_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      }
+    },
+    "badge_small_3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_idea_4": {
+      "type": "Text",
+      "props": {
+        "text": "Webhook fires when agent consensus crosses a user-defined threshold mid-simulation (e.g., bearish > 60%). Complements the completion webhook with a real-time monitoring primitive — signal arrives 12 rounds earlier for a threshold hit at round 3 of 15.",
+        "variant": "body"
+      }
+    },
+    "idea_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_idea_5",
+        "badges_idea_5",
+        "text_idea_5"
+      ]
+    },
+    "heading_idea_5": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Series / Longitudinal Study Tracker",
+        "level": "h3"
+      }
+    },
+    "badges_idea_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_feature_2",
+        "badge_medium_2"
+      ]
+    },
+    "badge_feature_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_medium_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "text_idea_5": {
+      "type": "Text",
+      "props": {
+        "text": "Group simulations into a named study with a time-series belief dashboard, recurring-agent table, and bundled ZIP export (summary CSV + transcripts + study-level Jupyter notebook). The research container that turns MiroShark into a longitudinal platform.",
+        "variant": "body"
+      }
+    },
+    "separator_end": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink_details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-actions-2026-05-02.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

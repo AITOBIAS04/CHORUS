@@ -1,19 +1,19 @@
-*Repo Action Ideas (v2) — 2026-04-30*
-Second pass after this morning's run — PR #60 (RSS/Atom feed) merged since then; 904 stars.
+*Repo Action Ideas — 2026-05-02*
+MiroShark at 976 stars — 5 new ideas for the feature skill, distinct from the 10 suggested on Apr 30.
 
-1. Jupyter Notebook Export (Integration, Small)
-   Packages trajectory.json + agent posts into a .ipynb with pre-written pandas/networkx/matplotlib cells — the last-mile artifact for researchers who need publication-ready analysis.
+1. Community Scenario Template Gallery (Growth/DX, Small)
+   Extend the 6 hardcoded presets into a user-created, browsable, forkable template gallery — each shared template is a domain-specific discovery entry point and the viral lever for the push to 1K stars.
 
-2. Pre-Run Cost Estimator (DX, Small)
-   Shows estimated tokens, cost in USD, and wall-clock time before clicking Run — reactive to agent count, rounds, and LLM selection; flags expensive runs in orange/red.
+2. Fork / Counterfactual Diff View (Feature, Medium)
+   Side-by-side comparison of a fork against its parent simulation — overlaid belief drift chart, divergence round marker, final price delta, and agent overlap score. Closes the loop on the fork primitive as a publishable controlled-experiment surface.
 
-3. Cross-Simulation Analytics Dashboard (Feature, Medium)
-   Meta-analysis view across all completed simulations: weekly run counts, consensus round histogram, final-price distributions by agent-count bucket, prediction accuracy rate, top scenario keywords.
+3. Programmatic Agent Interrogation API (Integration, Small)
+   POST /api/simulation/:id/agents/:agent_id/query — API access to the Trace Interview feature (currently UI-only since PR #26). Unlocks agent interrogation for GitHub Actions, n8n, and research pipelines. Rate-limited; multi-turn via session_id.
 
-4. Simulation Scheduling (Feature, Small)
-   APScheduler-backed cron scheduling from the Settings UI — daily, weekly, monthly, or custom expression; fires existing webhook on completion; tags scheduled runs in history.
+4. Mid-Run Belief Threshold Alert Webhooks (Integration, Small)
+   Webhook fires when agent consensus crosses a user-defined threshold mid-simulation (e.g., bearish > 60%). Complements the completion webhook with a real-time monitoring primitive — signal arrives 12 rounds earlier for a threshold hit at round 3 of 15.
 
-5. n8n / Zapier Integration Template Pack (Integration/Growth, Small)
-   Four ready-to-import workflow templates (RSS→Discord, daily Slack digest, webhook→Google Sheet, schedule→Telegram) — seeds discovery in n8n and Zapier communities.
+5. Simulation Series / Longitudinal Study Tracker (Feature, Medium)
+   Group simulations into a named study with a time-series belief dashboard, recurring-agent table, and bundled ZIP export (summary CSV + transcripts + study-level Jupyter notebook). The research container that turns MiroShark into a longitudinal platform.
 
-Full details: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-actions-2026-04-30-v2.md
+Full details: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-actions-2026-05-02.md
