@@ -1,11 +1,14 @@
 ## Summary
 
-Skill leaderboard executed for 2026-04-30.
+Skill leaderboard run complete for 2026-05-03.
 
-**What was scanned:**
-- `aaronjmars/MiroShark` — 114 active forks, 0 with `aeon.yml` (MiroShark is the simulation product, not an Aeon agent deployment)
-- `aaronjmars/miroshark-aeon` — 1 active fork, 1 with `aeon.yml` (AITOBIAS04)
+**What was found:** 1 active fork (AITOBIAS04/miroshark-aeon, last push today). It runs the same 13-skill core stack as last week — no rank changes, no new enables, no disables.
 
-**Result:** `SKILL_LEADERBOARD_INSUFFICIENT_DATA` — only 1 fork had a readable `aeon.yml`, below the 2-fork minimum for notification.
+**Week-over-week changes:**
+- New adoption gap: `skill-leaderboard` (just enabled in source on Sundays; fork hasn't synced)
+- Resolved gap: `tweet-allocator` (removed from source, no longer a gap)
+- Source repo catalogue expanded with ~22 new disabled skills that the fork hasn't picked up yet
 
-**Article written:** `articles/skill-leaderboard-2026-04-30.md` — documents the baseline: 13 skills enabled in the one live fork (full core stack), with `tweet-allocator` as the sole adoption gap (enabled in source, absent in fork). As miroshark-aeon accumulates more community forks, this will become a meaningful signal.
+**Notification:** Skipped — `SKILL_LEADERBOARD_INSUFFICIENT_DATA` (1 readable aeon.yml, threshold is ≥2). The fleet needs at least one more active fork before the leaderboard becomes a meaningful signal.
+
+Files: `articles/skill-leaderboard-2026-05-03.md`, `memory/logs/2026-05-03.md`
