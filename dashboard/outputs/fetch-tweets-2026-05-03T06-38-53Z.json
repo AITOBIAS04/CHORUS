@@ -1,0 +1,259 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK & aaronjmars/MiroShark"
+      },
+      "children": [
+        "header-stack",
+        "sep1",
+        "tweets-stack"
+      ]
+    },
+    "header-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "meta-text",
+        "github-link",
+        "api-note"
+      ]
+    },
+    "meta-text": {
+      "type": "Text",
+      "props": {
+        "text": "MIROSHARK crypto token on Base chain (2026-05-03)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "github-link": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark"
+      },
+      "children": []
+    },
+    "api-note": {
+      "type": "Text",
+      "props": {
+        "text": "XAI_API_KEY not available; results compiled via WebSearch",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "tweets-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "t1-group",
+        "t2-group",
+        "t3-group",
+        "t4-group",
+        "t5-group"
+      ]
+    },
+    "t1-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t1-tweet",
+        "t1-eng",
+        "t1-link"
+      ]
+    },
+    "t1-tweet": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "I still have no idea what people do all day with their $200/mo 'AIs' except making dashboards and cleaning e-mails"
+      },
+      "children": []
+    },
+    "t1-eng": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "t1-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2045647313897496884"
+      },
+      "children": []
+    },
+    "t2-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t2-tweet",
+        "t2-eng",
+        "t2-link"
+      ]
+    },
+    "t2-tweet": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "Recent link/media post (~May 1)"
+      },
+      "children": []
+    },
+    "t2-eng": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "t2-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2046215100596355194"
+      },
+      "children": []
+    },
+    "t3-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t3-tweet",
+        "t3-eng",
+        "t3-link"
+      ]
+    },
+    "t3-tweet": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "MiroShark Just Built the Simulation Engine That MiroFish Promised — flagship product announcement with image"
+      },
+      "children": []
+    },
+    "t3-eng": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "t3-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2037582921947574759"
+      },
+      "children": []
+    },
+    "t4-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t4-tweet",
+        "t4-eng",
+        "t4-link"
+      ]
+    },
+    "t4-tweet": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "Wonderwall / Polymarket Integration: agents now trade prediction markets alongside Reddit and X simulations"
+      },
+      "children": []
+    },
+    "t4-eng": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "t4-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2037281730315661407"
+      },
+      "children": []
+    },
+    "t5-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t5-tweet",
+        "t5-eng",
+        "t5-link"
+      ]
+    },
+    "t5-tweet": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "MiroShark & Aeon roadmap: tokenized on bankrbot; miroshark = universal swarm engine; aeon = autonomous software framework on GitHub"
+      },
+      "children": []
+    },
+    "t5-eng": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "t5-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2036818584937095581"
+      },
+      "children": []
+    }
+  }
+}
