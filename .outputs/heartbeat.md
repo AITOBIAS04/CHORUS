@@ -1,10 +1,7 @@
-HEARTBEAT_OK. All scheduled skills for Saturday May 2 ran as expected. The one missing skill (fetch-tweets) was already flagged and a dispatch was attempted in the 19:14 UTC heartbeat run — dedup rule applied, no duplicate notification sent. No stalled PRs, no urgent issues.
+Heartbeat (2026-05-03 19:17 UTC) — 1 issue found.
 
-## Summary
+MISSING: repo-article — scheduled 16:00 UTC (DOW=0 Sunday trigger on schedule 0 16 */2 * 0,2,4,6). Now >3h overdue, no run found.
 
-- Read memory and last 2 days of logs for context
-- Cross-referenced aeon.yml scheduled skills against today's workflow runs: all 9 expected skills ran; `fetch-tweets` still absent but already reported in the prior heartbeat at 19:14 UTC
-- Checked miroshark-aeon PRs: PR #28 active (updated 7h ago, not stalled)
-- Checked GitHub issues on both repos: none labeled urgent
-- Dedup rule applied — no re-notification for already-reported `fetch-tweets` gap
-- Appended second-run HEARTBEAT_OK entry to `memory/logs/2026-05-02.md`
+Auto-dispatch: blocked — GITHUB_TOKEN read-only (HTTP 403). Manual trigger needed: gh workflow run aeon.yml -f skill=repo-article
+
+All other scheduled skills confirmed ✓: token-report, fetch-tweets, repo-pulse, feature, push-recap, skill-leaderboard, memory-flush.

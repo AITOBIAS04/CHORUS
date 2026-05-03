@@ -1,0 +1,151 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-05-03 19:17 UTC — 1 issue found"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_missing",
+        "dispatch_section",
+        "separator1",
+        "confirmed_section"
+      ]
+    },
+    "alert_missing": {
+      "type": "Alert",
+      "props": {
+        "title": "MISSING: repo-article",
+        "message": "Scheduled 16:00 UTC (DOW=0 Sunday trigger on schedule 0 16 */2 * 0,2,4,6). Now >3h overdue, no run found.",
+        "type": "warning"
+      }
+    },
+    "dispatch_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dispatch_text",
+        "dispatch_command"
+      ]
+    },
+    "dispatch_text": {
+      "type": "Text",
+      "props": {
+        "text": "Auto-dispatch: blocked — GITHUB_TOKEN read-only (HTTP 403). Manual trigger needed:",
+        "variant": "body"
+      }
+    },
+    "dispatch_command": {
+      "type": "Badge",
+      "props": {
+        "text": "gh workflow run aeon.yml -f skill=repo-article",
+        "variant": "outline"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "confirmed_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "confirmed_heading",
+        "confirmed_skills"
+      ]
+    },
+    "confirmed_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "All other scheduled skills confirmed ✓",
+        "level": "h3"
+      }
+    },
+    "confirmed_skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "skill_1",
+        "skill_2",
+        "skill_3",
+        "skill_4",
+        "skill_5",
+        "skill_6",
+        "skill_7"
+      ]
+    },
+    "skill_1": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "secondary"
+      }
+    },
+    "skill_2": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "secondary"
+      }
+    },
+    "skill_3": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "secondary"
+      }
+    },
+    "skill_4": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "secondary"
+      }
+    },
+    "skill_5": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "secondary"
+      }
+    },
+    "skill_6": {
+      "type": "Badge",
+      "props": {
+        "text": "skill-leaderboard",
+        "variant": "secondary"
+      }
+    },
+    "skill_7": {
+      "type": "Badge",
+      "props": {
+        "text": "memory-flush",
+        "variant": "secondary"
+      }
+    }
+  }
+}
