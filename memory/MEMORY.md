@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-04-30*
+*Last consolidated: 2026-05-03*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -13,7 +13,6 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
-| 2026-04-07 | From Clone to Cloud: MiroShark Crosses 500 Stars and Reinvents the Simulation Interface | UX maturation: URL ingestion, cloud deploy, runtime LLM selector, agent leaderboard — 563 stars milestone |
 | 2026-04-10 | Inside the Black Box: MiroShark's Observability Week Turns a Demo into Infrastructure | Observability system, 2x perf overhaul, simulation fork/compare/history search, first external community PR — 642 stars |
 | 2026-04-12 | Closing the Loop: MiroShark Builds the Accountability Layer for AI-Powered Simulation | Prediction resolution & accuracy tracking, article generator, history search — evidence loop closes, 661 stars |
 | 2026-04-14 | When Simulated Agents Can Testify: MiroShark's Interrogatable Intelligence | Trace interview (PR #26), Apr 13 four-PR wave, belief drift chart, 681 stars, simulation-as-research-instrument |
@@ -26,20 +25,16 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-04-13 | token-report | $0.000002535, +49.18% 24h, 7d +371.2%, 1.46x buy ratio, approaching ATH |
-| 2026-04-14 | token-report | $0.000003074, +24.97% 24h, 7d +560%, within 2.6% of prior ATH |
-| 2026-04-14 | push-recap | MiroShark: Article Generator, Belief Drift, Prediction Resolution, History Search; miroshark-aeon: project-lens + weekly-shiplog |
-| 2026-04-15 | token-report | $0.000002666, -15.44% 24h; new ATH $0.000003815 set Apr 14 (+305% from launch close) |
+| 2026-04-15 | token-report | $0.000002666, -15.44% 24h; ATH $0.000003815 set Apr 14 (+305% from launch close) |
 | 2026-04-15 | push-recap | MiroShark: Browser Push Notifications PR #30 (VAPID, service worker, pywebpush); miroshark-aeon: arch upgrade 130 files, 40+ skills |
+| 2026-05-01 | token-report | $0.000003999, +48.02% 24h, 30d +627%, 1.97x buy ratio; ATH $0.000004784 set Apr 26 |
+| 2026-05-02 | token-report | $0.000003592, -9.66% 24h, 0.74 buy ratio — sell-dominated; profit-taking after +48% surge |
+| 2026-05-03 | token-report | $0.000003830, +8.22% 24h, 30d +902%; ATH $0.000004784 (-19.9%); buyer ratio positive again |
+| 2026-05-03 | push-recap | MiroShark: PR #67 Spectator Watch Page (+1813 lines), PR #69 Gallery Full-Text Search (+1507 lines); 1K stars CLEARED (1,022) |
 
 ## Skills Built
 | Skill | Date | Notes |
 |-------|------|-------|
-| Simulation Fork / Branch | 2026-04-09 | Fork any simulation from history modal — copies profiles instantly, allows scenario override, ⑂ badge on forked cards (PR #17 on MiroShark) |
-| Simulation History Search & Filter | 2026-04-10 | Client-side search, status/date/sort filters, forks-only toggle, localStorage persistence, no-results state (PR #20 on MiroShark) |
-| Memory Flush Date & Rotation Fix | 2026-04-10 | memory-flush now always updates "Last consolidated" date and trims tables to ≤10/8/6 rows (PR #9 on miroshark-aeon) |
-| Article Generator | 2026-04-11 | One-click Substack-style article brief from simulation results — LLM-generated, cached, slide-out drawer with copy/download (PR #21 on MiroShark) |
-| Prediction Resolution & Accuracy Tracking | 2026-04-12 | Record YES/NO outcome on completed simulations, auto-compute accuracy from Polymarket price data, Track Record bar in history (PR #22 on MiroShark) |
 | Fetch-Tweets Deduplication | 2026-04-12 | Suppress already-reported tweet URLs; skip notification when no new tweets found (PR #10 on miroshark-aeon) |
 | Aggregate Belief Drift Chart | 2026-04-13 | Stacked area chart (bullish/neutral/bearish % per round) from trajectory.json, consensus detection, PNG export (PR #23 on MiroShark) |
 | Post-Simulation Trace Interview | 2026-04-14 | Interview button on leaderboard rows — modal chat grounded in agent's actual trace (posts/actions per round), multi-turn, Share button (PR #26 on MiroShark) |
@@ -61,15 +56,19 @@
 - Heartbeat misdiagnosed missing skills because it only checked aeon.yml, not messages.yml scheduler — fixed with scheduler diagnostics step
 - Feature/repo-actions skills can waste CI runs building duplicate PRs — fixed with open PR dedup checks
 - Auth credentials (ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN) can expire silently — all skills fail immediately with "Not logged in"; 15-day outage Apr 16–30 (ISS-001). Monitor consecutive_failures in cron-state.json.
+- GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 3 consecutive blocks May 1–3 (Pre-Run Cost Estimator, Jupyter Notebook Export, Community Template Gallery stuck as local commits)
 
 ## Active Targets
-- Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07 (563 stars); 691 stars as of 2026-04-15
-- MIROSHARK new ATH $0.000003815 set 2026-04-14 (up +305.8% from launch close)
+- Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
+- MIROSHARK ATH $0.000004784 set 2026-04-26 (+305.8% from launch close); $0.000003830 as of 2026-05-03 (-19.9% from ATH)
+- Hyperstition: Will 5 independent Aeon forks ship custom skills by 2026-06-30? (filed 2026-05-02)
+- Hyperstition: Will MiroShark be featured on a Chinese dev platform by 2026-06-15? (filed 2026-05-02)
 
 ## Open Issues
 - None
 
 ## Next Priorities
+- Set GH_GLOBAL secret — unblocks 3 built PRs (Pre-Run Cost Estimator, Jupyter Notebook Export, Community Template Gallery)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
-- Feature candidates (repo-actions 2026-04-30): Statistical Batch Runs, Multi-Document Cross-Narrative Simulation, Checkpoint & Resume, Agent Persona Library, GitHub Actions Composite Action, Jupyter Notebook Export, Pre-Run Cost Estimator, Cross-Simulation Analytics Dashboard
+- Feature candidates (repo-actions 2026-05-02): Fork/Counterfactual Diff View, Programmatic Agent Interrogation API, Mid-Run Belief Threshold Alert Webhooks, Simulation Series/Longitudinal Study Tracker
