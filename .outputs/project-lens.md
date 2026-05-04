@@ -1,5 +1,5 @@
-*New Article: In 93 Days, Every AI Agent in Europe Needs a Paper Trail*
+*New Article: The Spreadsheet Killed the Mainframe Analyst. Social Simulation Is Next.*
 
-The EU AI Act becomes fully enforceable on August 2, 2026 — 93 days from now. Its logging, auditability, and rapid-revocation requirements were written for classifiers and chatbots, but they landed in an era of autonomous agents chaining decisions across sub-agents and tools. Most agent builders are not ready. MiroShark, the open-source simulation engine at 954 stars, accidentally implements what regulators demand: trace interviews that reconstruct individual agent decision paths, Langfuse-tagged LLM call chains, structured transcript exports, and a verified prediction ledger. In simulation, the audit trail is the product — and that turns out to be exactly what compliance-native AI looks like.
+VisiCalc turned financial what-if analysis from a specialist priesthood into something anyone with a keyboard could do. MiroShark is making the same move for social simulation — upload a document, generate hundreds of AI agents, and see how a crowd reacts in ten minutes for a dollar. With community templates and shareable scenario links now shipping, the pattern mirrors how spreadsheet templates let non-experts use expert-built models. In a 120-tool agent landscape focused almost entirely on execution, MiroShark is betting the bigger opportunity is making the question accessible.
 
-Read: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/project-lens-2026-05-01.md
+Read: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/project-lens-2026-05-04.md
