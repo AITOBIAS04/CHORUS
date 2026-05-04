@@ -45,6 +45,7 @@
 | Pre-Run Cost Estimator | 2026-05-01 | Show estimated USD cost, tokens, and wall-clock time before simulation starts; built-in pricing table for 15+ models; colour-coded cost tier badge in Step 3 UI (code complete, push blocked — GH_GLOBAL not set) |
 | Jupyter Notebook Export | 2026-05-02 | One-click .ipynb export with pre-written pandas, matplotlib, and networkx analysis cells — belief drift chart, agent trajectories, interaction network, summary statistics (code complete, push blocked — GH_GLOBAL not set) |
 | Community Template Gallery | 2026-05-03 | /templates page with 10 domain-specific seed scenarios, CRUD API, tag filters, search, one-click launch, "Save as Template" from completed sims (code complete, push blocked — GH_GLOBAL not set) |
+| Agent Interrogation API | 2026-05-04 | 4 endpoints: GET /agents, GET /agents/<name>/profile, POST /agents/<name>/query (rate-limited, session-based multi-turn), GET /interview-sessions; OpenAPI docs, frontend API, bilingual docs (code complete, push blocked — GH_GLOBAL not set) |
 
 ## Watched Repos
 - `aaronjmars/aeon` — tracked in `memory/watched-repos.md`
@@ -56,7 +57,7 @@
 - Heartbeat misdiagnosed missing skills because it only checked aeon.yml, not messages.yml scheduler — fixed with scheduler diagnostics step
 - Feature/repo-actions skills can waste CI runs building duplicate PRs — fixed with open PR dedup checks
 - Auth credentials (ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN) can expire silently — all skills fail immediately with "Not logged in"; 15-day outage Apr 16–30 (ISS-001). Monitor consecutive_failures in cron-state.json.
-- GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 3 consecutive blocks May 1–3 (Pre-Run Cost Estimator, Jupyter Notebook Export, Community Template Gallery stuck as local commits)
+- GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 4 consecutive blocks May 1–4 (Pre-Run Cost Estimator, Jupyter Notebook Export, Community Template Gallery, Agent Interrogation API stuck as local commits)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
@@ -68,7 +69,7 @@
 - None
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 3 built PRs (Pre-Run Cost Estimator, Jupyter Notebook Export, Community Template Gallery)
+- Set GH_GLOBAL secret — unblocks 4 built PRs (Pre-Run Cost Estimator, Jupyter Notebook Export, Community Template Gallery, Agent Interrogation API)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
-- Feature candidates (repo-actions 2026-05-02): Fork/Counterfactual Diff View, Programmatic Agent Interrogation API, Mid-Run Belief Threshold Alert Webhooks, Simulation Series/Longitudinal Study Tracker
+- Feature candidates (repo-actions 2026-05-02): Fork/Counterfactual Diff View, Mid-Run Belief Threshold Alert Webhooks, Simulation Series/Longitudinal Study Tracker
