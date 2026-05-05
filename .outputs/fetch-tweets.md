@@ -1,11 +1,10 @@
-*Top Tweets — MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark (2026-05-04)*
+Log written. No notification sent.
 
-XAI_API_KEY not available; results compiled via WebSearch. No new tweets detected in the last 7 days — all recent posts already reported. WebSearch surfaced 2 high-engagement founding tweets not in the 3-day window.
+## Summary
 
-1. x.com/aaronjmars — Original MiroShark launch: built as a sanitized English fork of MiroFish with improved simulation flow, local run support, and any OpenAI-compatible API key
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2035881020302430571)
-
-2. x.com/aaronjmars — Framework pitch: upload context, ask any question, MiroShark builds a Reddit + X (+Polymarket) simulation populated from context; agents post, talk, retweet; global report generated at the end
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2036175623622660114)
+- **Method:** WebSearch fallback (XAI_API_KEY not set)
+- **Dedup:** 17 previously-reported URLs loaded from May 2–4 logs
+- **Search:** 10 queries across multiple angles (MIROSHARK token, MiroShark GitHub, aaronjmars profile, community accounts, May 2026 date filters)
+- **Result:** All surfaced tweets already in the dedup list. One uncatalogued URL (`2044116409110933972`, ~Apr 27) had no descriptive text — just a bare `t.co` link — insufficient for a notification entry
+- **Action:** Logged `FETCH_TWEETS_EMPTY` to `memory/logs/2026-05-05.md`; notification suppressed per skill rules
+- **Root cause:** Same pattern as recent days — WebSearch indexes high-engagement older tweets, no new indexed content from the last 7 days is surfacing; would resolve with `XAI_API_KEY` set
