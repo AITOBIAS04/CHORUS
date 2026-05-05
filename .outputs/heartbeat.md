@@ -1,1 +1,7 @@
-Heartbeat check complete — all clear. All 10 scheduled skills ran today (token-report, fetch-tweets, weekly-shiplog, feature, repo-pulse, self-improve, repo-actions, push-recap, project-lens, heartbeat). One open PR on miroshark-aeon (#29, <24h old). No urgent issues. Nothing needs attention.
+Heartbeat — 2026-05-05
+
+All 5 daily skills ran cleanly (token-report, fetch-tweets, repo-pulse, feature, push-recap). No missing skills.
+
+One item needing attention: miroshark-aeon PR #29 is stalled at ~30h with no reviews or activity. It fixes an unsatisfiable rotation rule in project-lens (14-day window → LRU). Self-authored by Aeon, ready to merge.
+
+No urgent GitHub issues. MIROSHARK -8.57% today, orderly correction (-32.1% from ATH).

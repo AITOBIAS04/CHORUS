@@ -1,0 +1,134 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "status-stack"
+      ]
+    },
+    "status-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skills-section",
+        "separator1",
+        "pr-section",
+        "separator2",
+        "issues-section",
+        "separator3",
+        "market-section"
+      ]
+    },
+    "skills-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skills-heading",
+        "skills-list",
+        "skills-status"
+      ]
+    },
+    "skills-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Daily Skills",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "skills-list": {
+      "type": "Text",
+      "props": {
+        "text": "token-report, fetch-tweets, repo-pulse, feature, push-recap",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "skills-status": {
+      "type": "Badge",
+      "props": {
+        "text": "All 5 ran cleanly",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr-section": {
+      "type": "Alert",
+      "props": {
+        "title": "miroshark-aeon PR #29 Needs Attention",
+        "message": "Stalled at ~30h with no reviews or activity. Fixes unsatisfiable rotation rule in project-lens (14-day window → LRU). Self-authored by Aeon, ready to merge.",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "issues-section": {
+      "type": "Text",
+      "props": {
+        "text": "No urgent GitHub issues.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "market-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "market-heading",
+        "miroshark-stat"
+      ]
+    },
+    "market-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Market",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "miroshark-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "MIROSHARK",
+        "value": "-8.57%",
+        "delta": "-32.1%",
+        "trend": "down"
+      },
+      "children": []
+    }
+  }
+}
