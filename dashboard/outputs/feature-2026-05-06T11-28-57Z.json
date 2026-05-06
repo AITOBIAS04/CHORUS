@@ -1,0 +1,164 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Feature Built — 2026-05-06"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_feature",
+        "text_intro",
+        "separator_1",
+        "heading_why",
+        "text_why_1",
+        "text_why_2",
+        "separator_2",
+        "heading_built",
+        "text_embedDialog",
+        "text_exploreView",
+        "text_localization",
+        "separator_3",
+        "heading_how",
+        "text_how_1",
+        "text_how_2",
+        "separator_4",
+        "heading_next",
+        "alert_blocker",
+        "text_next_details"
+      ]
+    },
+    "heading_feature": {
+      "type": "Heading",
+      "props": {
+        "text": "One-Click Share to X (Tweet Composer)",
+        "level": "h2"
+      }
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Every MiroShark simulation now has a one-click \"Post to X\" button that opens a pre-filled tweet composer. The tweet includes the scenario excerpt, the consensus outcome (bullish/bearish/contested with round count), a share link that auto-unfurls with the OG card, and the #MiroShark hashtag. No copying, no composing — one click from results to tweet."
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why this matters",
+        "level": "h3"
+      }
+    },
+    "text_why_1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark already has shareable URLs (PR #71) and OG cards that unfurl on Twitter (PR #42), but there was still friction: users had to manually compose a tweet, paste the link, and write something interesting about the simulation."
+      }
+    },
+    "text_why_2": {
+      "type": "Text",
+      "props": {
+        "text": "With the founder's Twitter account being the primary organic discovery channel, removing this friction is a direct distribution multiplier. Every simulation result is now one click from becoming a tweet — and with 1,064 stars and growing, the community running simulations daily can now amplify organically without manual effort."
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_built": {
+      "type": "Heading",
+      "props": {
+        "text": "What was built",
+        "level": "h3"
+      }
+    },
+    "text_embedDialog": {
+      "type": "Text",
+      "props": {
+        "text": "EmbedDialog.vue: New \"Post to X\" section with dark X-branded styling. Shows a live tweet preview (scenario excerpt truncated to 80 chars + consensus summary + share URL + #MiroShark). Opens twitter.com/intent/tweet in a new tab. Gated on the simulation being public, same as all share surfaces."
+      }
+    },
+    "text_exploreView": {
+      "type": "Text",
+      "props": {
+        "text": "ExploreView.vue: Hover-visible X icon overlay on each gallery card thumbnail. Same tweet template, composed from the gallery item's metadata (scenario, final_consensus, simulation_id). Turns gallery browsing into a distribution surface."
+      }
+    },
+    "text_localization": {
+      "type": "Text",
+      "props": {
+        "text": "Both surfaces include full zh-CN localization — Chinese-mode simulations compose the tweet in Chinese."
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_how": {
+      "type": "Heading",
+      "props": {
+        "text": "How it works",
+        "level": "h3"
+      }
+    },
+    "text_how_1": {
+      "type": "Text",
+      "props": {
+        "text": "The feature uses Twitter's intent URL API (twitter.com/intent/tweet?text=...&url=...) — pure client-side, no API key, no backend changes, no secrets. The tweet text is composed from the simulation's embed summary data (scenario, belief percentages, round count). Consensus is classified as bullish (≥65%), bearish (≥65%), or contested, and formatted as a human-readable outcome."
+      }
+    },
+    "text_how_2": {
+      "type": "Text",
+      "props": {
+        "text": "The share landing URL is passed separately so Twitter auto-appends it and unfurls the OG card (the 1200×630 PNG from PR #42). The gallery surface computes the same template from the public gallery item data without an extra API call."
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_next": {
+      "type": "Heading",
+      "props": {
+        "text": "What's next",
+        "level": "h3"
+      }
+    },
+    "alert_blocker": {
+      "type": "Alert",
+      "props": {
+        "title": "Blocked: GH_GLOBAL secret not set",
+        "message": "Push blocked — GH_GLOBAL secret still not set (6th consecutive block since May 1). Setting the secret would unblock this PR and 5 others.",
+        "type": "warning"
+      }
+    },
+    "text_next_details": {
+      "type": "Text",
+      "props": {
+        "text": "Code complete (250 lines, 2 files), committed locally on feat/share-to-x."
+      }
+    }
+  }
+}
