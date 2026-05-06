@@ -1,0 +1,310 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-05-06",
+        "description": "MiroShark + miroshark-aeon — 5 substantive commits, +2,600/-100 lines"
+      },
+      "children": [
+        "tweet_thread_section",
+        "sep1",
+        "webhook_section",
+        "sep2",
+        "skill_fixes_section",
+        "sep3",
+        "key_changes_section",
+        "sep4",
+        "stats_section",
+        "sep5",
+        "recap_link"
+      ]
+    },
+    "tweet_thread_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet_heading",
+        "tweet_badge",
+        "tweet_main_desc",
+        "tweet_scope",
+        "tweet_stats"
+      ]
+    },
+    "tweet_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Tweet Thread Export",
+        "level": "h2"
+      }
+    },
+    "tweet_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #72 • Merged",
+        "variant": "default"
+      }
+    },
+    "tweet_main_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Sixth share surface ships to main. Auto-generates a ready-to-paste X/Twitter thread from any published simulation — one intro tweet, one tweet per belief inflection point (±0.2 stance hysteresis), one closing tweet with share URLs. Plain-text and JSON endpoints.",
+        "variant": "body"
+      }
+    },
+    "tweet_scope": {
+      "type": "Text",
+      "props": {
+        "text": "493-line formatter, 446-line test suite, EmbedDialog integration, bilingual docs. +1,565 lines, zero new dependencies.",
+        "variant": "caption"
+      }
+    },
+    "tweet_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet_file1",
+        "tweet_file2",
+        "tweet_file3"
+      ]
+    },
+    "tweet_file1": {
+      "type": "Text",
+      "props": {
+        "text": "thread_formatter.py: 493 lines",
+        "variant": "caption"
+      }
+    },
+    "tweet_file2": {
+      "type": "Text",
+      "props": {
+        "text": "EmbedDialog integration",
+        "variant": "caption"
+      }
+    },
+    "tweet_file3": {
+      "type": "Text",
+      "props": {
+        "text": "test_unit_thread.py: 446-line test suite",
+        "variant": "caption"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "webhook_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "webhook_heading",
+        "webhook_badge",
+        "webhook_desc"
+      ]
+    },
+    "webhook_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Webhook Delivery Log",
+        "level": "h2"
+      }
+    },
+    "webhook_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #73 • In CI review",
+        "variant": "outline"
+      }
+    },
+    "webhook_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Operational visibility for outbound webhooks — persistent jsonl log per dispatch attempt, manual retry endpoint. Fire-and-forget closes.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "skill_fixes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "fixes_heading",
+        "fixes_badge",
+        "fix1",
+        "fix2"
+      ]
+    },
+    "fixes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skill Quality Fixes",
+        "level": "h2"
+      }
+    },
+    "fixes_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PRs #29 + #30 • Merged",
+        "variant": "default"
+      }
+    },
+    "fix1": {
+      "type": "Text",
+      "props": {
+        "text": "project-lens rotation rule replaced (impossible 14-day non-repeat → LRU)",
+        "variant": "body"
+      }
+    },
+    "fix2": {
+      "type": "Text",
+      "props": {
+        "text": "token-report now tracks volume trend alongside price",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "thread_formatter.py: 493-line service extracts belief inflection points and composes 280-char tweets with stance labels consistent across all 6 share surfaces",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "EmbedDialog.vue: +300 lines — tweet thread preview panel with copy-all, download, character counts, X brand styling",
+        "variant": "body"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "test_unit_thread.py: 446 lines, 14 tests covering threshold consistency, char limits, truncation, edge cases",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_grid"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "~60",
+        "delta": "+2,600/-100 lines"
+      }
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Stars",
+        "value": "1,098",
+        "delta": "+27",
+        "trend": "up"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "219",
+        "delta": "+6",
+        "trend": "up"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Push Recap",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-06.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

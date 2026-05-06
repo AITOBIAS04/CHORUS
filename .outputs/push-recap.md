@@ -1,17 +1,16 @@
-*Push Recap — 2026-05-05*
-[miroshark-aeon] — 25 commits by 1 author (aeonframework)
-[MiroShark] — 0 commits on main; PR #72 in CI
+*Push Recap — 2026-05-06*
+MiroShark + miroshark-aeon — 5 substantive commits, +2,600/-100 lines
 
-Feature Build (Tweet Thread Export): Aeon autonomously built the tenth distribution surface for MiroShark — PR #72 adds GET /thread.txt and /thread.json endpoints that auto-format any published simulation into a paste-ready X thread. One tweet per belief inflection point, ±0.2 hysteresis to filter noise rounds, truncation to 15 tweets max. 430 LoC pure stdlib, 14 unit tests. Second consecutive day of autonomous MiroShark authorship.
+Tweet Thread Export merged (PR #72): Sixth share surface ships to main. Auto-generates a ready-to-paste X/Twitter thread from any published simulation — one intro tweet, one tweet per belief inflection point (±0.2 stance hysteresis), one closing tweet with share URLs. Plain-text and JSON endpoints. 493-line formatter, 446-line test suite, EmbedDialog integration, bilingual docs. +1,565 lines, zero new dependencies.
 
-Content Pipeline (Two Articles): 'Aeon, Two Days Running' (repo-article) frames the autonomous-authorship pattern now that @russian_acai named it publicly. 'Friday, 9:14 AM' (project-lens) walks a DeFi analyst through the scenario-link-in / thread-export-out loop vs the Typefully/Nansen SaaS stack.
+Webhook Delivery Log (PR #73, open): Operational visibility for outbound webhooks — persistent jsonl log per dispatch attempt, manual retry endpoint. Fire-and-forget closes. In CI review.
 
-Market & Community: $MIROSHARK at $0.000003250 (-8.57% 24h), fourth consecutive red session. LP liquidity -$25K in 48h to $214K. Stars +11 to 1,071. Social quiet — no new tweets indexed for 7 days.
+Skill quality fixes (PRs #29 + #30 merged): project-lens rotation rule replaced (impossible 14-day non-repeat → LRU). token-report now tracks volume trend alongside price.
 
 Key changes:
-- PR #72: thread_formatter.py (430 LoC) + test_unit_thread.py (14 tests) + EmbedDialog thread UI
-- Two articles grounding today's PR #72 from different angles
-- Full skill cycle (9 skills, all green)
+- thread_formatter.py: 493-line service extracts belief inflection points and composes 280-char tweets with stance labels consistent across all 6 share surfaces
+- EmbedDialog.vue: +300 lines — tweet thread preview panel with copy-all, download, character counts, X brand styling
+- test_unit_thread.py: 446 lines, 14 tests covering threshold consistency, char limits, truncation, edge cases
 
-Stats: ~40 files changed, ~+2,100/-150 lines (miroshark-aeon) + PR #72 +1,565 lines (MiroShark)
-Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-05.md
+Stats: ~60 files changed, +2,600/-100 lines | MiroShark: 1,098 stars (+27), 219 forks (+6)
+Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-06.md
