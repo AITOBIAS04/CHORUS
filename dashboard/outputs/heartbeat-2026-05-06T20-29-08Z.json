@@ -1,0 +1,308 @@
+{
+  "root": "card_heartbeat",
+  "state": {},
+  "elements": {
+    "card_heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — Wed May 6"
+      },
+      "children": [
+        "alert_status",
+        "sep1",
+        "skills_section",
+        "sep2",
+        "prs_section",
+        "sep3",
+        "no_triggers"
+      ]
+    },
+    "alert_status": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "title": "All systems nominal",
+        "message": "All 10 scheduled skills ran on time. No missing skills. No urgent GitHub issues."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "skills_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skills_label",
+        "skills_list"
+      ]
+    },
+    "skills_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Scheduled Skills",
+        "level": "h3"
+      }
+    },
+    "skills_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "skill_badge_1",
+        "skill_badge_2",
+        "skill_badge_3",
+        "skill_badge_4",
+        "skill_badge_5",
+        "skill_badge_6",
+        "skill_badge_7",
+        "skill_badge_8",
+        "skill_badge_9",
+        "skill_badge_10"
+      ]
+    },
+    "skill_badge_1": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "outline"
+      }
+    },
+    "skill_badge_2": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "outline"
+      }
+    },
+    "skill_badge_3": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "outline"
+      }
+    },
+    "skill_badge_4": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "outline"
+      }
+    },
+    "skill_badge_5": {
+      "type": "Badge",
+      "props": {
+        "text": "self-improve",
+        "variant": "outline"
+      }
+    },
+    "skill_badge_6": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-actions",
+        "variant": "outline"
+      }
+    },
+    "skill_badge_7": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "outline"
+      }
+    },
+    "skill_badge_8": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens",
+        "variant": "outline"
+      }
+    },
+    "skill_badge_9": {
+      "type": "Badge",
+      "props": {
+        "text": "memory-flush",
+        "variant": "outline"
+      }
+    },
+    "skill_badge_10": {
+      "type": "Badge",
+      "props": {
+        "text": "heartbeat",
+        "variant": "outline"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "prs_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "prs_header",
+        "prs_list"
+      ]
+    },
+    "prs_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "prs_label",
+        "prs_context"
+      ]
+    },
+    "prs_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs",
+        "level": "h3"
+      }
+    },
+    "prs_context": {
+      "type": "Text",
+      "props": {
+        "text": "4 on miroshark-aeon — self-authored, waiting for human review",
+        "variant": "muted"
+      }
+    },
+    "prs_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_item_1",
+        "pr_item_2",
+        "pr_item_3",
+        "pr_item_4"
+      ]
+    },
+    "pr_item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_title_1",
+        "pr_meta_1"
+      ]
+    },
+    "pr_title_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "improve: pre-flight health guard for systemic failure detection",
+        "href": "https://github.com/miroshark-aeon/miroshark-aeon/pull/1",
+        "source": "miroshark-aeon"
+      }
+    },
+    "pr_meta_1": {
+      "type": "Text",
+      "props": {
+        "text": "Open since Apr 30 · 6 days",
+        "variant": "caption"
+      }
+    },
+    "pr_item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_title_2",
+        "pr_meta_2"
+      ]
+    },
+    "pr_title_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "improve: post-outage cron-state recovery",
+        "href": "https://github.com/miroshark-aeon/miroshark-aeon/pull/2",
+        "source": "miroshark-aeon"
+      }
+    },
+    "pr_meta_2": {
+      "type": "Text",
+      "props": {
+        "text": "Open since Apr 30 · 6 days",
+        "variant": "caption"
+      }
+    },
+    "pr_item_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_title_3",
+        "pr_meta_3"
+      ]
+    },
+    "pr_title_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "improve: fix heartbeat false positives for */N day-of-month schedules",
+        "href": "https://github.com/miroshark-aeon/miroshark-aeon/pull/3",
+        "source": "miroshark-aeon"
+      }
+    },
+    "pr_meta_3": {
+      "type": "Text",
+      "props": {
+        "text": "Open since May 2 · 4 days",
+        "variant": "caption"
+      }
+    },
+    "pr_item_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_title_4",
+        "pr_meta_4"
+      ]
+    },
+    "pr_title_4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "improve: extend fetch-tweets dedup window and add age filter",
+        "href": "https://github.com/miroshark-aeon/miroshark-aeon/pull/4",
+        "source": "miroshark-aeon"
+      }
+    },
+    "pr_meta_4": {
+      "type": "Text",
+      "props": {
+        "text": "Open since May 4 · 2 days",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "no_triggers": {
+      "type": "Text",
+      "props": {
+        "text": "No auto-triggers needed.",
+        "variant": "muted"
+      }
+    }
+  }
+}

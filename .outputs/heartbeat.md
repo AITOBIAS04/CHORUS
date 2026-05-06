@@ -1,7 +1,11 @@
-Heartbeat — 2026-05-05
+Heartbeat — Wed May 6
 
-All 5 daily skills ran cleanly (token-report, fetch-tweets, repo-pulse, feature, push-recap). No missing skills.
+All 10 scheduled skills ran on time (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens, memory-flush, heartbeat). No missing skills. No urgent GitHub issues.
 
-One item needing attention: miroshark-aeon PR #29 is stalled at ~30h with no reviews or activity. It fixes an unsatisfiable rotation rule in project-lens (14-day window → LRU). Self-authored by Aeon, ready to merge.
+4 improve: PRs stalled on miroshark-aeon — self-authored, waiting for human review:
+• PR #1: improve: pre-flight health guard for systemic failure detection (open since Apr 30, 6d)
+• PR #2: improve: post-outage cron-state recovery (open since Apr 30, 6d)
+• PR #3: improve: fix heartbeat false positives for */N day-of-month schedules (open since May 2, 4d)
+• PR #4: improve: extend fetch-tweets dedup window and add age filter (open since May 4, 2d)
 
-No urgent GitHub issues. MIROSHARK -8.57% today, orderly correction (-32.1% from ATH).
+No auto-triggers needed.
