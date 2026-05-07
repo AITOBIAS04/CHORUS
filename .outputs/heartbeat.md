@@ -1,11 +1,12 @@
-Heartbeat — Wed May 6
+Heartbeat — 2026-05-07
 
-All 10 scheduled skills ran on time (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens, memory-flush, heartbeat). No missing skills. No urgent GitHub issues.
+**Missing skill detected:** repo-article (scheduled 16:00 UTC, ~4h overdue)
+- DOW=4 (Thursday) matches 0,2,4,6 schedule — expected run did not appear in workflow history
+- Auto-dispatch attempted but blocked (HTTP 403 — integration token lacks workflow dispatch permission)
+- Manual trigger needed: gh workflow run aeon.yml -f skill="repo-article"
 
-4 improve: PRs stalled on miroshark-aeon — self-authored, waiting for human review:
-• PR #1: improve: pre-flight health guard for systemic failure detection (open since Apr 30, 6d)
-• PR #2: improve: post-outage cron-state recovery (open since Apr 30, 6d)
-• PR #3: improve: fix heartbeat false positives for */N day-of-month schedules (open since May 2, 4d)
-• PR #4: improve: extend fetch-tweets dedup window and add age filter (open since May 4, 2d)
+**All other skills:** OK
+- token-report ✓ 07:34 | fetch-tweets ✓ 07:34 | repo-pulse ✓ 10:04 | feature ✓ 12:02 | push-recap ✓ 16:28
 
-No auto-triggers needed.
+**Open PRs:** 0 | **Urgent issues:** 0
+**GH_GLOBAL secret still unset** — 7 feature PRs blocked (ongoing)

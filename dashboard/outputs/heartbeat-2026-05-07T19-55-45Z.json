@@ -1,0 +1,129 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-05-07"
+      },
+      "children": [
+        "missing-skill-alert",
+        "sep1",
+        "all-skills-section",
+        "sep2",
+        "stats-section",
+        "sep3",
+        "secret-alert"
+      ]
+    },
+    "missing-skill-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Missing skill detected: repo-article",
+        "message": "Scheduled 16:00 UTC, ~4h overdue. DOW=4 (Thursday) matches 0,2,4,6 schedule — expected run did not appear in workflow history. Auto-dispatch attempted but blocked (HTTP 403 — integration token lacks workflow dispatch permission). Manual trigger needed: gh workflow run aeon.yml -f skill=\"repo-article\"",
+        "type": "error"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "all-skills-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skills-heading",
+        "skills-table"
+      ]
+    },
+    "skills-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "All other skills: OK",
+        "level": "h3"
+      }
+    },
+    "skills-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Status",
+          "Time"
+        ],
+        "rows": [
+          [
+            "token-report",
+            "✓",
+            "07:34"
+          ],
+          [
+            "fetch-tweets",
+            "✓",
+            "07:34"
+          ],
+          [
+            "repo-pulse",
+            "✓",
+            "10:04"
+          ],
+          [
+            "feature",
+            "✓",
+            "12:02"
+          ],
+          [
+            "push-recap",
+            "✓",
+            "16:28"
+          ]
+        ]
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-section": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-prs",
+        "stat-issues"
+      ]
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Open PRs",
+        "value": "0"
+      }
+    },
+    "stat-issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Urgent issues",
+        "value": "0"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "secret-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "GH_GLOBAL secret still unset",
+        "message": "7 feature PRs blocked (ongoing)",
+        "type": "warning"
+      }
+    }
+  }
+}
