@@ -1,0 +1,236 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Simulation Quality Guard",
+        "description": "Code complete, push blocked (day 7)"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "heading-checks",
+        "text-checks-intro",
+        "list-checks",
+        "sep-1",
+        "heading-api",
+        "text-endpoint",
+        "list-frontend",
+        "sep-2",
+        "heading-stats",
+        "stats-grid",
+        "text-docs",
+        "sep-3",
+        "heading-commit",
+        "text-commit",
+        "sep-4",
+        "alert-blocker"
+      ]
+    },
+    "heading-checks": {
+      "type": "Heading",
+      "props": {
+        "text": "Quality Checks (4 per-round)",
+        "level": "h3"
+      }
+    },
+    "text-checks-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Built for MiroShark simulations. Each flags the exact round, severity, and a remediation suggestion.",
+        "variant": "body"
+      }
+    },
+    "list-checks": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "check-1",
+        "check-2",
+        "check-3",
+        "check-4"
+      ]
+    },
+    "check-1": {
+      "type": "Text",
+      "props": {
+        "text": "Dominance detection — when one agent drowns the conversation",
+        "variant": "body"
+      }
+    },
+    "check-2": {
+      "type": "Text",
+      "props": {
+        "text": "Stagnation — belief drift flatlines",
+        "variant": "body"
+      }
+    },
+    "check-3": {
+      "type": "Text",
+      "props": {
+        "text": "Hard lock — 90%+ supermajority persists",
+        "variant": "body"
+      }
+    },
+    "check-4": {
+      "type": "Text",
+      "props": {
+        "text": "Neutral collapse — fence-sitters take over",
+        "variant": "body"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-api": {
+      "type": "Heading",
+      "props": {
+        "text": "API & Frontend",
+        "level": "h3"
+      }
+    },
+    "text-endpoint": {
+      "type": "Text",
+      "props": {
+        "text": "New GET /quality-report endpoint returns the full guard report. Frontend gets a collapsible Quality Guard panel in the results view.",
+        "variant": "body"
+      }
+    },
+    "list-frontend": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "feat-1",
+        "feat-2",
+        "feat-3"
+      ]
+    },
+    "feat-1": {
+      "type": "Text",
+      "props": {
+        "text": "Green badge for clean runs",
+        "variant": "body"
+      }
+    },
+    "feat-2": {
+      "type": "Text",
+      "props": {
+        "text": "Orange badge with flag count when issues detected",
+        "variant": "body"
+      }
+    },
+    "feat-3": {
+      "type": "Text",
+      "props": {
+        "text": "Gallery cards show Clean/Flagged pills, ?clean=1 filter for spotless runs only",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Implementation",
+        "level": "h3"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-insertions",
+        "stat-tests"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "13"
+      }
+    },
+    "stat-insertions": {
+      "type": "Stat",
+      "props": {
+        "label": "Insertions",
+        "value": "958"
+      }
+    },
+    "stat-tests": {
+      "type": "Stat",
+      "props": {
+        "label": "Unit Tests",
+        "value": "18"
+      }
+    },
+    "text-docs": {
+      "type": "Text",
+      "props": {
+        "text": "OpenAPI spec and bilingual docs updated.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-commit": {
+      "type": "Heading",
+      "props": {
+        "text": "Commit",
+        "level": "h3"
+      }
+    },
+    "text-commit": {
+      "type": "Text",
+      "props": {
+        "text": "Committed on feat/simulation-quality-guard (f65392b).",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert-blocker": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Push Blocked: GH_GLOBAL Not Set",
+        "message": "7 consecutive features stuck as local commits (May 1–7). Setting this secret would unblock all 7 PRs at once."
+      }
+    }
+  }
+}
