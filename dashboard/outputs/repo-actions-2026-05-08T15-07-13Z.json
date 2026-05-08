@@ -1,0 +1,314 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-05-08"
+      },
+      "children": [
+        "context_text",
+        "sep1",
+        "items_stack",
+        "sep2",
+        "details_link"
+      ]
+    },
+    "context_text": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,117 stars · 222 forks · 0 open PRs). Today's thread: making simulation results scientifically defensible — citable, robust, individually analyzable.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "items_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+      ]
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_heading",
+        "item1_meta",
+        "item1_desc"
+      ]
+    },
+    "item1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Belief Heatmap",
+        "level": "h3"
+      }
+    },
+    "item1_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_badge_type",
+        "item1_badge_size"
+      ]
+    },
+    "item1_badge_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "item1_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "item1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Grid of agents × rounds colored by stance — makes individual trajectory patterns visible where the aggregate drift chart only shows totals.",
+        "variant": "body"
+      }
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_heading",
+        "item2_meta",
+        "item2_desc"
+      ]
+    },
+    "item2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Per-Agent Trajectory CSV Export",
+        "level": "h3"
+      }
+    },
+    "item2_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_badge_type",
+        "item2_badge_size"
+      ]
+    },
+    "item2_badge_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "item2_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "item2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Unit-record export (agent × round × yes/no/neutral price × stance) for researchers doing statistical modeling, survival analysis, or influence attribution.",
+        "variant": "body"
+      }
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_heading",
+        "item3_meta",
+        "item3_desc"
+      ]
+    },
+    "item3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Adversarial Robustness Mode",
+        "level": "h3"
+      }
+    },
+    "item3_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_badge_type",
+        "item3_badge_size"
+      ]
+    },
+    "item3_badge_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "item3_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      }
+    },
+    "item3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Run the same scenario twice — baseline and with a devil's advocate agent — to report whether consensus is Robust, Pressured, or Fragile under active challenge.",
+        "variant": "body"
+      }
+    },
+    "item4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_heading",
+        "item4_meta",
+        "item4_desc"
+      ]
+    },
+    "item4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Live Round Event Stream / SSE",
+        "level": "h3"
+      }
+    },
+    "item4_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_badge_type",
+        "item4_badge_size"
+      ]
+    },
+    "item4_badge_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "secondary"
+      }
+    },
+    "item4_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "item4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/events SSE endpoint for real-time per-round belief events; no webhook server, no polling loop — curl --no-buffer works.",
+        "variant": "body"
+      }
+    },
+    "item5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_heading",
+        "item5_meta",
+        "item5_desc"
+      ]
+    },
+    "item5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Academic Citation Block Generator",
+        "level": "h3"
+      }
+    },
+    "item5_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_badge_type",
+        "item5_badge_size"
+      ]
+    },
+    "item5_badge_type": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      }
+    },
+    "item5_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "item5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "BibTeX + APA + IEEE citation modal from simulation metadata + PR #75 config hash; one click to a paper-ready reference.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-actions-2026-05-08.md"
+      }
+    }
+  }
+}

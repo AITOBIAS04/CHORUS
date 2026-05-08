@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-05-06*
-Generated from analysis of aaronjmars/MiroShark (1,099 stars, 219 forks) — five ideas the feature skill can autonomously build. Excluded all 25 suggestions from May 2, May 4, and April 30 batches.
+*Repo Action Ideas — 2026-05-08*
+Generated from analysis of aaronjmars/MiroShark (1,117 stars · 222 forks · 0 open PRs). Today's thread: making simulation results scientifically defensible — citable, robust, individually analyzable.
 
-1. Multi-Seed Confidence Bands (Feature, Medium)
-   Run the same sim 3× with different random seeds — render a shaded min/max band on the belief chart; turns single-run illustrations into statistically citable findings.
+1. Agent Belief Heatmap (Feature, Small)
+   Grid of agents × rounds colored by stance — makes individual trajectory patterns visible where the aggregate drift chart only shows totals.
 
-2. Director Mode Intervention Scripts (Feature/DX, Small)
-   Named, saved, shareable event sequences for Director Mode — pre-defined round-by-round injection scripts that make experimental protocols reproducible and publishable.
+2. Per-Agent Trajectory CSV Export (Feature, Small)
+   Unit-record export (agent × round × yes/no/neutral price × stance) for researchers doing statistical modeling, survival analysis, or influence attribution.
 
-3. Per-Round Annotation Layer (DX, Small)
-   Let users attach text notes to specific rounds on the belief chart — shows as chart markers, exports in article and transcript, and adds an 'Annotated' badge to gallery cards.
+3. Adversarial Robustness Mode (Feature, Medium)
+   Run the same scenario twice — baseline and with a devil's advocate agent — to report whether consensus is Robust, Pressured, or Fragile under active challenge.
 
-4. Simulation Quality Guard (Feature/DX, Small)
-   Real-time checks after each round detect dominance, stagnation, hard lock, and neutral collapse — surfaces in-UI warnings with diagnosis and fix suggestions; 'Clean run' badge in gallery.
+4. Live Round Event Stream / SSE (Integration, Small)
+   GET /api/simulation/:id/events SSE endpoint for real-time per-round belief events; no webhook server, no polling loop — curl --no-buffer works.
 
-5. Multilingual Article Export (Feature, Small)
-   output_language parameter on the article generator (FR, DE, ES, JA, PT, AR) — one prompt instruction, zero new infrastructure, direct reach to the non-English 20%+ of daily new stars.
+5. Academic Citation Block Generator (DX, Small)
+   BibTeX + APA + IEEE citation modal from simulation metadata + PR #75 config hash; one click to a paper-ready reference.
 
-Full details: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-actions-2026-05-06.md
+Full details: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-actions-2026-05-08.md
