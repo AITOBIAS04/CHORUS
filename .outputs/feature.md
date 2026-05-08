@@ -1,9 +1,24 @@
-Feature skill: Simulation Quality Guard — code complete, push blocked (day 7).
+## Summary
 
-Built 4 per-round quality checks for MiroShark simulations: dominance detection (when one agent drowns the conversation), stagnation (belief drift flatlines), hard lock (90%+ supermajority persists), and neutral collapse (fence-sitters take over). Each flags the exact round, severity, and a remediation suggestion.
+**Feature Built: Per-Round Annotation Layer** for `aaronjmars/MiroShark`
 
-New GET /quality-report endpoint returns the full guard report. Frontend gets a collapsible Quality Guard panel in the results view — green badge for clean runs, orange badge with flag count when issues detected. Gallery cards show Clean/Flagged pills, and ?clean=1 filters to spotless runs only.
+**What it does:** Users can attach text notes (max 280 chars) to specific rounds on the belief drift chart. Annotations appear as purple dashed vertical markers on the chart, are included in Markdown/JSON transcript exports as a "Simulation Notes" section, and mark gallery cards with an "✎ Annotated" badge.
 
-13 files changed, 958 insertions. 18 unit tests. OpenAPI spec and bilingual docs updated. Committed on feat/simulation-quality-guard (f65392b).
+**Files created (3):**
+- `backend/app/services/annotations.py` — Annotation service with atomic JSON writes, CRUD operations
+- `frontend/src/components/AnnotationPanel.vue` — Round selector, text input, annotation list
+- `backend/tests/test_unit_annotations.py` — 22 unit tests
 
-GH_GLOBAL still not set — 7 consecutive features stuck as local commits (May 1–7). Setting this secret would unblock all 7 PRs at once.
+**Files modified (11):**
+- `backend/app/api/simulation.py` — 3 new API endpoints + gallery card `annotated` flag
+- `backend/app/services/transcript.py` — Annotations in transcript exports
+- `backend/openapi.yaml` — `RoundAnnotation` schema + 3 endpoint docs
+- `frontend/src/api/simulation.js` — 3 API helpers
+- `frontend/src/components/BeliefDriftChart.vue` — Annotation markers
+- `frontend/src/components/Step3Simulation.vue` — AnnotationPanel integration
+- `frontend/src/views/ExploreView.vue` — Annotated gallery badge
+- `README.md`, `docs/FEATURES.md`, `docs/API.md`, `docs/API.zh-CN.md` — Documentation
+
+**Total: +1,183 lines across 14 files.**
+
+**Status:** Code complete. Branch `feat/per-round-annotations` committed locally. Push blocked — GH_GLOBAL secret not set (8th consecutive feature blocked since May 1). Notification saved to `.pending-notify/`.
