@@ -1,0 +1,125 @@
+{
+  "root": "heartbeat-card",
+  "state": {},
+  "elements": {
+    "heartbeat-card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-05-09"
+      },
+      "children": [
+        "timestamp-text",
+        "separator-1",
+        "fetch-tweets-alert",
+        "pr-32-alert",
+        "gh-global-alert",
+        "separator-2",
+        "other-skills-heading",
+        "other-skills-list",
+        "final-status-text"
+      ]
+    },
+    "timestamp-text": {
+      "type": "Text",
+      "props": {
+        "text": "19:19 UTC",
+        "variant": "caption"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "fetch-tweets-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Missing skill: fetch-tweets",
+        "message": "Scheduled 06:30 UTC, no run found (12h+ overdue). Auto-trigger attempted: blocked (HTTP 403, integration token lacks workflow dispatch permission). Manual trigger required: gh workflow run aeon.yml -f skill=fetch-tweets",
+        "type": "error"
+      }
+    },
+    "pr-32-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Stalled PR: miroshark-aeon #32",
+        "message": "improve(memory): cap MEMORY.md row sizes — open ~30h, no updates. Self-improve PR awaiting review.",
+        "type": "warning"
+      }
+    },
+    "gh-global-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "GH_GLOBAL not set",
+        "message": "Feature push blocked for the 10th consecutive day. 9 built PRs queued locally.",
+        "type": "warning"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "other-skills-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "All other scheduled skills ran",
+        "level": "h3"
+      }
+    },
+    "other-skills-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "skill-token-report",
+        "skill-repo-pulse",
+        "skill-hyperstitions-ideas",
+        "skill-feature",
+        "skill-push-recap"
+      ]
+    },
+    "skill-token-report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report ✓",
+        "variant": "secondary"
+      }
+    },
+    "skill-repo-pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✓",
+        "variant": "secondary"
+      }
+    },
+    "skill-hyperstitions-ideas": {
+      "type": "Badge",
+      "props": {
+        "text": "hyperstitions-ideas ✓",
+        "variant": "secondary"
+      }
+    },
+    "skill-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✓",
+        "variant": "secondary"
+      }
+    },
+    "skill-push-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓",
+        "variant": "secondary"
+      }
+    },
+    "final-status-text": {
+      "type": "Text",
+      "props": {
+        "text": "No urgent issues. No new stars/fork spikes.",
+        "variant": "muted"
+      }
+    }
+  }
+}

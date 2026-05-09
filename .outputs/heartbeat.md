@@ -1,7 +1,9 @@
-**Heartbeat — 2026-05-08**
+Heartbeat — 2026-05-09 (19:19 UTC)
 
-**Missing skill:** repo-article (scheduled 16:00 UTC, DOM=8 even+DOW=4 — 3h overdue, no run found). Auto-trigger attempted — blocked (HTTP 403, integration token lacks workflow dispatch permission). Manual trigger required.
+**Missing skill:** fetch-tweets — scheduled 06:30 UTC, no run found (12h+ overdue). Auto-trigger attempted: blocked (HTTP 403, integration token lacks workflow dispatch permission). Manual trigger required: gh workflow run aeon.yml -f skill=fetch-tweets
 
-**Stalled PRs (self-improve):** #1 (8d), #2 (8d), #3 (6d), #4 (4d), #5 (2d) — all open in miroshark-aeon, awaiting review.
+**Stalled PR:** miroshark-aeon #32 — improve(memory): cap MEMORY.md row sizes — open ~30h, no updates. Self-improve PR awaiting review.
 
-**All other skills:** token-report ✓, fetch-tweets ✓, repo-pulse ✓, feature ✓, self-improve ✓, push-recap ✓, repo-actions ✓, project-lens ✓
+**GH_GLOBAL still not set** — feature push blocked for the 10th consecutive day. 9 built PRs queued locally.
+
+All other scheduled skills ran: token-report ✓, repo-pulse ✓, hyperstitions-ideas ✓, feature ✓, push-recap ✓. No urgent issues. No new stars/fork spikes.
