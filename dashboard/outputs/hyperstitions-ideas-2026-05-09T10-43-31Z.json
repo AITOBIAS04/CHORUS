@@ -1,0 +1,185 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea",
+        "description": "2026-05-09"
+      },
+      "children": [
+        "heading_question",
+        "stack_content"
+      ]
+    },
+    "heading_question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026?",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_coordination",
+        "text_coordination",
+        "separator1",
+        "heading_why",
+        "text_why",
+        "separator2",
+        "heading_resolution",
+        "text_resolution",
+        "separator3",
+        "stack_scores",
+        "separator4",
+        "stack_footer"
+      ]
+    },
+    "heading_coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The coordination play",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_coordination": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark just shipped Reproducibility Config Export (PR #75), making every simulation run citable with a config hash, version lock, and one-click reproduce.json. But the infrastructure means nothing without humans who actually use it — researchers designing multi-agent studies, students building thesis experiments, labs running belief drift analyses. The market's existence puts MiroShark on the radar of anyone browsing prediction markets who also publishes. A single citation bootstraps credibility that no amount of GitHub stars can replicate.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "PR #75 Reproducibility Config Export merged May 8, closing the last gap between \"cool demo\" and \"citable instrument.\" The May 8 project-lens article (\"AI's Reproducibility Crisis Isn't Technical. It's a Choice.\") explicitly framed MiroShark's audit trail as a regulatory and academic template. Jupyter Notebook Export is built and waiting. The toolchain for academic use is complete — what's missing is the humans.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "YES if at least one paper (peer-reviewed journal, conference proceedings, or indexed pre-print on arXiv/SSRN/bioRxiv) cites MiroShark by name or URL in its methodology, references, or supplementary materials by September 30, 2026. Verified via Google Scholar, Semantic Scholar, or direct link to the published/pre-print paper.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_reflexivity",
+        "stat_viral"
+      ]
+    },
+    "stat_reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "4/5"
+      },
+      "children": []
+    },
+    "stat_viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      },
+      "children": []
+    },
+    "separator4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_soon",
+        "link_hyperstitions",
+        "text_question"
+      ]
+    },
+    "text_soon": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "https://www.hyperstitions.com/",
+        "href": "https://www.hyperstitions.com/"
+      },
+      "children": []
+    },
+    "text_question": {
+      "type": "Text",
+      "props": {
+        "text": "?",
+        "variant": "muted"
+      },
+      "children": []
+    }
+  }
+}
