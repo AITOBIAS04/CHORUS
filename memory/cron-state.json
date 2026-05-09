@@ -61,8 +61,8 @@
     "last_dispatch": "2026-05-08T15:00:18Z"
   },
   "token-report": {
-    "last_dispatch": "2026-05-08T07:14:26Z",
-    "last_status": "success",
+    "last_dispatch": "2026-05-09T06:20:58Z",
+    "last_status": "dispatched",
     "last_failed": "2026-04-30T09:01:43Z",
     "total_runs": 280,
     "total_successes": 9,
