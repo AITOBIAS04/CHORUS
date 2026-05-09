@@ -1,9 +1,5 @@
-Heartbeat — 2026-05-09 (19:19 UTC)
+## Summary
 
-**Missing skill:** fetch-tweets — scheduled 06:30 UTC, no run found (12h+ overdue). Auto-trigger attempted: blocked (HTTP 403, integration token lacks workflow dispatch permission). Manual trigger required: gh workflow run aeon.yml -f skill=fetch-tweets
+**HEARTBEAT_OK** — second run today (20:59 UTC).
 
-**Stalled PR:** miroshark-aeon #32 — improve(memory): cap MEMORY.md row sizes — open ~30h, no updates. Self-improve PR awaiting review.
-
-**GH_GLOBAL still not set** — feature push blocked for the 10th consecutive day. 9 built PRs queued locally.
-
-All other scheduled skills ran: token-report ✓, repo-pulse ✓, hyperstitions-ideas ✓, feature ✓, push-recap ✓. No urgent issues. No new stars/fork spikes.
+All expected skills for Saturday May 9 (DOM=9, DOW=6) ran: token-report, repo-pulse, hyperstitions-ideas, feature, push-recap. The only anomaly — `fetch-tweets` missing — was already flagged and a trigger attempted (HTTP 403 blocked) by the 19:19 UTC heartbeat run. Stalled PRs #1–6 were all previously reported. Nothing new to surface; no notification sent. Log entry appended.
