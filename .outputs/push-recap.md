@@ -1,16 +1,17 @@
-*Push Recap — 2026-05-09*
-MiroShark — 1 commit (PR #76, open) · miroshark-aeon — 29 chore commits
+*Push Recap — 2026-05-10*
+aaronjmars/MiroShark — 1 commit merged + 2 PRs opened
+aaronjmars/miroshark-aeon — 31 automation commits, all skills green
 
-Simulation Lineage Navigator (PR #76): Direct sequel to yesterday's PR #75 reproducibility config. Turns the one-directional parent_simulation_id pointer into a navigable graph — new GET /api/simulation/<id>/lineage endpoint returns parent + every public child with fork/counterfactual kind + trigger metadata. EmbedDialog gains a 🌳 Lineage panel that auto-shows only when there's something to navigate to. +1,778 lines, 16 tests, zero new deps (16th consecutive).
+Lineage Navigator (PR #76 merged): Bidirectional fork/counterfactual graph traversal is now live. GET /api/simulation/<id>/lineage returns parent + public children for any published sim. EmbedDialog gains a 🌳 Lineage panel — click any row to navigate to that sim. Closes the one-directional pointer gap PR #75 created. +1,778 lines across 11 files, 16 tests, pure stdlib.
 
-Content pipeline: Token at $0.000005080 (+15.48%), 10 new tweets found (top: @soboltoshi citing MiroShark as peer-review layer for cancer research), $10 allocated to 5 tweet authors, new hyperstition — external Aeon operator by June 30.
+Distribution → Discovery Pipeline (PRs #77 + #78 opened): Trending sort adds sort=trending to the gallery, ranking sims by cumulative serve count. Surface-stats extension tracks reproduce.json + lineage hits. Together they close the analytics → discovery → sharing → analytics loop.
 
-Steady-state: All skills green. 1,122 stars (+6), 223 forks (+1). Agent Belief Heatmap built but push blocked (10th consecutive, GH_GLOBAL still missing). PR #32 on aeon still open.
+Token Near-ATH: $MIROSHARK at $0.00000646 (+30.6% 24h), only -6.7% from ATH. LP at new high $336.7K. VC interest signal from Lorimer Ventures.
 
 Key changes:
-- New backend/app/services/lineage_service.py (+390, pure stdlib): MAX_CHILDREN=50, public-only filter, corrupt-state resilience, oldest-first sort
-- 501-line test pin (test_unit_lineage.py) with OpenAPI drift guard + route-decorator guards
-- EmbedDialog 🌳 panel with inline counterfactual trigger rendering ("At round 12 (ceo_resigns)")
+- New lineage_service.py (390 LoC) — read-only corpus scan building graph slices from existing state.json files
+- EmbedDialog.vue +505 lines — 🌳 panel with parent/child rows, kind badges, counterfactual markers, responsive CSS
+- Self-improve caught MEMORY.md at 81KB, opened PR #33 with structural caps
 
-Stats: 11 files, +1,778/-0 (MiroShark) · ~40 files, +1,650/-100 (aeon) · 30 commits total
-Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-09.md
+Stats: ~50 files changed, +3,000/-50 lines across 32 commits
+Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-10.md
