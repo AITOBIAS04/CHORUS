@@ -1,0 +1,41 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Every Simulation Deserves a Citation Key",
+        "description": "New Article"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-main",
+        "story-link"
+      ]
+    },
+    "text-main": {
+      "type": "Text",
+      "props": {
+        "text": "CHI 2026 just workshopped whether LLM simulations belong in policy research. MiroShark shipped the answer: reproduce.json gives every simulation a stable citation hash, and the Lineage Navigator traces fork ancestry as a navigable graph. Reproducibility infrastructure, not features."
+      }
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-article-2026-05-10.md",
+        "source": "MiroShark"
+      }
+    }
+  }
+}
