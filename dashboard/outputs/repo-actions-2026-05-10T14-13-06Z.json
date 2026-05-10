@@ -1,0 +1,348 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "metadata",
+        "sep-before-actions",
+        "action-1-section",
+        "sep-1",
+        "action-2-section",
+        "sep-2",
+        "action-3-section",
+        "sep-3",
+        "action-4-section",
+        "sep-4",
+        "action-5-section",
+        "sep-after-actions",
+        "details-link"
+      ]
+    },
+    "metadata": {
+      "type": "Text",
+      "props": {
+        "text": "Generated 2026-05-10 from analysis of aaronjmars/MiroShark (1,126 stars · 224 forks · 2 open PRs)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep-before-actions": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action-1-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-title",
+        "action-1-badges",
+        "action-1-desc"
+      ]
+    },
+    "action-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Simulation Fork from Round",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-category",
+        "action-1-size"
+      ]
+    },
+    "action-1-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      },
+      "children": []
+    },
+    "action-1-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      },
+      "children": []
+    },
+    "action-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Fork a completed sim from a specific round — branch the shared history at round N, diverge it with a new event. Counterfactual branching that the Lineage Navigator (PR #76) reads automatically.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action-2-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-title",
+        "action-2-badges",
+        "action-2-desc"
+      ]
+    },
+    "action-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Agent Persona Library",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-category",
+        "action-2-size"
+      ]
+    },
+    "action-2-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Community"
+      },
+      "children": []
+    },
+    "action-2-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "action-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Save and reuse named agent configurations (archetype, platform, stance bias, backstory). Mix library personas with auto-generated agents. Community catalog of public personas — closes the agent-population reproducibility gap.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action-3-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-title",
+        "action-3-badges",
+        "action-3-desc"
+      ]
+    },
+    "action-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation A/B Comparison",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-category",
+        "action-3-size"
+      ]
+    },
+    "action-3-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      },
+      "children": []
+    },
+    "action-3-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "action-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Side-by-side view of two published simulations: synchronized dual belief drift charts, scorecard diff table (Δ per metric), overlay mode. First cross-simulation analysis surface that is not ancestry-constrained.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action-4-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-title",
+        "action-4-badges",
+        "action-4-desc"
+      ]
+    },
+    "action-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Narrative Evolution Tracker",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-category",
+        "action-4-size"
+      ]
+    },
+    "action-4-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration/Feature"
+      },
+      "children": []
+    },
+    "action-4-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      },
+      "children": []
+    },
+    "action-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Schedule a scenario config to re-run daily/weekly/monthly. Each run appends a data point to a time-series. Gallery shows a ⟳ Tracking badge with sparkline. Turns MiroShark from point-in-time to monitoring platform.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action-5-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-title",
+        "action-5-badges",
+        "action-5-desc"
+      ]
+    },
+    "action-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Gallery Creator Profiles",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-category",
+        "action-5-size"
+      ]
+    },
+    "action-5-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/Growth"
+      },
+      "children": []
+    },
+    "action-5-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      },
+      "children": []
+    },
+    "action-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Lightweight authorship layer: optional handle on publish, /creators/<handle> profile page, creator RSS feed (built on PR #60), creator:<handle> search operator in gallery. No account required.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-after-actions": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "details-link": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-actions-2026-05-10.md"
+      },
+      "children": []
+    }
+  }
+}
