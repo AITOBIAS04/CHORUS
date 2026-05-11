@@ -1,0 +1,199 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — Mon May 11"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stack_missing_skill",
+        "sep_1",
+        "stack_dispatch",
+        "sep_2",
+        "stack_pr",
+        "sep_3",
+        "stack_issues"
+      ]
+    },
+    "stack_missing_skill": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "alert_missing",
+        "text_scheduled",
+        "text_overdue",
+        "text_not_in_runlist"
+      ]
+    },
+    "alert_missing": {
+      "type": "Alert",
+      "props": {
+        "title": "Missing Skill",
+        "message": "weekly-shiplog",
+        "type": "warning"
+      }
+    },
+    "text_scheduled": {
+      "type": "Text",
+      "props": {
+        "text": "Scheduled: 09:00 UTC",
+        "variant": "body"
+      }
+    },
+    "text_overdue": {
+      "type": "Text",
+      "props": {
+        "text": "11h overdue",
+        "variant": "body"
+      }
+    },
+    "text_not_in_runlist": {
+      "type": "Text",
+      "props": {
+        "text": "Not in run list",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_dispatch": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_dispatch",
+        "badge_blocked",
+        "text_reason",
+        "text_manual_label",
+        "text_command"
+      ]
+    },
+    "heading_dispatch": {
+      "type": "Heading",
+      "props": {
+        "text": "Auto-dispatch Status",
+        "level": "h3"
+      }
+    },
+    "badge_blocked": {
+      "type": "Badge",
+      "props": {
+        "text": "Blocked",
+        "variant": "destructive"
+      }
+    },
+    "text_reason": {
+      "type": "Text",
+      "props": {
+        "text": "PAT lacks workflow scope (known limitation)",
+        "variant": "caption"
+      }
+    },
+    "text_manual_label": {
+      "type": "Text",
+      "props": {
+        "text": "Manual dispatch required:",
+        "variant": "body"
+      }
+    },
+    "text_command": {
+      "type": "Text",
+      "props": {
+        "text": "gh workflow run aeon.yml -f skill=weekly-shiplog",
+        "variant": "caption"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_pr": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink_pr",
+        "badge_pr_status",
+        "text_pr_note"
+      ]
+    },
+    "storylink_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "MiroShark PR #79: webhook HMAC verification",
+        "href": "https://github.com/miroshark-aeon/miroshark-aeon/pull/79",
+        "source": "MiroShark"
+      }
+    },
+    "badge_pr_status": {
+      "type": "Badge",
+      "props": {
+        "text": "Open",
+        "variant": "outline"
+      }
+    },
+    "text_pr_note": {
+      "type": "Text",
+      "props": {
+        "text": "9h — not stalled",
+        "variant": "caption"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_issues": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_issues",
+        "text_issues"
+      ]
+    },
+    "heading_issues": {
+      "type": "Heading",
+      "props": {
+        "text": "Issues",
+        "level": "h3"
+      }
+    },
+    "text_issues": {
+      "type": "Text",
+      "props": {
+        "text": "No urgent issues",
+        "variant": "body"
+      }
+    }
+  }
+}

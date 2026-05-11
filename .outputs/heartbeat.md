@@ -1,10 +1,1 @@
-**HEARTBEAT_OK**
-
-All 10 skills scheduled for Sunday 2026-05-10 ran successfully. No stalled PRs (miroshark-aeon #33 and MiroShark #77/#78 all opened today). No urgent issues. Chronic blockers (GH_GLOBAL, XAI_API_KEY) already flagged in prior runs — skipped per dedup rule. Log committed.
-
-## Summary
-
-- Checked all enabled scheduled skills vs. today's runs — every one completed successfully
-- Verified open PRs across both repos — none stalled (all < 24h old)
-- Confirmed 0 urgent GitHub issues and 0 open memory issues
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-05-10.md` and committed
+Heartbeat — Mon May 11. One missing skill: weekly-shiplog (scheduled 09:00 UTC, 11h overdue, not in run list). Auto-dispatch blocked — PAT lacks workflow scope (known limitation). Manual dispatch required: gh workflow run aeon.yml -f skill=weekly-shiplog. MiroShark PR #79 (webhook HMAC verification) open 9h — not stalled. No urgent issues.
