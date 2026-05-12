@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-05-10*
-Generated from analysis of aaronjmars/MiroShark (1,126 stars · 224 forks · 2 open PRs).
+*Repo Action Ideas — 2026-05-12*
+Generated from analysis of aaronjmars/MiroShark (1,136 stars · 226 forks · 0 open PRs — clear queue).
 
-1. Simulation Fork from Round (Feature, Medium)
-   Fork a completed sim from a specific round — branch the shared history at round N, diverge it with a new event. Counterfactual branching that the Lineage Navigator (PR #76) reads automatically.
+1. Interactive Simulation Replay Player (Feature, Small)
+   Browser-based pause/rewind/step player for completed simulations — embeddable iframe, round permalink, the 8th share surface.
 
-2. Agent Persona Library (Feature/Community, Small)
-   Save and reuse named agent configurations (archetype, platform, stance bias, backstory). Mix library personas with auto-generated agents. Community catalog of public personas — closes the agent-population reproducibility gap.
+2. Inbound Webhook — Launch Simulation via External Trigger (Integration, Small)
+   HMAC-authenticated POST endpoint lets n8n/Zapier/GitHub Actions start simulations programmatically — closes the automation loop that completion webhooks (PR #46/#79) opened.
 
-3. Simulation A/B Comparison (Feature, Small)
-   Side-by-side view of two published simulations: synchronized dual belief drift charts, scorecard diff table (Δ per metric), overlay mode. First cross-simulation analysis surface that is not ancestry-constrained.
+3. Agent Conversation Thread View (Feature, Small)
+   Renders simulation posts as a nested reply thread — shows cascade origin, stance-flip moments, and reply chains invisible in the aggregate drift chart or flat transcript.
 
-4. Narrative Evolution Tracker (Integration/Feature, Medium)
-   Schedule a scenario config to re-run daily/weekly/monthly. Each run appends a data point to a time-series. Gallery shows a ⟳ Tracking badge with sparkline. Turns MiroShark from point-in-time to monitoring platform.
+4. Multi-Model Race Mode (Feature, Medium)
+   Same scenario + same seed, two different LLM model presets run in parallel — produces a "scenario-robust / model-sensitive" verdict that answers the reproducibility critics' core objection.
 
-5. Gallery Creator Profiles (Community/Growth, Medium)
-   Lightweight authorship layer: optional handle on publish, /creators/<handle> profile page, creator RSS feed (built on PR #60), creator:<handle> search operator in gallery. No account required.
+5. Research Export Bundle — ZIP (DX, Small)
+   Single download: trajectory CSV, per-agent CSV, annotations, quality report, citation block, reproduce.json, Jupyter notebook, article — everything a reviewer needs, pre-assembled.
 
-Full details: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-actions-2026-05-10.md
+Full details: articles/repo-actions-2026-05-12.md

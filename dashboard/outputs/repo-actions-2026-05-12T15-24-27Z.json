@@ -1,0 +1,245 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas",
+        "description": "2026-05-12"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-repo-info",
+        "stack-stats",
+        "separator-1",
+        "action-1",
+        "action-2",
+        "action-3",
+        "action-4",
+        "action-5",
+        "separator-2",
+        "storylink-details"
+      ]
+    },
+    "text-repo-info": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark",
+        "variant": "muted"
+      }
+    },
+    "stack-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "stat-prs"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,136"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "226"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Open PRs",
+        "value": "0"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "action-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-action-1",
+        "badge-type-1",
+        "text-desc-1"
+      ]
+    },
+    "heading-action-1": {
+      "type": "Heading",
+      "props": {
+        "text": "Interactive Simulation Replay Player",
+        "level": "h3"
+      }
+    },
+    "badge-type-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "text-desc-1": {
+      "type": "Text",
+      "props": {
+        "text": "Browser-based pause/rewind/step player for completed simulations — embeddable iframe, round permalink, the 8th share surface."
+      }
+    },
+    "action-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-action-2",
+        "badge-type-2",
+        "text-desc-2"
+      ]
+    },
+    "heading-action-2": {
+      "type": "Heading",
+      "props": {
+        "text": "Inbound Webhook — Launch Simulation via External Trigger",
+        "level": "h3"
+      }
+    },
+    "badge-type-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration, Small"
+      }
+    },
+    "text-desc-2": {
+      "type": "Text",
+      "props": {
+        "text": "HMAC-authenticated POST endpoint lets n8n/Zapier/GitHub Actions start simulations programmatically — closes the automation loop that completion webhooks (PR #46/#79) opened."
+      }
+    },
+    "action-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-action-3",
+        "badge-type-3",
+        "text-desc-3"
+      ]
+    },
+    "heading-action-3": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Conversation Thread View",
+        "level": "h3"
+      }
+    },
+    "badge-type-3": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "text-desc-3": {
+      "type": "Text",
+      "props": {
+        "text": "Renders simulation posts as a nested reply thread — shows cascade origin, stance-flip moments, and reply chains invisible in the aggregate drift chart or flat transcript."
+      }
+    },
+    "action-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-action-4",
+        "badge-type-4",
+        "text-desc-4"
+      ]
+    },
+    "heading-action-4": {
+      "type": "Heading",
+      "props": {
+        "text": "Multi-Model Race Mode",
+        "level": "h3"
+      }
+    },
+    "badge-type-4": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Medium"
+      }
+    },
+    "text-desc-4": {
+      "type": "Text",
+      "props": {
+        "text": "Same scenario + same seed, two different LLM model presets run in parallel — produces a \"scenario-robust / model-sensitive\" verdict that answers the reproducibility critics' core objection."
+      }
+    },
+    "action-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-action-5",
+        "badge-type-5",
+        "text-desc-5"
+      ]
+    },
+    "heading-action-5": {
+      "type": "Heading",
+      "props": {
+        "text": "Research Export Bundle — ZIP",
+        "level": "h3"
+      }
+    },
+    "badge-type-5": {
+      "type": "Badge",
+      "props": {
+        "text": "DX, Small"
+      }
+    },
+    "text-desc-5": {
+      "type": "Text",
+      "props": {
+        "text": "Single download: trajectory CSV, per-agent CSV, annotations, quality report, citation block, reproduce.json, Jupyter notebook, article — everything a reviewer needs, pre-assembled."
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "storylink-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "articles/repo-actions-2026-05-12.md"
+      }
+    }
+  }
+}
