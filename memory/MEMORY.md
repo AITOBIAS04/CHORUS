@@ -21,6 +21,7 @@
 | 2026-05-06 | Nobody Told the Agents to Agree | Emergent social conventions in LLM populations; Science Advances May 2025; intelligence as a social process |
 | 2026-05-08 | AI's Reproducibility Crisis Isn't Technical. It's a Choice. | Contrarian take; NeurIPS MLRC 2026 official track; Thinking Machines Lab LLM non-determinism; 70% of AI researchers can't reproduce results |
 | 2026-05-10 | Every Simulation Deserves a Citation Key | Reproducibility infrastructure: reproduce.json (PR #75) + Lineage Navigator (PR #76) as citation primitives; CHI 2026 PoliSim + Stanford CORES context; 1,127 stars |
+| 2026-05-12 | Nine PRs in Seven Days: The Week MiroShark Built the Pipes | Distribution stack: 9 PRs (May 6–12) form flywheel — share surfaces → analytics → trending sort → webhooks → Jupyter export; 358% token move; FDV $1M; 1,137 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |
