@@ -1,18 +1,18 @@
-*Top Tweets — MIROSHARK crypto token on Base chain \& https://github.com/aaronjmars/MiroShark (2026-05-11)*
+*Top Tweets — MIROSHARK crypto token on Base chain \& MiroShark GitHub (2026-05-12)*
 
-XAI_API_KEY not available; results via WebSearch.
+_Note: XAI\_API\_KEY not set — results via WebSearch_
 
-1\. x\.com/aaronjmars — Playful jab at being forked by a github repo: "getting bullied by a github fork is crazy"
-[View tweet](https://x.com/aaronjmars/status/2046202572415943146)
+1. x.com/RoundtableSpace — 0xMarioNawfal amplifies MiroShark to his large audience: simulation framework that lets AI model how Reddit, X & Polymarket would react to any idea.
+[View tweet](https://x.com/RoundtableSpace/status/2036242843816305095)
 
-2\. x\.com/aaronjmars — Community growth call: MiroFish has 56k stars, MiroShark is easily 10x\. Sharing the GitHub repo to the right people = $miroshark rewards
-[View tweet](https://x.com/aaronjmars/status/2045134558186664267)
+2. x.com/github\_repo — GitHub Trending picks up MiroShark: "Multi-agent simulation engine — upload any document, generates hundreds of AI agents with unique personalities simulating public reaction on social media."
+[View tweet](https://x.com/github_repo/status/2043803689907786095)
 
-3\. x\.com/aaronjmars — "MiroShark Just Built the Simulation Engine That MiroFish Promised"
-[View tweet](https://x.com/aaronjmars/status/2037582921947574759)
+3. x.com/BioStone\_chad — Community spots low-cap: "$Miroshark \#Base 70k MC — upgraded swarm AI from mirofish, trades + uses fees for ads/burns/coordination. DEV just confirmed roadmap."
+[View tweet](https://x.com/BioStone_chad/status/2036824963689411046)
 
-4\. x\.com/aaronjmars — Polymarket integration via Wonderwall \(OASIS fork\): agents now trade on prediction markets alongside Twitter \& Reddit sims
-[View tweet](https://x.com/aaronjmars/status/2037281730315661407)
+4. x.com/BranaRakic — DKG V9 + MiroShark simulating the future together.
+[View tweet](https://x.com/BranaRakic/status/2036747635751633047)
 
-5\. x\.com/JMania402 — "$MIROSHARK 0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3 This one pump so hard 👀"
-[View tweet](https://x.com/JMania402/status/2036486940313493591)
+5. x.com/aaronjmars — Creator roadmap drop: both miroshark \& aeon tokenized via \@bankrbot; miroshark = universal swarm intelligence engine; aeon = framework that makes software autonomous \& alive on GitHub.
+[View tweet](https://x.com/aaronjmars/status/2036818584937095581)
