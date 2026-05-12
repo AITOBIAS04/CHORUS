@@ -1,17 +1,21 @@
-🔬 Feature Built: Simulation A/B Comparison View
+*Feature Built — 2026-05-12*
 
-Today's feature adds a full comparison mode to MiroShark — pick any two simulations and see exactly how they differ.
+Agent Persona Library
+MiroShark simulations now have a reusable persona library. Instead of generating a fresh agent population from scratch every time, researchers can save specific agent configurations — archetype, platform preference, initial belief stance, a 500-character backstory, and behavioral tags — and reuse them across different simulations. Think of it as a casting directory for your simulation agents: save an "ESG Investment Director" once, then drop them into any scenario alongside auto-generated agents.
 
-What's new:
+Why this matters:
+Until now, every MiroShark simulation generated its entire agent population procedurally from the scenario text. Two runs of the same scenario with different seeds produced different agent populations — which is stochastic by design but creates a reproducibility problem. A researcher who wants to test "how does this specific agent population respond to five different scenarios?" had no way to save and reuse an agent configuration. The Persona Library closes this gap. Combined with the Reproducibility Config Export (PR #75) which captures what was run, and Per-Agent Trajectory Export which captures individual-level data, the Persona Library captures who was run — the third leg of fully citable, reproducible simulation claims.
 
-Backend: The /compare endpoint now returns belief drift trajectories, quality diagnostics, scenario text, and a scorecard object with 4 metrics (participation rate, stance diversity, convergence round, cross-platform rate). Each metric shows values for both sims plus a delta, and the scorecard highlights which metric diverges most.
+What was built:
+- backend/app/services/persona_library.py: Pure stdlib CRUD service storing one JSON file per persona under uploads/persona_library/. Atomic writes via tempfile + os.replace. Path traversal protection. Search by keyword across label/archetype/backstory/tags. Filter by archetype, platform, stance. Sort by date or usage count. Fork (copy) any persona into a new entry. Fire-and-forget usage counter that increments each time a persona is included in a simulation.
+- backend/app/api/personas.py: 5 REST endpoints — GET /api/personas/list (with filters), GET /api/personas/<id>, POST /api/personas/create, DELETE /api/personas/<id>, POST /api/personas/<id>/fork. Full i18n error messages (EN/ZH). Blueprint registered at /api/personas.
+- frontend/src/components/PersonaLibrary.vue: Standalone panel integrated into the Step 2 Configure view. Create form with archetype dropdown (13 options from analyst to policymaker), platform selector, initial stance picker, backstory textarea with character counter, comma-separated tag input. Two-column browsable card grid with selection toggle (click to include in next simulation). Fork and delete actions on hover. Stance badges color-coded (green=YES, red=NO, amber=MIXED). Usage count display. Selection summary bar.
+- backend/tests/test_unit_persona_library.py: 22 offline unit tests covering CRUD, filtering, sorting, forking, usage tracking, input validation, backstory length capping, tag limits, stance weight clamping, and path traversal blocking.
 
-ComparisonView: Complete rewrite (~640 lines). Two display modes for belief drift — side-by-side (independent charts per sim) or overlay (shared axis, Sim A in orange, Sim B in green, bearish lines dashed). A scorecard table color-codes each metric by quality tier with a Δ column. Health badges, scenario cards, and a share button round it out.
+How it works:
+Each persona is stored as an individual JSON file (one per persona) in the uploads/persona_library/ directory — simple, inspectable, and git-friendly. The service uses atomic writes (tempfile.mkstemp + os.replace) so concurrent requests can't corrupt the file. The frontend PersonaLibrary panel loads inside the Step 2 Configure card, right below the auto-generated agent profiles. Users can create personas from scratch or fork existing ones, then click to select which personas should be pinned in the next simulation run. Selected personas occupy slots in the agent roster, reducing the auto-generated count by one per pinned persona. All 13 archetype options (analyst, influencer, retail, observer, institutional, academic, journalist, activist, trader, developer, executive, policymaker, custom) are bilingual (EN/ZH).
 
-Gallery Compare Mode: Hover any card in the gallery and a compare checkbox appears. Select two sims → a floating banner slides up from the bottom with a 'Compare selected →' button. Third click replaces the oldest selection.
+What's next:
+When GH_GLOBAL is set, this feature — along with 11 other completed features — will be pushed and PR'd. Future follow-ups: community persona catalog (public personas browsable across instances), persona import/export as JSON, and integration with the Reproducibility Config Export so shared configs include persona library references.
 
-Also: 9 unit tests for scorecard diff logic, OpenAPI spec updates, bilingual docs (EN + ZH), README update.
-
-8 files changed, 1,051 insertions. Branch: feat/ab-comparison-view.
-
-⚠️ Push blocked — GH_GLOBAL secret not set (day 11). PR could not be opened. 11 features now waiting as local commits.
+Status: code complete, push blocked (GH_GLOBAL not set — 12th consecutive block)

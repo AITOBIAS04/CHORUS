@@ -1,0 +1,442 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Persona Library"
+      },
+      "children": [
+        "metadata_stack",
+        "sep1",
+        "why_section",
+        "sep2",
+        "built_section",
+        "sep3",
+        "how_section",
+        "sep4",
+        "next_section",
+        "sep5",
+        "status_alert"
+      ]
+    },
+    "metadata_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "date_text",
+        "complete_badge"
+      ]
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "Feature Built — 2026-05-12",
+        "variant": "body"
+      }
+    },
+    "complete_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Code Complete",
+        "variant": "secondary"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "why_heading",
+        "why_para1",
+        "why_para2",
+        "why_para3"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why this matters",
+        "level": "h3"
+      }
+    },
+    "why_para1": {
+      "type": "Text",
+      "props": {
+        "text": "Until now, every MiroShark simulation generated its entire agent population procedurally from the scenario text. Two runs of the same scenario with different seeds produced different agent populations — which is stochastic by design but creates a reproducibility problem. A researcher who wants to test \"how does this specific agent population respond to five different scenarios?\" had no way to save and reuse an agent configuration. The Persona Library closes this gap.",
+        "variant": "body"
+      }
+    },
+    "why_para2": {
+      "type": "Text",
+      "props": {
+        "text": "Combined with the Reproducibility Config Export (PR #75) which captures what was run, and Per-Agent Trajectory Export which captures individual-level data, the Persona Library captures who was run — the third leg of fully citable, reproducible simulation claims.",
+        "variant": "body"
+      }
+    },
+    "why_para3": {
+      "type": "Text",
+      "props": {
+        "text": "Each persona stores: archetype, platform preference, initial belief stance, a 500-character backstory, and behavioral tags.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "built_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "built_heading",
+        "service_item",
+        "api_item",
+        "frontend_item",
+        "tests_item"
+      ]
+    },
+    "built_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What was built",
+        "level": "h3"
+      }
+    },
+    "service_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "service_title",
+        "service_desc"
+      ]
+    },
+    "service_title": {
+      "type": "Heading",
+      "props": {
+        "text": "backend/app/services/persona_library.py",
+        "level": "h4"
+      }
+    },
+    "service_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pure stdlib CRUD service storing one JSON file per persona under uploads/persona_library/. Atomic writes via tempfile + os.replace. Path traversal protection. Search by keyword across label/archetype/backstory/tags. Filter by archetype, platform, stance. Sort by date or usage count. Fork (copy) any persona into a new entry. Fire-and-forget usage counter that increments each time a persona is included in a simulation.",
+        "variant": "body"
+      }
+    },
+    "api_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "api_title",
+        "api_desc",
+        "endpoints_grid"
+      ]
+    },
+    "api_title": {
+      "type": "Heading",
+      "props": {
+        "text": "backend/app/api/personas.py",
+        "level": "h4"
+      }
+    },
+    "api_desc": {
+      "type": "Text",
+      "props": {
+        "text": "5 REST endpoints with full i18n error messages (EN/ZH). Blueprint registered at /api/personas.",
+        "variant": "body"
+      }
+    },
+    "endpoints_grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ep1",
+        "ep2",
+        "ep3",
+        "ep4",
+        "ep5"
+      ]
+    },
+    "ep1": {
+      "type": "Badge",
+      "props": {
+        "text": "GET /api/personas/list (with filters)",
+        "variant": "outline"
+      }
+    },
+    "ep2": {
+      "type": "Badge",
+      "props": {
+        "text": "GET /api/personas/<id>",
+        "variant": "outline"
+      }
+    },
+    "ep3": {
+      "type": "Badge",
+      "props": {
+        "text": "POST /api/personas/create",
+        "variant": "outline"
+      }
+    },
+    "ep4": {
+      "type": "Badge",
+      "props": {
+        "text": "DELETE /api/personas/<id>",
+        "variant": "outline"
+      }
+    },
+    "ep5": {
+      "type": "Badge",
+      "props": {
+        "text": "POST /api/personas/<id>/fork",
+        "variant": "outline"
+      }
+    },
+    "frontend_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "frontend_title",
+        "frontend_desc",
+        "frontend_features"
+      ]
+    },
+    "frontend_title": {
+      "type": "Heading",
+      "props": {
+        "text": "frontend/src/components/PersonaLibrary.vue",
+        "level": "h4"
+      }
+    },
+    "frontend_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Standalone panel integrated into the Step 2 Configure view.",
+        "variant": "body"
+      }
+    },
+    "frontend_features": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "feat1",
+        "feat2",
+        "feat3",
+        "feat4"
+      ]
+    },
+    "feat1": {
+      "type": "Text",
+      "props": {
+        "text": "Create form with archetype dropdown (13 options from analyst to policymaker)",
+        "variant": "caption"
+      }
+    },
+    "feat2": {
+      "type": "Text",
+      "props": {
+        "text": "Platform selector, initial stance picker, backstory textarea with character counter, comma-separated tag input",
+        "variant": "caption"
+      }
+    },
+    "feat3": {
+      "type": "Text",
+      "props": {
+        "text": "Two-column browsable card grid with selection toggle (click to include in next simulation). Fork and delete actions on hover.",
+        "variant": "caption"
+      }
+    },
+    "feat4": {
+      "type": "Text",
+      "props": {
+        "text": "Stance badges color-coded (green=YES, red=NO, amber=MIXED). Usage count display. Selection summary bar.",
+        "variant": "caption"
+      }
+    },
+    "tests_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tests_title",
+        "tests_desc"
+      ]
+    },
+    "tests_title": {
+      "type": "Heading",
+      "props": {
+        "text": "backend/tests/test_unit_persona_library.py",
+        "level": "h4"
+      }
+    },
+    "tests_desc": {
+      "type": "Text",
+      "props": {
+        "text": "22 offline unit tests covering CRUD, filtering, sorting, forking, usage tracking, input validation, backstory length capping, tag limits, stance weight clamping, and path traversal blocking.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "how_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "how_heading",
+        "how_para1",
+        "how_para2",
+        "how_para3"
+      ]
+    },
+    "how_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "How it works",
+        "level": "h3"
+      }
+    },
+    "how_para1": {
+      "type": "Text",
+      "props": {
+        "text": "Each persona is stored as an individual JSON file (one per persona) in the uploads/persona_library/ directory — simple, inspectable, and git-friendly. The service uses atomic writes (tempfile.mkstemp + os.replace) so concurrent requests can't corrupt the file.",
+        "variant": "body"
+      }
+    },
+    "how_para2": {
+      "type": "Text",
+      "props": {
+        "text": "The frontend PersonaLibrary panel loads inside the Step 2 Configure card, right below the auto-generated agent profiles. Users can create personas from scratch or fork existing ones, then click to select which personas should be pinned in the next simulation run.",
+        "variant": "body"
+      }
+    },
+    "how_para3": {
+      "type": "Text",
+      "props": {
+        "text": "Selected personas occupy slots in the agent roster, reducing the auto-generated count by one per pinned persona. All 13 archetype options (analyst, influencer, retail, observer, institutional, academic, journalist, activist, trader, developer, executive, policymaker, custom) are bilingual (EN/ZH).",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "next_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "next_heading",
+        "next_context",
+        "next_followups"
+      ]
+    },
+    "next_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What's next",
+        "level": "h3"
+      }
+    },
+    "next_context": {
+      "type": "Text",
+      "props": {
+        "text": "When GH_GLOBAL is set, this feature — along with 11 other completed features — will be pushed and PR'd. Future follow-ups:",
+        "variant": "body"
+      }
+    },
+    "next_followups": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "fu1",
+        "fu2",
+        "fu3"
+      ]
+    },
+    "fu1": {
+      "type": "Text",
+      "props": {
+        "text": "Community persona catalog (public personas browsable across instances)",
+        "variant": "caption"
+      }
+    },
+    "fu2": {
+      "type": "Text",
+      "props": {
+        "text": "Persona import/export as JSON",
+        "variant": "caption"
+      }
+    },
+    "fu3": {
+      "type": "Text",
+      "props": {
+        "text": "Integration with the Reproducibility Config Export so shared configs include persona library references",
+        "variant": "caption"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Status",
+        "message": "Code complete, push blocked (GH_GLOBAL not set — 12th consecutive block)",
+        "type": "warning"
+      }
+    }
+  }
+}
