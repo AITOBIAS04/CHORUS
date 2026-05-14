@@ -1,0 +1,44 @@
+{
+  "root": "card1",
+  "state": {},
+  "elements": {
+    "card1": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Nobody Indexes a Simulation"
+      },
+      "children": [
+        "stack1"
+      ]
+    },
+    "stack1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text1",
+        "sep1",
+        "link1"
+      ]
+    },
+    "text1": {
+      "type": "Text",
+      "props": {
+        "text": "Search engines crawl blog posts, product pages, recipes — but not simulations. MiroShark just shipped a sitemap (PR #82) and filtered RSS feeds (PR #81), making every public simulation crawlable by Google and subscribable in any feed reader. Combined with embed codes, social cards, citation keys, and Jupyter export, MiroShark is treating simulations as a web content type — addressable, permanent, discoverable."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link1": {
+      "type": "Link",
+      "props": {
+        "label": "Read article",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-article-2026-05-14.md"
+      }
+    }
+  }
+}
