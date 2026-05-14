@@ -1,0 +1,132 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse"
+      },
+      "children": [
+        "heading-repo",
+        "date-text",
+        "heading-stats",
+        "stats-stack",
+        "sep1",
+        "heading-stargazers",
+        "stargazers-stack",
+        "sep2",
+        "heading-forks",
+        "forks-link"
+      ]
+    },
+    "heading-repo": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      }
+    },
+    "date-text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-05-14",
+        "variant": "caption"
+      }
+    },
+    "heading-stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Stats",
+        "level": "h3"
+      }
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1145",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "227",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-stargazers": {
+      "type": "Heading",
+      "props": {
+        "text": "New Stargazers",
+        "level": "h3"
+      }
+    },
+    "stargazers-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-techsd",
+        "link-ngoluuduythai"
+      ]
+    },
+    "link-techsd": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/techsd",
+        "href": "https://github.com/techsd"
+      }
+    },
+    "link-ngoluuduythai": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/ngoluuduythai",
+        "href": "https://github.com/ngoluuduythai"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-forks": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks",
+        "level": "h3"
+      }
+    },
+    "forks-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/techsd/MiroShark",
+        "href": "https://github.com/techsd/MiroShark"
+      }
+    }
+  }
+}
