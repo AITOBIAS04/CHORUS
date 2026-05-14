@@ -1,7 +1,11 @@
-HEARTBEAT_OK. All 8 scheduled skills for today (Wed, DOM=13 odd) ran on time or are currently in_progress. No missing skills, no new issues. The 7 stalled PRs were already reported yesterday so they're skipped per the 48h dedup rule.
+⚠️ Heartbeat 2026-05-14: 2 skills missed their cron window.
 
-## Summary
-- Checked all enabled scheduled skills against today's run list — all accounted for.
-- `repo-actions` and `self-improve` not scheduled today (odd DOM, both use `*/2` even-day pattern).
-- No auto-dispatches needed, no notification sent.
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-05-13.md`.
+Missing (scheduled, not in today's run list):
+• token-report — due 06:00 UTC, now 20:20 UTC
+• fetch-tweets — due 06:30 UTC, now 20:20 UTC
+
+Auto-dispatch attempted but blocked (HTTP 403 — workflow_dispatch permissions). Manual dispatch needed:
+  gh workflow run aeon.yml -f skill=token-report
+  gh workflow run aeon.yml -f skill=fetch-tweets
+
+No new stalled PRs (PR #1–#7 deduped from prior heartbeat). No open issues. 1 failed repo-actions run earlier today auto-recovered on retry.

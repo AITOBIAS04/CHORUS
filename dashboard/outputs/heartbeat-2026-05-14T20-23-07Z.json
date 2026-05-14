@@ -1,0 +1,175 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-05-14"
+      },
+      "children": [
+        "alert-missed",
+        "sep1",
+        "section-missing",
+        "sep2",
+        "section-dispatch",
+        "sep3",
+        "section-status"
+      ]
+    },
+    "alert-missed": {
+      "type": "Alert",
+      "props": {
+        "message": "2 skills missed their cron window",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-missing": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-missing-header",
+        "stack-missing-items"
+      ]
+    },
+    "text-missing-header": {
+      "type": "Text",
+      "props": {
+        "text": "Missing (scheduled, not in today's run list):"
+      }
+    },
+    "stack-missing-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-token-report",
+        "item-fetch-tweets"
+      ]
+    },
+    "item-token-report": {
+      "type": "Text",
+      "props": {
+        "text": "• token-report — due 06:00 UTC, now 20:20 UTC"
+      }
+    },
+    "item-fetch-tweets": {
+      "type": "Text",
+      "props": {
+        "text": "• fetch-tweets — due 06:30 UTC, now 20:20 UTC"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-dispatch": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-dispatch-header",
+        "stack-commands"
+      ]
+    },
+    "text-dispatch-header": {
+      "type": "Text",
+      "props": {
+        "text": "Auto-dispatch attempted but blocked (HTTP 403 — workflow_dispatch permissions). Manual dispatch needed:"
+      }
+    },
+    "stack-commands": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "cmd-token-report",
+        "cmd-fetch-tweets"
+      ]
+    },
+    "cmd-token-report": {
+      "type": "Text",
+      "props": {
+        "text": "gh workflow run aeon.yml -f skill=token-report",
+        "variant": "caption"
+      }
+    },
+    "cmd-fetch-tweets": {
+      "type": "Text",
+      "props": {
+        "text": "gh workflow run aeon.yml -f skill=fetch-tweets",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-status-header",
+        "stack-status-items"
+      ]
+    },
+    "text-status-header": {
+      "type": "Text",
+      "props": {
+        "text": "Status:"
+      }
+    },
+    "stack-status-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "status-prs",
+        "status-issues",
+        "status-repo-actions"
+      ]
+    },
+    "status-prs": {
+      "type": "Text",
+      "props": {
+        "text": "No new stalled PRs (PR #1–#7 deduped from prior heartbeat)"
+      }
+    },
+    "status-issues": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues"
+      }
+    },
+    "status-repo-actions": {
+      "type": "Text",
+      "props": {
+        "text": "1 failed repo-actions run earlier today auto-recovered on retry"
+      }
+    }
+  }
+}
