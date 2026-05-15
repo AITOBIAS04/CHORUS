@@ -1,5 +1,5 @@
-*New Article: The Governance Coordinator Who Stopped Flying Blind*
+*New Article: Every Army Rehearses. Nobody Else Does.*
 
-DAO governance in 2026 is in crisis — Gnosis GIP-150 split the community over a $220M treasury raid, Jupiter froze all voting citing a "breakdown in trust," and voter participation has dropped 40% since 2024. This user story follows a governance coordinator who discovers that the missing step in every proposal checklist is rehearsal: simulating how the community will react before putting it on-chain. MiroShark runs that rehearsal for a dollar in ten minutes.
+The Prussian Kriegsspiel of 1824 became the first simulation tool adopted by a modern military — and 200 years later, war gaming still lives inside defense institutions with seven-figure budgets. MiroShark is the civilian version: same structural logic (umpires, fog of war, after-action reports), applied to narrative dynamics instead of troop movements, for a dollar instead of a defense contract. The GenWar Lab at Johns Hopkins just opened an AI wargaming facility. MiroShark already ships one you can run from a browser.
 
-Read: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/project-lens-2026-05-13.md
+Read: https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/project-lens-2026-05-15.md
