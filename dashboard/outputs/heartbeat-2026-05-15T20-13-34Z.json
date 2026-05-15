@@ -1,0 +1,184 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "HEARTBEAT 2026-05-15"
+      },
+      "children": [
+        "alert",
+        "separator1",
+        "missing-section",
+        "separator2",
+        "ok-section",
+        "separator3",
+        "stats-section",
+        "separator4",
+        "action-section"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "3 skills missing, auto-dispatch blocked (HTTP 403, GH_GLOBAL unset)."
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "missing-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "missing-heading",
+        "token-report",
+        "fetch-tweets",
+        "feature"
+      ]
+    },
+    "missing-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing",
+        "level": "h3"
+      }
+    },
+    "token-report": {
+      "type": "Text",
+      "props": {
+        "text": "• token-report (06:00 UTC — also missed May 14, persistent)"
+      }
+    },
+    "fetch-tweets": {
+      "type": "Text",
+      "props": {
+        "text": "• fetch-tweets (06:30 UTC — also missed May 14, persistent)"
+      }
+    },
+    "feature": {
+      "type": "Text",
+      "props": {
+        "text": "• feature (11:00 UTC — new today)"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "ok-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ok-heading",
+        "ok-items"
+      ]
+    },
+    "ok-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Ran OK",
+        "level": "h3"
+      }
+    },
+    "ok-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo-pulse-badge",
+        "push-recap-badge",
+        "project-lens-badge"
+      ]
+    },
+    "repo-pulse-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✓",
+        "variant": "default"
+      }
+    },
+    "push-recap-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓",
+        "variant": "default"
+      }
+    },
+    "project-lens-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens ✓",
+        "variant": "default"
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-prs",
+        "stat-issues"
+      ]
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Open PRs",
+        "value": "0"
+      }
+    },
+    "stat-issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Urgent issues",
+        "value": "0"
+      }
+    },
+    "separator4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "action-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-heading",
+        "action-text"
+      ]
+    },
+    "action-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Action needed",
+        "level": "h3"
+      }
+    },
+    "action-text": {
+      "type": "Text",
+      "props": {
+        "text": "set GH_GLOBAL secret to unblock dispatch + unblock 14 built PRs"
+      }
+    }
+  }
+}
