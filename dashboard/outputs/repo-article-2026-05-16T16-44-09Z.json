@@ -1,0 +1,48 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: The Simulation That Outlives Its Server"
+      },
+      "children": [
+        "content_stack"
+      ]
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "text_description",
+        "link_article"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Stars",
+        "value": "1,164"
+      }
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark just shipped OriginTrail DKG citation — simulation provenance now anchors to a decentralized knowledge graph as a cryptographically verifiable Knowledge Asset. With the EU AI Act logging deadline 77 days away, this is a working prototype of the infrastructure regulated AI operators are scrambling to build.",
+        "variant": "body"
+      }
+    },
+    "link_article": {
+      "type": "Link",
+      "props": {
+        "label": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-article-2026-05-16.md"
+      }
+    }
+  }
+}

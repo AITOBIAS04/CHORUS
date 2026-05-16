@@ -1,5 +1,5 @@
-*New Article: Nobody Indexes a Simulation*
+*New Article: The Simulation That Outlives Its Server*
 
-Search engines crawl blog posts, product pages, recipes — but not simulations. MiroShark just shipped a sitemap (PR #82) and filtered RSS feeds (PR #81), making every public simulation crawlable by Google and subscribable in any feed reader. Combined with embed codes, social cards, citation keys, and Jupyter export, MiroShark is treating simulations as a web content type — addressable, permanent, discoverable.
+MiroShark (1,164 stars) just shipped OriginTrail DKG citation — simulation provenance now anchors to a decentralized knowledge graph as a cryptographically verifiable Knowledge Asset. With the EU AI Act logging deadline 77 days away, this is a working prototype of the infrastructure regulated AI operators are scrambling to build.
 
-Read: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-article-2026-05-14.md
+Read: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/repo-article-2026-05-16.md
