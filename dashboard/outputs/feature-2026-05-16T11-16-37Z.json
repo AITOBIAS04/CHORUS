@@ -1,0 +1,161 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Coalition Detection in Interaction Network",
+        "description": "Feature Built — 2026-05-16"
+      },
+      "children": [
+        "intro_text",
+        "sep1",
+        "why_heading",
+        "why_text",
+        "sep2",
+        "built_heading",
+        "built_stack",
+        "sep3",
+        "how_heading",
+        "how_text",
+        "sep4",
+        "next_heading",
+        "next_text",
+        "sep5",
+        "warning_alert"
+      ]
+    },
+    "intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark simulations now reveal the hidden social structure behind consensus. Instead of just seeing \"74% voted YES,\" you can now see exactly which agents clustered into self-reinforcing coalitions, how tightly each group was connected, and whether the outcome was driven by genuine cross-group persuasion or a single dominant echo chamber."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why this matters",
+        "level": "h2"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "The Interaction Network tab already showed who influenced whom — a wiring diagram. But wiring diagrams don't tell you the meso-level story: did a 7-agent bullish bloc absorb neutrals over time, or did two opposing coalitions of 5 and 4 agents compete for 6 undecided agents in the middle? These are categorically different consensus formation stories, and until now MiroShark couldn't distinguish them. This was the #1 idea from yesterday's repo-actions analysis — the highest-impact analytical upgrade that transforms the network view from decorative into a standalone research tool."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "built_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What was built",
+        "level": "h2"
+      }
+    },
+    "built_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "built_item1",
+        "built_item2",
+        "built_item3",
+        "built_item4",
+        "built_item5",
+        "built_item6"
+      ]
+    },
+    "built_item1": {
+      "type": "Text",
+      "props": {
+        "text": "backend/app/api/simulation.py: GET /coalitions endpoint with greedy modularity-maximization algorithm (pure Python stdlib, zero new deps). Builds weighted adjacency from interaction edges, iteratively merges community pairs that maximize modularity Q, labels each coalition by dominant stance + primary archetype + top influencer, computes cohesion scores. Cached in coalitions.json."
+      }
+    },
+    "built_item2": {
+      "type": "Text",
+      "props": {
+        "text": "frontend/src/components/InteractionNetwork.vue: Coalition background ellipses (translucent SVG) behind agent node clusters; color-coded legend chips with click-to-highlight (dims non-coalition agents to 20% opacity); coalition detail cards panel showing stance badge, agent count, primary influencer, and cohesion progress bar; orange echo chamber warning banner when one coalition controls >80% of influence edges."
+      }
+    },
+    "built_item3": {
+      "type": "Text",
+      "props": {
+        "text": "frontend/src/api/simulation.js: getCoalitions() API function"
+      }
+    },
+    "built_item4": {
+      "type": "Text",
+      "props": {
+        "text": "backend/openapi.yaml: /coalitions endpoint documented under Analytics tag"
+      }
+    },
+    "built_item5": {
+      "type": "Text",
+      "props": {
+        "text": "backend/tests/test_unit_coalitions.py: 11 unit tests covering two-cluster detection, echo chamber flag, determinism, cohesion bounds, archetype enrichment, route + spec presence"
+      }
+    },
+    "built_item6": {
+      "type": "Text",
+      "props": {
+        "text": "docs/FEATURES.md + FEATURES.zh-CN.md: Coalition Detection section with metric interpretation guide"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "how_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "How it works",
+        "level": "h2"
+      }
+    },
+    "how_text": {
+      "type": "Text",
+      "props": {
+        "text": "The algorithm starts each agent in its own community, then repeatedly merges the pair whose merge yields the largest modularity gain (greedy Louvain-style). It stops when no merge improves Q by more than 0.001. Each resulting coalition gets a dominant stance (most common final stance among members), primary archetype (from profiles.json), primary influencer (highest influence_score), and cohesion score (ratio of intra-cluster edges to all edges touching the cluster, 0-1). The echo_chamber_flag fires when any single coalition accounts for >80% of total influence edges. In the frontend, coalition ellipses are computed from the convex hull of member node positions with 25px padding. Click a coalition chip to isolate it visually — all other nodes and edges dim to near-transparent."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "next_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What's next",
+        "level": "h2"
+      }
+    },
+    "next_text": {
+      "type": "Text",
+      "props": {
+        "text": "Could add per-round coalition evolution tracking (how coalitions form and dissolve over time), or inject coalition metadata into the article generator for richer narratives (\"Two distinct coalitions formed by round 4...\")."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "warning_alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Push blocked",
+        "message": "GH_GLOBAL secret not set. Branch feat/coalition-detection ready locally (15th consecutive block)."
+      }
+    }
+  }
+}

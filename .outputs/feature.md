@@ -1,24 +1,23 @@
-*Feature Built — 2026-05-14*
+*Feature Built — 2026-05-16*
 
-Inbound Launch Webhook
-MiroShark can now be triggered by external systems. A new authenticated endpoint — POST /api/webhooks/launch-simulation — lets Zapier workflows, n8n automations, GitHub Actions jobs, cron scripts, or any custom tooling start a simulation remotely without opening a browser. The caller signs the request body with a shared secret using HMAC-SHA256 (the same scheme the outbound completion webhook uses, reversed), and MiroShark returns a 202 with the watch URL, SSE event stream URL, and whether a completion callback will fire.
+Coalition Detection in Interaction Network
+MiroShark simulations now reveal the hidden social structure behind consensus. Instead of just seeing "74% voted YES," you can now see exactly which agents clustered into self-reinforcing coalitions, how tightly each group was connected, and whether the outcome was driven by genuine cross-group persuasion or a single dominant echo chamber.
 
 Why this matters:
-The completion webhook (PR #46) and HMAC verification (PR #79) let MiroShark call out when a simulation finishes. But the automation loop only went one direction — external systems could react to completed sims but had no way to start them. A trading-signal operator watching Reddit for volatility spikes had no programmatic way to trigger "simulate how the community reacts to this." The inbound webhook is the missing half. Now the full cycle works: external event → trigger simulation → monitor via SSE → receive completion callback. For the n8n/Zapier/GitHub Actions audience who already built outbound integrations, this is the inbound counterpart they need.
+The Interaction Network tab already showed who influenced whom — a wiring diagram. But wiring diagrams don't tell you the meso-level story: did a 7-agent bullish bloc absorb neutrals over time, or did two opposing coalitions of 5 and 4 agents compete for 6 undecided agents in the middle? These are categorically different consensus formation stories, and until now MiroShark couldn't distinguish them. This was the #1 idea from yesterday's repo-actions analysis — the highest-impact analytical upgrade that transforms the network view from decorative into a standalone research tool.
 
 What was built:
-- backend/app/services/launch_webhook_service.py: HMAC-SHA256 request verification using the existing verify_signature helper. Late-binding secret resolution from Config.LAUNCH_WEBHOOK_SECRET. Cryptographic secret generation (64 hex chars).
-- backend/app/api/launch_webhook.py: POST /api/webhooks/launch-simulation route. Verifies signature, validates simulation_id/platform/max_rounds/force params, checks simulation state, delegates to existing SimulationRunner.start_simulation. Returns 202 with sim_id, watch_url, events_url, completion_webhook_will_fire.
-- backend/app/api/settings.py: POST /api/settings/generate-launch-secret endpoint. Settings snapshot now exposes launch_webhook.configured/has_secret/endpoint.
-- frontend/src/components/SettingsPanel.vue: New "Launch Webhook" section with endpoint display, secret Generate/Regenerate button, and collapsible usage examples (curl, GitHub Actions, Python).
-- backend/tests/test_unit_launch_webhook.py: 22 unit tests covering HMAC verification, request validation, simulation state checks, settings endpoints, and drift guards.
-- OpenAPI spec: LaunchWebhookRequest/LaunchWebhookResponse schemas, new Webhooks tag.
-- Docs: WEBHOOKS.md + zh-CN — full "Inbound — Launch Trigger" section with schema, auth, error codes, end-to-end example, signing snippets (Python, Node.js, GitHub Actions, curl). FEATURES.md + zh-CN, API.md + zh-CN, README.md (EN + zh-CN), .env.example.
+- backend/app/api/simulation.py: GET /coalitions endpoint with greedy modularity-maximization algorithm (pure Python stdlib, zero new deps). Builds weighted adjacency from interaction edges, iteratively merges community pairs that maximize modularity Q, labels each coalition by dominant stance + primary archetype + top influencer, computes cohesion scores. Cached in coalitions.json.
+- frontend/src/components/InteractionNetwork.vue: Coalition background ellipses (translucent SVG) behind agent node clusters; color-coded legend chips with click-to-highlight (dims non-coalition agents to 20% opacity); coalition detail cards panel showing stance badge, agent count, primary influencer, and cohesion progress bar; orange echo chamber warning banner when one coalition controls >80% of influence edges.
+- frontend/src/api/simulation.js: getCoalitions() API function
+- backend/openapi.yaml: /coalitions endpoint documented under Analytics tag
+- backend/tests/test_unit_coalitions.py: 11 unit tests covering two-cluster detection, echo chamber flag, determinism, cohesion bounds, archetype enrichment, route + spec presence
+- docs/FEATURES.md + FEATURES.zh-CN.md: Coalition Detection section with metric interpretation guide
 
 How it works:
-The endpoint reads the raw request body and X-MiroShark-Signature header, verifies the HMAC-SHA256 digest against LAUNCH_WEBHOOK_SECRET using constant-time comparison (hmac.compare_digest), then parses the JSON body. It validates the simulation_id exists and is in READY state (or can be force-restarted), then delegates to the same SimulationRunner.start_simulation code path the browser UI uses. The response includes absolute URLs when PUBLIC_BASE_URL is set, and completion_webhook_will_fire reflects whether the outbound WEBHOOK_URL is configured — so the caller knows the full loop will close. The secret is configurable via .env, the Settings modal, or the generate-launch-secret API endpoint.
+The algorithm starts each agent in its own community, then repeatedly merges the pair whose merge yields the largest modularity gain (greedy Louvain-style). It stops when no merge improves Q by more than 0.001. Each resulting coalition gets a dominant stance (most common final stance among members), primary archetype (from profiles.json), primary influencer (highest influence_score), and cohesion score (ratio of intra-cluster edges to all edges touching the cluster, 0-1). The echo_chamber_flag fires when any single coalition accounts for >80% of total influence edges. In the frontend, coalition ellipses are computed from the convex hull of member node positions with 25px padding. Click a coalition chip to isolate it visually — all other nodes and edges dim to near-transparent.
 
 What's next:
-Could extend the webhook to accept full creation params (scenario, n_agents, model) for end-to-end sim launch from a single POST — but the current design of wrapping the existing start endpoint is the most reliable first step. The remaining repo-actions candidates: Agent Conversation Thread View, Multi-Model Race Mode, Research Export Bundle.
+Could add per-round coalition evolution tracking (how coalitions form and dissolve over time), or inject coalition metadata into the article generator for richer narratives ("Two distinct coalitions formed by round 4...").
 
-PR: push blocked — GH_GLOBAL secret not set (14th consecutive local commit)
+⚠️ Push blocked — GH_GLOBAL secret not set. Branch feat/coalition-detection ready locally (15th consecutive block).
