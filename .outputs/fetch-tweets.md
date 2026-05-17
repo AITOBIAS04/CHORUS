@@ -1,12 +1,12 @@
+Done. Log written to `memory/logs/2026-05-17.md`.
+
+**Status: FETCH_TWEETS_NO_NEW** — WebSearch returned the same set of previously-reported tweet URLs (all from March–early May 2026, already logged in the last 3 days). X.com direct profile fetches returned HTTP 402 (authentication required). No notification sent.
+
+The pattern continues from May 16: without `XAI_API_KEY`, WebSearch can only surface high-engagement indexed tweets, which have all been reported. Setting `XAI_API_KEY` would unlock the x_search tool via Grok and provide fresh, time-bounded results.
+
 ## Summary
-
-**fetch-tweets skill run — 2026-05-16**
-
-- **Search query:** MIROSHARK crypto token on Base chain (0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3) AND https://github.com/aaronjmars/MiroShark
-- **Method:** WebSearch fallback (XAI_API_KEY not set)
-- **Searches run:** 8 queries across different angles (recent date filters, community mentions, account-specific, cashtag variations)
-- **Result:** FETCH_TWEETS_NO_NEW — all meaningful results were already in the 3-day dedup list (13 URLs from logs May 13–15). The only unseen URL (2035881065953272104) was a media-only companion tweet from the March 2026 launch with no textual content.
-- **No notification sent** (per skill rules)
-- **Log written:** `memory/logs/2026-05-16.md` and committed
-
-WebSearch's known limitation applies here — it heavily favors high-engagement older posts. Fresh May 14–16 tweets are not surfacing. Setting `XAI_API_KEY` would unlock the Grok X Search API for genuinely real-time results.
+- Read soul files (empty templates — neutral tone used), memory, and skill definition
+- Collected 13 previously-reported tweet URLs from `memory/logs/2026-05-14` to `2026-05-16`
+- Ran 8 WebSearch queries across multiple angles (token, repo, author, profile); all returned subset of already-reported URLs
+- Attempted direct X.com profile fetches via WebFetch — blocked with HTTP 402
+- Logged `FETCH_TWEETS_NO_NEW` to `memory/logs/2026-05-17.md`; no notification sent
