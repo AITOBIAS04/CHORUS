@@ -1,0 +1,317 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-05-17"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section-overview",
+        "sep-1",
+        "section-pr87",
+        "sep-2",
+        "section-token",
+        "sep-3",
+        "section-social",
+        "sep-4",
+        "section-changes",
+        "sep-5",
+        "section-stats",
+        "sep-6",
+        "link-recap"
+      ]
+    },
+    "section-overview": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-overview",
+        "text-overview"
+      ]
+    },
+    "heading-overview": {
+      "type": "Heading",
+      "props": {
+        "text": "Project Overview",
+        "level": "h2"
+      }
+    },
+    "text-overview": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 0 merges, 1 PR opened / miroshark-aeon — 35 commits (10 skill runs)"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-pr87": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-pr87",
+        "text-pr87-desc",
+        "badge-pr87-streak",
+        "text-pr87-details"
+      ]
+    },
+    "heading-pr87": {
+      "type": "Heading",
+      "props": {
+        "text": "Notification Stack Complete: PR #87",
+        "level": "h2"
+      }
+    },
+    "text-pr87-desc": {
+      "type": "Text",
+      "props": {
+        "text": "PR #87 (open) adds SMTP email as the 4th completion-notification channel. Pure stdlib (smtplib + email.mime), multipart/alternative emails with subject-line triage format [MiroShark] <Direction>: <Scenario>."
+      }
+    },
+    "badge-pr87-streak": {
+      "type": "Badge",
+      "props": {
+        "text": "24th consecutive zero-dependency PR",
+        "variant": "secondary"
+      }
+    },
+    "text-pr87-details": {
+      "type": "Text",
+      "props": {
+        "text": "email_notify.py (+796 LoC), STARTTLS security, boolean-only config endpoint, 20 unit tests, bilingual docs"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-token": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-token",
+        "text-token-intro",
+        "stat-price",
+        "stat-fdv",
+        "stat-lp",
+        "stat-buy-ratio",
+        "stat-30day",
+        "text-token-volume"
+      ]
+    },
+    "heading-token": {
+      "type": "Heading",
+      "props": {
+        "text": "Third Consecutive ATH: Token Metrics",
+        "level": "h2"
+      }
+    },
+    "text-token-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Token hit $0.0000225 today, +38.7% above yesterday's ATH ($0.0000162). FDV crossed $2M for the first time. LP deepened to ATH. Buy ratio 1.50× — buyers absorbing all selling at ATH levels."
+      }
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Token Price",
+        "value": "$0.00002223",
+        "delta": "+58.35% 24h",
+        "trend": "up"
+      }
+    },
+    "stat-fdv": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV (crossed $2M)",
+        "value": "$2.22M"
+      }
+    },
+    "stat-lp": {
+      "type": "Stat",
+      "props": {
+        "label": "LP (ATH)",
+        "value": "$792K"
+      }
+    },
+    "stat-buy-ratio": {
+      "type": "Stat",
+      "props": {
+        "label": "Buy Ratio",
+        "value": "1.50×"
+      }
+    },
+    "stat-30day": {
+      "type": "Stat",
+      "props": {
+        "label": "30-day Return",
+        "value": "+1,328%",
+        "trend": "up"
+      }
+    },
+    "text-token-volume": {
+      "type": "Text",
+      "props": {
+        "text": "Volume: $448K"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-social": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-social",
+        "text-social-jp",
+        "text-social-framing",
+        "text-social-rewards"
+      ]
+    },
+    "heading-social": {
+      "type": "Heading",
+      "props": {
+        "text": "Social Expansion",
+        "level": "h2"
+      }
+    },
+    "text-social-jp": {
+      "type": "Text",
+      "props": {
+        "text": "First Japanese-language coverage from @m000_crypto — \"Universal Swarm Intelligence Engine\" breakdown."
+      }
+    },
+    "text-social-framing": {
+      "type": "Text",
+      "props": {
+        "text": "@100xDarren (56L) and @0xmikedee (45L) framing $AEON + $MIROSHARK as a paired play."
+      }
+    },
+    "text-social-rewards": {
+      "type": "Text",
+      "props": {
+        "text": "$10 in tweet rewards distributed to 5 authors."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-changes",
+        "text-changes-pr87",
+        "text-changes-token",
+        "text-changes-content"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "text-changes-pr87": {
+      "type": "Text",
+      "props": {
+        "text": "PR #87: email_notify.py (+796 LoC), STARTTLS security, boolean-only config endpoint, 20 unit tests, bilingual docs"
+      }
+    },
+    "text-changes-token": {
+      "type": "Text",
+      "props": {
+        "text": "Token report: $0.00002223 (+58.35% 24h), $448K volume, $792K LP — all ATH-area readings"
+      }
+    },
+    "text-changes-content": {
+      "type": "Text",
+      "props": {
+        "text": "Content: \"In the Year of Slopsquatting\" article (project-lens), \"The Simulation That Outlives Its Server\" (repo-article), Trajectory SVG thread draft"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-stats",
+        "text-stats"
+      ]
+    },
+    "heading-stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Stats",
+        "level": "h2"
+      }
+    },
+    "text-stats": {
+      "type": "Text",
+      "props": {
+        "text": "~55 files changed, +3,960/-180 lines across 36 commits"
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-recap": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-17.md"
+      }
+    }
+  }
+}

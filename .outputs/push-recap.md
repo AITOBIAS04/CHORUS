@@ -1,22 +1,16 @@
-*Push Recap — 2026-05-16*
-48 commits across 2 repos by 2 authors
+*Push Recap — 2026-05-17*
+MiroShark — 0 merges, 1 PR opened / miroshark-aeon — 35 commits (10 skill runs)
 
-*aaronjmars/MiroShark* — 3 commits by @aaronjmars
+Notification stack complete: PR #87 (open) adds SMTP email as the 4th completion-notification channel. Pure stdlib (smtplib + email.mime), multipart/alternative emails with subject-line triage format [MiroShark] <Direction>: <Scenario>. 24th consecutive zero-dependency PR in the #57–#87 streak.
 
-On-Chain Provenance (PR #84): Simulations can now be anchored to the OriginTrail Decentralized Knowledge Graph as permanent Knowledge Assets. One click in the share dialog hashes reproduce.json, walks the DKG daemon pipeline, and returns a UAL + Merkle root + tx hash — a tamper-proof citation that survives the host going away. Stdlib only, env-gated, idempotent.
+Third consecutive ATH: Token hit $0.0000225 today, +38.7% above yesterday's ATH ($0.0000162). FDV crossed $2M for the first time ($2.22M). LP deepened to $792K ATH. Buy ratio 1.50× — buyers absorbing all selling at ATH levels. 30-day return now +1,328%.
 
-Discord + Slack Notifications (PR #83): Completion events now fire channel-native rich notifications — Discord embeds with consensus-coloured borders and belief fields, Slack Block Kit messages with mrkdwn belief bars and action buttons. Both opt-in, independent, deduped. 57 tests, zero new deps (23rd consecutive).
-
-Model Swap (PR #86): xAI deprecated grok-4.1-fast (404 on every call). Swapped Smart, NER, and WEB_SEARCH slots to google/gemini-3-flash-preview. Verified end-to-end: ontology ~11s, graph 22 entities, web enrichment working.
-
-*aaronjmars/miroshark-aeon* — 45 commits by aeonframework
-
-Aeon ran 12 skills autonomously: built Coalition Detection feature for MiroShark (blocked by GH_GLOBAL — 16th consecutive), fixed monitoring data quality via self-improve PR #9, generated token report (new ATH $0.0000162, LP ATH $574.8K), allocated $9.99 to 3 tweet authors, produced 5 feature ideas, filed "LP $1M by July" hyperstition.
+Social expansion: First Japanese-language coverage from @m000_crypto — "Universal Swarm Intelligence Engine" breakdown. @100xDarren (56L) and @0xmikedee (45L) framing $AEON + $MIROSHARK as a paired play. $10 in tweet rewards distributed to 5 authors.
 
 Key changes:
-- DKG publisher: 709-line stdlib service + 2 API routes + EmbedDialog citation card (+1,988 lines)
-- Discord/Slack notifiers: 873 lines of channel-native formatters + 57 tests + config probe endpoint (+2,269 lines)
-- Cloud preset restored after xAI deprecation — Gemini 3 Flash replaces Grok-4.1 across 13 files
+- PR #87: email_notify.py (+796 LoC), STARTTLS security, boolean-only config endpoint, 20 unit tests, bilingual docs
+- Token report: $0.00002223 (+58.35% 24h), $448K volume, $792K LP — all ATH-area readings
+- Content: "In the Year of Slopsquatting" article (project-lens), "The Simulation That Outlives Its Server" (repo-article), Trajectory SVG thread draft
 
-Stats: ~75 files changed, +6,400/-250 lines
-Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-16.md
+Stats: ~55 files changed, +3,960/-180 lines across 36 commits
+Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-17.md
