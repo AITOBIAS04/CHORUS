@@ -1,0 +1,159 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-05-17"
+      },
+      "children": [
+        "heading-status",
+        "separator-1",
+        "stack-skills",
+        "separator-2",
+        "stack-status"
+      ]
+    },
+    "heading-status": {
+      "type": "Heading",
+      "props": {
+        "text": "All 7 scheduled skills completed",
+        "level": "h2"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack-skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-skills-label",
+        "grid-skills"
+      ]
+    },
+    "text-skills-label": {
+      "type": "Text",
+      "props": {
+        "text": "Completed skills:",
+        "variant": "body"
+      }
+    },
+    "grid-skills": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "sm"
+      },
+      "children": [
+        "badge-token-report",
+        "badge-fetch-tweets",
+        "badge-repo-pulse",
+        "badge-feature",
+        "badge-push-recap",
+        "badge-skill-leaderboard",
+        "badge-memory-flush"
+      ]
+    },
+    "badge-token-report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "default"
+      }
+    },
+    "badge-fetch-tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "default"
+      }
+    },
+    "badge-repo-pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "default"
+      }
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "default"
+      }
+    },
+    "badge-push-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "default"
+      }
+    },
+    "badge-skill-leaderboard": {
+      "type": "Badge",
+      "props": {
+        "text": "skill-leaderboard",
+        "variant": "default"
+      }
+    },
+    "badge-memory-flush": {
+      "type": "Badge",
+      "props": {
+        "text": "memory-flush",
+        "variant": "default"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-no-missing",
+        "alert-stalled-pr",
+        "text-existing-prs",
+        "text-final-note"
+      ]
+    },
+    "text-no-missing": {
+      "type": "Text",
+      "props": {
+        "text": "No missing runs.",
+        "variant": "body"
+      }
+    },
+    "alert-stalled-pr": {
+      "type": "Alert",
+      "props": {
+        "title": "New stalled PR",
+        "message": "#9 improve: fix agent monitoring data quality (~29h, created May 16)",
+        "type": "warning"
+      }
+    },
+    "text-existing-prs": {
+      "type": "Text",
+      "props": {
+        "text": "PRs #1–#8 remain open (reported previously).",
+        "variant": "body"
+      }
+    },
+    "text-final-note": {
+      "type": "Text",
+      "props": {
+        "text": "No auto-trigger needed — no missing skills.",
+        "variant": "muted"
+      }
+    }
+  }
+}
