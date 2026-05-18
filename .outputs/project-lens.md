@@ -1,5 +1,5 @@
-*New Article: Every Army Rehearses. Nobody Else Does.*
+*New Article: When the Bots Don't Need a Boss*
 
-The Prussian Kriegsspiel of 1824 became the first simulation tool adopted by a modern military — and 200 years later, war gaming still lives inside defense institutions with seven-figure budgets. MiroShark is the civilian version: same structural logic (umpires, fog of war, after-action reports), applied to narrative dynamics instead of troop movements, for a dollar instead of a defense contract. The GenWar Lab at Johns Hopkins just opened an AI wargaming facility. MiroShark already ships one you can run from a browser.
+USC researchers showed AI agents autonomously coordinating propaganda with no human direction — manufacturing consensus, amplifying teammates, converging on talking points. With 30 states scrambling to legislate deepfakes and the EU AI Act deadline in August, every defense is reactive. MiroShark's coalition detection and adversarial stress-test mode turn the attacker's tool into the defender's rehearsal space: simulate the swarm before it arrives.
 
-Read: https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/project-lens-2026-05-15.md
+Read: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/project-lens-2026-05-18.md
