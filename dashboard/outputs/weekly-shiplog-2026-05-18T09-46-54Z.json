@@ -1,0 +1,181 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-05-18"
+      },
+      "children": [
+        "intro",
+        "sep1",
+        "shipped-heading",
+        "shipped-stack",
+        "sep2",
+        "stats-heading",
+        "stats-grid",
+        "sep3",
+        "link"
+      ]
+    },
+    "intro": {
+      "type": "Text",
+      "props": {
+        "text": "The week MiroShark completed the loop: nine PRs landed, four notification channels shipped, and simulations became cryptographically permanent.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "shipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      }
+    },
+    "shipped-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ship-1",
+        "ship-2",
+        "ship-3",
+        "ship-4",
+        "ship-5"
+      ]
+    },
+    "ship-1": {
+      "type": "Text",
+      "props": {
+        "text": "Notification quadrant complete — Discord rich embeds, Slack Block Kit, SMTP emails join the existing webhook (PRs #83, #87)"
+      }
+    },
+    "ship-2": {
+      "type": "Text",
+      "props": {
+        "text": "OriginTrail DKG citation — tamper-proof on-chain provenance for finished simulations (PR #84)"
+      }
+    },
+    "ship-3": {
+      "type": "Text",
+      "props": {
+        "text": "Discovery layer — filtered RSS/Atom feeds + auto-generated sitemap make sims crawlable and subscribable (PRs #81, #82)"
+      }
+    },
+    "ship-4": {
+      "type": "Text",
+      "props": {
+        "text": "Trajectory Chart SVG + Jupyter notebook export for institutional researchers (PRs #85, #80)"
+      }
+    },
+    "ship-5": {
+      "type": "Text",
+      "props": {
+        "text": "Emergency model swap: grok-4.1-fast → gemini-3-flash after xAI deprecation (PR #86)"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-commits",
+        "stat-prs",
+        "stat-lines",
+        "stat-zero-dep",
+        "stat-token-aths",
+        "stat-fdv",
+        "stat-lp"
+      ]
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "~300"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "9"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+28.5K / −1.1K"
+      }
+    },
+    "stat-zero-dep": {
+      "type": "Stat",
+      "props": {
+        "label": "Zero-new-dep PRs",
+        "value": "24"
+      }
+    },
+    "stat-token-aths": {
+      "type": "Stat",
+      "props": {
+        "label": "Token ATHs",
+        "value": "3 consecutive"
+      }
+    },
+    "stat-fdv": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV",
+        "value": "$2.12M",
+        "delta": "$1M → $2.12M",
+        "trend": "up"
+      }
+    },
+    "stat-lp": {
+      "type": "Stat",
+      "props": {
+        "label": "LP ATH",
+        "value": "$761K"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/weekly-shiplog-2026-05-18.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

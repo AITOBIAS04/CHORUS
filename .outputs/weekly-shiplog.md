@@ -1,11 +1,14 @@
-*Weekly Shiplog — 2026-05-04*
+*Weekly Shiplog — 2026-05-18*
 
-MiroShark crossed 1,000 stars and shipped a complete distribution stack in the heaviest week since launch.
+The week MiroShark completed the loop: nine PRs landed, four notification channels shipped, and simulations became cryptographically permanent.
 
 Shipped:
-- Full Chinese localization from UI strings to simulation prompts (5 PRs, 115+ files)
-- Seven share surfaces complete: RSS/Atom, live spectator watch page, trajectory CSV/JSONL, gallery full-text search
-- 57% token compaction, Langfuse observability, admin auth, Wonderwall endpoint override
+- Notification quadrant complete — Discord rich embeds, Slack Block Kit, SMTP emails join the existing webhook (PRs #83, #87)
+- OriginTrail DKG citation — tamper-proof on-chain provenance for finished simulations (PR #84)
+- Discovery layer — filtered RSS/Atom feeds + auto-generated sitemap make sims crawlable and subscribable (PRs #81, #82)
+- Trajectory Chart SVG + Jupyter notebook export for institutional researchers (PRs #85, #80)
+- Emergency model swap: grok-4.1-fast → gemini-3-flash after xAI deprecation (PR #86)
 
-Stats: 23 PRs merged, 234+ files changed, +17,558/-3,065 lines, 1,062 stars (+176)
-Full update: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/weekly-shiplog-2026-05-04.md
+Stats: ~300 commits, 9 PRs merged, +28.5K/-1.1K lines, 24 consecutive zero-new-dep PRs
+Token: 3 consecutive ATHs, FDV $1M→$2.12M, LP $761K ATH
+Full update: https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/weekly-shiplog-2026-05-18.md
