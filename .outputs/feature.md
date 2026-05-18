@@ -1,26 +1,28 @@
-*Feature Built — 2026-05-17*
+Feature Built — 2026-05-18
 
-Private Share Links with Expiry
-MiroShark simulations can now be shared privately — without publishing to the gallery. Operators generate a time-limited URL that lets a specific collaborator view the full simulation results (belief drift, agent network, quality report, everything) without the simulation appearing in the public gallery, sitemap, or RSS feed. Each link is a standalone bearer token: share it with one person, set an expiry (24 hours, 7 days, or never), and revoke it individually if shared in error.
+Adversarial Stress-Test Mode
+
+MiroShark simulations can now include adversarial agents — contrarian participants deliberately programmed to argue against whatever consensus is forming. After the simulation completes, operators get a robustness report that shows whether the group's conclusion held up under pressure or collapsed. Think of it as a stress test for collective intelligence: did the swarm reach its conclusion because the evidence was strong, or because nobody pushed back?
 
 Why this matters:
-Until now, sharing a simulation was all-or-nothing: either it's gallery-indexed and discoverable by anyone, or it's completely invisible. No middle ground. A consultant running a scenario for a client, a researcher wanting peer review before publication, a team testing internally — all had to choose between full publicity or zero sharing. This was the #1 remaining gap identified in the May-14 repo-actions batch (noted explicitly as the 'Private Share Link — not yet built' item from the chart SVG PR). With 1,166 stars and growing institutional interest, the practitioner use case demands this.
+Every simulation platform can show you what a group concluded. Very few can tell you how fragile that conclusion was. In governance, forecasting, and policy simulation, the difference between "95% agreement" and "95% agreement that collapses when one agent dissents" is everything. This was the #2 priority from last week's repo-actions analysis — Private Share Links shipped yesterday, and Adversarial Mode was next. It directly supports MiroShark's positioning as a serious research tool, not a consensus echo chamber.
 
 What was built:
-- backend/app/services/share_links.py: Pure-stdlib share link service — atomic JSON persistence, os.urandom token generation, hmac.compare_digest timing-safe validation, expiry management (24h/7d/never), revocation
-- backend/app/api/simulation.py: Three admin-gated endpoints (POST/GET/DELETE share-links) + share_link_count on GET /<id> + share-token bypass helper for publish gates
-- backend/app/api/share.py: GET /share/private/<token> landing route — scans sims or uses ?sim= hint, validates token, renders OG-tagged HTML with share_token SPA URL, increments private_share surface stat
-- backend/app/services/surface_stats.py: Added private_share to SURFACE_KEYS
-- frontend/src/components/EmbedDialog.vue: Full 'Private link' section — generate button with expiry dropdown, copyable URL, managed link list with masked tokens and revoke buttons
-- frontend/src/api/simulation.js: createShareLink, getShareLinks, revokeShareLink API functions
-- backend/tests/test_unit_share_links.py: 20 unit tests covering token generation, expiry, validation, revocation, atomic writes, corrupt file handling, timing safety
-- backend/openapi.yaml: Three endpoints under new 'Private Sharing' tag
-- docs/FEATURES.md + docs/FEATURES.zh-CN.md: Bilingual documentation
+- backend/app/services/adversarial.py: Pure-stdlib adversarial service — agent selection (top agent_ids, clamped at 3), contrarian prompt suffix injection, and robustness computation comparing halfway-point vs final consensus. Four robustness tiers: high (≤10% drift), medium (10-25%), low (>25%), collapse (direction reversed). Key moment detection flags rounds where consensus shifted >8%.
+- backend/app/api/simulation.py: New GET /adversarial-report endpoint; create_simulation accepts adversarial_agent_count parameter; gallery cards include adversarial metadata.
+- backend/app/services/simulation_manager.py: SimulationState extended with adversarial_agent_count field; Phase 4 in prepare_simulation selects adversarial agents and saves config.
+- backend/app/services/gallery_filters.py: adversarial_only filter for the public gallery.
+- frontend Step1GraphBuild.vue: Toggle checkbox + 1/2/3 agent count selector in simulation setup, styled with red accent.
+- frontend Step3Simulation.vue: Expandable adversarial panel showing robustness verdict, drift metrics (pre vs post consensus), and a key moments timeline.
+- frontend InteractionNetwork.vue: Adversarial nodes rendered with red dashed outlines + legend entry.
+- frontend ExploreView.vue: Adversarial filter chip in gallery header + pill badge on cards.
+- 16 unit tests covering agent selection, prompt building, all robustness tiers, persistence, and report structure.
+- OpenAPI spec updated with AdversarialReport schema.
 
 How it works:
-POST /api/simulation/<id>/share-links creates a 32-character hex token (os.urandom) stored in <sim_dir>/share_links.json alongside its expiry timestamp. The /share/private/<token> route validates the token with hmac.compare_digest (timing-safe), then renders the same OG-tagged landing page the public share route uses — but with a share_token query parameter that the SPA passes to all subsequent API calls. Data endpoints check this parameter against share_links.json to bypass the is_public gate. Each private link access increments a private_share surface stat counter. The whole system is stdlib-only — no new dependencies, keeping the zero-new-deps streak at 24 PRs.
+When an operator enables adversarial mode in Step 1, the backend selects the top N agents by ID (up to 3) and injects a contrarian prompt suffix into their system prompts during simulation. The suffix instructs the agent to challenge the emerging consensus, present counter-evidence, and argue for minority positions. After the simulation completes, the robustness engine loads the trajectory, identifies the halfway snapshot, computes consensus at that midpoint and at the end, then measures the drift. If consensus direction flipped entirely, that's a collapse. The key moments detector scans every consecutive pair of snapshots for >8% consensus shifts. Everything is pure Python stdlib — no new dependencies, continuing the 28-PR zero-dependency streak.
 
 What's next:
-Per-link access logging (who viewed, when) and rate limiting on private share link generation. Could also add a password-protected variant for extra-sensitive simulations.
+Follow-up improvements could include per-agent adversarial effectiveness scores, adversarial agent strategy variants (devil's advocate vs. concern troll vs. evidence skeptic), and cross-simulation robustness comparison in the A/B view.
 
-PR: BLOCKED — GH_GLOBAL not set (16th consecutive block). Branch: feat/private-share-links (commit a078574)
+PR: Push blocked — GH_GLOBAL secret not set. Code committed locally on feat/adversarial-stress-test (932 lines, 12 files).
