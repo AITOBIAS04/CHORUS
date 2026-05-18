@@ -1,0 +1,119 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-05-18"
+      },
+      "children": [
+        "stat-missed",
+        "table-skills",
+        "text-status",
+        "alert-blocked",
+        "text-recovery",
+        "separator",
+        "stack-notes"
+      ]
+    },
+    "stat-missed": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills missed today",
+        "value": "5"
+      },
+      "children": []
+    },
+    "table-skills": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Expected Time"
+        ],
+        "rows": [
+          [
+            "token-report",
+            "06:00"
+          ],
+          [
+            "fetch-tweets",
+            "06:30"
+          ],
+          [
+            "repo-pulse",
+            "10:00"
+          ],
+          [
+            "self-improve",
+            "13:00"
+          ],
+          [
+            "repo-actions",
+            "14:00"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "text-status": {
+      "type": "Text",
+      "props": {
+        "text": "All are past their 2h window with no active or queued runs."
+      },
+      "children": []
+    },
+    "alert-blocked": {
+      "type": "Alert",
+      "props": {
+        "title": "Auto-dispatch attempted but blocked",
+        "message": "HTTP 403, actions:read scope",
+        "type": "error"
+      },
+      "children": []
+    },
+    "text-recovery": {
+      "type": "Text",
+      "props": {
+        "text": "Scheduler (messages.yml) will catch them on next tick."
+      },
+      "children": []
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-notes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-note1",
+        "text-note2"
+      ]
+    },
+    "text-note1": {
+      "type": "Text",
+      "props": {
+        "text": "Stalled PRs #1-9 already reported — skipped.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "text-note2": {
+      "type": "Text",
+      "props": {
+        "text": "self-improve excluded from dispatch per policy.",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}
