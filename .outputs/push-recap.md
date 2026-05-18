@@ -1,16 +1,16 @@
-*Push Recap — 2026-05-17*
-MiroShark — 0 merges, 1 PR opened / miroshark-aeon — 35 commits (10 skill runs)
+*Push Recap — 2026-05-18*
+MiroShark — 2 commits merged + 2 PRs opened | miroshark-aeon — 52 commits
 
-Notification stack complete: PR #87 (open) adds SMTP email as the 4th completion-notification channel. Pure stdlib (smtplib + email.mime), multipart/alternative emails with subject-line triage format [MiroShark] <Direction>: <Scenario>. 24th consecutive zero-dependency PR in the #57–#87 streak.
+Chart SVG & SMTP Email (PRs #85 + #87): MiroShark merged a pure-stdlib SVG renderer that turns every simulation's belief trajectory into an embeddable <img> tag — no JavaScript, no resolution choice, works in Notion, Substack, Ghost, GitHub READMEs, and LaTeX. Separately, SMTP completion emails complete the four-channel notification quadrant (webhook + Discord + Slack + email), meaning any operator with a mailbox can receive sim results with zero platform dependency. 25-PR zero-dep streak.
 
-Third consecutive ATH: Token hit $0.0000225 today, +38.7% above yesterday's ATH ($0.0000162). FDV crossed $2M for the first time ($2.22M). LP deepened to $792K ATH. Buy ratio 1.50× — buyers absorbing all selling at ATH levels. 30-day return now +1,328%.
+Farcaster Frame + Security Fix (PRs #90 + #89): PR #90 brings interactive belief-chart cards to Warpcast feeds — MiroShark's first hop into a decentralized social protocol. PR #89 is the first external security contribution (by @teifurin) — removes a hardcoded Neo4j password default.
 
-Social expansion: First Japanese-language coverage from @m000_crypto — "Universal Swarm Intelligence Engine" breakdown. @100xDarren (56L) and @0xmikedee (45L) framing $AEON + $MIROSHARK as a paired play. $10 in tweet rewards distributed to 5 authors.
+Aeon Self-Improvement (#40 + #41): Fixed false freshness warnings on every-other-day skills and PR status verb mismatches in notifications. AI framework watch launched its first run — tracking 9 frameworks, 16 releases this week (langgraph 1.2.0, pydantic-ai 1.97.0, mastra 1.34.0).
 
 Key changes:
-- PR #87: email_notify.py (+796 LoC), STARTTLS security, boolean-only config endpoint, 20 unit tests, bilingual docs
-- Token report: $0.00002223 (+58.35% 24h), $448K volume, $792K LP — all ATH-area readings
-- Content: "In the Year of Slopsquatting" article (project-lens), "The Simulation That Outlives Its Server" (repo-article), Trajectory SVG thread draft
+- backend/app/services/chart_svg.py (new, +442 lines) — pure-stdlib SVG trajectory renderer
+- backend/app/services/email_notify.py (new, +796 lines) — SMTP notification service with STARTTLS security
+- PR #90 opens Farcaster Frame v2 for Warpcast distribution
 
-Stats: ~55 files changed, +3,960/-180 lines across 36 commits
-Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-17.md
+Stats: ~80 files changed, +3,400/-35 lines across 54 commits
+Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-18.md

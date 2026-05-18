@@ -1,0 +1,269 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap"
+      },
+      "children": [
+        "date_text",
+        "separator_1",
+        "summary_stack",
+        "separator_2",
+        "section_chart",
+        "separator_3",
+        "section_farcaster",
+        "separator_4",
+        "section_aeon",
+        "separator_5",
+        "section_key_changes",
+        "separator_6",
+        "section_stats",
+        "separator_7",
+        "link_full_recap"
+      ]
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-05-18",
+        "variant": "muted"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "summary_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_miroshark",
+        "stat_aeon"
+      ]
+    },
+    "stat_miroshark": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark",
+        "value": "2 commits merged + 2 PRs opened"
+      }
+    },
+    "stat_aeon": {
+      "type": "Stat",
+      "props": {
+        "label": "miroshark-aeon",
+        "value": "52 commits"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_chart": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_chart",
+        "text_chart"
+      ]
+    },
+    "heading_chart": {
+      "type": "Heading",
+      "props": {
+        "text": "Chart SVG & SMTP Email (PRs #85 + #87)",
+        "level": "h3"
+      }
+    },
+    "text_chart": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark merged a pure-stdlib SVG renderer that turns every simulation's belief trajectory into an embeddable <img> tag — no JavaScript, no resolution choice, works in Notion, Substack, Ghost, GitHub READMEs, and LaTeX. Separately, SMTP completion emails complete the four-channel notification quadrant (webhook + Discord + Slack + email), meaning any operator with a mailbox can receive sim results with zero platform dependency. 25-PR zero-dep streak."
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_farcaster": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_farcaster",
+        "text_farcaster"
+      ]
+    },
+    "heading_farcaster": {
+      "type": "Heading",
+      "props": {
+        "text": "Farcaster Frame + Security Fix (PRs #90 + #89)",
+        "level": "h3"
+      }
+    },
+    "text_farcaster": {
+      "type": "Text",
+      "props": {
+        "text": "PR #90 brings interactive belief-chart cards to Warpcast feeds — MiroShark's first hop into a decentralized social protocol. PR #89 is the first external security contribution (by @teifurin) — removes a hardcoded Neo4j password default."
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_aeon": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_aeon",
+        "text_aeon_fixes",
+        "text_aeon_watch"
+      ]
+    },
+    "heading_aeon": {
+      "type": "Heading",
+      "props": {
+        "text": "Aeon Self-Improvement (#40 + #41)",
+        "level": "h3"
+      }
+    },
+    "text_aeon_fixes": {
+      "type": "Text",
+      "props": {
+        "text": "Fixed false freshness warnings on every-other-day skills and PR status verb mismatches in notifications."
+      }
+    },
+    "text_aeon_watch": {
+      "type": "Text",
+      "props": {
+        "text": "AI framework watch launched its first run — tracking 9 frameworks, 16 releases this week (langgraph 1.2.0, pydantic-ai 1.97.0, mastra 1.34.0)."
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_key_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_changes",
+        "text_chart_svg",
+        "text_email_notify",
+        "text_farcaster_dist"
+      ]
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "text_chart_svg": {
+      "type": "Text",
+      "props": {
+        "text": "backend/app/services/chart_svg.py (new, +442 lines) — pure-stdlib SVG trajectory renderer"
+      }
+    },
+    "text_email_notify": {
+      "type": "Text",
+      "props": {
+        "text": "backend/app/services/email_notify.py (new, +796 lines) — SMTP notification service with STARTTLS security"
+      }
+    },
+    "text_farcaster_dist": {
+      "type": "Text",
+      "props": {
+        "text": "PR #90 opens Farcaster Frame v2 for Warpcast distribution"
+      }
+    },
+    "separator_6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_stats",
+        "stat_files",
+        "stat_lines",
+        "stat_commits"
+      ]
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "~80"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+3,400 / -35"
+      }
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "54"
+      }
+    },
+    "separator_7": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_full_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-18.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
