@@ -1,0 +1,333 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-05-19",
+        "description": "MiroShark & miroshark-aeon push recap"
+      },
+      "children": [
+        "stack-projects",
+        "separator-1",
+        "heading-prs",
+        "stack-prs",
+        "separator-2",
+        "heading-key-changes",
+        "stack-key-changes",
+        "separator-3",
+        "heading-metrics",
+        "stack-metrics",
+        "separator-4",
+        "link-full-recap"
+      ]
+    },
+    "stack-projects": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-miroshark",
+        "text-aeon"
+      ]
+    },
+    "text-miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 1 commit merged, 1 PR opened by 1 author",
+        "variant": "lead"
+      }
+    },
+    "text-aeon": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 39 commits by 2 authors",
+        "variant": "lead"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h2"
+      }
+    },
+    "stack-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "pr90-container",
+        "pr91-container",
+        "pr42-container"
+      ]
+    },
+    "pr90-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr90-heading",
+        "pr90-desc",
+        "pr90-stats"
+      ]
+    },
+    "pr90-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Farcaster Frame v2 (PR #90 merged)",
+        "level": "h3"
+      }
+    },
+    "pr90-desc": {
+      "type": "Text",
+      "props": {
+        "text": "The Base-chain audience gap is closed. Every /share/<id> URL pasted into a Farcaster cast now renders as an interactive belief-chart Frame card in Warpcast — chart SVG at 2:1 as the preview, \"View Simulation →\" link button, EmbedDialog Warpcast composer link. Private sims suppress Frame tags entirely. Pure stdlib, zero new deps.",
+        "variant": "body"
+      }
+    },
+    "pr90-stats": {
+      "type": "Badge",
+      "props": {
+        "text": "+1,140 lines, 10 files",
+        "variant": "secondary"
+      }
+    },
+    "pr91-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr91-heading",
+        "pr91-desc",
+        "pr91-stats"
+      ]
+    },
+    "pr91-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Trading Signal JSON (PR #91 opened)",
+        "level": "h3"
+      }
+    },
+    "pr91-desc": {
+      "type": "Text",
+      "props": {
+        "text": "New GET /<id>/signal.json endpoint collapses final belief split + quality health into direction/confidence_pct/risk_tier — a machine-readable action primitive for quant tools, bots, and trading dashboards. 26 unit tests.",
+        "variant": "body"
+      }
+    },
+    "pr91-stats": {
+      "type": "Badge",
+      "props": {
+        "text": "+1,189 lines, 10 files",
+        "variant": "secondary"
+      }
+    },
+    "pr42-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr42-heading",
+        "pr42-desc"
+      ]
+    },
+    "pr42-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skill Pipeline Fix (PR #42 merged)",
+        "level": "h3"
+      }
+    },
+    "pr42-desc": {
+      "type": "Text",
+      "props": {
+        "text": "repo-pulse now writes articles/repo-pulse-YYYY-MM-DD.md — five downstream consumers no longer scrape memory logs.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-key-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "stack-key-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "frame-metadata-container",
+        "signal-service-container",
+        "commits-stats-text"
+      ]
+    },
+    "frame-metadata-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "frame-metadata-name",
+        "frame-metadata-desc"
+      ]
+    },
+    "frame-metadata-name": {
+      "type": "Text",
+      "props": {
+        "text": "frame_metadata.py (235 LoC stdlib)",
+        "variant": "lead"
+      }
+    },
+    "frame-metadata-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Builds fc:frame:* meta-tag values — chart SVG at 2:1 with share-card PNG fallback for pre-trajectory sims",
+        "variant": "body"
+      }
+    },
+    "signal-service-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "signal-service-name",
+        "signal-service-desc"
+      ]
+    },
+    "signal-service-name": {
+      "type": "Text",
+      "props": {
+        "text": "signal_service.py (~210 LoC stdlib)",
+        "variant": "lead"
+      }
+    },
+    "signal-service-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Derives direction + confidence from final belief split; 27-PR zero-dep streak",
+        "variant": "body"
+      }
+    },
+    "commits-stats-text": {
+      "type": "Text",
+      "props": {
+        "text": "~50 files changed, +2,330/-3 lines across 40 commits",
+        "variant": "lead"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-metrics": {
+      "type": "Heading",
+      "props": {
+        "text": "Metrics",
+        "level": "h2"
+      }
+    },
+    "stack-metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-token",
+        "stat-lp",
+        "stat-fdv",
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-token": {
+      "type": "Stat",
+      "props": {
+        "label": "Token Price",
+        "value": "$0.0000309",
+        "delta": "-1.31%",
+        "trend": "down"
+      }
+    },
+    "stat-lp": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity Pool",
+        "value": "$998.4K",
+        "delta": "touched $1M",
+        "trend": "neutral"
+      }
+    },
+    "stat-fdv": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV",
+        "value": "$3.09M"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "1,175",
+        "delta": "+4",
+        "trend": "up"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Forks",
+        "value": "237",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-full-recap": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-19.md"
+      }
+    }
+  }
+}

@@ -1,16 +1,18 @@
-*Push Recap — 2026-05-18*
-MiroShark — 2 commits merged + 2 PRs opened | miroshark-aeon — 52 commits
+*Push Recap — 2026-05-19*
+MiroShark — 1 commit merged, 1 PR opened by 1 author
+miroshark-aeon — 39 commits by 2 authors
 
-Chart SVG & SMTP Email (PRs #85 + #87): MiroShark merged a pure-stdlib SVG renderer that turns every simulation's belief trajectory into an embeddable <img> tag — no JavaScript, no resolution choice, works in Notion, Substack, Ghost, GitHub READMEs, and LaTeX. Separately, SMTP completion emails complete the four-channel notification quadrant (webhook + Discord + Slack + email), meaning any operator with a mailbox can receive sim results with zero platform dependency. 25-PR zero-dep streak.
+Farcaster Frame v2 (PR #90 merged): The Base-chain audience gap is closed. Every /share/<id> URL pasted into a Farcaster cast now renders as an interactive belief-chart Frame card in Warpcast — chart SVG at 2:1 as the preview, "View Simulation →" link button, EmbedDialog Warpcast composer link. Private sims suppress Frame tags entirely. Pure stdlib, zero new deps (+1,140 lines, 10 files).
 
-Farcaster Frame + Security Fix (PRs #90 + #89): PR #90 brings interactive belief-chart cards to Warpcast feeds — MiroShark's first hop into a decentralized social protocol. PR #89 is the first external security contribution (by @teifurin) — removes a hardcoded Neo4j password default.
+Trading Signal JSON (PR #91 opened): New GET /<id>/signal.json endpoint collapses final belief split + quality health into direction/confidence_pct/risk_tier — a machine-readable action primitive for quant tools, bots, and trading dashboards. 26 unit tests (+1,189 lines, 10 files).
 
-Aeon Self-Improvement (#40 + #41): Fixed false freshness warnings on every-other-day skills and PR status verb mismatches in notifications. AI framework watch launched its first run — tracking 9 frameworks, 16 releases this week (langgraph 1.2.0, pydantic-ai 1.97.0, mastra 1.34.0).
+Skill Pipeline Fix (PR #42 merged): repo-pulse now writes articles/repo-pulse-YYYY-MM-DD.md — five downstream consumers no longer scrape memory logs.
 
 Key changes:
-- backend/app/services/chart_svg.py (new, +442 lines) — pure-stdlib SVG trajectory renderer
-- backend/app/services/email_notify.py (new, +796 lines) — SMTP notification service with STARTTLS security
-- PR #90 opens Farcaster Frame v2 for Warpcast distribution
+- frame_metadata.py (235 LoC stdlib) builds fc:frame:* meta-tag values — chart SVG at 2:1 with share-card PNG fallback for pre-trajectory sims
+- signal_service.py (~210 LoC stdlib) derives direction + confidence from final belief split; 27-PR zero-dep streak
+- Token at $0.0000309 (-1.31%), post-ATH consolidation; LP $998.4K (touched $1M); FDV $3.09M
+- 1,175 stars (+4), 237 forks (+1)
 
-Stats: ~80 files changed, +3,400/-35 lines across 54 commits
-Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-18.md
+Stats: ~50 files changed, +2,330/-3 lines across 40 commits
+Full recap: https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-19.md
