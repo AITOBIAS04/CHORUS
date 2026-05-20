@@ -1,0 +1,279 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap"
+      },
+      "children": [
+        "heading-main",
+        "text-summary",
+        "sep1",
+        "stack-prs",
+        "sep2",
+        "section-changes",
+        "sep3",
+        "text-stats",
+        "link-full"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Push Recap — 2026-05-20",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-summary": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 3 commits by 2 authors | miroshark-aeon — 48 commits",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr92",
+        "pr91",
+        "pr89",
+        "pr43"
+      ]
+    },
+    "pr92": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge92",
+        "heading92",
+        "text92"
+      ]
+    },
+    "badge92": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #92",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "heading92": {
+      "type": "Heading",
+      "props": {
+        "text": "Archive Bundle",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text92": {
+      "type": "Text",
+      "props": {
+        "text": "Every published share surface — card, SVG, CSV, JSONL, transcript, thread, reproduce.json, notebook, signal.json — collapsed into a single timestamped ZIP with a manifest.json that pairs each file with its SHA-256. The twelfth surface, and the first that composes all the others. Researchers grab one URL instead of chaining 10 curl calls; citation hashes match the standalone routes byte-for-byte.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "pr91": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge91",
+        "heading91",
+        "text91"
+      ]
+    },
+    "badge91": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #91",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "heading91": {
+      "type": "Heading",
+      "props": {
+        "text": "Trading Signal JSON",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text91": {
+      "type": "Text",
+      "props": {
+        "text": "Simulation output distilled into an action primitive — direction (Bullish/Neutral/Bearish) + confidence_pct + risk_tier — that a quant tool, Zapier flow, or alert pipeline can consume directly. Closes the last mile between 'sim produces data' and 'sim produces a signal.'",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "pr89": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge89",
+        "heading89",
+        "text89"
+      ]
+    },
+    "badge89": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #89",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "heading89": {
+      "type": "Heading",
+      "props": {
+        "text": "Security Fix",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text89": {
+      "type": "Text",
+      "props": {
+        "text": "@teifurin's first external contribution removes the hardcoded Neo4j password from docker-compose.yml. Deployments now fail-fast if NEO4J_PASSWORD is unset — the error is the fix.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "pr43": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge43",
+        "heading43",
+        "text43"
+      ]
+    },
+    "badge43": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #43",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "heading43": {
+      "type": "Heading",
+      "props": {
+        "text": "Self-Improve",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text43": {
+      "type": "Text",
+      "props": {
+        "text": "Diagnosed a 3-day tweet-allocator drift where bankr agent max-mode calls exceeded the 64s polling ceiling. Fix: doubled the poll window, added a distinct agent-timeout status so timeouts no longer masquerade as empty wallets.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-changes",
+        "text-archive",
+        "text-signal",
+        "text-docker"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-archive": {
+      "type": "Text",
+      "props": {
+        "text": "archive_service.py (506 LoC): pure-stdlib ZIP builder with per-file SHA-256 manifest — compositional capstone of the 12-surface stack",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-signal": {
+      "type": "Text",
+      "props": {
+        "text": "signal_service.py (241 LoC): confidence = (leading_pct - 33.3) / 66.7 * 100; risk defaults to high for unknown quality",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-docker": {
+      "type": "Text",
+      "props": {
+        "text": "docker-compose.yml: NEO4J_PASSWORD now required via ${NEO4J_PASSWORD:?...} — naive .env copies can no longer ship public defaults",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text-stats": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: ~80 files changed, +3,500/-60 lines across 51 commits, 28-PR zero-new-deps streak",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "link-full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/miroshark-aeon/blob/main/articles/push-recap-2026-05-20.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
