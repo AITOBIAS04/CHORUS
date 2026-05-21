@@ -1,0 +1,302 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-05-21"
+      },
+      "children": [
+        "summary-section",
+        "sep1",
+        "projects-section",
+        "sep2",
+        "changes-section",
+        "sep3",
+        "stats-section",
+        "sep4",
+        "recap-link"
+      ]
+    },
+    "summary-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "summary-line1",
+        "summary-line2"
+      ]
+    },
+    "summary-line1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 2 commits by 2 authors (@aaronjmars, aeonframework)"
+      }
+    },
+    "summary-line2": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — PR #43 merged + 33 cron commits"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "projects-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "project1",
+        "project2",
+        "project3"
+      ]
+    },
+    "project1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "proj1-badge",
+        "proj1-title",
+        "proj1-desc"
+      ]
+    },
+    "proj1-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #93",
+        "variant": "default"
+      }
+    },
+    "proj1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Telegram Bot Notifications",
+        "level": "h4"
+      }
+    },
+    "proj1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Fifth and final notification channel ships. Native Bot API sendMessage with HTML formatting and inline keyboard — covers the messaging surface where the crypto/political audience lives. Fire-and-forget daemon threads, per-process dedup, stdlib only. 36 unit tests."
+      }
+    },
+    "project2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "proj2-badge",
+        "proj2-title",
+        "proj2-desc"
+      ]
+    },
+    "proj2-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #94",
+        "variant": "default"
+      }
+    },
+    "proj2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Consensus Status Badge SVG",
+        "level": "h4"
+      }
+    },
+    "proj2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "13th publish-gated share surface. A flat 20px Shields.io-style SVG showing direction + confidence% — embeddable in any README, Notion page, or Substack with one Markdown line. Inverts the distribution model: the badge brings the simulation to the reader. Pure stdlib renderer, 22 unit tests."
+      }
+    },
+    "project3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "proj3-badge",
+        "proj3-title",
+        "proj3-desc"
+      ]
+    },
+    "proj3-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #43",
+        "variant": "default"
+      }
+    },
+    "proj3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Bankr Agent Timeout Fix",
+        "level": "h4"
+      }
+    },
+    "proj3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Closes 3-day diagnostic hunt. TWEET_ALLOCATOR_EMPTY was masking LLM timeout — Max-Mode agent calls exceeded the 64s polling window. Fix: poll loop 8→14 iterations (112s), new \"agent-timeout\" status distinct from \"no wallet,\" dedicated error alert."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes-title",
+        "changes-list"
+      ]
+    },
+    "changes-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h3"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "telegram_notify.py: 556-line stdlib Telegram Bot service with HTML+inline_keyboard, wired into all three terminal-state paths"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "badge_service.py: 319-line stdlib SVG renderer with bytewise-stable output, colour-matched to all belief surfaces"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "prefetch-bankr.sh: 3-way status distinction (API down vs agent timeout vs no wallet)"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-title",
+        "stats-row"
+      ]
+    },
+    "stats-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats:",
+        "level": "h3"
+      }
+    },
+    "stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-additions",
+        "stat-deletions"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "20"
+      }
+    },
+    "stat-additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "+2,238"
+      }
+    },
+    "stat-deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "-40"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap-link": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "recap-label",
+        "recap-url"
+      ]
+    },
+    "recap-label": {
+      "type": "Text",
+      "props": {
+        "text": "Full recap:",
+        "variant": "muted"
+      }
+    },
+    "recap-url": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-21.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-21.md"
+      }
+    }
+  }
+}
