@@ -49,10 +49,10 @@
     "last_dispatch": "2026-05-20T15:57:29Z"
   },
   "push-recap": {
-    "last_status": "dispatched",
-    "last_success": "2026-05-20T16:04:08Z",
-    "total_runs": 322,
-    "total_successes": 23,
+    "last_status": "success",
+    "last_success": "2026-05-21T15:58:35Z",
+    "total_runs": 323,
+    "total_successes": 24,
     "total_failures": 299,
     "consecutive_failures": 0,
     "success_rate": 0.07,
