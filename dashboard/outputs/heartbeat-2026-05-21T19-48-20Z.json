@@ -1,0 +1,236 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-05-21"
+      },
+      "children": [
+        "summary_grid",
+        "sep1",
+        "new_skills_section",
+        "sep2",
+        "ongoing_skills_section",
+        "sep3",
+        "notes_section"
+      ]
+    },
+    "summary_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_new",
+        "stat_ongoing"
+      ]
+    },
+    "stat_new": {
+      "type": "Stat",
+      "props": {
+        "label": "new missing skills",
+        "value": "2"
+      },
+      "children": []
+    },
+    "stat_ongoing": {
+      "type": "Stat",
+      "props": {
+        "label": "ongoing missing",
+        "value": "3"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "new_skills_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "new_skills_heading",
+        "skill_repo_actions",
+        "skill_repo_article"
+      ]
+    },
+    "new_skills_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Missing Skills",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "skill_repo_actions": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill_repo_actions_name",
+        "skill_repo_actions_detail"
+      ]
+    },
+    "skill_repo_actions_name": {
+      "type": "Text",
+      "props": {
+        "text": "repo-actions",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "skill_repo_actions_detail": {
+      "type": "Text",
+      "props": {
+        "text": "14:00 UTC, ~6h overdue",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "skill_repo_article": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill_repo_article_name",
+        "skill_repo_article_detail"
+      ]
+    },
+    "skill_repo_article_name": {
+      "type": "Text",
+      "props": {
+        "text": "repo-article",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "skill_repo_article_detail": {
+      "type": "Text",
+      "props": {
+        "text": "16:00 UTC, ~4h overdue",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "ongoing_skills_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ongoing_skills_heading",
+        "ongoing_note",
+        "ongoing_badges"
+      ]
+    },
+    "ongoing_skills_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Ongoing Missing Skills",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "ongoing_note": {
+      "type": "Text",
+      "props": {
+        "text": "3rd consecutive missed day (previously reported)",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "ongoing_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_token_report",
+        "badge_fetch_tweets",
+        "badge_repo_pulse"
+      ]
+    },
+    "badge_token_report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_fetch_tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_repo_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "notes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "note_self_improve",
+        "note_auto_dispatch"
+      ]
+    },
+    "note_self_improve": {
+      "type": "Alert",
+      "props": {
+        "title": "self-improve",
+        "message": "meta skill, skipped",
+        "type": "info"
+      },
+      "children": []
+    },
+    "note_auto_dispatch": {
+      "type": "Alert",
+      "props": {
+        "title": "Auto-dispatch",
+        "message": "all blocked HTTP 403 (actions:read scope) — deferred to scheduler (messages.yml)",
+        "type": "warning"
+      },
+      "children": []
+    }
+  }
+}

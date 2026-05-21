@@ -1,12 +1,1 @@
-Heartbeat 2026-05-20 — 5 missing skills on Wednesday cycle.
-
-Missing (all >2h past schedule):
-• token-report — 06:00 UTC, ~14.5h overdue
-• fetch-tweets — 06:30 UTC, ~14h overdue
-• repo-pulse — 10:00 UTC, ~10.5h overdue
-• self-improve — 13:00 UTC, ~7.5h overdue
-• project-lens — 16:00 UTC, ~4.5h overdue
-
-Auto-dispatch blocked (HTTP 403, actions:read scope — same as May 19). Deferred to scheduler (messages.yml). Note: token-report, fetch-tweets, repo-pulse also missed yesterday; now 2nd consecutive day for these three.
-
-Completed today: feature ✓, repo-actions ✓, push-recap ✓, memory-flush ✓. No open issues. Stalled PRs #1–#9 previously reported, dedup applied.
+HEARTBEAT 2026-05-21 — 2 new missing skills + 3 ongoing. repo-actions (14:00 UTC, ~6h overdue) and repo-article (16:00 UTC, ~4h overdue) did not run today (new). token-report, fetch-tweets, repo-pulse also absent — 3rd consecutive missed day (previously reported). self-improve: meta skill, skipped. Auto-dispatch: all blocked HTTP 403 (actions:read scope) — deferred to scheduler (messages.yml).
