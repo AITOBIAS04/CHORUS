@@ -1,17 +1,16 @@
-*Push Recap — 2026-05-21*
-MiroShark — 2 commits by 2 authors (@aaronjmars, aeonframework)
-miroshark-aeon — PR #43 merged + 33 cron commits
+*Push Recap — 2026-05-22*
+MiroShark — 1 commit by 2 authors | miroshark-aeon — 42 commits by 2 authors
 
-Telegram Bot Notifications (PR #93): Fifth and final notification channel ships. Native Bot API sendMessage with HTML formatting and inline keyboard — covers the messaging surface where the crypto/political audience lives. Fire-and-forget daemon threads, per-process dedup, stdlib only. 36 unit tests.
+Academic Citation Arc Complete (PR #96): GET /cite.bib returns a one-call BibTeX @misc entry that drops into LaTeX, imports into Zotero/Mendeley via URL, and carries the reproduce.json SHA-256 (sourced from the on-chain DKG anchor when present) plus the OriginTrail UAL. Closes the four-part citation chain: reproduce.json (parameters) → notebook.ipynb (analysis) → DKG citation (provenance) → cite.bib (academic reference). 338-line pure-stdlib builder, 27 unit tests, 14th publish-gated share surface.
 
-Consensus Status Badge SVG (PR #94): 13th publish-gated share surface. A flat 20px Shields.io-style SVG showing direction + confidence% — embeddable in any README, Notion page, or Substack with one Markdown line. Inverts the distribution model: the badge brings the simulation to the reader. Pure stdlib renderer, 22 unit tests.
+Bankr Prefetch Hardening (PR #44): Self-improve detected that x.com/i/status/* annotation URLs were leaking 'i' into the Bankr handle candidate list, wasting one Max-Mode API call per prefetch run. Added reserved-path exclusion list covering 25+ X.com URL paths. Same-day detection → fix → merge.
 
-Bankr Agent Timeout Fix (PR #43): Closes 3-day diagnostic hunt. TWEET_ALLOCATOR_EMPTY was masking LLM timeout — Max-Mode agent calls exceeded the 64s polling window. Fix: poll loop 8→14 iterations (112s), new "agent-timeout" status distinct from "no wallet," dedicated error alert.
+Full Daily Cycle: All 13 scheduled skills fired successfully. Token at $0.00002141 (-23.85% 24h, -50.9% from ATH).
 
 Key changes:
-- telegram_notify.py: 556-line stdlib Telegram Bot service with HTML+inline_keyboard, wired into all three terminal-state paths
-- badge_service.py: 319-line stdlib SVG renderer with bytewise-stable output, colour-matched to all belief surfaces
-- prefetch-bankr.sh: 3-way status distinction (API down vs agent timeout vs no wallet)
+- backend/app/services/bibtex_service.py: 338-line citation builder — key sanitization, 7-special BibTeX escaping, SHA-256 source precedence (DKG > fresh hash > omit), bytewise determinism
+- frontend/src/components/EmbedDialog.vue: BibTeX section with copyable URL, curl snippet, LaTeX \cite reference, Download .bib button (bilingual EN/ZH)
+- scripts/prefetch-bankr.sh: RESERVED_X_PATHS filter eliminates false-positive handle lookups
 
-Stats: 20 files changed, +2,238/-40 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-21.md
+Stats: ~13 files, +1,286/-2 lines | 1,190 stars, 243 forks
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-22.md
