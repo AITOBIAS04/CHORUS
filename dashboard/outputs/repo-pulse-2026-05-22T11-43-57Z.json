@@ -1,0 +1,157 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse"
+      },
+      "children": [
+        "repo-link",
+        "sep1",
+        "stats-stack",
+        "sep2",
+        "stargazers-heading",
+        "stargazers-stack",
+        "sep3",
+        "forks-heading",
+        "forks-stack"
+      ]
+    },
+    "repo-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,190",
+        "delta": "+4",
+        "trend": "up"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "243",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stargazers-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New stargazers",
+        "level": "h3"
+      }
+    },
+    "stargazers-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-snqb",
+        "link-genetiti",
+        "link-dyai2025",
+        "link-guzus"
+      ]
+    },
+    "link-snqb": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/snqb",
+        "href": "https://github.com/snqb"
+      }
+    },
+    "link-genetiti": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/genetiti",
+        "href": "https://github.com/genetiti"
+      }
+    },
+    "link-dyai2025": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/DYAI2025",
+        "href": "https://github.com/DYAI2025"
+      }
+    },
+    "link-guzus": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/guzus",
+        "href": "https://github.com/guzus"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "forks-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New forks",
+        "level": "h3"
+      }
+    },
+    "forks-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "fork-dyai2025",
+        "fork-dmukati"
+      ]
+    },
+    "fork-dyai2025": {
+      "type": "StoryLink",
+      "props": {
+        "title": "DYAI2025/MiroShark",
+        "href": "https://github.com/DYAI2025/MiroShark"
+      }
+    },
+    "fork-dmukati": {
+      "type": "StoryLink",
+      "props": {
+        "title": "dmukati/MiroShark",
+        "href": "https://github.com/dmukati/MiroShark"
+      }
+    }
+  }
+}
