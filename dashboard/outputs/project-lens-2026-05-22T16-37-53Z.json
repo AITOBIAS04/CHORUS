@@ -1,0 +1,62 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading_new",
+        "heading_title",
+        "text_para1",
+        "text_para2",
+        "separator_1",
+        "storylink_read"
+      ]
+    },
+    "heading_new": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article",
+        "level": "h3"
+      }
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Every Dependency Is a Handshake You Can't Take Back",
+        "level": "h2"
+      }
+    },
+    "text_para1": {
+      "type": "Text",
+      "props": {
+        "text": "The May 2026 npm supply chain attack compromised 170+ trusted packages and put 15 million users in the blast radius — not through fake packages, but by exploiting CI/CD infrastructure itself.",
+        "variant": "body"
+      }
+    },
+    "text_para2": {
+      "type": "Text",
+      "props": {
+        "text": "This article uses that event as a lens to examine MiroShark's 30-PR zero-new-deps streak: why building 13 share surfaces with nothing but Python's standard library is not minimalism for its own sake, but a structural argument about composability, trust, and software that outlasts its ecosystem.",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink_read": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Every Dependency Is a Handshake You Can't Take Back",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-05-22.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}
