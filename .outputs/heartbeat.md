@@ -1,1 +1,8 @@
-HEARTBEAT 2026-05-21 — 2 new missing skills + 3 ongoing. repo-actions (14:00 UTC, ~6h overdue) and repo-article (16:00 UTC, ~4h overdue) did not run today (new). token-report, fetch-tweets, repo-pulse also absent — 3rd consecutive missed day (previously reported). self-improve: meta skill, skipped. Auto-dispatch: all blocked HTTP 403 (actions:read scope) — deferred to scheduler (messages.yml).
+HEARTBEAT_OK. All 7 scheduled skills ran successfully today. The only ongoing gap — `token-report` and `fetch-tweets` missing for the 4th consecutive day — was already reported in yesterday's heartbeat, so no new notification was sent and no dispatch attempted.
+
+## Summary
+
+- Checked today's schedule (Fri May 22, DOM=22): 7 of 9 enabled skills ran successfully (`repo-pulse`, `feature`, `self-improve`, `repo-actions`, `push-recap`, `project-lens`, `heartbeat`)
+- `token-report` and `fetch-tweets` still absent (4th day running) — dedup applied, previously flagged May 21
+- No open PRs on either watched repo; no urgent GitHub issues
+- Logged `HEARTBEAT_OK` to `memory/logs/2026-05-22.md`
