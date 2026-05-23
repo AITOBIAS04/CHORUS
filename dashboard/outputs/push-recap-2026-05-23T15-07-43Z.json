@@ -1,0 +1,301 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-05-23"
+      },
+      "children": [
+        "content"
+      ]
+    },
+    "content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "miroshark-section",
+        "waybackclaw-section",
+        "skill-cycle-section",
+        "changes-section",
+        "stats-section",
+        "recap-section"
+      ]
+    },
+    "miroshark-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "miroshark-heading",
+        "miroshark-text"
+      ]
+    },
+    "miroshark-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark",
+        "level": "h3"
+      }
+    },
+    "miroshark-text": {
+      "type": "Text",
+      "props": {
+        "text": "1 commit by @aaronjmars · miroshark-aeon — 35 commits (full skill cycle)"
+      }
+    },
+    "waybackclaw-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "waybackclaw-heading",
+        "waybackclaw-text"
+      ]
+    },
+    "waybackclaw-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "WaybackClaw AI Agent Archive (PR #97)",
+        "level": "h3"
+      }
+    },
+    "waybackclaw-text": {
+      "type": "Text",
+      "props": {
+        "text": "New decentralized archiving surface for finished simulations. One POST to api.waybackclaw.space pins the snapshot to IPFS (content-addressed CID) and broadcasts a NIP-01 note to Nostr relays (decentralized distribution). Sibling of the OriginTrail DKG citation — DKG anchors on-chain, WaybackClaw anchors to IPFS + Nostr. Free for agents, stdlib-only, zero new deps."
+      }
+    },
+    "skill-cycle-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skill-cycle-heading",
+        "skill-cycle-content"
+      ]
+    },
+    "skill-cycle-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Daily Skill Cycle",
+        "level": "h3"
+      }
+    },
+    "skill-cycle-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skills-stat",
+        "feature-skill-text",
+        "token-text",
+        "metrics-row"
+      ]
+    },
+    "skills-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Completed",
+        "value": "13"
+      }
+    },
+    "feature-skill-text": {
+      "type": "Text",
+      "props": {
+        "text": "Feature skill: MCP Simulation Tools (5 tools for the MCP server — push blocked, 22nd consecutive GH_GLOBAL miss)",
+        "variant": "caption"
+      }
+    },
+    "token-text": {
+      "type": "Text",
+      "props": {
+        "text": "Token: $0.00001292 (-40.73% 24h, -61% from ATH)",
+        "variant": "caption"
+      }
+    },
+    "metrics-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stars-stat",
+        "forks-stat"
+      ]
+    },
+    "stars-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,192",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "forks-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "246",
+        "delta": "+3",
+        "trend": "up"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes-heading",
+        "file1",
+        "file2",
+        "file3"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "file1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "file1-name",
+        "file1-desc"
+      ]
+    },
+    "file1-name": {
+      "type": "Badge",
+      "props": {
+        "text": "waybackclaw_publisher.py"
+      }
+    },
+    "file1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "634-line stdlib publisher — build_submission + submit_snapshot + idempotent on-disk record + health probe",
+        "variant": "caption"
+      }
+    },
+    "file2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "file2-name",
+        "file2-desc"
+      ]
+    },
+    "file2-name": {
+      "type": "Badge",
+      "props": {
+        "text": "simulation.py"
+      }
+    },
+    "file2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /waybackclaw-record + POST /publish-waybackclaw with full HTTP status mapping (503/504/429/502)",
+        "variant": "caption"
+      }
+    },
+    "file3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "file3-name",
+        "file3-desc"
+      ]
+    },
+    "file3-name": {
+      "type": "Badge",
+      "props": {
+        "text": "EmbedDialog.vue"
+      }
+    },
+    "file3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Full archive card — submit button, snapshot ID, IPFS CID with gateway link, Nostr event ID, bilingual",
+        "variant": "caption"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats-heading",
+        "stats-text"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-text": {
+      "type": "Text",
+      "props": {
+        "text": "9 files changed, +1,480/-3 lines"
+      }
+    },
+    "recap-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "recap-heading",
+        "recap-link"
+      ]
+    },
+    "recap-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Full Recap",
+        "level": "h3"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Push Recap — 2026-05-23",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-23.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
