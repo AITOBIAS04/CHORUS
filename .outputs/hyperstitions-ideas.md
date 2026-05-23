@@ -1,12 +1,12 @@
-*Hyperstitions Idea — 2026-05-16*
+*Hyperstitions Idea — 2026-05-23*
 
-"Will $MIROSHARK liquidity pool depth exceed $1M by July 1, 2026?"
+"Will MiroShark receive 10 merged PRs from community contributors (non-bot, non-core-team) by August 1, 2026?"
 
-The coordination play: Liquidity provision is a purely human act — no agent can deploy capital to a pool. This market turns LP depth into a scoreboard. Every addition is visible on-chain, creating social proof for the next provider. Holders already long are incentivized to pair tokens with ETH and deepen the floor under the asset rather than just sitting on a spot position.
+The coordination play: MiroShark has 243 forks and exactly one external contributor. An AI agent ships a feature every single day, but it cannot recruit humans, review community code, or build the social proof that turns forkers into contributors. This market turns every fork into a latent bet — each merged PR moves the needle, and each person who sees the counter thinks "I could be one of those ten." Repo-actions already surfaced beginner-friendly ideas (tag system, discussion threads, MCP tool server) that need human hands.
 
-Why now: LP just set a new all-time high at $574.8K today, surpassing the prior ATH of $527.7K from May 12. This happened during a recovery phase (+28.56% 24h, FDV back to $1.45M), not a euphoric run-up — liquidity growing while price consolidates is a structural signal, not momentum noise.
+Why now: @teifurin submitted the first-ever community PR last week (Neo4j security fix, PR #89) — breaking the seal on a project that had 242 forks and zero outside contributors. The ratio of 22 AI-built features to 1 human PR is the kind of absurd stat that makes developers want to change it.
 
-Resolution: On July 1, 2026, check the main MIROSHARK/WETH pool on Base (contract 0xd7bc...1ba3) via GeckoTerminal or DexScreener. Total pool liquidity >= $1,000,000 = YES.
+Resolution: YES if ≥10 PRs authored by GitHub users other than @aaronjmars and @aeonframework are merged into aaronjmars/MiroShark by 2026-08-01T00:00:00Z. Verified via git log --merges on the main branch.
 
 Scores: Reflexivity 4/5 | Viral 4/5
 
