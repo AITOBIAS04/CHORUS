@@ -1,0 +1,321 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-05-24"
+      },
+      "children": [
+        "subtitle",
+        "sep1",
+        "idea1_stack",
+        "sep2",
+        "idea2_stack",
+        "sep3",
+        "idea3_stack",
+        "sep4",
+        "idea4_stack",
+        "sep5",
+        "idea5_stack",
+        "sep6",
+        "link"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,194 stars, 247 forks) — five ideas the feature skill can autonomously build.",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea1_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1_heading",
+        "idea1_badges",
+        "idea1_text"
+      ]
+    },
+    "idea1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "French (fr) Locale",
+        "level": "h3"
+      }
+    },
+    "idea1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_badge_community",
+        "idea1_badge_size"
+      ]
+    },
+    "idea1_badge_community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      }
+    },
+    "idea1_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Issue #95 is an explicit community ask — translate all i18n strings to French, opening the European academic and govtech audience already primed by the BibTeX + DKG citation stack.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea2_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea2_heading",
+        "idea2_badges",
+        "idea2_text"
+      ]
+    },
+    "idea2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Interaction Graph Export (GraphML)",
+        "level": "h3"
+      }
+    },
+    "idea2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_badge_integration",
+        "idea2_badge_size"
+      ]
+    },
+    "idea2_badge_integration": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "secondary"
+      }
+    },
+    "idea2_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea2_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/network.graphml — pure stdlib XML of the directed influence graph; Gephi/NetworkX/Cytoscape open it in one step; auto-included in Archive Bundle.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea3_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea3_heading",
+        "idea3_badges",
+        "idea3_text"
+      ]
+    },
+    "idea3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Confidence Score",
+        "level": "h3"
+      }
+    },
+    "idea3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_badge_feature",
+        "idea3_badge_size"
+      ]
+    },
+    "idea3_badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "idea3_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Composite 0–100 score from stability + convergence + participation + robustness; chips on gallery cards; min_confidence filter; lands inside signal.json for quant integrators.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea4_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea4_heading",
+        "idea4_badges",
+        "idea4_text"
+      ]
+    },
+    "idea4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Scenario Template Library",
+        "level": "h3"
+      }
+    },
+    "idea4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_badge_type",
+        "idea4_badge_size"
+      ]
+    },
+    "idea4_badge_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX",
+        "variant": "secondary"
+      }
+    },
+    "idea4_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea4_text": {
+      "type": "Text",
+      "props": {
+        "text": "8 pre-built scenario starters (Earnings, Policy Vote, Election, Product Launch…) with {{PLACEHOLDER}} tokens; Browse Templates modal in Step 1; /templates browse page; kills the blank-box onboarding failure.",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea5_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea5_heading",
+        "idea5_badges",
+        "idea5_text"
+      ]
+    },
+    "idea5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Embed Referrer Analytics",
+        "level": "h3"
+      }
+    },
+    "idea5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_badge_feature",
+        "idea5_badge_size"
+      ]
+    },
+    "idea5_badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "idea5_badge_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea5_text": {
+      "type": "Text",
+      "props": {
+        "text": "Referer header logging on /embed route; embed_referrers.json per sim; admin-gated GET /api/simulation/:id/embed-analytics; shows operators which domains are actually embedding their simulations.",
+        "variant": "body"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-05-24.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

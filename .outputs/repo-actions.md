@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-05-22*
-Generated from analysis of aaronjmars/MiroShark (1,190 stars, 243 forks) — these are ideas that could be autonomously built by the feature skill tomorrow.
+*Repo Action Ideas — 2026-05-24*
+Generated from analysis of aaronjmars/MiroShark (1,194 stars, 247 forks) — five ideas the feature skill can autonomously build.
 
-1. MiroShark as MCP Tool Server (Integration, Small)
-   Expose MiroShark as a Model Context Protocol server so Claude, Cursor, and any MCP-compatible AI assistant can launch and query simulations directly from a conversation — no web UI required.
+1. French (fr) Locale (Community, Small)
+   Issue #95 is an explicit community ask — translate all i18n strings to French, opening the European academic and govtech audience already primed by the BibTeX + DKG citation stack.
 
-2. Simulation Tag System (Feature, Small)
-   Let operators add 1–5 semantic tags at publish time ("macro", "governance", "crypto") with gallery filtering by tag and a /tags browse page — the vocabulary layer that makes the corpus semantically navigable.
+2. Agent Interaction Graph Export (GraphML) (Integration, Small)
+   GET /api/simulation/:id/network.graphml — pure stdlib XML of the directed influence graph; Gephi/NetworkX/Cytoscape open it in one step; auto-included in Archive Bundle.
 
-3. Cross-Simulation Archetype Leaderboard (Feature/Analytics, Small)
-   Aggregate influence rate, flip rate, and coalition membership across all published simulations per agent archetype — the first feature that turns the accumulated gallery into a publishable behavioral dataset.
+3. Simulation Confidence Score (Feature, Small)
+   Composite 0–100 score from stability + convergence + participation + robustness; chips on gallery cards; min_confidence filter; lands inside signal.json for quant integrators.
 
-4. Discussion Threads on Watch Pages (Community, Small)
-   Lightweight public comments on every published simulation's watch page — name + text + optional round reference, no account needed, with operator moderation — the first surface where visitors can add interpretive conversation alongside simulation data.
+4. Scenario Template Library (Community/DX, Small)
+   8 pre-built scenario starters (Earnings, Policy Vote, Election, Product Launch…) with {{PLACEHOLDER}} tokens; Browse Templates modal in Step 1; /templates browse page; kills the blank-box onboarding failure.
 
-5. Recurring Simulation Series (Feature, Medium)
-   Set a weekly/biweekly/monthly recurrence on any simulation config; results stack as a time-series showing how AI agent consensus evolves over time, with a /series page and trend chart.
+5. Embed Referrer Analytics (Feature, Small)
+   Referer header logging on /embed route; embed_referrers.json per sim; admin-gated GET /api/simulation/:id/embed-analytics; shows operators which domains are actually embedding their simulations.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-05-22.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-05-24.md
