@@ -1,0 +1,41 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Project Lens"
+      },
+      "children": [
+        "story_article",
+        "separator_1",
+        "text_description"
+      ]
+    },
+    "story_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pollsters Replaced People with Bots. They Forgot to Let Them Talk to Each Other.",
+        "href": "https://github.com/aeonframework/CHORUS/blob/main/articles/project-lens-2026-05-25.md",
+        "source": "Project Lens"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "The $30B polling industry is replacing human respondents with AI personas — silicon sampling — but both the old and new methods share a blind spot: they ask people in isolation. MiroShark's simulation approach lets synthetic crowds actually argue, forming coalitions and shifting stances over rounds. With Nemotron-Personas for census-grounded demographics and a new Confidence Score, it offers a structurally different product: not a snapshot of what people think, but a trajectory of what happens when they think together.",
+        "variant": "body"
+      },
+      "children": []
+    }
+  }
+}

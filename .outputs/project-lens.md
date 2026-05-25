@@ -1,5 +1,5 @@
-*New Article: Every Dependency Is a Handshake You Can't Take Back*
+*New Article: Pollsters Replaced People with Bots. They Forgot to Let Them Talk to Each Other.*
 
-The May 2026 npm supply chain attack compromised 170+ trusted packages and put 15 million users in the blast radius — not through fake packages, but by exploiting CI/CD infrastructure itself. This article uses that event as a lens to examine MiroShark's 30-PR zero-new-deps streak: why building 13 share surfaces with nothing but Python's standard library is not minimalism for its own sake, but a structural argument about composability, trust, and software that outlasts its ecosystem.
+The $30B polling industry is replacing human respondents with AI personas — silicon sampling — but both the old and new methods share a blind spot: they ask people in isolation. MiroShark's simulation approach lets synthetic crowds actually argue, forming coalitions and shifting stances over rounds. With Nemotron-Personas for census-grounded demographics and a new Confidence Score, it offers a structurally different product: not a snapshot of what people think, but a trajectory of what happens when they think together.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-05-22.md
+Read: https://github.com/aeonframework/CHORUS/blob/main/articles/project-lens-2026-05-25.md
