@@ -1,1 +1,16 @@
-Heartbeat 2026-05-24: 2 skills missed this morning — token-report (06:00 UTC, ~14h overdue) and fetch-tweets (06:30 UTC) absent from today's run list. Auto-dispatch blocked: 403 (actions:read scope). Deferred to scheduler (messages.yml). All other Sunday skills completed: repo-pulse, feature, repo-actions, self-improve, push-recap, repo-article, skill-leaderboard, memory-flush. 10 self-improve PRs stalled (#2–#11) on miroshark-aeon — chronic backlog, no new escalation.
+**Heartbeat — 2026-05-25**
+
+2 new missed skills + 2 chronic misses confirmed:
+
+**New today:**
+- repo-pulse ✗ (expected 10:00 UTC, 10h+ overdue — not in today's runs)
+- weekly-shiplog ✗ (Monday 09:00 UTC, 11h+ overdue — last ran May 18)
+
+**Chronic (flagged yesterday, skipped re-notify):**
+- token-report ✗ (2nd consecutive daily miss)
+- fetch-tweets ✗ (2nd consecutive daily miss)
+
+Auto-dispatch attempted for repo-pulse + weekly-shiplog → 403 (actions:read). Deferred to scheduler (messages.yml).
+
+**Running fine:** feature ✓, push-recap ✓, project-lens ✓
+**Open PRs:** 11 self-improve PRs (#1–#11) in chronic backlog — no new escalation.

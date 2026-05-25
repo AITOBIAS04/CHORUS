@@ -1,0 +1,196 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-05-25"
+      },
+      "children": [
+        "alert-summary",
+        "sep1",
+        "section-new",
+        "sep2",
+        "section-chronic",
+        "sep3",
+        "alert-dispatch",
+        "sep4",
+        "section-running",
+        "sep5",
+        "section-prs"
+      ]
+    },
+    "alert-summary": {
+      "type": "Alert",
+      "props": {
+        "title": "2 new missed skills + 2 chronic misses confirmed",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-new": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-new",
+        "alert-repo-pulse",
+        "alert-weekly-shiplog"
+      ]
+    },
+    "heading-new": {
+      "type": "Heading",
+      "props": {
+        "text": "New today",
+        "level": "h3"
+      }
+    },
+    "alert-repo-pulse": {
+      "type": "Alert",
+      "props": {
+        "title": "repo-pulse ✗",
+        "message": "Expected 10:00 UTC, 10h+ overdue — not in today's runs",
+        "type": "error"
+      }
+    },
+    "alert-weekly-shiplog": {
+      "type": "Alert",
+      "props": {
+        "title": "weekly-shiplog ✗",
+        "message": "Monday 09:00 UTC, 11h+ overdue — last ran May 18",
+        "type": "error"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-chronic": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-chronic",
+        "text-chronic-note",
+        "alert-token-report",
+        "alert-fetch-tweets"
+      ]
+    },
+    "heading-chronic": {
+      "type": "Heading",
+      "props": {
+        "text": "Chronic",
+        "level": "h3"
+      }
+    },
+    "text-chronic-note": {
+      "type": "Text",
+      "props": {
+        "text": "Flagged yesterday, skipped re-notify",
+        "variant": "muted"
+      }
+    },
+    "alert-token-report": {
+      "type": "Alert",
+      "props": {
+        "title": "token-report ✗",
+        "message": "2nd consecutive daily miss",
+        "type": "error"
+      }
+    },
+    "alert-fetch-tweets": {
+      "type": "Alert",
+      "props": {
+        "title": "fetch-tweets ✗",
+        "message": "2nd consecutive daily miss",
+        "type": "error"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "alert-dispatch": {
+      "type": "Alert",
+      "props": {
+        "title": "Auto-dispatch attempted",
+        "message": "repo-pulse + weekly-shiplog → 403 (actions:read). Deferred to scheduler (messages.yml).",
+        "type": "warning"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-running": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-running",
+        "stack-badges"
+      ]
+    },
+    "heading-running": {
+      "type": "Heading",
+      "props": {
+        "text": "Running fine",
+        "level": "h3"
+      }
+    },
+    "stack-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-feature",
+        "badge-push-recap",
+        "badge-project-lens"
+      ]
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✓",
+        "variant": "secondary"
+      }
+    },
+    "badge-push-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓",
+        "variant": "secondary"
+      }
+    },
+    "badge-project-lens": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens ✓",
+        "variant": "secondary"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-prs": {
+      "type": "Text",
+      "props": {
+        "text": "Open PRs: 11 self-improve PRs (#1–#11) in chronic backlog — no new escalation.",
+        "variant": "body"
+      }
+    }
+  }
+}
