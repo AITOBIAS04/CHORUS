@@ -1,0 +1,41 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: When Did the Crowd Break? MiroShark Now Tells You the Exact Round."
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "description",
+        "article-link"
+      ]
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's peak-round belief analytics (PR #108) completes an analytical stack that turns simulation output into machine-readable instrumentation — inflection points, confidence scores, prediction market calibration, and trading signals. Combined with a 1,445% Gartner surge in multi-agent inquiries and five community contributors in seven days, the simulation-as-instrument thesis is no longer theoretical.",
+        "variant": "body"
+      }
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "When Did the Crowd Break? MiroShark Now Tells You the Exact Round.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-05-26.md",
+        "source": "repo-article"
+      }
+    }
+  }
+}
