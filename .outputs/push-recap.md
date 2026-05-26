@@ -1,19 +1,17 @@
-*Push Recap — 2026-05-25*
-MiroShark — 3 commits by 2 authors | miroshark-aeon — ~47 commits (cron cycle)
+*Push Recap — 2026-05-26*
+[MiroShark] — 2 commits by 2 authors | [miroshark-aeon] — ~48 commits
 
-oEmbed Auto-Unfurl (PR #107): Share links now auto-unfurl into rich preview cards on Notion, Ghost, Substack, and WordPress. These writing platforms read oEmbed discovery tags, not Open Graph — so every organic citation was degrading to a bare URL. Pure-stdlib provider (oembed_service.py) parses sim IDs from share/embed/simulation URLs with host allow-listing, builds a type:rich payload with the existing share-card thumbnail + /embed iframe. 21st surface key. 18 tests.
+Peak-Round Belief Analytics (PR #108): MiroShark now exposes a single-call inflection summary of any debate trajectory — which round each stance peaked, which round was most volatile, and how big the swing was. Pure O(n) derivation from the same stance-split function trajectory.csv uses, so peaks match the CSV byte-for-byte. 22nd surface key, completing the analytical quadrant (raw data + visual + action signal + inflection points). 19 unit tests, full EmbedDialog panel, zero new deps.
 
-Platform Stats API + Badge (PR #105): The first endpoints describing MiroShark itself, not individual sims. GET /api/stats collapses every public, completed sim into one envelope — total count, consensus distribution, avg confidence, surface views, unique projects, newest sim. GET /api/stats/badge.svg renders a Shields.io pill (platform-blue #0ea5e9) for any README. ETag/304 support, 60s cache, 27 tests. Zero new deps (32-PR streak).
+Ecosystem Directory (PR #109): Nurstar (4th external contributor) landed a curated ECOSYSTEM.md listing 10 projects building on MiroShark — AntFleet, Blue Agent, Crucible Sim, Echo, Monitor, Nookplot, RootAI, Signa, Supercompact, Xerg. First formal acknowledgment of the downstream ecosystem. Includes PR guidelines for new entries.
 
-gitignore Cleanup (PR #104): Void Freud collapsed the explicit .env profile list into .env.* wildcard — one line absorbs future profiles.
-
-miroshark-aeon: bankr-prefetch EXIT trap (PR #45) stamps crashed status so tweet-allocator can diagnose silent prefetch failures. ai-framework-watch flagged RELEASE WEEK — pydantic-ai shipped V2 beta (b1/b2/b3) alongside stable v1.102; langgraph 1.2.1; crewai 1.14.5; mastra core 1.35.0. Aeon +76 stars (+20.8%) leads cohort by % growth.
+Bankr Prefetch Fix (PR #46): Self-improve diagnosed and fixed a crash in the tweet wallet prefetch script — grep returning no matches under set -euo pipefail was killing the script on tweetless days, producing false crash reports. Three || true guards added.
 
 Key changes:
-- /oembed endpoint (root-mounted, oEmbed 1.0) — Notion/Ghost/Substack/WordPress auto-unfurl
-- /api/stats + /api/stats/badge.svg — platform-level aggregate + Shields.io pill
-- prefetch-bankr.sh EXIT trap — crash vs never-ran disambiguation
+- backend/app/services/peak_round.py: 187-line pure-stdlib service computing peaks + volatility from trajectory.json
+- ECOSYSTEM.md: 10 named integrators with X handles and GitHub/web links — ecosystem self-registration pattern established
+- scripts/prefetch-bankr.sh: eliminated false-positive crash class on days with no tweets to verify
 
-Stats: ~30 files changed, +2,390/-8 lines (MiroShark); ~47 cron commits (miroshark-aeon)
-Repo: 1,195 stars (+1), 248 forks (+1)
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-25.md
+Stats: 11 files changed, +885/-1 lines (MiroShark); ~48 commits (miroshark-aeon)
+Stars: 1,203 (+8) | Forks: 251 (+3) | External contributors merged: 4/10 (Aug 1 target)
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-26.md

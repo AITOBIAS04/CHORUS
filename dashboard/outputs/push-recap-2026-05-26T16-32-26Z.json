@@ -1,0 +1,360 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap"
+      },
+      "children": [
+        "heading_date",
+        "stack_commits",
+        "sep_1",
+        "stack_features",
+        "sep_2",
+        "heading_changes",
+        "stack_files",
+        "sep_3",
+        "heading_stats",
+        "stack_stats",
+        "sep_4",
+        "heading_metrics",
+        "stack_metrics",
+        "sep_5",
+        "link_recap"
+      ]
+    },
+    "heading_date": {
+      "type": "Heading",
+      "props": {
+        "text": "2026-05-26",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_commits": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_miroshark",
+        "badge_aeon"
+      ]
+    },
+    "badge_miroshark": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark — 2 commits by 2 authors"
+      },
+      "children": []
+    },
+    "badge_aeon": {
+      "type": "Badge",
+      "props": {
+        "text": "miroshark-aeon — ~48 commits"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_features": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "stack_pr108",
+        "stack_pr109",
+        "stack_pr46"
+      ]
+    },
+    "stack_pr108": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_pr108",
+        "heading_pr108",
+        "text_pr108"
+      ]
+    },
+    "badge_pr108": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #108",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "heading_pr108": {
+      "type": "Heading",
+      "props": {
+        "text": "Peak-Round Belief Analytics",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_pr108": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark now exposes a single-call inflection summary of any debate trajectory — which round each stance peaked, which round was most volatile, and how big the swing was. Pure O(n) derivation from the same stance-split function trajectory.csv uses, so peaks match the CSV byte-for-byte. 22nd surface key, completing the analytical quadrant (raw data + visual + action signal + inflection points). 19 unit tests, full EmbedDialog panel, zero new deps.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "stack_pr109": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_pr109",
+        "heading_pr109",
+        "text_pr109"
+      ]
+    },
+    "badge_pr109": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #109",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "heading_pr109": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Directory",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_pr109": {
+      "type": "Text",
+      "props": {
+        "text": "Nurstar (4th external contributor) landed a curated ECOSYSTEM.md listing 10 projects building on MiroShark — AntFleet, Blue Agent, Crucible Sim, Echo, Monitor, Nookplot, RootAI, Signa, Supercompact, Xerg. First formal acknowledgment of the downstream ecosystem. Includes PR guidelines for new entries.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "stack_pr46": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_pr46",
+        "heading_pr46",
+        "text_pr46"
+      ]
+    },
+    "badge_pr46": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #46",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "heading_pr46": {
+      "type": "Heading",
+      "props": {
+        "text": "Bankr Prefetch Fix",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_pr46": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve diagnosed and fixed a crash in the tweet wallet prefetch script — grep returning no matches under set -euo pipefail was killing the script on tweetless days, producing false crash reports. Three || true guards added.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_files": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_file1",
+        "text_file2",
+        "text_file3"
+      ]
+    },
+    "text_file1": {
+      "type": "Text",
+      "props": {
+        "text": "backend/app/services/peak_round.py: 187-line pure-stdlib service computing peaks + volatility from trajectory.json",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_file2": {
+      "type": "Text",
+      "props": {
+        "text": "ECOSYSTEM.md: 10 named integrators with X handles and GitHub/web links — ecosystem self-registration pattern established",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_file3": {
+      "type": "Text",
+      "props": {
+        "text": "scripts/prefetch-bankr.sh: eliminated false-positive crash class on days with no tweets to verify",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_files",
+        "text_lines",
+        "stat_commits"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "11"
+      },
+      "children": []
+    },
+    "text_lines": {
+      "type": "Text",
+      "props": {
+        "text": "Line changes: +885/-1 (MiroShark)"
+      },
+      "children": []
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits (miroshark-aeon)",
+        "value": "~48"
+      },
+      "children": []
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_metrics": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository metrics",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks",
+        "stat_contributors"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,203",
+        "delta": "+8",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "251",
+        "delta": "+3",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_contributors": {
+      "type": "Stat",
+      "props": {
+        "label": "External contributors merged",
+        "value": "4/10 (Aug 1 target)"
+      },
+      "children": []
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-26.md"
+      },
+      "children": []
+    }
+  }
+}
