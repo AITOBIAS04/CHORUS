@@ -1,0 +1,215 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-05-27",
+        "description": "2 skills missed the mid-day window"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_missed",
+        "sep_1",
+        "section_missing",
+        "sep_2",
+        "section_skipped",
+        "sep_3",
+        "section_healthy",
+        "sep_4",
+        "alert_stalled"
+      ]
+    },
+    "stat_missed": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills missed mid-day window",
+        "value": "2"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_missing": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_missing",
+        "missing_1",
+        "missing_2"
+      ]
+    },
+    "heading_missing": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing (14:00+ hours overdue)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "missing_1": {
+      "type": "Text",
+      "props": {
+        "text": "feature (11:00 UTC) — dispatch blocked: 403 actions:read, deferred to scheduler",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "missing_2": {
+      "type": "Text",
+      "props": {
+        "text": "repo-actions (14:00 UTC, odd-day cycle) — dispatch blocked: 403 actions:read, deferred to scheduler",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_skipped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skipped_1",
+        "skipped_2"
+      ]
+    },
+    "skipped_1": {
+      "type": "Text",
+      "props": {
+        "text": "Skipped auto-trigger: self-improve (housekeeping rule)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "skipped_2": {
+      "type": "Text",
+      "props": {
+        "text": "Dedup skip: fetch-tweets (chronic 3-day miss, likely disabled by PR #47)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_healthy": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_healthy",
+        "healthy_stack"
+      ]
+    },
+    "heading_healthy": {
+      "type": "Heading",
+      "props": {
+        "text": "Healthy today",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "healthy_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_token",
+        "badge_pulse",
+        "badge_recap",
+        "badge_lens",
+        "badge_memory"
+      ]
+    },
+    "badge_token": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_lens": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_memory": {
+      "type": "Badge",
+      "props": {
+        "text": "memory-flush in-progress",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "alert_stalled": {
+      "type": "Alert",
+      "props": {
+        "title": "Stalled PRs",
+        "message": "11 self-improve PRs (#1–#11) — chronic backlog, no escalation",
+        "type": "warning"
+      },
+      "children": []
+    }
+  }
+}

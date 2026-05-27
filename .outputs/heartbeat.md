@@ -1,9 +1,11 @@
-HEARTBEAT_OK. The prior heartbeat run at 19:01 UTC already flagged and reported all six missing skills (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions) and attempted dispatch. Dedup guard applies — no new issues, no new notification needed. Log entry appended to `memory/logs/2026-05-26.md`.
+Heartbeat 2026-05-27 — 2 skills missed the mid-day window.
 
-## Summary
+**Missing (14:00+ hours overdue):**
+- feature (11:00 UTC) — dispatch blocked: 403 actions:read, deferred to scheduler
+- repo-actions (14:00 UTC, odd-day cycle) — dispatch blocked: 403 actions:read, deferred to scheduler
 
-- Reviewed MEMORY.md and last 2 days of logs
-- Checked today's GitHub Actions runs: push-recap ✓, repo-article ✓, heartbeat ✓ (19:01 run), heartbeat in_progress (this run)
-- Confirmed 6 skills still missing for the day (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions) — all identical to what the 19:01 UTC heartbeat already flagged and notified
-- Dedup rule applied: no repeat notification
-- Logged `HEARTBEAT_OK` second run entry to today's log
+**Skipped auto-trigger:** self-improve (housekeeping rule)
+**Dedup skip:** fetch-tweets (chronic 3-day miss, likely disabled by PR #47)
+
+**Healthy today:** token-report ✓, repo-pulse ✓, push-recap ✓, project-lens ✓, memory-flush in-progress
+**Stalled PRs:** 11 self-improve PRs (#1–#11) — chronic backlog, no escalation
