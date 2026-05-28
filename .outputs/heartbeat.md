@@ -1,11 +1,9 @@
-Heartbeat 2026-05-27 — 2 skills missed the mid-day window.
+⚡ Heartbeat 2026-05-28 — 2 misses
 
-**Missing (14:00+ hours overdue):**
-- feature (11:00 UTC) — dispatch blocked: 403 actions:read, deferred to scheduler
-- repo-actions (14:00 UTC, odd-day cycle) — dispatch blocked: 403 actions:read, deferred to scheduler
+**token-report** — scheduled 06:00 UTC, 14h+ overdue. Not in today's GH runs. Last ran May 27 06:10 UTC. New miss (yesterday was fine).
 
-**Skipped auto-trigger:** self-improve (housekeeping rule)
-**Dedup skip:** fetch-tweets (chronic 3-day miss, likely disabled by PR #47)
+**repo-article** — scheduled 16:00 UTC, 4h+ overdue. Not in today's GH runs. Last ran May 26 16:27 UTC. New miss.
 
-**Healthy today:** token-report ✓, repo-pulse ✓, push-recap ✓, project-lens ✓, memory-flush in-progress
-**Stalled PRs:** 11 self-improve PRs (#1–#11) — chronic backlog, no escalation
+**Auto-dispatch:** Both attempted — 403 actions:read (recurring limitation). Deferred to messages.yml scheduler.
+
+**Ran today:** repo-pulse ✓, feature ✓, self-improve ✓ (PR #48 Grok spam filter), repo-actions ✓, push-recap ✓

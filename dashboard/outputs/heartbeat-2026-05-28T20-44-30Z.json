@@ -1,0 +1,132 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "⚡ Heartbeat 2026-05-28",
+        "description": "2 misses detected"
+      },
+      "children": [
+        "mainStack"
+      ]
+    },
+    "mainStack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "missedHeading",
+        "tokenReportAlert",
+        "repoArticleAlert",
+        "separator1",
+        "autoDispatchAlert",
+        "separator2",
+        "successHeading",
+        "successStack"
+      ]
+    },
+    "missedHeading": {
+      "type": "Heading",
+      "props": {
+        "text": "Missed Tasks",
+        "level": "h3"
+      }
+    },
+    "tokenReportAlert": {
+      "type": "Alert",
+      "props": {
+        "title": "token-report",
+        "message": "Scheduled 06:00 UTC, 14h+ overdue. Not in today's GH runs. Last ran May 27 06:10 UTC. New miss (yesterday was fine).",
+        "type": "error"
+      }
+    },
+    "repoArticleAlert": {
+      "type": "Alert",
+      "props": {
+        "title": "repo-article",
+        "message": "Scheduled 16:00 UTC, 4h+ overdue. Not in today's GH runs. Last ran May 26 16:27 UTC. New miss.",
+        "type": "error"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "autoDispatchAlert": {
+      "type": "Alert",
+      "props": {
+        "title": "Auto-dispatch",
+        "message": "Both attempted — 403 actions:read (recurring limitation). Deferred to messages.yml scheduler.",
+        "type": "warning"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "successHeading": {
+      "type": "Heading",
+      "props": {
+        "text": "Successful Runs Today",
+        "level": "h3"
+      }
+    },
+    "successStack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repoPulseBadge",
+        "featureBadge",
+        "selfImproveBadge",
+        "repoActionsBadge",
+        "pushRecapBadge"
+      ]
+    },
+    "repoPulseBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✓",
+        "variant": "default"
+      }
+    },
+    "featureBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✓",
+        "variant": "default"
+      }
+    },
+    "selfImproveBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "self-improve ✓ (PR #48 Grok spam filter)",
+        "variant": "default"
+      }
+    },
+    "repoActionsBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-actions ✓",
+        "variant": "default"
+      }
+    },
+    "pushRecapBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓",
+        "variant": "default"
+      }
+    }
+  }
+}
