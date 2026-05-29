@@ -21,6 +21,7 @@
 | 2026-05-25 | Pollsters Replaced People with Bots. They Forgot to Let Them Talk to Each Other. | Industry comparison: Pew Research May 2026 polling crisis warning; silicon sampling trend (Aaru, Savanta, YouGov/Yabble); response rate collapse below 5%; MiroShark as deliberative alternative to synthetic respondents |
 | 2026-05-26 | When Did the Crowd Break? MiroShark Now Tells You the Exact Round. | Analytical instrumentation: peak-round belief analytics (PR #108) as capstone of signal/calibration/confidence/peak-round stack; Gartner 1,445% multi-agent surge; BeliefShift benchmark; 5 authors in 7 days; ECOSYSTEM.md; 1,203 stars |
 | 2026-05-27 | Nobody Told the Agents to Write a Constitution | Philosophy/big ideas: Anderson's "More Is Different" (1972) emergence principle; Emergence World experiment (May 2026); arxiv emergent AI ecosystems paper; MiroShark as recursive emergence — studies it and exhibits it (10 downstream projects, 22 composable surfaces); 1,205 stars |
+| 2026-05-29 | Most Software Has a Front Door. This One Has Twenty-Four. | Technical deep-dive: AI agent interoperability wall (NIST standards initiative, MCP 97M downloads, Conectia analysis); MiroShark 24 share surfaces as output-side composability; pure-stdlib one-service-per-surface architecture; 1,210 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |

@@ -1,5 +1,5 @@
-*New Article: Nobody Told the Agents to Write a Constitution*
+*New Article: Most Software Has a Front Door. This One Has Twenty-Four.*
 
-Philip Anderson argued in 1972 that complex systems exhibit properties irreducible to their parts. In May 2026, the Emergence World experiment proved it: ten AI agents built constitutions, committed 683 crimes, or starved to death — behaviors nobody programmed. A new arxiv paper formalizes the same principle for AI codebases. MiroShark studies exactly this kind of emergence in opinion dynamics, but is also exhibiting it — ten downstream projects, five contributors in a week, an ecosystem directory nobody asked for.
+The AI agent interoperability stack — MCP, A2A, ACP — solved how agents connect to tools. It didn't solve whether the tools have anything composable to offer when they arrive. MiroShark's 24 independently addressable share surfaces — oEmbed, RSS, GraphML, filtered webhooks, MCP tools, SVG badges, IPFS archives — suggest the real bottleneck isn't the protocol layer. It's that most software only has two ways to share its outputs. A technical deep-dive into why building more exits matters more than building wider entrances.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-05-27.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-05-29.md
