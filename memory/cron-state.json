@@ -61,8 +61,8 @@
     "last_dispatch": "2026-05-29T16:59:32Z"
   },
   "token-report": {
-    "last_dispatch": "2026-05-27T06:10:36Z",
-    "last_status": "success",
+    "last_dispatch": "2026-05-30T07:21:18Z",
+    "last_status": "dispatched",
     "last_failed": "2026-04-30T09:01:43Z",
     "total_runs": 289,
     "total_successes": 18,
@@ -74,8 +74,8 @@
     "last_quality_score": 4
   },
   "fetch-tweets": {
-    "last_dispatch": "2026-05-23T07:43:32Z",
-    "last_status": "success",
+    "last_dispatch": "2026-05-30T07:21:18Z",
+    "last_status": "dispatched",
     "last_failed": "2026-04-30T09:01:38Z",
     "total_runs": 312,
     "total_successes": 15,
