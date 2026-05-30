@@ -1,0 +1,214 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-05-30"
+      },
+      "children": [
+        "repo_info",
+        "sep1",
+        "ideas_stack",
+        "sep2",
+        "full_details_link"
+      ]
+    },
+    "repo_info": {
+      "type": "Text",
+      "props": {
+        "text": "Five ideas from today's analysis of aaronjmars/MiroShark (1,211 stars, recent Cloud Run deploy + full UI reskin).",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator"
+    },
+    "ideas_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5"
+      ]
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_title",
+        "idea1_badge",
+        "idea1_desc"
+      ]
+    },
+    "idea1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Real-Time Simulation Progress",
+        "level": "h3"
+      }
+    },
+    "idea1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "idea1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Server-Sent Events push round-by-round updates to the watch page — replaces polling with a live agent activity feed.",
+        "variant": "body"
+      }
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_title",
+        "idea2_badge",
+        "idea2_desc"
+      ]
+    },
+    "idea2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Deployment Health Endpoint",
+        "level": "h3"
+      }
+    },
+    "idea2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "DX, Small"
+      }
+    },
+    "idea2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "/api/health + /status page for Cloud Run liveness probes and uptime monitors — needed immediately after this week's Cloud Run deploy infra.",
+        "variant": "body"
+      }
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_title",
+        "idea3_badge",
+        "idea3_desc"
+      ]
+    },
+    "idea3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Zenodo DOI Auto-Deposit",
+        "level": "h3"
+      }
+    },
+    "idea3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration, Medium"
+      }
+    },
+    "idea3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Deposit archive bundles to Zenodo on publish, obtaining a permanent DOI added to the BibTeX citation — the structural requirement for peer-reviewed academic citation.",
+        "variant": "body"
+      }
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_title",
+        "idea4_badge",
+        "idea4_desc"
+      ]
+    },
+    "idea4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Multi-Metric Leaderboard Page",
+        "level": "h3"
+      }
+    },
+    "idea4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "idea4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "/leaderboard shows top 10 simulations across 5 dimensions simultaneously (most embedded, highest confidence, most volatile, most forked, most discussed) — embeddable as an iframe.",
+        "variant": "body"
+      }
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_title",
+        "idea5_badge",
+        "idea5_desc"
+      ]
+    },
+    "idea5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Community Showcase",
+        "level": "h3"
+      }
+    },
+    "idea5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Community, Small"
+      }
+    },
+    "idea5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Admin-curated /showcase of 3-6 exemplary simulations with curator notes — the editorial first-impression surface for new visitors and platform editors.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator"
+    },
+    "full_details_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-05-30.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
