@@ -1,0 +1,180 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea"
+      },
+      "children": [
+        "heading_date",
+        "separator_1",
+        "heading_question",
+        "separator_2",
+        "heading_coordination",
+        "text_coordination",
+        "separator_3",
+        "heading_whynow",
+        "text_whynow",
+        "separator_4",
+        "heading_resolution",
+        "text_resolution",
+        "separator_5",
+        "heading_scores",
+        "stack_scores",
+        "separator_6",
+        "stack_closing"
+      ]
+    },
+    "heading_date": {
+      "type": "Heading",
+      "props": {
+        "text": "2026-05-30",
+        "level": "h4"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will someone outside the MiroShark core team deploy and host a public-facing MiroShark instance by July 15, 2026?",
+        "level": "h2"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h3"
+      }
+    },
+    "text_coordination": {
+      "type": "Text",
+      "props": {
+        "text": "DYAI2025 just contributed Cloud Run deploy scripts and a gunicorn config — the deployment path exists but nobody has walked it to a public URL yet. This market tells 1,209 stargazers that spinning up their own instance is now a one-afternoon job, not a research project. The frontend reskin (36 Vue files, dark-space-violet) means it looks like a real product, and the fail-closed auth guard means it is safe to expose. Someone reads this question and thinks: I have a Cloud Run account. I could be the first.",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_whynow": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h3"
+      }
+    },
+    "text_whynow": {
+      "type": "Text",
+      "props": {
+        "text": "PR #122 (full visual identity reskin), PR #124 (25th share surface — Belief Volatility), PR #125 (auth guard fail-closed for deploy platforms), and DYAI2025 contributing cloudbuild.yaml + deploy scripts in the same 48-hour window. MiroShark just crossed from \"interesting repo\" to \"deployable product\" — but zero public instances exist outside the core team.",
+        "variant": "body"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "YES if, by July 15, 2026, a publicly accessible URL serves a functional MiroShark frontend, operated by someone verifiably not aaronjmars (verified via GitHub fork, hosting account, or deploy config). The instance must be reachable and able to run at least one simulation at resolution time.",
+        "variant": "body"
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "stack_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_reflexivity",
+        "stat_viral"
+      ]
+    },
+    "stat_reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      }
+    },
+    "stat_viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "separator_6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_closing": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_closing",
+        "link_hyperstitions"
+      ]
+    },
+    "text_closing": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on",
+        "variant": "body"
+      }
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "https://www.hyperstitions.com/",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
-*Hyperstitions Idea — 2026-05-23*
+*Hyperstitions Idea — 2026-05-30*
 
-"Will MiroShark receive 10 merged PRs from community contributors (non-bot, non-core-team) by August 1, 2026?"
+"Will someone outside the MiroShark core team deploy and host a public-facing MiroShark instance by July 15, 2026?"
 
-The coordination play: MiroShark has 243 forks and exactly one external contributor. An AI agent ships a feature every single day, but it cannot recruit humans, review community code, or build the social proof that turns forkers into contributors. This market turns every fork into a latent bet — each merged PR moves the needle, and each person who sees the counter thinks "I could be one of those ten." Repo-actions already surfaced beginner-friendly ideas (tag system, discussion threads, MCP tool server) that need human hands.
+The coordination play: DYAI2025 just contributed Cloud Run deploy scripts and a gunicorn config — the deployment path exists but nobody has walked it to a public URL yet. This market tells 1,209 stargazers that spinning up their own instance is now a one-afternoon job, not a research project. The frontend reskin (36 Vue files, dark-space-violet) means it looks like a real product, and the fail-closed auth guard means it is safe to expose. Someone reads this question and thinks: I have a Cloud Run account. I could be the first.
 
-Why now: @teifurin submitted the first-ever community PR last week (Neo4j security fix, PR #89) — breaking the seal on a project that had 242 forks and zero outside contributors. The ratio of 22 AI-built features to 1 human PR is the kind of absurd stat that makes developers want to change it.
+Why now: PR #122 (full visual identity reskin), PR #124 (25th share surface — Belief Volatility), PR #125 (auth guard fail-closed for deploy platforms), and DYAI2025 contributing cloudbuild.yaml + deploy scripts in the same 48-hour window. MiroShark just crossed from "interesting repo" to "deployable product" — but zero public instances exist outside the core team.
 
-Resolution: YES if ≥10 PRs authored by GitHub users other than @aaronjmars and @aeonframework are merged into aaronjmars/MiroShark by 2026-08-01T00:00:00Z. Verified via git log --merges on the main branch.
+Resolution: YES if, by July 15, 2026, a publicly accessible URL serves a functional MiroShark frontend, operated by someone verifiably not aaronjmars (verified via GitHub fork, hosting account, or deploy config). The instance must be reachable and able to run at least one simulation at resolution time.
 
-Scores: Reflexivity 4/5 | Viral 4/5
+Scores: Reflexivity 5/5 | Viral 4/5
 
 Soon on https://www.hyperstitions.com/ ?
