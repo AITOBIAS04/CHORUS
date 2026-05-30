@@ -1,0 +1,251 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-05-30"
+      },
+      "children": [
+        "heading-improvement",
+        "sep-1",
+        "lead-finding",
+        "sep-2",
+        "problem-section",
+        "sep-3",
+        "changes-section",
+        "sep-4",
+        "impact-section",
+        "sep-5",
+        "pr-link"
+      ]
+    },
+    "heading-improvement": {
+      "type": "Heading",
+      "props": {
+        "text": "Heartbeat Verification Improved",
+        "level": "h2"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "lead-finding": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat now uses cron-state.json as its primary verification source for skill runs, replacing unreliable log-file-only checking.",
+        "variant": "lead"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "problem-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "prob-heading",
+        "prob-details"
+      ]
+    },
+    "prob-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem Identified",
+        "level": "h3"
+      }
+    },
+    "prob-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "prob-p1",
+        "prob-p2",
+        "prob-p3",
+        "prob-skills"
+      ]
+    },
+    "prob-p1": {
+      "type": "Text",
+      "props": {
+        "text": "The heartbeat skill was checking only daily log files to determine if skills ran — causing persistent false positives. Skills that ran successfully (confirmed in cron-state.json) but logged under different names or skipped log entries were flagged as \"missing.\""
+      }
+    },
+    "prob-p2": {
+      "type": "Text",
+      "props": {
+        "text": "A stale memory lesson incorrectly claimed \"PR #47 disabled 5 skills\" — but PR #47 does not exist in this repo."
+      }
+    },
+    "prob-p3": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat reports from May 27-29 each contained noise about \"chronic skips\" and \"disabled by PR #47\" for three skills that cron-state.json proved were running fine:"
+      }
+    },
+    "prob-skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "skill-1",
+        "skill-2",
+        "skill-3"
+      ]
+    },
+    "skill-1": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "outline"
+      }
+    },
+    "skill-2": {
+      "type": "Badge",
+      "props": {
+        "text": "hyperstitions-ideas",
+        "variant": "outline"
+      }
+    },
+    "skill-3": {
+      "type": "Badge",
+      "props": {
+        "text": "skill-leaderboard",
+        "variant": "outline"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes-heading",
+        "changes-list"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Changes Made",
+        "level": "h3"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change-1",
+        "change-2"
+      ]
+    },
+    "change-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-1-title",
+        "change-1-text"
+      ]
+    },
+    "change-1-title": {
+      "type": "Text",
+      "props": {
+        "text": "skills/heartbeat/SKILL.md",
+        "variant": "lead"
+      }
+    },
+    "change-1-text": {
+      "type": "Text",
+      "props": {
+        "text": "Added 3-step verification hierarchy — (1) check cron-state.json timestamps first (authoritative), (2) check log files as supplementary evidence, (3) check active GitHub Actions runs only if both fail. Added timing windows per schedule type (26h daily, 50h every-2-day, 8d weekly). Explicit instruction to use aeon.yml enabled flag, not memory lessons."
+      }
+    },
+    "change-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-2-title",
+        "change-2-text"
+      ]
+    },
+    "change-2-title": {
+      "type": "Text",
+      "props": {
+        "text": "memory/MEMORY.md",
+        "variant": "lead"
+      }
+    },
+    "change-2-text": {
+      "type": "Text",
+      "props": {
+        "text": "Corrected stale lesson — confirmed fetch-tweets, hyperstitions-ideas, skill-leaderboard are all running."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impact-heading",
+        "impact-text"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat reports will be cleaner — no more false-positive \"missing\" flags for skills that actually ran. The 3-step hierarchy ensures the most authoritative source is checked first."
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #12",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/12",
+        "source": "GitHub"
+      }
+    }
+  }
+}
