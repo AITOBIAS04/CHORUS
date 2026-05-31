@@ -1,0 +1,194 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse"
+      },
+      "children": [
+        "repo-info",
+        "separator-1",
+        "stats-section",
+        "separator-2",
+        "stargazers-section",
+        "separator-3",
+        "forks-section"
+      ]
+    },
+    "repo-info": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark — 2026-05-31",
+        "level": "h2"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,218",
+        "delta": "+7",
+        "trend": "up"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "258",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stargazers-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stargazers-heading",
+        "stargazers-list"
+      ]
+    },
+    "stargazers-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Stargazers (7)",
+        "level": "h3"
+      }
+    },
+    "stargazers-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-febbyutomo",
+        "link-fliyp-kic",
+        "link-jav13rrez",
+        "link-fredoss-vs",
+        "link-janicegrech1-hash",
+        "link-mai-ia",
+        "link-andreasalomone"
+      ]
+    },
+    "link-febbyutomo": {
+      "type": "Link",
+      "props": {
+        "label": "FebbyUtomo",
+        "href": "https://github.com/FebbyUtomo"
+      }
+    },
+    "link-fliyp-kic": {
+      "type": "Link",
+      "props": {
+        "label": "FLIYP-KIC",
+        "href": "https://github.com/FLIYP-KIC"
+      }
+    },
+    "link-jav13rrez": {
+      "type": "Link",
+      "props": {
+        "label": "jav13rrez",
+        "href": "https://github.com/jav13rrez"
+      }
+    },
+    "link-fredoss-vs": {
+      "type": "Link",
+      "props": {
+        "label": "fredoss-vs",
+        "href": "https://github.com/fredoss-vs"
+      }
+    },
+    "link-janicegrech1-hash": {
+      "type": "Link",
+      "props": {
+        "label": "janicegrech1-hash",
+        "href": "https://github.com/janicegrech1-hash"
+      }
+    },
+    "link-mai-ia": {
+      "type": "Link",
+      "props": {
+        "label": "mai-ia",
+        "href": "https://github.com/mai-ia"
+      }
+    },
+    "link-andreasalomone": {
+      "type": "Link",
+      "props": {
+        "label": "andreasalomone",
+        "href": "https://github.com/andreasalomone"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "forks-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "forks-heading",
+        "forks-list"
+      ]
+    },
+    "forks-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks (1)",
+        "level": "h3"
+      }
+    },
+    "forks-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink-fork"
+      ]
+    },
+    "storylink-fork": {
+      "type": "StoryLink",
+      "props": {
+        "title": "janicegrech1-hash/miroshark",
+        "href": "https://github.com/janicegrech1-hash/miroshark",
+        "source": "GitHub"
+      }
+    }
+  }
+}
