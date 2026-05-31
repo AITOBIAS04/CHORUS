@@ -1,16 +1,16 @@
-*Push Recap — 2026-05-30*
-aaronjmars/MiroShark — 3 commits by 1 author (@aaronjmars + Claude Opus 4.8)
+*Push Recap — 2026-05-31*
+MiroShark — 0 commits merged | miroshark-aeon — 31 commits (all automated)
 
-Design System Port (PR #127): Ported the miroshark.xyz marketing-site aesthetic into the entire in-app frontend. Deep-space nebula background + animated star field behind every route. Branded boot splash with chrome shark that cross-fades on mount. New site footer. App.vue now exports reusable design-system classes (chrome-text, glossy-panel, metal pills). All views restyled.
+New Feature Build — Simulation Clone JSON (PR #131): Aeon built MiroShark's 26th publish-gated surface — GET /api/simulation/<id>/clone.json. This is the first surface that returns inputs (the create-body shape) rather than outputs. Wire-compatible with POST /api/simulation/create, so forking a published sim is now a single GET → POST. 250 LoC stdlib, 24 tests, EmbedDialog UI section. Awaiting review alongside PR #130 (Surface Catalog API).
 
-Button & Typography Cleanup (PR #128): Caught everything the initial port missed. The Explore page — primary discovery surface — got a complete restyle: flat rectangles → glossy round pills, gallery cards → rounded panels, bullish/bearish green/red → violet/fuchsia. Purged all 73 stray Young Serif / Space Mono references. Dropped retired fonts from Google Fonts link.
+Market & Repo Signals: MiroShark at 1,218 stars (+7 today, 3.43/day avg). $MIROSHARK dropped to $0.00000850 (-13.15% 24h), now 80.5% below May 18 ATH. Volume collapsed to $37.6K (-62.5%), lowest in recent history. FDV $850K, LP $465.1K continuing drawdown.
 
-Embed Dialog & Sentiment Palette (PR #129): The embed dialog was the last major light-themed widget inside the dark app — re-themed end-to-end. Unified the sentiment color palette across all charts and network graphs from teal/red to brand violet/fuchsia. Fixed the replay playback bar, which was entirely invisible (white bar, light text).
+Content Pipeline: 6 articles and 6 dashboard specs produced across 11 skill runs. Thread, repo-article ("The Simulation Engine That Just Got a Wallet"), project-lens, token report, repo pulse, star momentum all completed. 100% skill health.
 
 Key changes:
-- App.vue (+419/-34): centralized design system with reusable CSS classes, global nebula/starfield, Geist typography
-- ExploreView.vue (+172/-83): complete gallery page restyle, all controls → glossy pills
-- EmbedDialog.vue (+188/-186): full dark retheme, invisible controls fixed, violet gradient buttons
+- clone_service.py (new): first inputs-surface, wire-compatible create body with field-for-field parity
+- $MIROSHARK price-to-development divergence widening — 26th surface shipped while token hits cycle low
+- 1,500-star milestone projected Aug 22 at current pace
 
-Stats: 34 files changed, +1,750/-824 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-30.md
+Stats: ~28 files changed, +1,160/-109 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-31.md

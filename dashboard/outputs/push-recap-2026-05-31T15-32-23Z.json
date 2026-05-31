@@ -1,0 +1,318 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-05-31"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "commits-section",
+        "sep1",
+        "feature-section",
+        "sep2",
+        "market-section",
+        "sep3",
+        "pipeline-section",
+        "sep4",
+        "changes-section",
+        "sep5",
+        "stats-section",
+        "sep6",
+        "recap-link"
+      ]
+    },
+    "commits-section": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 0 commits merged | miroshark-aeon — 31 commits (all automated)",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "feature-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "feature-heading",
+        "feature-text",
+        "pr-info"
+      ]
+    },
+    "feature-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Feature Build — Simulation Clone JSON",
+        "level": "h2"
+      }
+    },
+    "feature-text": {
+      "type": "Text",
+      "props": {
+        "text": "Aeon built MiroShark's 26th publish-gated surface — GET /api/simulation/<id>/clone.json. This is the first surface that returns inputs (the create-body shape) rather than outputs. Wire-compatible with POST /api/simulation/create, so forking a published sim is now a single GET → POST. 250 LoC stdlib, 24 tests, EmbedDialog UI section. Awaiting review alongside PR #130 (Surface Catalog API)."
+      }
+    },
+    "pr-info": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-badge",
+        "pr-130-text"
+      ]
+    },
+    "pr-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #131",
+        "variant": "default"
+      }
+    },
+    "pr-130-text": {
+      "type": "Text",
+      "props": {
+        "text": "PR #130 awaiting review",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "market-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "market-heading",
+        "market-stats",
+        "market-details"
+      ]
+    },
+    "market-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Market & Repo Signals",
+        "level": "h2"
+      }
+    },
+    "market-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-stars",
+        "stat-price",
+        "stat-volume"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Stars",
+        "value": "1,218",
+        "delta": "+7 today (3.43/day avg)",
+        "trend": "up"
+      }
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "$MIROSHARK Price",
+        "value": "$0.00000850",
+        "delta": "-13.15% 24h",
+        "trend": "down"
+      }
+    },
+    "stat-volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "$37.6K",
+        "delta": "-62.5%",
+        "trend": "down"
+      }
+    },
+    "market-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "market-detail-1",
+        "market-detail-2",
+        "market-detail-3"
+      ]
+    },
+    "market-detail-1": {
+      "type": "Text",
+      "props": {
+        "text": "80.5% below May 18 ATH",
+        "variant": "body"
+      }
+    },
+    "market-detail-2": {
+      "type": "Text",
+      "props": {
+        "text": "FDV $850K, LP $465.1K continuing drawdown",
+        "variant": "body"
+      }
+    },
+    "market-detail-3": {
+      "type": "Text",
+      "props": {
+        "text": "Lowest volume in recent history",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pipeline-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pipeline-heading",
+        "pipeline-count",
+        "pipeline-items",
+        "pipeline-health"
+      ]
+    },
+    "pipeline-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Content Pipeline",
+        "level": "h2"
+      }
+    },
+    "pipeline-count": {
+      "type": "Text",
+      "props": {
+        "text": "6 articles and 6 dashboard specs produced across 11 skill runs",
+        "variant": "lead"
+      }
+    },
+    "pipeline-items": {
+      "type": "Text",
+      "props": {
+        "text": "Thread, repo-article (\"The Simulation Engine That Just Got a Wallet\"), project-lens, token report, repo pulse, star momentum — all completed",
+        "variant": "body"
+      }
+    },
+    "pipeline-health": {
+      "type": "Badge",
+      "props": {
+        "text": "100% skill health",
+        "variant": "secondary"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes-heading",
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "clone_service.py (new): first inputs-surface, wire-compatible create body with field-for-field parity",
+        "variant": "body"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "$MIROSHARK price-to-development divergence widening — 26th surface shipped while token hits cycle low",
+        "variant": "body"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "1,500-star milestone projected Aug 22 at current pace",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Text",
+      "props": {
+        "text": "~28 files changed, +1,160/-109 lines",
+        "variant": "muted"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-31.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
