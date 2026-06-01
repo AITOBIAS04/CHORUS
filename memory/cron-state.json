@@ -98,8 +98,8 @@
     "last_success": "2026-05-31T11:59:52Z"
   },
   "feature": {
-    "last_dispatch": "2026-05-31T11:57:44Z",
-    "last_status": "success",
+    "last_dispatch": "2026-06-01T12:46:55Z",
+    "last_status": "dispatched",
     "last_failed": "2026-05-30T11:30:52Z",
     "total_runs": 334,
     "total_successes": 28,
