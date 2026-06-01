@@ -1,23 +1,21 @@
-*Feature Built — 2026-05-31*
+*Feature Built — 2026-06-01*
 
-Real-Time Simulation Progress via SSE
-
-MiroShark simulations now push live progress to the browser. Instead of the old 2-second polling loop, the simulation runner writes events to a progress file as each round starts, completes, and as agents take notable actions — and a new Server-Sent Events endpoint streams those events directly to any connected client. The simulation page opens an EventSource on launch and shows a live activity feed: agent names, stance types, and platform badges flow in round by round, fading in with smooth CSS transitions.
+Deployment Health & Status Endpoint
+MiroShark deployments now have a proper health check and status page. Cloud Run, Fly.io, Railway, Docker Compose, and uptime monitors (UptimeRobot, Betterstack, StatusCake) can all point at /api/health and get a fast, structured response telling them whether the service is healthy or degraded — with subsystem detail, uptime, and recent simulation activity. Operators and users get a clean /status page showing the same data in a visual dashboard.
 
 Why this matters:
-Until now, watching a running simulation meant polling two REST endpoints every 2–3 seconds and seeing numbers increment in batches. A 15-round, 30-agent simulation took several minutes, and the entire time the UI looked like a loading bar that updated in jumps. SSE replaces that with a push stream: the moment an agent posts on Twitter, the feed shows their name and action type. The moment a round completes on Reddit, the progress ticks up. The simulation feels alive — you watch agents act in real time instead of watching a number go up. This was idea #1 from yesterday's repo-actions (2026-05-30), selected as the highest-impact small-effort build: it transforms the creation experience rather than adding another post-hoc analytical surface.
+Cloud Run deploy infra shipped last week (cloudbuild.yaml + deploy script), but without a health check endpoint, Cloud Run cannot perform liveness probes and will restart the service unnecessarily during cold starts. No uptime monitor could alert on outages. For any operator self-hosting MiroShark on Cloud Run, Fly.io, or Railway, this was the missing standard ops primitive — the one that should ship within 72 hours of any new deployment target. The /status page gives operators a clean URL to link from their README or share in a Slack channel when users ask "is it down?"
 
 What was built:
-- backend/app/services/sse_progress_service.py: Pure-stdlib service that writes progress events to progress_events.jsonl and provides a file-tailing SSE generator with 15-second keepalive pings and 5-minute inactivity timeout
-- backend/app/services/simulation_runner.py: Modified to emit round_start, round_complete, agent_action (for posts, comments, quotes, trades), platform_complete, simulation_complete, and simulation_error events during the monitor loop
-- backend/app/api/simulation.py: New GET /api/simulation/<id>/events SSE endpoint with X-Accel-Buffering: no header for Cloud Run proxy compatibility
-- frontend/src/components/Step3Simulation.vue: EventSource connection on simulation start/resume; live activity feed strip with TransitionGroup animations showing platform labels, agent names, and action badges; auto-cleanup on unmount; graceful fallback to existing polling on connection failure
-- 12 unit tests, OpenAPI spec entry, bilingual docs (API.md + FEATURES.md, English + Chinese)
+- backend/app/services/health\_service.py: Three fast subsystem checks (filesystem readability, simulation directory writability, Python version), uptime computed from a startup timestamp file written at Flask init, recent simulation count via scandir mtime. All complete in under 50ms — no sim scanning, no database calls, no LLM.
+- backend/app/api/health.py: Two endpoints — GET /api/health (returns 200 on ok, 503 on degraded) and GET /api/health/status (same payload, always 200). Both public, cached 30 seconds. Exempt from internal auth guard.
+- frontend/src/views/StatusView.vue: Dark-themed /status page with large operational/degraded indicator, 4 metric cards (uptime, simulations 24h, storage health, Python version), subsystem check rows with pass/fail dots. Auto-refreshes every 60 seconds.
+- backend/tests/test\_unit\_health.py: 16 unit tests covering ok/degraded states, startup timestamp creation, uptime computation, simulation counting, route declarations, auth exemption, and OpenAPI spec presence.
 
 How it works:
-The simulation runner already monitors per-platform actions.jsonl files every 2 seconds in a background thread. When it detects a round_start, round_end, or simulation_end event (or a high-signal agent action like CREATE_POST), it now also appends a progress event to progress_events.jsonl via the SSE service. The SSE endpoint opens that file, streams all existing lines immediately (so clients connecting mid-run catch up), then enters a 0.5-second tail-follow loop watching for new lines — the same pattern used by the existing observability SSE endpoint. Flask's native stream_with_context + Response(mimetype='text/event-stream') handles the long-lived connection. On the frontend, EventSource is native in every modern browser — zero new npm dependencies. The live feed keeps a sliding window of the 5 most recent entries with Vue's TransitionGroup providing enter/leave animations.
+On app startup, create\_app() writes a startup\_timestamp.json to the simulation data directory. When /api/health is called, health\_service.py runs three fast filesystem checks: can we list the data directory (filesystem), can we write to it (simulation\_dir\_writable), and what Python version is running. It reads the startup timestamp to compute uptime\_seconds, and does a quick scandir pass to count simulation directories modified in the last 24 hours. If any check fails, status is "degraded" and /api/health returns 503. The /status alias always returns 200 for dashboards that poll without caring about HTTP codes. The frontend StatusView calls the status endpoint on mount and every 60 seconds, rendering the results in a dark-themed card layout matching the new space-violet design system.
 
-What's next:
-The live feed currently shows text-only entries. Future iterations could include belief-position indicators (bullish/bearish chips) per agent action, a mini-chart that updates in real time, or a full-screen live mode designed for projection during workshops.
+What is next:
+Could add Neo4j connectivity check, LLM provider reachability, and disk usage metrics in a future iteration. The /status page could also serve as the foundation for an admin dashboard.
 
-Push blocked — GH_GLOBAL secret not set (27th consecutive block). Local commit 805b4c9 on branch feat/sse-progress.
+PR: blocked — GH\_GLOBAL secret not set (28th consecutive build blocked from push)
