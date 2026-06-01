@@ -1,0 +1,174 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK crypto token on Base chain / MiroShark"
+      },
+      "children": [
+        "alert_note",
+        "separator1",
+        "stack_tweets"
+      ]
+    },
+    "alert_note": {
+      "type": "Alert",
+      "props": {
+        "message": "XAI_API_KEY not available; results compiled via WebSearch",
+        "type": "info"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_tweets": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet1",
+        "tweet2",
+        "tweet3",
+        "tweet4",
+        "tweet5"
+      ]
+    },
+    "tweet1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweetcard1",
+        "link1"
+      ]
+    },
+    "tweetcard1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "getting bullied by a github fork is crazy"
+      }
+    },
+    "link1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2046202572415943146"
+      }
+    },
+    "tweet2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweetcard2",
+        "link2"
+      ]
+    },
+    "tweetcard2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "community redistribution: share the github repo & get rewarded. MiroFish has 56k stars — MiroShark is easily 10x"
+      }
+    },
+    "link2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2045134558186664267"
+      }
+    },
+    "tweet3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweetcard3",
+        "link3"
+      ]
+    },
+    "tweetcard3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "The Knowledge Graph Inside MiroShark: How Structured Memory Makes Simulated Agents Think"
+      }
+    },
+    "link3": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2038639003096744329"
+      }
+    },
+    "tweet4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweetcard4",
+        "link4"
+      ]
+    },
+    "tweetcard4": {
+      "type": "TweetCard",
+      "props": {
+        "author": "RoundtableSpace",
+        "handle": "RoundtableSpace",
+        "text": "MIROSHARK IS BUILDING A SIMULATION FRAMEWORK THAT LETS AI MODEL HOW REDDIT, X, AND SOON POLYMARKET WOULD REACT TO AN IDEA."
+      }
+    },
+    "link4": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/RoundtableSpace/status/2036242843816305095"
+      }
+    },
+    "tweet5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweetcard5",
+        "link5"
+      ]
+    },
+    "tweetcard5": {
+      "type": "TweetCard",
+      "props": {
+        "author": "socialwithaayan",
+        "handle": "socialwithaayan",
+        "text": "Someone built a swarm of thousands of AI agents with real memories and personalities and used it to predict the future. The live demos are scarily accurate."
+      }
+    },
+    "link5": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/socialwithaayan/status/2032054540166648115"
+      }
+    }
+  }
+}

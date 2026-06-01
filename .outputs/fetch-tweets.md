@@ -1,23 +1,18 @@
-*Top Tweets — MIROSHARK / MiroShark (2026-05-30)*
+*Top Tweets — MIROSHARK crypto token on Base chain / MiroShark (2026-06-01)*
 
-XAI_API_KEY not set — results via WebSearch.
+_XAI\_API\_KEY not available; results compiled via WebSearch_
 
-1. x.com/aaronjmars — Aeon autonomously added so many features to MiroShark that something unexpected happened — a "mind blow moment" the dev had to share
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2055301173578457241)
+1. x.com/aaronjmars — getting bullied by a github fork is crazy
+[View tweet](https://x.com/aaronjmars/status/2046202572415943146)
 
-2. x.com/aaronjmars — MiroShark just built the full simulation engine that MiroFish originally promised
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2037582921947574759)
+2. x.com/aaronjmars — community redistribution: share the github repo & get rewarded. MiroFish has 56k stars — MiroShark is easily 10x
+[View tweet](https://x.com/aaronjmars/status/2045134558186664267)
 
-3. x.com/github_repo — GitHub Trending picked up MiroShark: multi-agent engine that simulates public reaction on social media from any uploaded doc
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/github_repo/status/2043803689907786095)
+3. x.com/aaronjmars — The Knowledge Graph Inside MiroShark: How Structured Memory Makes Simulated Agents Think
+[View tweet](https://x.com/aaronjmars/status/2038639003096744329)
 
-4. x.com/aaronjmars — MiroShark \& Aeon roadmap: fees tokenized via bankrbot; Aeon instance will use trading fees for ads, burns, and coordination markets
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2036818584937095581)
+4. x.com/RoundtableSpace — MIROSHARK IS BUILDING A SIMULATION FRAMEWORK THAT LETS AI MODEL HOW REDDIT, X, AND SOON POLYMARKET WOULD REACT TO AN IDEA.
+[View tweet](https://x.com/RoundtableSpace/status/2036242843816305095)
 
-5. x.com/BioStone_chad — Dev confirmed roadmap; $MIROSHARK at 70k MC on Base with upgraded swarm AI, fee-driven burns and coordination; contract 0xd7bc6a05a56655FB2052F742B012d1DFD66e1BA3
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/BioStone_chad/status/2036824963689411046)
+5. x.com/socialwithaayan — Someone built a swarm of thousands of AI agents with real memories and personalities and used it to predict the future. The live demos are scarily accurate.
+[View tweet](https://x.com/socialwithaayan/status/2032054540166648115)
