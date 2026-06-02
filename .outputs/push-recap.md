@@ -1,16 +1,20 @@
-*Push Recap — 2026-05-31*
-MiroShark — 0 commits merged | miroshark-aeon — 31 commits (all automated)
+*Push Recap — 2026-06-02*
+MiroShark — 14 commits by @aaronjmars
 
-New Feature Build — Simulation Clone JSON (PR #131): Aeon built MiroShark's 26th publish-gated surface — GET /api/simulation/<id>/clone.json. This is the first surface that returns inputs (the create-body shape) rather than outputs. Wire-compatible with POST /api/simulation/create, so forking a published sim is now a single GET → POST. 250 LoC stdlib, 24 tests, EmbedDialog UI section. Awaiting review alongside PR #130 (Surface Catalog API).
+New Surface: Agent Persona Export (PR #137): agents.json endpoint exposes the full agent roster — name, bio, persona, demographics, final stance — as machine-readable JSON. The 27th share surface, and the first to answer "who was in the debate" rather than "what did they conclude." Researchers can now cross-reference pool composition with outcomes without parsing Markdown.
 
-Market & Repo Signals: MiroShark at 1,218 stars (+7 today, 3.43/day avg). $MIROSHARK dropped to $0.00000850 (-13.15% 24h), now 80.5% below May 18 ATH. Volume collapsed to $37.6K (-62.5%), lowest in recent history. FDV $850K, LP $465.1K continuing drawdown.
+New Surface: Private Share Links (PR #132): Token-gated /preview/<token> URLs bypass the publish gate for the preview page only. 192-bit tokens, 30-day default expiry, noindex/no-OG privacy posture. Operators can share simulations with specific people before going public — revocation is instant via no-store caching.
 
-Content Pipeline: 6 articles and 6 dashboard specs produced across 11 skill runs. Thread, repo-article ("The Simulation Engine That Just Got a Wallet"), project-lens, token report, repo pulse, star momentum all completed. 100% skill health.
+UI Dark Theme Fix (PR #133): Migrated ~85 leftover light-theme rgba(10,10,10,...) borders in the report panel to light-on-dark rgba(244,241,255,...). Timeline dots next to LLM RESPONSE/TOOL RESULT are now visible. Tab buttons render square instead of pill-shaped.
+
+README & Docs Overhaul (10 commits): README slimmed from 314→242 lines — feature wall replaced with 8-highlight table + deep-dive link. Chinese docs reached full parity (52 headings, 46-row catalog in both languages). All diagrams PNG→JPG (~92% smaller). New demo GIF and chrome logo.
+
+Community: 4 new ecosystem listing PRs (#138–#141) from external contributors (HivemindOS, Echo Oracle, Capacitr, SyntheticsAI).
 
 Key changes:
-- clone_service.py (new): first inputs-surface, wire-compatible create body with field-for-field parity
-- $MIROSHARK price-to-development divergence widening — 26th surface shipped while token hits cycle low
-- 1,500-star milestone projected Aug 22 at current pace
+- GET /api/simulation/<id>/agents.json — full persona/demographics/stance roster (+1,602 lines)
+- Token-gated preview URLs with noindex/no-OG privacy posture (+1,826 lines)
+- Step4Report.vue dark-theme contrast migration — 85 rgba values fixed
 
-Stats: ~28 files changed, +1,160/-109 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-05-31.md
+Stats: ~30+ files changed, +4,542/-258 lines | Stars: 1,223 (+5) | Forks: 262 (+4)
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-02.md

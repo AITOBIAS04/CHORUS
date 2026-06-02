@@ -1,0 +1,353 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-02"
+      },
+      "children": [
+        "heading_author",
+        "separator_1",
+        "section_agent_persona",
+        "separator_2",
+        "section_private_links",
+        "separator_3",
+        "section_dark_theme",
+        "separator_4",
+        "section_docs",
+        "separator_5",
+        "section_community",
+        "separator_6",
+        "section_key_changes",
+        "separator_7",
+        "section_stats"
+      ]
+    },
+    "heading_author": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 14 commits by @aaronjmars",
+        "variant": "lead"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_agent_persona": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_agent_persona",
+        "text_agent_persona_p1",
+        "text_agent_persona_p2",
+        "link_pr137"
+      ]
+    },
+    "heading_agent_persona": {
+      "type": "Heading",
+      "props": {
+        "text": "New Surface: Agent Persona Export",
+        "level": "h3"
+      }
+    },
+    "text_agent_persona_p1": {
+      "type": "Text",
+      "props": {
+        "text": "agents.json endpoint exposes the full agent roster — name, bio, persona, demographics, final stance — as machine-readable JSON."
+      }
+    },
+    "text_agent_persona_p2": {
+      "type": "Text",
+      "props": {
+        "text": "The 27th share surface, and the first to answer \"who was in the debate\" rather than \"what did they conclude.\" Researchers can now cross-reference pool composition with outcomes without parsing Markdown."
+      }
+    },
+    "link_pr137": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #137",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/137"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_private_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_private_links",
+        "text_private_links_p1",
+        "text_private_links_p2",
+        "link_pr132"
+      ]
+    },
+    "heading_private_links": {
+      "type": "Heading",
+      "props": {
+        "text": "New Surface: Private Share Links",
+        "level": "h3"
+      }
+    },
+    "text_private_links_p1": {
+      "type": "Text",
+      "props": {
+        "text": "Token-gated /preview/<token> URLs bypass the publish gate for the preview page only. 192-bit tokens, 30-day default expiry, noindex/no-OG privacy posture."
+      }
+    },
+    "text_private_links_p2": {
+      "type": "Text",
+      "props": {
+        "text": "Operators can share simulations with specific people before going public — revocation is instant via no-store caching."
+      }
+    },
+    "link_pr132": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #132",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/132"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_dark_theme": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_dark_theme",
+        "text_dark_theme_p1",
+        "text_dark_theme_p2",
+        "link_pr133"
+      ]
+    },
+    "heading_dark_theme": {
+      "type": "Heading",
+      "props": {
+        "text": "UI Dark Theme Fix",
+        "level": "h3"
+      }
+    },
+    "text_dark_theme_p1": {
+      "type": "Text",
+      "props": {
+        "text": "Migrated ~85 leftover light-theme rgba(10,10,10,...) borders in the report panel to light-on-dark rgba(244,241,255,...)."
+      }
+    },
+    "text_dark_theme_p2": {
+      "type": "Text",
+      "props": {
+        "text": "Timeline dots next to LLM RESPONSE/TOOL RESULT are now visible. Tab buttons render square instead of pill-shaped."
+      }
+    },
+    "link_pr133": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #133",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/133"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_docs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_docs",
+        "text_docs_p1",
+        "text_docs_p2",
+        "text_docs_p3"
+      ]
+    },
+    "heading_docs": {
+      "type": "Heading",
+      "props": {
+        "text": "README & Docs Overhaul",
+        "level": "h3"
+      }
+    },
+    "text_docs_p1": {
+      "type": "Text",
+      "props": {
+        "text": "10 commits. README slimmed from 314→242 lines — feature wall replaced with 8-highlight table + deep-dive link."
+      }
+    },
+    "text_docs_p2": {
+      "type": "Text",
+      "props": {
+        "text": "Chinese docs reached full parity (52 headings, 46-row catalog in both languages). All diagrams PNG→JPG (~92% smaller)."
+      }
+    },
+    "text_docs_p3": {
+      "type": "Text",
+      "props": {
+        "text": "New demo GIF and chrome logo."
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_community": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_community",
+        "text_community",
+        "link_pr138_141"
+      ]
+    },
+    "heading_community": {
+      "type": "Heading",
+      "props": {
+        "text": "Community",
+        "level": "h3"
+      }
+    },
+    "text_community": {
+      "type": "Text",
+      "props": {
+        "text": "4 new ecosystem listing PRs from external contributors: HivemindOS, Echo Oracle, Capacitr, SyntheticsAI."
+      }
+    },
+    "link_pr138_141": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PRs #138–#141",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pulls"
+      }
+    },
+    "separator_6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_key_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_key_changes",
+        "text_change1",
+        "text_change2",
+        "text_change3"
+      ]
+    },
+    "heading_key_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "text_change1": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/<id>/agents.json — full persona/demographics/stance roster (+1,602 lines)"
+      }
+    },
+    "text_change2": {
+      "type": "Text",
+      "props": {
+        "text": "Token-gated preview URLs with noindex/no-OG privacy posture (+1,826 lines)"
+      }
+    },
+    "text_change3": {
+      "type": "Text",
+      "props": {
+        "text": "Step4Report.vue dark-theme contrast migration — 85 rgba values fixed"
+      }
+    },
+    "separator_7": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_container",
+        "link_full_recap"
+      ]
+    },
+    "stats_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_lines",
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "30+"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines",
+        "value": "+4,542 / -258"
+      }
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,223",
+        "delta": "+5",
+        "trend": "up"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "262",
+        "delta": "+4",
+        "trend": "up"
+      }
+    },
+    "link_full_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-02.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
