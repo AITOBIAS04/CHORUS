@@ -1,0 +1,366 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-06-02"
+      },
+      "children": [
+        "context_text",
+        "context_stats",
+        "separator1",
+        "items_stack",
+        "separator2",
+        "details_link"
+      ]
+    },
+    "context_text": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of MiroShark. 4 ecosystem projects building on the platform simultaneously: HivemindOS, Echo Oracle, Capacitr, SyntheticsAI",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "context_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks",
+        "stat_prs"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,223"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "262"
+      },
+      "children": []
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Ecosystem PRs Open",
+        "value": "4"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "items_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+      ]
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_title",
+        "item1_tags",
+        "item1_desc"
+      ]
+    },
+    "item1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Ecosystem Registry API",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item1_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_integration",
+        "badge_small"
+      ]
+    },
+    "badge_integration": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration"
+      },
+      "children": []
+    },
+    "badge_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "item1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Machine-readable GET /api/ecosystem endpoint parsing ECOSYSTEM.md into JSON — serves the 4 new ecosystem projects and signals hub maturity to dev platforms.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_title",
+        "item2_tags",
+        "item2_desc"
+      ]
+    },
+    "item2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. French Locale",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item2_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_community",
+        "badge_small2"
+      ]
+    },
+    "badge_community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX"
+      },
+      "children": []
+    },
+    "badge_small2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "item2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Directly closes open issue #95 (filed May 22) — adds FR translations to Vue i18n using the existing zh-CN infrastructure as the pattern.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_title",
+        "item3_tags",
+        "item3_desc"
+      ]
+    },
+    "item3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation RSS Feed",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item3_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_integration2",
+        "badge_small3"
+      ]
+    },
+    "badge_integration2": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration"
+      },
+      "children": []
+    },
+    "badge_small3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "item3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/feed.rss — pure-stdlib RSS 2.0 of recent published sims; zero-config subscription for ecosystem projects without polling or webhook setup.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_title",
+        "item4_tags",
+        "item4_desc"
+      ]
+    },
+    "item4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Embed Theme Parameter",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item4_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_feature",
+        "badge_small4"
+      ]
+    },
+    "badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX"
+      },
+      "children": []
+    },
+    "badge_small4": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "item4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "?theme=dark|light|system on the embed URL — CSS-only, no backend changes; lets HivemindOS, SyntheticsAI, and Capacitr match their own visual language.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_title",
+        "item5_tags",
+        "item5_desc"
+      ]
+    },
+    "item5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Scheduler",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item5_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_feature2",
+        "badge_medium"
+      ]
+    },
+    "badge_feature2": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      },
+      "children": []
+    },
+    "badge_medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      },
+      "children": []
+    },
+    "item5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulation/schedule with run_at datetime — Flask daemon thread fires queued sims automatically; turns MiroShark from synchronous to autonomous.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "details_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-02.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
