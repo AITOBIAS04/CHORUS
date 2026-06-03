@@ -1,0 +1,171 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-06-03"
+      },
+      "children": [
+        "alert_missed",
+        "sep1",
+        "skills_list",
+        "sep2",
+        "section_dispatch",
+        "sep3",
+        "section_prs",
+        "sep4",
+        "metrics"
+      ]
+    },
+    "alert_missed": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Skills Missed Their Window",
+        "message": "4 skills failed to run at their scheduled times today"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "skills_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill_repopulse",
+        "skill_selfimprove",
+        "skill_repoactions",
+        "skill_pushrecap"
+      ]
+    },
+    "skill_repopulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse (10:00 UTC)",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "skill_selfimprove": {
+      "type": "Badge",
+      "props": {
+        "text": "self-improve (13:00 UTC)",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "skill_repoactions": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-actions (14:00 UTC)",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "skill_pushrecap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap (15:00 UTC)",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "section_dispatch": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_dispatch"
+      ]
+    },
+    "alert_dispatch": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "Auto-Dispatch Blocked",
+        "message": "actions: read scope. Manual re-trigger needed."
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "section_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_prs",
+        "text_prs"
+      ]
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_prs": {
+      "type": "Text",
+      "props": {
+        "text": "12 improve PRs in CHORUS repo remain stalled (oldest from Apr 30)"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_token",
+        "stat_stars"
+      ]
+    },
+    "stat_token": {
+      "type": "Stat",
+      "props": {
+        "label": "Token",
+        "value": "$0.00000696",
+        "delta": "+5.86%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,226"
+      },
+      "children": []
+    }
+  }
+}
