@@ -1,0 +1,213 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Feature Built — 2026-06-03",
+        "description": "Ecosystem Registry API"
+      },
+      "children": [
+        "heading_api",
+        "text_intro",
+        "sep_1",
+        "heading_why",
+        "text_why",
+        "stack_projects",
+        "sep_2",
+        "heading_built",
+        "text_service",
+        "text_api",
+        "text_ecosystem_view",
+        "text_explore_view",
+        "text_tests",
+        "sep_3",
+        "heading_how",
+        "text_how",
+        "sep_4",
+        "heading_next",
+        "text_next",
+        "sep_5",
+        "alert_status"
+      ]
+    },
+    "heading_api": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Registry API",
+        "level": "h2"
+      }
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "ECOSYSTEM.md is no longer just a Markdown file for humans — it's now a live, machine-readable API. A new GET /api/ecosystem endpoint parses the Markdown table into structured JSON: every project that builds on MiroShark gets exposed as a clean object with name, website, X handle, and GitHub link. A companion GET /api/ecosystem/count returns just the project total, ready for badge rendering or status widgets.",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why this matters",
+        "level": "h3"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "Four ecosystem projects (HivemindOS, Echo Oracle, Capacitr, SyntheticsAI) submitted PRs in the same week. The ECOSYSTEM.md table is growing, but it's invisible to machines — no downstream tool can query it, render a widget from it, or subscribe to changes. The Ecosystem Registry API turns a PR-based append log into a composable surface. Any project building on MiroShark can now pull the live registry, render an 'ecosystem' widget, or count the network size without scraping Markdown. For the Chinese dev platform hyperstition, this is the asset worth linking to.",
+        "variant": "body"
+      }
+    },
+    "stack_projects": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_hm",
+        "badge_eo",
+        "badge_cap",
+        "badge_sa"
+      ]
+    },
+    "badge_hm": {
+      "type": "Badge",
+      "props": {
+        "text": "HivemindOS",
+        "variant": "outline"
+      }
+    },
+    "badge_eo": {
+      "type": "Badge",
+      "props": {
+        "text": "Echo Oracle",
+        "variant": "outline"
+      }
+    },
+    "badge_cap": {
+      "type": "Badge",
+      "props": {
+        "text": "Capacitr",
+        "variant": "outline"
+      }
+    },
+    "badge_sa": {
+      "type": "Badge",
+      "props": {
+        "text": "SyntheticsAI",
+        "variant": "outline"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_built": {
+      "type": "Heading",
+      "props": {
+        "text": "What was built",
+        "level": "h3"
+      }
+    },
+    "text_service": {
+      "type": "Text",
+      "props": {
+        "text": "backend/app/services/ecosystem_service.py — Regex-based ECOSYSTEM.md table parser. Extracts project name, classifies links (website vs X handle vs GitHub) from the Links column, and caches results for 60 minutes with mtime-based invalidation so merged PRs that update the table are picked up quickly.",
+        "variant": "body"
+      }
+    },
+    "text_api": {
+      "type": "Text",
+      "props": {
+        "text": "backend/app/api/ecosystem.py — Flask blueprint with two public endpoints: GET /api/ecosystem (full registry with ETag for conditional requests) and GET /api/ecosystem/count (badge-ready total + timestamp).",
+        "variant": "body"
+      }
+    },
+    "text_ecosystem_view": {
+      "type": "Text",
+      "props": {
+        "text": "frontend/src/views/EcosystemView.vue — New /ecosystem page with responsive card grid. Each project gets a numbered card with clickable link pills for Website, X, and GitHub. Dark-themed with the deep-space-violet design system, bilingual (EN/ZH).",
+        "variant": "body"
+      }
+    },
+    "text_explore_view": {
+      "type": "Text",
+      "props": {
+        "text": "frontend/src/views/ExploreView.vue — Added an 'Ecosystem' navigation chip to the /explore gallery toolbar, alongside RSS and Verified.",
+        "variant": "body"
+      }
+    },
+    "text_tests": {
+      "type": "Text",
+      "props": {
+        "text": "backend/tests/test_unit_ecosystem.py — 10 unit tests covering parsing, cache behavior, mtime invalidation, missing file handling, and link classification.",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_how": {
+      "type": "Heading",
+      "props": {
+        "text": "How it works",
+        "level": "h3"
+      }
+    },
+    "text_how": {
+      "type": "Text",
+      "props": {
+        "text": "The service reads ECOSYSTEM.md from the repo root using a line-by-line parser that identifies the GFM table by its | Logo | Project | Links | header. Each data row is split on pipes, the Project column gives the name, and the Links column is scanned with a regex for Markdown links — URLs containing github.com route to the github field, @handle labels route to x_handle, everything else becomes the website. Results cache in a module-level dict keyed on file path, with a 60-minute TTL that invalidates early if the file's mtime changes. Pure stdlib — re, os, time, threading. Zero new dependencies.",
+        "variant": "body"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_next": {
+      "type": "Heading",
+      "props": {
+        "text": "What's next",
+        "level": "h3"
+      }
+    },
+    "text_next": {
+      "type": "Text",
+      "props": {
+        "text": "Could add an ecosystem count to the platform stats badge, or a /api/ecosystem/search endpoint for filtering by name. When ECOSYSTEM.md grows past 30+ projects, pagination would be valuable.",
+        "variant": "body"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_status": {
+      "type": "Alert",
+      "props": {
+        "title": "Branch Status",
+        "message": "Branch: feat/ecosystem-registry-api (push blocked — GH_GLOBAL not set)",
+        "type": "warning"
+      }
+    }
+  }
+}

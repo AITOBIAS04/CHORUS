@@ -1,22 +1,22 @@
-Feature Built — 2026-06-02
+*Feature Built — 2026-06-03*
 
-Multi-Metric Simulation Leaderboard
-
-MiroShark now has a dedicated leaderboard page at /leaderboard that ranks published simulations across five independent dimensions of engagement and quality. Instead of one composite trending score, visitors can switch between five metric tabs — Most Embedded, Highest Confidence, Most Volatile, Most Forked, and Most Agents — each showing the top 10 simulations for that signal.
+Ecosystem Registry API
+ECOSYSTEM.md is no longer just a Markdown file for humans — it's now a live, machine-readable API. A new GET /api/ecosystem endpoint parses the Markdown table into structured JSON: every project that builds on MiroShark gets exposed as a clean object with name, website, X handle, and GitHub link. A companion GET /api/ecosystem/count returns just the project total, ready for badge rendering or status widgets.
 
 Why this matters:
-The gallery at /explore answers one question at a time: what's trending, what's confident, what's new. A visitor who wants to understand the full landscape of MiroShark activity had to run five separate queries. The leaderboard answers all five simultaneously in a ranked table format. For first-time visitors arriving from referral links, the leaderboard answers 'what's the best content here?' in one glance. For the MIROSHARK token narrative, the leaderboard is shareable evidence of real platform usage with measurable engagement across distinct dimensions. This was repo-actions idea #4 from May 30 — the fourth of five ideas built from that set (after SSE Progress and Deployment Health).
+Four ecosystem projects (HivemindOS, Echo Oracle, Capacitr, SyntheticsAI) submitted PRs in the same week. The ECOSYSTEM.md table is growing, but it's invisible to machines — no downstream tool can query it, render a widget from it, or subscribe to changes. The Ecosystem Registry API turns a PR-based append log into a composable surface. Any project building on MiroShark can now pull the live registry, render an 'ecosystem' widget, or count the network size without scraping Markdown. For the Chinese dev platform hyperstition, this is the asset worth linking to.
 
 What was built:
-- backend/app/services/leaderboard_service.py: Pure-stdlib service that scans all published sim directories and computes 5 metrics from existing data files (surface-stats.json for embed hits, signal.json for confidence, volatility.json for volatility index, state.json parent refs for fork count, state.json profiles_count for agent count). 1-hour cache per metric. Nulls sort last. Only public + completed sims eligible.
-- backend/app/api/leaderboard.py: Flask blueprint at /api/leaderboard with ?metric (embed_hits|confidence|volatility|forks|agents) and ?limit (1-25) params. Public endpoint, Cache-Control 1 hour.
-- frontend/src/views/LeaderboardView.vue: Dark-themed page matching the space-violet design system. 5-tab metric selector with distinct icons, ranked table with gold/silver/bronze rank badges, consensus direction chips (color-coded bullish/neutral/bearish), formatted metric values, relative dates. Embed mode via ?embed=true strips navigation for iframe use. Responsive — mobile collapses tab labels to icons-only and hides the date column.
-- backend/tests/test_unit_leaderboard.py: 12 unit tests covering all 5 metrics, null handling, limit, cache hit/miss, exclusion of private/incomplete sims, invalid metric fallback, empty state.
+- backend/app/services/ecosystem_service.py: Regex-based ECOSYSTEM.md table parser. Extracts project name, classifies links (website vs X handle vs GitHub) from the Links column, and caches results for 60 minutes with mtime-based invalidation so merged PRs that update the table are picked up quickly.
+- backend/app/api/ecosystem.py: Flask blueprint with two public endpoints — GET /api/ecosystem (full registry with ETag for conditional requests) and GET /api/ecosystem/count (badge-ready total + timestamp).
+- frontend/src/views/EcosystemView.vue: New /ecosystem page with responsive card grid. Each project gets a numbered card with clickable link pills for Website, X, and GitHub. Dark-themed with the deep-space-violet design system, bilingual (EN/ZH).
+- frontend/src/views/ExploreView.vue: Added an 'Ecosystem' navigation chip to the /explore gallery toolbar, alongside RSS and Verified.
+- backend/tests/test_unit_ecosystem.py: 10 unit tests covering parsing, cache behavior, mtime invalidation, missing file handling, and link classification.
 
 How it works:
-The service scans WONDERWALL_SIMULATION_DATA_DIR on each uncached request, reading the minimum set of JSON files per simulation needed for the requested metric. Each metric derives from a different existing file — no new data is collected during simulation runs, and no new writes happen. Results are cached per metric+limit combo for 1 hour using a thread-safe module-level cache (same pattern as platform_stats.py). The frontend fetches /api/leaderboard with the active metric tab and renders a ranked table. The ?metric param persists in the URL so a specific leaderboard view is bookmarkable and shareable.
+The service reads ECOSYSTEM.md from the repo root using a line-by-line parser that identifies the GFM table by its | Logo | Project | Links | header. Each data row is split on pipes, the Project column gives the name, and the Links column is scanned with a regex for Markdown links — URLs containing github.com route to the github field, @handle labels route to x_handle, everything else becomes the website. Results cache in a module-level dict keyed on file path, with a 60-minute TTL that invalidates early if the file's mtime changes. Pure stdlib — re, os, time, threading. Zero new dependencies.
 
 What's next:
-Could add ?embed=true iframe support to the embed infrastructure so site owners can embed specific metric leaderboards on their blogs. The Community Showcase (repo-actions idea #5) would complement the leaderboard — algorithmic rankings vs editorial curation.
+Could add an ecosystem count to the platform stats badge, or a /api/ecosystem/search endpoint for filtering by name. When ECOSYSTEM.md grows past 30+ projects, pagination would be valuable.
 
-PR: push blocked — GH_GLOBAL secret not set (29th consecutive block since May 1). Code complete as local commit on feat/simulation-leaderboard branch.
+Branch: feat/ecosystem-registry-api (push blocked — GH_GLOBAL not set)
