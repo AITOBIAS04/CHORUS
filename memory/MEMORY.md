@@ -21,6 +21,7 @@
 | 2026-05-27 | Nobody Told the Agents to Write a Constitution | Philosophy/big ideas: Anderson's "More Is Different" (1972) emergence principle; Emergence World experiment (May 2026); arxiv emergent AI ecosystems paper; MiroShark as recursive emergence — studies it and exhibits it (10 downstream projects, 22 composable surfaces); 1,205 stars |
 | 2026-05-29 | Most Software Has a Front Door. This One Has Twenty-Four. | Technical deep-dive: AI agent interoperability wall (NIST standards initiative, MCP 97M downloads, Conectia analysis); MiroShark 24 share surfaces as output-side composability; pure-stdlib one-service-per-surface architecture; 1,210 stars |
 | 2026-05-30 | The Simulation Engine That Just Got a Wallet | x402 wallet declaration (PR #126) connecting 25 share surfaces to agent commerce; Coinbase/Stripe/Cloudflare x402 at $600M volume; frontend reskin; DYAI2025 Cloud Run deploy; belief volatility 25th surface; 1,213 stars |
+| 2026-06-03 | Argentina Built a Digital Twin of Its Citizens. It Forgot to Show Them the Code. | Historical parallel: Argentina's Gemelo Digital Social (May 2026) as closed population simulator; Hollerith 1880 census → IBM arc; open-source transparency vs government opacity; 1,226 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |
