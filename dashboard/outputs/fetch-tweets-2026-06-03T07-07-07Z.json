@@ -1,0 +1,208 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK crypto token on Base chain",
+        "description": "2026-06-03"
+      },
+      "children": [
+        "note",
+        "sep1",
+        "tweets_stack"
+      ]
+    },
+    "note": {
+      "type": "Text",
+      "props": {
+        "text": "XAI_API_KEY not available; results compiled via WebSearch.",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "tweets_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet1",
+        "tweet2",
+        "tweet3",
+        "tweet4",
+        "tweet5"
+      ]
+    },
+    "tweet1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet1_card",
+        "tweet1_metrics",
+        "tweet1_link"
+      ]
+    },
+    "tweet1_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "text": "roadmap update: miroshark on X + API still on track; railway & bankr downtime pushed token-launch runtime + aeon v4 demo; merged into new aeon focus"
+      }
+    },
+    "tweet1_metrics": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      }
+    },
+    "tweet1_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2057435882194424127"
+      }
+    },
+    "tweet2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet2_card",
+        "tweet2_metrics",
+        "tweet2_link"
+      ]
+    },
+    "tweet2_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "noisyb0y1",
+        "text": "open-source engine runs 500 AI agents with different views on one news story; highlights MiroShark as swarm intelligence engine with unique-personality agents"
+      }
+    },
+    "tweet2_metrics": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      }
+    },
+    "tweet2_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/noisyb0y1/status/2040159662453276879"
+      }
+    },
+    "tweet3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet3_card",
+        "tweet3_metrics",
+        "tweet3_link"
+      ]
+    },
+    "tweet3_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "text": "miroshark daily updates: Wonderwall/Polymarket integration — full OASIS-fork engine bundled; agents now create markets + trade via AMM alongside Twitter and Reddit"
+      }
+    },
+    "tweet3_metrics": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      }
+    },
+    "tweet3_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2037281730315661407"
+      }
+    },
+    "tweet4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet4_card",
+        "tweet4_metrics",
+        "tweet4_link"
+      ]
+    },
+    "tweet4_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "BranaRakic",
+        "text": "DKG V9 + MiroShark simulating the future — cross-project signal linking OriginTrail DKG V9 with MiroShark"
+      }
+    },
+    "tweet4_metrics": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      }
+    },
+    "tweet4_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/BranaRakic/status/2036747635751633047"
+      }
+    },
+    "tweet5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet5_card",
+        "tweet5_metrics",
+        "tweet5_link"
+      ]
+    },
+    "tweet5_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "JMania402",
+        "text": "$MIROSHARK 0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3 This one pump so hard"
+      }
+    },
+    "tweet5_metrics": {
+      "type": "Text",
+      "props": {
+        "text": "Likes: N/A | RTs: N/A",
+        "variant": "caption"
+      }
+    },
+    "tweet5_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/JMania402/status/2036486940313493591"
+      }
+    }
+  }
+}
