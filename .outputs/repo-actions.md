@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-06-02*
-Generated from analysis of MiroShark — 1,223 stars, 262 forks, 4 ecosystem PRs open today (HivemindOS, Echo Oracle, Capacitr, SyntheticsAI building on the platform simultaneously).
+*Repo Action Ideas — 2026-06-04*
+Generated from analysis of aaronjmars/MiroShark (1,232 stars · 265 forks · ecosystem.json live · per-project stats shipped).
 
-1. Ecosystem Registry API (Integration, Small)
-   Machine-readable GET /api/ecosystem endpoint parsing ECOSYSTEM.md into JSON — serves the 4 new ecosystem projects and signals hub maturity to dev platforms.
+1. Agent Archetype Atlas (Feature, Small)
+   Cross-simulation stats per archetype using agents.json — which archetypes flip most, which stay consistent, how each one behaves across all published sims.
 
-2. French Locale (Community/DX, Small)
-   Directly closes open issue #95 (filed May 22) — adds FR translations to Vue i18n using the existing zh-CN infrastructure as the pattern.
+2. Platform Activity Timeline (Feature, Small)
+   GitHub-style 13-week contribution heatmap of simulation runs — day-by-day count, published count, avg consensus direction.
 
-3. Simulation RSS Feed (Integration, Small)
-   GET /api/feed.rss — pure-stdlib RSS 2.0 of recent published sims; zero-config subscription for ecosystem projects without polling or webhook setup.
+3. Ecosystem Partner Health Monitor (Integration, Small)
+   Live GitHub freshness check for each of the 6 ecosystem projects in ecosystem.json — active/quiet/stale badges on the ecosystem page, no new secrets needed.
 
-4. Embed Theme Parameter (Feature/DX, Small)
-   ?theme=dark|light|system on the embed URL — CSS-only, no backend changes; lets HivemindOS, SyntheticsAI, and Capacitr match their own visual language.
+4. Simulation Project Series (Feature, Small)
+   Named research series for grouping simulations — completes the backend from PR #147 (per-project stats) with CRUD, assignment UI, and a project gallery.
 
-5. Simulation Scheduler (Feature, Medium)
-   POST /api/simulation/schedule with run_at datetime — Flask daemon thread fires queued sims automatically; turns MiroShark from synchronous to autonomous.
+5. Simulation Highlights Reel (Feature, Small)
+   Auto-detect the 3-5 most significant moments per simulation (biggest consensus shift, most influential post, first coalition) — no AI call, pure data extraction.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-02.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-04.md

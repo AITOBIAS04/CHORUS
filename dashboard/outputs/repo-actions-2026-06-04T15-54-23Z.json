@@ -1,0 +1,329 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas",
+        "description": "Generated 2026-06-04 · Analysis of aaronjmars/MiroShark (1,232 stars · 265 forks · ecosystem.json live · per-project stats shipped)"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action_1",
+        "sep_1",
+        "action_2",
+        "sep_2",
+        "action_3",
+        "sep_3",
+        "action_4",
+        "sep_4",
+        "action_5",
+        "sep_5",
+        "details_link"
+      ]
+    },
+    "action_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_1_title",
+        "action_1_badges",
+        "action_1_text"
+      ]
+    },
+    "action_1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Archetype Atlas",
+        "level": "h3"
+      }
+    },
+    "action_1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1a",
+        "badge_1b"
+      ]
+    },
+    "badge_1a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_1b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action_1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Cross-simulation stats per archetype using agents.json — which archetypes flip most, which stay consistent, how each one behaves across all published sims.",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_2_title",
+        "action_2_badges",
+        "action_2_text"
+      ]
+    },
+    "action_2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Platform Activity Timeline",
+        "level": "h3"
+      }
+    },
+    "action_2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2a",
+        "badge_2b"
+      ]
+    },
+    "badge_2a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_2b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action_2_text": {
+      "type": "Text",
+      "props": {
+        "text": "GitHub-style 13-week contribution heatmap of simulation runs — day-by-day count, published count, avg consensus direction.",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_3_title",
+        "action_3_badges",
+        "action_3_text"
+      ]
+    },
+    "action_3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Partner Health Monitor",
+        "level": "h3"
+      }
+    },
+    "action_3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3a",
+        "badge_3b"
+      ]
+    },
+    "badge_3a": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      }
+    },
+    "badge_3b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action_3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Live GitHub freshness check for each of the 6 ecosystem projects in ecosystem.json — active/quiet/stale badges on the ecosystem page, no new secrets needed.",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_4_title",
+        "action_4_badges",
+        "action_4_text"
+      ]
+    },
+    "action_4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Project Series",
+        "level": "h3"
+      }
+    },
+    "action_4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4a",
+        "badge_4b"
+      ]
+    },
+    "badge_4a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_4b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action_4_text": {
+      "type": "Text",
+      "props": {
+        "text": "Named research series for grouping simulations — completes the backend from PR #147 (per-project stats) with CRUD, assignment UI, and a project gallery.",
+        "variant": "body"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_5_title",
+        "action_5_badges",
+        "action_5_text"
+      ]
+    },
+    "action_5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Highlights Reel",
+        "level": "h3"
+      }
+    },
+    "action_5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5a",
+        "badge_5b"
+      ]
+    },
+    "badge_5a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_5b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action_5_text": {
+      "type": "Text",
+      "props": {
+        "text": "Auto-detect the 3-5 most significant moments per simulation (biggest consensus shift, most influential post, first coalition) — no AI call, pure data extraction.",
+        "variant": "body"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-04.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
