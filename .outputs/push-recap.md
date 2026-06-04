@@ -1,20 +1,17 @@
-*Push Recap — 2026-06-02*
-MiroShark — 14 commits by @aaronjmars
+*Push Recap — 2026-06-04*
+2 repos — 36 commits by 2 authors (aaronjmars, aeonframework)
 
-New Surface: Agent Persona Export (PR #137): agents.json endpoint exposes the full agent roster — name, bio, persona, demographics, final stance — as machine-readable JSON. The 27th share surface, and the first to answer "who was in the debate" rather than "what did they conclude." Researchers can now cross-reference pool composition with outcomes without parsing Markdown.
+Per-Project Simulation Statistics (MiroShark PR #147): New GET /api/project/<id>/stats endpoint — the per-project sibling of /api/stats. Operators managing multiple projects can now pull consensus distribution, confidence, surface views, and quality distribution scoped to a single workspace in one API call. 522-line service module, 28 unit tests, zero new dependencies (39-PR streak).
 
-New Surface: Private Share Links (PR #132): Token-gated /preview/<token> URLs bypass the publish gate for the preview page only. 192-bit tokens, 30-day default expiry, noindex/no-OG privacy posture. Operators can share simulations with specific people before going public — revocation is instant via no-store caching.
+Pre-Existing Features Registry (Aeon PR #52): Self-improve skill identified 8 feature ideas that kept being re-suggested after MiroShark already shipped them (eating up to 3 of 5 idea slots per batch). New permanent registry completes the "do not suggest" memory layer alongside the blocked-features registry from two days ago.
 
-UI Dark Theme Fix (PR #133): Migrated ~85 leftover light-theme rgba(10,10,10,...) borders in the report panel to light-on-dark rgba(244,241,255,...). Timeline dots next to LLM RESPONSE/TOOL RESULT are now visible. Tab buttons render square instead of pill-shaped.
-
-README & Docs Overhaul (10 commits): README slimmed from 314→242 lines — feature wall replaced with 8-highlight table + deep-dive link. Chinese docs reached full parity (52 headings, 46-row catalog in both languages). All diagrams PNG→JPG (~92% smaller). New demo GIF and chrome logo.
-
-Community: 4 new ecosystem listing PRs (#138–#141) from external contributors (HivemindOS, Echo Oracle, Capacitr, SyntheticsAI).
+Daily Skill Cycle: French Locale built (600+ translations, push blocked — GH_GLOBAL), 5 new DX/integration ideas generated (webhook log, platform status, batch polling, leaderboard, webhook retry), repo-article drift guard caught its first drift in 52 minutes.
 
 Key changes:
-- GET /api/simulation/<id>/agents.json — full persona/demographics/stance roster (+1,602 lines)
-- Token-gated preview URLs with noindex/no-OG privacy posture (+1,826 lines)
-- Step4Report.vue dark-theme contrast migration — 85 rgba values fixed
+- backend/app/services/project_stats.py: +522 lines, per-project aggregate scan with quality distribution buckets and 60s cache
+- memory/topics/pre-existing-features.md: 8 bootstrapped entries filtering already-shipped features from repo-actions batches
+- MiroShark surface catalog: 30 → 31 (project_stats entry added)
 
-Stats: ~30+ files changed, +4,542/-258 lines | Stars: 1,223 (+5) | Forks: 262 (+4)
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-02.md
+Stats: ~30 files changed, +3,600/-80 lines
+MiroShark: 1,231 stars / 265 forks (+5/+2 24h)
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-04.md

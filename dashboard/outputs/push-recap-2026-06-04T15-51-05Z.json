@@ -1,0 +1,353 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-04",
+        "description": "2 repos — 36 commits by 2 authors"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "authors-row",
+        "sep-1",
+        "miroshark-section",
+        "aeon-section",
+        "cycle-section",
+        "sep-2",
+        "changes-table",
+        "stats-grid",
+        "recap-link"
+      ]
+    },
+    "authors-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-aaron",
+        "badge-aeon"
+      ]
+    },
+    "badge-aaron": {
+      "type": "Badge",
+      "props": {
+        "text": "aaronjmars",
+        "variant": "secondary"
+      }
+    },
+    "badge-aeon": {
+      "type": "Badge",
+      "props": {
+        "text": "aeonframework",
+        "variant": "secondary"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "miroshark-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "mir-heading",
+        "mir-pr-link",
+        "mir-desc1",
+        "mir-desc2",
+        "mir-desc3"
+      ]
+    },
+    "mir-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Per-Project Simulation Statistics",
+        "level": "h3"
+      }
+    },
+    "mir-pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "MiroShark PR #147",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/147",
+        "source": "MiroShark"
+      }
+    },
+    "mir-desc1": {
+      "type": "Text",
+      "props": {
+        "text": "New GET /api/project/<id>/stats endpoint — the per-project sibling of /api/stats. Operators managing multiple projects can now pull consensus distribution, confidence, surface views, and quality distribution scoped to a single workspace in one API call.",
+        "variant": "body"
+      }
+    },
+    "mir-desc2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-mir-lines",
+        "stat-mir-tests",
+        "stat-mir-deps"
+      ]
+    },
+    "stat-mir-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Service Module Lines",
+        "value": "522"
+      }
+    },
+    "stat-mir-tests": {
+      "type": "Stat",
+      "props": {
+        "label": "Unit Tests",
+        "value": "28"
+      }
+    },
+    "stat-mir-deps": {
+      "type": "Stat",
+      "props": {
+        "label": "New Dependencies",
+        "value": "0",
+        "delta": "39-PR streak"
+      }
+    },
+    "mir-desc3": {
+      "type": "Text",
+      "props": {
+        "text": "",
+        "variant": "caption"
+      }
+    },
+    "aeon-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aeon-heading",
+        "aeon-pr-link",
+        "aeon-desc1",
+        "aeon-desc2"
+      ]
+    },
+    "aeon-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pre-Existing Features Registry",
+        "level": "h3"
+      }
+    },
+    "aeon-pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Aeon PR #52",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/52",
+        "source": "Aeon"
+      }
+    },
+    "aeon-desc1": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve skill identified 8 feature ideas that kept being re-suggested after MiroShark already shipped them (eating up to 3 of 5 idea slots per batch).",
+        "variant": "body"
+      }
+    },
+    "aeon-desc2": {
+      "type": "Text",
+      "props": {
+        "text": "New permanent registry completes the \"do not suggest\" memory layer alongside the blocked-features registry from two days ago.",
+        "variant": "body"
+      }
+    },
+    "cycle-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "cycle-heading",
+        "cycle-item-1",
+        "cycle-item-2",
+        "cycle-item-3"
+      ]
+    },
+    "cycle-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Daily Skill Cycle",
+        "level": "h3"
+      }
+    },
+    "cycle-item-1": {
+      "type": "Text",
+      "props": {
+        "text": "French Locale built (600+ translations, push blocked — GH_GLOBAL)",
+        "variant": "body"
+      }
+    },
+    "cycle-item-2": {
+      "type": "Text",
+      "props": {
+        "text": "5 new DX/integration ideas generated: webhook log, platform status, batch polling, leaderboard, webhook retry",
+        "variant": "body"
+      }
+    },
+    "cycle-item-3": {
+      "type": "Text",
+      "props": {
+        "text": "repo-article drift guard caught its first drift in 52 minutes",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-table": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes-heading",
+        "changes-list"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "backend/app/services/project_stats.py: +522 lines, per-project aggregate scan with quality distribution buckets and 60s cache",
+        "variant": "body"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "memory/topics/pre-existing-features.md: 8 bootstrapped entries filtering already-shipped features from repo-actions batches",
+        "variant": "body"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark surface catalog: 30 → 31 (project_stats entry added)",
+        "variant": "body"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-additions",
+        "stat-deletions",
+        "stat-stars",
+        "stat-forks",
+        "stat-catalog"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "~30"
+      }
+    },
+    "stat-additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+3,600"
+      }
+    },
+    "stat-deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Deleted",
+        "value": "-80"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Stars",
+        "value": "1,231",
+        "delta": "+5",
+        "trend": "up"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Forks",
+        "value": "265",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "stat-catalog": {
+      "type": "Stat",
+      "props": {
+        "label": "Surface Catalog Entries",
+        "value": "31",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-04.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
