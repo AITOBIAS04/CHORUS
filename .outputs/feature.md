@@ -1,22 +1,18 @@
-*Feature Built — 2026-06-03*
+*Feature Built — 2026-06-04*
 
-Ecosystem Registry API
-ECOSYSTEM.md is no longer just a Markdown file for humans — it's now a live, machine-readable API. A new GET /api/ecosystem endpoint parses the Markdown table into structured JSON: every project that builds on MiroShark gets exposed as a clean object with name, website, X handle, and GitHub link. A companion GET /api/ecosystem/count returns just the project total, ready for badge rendering or status widgets.
+French Locale (i18n FR)
+MiroShark now speaks French. Every UI label, tooltip, button, status message, and description across all 34 Vue components — from the home page hero to the deepest embed dialog section — is available in formal French. Users click the locale toggle in the navigation bar to cycle between English, Chinese, and French. The translation covers 600+ unique strings using the formal "vous" register, appropriate for a research and professional tool.
 
 Why this matters:
-Four ecosystem projects (HivemindOS, Echo Oracle, Capacitr, SyntheticsAI) submitted PRs in the same week. The ECOSYSTEM.md table is growing, but it's invisible to machines — no downstream tool can query it, render a widget from it, or subscribe to changes. The Ecosystem Registry API turns a PR-based append log into a composable surface. Any project building on MiroShark can now pull the live registry, render an 'ecosystem' widget, or count the network size without scraping Markdown. For the Chinese dev platform hyperstition, this is the asset worth linking to.
+A community contributor filed issue #95 on May 22 asking whether a French locale PR would be welcome. That issue has gone unanswered for 13 days. Chinese localization shipped weeks ago, setting the multilingual precedent, but French — the 5th most-spoken language globally and the dominant language in academic discourse across West Africa, the Maghreb, and much of Europe — was missing. This closes that gap and sends the fastest possible signal of community responsiveness: a contributor asked, and the platform shipped it. For MiroShark's thesis that AI crowd simulation has social science applications, the French-speaking academic community is a natural constituency.
 
 What was built:
-- backend/app/services/ecosystem_service.py: Regex-based ECOSYSTEM.md table parser. Extracts project name, classifies links (website vs X handle vs GitHub) from the Links column, and caches results for 60 minutes with mtime-based invalidation so merged PRs that update the table are picked up quickly.
-- backend/app/api/ecosystem.py: Flask blueprint with two public endpoints — GET /api/ecosystem (full registry with ETag for conditional requests) and GET /api/ecosystem/count (badge-ready total + timestamp).
-- frontend/src/views/EcosystemView.vue: New /ecosystem page with responsive card grid. Each project gets a numbered card with clickable link pills for Website, X, and GitHub. Dark-themed with the deep-space-violet design system, bilingual (EN/ZH).
-- frontend/src/views/ExploreView.vue: Added an 'Ecosystem' navigation chip to the /explore gallery toolbar, alongside RSS and Verified.
-- backend/tests/test_unit_ecosystem.py: 10 unit tests covering parsing, cache behavior, mtime invalidation, missing file handling, and link classification.
+- frontend/src/locales/fr.js: A 600-entry French translation dictionary mapping every English UI string to its French equivalent. Dictionary-based approach means zero changes to any of the 34 existing Vue component files — the tr() function looks up the English key at runtime.
+- frontend/src/i18n.js: Added French to the supported locales array. The tr() function now checks if the locale is 'fr' and looks up the English string in the French dictionary, falling back to English for any untranslated string. The toggleLocale function cycles through all three locales (EN → 中 → FR → EN).
+- frontend/src/components/LocaleToggle.vue: Updated the navigation toggle button for three-way locale cycling with current and next locale indicators.
 
 How it works:
-The service reads ECOSYSTEM.md from the repo root using a line-by-line parser that identifies the GFM table by its | Logo | Project | Links | header. Each data row is split on pipes, the Project column gives the name, and the Links column is scanned with a regex for Markdown links — URLs containing github.com route to the github field, @handle labels route to x_handle, everything else becomes the website. Results cache in a module-level dict keyed on file path, with a 60-minute TTL that invalidates early if the file's mtime changes. Pure stdlib — re, os, time, threading. Zero new dependencies.
+The existing i18n system uses inline tr('English', '中文') calls throughout every Vue component — approximately 1,950 calls across 34 files. Rather than modifying all those call sites to add a third argument, the French locale uses a dictionary-keyed-by-English-string approach. When the locale is set to 'fr', the tr() function takes the English argument and looks it up in the imported frDict object. If a French translation exists, it returns it; otherwise it falls back to the English string. This means the feature is additive-only — no existing file was modified except i18n.js (the core module) and LocaleToggle.vue (the toggle button). Future locales can follow the same pattern: create a dictionary file, import it, add a lookup branch.
 
 What's next:
-Could add an ecosystem count to the platform stats badge, or a /api/ecosystem/search endpoint for filtering by name. When ECOSYSTEM.md grows past 30+ projects, pagination would be valuable.
-
-Branch: feat/ecosystem-registry-api (push blocked — GH_GLOBAL not set)
+Push blocked (GH_GLOBAL not set — 31st consecutive feature). Once the secret is configured, this PR will close issue #95 directly. A locale completeness CI check could prevent future English additions from silently leaving French untranslated.
