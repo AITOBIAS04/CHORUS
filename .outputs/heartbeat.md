@@ -1,1 +1,12 @@
-Heartbeat 2026-06-03: 3 skills missed their window today — repo-pulse (10:00 UTC), self-improve (13:00 UTC), repo-actions (14:00 UTC), push-recap (15:00 UTC). Auto-dispatch blocked (actions: read scope). Manual re-trigger needed. 12 improve PRs in CHORUS repo remain stalled (oldest from Apr 30). Token: $0.00000696 (+5.86%). Stars: 1,226.
+Heartbeat 2026-06-04 — 3 skills missed today.
+
+*New gaps:*
+- token-report: last ran Jun 3 (now 14h overdue)
+- fetch-tweets: last ran Jun 3 (now 13.5h overdue)
+- repo-article: hasn't run since May 30 (5 days)
+
+*Dispatch attempted:* all 4 blocked HTTP 403 (actions: read scope — defers to messages.yml scheduler)
+
+*Previously reported (skipped):* repo-pulse, self-improve
+
+*OK today:* feature, repo-actions, push-recap

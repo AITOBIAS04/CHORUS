@@ -1,0 +1,177 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-06-04"
+      },
+      "children": [
+        "text-summary",
+        "sep-1",
+        "heading-gaps",
+        "stack-gaps",
+        "sep-2",
+        "alert-dispatch",
+        "sep-3",
+        "heading-reported",
+        "stack-reported",
+        "sep-4",
+        "heading-ok",
+        "stack-ok"
+      ]
+    },
+    "text-summary": {
+      "type": "Text",
+      "props": {
+        "text": "3 skills missed today",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-gaps": {
+      "type": "Heading",
+      "props": {
+        "text": "New gaps",
+        "level": "h3"
+      }
+    },
+    "stack-gaps": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "gap-1",
+        "gap-2",
+        "gap-3"
+      ]
+    },
+    "gap-1": {
+      "type": "Text",
+      "props": {
+        "text": "token-report: last ran Jun 3 (now 14h overdue)",
+        "variant": "body"
+      }
+    },
+    "gap-2": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets: last ran Jun 3 (now 13.5h overdue)",
+        "variant": "body"
+      }
+    },
+    "gap-3": {
+      "type": "Text",
+      "props": {
+        "text": "repo-article: hasn't run since May 30 (5 days)",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert-dispatch": {
+      "type": "Alert",
+      "props": {
+        "title": "Dispatch attempted",
+        "message": "all 4 blocked HTTP 403 (actions: read scope — defers to messages.yml scheduler)",
+        "type": "warning"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-reported": {
+      "type": "Heading",
+      "props": {
+        "text": "Previously reported (skipped)",
+        "level": "h3"
+      }
+    },
+    "stack-reported": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-pulse",
+        "badge-improve"
+      ]
+    },
+    "badge-pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "outline"
+      }
+    },
+    "badge-improve": {
+      "type": "Badge",
+      "props": {
+        "text": "self-improve",
+        "variant": "outline"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-ok": {
+      "type": "Heading",
+      "props": {
+        "text": "OK today",
+        "level": "h3"
+      }
+    },
+    "stack-ok": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-feature",
+        "badge-actions",
+        "badge-recap"
+      ]
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "default"
+      }
+    },
+    "badge-actions": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-actions",
+        "variant": "default"
+      }
+    },
+    "badge-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "default"
+      }
+    }
+  }
+}
