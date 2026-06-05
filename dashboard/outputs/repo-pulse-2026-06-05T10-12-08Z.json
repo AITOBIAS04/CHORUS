@@ -1,0 +1,102 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "aaronjmars/MiroShark"
+      },
+      "children": [
+        "stats_grid",
+        "separator_1",
+        "stargazers_section"
+      ]
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,233",
+        "delta": "+2",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "264",
+        "delta": "+0",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stargazers_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stargazers_heading",
+        "stargazers_links"
+      ]
+    },
+    "stargazers_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Stargazers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stargazers_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_bradywhealth_lab",
+        "link_tangyueming311"
+      ]
+    },
+    "link_bradywhealth_lab": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/bradywhealth-lab",
+        "href": "https://github.com/bradywhealth-lab"
+      },
+      "children": []
+    },
+    "link_tangyueming311": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Tangyueming311",
+        "href": "https://github.com/Tangyueming311"
+      },
+      "children": []
+    }
+  }
+}
