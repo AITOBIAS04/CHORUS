@@ -1,0 +1,192 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-06-05"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_summary",
+        "text_summary",
+        "separator1",
+        "heading_missed",
+        "text_feature",
+        "text_fetch",
+        "separator2",
+        "heading_dispatch",
+        "text_dispatch",
+        "separator3",
+        "heading_confirmed",
+        "stack_confirmed",
+        "separator4",
+        "heading_issues",
+        "text_issues"
+      ]
+    },
+    "heading_summary": {
+      "type": "Heading",
+      "props": {
+        "text": "Summary",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "2 skills missed today's windows",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_missed": {
+      "type": "Heading",
+      "props": {
+        "text": "Missed Skills",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_feature": {
+      "type": "Text",
+      "props": {
+        "text": "feature (due 11:00 UTC) — did not run. New miss after running OK on Jun 4.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_fetch": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets (due 06:30 UTC) — missed again. Second consecutive day (also reported Jun 4).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_dispatch": {
+      "type": "Heading",
+      "props": {
+        "text": "Auto-Dispatch Block",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_dispatch": {
+      "type": "Text",
+      "props": {
+        "text": "HTTP 403 — actions: read scope",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_confirmed": {
+      "type": "Heading",
+      "props": {
+        "text": "Daily Skills Confirmed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_confirmed": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_token",
+        "badge_repo",
+        "badge_push",
+        "badge_project"
+      ]
+    },
+    "badge_token": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_repo": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_push": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_project": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens ✓",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "separator4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_issues": {
+      "type": "Heading",
+      "props": {
+        "text": "Outstanding Issues",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_issues": {
+      "type": "Text",
+      "props": {
+        "text": "12 open improve PRs remain stalled (chronic). No urgent issues.",
+        "variant": "body"
+      },
+      "children": []
+    }
+  }
+}

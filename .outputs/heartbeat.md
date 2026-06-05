@@ -1,12 +1,1 @@
-Heartbeat 2026-06-04 — 3 skills missed today.
-
-*New gaps:*
-- token-report: last ran Jun 3 (now 14h overdue)
-- fetch-tweets: last ran Jun 3 (now 13.5h overdue)
-- repo-article: hasn't run since May 30 (5 days)
-
-*Dispatch attempted:* all 4 blocked HTTP 403 (actions: read scope — defers to messages.yml scheduler)
-
-*Previously reported (skipped):* repo-pulse, self-improve
-
-*OK today:* feature, repo-actions, push-recap
+Heartbeat 2026-06-05 — 2 skills missed today's windows. feature (due 11:00 UTC) did not run — new miss after running OK on Jun 4. fetch-tweets (due 06:30 UTC) missed again — second consecutive day (also reported Jun 4). Auto-dispatch blocked HTTP 403 (actions: read scope). All other daily skills confirmed: token-report ✓, repo-pulse ✓, push-recap ✓, project-lens ✓. No urgent issues. 12 open improve PRs remain stalled (chronic).
