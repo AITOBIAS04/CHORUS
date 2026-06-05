@@ -1,17 +1,16 @@
-*Push Recap — 2026-06-04*
-2 repos — 36 commits by 2 authors (aaronjmars, aeonframework)
+*Push Recap — 2026-06-05*
+MiroShark — 2 commits by 2 authors | miroshark-aeon — 26 commits by aeonframework
 
-Per-Project Simulation Statistics (MiroShark PR #147): New GET /api/project/<id>/stats endpoint — the per-project sibling of /api/stats. Operators managing multiple projects can now pull consensus distribution, confidence, surface views, and quality distribution scoped to a single workspace in one API call. 522-line service module, 28 unit tests, zero new dependencies (39-PR streak).
+Platform Status Health Probe (PR #149): MiroShark gained its 32nd catalogued surface — GET /api/status.json. A dedicated health endpoint for external status monitors (Upptime, BetterUptime, Statuspage.io) and ecosystem integrators to pre-flight check the deployment. Returns a live envelope: ok flag, queue depth, 24h completions, lifetime sim total, surface count. No in-process cache (30s HTTP cache only). Empty deployments return the all-zero envelope, never 404. 28 tests, 12 files, +1120 lines.
 
-Pre-Existing Features Registry (Aeon PR #52): Self-improve skill identified 8 feature ideas that kept being re-suggested after MiroShark already shipped them (eating up to 3 of 5 idea slots per batch). New permanent registry completes the "do not suggest" memory layer alongside the blocked-features registry from two days ago.
+i18n Test Infrastructure (PR #148): 26 unit tests locking the locale helper contract (normalize_locale, get_locale, t, apply_i18n, use_locale) before the French locale refactor. Covers the precedence chain (?lang > X-MiroShark-Locale > Accept-Language), the unknown-locale fallback the fr PR needs, and nested i18n block merging.
 
-Daily Skill Cycle: French Locale built (600+ translations, push blocked — GH_GLOBAL), 5 new DX/integration ideas generated (webhook log, platform status, batch polling, leaderboard, webhook retry), repo-article drift guard caught its first drift in 52 minutes.
+Aeon Autonomous Operations: 8 skills ran across 26 commits. Feature skill built PR #149 and discovered 2 pre-existing features (Webhook Delivery Log + Webhook Manual Retry) that had been eating repo-actions idea slots — pre-existing registry now at 10 entries.
 
 Key changes:
-- backend/app/services/project_stats.py: +522 lines, per-project aggregate scan with quality distribution buckets and 60s cache
-- memory/topics/pre-existing-features.md: 8 bootstrapped entries filtering already-shipped features from repo-actions batches
-- MiroShark surface catalog: 30 → 31 (project_stats entry added)
+- New backend/app/services/platform_status.py: ~250 LoC pure-stdlib scanner answering "is this instance currently up?"
+- New backend/tests/test_unit_platform_status.py: 28 tests (+428 lines)
+- New backend/tests/test_unit_i18n.py: 26 tests covering all six public i18n surfaces (+343 lines)
 
-Stats: ~30 files changed, +3,600/-80 lines
-MiroShark: 1,231 stars / 265 forks (+5/+2 24h)
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-04.md
+Stats: 19 files changed, +1703/-17 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-05.md

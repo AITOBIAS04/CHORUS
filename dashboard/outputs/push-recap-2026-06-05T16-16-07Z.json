@@ -1,0 +1,340 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-05"
+      },
+      "children": [
+        "header-stack",
+        "separator-1",
+        "pr149-section",
+        "separator-2",
+        "pr148-section",
+        "separator-3",
+        "aeon-section",
+        "separator-4",
+        "stats-section",
+        "separator-5",
+        "link-section"
+      ]
+    },
+    "header-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-text-1",
+        "header-text-2"
+      ]
+    },
+    "header-text-1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 2 commits by 2 authors",
+        "variant": "lead"
+      }
+    },
+    "header-text-2": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 26 commits by aeonframework",
+        "variant": "lead"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr149-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr149-heading",
+        "pr149-badge",
+        "pr149-description",
+        "pr149-details",
+        "pr149-stats"
+      ]
+    },
+    "pr149-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Platform Status Health Probe",
+        "level": "h2"
+      }
+    },
+    "pr149-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #149",
+        "variant": "default"
+      }
+    },
+    "pr149-description": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark gained its 32nd catalogued surface — GET /api/status.json. A dedicated health endpoint for external status monitors (Upptime, BetterUptime, Statuspage.io) and ecosystem integrators to pre-flight check the deployment. Returns a live envelope: ok flag, queue depth, 24h completions, lifetime sim total, surface count. No in-process cache (30s HTTP cache only). Empty deployments return the all-zero envelope, never 404.",
+        "variant": "body"
+      }
+    },
+    "pr149-details": {
+      "type": "Text",
+      "props": {
+        "text": "28 tests, 12 files, +1120 lines",
+        "variant": "caption"
+      }
+    },
+    "pr149-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "pr149-stat-1",
+        "pr149-stat-2",
+        "pr149-stat-3"
+      ]
+    },
+    "pr149-stat-1": {
+      "type": "Stat",
+      "props": {
+        "label": "Tests",
+        "value": "28"
+      }
+    },
+    "pr149-stat-2": {
+      "type": "Stat",
+      "props": {
+        "label": "Files",
+        "value": "12"
+      }
+    },
+    "pr149-stat-3": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+1120"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr148-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr148-heading",
+        "pr148-badge",
+        "pr148-description",
+        "pr148-details"
+      ]
+    },
+    "pr148-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "i18n Test Infrastructure",
+        "level": "h2"
+      }
+    },
+    "pr148-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #148",
+        "variant": "default"
+      }
+    },
+    "pr148-description": {
+      "type": "Text",
+      "props": {
+        "text": "26 unit tests locking the locale helper contract (normalize_locale, get_locale, t, apply_i18n, use_locale) before the French locale refactor. Covers the precedence chain (?lang > X-MiroShark-Locale > Accept-Language), the unknown-locale fallback the fr PR needs, and nested i18n block merging.",
+        "variant": "body"
+      }
+    },
+    "pr148-details": {
+      "type": "Text",
+      "props": {
+        "text": "26 tests (+343 lines)",
+        "variant": "caption"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "aeon-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aeon-heading",
+        "aeon-text-1",
+        "aeon-list-heading",
+        "aeon-list"
+      ]
+    },
+    "aeon-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Aeon Autonomous Operations",
+        "level": "h2"
+      }
+    },
+    "aeon-text-1": {
+      "type": "Text",
+      "props": {
+        "text": "8 skills ran across 26 commits. Feature skill built PR #149 and discovered 2 pre-existing features (Webhook Delivery Log + Webhook Manual Retry) that had been eating repo-actions idea slots — pre-existing registry now at 10 entries.",
+        "variant": "body"
+      }
+    },
+    "aeon-list-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h3"
+      }
+    },
+    "aeon-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon-item-1",
+        "aeon-item-2",
+        "aeon-item-3"
+      ]
+    },
+    "aeon-item-1": {
+      "type": "Text",
+      "props": {
+        "text": "New backend/app/services/platform_status.py: ~250 LoC pure-stdlib scanner answering \"is this instance currently up?\"",
+        "variant": "body"
+      }
+    },
+    "aeon-item-2": {
+      "type": "Text",
+      "props": {
+        "text": "New backend/tests/test_unit_platform_status.py: 28 tests (+428 lines)",
+        "variant": "body"
+      }
+    },
+    "aeon-item-3": {
+      "type": "Text",
+      "props": {
+        "text": "New backend/tests/test_unit_i18n.py: 26 tests covering all six public i18n surfaces (+343 lines)",
+        "variant": "body"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stats-grid"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Summary Stats",
+        "level": "h3"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-added",
+        "stat-removed"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "19"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+1703"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Removed",
+        "value": "-17"
+      }
+    },
+    "separator-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-text",
+        "link-item"
+      ]
+    },
+    "link-text": {
+      "type": "Text",
+      "props": {
+        "text": "Full details:",
+        "variant": "caption"
+      }
+    },
+    "link-item": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Push Recap Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-05.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
