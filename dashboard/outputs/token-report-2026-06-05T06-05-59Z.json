@@ -1,0 +1,118 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "$MIROSHARK Daily — 2026-06-05"
+      },
+      "children": [
+        "stack-all"
+      ]
+    },
+    "stack-all": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-price",
+        "grid-liquidity-volume",
+        "text-buys-sells",
+        "grid-time-periods",
+        "separator",
+        "text-analysis",
+        "link-chart"
+      ]
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00000444",
+        "delta": "-17.9%",
+        "trend": "down"
+      }
+    },
+    "grid-liquidity-volume": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "lg"
+      },
+      "children": [
+        "stat-liquidity",
+        "stat-volume"
+      ]
+    },
+    "stat-liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$296.6K"
+      }
+    },
+    "stat-volume": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$70.7K"
+      }
+    },
+    "text-buys-sells": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 192/124"
+      }
+    },
+    "grid-time-periods": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "lg"
+      },
+      "children": [
+        "stat-7d",
+        "stat-30d"
+      ]
+    },
+    "stat-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "-53.8%",
+        "trend": "down"
+      }
+    },
+    "stat-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "+1.4%",
+        "trend": "up"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-analysis": {
+      "type": "Text",
+      "props": {
+        "text": "Jun 4 saw a -28% daily candle; today opens flat after a 36h gap. Buy-heavy ratio (61%) with small on-chain accumulation at current lows, though LP depth has fallen from $497K to $297K since May 30.",
+        "variant": "body"
+      }
+    },
+    "link-chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
