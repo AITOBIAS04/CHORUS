@@ -1,0 +1,315 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-06-06"
+      },
+      "children": [
+        "text_desc",
+        "sep1",
+        "ideas_stack",
+        "sep2",
+        "link_article"
+      ]
+    },
+    "text_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of MiroShark — five ideas the feature skill can autonomously build, each reading the data MiroShark already generates and surfacing it at a new analytical layer.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ideas_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5"
+      ]
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_heading",
+        "idea1_text",
+        "idea1_badges"
+      ]
+    },
+    "idea1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Cross-Platform Sentiment Divergence",
+        "level": "h3"
+      }
+    },
+    "idea1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Breaks down final yes_pct per platform (Twitter/Reddit/Polymarket) within a single sim — surfaces the divergence that aggregate consensus hides.",
+        "variant": "body"
+      }
+    },
+    "idea1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_type",
+        "idea1_size"
+      ]
+    },
+    "idea1_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "idea1_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_heading",
+        "idea2_text",
+        "idea2_badges"
+      ]
+    },
+    "idea2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Per-Round Confidence Score Trajectory",
+        "level": "h3"
+      }
+    },
+    "idea2_text": {
+      "type": "Text",
+      "props": {
+        "text": "Applies the existing confidence formula at each round cutoff and returns a trajectory — answers whether the result crystallized early or only in the final rounds.",
+        "variant": "body"
+      }
+    },
+    "idea2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_type",
+        "idea2_size"
+      ]
+    },
+    "idea2_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "idea2_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_heading",
+        "idea3_text",
+        "idea3_badges"
+      ]
+    },
+    "idea3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Agent Mention Network",
+        "level": "h3"
+      }
+    },
+    "idea3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Mines @agent_name patterns from post text in actions.jsonl — a discourse-level influence graph distinct from the action-level interaction graph already built.",
+        "variant": "body"
+      }
+    },
+    "idea3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_type",
+        "idea3_size"
+      ]
+    },
+    "idea3_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "idea3_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_heading",
+        "idea4_text",
+        "idea4_badges"
+      ]
+    },
+    "idea4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Simulation Narrative Export (Markdown)",
+        "level": "h3"
+      }
+    },
+    "idea4_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/export.md — a single human-readable Markdown document synthesizing signal, trajectory, top agents, and coalitions for paste-into-Notion/Obsidian use.",
+        "variant": "body"
+      }
+    },
+    "idea4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_type",
+        "idea4_size"
+      ]
+    },
+    "idea4_type": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      }
+    },
+    "idea4_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_heading",
+        "idea5_text",
+        "idea5_badges"
+      ]
+    },
+    "idea5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Operator Usage Analytics",
+        "level": "h3"
+      }
+    },
+    "idea5_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/operator/analytics — total sims, agents, rounds, platforms, archetypes aggregated for the admin: \"you've simulated 14,200 agents across 47 sims.\"",
+        "variant": "body"
+      }
+    },
+    "idea5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_type",
+        "idea5_size"
+      ]
+    },
+    "idea5_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "idea5_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-06.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
