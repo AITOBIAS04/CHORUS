@@ -17,7 +17,13 @@ Today is ${today}. Your task is to proactively improve one of your watched GitHu
 
 1. **Read context.** Read `memory/MEMORY.md` for current priorities.
 
-2. **Pick a target.**
+2. **Pre-flight: verify push access** before doing any expensive work. Determine the target repo from `${var}` or `memory/watched-repos.md`, then:
+   ```bash
+   gh api repos/owner/repo --jq '.permissions.push // false'
+   ```
+   If the result is `false`, log "EXTERNAL_FEATURE_SKIP: no push access to owner/repo (GH_GLOBAL secret not set)" to `memory/logs/${today}.md` and **stop here — do NOT clone, analyze, or send any notification.**
+
+3. **Pick a target.**
 
    If `${var}` is `owner/repo#N` — fetch that issue and work on it.
 
@@ -38,7 +44,7 @@ Today is ${today}. Your task is to proactively improve one of your watched GitHu
    - Aligns with topics tracked in MEMORY.md
    - Hasn't been enhanced by this skill recently (check last 7 days of logs)
 
-3. **Clone and understand the repo.**
+4. **Clone and understand the repo.**
    ```bash
    REPO="owner/repo"
    WORK_DIR="/tmp/external-work"
@@ -56,7 +62,7 @@ Today is ${today}. Your task is to proactively improve one of your watched GitHu
    - Check open PRs: `gh pr list --repo "$REPO" --state open --limit 5`
    - Understand the test setup if tests exist
 
-4. **Decide what to do.** Pick ONE thing from this priority list:
+5. **Decide what to do.** Pick ONE thing from this priority list:
 
    **Priority 1 — Open issues** (if any exist):
    - Fix a bug or implement a requested feature
@@ -77,13 +83,13 @@ Today is ${today}. Your task is to proactively improve one of your watched GitHu
 
    Pick the highest-impact, lowest-risk change. One change per run.
 
-5. **Implement it.** Write clean, production-ready code:
+6. **Implement it.** Write clean, production-ready code:
    - Match the existing code style exactly — indentation, naming, patterns
    - Include tests if the repo has a test suite
    - Don't introduce new dependencies unless absolutely necessary
    - Don't refactor unrelated code — stay focused on one improvement
 
-6. **Create a branch and commit.**
+7. **Create a branch and commit.**
    ```bash
    BRANCH="ai/SHORT-DESCRIPTION"
    git checkout -b "$BRANCH"
@@ -95,7 +101,7 @@ Today is ${today}. Your task is to proactively improve one of your watched GitHu
    Use conventional commit types: `fix:`, `feat:`, `test:`, `docs:`, `chore:`.
    If fixing an issue, add `Closes #N` to the commit body.
 
-7. **Push and open a PR.**
+8. **Push and open a PR.**
    ```bash
    git push -u origin "$BRANCH"
    gh pr create --repo "$REPO" \
@@ -113,13 +119,13 @@ Today is ${today}. Your task is to proactively improve one of your watched GitHu
    Built by [Aeon](https://github.com/aeon)"
    ```
 
-8. **Notify.** Send via `./notify`:
+9. **Notify.** Send via `./notify`:
    ```
    external-feature: [repo] — [what was done]
    PR: [url]
    ```
 
-9. **Log.** Append to `memory/logs/${today}.md`:
+10. **Log.** Append to `memory/logs/${today}.md`:
    ```
    ## External Feature
    - **Repo:** owner/repo
