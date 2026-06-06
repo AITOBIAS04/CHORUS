@@ -1,15 +1,14 @@
-*Agent Self-Improvement — 2026-05-30*
+*Agent Self-Improvement — 2026-06-06*
 
-Heartbeat now uses cron-state.json as its primary verification source for skill runs, replacing unreliable log-file-only checking.
+Push-Access Preflight for Feature Skills
+Added a pre-flight check to both feature and external-feature skills that verifies push access before doing any expensive work. The skill now calls gh api to check permissions.push and exits early if the token lacks cross-repo push access.
 
-The heartbeat skill was checking only daily log files to determine if skills ran — causing persistent false positives. Skills that ran successfully (confirmed in cron-state.json) but logged under different names or skipped log entries were flagged as "missing." A stale memory lesson incorrectly claiming "PR #47 disabled 5 skills" made the heartbeat flag fetch-tweets, hyperstitions-ideas, and skill-leaderboard as chronically disabled — but all three are running and succeeding.
-
-Why: Heartbeat reports from May 27-29 each contained noise about "chronic skips" and "disabled by PR #47" for skills that cron-state.json proved were running fine. PR #47 does not exist in this repo — the lesson was stale.
+Why: The feature skill has been blocked 32 consecutive times since May 1 because GH_GLOBAL is not set. Each blocked run still consumed a full Claude Opus invocation — cloning the repo, reading the codebase, building a complete feature — only to fail at git push. Heartbeat logs from Jun 3-6 all report this as a chronic issue.
 
 What changed:
-- skills/heartbeat/SKILL.md: Added 3-step verification hierarchy — (1) check cron-state.json timestamps first (authoritative), (2) check log files as supplementary evidence, (3) check active GH Actions runs only if both fail. Added timing windows per schedule type (26h daily, 50h every-2-day, 8d weekly). Explicit instruction to use aeon.yml enabled flag, not memory lessons.
-- memory/MEMORY.md: Corrected stale lesson — confirmed fetch-tweets, hyperstitions-ideas, skill-leaderboard are all running.
+- skills/feature/SKILL.md: New step 2 checks permissions.push via gh api before cloning or building. Exits early with FEATURE_SKIP log if push access unavailable.
+- skills/external-feature/SKILL.md: Same preflight check added. Both skills renumbered accordingly.
 
-Impact: Heartbeat reports will be cleaner — no more false-positive "missing" flags for skills that actually ran. The 3-step hierarchy ensures the most authoritative source is checked first.
+Impact: Saves an expensive Claude Opus run every day until GH_GLOBAL is configured. Instead of ~15 min CI + full token spend per blocked run, the skill exits in seconds with a clear log message.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/12
+PR: https://github.com/AITOBIAS04/CHORUS/pull/13

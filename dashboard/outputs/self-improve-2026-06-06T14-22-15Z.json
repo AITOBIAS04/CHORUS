@@ -1,0 +1,147 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-06-06"
+      },
+      "children": [
+        "heading_main",
+        "text_intro",
+        "sep1",
+        "heading_why",
+        "text_why",
+        "sep2",
+        "heading_changes",
+        "stack_changes",
+        "sep3",
+        "heading_impact",
+        "text_impact",
+        "sep4",
+        "link_pr"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Push-Access Preflight for Feature Skills",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Added a pre-flight check to both feature and external-feature skills that verifies push access before doing any expensive work. The skill now calls gh api to check permissions.push and exits early if the token lacks cross-repo push access.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "The feature skill has been blocked 32 consecutive times since May 1 because GH_GLOBAL is not set. Each blocked run still consumed a full Claude Opus invocation — cloning the repo, reading the codebase, building a complete feature — only to fail at git push. Heartbeat logs from Jun 3-6 all report this as a chronic issue.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_change1",
+        "text_change2"
+      ]
+    },
+    "text_change1": {
+      "type": "Text",
+      "props": {
+        "text": "skills/feature/SKILL.md: New step 2 checks permissions.push via gh api before cloning or building. Exits early with FEATURE_SKIP log if push access unavailable.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_change2": {
+      "type": "Text",
+      "props": {
+        "text": "skills/external-feature/SKILL.md: Same preflight check added. Both skills renumbered accordingly.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Saves an expensive Claude Opus run every day until GH_GLOBAL is configured. Instead of ~15 min CI + full token spend per blocked run, the skill exits in seconds with a clear log message.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #13: Push-Access Preflight for Feature Skills",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/13",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
