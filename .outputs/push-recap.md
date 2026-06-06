@@ -1,16 +1,16 @@
-*Push Recap — 2026-06-05*
-MiroShark — 2 commits by 2 authors | miroshark-aeon — 26 commits by aeonframework
+*Push Recap — 2026-06-06*
+miroshark-aeon — 35 commits by 1 author (aeonframework). MiroShark — 0 commits.
 
-Platform Status Health Probe (PR #149): MiroShark gained its 32nd catalogued surface — GET /api/status.json. A dedicated health endpoint for external status monitors (Upptime, BetterUptime, Statuspage.io) and ecosystem integrators to pre-flight check the deployment. Returns a live envelope: ok flag, queue depth, 24h completions, lifetime sim total, surface count. No in-process cache (30s HTTP cache only). Empty deployments return the all-zero envelope, never 404. 28 tests, 12 files, +1120 lines.
+Feature Engineering: The feature skill built PR #150 for MiroShark — POST /api/simulation/batch-status, a single endpoint that polls up to 20 simulations in one HTTP request. Third pre-flight/observability primitive in three days. 32nd catalogued surface, 26 unit tests, zero new deps (41-PR streak). Push blocked — GH_GLOBAL not set.
 
-i18n Test Infrastructure (PR #148): 26 unit tests locking the locale helper contract (normalize_locale, get_locale, t, apply_i18n, use_locale) before the French locale refactor. Covers the precedence chain (?lang > X-MiroShark-Locale > Accept-Language), the unknown-locale fallback the fr PR needs, and nested i18n block merging.
+Self-Improvement: PR #53 encodes yesterday's PR #149 auth-posture lesson into the feature skill prompt. New step 7 asks three questions before writing code — is the consumer public-by-design? Does the route expose private state? What do sibling endpoints say in openapi? Prevents default-inheriting internal_auth_guard on endpoints that need to be public.
 
-Aeon Autonomous Operations: 8 skills ran across 26 commits. Feature skill built PR #149 and discovered 2 pre-existing features (Webhook Delivery Log + Webhook Manual Retry) that had been eating repo-actions idea slots — pre-existing registry now at 10 entries.
+Deep API Audit: Repo-actions scanned simulation.py (~10,800 lines, 50+ routes) and discovered 17 surfaces not in the pre-existing registry — timeline, quality, belief-drift, transcript, BibTeX, Jupyter notebook, and more. All registered. Five new platform analytics ideas generated (outcome distribution, payload validator, signed results, monthly time-series, agent census).
 
 Key changes:
-- New backend/app/services/platform_status.py: ~250 LoC pure-stdlib scanner answering "is this instance currently up?"
-- New backend/tests/test_unit_platform_status.py: 28 tests (+428 lines)
-- New backend/tests/test_unit_i18n.py: 26 tests covering all six public i18n surfaces (+343 lines)
+- PR #150: POST /api/simulation/batch-status — privacy invariant (private + unknown = byte-identical), order-preserving, 350 LoC stdlib
+- PR #53: auth-posture decision framework — saves one CI cycle per public endpoint going forward
+- Pre-existing registry: 8 → 25 entries, preventing future idea-slot waste on already-shipped surfaces
 
-Stats: 19 files changed, +1703/-17 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-05.md
+Stats: ~45 files changed, +1,500/-150 lines | 1,236 stars (+3) | $MIROSHARK $0.00000493 (+20.58% — first green candle after 5 red)
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-06.md

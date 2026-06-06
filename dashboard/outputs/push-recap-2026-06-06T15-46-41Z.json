@@ -1,0 +1,266 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-06"
+      },
+      "children": [
+        "repo_stats",
+        "sep_1",
+        "feature_section",
+        "sep_2",
+        "improvement_section",
+        "sep_3",
+        "audit_section",
+        "sep_4",
+        "key_changes_section",
+        "sep_5",
+        "stats_section",
+        "sep_6",
+        "full_recap_link"
+      ]
+    },
+    "repo_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo_line_1",
+        "repo_line_2"
+      ]
+    },
+    "repo_line_1": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 35 commits by 1 author (aeonframework). MiroShark — 0 commits."
+      }
+    },
+    "repo_line_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Push blocked — GH_GLOBAL not set",
+        "variant": "destructive"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "feature_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "feature_heading",
+        "feature_body"
+      ]
+    },
+    "feature_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Feature Engineering",
+        "level": "h2"
+      }
+    },
+    "feature_body": {
+      "type": "Text",
+      "props": {
+        "text": "The feature skill built PR #150 for MiroShark — POST /api/simulation/batch-status, a single endpoint that polls up to 20 simulations in one HTTP request. Third pre-flight/observability primitive in three days. 32nd catalogued surface, 26 unit tests, zero new deps (41-PR streak)."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "improvement_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "improvement_heading",
+        "improvement_body"
+      ]
+    },
+    "improvement_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Self-Improvement",
+        "level": "h2"
+      }
+    },
+    "improvement_body": {
+      "type": "Text",
+      "props": {
+        "text": "PR #53 encodes yesterday's PR #149 auth-posture lesson into the feature skill prompt. New step 7 asks three questions before writing code — is the consumer public-by-design? Does the route expose private state? What do sibling endpoints say in openapi? Prevents default-inheriting internal_auth_guard on endpoints that need to be public."
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "audit_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "audit_heading",
+        "audit_body_1",
+        "audit_body_2"
+      ]
+    },
+    "audit_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Deep API Audit",
+        "level": "h2"
+      }
+    },
+    "audit_body_1": {
+      "type": "Text",
+      "props": {
+        "text": "Repo-actions scanned simulation.py (~10,800 lines, 50+ routes) and discovered 17 surfaces not in the pre-existing registry — timeline, quality, belief-drift, transcript, BibTeX, Jupyter notebook, and more. All registered. Five new platform analytics ideas generated (outcome distribution, payload validator, signed results, monthly time-series, agent census)."
+      }
+    },
+    "audit_body_2": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-existing registry: 8 → 25 entries, preventing future idea-slot waste on already-shipped surfaces.",
+        "variant": "lead"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key_heading",
+        "kc_stack"
+      ]
+    },
+    "key_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "kc_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "kc_1",
+        "kc_2",
+        "kc_3"
+      ]
+    },
+    "kc_1": {
+      "type": "Text",
+      "props": {
+        "text": "PR #150: POST /api/simulation/batch-status — privacy invariant (private + unknown = byte-identical), order-preserving, 350 LoC stdlib"
+      }
+    },
+    "kc_2": {
+      "type": "Text",
+      "props": {
+        "text": "PR #53: auth-posture decision framework — saves one CI cycle per public endpoint going forward"
+      }
+    },
+    "kc_3": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-existing registry: 8 → 25 entries, preventing future idea-slot waste on already-shipped surfaces."
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_grid"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats_grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_files",
+        "stat_stars",
+        "stat_price"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "~45 files, +1,500/-150 lines"
+      }
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,236",
+        "delta": "+3",
+        "trend": "up"
+      }
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "$MIROSHARK",
+        "value": "$0.00000493",
+        "delta": "+20.58%",
+        "trend": "up"
+      }
+    },
+    "sep_6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "full_recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-06.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
