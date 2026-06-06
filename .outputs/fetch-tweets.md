@@ -1,23 +1,18 @@
-*Top Tweets — MIROSHARK crypto token on Base chain (2026-06-03)*
+*Top Tweets — MIROSHARK crypto token on Base chain AND github.com/aaronjmars/MiroShark (2026-06-06)*
 
-XAI_API_KEY not available; results compiled via WebSearch.
+XAI_API_KEY not available; results via WebSearch.
 
-1. x.com/aaronjmars — roadmap update: miroshark on X + API still on track; railway & bankr downtime pushed token-launch runtime + aeon v4 demo; merged into new aeon focus
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2057435882194424127)
+1. x.com/miroshark_ — latest post from the official account (~Jun 4–6); shared link — likely a demo or announcement
+[View tweet](https://x.com/miroshark_/status/2062967236432674999)
 
-2. x.com/noisyb0y1 — open-source engine runs 500 AI agents with different views on one news story; highlights MiroShark as swarm intelligence engine with unique-personality agents
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/noisyb0y1/status/2040159662453276879)
+2. x.com/miroshark_ — "MiroShark just hit top 10 in Reinforcement Learning on oosmetrics 🦈" — milestone ranking on open-source metrics tracker
+[View tweet](https://x.com/miroshark_/status/2053611376703131963)
 
-3. x.com/aaronjmars — miroshark daily updates: Wonderwall/Polymarket integration — full OASIS-fork engine bundled; agents now create markets + trade via AMM alongside Twitter and Reddit
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2037281730315661407)
+3. x.com/aeonframework — The Karpathy SOUL is now live: SOUL.md + STYLE.md + MEMORY.md built from 13 blog posts, 12 YouTube transcripts, 8 READMEs, 200 tweets — 5 modes (Teacher / Hacker / ML Philosopher / Industry Insider / Nerd)
+[View tweet](https://x.com/aeonframework/status/2046964241211507055)
 
-4. x.com/BranaRakic — "DKG V9 + MiroShark simulating the future" — cross-project signal linking OriginTrail DKG V9 with MiroShark
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/BranaRakic/status/2036747635751633047)
+4. x.com/aaronjmars — "wow that sounds exactly like soul.md" — reflects on why no one has cracked the AI context repo for knowledge workers: knowledge is distributed, unstructured, unlike code
+[View tweet](https://x.com/aaronjmars/status/2045151503355109889)
 
-5. x.com/JMania402 — "$MIROSHARK 0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3 This one pump so hard" — community trader token price signal
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/JMania402/status/2036486940313493591)
+5. x.com/aaronjmars — First aeon bounty: build garry tan soul.md for 50 USDC on Daydreams Task Market — a decade of tweets, YC president era, SF politics
+[View tweet](https://x.com/aaronjmars/status/2044080723443728433)
