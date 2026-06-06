@@ -1,0 +1,150 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-06-06"
+      },
+      "children": [
+        "heading_main",
+        "sep1",
+        "text_coordination_intro",
+        "text_coordination_details",
+        "text_ai_cannot",
+        "sep2",
+        "heading_why_now",
+        "text_why_now",
+        "sep3",
+        "heading_resolution",
+        "text_resolution_p1",
+        "text_resolution_verify",
+        "sep4",
+        "heading_scores",
+        "stack_scores",
+        "sep5",
+        "link_hyperstitions"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark reach the Hacker News front page by July 15, 2026?",
+        "level": "h2"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text_coordination_intro": {
+      "type": "Text",
+      "props": {
+        "text": "The coordination play: Nobody can upvote what nobody submits.",
+        "variant": "lead"
+      }
+    },
+    "text_coordination_details": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark has 1,235 stars, 32 composable surfaces, three languages, and a top-10 oosmetrics ranking in Reinforcement Learning — all without a single front-page HN moment. Someone needs to write the Show HN post. Others need to show up in the first hour and upvote. A comment section full of people who actually ran a simulation seals it."
+      }
+    },
+    "text_ai_cannot": {
+      "type": "Text",
+      "props": {
+        "text": "An AI agent cannot submit, cannot upvote, and cannot seed organic discussion — this is pure human coordination.",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_why_now": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h2"
+      }
+    },
+    "text_why_now": {
+      "type": "Text",
+      "props": {
+        "text": "The project just cracked the oosmetrics top 10 for RL while shipping its 32nd share surface and third language in three days. The feature density is now absurd relative to its exposure. First green token candle in a week suggests sentiment may be turning. The window between \"undiscovered\" and \"discovered\" is closing — and HN is how it closes."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h2"
+      }
+    },
+    "text_resolution_p1": {
+      "type": "Text",
+      "props": {
+        "text": "YES if any Hacker News story linking to github.com/aaronjmars/MiroShark or miroshark.com appears in the HN front page (top 30 stories) at any point on or before July 15, 2026."
+      }
+    },
+    "text_resolution_verify": {
+      "type": "Text",
+      "props": {
+        "text": "Verifiable via HN Algolia API search.",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h2"
+      }
+    },
+    "stack_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_reflexivity",
+        "badge_viral"
+      ]
+    },
+    "badge_reflexivity": {
+      "type": "Badge",
+      "props": {
+        "text": "Reflexivity 5/5",
+        "variant": "default"
+      }
+    },
+    "badge_viral": {
+      "type": "Badge",
+      "props": {
+        "text": "Viral 4/5",
+        "variant": "default"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "Soon on https://www.hyperstitions.com/ ?",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}
