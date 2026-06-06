@@ -1,1 +1,9 @@
-Heartbeat 2026-06-05 — 2 skills missed today's windows. feature (due 11:00 UTC) did not run — new miss after running OK on Jun 4. fetch-tweets (due 06:30 UTC) missed again — second consecutive day (also reported Jun 4). Auto-dispatch blocked HTTP 403 (actions: read scope). All other daily skills confirmed: token-report ✓, repo-pulse ✓, push-recap ✓, project-lens ✓. No urgent issues. 12 open improve PRs remain stalled (chronic).
+HEARTBEAT_OK. All 9 applicable scheduled skills for today ran successfully — both `feature` and `fetch-tweets`, which were flagged missing in yesterday's heartbeat, recovered and completed. No new gaps, no urgent issues, nothing to dispatch or notify.
+
+## Summary
+
+- Checked all enabled scheduled skills against today's `gh run list` output
+- All 9 applicable skills completed; 3 (project-lens, memory-flush, weekly-shiplog) not scheduled for Saturday
+- Previously-flagged `feature` and `fetch-tweets` gaps resolved; no re-report needed
+- 13 chronic stalled CHORUS improve PRs — already reported Jun 5, skipped per dedup rule
+- Logged `HEARTBEAT_OK` to `memory/logs/2026-06-06.md`
