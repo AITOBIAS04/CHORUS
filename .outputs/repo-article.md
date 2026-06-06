@@ -1,5 +1,5 @@
-*New Article: The Simulation Engine That Just Got a Wallet*
+*New Article: Four Projects Showed Up on the Same Day. MiroShark Built Them an API.*
 
-MiroShark declared x402 wallets this week — the same protocol Coinbase, Stripe, and Cloudflare built for agent-to-agent payments ($600M annualized volume). Combined with a 36-file frontend reskin, an external contributor shipping Cloud Run deploy infra, and belief volatility completing the 25th share surface, the simulation engine crossed from demo project to payment-ready infrastructure.
+On June 2, four independent teams submitted ecosystem PRs to MiroShark within hours of each other. Within 72 hours, the project shipped a machine-readable registry, per-project stats API, and platform status probe — infrastructure that didn't exist before they arrived. Fourteen projects now build on the engine. The flywheel is spinning.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-05-30.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-06.md
