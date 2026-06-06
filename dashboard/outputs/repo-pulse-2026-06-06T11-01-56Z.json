@@ -1,0 +1,110 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-06-06"
+      },
+      "children": [
+        "story_repo",
+        "stats_stack",
+        "separator_1",
+        "heading_stargazers",
+        "stargazers_stack"
+      ]
+    },
+    "story_repo": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark"
+      },
+      "children": []
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,236",
+        "delta": "+3",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "263",
+        "delta": "+0",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_stargazers": {
+      "type": "Heading",
+      "props": {
+        "text": "New stargazers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stargazers_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_sg1",
+        "link_sg2",
+        "link_sg3"
+      ]
+    },
+    "link_sg1": {
+      "type": "Link",
+      "props": {
+        "label": "RobinHoodO",
+        "href": "https://github.com/RobinHoodO"
+      },
+      "children": []
+    },
+    "link_sg2": {
+      "type": "Link",
+      "props": {
+        "label": "WangDingok",
+        "href": "https://github.com/WangDingok"
+      },
+      "children": []
+    },
+    "link_sg3": {
+      "type": "Link",
+      "props": {
+        "label": "Jnesselr",
+        "href": "https://github.com/Jnesselr"
+      },
+      "children": []
+    }
+  }
+}
