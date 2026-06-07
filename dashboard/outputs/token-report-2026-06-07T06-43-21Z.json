@@ -1,0 +1,139 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "MIROSHARK Daily"
+      },
+      "children": [
+        "heading_date",
+        "separator_1",
+        "grid_stats",
+        "separator_2",
+        "text_narrative",
+        "link_chart"
+      ]
+    },
+    "heading_date": {
+      "type": "Heading",
+      "props": {
+        "text": "2026-06-07",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liquidity",
+        "stat_volume24h",
+        "stat_buys",
+        "stat_sells",
+        "stat_buy_ratio",
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000005572",
+        "delta": "+13.48%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$334.7K"
+      },
+      "children": []
+    },
+    "stat_volume24h": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$17.1K"
+      },
+      "children": []
+    },
+    "stat_buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys",
+        "value": "80"
+      },
+      "children": []
+    },
+    "stat_sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Sells",
+        "value": "35"
+      },
+      "children": []
+    },
+    "stat_buy_ratio": {
+      "type": "Stat",
+      "props": {
+        "label": "Buy Ratio",
+        "value": "70%"
+      },
+      "children": []
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "-22.5%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "+13.5%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "text_narrative": {
+      "type": "Text",
+      "props": {
+        "text": "Second consecutive green day. LP recovered to $334.7K — a fresh ~$32K addition at current levels. Volume remains thin; recovery driven by steady buy-side accumulation rather than any single large move.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link_chart": {
+      "type": "Link",
+      "props": {
+        "label": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      },
+      "children": []
+    }
+  }
+}
