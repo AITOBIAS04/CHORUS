@@ -1,12 +1,19 @@
-Skill complete. No notification was sent — the threshold of ≥2 active Aeon forks with readable `aeon.yml` was not met for the fourth consecutive week.
+Skill leaderboard complete. No notification was sent — the threshold requires at least 2 active Aeon forks with a readable `aeon.yml`, and the fleet remains at 1 (AITOBIAS04/CHORUS).
 
 ## Summary
 
-- **Target:** `aaronjmars/MiroShark` + `aaronjmars/miroshark-aeon`
-- **Active Aeon forks:** 1 — AITOBIAS04/CHORUS (pushed today)
-- **Enabled skills in fleet:** 14 (unchanged from last week)
-- **Active MiroShark sim-tool forks:** 72 (down from 102 — 30-day window rolled past April wave)
-- **Adoption gaps:** 4 → down from 7; source disabled `tweet-allocator`, `skill-freshness`, `ai-framework-watch` via PR #47 on May 27; remaining gaps are `thread-formatter`, `operator-scorecard`, `star-milestone`, `star-momentum-alert` (all low-friction, no external secrets required)
-- **Files written:** `articles/skill-leaderboard-2026-05-31.md`
-- **Log updated:** `memory/logs/2026-05-31.md`
-- **Notification:** skipped (`SKILL_LEADERBOARD_INSUFFICIENT_DATA`)
+**What was done:**
+- Scanned forks of `aaronjmars/MiroShark` (54 active in 30d, none with `aeon.yml`) and `aaronjmars/miroshark-aeon` (1 active fork: AITOBIAS04/CHORUS)
+- Read CHORUS's `aeon.yml` (14 enabled skills) and the source repo's `aeon.yml` (15 enabled skills)
+- Compared against the 2026-05-31 leaderboard for week-over-week deltas
+
+**Key findings:**
+- Skill stack unchanged: 14 skills enabled in CHORUS, same 14 as last week
+- Adoption gaps unchanged: 4 (thread-formatter, operator-scorecard, star-milestone, star-momentum-alert)
+- CHORUS diverges from upstream on 3 skills it has enabled that the source doesn't: fetch-tweets, hyperstitions-ideas, skill-leaderboard
+- Source catalog grew by ~20 new disabled skills this week (fleet-management and social-syndication families)
+- MiroShark active forks: 72 → 54 (30-day window rolling)
+
+**Files created/modified:**
+- `articles/skill-leaderboard-2026-06-07.md` — created
+- `memory/logs/2026-06-07.md` — appended
