@@ -1,21 +1,23 @@
-*Feature Built — 2026-06-06*
+*Feature Built — 2026-06-07*
 
-Agent Archetype Atlas
-MiroShark now has a platform-wide view of how each agent profession behaves across all published simulations. If "Financial Analyst" has appeared in 60 published sims, you can now see its aggregate stance distribution, how often it flips from bullish to bearish (or vice versa), and its average influence score — all from a single /archetypes page.
+Cross-Platform Sentiment Divergence
+
+MiroShark multi-platform simulations now surface per-platform sentiment breakdowns. When a simulation runs across Twitter, Reddit, and Polymarket simultaneously, the new endpoint reveals where those platforms agreed and where they diverged — a signal the aggregate consensus was silently obscuring.
 
 Why this matters:
-Until now, agent identity data from agents.json existed only per-simulation. An operator choosing archetypes for a new sim had no way to know how "Risk Manager" typically behaves across the platform — does it converge bearish? Does it flip stances more than "Market Analyst"? The archetype atlas is the first cross-simulation analytics surface that aggregates the agents.json data (27th share surface, PR #137) into a platform-wide reference. It also feeds back into the simulation creation flow as a behavioral baseline for operators building new scenarios.
+Until now, a multi-platform sim that ended at 56% YES was just that — one number. But if Twitter agents were 72% YES while Reddit agents were 39% YES, the 33-point divergence between platforms is the real story. Operators designing multi-platform simulations for crisis modeling, product launches, or policy analysis need to know not just what the crowd decided, but whether the crowd agreed with itself across platforms. This was the top idea from yesterday's repo-actions analysis — the data was already being generated in per-platform action logs; no surface was reading it at the cross-platform aggregate level.
 
 What was built:
-- backend/app/services/archetype_atlas_service.py: Scans all published sim dirs for reddit_profiles.json and trajectory.json. Groups agents by profession, computing sim_count, appearances, avg_initial_bullish_pct, avg_final_bullish_pct, flip_rate, avg_influence_score, and most_common_topic. Results cached to archetype_atlas.json with a 1-hour TTL. Pure stdlib.
-- backend/app/api/archetypes.py: Flask blueprint with two public endpoints — GET /api/agents/archetypes (full atlas sorted by sim_count desc) and GET /api/agents/archetypes/<name> (single entry, case-insensitive match, 404 for unknown). 60-second Cache-Control.
-- frontend/src/views/ArchetypeAtlasView.vue: Dark-themed /archetypes page with responsive card grid. Each card shows a rank badge (gold/silver/bronze for top 3), profession name, sim count, three horizontal stat bars (bullish start, bullish end, flip rate), most common topic tag, and influence score. Sort toggles between Most Used and Most Volatile. Click to expand for stance shift comparison (initial → final distribution). Bilingual EN/ZH.
-- 14 unit tests covering atlas aggregation across multiple sims, flip rate extremes (0% and 100%), null influence scores, topic mode detection, cache hits and forced refresh, case-insensitive lookup, and publish/status gating.
+- backend/app/services/platform_sentiment_service.py: Pure-stdlib service (~270 LoC) that reads per-platform actions.jsonl files, maps agents to platforms, cross-references the final trajectory snapshot's belief positions, and computes per-platform bullish/neutral/bearish splits. Mtime-based cache to platform_sentiment.json.
+- backend/app/api/simulation.py: GET /api/simulation/:id/platform-sentiment route with publish gate, surface_stats counter, and 5-minute Cache-Control.
+- frontend/src/components/Step3Simulation.vue: "Platforms" toolbar button (visible only for multi-platform sims) that opens a compact breakdown overlay with per-platform horizontal bars — violet for bullish, red for bearish, gray for neutral.
+- frontend/src/components/EmbedDialog.vue: "Platform sentiment (JSON)" section with live preview, copyable URL, and curl snippet.
+- 16 unit tests covering service logic, cache behavior, route wiring, and catalog/openapi drift guards.
 
 How it works:
-The service scans every directory under WONDERWALL_SIMULATION_DATA_DIR, filtering for published+completed sims (same gate as platform_stats). For each sim, it reads reddit_profiles.json for profession data and trajectory.json for belief positions. Agents are grouped by profession string, and per-archetype stats are accumulated: how many sims the profession appeared in, initial and final stance distributions derived from the same ±0.2 threshold every other surface uses, flip rate (percentage of appearances where initial_stance ≠ final_stance), and average karma as an influence proxy. The atlas is written to archetype_atlas.json with an mtime-based 1-hour TTL so the first request after an hour triggers a rebuild, but subsequent requests serve from cache. The frontend fetches via a standard axios GET and renders the sorted grid.
+The service scans each platform's actions.jsonl to build a set of agent_ids per platform. It then reads the final snapshot from trajectory.json to get each agent's belief position (the same ±0.2 stance threshold every other surface uses). For each platform, it filters beliefs to only that platform's agents and computes the bullish/neutral/bearish split using the existing compute_stance_split function from trajectory_export. The result is cached to disk with mtime invalidation — only recomputed when action files change. No new dependencies; pure stdlib (json + os). The frontend loads the data alongside existing analytics when a simulation completes and renders the toolbar button only when multiple platforms are present.
 
 What's next:
-Add ?archetype= filter to the gallery endpoint so users can browse all sims featuring a specific profession. Link archetype cards from the sim creation flow so operators can reference behavioral baselines when choosing agent populations.
+Could add max divergence score (max delta between platforms' yes_pct) as a gallery filter, or a per-round platform divergence trajectory showing how platforms converged or diverged over time.
 
-Branch: feat/agent-archetype-atlas (push blocked — GH_GLOBAL not set)
+PR: push blocked — GH_GLOBAL secret not set (33rd consecutive block)
