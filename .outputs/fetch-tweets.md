@@ -1,18 +1,15 @@
-*Top Tweets — MIROSHARK crypto token on Base chain AND github.com/aaronjmars/MiroShark (2026-06-06)*
+*Top Tweets — MIROSHARK crypto token on Base chain (2026-06-07)*
 
-XAI_API_KEY not available; results via WebSearch.
+XAI_API_KEY not set — results via WebSearch.
 
-1. x.com/miroshark_ — latest post from the official account (~Jun 4–6); shared link — likely a demo or announcement
-[View tweet](https://x.com/miroshark_/status/2062967236432674999)
+1. x.com/aaronjmars — "Built a sanitized version of MiroFish called MiroShark" — English translation, improved sim flow, local-run support, any OpenAI-compatible API. The founding announcement.
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/aaronjmars/status/2035881020302430571)
 
-2. x.com/miroshark_ — "MiroShark just hit top 10 in Reinforcement Learning on oosmetrics 🦈" — milestone ranking on open-source metrics tracker
-[View tweet](https://x.com/miroshark_/status/2053611376703131963)
+2. x.com/aaronjmars — "The craziest simulation framework for AI" — upload any doc, agents populate Reddit + X + Polymarket, post, argue, shift opinions. The original viral demo thread.
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/aaronjmars/status/2036175623622660114)
 
-3. x.com/aeonframework — The Karpathy SOUL is now live: SOUL.md + STYLE.md + MEMORY.md built from 13 blog posts, 12 YouTube transcripts, 8 READMEs, 200 tweets — 5 modes (Teacher / Hacker / ML Philosopher / Industry Insider / Nerd)
-[View tweet](https://x.com/aeonframework/status/2046964241211507055)
-
-4. x.com/aaronjmars — "wow that sounds exactly like soul.md" — reflects on why no one has cracked the AI context repo for knowledge workers: knowledge is distributed, unstructured, unlike code
-[View tweet](https://x.com/aaronjmars/status/2045151503355109889)
-
-5. x.com/aaronjmars — First aeon bounty: build garry tan soul.md for 50 USDC on Daydreams Task Market — a decade of tweets, YC president era, SF politics
-[View tweet](https://x.com/aaronjmars/status/2044080723443728433)
+3. x.com/anger_trading — "$miroshark" — early trader callout on the Base token (0xd7bc6a...e1ba3).
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/anger_trading/status/2041985239858475105)
