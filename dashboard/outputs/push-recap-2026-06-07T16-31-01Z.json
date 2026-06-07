@@ -1,0 +1,332 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-07"
+      },
+      "children": [
+        "stack_projects",
+        "sep_1",
+        "section_surfaces",
+        "sep_2",
+        "section_skill_improvement",
+        "sep_3",
+        "section_autonomous_ops",
+        "sep_4",
+        "section_key_changes",
+        "sep_5",
+        "section_stats",
+        "sep_6",
+        "link_full_recap"
+      ]
+    },
+    "stack_projects": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_miroshark",
+        "text_miroshark_aeon"
+      ]
+    },
+    "text_miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "[MiroShark] — 2 commits by aaronjmars"
+      }
+    },
+    "text_miroshark_aeon": {
+      "type": "Text",
+      "props": {
+        "text": "[miroshark-aeon] — 28 commits by aeonframework"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_surfaces": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_surfaces",
+        "text_surfaces_desc",
+        "stack_surfaces_details"
+      ]
+    },
+    "heading_surfaces": {
+      "type": "Heading",
+      "props": {
+        "text": "Two New Surfaces (PRs #150 + #151)",
+        "level": "h3"
+      }
+    },
+    "text_surfaces_desc": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark shipped batch status lookup (POST, poll up to 20 sims in one call) and outcome distribution (GET, corpus-wide direction/confidence/quality/round-count buckets)."
+      }
+    },
+    "stack_surfaces_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_surfaces_stdlib",
+        "text_surfaces_queue"
+      ]
+    },
+    "text_surfaces_stdlib": {
+      "type": "Text",
+      "props": {
+        "text": "Both pure-stdlib, zero new deps — extending the streak to 42 consecutive dependency-free PRs."
+      }
+    },
+    "text_surfaces_queue": {
+      "type": "Text",
+      "props": {
+        "text": "Merged 8 minutes apart, clearing the Aeon-built PR queue to zero for the first time in 17 days."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_skill_improvement": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_skill_improvement",
+        "text_skill_improvement_desc",
+        "text_skill_improvement_trigger"
+      ]
+    },
+    "heading_skill_improvement": {
+      "type": "Heading",
+      "props": {
+        "text": "Skill Self-Improvement (PR #53)",
+        "level": "h3"
+      }
+    },
+    "text_skill_improvement_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Auth posture is now an explicit design-time decision in the feature skill — three questions before any code is written."
+      }
+    },
+    "text_skill_improvement_trigger": {
+      "type": "Text",
+      "props": {
+        "text": "Triggered by yesterday's /api/status.json needing a third commit to remove unintended auth."
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_autonomous_ops": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_autonomous_ops",
+        "text_autonomous_ops_intro",
+        "stack_autonomous_ops_items"
+      ]
+    },
+    "heading_autonomous_ops": {
+      "type": "Heading",
+      "props": {
+        "text": "Autonomous Ops — 10 Skills",
+        "level": "h3"
+      }
+    },
+    "text_autonomous_ops_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Feature built Cross-Platform Sentiment Divergence (34th surface, push-blocked). All skills healthy."
+      }
+    },
+    "stack_autonomous_ops_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_repo_article",
+        "text_project_lens"
+      ]
+    },
+    "text_repo_article": {
+      "type": "Text",
+      "props": {
+        "text": "repo-article wrote 'The Shape of the Corpus Now Has Its Own Endpoint.'"
+      }
+    },
+    "text_project_lens": {
+      "type": "Text",
+      "props": {
+        "text": "project-lens connected distribution endpoints to CrUX and Cloudflare Radar vocabulary patterns."
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_key_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_key_changes",
+        "stack_changes"
+      ]
+    },
+    "heading_key_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_outcome_distribution",
+        "text_batch_status",
+        "text_skill_md"
+      ]
+    },
+    "text_outcome_distribution": {
+      "type": "Text",
+      "props": {
+        "text": "outcome_distribution.py (+533 LoC) + 810-line test suite — bucketed analytics for the entire public corpus"
+      }
+    },
+    "text_batch_status": {
+      "type": "Text",
+      "props": {
+        "text": "batch_status.py (+394 LoC) + 534-line test suite — privacy-preserving multi-sim polling for integrators"
+      }
+    },
+    "text_skill_md": {
+      "type": "Text",
+      "props": {
+        "text": "skills/feature/SKILL.md auth posture step — prevents inherited-auth mistakes on new endpoints"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_stats",
+        "text_files_changed",
+        "grid_stats"
+      ]
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "text_files_changed": {
+      "type": "Text",
+      "props": {
+        "text": "~91 files changed, +5,382/-190 lines"
+      }
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks",
+        "stat_price"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,239",
+        "delta": "+3",
+        "trend": "up"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "264",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000005572",
+        "delta": "+13.48%",
+        "trend": "up"
+      }
+    },
+    "sep_6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_full_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-07.md"
+      }
+    }
+  }
+}
