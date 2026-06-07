@@ -208,3 +208,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-07,feature,claude-opus-4-6,108,34088,11773053,126389
 2026-06-07,push-recap,claude-opus-4-6,16,13426,800491,51891
 2026-06-07,skill-leaderboard,claude-sonnet-4-6,1928,11253,572877,41398
+2026-06-07,memory-flush,claude-sonnet-4-6,14,13557,608719,42101
