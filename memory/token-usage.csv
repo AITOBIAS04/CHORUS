@@ -210,4 +210,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-07,skill-leaderboard,claude-sonnet-4-6,1928,11253,572877,41398
 2026-06-07,memory-flush,claude-sonnet-4-6,14,13557,608719,42101
 2026-06-07,heartbeat,claude-sonnet-4-6,8,11149,269647,36047
-2026-06-08,fetch-tweets,claude-sonnet-4-6,20,8761,597558,36342
+2026-06-08,token-report,claude-sonnet-4-6,11,11226,489039,53283
