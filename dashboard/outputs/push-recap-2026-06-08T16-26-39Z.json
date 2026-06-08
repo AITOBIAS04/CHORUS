@@ -1,0 +1,403 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap",
+        "description": "2026-06-08"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section_repos",
+        "sep1",
+        "section_pr152",
+        "sep2",
+        "section_pr54",
+        "sep3",
+        "section_catalog",
+        "sep4",
+        "section_key_changes",
+        "sep5",
+        "section_stats",
+        "sep6",
+        "section_recap"
+      ]
+    },
+    "section_repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_miroshark",
+        "text_miroshark_aeon"
+      ]
+    },
+    "text_miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 1 commit by aaronjmars",
+        "variant": "lead"
+      }
+    },
+    "text_miroshark_aeon": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 30 commits by aeonframework + aaronjmars",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_pr152": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_pr152",
+        "text_pr152_main",
+        "text_pr152_details1",
+        "text_pr152_details2"
+      ]
+    },
+    "heading_pr152": {
+      "type": "Heading",
+      "props": {
+        "text": "Signed Simulation Results (PR #152, merged)",
+        "level": "h3"
+      }
+    },
+    "text_pr152_main": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark shipped its first cryptographic verifiability primitive. GET /api/simulation/<id>/signed-result.json wraps the signal.json payload in an HMAC-SHA256-signed envelope using the existing WEBHOOK_SECRET — integrators can now prove a stored result was not tampered with, offline, without calling back to the API."
+      }
+    },
+    "text_pr152_details1": {
+      "type": "Text",
+      "props": {
+        "text": "The 34th catalogued surface, +1,051 lines, 25 tests, zero new deps (42-PR streak).",
+        "variant": "caption"
+      }
+    },
+    "text_pr152_details2": {
+      "type": "Text",
+      "props": {
+        "text": "signed_result.py (180 LoC HMAC service) + 112-line route handler + 499-line test suite + OpenAPI schema with Python/Node.js verification recipes",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_pr54": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_pr54",
+        "text_pr54_main",
+        "text_pr54_lowsignal",
+        "heading_pr54_accounts",
+        "stack_pr54_accounts"
+      ]
+    },
+    "heading_pr54": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo-Pulse Profile Enrichment (PR #54, merged)",
+        "level": "h3"
+      }
+    },
+    "text_pr54_main": {
+      "type": "Text",
+      "props": {
+        "text": "Stargazer notifications are no longer bare handles. The skill now looks up each new account via gh api users/$LOGIN and surfaces name, company, bio, location, followers."
+      }
+    },
+    "text_pr54_lowsignal": {
+      "type": "Text",
+      "props": {
+        "text": "Low-signal flag for accounts with ≤2 followers and 0 repos.",
+        "variant": "caption"
+      }
+    },
+    "heading_pr54_accounts": {
+      "type": "Heading",
+      "props": {
+        "text": "First enriched run today:",
+        "level": "h4"
+      }
+    },
+    "stack_pr54_accounts": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "account_farul",
+        "account_boluobobo",
+        "account_i3creations"
+      ]
+    },
+    "account_farul": {
+      "type": "Text",
+      "props": {
+        "text": "Farul Wananda (Bali, 24 followers)"
+      }
+    },
+    "account_boluobobo": {
+      "type": "Text",
+      "props": {
+        "text": "boluobobo (CS@ETH Zurich, 96 followers)"
+      }
+    },
+    "account_i3creations": {
+      "type": "Text",
+      "props": {
+        "text": "i3creations (6 followers)"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_catalog": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_catalog",
+        "text_catalog_main",
+        "text_catalog_surfaces",
+        "text_catalog_ideas",
+        "text_catalog_deadline"
+      ]
+    },
+    "heading_catalog": {
+      "type": "Heading",
+      "props": {
+        "text": "Catalog Audit + New Ideas",
+        "level": "h3"
+      }
+    },
+    "text_catalog_main": {
+      "type": "Text",
+      "props": {
+        "text": "Repo-actions deep-read of surfaces_catalog.py discovered 12 surfaces not previously in the pre-existing registry:"
+      }
+    },
+    "text_catalog_surfaces": {
+      "type": "Text",
+      "props": {
+        "text": "platform_stats_badge, badge_svg, clone_json, polymarket_json, volatility, agent_sparklines, watch_page, oembed, peak_round, share_card, replay_gif, chart_svg",
+        "variant": "muted"
+      }
+    },
+    "text_catalog_ideas": {
+      "type": "Text",
+      "props": {
+        "text": "5 new feature ideas generated"
+      }
+    },
+    "text_catalog_deadline": {
+      "type": "Text",
+      "props": {
+        "text": "Chinese README (#5) targets the Jun-15 hyperstition deadline",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_key_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_key_changes",
+        "text_change1",
+        "text_change2",
+        "heading_shiplog",
+        "text_shiplog",
+        "text_preflight"
+      ]
+    },
+    "heading_key_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "text_change1": {
+      "type": "Text",
+      "props": {
+        "text": "PR #152: signed_result.py (180 LoC HMAC service) + 112-line route handler + 499-line test suite + OpenAPI schema with Python/Node.js verification recipes"
+      }
+    },
+    "text_change2": {
+      "type": "Text",
+      "props": {
+        "text": "PR #54: repo-pulse SKILL.md gains step 5b (profile lookup, 25-account cap, low-signal flag, enriched notification format)"
+      }
+    },
+    "heading_shiplog": {
+      "type": "Heading",
+      "props": {
+        "text": "Weekly Shiplog",
+        "level": "h4"
+      }
+    },
+    "text_shiplog": {
+      "type": "Text",
+      "props": {
+        "text": "\"MiroShark Spent Seven Days Becoming a Contract Other People Could Sign\" — 20 MiroShark PRs + 4 Aeon PRs, stars 1,222→1,239"
+      }
+    },
+    "text_preflight": {
+      "type": "Text",
+      "props": {
+        "text": "Feature preflight saved first build cycle: Per-Round Confidence Trajectory skipped (34th consecutive GH_GLOBAL block)",
+        "variant": "caption"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_stats",
+        "grid_stats",
+        "text_greenday"
+      ]
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_lines",
+        "stat_stars",
+        "stat_forks",
+        "stat_price",
+        "stat_change"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "~50"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+2,600 / -120"
+      }
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,243"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "262"
+      }
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000006107"
+      }
+    },
+    "stat_change": {
+      "type": "Stat",
+      "props": {
+        "label": "Daily change",
+        "value": "+9.45%",
+        "trend": "up"
+      }
+    },
+    "text_greenday": {
+      "type": "Text",
+      "props": {
+        "text": "3rd green day",
+        "variant": "caption"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-08.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
