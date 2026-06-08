@@ -1,0 +1,57 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge_new",
+        "heading_main",
+        "text_body",
+        "link_article"
+      ]
+    },
+    "badge_new": {
+      "type": "Badge",
+      "props": {
+        "text": "New Article",
+        "variant": "secondary"
+      }
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Every Dependency Is a Door You Forgot to Lock",
+        "level": "h2"
+      }
+    },
+    "text_body": {
+      "type": "Text",
+      "props": {
+        "text": "LiteLLM was compromised through its own security scanner. TanStack's CI pipeline stole its own publish token. One in five OpenClaw agent skills turned out to be malicious. The AI industry's dependency addiction is its biggest attack surface — and one open-source project has shipped 42 consecutive pull requests and 34 integration surfaces without adding a single dependency, using nothing but Python standard library.",
+        "variant": "body"
+      }
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-08.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
