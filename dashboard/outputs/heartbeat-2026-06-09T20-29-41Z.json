@@ -1,0 +1,131 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-06-09"
+      },
+      "children": [
+        "heading_missing_skills",
+        "table_missing_skills",
+        "separator_1",
+        "heading_auto_dispatch",
+        "alert_auto_dispatch",
+        "separator_2",
+        "heading_prs",
+        "text_prs",
+        "separator_3",
+        "heading_memory_flags",
+        "alert_memory_flags"
+      ]
+    },
+    "heading_missing_skills": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing skills (not in today's runs)",
+        "level": "h2"
+      }
+    },
+    "table_missing_skills": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Scheduled UTC",
+          "Elapsed Time",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "feature",
+            "11:00",
+            "9h ago",
+            ""
+          ],
+          [
+            "self-improve",
+            "13:00",
+            "7h ago",
+            "meta, skipped auto-trigger"
+          ],
+          [
+            "repo-actions",
+            "14:00",
+            "6h ago",
+            ""
+          ],
+          [
+            "repo-article",
+            "16:00",
+            "4.5h ago",
+            ""
+          ]
+        ]
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_auto_dispatch": {
+      "type": "Heading",
+      "props": {
+        "text": "Auto-dispatch",
+        "level": "h2"
+      }
+    },
+    "alert_auto_dispatch": {
+      "type": "Alert",
+      "props": {
+        "title": "Auto-dispatch failed",
+        "message": "Failed for all 3 (feature, repo-actions, repo-article) — HTTP 403 actions:read permission, same as documented. Manual trigger or scheduler (messages.yml) needed.",
+        "type": "error"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "PRs",
+        "level": "h2"
+      }
+    },
+    "text_prs": {
+      "type": "Text",
+      "props": {
+        "text": "13 chronic self-improve PRs in CHORUS — unchanged, skip (reported 2026-06-07).",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_memory_flags": {
+      "type": "Heading",
+      "props": {
+        "text": "Memory flags",
+        "level": "h2"
+      }
+    },
+    "alert_memory_flags": {
+      "type": "Alert",
+      "props": {
+        "title": "Configuration issues detected",
+        "message": "GH_GLOBAL still unset (35th feature block today); XAI_API_KEY absent; notification channels unconfigured.",
+        "type": "warning"
+      }
+    }
+  }
+}
