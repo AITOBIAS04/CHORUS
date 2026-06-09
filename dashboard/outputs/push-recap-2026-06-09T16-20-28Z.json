@@ -1,0 +1,293 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-09"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section_activity",
+        "sep_1",
+        "section_api",
+        "sep_2",
+        "section_noise",
+        "sep_3",
+        "section_changes",
+        "sep_4",
+        "section_recap"
+      ]
+    },
+    "section_activity": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "activity_heading",
+        "activity_miroshark",
+        "activity_aeon"
+      ]
+    },
+    "activity_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Activity",
+        "level": "h3"
+      }
+    },
+    "activity_miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark — 1 commit by aaronjmars"
+      }
+    },
+    "activity_aeon": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/miroshark-aeon — 2 substantive commits by aaronjmars + aeonframework (~30 cron auto-commits filtered)"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_api": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "api_heading",
+        "api_pr_link",
+        "api_description",
+        "api_details"
+      ]
+    },
+    "api_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Activity Feed API",
+        "level": "h3"
+      }
+    },
+    "api_pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #153",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/153"
+      }
+    },
+    "api_description": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark shipped its 35th catalogued surface — GET /api/activity.json returns the N most recently completed public sims in a small JSON envelope, sorted by completion time. Built for keyless integrator polling (Aeon push-recap, status dashboards, social bots)."
+      }
+    },
+    "api_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "api_auth",
+        "api_tech",
+        "api_deps"
+      ]
+    },
+    "api_auth": {
+      "type": "Text",
+      "props": {
+        "text": "Public auth posture, 30s cache, ETag/304 support, limit clamping (1-50)",
+        "variant": "caption"
+      }
+    },
+    "api_tech": {
+      "type": "Text",
+      "props": {
+        "text": "Pure-stdlib service, 28 tests, full OpenAPI spec",
+        "variant": "caption"
+      }
+    },
+    "api_deps": {
+      "type": "Text",
+      "props": {
+        "text": "Zero new deps (43-PR streak)",
+        "variant": "caption"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_noise": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "noise_heading",
+        "noise_pr_link",
+        "noise_description",
+        "noise_benefits"
+      ]
+    },
+    "noise_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Self-Improvement: Noise Filter",
+        "level": "h3"
+      }
+    },
+    "noise_pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #55",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/55"
+      }
+    },
+    "noise_description": {
+      "type": "Text",
+      "props": {
+        "text": "The push-recap skill re-derived the same 'aeonframework cron auto-commit = noise' rule every day for 7 straight days (Jun 1-7). The self-improve skill encoded it as an explicit step 5 in the skill prompt — a mechanical three-prefix filter that runs before diff-reading."
+      }
+    },
+    "noise_benefits": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "noise_benefit_time",
+        "noise_benefit_risk"
+      ]
+    },
+    "noise_benefit_time": {
+      "type": "Text",
+      "props": {
+        "text": "Saves ~5-10 min per daily run",
+        "variant": "caption"
+      }
+    },
+    "noise_benefit_risk": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates the risk of misclassifying cron churn as shipping events",
+        "variant": "caption"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes_heading",
+        "changes_stats",
+        "changes_items"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "changes_stats": {
+      "type": "Text",
+      "props": {
+        "text": "21 files changed, +2,205/-32 lines",
+        "variant": "lead"
+      }
+    },
+    "changes_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change_api_endpoint",
+        "change_activity_feed",
+        "change_skill_md"
+      ]
+    },
+    "change_api_endpoint": {
+      "type": "Text",
+      "props": {
+        "text": "New /api/activity.json endpoint: 35th surface, fills the gap between the gallery, RSS feeds, and the status probe for polling-loop integrators"
+      }
+    },
+    "change_activity_feed": {
+      "type": "Text",
+      "props": {
+        "text": "activity_feed.py: 440-line pure-stdlib service scanning sim dirs, deriving signals from the same pipeline as signal.json"
+      }
+    },
+    "change_skill_md": {
+      "type": "Text",
+      "props": {
+        "text": "skills/push-recap/SKILL.md: new step 5 noise filter — drops aeonframework commits matching chore(scheduler/cron/auto-commit) prefixes on agent repos"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_recap": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "recap_heading",
+        "recap_link"
+      ]
+    },
+    "recap_heading": {
+      "type": "Text",
+      "props": {
+        "text": "Full Recap",
+        "variant": "lead"
+      }
+    },
+    "recap_link": {
+      "type": "Link",
+      "props": {
+        "label": "articles/push-recap-2026-06-09.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-09.md"
+      }
+    }
+  }
+}
