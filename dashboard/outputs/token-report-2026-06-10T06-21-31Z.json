@@ -1,0 +1,99 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily",
+        "description": "2026-06-10"
+      },
+      "children": [
+        "price-stat",
+        "metrics-grid",
+        "buys-sells-badge",
+        "separator-1",
+        "narrative",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000005574",
+        "delta": "-8.82%",
+        "trend": "down"
+      }
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat",
+        "7d-stat",
+        "30d-stat"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$340.7K"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$14.2K"
+      }
+    },
+    "7d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "-9.3%",
+        "trend": "down"
+      }
+    },
+    "30d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "-8.1%",
+        "trend": "down"
+      }
+    },
+    "buys-sells-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Buys/Sells: 62/67"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "narrative": {
+      "type": "Text",
+      "props": {
+        "text": "Rally stalls: after 3 green days, price failed to hold above $6.1e-6, peaked at $6.28e-6 then faded to a local low of $5.57e-6 as volume dried up to $14K from $66K two sessions ago.",
+        "variant": "body"
+      }
+    },
+    "chart-link": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
