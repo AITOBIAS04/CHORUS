@@ -1,0 +1,64 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "stack"
+      ]
+    },
+    "stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge",
+        "heading",
+        "text",
+        "separator",
+        "link"
+      ]
+    },
+    "badge": {
+      "type": "Badge",
+      "props": {
+        "text": "New Article",
+        "variant": "default"
+      }
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "The World Is Learning to Sign Photos. Nobody Is Signing Predictions.",
+        "level": "h2"
+      }
+    },
+    "text": {
+      "type": "Text",
+      "props": {
+        "text": "The EU AI Act mandates provenance for AI-generated content by August 2 — but the entire provenance infrastructure (C2PA, Content Credentials, Gartner top-10 trend) covers media, not analytical outputs. MiroShark shipped HMAC-signed simulation results the same week, answering a different provenance question: not \"who made this\" but \"is this the same result the engine produced?\" The gap between signing photos and signing predictions is where the next trust layer needs to be built.",
+        "variant": "body"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-10.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}
