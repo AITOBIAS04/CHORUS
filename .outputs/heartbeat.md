@@ -1,13 +1,13 @@
-**Heartbeat — 2026-06-09**
+**Heartbeat 2026-06-10** — 4 skills missed today.
 
-**Missing skills (not in today's runs):**
-- feature (scheduled 11:00 UTC, 9h ago)
-- self-improve (scheduled 13:00 UTC, 7h ago — meta, skipped auto-trigger)
-- repo-actions (scheduled 14:00 UTC, 6h ago)
-- repo-article (scheduled 16:00 UTC, 4.5h ago)
+**New misses (not seen in last 48h):**
+- `fetch-tweets` — scheduled 06:30 UTC, ~13h ago. Auto-dispatch failed (403 actions:read).
+- `push-recap` — scheduled 15:00 UTC, ~4h ago. Auto-dispatch failed (403 actions:read).
 
-**Auto-dispatch:** Failed for all 3 (feature, repo-actions, repo-article) — HTTP 403 actions:read permission, same as documented. Manual trigger or scheduler (messages.yml) needed.
+**Recurring misses (already reported Jun 9):**
+- `feature` — scheduled 11:00 UTC, ~8h ago. Dispatch failed (403).
+- `repo-actions` — scheduled 14:00 UTC, ~5h ago. Dispatch failed (403).
 
-**PRs:** 13 chronic self-improve PRs in CHORUS — unchanged, skip (reported 2026-06-07).
+Root cause: all auto-dispatch blocked by actions:read scope — fix requires updating aeon.yml permissions or messages.yml scheduler.
 
-**Memory flags:** GH_GLOBAL still unset (35th feature block today); XAI_API_KEY absent; notification channels unconfigured.
+Memory flags: GH_GLOBAL unset (35 consecutive feature blocks); XAI_API_KEY absent; notification channels unconfigured.

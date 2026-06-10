@@ -1,0 +1,168 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "heading_title",
+        "text_summary",
+        "sep1",
+        "heading_new",
+        "table_new",
+        "sep2",
+        "heading_recurring",
+        "table_recurring",
+        "sep3",
+        "alert_root",
+        "sep4",
+        "heading_flags",
+        "stack_flags"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Heartbeat 2026-06-10",
+        "level": "h2"
+      }
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "4 skills missed today",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_new": {
+      "type": "Heading",
+      "props": {
+        "text": "New misses (not seen in last 48h)",
+        "level": "h3"
+      }
+    },
+    "table_new": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Scheduled",
+          "Error"
+        ],
+        "rows": [
+          [
+            "fetch-tweets",
+            "06:30 UTC (~13h ago)",
+            "Auto-dispatch failed (403 actions:read)"
+          ],
+          [
+            "push-recap",
+            "15:00 UTC (~4h ago)",
+            "Auto-dispatch failed (403 actions:read)"
+          ]
+        ]
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_recurring": {
+      "type": "Heading",
+      "props": {
+        "text": "Recurring misses (already reported Jun 9)",
+        "level": "h3"
+      }
+    },
+    "table_recurring": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Scheduled",
+          "Error"
+        ],
+        "rows": [
+          [
+            "feature",
+            "11:00 UTC (~8h ago)",
+            "Dispatch failed (403)"
+          ],
+          [
+            "repo-actions",
+            "14:00 UTC (~5h ago)",
+            "Dispatch failed (403)"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_root": {
+      "type": "Alert",
+      "props": {
+        "title": "Root cause",
+        "message": "All auto-dispatch blocked by actions:read scope — fix requires updating aeon.yml permissions or messages.yml scheduler.",
+        "type": "error"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_flags": {
+      "type": "Heading",
+      "props": {
+        "text": "Memory flags",
+        "level": "h3"
+      }
+    },
+    "stack_flags": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "flag1",
+        "flag2",
+        "flag3"
+      ]
+    },
+    "flag1": {
+      "type": "Text",
+      "props": {
+        "text": "GH_GLOBAL unset (35 consecutive feature blocks)"
+      }
+    },
+    "flag2": {
+      "type": "Text",
+      "props": {
+        "text": "XAI_API_KEY absent"
+      }
+    },
+    "flag3": {
+      "type": "Text",
+      "props": {
+        "text": "notification channels unconfigured"
+      }
+    }
+  }
+}
