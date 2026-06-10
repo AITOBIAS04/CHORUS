@@ -32,13 +32,22 @@ Read memory/watched-repos.md for the list of repos to scan.
 
 4. **Deduplicate** commits by SHA across both sources.
 
-5. **Read the actual diffs** for each commit to understand what changed:
+5. **Filter automation noise** from agent/aeon repos. After deduplication, separate commits into two groups:
+   - **Automation commits** — messages matching any of these patterns:
+     - `chore(cron):` — cron state updates (e.g. "chore(cron): token-report success")
+     - `chore(scheduler):` — scheduler state changes
+     - `chore(` + `): auto-commit` — auto-committed output files (e.g. "chore(repo-pulse): auto-commit 2026-06-10")
+   - **Substantive commits** — everything else (PR merges, features, fixes, real code changes)
+
+   Exclude automation commits from diff analysis in step 6. Report them as a single count in the overview and log entry (e.g. "2 substantive commits + 28 automation commits filtered").
+
+6. **Read the actual diffs** for each substantive commit to understand what changed:
    ```bash
    gh api repos/owner/repo/commits/FULL_SHA --jq '{files: [.files[] | {filename: .filename, status: .status, additions: .additions, deletions: .deletions, patch: .patch}]}'
    ```
-   Read ALL commits in detail. If there are more than 15, read the 15 most significant (by lines changed) and summarize the rest.
+   Read ALL substantive commits in detail. If there are more than 15, read the 15 most significant (by lines changed) and summarize the rest.
 
-6. **Analyze and explain** each commit thoroughly:
+7. **Analyze and explain** each commit thoroughly:
    - Read the actual patch content — don't just repeat the commit message
    - What files were changed and what the diff actually shows
    - What feature, fix, or improvement this represents in plain language
@@ -46,16 +55,16 @@ Read memory/watched-repos.md for the list of repos to scan.
    - Any notable patterns (new dependencies, architecture changes, refactors, new APIs)
    - If a commit touches multiple areas, break it down by area
 
-7. **Group commits by theme** — don't just list them chronologically. Cluster related commits together under descriptive headings (e.g. "New token tracking system", "Dashboard UX overhaul", "CI/CD improvements").
+8. **Group commits by theme** — don't just list them chronologically. Cluster related commits together under descriptive headings (e.g. "New token tracking system", "Dashboard UX overhaul", "CI/CD improvements").
 
-8. **Write a deep recap** to `articles/push-recap-${today}.md`:
+9. **Write a deep recap** to `articles/push-recap-${today}.md`:
    ```markdown
    # Push Recap — ${today}
 
    ## Overview
-   [2-3 sentence summary: X commits by Y authors. What was the main thrust of today's work? What moved forward?]
+   [2-3 sentence summary: X substantive commits by Y authors (Z automation commits filtered). What was the main thrust of today's work? What moved forward?]
 
-   **Stats:** X files changed, +Y/-Z lines across N commits
+   **Stats:** X files changed, +Y/-Z lines across N substantive commits
 
    ---
 
@@ -102,12 +111,12 @@ Read memory/watched-repos.md for the list of repos to scan.
    - [Branches created but not merged?]
    ```
 
-9. **Log** to `memory/logs/${today}.md` (repos covered, commit count, article path). **Do this before sending the notification.**
+10. **Log** to `memory/logs/${today}.md` (repos covered, substantive commit count, automation commits filtered, article path). **Do this before sending the notification.**
 
-10. **Send a detailed notification** via `./notify`:
+11. **Send a detailed notification** via `./notify`:
    ```
    *Push Recap — ${today}*
-   [repo] — X commits by Y authors
+   [repo] — X substantive commits by Y authors
 
    [Theme 1]: [2-sentence explanation of what changed and why it matters]
 
