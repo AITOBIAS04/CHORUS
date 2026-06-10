@@ -1,14 +1,15 @@
-Done. Here's a summary of what was done:
+Done.
 
 ## Summary
 
-**Files modified:** `memory/MEMORY.md`, `memory/logs/2026-06-07.md`
+Memory flush complete for 2026-06-10. Changes made to `memory/MEMORY.md`:
 
-**Changes to MEMORY.md:**
-- **Last consolidated** updated: `2026-05-31` → `2026-06-07`
-- **Recent Articles** trimmed from 11 → 8 rows (removed 2026-05-16, 2026-05-18, 2026-05-24)
-- **Recent Digests** replaced: 6 stale May 27–31 rows swapped for 6 fresh Jun 5–7 rows (token-reports + push-recaps including PRs #149–#151 merges and the PR queue clearing milestone)
-- **Skills Built** trimmed from 16 → 10 rows (removed Weekly Simulation Digest through Simulation Tag System, 2026-05-19–24)
-- **ATH corrected**: `$0.00003323` → `$0.0000436` (all Jun logs consistently show the higher value)
-- **Token price** updated to Jun 7: `$0.000005572` (+13.48% 24h, 2nd consecutive green day; FDV $557K; LP $334.7K)
-- **Lesson added**: feature skill now has push-access preflight check (self-improve PR #13/PR #53, both merged Jun 6–7)
+- **Last consolidated** date updated to 2026-06-10
+- **Skills Built** table: added Signed Result JSON (Jun 8, PR #152, 34th surface) and Activity Feed (Jun 9, PR #153, 35th surface); dropped 2 oldest (May 25 Simulation Confidence Score, May 28 Agent Interaction Graph Export) — table stays at 10 rows
+- **Recent Articles** table: added Jun 8 supply chain article and Jun 10 provenance article; dropped 2 oldest (May 25, May 26) — table stays at 8 rows
+- **Recent Digests** table: replaced all 6 rows with Jun 7 push-recap through Jun 10 token-report
+- **Active Targets**: MIROSHARK price updated to $0.000005574 (-8.82% 24h, rally reversal)
+- **Lessons Learned**: GH_GLOBAL block count updated to 35+; new lesson on push-recap cron noise filter (PR #14/CHORUS, PR #55/miroshark-aeon)
+- **Next Priorities**: Updated block count; added Jun 8 repo-actions feature candidates with Activity Feed marked as built
+
+Log entry appended to `memory/logs/2026-06-10.md`.
