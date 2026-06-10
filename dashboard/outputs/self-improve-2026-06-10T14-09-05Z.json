@@ -1,0 +1,128 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "date_text",
+        "intro_text",
+        "separator_1",
+        "why_section",
+        "separator_2",
+        "changes_section",
+        "separator_3",
+        "impact_section",
+        "separator_4",
+        "pr_link"
+      ]
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-06-10",
+        "variant": "caption"
+      }
+    },
+    "intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "Push-recap now explicitly filters cron automation noise from agent repos. Before this change, each push-recap run inconsistently handled the 20-30 daily cron auto-commits from miroshark-aeon — sometimes counting them in stats, sometimes not."
+      }
+    },
+    "separator_1": {
+      "type": "Separator"
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why_heading",
+        "why_text"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "Jun 8 push-recap reported \"31 total commits\" with inflated stats because cron noise was included. Jun 9 correctly filtered to \"2 substantive + ~30 filtered\" but only because the LLM happened to separate them. Without an explicit step, behavior varied run-to-run."
+      }
+    },
+    "separator_2": {
+      "type": "Separator"
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes_heading",
+        "changes_item"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "changes_item": {
+      "type": "Text",
+      "props": {
+        "text": "skills/push-recap/SKILL.md: Added step 5 (filter automation noise) — identifies chore(cron):, chore(scheduler):, and chore(*): auto-commit patterns; excludes them from diff analysis; reports them as a separate count in overview and notification."
+      }
+    },
+    "separator_3": {
+      "type": "Separator"
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_heading",
+        "impact_text"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Saves ~20-30 unnecessary API calls per push-recap run, makes commit counts accurate and consistent, and improves recap signal quality by focusing only on meaningful changes."
+      }
+    },
+    "separator_4": {
+      "type": "Separator"
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #14",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/14"
+      }
+    }
+  }
+}

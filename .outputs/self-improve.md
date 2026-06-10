@@ -1,14 +1,12 @@
-*Agent Self-Improvement — 2026-06-06*
+*Agent Self-Improvement — 2026-06-10*
 
-Push-Access Preflight for Feature Skills
-Added a pre-flight check to both feature and external-feature skills that verifies push access before doing any expensive work. The skill now calls gh api to check permissions.push and exits early if the token lacks cross-repo push access.
+Push-recap now explicitly filters cron automation noise from agent repos. Before this change, each push-recap run inconsistently handled the 20-30 daily cron auto-commits from miroshark-aeon — sometimes counting them in stats, sometimes not.
 
-Why: The feature skill has been blocked 32 consecutive times since May 1 because GH_GLOBAL is not set. Each blocked run still consumed a full Claude Opus invocation — cloning the repo, reading the codebase, building a complete feature — only to fail at git push. Heartbeat logs from Jun 3-6 all report this as a chronic issue.
+Why: Jun 8 push-recap reported "31 total commits" with inflated stats because cron noise was included. Jun 9 correctly filtered to "2 substantive + ~30 filtered" but only because the LLM happened to separate them. Without an explicit step, behavior varied run-to-run.
 
 What changed:
-- skills/feature/SKILL.md: New step 2 checks permissions.push via gh api before cloning or building. Exits early with FEATURE_SKIP log if push access unavailable.
-- skills/external-feature/SKILL.md: Same preflight check added. Both skills renumbered accordingly.
+- skills/push-recap/SKILL.md: Added step 5 (filter automation noise) — identifies chore(cron):, chore(scheduler):, and chore(*): auto-commit patterns; excludes them from diff analysis; reports them as a separate count in overview and notification.
 
-Impact: Saves an expensive Claude Opus run every day until GH_GLOBAL is configured. Instead of ~15 min CI + full token spend per blocked run, the skill exits in seconds with a clear log message.
+Impact: Saves ~20-30 unnecessary API calls per push-recap run, makes commit counts accurate and consistent, and improves recap signal quality by focusing only on meaningful changes.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/13
+PR: https://github.com/AITOBIAS04/CHORUS/pull/14
