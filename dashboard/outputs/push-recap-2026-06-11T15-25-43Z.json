@@ -1,0 +1,269 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-11",
+        "description": "MiroShark — 1 commit | miroshark-aeon — 4 commits (by @aaronjmars)"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "template_section",
+        "sep1",
+        "skill_section",
+        "sep2",
+        "intl_section",
+        "sep3",
+        "changes_section",
+        "sep4",
+        "stats_section"
+      ]
+    },
+    "template_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "template_heading",
+        "template_desc",
+        "template_details",
+        "pr57"
+      ]
+    },
+    "template_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Template Rebuild",
+        "level": "h2"
+      }
+    },
+    "template_desc": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon was completely rebuilt on the upstream aeon template in a single 300-file PR",
+        "variant": "lead"
+      }
+    },
+    "template_details": {
+      "type": "Text",
+      "props": {
+        "text": "The entire repo migrated to an apps/ directory structure, gaining a full Next.js operator dashboard (15+ API routes, auth, secrets management, skill detail views), an MCP server, an A2A server, a Cloudflare webhook worker, and an automated upstream-sync workflow. 184 accumulated files (old articles, temp scripts, stale outputs) were purged.",
+        "variant": "body"
+      }
+    },
+    "pr57": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #57",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/57",
+        "source": "GitHub"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "skill_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill_heading",
+        "skill_desc",
+        "pr56"
+      ]
+    },
+    "skill_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skill Intelligence",
+        "level": "h2"
+      }
+    },
+    "skill_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The feature skill now has a hyperstition-deadline tiebreaker — when picking which feature to build, it prefers candidates that advance a hyperstition target within 10 days of its deadline, even over higher-impact alternatives.",
+        "variant": "body"
+      }
+    },
+    "pr56": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #56",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/56",
+        "source": "GitHub"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "intl_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "intl_heading",
+        "intl_desc",
+        "pr156"
+      ]
+    },
+    "intl_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Internationalization",
+        "level": "h2"
+      }
+    },
+    "intl_desc": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark shipped a full Japanese README, its third root-level language after English and Chinese. All three READMEs cross-link via a language switcher. This positions the project for the Jun 15 Chinese-dev-platform hyperstition (4 days out).",
+        "variant": "body"
+      }
+    },
+    "pr156": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #156",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/156",
+        "source": "GitHub"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes_heading",
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "apps/dashboard/ — full operator dashboard with SkillDetail, McpPanel, SecretsPanel, StrategyPanel, auth gate, memory reader (+5,200 lines)",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "Model upgrade: default claude-opus-4-7 → claude-opus-4-8; gateway direct → auto; star-milestone pinned to sonnet-4-6",
+        "variant": "body"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "README.ja.md — 143-line Japanese translation with quickstart, use cases, features table, and docs links",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats_heading",
+        "stats_grid",
+        "recap_link"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_added",
+        "stat_removed"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "307"
+      }
+    },
+    "stat_added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+10,162"
+      }
+    },
+    "stat_removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "-12,640"
+      }
+    },
+    "recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-11.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

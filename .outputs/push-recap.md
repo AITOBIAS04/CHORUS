@@ -1,15 +1,16 @@
-*Push Recap — 2026-06-09*
-aaronjmars/MiroShark — 1 commit by aaronjmars
-aaronjmars/miroshark-aeon — 2 substantive commits by aaronjmars + aeonframework (~30 cron auto-commits filtered)
+*Push Recap — 2026-06-11*
+MiroShark — 1 commit | miroshark-aeon — 4 commits (by @aaronjmars)
 
-Activity Feed API (PR #153): MiroShark shipped its 35th catalogued surface — GET /api/activity.json returns the N most recently completed public sims in a small JSON envelope, sorted by completion time. Built for keyless integrator polling (Aeon push-recap, status dashboards, social bots). Public auth posture, 30s cache, ETag/304 support, limit clamping (1-50). Pure-stdlib service, 28 tests, full OpenAPI spec. Zero new deps (43-PR streak).
+Template Rebuild: miroshark-aeon was completely rebuilt on the upstream aeon template in a single 300-file PR (#57). The entire repo migrated to an apps/ directory structure, gaining a full Next.js operator dashboard (15+ API routes, auth, secrets management, skill detail views), an MCP server, an A2A server, a Cloudflare webhook worker, and an automated upstream-sync workflow. 184 accumulated files (old articles, temp scripts, stale outputs) were purged.
 
-Self-Improvement: Noise Filter (PR #55): The push-recap skill re-derived the same 'aeonframework cron auto-commit = noise' rule every day for 7 straight days (Jun 1-7). The self-improve skill encoded it as an explicit step 5 in the skill prompt — a mechanical three-prefix filter that runs before diff-reading. Saves ~5-10 min per daily run and eliminates the risk of misclassifying cron churn as shipping events.
+Skill Intelligence: The feature skill now has a hyperstition-deadline tiebreaker (PR #56) — when picking which feature to build, it prefers candidates that advance a hyperstition target within 10 days of its deadline, even over higher-impact alternatives.
+
+Internationalization: MiroShark shipped a full Japanese README (PR #156), its third root-level language after English and Chinese. All three READMEs cross-link via a language switcher. This positions the project for the Jun 15 Chinese-dev-platform hyperstition (4 days out).
 
 Key changes:
-- New /api/activity.json endpoint: 35th surface, fills the gap between the gallery, RSS feeds, and the status probe for polling-loop integrators
-- activity_feed.py: 440-line pure-stdlib service scanning sim dirs, deriving signals from the same pipeline as signal.json
-- skills/push-recap/SKILL.md: new step 5 noise filter — drops aeonframework commits matching chore(scheduler/cron/auto-commit) prefixes on agent repos
+- apps/dashboard/ — full operator dashboard with SkillDetail, McpPanel, SecretsPanel, StrategyPanel, auth gate, memory reader (+5,200 lines)
+- Model upgrade: default claude-opus-4-7 → claude-opus-4-8; gateway direct → auto; star-milestone pinned to sonnet-4-6
+- README.ja.md — 143-line Japanese translation with quickstart, use cases, features table, and docs links
 
-Stats: 21 files changed, +2,205/-32 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-09.md
+Stats: 307 files changed, +10,162/-12,640 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-11.md
