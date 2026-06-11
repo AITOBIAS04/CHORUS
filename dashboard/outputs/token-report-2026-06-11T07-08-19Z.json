@@ -1,0 +1,154 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-06-11"
+      },
+      "children": [
+        "price",
+        "sep1",
+        "liquidity_vol",
+        "sep2",
+        "ratio",
+        "sep3",
+        "performance",
+        "sep4",
+        "narrative",
+        "sep5",
+        "chart"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000007096",
+        "delta": "+24.26%",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "liquidity_vol": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "liquidity",
+        "vol"
+      ]
+    },
+    "liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$383.6K"
+      }
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Vol",
+        "value": "$43.2K"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ratio": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ratio_text",
+        "ratio_bar"
+      ]
+    },
+    "ratio_text": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 65/124"
+      }
+    },
+    "ratio_bar": {
+      "type": "Progress",
+      "props": {
+        "value": 34.5,
+        "max": 100,
+        "label": "Buy ratio"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "performance": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "perf_7d",
+        "perf_30d"
+      ]
+    },
+    "perf_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "+60.5%",
+        "trend": "up"
+      }
+    },
+    "perf_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "-26.6%",
+        "trend": "down"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "narrative": {
+      "type": "Text",
+      "props": {
+        "text": "Yesterday's morning snapshot caught the session low. The full Jun 10 day closed at $7.12e-6 (+27% intraday recovery) — today holds steady from there."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
