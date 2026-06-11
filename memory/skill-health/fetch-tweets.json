@@ -1,0 +1,14 @@
+{
+  "skill": "fetch-tweets",
+  "last_analyzed": "2026-06-11T07:05:03Z",
+  "quality_score": 4,
+  "assessment": "Completed task with substantive findings (2 new tweets), demonstrated deduplication rigor (21 URLs filtered), well-structured output with direct links and summaries; limited recency from WebSearch constraint but acknowledged transparently",
+  "flags": [],
+  "avg_score": 4,
+  "history": [
+    {
+      "date": "2026-06-11",
+      "score": 4
+    }
+  ]
+}

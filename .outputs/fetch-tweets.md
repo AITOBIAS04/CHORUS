@@ -1,9 +1,9 @@
-Log written. No notification sent per skill instructions — WebSearch returned no new tweets from the last 7 days that weren't already in the June 7–8 logs.
+*Top Tweets — MIROSHARK crypto token on Base chain \& https://github.com/aaronjmars/MiroShark (2026-06-11)*
 
-## Summary
+_XAI\_API\_KEY not set — results via WebSearch (engagement data unavailable)_
 
-- **What ran:** `fetch-tweets` skill, query: `MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark`
-- **Fallback used:** WebSearch (XAI_API_KEY not set)
-- **Result:** `FETCH_TWEETS_NO_NEW` — all relevant search results matched 21 already-reported URLs from the June 7–8 logs; 2 unlogged URLs found were from March–April 2026 (outside the 7-day window, not on-topic)
-- **Bonus find:** PR #152 merged June 8 — HMAC-SHA256 signed-result.json (potential 35th surface); ~1,200 stars, 263 forks
-- **No notification sent** (dedup rule: stop when nothing new)
+1\. x\.com/aaronjmars — Polymarket just joined the sim\. Wonderwall/OASIS fork drops Polymarket as MiroShark's 3rd platform: agents create prediction markets, trade via AMM, manage portfolios, and get cross\-platform digests alongside their Twitter \& Reddit activity\.
+[View tweet](https://x.com/aaronjmars/status/2037281730315661407)
+
+2\. x\.com/aaronjmars — Pitching Aeon to shawmakesmagic: AI should kill the information bombing, not add to it\. Build an agent that reads your X feed, filters to what matters, and merges your streams\. MiroShark \+ Aeon as the infrastructure layer for that\.
+[View tweet](https://x.com/aaronjmars/status/2046252721557139500)

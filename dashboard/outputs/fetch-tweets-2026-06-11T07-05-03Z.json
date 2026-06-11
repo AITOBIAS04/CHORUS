@@ -1,0 +1,113 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK crypto token on Base chain"
+      },
+      "children": [
+        "header_stack",
+        "note_api",
+        "separator1",
+        "stack1",
+        "separator2",
+        "stack2"
+      ]
+    },
+    "header_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "github_link",
+        "date_text"
+      ]
+    },
+    "github_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark",
+        "source": "GitHub"
+      }
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-06-11",
+        "variant": "caption"
+      }
+    },
+    "note_api": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "XAI_API_KEY not set — results via WebSearch (engagement data unavailable)"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet1",
+        "tweet1_link"
+      ]
+    },
+    "tweet1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "Aaron Mars",
+        "handle": "aaronjmars",
+        "text": "Polymarket just joined the sim. Wonderwall/OASIS fork drops Polymarket as MiroShark's 3rd platform: agents create prediction markets, trade via AMM, manage portfolios, and get cross-platform digests alongside their Twitter & Reddit activity."
+      }
+    },
+    "tweet1_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2037281730315661407"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet2",
+        "tweet2_link"
+      ]
+    },
+    "tweet2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "Aaron Mars",
+        "handle": "aaronjmars",
+        "text": "Pitching Aeon to shawmakesmagic: AI should kill the information bombing, not add to it. Build an agent that reads your X feed, filters to what matters, and merges your streams. MiroShark + Aeon as the infrastructure layer for that."
+      }
+    },
+    "tweet2_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2046252721557139500"
+      }
+    }
+  }
+}
