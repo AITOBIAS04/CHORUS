@@ -1,11 +1,17 @@
 ## Summary
 
-**FEATURE_SKIP: push-access preflight failed.**
+**Built: Per-Round Confidence Score Trajectory** — the 36th share surface for MiroShark.
 
-- **Candidate:** Per-Round Confidence Score Trajectory (repo-actions 2026-06-06, idea #2) — applies the existing confidence formula to incremental trajectory slices to show how confidence built over rounds
-- **Reason:** No push access to `aaronjmars/MiroShark` — `push: false` in repo permissions. GH_GLOBAL secret still not set. This is the 34th consecutive block since May 1.
-- **Action taken:** Exited early per push-access preflight (self-improve PR #13) to avoid wasting compute building another unpushable PR
-- **Files updated:** `memory/logs/2026-06-08.md` (skip logged), `memory/MEMORY.md` (block count updated to 34)
-- **No notification sent** (per skill rules — skip = no notification)
+**What it does:** Applies `signal.json`'s confidence formula (`(leading_pct - 33.33) / 66.67 * 100`) to each round independently and returns the series as `[{round, confidence_score}]`. This reveals whether confidence built steadily from round 1 or spiked only at the end — a simulation that hits confidence 88 by round 4 is structurally different from one that reaches 88 only at round 11.
 
-**Next priority:** Set the `GH_GLOBAL` secret to unblock 33 built PRs and resume the feature skill.
+**Files created/modified (8 files, +615 lines):**
+- `backend/app/services/confidence_trajectory_service.py` — pure-stdlib service with mtime-based disk cache
+- `backend/app/api/simulation.py` — `GET /api/simulation/<id>/confidence/trajectory` endpoint (publish-gated, 5-min HTTP cache)
+- `backend/app/services/surfaces_catalog.py` — 36th catalog entry + tracked key
+- `backend/app/services/surface_stats.py` — `confidence_trajectory` counter key
+- `frontend/src/api/simulation.js` — `getConfidenceTrajectory` + `getConfidenceTrajectoryUrl`
+- `frontend/src/components/BeliefDriftChart.vue` — dashed violet confidence overlay line with right-side Y axis
+- `frontend/src/components/EmbedDialog.vue` — confidence trajectory section with preview + URL/curl snippets
+- `backend/tests/test_unit_confidence_trajectory.py` — 14 unit tests
+
+**Push status:** BLOCKED — `GH_GLOBAL` secret not set (36th consecutive block). Branch `feat/confidence-trajectory` committed locally at `/tmp/build-target`.
