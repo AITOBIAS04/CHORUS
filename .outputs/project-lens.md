@@ -1,5 +1,5 @@
-*New Article: The World Is Learning to Sign Photos. Nobody Is Signing Predictions.*
+*New Article: It's 2026, Just Use Postgres. What If Simulations Worked the Same Way?*
 
-The EU AI Act mandates provenance for AI-generated content by August 2 — but the entire provenance infrastructure (C2PA, Content Credentials, Gartner top-10 trend) covers media, not analytical outputs. MiroShark shipped HMAC-signed simulation results the same week, answering a different provenance question: not "who made this" but "is this the same result the engine produced?" The gap between signing photos and signing predictions is where the next trust layer needs to be built.
+The 'Just Use Postgres' movement conquered databases not by being best at any one task, but by growing enough extension surfaces that specialized tools became unnecessary. MiroShark's 37 integration surfaces follow the same pattern — same simulation, 37 consumption modes, zero dependencies. When a research lab can pull signed results and a trading bot can subscribe to filtered webhooks from the same engine, the question shifts from 'what can this tool do?' to 'why would I run a separate simulation?'
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-10.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-12.md

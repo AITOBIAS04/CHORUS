@@ -1,0 +1,44 @@
+# It's 2026, Just Use Postgres. What If Simulations Worked the Same Way?
+
+The most repeated sentence in software engineering this year is five words long: "Just use Postgres." It appears in Hacker News comments, architectural decision records, startup pitch decks, and at least three blog posts published in the past month with that exact phrase as a title. DB-Engines data confirms the sentiment is more than a meme — PostgreSQL recorded the largest popularity increase of any database technology in the first half of 2026, gaining 21.97 points and outpacing Databricks, MongoDB, and Snowflake combined. Developer adoption hit 55.6%, up nearly seven percentage points from 2024. Redgate's Kellyn Gorman called it "a testament to how far open-source technologies have come."
+
+The interesting question is not whether Postgres deserves the hype. It is *how* a thirty-eight-year-old relational database became the answer to problems it was never designed to solve — and what that mechanism looks like when it shows up somewhere else entirely.
+
+## The Extension That Ate the Stack
+
+A decade ago, a team running a typical data-intensive application would deploy PostgreSQL for relational data, Elasticsearch for full-text search, MongoDB for documents, InfluxDB for time-series metrics, Redis for caching, a dedicated vector database for embeddings, and Kafka for message queues. Seven databases. Seven query languages. Seven backup strategies. Seven surfaces where data can drift out of sync.
+
+Postgres did not replace these systems by becoming better at their jobs. It replaced them by growing extensions — pgvector for embeddings, TimescaleDB for time-series, PostGIS for geospatial, pgmq for queues — that share the same engine, the same ACID guarantees, the same SQL interface. The data stays in one place. Plexigrid consolidated four databases into one Postgres instance and reported 350x faster queries. Flogistix cut infrastructure costs by 66%. A CORE Systems analysis estimated that Postgres now covers 80-90% of database needs for a typical company.
+
+The pattern is not "one tool that does everything." It is one core with enough surfaces that specialized tools become unnecessary. The extension architecture means Postgres can speak vector search to an ML pipeline, time-series to a monitoring dashboard, and document queries to a frontend — all from the same data, without synchronization logic, without data plumbing that fails silently at 3 AM. Each extension is a different consumption mode on the same underlying truth.
+
+## Thirty-Seven Surfaces, One Simulation
+
+MiroShark is an open-source crowd simulation engine — 1,267 stars, 268 forks — that models how opinions spread through networks of AI agents. Run a simulation and the engine produces a result. The result is one thing. The ways you can consume that result number thirty-seven.
+
+That number sounds like Postgres's extension count because the architecture rhymes. A researcher pastes a simulation URL into a Notion doc and oEmbed auto-unfurls it into a rich preview. A Polymarket bot subscribes to webhooks filtered by `bullish,high_confidence`. A network scientist downloads the agent interaction graph as GraphML and opens it in Gephi. An RSS reader picks up new results through a filtered feed. A dashboard embeds a live SVG badge. An LLM agent queries five simulation tools through MCP without touching a browser. A compliance team pulls HMAC-SHA256 signed results for offline verification. An analytics dashboard requests only the surfaces it needs via `GET /api/surfaces.json?type=analytics` — a server-side filter shipped this week that returns a fraction of the full catalog with its own cache-isolated ETag.
+
+Each of these is a different protocol — oEmbed, RSS, GraphML, SVG, webhooks, MCP, HMAC, JSON — not just a different URL path on the same API. The simulation data is identical. The consumption modes are radically different. Like Postgres's extensions, each surface speaks the language its consumer already understands, without requiring the consumer to learn MiroShark's internal vocabulary.
+
+## What Both Projects Actually Did
+
+The standard way to build a platform is to add features until the feature set is wide enough to attract an ecosystem. Elasticsearch added machine learning. MongoDB added vector search. InfluxDB added SQL compatibility. Each specialized tool tried to become a generalist by bolting on capabilities it was not designed for.
+
+Postgres went the other direction. The core engine barely changed. What changed was the number of ways external systems could connect to it. Each extension is a surface — a protocol-native interface that lets a specific class of consumer access Postgres data in the format they already use. The ML team does not learn SQL for vector search; they use pgvector's API. The GIS analyst does not learn PostgreSQL internals; they use PostGIS with the same spatial queries they would write against a dedicated GIS database.
+
+MiroShark's thirty-seven surfaces follow the same logic. The project has not added thirty-seven features. It has added thirty-seven ways to consume the same feature. The simulation engine does one thing: it runs agents through rounds of interaction and produces belief trajectories, coalition structures, and confidence metrics. Each surface is a lens on that output shaped for a specific consumer — embed widgets for content platforms, GraphML for network scientists, signed envelopes for auditors, filtered webhooks for trading bots, mention networks for social analysts, confidence trajectories for risk assessors.
+
+The deeper parallel is architectural. Every Postgres extension runs inside the same process, shares the same transaction guarantees, and reads the same data pages. Every MiroShark surface is a standalone Python service using only the standard library, reads the same simulation data directory, and reuses the same stance-threshold constants. A "bullish" signal in the trading JSON matches the "bullish" label on the RSS feed matches the "bullish" badge color on the SVG. Consistency is not enforced by a framework. It is enforced by deriving everything from the same source through the same arithmetic. Zero new dependencies across all thirty-seven surfaces — the same pure-stdlib constraint that the supply-chain-conscious Postgres core has maintained for its wire protocol since 1996.
+
+## The Platform Inflection Nobody Plans
+
+What Postgres teaches is that the platform inflection does not happen when you ship the feature that everyone wants. It happens when you ship enough surfaces that everyone can connect without asking you first. The moment a consumer can access your output in the format they already use — without filing a feature request, without waiting for an SDK, without writing an adapter — you have stopped being a tool and started being infrastructure.
+
+Postgres crossed that threshold years ago. Nobody evaluating databases in 2026 asks "can Postgres do vector search?" They ask "why would I run a separate vector database?" The question shifted from capability to necessity — and the answer, increasingly, is that the specialized tool is unnecessary because the surface already exists.
+
+MiroShark is approaching the same inflection from a different direction. Fourteen independent projects now build on its outputs. Four ecosystem projects submitted listing pull requests within hours of each other, without coordination. The project did not recruit an ecosystem. It grew surfaces until an ecosystem showed up. When a research lab can pull signed results, a trading bot can subscribe to filtered webhooks, and a content platform can auto-embed previews — all from the same simulation, all without the MiroShark team building anything new for any of them — the question stops being "what can this tool do?" and starts being "why would I run a separate simulation?"
+
+Fifty-five percent of developers use Postgres. They did not all switch at once. They each found the surface that spoke their language, and the cost of running a separate system stopped being worth it. That is how platforms form — not through features, but through surfaces. One at a time, thirty-seven times.
+
+---
+*Sources: [It's 2026, Just Use Postgres (Tiger Data)](https://www.tigerdata.com/blog/its-2026-just-use-postgres) · [PostgreSQL as the Universal Database (CORE Systems)](https://core.cz/en/blog/2026/postgresql-everything-database-2026/) · [DB-Engines: PostgreSQL Leads H1 2026 Database Growth (Redgate)](https://www.red-gate.com/our-company/newsroom/press-releases/db-engines-postgresql-leads-h1-2026-database-growth-as-data-platforms-gain-momentum/) · [The Postgres-for-Everything Movement vs. Purpose-Built Databases (10x.pub)](https://tianpan.co/forum/t/database-decisions-in-2026-the-postgres-for-everything-movement-vs-purpose-built-databases/978) · [MiroShark on GitHub](https://github.com/aaronjmars/MiroShark)*
