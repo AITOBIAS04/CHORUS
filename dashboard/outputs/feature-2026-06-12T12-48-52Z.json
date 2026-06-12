@@ -1,0 +1,382 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Feature Built — 2026-06-12",
+        "description": "Agent Mention Network for MiroShark simulations"
+      },
+      "children": [
+        "heading_main",
+        "intro_text",
+        "sep1",
+        "section_why",
+        "sep2",
+        "section_built",
+        "sep3",
+        "section_how",
+        "sep4",
+        "section_next"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Mention Network",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark simulations now have a directed mention graph that reveals who gets talked about in agent discourse. The new surface scans every platform's action logs (Twitter, Reddit, Polymarket), finds @agent_name patterns in post text, and builds a weighted graph showing which agents are the center of attention — often different from who posts the most. A simulation where @Bob gets mentioned 40 times by 8 different agents tells a very different story than one where Bob simply posted 40 times himself."
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_why",
+        "text_why1",
+        "text_why2"
+      ]
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why this matters:",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_why1": {
+      "type": "Text",
+      "props": {
+        "text": "The existing Interaction Network graph tracks action-level edges — who replied to, quoted, or liked whom. But textual mentions are a qualitatively different signal: an agent can be talked about constantly without ever being directly interacted with, and vice versa. For researchers studying information diffusion and agenda-setting ('which agent set the narrative?'), mention frequency is the missing primitive."
+      },
+      "children": []
+    },
+    "text_why2": {
+      "type": "Text",
+      "props": {
+        "text": "This was idea #3 from the June 6 repo-actions analysis, following Cross-Platform Sentiment Divergence and Per-Round Confidence Trajectory."
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_built": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_built",
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+      ]
+    },
+    "heading_built": {
+      "type": "Heading",
+      "props": {
+        "text": "What was built:",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_title",
+        "item1_desc",
+        "item1_badge"
+      ]
+    },
+    "item1_title": {
+      "type": "Text",
+      "props": {
+        "text": "mentions_service.py",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "item1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Scans per-platform actions.jsonl files, extracts @-mentions via regex, resolves against agent roster (from agents.json or action lines), builds weighted directed graph with mtime-based disk cache"
+      },
+      "children": []
+    },
+    "item1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "~270 LoC, pure stdlib",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_title",
+        "item2_desc",
+        "item2_badges"
+      ]
+    },
+    "item2_title": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/<id>/mentions",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "item2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Publish-gated endpoint returning top_mentioned (ranked list, self-mentions excluded) + mention_matrix (from/to/count directed edges). 37th catalogued surface."
+      },
+      "children": []
+    },
+    "item2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_api",
+        "badge_cache"
+      ]
+    },
+    "badge_api": {
+      "type": "Badge",
+      "props": {
+        "text": "Publish-gated",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_cache": {
+      "type": "Badge",
+      "props": {
+        "text": "5-min cache",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_title",
+        "item3_desc",
+        "item3_badges"
+      ]
+    },
+    "item3_title": {
+      "type": "Text",
+      "props": {
+        "text": "MentionsPanel.vue",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "item3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Dark-themed overlay with ranked most-cited agents (gold/silver/bronze badges for top 3), expandable mention matrix table"
+      },
+      "children": []
+    },
+    "item3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_ui",
+        "badge_lang"
+      ]
+    },
+    "badge_ui": {
+      "type": "Badge",
+      "props": {
+        "text": "Dark-themed",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Bilingual EN/ZH",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_title",
+        "item4_desc"
+      ]
+    },
+    "item4_title": {
+      "type": "Text",
+      "props": {
+        "text": "Step3Simulation.vue",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "item4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "New '@ Mentions' toolbar toggle alongside Influence, Drift, Network, Demographics"
+      },
+      "children": []
+    },
+    "item5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_title",
+        "item5_desc"
+      ]
+    },
+    "item5_title": {
+      "type": "Text",
+      "props": {
+        "text": "Unit Tests",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "item5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "14 unit tests covering mention extraction, caching, multi-platform aggregation, case-insensitive matching"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_how": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_how",
+        "text_how"
+      ]
+    },
+    "heading_how": {
+      "type": "Heading",
+      "props": {
+        "text": "How it works:",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_how": {
+      "type": "Text",
+      "props": {
+        "text": "The service reads actions.jsonl from every platform subdirectory in a sim, filters for CREATE_POST actions with content, and applies a regex to extract @word patterns. It resolves each handle against the known agent roster (case-insensitive) — handles not matching a real agent (like @twitter or @reddit) are silently dropped. The output distinguishes the mention_matrix (full directed graph including self-loops) from top_mentioned (top 10, self-mentions excluded from both count and mentioned_by_count). Results are cached to mentions.json with mtime invalidation so the endpoint serves from disk after the first compute."
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_next": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_next",
+        "text_next",
+        "alert_block"
+      ]
+    },
+    "heading_next": {
+      "type": "Heading",
+      "props": {
+        "text": "What's next:",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_next": {
+      "type": "Text",
+      "props": {
+        "text": "Simulation Narrative Export (Markdown) — a single human-readable document synthesizing signal, trajectory, agents, coalitions, and confidence into a paste-into-Notion format."
+      },
+      "children": []
+    },
+    "alert_block": {
+      "type": "Alert",
+      "props": {
+        "title": "Blocked",
+        "message": "Push remains blocked (GH_GLOBAL not set — 37th consecutive block).",
+        "type": "warning"
+      },
+      "children": []
+    }
+  }
+}
