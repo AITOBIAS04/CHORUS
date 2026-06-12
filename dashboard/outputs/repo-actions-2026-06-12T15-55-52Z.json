@@ -1,0 +1,235 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-06-12",
+        "description": "Generated from MiroShark (1,266 stars · 269 forks · 0 open PRs · 37 surfaces). Diagnostic analytics and tooling — all over already-generated data, no new dependencies."
+      },
+      "children": [
+        "content_stack"
+      ]
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sep_1",
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5",
+        "sep_2",
+        "details_link"
+      ]
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_1_badge",
+        "item_1_title",
+        "item_1_desc"
+      ]
+    },
+    "item_1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Stance Flip Report",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Which agents changed conviction, from what to what, and at which round — the per-sim persuasion map for scenario designers.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_2_badge",
+        "item_2_title",
+        "item_2_desc"
+      ]
+    },
+    "item_2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Full-Text Search",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulations/search?q= — pure-stdlib mtime-indexed keyword search across published sim titles and descriptions; the missing discoverability primitive for integrators.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_3_badge",
+        "item_3_title",
+        "item_3_desc"
+      ]
+    },
+    "item_3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Confidence Component Breakdown",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/confidence/components — exposes the four sub-scores (stability, convergence, participation, adversarial) behind the composite confidence number with a 4-bar breakdown on the watch page.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_4_badge",
+        "item_4_title",
+        "item_4_desc"
+      ]
+    },
+    "item_4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Fork Lineage Graph",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item_4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/lineage — records fork_parent_id at fork time and surfaces the parent/child tree; makes parameter-sweep fork series navigable.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_5_badge",
+        "item_5_title",
+        "item_5_desc"
+      ]
+    },
+    "item_5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Per-Round Agent Participation Heatmap",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item_5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/participation-heatmap — counts distinct active agents per round from actions.jsonl, broken by platform; reveals participation collapse as a data quality signal.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "details_link": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-12.md"
+      },
+      "children": []
+    }
+  }
+}
