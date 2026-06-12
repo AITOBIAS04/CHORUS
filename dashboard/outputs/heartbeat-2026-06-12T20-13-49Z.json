@@ -1,0 +1,215 @@
+{
+  "root": "root-card",
+  "state": {},
+  "elements": {
+    "root-card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-06-12",
+        "description": "Scheduled skills status report"
+      },
+      "children": [
+        "main-heading",
+        "sep-1",
+        "missing-section",
+        "sep-2",
+        "error-section",
+        "sep-3",
+        "prs-section",
+        "sep-4",
+        "clean-section"
+      ]
+    },
+    "main-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4 skills missed their scheduled window today",
+        "level": "h2"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "missing-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "missing-label",
+        "missing-table"
+      ]
+    },
+    "missing-label": {
+      "type": "Text",
+      "props": {
+        "text": "Missing (dispatch blocked — actions: read):",
+        "variant": "lead"
+      }
+    },
+    "missing-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Time",
+          "Status"
+        ],
+        "rows": [
+          [
+            "token-report",
+            "06:00 UTC (~14h ago)",
+            "missed"
+          ],
+          [
+            "fetch-tweets",
+            "06:30 UTC (~14h ago)",
+            "missed"
+          ],
+          [
+            "repo-pulse",
+            "10:00 UTC (~10h ago)",
+            "missed"
+          ],
+          [
+            "self-improve",
+            "13:00 UTC (even-day schedule)",
+            "skip (meta)"
+          ]
+        ]
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "error-section": {
+      "type": "Alert",
+      "props": {
+        "title": "Auto-trigger: 403 Error",
+        "message": "403 on all 3 dispatchable skills — aeon.yml lacks actions: write scope. Manual re-run needed.",
+        "type": "error"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "prs-label",
+        "prs-details"
+      ]
+    },
+    "prs-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs",
+        "level": "h3"
+      }
+    },
+    "prs-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "prs-count",
+        "prs-newest"
+      ]
+    },
+    "prs-count": {
+      "type": "Stat",
+      "props": {
+        "label": "Open PRs on CHORUS",
+        "value": "14"
+      }
+    },
+    "prs-newest": {
+      "type": "Text",
+      "props": {
+        "text": "Newest: PR #14 (created Jun 10) — all pending human review",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "clean-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "clean-label",
+        "clean-skills"
+      ]
+    },
+    "clean-label": {
+      "type": "Heading",
+      "props": {
+        "text": "All other scheduled skills ran clean",
+        "level": "h3"
+      }
+    },
+    "clean-skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "skill-feature",
+        "skill-push-recap",
+        "skill-repo-actions",
+        "skill-project-lens"
+      ]
+    },
+    "skill-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✅",
+        "variant": "default"
+      }
+    },
+    "skill-push-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✅",
+        "variant": "default"
+      }
+    },
+    "skill-repo-actions": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-actions ✅",
+        "variant": "default"
+      }
+    },
+    "skill-project-lens": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens ✅",
+        "variant": "default"
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
-**Heartbeat 2026-06-10** — 4 skills missed today.
+Heartbeat 2026-06-12 — 4 skills missed their scheduled window today:
 
-**New misses (not seen in last 48h):**
-- `fetch-tweets` — scheduled 06:30 UTC, ~13h ago. Auto-dispatch failed (403 actions:read).
-- `push-recap` — scheduled 15:00 UTC, ~4h ago. Auto-dispatch failed (403 actions:read).
+**Missing (dispatch blocked — actions: read):**
+• token-report (06:00 UTC, ~14h ago)
+• fetch-tweets (06:30 UTC, ~14h ago)
+• repo-pulse (10:00 UTC, ~10h ago)
+• self-improve (13:00 UTC, even-day schedule) — skip (meta)
 
-**Recurring misses (already reported Jun 9):**
-- `feature` — scheduled 11:00 UTC, ~8h ago. Dispatch failed (403).
-- `repo-actions` — scheduled 14:00 UTC, ~5h ago. Dispatch failed (403).
+**Auto-trigger:** 403 on all 3 dispatchable skills — aeon.yml lacks actions: write scope. Manual re-run needed.
 
-Root cause: all auto-dispatch blocked by actions:read scope — fix requires updating aeon.yml permissions or messages.yml scheduler.
+**Stalled PRs:** 14 open PRs on CHORUS (PR #14 newest, created Jun 10 — all pending human review).
 
-Memory flags: GH_GLOBAL unset (35 consecutive feature blocks); XAI_API_KEY absent; notification channels unconfigured.
+**All other scheduled skills ran clean:** feature ✅ push-recap ✅ repo-actions ✅ project-lens ✅
