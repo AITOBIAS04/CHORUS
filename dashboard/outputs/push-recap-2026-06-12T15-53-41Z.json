@@ -1,0 +1,235 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-12",
+        "description": "MiroShark + miroshark-aeon — 3 commits by @aaronjmars"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_section_1",
+        "sep_1",
+        "pr_section_2",
+        "sep_2",
+        "pr_section_3",
+        "sep_3",
+        "key_changes_section",
+        "sep_4",
+        "stats_section",
+        "sep_5",
+        "recap_link_section"
+      ]
+    },
+    "pr_section_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr1_link",
+        "pr1_text"
+      ]
+    },
+    "pr1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Server-Side Surface Catalog Filtering",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/157",
+        "source": "MiroShark PR #157"
+      }
+    },
+    "pr1_text": {
+      "type": "Text",
+      "props": {
+        "text": "The /api/surfaces.json endpoint now accepts an optional ?type=<category> query param, letting integrators fetch just one of the 7 surface categories server-side instead of pulling the full 37-surface catalog. Per-category ETags prevent cache collisions. Unknown types return 400 with the valid set. 8 new tests, OpenAPI spec and docs updated. Fully backward-compatible.",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_section_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr2_link",
+        "pr2_text"
+      ]
+    },
+    "pr2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pre-Ship Validation for Feature Skill",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/60",
+        "source": "miroshark-aeon PR #60"
+      }
+    },
+    "pr2_text": {
+      "type": "Text",
+      "props": {
+        "text": "The autonomous feature skill was cloning repos into /tmp where the sandbox blocks code execution — every feature PR shipped without running its test suite. Now clones into workspace-relative .feature-build/ where exec is permitted, and adds an explicit \"validate before shipping\" step. Triggered by today's MiroShark #157 shipping 8 unrun tests.",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_section_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr3_heading",
+        "pr3_text"
+      ]
+    },
+    "pr3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Inbound Message Handling Disabled",
+        "level": "h3"
+      }
+    },
+    "pr3_text": {
+      "type": "Text",
+      "props": {
+        "text": "TG/Discord/Slack message collection and dispatch turned off at operator request. Cron scheduler unaffected — all scheduled skills keep running. Reversible via two inline comments.",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key_changes_heading",
+        "change_1",
+        "change_2",
+        "change_3"
+      ]
+    },
+    "key_changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h3"
+      }
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "/api/surfaces.json ?type= filter with per-category ETags and 400 validation (+236/-30 lines, 6 files)",
+        "variant": "body"
+      }
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "Feature skill clone path /tmp → .feature-build/ + test suite validation step (+28/-10 in SKILL.md)",
+        "variant": "body"
+      }
+    },
+    "change_3": {
+      "type": "Text",
+      "props": {
+        "text": "messages.yml inbound pipeline early-exit + run job disabled (+9/-1 lines)",
+        "variant": "body"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_added",
+        "stat_removed"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "14"
+      }
+    },
+    "stat_added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+341"
+      }
+    },
+    "stat_removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "-41"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap_link_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "recap_link"
+      ]
+    },
+    "recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-12.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

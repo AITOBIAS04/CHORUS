@@ -1,16 +1,16 @@
-*Push Recap — 2026-06-11*
-MiroShark — 1 commit | miroshark-aeon — 4 commits (by @aaronjmars)
+*Push Recap — 2026-06-12*
+MiroShark + miroshark-aeon — 3 commits by @aaronjmars
 
-Template Rebuild: miroshark-aeon was completely rebuilt on the upstream aeon template in a single 300-file PR (#57). The entire repo migrated to an apps/ directory structure, gaining a full Next.js operator dashboard (15+ API routes, auth, secrets management, skill detail views), an MCP server, an A2A server, a Cloudflare webhook worker, and an automated upstream-sync workflow. 184 accumulated files (old articles, temp scripts, stale outputs) were purged.
+Server-Side Surface Catalog Filtering (MiroShark PR #157): The /api/surfaces.json endpoint now accepts an optional ?type=<category> query param, letting integrators fetch just one of the 7 surface categories server-side instead of pulling the full 37-surface catalog. Per-category ETags prevent cache collisions. Unknown types return 400 with the valid set. 8 new tests, OpenAPI spec and docs updated. Fully backward-compatible.
 
-Skill Intelligence: The feature skill now has a hyperstition-deadline tiebreaker (PR #56) — when picking which feature to build, it prefers candidates that advance a hyperstition target within 10 days of its deadline, even over higher-impact alternatives.
+Pre-Ship Validation for Feature Skill (miroshark-aeon PR #60): The autonomous feature skill was cloning repos into /tmp where the sandbox blocks code execution — every feature PR shipped without running its test suite. Now clones into workspace-relative .feature-build/ where exec is permitted, and adds an explicit "validate before shipping" step. Triggered by today's MiroShark #157 shipping 8 unrun tests.
 
-Internationalization: MiroShark shipped a full Japanese README (PR #156), its third root-level language after English and Chinese. All three READMEs cross-link via a language switcher. This positions the project for the Jun 15 Chinese-dev-platform hyperstition (4 days out).
+Inbound Message Handling Disabled (miroshark-aeon): TG/Discord/Slack message collection and dispatch turned off at operator request. Cron scheduler unaffected — all scheduled skills keep running. Reversible via two inline comments.
 
 Key changes:
-- apps/dashboard/ — full operator dashboard with SkillDetail, McpPanel, SecretsPanel, StrategyPanel, auth gate, memory reader (+5,200 lines)
-- Model upgrade: default claude-opus-4-7 → claude-opus-4-8; gateway direct → auto; star-milestone pinned to sonnet-4-6
-- README.ja.md — 143-line Japanese translation with quickstart, use cases, features table, and docs links
+- /api/surfaces.json ?type= filter with per-category ETags and 400 validation (+236/-30 lines, 6 files)
+- Feature skill clone path /tmp → .feature-build/ + test suite validation step (+28/-10 in SKILL.md)
+- messages.yml inbound pipeline early-exit + run job disabled (+9/-1 lines)
 
-Stats: 307 files changed, +10,162/-12,640 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-11.md
+Stats: 14 files changed, +341/-41 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-12.md

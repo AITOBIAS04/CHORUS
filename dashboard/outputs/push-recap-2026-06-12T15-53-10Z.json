@@ -1,0 +1,82 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-12"
+      },
+      "children": ["overview", "sep1", "theme1-heading", "theme1-text", "sep2", "theme2-heading", "theme2-text", "sep3", "theme3-heading", "theme3-text", "sep4", "stats"]
+    },
+    "overview": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark + miroshark-aeon — 3 commits by @aaronjmars",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": { "orientation": "horizontal" }
+    },
+    "theme1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Server-Side Surface Catalog Filtering",
+        "level": "h3"
+      }
+    },
+    "theme1-text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark PR #157 — /api/surfaces.json now accepts ?type=<category> for server-side filtering. Per-category ETags prevent cache collisions. Unknown types return 400 with the valid set. 8 new tests, OpenAPI spec and docs updated. Fully backward-compatible."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": { "orientation": "horizontal" }
+    },
+    "theme2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pre-Ship Validation for Feature Skill",
+        "level": "h3"
+      }
+    },
+    "theme2-text": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon PR #60 — Feature skill now clones into workspace (not /tmp) and runs the test suite before shipping PRs. Closes a validation gap that shipped MiroShark #157 with 8 unrun tests."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": { "orientation": "horizontal" }
+    },
+    "theme3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Inbound Message Handling Disabled",
+        "level": "h3"
+      }
+    },
+    "theme3-text": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — TG/Discord/Slack inbound message collection and dispatch turned off at operator request. Cron scheduler unaffected. Reversible via two inline comments."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": { "orientation": "horizontal" }
+    },
+    "stats": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 14 files changed, +341/-41 lines across 3 substantive commits",
+        "variant": "muted"
+      }
+    }
+  }
+}
