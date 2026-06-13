@@ -1,20 +1,21 @@
-*Feature Built — 2026-06-12*
+*Feature Built — 2026-06-13*
 
-Agent Mention Network
-MiroShark simulations now have a directed mention graph that reveals who gets talked about in agent discourse. The new surface scans every platform's action logs (Twitter, Reddit, Polymarket), finds @agent_name patterns in post text, and builds a weighted graph showing which agents are the center of attention — often different from who posts the most. A simulation where @Bob gets mentioned 40 times by 8 different agents tells a very different story than one where Bob simply posted 40 times himself.
+Agent Stance Flip Report
+MiroShark simulations now have a "persuasion map" surface. The new Stance Shifts panel shows which specific agents changed their mind during a simulation — from bullish to bearish or vice versa — at exactly which round they first diverged, and ranks them by how much influence they carried. Instead of just seeing "60% ended bullish," operators can now trace whether the consensus was driven by many agents flipping early or a few high-influence agents dragging the crowd late.
 
 Why this matters:
-The existing Interaction Network graph tracks action-level edges — who replied to, quoted, or liked whom. But textual mentions are a qualitatively different signal: an agent can be talked about constantly without ever being directly interacted with, and vice versa. For researchers studying information diffusion and agenda-setting ('which agent set the narrative?'), mention frequency is the missing primitive. This was idea #3 from the June 6 repo-actions analysis, following Cross-Platform Sentiment Divergence and Per-Round Confidence Trajectory.
+Until now, MiroShark tracked what the crowd concluded (trajectory chart) and who the agents were (agents.json), but not the persuasion dynamics between the two. A simulation where 40 agents flip in round 2 has completely different dynamics from one where 2 influential agents flip in round 8 — and both could produce the same final trajectory. This was the #1 idea from yesterday's repo-actions analysis, filling the "diagnostic gap" identified across the last three feature cycles.
 
 What was built:
-- mentions_service.py (~270 LoC, pure stdlib): Scans per-platform actions.jsonl files, extracts @-mentions via regex, resolves against agent roster (from agents.json or action lines), builds weighted directed graph with mtime-based disk cache
-- GET /api/simulation/<id>/mentions: Publish-gated endpoint returning top_mentioned (ranked list, self-mentions excluded) + mention_matrix (from/to/count directed edges), 5-min cache, 37th catalogued surface
-- MentionsPanel.vue: Dark-themed overlay with ranked most-cited agents (gold/silver/bronze badges for top 3), expandable mention matrix table, bilingual EN/ZH
-- Step3Simulation.vue: New '@ Mentions' toolbar toggle alongside Influence, Drift, Network, Demographics
-- 14 unit tests covering mention extraction, caching, multi-platform aggregation, case-insensitive matching
+- stance_flip_service.py (new, ~246 LoC): Pure-stdlib service that reads trajectory.json snapshots, identifies every agent whose stance changed between their first and last round, pinpoints the exact flip round (first divergence from initial stance), and ranks flippers by influence score. Mtime-based disk cache to stance_flips.json.
+- GET /api/simulation/:id/stance-flips: New endpoint with publish gate, 5-minute cache, and surface stat tracking. Returns flip_count, flip_rate_pct, total_agents, and top 10 flippers with agent name, initial/final stance, flip round, and influence score. 38th catalogued surface.
+- StanceFlipsPanel.vue (new): Dark-themed overlay panel with a flip count headline, percentage rate bar, and a ranked list of the top 5 flippers — gold/silver/bronze badges, colored stance chips (green for bullish, red for bearish, gray for neutral), and round indicators.
+- Step3Simulation.vue: New "↻ Stance Shifts" toolbar button alongside the existing Influence, Drift, and Network buttons.
+- EmbedDialog.vue: Stance flips embed section with preview stats, copyable URL, and curl snippet.
+- 14 unit tests covering: no flippers, single flipper detection, flip_round identification, same-initial-final exclusion, rate calculation, influence sorting, cap at 10, cache write/read/staleness, and surface registration.
 
 How it works:
-The service reads actions.jsonl from every platform subdirectory in a sim, filters for CREATE_POST actions with content, and applies a regex to extract @word patterns. It resolves each handle against the known agent roster (case-insensitive) — handles not matching a real agent (like @twitter or @reddit) are silently dropped. The output distinguishes the mention_matrix (full directed graph including self-loops) from top_mentioned (top 10, self-mentions excluded from both count and mentioned_by_count). Results are cached to mentions.json with mtime invalidation so the endpoint serves from disk after the first compute.
+The service walks trajectory.json's per-round snapshots — the same data source agent_sparklines and chart.svg use — and computes each agent's stance per round using the shared ±0.2 threshold. For each agent where the final stance differs from the initial, it records the first round of divergence and the agent's influence score. Results are sorted by influence descending so the most impactful opinion-changers appear first, capped at 10. Pure stdlib, zero new dependencies. +1,074 lines across 9 files.
 
 What's next:
-Simulation Narrative Export (Markdown) — a single human-readable document synthesizing signal, trajectory, agents, coalitions, and confidence into a paste-into-Notion format. Push remains blocked (GH_GLOBAL not set — 37th consecutive block).
+Push is blocked (GH_GLOBAL not set — 38th consecutive block). Next candidates: Simulation Full-Text Search or Confidence Component Breakdown from yesterday's repo-actions ideas.
