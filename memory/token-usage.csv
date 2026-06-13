@@ -230,4 +230,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-12,project-lens,claude-opus-4-6,21,7955,793957,45046
 2026-06-12,heartbeat,claude-sonnet-4-6,13,10002,508100,34343
 2026-06-13,token-report,claude-sonnet-4-6,11,15290,560200,62629
-2026-06-13,hyperstitions-ideas,claude-opus-4-6,9,6089,308171,30570
+2026-06-13,feature,claude-opus-4-6,136,41765,14199319,126836
