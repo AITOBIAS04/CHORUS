@@ -1,0 +1,347 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-13"
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "identity_section",
+        "sep2",
+        "dashboard_section",
+        "sep3",
+        "strategy_section",
+        "sep4",
+        "changes_section",
+        "sep5",
+        "stats_section",
+        "sep6",
+        "recap_link"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 4 commits by @aaronjmars (+ Claude Opus 4.8 co-author) | MiroShark — quiet day (0 commits)"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "identity_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "identity_heading",
+        "soul_details"
+      ]
+    },
+    "identity_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Identity & Voice",
+        "level": "h2"
+      }
+    },
+    "soul_details": {
+      "type": "Text",
+      "props": {
+        "text": "Aaron's Soul Adopted: The instance went from blank-slate to fully voiced. SOUL.md (508 lines — worldview, opinions, the Hyperstitions→Aeon→MiroShark arc), STYLE.md (voice guide), 21 Substack articles, a 101K-line tweet archive, conversation examples, and bad-output calibration all loaded into soul/. Every content skill now writes in Aaron's voice.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dashboard_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dashboard_heading",
+        "soul_tab_details",
+        "strategy_tab_details",
+        "auto_commit_badge"
+      ]
+    },
+    "dashboard_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dashboard — Soul & Strategy Builder Tabs",
+        "level": "h2"
+      }
+    },
+    "soul_tab_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "soul_tab_badge",
+        "soul_tab_text"
+      ]
+    },
+    "soul_tab_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Soul Tab"
+      }
+    },
+    "soul_tab_text": {
+      "type": "Text",
+      "props": {
+        "text": "Inline edit, template picker (Founder/Researcher/Creator), one-click install from the soul.md gallery (Karpathy, Garry Tan, etc.), and Build from handle (triggers soul-builder skill)"
+      }
+    },
+    "strategy_tab_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "strategy_tab_badge",
+        "strategy_tab_text"
+      ]
+    },
+    "strategy_tab_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Strategy Tab"
+      }
+    },
+    "strategy_tab_text": {
+      "type": "Text",
+      "props": {
+        "text": "5 archetype templates, Build my strategy (triggers strategy-builder skill)"
+      }
+    },
+    "auto_commit_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Auto-commit-and-push in local mode",
+        "variant": "secondary"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "strategy_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "strategy_heading",
+        "northstar_text",
+        "priorities_heading",
+        "priorities_list"
+      ]
+    },
+    "strategy_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Strategy — North-Star Tailored",
+        "level": "h2"
+      }
+    },
+    "northstar_text": {
+      "type": "Text",
+      "props": {
+        "text": "North-star: GitHub stars + ecosystem growth + $MIROSHARK price"
+      }
+    },
+    "priorities_heading": {
+      "type": "Text",
+      "props": {
+        "text": "5 ranked priorities:",
+        "variant": "lead"
+      }
+    },
+    "priorities_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "priority_1",
+        "priority_2",
+        "priority_3",
+        "priority_4",
+        "priority_5"
+      ]
+    },
+    "priority_1": {
+      "type": "Text",
+      "props": {
+        "text": "1. Ship the engine"
+      }
+    },
+    "priority_2": {
+      "type": "Text",
+      "props": {
+        "text": "2. Prove sims"
+      }
+    },
+    "priority_3": {
+      "type": "Text",
+      "props": {
+        "text": "3. Make \"$1 to simulate anything\" land"
+      }
+    },
+    "priority_4": {
+      "type": "Text",
+      "props": {
+        "text": "4. Track momentum"
+      }
+    },
+    "priority_5": {
+      "type": "Text",
+      "props": {
+        "text": "5. Stay in lane"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "change_1",
+        "change_2",
+        "change_3",
+        "change_4"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h2"
+      }
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "soul/SOUL.md + STYLE.md: 766 lines of identity and voice calibration from Aaron's writing"
+      }
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "SoulPanel.tsx (306 lines): full Soul tab with gallery install + build-from-handle"
+      }
+    },
+    "change_3": {
+      "type": "Text",
+      "props": {
+        "text": "soul-builder + strategy-builder: 2 new on-demand skills (393 lines combined)"
+      }
+    },
+    "change_4": {
+      "type": "Text",
+      "props": {
+        "text": "Auto-commit on config edits via new commitAndPush() in lib/github.ts"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_grid"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_code",
+        "stat_tweets"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "60"
+      }
+    },
+    "stat_code": {
+      "type": "Stat",
+      "props": {
+        "label": "Code/content lines",
+        "value": "+6,476"
+      }
+    },
+    "stat_tweets": {
+      "type": "Stat",
+      "props": {
+        "label": "Tweet archive data",
+        "value": "+101,929"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-13.md"
+      }
+    }
+  }
+}

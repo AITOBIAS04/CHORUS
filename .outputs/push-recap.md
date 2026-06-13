@@ -1,16 +1,17 @@
-*Push Recap — 2026-06-12*
-MiroShark + miroshark-aeon — 3 commits by @aaronjmars
+*Push Recap — 2026-06-13*
+miroshark-aeon — 4 commits by @aaronjmars (+ Claude Opus 4.8 co-author) | MiroShark — quiet day (0 commits)
 
-Server-Side Surface Catalog Filtering (MiroShark PR #157): The /api/surfaces.json endpoint now accepts an optional ?type=<category> query param, letting integrators fetch just one of the 7 surface categories server-side instead of pulling the full 37-surface catalog. Per-category ETags prevent cache collisions. Unknown types return 400 with the valid set. 8 new tests, OpenAPI spec and docs updated. Fully backward-compatible.
+Identity & Voice — Aaron's Soul Adopted: The instance went from blank-slate to fully voiced. SOUL.md (508 lines — worldview, opinions, the Hyperstitions→Aeon→MiroShark arc), STYLE.md (voice guide), 21 Substack articles, a 101K-line tweet archive, conversation examples, and bad-output calibration all loaded into soul/. Every content skill now writes in Aaron's voice.
 
-Pre-Ship Validation for Feature Skill (miroshark-aeon PR #60): The autonomous feature skill was cloning repos into /tmp where the sandbox blocks code execution — every feature PR shipped without running its test suite. Now clones into workspace-relative .feature-build/ where exec is permitted, and adds an explicit "validate before shipping" step. Triggered by today's MiroShark #157 shipping 8 unrun tests.
+Dashboard — Soul & Strategy Builder Tabs: Two major new tabs ported from upstream Aeon template. Soul tab: inline edit, template picker (Founder/Researcher/Creator), one-click install from the soul.md gallery (Karpathy, Garry Tan, etc.), and Build from handle (triggers soul-builder skill). Strategy tab: 5 archetype templates, Build my strategy (triggers strategy-builder skill). Both auto-commit-and-push in local mode.
 
-Inbound Message Handling Disabled (miroshark-aeon): TG/Discord/Slack message collection and dispatch turned off at operator request. Cron scheduler unaffected — all scheduled skills keep running. Reversible via two inline comments.
+Strategy — North-Star Tailored: STRATEGY.md replaced generic defaults with MiroShark-specific direction. North-star: GitHub stars + ecosystem growth + $MIROSHARK price. 5 ranked priorities: ship the engine → prove sims → make "$1 to simulate anything" land → track momentum → stay in lane.
 
 Key changes:
-- /api/surfaces.json ?type= filter with per-category ETags and 400 validation (+236/-30 lines, 6 files)
-- Feature skill clone path /tmp → .feature-build/ + test suite validation step (+28/-10 in SKILL.md)
-- messages.yml inbound pipeline early-exit + run job disabled (+9/-1 lines)
+- soul/SOUL.md + STYLE.md: 766 lines of identity and voice calibration from Aaron's writing
+- SoulPanel.tsx (306 lines): full Soul tab with gallery install + build-from-handle
+- soul-builder + strategy-builder: 2 new on-demand skills (393 lines combined)
+- Auto-commit on config edits via new commitAndPush() in lib/github.ts
 
-Stats: 14 files changed, +341/-41 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-12.md
+Stats: 60 files changed, +6,476 lines code/content (+101,929 lines tweet archive data)
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-13.md
