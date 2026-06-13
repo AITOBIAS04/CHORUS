@@ -1,0 +1,156 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-06-13"
+      },
+      "children": [
+        "heading_question",
+        "section_coordination",
+        "separator_1",
+        "section_why_now",
+        "separator_2",
+        "section_resolution",
+        "separator_3",
+        "section_scores",
+        "separator_4",
+        "link_hyperstitions"
+      ]
+    },
+    "heading_question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will a community contributor build and merge a new MiroShark surface by July 15, 2026?",
+        "level": "h2"
+      }
+    },
+    "section_coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_coordination",
+        "text_coordination_p1",
+        "text_coordination_p2",
+        "text_coordination_p3"
+      ]
+    },
+    "heading_coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The coordination play",
+        "level": "h3"
+      }
+    },
+    "text_coordination_p1": {
+      "type": "Text",
+      "props": {
+        "text": "An autonomous agent built all 37 of MiroShark's integration surfaces — analytics, visualizations, exports, embeds. Every one was written by AI. The architecture is fully documented: pure-stdlib service, route, frontend component, tests, catalog entry. Same pattern, 37 times."
+      }
+    },
+    "text_coordination_p2": {
+      "type": "Text",
+      "props": {
+        "text": "The question challenges the community: if an AI can ship a surface per day, can a human ship one in a month? Anyone with Python or Vue experience can study an existing surface, pick an uncovered angle, and submit a PR."
+      }
+    },
+    "text_coordination_p3": {
+      "type": "Text",
+      "props": {
+        "text": "The market reframes contribution as a race with a visible finish line."
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_why_now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_why_now",
+        "text_why_now_p1",
+        "text_why_now_p2"
+      ]
+    },
+    "heading_why_now": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h3"
+      }
+    },
+    "text_why_now_p1": {
+      "type": "Text",
+      "props": {
+        "text": "The surfaces catalog hit 37 with server-side type-filtering shipped yesterday (PR #157), making the architecture more legible to outsiders. The \"Just Use Postgres\" article drew the platform comparison — surfaces as the extension model."
+      }
+    },
+    "text_why_now_p2": {
+      "type": "Text",
+      "props": {
+        "text": "Japanese README shipped this week (3rd root-level language). miroshark-aeon rebuilt on upstream template. The barrier to contribution has never been lower."
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_resolution": {
+      "type": "Alert",
+      "props": {
+        "title": "Resolution criteria",
+        "message": "YES if a pull request is merged into aaronjmars/MiroShark main by July 15, 2026 that adds at least one new entry to surfaces_catalog.py, authored by someone outside the core team (not aaronjmars or aeonframework). Verified via GitHub PR author + git log.",
+        "type": "info"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_reflexivity",
+        "stat_viral"
+      ]
+    },
+    "stat_reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "4/5"
+      }
+    },
+    "stat_viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "Soon on https://www.hyperstitions.com/ ?",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}

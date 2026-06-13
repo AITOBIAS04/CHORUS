@@ -1,13 +1,13 @@
-*Hyperstitions Idea — 2026-06-06*
+*Hyperstitions Idea — 2026-06-13*
 
-"Will MiroShark reach the Hacker News front page by July 15, 2026?"
+"Will a community contributor build and merge a new MiroShark surface by July 15, 2026?"
 
-The coordination play: Nobody can upvote what nobody submits. MiroShark has 1,235 stars, 32 composable surfaces, three languages, and a top-10 oosmetrics ranking in Reinforcement Learning — all without a single front-page HN moment. Someone needs to write the Show HN post. Others need to show up in the first hour and upvote. A comment section full of people who actually ran a simulation seals it. An AI agent cannot submit, cannot upvote, and cannot seed organic discussion — this is pure human coordination.
+The coordination play: An autonomous agent built all 37 of MiroShark's integration surfaces — analytics, visualizations, exports, embeds. Every one was written by AI. The architecture is fully documented: pure-stdlib service, route, frontend component, tests, catalog entry. Same pattern, 37 times. The question challenges the community: if an AI can ship a surface per day, can a human ship one in a month? Anyone with Python or Vue experience can study an existing surface, pick an uncovered angle, and submit a PR. The market reframes contribution as a race with a visible finish line.
 
-Why now: The project just cracked the oosmetrics top 10 for RL while shipping its 32nd share surface and third language in three days. The feature density is now absurd relative to its exposure. First green token candle in a week suggests sentiment may be turning. The window between "undiscovered" and "discovered" is closing — and HN is how it closes.
+Why now: The surfaces catalog hit 37 with server-side type-filtering shipped yesterday (PR #157), making the architecture more legible to outsiders. The "Just Use Postgres" article drew the platform comparison — surfaces as the extension model. Japanese README shipped this week (3rd root-level language). miroshark-aeon rebuilt on upstream template. The barrier to contribution has never been lower.
 
-Resolution: YES if any Hacker News story linking to github.com/aaronjmars/MiroShark or miroshark.com appears in the HN front page (top 30 stories) at any point on or before July 15, 2026. Verifiable via HN Algolia API search.
+Resolution: YES if a pull request is merged into aaronjmars/MiroShark main by July 15, 2026 that adds at least one new entry to surfaces_catalog.py, authored by someone outside the core team (not aaronjmars or aeonframework). Verified via GitHub PR author + git log.
 
-Scores: Reflexivity 5/5 | Viral 4/5
+Scores: Reflexivity 4/5 | Viral 4/5
 
 Soon on https://www.hyperstitions.com/ ?
