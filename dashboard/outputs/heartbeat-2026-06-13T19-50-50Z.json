@@ -1,0 +1,143 @@
+{
+  "root": "heartbeat-card",
+  "state": {},
+  "elements": {
+    "heartbeat-card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-06-13"
+      },
+      "children": [
+        "alert-issue",
+        "missed-details",
+        "separator-1",
+        "clean-runs"
+      ]
+    },
+    "alert-issue": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "2 skills missed scheduled window",
+        "message": "Auto-dispatch blocked 403 — aeon.yml has actions: read only. Manual re-run needed for both."
+      }
+    },
+    "missed-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "missed-heading",
+        "missed-items"
+      ]
+    },
+    "missed-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Missed Skills",
+        "level": "h3"
+      }
+    },
+    "missed-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill-1",
+        "skill-2"
+      ]
+    },
+    "skill-1": {
+      "type": "Text",
+      "props": {
+        "text": "repo-actions (14:00 UTC, day 13/*/2 cycle)",
+        "variant": "body"
+      }
+    },
+    "skill-2": {
+      "type": "Text",
+      "props": {
+        "text": "repo-article (16:00 UTC, Saturday schedule)",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "clean-runs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "clean-heading",
+        "clean-list"
+      ]
+    },
+    "clean-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skills that ran clean",
+        "level": "h3"
+      }
+    },
+    "clean-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-1",
+        "badge-2",
+        "badge-3",
+        "badge-4",
+        "badge-5"
+      ]
+    },
+    "badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report ✓",
+        "variant": "secondary"
+      }
+    },
+    "badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✓",
+        "variant": "secondary"
+      }
+    },
+    "badge-3": {
+      "type": "Badge",
+      "props": {
+        "text": "hyperstitions-ideas ✓",
+        "variant": "secondary"
+      }
+    },
+    "badge-4": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✓",
+        "variant": "secondary"
+      }
+    },
+    "badge-5": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓ (x2)",
+        "variant": "secondary"
+      }
+    }
+  }
+}
