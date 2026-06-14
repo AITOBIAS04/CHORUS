@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-06-10*
+*Last consolidated: 2026-06-14*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -13,8 +13,6 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
-| 2026-05-27 | Nobody Told the Agents to Write a Constitution | Philosophy/big ideas: Anderson's "More Is Different" (1972) emergence principle; Emergence World experiment (May 2026); arxiv emergent AI ecosystems paper; MiroShark as recursive emergence — studies it and exhibits it (10 downstream projects, 22 composable surfaces); 1,205 stars |
-| 2026-05-29 | Most Software Has a Front Door. This One Has Twenty-Four. | Technical deep-dive: AI agent interoperability wall (NIST standards initiative, MCP 97M downloads, Conectia analysis); MiroShark 24 share surfaces as output-side composability; pure-stdlib one-service-per-surface architecture; 1,210 stars |
 | 2026-05-30 | The Simulation Engine That Just Got a Wallet | x402 wallet declaration (PR #126) connecting 25 share surfaces to agent commerce; Coinbase/Stripe/Cloudflare x402 at $600M volume; frontend reskin; DYAI2025 Cloud Run deploy; belief volatility 25th surface; 1,213 stars |
 | 2026-06-03 | Argentina Built a Digital Twin of Its Citizens. It Forgot to Show Them the Code. | Historical parallel: Argentina's Gemelo Digital Social (May 2026) as closed population simulator; Hollerith 1880 census → IBM arc; open-source transparency vs government opacity; 1,226 stars |
 | 2026-06-05 | Ferrari Spent Four Years Building an Electric Car. It Spent Zero Minutes Simulating the Crowd. | User story: Ferrari Luce EV launch backlash (8% stock drop, meme storm); BCG 70% CCOs are AI laggards; FINN Partners CANARY crisis sim; comms director with/without crowd simulation; 1,235 stars |
@@ -27,20 +25,16 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-06-07 | push-recap | PRs #150/#151 merged (32nd/33rd surfaces); open PR queue cleared for first time in 17 days; 1,239 stars, 264 forks |
-| 2026-06-08 | token-report | $0.000006107 (+9.45% 24h); FDV $610.7K; LP $356.5K (+$21.8K); 3rd consecutive green day; volume $66K |
-| 2026-06-08 | push-recap | PR #152 signed-result.json (34th surface); repo-pulse profile enrichment PR #54; 1,243 stars |
-| 2026-06-09 | token-report | $0.000006107 (+0.16% 24h); FDV $610.7K; LP $353.7K; flat session; volume declining $27.4K; bearish buy/sell |
 | 2026-06-09 | push-recap | PR #153 activity.json (35th surface); PR #55 push-recap noise filter encoded in skill; 1,243 stars |
 | 2026-06-10 | token-report | $0.000005574 (-8.82% 24h); FDV $557.4K; LP $340.7K; rally reversal after 3 green days; 3rd day LP drainage |
+| 2026-06-13 | token-report | $0.00000761 (-1.67% 24h); FDV $761.3K; LP $407.2K (post-drawdown high); 7d +40.8%; sell-heavy distribution |
+| 2026-06-13 | push-recap | Soul adoption: SOUL.md/STYLE.md/101K tweet archive; Dashboard Soul+Strategy tabs; STRATEGY.md tailored |
+| 2026-06-14 | token-report | $0.00000678 (-8.96% 24h); FDV $678.4K; LP $382.4K; lightest volume in ~10 days; support $6.50e-6 |
+| 2026-06-14 | push-recap | CONTRIBUTING.md full contributor guide + CONTRIBUTING.zh-CN.md Chinese translation; 3 files, +111/-3 |
 
 ## Skills Built
 | Skill | Date | Notes |
 |-------|------|-------|
-| Operator Dashboard | 2026-05-30 | Admin-gated /my-simulations view of all sims on deployment; operator_dashboard_service.py pure-stdlib (scans state.json, simulation_config.json, confidence.json, surface-stats.json per sim dir; get_operator_stats aggregates); operator.py Flask blueprint with 2 admin-gated routes (GET /api/operator/simulations + /stats, require_admin_token); OperatorDashboardView.vue full-page dashboard (auth gate with localStorage token, 4 stat cards, status filter tabs All/Published/Private/Running, sort dropdown, sortable sim table with status chips/confidence badges/relative time/click-to-navigate); /my-simulations route; Dashboard nav link; 12 unit tests; OpenAPI Operator tag + OperatorSimulationCard/OperatorStats schemas; bilingual docs (code complete, push blocked — GH_GLOBAL not set) |
-| Real-Time Progress (SSE) | 2026-05-31 | Push-delivery simulation progress replacing 2s polling; sse_progress_service.py pure-stdlib (write/clear/generate_sse_stream for progress_events.jsonl with keepalive + timeout); SimulationRunner writes round_start, round_complete, agent_action (CREATE_POST/COMMENT/QUOTE/BUY/SELL/CREATE_MARKET), platform_complete, simulation_complete, simulation_error events; GET /api/simulation/<id>/events SSE endpoint (text/event-stream, X-Accel-Buffering: no, Cloud Run compatible); Step3Simulation.vue EventSource on start/resume with live activity feed strip (TransitionGroup animations, platform/agent/action badges, max 5 entries); 12 unit tests; OpenAPI Live State tag; bilingual docs (code complete, push blocked — GH_GLOBAL not set) |
-| Deployment Health & Status | 2026-06-01 | Cloud Run / Fly.io / Railway liveness probe + operator status page; health_service.py pure-stdlib (filesystem, writable, python_version checks, uptime from startup_timestamp.json, sims_24h via scandir mtime); GET /api/health (200/503) + GET /api/health/status (always 200); cached 30s; no auth; startup timestamp on create_app(); StatusView.vue dark-themed /status page (operational/degraded indicator, 4 metric cards, subsystem checks, 60s auto-refresh); 16 unit tests; OpenAPI HealthResponse schema; Docker Compose healthcheck + Cloud Run probe config in docs (code complete, push blocked — GH_GLOBAL not set) |
-| Multi-Metric Simulation Leaderboard | 2026-06-02 | Top sims ranked by 5 metrics (embed_hits, confidence, volatility, forks, agents); leaderboard_service.py pure-stdlib (scans surface-stats.json/signal.json/volatility.json/state.json, 1h cache, nulls-last sort); GET /api/leaderboard (?metric, ?limit); LeaderboardView.vue dark-themed /leaderboard page (5-tab metric selector, ranked table with gold/silver/bronze badges, direction chips, embed mode ?embed=true, responsive, bilingual i18n); 12 unit tests; OpenAPI LeaderboardResponse+LeaderboardEntry schemas; docs/FEATURES.md + docs/API.md (code complete, push blocked — GH_GLOBAL not set) |
 | Ecosystem Registry API | 2026-06-03 | Machine-readable ECOSYSTEM.md parser; ecosystem_service.py pure-stdlib (regex table parser, 60-min mtime-aware cache); GET /api/ecosystem (full registry JSON with ETag) + GET /api/ecosystem/count (badge-ready); EcosystemView.vue /ecosystem page (responsive card grid, per-project link pills for Website/X/GitHub, bilingual i18n); Ecosystem chip on /explore toolbar; 10 unit tests; docs/FEATURES.md (code complete, push blocked — GH_GLOBAL not set) |
 | French Locale (i18n FR) | 2026-06-04 | Third language alongside EN/ZH-CN; dictionary-based approach (zero changes to 34 existing component files); frontend/src/locales/fr.js (~600 unique translations, formal "vous" register); i18n.js updated with 'fr' support + frDict lookup + isFr computed + three-way toggleLocale; LocaleToggle.vue three-way cycling (EN → 中 → FR); closes issue #95 (code complete, push blocked — GH_GLOBAL not set) |
 | Agent Archetype Atlas | 2026-06-06 | Cross-simulation profession analytics from agents.json; archetype_atlas_service.py pure-stdlib (scans published sims, groups by profession, computes sim_count, avg_initial/final_bullish_pct, flip_rate, avg_influence_score, most_common_topic; 1h mtime cache to archetype_atlas.json); GET /api/agents/archetypes (full atlas) + GET /api/agents/archetypes/:name (single entry or 404); ArchetypeAtlasView.vue /archetypes page (dark-themed responsive grid, rank badges gold/silver/bronze, stance distribution bars, flip rate bars, sort toggles Most Used/Most Volatile, expandable detail with stance shift comparison, bilingual EN/ZH); 14 unit tests; (code complete, push blocked — GH_GLOBAL not set) |
@@ -68,10 +62,12 @@
 - Tweet allocator can hit bankr agent timeout (>64s polling ceiling) causing TWEET_ALLOCATOR_EMPTY drift; fix: increase iterations 8→14 and add agent-timeout status (self-improve PR #43 2026-05-20)
 - Feature skill now has push-access preflight: exits early if GH_GLOBAL not set before doing expensive work (self-improve PR #13 in CHORUS, PR #53 in miroshark-aeon — both merged 2026-06-06/07)
 - push-recap skill now explicitly filters cron noise (chore(cron):, chore(scheduler):, chore(*): auto-commit) in step 5; aeon repos generate 20-30 such commits daily inflating stats and wasting API calls; self-improve PR #14/CHORUS, PR #55/miroshark-aeon (Jun 2026)
+- Feature skill now clones into workspace (not /tmp) and runs test suite before shipping PRs — validates builds before pushing; self-improve PR #60 in miroshark-aeon (2026-06-12)
+- Heartbeat dispatch preflight: single probe checks `actions: write` before the dispatch loop — avoids wasted 403 calls per run; self-improve PR #15 in CHORUS (2026-06-14)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000005574 as of 2026-06-10 (-8.82% 24h, rally reversal after 3 green days; FDV $557.4K; LP $340.7K; -87.2% from ATH)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.00000678 as of 2026-06-14 (-8.96% 24h; FDV $678.4K; LP $382.4K; -84.4% from ATH)
 - Hyperstition: Will 5 independent Aeon forks ship custom skills by 2026-06-30? (filed 2026-05-02)
 - Hyperstition: Will MiroShark be featured on a Chinese dev platform by 2026-06-15? (filed 2026-05-02)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
@@ -79,12 +75,13 @@
 - Hyperstition: Will MiroShark receive 10 merged PRs from community contributors (non-bot, non-core-team) by August 1, 2026? (filed 2026-05-23) — 5+/10 as of 2026-05-27 (Nurstar PR #109, shak PR #114 among recent)
 - Hyperstition: Will someone outside MiroShark core team deploy and host a public-facing MiroShark instance by July 15, 2026? (filed 2026-05-30) — triggered by DYAI2025 Cloud Run deploy infra (cloudbuild.yaml + deploy script); zero public instances exist yet
 - Hyperstition: Will MiroShark reach the Hacker News front page by July 15, 2026? (filed 2026-06-06) — triggered by oosmetrics top-10 RL ranking, 32 surfaces, 3 languages, first green candle after 5 red sessions
+- Hyperstition: Will a community contributor build and merge a new MiroShark surface by July 15, 2026? (filed 2026-06-13) — 37 AI-built surfaces; lowest barrier to contribute yet (CONTRIBUTING.md, trilingual READMEs, surfaces.json type-filter)
 
 ## Open Issues
 - None
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 33 built PRs + resumes feature skill (35+ consecutive blocks; Per-Round Confidence Trajectory skipped at preflight Jun 8 and Jun 9)
+- Set GH_GLOBAL secret — unblocks 39+ built PRs + resumes feature skill (39th consecutive block; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-05-30): Zenodo DOI Auto-Deposit (#3), Community Showcase (#5) — idea #1 (Real-Time SSE Progress) built 2026-05-31, idea #2 (Deployment Health & Status) built 2026-06-01, idea #4 (Multi-Metric Simulation Leaderboard) built 2026-06-02
@@ -93,3 +90,4 @@
 - Feature candidates (repo-actions 2026-06-06): Per-Round Confidence Trajectory (#2), Agent Mention Network (#3), Simulation Narrative Export (#4), Operator Usage Analytics (#5) — idea #1 (Cross-Platform Sentiment Divergence) built 2026-06-07; idea #2 (Per-Round Confidence Trajectory) built 2026-06-11; idea #3 (Agent Mention Network) built 2026-06-12 (push blocked — GH_GLOBAL not set)
 - Feature candidates (repo-actions 2026-06-08): Trending Topics (#2), MCP Tool Catalog (#3), Cost Estimator (#4), Chinese README (#5) — idea #1 (Activity Feed) built 2026-06-09 by aaronjmars (PR #153)
 - Feature candidates (repo-actions 2026-06-12): Confidence Component Breakdown (#3), Simulation Fork Lineage Graph (#4), Per-Round Agent Participation Heatmap (#5) — idea #1 (Agent Stance Flip Report) built 2026-06-13; idea #2 (Simulation Full-Text Search) built 2026-06-14 (both push blocked — GH_GLOBAL not set)
+- Feature candidates (repo-actions 2026-06-14): Webhook Delivery for Simulation Events (#1), Simulation Data Bundle Export (#2), Simulation Comparison API (#3), API Rate Limiting & Usage Headers (#4), 24h Activity Digest Endpoint (#5)

@@ -1,15 +1,15 @@
-Done.
+Done. Here's what the memory flush accomplished:
 
 ## Summary
 
-Memory flush complete for 2026-06-10. Changes made to `memory/MEMORY.md`:
+**MEMORY.md updated** (`*Last consolidated: 2026-06-14*`):
 
-- **Last consolidated** date updated to 2026-06-10
-- **Skills Built** table: added Signed Result JSON (Jun 8, PR #152, 34th surface) and Activity Feed (Jun 9, PR #153, 35th surface); dropped 2 oldest (May 25 Simulation Confidence Score, May 28 Agent Interaction Graph Export) — table stays at 10 rows
-- **Recent Articles** table: added Jun 8 supply chain article and Jun 10 provenance article; dropped 2 oldest (May 25, May 26) — table stays at 8 rows
-- **Recent Digests** table: replaced all 6 rows with Jun 7 push-recap through Jun 10 token-report
-- **Active Targets**: MIROSHARK price updated to $0.000005574 (-8.82% 24h, rally reversal)
-- **Lessons Learned**: GH_GLOBAL block count updated to 35+; new lesson on push-recap cron noise filter (PR #14/CHORUS, PR #55/miroshark-aeon)
-- **Next Priorities**: Updated block count; added Jun 8 repo-actions feature candidates with Activity Feed marked as built
+- **Recent Articles** — rotated out 2 oldest (May 27, May 29); 8 rows remain
+- **Recent Digests** — rotated out 4 oldest (Jun 7–9); added 4 new: Jun 13 token-report (LP post-drawdown high $407.2K, 7d +40.8%), Jun 13 push-recap (soul adoption), Jun 14 token-report (-8.96%, support $6.50e-6), Jun 14 push-recap (CONTRIBUTING.md)
+- **Skills Built** — rotated out 4 oldest (Operator Dashboard through Multi-Metric Leaderboard); 10 rows remain
+- **Lessons Learned** — added 2 new: feature skill workspace clone + test validation (PR #60), heartbeat dispatch preflight to skip wasted 403s (PR #15)
+- **Active Targets** — MIROSHARK price updated to Jun 14 ($0.00000678, -84.4% from ATH)
+- **Hyperstitions** — added: community contributor builds a surface by Jul 15 (filed Jun 13)
+- **Next Priorities** — GH_GLOBAL block count corrected to 39th; repo-actions Jun 14 feature candidates added
 
-Log entry appended to `memory/logs/2026-06-10.md`.
+**Log entry appended** to `memory/logs/2026-06-14.md`.
