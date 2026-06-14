@@ -22,6 +22,7 @@
 | 2026-06-08 | Every Dependency Is a Door You Forgot to Lock | Supply chain attacks: LiteLLM PyPI attack (40K+ compromised, Mar 2026); TanStack/TeamPCP (May 2026); JFrog report 451% malicious npm surge; MiroShark pure-stdlib zero-deps architecture as defense angle |
 | 2026-06-10 | The World Is Learning to Sign Photos. Nobody Is Signing Predictions. | Provenance/authenticity: EU AI Act Article 50 deadline (Aug 2, 2026); C2PA 6,000+ members; Gartner top-10 strategic trend; Deloitte 23% trust gap; MiroShark signed-result.json as prediction provenance layer |
 | 2026-06-12 | It's 2026, Just Use Postgres. What If Simulations Worked the Same Way? | Industry comparison: "Just Use Postgres" movement (55.6% dev adoption, DB-Engines +21.97 H1 2026, replacing 7 specialized DBs via extensions); MiroShark 37 surfaces as same pattern — platform through output-side composability; 1,267 stars |
+| 2026-06-14 | A Vulnerability Was Reported in Public Because There Was Nowhere Else to Put It | Security maturity: CONTRIBUTING guide expansion (PR #162), SECURITY.md disclosure policy (PR #158), community infra PR (dan-and #159); OSPS Baseline 41 requirements; supply chain attacks +431%; Snyk 73% private reporting with policy; 1,270 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |
