@@ -1,0 +1,338 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-06-14"
+      },
+      "children": [
+        "source_text",
+        "sep1",
+        "ideas_stack",
+        "sep2",
+        "details_link"
+      ]
+    },
+    "source_text": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,270 stars, 39 surfaces, 14 ecosystem projects)",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ideas_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1",
+        "sep_1_2",
+        "idea2",
+        "sep_2_3",
+        "idea3",
+        "sep_3_4",
+        "idea4",
+        "sep_4_5",
+        "idea5"
+      ]
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_title",
+        "idea1_badges",
+        "idea1_desc"
+      ]
+    },
+    "idea1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Webhook Delivery for Simulation Events",
+        "level": "h3"
+      }
+    },
+    "idea1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_integration",
+        "badge_medium1"
+      ]
+    },
+    "badge_integration": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      }
+    },
+    "badge_medium1": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "idea1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Register callback URLs and receive a POST when simulations complete — turns MiroShark from a polling API into a real-time integration partner for all 14 ecosystem projects."
+      }
+    },
+    "sep_1_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_title",
+        "idea2_badges",
+        "idea2_desc"
+      ]
+    },
+    "idea2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Simulation Data Bundle Export",
+        "level": "h3"
+      }
+    },
+    "idea2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_feature1",
+        "badge_small1"
+      ]
+    },
+    "badge_feature1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_small1": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/bundle.zip streams all surface files (trajectory, agents, signal, confidence, mentions, stance flips, actions) as a single ZIP — the \"simulation as a data artifact\" for research teams and archival."
+      }
+    },
+    "sep_2_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_title",
+        "idea3_badges",
+        "idea3_desc"
+      ]
+    },
+    "idea3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation Comparison API",
+        "level": "h3"
+      }
+    },
+    "idea3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_feature2",
+        "badge_medium2"
+      ]
+    },
+    "badge_feature2": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_medium2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "idea3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulations/compare?a={id1}&b={id2} computes confidence delta, trajectory correlation, and diverging archetypes between any two published simulations — the missing surface for parameter sweep research."
+      }
+    },
+    "sep_3_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_title",
+        "idea4_badges",
+        "idea4_desc"
+      ]
+    },
+    "idea4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. API Rate Limiting & Usage Headers",
+        "level": "h3"
+      }
+    },
+    "idea4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_perf_sec",
+        "badge_small2"
+      ]
+    },
+    "badge_perf_sec": {
+      "type": "Badge",
+      "props": {
+        "text": "Performance/Security",
+        "variant": "default"
+      }
+    },
+    "badge_small2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pure-stdlib sliding-window rate limiter with X-RateLimit-Limit/Remaining/Reset headers on every response — the production hardening baseline for a public API with 14+ integrators."
+      }
+    },
+    "sep_4_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_title",
+        "idea5_badges",
+        "idea5_desc"
+      ]
+    },
+    "idea5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. 24h Activity Digest Endpoint",
+        "level": "h3"
+      }
+    },
+    "idea5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_feature3",
+        "badge_small3"
+      ]
+    },
+    "badge_feature3": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_small3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/digest.json returns a pre-aggregated daily briefing: new publications, avg confidence, direction majority, top sims — one call for newsletter bots, Discord integrations, and ecosystem dashboards."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-14.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

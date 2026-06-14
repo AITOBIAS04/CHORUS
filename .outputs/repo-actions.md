@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-06-12*
-Generated from MiroShark (1,266 stars · 269 forks · 0 open PRs · 37 surfaces). Diagnostic analytics and tooling — all over already-generated data, no new dependencies.
+*Repo Action Ideas — 2026-06-14*
+Generated from analysis of aaronjmars/MiroShark (1,270 stars, 39 surfaces, 14 ecosystem projects).
 
-1. Agent Stance Flip Report (Feature, Small)
-   Which agents changed conviction, from what to what, and at which round — the per-sim persuasion map for scenario designers.
+1. Webhook Delivery for Simulation Events (Integration, Medium)
+   Register callback URLs and receive a POST when simulations complete — turns MiroShark from a polling API into a real-time integration partner for all 14 ecosystem projects.
 
-2. Simulation Full-Text Search (Feature, Small)
-   GET /api/simulations/search?q= — pure-stdlib mtime-indexed keyword search across published sim titles and descriptions; the missing discoverability primitive for integrators.
+2. Simulation Data Bundle Export (Feature, Small)
+   GET /api/simulation/{id}/bundle.zip streams all surface files (trajectory, agents, signal, confidence, mentions, stance flips, actions) as a single ZIP — the "simulation as a data artifact" for research teams and archival.
 
-3. Confidence Component Breakdown (Feature, Small)
-   GET /api/simulation/:id/confidence/components — exposes the four sub-scores (stability, convergence, participation, adversarial) behind the composite confidence number with a 4-bar breakdown on the watch page.
+3. Simulation Comparison API (Feature, Medium)
+   GET /api/simulations/compare?a={id1}&b={id2} computes confidence delta, trajectory correlation, and diverging archetypes between any two published simulations — the missing surface for parameter sweep research.
 
-4. Simulation Fork Lineage Graph (Feature, Small)
-   GET /api/simulation/:id/lineage — records fork_parent_id at fork time and surfaces the parent/child tree; makes parameter-sweep fork series navigable.
+4. API Rate Limiting & Usage Headers (Performance/Security, Small)
+   Pure-stdlib sliding-window rate limiter with X-RateLimit-Limit/Remaining/Reset headers on every response — the production hardening baseline for a public API with 14+ integrators.
 
-5. Per-Round Agent Participation Heatmap (Feature, Small)
-   GET /api/simulation/:id/participation-heatmap — counts distinct active agents per round from actions.jsonl, broken by platform; reveals participation collapse as a data quality signal.
+5. 24h Activity Digest Endpoint (Feature, Small)
+   GET /api/digest.json returns a pre-aggregated daily briefing: new publications, avg confidence, direction majority, top sims — one call for newsletter bots, Discord integrations, and ecosystem dashboards.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-12.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-14.md
