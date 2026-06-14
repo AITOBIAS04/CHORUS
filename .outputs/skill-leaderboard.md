@@ -1,19 +1,12 @@
-Skill leaderboard complete. No notification was sent — the threshold requires at least 2 active Aeon forks with a readable `aeon.yml`, and the fleet remains at 1 (AITOBIAS04/CHORUS).
-
 ## Summary
 
-**What was done:**
-- Scanned forks of `aaronjmars/MiroShark` (54 active in 30d, none with `aeon.yml`) and `aaronjmars/miroshark-aeon` (1 active fork: AITOBIAS04/CHORUS)
-- Read CHORUS's `aeon.yml` (14 enabled skills) and the source repo's `aeon.yml` (15 enabled skills)
-- Compared against the 2026-05-31 leaderboard for week-over-week deltas
+Skill leaderboard for 2026-06-14 complete. Key findings:
 
-**Key findings:**
-- Skill stack unchanged: 14 skills enabled in CHORUS, same 14 as last week
-- Adoption gaps unchanged: 4 (thread-formatter, operator-scorecard, star-milestone, star-momentum-alert)
-- CHORUS diverges from upstream on 3 skills it has enabled that the source doesn't: fetch-tweets, hyperstitions-ideas, skill-leaderboard
-- Source catalog grew by ~20 new disabled skills this week (fleet-management and social-syndication families)
-- MiroShark active forks: 72 → 54 (30-day window rolling)
-
-**Files created/modified:**
-- `articles/skill-leaderboard-2026-06-07.md` — created
-- `memory/logs/2026-06-07.md` — appended
+- **Aeon fleet:** 1 active fork — `AITOBIAS04/CHORUS` (pushed today), same as last week
+- **Skills enabled:** 14 unchanged; all at 100% in the single-fork fleet
+- **Source changes:** `aaronjmars/miroshark-aeon` expanded with 25+ new disabled skills (onchain investigation suite: rug-scan, fund-flow, vigil, etc.; identity builders: strategy-builder, soul-builder; new market signals: price-alert, monitor-kalshi, aixbt-pulse). `star-momentum-alert` renamed to `star-momentum`.
+- **Adoption gaps:** 4 unchanged (thread-formatter, operator-scorecard, star-milestone, star-momentum)
+- **MiroShark sim-tool forks:** 50 active (down from 54 — the spring fork wave continues aging out of the 30-day window)
+- **Notification:** skipped — `SKILL_LEADERBOARD_INSUFFICIENT_DATA` for the sixth consecutive week (need ≥2 forks with readable `aeon.yml`)
+- **Article written:** `articles/skill-leaderboard-2026-06-14.md`
+- **Committed:** `9519f47`
