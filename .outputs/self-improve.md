@@ -1,12 +1,14 @@
-*Agent Self-Improvement — 2026-06-10*
+*Agent Self-Improvement — 2026-06-14*
 
-Push-recap now explicitly filters cron automation noise from agent repos. Before this change, each push-recap run inconsistently handled the 20-30 daily cron auto-commits from miroshark-aeon — sometimes counting them in stats, sometimes not.
+Heartbeat dispatch preflight — eliminated wasted 403 failures.
 
-Why: Jun 8 push-recap reported "31 total commits" with inflated stats because cron noise was included. Jun 9 correctly filtered to "2 substantive + ~30 filtered" but only because the LLM happened to separate them. Without an explicit step, behavior varied run-to-run.
+The heartbeat skill runs daily, detects 2-4 missing scheduled skills, and tries to re-dispatch each via gh workflow run. But aeon.yml only grants actions: read, so every attempt returns 403. This wastes API calls and fills every heartbeat notification with identical failure lines.
+
+Why: Pattern observed across Jun 12 (4 missing skills, all 403), Jun 13 (2 missing, all 403), and every prior heartbeat run. The lesson was already in MEMORY.md but never encoded in the skill.
 
 What changed:
-- skills/push-recap/SKILL.md: Added step 5 (filter automation noise) — identifies chore(cron):, chore(scheduler):, and chore(*): auto-commit patterns; excludes them from diff analysis; reports them as a separate count in overview and notification.
+- skills/heartbeat/SKILL.md: Added a single permissions probe before any dispatch attempts. If 403, all individual dispatches are skipped and the notification reports "dispatch unavailable" in one line instead of N identical errors.
 
-Impact: Saves ~20-30 unnecessary API calls per push-recap run, makes commit counts accurate and consistent, and improves recap signal quality by focusing only on meaningful changes.
+Impact: Cleaner heartbeat notifications, fewer wasted API calls, and forward-compatible — when actions: write is granted, the preflight passes and existing dispatch logic kicks in unchanged.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/14
+PR: https://github.com/AITOBIAS04/CHORUS/pull/15

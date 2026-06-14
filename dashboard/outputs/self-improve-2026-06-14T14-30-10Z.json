@@ -1,0 +1,188 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "header_stack",
+        "separator1",
+        "content_stack"
+      ]
+    },
+    "header_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "date_badge",
+        "summary_text"
+      ]
+    },
+    "date_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2026-06-14",
+        "variant": "default"
+      }
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat dispatch preflight — eliminated wasted 403 failures.",
+        "variant": "lead"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "problem_section",
+        "pattern_section",
+        "changes_section",
+        "impact_section",
+        "pr_section"
+      ]
+    },
+    "problem_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "problem_heading",
+        "problem_text"
+      ]
+    },
+    "problem_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h3"
+      }
+    },
+    "problem_text": {
+      "type": "Text",
+      "props": {
+        "text": "The heartbeat skill runs daily, detects 2-4 missing scheduled skills, and tries to re-dispatch each via gh workflow run. But aeon.yml only grants actions: read, so every attempt returns 403. This wastes API calls and fills every heartbeat notification with identical failure lines.",
+        "variant": "body"
+      }
+    },
+    "pattern_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pattern_heading",
+        "pattern_text"
+      ]
+    },
+    "pattern_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "pattern_text": {
+      "type": "Text",
+      "props": {
+        "text": "Pattern observed across Jun 12 (4 missing skills, all 403), Jun 13 (2 missing, all 403), and every prior heartbeat run. The lesson was already in MEMORY.md but never encoded in the skill.",
+        "variant": "body"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes_heading",
+        "changes_text"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "changes_text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/heartbeat/SKILL.md: Added a single permissions probe before any dispatch attempts. If 403, all individual dispatches are skipped and the notification reports \"dispatch unavailable\" in one line instead of N identical errors.",
+        "variant": "body"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_heading",
+        "impact_text"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Cleaner heartbeat notifications, fewer wasted API calls, and forward-compatible — when actions: write is granted, the preflight passes and existing dispatch logic kicks in unchanged.",
+        "variant": "body"
+      }
+    },
+    "pr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_heading",
+        "pr_link"
+      ]
+    },
+    "pr_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Request",
+        "level": "h3"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #15 - Heartbeat dispatch preflight",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/15",
+        "source": "GitHub"
+      }
+    }
+  }
+}
