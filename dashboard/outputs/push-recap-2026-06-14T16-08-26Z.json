@@ -1,0 +1,174 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-14"
+      },
+      "children": [
+        "repo-header",
+        "commit-badges",
+        "sep1",
+        "pr-heading",
+        "description",
+        "sep2",
+        "key-changes-heading",
+        "changes-table",
+        "sep3",
+        "stats-section",
+        "full-recap-link"
+      ]
+    },
+    "repo-header": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      }
+    },
+    "commit-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-commits",
+        "badge-author",
+        "badge-aeon",
+        "badge-model"
+      ]
+    },
+    "badge-commits": {
+      "type": "Badge",
+      "props": {
+        "text": "1 commit"
+      }
+    },
+    "badge-author": {
+      "type": "Badge",
+      "props": {
+        "text": "@aaronjmars"
+      }
+    },
+    "badge-aeon": {
+      "type": "Badge",
+      "props": {
+        "text": "aeonframework"
+      }
+    },
+    "badge-model": {
+      "type": "Badge",
+      "props": {
+        "text": "Claude Opus 4.8"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Contributor Guide Overhaul (PR #162)",
+        "level": "h3"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "CONTRIBUTING.md expanded from a 30-line test stub into a full onboarding document. New contributors now get: one-command setup (npm run setup:all), .env walkthrough (OpenRouter default, Ollama alternative), Neo4j via docker-compose, npm run dev for simultaneous backend/frontend, branch-naming and Conventional Commit rules, and a step-by-step API endpoint tutorial that explains the OpenAPI drift test enforcing spec-code parity. Chinese translation (CONTRIBUTING.zh-CN.md) kept in lockstep. README docs-table label updated.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "changes-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "File",
+          "Changes"
+        ],
+        "rows": [
+          [
+            "CONTRIBUTING.md",
+            "dev setup, PR rules, API endpoint tutorial (+55 lines)"
+          ],
+          [
+            "CONTRIBUTING.zh-CN.md",
+            "full Chinese translation of all new sections (+55 lines)"
+          ],
+          [
+            "README.md",
+            "docs-table label now reflects expanded scope (+1/-1)"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-additions",
+        "stat-deletions"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "3"
+      }
+    },
+    "stat-additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "+111",
+        "trend": "up"
+      }
+    },
+    "stat-deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "-3",
+        "trend": "down"
+      }
+    },
+    "full-recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-14.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
