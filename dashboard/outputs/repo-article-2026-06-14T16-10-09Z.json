@@ -1,0 +1,72 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "A Vulnerability Was Reported in Public Because There Was Nowhere Else to Put It",
+        "description": "New Article"
+      },
+      "children": [
+        "text-body",
+        "separator-1",
+        "grid-stats",
+        "separator-2",
+        "story-link"
+      ]
+    },
+    "text-body": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark shipped a full CONTRIBUTING guide, a SECURITY.md responsible-disclosure policy, and received its first community infrastructure PR — all in the same week. The security policy exists because a real vulnerability (hardcoded Neo4j password) was once reported via a public issue since no private channel existed. At 1,270 stars with 39 API surfaces processing user documents through LLM pipelines, the project is hardening its governance before the next incident, not after.",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "grid-stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-api"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "1,270"
+      }
+    },
+    "stat-api": {
+      "type": "Stat",
+      "props": {
+        "label": "API Surfaces",
+        "value": "39"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-14.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
