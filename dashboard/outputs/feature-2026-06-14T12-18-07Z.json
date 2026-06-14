@@ -1,0 +1,296 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Feature Built: Simulation Full-Text Search"
+      },
+      "children": [
+        "heading-main",
+        "description-main",
+        "sep-1",
+        "endpoint-section",
+        "sep-2",
+        "implementation-section",
+        "sep-3",
+        "stats-grid",
+        "alert-push",
+        "branch-info"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Full-Text Search",
+        "level": "h2"
+      }
+    },
+    "description-main": {
+      "type": "Text",
+      "props": {
+        "text": "New standalone search endpoint for MiroShark. Searches both simulation titles and descriptions using case-insensitive matching, returns 120-char snippets with bold-wrapped matches, and sorts by newest first. Special characters like C++ and $MIROSHARK are handled safely via regex escaping.",
+        "variant": "body"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "endpoint-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "endpoint-heading",
+        "endpoint-code",
+        "endpoint-rationale",
+        "endpoint-features"
+      ]
+    },
+    "endpoint-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Endpoint",
+        "level": "h3"
+      }
+    },
+    "endpoint-code": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/search?q=interest+rates&limit=10",
+        "variant": "lead"
+      }
+    },
+    "endpoint-rationale": {
+      "type": "Text",
+      "props": {
+        "text": "The gallery's built-in search works great for the /explore UI, but ecosystem partners building topic dashboards need a lightweight discovery primitive.",
+        "variant": "body"
+      }
+    },
+    "endpoint-features": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "feat-4"
+      ]
+    },
+    "feat-1": {
+      "type": "Text",
+      "props": {
+        "text": "• Case-insensitive matching across titles and descriptions",
+        "variant": "caption"
+      }
+    },
+    "feat-2": {
+      "type": "Text",
+      "props": {
+        "text": "• Returns 120-char snippets with bold-wrapped matches",
+        "variant": "caption"
+      }
+    },
+    "feat-3": {
+      "type": "Text",
+      "props": {
+        "text": "• Sorts by newest first",
+        "variant": "caption"
+      }
+    },
+    "feat-4": {
+      "type": "Text",
+      "props": {
+        "text": "• Handles special characters (C++, $MIROSHARK) safely via regex escaping",
+        "variant": "caption"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "implementation-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impl-heading",
+        "impl-badges",
+        "impl-details"
+      ]
+    },
+    "impl-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Implementation",
+        "level": "h3"
+      }
+    },
+    "impl-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-search",
+        "badge-simulation",
+        "badge-stdlib",
+        "badge-mtime",
+        "badge-discovery"
+      ]
+    },
+    "badge-search": {
+      "type": "Badge",
+      "props": {
+        "text": "search_service.py",
+        "variant": "default"
+      }
+    },
+    "badge-simulation": {
+      "type": "Badge",
+      "props": {
+        "text": "simulation.py",
+        "variant": "default"
+      }
+    },
+    "badge-stdlib": {
+      "type": "Badge",
+      "props": {
+        "text": "pure-stdlib",
+        "variant": "secondary"
+      }
+    },
+    "badge-mtime": {
+      "type": "Badge",
+      "props": {
+        "text": "mtime-aware index",
+        "variant": "secondary"
+      }
+    },
+    "badge-discovery": {
+      "type": "Badge",
+      "props": {
+        "text": "type: discovery",
+        "variant": "outline"
+      }
+    },
+    "impl-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "detail-1",
+        "detail-2",
+        "detail-3",
+        "detail-4",
+        "detail-5"
+      ]
+    },
+    "detail-1": {
+      "type": "Text",
+      "props": {
+        "text": "• Index auto-rebuilds when any simulation_config.json changes on disk",
+        "variant": "caption"
+      }
+    },
+    "detail-2": {
+      "type": "Text",
+      "props": {
+        "text": "• Route validation: min 2 characters, limit clamped 1–50, 30s cache header",
+        "variant": "caption"
+      }
+    },
+    "detail-3": {
+      "type": "Text",
+      "props": {
+        "text": "• 39th catalogued surface in the API",
+        "variant": "caption"
+      }
+    },
+    "detail-4": {
+      "type": "Text",
+      "props": {
+        "text": "• Includes frontend helper and OpenAPI specification",
+        "variant": "caption"
+      }
+    },
+    "detail-5": {
+      "type": "Text",
+      "props": {
+        "text": "• 14 unit tests covering edge cases (empty queries, unpublished exclusion, etc.)",
+        "variant": "caption"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-lines",
+        "stat-files",
+        "stat-tests"
+      ]
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+712"
+      }
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Modified",
+        "value": "7"
+      }
+    },
+    "stat-tests": {
+      "type": "Stat",
+      "props": {
+        "label": "Unit Tests",
+        "value": "14"
+      }
+    },
+    "alert-push": {
+      "type": "Alert",
+      "props": {
+        "title": "Push Blocked",
+        "message": "GH_GLOBAL not set (39th consecutive blocking instance)",
+        "type": "warning"
+      }
+    },
+    "branch-info": {
+      "type": "Text",
+      "props": {
+        "text": "Branch: feat/simulation-full-text-search (ready on local build)",
+        "variant": "muted"
+      }
+    }
+  }
+}
