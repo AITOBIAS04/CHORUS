@@ -1,8 +1,12 @@
-HEARTBEAT_OK. All 9 scheduled skills for Sunday June 14 ran successfully. `fetch-tweets` remains missing but has been flagged in the previous two heartbeats — deduped per policy. No notification sent, no auto-triggers needed.
+🔴 Heartbeat — 2026-06-15
 
-## Summary
-- Checked all enabled skills in `aeon.yml` against today's workflow runs and today's log
-- Every expected skill ran: token-report, repo-pulse, repo-actions, self-improve, feature, push-recap, repo-article, skill-leaderboard, memory-flush
-- `fetch-tweets` still absent but already reported Jun 12 & 13 (48h dedup)
-- No urgent GitHub issues; stalled PRs unchanged from prior reports
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-06-14.md`
+**2 skills confirmed missing (new today):**
+- token-report — scheduled 06:00 UTC, ~14h overdue, not in workflow runs
+- weekly-shiplog — scheduled 09:00 UTC (Monday), ~11h overdue, not in workflow runs
+
+**1 skill chronically missing (deduped):**
+- fetch-tweets — missing since Jun 12 (flagged Jun 12+13, skipped again per 48h dedup)
+
+**15 stalled PRs on CHORUS** (all self-improve, #1–#15 — deduped, unchanged from prior heartbeats)
+
+**Auto-trigger:** attempted gh workflow run for token-report, weekly-shiplog, fetch-tweets → all 403 (aeon.yml has actions: read only; dispatch unavailable)

@@ -1,0 +1,283 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-06-15"
+      },
+      "children": [
+        "alert-error",
+        "sep1",
+        "section-missing-new",
+        "sep2",
+        "section-missing-chronic",
+        "sep3",
+        "section-stalled-prs"
+      ]
+    },
+    "alert-error": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "Auto-trigger failed",
+        "message": "Attempted gh workflow run for token-report, weekly-shiplog, fetch-tweets. All 403 errors: aeon.yml has actions: read only; dispatch unavailable"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-missing-new": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-missing-new",
+        "item-token-report",
+        "item-weekly-shiplog"
+      ]
+    },
+    "heading-missing-new": {
+      "type": "Heading",
+      "props": {
+        "text": "2 skills confirmed missing (new today)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "item-token-report": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "name-token-report",
+        "details-token-report"
+      ]
+    },
+    "name-token-report": {
+      "type": "Text",
+      "props": {
+        "text": "token-report",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "details-token-report": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-tr-schedule",
+        "badge-tr-overdue",
+        "badge-tr-status"
+      ]
+    },
+    "badge-tr-schedule": {
+      "type": "Badge",
+      "props": {
+        "text": "scheduled 06:00 UTC",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge-tr-overdue": {
+      "type": "Badge",
+      "props": {
+        "text": "~14h overdue",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "badge-tr-status": {
+      "type": "Badge",
+      "props": {
+        "text": "not in workflow runs",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item-weekly-shiplog": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "name-weekly-shiplog",
+        "details-weekly-shiplog"
+      ]
+    },
+    "name-weekly-shiplog": {
+      "type": "Text",
+      "props": {
+        "text": "weekly-shiplog",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "details-weekly-shiplog": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-ws-schedule",
+        "badge-ws-overdue",
+        "badge-ws-status"
+      ]
+    },
+    "badge-ws-schedule": {
+      "type": "Badge",
+      "props": {
+        "text": "scheduled 09:00 UTC (Monday)",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge-ws-overdue": {
+      "type": "Badge",
+      "props": {
+        "text": "~11h overdue",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "badge-ws-status": {
+      "type": "Badge",
+      "props": {
+        "text": "not in workflow runs",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-missing-chronic": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-missing-chronic",
+        "item-fetch-tweets"
+      ]
+    },
+    "heading-missing-chronic": {
+      "type": "Heading",
+      "props": {
+        "text": "1 skill chronically missing (deduped)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "item-fetch-tweets": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "name-fetch-tweets",
+        "details-fetch-tweets"
+      ]
+    },
+    "name-fetch-tweets": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "details-fetch-tweets": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-ft-missing-since",
+        "badge-ft-flagged",
+        "badge-ft-dedup"
+      ]
+    },
+    "badge-ft-missing-since": {
+      "type": "Badge",
+      "props": {
+        "text": "missing since Jun 12",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge-ft-flagged": {
+      "type": "Badge",
+      "props": {
+        "text": "flagged Jun 12+13",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge-ft-dedup": {
+      "type": "Badge",
+      "props": {
+        "text": "skipped again per 48h dedup",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-stalled-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-stalled-prs",
+        "text-stalled-prs-details"
+      ]
+    },
+    "heading-stalled-prs": {
+      "type": "Heading",
+      "props": {
+        "text": "15 stalled PRs on CHORUS",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-stalled-prs-details": {
+      "type": "Text",
+      "props": {
+        "text": "all self-improve, #1–#15 — deduped, unchanged from prior heartbeats",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}
