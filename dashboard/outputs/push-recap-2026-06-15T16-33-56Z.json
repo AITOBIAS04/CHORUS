@@ -1,0 +1,278 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-15"
+      },
+      "children": [
+        "summary_section",
+        "sep1",
+        "quality_section",
+        "sep2",
+        "community_section",
+        "sep3",
+        "testing_section",
+        "sep4",
+        "changes_section",
+        "sep5",
+        "stats_section",
+        "sep6",
+        "link_section"
+      ]
+    },
+    "summary_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_miroshark",
+        "badge_aeon",
+        "badge_authors"
+      ]
+    },
+    "badge_miroshark": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark — 4 commits"
+      }
+    },
+    "badge_aeon": {
+      "type": "Badge",
+      "props": {
+        "text": "miroshark-aeon — 1 commit"
+      }
+    },
+    "badge_authors": {
+      "type": "Badge",
+      "props": {
+        "text": "3 authors"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "quality_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_quality",
+        "text_quality_prs",
+        "text_quality_cleanup",
+        "text_quality_impact"
+      ]
+    },
+    "heading_quality": {
+      "type": "Heading",
+      "props": {
+        "text": "Code Quality Paydown",
+        "level": "h2"
+      }
+    },
+    "text_quality_prs": {
+      "type": "Text",
+      "props": {
+        "text": "Two back-to-back PRs (#163, #164) ran an 8-pass cleanup across 47 files and then consolidated 12 duplicate helper functions into 3 shared utility modules (timeutils, belief, base_url)."
+      }
+    },
+    "text_quality_cleanup": {
+      "type": "Text",
+      "props": {
+        "text": "Bare except blocks narrowed to specific types, dead imports purged, AI-generated comment noise removed."
+      }
+    },
+    "text_quality_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Net: the codebase has one place to fix timestamps, one place to compute belief averages, and one place to resolve public URLs — not 7-11 copies each.",
+        "variant": "lead"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "community_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_community",
+        "text_community_title",
+        "text_community_api",
+        "text_community_neo4j",
+        "text_community_contrib"
+      ]
+    },
+    "heading_community": {
+      "type": "Heading",
+      "props": {
+        "text": "Community Infra — Same-Origin API",
+        "level": "h2"
+      }
+    },
+    "text_community_title": {
+      "type": "Text",
+      "props": {
+        "text": "Daniel Andersen's PR #159 landed, replacing the hardcoded localhost:5001 API base with same-origin /api."
+      }
+    },
+    "text_community_api": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark now works behind LAN hostnames and reverse proxies out of the box."
+      }
+    },
+    "text_community_neo4j": {
+      "type": "Text",
+      "props": {
+        "text": "Neo4j bumped 5.15→5.26 for indexing reliability."
+      }
+    },
+    "text_community_contrib": {
+      "type": "Text",
+      "props": {
+        "text": "First community code contribution from dan-and.",
+        "variant": "lead"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "testing_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_tests",
+        "text_tests_demographic",
+        "text_tests_workflow"
+      ]
+    },
+    "heading_tests": {
+      "type": "Heading",
+      "props": {
+        "text": "Test & CI Hardening",
+        "level": "h2"
+      }
+    },
+    "text_tests_demographic": {
+      "type": "Text",
+      "props": {
+        "text": "Demographic-grounding tests no longer crash without LLM_API_KEY (mocked the eager client constructor)."
+      }
+    },
+    "text_tests_workflow": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon's sync-upstream workflow fixed — was failing every run because GITHUB_TOKEN can't create PRs and the unrelated-history merge pushed dead branches."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_changes",
+        "text_change_1",
+        "text_change_2",
+        "text_change_3"
+      ]
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "text_change_1": {
+      "type": "Text",
+      "props": {
+        "text": "• 3 new shared utils (timeutils.py, belief.py, base_url.py) replace 12 copy-pasted helpers across 19 service files"
+      }
+    },
+    "text_change_2": {
+      "type": "Text",
+      "props": {
+        "text": "• Vite config rewrite: dynamic env loading, Traefik DNS auto-parsing, configurable proxy target"
+      }
+    },
+    "text_change_3": {
+      "type": "Text",
+      "props": {
+        "text": "• 1,372 tests passing in any env (no API key required)"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_stats",
+        "stat_changes"
+      ]
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stat_changes": {
+      "type": "Text",
+      "props": {
+        "text": "77 files changed, +1,580/-571 lines",
+        "variant": "lead"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "link_fullrecap"
+      ]
+    },
+    "link_fullrecap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-15.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
