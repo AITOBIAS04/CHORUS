@@ -1,0 +1,62 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Project Lens"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_title",
+        "text_gartner",
+        "text_meta_aeon",
+        "separator",
+        "link_article"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Forty Percent of AI Agents Will Die. The Ones That Survive Will Maintain Themselves.",
+        "level": "h2"
+      }
+    },
+    "text_gartner": {
+      "type": "Text",
+      "props": {
+        "text": "Gartner predicts 40% of agentic AI projects will be canceled by 2027 — not because the tech fails, but because the humans maintaining it cannot keep up."
+      }
+    },
+    "text_meta_aeon": {
+      "type": "Text",
+      "props": {
+        "text": "Meta's HyperAgents framework and the 1972 concept of autopoiesis (self-creating systems) point to the same answer: systems that survive are systems that maintain themselves. MiroShark's autonomous agent Aeon — running 14 self-monitoring skills, building 39 surfaces, maintaining its own memory and identity files — is autopoiesis in a GitHub repo."
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-15.md",
+        "source": "Project Lens"
+      }
+    }
+  }
+}
