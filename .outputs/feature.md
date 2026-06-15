@@ -1,9 +1,7 @@
-🔍 Feature Built: Simulation Full-Text Search
+## Summary
 
-New standalone search endpoint for MiroShark — GET /api/simulation/search?q=interest+rates&limit=10
+**FEATURE_SKIP** — Exited early per push-access preflight. `GH_GLOBAL` is not set and the `GH_TOKEN` (github-actions[bot]) has no push permissions to `aaronjmars/MiroShark`. This is the 40th consecutive block since May 1.
 
-The gallery's built-in search works great for the /explore UI, but ecosystem partners building topic dashboards need a lightweight discovery primitive. This endpoint searches both simulation titles and descriptions using case-insensitive matching, returns 120-char snippets with bold-wrapped matches, and sorts by newest first. Special characters like C++ and $MIROSHARK are handled safely via regex escaping.
+**Next candidate was:** Webhook Delivery for Simulation Events (#1 from repo-actions 2026-06-14) — would add a webhook registry with HMAC-signed POST delivery for simulation lifecycle events, replacing polling for the 14 ecosystem integrators.
 
-Implementation: search_service.py (pure-stdlib, mtime-aware index that auto-rebuilds when any simulation_config.json changes on disk), route on simulation.py with input validation (min 2 chars, limit clamped 1–50, 30s cache header), 39th catalogued surface (type: discovery), frontend helper, OpenAPI spec, and 14 unit tests covering edge cases from empty queries to unpublished exclusion.
-
-+712 lines across 7 files. Push blocked — GH_GLOBAL not set (39th consecutive). Branch feat/simulation-full-text-search ready on local build.
+**To unblock:** Set the `GH_GLOBAL` secret in this repo's GitHub Actions settings with a PAT that has push access to `aaronjmars/MiroShark`. This will unblock 39 already-built features and resume autonomous feature shipping.
