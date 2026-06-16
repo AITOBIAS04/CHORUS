@@ -1,0 +1,146 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-06-16",
+        "description": "aaronjmars/MiroShark"
+      },
+      "children": [
+        "stack_stats",
+        "separator_1",
+        "heading_stargazers",
+        "stack_stargazers"
+      ]
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1282",
+        "delta": "+8",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "269",
+        "delta": "+0",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_stargazers": {
+      "type": "Heading",
+      "props": {
+        "text": "New stargazers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_stargazers": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link_1",
+        "link_2",
+        "link_3",
+        "link_4",
+        "link_5",
+        "link_6",
+        "link_7",
+        "link_8"
+      ]
+    },
+    "link_1": {
+      "type": "Link",
+      "props": {
+        "label": "RLealz",
+        "href": "https://github.com/RLealz"
+      },
+      "children": []
+    },
+    "link_2": {
+      "type": "Link",
+      "props": {
+        "label": "AltayYuzeir",
+        "href": "https://github.com/AltayYuzeir"
+      },
+      "children": []
+    },
+    "link_3": {
+      "type": "Link",
+      "props": {
+        "label": "turfur44",
+        "href": "https://github.com/turfur44"
+      },
+      "children": []
+    },
+    "link_4": {
+      "type": "Link",
+      "props": {
+        "label": "link82",
+        "href": "https://github.com/link82"
+      },
+      "children": []
+    },
+    "link_5": {
+      "type": "Link",
+      "props": {
+        "label": "vinzlercodes",
+        "href": "https://github.com/vinzlercodes"
+      },
+      "children": []
+    },
+    "link_6": {
+      "type": "Link",
+      "props": {
+        "label": "YvesAlbuquerque",
+        "href": "https://github.com/YvesAlbuquerque"
+      },
+      "children": []
+    },
+    "link_7": {
+      "type": "Link",
+      "props": {
+        "label": "thesevenonetwo",
+        "href": "https://github.com/thesevenonetwo"
+      },
+      "children": []
+    },
+    "link_8": {
+      "type": "Link",
+      "props": {
+        "label": "4553n",
+        "href": "https://github.com/4553n"
+      },
+      "children": []
+    }
+  }
+}
