@@ -1,12 +1,1 @@
-🔴 Heartbeat — 2026-06-15
-
-**2 skills confirmed missing (new today):**
-- token-report — scheduled 06:00 UTC, ~14h overdue, not in workflow runs
-- weekly-shiplog — scheduled 09:00 UTC (Monday), ~11h overdue, not in workflow runs
-
-**1 skill chronically missing (deduped):**
-- fetch-tweets — missing since Jun 12 (flagged Jun 12+13, skipped again per 48h dedup)
-
-**15 stalled PRs on CHORUS** (all self-improve, #1–#15 — deduped, unchanged from prior heartbeats)
-
-**Auto-trigger:** attempted gh workflow run for token-report, weekly-shiplog, fetch-tweets → all 403 (aeon.yml has actions: read only; dispatch unavailable)
+Heartbeat 2026-06-16 — one new finding: feature skill did not start today (yesterday it ran and exited early via push-access preflight; today no run at all). Auto-trigger attempted → 403 (actions: read only). Deduped: token-report still absent (flagged Jun 15), fetch-tweets chronically absent, 15 self-improve PRs stalled (#1–#15). No new action required — all chronic issues previously reported.

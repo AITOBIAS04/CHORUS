@@ -1,0 +1,96 @@
+{
+  "root": "card_heartbeat",
+  "state": {},
+  "elements": {
+    "card_heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-06-16"
+      },
+      "children": [
+        "alert_main",
+        "sep1",
+        "heading_deduped",
+        "stack_findings",
+        "sep2",
+        "text_no_action"
+      ]
+    },
+    "alert_main": {
+      "type": "Alert",
+      "props": {
+        "title": "Feature skill did not start today",
+        "message": "Yesterday it ran and exited early via push-access preflight. Auto-trigger attempted today → 403 (actions: read only).",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_deduped": {
+      "type": "Heading",
+      "props": {
+        "text": "Deduped Findings",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_findings": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_token_report",
+        "text_fetch_tweets",
+        "text_self_improve"
+      ]
+    },
+    "text_token_report": {
+      "type": "Text",
+      "props": {
+        "text": "token-report still absent (flagged Jun 15)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_fetch_tweets": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets chronically absent",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_self_improve": {
+      "type": "Text",
+      "props": {
+        "text": "15 self-improve PRs stalled (#1–#15)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text_no_action": {
+      "type": "Text",
+      "props": {
+        "text": "No new action required — all chronic issues previously reported.",
+        "variant": "muted"
+      },
+      "children": []
+    }
+  }
+}
