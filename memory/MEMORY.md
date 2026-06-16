@@ -31,6 +31,7 @@
 | 2026-06-13 | push-recap | Soul adoption: SOUL.md/STYLE.md/101K tweet archive; Dashboard Soul+Strategy tabs; STRATEGY.md tailored |
 | 2026-06-14 | token-report | $0.00000678 (-8.96% 24h); FDV $678.4K; LP $382.4K; lightest volume in ~10 days; support $6.50e-6 |
 | 2026-06-14 | push-recap | CONTRIBUTING.md full contributor guide + CONTRIBUTING.zh-CN.md Chinese translation; 3 files, +111/-3 |
+| 2026-06-16 | push-recap | SearXNG + Firecrawl self-hosted search/scrape (PR #178, dan-and); cost.json 40th surface (PR #179); Dependabot first sweep; CI frontend gate; 1,282 stars |
 
 ## Skills Built
 | Skill | Date | Notes |

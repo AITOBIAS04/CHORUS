@@ -1,0 +1,202 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-16"
+      },
+      "children": [
+        "repo-info",
+        "separator-1",
+        "pr-178-section",
+        "sep-a",
+        "pr-179-section",
+        "sep-b",
+        "ci-cd-section",
+        "separator-2",
+        "key-changes-section",
+        "separator-3",
+        "stats-and-recap-section"
+      ]
+    },
+    "repo-info": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 10 commits by 3 authors | miroshark-aeon — 3 commits (~20 cron noise filtered)",
+        "variant": "lead"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr-178-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-178-heading",
+        "pr-178-text"
+      ]
+    },
+    "pr-178-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Self-Hosted Search & Scraping (PR #178):",
+        "level": "h3"
+      }
+    },
+    "pr-178-text": {
+      "type": "Text",
+      "props": {
+        "text": "Community contributor dan-and landed SearXNG + Firecrawl integration. Any model — including local Ollama — can now ground persona research with live web results. SearXNG searches, the default LLM synthesizes. Firecrawl scrapes JS-heavy pages for URL imports. Both opt-in, both fallback-safe. Settings UI has a \"Test search\" button. New docker-compose.ollama.yml for one-command local deployment."
+      }
+    },
+    "sep-a": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr-179-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-179-heading",
+        "pr-179-text"
+      ]
+    },
+    "pr-179-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "40th Surface — Per-Sim Cost Breakdown (PR #179):",
+        "level": "h3"
+      }
+    },
+    "pr-179-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/<id>/cost.json makes the \"$1 to simulate anything\" claim queryable. Headline estimated_cost_usd + token/latency totals + per-model and per-phase breakdowns. Honest by construction: is_estimate=true, untracked models price at $0 (lower bound). Refactored run_summary.py to share event reading between the markdown report and the JSON surface."
+      }
+    },
+    "sep-b": {
+      "type": "Separator",
+      "props": {}
+    },
+    "ci-cd-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ci-cd-heading",
+        "ci-cd-text"
+      ]
+    },
+    "ci-cd-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CI/CD & Dependency Management:",
+        "level": "h3"
+      }
+    },
+    "ci-cd-text": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot configured from scratch (#166) — covers all 5 ecosystems (pip, npm ×2, Actions, Docker). First sweep landed same day: 6 version-bump PRs (#169–174). New frontend build gate (#180) catches broken UIs at PR time."
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key-changes-heading",
+        "key-change-1",
+        "key-change-2",
+        "key-change-3",
+        "key-change-4"
+      ]
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h3"
+      }
+    },
+    "key-change-1": {
+      "type": "Text",
+      "props": {
+        "text": "SearXNG client + Firecrawl scraper + 3 new test files (+1,167/-55 across 19 files)"
+      }
+    },
+    "key-change-2": {
+      "type": "Text",
+      "props": {
+        "text": "cost_service.py + run_summary refactor + 191-line test file (+699/-25 across 9 files)"
+      }
+    },
+    "key-change-3": {
+      "type": "Text",
+      "props": {
+        "text": "repo-pulse now profiles every stargazer/forker with bio/location — hides <10 follower noise"
+      }
+    },
+    "key-change-4": {
+      "type": "Text",
+      "props": {
+        "text": "Feature skill corrected: pytest is sandbox-blocked regardless of clone path"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-and-recap-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats-heading",
+        "stats-text",
+        "full-recap-link"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats:",
+        "level": "h3"
+      }
+    },
+    "stats-text": {
+      "type": "Text",
+      "props": {
+        "text": "47 files changed, +2,254/-235 lines"
+      }
+    },
+    "full-recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-16.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
