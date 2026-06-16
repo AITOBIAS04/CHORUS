@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-06-14*
-Generated from analysis of aaronjmars/MiroShark (1,270 stars, 39 surfaces, 14 ecosystem projects).
+*Repo Action Ideas — 2026-06-16*
+Generated from analysis of aaronjmars/MiroShark (1,284 stars · 14 ecosystem projects · cost.json just shipped).
 
-1. Webhook Delivery for Simulation Events (Integration, Medium)
-   Register callback URLs and receive a POST when simulations complete — turns MiroShark from a polling API into a real-time integration partner for all 14 ecosystem projects.
+1. Simulation Cost Budget & Alerts (Feature, Small)
+   Extends the new cost.json endpoint with a spending ceiling per simulation — budget bar on the watch page, graceful stop on exceeded, warning at 80%.
 
-2. Simulation Data Bundle Export (Feature, Small)
-   GET /api/simulation/{id}/bundle.zip streams all surface files (trajectory, agents, signal, confidence, mentions, stance flips, actions) as a single ZIP — the "simulation as a data artifact" for research teams and archival.
+2. Web Push Notification for Simulation Completion (Feature, Small)
+   pywebpush is already in requirements.txt (Dependabot bumped it this week) — wire the subscription UI and SimulationRunner trigger so users get a native browser notification when their sim finishes without watching the tab.
 
-3. Simulation Comparison API (Feature, Medium)
-   GET /api/simulations/compare?a={id1}&b={id2} computes confidence delta, trajectory correlation, and diverging archetypes between any two published simulations — the missing surface for parameter sweep research.
+3. Operator Usage Analytics (Feature, Medium)
+   Aggregate what's actually being simulated: top-10 topic words, most-run platforms, agent-count histogram, hourly activity distribution, most-embedded sims — new Analytics tab in the operator dashboard.
 
-4. API Rate Limiting & Usage Headers (Performance/Security, Small)
-   Pure-stdlib sliding-window rate limiter with X-RateLimit-Limit/Remaining/Reset headers on every response — the production hardening baseline for a public API with 14+ integrators.
+4. Translation Contribution Scaffold (Community, Small)
+   Directly addresses open issue #161 — a coverage API that shows per-locale translation completeness, plus a one-click export of missing keys pre-filled with English so contributors know exactly what to translate.
 
-5. 24h Activity Digest Endpoint (Feature, Small)
-   GET /api/digest.json returns a pre-aggregated daily briefing: new publications, avg confidence, direction majority, top sims — one call for newsletter bots, Discord integrations, and ecosystem dashboards.
+5. Simulation RSS Feed (Integration, Small)
+   Pure stdlib XML generation; autodiscovery link tag in index.html; every RSS reader that visits the gallery finds the feed automatically — zero-code integration for the 14 ecosystem projects.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-14.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-16.md

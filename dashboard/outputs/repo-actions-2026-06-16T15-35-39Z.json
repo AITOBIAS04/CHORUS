@@ -1,0 +1,273 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas",
+        "description": "Generated from analysis of aaronjmars/MiroShark"
+      },
+      "children": [
+        "heading_title",
+        "text_meta",
+        "sep1",
+        "stack_ideas",
+        "sep2",
+        "link_details"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Action Ideas — 2026-06-16",
+        "level": "h2"
+      }
+    },
+    "text_meta": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,284 stars · 14 ecosystem projects · cost.json just shipped)",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_ideas": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea_1",
+        "idea_2",
+        "idea_3",
+        "idea_4",
+        "idea_5"
+      ]
+    },
+    "idea_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_1_title_row",
+        "idea_1_desc"
+      ]
+    },
+    "idea_1_title_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_1_heading",
+        "idea_1_badge"
+      ]
+    },
+    "idea_1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Simulation Cost Budget & Alerts",
+        "level": "h3"
+      }
+    },
+    "idea_1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature · Small"
+      }
+    },
+    "idea_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Extends the new cost.json endpoint with a spending ceiling per simulation — budget bar on the watch page, graceful stop on exceeded, warning at 80%."
+      }
+    },
+    "idea_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_2_title_row",
+        "idea_2_desc"
+      ]
+    },
+    "idea_2_title_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_2_heading",
+        "idea_2_badge"
+      ]
+    },
+    "idea_2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Web Push Notification for Simulation Completion",
+        "level": "h3"
+      }
+    },
+    "idea_2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature · Small"
+      }
+    },
+    "idea_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "pywebpush is already in requirements.txt (Dependabot bumped it this week) — wire the subscription UI and SimulationRunner trigger so users get a native browser notification when their sim finishes without watching the tab."
+      }
+    },
+    "idea_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_3_title_row",
+        "idea_3_desc"
+      ]
+    },
+    "idea_3_title_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_3_heading",
+        "idea_3_badge"
+      ]
+    },
+    "idea_3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Operator Usage Analytics",
+        "level": "h3"
+      }
+    },
+    "idea_3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature · Medium"
+      }
+    },
+    "idea_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Aggregate what's actually being simulated: top-10 topic words, most-run platforms, agent-count histogram, hourly activity distribution, most-embedded sims — new Analytics tab in the operator dashboard."
+      }
+    },
+    "idea_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_4_title_row",
+        "idea_4_desc"
+      ]
+    },
+    "idea_4_title_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_4_heading",
+        "idea_4_badge"
+      ]
+    },
+    "idea_4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Translation Contribution Scaffold",
+        "level": "h3"
+      }
+    },
+    "idea_4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Community · Small"
+      }
+    },
+    "idea_4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Directly addresses open issue #161 — a coverage API that shows per-locale translation completeness, plus a one-click export of missing keys pre-filled with English so contributors know exactly what to translate."
+      }
+    },
+    "idea_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_5_title_row",
+        "idea_5_desc"
+      ]
+    },
+    "idea_5_title_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_5_heading",
+        "idea_5_badge"
+      ]
+    },
+    "idea_5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation RSS Feed",
+        "level": "h3"
+      }
+    },
+    "idea_5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration · Small"
+      }
+    },
+    "idea_5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pure stdlib XML generation; autodiscovery link tag in index.html; every RSS reader that visits the gallery finds the feed automatically — zero-code integration for the 14 ecosystem projects."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-16.md"
+      }
+    }
+  }
+}
