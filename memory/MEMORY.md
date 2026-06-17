@@ -57,7 +57,7 @@
 - Heartbeat misdiagnosed missing skills because it only checked aeon.yml, not messages.yml scheduler — fixed with scheduler diagnostics step
 - Feature/repo-actions skills can waste CI runs building duplicate PRs — fixed with open PR dedup checks
 - Auth credentials (ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN) can expire silently — all skills fail immediately with "Not logged in"; 15-day outage Apr 16–30 (ISS-001). Monitor consecutive_failures in cron-state.json.
-- GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 40 consecutive blocks May 1–Jun 15 (latest skip: Webhook Delivery for Simulation Events; 39 features stuck as local commits)
+- GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 41 consecutive blocks May 1–Jun 17 (latest skip: Webhook Delivery for Simulation Events; 39 features stuck as local commits)
 - Cron-state success rates can be poisoned by extended auth outages (15-day Apr 16–30 outage left 1–7% rates on all skills despite 100% health since May 1); reset counters in cron-state.json when consecutive_failures = 0 post-outage
 - Heartbeat auto-dispatch requires `actions: write` scope; aeon.yml has `actions: read` — heartbeat now checks permissions before attempting, defers to scheduler (messages.yml) on 403
 - Tweet allocator can hit bankr agent timeout (>64s polling ceiling) causing TWEET_ALLOCATOR_EMPTY drift; fix: increase iterations 8→14 and add agent-timeout status (self-improve PR #43 2026-05-20)
