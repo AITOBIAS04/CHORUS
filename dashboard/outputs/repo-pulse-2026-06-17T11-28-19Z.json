@@ -1,0 +1,283 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — aaronjmars/MiroShark",
+        "description": "2026-06-17"
+      },
+      "children": [
+        "separator-1",
+        "stats-stack",
+        "separator-2",
+        "heading-stargazers",
+        "stargazers-grid",
+        "separator-3",
+        "heading-forks",
+        "forks-stack"
+      ]
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1300",
+        "delta": "+18",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "271",
+        "delta": "+2",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "heading-stargazers": {
+      "type": "Heading",
+      "props": {
+        "text": "New Stargazers (18)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stargazers-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "link-MAY4VFX",
+        "link-danteblank",
+        "link-VanoKi",
+        "link-kyzzen",
+        "link-ashuuya",
+        "link-yuyux9",
+        "link-vladisl0th",
+        "link-Megapixar86",
+        "link-ya-developer",
+        "link-benjiworld",
+        "link-MarianQQQ",
+        "link-neomen",
+        "link-coolbix",
+        "link-kuerdy",
+        "link-kken0507",
+        "link-kontroluzmani",
+        "link-EmperorProtects",
+        "link-moneymaker-ux"
+      ]
+    },
+    "link-MAY4VFX": {
+      "type": "Link",
+      "props": {
+        "label": "MAY4VFX",
+        "href": "https://github.com/MAY4VFX"
+      },
+      "children": []
+    },
+    "link-danteblank": {
+      "type": "Link",
+      "props": {
+        "label": "danteblank",
+        "href": "https://github.com/danteblank"
+      },
+      "children": []
+    },
+    "link-VanoKi": {
+      "type": "Link",
+      "props": {
+        "label": "VanoKi",
+        "href": "https://github.com/VanoKi"
+      },
+      "children": []
+    },
+    "link-kyzzen": {
+      "type": "Link",
+      "props": {
+        "label": "kyzzen",
+        "href": "https://github.com/kyzzen"
+      },
+      "children": []
+    },
+    "link-ashuuya": {
+      "type": "Link",
+      "props": {
+        "label": "ashuuya",
+        "href": "https://github.com/ashuuya"
+      },
+      "children": []
+    },
+    "link-yuyux9": {
+      "type": "Link",
+      "props": {
+        "label": "yuyux9",
+        "href": "https://github.com/yuyux9"
+      },
+      "children": []
+    },
+    "link-vladisl0th": {
+      "type": "Link",
+      "props": {
+        "label": "vladisl0th",
+        "href": "https://github.com/vladisl0th"
+      },
+      "children": []
+    },
+    "link-Megapixar86": {
+      "type": "Link",
+      "props": {
+        "label": "Megapixar86",
+        "href": "https://github.com/Megapixar86"
+      },
+      "children": []
+    },
+    "link-ya-developer": {
+      "type": "Link",
+      "props": {
+        "label": "ya-developer",
+        "href": "https://github.com/ya-developer"
+      },
+      "children": []
+    },
+    "link-benjiworld": {
+      "type": "Link",
+      "props": {
+        "label": "benjiworld",
+        "href": "https://github.com/benjiworld"
+      },
+      "children": []
+    },
+    "link-MarianQQQ": {
+      "type": "Link",
+      "props": {
+        "label": "MarianQQQ",
+        "href": "https://github.com/MarianQQQ"
+      },
+      "children": []
+    },
+    "link-neomen": {
+      "type": "Link",
+      "props": {
+        "label": "neomen",
+        "href": "https://github.com/neomen"
+      },
+      "children": []
+    },
+    "link-coolbix": {
+      "type": "Link",
+      "props": {
+        "label": "coolbix",
+        "href": "https://github.com/coolbix"
+      },
+      "children": []
+    },
+    "link-kuerdy": {
+      "type": "Link",
+      "props": {
+        "label": "kuerdy",
+        "href": "https://github.com/kuerdy"
+      },
+      "children": []
+    },
+    "link-kken0507": {
+      "type": "Link",
+      "props": {
+        "label": "kken0507",
+        "href": "https://github.com/kken0507"
+      },
+      "children": []
+    },
+    "link-kontroluzmani": {
+      "type": "Link",
+      "props": {
+        "label": "kontroluzmani",
+        "href": "https://github.com/kontroluzmani"
+      },
+      "children": []
+    },
+    "link-EmperorProtects": {
+      "type": "Link",
+      "props": {
+        "label": "EmperorProtects",
+        "href": "https://github.com/EmperorProtects"
+      },
+      "children": []
+    },
+    "link-moneymaker-ux": {
+      "type": "Link",
+      "props": {
+        "label": "moneymaker-ux",
+        "href": "https://github.com/moneymaker-ux"
+      },
+      "children": []
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "heading-forks": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks (2)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "forks-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "fork-1",
+        "fork-2"
+      ]
+    },
+    "fork-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "samiyouhub/MiroShark",
+        "href": "https://github.com/samiyouhub/MiroShark"
+      },
+      "children": []
+    },
+    "fork-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "swapnasarit-byte/MiroShark",
+        "href": "https://github.com/swapnasarit-byte/MiroShark"
+      },
+      "children": []
+    }
+  }
+}
