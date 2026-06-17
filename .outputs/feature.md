@@ -1,7 +1,12 @@
 ## Summary
 
-**FEATURE_SKIP** — Exited early per push-access preflight. `GH_GLOBAL` is not set and the `GH_TOKEN` (github-actions[bot]) has no push permissions to `aaronjmars/MiroShark`. This is the 40th consecutive block since May 1.
+**FEATURE_SKIP** — 41st consecutive block due to missing `GH_GLOBAL` secret.
 
-**Next candidate was:** Webhook Delivery for Simulation Events (#1 from repo-actions 2026-06-14) — would add a webhook registry with HMAC-signed POST delivery for simulation lifecycle events, replacing polling for the 14 ecosystem integrators.
+- **Target repo:** aaronjmars/MiroShark
+- **Would have built:** Webhook Delivery for Simulation Events (repo-actions 2026-06-14, idea #1) — push-based integration primitive for the 14 ecosystem projects currently polling `/api/activity.json`
+- **Blocker:** `GH_TOKEN` (github-actions[bot]) has zero permissions on the watched repo. `GH_GLOBAL` PAT is required but not configured.
+- **Open PRs checked:** 1 (French README locale) — no overlap
+- **Logged to:** `memory/logs/2026-06-17.md`, `memory/MEMORY.md` block count updated
+- **Notification:** none (skip per skill rules)
 
-**To unblock:** Set the `GH_GLOBAL` secret in this repo's GitHub Actions settings with a PAT that has push access to `aaronjmars/MiroShark`. This will unblock 39 already-built features and resume autonomous feature shipping.
+To unblock: set the `GH_GLOBAL` repository secret to a PAT with `repo` scope on `aaronjmars/MiroShark`. This would unblock 39+ locally-built features and resume daily autonomous feature delivery.
