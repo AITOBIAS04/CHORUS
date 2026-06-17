@@ -1,0 +1,84 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK / MiroShark (2026-06-17)"
+      },
+      "children": [
+        "alert_api",
+        "sep1",
+        "stack_tweets"
+      ]
+    },
+    "alert_api": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "XAI_API_KEY not set — results via WebSearch. Engagement data unavailable."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_tweets": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet1",
+        "tweet2",
+        "tweet3",
+        "tweet4",
+        "tweet5"
+      ]
+    },
+    "tweet1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Official account post with external link (Jun 5)",
+        "href": "https://x.com/miroshark_/status/2062967236432674999",
+        "source": "miroshark_"
+      }
+    },
+    "tweet2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Updated roadmap: MiroShark on X + API on track this week; aeon v4 demo folded into new aeon focus",
+        "href": "https://x.com/aaronjmars/status/2057435882194424127",
+        "source": "aaronjmars"
+      }
+    },
+    "tweet3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "another mind blow moment — aeon autonomously adds new features to MiroShark daily; something unexpected happened",
+        "href": "https://x.com/aaronjmars/status/2055301173578457241",
+        "source": "aaronjmars"
+      }
+    },
+    "tweet4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Community growth play: share the GitHub repo, earn $MIROSHARK. MiroFish has 56k stars — MiroShark is easily 10x",
+        "href": "https://x.com/aaronjmars/status/2045134558186664267",
+        "source": "aaronjmars"
+      }
+    },
+    "tweet5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The knowledge graph inside MiroShark: Neo4j maps entities + relationships from any doc so agents reason from structure, not just roleplay",
+        "href": "https://x.com/aaronjmars/status/2038639003096744329",
+        "source": "aaronjmars"
+      }
+    }
+  }
+}
