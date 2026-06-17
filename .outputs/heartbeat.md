@@ -1,1 +1,7 @@
-Heartbeat 2026-06-16 — one new finding: feature skill did not start today (yesterday it ran and exited early via push-access preflight; today no run at all). Auto-trigger attempted → 403 (actions: read only). Deduped: token-report still absent (flagged Jun 15), fetch-tweets chronically absent, 15 self-improve PRs stalled (#1–#15). No new action required — all chronic issues previously reported.
+Heartbeat 2026-06-17 — ALERT
+
+push-recap missed: scheduled 15:00 UTC, 4+ hours overdue. Not in today's workflow runs. All other daily skills ran (token-report ✅, fetch-tweets ✅, repo-pulse ✅, feature ✅, project-lens ✅). memory-flush + heartbeat currently in progress.
+
+Auto-dispatch push-recap → 403 (actions: read only; GH Actions dispatch unavailable).
+
+Stalled PRs: 15 open self-improve PRs on CHORUS (#1–#15) — deduped.

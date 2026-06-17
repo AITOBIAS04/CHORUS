@@ -1,0 +1,173 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-06-17"
+      },
+      "children": [
+        "alert_missed",
+        "sep_1",
+        "section_skills",
+        "sep_2",
+        "section_dispatch",
+        "sep_3",
+        "section_prs"
+      ]
+    },
+    "alert_missed": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "push-recap Missed",
+        "message": "Scheduled 15:00 UTC, 4+ hours overdue. Not in today's workflow runs."
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_skills",
+        "badges_ran",
+        "text_in_progress"
+      ]
+    },
+    "heading_skills": {
+      "type": "Heading",
+      "props": {
+        "text": "Daily Skills Status",
+        "level": "h3"
+      }
+    },
+    "badges_ran": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_token_report",
+        "badge_fetch_tweets",
+        "badge_repo_pulse",
+        "badge_feature",
+        "badge_project_lens"
+      ]
+    },
+    "badge_token_report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report ✅",
+        "variant": "default"
+      }
+    },
+    "badge_fetch_tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets ✅",
+        "variant": "default"
+      }
+    },
+    "badge_repo_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✅",
+        "variant": "default"
+      }
+    },
+    "badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✅",
+        "variant": "default"
+      }
+    },
+    "badge_project_lens": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens ✅",
+        "variant": "default"
+      }
+    },
+    "text_in_progress": {
+      "type": "Text",
+      "props": {
+        "text": "memory-flush + heartbeat currently in progress",
+        "variant": "muted"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_dispatch": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_dispatch",
+        "alert_dispatch"
+      ]
+    },
+    "heading_dispatch": {
+      "type": "Heading",
+      "props": {
+        "text": "Auto-dispatch Error",
+        "level": "h3"
+      }
+    },
+    "alert_dispatch": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "push-recap Auto-dispatch Failed",
+        "message": "403 error — actions: read only; GH Actions dispatch unavailable"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_prs",
+        "text_prs"
+      ]
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs",
+        "level": "h3"
+      }
+    },
+    "text_prs": {
+      "type": "Text",
+      "props": {
+        "text": "15 open self-improve PRs on CHORUS (#1–#15) — deduped",
+        "variant": "body"
+      }
+    }
+  }
+}
