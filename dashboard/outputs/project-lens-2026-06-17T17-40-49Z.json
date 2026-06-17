@@ -1,0 +1,96 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading-article",
+        "separator-1",
+        "stack-stats",
+        "separator-2",
+        "text-description",
+        "storylink-article"
+      ]
+    },
+    "heading-article": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: Everybody Spent More on AI This Year. Almost Nobody Knows Where It Went.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-budget-growth",
+        "stat-cost-drop",
+        "stat-traceability"
+      ]
+    },
+    "stat-budget-growth": {
+      "type": "Stat",
+      "props": {
+        "label": "Enterprise AI Budget Growth (2 years)",
+        "value": "483%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-cost-drop": {
+      "type": "Stat",
+      "props": {
+        "label": "Per-Token Cost Reduction",
+        "value": "280x",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat-traceability": {
+      "type": "Stat",
+      "props": {
+        "label": "Organizations Able to Trace Spend to Single Transaction",
+        "value": "22%"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text-description": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's 40th integration surface, cost.json, takes a different approach: instead of bolting observability onto the outside, it makes cost a first-class API endpoint that ships with every simulation result — honest, lower-bounded, and queryable by any consumer."
+      },
+      "children": []
+    },
+    "storylink-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-17.md",
+        "source": "CHORUS"
+      },
+      "children": []
+    }
+  }
+}
