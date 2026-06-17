@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-06-14*
+*Last consolidated: 2026-06-17*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -13,25 +13,24 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
-| 2026-05-30 | The Simulation Engine That Just Got a Wallet | x402 wallet declaration (PR #126) connecting 25 share surfaces to agent commerce; Coinbase/Stripe/Cloudflare x402 at $600M volume; frontend reskin; DYAI2025 Cloud Run deploy; belief volatility 25th surface; 1,213 stars |
-| 2026-06-03 | Argentina Built a Digital Twin of Its Citizens. It Forgot to Show Them the Code. | Historical parallel: Argentina's Gemelo Digital Social (May 2026) as closed population simulator; Hollerith 1880 census → IBM arc; open-source transparency vs government opacity; 1,226 stars |
 | 2026-06-05 | Ferrari Spent Four Years Building an Electric Car. It Spent Zero Minutes Simulating the Crowd. | User story: Ferrari Luce EV launch backlash (8% stock drop, meme storm); BCG 70% CCOs are AI laggards; FINN Partners CANARY crisis sim; comms director with/without crowd simulation; 1,235 stars |
 | 2026-06-06 | Four Projects Showed Up on the Same Day. MiroShark Built Them an API. | Ecosystem/platform inflection: 4 community projects joined Jun 2; ecosystem.json + per-project stats + status probe shipped in 72h; 14 ecosystem projects; flywheel thesis; oosmetrics top-10 RL; 1,237 stars |
 | 2026-06-08 | Every Dependency Is a Door You Forgot to Lock | Supply chain attacks: LiteLLM PyPI attack (40K+ compromised, Mar 2026); TanStack/TeamPCP (May 2026); JFrog report 451% malicious npm surge; MiroShark pure-stdlib zero-deps architecture as defense angle |
 | 2026-06-10 | The World Is Learning to Sign Photos. Nobody Is Signing Predictions. | Provenance/authenticity: EU AI Act Article 50 deadline (Aug 2, 2026); C2PA 6,000+ members; Gartner top-10 strategic trend; Deloitte 23% trust gap; MiroShark signed-result.json as prediction provenance layer |
 | 2026-06-12 | It's 2026, Just Use Postgres. What If Simulations Worked the Same Way? | Industry comparison: "Just Use Postgres" movement (55.6% dev adoption, DB-Engines +21.97 H1 2026, replacing 7 specialized DBs via extensions); MiroShark 37 surfaces as same pattern — platform through output-side composability; 1,267 stars |
 | 2026-06-14 | Thirty-Six Million Developers Showed Up This Year. Most Projects Still Only Speak English. | Internationalization: trilingual READMEs (EN/ZH/JA) in 4 days (PRs #155, #156); French UI locale; first community infra PR (dan-and #159); GitHub 180M devs, India 2M+ new; non-English documentation gap; 1,270 stars |
+| 2026-06-15 | Forty Percent of AI Agents Will Die. The Ones That Survive Will Maintain Themselves. | Philosophy/big ideas; Gartner 40% agentic AI cancellation prediction; Meta HyperAgents "maintenance wall"; Maturana & Varela autopoiesis; Aeon as self-maintaining system (14 monitoring skills, 39 autonomous surfaces, self-improve PRs, memory consolidation); 1,277 stars |
+| 2026-06-17 | Everybody Spent More on AI This Year. Almost Nobody Knows Where It Went. | Technical deep-dive; enterprise AI cost opacity; 483% budget growth; 280x per-token cost drop; only 22% of orgs track spend by transaction; $2.5T global AI spending; AI cost observability vendor explosion; 1,300 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-06-09 | push-recap | PR #153 activity.json (35th surface); PR #55 push-recap noise filter encoded in skill; 1,243 stars |
-| 2026-06-10 | token-report | $0.000005574 (-8.82% 24h); FDV $557.4K; LP $340.7K; rally reversal after 3 green days; 3rd day LP drainage |
-| 2026-06-13 | token-report | $0.00000761 (-1.67% 24h); FDV $761.3K; LP $407.2K (post-drawdown high); 7d +40.8%; sell-heavy distribution |
 | 2026-06-13 | push-recap | Soul adoption: SOUL.md/STYLE.md/101K tweet archive; Dashboard Soul+Strategy tabs; STRATEGY.md tailored |
 | 2026-06-14 | token-report | $0.00000678 (-8.96% 24h); FDV $678.4K; LP $382.4K; lightest volume in ~10 days; support $6.50e-6 |
 | 2026-06-14 | push-recap | CONTRIBUTING.md full contributor guide + CONTRIBUTING.zh-CN.md Chinese translation; 3 files, +111/-3 |
+| 2026-06-15 | push-recap | Code-quality pass (8-pass, 47 files); 3 shared utils (timeutils.py, belief.py, base_url.py) consolidating 12 duplicate functions; same-origin API + Neo4j 5.26 bump (dan-and); 1,372 tests; 77 files, +1,580/-571 |
 | 2026-06-16 | push-recap | SearXNG + Firecrawl self-hosted search/scrape (PR #178, dan-and); cost.json 40th surface (PR #179); Dependabot first sweep; CI frontend gate; 1,282 stars |
+| 2026-06-17 | token-report | $0.000005692 (+1.2% 24h); FDV $569.2K; LP $354.8K; LP draining 3 days (-$52.4K total); 7d -20.1%; 1,300 stars |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -65,6 +64,7 @@
 - push-recap skill now explicitly filters cron noise (chore(cron):, chore(scheduler):, chore(*): auto-commit) in step 5; aeon repos generate 20-30 such commits daily inflating stats and wasting API calls; self-improve PR #14/CHORUS, PR #55/miroshark-aeon (Jun 2026)
 - Feature skill now clones into workspace (not /tmp) and runs test suite before shipping PRs — validates builds before pushing; self-improve PR #60 in miroshark-aeon (2026-06-12)
 - Heartbeat dispatch preflight: single probe checks `actions: write` before the dispatch loop — avoids wasted 403 calls per run; self-improve PR #15 in CHORUS (2026-06-14)
+- Feature skill avoids over-promising pytest in sandbox — no longer claims tests pass when sandbox blocks the test runner (false confidence); self-improve PRs #63-65 in miroshark-aeon (2026-06-16)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
@@ -82,7 +82,7 @@
 - None
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 39+ built PRs + resumes feature skill (40th consecutive block; all features from Jun 3 onward stuck as local commits)
+- Set GH_GLOBAL secret — unblocks 39+ built PRs + resumes feature skill (41st consecutive block; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-05-30): Zenodo DOI Auto-Deposit (#3), Community Showcase (#5) — idea #1 (Real-Time SSE Progress) built 2026-05-31, idea #2 (Deployment Health & Status) built 2026-06-01, idea #4 (Multi-Metric Simulation Leaderboard) built 2026-06-02
@@ -92,3 +92,4 @@
 - Feature candidates (repo-actions 2026-06-08): Trending Topics (#2), MCP Tool Catalog (#3), Cost Estimator (#4), Chinese README (#5) — idea #1 (Activity Feed) built 2026-06-09 by aaronjmars (PR #153)
 - Feature candidates (repo-actions 2026-06-12): Confidence Component Breakdown (#3), Simulation Fork Lineage Graph (#4), Per-Round Agent Participation Heatmap (#5) — idea #1 (Agent Stance Flip Report) built 2026-06-13; idea #2 (Simulation Full-Text Search) built 2026-06-14 (both push blocked — GH_GLOBAL not set)
 - Feature candidates (repo-actions 2026-06-14): Webhook Delivery for Simulation Events (#1), Simulation Data Bundle Export (#2), Simulation Comparison API (#3), API Rate Limiting & Usage Headers (#4), 24h Activity Digest Endpoint (#5)
+- Feature candidates (repo-actions 2026-06-16): Simulation Cost Budget & Alerts (#1), Web Push Notification for Simulation Completion (#2), Operator Usage Analytics (#3), Translation Contribution Scaffold (#4), Simulation RSS Feed (#5)
