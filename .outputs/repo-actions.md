@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-06-16*
-Generated from analysis of aaronjmars/MiroShark (1,284 stars · 14 ecosystem projects · cost.json just shipped).
+*Repo Action Ideas — 2026-06-18*
+Generated from analysis of aaronjmars/MiroShark (1,309 stars · 0 open PRs · recent: French i18n complete, cost.json shipped, Python 3.14).
 
-1. Simulation Cost Budget & Alerts (Feature, Small)
-   Extends the new cost.json endpoint with a spending ceiling per simulation — budget bar on the watch page, graceful stop on exceeded, warning at 80%.
+1. Agent Influence Leaderboard (Feature, Small)
+   GET /api/simulation/:id/influence-rank — surfaces influence_score already in agents.json; a "Key Voices" panel shows who drove the outcome.
 
-2. Web Push Notification for Simulation Completion (Feature, Small)
-   pywebpush is already in requirements.txt (Dependabot bumped it this week) — wire the subscription UI and SimulationRunner trigger so users get a native browser notification when their sim finishes without watching the tab.
+2. Simulation Time-to-Complete Estimator (Feature, Small)
+   GET /api/estimate?agents=N&rounds=N — pre-run duration + cost estimate from historical medians; closes the loop on the "$1 & <10 min" homepage promise.
 
-3. Operator Usage Analytics (Feature, Medium)
-   Aggregate what's actually being simulated: top-10 topic words, most-run platforms, agent-count histogram, hourly activity distribution, most-embedded sims — new Analytics tab in the operator dashboard.
+3. Simulation Replay Stepper (Feature, Medium)
+   A play/pause/scrub control on the watch page steps through trajectory.json round by round, animating BeliefDriftChart — no new backend endpoints, pure composable.
 
-4. Translation Contribution Scaffold (Community, Small)
-   Directly addresses open issue #161 — a coverage API that shows per-locale translation completeness, plus a one-click export of missing keys pre-filled with English so contributors know exactly what to translate.
+4. Per-Round Cost Curve (Feature, Small)
+   GET /api/simulation/:id/cost/rounds — extends the cost.json surface to show per-round spend accumulation; operators can tune high-cost rounds before committing to a full run.
 
-5. Simulation RSS Feed (Integration, Small)
-   Pure stdlib XML generation; autodiscovery link tag in index.html; every RSS reader that visits the gallery finds the feed automatically — zero-code integration for the 14 ecosystem projects.
+5. Topic Trend Tracker (Feature, Small)
+   GET /api/topics/trends — weekly keyword frequency across published simulations, sparkline chips in ExploreView "Trending" tab; 14 ecosystem partners get a rising-topics signal without scanning individual sims.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-16.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-18.md

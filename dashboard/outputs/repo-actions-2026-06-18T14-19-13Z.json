@@ -1,0 +1,320 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-06-18"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_context",
+        "sep_1",
+        "stack_ideas",
+        "sep_2",
+        "story_link"
+      ]
+    },
+    "text_context": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,309 stars · 0 open PRs · recent: French i18n complete, cost.json shipped, Python 3.14).",
+        "variant": "caption"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_ideas": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "idea_1",
+        "idea_2",
+        "idea_3",
+        "idea_4",
+        "idea_5"
+      ]
+    },
+    "idea_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_1",
+        "badges_1",
+        "text_1"
+      ]
+    },
+    "heading_1": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Influence Leaderboard",
+        "level": "h3"
+      }
+    },
+    "badges_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1_type",
+        "badge_1_size"
+      ]
+    },
+    "badge_1_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_1_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_1": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/influence-rank — surfaces influence_score already in agents.json; a \"Key Voices\" panel shows who drove the outcome."
+      }
+    },
+    "idea_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_2",
+        "badges_2",
+        "text_2"
+      ]
+    },
+    "heading_2": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Time-to-Complete Estimator",
+        "level": "h3"
+      }
+    },
+    "badges_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2_type",
+        "badge_2_size"
+      ]
+    },
+    "badge_2_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_2_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_2": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/estimate?agents=N&rounds=N — pre-run duration + cost estimate from historical medians; closes the loop on the \"$1 & <10 min\" homepage promise."
+      }
+    },
+    "idea_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_3",
+        "badges_3",
+        "text_3"
+      ]
+    },
+    "heading_3": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Replay Stepper",
+        "level": "h3"
+      }
+    },
+    "badges_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3_type",
+        "badge_3_size"
+      ]
+    },
+    "badge_3_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_3_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "text_3": {
+      "type": "Text",
+      "props": {
+        "text": "A play/pause/scrub control on the watch page steps through trajectory.json round by round, animating BeliefDriftChart — no new backend endpoints, pure composable."
+      }
+    },
+    "idea_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_4",
+        "badges_4",
+        "text_4"
+      ]
+    },
+    "heading_4": {
+      "type": "Heading",
+      "props": {
+        "text": "Per-Round Cost Curve",
+        "level": "h3"
+      }
+    },
+    "badges_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4_type",
+        "badge_4_size"
+      ]
+    },
+    "badge_4_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_4_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_4": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/cost/rounds — extends the cost.json surface to show per-round spend accumulation; operators can tune high-cost rounds before committing to a full run."
+      }
+    },
+    "idea_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_5",
+        "badges_5",
+        "text_5"
+      ]
+    },
+    "heading_5": {
+      "type": "Heading",
+      "props": {
+        "text": "Topic Trend Tracker",
+        "level": "h3"
+      }
+    },
+    "badges_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5_type",
+        "badge_5_size"
+      ]
+    },
+    "badge_5_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_5_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_5": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/topics/trends — weekly keyword frequency across published simulations, sparkline chips in ExploreView \"Trending\" tab; 14 ecosystem partners get a rising-topics signal without scanning individual sims."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-18.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
