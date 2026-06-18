@@ -21,6 +21,7 @@
 | 2026-06-14 | Thirty-Six Million Developers Showed Up This Year. Most Projects Still Only Speak English. | Internationalization: trilingual READMEs (EN/ZH/JA) in 4 days (PRs #155, #156); French UI locale; first community infra PR (dan-and #159); GitHub 180M devs, India 2M+ new; non-English documentation gap; 1,270 stars |
 | 2026-06-15 | Forty Percent of AI Agents Will Die. The Ones That Survive Will Maintain Themselves. | Philosophy/big ideas; Gartner 40% agentic AI cancellation prediction; Meta HyperAgents "maintenance wall"; Maturana & Varela autopoiesis; Aeon as self-maintaining system (14 monitoring skills, 39 autonomous surfaces, self-improve PRs, memory consolidation); 1,277 stars |
 | 2026-06-17 | Everybody Spent More on AI This Year. Almost Nobody Knows Where It Went. | Technical deep-dive; enterprise AI cost opacity; 483% budget growth; 280x per-token cost drop; only 22% of orgs track spend by transaction; $2.5T global AI spending; AI cost observability vendor explosion; 1,300 stars |
+| 2026-06-18 | Fifty-Two Million Downloads Chose to Run AI Locally. Most Tools Didn't Build for Them. | Model portability/vendor independence; SearXNG+Firecrawl PR #178 (dan-and); 52M Ollama downloads; 81% enterprises multi-model; orchestration lock-in fastest-growing AI risk; cost.json 40th surface; French i18n complete; 1,311 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |

@@ -1,0 +1,42 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading",
+        "text",
+        "link"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fifty-Two Million Downloads Chose to Run AI Locally. Most Tools Didn't Build for Them.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text": {
+      "type": "Text",
+      "props": {
+        "text": "Ollama hit 52M monthly downloads. 81% of enterprises run 3+ AI models. But most tools still hardcode cloud dependencies. MiroShark just closed the last gap — a community-contributed SearXNG + Firecrawl integration means any model, including local Ollama, can now ground agents with live web research at zero API cost.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Fifty-Two Million Downloads Chose to Run AI Locally. Most Tools Didn't Build for Them.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-18.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
