@@ -1,0 +1,211 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — aaronjmars/MiroShark"
+      },
+      "children": [
+        "date-text",
+        "stats-stack",
+        "sep1",
+        "stargazers-section",
+        "sep2",
+        "forks-section"
+      ]
+    },
+    "date-text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-06-18",
+        "variant": "caption"
+      }
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1308",
+        "delta": "+10",
+        "trend": "up"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "272",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stargazers-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-stargazers",
+        "stargazers-stack"
+      ]
+    },
+    "heading-stargazers": {
+      "type": "Heading",
+      "props": {
+        "text": "New Stargazers",
+        "level": "h3"
+      }
+    },
+    "stargazers-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-EmperorProtects",
+        "link-moneymaker-ux",
+        "link-Nick-007",
+        "link-santipongth",
+        "link-mingrath",
+        "link-AgentScienceandResearch",
+        "link-Mr8888a998",
+        "link-Yanking1202",
+        "link-mondacode",
+        "link-islom-sattorov"
+      ]
+    },
+    "link-EmperorProtects": {
+      "type": "Link",
+      "props": {
+        "label": "EmperorProtects",
+        "href": "https://github.com/EmperorProtects"
+      }
+    },
+    "link-moneymaker-ux": {
+      "type": "Link",
+      "props": {
+        "label": "moneymaker-ux",
+        "href": "https://github.com/moneymaker-ux"
+      }
+    },
+    "link-Nick-007": {
+      "type": "Link",
+      "props": {
+        "label": "Nick-007",
+        "href": "https://github.com/Nick-007"
+      }
+    },
+    "link-santipongth": {
+      "type": "Link",
+      "props": {
+        "label": "santipongth",
+        "href": "https://github.com/santipongth"
+      }
+    },
+    "link-mingrath": {
+      "type": "Link",
+      "props": {
+        "label": "mingrath",
+        "href": "https://github.com/mingrath"
+      }
+    },
+    "link-AgentScienceandResearch": {
+      "type": "Link",
+      "props": {
+        "label": "AgentScienceandResearch",
+        "href": "https://github.com/AgentScienceandResearch"
+      }
+    },
+    "link-Mr8888a998": {
+      "type": "Link",
+      "props": {
+        "label": "Mr8888a998",
+        "href": "https://github.com/Mr8888a998"
+      }
+    },
+    "link-Yanking1202": {
+      "type": "Link",
+      "props": {
+        "label": "Yanking1202",
+        "href": "https://github.com/Yanking1202"
+      }
+    },
+    "link-mondacode": {
+      "type": "Link",
+      "props": {
+        "label": "mondacode",
+        "href": "https://github.com/mondacode"
+      }
+    },
+    "link-islom-sattorov": {
+      "type": "Link",
+      "props": {
+        "label": "islom-sattorov",
+        "href": "https://github.com/islom-sattorov"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "forks-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-forks",
+        "forks-stack"
+      ]
+    },
+    "heading-forks": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks",
+        "level": "h3"
+      }
+    },
+    "forks-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink-fork"
+      ]
+    },
+    "storylink-fork": {
+      "type": "StoryLink",
+      "props": {
+        "title": "RootLayer-Labs/MiroShark",
+        "href": "https://github.com/RootLayer-Labs/MiroShark",
+        "source": "GitHub"
+      }
+    }
+  }
+}
