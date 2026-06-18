@@ -1,7 +1,11 @@
-Heartbeat 2026-06-17 — ALERT
+HEARTBEAT_ALERT — 2026-06-18 19:00 UTC
 
-push-recap missed: scheduled 15:00 UTC, 4+ hours overdue. Not in today's workflow runs. All other daily skills ran (token-report ✅, fetch-tweets ✅, repo-pulse ✅, feature ✅, project-lens ✅). memory-flush + heartbeat currently in progress.
+Missing skill detected:
+- **feature** (scheduled 11:00 UTC daily) — not in today's workflow runs, 8h overdue. Dispatch attempted → 403 (actions: read scope only; known limitation). No auto-trigger possible.
 
-Auto-dispatch push-recap → 403 (actions: read only; GH Actions dispatch unavailable).
+Deduped (already reported Jun 17):
+- push-recap (still missing, same 403 block)
 
-Stalled PRs: 15 open self-improve PRs on CHORUS (#1–#15) — deduped.
+Stalled PRs: 16 open self-improve PRs (#1–#16) — no change from yesterday.
+
+All other enabled skills ran cleanly: token-report ✅ fetch-tweets ✅ repo-pulse ✅ self-improve ✅ repo-actions ✅ repo-article ✅

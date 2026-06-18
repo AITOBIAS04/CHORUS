@@ -1,0 +1,173 @@
+{
+  "root": "card_heartbeat",
+  "state": {},
+  "elements": {
+    "card_heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "HEARTBEAT_ALERT",
+        "description": "2026-06-18 19:00 UTC"
+      },
+      "children": [
+        "alert_missing",
+        "separator1",
+        "section_deduped",
+        "separator2",
+        "section_stalled",
+        "separator3",
+        "section_healthy"
+      ]
+    },
+    "alert_missing": {
+      "type": "Alert",
+      "props": {
+        "title": "Missing skill detected",
+        "message": "feature (scheduled 11:00 UTC daily) — not in today's workflow runs, 8h overdue. Dispatch attempted → 403 (actions: read scope only; known limitation). No auto-trigger possible.",
+        "type": "error"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_deduped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_deduped",
+        "text_deduped"
+      ]
+    },
+    "heading_deduped": {
+      "type": "Heading",
+      "props": {
+        "text": "Deduped (already reported Jun 17)",
+        "level": "h4"
+      }
+    },
+    "text_deduped": {
+      "type": "Text",
+      "props": {
+        "text": "push-recap (still missing, same 403 block)",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_stalled": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stalled",
+        "text_stalled_detail"
+      ]
+    },
+    "stat_stalled": {
+      "type": "Stat",
+      "props": {
+        "label": "Open self-improve PRs",
+        "value": "16"
+      }
+    },
+    "text_stalled_detail": {
+      "type": "Text",
+      "props": {
+        "text": "#1–#16 (no change from yesterday)",
+        "variant": "caption"
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_healthy": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_healthy",
+        "stack_badges"
+      ]
+    },
+    "heading_healthy": {
+      "type": "Heading",
+      "props": {
+        "text": "All other enabled skills ran cleanly",
+        "level": "h4"
+      }
+    },
+    "stack_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_token_report",
+        "badge_fetch_tweets",
+        "badge_repo_pulse",
+        "badge_self_improve",
+        "badge_repo_actions",
+        "badge_repo_article"
+      ]
+    },
+    "badge_token_report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report ✅",
+        "variant": "default"
+      }
+    },
+    "badge_fetch_tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets ✅",
+        "variant": "default"
+      }
+    },
+    "badge_repo_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✅",
+        "variant": "default"
+      }
+    },
+    "badge_self_improve": {
+      "type": "Badge",
+      "props": {
+        "text": "self-improve ✅",
+        "variant": "default"
+      }
+    },
+    "badge_repo_actions": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-actions ✅",
+        "variant": "default"
+      }
+    },
+    "badge_repo_article": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article ✅",
+        "variant": "default"
+      }
+    }
+  }
+}
