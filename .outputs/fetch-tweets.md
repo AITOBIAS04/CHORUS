@@ -1,18 +1,21 @@
-*Top Tweets — MIROSHARK / MiroShark (2026-06-17)*
+*Top Tweets — MIROSHARK crypto token on Base chain AND github.com/aaronjmars/MiroShark (2026-06-18)*
 
-_XAI\_API\_KEY not set — results via WebSearch. Engagement data unavailable._
+1. x.com/miroshark_ — MiroShark just hit top 10 in Reinforcement Learning on oosmetrics
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/miroshark_/status/2053611376703131963)
 
-1\. x\.com/miroshark\_ — Official account post with external link \(Jun 5\)
-[View tweet](https://x.com/miroshark_/status/2062967236432674999)
+2. x.com/aaronjmars — MiroShark just built the simulation engine that MiroFish promised
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/aaronjmars/status/2037582921947574759)
 
-2\. x\.com/aaronjmars — Updated roadmap: MiroShark on X \+ API on track this week; aeon v4 demo folded into new aeon focus
-[View tweet](https://x.com/aaronjmars/status/2057435882194424127)
+3. x.com/aaronjmars — Daily updates: Wonderwall/Polymarket integration — agents now create and trade on Polymarket alongside Twitter and Reddit sims
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/aaronjmars/status/2037281730315661407)
 
-3\. x\.com/aaronjmars — "another mind blow moment" — aeon autonomously adds new features to MiroShark daily; something unexpected happened
-[View tweet](https://x.com/aaronjmars/status/2055301173578457241)
+4. x.com/BioStone_chad — DEV confirms roadmap; $Miroshark on Base 70k MC — upgraded swarm AI using fees for ads, burns, coordination
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/BioStone_chad/status/2036824963689411046)
 
-4\. x\.com/aaronjmars — Community growth play: share the GitHub repo, earn $MIROSHARK\. "MiroFish has 56k stars — MiroShark is easily 10x"
-[View tweet](https://x.com/aaronjmars/status/2045134558186664267)
-
-5\. x\.com/aaronjmars — The knowledge graph inside MiroShark: Neo4j maps entities \+ relationships from any doc so agents reason from structure, not just roleplay
-[View tweet](https://x.com/aaronjmars/status/2038639003096744329)
+5. x.com/BranaRakic — DKG V9 + MiroShark simulating the future
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/BranaRakic/status/2036747635751633047)
