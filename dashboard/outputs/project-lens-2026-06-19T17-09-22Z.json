@@ -1,0 +1,33 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "story_link",
+        "text_body"
+      ]
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Eighty-Eight Percent of AI Agents Never Ship. The Survivors Have Fewer Dependencies, Not More.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-19.md",
+        "source": "project-lens"
+      },
+      "children": []
+    },
+    "text_body": {
+      "type": "Text",
+      "props": {
+        "text": "88% of AI agent projects fail before production — and the industry response has been to adopt more frameworks. Datadog reports framework adoption nearly doubled YoY. But the failure data tells a different story: operational complexity, not missing abstractions, is the primary barrier. MiroShark runs 40 API surfaces and hundreds of concurrent agents with zero framework dependencies — just Flask, the OpenAI SDK, and pure-stdlib Python. The projects that survive tend to be the ones that kept their dependency surface small enough to understand completely.",
+        "variant": "body"
+      },
+      "children": []
+    }
+  }
+}
