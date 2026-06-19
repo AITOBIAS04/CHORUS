@@ -1,0 +1,186 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MiroShark",
+        "description": "MIROSHARK crypto token on Base chain (2026-06-19)"
+      },
+      "children": [
+        "content_stack"
+      ]
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "github_link",
+        "sep1",
+        "tweets_stack"
+      ]
+    },
+    "github_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "MiroShark Repository",
+        "href": "https://github.com/aaronjmars/MiroShark",
+        "source": "GitHub"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "tweets_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet1",
+        "tweet2",
+        "tweet3",
+        "tweet4",
+        "tweet5"
+      ]
+    },
+    "tweet1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet1_card",
+        "tweet1_link"
+      ]
+    },
+    "tweet1_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "@aaronjmars",
+        "text": "Built a sanitized version of MiroFish called MiroShark — English fork with improved sim flow, local-first Neo4j, any OpenAI-compatible API; hit 285 stars + 47 forks in first 7 days"
+      }
+    },
+    "tweet1_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2035881020302430571"
+      }
+    },
+    "tweet2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet2_card",
+        "tweet2_link"
+      ]
+    },
+    "tweet2_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "@aaronjmars",
+        "text": "We're building the craziest simulation framework for AI with MiroShark — upload context → Reddit+X+Polymarket sim → agents post, trade, retweet → global report"
+      }
+    },
+    "tweet2_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2036175623622660114"
+      }
+    },
+    "tweet3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet3_card",
+        "tweet3_link"
+      ]
+    },
+    "tweet3_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "@aaronjmars",
+        "text": "Roadmap thread: MiroShark + Aeon tokenized on bankrbot; MiroShark = universal swarm engine; Aeon = framework that makes software autonomous & alive on GitHub"
+      }
+    },
+    "tweet3_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2036818584937095581"
+      }
+    },
+    "tweet4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet4_card",
+        "tweet4_link"
+      ]
+    },
+    "tweet4_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "anger_trading",
+        "handle": "@anger_trading",
+        "text": "$miroshark — trading signal / community mention"
+      }
+    },
+    "tweet4_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/anger_trading/status/2041985239858475105"
+      }
+    },
+    "tweet5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet5_card",
+        "tweet5_link"
+      ]
+    },
+    "tweet5_card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "JMania402",
+        "handle": "@JMania402",
+        "text": "$MIROSHARK 0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3 This one pump so hard 👀 — contract call-out with bullish price action note"
+      }
+    },
+    "tweet5_link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/JMania402/status/2036486940313493591"
+      }
+    }
+  }
+}
