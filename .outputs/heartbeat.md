@@ -1,11 +1,7 @@
-HEARTBEAT_ALERT — 2026-06-18 19:00 UTC
+HEARTBEAT_OK. All five enabled skills for Friday ran successfully (token-report, fetch-tweets, repo-pulse, feature, project-lens). The recurring push-recap miss and 16 stalled self-improve PRs were deduped — both flagged in yesterday's heartbeat. No new issues, no notifications sent, log updated.
 
-Missing skill detected:
-- **feature** (scheduled 11:00 UTC daily) — not in today's workflow runs, 8h overdue. Dispatch attempted → 403 (actions: read scope only; known limitation). No auto-trigger possible.
-
-Deduped (already reported Jun 17):
-- push-recap (still missing, same 403 block)
-
-Stalled PRs: 16 open self-improve PRs (#1–#16) — no change from yesterday.
-
-All other enabled skills ran cleanly: token-report ✅ fetch-tweets ✅ repo-pulse ✅ self-improve ✅ repo-actions ✅ repo-article ✅
+## Summary
+- **Checked:** 5 daily/weekly skills expected today (Friday) — all completed
+- **Deduped:** push-recap (missing, ongoing), 16 stalled self-improve PRs — both reported <48h ago
+- **No auto-triggers needed** — nothing new to dispatch
+- **Logged:** `memory/logs/2026-06-19.md`
