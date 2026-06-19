@@ -1,0 +1,205 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-06-19",
+        "description": "aaronjmars/MiroShark"
+      },
+      "children": [
+        "repo-stats",
+        "separator-1",
+        "stargazers-section",
+        "separator-2",
+        "forks-section"
+      ]
+    },
+    "repo-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1314",
+        "delta": "+6",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "275",
+        "delta": "+3",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stargazers-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stargazers-heading",
+        "stargazers-list"
+      ]
+    },
+    "stargazers-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Stargazers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stargazers-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-xau-stu",
+        "link-ma22de",
+        "link-drshutkot",
+        "link-hellosimplerick",
+        "link-deepmindru-afk",
+        "link-kevinpinscoe"
+      ]
+    },
+    "link-xau-stu": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/XAU-STU",
+        "href": "https://github.com/XAU-STU"
+      },
+      "children": []
+    },
+    "link-ma22de": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/MA22DE",
+        "href": "https://github.com/MA22DE"
+      },
+      "children": []
+    },
+    "link-drshutkot": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/DrShutkot",
+        "href": "https://github.com/DrShutkot"
+      },
+      "children": []
+    },
+    "link-hellosimplerick": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/hellosimplerick",
+        "href": "https://github.com/hellosimplerick"
+      },
+      "children": []
+    },
+    "link-deepmindru-afk": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/deepmindru-afk",
+        "href": "https://github.com/deepmindru-afk"
+      },
+      "children": []
+    },
+    "link-kevinpinscoe": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/kevinpinscoe",
+        "href": "https://github.com/kevinpinscoe"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "forks-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "forks-heading",
+        "forks-list"
+      ]
+    },
+    "forks-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "forks-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink-fork-1",
+        "storylink-fork-2",
+        "storylink-fork-3"
+      ]
+    },
+    "storylink-fork-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "jonnydubowsky/MiroShark",
+        "href": "https://github.com/jonnydubowsky/MiroShark",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "storylink-fork-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "hellosimplerick/MiroShark",
+        "href": "https://github.com/hellosimplerick/MiroShark",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "storylink-fork-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "deepmindru-afk/MiroShark",
+        "href": "https://github.com/deepmindru-afk/MiroShark",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
