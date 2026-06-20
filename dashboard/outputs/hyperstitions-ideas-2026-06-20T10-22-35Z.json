@@ -1,0 +1,291 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-06-20"
+      },
+      "children": [
+        "heading_idea",
+        "stack_metrics",
+        "progress_stars",
+        "separator1",
+        "section_coordination",
+        "separator2",
+        "section_why_now",
+        "separator3",
+        "section_resolution",
+        "separator4",
+        "section_scores",
+        "section_hyperstitions"
+      ]
+    },
+    "heading_idea": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark reach 1,500 GitHub stars by July 15, 2026?",
+        "level": "h2"
+      }
+    },
+    "stack_metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_current",
+        "stat_target",
+        "stat_gap"
+      ]
+    },
+    "stat_current": {
+      "type": "Stat",
+      "props": {
+        "label": "Current Stars",
+        "value": "1,314"
+      }
+    },
+    "stat_target": {
+      "type": "Stat",
+      "props": {
+        "label": "Target",
+        "value": "1,500"
+      }
+    },
+    "stat_gap": {
+      "type": "Stat",
+      "props": {
+        "label": "Gap",
+        "value": "186"
+      }
+    },
+    "progress_stars": {
+      "type": "Progress",
+      "props": {
+        "value": 1314,
+        "max": 1500,
+        "label": "Progress to Target (25 days, 6-18 stars/day)"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_coord",
+        "text_coord"
+      ]
+    },
+    "heading_coord": {
+      "type": "Heading",
+      "props": {
+        "text": "The coordination play",
+        "level": "h3"
+      }
+    },
+    "text_coord": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark just got featured by a GitHub Trending aggregator account — the first time a bot with reach has surfaced the project organically. Stars are at 1,314. The gap is 186 in 25 days. That is achievable at current rates (6-18/day), but only if the community pushes this visibility window: share on dev forums, post to HN and Reddit, tag in newsletters, write about the simulation engine on Dev.to and Chinese platforms. An AI agent can write the articles, but it cannot share them where humans gather. The market makes the ask concrete — every share is a bet.",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_why_now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_why",
+        "text_why",
+        "grid_project_stats"
+      ]
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h3"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "@github_repo featured MiroShark today with a full description of the multi-agent simulation engine. The signal is there — what is missing is distribution, which only humans can do.",
+        "variant": "body"
+      }
+    },
+    "grid_project_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_forks",
+        "stat_api_surfaces",
+        "stat_articles"
+      ]
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "275"
+      }
+    },
+    "stat_api_surfaces": {
+      "type": "Stat",
+      "props": {
+        "label": "API Surfaces",
+        "value": "40"
+      }
+    },
+    "stat_articles": {
+      "type": "Stat",
+      "props": {
+        "label": "Articles (3 weeks)",
+        "value": "10"
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_resolution",
+        "text_resolution",
+        "link_api"
+      ]
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "YES if the GitHub API returns stargazers_count >= 1500 for aaronjmars/MiroShark on or before July 15, 2026 (23:59 UTC). Verified via:",
+        "variant": "body"
+      }
+    },
+    "link_api": {
+      "type": "Link",
+      "props": {
+        "label": "https://api.github.com/repos/aaronjmars/MiroShark",
+        "href": "https://api.github.com/repos/aaronjmars/MiroShark"
+      }
+    },
+    "separator4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_scores",
+        "grid_scores"
+      ]
+    },
+    "heading_scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "grid_scores": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "badge_reflexivity",
+        "badge_viral"
+      ]
+    },
+    "badge_reflexivity": {
+      "type": "Badge",
+      "props": {
+        "text": "Reflexivity 4/5",
+        "variant": "default"
+      }
+    },
+    "badge_viral": {
+      "type": "Badge",
+      "props": {
+        "text": "Viral 4/5",
+        "variant": "default"
+      }
+    },
+    "section_hyperstitions": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_soon",
+        "link_hyperstitions",
+        "text_question"
+      ]
+    },
+    "text_soon": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on",
+        "variant": "muted"
+      }
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "https://www.hyperstitions.com/",
+        "href": "https://www.hyperstitions.com/"
+      }
+    },
+    "text_question": {
+      "type": "Text",
+      "props": {
+        "text": "?",
+        "variant": "muted"
+      }
+    }
+  }
+}

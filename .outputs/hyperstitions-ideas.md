@@ -1,12 +1,12 @@
-*Hyperstitions Idea — 2026-06-13*
+*Hyperstitions Idea — 2026-06-20*
 
-"Will a community contributor build and merge a new MiroShark surface by July 15, 2026?"
+"Will MiroShark reach 1,500 GitHub stars by July 15, 2026?"
 
-The coordination play: An autonomous agent built all 37 of MiroShark's integration surfaces — analytics, visualizations, exports, embeds. Every one was written by AI. The architecture is fully documented: pure-stdlib service, route, frontend component, tests, catalog entry. Same pattern, 37 times. The question challenges the community: if an AI can ship a surface per day, can a human ship one in a month? Anyone with Python or Vue experience can study an existing surface, pick an uncovered angle, and submit a PR. The market reframes contribution as a race with a visible finish line.
+The coordination play: MiroShark just got featured by a GitHub Trending aggregator account — the first time a bot with reach has surfaced the project organically. Stars are at 1,314. The gap is 186 in 25 days. That is achievable at current rates (6-18/day), but only if the community pushes this visibility window: share on dev forums, post to HN and Reddit, tag in newsletters, write about the simulation engine on Dev.to and Chinese platforms. An AI agent can write the articles, but it cannot share them where humans gather. The market makes the ask concrete — every share is a bet.
 
-Why now: The surfaces catalog hit 37 with server-side type-filtering shipped yesterday (PR #157), making the architecture more legible to outsiders. The "Just Use Postgres" article drew the platform comparison — surfaces as the extension model. Japanese README shipped this week (3rd root-level language). miroshark-aeon rebuilt on upstream template. The barrier to contribution has never been lower.
+Why now: @github_repo featured MiroShark today with a full description of the multi-agent simulation engine. 275 forks already exist. 40 API surfaces are live. The project has shipped 10 articles in 3 weeks. The signal is there — what is missing is distribution, which only humans can do.
 
-Resolution: YES if a pull request is merged into aaronjmars/MiroShark main by July 15, 2026 that adds at least one new entry to surfaces_catalog.py, authored by someone outside the core team (not aaronjmars or aeonframework). Verified via GitHub PR author + git log.
+Resolution: YES if the GitHub API returns stargazers_count >= 1500 for aaronjmars/MiroShark on or before July 15, 2026 (23:59 UTC). Verified via https://api.github.com/repos/aaronjmars/MiroShark.
 
 Scores: Reflexivity 4/5 | Viral 4/5
 
