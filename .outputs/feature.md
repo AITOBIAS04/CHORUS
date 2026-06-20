@@ -1,7 +1,21 @@
-## Summary
+*Feature Built — 2026-06-20*
 
-**FEATURE_SKIP** — 42nd consecutive block. GH_GLOBAL secret is not set in the CHORUS repo, so there's no push access to `aaronjmars/MiroShark` (confirmed: `push: false`). Exited early per the push-access preflight to avoid wasting compute.
+Pre-Run Time & Cost Estimate
+MiroShark simulations now show a data-driven estimate of how long they'll take and what they'll cost before you hit Start. Instead of the old naive formula (rounds × agents × constant), the setup form now queries historical data from every completed public simulation on the deployment and returns a median-based prediction with a confidence indicator.
 
-**Would have built:** Agent Influence Leaderboard (repo-actions 2026-06-18, idea #1) — surfaces the existing `influence_score` from `agents.json` via `GET /api/simulation/:id/influence-rank` + a "Key Voices" UI panel with gold/silver/bronze rank badges. No overlap with the 3 current open PRs.
+Why this matters:
+MiroShark's homepage promises 'for $1 & less than 10 min' — but until now there was no way to verify that promise before committing to a run. Users submitted configurations blind, not knowing if they'd wait 2 minutes or 20, or spend $0.20 or $2.00. The cost.json surface shipped in PR #179 made post-run cost visible; this feature closes the loop by making pre-run cost and duration predictable. Triggered by repo-actions idea #2 from 2026-06-18.
 
-**To unblock:** Set the `GH_GLOBAL` secret in CHORUS repo settings to a personal access token with push access to `aaronjmars/MiroShark`. This would also unblock 39+ features that were built as local commits since June 3.
+What was built:
+- backend/app/services/estimate_service.py: Pure-stdlib service (266 LoC) that scans all completed public sim directories, reads run_state.json (started_at/completed_at for duration) and cost.json (estimated_cost_usd), builds a reference index cached to estimate_index.json with 15-minute mtime invalidation. Bucketing: agent count within ±30% and round count within ±1.
+- backend/app/api/estimate.py: New GET /api/estimate?agents=N&rounds=N&platforms=P endpoint (102 LoC). Public/keyless (added to auth exemption list). Validates agents 1-200, rounds 1-500. Returns 15-minute cached response.
+- backend/tests/test_unit_estimate.py: 10 unit tests covering all confidence tiers, median computation (odd/even), null cost handling, private/incomplete sim filtering, and empty-directory edge cases.
+- frontend/src/components/Step2EnvSetup.vue: Step 05 (Preparation Complete) now fetches the estimate with 500ms debounce when rounds or agent count changes. Shows "~N min · ~$X.XX" with a confidence dot (green = high confidence from 5+ similar sims, yellow = medium from 2-4, gray = low using global median). Falls back to the old naive formula when confidence is "unavailable" (fresh install with no history).
+
+How it works:
+The estimate service scans every sim directory under WONDERWALL_SIMULATION_DATA_DIR. For each completed public sim, it extracts duration (from run_state.json timestamps), agent count (from simulation_config.json agent_configs), round count, platform count, and cost (from cost.json if present). This builds an index that's cached to disk for 15 minutes. When a user configures a new simulation, the frontend debounces calls to GET /api/estimate with their chosen agent/round/platform counts. The service filters the index to records within ±30% agent count and ±1 round, then returns the median duration and cost. Five or more matches = high confidence; 2-4 = medium; fewer falls back to the global median across all sims (low confidence). A fresh deployment with zero history returns confidence=unavailable and the frontend gracefully shows the old naive estimate instead.
+
+What's next:
+Could add confidence intervals (p25-p75 range) and a duration-by-round sparkline showing how different round counts affect runtime. The estimate index could also feed the Time-to-Complete Estimator idea from the repo-actions spec (pre-submission label in the setup form).
+
+Push blocked — GH_GLOBAL not set (43rd consecutive block). Feature complete as local commit on feat/pre-run-estimate.
