@@ -9,6 +9,25 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
 
 ## Steps
 
+0. **Merge stale self-improve PRs** — Before looking for new improvements, land prior improvements that have been waiting:
+   ```bash
+   CUTOFF=$(date -u -d "48 hours ago" +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-48H +%Y-%m-%dT%H:%M:%SZ)
+   gh pr list --state open --json number,title,createdAt,mergeStateStatus,reviewDecision \
+     --jq "[.[] | select(.title | startswith(\"improve:\")) | select(.createdAt < \"$CUTOFF\")] | sort_by(.number)"
+   ```
+   For each qualifying PR (oldest first, cap at 5 per run):
+   - **Merge** if `mergeStateStatus` is `CLEAN` or `UNSTABLE` and `reviewDecision` is NOT `CHANGES_REQUESTED`:
+     ```bash
+     gh pr merge NUMBER --squash --delete-branch
+     ```
+   - **Close with comment** if `mergeStateStatus` is `DIRTY` (conflicts) and the PR is older than 7 days — it's stale and superseded:
+     ```bash
+     gh pr close NUMBER --comment "Closing: conflicts with main after newer improvements landed. The fix may be re-proposed in a future self-improve run."
+     ```
+   - **Skip** if the PR has review comments requesting changes — a human has weighed in, leave it for them.
+
+   Log all merge/close actions to `memory/logs/${today}.md`. If any PRs were merged, include them in the final notification. Then continue to step 1.
+
 1. **Assess what needs improving** (in this priority order):
    a. If `${var}` is set, work on that specific improvement.
    b. Check `memory/logs/` from the last 24 hours — look for:
