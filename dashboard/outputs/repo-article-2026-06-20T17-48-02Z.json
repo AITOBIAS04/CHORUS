@@ -1,0 +1,114 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Forty-Seven Percent of AI Agent Releases Roll Back. Automated Testing Cuts That to Nine."
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_intro",
+        "separator_1",
+        "stats_stack",
+        "separator_2",
+        "link_article"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Only 38% of production AI agents have automated evaluations on every change. Without them, 47% of releases roll back — with them, just 9%. MiroShark's 1,372 tests across 41 API surfaces, smoke tests that verify real agent output, and CI gates on every PR show what engineering discipline looks like in a domain that's convinced itself testing doesn't apply.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_1",
+        "stat_2",
+        "stat_3",
+        "stat_4",
+        "stat_5"
+      ]
+    },
+    "stat_1": {
+      "type": "Stat",
+      "props": {
+        "label": "Production agents with automated evaluations",
+        "value": "38%"
+      },
+      "children": []
+    },
+    "stat_2": {
+      "type": "Stat",
+      "props": {
+        "label": "Release rollback rate (without automated testing)",
+        "value": "47%"
+      },
+      "children": []
+    },
+    "stat_3": {
+      "type": "Stat",
+      "props": {
+        "label": "Release rollback rate (with automated testing)",
+        "value": "9%"
+      },
+      "children": []
+    },
+    "stat_4": {
+      "type": "Stat",
+      "props": {
+        "label": "Total tests (MiroShark)",
+        "value": "1,372"
+      },
+      "children": []
+    },
+    "stat_5": {
+      "type": "Stat",
+      "props": {
+        "label": "API surfaces",
+        "value": "41"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-20.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
