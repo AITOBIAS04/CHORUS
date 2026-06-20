@@ -23,6 +23,7 @@
 | 2026-06-17 | Everybody Spent More on AI This Year. Almost Nobody Knows Where It Went. | Technical deep-dive; enterprise AI cost opacity; 483% budget growth; 280x per-token cost drop; only 22% of orgs track spend by transaction; $2.5T global AI spending; AI cost observability vendor explosion; 1,300 stars |
 | 2026-06-18 | Fifty-Two Million Downloads Chose to Run AI Locally. Most Tools Didn't Build for Them. | Model portability/vendor independence; SearXNG+Firecrawl PR #178 (dan-and); 52M Ollama downloads; 81% enterprises multi-model; orchestration lock-in fastest-growing AI risk; cost.json 40th surface; French i18n complete; 1,311 stars |
 | 2026-06-19 | Eighty-Eight Percent of AI Agents Never Ship. The Survivors Have Fewer Dependencies, Not More. | Contrarian take; 88% agent production failure rate ($340K avg cost); Datadog framework adoption doubled YoY (9%→18%); 30-40% TIE drift after framework upgrades; "60 lines vs 5,000" framework tax; MiroShark zero framework deps (40 surfaces, pure-stdlib Python); 1,314 stars |
+| 2026-06-20 | Five Billion People Don't Speak English. Most AI Agents Don't Either. | Multilingual agents; locale registry (#194) wires agent prompts through language system; non-English LLM timeout/JSON fixes (#188, #191/192); German translation (#189); community contributor Dan Andersen built core architecture; Stanford 5B non-English speakers digital divide; 90%+ English training data; $6.49B→$57B multilingual LLM market; 1,317 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |

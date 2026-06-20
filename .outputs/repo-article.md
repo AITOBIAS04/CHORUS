@@ -1,5 +1,5 @@
-New Article: Fifty-Two Million Downloads Chose to Run AI Locally. Most Tools Didn't Build for Them.
+*New Article: Five Billion People Don't Speak English. Most AI Agents Don't Either.*
 
-Ollama hit 52M monthly downloads. 81% of enterprises run 3+ AI models. But most tools still hardcode cloud dependencies. MiroShark just closed the last gap — a community-contributed SearXNG + Firecrawl integration means any model, including local Ollama, can now ground agents with live web research at zero API cost.
+MiroShark shipped a locale registry that makes simulation agents think and argue in the user's language — not a translation layer, but native multilingual reasoning. A community contributor built the architecture. Tied to Stanford's finding that 5 billion non-English speakers are excluded from AI tools built on 90%+ English training data.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-18.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-20.md
