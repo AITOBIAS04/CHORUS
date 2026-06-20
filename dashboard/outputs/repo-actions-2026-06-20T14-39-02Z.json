@@ -1,0 +1,337 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-06-20"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo-summary",
+        "sep-1",
+        "item-1",
+        "sep-2",
+        "item-2",
+        "sep-3",
+        "item-3",
+        "sep-4",
+        "item-4",
+        "sep-5",
+        "item-5",
+        "sep-6",
+        "link-details"
+      ]
+    },
+    "repo-summary": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,315 stars · 276 forks · recent: German translations, local LLM fixes, 4th language milestone)",
+        "variant": "muted"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-1-title",
+        "item-1-badges",
+        "item-1-desc"
+      ]
+    },
+    "item-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Multi-Model Role Assignment",
+        "level": "h3"
+      }
+    },
+    "item-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-1-type",
+        "item-1-difficulty"
+      ]
+    },
+    "item-1-type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "item-1-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "item-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Assign different LLM models per agent role or influence tier — key agents get Claude Opus, background agents run on local Ollama — turning a $4 simulation into $0.80 without sacrificing quality on the agents that drive the outcome.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-2-title",
+        "item-2-badges",
+        "item-2-desc"
+      ]
+    },
+    "item-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Preset Library",
+        "level": "h3"
+      }
+    },
+    "item-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-2-type",
+        "item-2-difficulty"
+      ]
+    },
+    "item-2-type": {
+      "type": "Badge",
+      "props": {
+        "text": "Community"
+      }
+    },
+    "item-2-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-built JSON agent sets for common simulation types (Crypto Twitter, Tech Community, Political Panel) reduce blank-form setup from 15 minutes to one click, and give community contributors a zero-code PR path.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-3-title",
+        "item-3-badges",
+        "item-3-desc"
+      ]
+    },
+    "item-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled Simulation Health Monitor",
+        "level": "h3"
+      }
+    },
+    "item-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-3-type",
+        "item-3-difficulty"
+      ]
+    },
+    "item-3-type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "item-3-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/health/simulations scans running sims for last-activity timestamp — a warning banner appears on the watch page when a sim has been silent for 10+ minutes, addressing the 2-month silent-failure class from the camel-ai regression.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-4-title",
+        "item-4-badges",
+        "item-4-desc"
+      ]
+    },
+    "item-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Ollama One-Click Configuration",
+        "level": "h3"
+      }
+    },
+    "item-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-4-type",
+        "item-4-difficulty"
+      ]
+    },
+    "item-4-type": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration"
+      }
+    },
+    "item-4-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/config/llm-provider probes the Ollama endpoint at configuration time (reachable? model present? fast enough?), returning structured feedback before a simulation starts — fail at config time, not mid-run.",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-5-title",
+        "item-5-badges",
+        "item-5-desc"
+      ]
+    },
+    "item-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Locale Auto-Detect from Browser",
+        "level": "h3"
+      }
+    },
+    "item-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-5-type",
+        "item-5-difficulty"
+      ]
+    },
+    "item-5-type": {
+      "type": "Badge",
+      "props": {
+        "text": "DX"
+      }
+    },
+    "item-5-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Reads navigator.language on first visit and sets the app to the nearest supported locale (EN/ZH-CN/FR/DE), persisted in localStorage — German users open in German without finding the toggle.",
+        "variant": "body"
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-details": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-20.md"
+      }
+    }
+  }
+}

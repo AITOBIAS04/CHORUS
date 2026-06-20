@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-06-18*
-Generated from analysis of aaronjmars/MiroShark (1,309 stars · 0 open PRs · recent: French i18n complete, cost.json shipped, Python 3.14).
+*Repo Action Ideas — 2026-06-20*
+Generated from analysis of aaronjmars/MiroShark (1,315 stars · 276 forks · recent: German translations, local LLM fixes, 4th language milestone).
 
-1. Agent Influence Leaderboard (Feature, Small)
-   GET /api/simulation/:id/influence-rank — surfaces influence_score already in agents.json; a "Key Voices" panel shows who drove the outcome.
+1. Multi-Model Role Assignment (Feature, Medium)
+   Assign different LLM models per agent role or influence tier — key agents get Claude Opus, background agents run on local Ollama — turning a $4 simulation into $0.80 without sacrificing quality on the agents that drive the outcome.
 
-2. Simulation Time-to-Complete Estimator (Feature, Small)
-   GET /api/estimate?agents=N&rounds=N — pre-run duration + cost estimate from historical medians; closes the loop on the "$1 & <10 min" homepage promise.
+2. Agent Preset Library (Community, Small)
+   Pre-built JSON agent sets for common simulation types (Crypto Twitter, Tech Community, Political Panel) reduce blank-form setup from 15 minutes to one click, and give community contributors a zero-code PR path.
 
-3. Simulation Replay Stepper (Feature, Medium)
-   A play/pause/scrub control on the watch page steps through trajectory.json round by round, animating BeliefDriftChart — no new backend endpoints, pure composable.
+3. Stalled Simulation Health Monitor (Feature, Small)
+   GET /api/health/simulations scans running sims for last-activity timestamp — a warning banner appears on the watch page when a sim has been silent for 10+ minutes, addressing the 2-month silent-failure class from the camel-ai regression.
 
-4. Per-Round Cost Curve (Feature, Small)
-   GET /api/simulation/:id/cost/rounds — extends the cost.json surface to show per-round spend accumulation; operators can tune high-cost rounds before committing to a full run.
+4. Ollama One-Click Configuration (Integration, Small)
+   POST /api/config/llm-provider probes the Ollama endpoint at configuration time (reachable? model present? fast enough?), returning structured feedback before a simulation starts — fail at config time, not mid-run.
 
-5. Topic Trend Tracker (Feature, Small)
-   GET /api/topics/trends — weekly keyword frequency across published simulations, sparkline chips in ExploreView "Trending" tab; 14 ecosystem partners get a rising-topics signal without scanning individual sims.
+5. Locale Auto-Detect from Browser (DX, Small)
+   Reads navigator.language on first visit and sets the app to the nearest supported locale (EN/ZH-CN/FR/DE), persisted in localStorage — German users open in German without finding the toggle.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-18.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-20.md
