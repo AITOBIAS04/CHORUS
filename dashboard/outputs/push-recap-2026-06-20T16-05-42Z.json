@@ -1,0 +1,199 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-20"
+      },
+      "children": [
+        "header-stack",
+        "separator-1",
+        "fix-section",
+        "separator-2",
+        "key-changes-section",
+        "separator-3",
+        "stats-section",
+        "separator-4",
+        "link-section"
+      ]
+    },
+    "header-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo-name",
+        "commit-badge"
+      ]
+    },
+    "repo-name": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "variant": "lead"
+      }
+    },
+    "commit-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "1 substantive commit by 1 author (39 automation commits filtered)",
+        "variant": "secondary"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fix-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "fix-title",
+        "fix-description"
+      ]
+    },
+    "fix-title": {
+      "type": "Heading",
+      "props": {
+        "text": "i18n Report Agent Fix",
+        "level": "h3"
+      }
+    },
+    "fix-description": {
+      "type": "Text",
+      "props": {
+        "text": "Parallel report generation was silently dropping the user locale because Python ContextVars do not propagate into ThreadPoolExecutor workers. Daniel Andersen (dan-and) fixed this in PR #194 by capturing the active locale before thread dispatch and restoring it via use_locale() inside each worker. French and Chinese reports now generate correctly in parallel mode.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-changes-title",
+        "changes-list"
+      ]
+    },
+    "key-changes-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h4"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "report_agent.py: Captured locale before ThreadPoolExecutor, wrapped each worker in use_locale() context manager",
+        "variant": "body"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "Fixed silent fallback to English prompts in non-serial report generation",
+        "variant": "body"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "Completes a gap in the trilingual i18n rollout (EN/ZH/FR)",
+        "variant": "body"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats-title",
+        "stat-value"
+      ]
+    },
+    "stats-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h4"
+      }
+    },
+    "stat-value": {
+      "type": "Text",
+      "props": {
+        "text": "1 file changed, +10/-8 lines",
+        "variant": "body"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-label",
+        "recap-link"
+      ]
+    },
+    "link-label": {
+      "type": "Text",
+      "props": {
+        "text": "Full recap:",
+        "variant": "caption"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Push Recap Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-20.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
