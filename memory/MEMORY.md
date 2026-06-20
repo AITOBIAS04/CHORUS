@@ -60,7 +60,8 @@
 - Feature/repo-actions skills can waste CI runs building duplicate PRs — fixed with open PR dedup checks
 - Auth credentials (ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN) can expire silently — all skills fail immediately with "Not logged in"; 15-day outage Apr 16–30 (ISS-001). Monitor consecutive_failures in cron-state.json.
 - GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 43 consecutive blocks May 1–Jun 20 (latest skip: Pre-Run Time & Cost Estimate; 40 features stuck as local commits)
-- Cron-state success rates can be poisoned by extended auth outages (15-day Apr 16–30 outage left 1–7% rates on all skills despite 100% health since May 1); reset counters in cron-state.json when consecutive_failures = 0 post-outage
+- Cron-state success rates can be poisoned by extended auth outages (15-day Apr 16–30 outage left 1–7% rates on all skills despite 100% health since May 1); counters reset 2026-06-20 (all skills → 100% post-outage)
+- Scheduler catch-up window in messages.yml only checks PREV_HOUR (1-hour lookback); GHA cron delays of 2-4h during peak cause afternoon skills (push-recap at 15:00 UTC) to miss their dispatch window entirely; fix: extend catch-up to 4 hours — requires `workflows` PAT scope to push
 - Heartbeat auto-dispatch requires `actions: write` scope; aeon.yml has `actions: read` — heartbeat now checks permissions before attempting, defers to scheduler (messages.yml) on 403
 - Tweet allocator can hit bankr agent timeout (>64s polling ceiling) causing TWEET_ALLOCATOR_EMPTY drift; fix: increase iterations 8→14 and add agent-timeout status (self-improve PR #43 2026-05-20)
 - Feature skill now has push-access preflight: exits early if GH_GLOBAL not set before doing expensive work (self-improve PR #13 in CHORUS, PR #53 in miroshark-aeon — both merged 2026-06-06/07)
