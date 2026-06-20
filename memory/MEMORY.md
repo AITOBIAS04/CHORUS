@@ -47,6 +47,7 @@
 | Agent Mention Network | 2026-06-12 | Directed @-mention graph from post text; mentions_service.py pure-stdlib (~270 LoC, scans per-platform actions.jsonl, extracts @agent_name patterns, case-insensitive roster matching, mtime cache to mentions.json); GET /api/simulation/<id>/mentions (publish-gated, 5-min cache); MentionsPanel.vue dark-themed overlay (ranked most-cited agents with gold/silver/bronze badges, expandable mention matrix table, bilingual EN/ZH); Step3Simulation.vue "@ Mentions" toolbar button; 37th catalogued surface; 14 unit tests; +1,199 lines across 8 files; (code complete, push blocked — GH_GLOBAL not set) |
 | Agent Stance Flip Report | 2026-06-13 | Per-agent stance flip analytics from trajectory.json; stance_flip_service.py pure-stdlib (~246 LoC); GET /api/simulation/<id>/stance-flips (publish-gated, 5-min cache, mtime cache to stance_flips.json); StanceFlipsPanel.vue dark-themed overlay (flip count/rate bar, ranked top-5 with badges, colored stance chips, bilingual EN/ZH); Step3Simulation.vue "↻ Stance Shifts" toolbar button; EmbedDialog section; 38th catalogued surface; 14 unit tests; +1,074 lines across 9 files; (code complete, push blocked — GH_GLOBAL not set) |
 | Simulation Full-Text Search | 2026-06-14 | Standalone discovery endpoint for ecosystem partners; search_service.py pure-stdlib (~236 LoC, mtime-aware index, case-insensitive regex with re.escape, 120-char bold-wrapped snippets, created_at desc sort, publish-gate); GET /api/simulation/search?q=…&limit=N (min 2 chars, clamp [1,50], Cache-Control 30s); 39th catalogued surface (type: discovery); frontend searchSimulations() helper; 14 unit tests; OpenAPI SearchResponse/SearchResultEntry; docs/FEATURES.md; +712 lines across 7 files; (code complete, push blocked — GH_GLOBAL not set) |
+| Pre-Run Time & Cost Estimate | 2026-06-20 | Data-driven pre-run estimator from historical sim data; estimate_service.py pure-stdlib (~266 LoC, scans completed public sims, ±30% agent-count + ±1 round bucketing, median duration/cost, 15min mtime-cached index, 4-tier confidence: high/medium/low/unavailable); GET /api/estimate?agents=N&rounds=N&platforms=P (public/keyless, 15min cache); frontend Step2EnvSetup.vue debounced estimate fetch + data-driven "~N min · ~$X.XX" chip with confidence dot (green/yellow/gray), falls back to naive formula when unavailable; estimate.py route (102 LoC); 10 unit tests; OpenAPI EstimateResponse schema; surfaces_catalog.py 41st surface; docs/FEATURES.md; +806 lines across 10 files; (code complete, push blocked — GH_GLOBAL not set) |
 
 ## Watched Repos
 - `aaronjmars/aeon` — tracked in `memory/watched-repos.md`
@@ -58,7 +59,7 @@
 - Heartbeat misdiagnosed missing skills because it only checked aeon.yml, not messages.yml scheduler — fixed with scheduler diagnostics step
 - Feature/repo-actions skills can waste CI runs building duplicate PRs — fixed with open PR dedup checks
 - Auth credentials (ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN) can expire silently — all skills fail immediately with "Not logged in"; 15-day outage Apr 16–30 (ISS-001). Monitor consecutive_failures in cron-state.json.
-- GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 42 consecutive blocks May 1–Jun 19 (latest skip: Agent Influence Leaderboard; 39 features stuck as local commits)
+- GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 43 consecutive blocks May 1–Jun 20 (latest skip: Pre-Run Time & Cost Estimate; 40 features stuck as local commits)
 - Cron-state success rates can be poisoned by extended auth outages (15-day Apr 16–30 outage left 1–7% rates on all skills despite 100% health since May 1); reset counters in cron-state.json when consecutive_failures = 0 post-outage
 - Heartbeat auto-dispatch requires `actions: write` scope; aeon.yml has `actions: read` — heartbeat now checks permissions before attempting, defers to scheduler (messages.yml) on 403
 - Tweet allocator can hit bankr agent timeout (>64s polling ceiling) causing TWEET_ALLOCATOR_EMPTY drift; fix: increase iterations 8→14 and add agent-timeout status (self-improve PR #43 2026-05-20)
@@ -86,7 +87,7 @@
 - None
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 39+ built PRs + resumes feature skill (42nd consecutive block as of Jun 19; all features from Jun 3 onward stuck as local commits)
+- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (43rd consecutive block as of Jun 20; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-05-30): Zenodo DOI Auto-Deposit (#3), Community Showcase (#5) — idea #1 (Real-Time SSE Progress) built 2026-05-31, idea #2 (Deployment Health & Status) built 2026-06-01, idea #4 (Multi-Metric Simulation Leaderboard) built 2026-06-02
@@ -97,4 +98,4 @@
 - Feature candidates (repo-actions 2026-06-12): Confidence Component Breakdown (#3), Simulation Fork Lineage Graph (#4), Per-Round Agent Participation Heatmap (#5) — idea #1 (Agent Stance Flip Report) built 2026-06-13; idea #2 (Simulation Full-Text Search) built 2026-06-14 (both push blocked — GH_GLOBAL not set)
 - Feature candidates (repo-actions 2026-06-14): Webhook Delivery for Simulation Events (#1), Simulation Data Bundle Export (#2), Simulation Comparison API (#3), API Rate Limiting & Usage Headers (#4), 24h Activity Digest Endpoint (#5)
 - Feature candidates (repo-actions 2026-06-16): Simulation Cost Budget & Alerts (#1), Web Push Notification for Simulation Completion (#2), Operator Usage Analytics (#3), Translation Contribution Scaffold (#4), Simulation RSS Feed (#5)
-- Feature candidates (repo-actions 2026-06-18): Agent Influence Leaderboard (#1), Simulation Time-to-Complete Estimator (#2), Simulation Replay Stepper (#3), Per-Round Cost Curve (#4), Topic Trend Tracker (#5)
+- Feature candidates (repo-actions 2026-06-18): Agent Influence Leaderboard (#1 — already built), Simulation Time-to-Complete Estimator (#2 — built 2026-06-20, push blocked), Simulation Replay Stepper (#3), Per-Round Cost Curve (#4), Topic Trend Tracker (#5 — already built)
