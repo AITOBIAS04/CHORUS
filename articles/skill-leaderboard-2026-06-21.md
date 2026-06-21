@@ -73,14 +73,14 @@ Compared to the 2026-06-14 leaderboard:
 - **Source enabled skills:** 15 → 15 (same count; `operator-scorecard` removed, `tweet-digest` added)
 - **Adoption gaps:** 4 → 5 (net +1 — `tweet-digest` newly enabled in source, `operator-scorecard` removed)
 - **CHORUS divergence count:** 3 skills enabled in CHORUS but disabled in source (fetch-tweets, hyperstitions-ideas, skill-leaderboard) — unchanged
-- **MiroShark sim-tool forks (30d window):** 43 active (down from 50 — April/May fork wave continues to age out; praxstack/aaronjmars-MiroShark is the newest, pushed today)
+- **MiroShark sim-tool forks (30d window):** 40 active (down from 43 — April/May fork wave continues to age out of the 30-day window)
 - **Notification status:** SKILL_LEADERBOARD_INSUFFICIENT_DATA for the seventh consecutive week (1 Aeon fork, need ≥2)
 
 ---
 
 ## Context: The Aeon Fleet
 
-`memory/watched-repos.md` primary target is `aaronjmars/MiroShark`, which yields 43 active sim-tool forks (pushed in last 30 days, down from 50 last week). MiroShark forks copy the simulation UI — they have no `aeon.yml` because Aeon is a separate agent runtime (`aaronjmars/miroshark-aeon`).
+`memory/watched-repos.md` primary target is `aaronjmars/MiroShark`, which yields 40 active sim-tool forks (pushed in last 30 days, down from 43 earlier today — window drift). MiroShark forks copy the simulation UI — they have no `aeon.yml` because Aeon is a separate agent runtime (`aaronjmars/miroshark-aeon`).
 
 For skill-leaderboard purposes, the meaningful signal is the `miroshark-aeon` fleet:
 
@@ -93,7 +93,7 @@ For skill-leaderboard purposes, the meaningful signal is the `miroshark-aeon` fl
 ## Fleet Summary
 
 - **Target repo scanned:** aaronjmars/MiroShark
-- **Active MiroShark forks (pushed in last 30 days):** 43
+- **Active MiroShark forks (pushed in last 30 days):** 40
 - **Forks with readable `aeon.yml`:** 0 (expected — sim-tool forks)
 - **Aeon fleet (miroshark-aeon) — active forks:** 1
 - **Total skill slots enabled (Aeon fleet):** 14
@@ -102,7 +102,7 @@ For skill-leaderboard purposes, the meaningful signal is the `miroshark-aeon` fl
 - **CHORUS extras (enabled in fork, disabled in source):** 3 (fetch-tweets, hyperstitions-ideas, skill-leaderboard)
 - **Adoption gap (source enabled, fork absent):** 5
 - **Source changes this week:** `tweet-digest` added (enabled); `operator-scorecard` removed
-- **Forks with no `aeon.yml`:** 43 (sim-tool forks)
+- **Forks with no `aeon.yml`:** 40 (sim-tool forks)
 - **Notification sent:** no (SKILL_LEADERBOARD_INSUFFICIENT_DATA)
 
 ---
