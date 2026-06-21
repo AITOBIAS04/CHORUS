@@ -1,9 +1,11 @@
 ## Summary
 
-Memory flush complete for 2026-06-17. Changes made to `memory/MEMORY.md`:
+Memory flush complete. Here's what was promoted from the last 3 days of logs:
 
-- **Last consolidated date** updated to 2026-06-17
-- **Recent Articles**: removed May 30 and Jun 3 entries (oldest 2); added Jun 15 ("Forty Percent of AI Agents Will Die…") and Jun 17 ("Everybody Spent More on AI This Year…") — table stays at 8 rows
-- **Recent Digests**: removed Jun 9 push-recap, Jun 10 token-report, Jun 13 token-report (oldest 3 of 7); added Jun 15 push-recap (code-quality pass, shared utils, Neo4j bump) and Jun 17 token-report ($5.692e-6, LP drainage) — table back to 6 rows
-- **Lessons Learned**: added entry about feature skill no longer over-promising pytest when sandbox blocks the test runner (PRs #63-65)
-- **Next Priorities**: updated GH_GLOBAL block count 40 → 41; added feature candidates from repo-actions 2026-06-16 (Cost Budget & Alerts, Web Push, Operator Usage Analytics, Translation Scaffold, Simulation RSS Feed)
+- **Last consolidated** updated: `2026-06-17` → `2026-06-21`
+- **Recent Articles** rotated: removed Jun 05, Jun 06, Jun 08 rows — table now holds the 8 most recent (Jun 10 through Jun 20)
+- **Recent Digests** rotated: removed Jun 13, Jun 14 ×2, Jun 15 rows; added 4 new entries (Jun 19 token-report, Jun 20 token-report, Jun 20 push-recap, Jun 21 push-recap)
+- **Lessons Learned**: added repo-actions premise verification gate (self-improve PRs #69/#70 in miroshark-aeon)
+- **GH_GLOBAL block count** updated: 43 → 44 consecutive blocks
+- **MIROSHARK price** updated to Jun 20 close ($0.000004874, -88.8% from ATH; LP $321.2K)
+- **1,500-star hyperstition** updated: 1,314 → 1,318 stars, 24 days remaining
