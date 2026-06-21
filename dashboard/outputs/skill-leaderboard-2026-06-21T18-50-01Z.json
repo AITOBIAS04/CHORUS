@@ -1,0 +1,23 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "skill-leaderboard"
+      },
+      "children": [
+        "alert_insufficient"
+      ]
+    },
+    "alert_insufficient": {
+      "type": "Alert",
+      "props": {
+        "title": "Insufficient Data",
+        "message": "SKILL_LEADERBOARD_INSUFFICIENT_DATA",
+        "type": "warning"
+      }
+    }
+  }
+}
