@@ -1,0 +1,183 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-06-21 • aaronjmars/MiroShark"
+      },
+      "children": [
+        "repo_link",
+        "separator_1",
+        "stats_section",
+        "separator_2",
+        "stargazers_section",
+        "separator_3",
+        "forks_section"
+      ]
+    },
+    "repo_link": {
+      "type": "Link",
+      "props": {
+        "label": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1318",
+        "delta": "+4",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "277",
+        "delta": "+1",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stargazers_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stargazers_heading",
+        "stargazers_list"
+      ]
+    },
+    "stargazers_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Stargazers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stargazers_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stargazer_1",
+        "stargazer_2",
+        "stargazer_3",
+        "stargazer_4"
+      ]
+    },
+    "stargazer_1": {
+      "type": "Link",
+      "props": {
+        "label": "iamherschelle",
+        "href": "https://github.com/iamherschelle"
+      },
+      "children": []
+    },
+    "stargazer_2": {
+      "type": "Link",
+      "props": {
+        "label": "icaro-transform",
+        "href": "https://github.com/icaro-transform"
+      },
+      "children": []
+    },
+    "stargazer_3": {
+      "type": "Link",
+      "props": {
+        "label": "lyknice23",
+        "href": "https://github.com/lyknice23"
+      },
+      "children": []
+    },
+    "stargazer_4": {
+      "type": "Link",
+      "props": {
+        "label": "jonathanyee",
+        "href": "https://github.com/jonathanyee"
+      },
+      "children": []
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "forks_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "forks_heading",
+        "forks_list"
+      ]
+    },
+    "forks_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "forks_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "fork_1"
+      ]
+    },
+    "fork_1": {
+      "type": "Link",
+      "props": {
+        "label": "rbenegas/MiroShark",
+        "href": "https://github.com/rbenegas/MiroShark"
+      },
+      "children": []
+    }
+  }
+}
