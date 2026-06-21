@@ -1,0 +1,249 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-06-21"
+      },
+      "children": [
+        "alert-issues",
+        "sep-1",
+        "section-missing",
+        "sep-2",
+        "alert-dispatch",
+        "sep-3",
+        "section-pr",
+        "sep-4",
+        "section-nominal",
+        "sep-5",
+        "stat-skills"
+      ]
+    },
+    "alert-issues": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "2 issues flagged"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-missing": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-missing",
+        "item-token-report",
+        "item-fetch-tweets",
+        "text-dispatch-note"
+      ]
+    },
+    "heading-missing": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing Today",
+        "level": "h3"
+      }
+    },
+    "item-token-report": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "text-token-report",
+        "badge-overdue-1"
+      ]
+    },
+    "text-token-report": {
+      "type": "Text",
+      "props": {
+        "text": "token-report — due 06:00 UTC"
+      }
+    },
+    "badge-overdue-1": {
+      "type": "Badge",
+      "props": {
+        "text": "14h+ overdue",
+        "variant": "destructive"
+      }
+    },
+    "item-fetch-tweets": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "text-fetch-tweets",
+        "badge-overdue-2"
+      ]
+    },
+    "text-fetch-tweets": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets — due 06:30 UTC"
+      }
+    },
+    "badge-overdue-2": {
+      "type": "Badge",
+      "props": {
+        "text": "14h+ overdue",
+        "variant": "destructive"
+      }
+    },
+    "text-dispatch-note": {
+      "type": "Text",
+      "props": {
+        "text": "Neither appears in today's run list.",
+        "variant": "caption"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "alert-dispatch": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "Dispatch unavailable",
+        "message": "actions: read only — manual re-run or actions scope upgrade needed"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-pr": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-pr",
+        "text-pr-status",
+        "text-pr-details"
+      ]
+    },
+    "heading-pr": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PR",
+        "level": "h3"
+      }
+    },
+    "text-pr-status": {
+      "type": "Text",
+      "props": {
+        "text": "#17: reset poisoned cron-state counters post-outage"
+      }
+    },
+    "text-pr-details": {
+      "type": "Text",
+      "props": {
+        "text": "Created June 20 at 14:46 UTC, now 29.5h old with no updates",
+        "variant": "caption"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-nominal": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-nominal",
+        "systems-list",
+        "text-nominal-note"
+      ]
+    },
+    "heading-nominal": {
+      "type": "Heading",
+      "props": {
+        "text": "All other systems nominal",
+        "level": "h3"
+      }
+    },
+    "systems-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-repo-pulse",
+        "badge-feature",
+        "badge-push-recap",
+        "badge-skill-leaderboard",
+        "badge-memory-flush"
+      ]
+    },
+    "badge-repo-pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✅",
+        "variant": "default"
+      }
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✅",
+        "variant": "default"
+      }
+    },
+    "badge-push-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✅",
+        "variant": "default"
+      }
+    },
+    "badge-skill-leaderboard": {
+      "type": "Badge",
+      "props": {
+        "text": "skill-leaderboard ✅",
+        "variant": "default"
+      }
+    },
+    "badge-memory-flush": {
+      "type": "Badge",
+      "props": {
+        "text": "memory-flush ✅",
+        "variant": "default"
+      }
+    },
+    "text-nominal-note": {
+      "type": "Text",
+      "props": {
+        "text": "All ran today",
+        "variant": "caption"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stat-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skill Health",
+        "value": "13/13 at consecutive_failures=0"
+      }
+    }
+  }
+}

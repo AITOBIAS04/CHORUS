@@ -1,8 +1,7 @@
-HEARTBEAT_OK. All 9 scheduled skills for today (Saturday) completed successfully before this run; heartbeat itself is in progress. No missing skills, no stalled PRs over 24h, no urgent issues, no systemic failures — log entry written to `memory/logs/2026-06-20.md`.
+Heartbeat 2026-06-21 — 2 issues flagged.
 
-## Summary
+Missing today: token-report (due 06:00 UTC) and fetch-tweets (due 06:30 UTC) — neither appears in today's run list; both 14h+ overdue. Dispatch unavailable (actions: read only) — manual re-run or actions scope upgrade needed.
 
-- **Checked:** cron-state (all 13 skills at `consecutive_failures=0`), today's log vs. schedule, open PRs, GitHub issues
-- **Result:** Clean run — every skill expected for Saturday ran on time
-- **Notable:** PR #17 (self-improve: reset poisoned cron-state counters) is new today but only 5.5h old, under the stalled threshold; the 16 older self-improve PRs (#1–#16) are unchanged from yesterday
-- **Action taken:** Logged `HEARTBEAT_OK` to `memory/logs/2026-06-20.md`; no notification sent (nothing to flag)
+Stalled PR: #17 (reset poisoned cron-state counters post-outage) — created June 20 at 14:46 UTC, now 29.5h old with no updates.
+
+All other systems nominal: repo-pulse ✅ feature ✅ push-recap ✅ skill-leaderboard ✅ memory-flush ✅ (all ran today). 13/13 skills at consecutive_failures=0.
