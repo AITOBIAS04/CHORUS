@@ -1,0 +1,236 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-21"
+      },
+      "children": [
+        "header_section",
+        "sep1",
+        "prs_section",
+        "sep2",
+        "key_changes_section",
+        "sep3",
+        "stats_section",
+        "sep4",
+        "full_recap_link"
+      ]
+    },
+    "header_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "summary_text",
+        "commits_badge"
+      ]
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 3 commits + miroshark-aeon — 2 commits",
+        "variant": "body"
+      }
+    },
+    "commits_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "30 automation filtered",
+        "variant": "secondary"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_heading",
+        "pr_198",
+        "pr_198_desc",
+        "pr_196",
+        "pr_196_desc",
+        "pr_197",
+        "pr_197_desc",
+        "pr_69_70",
+        "pr_69_70_desc"
+      ]
+    },
+    "pr_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h2"
+      }
+    },
+    "pr_198": {
+      "type": "StoryLink",
+      "props": {
+        "title": "i18n Locale Fix (#198)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/198"
+      }
+    },
+    "pr_198_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Non-English simulations were silently getting English role-play prompts in the fallback interview path. ThreadPoolExecutor drops ContextVar locale state, so zh-CN/de/fr sessions fell back to English. Fixed by capturing locale on the parent thread and restoring it inside each worker — same pattern as #194 for report_agent. All 4 locales now have the interview_single_agent_roleplay prompt key, with 107 lines of locale-propagation tests.",
+        "variant": "body"
+      }
+    },
+    "pr_196": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Agent Test Hardening (#196)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/196"
+      }
+    },
+    "pr_196_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The camel smoke test only checked response is not None, which would miss a dead agent returning structurally valid but empty responses. Now asserts response.msgs is non-empty and msgs[0].content is a non-empty string — silent-output failures fail loudly in CI.",
+        "variant": "body"
+      }
+    },
+    "pr_197": {
+      "type": "StoryLink",
+      "props": {
+        "title": "CLAUDE.md for AI Agents (#197)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/197"
+      }
+    },
+    "pr_197_desc": {
+      "type": "Text",
+      "props": {
+        "text": "72-line agent-facing repo map covering architecture, layout, setup, CI gates, and 6 key conventions (openapi drift test, auth guard, MCP stdout, translation sync, Neo4j DI, feature flags). AI coding tools now have a structured entry point.",
+        "variant": "body"
+      }
+    },
+    "pr_69_70": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Premise Verification Gate (#69/#70)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/issues/69"
+      }
+    },
+    "pr_69_70_desc": {
+      "type": "Text",
+      "props": {
+        "text": "repo-actions can no longer ship feature ideas built on false code assumptions. After the feature skill caught a wrong premise on 06-20 (claimed smoke test asserts total_actions>0 — it actually asserts response is not None), self-improve added Gate 3: any idea claiming current file behavior must fetch+confirm against the live file. Unverifiable premises are dropped.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key_changes_heading",
+        "key_changes_list"
+      ]
+    },
+    "key_changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "key_changes_list": {
+      "type": "Text",
+      "props": {
+        "text": "• graph_tools.py locale capture+restore pattern for ThreadPoolExecutor workers\n• 5-gate pipeline for repo-actions: Filler → Novelty → Premise → Implementability → Score\n• camel smoke test now guards silent-empty-output failure class",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_grid"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Statistics",
+        "level": "h2"
+      }
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_lines",
+        "stat_commits"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "14"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Changed",
+        "value": "+343/-16"
+      }
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Substantive Commits",
+        "value": "5"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full_recap_link": {
+      "type": "Link",
+      "props": {
+        "label": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-21.md"
+      }
+    }
+  }
+}
