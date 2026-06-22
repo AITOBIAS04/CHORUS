@@ -1,0 +1,82 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-06-22"
+      },
+      "children": [
+        "alert-missing",
+        "skills-table",
+        "sep-1",
+        "heading-stalled",
+        "text-stalled"
+      ]
+    },
+    "alert-missing": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Missing skills",
+        "message": "dispatch unavailable — actions: read only"
+      }
+    },
+    "skills-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Schedule",
+          "Overdue",
+          "Details"
+        ],
+        "rows": [
+          [
+            "token-report",
+            "daily 06:00 UTC",
+            "13h overdue",
+            "2nd consecutive day missed (also Jun 21)"
+          ],
+          [
+            "fetch-tweets",
+            "daily 06:30 UTC",
+            "13h overdue",
+            "2nd consecutive day"
+          ],
+          [
+            "repo-actions",
+            "even days 14:00 UTC",
+            "5h overdue",
+            "First miss (last ran Jun 20)"
+          ],
+          [
+            "weekly-shiplog",
+            "Monday 09:00 UTC",
+            "10h overdue",
+            "Last ran May 18 — 5+ consecutive Monday misses. Scheduler issue suspected."
+          ]
+        ]
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-stalled": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PR",
+        "level": "h3"
+      }
+    },
+    "text-stalled": {
+      "type": "Text",
+      "props": {
+        "text": "#17 improve:"
+      }
+    }
+  }
+}

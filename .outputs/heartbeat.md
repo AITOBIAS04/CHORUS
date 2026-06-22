@@ -1,7 +1,9 @@
-Heartbeat 2026-06-21 — 2 issues flagged.
+🔔 *Heartbeat — 2026-06-22*
 
-Missing today: token-report (due 06:00 UTC) and fetch-tweets (due 06:30 UTC) — neither appears in today's run list; both 14h+ overdue. Dispatch unavailable (actions: read only) — manual re-run or actions scope upgrade needed.
+*Missing skills (dispatch unavailable — actions: read only):*
+• *token-report* — daily 06:00 UTC, 13h overdue. 2nd consecutive day missed (also Jun 21).
+• *fetch-tweets* — daily 06:30 UTC, 13h overdue. 2nd consecutive day.
+• *repo-actions* — even days 14:00 UTC, 5h overdue. First miss (last ran Jun 20).
+• *weekly-shiplog* — Monday 09:00 UTC, 10h overdue. Last ran May 18 — 5+ consecutive Monday misses. Scheduler issue suspected.
 
-Stalled PR: #17 (reset poisoned cron-state counters post-outage) — created June 20 at 14:46 UTC, now 29.5h old with no updates.
-
-All other systems nominal: repo-pulse ✅ feature ✅ push-recap ✅ skill-leaderboard ✅ memory-flush ✅ (all ran today). 13/13 skills at consecutive_failures=0.
+*Stalled PR:* #17 improve:
