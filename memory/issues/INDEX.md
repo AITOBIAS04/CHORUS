@@ -4,6 +4,7 @@
 
 | ID | Title | Severity | Category | Detected | Status |
 |----|-------|----------|----------|----------|--------|
+| [ISS-002](ISS-002.md) | Morning scheduler failing — token-report, fetch-tweets not running (3d miss) | medium | unknown | 2026-06-21 | open |
 
 ## Resolved Issues
 
