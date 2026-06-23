@@ -1,9 +1,16 @@
-🔔 *Heartbeat — 2026-06-22*
+## Summary
 
-*Missing skills (dispatch unavailable — actions: read only):*
-• *token-report* — daily 06:00 UTC, 13h overdue. 2nd consecutive day missed (also Jun 21).
-• *fetch-tweets* — daily 06:30 UTC, 13h overdue. 2nd consecutive day.
-• *repo-actions* — even days 14:00 UTC, 5h overdue. First miss (last ran Jun 20).
-• *weekly-shiplog* — Monday 09:00 UTC, 10h overdue. Last ran May 18 — 5+ consecutive Monday misses. Scheduler issue suspected.
+**HEARTBEAT — 2026-06-23 (20:34 UTC)**
 
-*Stalled PR:* #17 improve:
+**System health:** All 13 skills have `consecutive_failures=0`. No systemic auth failure.
+
+**Skills run today:** repo-pulse ✅, feature ✅ (skip #46, GH_GLOBAL), push-recap ✅, heartbeat ✅
+
+**Persistent issues (within 48h dedup window — notification suppressed):**
+- `token-report` + `fetch-tweets`: 3rd consecutive day missed (Jun 21–23). Morning scheduler not dispatching these.
+- PR #17: 77h stalled, no updates.
+- Dispatch blocked: 403 (actions: read only).
+
+**New action this run:** Filed **ISS-002** — formally tracks the morning scheduler window failure (token-report, fetch-tweets, weekly-shiplog pattern). No duplicate notification sent per 48h dedup rule.
+
+**What's needed:** Manual inspection of messages.yml workflow run history for Jun 21–23 morning window, or manual re-run of token-report and fetch-tweets.
