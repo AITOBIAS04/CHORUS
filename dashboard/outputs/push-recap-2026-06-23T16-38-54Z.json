@@ -1,0 +1,297 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-23"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_repos",
+        "sep1",
+        "section_migration",
+        "section_branding",
+        "section_cli",
+        "section_cleanup",
+        "section_token",
+        "sep2",
+        "heading_keychanges",
+        "stack_keychanges",
+        "sep3",
+        "heading_stats",
+        "text_stats",
+        "link_recap"
+      ]
+    },
+    "text_repos": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 5 substantive commits by aaronjmars\nmiroshark-aeon — 1 substantive commit (28 automation filtered)"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_migration": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_migration",
+        "text_migration",
+        "badges_migration"
+      ]
+    },
+    "heading_migration": {
+      "type": "Heading",
+      "props": {
+        "text": "Model Migration",
+        "level": "h3"
+      }
+    },
+    "text_migration": {
+      "type": "Text",
+      "props": {
+        "text": "mimo-v2-flash delisted from OpenRouter. Comprehensive swap to mimo-v2.5 across 19 files — config, deploy templates, pricing table, all four READMEs. Follow-up fix ensures blank LLM_MODEL_NAME= falls back to the default instead of 400-ing."
+      }
+    },
+    "badges_migration": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_pr207",
+        "badge_pr210"
+      ]
+    },
+    "badge_pr207": {
+      "type": "Badge",
+      "props": {
+        "text": "#207",
+        "variant": "outline"
+      }
+    },
+    "badge_pr210": {
+      "type": "Badge",
+      "props": {
+        "text": "#210",
+        "variant": "outline"
+      }
+    },
+    "section_branding": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_branding",
+        "text_branding",
+        "badge_pr206"
+      ]
+    },
+    "heading_branding": {
+      "type": "Heading",
+      "props": {
+        "text": "Branding Refresh",
+        "level": "h3"
+      }
+    },
+    "text_branding": {
+      "type": "Text",
+      "props": {
+        "text": "\"Universal Swarm Intelligence Engine\" retired. New tagline — \"Simulate anything, for $1 & less than 10 min.\" — now lives in every README, pyproject.toml, OpenAPI spec, and Home.vue hero chip. OpenRouter attribution headers pointed at miroshark.xyz."
+      }
+    },
+    "badge_pr206": {
+      "type": "Badge",
+      "props": {
+        "text": "#206",
+        "variant": "outline"
+      }
+    },
+    "section_cli": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_cli",
+        "text_cli",
+        "badge_pr208"
+      ]
+    },
+    "heading_cli": {
+      "type": "Heading",
+      "props": {
+        "text": "CLI Cost Subcommand",
+        "level": "h3"
+      }
+    },
+    "text_cli": {
+      "type": "Text",
+      "props": {
+        "text": "New `miroshark cost <sim_id>` surfaces per-run USD estimate at the command line with per-phase breakdown. Makes the \"$1\" claim verifiable from scripts and CI."
+      }
+    },
+    "badge_pr208": {
+      "type": "Badge",
+      "props": {
+        "text": "#208",
+        "variant": "outline"
+      }
+    },
+    "section_cleanup": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_cleanup",
+        "text_cleanup",
+        "badge_pr205"
+      ]
+    },
+    "heading_cleanup": {
+      "type": "Heading",
+      "props": {
+        "text": "Code-Quality Cleanup (680 lines removed)",
+        "level": "h3"
+      }
+    },
+    "text_cleanup": {
+      "type": "Text",
+      "props": {
+        "text": "8-agent audit drove a 36-file cleanup — dead code (SimulationIPCServer, unused async builders, 6 frontend axios wrappers), DRY extractions (shared notify base, centralized belief bucketing, new simulation_run_state leaf module), narrowed error handling, TypedDict annotations. Gated on 1,424 passing tests."
+      }
+    },
+    "badge_pr205": {
+      "type": "Badge",
+      "props": {
+        "text": "#205",
+        "variant": "outline"
+      }
+    },
+    "section_token": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_token",
+        "text_token",
+        "badge_pr74"
+      ]
+    },
+    "heading_token": {
+      "type": "Heading",
+      "props": {
+        "text": "Token Report X Prefetch",
+        "level": "h3"
+      }
+    },
+    "text_token": {
+      "type": "Text",
+      "props": {
+        "text": "Social Pulse was silently xai=skip every run — sandbox blocks env-var-in-header curl. Added prefetch case to cache X sentiment pre-sandbox, mirroring tweet-digest pattern."
+      }
+    },
+    "badge_pr74": {
+      "type": "Badge",
+      "props": {
+        "text": "#74",
+        "variant": "outline"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "stack_keychanges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_kc1",
+        "text_kc2",
+        "text_kc3"
+      ]
+    },
+    "text_kc1": {
+      "type": "Text",
+      "props": {
+        "text": "xiaomi/mimo-v2-flash → xiaomi/mimo-v2.5 everywhere (delisted model)"
+      }
+    },
+    "text_kc2": {
+      "type": "Text",
+      "props": {
+        "text": "simulation_runner.py: -359/+69 lines — 3x notification dispatch collapsed to one shared helper"
+      }
+    },
+    "text_kc3": {
+      "type": "Text",
+      "props": {
+        "text": "New _notify_base.py + simulation_run_state.py leaf modules eliminate circular-import shims"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "~81 files changed, +735/-1,226 lines"
+      }
+    },
+    "link_recap": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-23.md"
+      }
+    }
+  }
+}
