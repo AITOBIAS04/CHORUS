@@ -1,0 +1,136 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-06-24"
+      },
+      "children": [
+        "repo_heading",
+        "sep1",
+        "stats_section",
+        "sep2",
+        "stargazers_section"
+      ]
+    },
+    "repo_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1333",
+        "delta": "+4",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "279",
+        "delta": "+0",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stargazers_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stargazers_heading",
+        "stargazers_list"
+      ]
+    },
+    "stargazers_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New stargazers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stargazers_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_jacob",
+        "link_anarancio",
+        "link_santosronnie",
+        "link_kaplonic"
+      ]
+    },
+    "link_jacob": {
+      "type": "Link",
+      "props": {
+        "label": "JacobTheJacobs",
+        "href": "https://github.com/JacobTheJacobs"
+      },
+      "children": []
+    },
+    "link_anarancio": {
+      "type": "Link",
+      "props": {
+        "label": "anarancio",
+        "href": "https://github.com/anarancio"
+      },
+      "children": []
+    },
+    "link_santosronnie": {
+      "type": "Link",
+      "props": {
+        "label": "santosronnie",
+        "href": "https://github.com/santosronnie"
+      },
+      "children": []
+    },
+    "link_kaplonic": {
+      "type": "Link",
+      "props": {
+        "label": "Kaplonic",
+        "href": "https://github.com/Kaplonic"
+      },
+      "children": []
+    }
+  }
+}
