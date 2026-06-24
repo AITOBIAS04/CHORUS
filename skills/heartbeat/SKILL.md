@@ -50,7 +50,20 @@ Read `memory/cron-state.json`. For each skill, note `consecutive_failures` and `
 
 Before sending any notification, grep the last 48h of logs for the same issue. If the same missing-skill or stalled-PR was already reported, skip it. Batch all findings into a single notification.
 
-If nothing needs attention, log "HEARTBEAT_OK" and end your response.
+### Open issue escalation (overrides dedup)
+Even if ALL findings from the standard checks are deduped, check `memory/issues/INDEX.md` for open issues. For each open issue:
+1. Calculate how many days it has been open (from `detected_at` to today).
+2. If the issue has been open **3+ days**, it is **escalating** — always include a status line in the notification, regardless of the 48h dedup window.
+
+Format for escalating issues:
+```
+⚠️ ISS-NNN still open (Nd) — [title]
+Status: [status] | Affected: [affected_skills]
+```
+
+This ensures the operator is reminded about persistent failures that haven't been resolved, even when the specific findings haven't changed. An issue that persists for days is more urgent, not less — silence signals "all clear" when the problem is still active.
+
+If nothing needs attention **and** no open issues qualify for escalation, log "HEARTBEAT_OK" and end your response.
 
 If something needs attention:
 1. **Auto-trigger missing skills** — for each skill confirmed missing (not just stalled PRs or issues), dispatch it if not already running:
