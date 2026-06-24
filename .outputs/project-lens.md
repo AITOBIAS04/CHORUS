@@ -1,5 +1,5 @@
-*New Article: It Took 64,000 People to Forecast the Weather. It Takes Twelve Agents to Forecast an Opinion.*
+*New Article: Thirty Projects Simulate Societies Now. Almost None Ship a Result You Can Query.*
 
-In 1922, Lewis Fry Richardson imagined 64,000 human computers in a circular hall, each solving weather equations for their patch of atmosphere, coordinated by a conductor with colored spotlights. His vision was dismissed as fantasy for 28 years — until ENIAC proved numerical weather prediction worked. This article traces the line from Richardson's forecast factory to ensemble forecasting to MiroShark's multi-agent opinion simulations, arguing that computational opinion dynamics is at the same inflection point weather prediction hit in the 1940s: theoretically sound, practically unproven, and one good machine away from becoming infrastructure.
+The AI synthetic society field has exploded to 30+ open-source projects — from Stanford Generative Agents to OASIS (1M agents) to POSIM (opinion dynamics on social media). But almost every project stops at raw simulation output. MiroShark occupies the gap between research artifact and queryable product: 41 API surfaces, signed results, MCP tool access, embeddable components — all from the same $1 simulation run. The ecosystem has plenty of simulations. It has almost no simulation products.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-22.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-24.md
