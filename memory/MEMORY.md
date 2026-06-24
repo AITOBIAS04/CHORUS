@@ -31,6 +31,7 @@
 | 2026-06-20 | token-report | $0.000004874 (-6.82% 24h); FDV $487.4K; LP $321.2K; broke below $5.0e-6 support; LP -$86K from Jun 13 peak; XAI_API_KEY not set |
 | 2026-06-20 | push-recap | i18n locale threading fix PR #194 (Daniel Andersen); 1 substantive commit; 39 automation commits filtered |
 | 2026-06-21 | push-recap | i18n locale fix #198; camel smoke test hardening #196; CLAUDE.md for AI agents #197; repo-actions premise gate #69/#70; 5 commits, 2 authors |
+| 2026-06-24 | push-recap | CLI `wait` subcommand (#215); thinking model robustness (#209/#211/#210, Daniel Andersen); token-report xai=skip/quiet split (#75); 5 commits, 2 authors |
 
 ## Skills Built
 | Skill | Date | Notes |
