@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-06-21*
+*Last consolidated: 2026-06-24*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -13,24 +13,23 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
-| 2026-06-10 | The World Is Learning to Sign Photos. Nobody Is Signing Predictions. | Provenance/authenticity: EU AI Act Article 50 deadline (Aug 2, 2026); C2PA 6,000+ members; Gartner top-10 strategic trend; Deloitte 23% trust gap; MiroShark signed-result.json as prediction provenance layer |
-| 2026-06-12 | It's 2026, Just Use Postgres. What If Simulations Worked the Same Way? | Industry comparison: "Just Use Postgres" movement (55.6% dev adoption, DB-Engines +21.97 H1 2026, replacing 7 specialized DBs via extensions); MiroShark 37 surfaces as same pattern — platform through output-side composability; 1,267 stars |
 | 2026-06-14 | Thirty-Six Million Developers Showed Up This Year. Most Projects Still Only Speak English. | Internationalization: trilingual READMEs (EN/ZH/JA) in 4 days (PRs #155, #156); French UI locale; first community infra PR (dan-and #159); GitHub 180M devs, India 2M+ new; non-English documentation gap; 1,270 stars |
 | 2026-06-15 | Forty Percent of AI Agents Will Die. The Ones That Survive Will Maintain Themselves. | Philosophy/big ideas; Gartner 40% agentic AI cancellation prediction; Meta HyperAgents "maintenance wall"; Maturana & Varela autopoiesis; Aeon as self-maintaining system (14 monitoring skills, 39 autonomous surfaces, self-improve PRs, memory consolidation); 1,277 stars |
 | 2026-06-17 | Everybody Spent More on AI This Year. Almost Nobody Knows Where It Went. | Technical deep-dive; enterprise AI cost opacity; 483% budget growth; 280x per-token cost drop; only 22% of orgs track spend by transaction; $2.5T global AI spending; AI cost observability vendor explosion; 1,300 stars |
 | 2026-06-18 | Fifty-Two Million Downloads Chose to Run AI Locally. Most Tools Didn't Build for Them. | Model portability/vendor independence; SearXNG+Firecrawl PR #178 (dan-and); 52M Ollama downloads; 81% enterprises multi-model; orchestration lock-in fastest-growing AI risk; cost.json 40th surface; French i18n complete; 1,311 stars |
 | 2026-06-19 | Eighty-Eight Percent of AI Agents Never Ship. The Survivors Have Fewer Dependencies, Not More. | Contrarian take; 88% agent production failure rate ($340K avg cost); Datadog framework adoption doubled YoY (9%→18%); 30-40% TIE drift after framework upgrades; "60 lines vs 5,000" framework tax; MiroShark zero framework deps (40 surfaces, pure-stdlib Python); 1,314 stars |
 | 2026-06-20 | Forty-Seven Percent of AI Agent Releases Roll Back. Automated Testing Cuts That to Nine. | AI agent testing gap; only 38% of production agents have automated evals; 47% rollback vs 9% with tests; 37% lab-to-production gap; 61% multi-agent failures at boundaries; MiroShark 1,372 tests across 41 surfaces; smoke tests for real output (#183/#196); mocked LLM client (#165); CI gate (#180); pure-stdlib testability; $10.3B AI simulation market; 1,317 stars |
+| 2026-06-22 | It Took 64,000 People to Forecast the Weather. It Takes Twelve Agents to Forecast an Opinion. | Historical parallel; Richardson's 1922 Forecast Factory (64K human computers); ENIAC first numerical weather prediction (1950); ensemble forecasting via perturbed initial conditions; MiroShark multi-agent simulation as modern forecast factory; confidence trajectory + stance flip as perturbation tracking; pre-run estimator as resource planning; 1,322 stars |
+| 2026-06-24 | Thirty Projects Simulate Societies Now. Almost None Ship a Result You Can Query. | Ecosystem map; AI synthetic society field explosion (30+ open-source projects, Rosehill catalog); POSIM BDI framework (arXiv Mar 2026); OASIS 1M agents; StackOne 120+ agentic AI tools landscape; MiroShark 41 queryable API surfaces as "last mile" translation layer; research-application gap; 1,333 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-06-16 | push-recap | SearXNG + Firecrawl self-hosted search/scrape (PR #178, dan-and); cost.json 40th surface (PR #179); Dependabot first sweep; CI frontend gate; 1,282 stars |
-| 2026-06-17 | token-report | $0.000005692 (+1.2% 24h); FDV $569.2K; LP $354.8K; LP draining 3 days (-$52.4K total); 7d -20.1%; 1,300 stars |
-| 2026-06-19 | token-report | $0.000005355 (+2.78% 24h); FDV $535.5K; LP $336.2K; first green session in 5 days; holding Jun 5-6 demand zone; volume thin |
 | 2026-06-20 | token-report | $0.000004874 (-6.82% 24h); FDV $487.4K; LP $321.2K; broke below $5.0e-6 support; LP -$86K from Jun 13 peak; XAI_API_KEY not set |
 | 2026-06-20 | push-recap | i18n locale threading fix PR #194 (Daniel Andersen); 1 substantive commit; 39 automation commits filtered |
 | 2026-06-21 | push-recap | i18n locale fix #198; camel smoke test hardening #196; CLAUDE.md for AI agents #197; repo-actions premise gate #69/#70; 5 commits, 2 authors |
+| 2026-06-22 | push-recap | New docs-sync skill (#71); attribution fix (#73); notification cleanup (#72); Dependabot dependency sweep; 16 file changes, +318/-14 lines; 1,322 stars |
+| 2026-06-23 | push-recap | Model migration mimo-v2-flash→v2.5 (#207/#210); branding refresh — miroshark.xyz tagline (#206); CLI cost subcommand (#208); 680-line quality cleanup (#205); ~81 file changes, +735/-1,226 lines; 1,329 stars |
 | 2026-06-24 | push-recap | CLI `wait` subcommand (#215); thinking model robustness (#209/#211/#210, Daniel Andersen); token-report xai=skip/quiet split (#75); 5 commits, 2 authors |
 
 ## Skills Built
@@ -82,13 +81,13 @@
 - Hyperstition: Will someone outside MiroShark core team deploy and host a public-facing MiroShark instance by July 15, 2026? (filed 2026-05-30) — triggered by DYAI2025 Cloud Run deploy infra (cloudbuild.yaml + deploy script); zero public instances exist yet
 - Hyperstition: Will MiroShark reach the Hacker News front page by July 15, 2026? (filed 2026-06-06) — triggered by oosmetrics top-10 RL ranking, 32 surfaces, 3 languages, first green candle after 5 red sessions
 - Hyperstition: Will a community contributor build and merge a new MiroShark surface by July 15, 2026? (filed 2026-06-13) — 37 AI-built surfaces; lowest barrier to contribute yet (CONTRIBUTING.md, trilingual READMEs, surfaces.json type-filter)
-- Hyperstition: Will MiroShark reach 1,500 GitHub stars by July 15, 2026? (filed 2026-06-20) — 1,318 stars; @github_repo trending bot featured it; need 182 more in 24 days (~7.6/day); prior milestones 500 (Apr 7) and 1K (May 3) both cleared
+- Hyperstition: Will MiroShark reach 1,500 GitHub stars by July 15, 2026? (filed 2026-06-20) — 1,333 stars; @github_repo trending bot featured it; need 167 more in 21 days (~8.0/day); prior milestones 500 (Apr 7) and 1K (May 3) both cleared
 
 ## Open Issues
-- None
+- [ISS-002](issues/ISS-002.md): Morning scheduler failing — token-report, fetch-tweets not running (3-day miss since Jun 21; weekly-shiplog missing 5+ consecutive Mondays); heartbeat dispatch blocked (actions: read only)
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (45th consecutive block as of Jun 22; all features from Jun 3 onward stuck as local commits)
+- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (47th consecutive block as of Jun 24; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-05-30): Zenodo DOI Auto-Deposit (#3), Community Showcase (#5) — idea #1 (Real-Time SSE Progress) built 2026-05-31, idea #2 (Deployment Health & Status) built 2026-06-01, idea #4 (Multi-Metric Simulation Leaderboard) built 2026-06-02
@@ -100,3 +99,4 @@
 - Feature candidates (repo-actions 2026-06-14): Webhook Delivery for Simulation Events (#1), Simulation Data Bundle Export (#2), Simulation Comparison API (#3), API Rate Limiting & Usage Headers (#4), 24h Activity Digest Endpoint (#5)
 - Feature candidates (repo-actions 2026-06-16): Simulation Cost Budget & Alerts (#1), Web Push Notification for Simulation Completion (#2), Operator Usage Analytics (#3), Translation Contribution Scaffold (#4), Simulation RSS Feed (#5)
 - Feature candidates (repo-actions 2026-06-18): Agent Influence Leaderboard (#1 — already built), Simulation Time-to-Complete Estimator (#2 — built 2026-06-20, push blocked), Simulation Replay Stepper (#3), Per-Round Cost Curve (#4), Topic Trend Tracker (#5 — already built)
+- Feature candidates (repo-actions 2026-06-24): CLI simulate subcommand, OG social cards, campaign series tracker, tags & labels, contributor leaderboard
