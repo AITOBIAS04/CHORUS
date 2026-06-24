@@ -1,5 +1,3 @@
 ## Summary
 
-**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not set. This is the 46th consecutive block. No feature was picked, no repo was cloned, and no notification was sent.
-
-To unblock: set the `GH_GLOBAL` repository secret with a PAT that has push access to `aaronjmars/MiroShark`. This will resume the feature skill and allow the 40+ locally-built features to be pushed as PRs.
+**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` (`GH_GLOBAL` secret not set). This is the 47th consecutive block. No feature was picked, no repo was cloned, and no notification was sent — per the skill's preflight check to avoid wasting an expensive Claude run. Logged to `memory/logs/2026-06-24.md`.
