@@ -283,3 +283,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-23,heartbeat,claude-sonnet-4-6,13,12708,540832,38813
 2026-06-24,repo-pulse,claude-sonnet-4-6,14,3809,488102,28946
 2026-06-24,self-improve,claude-opus-4-6,2366,8464,1090708,43802
+2026-06-24,push-recap,claude-opus-4-6,21,11278,1030122,46909

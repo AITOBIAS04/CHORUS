@@ -1,0 +1,236 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-24"
+      },
+      "children": [
+        "stack_meta",
+        "sep_1",
+        "heading_features",
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "sep_2",
+        "heading_keychanges",
+        "keychanges_list",
+        "sep_3",
+        "stats_footer"
+      ]
+    },
+    "stack_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_commits",
+        "text_authors"
+      ]
+    },
+    "text_commits": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 4 commits + miroshark-aeon — 1 commit (37 automation commits filtered)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_authors": {
+      "type": "Text",
+      "props": {
+        "text": "2 authors: @aaronjmars, Daniel Andersen",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_features": {
+      "type": "Heading",
+      "props": {
+        "text": "Features & Changes",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "feature_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "link_215",
+        "text_feature1_desc"
+      ]
+    },
+    "link_215": {
+      "type": "StoryLink",
+      "props": {
+        "title": "CLI wait subcommand (#215)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/215",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "text_feature1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "New `wait` command blocks until a simulation finishes, enabling scripted pipelines like `wait \"$SIM\" && report \"$SIM\"`. Tunable interval/timeout, transient network errors treated as retryable. Exits 0/1/2 for completed/failed/timeout. Full bilingual docs.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "feature_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "link_209",
+        "text_feature2_desc"
+      ]
+    },
+    "link_209": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Thinking model robustness (#209, #211, #210)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/209",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "text_feature2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Daniel Andersen landed a major 8-file hardening pass for reasoning models that emit <think> blocks. New THINKING_BUDGET_TOKENS config pads max_tokens so thinking + response both fit. LLM client now strips unclosed <think> blocks and returns None on empty-after-thinking. JSON repair handles control chars and bad escapes. Plain-text fallback for sub-queries. None guards in config/profile generators. Follow-up restored PanoramaSearch 4-way fan-out that #209 accidentally narrowed, and fixed blank LLM_MODEL_NAME falling through to a 400 error.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "feature_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "link_75",
+        "text_feature3_desc"
+      ]
+    },
+    "link_75": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Token report observability (#75)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/75",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "text_feature3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Split xai=skip into xai=quiet (prefetch worked, market is just quiet) vs xai=skip (no data fetched). Five days of ambiguous xai=skip after the Jun 22 prefetch fix are now a readable signal.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Files Changed",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "keychanges_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "keychange_1",
+        "keychange_2",
+        "keychange_3"
+      ]
+    },
+    "keychange_1": {
+      "type": "Text",
+      "props": {
+        "text": "backend/app/utils/llm_client.py: thinking budget padding + unclosed <think> stripping + empty-content None return",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "keychange_2": {
+      "type": "Text",
+      "props": {
+        "text": "backend/cli.py: 69-line cmd_wait() with transient-error resilience",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "keychange_3": {
+      "type": "Text",
+      "props": {
+        "text": "backend/app/utils/json_repair.py: control char + invalid escape repair",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_stats",
+        "link_recap"
+      ]
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 19 files changed, +332/-35 lines",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link_recap": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-24.md"
+      },
+      "children": []
+    }
+  }
+}

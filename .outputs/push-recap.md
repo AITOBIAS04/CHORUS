@@ -1,21 +1,17 @@
-*Push Recap — 2026-06-23*
-MiroShark — 5 substantive commits by aaronjmars
-miroshark-aeon — 1 substantive commit (28 automation filtered)
+*Push Recap — 2026-06-24*
+MiroShark — 4 commits + miroshark-aeon — 1 commit (37 automation commits filtered)
+2 authors: @aaronjmars, Daniel Andersen
 
-Model Migration: mimo-v2-flash delisted from OpenRouter. Comprehensive swap to mimo-v2.5 across 19 files — config, deploy templates, pricing table, all four READMEs. Follow-up fix ensures blank LLM_MODEL_NAME= falls back to the default instead of 400-ing. (#207, #210)
+CLI wait subcommand (#215): New `wait` command blocks until a simulation finishes, enabling scripted pipelines like `wait "$SIM" && report "$SIM"`. Tunable interval/timeout, transient network errors treated as retryable. Exits 0/1/2 for completed/failed/timeout. Full bilingual docs.
 
-Branding Refresh: "Universal Swarm Intelligence Engine" retired. New tagline — "Simulate anything, for $1 & less than 10 min." — now lives in every README, pyproject.toml, OpenAPI spec, and Home.vue hero chip. OpenRouter attribution headers pointed at miroshark.xyz. (#206)
+Thinking model robustness (#209, #211, #210): Daniel Andersen landed a major 8-file hardening pass for reasoning models that emit <think> blocks. New THINKING_BUDGET_TOKENS config pads max_tokens so thinking + response both fit. LLM client now strips unclosed <think> blocks and returns None on empty-after-thinking. JSON repair handles control chars and bad escapes. Plain-text fallback for sub-queries. None guards in config/profile generators. Follow-up restored PanoramaSearch 4-way fan-out that #209 accidentally narrowed, and fixed blank LLM_MODEL_NAME falling through to a 400 error.
 
-CLI Cost Subcommand: New `miroshark cost <sim_id>` surfaces per-run USD estimate at the command line with per-phase breakdown. Makes the "$1" claim verifiable from scripts and CI. (#208)
-
-Code-Quality Cleanup (680 lines removed): 8-agent audit drove a 36-file cleanup — dead code (SimulationIPCServer, unused async builders, 6 frontend axios wrappers), DRY extractions (shared notify base, centralized belief bucketing, new simulation_run_state leaf module), narrowed error handling, TypedDict annotations. Gated on 1,424 passing tests. (#205)
-
-Token Report X Prefetch: Social Pulse was silently xai=skip every run — sandbox blocks env-var-in-header curl. Added prefetch case to cache X sentiment pre-sandbox, mirroring tweet-digest pattern. (#74)
+Token report observability (#75): Split xai=skip into xai=quiet (prefetch worked, market is just quiet) vs xai=skip (no data fetched). Five days of ambiguous xai=skip after the Jun 22 prefetch fix are now a readable signal.
 
 Key changes:
-- xiaomi/mimo-v2-flash → xiaomi/mimo-v2.5 everywhere (delisted model)
-- simulation_runner.py: -359/+69 lines — 3x notification dispatch collapsed to one shared helper
-- New _notify_base.py + simulation_run_state.py leaf modules eliminate circular-import shims
+- backend/app/utils/llm_client.py: thinking budget padding + unclosed <think> stripping + empty-content None return
+- backend/cli.py: 69-line cmd_wait() with transient-error resilience
+- backend/app/utils/json_repair.py: control char + invalid escape repair
 
-Stats: ~81 files changed, +735/-1,226 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-23.md
+Stats: 19 files changed, +332/-35 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-24.md
