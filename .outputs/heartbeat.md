@@ -1,16 +1,9 @@
-## Summary
+**Heartbeat complete — ISSUES_OPEN (ISS-002, day 4)**
 
-**HEARTBEAT — 2026-06-23 (20:34 UTC)**
+**What ran today (Wed Jun 24):** repo-pulse ✅, feature ✅ (skip), self-improve ✅, repo-actions ✅, push-recap ✅, project-lens ✅, memory-flush in_progress
 
-**System health:** All 13 skills have `consecutive_failures=0`. No systemic auth failure.
+**Missing (13h+ overdue):** token-report and fetch-tweets — 4th consecutive day missed. Root cause now identified: the messages.yml scheduler fires every 2–4h and the 04:39→08:04 UTC gap swallows both 06:00 and 06:30 skills, with no catch-up logic for missed windows.
 
-**Skills run today:** repo-pulse ✅, feature ✅ (skip #46, GH_GLOBAL), push-recap ✅, heartbeat ✅
+**Dispatch:** Still blocked (403, actions: read only). Auto-trigger not possible.
 
-**Persistent issues (within 48h dedup window — notification suppressed):**
-- `token-report` + `fetch-tweets`: 3rd consecutive day missed (Jun 21–23). Morning scheduler not dispatching these.
-- PR #17: 77h stalled, no updates.
-- Dispatch blocked: 403 (actions: read only).
-
-**New action this run:** Filed **ISS-002** — formally tracks the morning scheduler window failure (token-report, fetch-tweets, weekly-shiplog pattern). No duplicate notification sent per 48h dedup rule.
-
-**What's needed:** Manual inspection of messages.yml workflow run history for Jun 21–23 morning window, or manual re-run of token-report and fetch-tweets.
+**Notification:** Skipped — same findings reported within 48h (Jun 23 heartbeat). ISS-002 updated with day 4 data and root cause analysis. Fix needed: add a dedicated morning tick at ~06:05 UTC in messages.yml, or implement catch-up dispatch logic.
