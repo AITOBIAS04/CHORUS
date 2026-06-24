@@ -1,0 +1,244 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "header",
+        "stats",
+        "sep1",
+        "actions_stack",
+        "sep2",
+        "details"
+      ]
+    },
+    "header": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Action Ideas — 2026-06-24",
+        "level": "h2"
+      }
+    },
+    "stats": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,333 stars · 279 forks · 3 open PRs).",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "actions_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action1",
+        "sep_1_2",
+        "action2",
+        "sep_2_3",
+        "action3",
+        "sep_3_4",
+        "action4",
+        "sep_4_5",
+        "action5"
+      ]
+    },
+    "action1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action1_title",
+        "action1_badge",
+        "action1_desc"
+      ]
+    },
+    "action1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. CLI `simulate` One-Command End-to-End",
+        "level": "h3"
+      }
+    },
+    "action1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature · Small"
+      }
+    },
+    "action1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "A single `miroshark simulate \"topic\"` that launches, waits, and prints results — closes the CLI loop after `cost` and `wait` shipped this week.",
+        "variant": "body"
+      }
+    },
+    "sep_1_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "action2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action2_title",
+        "action2_badge",
+        "action2_desc"
+      ]
+    },
+    "action2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Open Graph / Social Preview Cards",
+        "level": "h3"
+      }
+    },
+    "action2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth · Small"
+      }
+    },
+    "action2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Dynamic OG meta tags for simulation pages so shared URLs render as rich cards — \"73% BULLISH · 37 agents\" — on X, Discord, and Slack. miroshark.xyz is live; links need previews.",
+        "variant": "body"
+      }
+    },
+    "sep_2_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "action3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action3_title",
+        "action3_badge",
+        "action3_desc"
+      ]
+    },
+    "action3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation Campaign Series Tracker",
+        "level": "h3"
+      }
+    },
+    "action3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature · Medium"
+      }
+    },
+    "action3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Named series that groups related simulations chronologically; `GET /api/series/:slug/timeline` returns a consensus trend over time. For operators running weekly ETH/BTC sentiment checks.",
+        "variant": "body"
+      }
+    },
+    "sep_3_4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "action4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action4_title",
+        "action4_badge",
+        "action4_desc"
+      ]
+    },
+    "action4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Simulation Tags & Labels",
+        "level": "h3"
+      }
+    },
+    "action4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature · Small"
+      }
+    },
+    "action4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Free-form operator tags on simulations; tag filter strip in ExploreView. AND-filter across tags. No taxonomy enforced — scales with the operator base as the gallery grows.",
+        "variant": "body"
+      }
+    },
+    "sep_4_5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "action5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action5_title",
+        "action5_badge",
+        "action5_desc"
+      ]
+    },
+    "action5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Contributor Leaderboard",
+        "level": "h3"
+      }
+    },
+    "action5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Community · Small"
+      }
+    },
+    "action5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Public `GET /api/contributors` from GitHub API; avatar grid on the site showing top 10 contributors with PR counts. Social proof for potential contributor #6–10 toward the 10-PR hyperstition.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-24.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
