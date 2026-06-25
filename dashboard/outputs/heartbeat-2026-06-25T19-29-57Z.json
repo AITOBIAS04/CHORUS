@@ -1,0 +1,194 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — Jun 25, day 5"
+      },
+      "children": [
+        "alert-iss002",
+        "sep1",
+        "heading-missed",
+        "stack-missed",
+        "sep2",
+        "heading-cause",
+        "text-cause",
+        "alert-dispatch",
+        "sep3",
+        "heading-healthy",
+        "stack-healthy",
+        "sep4",
+        "heading-prs",
+        "stack-prs"
+      ]
+    },
+    "alert-iss002": {
+      "type": "Alert",
+      "props": {
+        "title": "ISS-002 Still Open",
+        "message": "Tracking dispatch/scheduling issue",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-missed": {
+      "type": "Heading",
+      "props": {
+        "text": "Missed Runs",
+        "level": "h3"
+      }
+    },
+    "stack-missed": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-token-report",
+        "item-fetch-tweets",
+        "item-shiplog"
+      ]
+    },
+    "item-token-report": {
+      "type": "Text",
+      "props": {
+        "text": "token-report: not run since Jun 20 (5 consecutive daily miss)",
+        "variant": "body"
+      }
+    },
+    "item-fetch-tweets": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets: not run since Jun 20 (5 consecutive daily miss)",
+        "variant": "body"
+      }
+    },
+    "item-shiplog": {
+      "type": "Text",
+      "props": {
+        "text": "weekly-shiplog: last ran May 18 (5+ week streak)",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-cause": {
+      "type": "Heading",
+      "props": {
+        "text": "Root Cause",
+        "level": "h3"
+      }
+    },
+    "text-cause": {
+      "type": "Text",
+      "props": {
+        "text": "messages.yml tick gaps skip the 06:00–06:30 UTC window; no catch-up dispatch logic",
+        "variant": "body"
+      }
+    },
+    "alert-dispatch": {
+      "type": "Alert",
+      "props": {
+        "title": "Dispatch Unavailable",
+        "message": "Actions: read only — manual re-run or scheduler fix needed",
+        "type": "error"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-healthy": {
+      "type": "Heading",
+      "props": {
+        "text": "Daily Skills Running Normally",
+        "level": "h3"
+      }
+    },
+    "stack-healthy": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge-repopulse",
+        "badge-feature",
+        "badge-pushrecap"
+      ]
+    },
+    "badge-repopulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✅",
+        "variant": "default"
+      }
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✅ (skip/GH_GLOBAL)",
+        "variant": "default"
+      }
+    },
+    "badge-pushrecap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✅",
+        "variant": "default"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-prs": {
+      "type": "Heading",
+      "props": {
+        "text": "PRs Awaiting Review",
+        "level": "h3"
+      }
+    },
+    "stack-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-17",
+        "pr-18"
+      ]
+    },
+    "pr-17": {
+      "type": "Text",
+      "props": {
+        "text": "#17 cron-state reset (5 days stalled)",
+        "variant": "body"
+      }
+    },
+    "pr-18": {
+      "type": "Text",
+      "props": {
+        "text": "#18 heartbeat escalation (1.5 days stalled)",
+        "variant": "body"
+      }
+    }
+  }
+}

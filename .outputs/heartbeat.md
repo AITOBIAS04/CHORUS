@@ -1,9 +1,1 @@
-**Heartbeat complete — ISSUES_OPEN (ISS-002, day 4)**
-
-**What ran today (Wed Jun 24):** repo-pulse ✅, feature ✅ (skip), self-improve ✅, repo-actions ✅, push-recap ✅, project-lens ✅, memory-flush in_progress
-
-**Missing (13h+ overdue):** token-report and fetch-tweets — 4th consecutive day missed. Root cause now identified: the messages.yml scheduler fires every 2–4h and the 04:39→08:04 UTC gap swallows both 06:00 and 06:30 skills, with no catch-up logic for missed windows.
-
-**Dispatch:** Still blocked (403, actions: read only). Auto-trigger not possible.
-
-**Notification:** Skipped — same findings reported within 48h (Jun 23 heartbeat). ISS-002 updated with day 4 data and root cause analysis. Fix needed: add a dedicated morning tick at ~06:05 UTC in messages.yml, or implement catch-up dispatch logic.
+Heartbeat — Jun 25, day 5: ISS-002 still open. token-report and fetch-tweets have not run since Jun 20 — 5th consecutive daily miss. weekly-shiplog last ran May 18 (5+ week streak). Root cause confirmed: messages.yml tick gaps skip the 06:00–06:30 UTC window; no catch-up dispatch logic. Dispatch unavailable (actions: read only — manual re-run or scheduler fix needed). All other daily skills ran normally (repo-pulse ✅, feature ✅ skip/GH_GLOBAL, push-recap ✅). PRs awaiting review: #17 cron-state reset (5 days stalled), #18 heartbeat escalation (1.5 days stalled).
