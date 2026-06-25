@@ -1,0 +1,198 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-06-25"
+      },
+      "children": [
+        "repos-section",
+        "sep1",
+        "prs-section",
+        "sep2",
+        "changes-section",
+        "sep3",
+        "stats-section",
+        "sep4",
+        "link-section"
+      ]
+    },
+    "repos-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo1",
+        "repo2"
+      ]
+    },
+    "repo1": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark — 5 substantive commits by 2 authors (Daniel Andersen, @aaronjmars)",
+        "variant": "body"
+      }
+    },
+    "repo2": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/miroshark-aeon — 3 substantive commits (38 automation filtered)",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4",
+        "pr5"
+      ]
+    },
+    "pr1": {
+      "type": "Text",
+      "props": {
+        "text": "Interview System Hardening (#214): Comprehensive fix for silent batch-interview hangs with slow thinking models. Engine catches errors and sends None instead of dying, PID liveness verification catches crashed workers, env.step() wrapped in 220s asyncio timeout, interview endpoints return HTTP 400 with the real error. Stop lifecycle fixed so intentional stops no longer trigger spurious \"failed\" alerts.",
+        "variant": "body"
+      }
+    },
+    "pr2": {
+      "type": "Text",
+      "props": {
+        "text": "Local LLM Infrastructure (#212): Self-hoster tuning — AGENTS_PER_BATCH halved (15→7) to prevent JSON truncation, summary lengths doubled (300→500), twhin-bert pre-warmed during visible setup, Neo4j schema retry with backoff, Docker healthcheck gating + persistent HF model cache + SIMD-accelerated vectors.",
+        "variant": "body"
+      }
+    },
+    "pr3": {
+      "type": "Text",
+      "props": {
+        "text": "i18n Locale Persistence (#213): Non-English sims drifted to English over rounds — fixed with per-round locale directives in agent messages, contextvars propagation for ThreadPoolExecutor workers (Python <3.12), and per-section ReasoningTrace recorders to prevent concurrent clobbering.",
+        "variant": "body"
+      }
+    },
+    "pr4": {
+      "type": "Text",
+      "props": {
+        "text": "CLI stop Subcommand (#216, #217): Completes the automation lifecycle — `wait || stop` pattern for bounded runs. Docs fix corrects --json flag placement.",
+        "variant": "body"
+      }
+    },
+    "pr5": {
+      "type": "Text",
+      "props": {
+        "text": "Aeon Schedule Tuning (#76): Paused 9 build/content skills, stretched docs-sync to every 3 days and repo-pulse to every 2 days. Lean watch-and-report loop.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes-title",
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "changes-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "platform.running() no longer hangs on unknown/errored actions — sends None back and continues",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "Docker Compose uses service_healthy gating for Neo4j across all 3 compose files",
+        "variant": "body"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "contextvars.copy_context().run() propagates locale into report ThreadPoolExecutor workers",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat1"
+      ]
+    },
+    "stat1": {
+      "type": "Stat",
+      "props": {
+        "label": "Changes",
+        "value": "24 files",
+        "delta": "+583/-135 lines"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "full-recap-link"
+      ]
+    },
+    "full-recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-25.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
