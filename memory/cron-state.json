@@ -50,7 +50,7 @@
     "last_quality_score": 4
   },
   "push-recap": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-06-25T15:26:34Z",
     "total_runs": 353,
     "total_successes": 54,
@@ -59,7 +59,7 @@
     "success_rate": 0.15,
     "last_failed": "2026-04-30T09:01:43Z",
     "last_error": "91d2f4a\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"",
-    "last_dispatch": "2026-06-25T15:20:18Z"
+    "last_dispatch": "2026-06-26T15:07:42Z"
   },
   "token-report": {
     "last_dispatch": "2026-06-26T07:00:49Z",
