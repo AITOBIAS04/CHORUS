@@ -21,7 +21,7 @@ skills:
   self-improve: { enabled: true, schedule: "0 13 */2 * *" }
 
   # --- Weekly ---
-  weekly-shiplog: { enabled: true, schedule: "0 9 * * 1" }  # Monday morning
+  weekly-shiplog: { enabled: true, schedule: "30 14 * * 1" }  # Monday afternoon (moved from 09:00 — morning window unreliable per ISS-002)
   hyperstitions-ideas: { enabled: true, schedule: "0 10 * * 6" }
 
   # --- Build (Daily) ---
