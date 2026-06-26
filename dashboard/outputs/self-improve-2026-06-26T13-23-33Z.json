@@ -1,0 +1,144 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-06-26"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-intro",
+        "text-pr18",
+        "sep-1",
+        "heading-why",
+        "text-why",
+        "sep-2",
+        "heading-what",
+        "stack-changes",
+        "sep-3",
+        "heading-impact",
+        "text-impact",
+        "sep-4",
+        "link-pr19"
+      ]
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Moved weekly-shiplog from Monday 09:00 UTC to Monday 14:30 UTC. The Monday morning slot has been falling in the scheduler dead zone — the skill hasn't produced a single report in 39 days (last run May 18)."
+      }
+    },
+    "text-pr18": {
+      "type": "Text",
+      "props": {
+        "text": "Also merged PR #18 (heartbeat escalation for persistent open issues) and updated ISS-002 with today's recovery: token-report and fetch-tweets both ran successfully after a 5-day gap."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "weekly-shiplog shows last_dispatch May 18 in cron-state.json. ISS-002 root cause confirmed the 06:00–11:00 UTC window is unreliable due to 2-4h scheduler tick gaps. Afternoon skills (14:00–19:00 UTC) run every time."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-what": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "stack-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-change1",
+        "text-change2",
+        "text-change3"
+      ]
+    },
+    "text-change1": {
+      "type": "Text",
+      "props": {
+        "text": "aeon.yml: weekly-shiplog schedule \"0 9 * * 1\" → \"30 14 * * 1\""
+      }
+    },
+    "text-change2": {
+      "type": "Text",
+      "props": {
+        "text": "memory/issues/ISS-002.md: added Jun 26 recovery data, marked weekly-shiplog fix"
+      }
+    },
+    "text-change3": {
+      "type": "Text",
+      "props": {
+        "text": "PR #18 merged: heartbeat now escalates open issues ≥3 days past dedup"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "Next Monday (Jun 29) should produce the first weekly shipping summary in 39 days. Heartbeat now properly reminds about persistent issues."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-pr19": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #19",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/19",
+        "source": "GitHub"
+      }
+    }
+  }
+}

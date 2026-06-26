@@ -1,12 +1,16 @@
-*Agent Self-Improvement — 2026-06-24*
+*Agent Self-Improvement — 2026-06-26*
 
-Heartbeat now escalates persistent open issues past the 48h notification dedup window. Previously, when an issue like ISS-002 (morning scheduler failures) persisted for multiple days, the heartbeat would stop notifying the operator after the first report cycle — silence that looks like "all clear" when the problem is still active.
+Moved weekly-shiplog from Monday 09:00 UTC to Monday 14:30 UTC. The Monday morning slot has been falling in the scheduler dead zone — the skill hasn't produced a single report in 39 days (last run May 18).
 
-Why: ISS-002 has been open since Jun 21 (4 days). The heartbeat detected it every run but deduped notifications after the first 48h. The operator received no reminders that token-report and fetch-tweets were still not running.
+Also merged PR #18 (heartbeat escalation for persistent open issues) and updated ISS-002 with today's recovery: token-report and fetch-tweets both ran successfully after a 5-day gap.
+
+Why: weekly-shiplog shows last_dispatch May 18 in cron-state.json. ISS-002 root cause confirmed the 06:00–11:00 UTC window is unreliable due to 2-4h scheduler tick gaps. Afternoon skills (14:00–19:00 UTC) run every time.
 
 What changed:
-- skills/heartbeat/SKILL.md: Added "Open issue escalation" rule — issues tracked in memory/issues/ that are open 3+ days always get a status line in the notification, bypassing the dedup window
+- aeon.yml: weekly-shiplog schedule "0 9 * * 1" → "30 14 * * 1"
+- memory/issues/ISS-002.md: added Jun 26 recovery data, marked weekly-shiplog fix
+- PR #18 merged: heartbeat now escalates open issues ≥3 days past dedup
 
-Impact: Persistent failures now get louder over time instead of going silent. The operator will see a reminder every heartbeat cycle for any issue that remains unresolved beyond 3 days.
+Impact: Next Monday (Jun 29) should produce the first weekly shipping summary in 39 days. Heartbeat now properly reminds about persistent issues.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/18
+PR: https://github.com/AITOBIAS04/CHORUS/pull/19
