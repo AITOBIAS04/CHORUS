@@ -69,7 +69,8 @@
 - Feature skill avoids over-promising pytest in sandbox — no longer claims tests pass when sandbox blocks the test runner (false confidence); self-improve PRs #63-65 in miroshark-aeon (2026-06-16)
 - Self-improve PRs pile up without merging (15 stalled PRs, weeks old); added auto-merge Step 0 to self-improve skill — merges own stale PRs (>48h, no conflicts) before creating new ones; self-improve PR #16 in CHORUS (2026-06-18)
 - repo-actions skill now has a premise verification gate to validate ideas before generating full proposals — avoids wasted compute on unfeasible suggestions; self-improve PRs #69/#70 in miroshark-aeon (2026-06-21)
-- Heartbeat 48h notification dedup silences persistent multi-day issues — operator stops hearing about failures that are still active; added open-issue escalation (≥3 days bypasses dedup); self-improve PR #18 in CHORUS (2026-06-24)
+- Heartbeat 48h notification dedup silences persistent multi-day issues — operator stops hearing about failures that are still active; added open-issue escalation (≥3 days bypasses dedup); self-improve PR #18 in CHORUS (2026-06-24, merged 2026-06-26)
+- weekly-shiplog silent for 39 days (May 18–Jun 26) because 09:00 UTC Monday slot falls in scheduler dead zone (2-4h tick gaps); moved to 14:30 UTC to match proven afternoon dispatch window; self-improve PR #19 in CHORUS (2026-06-26)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
