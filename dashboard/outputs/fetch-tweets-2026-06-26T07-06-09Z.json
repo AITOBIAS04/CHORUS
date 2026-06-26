@@ -1,0 +1,193 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK crypto token on Base chain (2026-06-26)"
+      },
+      "children": [
+        "github_link",
+        "sep1",
+        "tweet_stack_1",
+        "tweet_stack_2",
+        "tweet_stack_3",
+        "tweet_stack_4",
+        "tweet_stack_5",
+        "sep2",
+        "note"
+      ]
+    },
+    "github_link": {
+      "type": "Link",
+      "props": {
+        "label": "GitHub: github.com/aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "tweet_stack_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet1",
+        "link1"
+      ]
+    },
+    "tweet1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "Updated roadmap: railway & bankr downtime slowed things, but miroshark on X + API still on track this week; token-launch runtime + aeon v4 demo folded into new aeon focus"
+      },
+      "children": []
+    },
+    "link1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2057435882194424127"
+      },
+      "children": []
+    },
+    "tweet_stack_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet2",
+        "link2"
+      ]
+    },
+    "tweet2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "\"Another mind blow moment — MiroShark is my swarm simulation project, and every day aeon autonomously adds new features. Today something crazy happened with my MiroShark aeon...\""
+      },
+      "children": []
+    },
+    "link2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2055301173578457241"
+      },
+      "children": []
+    },
+    "tweet_stack_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet3",
+        "link3"
+      ]
+    },
+    "tweet3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "Community call: \"if you're excited about $miroshark & want it to grow, the MAIN THING you can do is share the github repo. MiroFish has 56k stars — MiroShark is easily 10x\""
+      },
+      "children": []
+    },
+    "link3": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2045134558186664267"
+      },
+      "children": []
+    },
+    "tweet_stack_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet4",
+        "link4"
+      ]
+    },
+    "tweet4": {
+      "type": "TweetCard",
+      "props": {
+        "author": "BranaRakic",
+        "handle": "BranaRakic",
+        "text": "\"DKG V9 + MiroShark simulating the future\""
+      },
+      "children": []
+    },
+    "link4": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/BranaRakic/status/2036747635751633047"
+      },
+      "children": []
+    },
+    "tweet_stack_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet5",
+        "link5"
+      ]
+    },
+    "tweet5": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "\"MiroShark Just Built the Simulation Engine That MiroFish Promised\""
+      },
+      "children": []
+    },
+    "link5": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2037582921947574759"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "note": {
+      "type": "Text",
+      "props": {
+        "text": "XAI_API_KEY not set — results via WebSearch (may favor older high-engagement posts)",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}

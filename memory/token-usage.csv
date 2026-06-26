@@ -290,4 +290,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-25,feature,claude-opus-4-6,8,893,221554,19066
 2026-06-25,push-recap,claude-opus-4-6,17,12677,867157,63945
 2026-06-25,heartbeat,claude-sonnet-4-6,14,9531,592705,39866
-2026-06-26,token-report,claude-sonnet-4-6,15,10730,677388,45422
+2026-06-26,fetch-tweets,claude-sonnet-4-6,1875,11192,801441,41078
