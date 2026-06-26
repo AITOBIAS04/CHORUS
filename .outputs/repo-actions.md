@@ -1,19 +1,18 @@
-*Repo Action Ideas — 2026-06-26*
-Generated from analysis of aaronjmars/MiroShark (1,337 stars · 281 forks · 0 open PRs).
+The `repo-actions` skill already ran successfully today. The article is at `articles/repo-actions-2026-06-26.md` and the notification was sent. No need to re-run — here's what was produced:
 
-1. Agent Communication Transcript Export (Feature, Small)
-   Download the full simulation conversation as Markdown or plain text — round-by-round agent posts with stances and @-mentions, readable by researchers and non-technical stakeholders.
+---
 
-2. Round-Level State Snapshot API (Feature, Small)
-   GET /api/simulation/:id/rounds/:n/state returns per-agent stances at round N — the data foundation for replay-style analysis and the backend the Replay Stepper feature needs.
+**Repo Action Ideas — 2026-06-26**
+Analyzed: aaronjmars/MiroShark (1,337 stars · 281 forks · 0 open issues · 0 open PRs)
 
-3. GitHub Actions Workflow Template (DX/Integration, Small)
-   Two copy-paste workflow YAML files: weekly scheduled simulation + on-PR sentiment check; puts MiroShark in the GitHub Actions discovery path and serves the public-instance hyperstition.
+1. **Agent Communication Transcript Export** (Feature, Small) — `GET /api/simulation/:id/transcript.md` returns a round-by-round Markdown conversation doc; fills the qualitative gap alongside signal.json for researchers and non-technical stakeholders
+2. **Round-Level State Snapshot API** (Feature, Small) — `GET /api/simulation/:id/rounds/:n/state` exposes per-agent stances at round N; the backend foundation the Simulation Replay Stepper needs and answers "what did round 3 look like?"
+3. **GitHub Actions Workflow Template** (DX/Integration, Small) — `templates/github-actions/` with weekly-simulation and on-PR comment templates; puts MiroShark in the Actions discovery path and serves the "public-facing instance by July 15" hyperstition
+4. **Jupyter Notebook Research Gallery** (Community/DX, Small) — `examples/miroshark_analysis.ipynb` + Binder badge in README; zero-install path for the research community (paper citation hyperstition) and a shareable HN artifact
+5. **Topic Autocomplete API** (DX/Feature, Small) — `GET /api/topics/suggest?q=` with frequency × recency scoring; converts the blank topic field from friction to guided discovery
 
-4. Jupyter Notebook Research Gallery (Community/DX, Small)
-   examples/miroshark_analysis.ipynb with Binder badge — load a simulation into pandas, visualize confidence trajectory and stance flips; zero-install entry point for the research citation audience.
+Full article: `articles/repo-actions-2026-06-26.md`
 
-5. Topic Autocomplete API (DX/Feature, Small)
-   GET /api/topics/suggest?q=bitcoin returns top-5 matching topics from historical simulations; debounced dropdown on the Step2 topic input guides new operators from blank field to running sim.
+## Summary
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-26.md
+Skill `repo-actions` was already executed earlier today — article written, notification sent. Skipped re-execution to avoid duplicate notifications and overlapping idea generation. All 5 ideas are unblocked candidates for the `feature` skill once `GH_GLOBAL` is set.
