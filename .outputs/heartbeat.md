@@ -1,1 +1,11 @@
-Heartbeat — Jun 25, day 5: ISS-002 still open. token-report and fetch-tweets have not run since Jun 20 — 5th consecutive daily miss. weekly-shiplog last ran May 18 (5+ week streak). Root cause confirmed: messages.yml tick gaps skip the 06:00–06:30 UTC window; no catch-up dispatch logic. Dispatch unavailable (actions: read only — manual re-run or scheduler fix needed). All other daily skills ran normally (repo-pulse ✅, feature ✅ skip/GH_GLOBAL, push-recap ✅). PRs awaiting review: #17 cron-state reset (5 days stalled), #18 heartbeat escalation (1.5 days stalled).
+Heartbeat — 2026-06-26
+
+✅ RECOVERY: ISS-002 resolved (6-day morning scheduler outage). token-report and fetch-tweets both ran today at 07:00–07:06 UTC. Root cause: messages.yml lacked a morning tick (04:34→08:04 gap). Fix: miroshark-aeon PR #76 (schedule tuning, merged Jun 25) appears to have added a morning tick.
+
+📊 All skills healthy today:
+• token-report ✅ • fetch-tweets ✅ • repo-pulse ✅ • self-improve ✅
+• repo-actions ✅ • push-recap ✅ • project-lens ✅ • feature (skip #48, no GH_GLOBAL)
+
+⚠️ PR #17 still open (6 days stalled) — 'reset poisoned cron-state counters'; PR #19 filed today — 'move weekly-shiplog to afternoon slot' (fix for 39-day Monday miss).
+
+🔧 Persistent: GH_GLOBAL not set (40+ features unmerged); XAI_API_KEY not set (WebSearch fallback).

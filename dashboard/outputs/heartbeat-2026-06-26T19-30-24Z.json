@@ -1,0 +1,210 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-06-26"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_recovery",
+        "separator_1",
+        "stack_health",
+        "separator_2",
+        "stack_prs",
+        "separator_3",
+        "stack_persistent"
+      ]
+    },
+    "alert_recovery": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "title": "✅ RECOVERY: ISS-002 resolved",
+        "message": "6-day morning scheduler outage resolved. token-report and fetch-tweets both ran today at 07:00–07:06 UTC. Root cause: messages.yml lacked a morning tick (04:34→08:04 gap). Fix: miroshark-aeon PR #76 (schedule tuning, merged Jun 25) added a morning tick."
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_health": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_health",
+        "grid_skills"
+      ]
+    },
+    "heading_health": {
+      "type": "Heading",
+      "props": {
+        "text": "📊 All skills healthy today",
+        "level": "h3"
+      }
+    },
+    "grid_skills": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "sm"
+      },
+      "children": [
+        "badge_token_report",
+        "badge_fetch_tweets",
+        "badge_repo_pulse",
+        "badge_self_improve",
+        "badge_repo_actions",
+        "badge_push_recap",
+        "badge_project_lens",
+        "badge_feature"
+      ]
+    },
+    "badge_token_report": {
+      "type": "Badge",
+      "props": {
+        "text": "✅ token-report",
+        "variant": "default"
+      }
+    },
+    "badge_fetch_tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "✅ fetch-tweets",
+        "variant": "default"
+      }
+    },
+    "badge_repo_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "✅ repo-pulse",
+        "variant": "default"
+      }
+    },
+    "badge_self_improve": {
+      "type": "Badge",
+      "props": {
+        "text": "✅ self-improve",
+        "variant": "default"
+      }
+    },
+    "badge_repo_actions": {
+      "type": "Badge",
+      "props": {
+        "text": "✅ repo-actions",
+        "variant": "default"
+      }
+    },
+    "badge_push_recap": {
+      "type": "Badge",
+      "props": {
+        "text": "✅ push-recap",
+        "variant": "default"
+      }
+    },
+    "badge_project_lens": {
+      "type": "Badge",
+      "props": {
+        "text": "✅ project-lens",
+        "variant": "default"
+      }
+    },
+    "badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature (skip #48, no GH_GLOBAL)",
+        "variant": "outline"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_prs",
+        "text_pr17",
+        "text_pr19"
+      ]
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "⚠️ Open PRs",
+        "level": "h3"
+      }
+    },
+    "text_pr17": {
+      "type": "Text",
+      "props": {
+        "text": "PR #17 still open (6 days stalled) — 'reset poisoned cron-state counters'"
+      }
+    },
+    "text_pr19": {
+      "type": "Text",
+      "props": {
+        "text": "PR #19 filed today — 'move weekly-shiplog to afternoon slot' (fix for 39-day Monday miss)"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_persistent": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_persistent",
+        "text_gh_global",
+        "text_xai_api"
+      ]
+    },
+    "heading_persistent": {
+      "type": "Heading",
+      "props": {
+        "text": "🔧 Persistent Issues",
+        "level": "h3"
+      }
+    },
+    "text_gh_global": {
+      "type": "Text",
+      "props": {
+        "text": "GH_GLOBAL not set (40+ features unmerged)"
+      }
+    },
+    "text_xai_api": {
+      "type": "Text",
+      "props": {
+        "text": "XAI_API_KEY not set (WebSearch fallback)"
+      }
+    }
+  }
+}
