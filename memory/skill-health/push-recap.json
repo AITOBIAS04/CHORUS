@@ -1,0 +1,14 @@
+{
+  "skill": "push-recap",
+  "last_analyzed": "2026-06-26T15:09:36Z",
+  "quality_score": 4,
+  "assessment": "Skill executed correctly: identified automation commits, made right call not to notify on quiet day, logged activity. Clean filtering logic but limited visibility into substantive-commit-detection quality.",
+  "flags": [],
+  "avg_score": 4,
+  "history": [
+    {
+      "date": "2026-06-26",
+      "score": 4
+    }
+  ]
+}
