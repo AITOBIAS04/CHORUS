@@ -1,0 +1,306 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "heading-meta",
+        "repo-info",
+        "separator-1",
+        "ideas-container",
+        "separator-2",
+        "footer-link"
+      ]
+    },
+    "heading-meta": {
+      "type": "Text",
+      "props": {
+        "text": "2026-06-26",
+        "variant": "caption"
+      }
+    },
+    "repo-info": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,337 stars · 281 forks · 0 open PRs)"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ideas-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-1-item",
+        "idea-2-item",
+        "idea-3-item",
+        "idea-4-item",
+        "idea-5-item"
+      ]
+    },
+    "idea-1-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-1-header",
+        "idea-1-description"
+      ]
+    },
+    "idea-1-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-1-title",
+        "idea-1-badge-category",
+        "idea-1-badge-size"
+      ]
+    },
+    "idea-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Communication Transcript Export",
+        "level": "h3"
+      }
+    },
+    "idea-1-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea-1-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea-1-description": {
+      "type": "Text",
+      "props": {
+        "text": "Download the full simulation conversation as Markdown or plain text — round-by-round agent posts with stances and @-mentions, readable by researchers and non-technical stakeholders."
+      }
+    },
+    "idea-2-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-2-header",
+        "idea-2-description"
+      ]
+    },
+    "idea-2-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-2-title",
+        "idea-2-badge-category",
+        "idea-2-badge-size"
+      ]
+    },
+    "idea-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Round-Level State Snapshot API",
+        "level": "h3"
+      }
+    },
+    "idea-2-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea-2-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea-2-description": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/rounds/:n/state returns per-agent stances at round N — the data foundation for replay-style analysis and the backend the Replay Stepper feature needs."
+      }
+    },
+    "idea-3-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-3-header",
+        "idea-3-description"
+      ]
+    },
+    "idea-3-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-3-title",
+        "idea-3-badge-category",
+        "idea-3-badge-size"
+      ]
+    },
+    "idea-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "GitHub Actions Workflow Template",
+        "level": "h3"
+      }
+    },
+    "idea-3-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Integration"
+      }
+    },
+    "idea-3-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea-3-description": {
+      "type": "Text",
+      "props": {
+        "text": "Two copy-paste workflow YAML files: weekly scheduled simulation + on-PR sentiment check; puts MiroShark in the GitHub Actions discovery path and serves the public-instance hyperstition."
+      }
+    },
+    "idea-4-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-4-header",
+        "idea-4-description"
+      ]
+    },
+    "idea-4-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-4-title",
+        "idea-4-badge-category",
+        "idea-4-badge-size"
+      ]
+    },
+    "idea-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Jupyter Notebook Research Gallery",
+        "level": "h3"
+      }
+    },
+    "idea-4-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX"
+      }
+    },
+    "idea-4-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea-4-description": {
+      "type": "Text",
+      "props": {
+        "text": "examples/miroshark_analysis.ipynb with Binder badge — load a simulation into pandas, visualize confidence trajectory and stance flips; zero-install entry point for the research citation audience."
+      }
+    },
+    "idea-5-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-5-header",
+        "idea-5-description"
+      ]
+    },
+    "idea-5-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-5-title",
+        "idea-5-badge-category",
+        "idea-5-badge-size"
+      ]
+    },
+    "idea-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Topic Autocomplete API",
+        "level": "h3"
+      }
+    },
+    "idea-5-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Feature"
+      }
+    },
+    "idea-5-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea-5-description": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/topics/suggest?q=bitcoin returns top-5 matching topics from historical simulations; debounced dropdown on the Step2 topic input guides new operators from blank field to running sim."
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer-link": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-26.md"
+      }
+    }
+  }
+}

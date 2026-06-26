@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-06-24*
-Generated from analysis of aaronjmars/MiroShark (1,333 stars · 279 forks · 3 open PRs).
+*Repo Action Ideas — 2026-06-26*
+Generated from analysis of aaronjmars/MiroShark (1,337 stars · 281 forks · 0 open PRs).
 
-1. CLI `simulate` One-Command End-to-End (Feature, Small)
-   A single `miroshark simulate "topic"` that launches, waits, and prints results — closes the CLI loop after `cost` and `wait` shipped this week.
+1. Agent Communication Transcript Export (Feature, Small)
+   Download the full simulation conversation as Markdown or plain text — round-by-round agent posts with stances and @-mentions, readable by researchers and non-technical stakeholders.
 
-2. Open Graph / Social Preview Cards (Growth, Small)
-   Dynamic OG meta tags for simulation pages so shared URLs render as rich cards — "73% BULLISH · 37 agents" — on X, Discord, and Slack. miroshark.xyz is live; links need previews.
+2. Round-Level State Snapshot API (Feature, Small)
+   GET /api/simulation/:id/rounds/:n/state returns per-agent stances at round N — the data foundation for replay-style analysis and the backend the Replay Stepper feature needs.
 
-3. Simulation Campaign Series Tracker (Feature, Medium)
-   Named series that groups related simulations chronologically; `GET /api/series/:slug/timeline` returns a consensus trend over time. For operators running weekly ETH/BTC sentiment checks.
+3. GitHub Actions Workflow Template (DX/Integration, Small)
+   Two copy-paste workflow YAML files: weekly scheduled simulation + on-PR sentiment check; puts MiroShark in the GitHub Actions discovery path and serves the public-instance hyperstition.
 
-4. Simulation Tags & Labels (Feature, Small)
-   Free-form operator tags on simulations; tag filter strip in ExploreView. AND-filter across tags. No taxonomy enforced — scales with the operator base as the gallery grows.
+4. Jupyter Notebook Research Gallery (Community/DX, Small)
+   examples/miroshark_analysis.ipynb with Binder badge — load a simulation into pandas, visualize confidence trajectory and stance flips; zero-install entry point for the research citation audience.
 
-5. Contributor Leaderboard (Community, Small)
-   Public `GET /api/contributors` from GitHub API; avatar grid on the site showing top 10 contributors with PR counts. Social proof for potential contributor #6–10 toward the 10-PR hyperstition.
+5. Topic Autocomplete API (DX/Feature, Small)
+   GET /api/topics/suggest?q=bitcoin returns top-5 matching topics from historical simulations; debounced dropdown on the Step2 topic input guides new operators from blank field to running sim.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-24.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-26.md
