@@ -1,0 +1,30 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "article_link",
+        "description"
+      ]
+    },
+    "article_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Forty-One Million Americans Run a Business Alone. AI Handles Everything Except the Hardest Question.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-26.md",
+        "source": "project-lens"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "Solo founders in 2026 have AI for code, design, content, and support — but no tool for the hardest question: what will other people think? Traditional focus groups cost thousands. Synthetic respondents are too agreeable. MiroShark offers a third option: drop twelve AI agents with real professional backgrounds onto simulated social platforms, let them argue for ten minutes, and get a structured record of how opinions moved — for a dollar."
+      }
+    }
+  }
+}
