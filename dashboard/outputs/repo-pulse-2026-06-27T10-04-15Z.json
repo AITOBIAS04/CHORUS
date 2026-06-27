@@ -1,0 +1,145 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse"
+      },
+      "children": [
+        "header-info",
+        "stats-section",
+        "separator-1",
+        "stargazers-section"
+      ]
+    },
+    "header-info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo-name",
+        "date-text"
+      ]
+    },
+    "repo-name": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      }
+    },
+    "date-text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-06-27",
+        "variant": "caption"
+      }
+    },
+    "stats-section": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stars-stat",
+        "forks-stat"
+      ]
+    },
+    "stars-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1342",
+        "delta": "+5",
+        "trend": "up"
+      }
+    },
+    "forks-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "281",
+        "delta": "+0",
+        "trend": "neutral"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stargazers-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stargazers-heading",
+        "stargazers-list"
+      ]
+    },
+    "stargazers-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Stargazers",
+        "level": "h3"
+      }
+    },
+    "stargazers-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-s1Aylmer",
+        "link-scott-biota",
+        "link-Karnalito",
+        "link-SovereignDegenerate",
+        "link-Jelloeater"
+      ]
+    },
+    "link-s1Aylmer": {
+      "type": "Link",
+      "props": {
+        "label": "s1Aylmer",
+        "href": "https://github.com/s1Aylmer"
+      }
+    },
+    "link-scott-biota": {
+      "type": "Link",
+      "props": {
+        "label": "scott-biota",
+        "href": "https://github.com/scott-biota"
+      }
+    },
+    "link-Karnalito": {
+      "type": "Link",
+      "props": {
+        "label": "Karnalito",
+        "href": "https://github.com/Karnalito"
+      }
+    },
+    "link-SovereignDegenerate": {
+      "type": "Link",
+      "props": {
+        "label": "SovereignDegenerate",
+        "href": "https://github.com/SovereignDegenerate"
+      }
+    },
+    "link-Jelloeater": {
+      "type": "Link",
+      "props": {
+        "label": "Jelloeater",
+        "href": "https://github.com/Jelloeater"
+      }
+    }
+  }
+}
