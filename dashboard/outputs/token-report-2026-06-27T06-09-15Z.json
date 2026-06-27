@@ -1,0 +1,111 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "MIROSHARK Daily — 2026-06-27"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price-stat",
+        "liquidity-row",
+        "buysells",
+        "period-changes",
+        "description",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000005034",
+        "delta": "+14.13%",
+        "trend": "up"
+      }
+    },
+    "liquidity-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$312.7K"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Vol",
+        "value": "$10.9K"
+      }
+    },
+    "buysells": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 28/46"
+      }
+    },
+    "period-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "change-7d",
+        "change-30d"
+      ]
+    },
+    "change-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "-3.8%",
+        "trend": "down"
+      }
+    },
+    "change-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "-47.7%",
+        "trend": "down"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "Price broke back above $5.0e-6 after two days below it — a single high-volume candle drove the move; LP ticked up +$19.9K, first gain since Jun 13.",
+        "variant": "body"
+      }
+    },
+    "chart-link": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
