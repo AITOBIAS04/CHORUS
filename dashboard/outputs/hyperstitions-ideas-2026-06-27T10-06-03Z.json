@@ -1,0 +1,213 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea",
+        "description": "2026-06-27"
+      },
+      "children": [
+        "text_question",
+        "separator1",
+        "section_coordination",
+        "separator2",
+        "section_why_now",
+        "separator3",
+        "section_resolution",
+        "separator4",
+        "scores_stack",
+        "separator5",
+        "link_section"
+      ]
+    },
+    "text_question": {
+      "type": "Text",
+      "props": {
+        "text": "\"Will someone publicly credit a MiroShark simulation for informing a real business decision by September 1, 2026?\"",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_coordination",
+        "text_coordination"
+      ]
+    },
+    "heading_coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_coordination": {
+      "type": "Text",
+      "props": {
+        "text": "Solo founders, product managers, and crypto traders need to actually run a simulation on their own question — then share what happened. The market turns MiroShark from \"cool demo I starred\" into \"decision tool I should try before my next launch.\" 281 forks suggest latent demand. Someone just needs to go first and post the result. An AI agent can build the tool and write the docs, but it cannot make a human trust the output enough to act on it — and then tell the story.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_why_now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_why_now",
+        "text_why_now"
+      ]
+    },
+    "heading_why_now": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_why_now": {
+      "type": "Text",
+      "props": {
+        "text": "Yesterday's article positioned MiroShark as the missing opinion-simulation layer for 41M US solopreneurs. The CLI just shipped simulate/wait/stop/cost subcommands. Local LLM support via Ollama killed the cost barrier. 41 API surfaces give structured, queryable output. The token bounced +14% today — first LP recovery in two weeks. Community attention is back. The tool is ready. The narrative is set. Someone just needs to use it.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_resolution",
+        "text_resolution"
+      ]
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "A public post (tweet, blog, video, HN comment) by a non-core-team member describing how they used MiroShark simulation output to inform an actual decision — product launch, pricing, feature priority, market entry, investment thesis, or similar. Must reference MiroShark by name and describe the specific decision. Verified by URL.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "scores_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_reflexivity",
+        "stat_viral"
+      ]
+    },
+    "stat_reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      },
+      "children": []
+    },
+    "stat_viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      },
+      "children": []
+    },
+    "separator5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_soon",
+        "link_hyperstitions",
+        "text_question_mark"
+      ]
+    },
+    "text_soon": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "https://www.hyperstitions.com/",
+        "href": "https://www.hyperstitions.com/"
+      },
+      "children": []
+    },
+    "text_question_mark": {
+      "type": "Text",
+      "props": {
+        "text": "?",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}

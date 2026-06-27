@@ -300,4 +300,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-26,heartbeat,claude-sonnet-4-6,15,10208,653749,40732
 2026-06-27,token-report,claude-sonnet-4-6,12,9963,534679,51144
 2026-06-27,fetch-tweets,claude-sonnet-4-6,15,8052,436404,31269
-2026-06-27,repo-pulse,claude-sonnet-4-6,12,3415,417998,30069
+2026-06-27,hyperstitions-ideas,claude-opus-4-6,9,6872,315907,32820

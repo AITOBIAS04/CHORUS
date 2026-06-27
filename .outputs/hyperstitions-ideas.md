@@ -1,13 +1,13 @@
-*Hyperstitions Idea — 2026-06-20*
+*Hyperstitions Idea — 2026-06-27*
 
-"Will MiroShark reach 1,500 GitHub stars by July 15, 2026?"
+"Will someone publicly credit a MiroShark simulation for informing a real business decision by September 1, 2026?"
 
-The coordination play: MiroShark just got featured by a GitHub Trending aggregator account — the first time a bot with reach has surfaced the project organically. Stars are at 1,314. The gap is 186 in 25 days. That is achievable at current rates (6-18/day), but only if the community pushes this visibility window: share on dev forums, post to HN and Reddit, tag in newsletters, write about the simulation engine on Dev.to and Chinese platforms. An AI agent can write the articles, but it cannot share them where humans gather. The market makes the ask concrete — every share is a bet.
+The coordination play: Solo founders, product managers, and crypto traders need to actually run a simulation on their own question — then share what happened. The market turns MiroShark from "cool demo I starred" into "decision tool I should try before my next launch." 281 forks suggest latent demand. Someone just needs to go first and post the result. An AI agent can build the tool and write the docs, but it cannot make a human trust the output enough to act on it — and then tell the story.
 
-Why now: @github_repo featured MiroShark today with a full description of the multi-agent simulation engine. 275 forks already exist. 40 API surfaces are live. The project has shipped 10 articles in 3 weeks. The signal is there — what is missing is distribution, which only humans can do.
+Why now: Yesterday's article positioned MiroShark as the missing opinion-simulation layer for 41M US solopreneurs. The CLI just shipped simulate/wait/stop/cost subcommands. Local LLM support via Ollama killed the cost barrier. 41 API surfaces give structured, queryable output. The token bounced +14% today — first LP recovery in two weeks. Community attention is back. The tool is ready. The narrative is set. Someone just needs to use it.
 
-Resolution: YES if the GitHub API returns stargazers_count >= 1500 for aaronjmars/MiroShark on or before July 15, 2026 (23:59 UTC). Verified via https://api.github.com/repos/aaronjmars/MiroShark.
+Resolution: A public post (tweet, blog, video, HN comment) by a non-core-team member describing how they used MiroShark simulation output to inform an actual decision — product launch, pricing, feature priority, market entry, investment thesis, or similar. Must reference MiroShark by name and describe the specific decision. Verified by URL.
 
-Scores: Reflexivity 4/5 | Viral 4/5
+Scores: Reflexivity 5/5 | Viral 4/5
 
 Soon on https://www.hyperstitions.com/ ?
