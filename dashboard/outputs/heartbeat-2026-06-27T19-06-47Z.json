@@ -1,0 +1,163 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "prs-intro",
+        "prs-container",
+        "separator",
+        "status-heading",
+        "status-items"
+      ]
+    },
+    "prs-intro": {
+      "type": "Text",
+      "props": {
+        "text": "2 PRs need attention",
+        "variant": "lead"
+      }
+    },
+    "prs-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "pr-17-container",
+        "pr-19-container"
+      ]
+    },
+    "pr-17-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-17-title",
+        "pr-17-status",
+        "pr-17-desc",
+        "pr-17-note"
+      ]
+    },
+    "pr-17-title": {
+      "type": "Heading",
+      "props": {
+        "text": "PR #17",
+        "level": "h3"
+      }
+    },
+    "pr-17-status": {
+      "type": "Badge",
+      "props": {
+        "text": "7 days stalled",
+        "variant": "destructive"
+      }
+    },
+    "pr-17-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Reset poisoned cron-state counters post-outage"
+      }
+    },
+    "pr-17-note": {
+      "type": "Alert",
+      "props": {
+        "message": "Blocked on merge",
+        "type": "warning"
+      }
+    },
+    "pr-19-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-19-title",
+        "pr-19-status",
+        "pr-19-desc",
+        "pr-19-context"
+      ]
+    },
+    "pr-19-title": {
+      "type": "Heading",
+      "props": {
+        "text": "PR #19",
+        "level": "h3"
+      }
+    },
+    "pr-19-status": {
+      "type": "Badge",
+      "props": {
+        "text": ">24h stalled",
+        "variant": "destructive"
+      }
+    },
+    "pr-19-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Move weekly-shiplog to afternoon slot"
+      }
+    },
+    "pr-19-context": {
+      "type": "Alert",
+      "props": {
+        "title": "Critical deadline",
+        "message": "This is the fix for the 39-day weekly-shiplog miss. Next Monday (Jun 29) is the first test; PR needs to merge before then.",
+        "type": "warning"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status-heading": {
+      "type": "Text",
+      "props": {
+        "text": "All other checks green",
+        "variant": "lead"
+      }
+    },
+    "status-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "status-skills",
+        "status-failures",
+        "status-issues"
+      ]
+    },
+    "status-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills ran today",
+        "value": "6"
+      }
+    },
+    "status-failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive failures",
+        "value": "0"
+      }
+    },
+    "status-issues": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues"
+      }
+    }
+  }
+}
