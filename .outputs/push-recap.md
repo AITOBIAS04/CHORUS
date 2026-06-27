@@ -1,10 +1,10 @@
-The log entry from the earlier run today already captures the same result. No changes needed — the situation is identical.
-
 ## Summary
 
-- **Skill:** push-recap
-- **Status:** PUSH_RECAP_QUIET
-- **Repos scanned:** aaronjmars/MiroShark (0 commits), aaronjmars/miroshark-aeon (12 automation commits filtered)
+**Skill:** push-recap
+**Status:** PUSH_RECAP_QUIET — no substantive activity across watched repos.
+
+- **aaronjmars/MiroShark:** 0 commits in the last 24 hours
+- **aaronjmars/miroshark-aeon:** 12 automation commits filtered (scheduler state updates, cron success markers, auto-committed output files from docs-sync, token-report, heartbeat, tweet-digest)
 - **Substantive commits:** 0
-- **Notification:** not sent (no substantive activity to report)
-- **Log:** already recorded in `memory/logs/2026-06-26.md`
+
+No notification sent. Log entry appended to `memory/logs/2026-06-27.md`.
