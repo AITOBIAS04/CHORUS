@@ -1,0 +1,160 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — $MIROSHARK / MiroShark (2026-06-27)",
+        "description": "XAI_API_KEY not available; results compiled via WebSearch"
+      },
+      "children": [
+        "stack-tweets"
+      ]
+    },
+    "stack-tweets": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "tweet-1-stack",
+        "tweet-2-stack",
+        "tweet-3-stack",
+        "tweet-4-stack",
+        "tweet-5-stack"
+      ]
+    },
+    "tweet-1-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-1-card",
+        "tweet-1-link"
+      ]
+    },
+    "tweet-1-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "MiroShark",
+        "handle": "miroshark_",
+        "text": "Official MiroShark account shared a project link (Jun 2026)"
+      }
+    },
+    "tweet-1-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/miroshark_/status/2062967236432674999"
+      }
+    },
+    "tweet-2-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-2-card",
+        "tweet-2-link"
+      ]
+    },
+    "tweet-2-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "MiroShark",
+        "handle": "miroshark_",
+        "text": "MiroShark just hit top 10 in Reinforcement Learning on oosmetrics 🦈"
+      }
+    },
+    "tweet-2-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/miroshark_/status/2053611376703131963"
+      }
+    },
+    "tweet-3-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-3-card",
+        "tweet-3-link"
+      ]
+    },
+    "tweet-3-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "miroshark & aeon roadmap: tokenized / claimed fees for both repos on bankrbot; miroshark is a universal swarm intelligence engine forked from mirofish; aeon makes software autonomous & alive on GitHub"
+      }
+    },
+    "tweet-3-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2036818584937095581"
+      }
+    },
+    "tweet-4-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-4-card",
+        "tweet-4-link"
+      ]
+    },
+    "tweet-4-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "BioStone_chad",
+        "handle": "BioStone_chad",
+        "text": "DEV confirmed roadmap. Still low cap: $Miroshark #Base (70k MC) — upgraded swarm AI from mirofish, fees used for ads/burns/coordination. Decision engine via multi-agent sim."
+      }
+    },
+    "tweet-4-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/BioStone_chad/status/2036824963689411046"
+      }
+    },
+    "tweet-5-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-5-card",
+        "tweet-5-link"
+      ]
+    },
+    "tweet-5-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "JMania402",
+        "handle": "JMania402",
+        "text": "$MIROSHARK 0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3 — 'This one pump so hard 👀'"
+      }
+    },
+    "tweet-5-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/JMania402/status/2036486940313493591"
+      }
+    }
+  }
+}
