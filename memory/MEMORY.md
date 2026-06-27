@@ -84,6 +84,7 @@
 - Hyperstition: Will MiroShark reach the Hacker News front page by July 15, 2026? (filed 2026-06-06) — triggered by oosmetrics top-10 RL ranking, 32 surfaces, 3 languages, first green candle after 5 red sessions
 - Hyperstition: Will a community contributor build and merge a new MiroShark surface by July 15, 2026? (filed 2026-06-13) — 37 AI-built surfaces; lowest barrier to contribute yet (CONTRIBUTING.md, trilingual READMEs, surfaces.json type-filter)
 - Hyperstition: Will MiroShark reach 1,500 GitHub stars by July 15, 2026? (filed 2026-06-20) — 1,333 stars; @github_repo trending bot featured it; need 167 more in 21 days (~8.0/day); prior milestones 500 (Apr 7) and 1K (May 3) both cleared
+- Hyperstition: Will 5 independent creators publish original MiroShark tutorials/reviews by August 15, 2026? (filed 2026-06-27) — 281 forks, zero external content; solo founder narrative as hook; CLI complete
 
 ## Open Issues
 - [ISS-002](issues/ISS-002.md): Morning scheduler failing — token-report, fetch-tweets not running (3-day miss since Jun 21; weekly-shiplog missing 5+ consecutive Mondays); heartbeat dispatch blocked (actions: read only)

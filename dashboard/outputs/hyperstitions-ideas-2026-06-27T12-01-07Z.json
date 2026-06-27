@@ -1,0 +1,223 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-06-27"
+      },
+      "children": [
+        "heading_question",
+        "separator1",
+        "section_coordination",
+        "separator2",
+        "section_why_now",
+        "separator3",
+        "section_resolution",
+        "separator4",
+        "section_scores",
+        "separator5",
+        "footer_section"
+      ]
+    },
+    "heading_question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will 5 independent creators publish original MiroShark tutorials or reviews (blog post, YouTube video, or Twitter thread) by August 15, 2026?",
+        "level": "h2"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_coordination",
+        "text_coop_1",
+        "text_coop_2",
+        "text_coop_3"
+      ]
+    },
+    "heading_coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h3"
+      }
+    },
+    "text_coop_1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark has 281 forks and 1,342 stars but zero external content — no tutorials, no YouTube walkthroughs, no \"I tried simulating X\" posts."
+      }
+    },
+    "text_coop_2": {
+      "type": "Text",
+      "props": {
+        "text": "The 41M-solopreneur narrative is sitting right there: \"How I simulated customer opinions for $1 instead of paying $5K for a focus group.\" The market puts a bounty on being among the first 5 to tell that story."
+      }
+    },
+    "text_coop_3": {
+      "type": "Text",
+      "props": {
+        "text": "Each published piece lowers the barrier for the next creator, and content begets content."
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_why_now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_why_now",
+        "text_why_now_1",
+        "text_why_now_2"
+      ]
+    },
+    "heading_why_now": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h3"
+      }
+    },
+    "text_why_now_1": {
+      "type": "Text",
+      "props": {
+        "text": "The solo founder article (Jun 26) handed creators the exact narrative hook. The CLI is finally complete (simulate/wait/stop/cost)."
+      }
+    },
+    "text_why_now_2": {
+      "type": "Text",
+      "props": {
+        "text": "Token bounced +14% with first LP recovery in 2 weeks — signaling renewed attention. 281 forks prove the audience exists; they just haven't published yet."
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_resolution",
+        "text_resolution"
+      ]
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "5 distinct original content pieces about MiroShark — blog posts (Medium, Dev.to, Substack, personal), YouTube videos, or Twitter threads (5+ substantive tweets) — published by accounts not affiliated with @aaronjmars, verifiable by public URL, on or before August 15, 2026. Reposts, single-tweet mentions, and retweets don't count."
+      }
+    },
+    "separator4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_scores",
+        "grid_scores"
+      ]
+    },
+    "heading_scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "grid_scores": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_reflexivity",
+        "stat_viral"
+      ]
+    },
+    "stat_reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "4/5"
+      }
+    },
+    "stat_viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "separator5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_soon",
+        "link_hyperstitions"
+      ]
+    },
+    "text_soon": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on",
+        "variant": "muted"
+      }
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "hyperstitions.com",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}
