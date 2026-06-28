@@ -1,0 +1,203 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Self-Improvement",
+        "description": "2026-06-28"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading1",
+        "summary-text",
+        "stats-grid",
+        "sep1",
+        "why-section",
+        "sep2",
+        "changes-section",
+        "sep3",
+        "impact-section",
+        "pr-link"
+      ]
+    },
+    "heading1": {
+      "type": "Heading",
+      "props": {
+        "text": "Schedule Fix: weekly-shiplog",
+        "level": "h2"
+      }
+    },
+    "summary-text": {
+      "type": "Text",
+      "props": {
+        "text": "Moved weekly-shiplog from Monday 09:00 UTC to Monday 14:30 UTC. The Monday morning slot has been in the scheduler dead zone with no reports produced in 39 days (last run May 18). Also closed 2 stale self-improve PRs (#17 and #19) that had conflicts, and re-implemented the fix as PR #20."
+      }
+    },
+    "stats-grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-days",
+        "stat-prs"
+      ]
+    },
+    "stat-days": {
+      "type": "Stat",
+      "props": {
+        "label": "Days without reports",
+        "value": "39"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Stale PRs closed",
+        "value": "2"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why-heading",
+        "why-text",
+        "issue-badge"
+      ]
+    },
+    "why-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why-text": {
+      "type": "Text",
+      "props": {
+        "text": "weekly-shiplog shows last_dispatch May 18 in cron-state.json. The 06:00–11:00 UTC window is unreliable due to scheduler tick gaps. In contrast, afternoon skills (14:00–19:00 UTC) run reliably every time."
+      }
+    },
+    "issue-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "ISS-002: Root cause confirmed",
+        "variant": "outline"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes-heading",
+        "changes-list"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "aeon.yml: weekly-shiplog schedule \"0 9 * * 1\" → \"30 14 * * 1\""
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "PR #17 closed (8 days stale, conflicts)"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "PR #19 closed and re-implemented as PR #20"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact-heading",
+        "impact-text"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "Next Monday (Jun 29) should produce the first weekly shipping summary in 39 days."
+      }
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #20: weekly-shiplog schedule fix",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/20",
+        "source": "GitHub"
+      }
+    }
+  }
+}
