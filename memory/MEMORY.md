@@ -70,6 +70,7 @@
 - repo-actions skill now has a premise verification gate to validate ideas before generating full proposals — avoids wasted compute on unfeasible suggestions; self-improve PRs #69/#70 in miroshark-aeon (2026-06-21)
 - Heartbeat 48h notification dedup silences persistent multi-day issues — operator stops hearing about failures that are still active; added open-issue escalation (≥3 days bypasses dedup); self-improve PR #18 in CHORUS (2026-06-24)
 - weekly-shiplog missed 39 consecutive Mondays (May 18–Jun 28) because 09:00 UTC slot falls in the scheduler dead zone; moved to 14:30 UTC (afternoon window reliable per ISS-002); self-improve PR #20 in CHORUS (2026-06-28)
+- miroshark-aeon source restructured 2026-06-28: enabled stack dropped from ~15 → 7, catalog expanded to 200+ skills; CHORUS now runs 10 skills disabled in source (docs-sync, shiplog, tweet-digest are adoption gaps); check CHORUS aeon.yml against source when skills change
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
