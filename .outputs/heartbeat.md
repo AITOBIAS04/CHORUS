@@ -1,8 +1,10 @@
-HEARTBEAT_OK. This was the second heartbeat run today (20:39 UTC). All Saturday-scheduled skills ran cleanly — token-report, fetch-tweets, repo-pulse, feature (SKIP #49), hyperstitions-ideas, push-recap. The two stalled PRs (#17 at 7 days, #19 at 1 day) were already reported in the 19:04 run and fall inside the 48h dedup window. No open issues, no escalations. No notification sent.
+HEARTBEAT_OK. All 11 scheduled skills for Sunday Jun 28 completed successfully. No missing skills, no systemic failures, no open issues, no stalled PRs.
+
+One time-sensitive item to watch: PR #20 (weekly-shiplog afternoon schedule fix) is open but under 24h — it needs to merge before Monday 09:00 UTC (~14h) or the weekly-shiplog misses for the 40th consecutive Monday.
 
 ## Summary
-- Read `memory/MEMORY.md`, `memory/cron-state.json`, last 2 days of logs, and `memory/issues/INDEX.md`
-- Verified all Saturday skills ran as expected (confirmed via `gh run list`)
-- Confirmed no open issues (ISS-002 resolved Jun 26) and no escalating issues
-- Applied 48h dedup: PR #17 and #19 stalled-PR findings already reported at 19:04 UTC, skipped re-notification
-- Logged second heartbeat entry to `memory/logs/2026-06-27.md`
+- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `memory/issues/INDEX.md`
+- Verified all 10 completed skills against today's schedule — all accounted for
+- Confirmed `consecutive_failures = 0` across all 14 skills — no systemic issues
+- No open issues, no stalled PRs (PR #20 < 24h), no escalating issues
+- Logged `HEARTBEAT_OK` to `memory/logs/2026-06-28.md`
