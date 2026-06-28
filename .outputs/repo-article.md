@@ -1,5 +1,5 @@
-*New Article: Sixty-Seven Percent of Developers Live in the Terminal. Most AI Simulation Tools Don't.*
+*New Article: Two Hundred Eighty-One People Forked the Repo. One of Them Came Back.*
 
-MiroShark shipped its complete CLI toolkit in one week — cost, wait, stop, and docs subcommands — while the AI simulation ecosystem stays stuck on dashboards. With 67% of developers living in the terminal and 54% of platform teams ranking terminal tooling tier-1, CLI-first simulation is the gap nobody else is filling. 1,348 stars, 281 forks, 41 API surfaces, now fully scriptable.
+Only 14% of GitHub forks ever contribute back upstream (CMU). MiroShark has 281 forks and exactly one sustained community contributor — Daniel Andersen, with 9 merged PRs fixing infrastructure-level bugs. In a $10.9B AI agent market where 40% of projects face cancellation, the gap between forking and contributing is where open-source projects either build communities or become archives.
 
 Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-28.md

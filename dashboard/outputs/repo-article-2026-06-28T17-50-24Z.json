@@ -1,0 +1,96 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Two Hundred Eighty-One People Forked the Repo. One of Them Came Back."
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_intro",
+        "grid_stats",
+        "text_conclusion",
+        "link_article"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Only 14% of GitHub forks ever contribute back upstream (CMU). MiroShark has 281 forks and exactly one sustained community contributor — Daniel Andersen, with 9 merged PRs fixing infrastructure-level bugs."
+      }
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_fork_rate",
+        "stat_forks",
+        "stat_prs",
+        "stat_market",
+        "stat_cancellation"
+      ]
+    },
+    "stat_fork_rate": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks Contributing Back",
+        "value": "14%"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Forks",
+        "value": "281"
+      }
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Daniel Andersen's Merged PRs",
+        "value": "9"
+      }
+    },
+    "stat_market": {
+      "type": "Stat",
+      "props": {
+        "label": "AI Agent Market Size",
+        "value": "$10.9B"
+      }
+    },
+    "stat_cancellation": {
+      "type": "Stat",
+      "props": {
+        "label": "Projects Facing Cancellation",
+        "value": "40%"
+      }
+    },
+    "text_conclusion": {
+      "type": "Text",
+      "props": {
+        "text": "In a $10.9B AI agent market where 40% of projects face cancellation, the gap between forking and contributing is where open-source projects either build communities or become archives."
+      }
+    },
+    "link_article": {
+      "type": "Link",
+      "props": {
+        "label": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-28.md"
+      }
+    }
+  }
+}
