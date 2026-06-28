@@ -1,9 +1,10 @@
 ## Summary
 
 **Skill:** push-recap
-**Status:** PUSH_RECAP_QUIET — no substantive commits in the last 24 hours across either watched repo.
+**Status:** PUSH_RECAP_QUIET — no notification sent
 
-- **aaronjmars/MiroShark:** 0 commits
-- **aaronjmars/miroshark-aeon:** 12 automation commits filtered (scheduler state updates, cron state, auto-commits for docs-sync, token-report, heartbeat, tweet-digest)
-- **Notification:** not sent (per skill rules — no substantive activity)
-- **Log:** updated `memory/logs/2026-06-27.md` with 2nd-run entry noting 3rd consecutive quiet day
+- **Repos scanned:** aaronjmars/MiroShark (0 commits), aaronjmars/miroshark-aeon (12 commits, all automation)
+- **Substantive commits:** 0
+- **Automation filtered:** 12 (cron state updates, scheduler updates, auto-commits for repo-pulse, token-report, heartbeat, tweet-digest)
+- **Note:** 4th consecutive quiet day (Jun 25–28). No substantive code changes pushed to either watched repo.
+- **Log updated:** `memory/logs/2026-06-28.md`
