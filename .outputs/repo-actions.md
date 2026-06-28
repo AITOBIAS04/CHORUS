@@ -1,18 +1,19 @@
-The `repo-actions` skill already ran successfully today. The article is at `articles/repo-actions-2026-06-26.md` and the notification was sent. No need to re-run — here's what was produced:
+*Repo Action Ideas — 2026-06-28*
+Generated from analysis of aaronjmars/MiroShark (1,347 stars · 281 forks · 0 open PRs · 3 consecutive quiet days).
 
----
+1. Simulation Badge API (Feature/Growth, Small)
+   `GET /api/simulation/:id/badge.svg` returns a shields.io-compatible SVG badge — embeddable anywhere, turns every operator README into a passive CTA back to MiroShark.
 
-**Repo Action Ideas — 2026-06-26**
-Analyzed: aaronjmars/MiroShark (1,337 stars · 281 forks · 0 open issues · 0 open PRs)
+2. Python SDK Package (Integration/DX, Medium)
+   `pip install miroshark` — a PyPI-listed pure-stdlib Python SDK that puts MiroShark in Python ecosystem search indexes and makes simulations callable from notebooks and scripts in 5 lines.
 
-1. **Agent Communication Transcript Export** (Feature, Small) — `GET /api/simulation/:id/transcript.md` returns a round-by-round Markdown conversation doc; fills the qualitative gap alongside signal.json for researchers and non-technical stakeholders
-2. **Round-Level State Snapshot API** (Feature, Small) — `GET /api/simulation/:id/rounds/:n/state` exposes per-agent stances at round N; the backend foundation the Simulation Replay Stepper needs and answers "what did round 3 look like?"
-3. **GitHub Actions Workflow Template** (DX/Integration, Small) — `templates/github-actions/` with weekly-simulation and on-PR comment templates; puts MiroShark in the Actions discovery path and serves the "public-facing instance by July 15" hyperstition
-4. **Jupyter Notebook Research Gallery** (Community/DX, Small) — `examples/miroshark_analysis.ipynb` + Binder badge in README; zero-install path for the research community (paper citation hyperstition) and a shareable HN artifact
-5. **Topic Autocomplete API** (DX/Feature, Small) — `GET /api/topics/suggest?q=` with frequency × recency scoring; converts the blank topic field from friction to guided discovery
+3. CLI `list` Subcommand (Feature/DX, Small)
+   The CRUD verb that closes the loop — `miroshark list [--status] [--json]` shows all simulations and makes the CLI fully scriptable alongside simulate/wait/stop/cost.
 
-Full article: `articles/repo-actions-2026-06-26.md`
+4. Webhook Event Delivery (Integration, Medium)
+   HMAC-signed push notifications on simulation completion — unlocks Zapier, Make, and n8n automations without polling; turns any deployed MiroShark instance into a workflow tool.
 
-## Summary
+5. Tutorial Workshop Kit (Community/DX, Small)
+   `docs/workshop/` with step-by-step tutorial files and a creator brief — makes MiroShark tutorial-writing mechanical for the 281 passive forks, directly targeting the '5 creators publish tutorials by Aug 15' hyperstition.
 
-Skill `repo-actions` was already executed earlier today — article written, notification sent. Skipped re-execution to avoid duplicate notifications and overlapping idea generation. All 5 ideas are unblocked candidates for the `feature` skill once `GH_GLOBAL` is set.
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-28.md

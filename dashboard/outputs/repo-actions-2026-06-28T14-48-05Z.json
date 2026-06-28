@@ -1,0 +1,271 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-06-28"
+      },
+      "children": [
+        "text-intro",
+        "stat-stars",
+        "stat-forks",
+        "stat-prs",
+        "text-quiet",
+        "sep-1",
+        "item1-heading",
+        "item1-badges",
+        "item1-desc",
+        "item2-heading",
+        "item2-badges",
+        "item2-desc",
+        "item3-heading",
+        "item3-badges",
+        "item3-desc",
+        "item4-heading",
+        "item4-badges",
+        "item4-desc",
+        "item5-heading",
+        "item5-badges",
+        "item5-desc",
+        "sep-2",
+        "link-details"
+      ]
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark",
+        "variant": "muted"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,347"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "281"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Open PRs",
+        "value": "0"
+      }
+    },
+    "text-quiet": {
+      "type": "Text",
+      "props": {
+        "text": "3 consecutive quiet days",
+        "variant": "muted"
+      }
+    },
+    "sep-1": {
+      "type": "Separator"
+    },
+    "item1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Simulation Badge API",
+        "level": "h3"
+      }
+    },
+    "item1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-1a",
+        "badge-1b"
+      ]
+    },
+    "badge-1a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Growth",
+        "variant": "secondary"
+      }
+    },
+    "badge-1b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "item1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/badge.svg returns a shields.io-compatible SVG badge — embeddable anywhere, turns every operator README into a passive CTA back to MiroShark."
+      }
+    },
+    "item2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Python SDK Package",
+        "level": "h3"
+      }
+    },
+    "item2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-2a",
+        "badge-2b"
+      ]
+    },
+    "badge-2a": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration/DX",
+        "variant": "secondary"
+      }
+    },
+    "badge-2b": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      }
+    },
+    "item2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "pip install miroshark — a PyPI-listed pure-stdlib Python SDK that puts MiroShark in Python ecosystem search indexes and makes simulations callable from notebooks and scripts in 5 lines."
+      }
+    },
+    "item3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. CLI `list` Subcommand",
+        "level": "h3"
+      }
+    },
+    "item3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-3a",
+        "badge-3b"
+      ]
+    },
+    "badge-3a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "secondary"
+      }
+    },
+    "badge-3b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "item3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "The CRUD verb that closes the loop — miroshark list [--status] [--json] shows all simulations and makes the CLI fully scriptable alongside simulate/wait/stop/cost."
+      }
+    },
+    "item4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Webhook Event Delivery",
+        "level": "h3"
+      }
+    },
+    "item4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-4a",
+        "badge-4b"
+      ]
+    },
+    "badge-4a": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "secondary"
+      }
+    },
+    "badge-4b": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      }
+    },
+    "item4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "HMAC-signed push notifications on simulation completion — unlocks Zapier, Make, and n8n automations without polling; turns any deployed MiroShark instance into a workflow tool."
+      }
+    },
+    "item5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Tutorial Workshop Kit",
+        "level": "h3"
+      }
+    },
+    "item5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-5a",
+        "badge-5b"
+      ]
+    },
+    "badge-5a": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX",
+        "variant": "secondary"
+      }
+    },
+    "badge-5b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "item5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "docs/workshop/ with step-by-step tutorial files and a creator brief — makes MiroShark tutorial-writing mechanical for the 281 passive forks, directly targeting the '5 creators publish tutorials by Aug 15' hyperstition."
+      }
+    },
+    "sep-2": {
+      "type": "Separator"
+    },
+    "link-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-28.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
