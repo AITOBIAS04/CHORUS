@@ -1,0 +1,208 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Sixty-Seven Percent of Developers Live in the Terminal. Most AI Simulation Tools Don't."
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_intro",
+        "text_feature",
+        "heading_subcommands",
+        "stack_badges",
+        "sep1",
+        "heading_metrics",
+        "stack_percentages",
+        "heading_repo",
+        "stack_repo_stats",
+        "sep2",
+        "story_article"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark shipped its complete CLI toolkit in one week — while the AI simulation ecosystem stays stuck on dashboards. CLI-first simulation is the gap nobody else is filling.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "text_feature": {
+      "type": "Text",
+      "props": {
+        "text": "Now fully scriptable with a complete set of subcommands.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "heading_subcommands": {
+      "type": "Heading",
+      "props": {
+        "text": "Subcommands",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "stack_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_cost",
+        "badge_wait",
+        "badge_stop",
+        "badge_docs"
+      ]
+    },
+    "badge_cost": {
+      "type": "Badge",
+      "props": {
+        "text": "cost",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_wait": {
+      "type": "Badge",
+      "props": {
+        "text": "wait",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_stop": {
+      "type": "Badge",
+      "props": {
+        "text": "stop",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_docs": {
+      "type": "Badge",
+      "props": {
+        "text": "docs",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_metrics": {
+      "type": "Heading",
+      "props": {
+        "text": "Market Adoption",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "stack_percentages": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "progress_devs",
+        "progress_teams"
+      ]
+    },
+    "progress_devs": {
+      "type": "Progress",
+      "props": {
+        "value": 67,
+        "max": 100,
+        "label": "Developers living in the terminal"
+      },
+      "children": []
+    },
+    "progress_teams": {
+      "type": "Progress",
+      "props": {
+        "value": 54,
+        "max": 100,
+        "label": "Platform teams ranking terminal tooling tier-1"
+      },
+      "children": []
+    },
+    "heading_repo": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Metrics",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "stack_repo_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks",
+        "stat_apis"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,348"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "281"
+      },
+      "children": []
+    },
+    "stat_apis": {
+      "type": "Stat",
+      "props": {
+        "label": "API Surfaces",
+        "value": "41"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "story_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-28.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}

@@ -1,5 +1,5 @@
-*New Article: Forty-Seven Percent of AI Agent Releases Roll Back. Automated Testing Cuts That to Nine.*
+*New Article: Sixty-Seven Percent of Developers Live in the Terminal. Most AI Simulation Tools Don't.*
 
-Only 38% of production AI agents have automated evaluations on every change. Without them, 47% of releases roll back — with them, just 9%. MiroShark's 1,372 tests across 41 API surfaces, smoke tests that verify real agent output, and CI gates on every PR show what engineering discipline looks like in a domain that's convinced itself testing doesn't apply.
+MiroShark shipped its complete CLI toolkit in one week — cost, wait, stop, and docs subcommands — while the AI simulation ecosystem stays stuck on dashboards. With 67% of developers living in the terminal and 54% of platform teams ranking terminal tooling tier-1, CLI-first simulation is the gap nobody else is filling. 1,348 stars, 281 forks, 41 API surfaces, now fully scriptable.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-20.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-28.md
