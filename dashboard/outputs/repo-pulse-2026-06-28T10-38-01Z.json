@@ -1,0 +1,172 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-06-28"
+      },
+      "children": [
+        "heading_repo",
+        "sep1",
+        "stack_stats",
+        "sep2",
+        "heading_stargazers",
+        "stack_stargazers",
+        "sep3",
+        "heading_forks",
+        "stack_forks"
+      ]
+    },
+    "heading_repo": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,347",
+        "delta": "+5",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "281",
+        "delta": "+1",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_stargazers": {
+      "type": "Heading",
+      "props": {
+        "text": "New Stargazers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_stargazers": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link_alkli",
+        "link_dcand",
+        "link_yosh",
+        "link_pjbish",
+        "link_ctrl"
+      ]
+    },
+    "link_alkli": {
+      "type": "Link",
+      "props": {
+        "label": "alklimover",
+        "href": "https://github.com/alklimover"
+      },
+      "children": []
+    },
+    "link_dcand": {
+      "type": "Link",
+      "props": {
+        "label": "dcandrade",
+        "href": "https://github.com/dcandrade"
+      },
+      "children": []
+    },
+    "link_yosh": {
+      "type": "Link",
+      "props": {
+        "label": "yosh-2-7-6",
+        "href": "https://github.com/yosh-2-7-6"
+      },
+      "children": []
+    },
+    "link_pjbish": {
+      "type": "Link",
+      "props": {
+        "label": "pjbish",
+        "href": "https://github.com/pjbish"
+      },
+      "children": []
+    },
+    "link_ctrl": {
+      "type": "Link",
+      "props": {
+        "label": "CtrlArtDel",
+        "href": "https://github.com/CtrlArtDel"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_forks": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_forks": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link_jello"
+      ]
+    },
+    "link_jello": {
+      "type": "Link",
+      "props": {
+        "label": "Jelloeater/MiroShark",
+        "href": "https://github.com/Jelloeater/MiroShark"
+      },
+      "children": []
+    }
+  }
+}
