@@ -1,10 +1,7 @@
-HEARTBEAT_OK. All 11 scheduled skills for Sunday Jun 28 completed successfully. No missing skills, no systemic failures, no open issues, no stalled PRs.
+Heartbeat — Mon Jun 29, 19:00 UTC
 
-One time-sensitive item to watch: PR #20 (weekly-shiplog afternoon schedule fix) is open but under 24h — it needs to merge before Monday 09:00 UTC (~14h) or the weekly-shiplog misses for the 40th consecutive Monday.
+All 14 skills healthy (consecutive_failures = 0). Monday schedule complete: token-report, fetch-tweets, repo-pulse, weekly-shiplog, feature (SKIP #50 — GH_GLOBAL still not set), push-recap, project-lens — all ran.
 
-## Summary
-- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `memory/issues/INDEX.md`
-- Verified all 10 completed skills against today's schedule — all accounted for
-- Confirmed `consecutive_failures = 0` across all 14 skills — no systemic issues
-- No open issues, no stalled PRs (PR #20 < 24h), no escalating issues
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-06-28.md`
+⚠️ PR #20 stalled >24h: "improve: move weekly-shiplog to afternoon slot to fix 39-day outage" (opened Jun 28 13:16 UTC, now ~30h). weekly-shiplog did run today via the old 09:00 UTC schedule, but PR #20 should merge to harden future Mondays against the morning dead zone.
+
+No open issues. No missing skills. No dispatch needed.

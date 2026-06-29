@@ -1,0 +1,169 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "Mon Jun 29, 19:00 UTC"
+      },
+      "children": [
+        "stat-health",
+        "sep-1",
+        "stack-schedule",
+        "sep-2",
+        "alert-pr20",
+        "sep-3",
+        "stack-final"
+      ]
+    },
+    "stat-health": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Healthy",
+        "value": "14",
+        "delta": "consecutive_failures = 0",
+        "trend": "neutral"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack-schedule": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-schedule",
+        "stack-skills"
+      ]
+    },
+    "heading-schedule": {
+      "type": "Heading",
+      "props": {
+        "text": "Monday Schedule Complete",
+        "level": "h3"
+      }
+    },
+    "stack-skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill-token-report",
+        "skill-fetch-tweets",
+        "skill-repo-pulse",
+        "skill-weekly-shiplog",
+        "skill-feature-skip",
+        "skill-push-recap",
+        "skill-project-lens"
+      ]
+    },
+    "skill-token-report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "default"
+      }
+    },
+    "skill-fetch-tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "default"
+      }
+    },
+    "skill-repo-pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "default"
+      }
+    },
+    "skill-weekly-shiplog": {
+      "type": "Badge",
+      "props": {
+        "text": "weekly-shiplog",
+        "variant": "default"
+      }
+    },
+    "skill-feature-skip": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-feature",
+        "badge-skip-reason"
+      ]
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "outline"
+      }
+    },
+    "badge-skip-reason": {
+      "type": "Badge",
+      "props": {
+        "text": "SKIP #50 — GH_GLOBAL not set",
+        "variant": "secondary"
+      }
+    },
+    "skill-push-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "default"
+      }
+    },
+    "skill-project-lens": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens",
+        "variant": "default"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "alert-pr20": {
+      "type": "Alert",
+      "props": {
+        "title": "PR #20 Stalled >24h",
+        "message": "improve: move weekly-shiplog to afternoon slot to fix 39-day outage (opened Jun 28 13:16 UTC, now ~30h). weekly-shiplog did run today via old 09:00 UTC schedule. PR #20 should merge to harden future Mondays against morning dead zone.",
+        "type": "warning"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack-final": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-final"
+      ]
+    },
+    "text-final": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues. No missing skills. No dispatch needed.",
+        "variant": "lead"
+      }
+    }
+  }
+}
