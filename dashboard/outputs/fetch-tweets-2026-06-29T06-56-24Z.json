@@ -1,0 +1,125 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK crypto token on Base chain (2026-06-29)"
+      },
+      "children": [
+        "alert_apistatus",
+        "sep1",
+        "stack_tweet1",
+        "sep2",
+        "stack_tweet2",
+        "sep3",
+        "stack_tweet3"
+      ]
+    },
+    "alert_apistatus": {
+      "type": "Alert",
+      "props": {
+        "title": "Data source",
+        "message": "XAI_API_KEY not available; results compiled via WebSearch",
+        "type": "info"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_tweet1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet1",
+        "link1"
+      ]
+    },
+    "tweet1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "@aaronjmars",
+        "text": "Framework capability demo: spawns hundreds of AI profiles on Reddit & X from any uploaded context, profiles post/argue/retweet in real time — Polymarket integration teased"
+      }
+    },
+    "link1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2036175623622660114"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_tweet2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet2",
+        "link2"
+      ]
+    },
+    "tweet2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "anger_trading",
+        "handle": "@anger_trading",
+        "text": "Token callout: \"$miroshark\" — chart post from community trader"
+      }
+    },
+    "link2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/anger_trading/status/2041985239858475105"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_tweet3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet3",
+        "link3"
+      ]
+    },
+    "tweet3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "@aaronjmars",
+        "text": "Project intro: MiroShark as English fork of MiroFish — improved simulation flow, local model support, any OpenAI-compatible API"
+      }
+    },
+    "link3": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2035881020302430571"
+      }
+    }
+  }
+}

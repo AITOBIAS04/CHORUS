@@ -1,23 +1,15 @@
-*Top Tweets — MIROSHARK crypto token on Base chain (2026-06-28)*
+*Top Tweets — MIROSHARK crypto token on Base chain (2026-06-29)*
 
-_XAI_API_KEY not available; results compiled via WebSearch_
+_XAI\_API\_KEY not available; results compiled via WebSearch_
 
-1. x.com/RoundtableSpace — 0xMarioNawfal spotlights the framework: "MIROSHARK IS BUILDING A SIMULATION FRAMEWORK THAT LETS AI MODEL HOW REDDIT, X, AND SOON POLYMARKET WOULD REACT TO AN IDEA."
+1\. x\.com/aaronjmars — Framework capability demo: spawns hundreds of AI profiles on Reddit & X from any uploaded context, profiles post/argue/retweet in real time — Polymarket integration teased
 Likes: N/A | RTs: N/A
-[View tweet](https://x.com/RoundtableSpace/status/2036242843816305095)
+[View tweet](https://x.com/aaronjmars/status/2036175623622660114)
 
-2. x.com/aaronjmars — MiroShark daily update: Polymarket integration via Wonderwall (OASIS fork). Agents can now create prediction markets, trade via AMM, manage portfolios, and see cross-platform digests — Twitter, Reddit, and Polymarket simultaneously.
+2\. x\.com/anger\_trading — Token callout: "$miroshark" — chart post from community trader
 Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2037281730315661407)
+[View tweet](https://x.com/anger_trading/status/2041985239858475105)
 
-3. x.com/aaronjmars — "The Knowledge Graph Inside MiroShark: How Structured Memory Makes Simulated Agents Think" — deep dive on how Neo4j-backed memory turns agents from stateless bots into persistent thinkers.
+3\. x\.com/aaronjmars — Project intro: MiroShark as English fork of MiroFish — improved simulation flow, local model support, any OpenAI\-compatible API
 Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2038639003096744329)
-
-4. x.com/aaronjmars — On using X Premium with aeon: "oh wow. will write an adapter next week to use your X Premium on @aeonframework" — opens door to native X API access without a paid dev key.
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2055761328048914454)
-
-5. x.com/aaronjmars — Pitching the aeon vision to shawmakesmagic: "AI should liberate us from the information bombing we receive every time we log-in — just have an agent check your X feed and tell you what's worth your time. Let it merge your..."
-Likes: N/A | RTs: N/A
-[View tweet](https://x.com/aaronjmars/status/2046252721557139500)
+[View tweet](https://x.com/aaronjmars/status/2035881020302430571)
