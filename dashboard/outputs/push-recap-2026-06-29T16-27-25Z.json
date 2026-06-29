@@ -1,0 +1,273 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap",
+        "description": "2026-06-29"
+      },
+      "children": [
+        "repos_section",
+        "sep1",
+        "dependency_section",
+        "sep2",
+        "skill_outputs_section",
+        "sep3",
+        "key_changes_section",
+        "sep4",
+        "stats_section",
+        "sep5",
+        "link_section"
+      ]
+    },
+    "repos_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_miroshark",
+        "repo_aeon"
+      ]
+    },
+    "repo_miroshark": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark",
+        "source": "GitHub",
+        "score": "4 commits by dependabot[bot]"
+      },
+      "children": []
+    },
+    "repo_aeon": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aaronjmars/miroshark-aeon",
+        "href": "https://github.com/aaronjmars/miroshark-aeon",
+        "source": "GitHub",
+        "score": "3 skill output commits (15 automation filtered)"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "dependency_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dep_heading",
+        "dep_summary",
+        "dep_frontend",
+        "dep_ci"
+      ]
+    },
+    "dep_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Sweep",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "dep_summary": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot merged 4 PRs updating MiroShark's frontend stack and CI pipeline.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "dep_frontend": {
+      "type": "Text",
+      "props": {
+        "text": "Frontend bumped: axios (1.18.1), Vue (3.5.39), Vite (8.0→8.1)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "dep_ci": {
+      "type": "Text",
+      "props": {
+        "text": "CI actions updated to their latest majors — actions/checkout v7, docker/login-action v4, docker/setup-buildx-action v4.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "skill_outputs_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skill_heading",
+        "token_stat",
+        "shiplog_heading",
+        "shiplog_detail1",
+        "shiplog_detail2"
+      ]
+    },
+    "skill_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skill Outputs",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "token_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Daily Token Report — MIROSHARK",
+        "value": "$0.000004106",
+        "delta": "−4.2% 24h",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "shiplog_heading": {
+      "type": "Text",
+      "props": {
+        "text": "Weekly shiplog at new 14:30 UTC slot",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "shiplog_detail1": {
+      "type": "Text",
+      "props": {
+        "text": "Coverage: CLI lifecycle completion and thinking model hardening from Jun 22–28",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "shiplog_detail2": {
+      "type": "Badge",
+      "props": {
+        "text": "ISS-002 fix confirmed working (first successful run at afternoon slot)",
+        "variant": "success"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "change_1",
+        "change_2",
+        "change_3"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "Vite 8.0→8.1 (minor version bump, potential new build features)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "actions/checkout v6→v7 across all 3 CI test jobs + Docker build",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "change_3": {
+      "type": "Text",
+      "props": {
+        "text": "Weekly shiplog ISS-002 fix confirmed working (first successful run at afternoon slot)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_text"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stats_text": {
+      "type": "Text",
+      "props": {
+        "text": "9 files changed, +269/−160 lines",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_section": {
+      "type": "Link",
+      "props": {
+        "label": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-06-29.md"
+      },
+      "children": []
+    }
+  }
+}
