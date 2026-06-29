@@ -1,0 +1,129 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-06-29"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_link",
+        "sep1",
+        "stats_container",
+        "sep2",
+        "stargazers_section"
+      ]
+    },
+    "repo_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark",
+        "source": "GitHub"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1350",
+        "delta": "+3",
+        "trend": "up"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "281",
+        "delta": "+0",
+        "trend": "neutral"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stargazers_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stargazers_heading",
+        "stargazers_list"
+      ]
+    },
+    "stargazers_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New stargazers",
+        "level": "h3"
+      }
+    },
+    "stargazers_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_1",
+        "link_2",
+        "link_3"
+      ]
+    },
+    "link_1": {
+      "type": "Link",
+      "props": {
+        "label": "MilleniumSpark",
+        "href": "https://github.com/MilleniumSpark"
+      }
+    },
+    "link_2": {
+      "type": "Link",
+      "props": {
+        "label": "andrianthan",
+        "href": "https://github.com/andrianthan"
+      }
+    },
+    "link_3": {
+      "type": "Link",
+      "props": {
+        "label": "burntsteam",
+        "href": "https://github.com/burntsteam"
+      }
+    }
+  }
+}
