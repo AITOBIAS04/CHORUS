@@ -1,14 +1,12 @@
-*Weekly Shiplog — 2026-05-18*
+*Weekly Shiplog — 2026-06-29*
 
-The week MiroShark completed the loop: nine PRs landed, four notification channels shipped, and simulations became cryptographically permanent.
+The CLI learned to wait, stop, and tell you what it cost. MiroShark can now be automated end-to-end.
 
 Shipped:
-- Notification quadrant complete — Discord rich embeds, Slack Block Kit, SMTP emails join the existing webhook (PRs #83, #87)
-- OriginTrail DKG citation — tamper-proof on-chain provenance for finished simulations (PR #84)
-- Discovery layer — filtered RSS/Atom feeds + auto-generated sitemap make sims crawlable and subscribable (PRs #81, #82)
-- Trajectory Chart SVG + Jupyter notebook export for institutional researchers (PRs #85, #80)
-- Emergency model swap: grok-4.1-fast → gemini-3-flash after xAI deprecation (PR #86)
+- CLI automation lifecycle complete — cost, wait, stop subcommands landed in 4 days
+- Thinking model robustness — 8-file sweep eliminates silent failures with reasoning LLMs
+- i18n locale persistence — non-English sims no longer drift back to English
+- 680-line dead code cleanup — codebase got smaller, not bigger
 
-Stats: ~300 commits, 9 PRs merged, +28.5K/-1.1K lines, 24 consecutive zero-new-dep PRs
-Token: 3 consecutive ATHs, FDV $1M→$2.12M, LP $761K ATH
-Full update: https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/weekly-shiplog-2026-05-18.md
+Stats: 24 commits, 22 PRs merged, +1,968/-1,410 lines, 1,350 stars (+28)
+Full update: https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/weekly-shiplog-2026-06-29.md

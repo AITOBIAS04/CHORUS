@@ -1,0 +1,175 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog",
+        "description": "2026-06-29"
+      },
+      "children": [
+        "heading_main",
+        "text_summary",
+        "sep1",
+        "heading_shipped",
+        "stack_shipped",
+        "sep2",
+        "heading_stats",
+        "stack_stats",
+        "sep3",
+        "storylink_full"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Weekly Shiplog — 2026-06-29",
+        "level": "h1"
+      },
+      "children": []
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "The CLI learned to wait, stop, and tell you what it cost. MiroShark can now be automated end-to-end.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_shipped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4"
+      ]
+    },
+    "item1": {
+      "type": "Text",
+      "props": {
+        "text": "CLI automation lifecycle complete — cost, wait, stop subcommands landed in 4 days"
+      },
+      "children": []
+    },
+    "item2": {
+      "type": "Text",
+      "props": {
+        "text": "Thinking model robustness — 8-file sweep eliminates silent failures with reasoning LLMs"
+      },
+      "children": []
+    },
+    "item3": {
+      "type": "Text",
+      "props": {
+        "text": "i18n locale persistence — non-English sims no longer drift back to English"
+      },
+      "children": []
+    },
+    "item4": {
+      "type": "Text",
+      "props": {
+        "text": "680-line dead code cleanup — codebase got smaller, not bigger"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_commits",
+        "stat_prs",
+        "stat_lines",
+        "stat_stars"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "24"
+      },
+      "children": []
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs Merged",
+        "value": "22"
+      },
+      "children": []
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Changed",
+        "value": "+1,968 / -1,410"
+      },
+      "children": []
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,350",
+        "delta": "+28",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "storylink_full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full weekly shiplog",
+        "href": "https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/weekly-shiplog-2026-06-29.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
