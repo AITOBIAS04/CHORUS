@@ -1,7 +1,14 @@
-Heartbeat — Mon Jun 29, 19:00 UTC
+**HEARTBEAT_OK** — everything is running clean today.
 
-All 14 skills healthy (consecutive_failures = 0). Monday schedule complete: token-report, fetch-tweets, repo-pulse, weekly-shiplog, feature (SKIP #50 — GH_GLOBAL still not set), push-recap, project-lens — all ran.
+## Summary
 
-⚠️ PR #20 stalled >24h: "improve: move weekly-shiplog to afternoon slot to fix 39-day outage" (opened Jun 28 13:16 UTC, now ~30h). weekly-shiplog did run today via the old 09:00 UTC schedule, but PR #20 should merge to harden future Mondays against the morning dead zone.
+**System:** All 14 skills healthy, `consecutive_failures: 0` across the board.
 
-No open issues. No missing skills. No dispatch needed.
+**Skills (Tue Jun 30):** All 9 scheduled skills completed — token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, repo-article, and this heartbeat.
+
+**Notable today:**
+- Self-improve merged stale PR #20 (weekly-shiplog schedule fix) and opened PR #21 (cron-state counter hygiene reset — 12 skills had success rates poisoned by the Apr 16–30 auth outage, now corrected)
+- Feature skill blocked for 50th consecutive run (GH_GLOBAL not set)
+- MIROSHARK at $0.000003898 (Q2 close, −91.1% from ATH, fourth day below demand zone)
+
+**No missing skills, no open issues, no stalled PRs. No dispatch or notification needed.**
