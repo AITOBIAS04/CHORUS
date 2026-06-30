@@ -1,0 +1,320 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-06-30"
+      },
+      "children": [
+        "context",
+        "sep1",
+        "idea1",
+        "sep2",
+        "idea2",
+        "sep3",
+        "idea3",
+        "sep4",
+        "idea4",
+        "sep5",
+        "idea5",
+        "sep6",
+        "link"
+      ]
+    },
+    "context": {
+      "type": "Text",
+      "props": {
+        "text": "Q2 closes today. Three hyperstitions expire in 15 days (1,500 stars, HN front page, external deployment). Five ideas targeted at each pressure point.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1_title",
+        "idea1_tags",
+        "idea1_desc"
+      ]
+    },
+    "idea1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Show HN Launch Kit",
+        "level": "h3"
+      }
+    },
+    "idea1_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_tag1",
+        "idea1_tag2"
+      ]
+    },
+    "idea1_tag1": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth"
+      }
+    },
+    "idea1_tag2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-written title, body, FAQ, timing guide, and demo checklist — turns the HN submission from an impulsive post into a deliberate launch."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea2_title",
+        "idea2_tags",
+        "idea2_desc"
+      ]
+    },
+    "idea2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Simulation Data Bundle Export",
+        "level": "h3"
+      }
+    },
+    "idea2_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_tag1",
+        "idea2_tag2"
+      ]
+    },
+    "idea2_tag1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea2_tag2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "`GET /api/simulation/:id/bundle.zip` — one curl command returns every artifact (signal.json, agents.json, trajectory.json, transcripts) in a single ZIP for research reproducibility and tutorial creation."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea3_title",
+        "idea3_tags",
+        "idea3_desc"
+      ]
+    },
+    "idea3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. API Rate Limiting & Usage Headers",
+        "level": "h3"
+      }
+    },
+    "idea3_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_tag1",
+        "idea3_tag2",
+        "idea3_tag3"
+      ]
+    },
+    "idea3_tag1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea3_tag2": {
+      "type": "Badge",
+      "props": {
+        "text": "Security"
+      }
+    },
+    "idea3_tag3": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      }
+    },
+    "idea3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "X-RateLimit headers + 429 responses + per-IP sliding window (pure stdlib, no Redis) — makes public deployments safe to share without fear of abuse."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea4_title",
+        "idea4_tags",
+        "idea4_desc"
+      ]
+    },
+    "idea4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Simulation Replay Stepper",
+        "level": "h3"
+      }
+    },
+    "idea4_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_tag1",
+        "idea4_tag2"
+      ]
+    },
+    "idea4_tag1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea4_tag2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      }
+    },
+    "idea4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Round-by-round belief evolution viewer built on existing trajectory.json — the dynamic story behind every result, ideal for blog posts and HN demos."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea5_title",
+        "idea5_tags",
+        "idea5_desc"
+      ]
+    },
+    "idea5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. One-Click Cloud Deploy Templates",
+        "level": "h3"
+      }
+    },
+    "idea5_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_tag1",
+        "idea5_tag2",
+        "idea5_tag3"
+      ]
+    },
+    "idea5_tag1": {
+      "type": "Badge",
+      "props": {
+        "text": "DX"
+      }
+    },
+    "idea5_tag2": {
+      "type": "Badge",
+      "props": {
+        "text": "Community"
+      }
+    },
+    "idea5_tag3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Fly.io and Google Cloud Run ready-to-run deploy scripts in `deploy/` — lowers activation energy for the external deployment hyperstition from \"figure it out\" to one command."
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-30.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

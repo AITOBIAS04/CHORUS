@@ -1,0 +1,150 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "heading-date",
+        "text-intro",
+        "separator-1",
+        "heading-why",
+        "text-why",
+        "separator-2",
+        "heading-changes",
+        "stack-changes",
+        "text-pr20",
+        "separator-3",
+        "heading-impact",
+        "text-impact",
+        "separator-4",
+        "storylink-pr"
+      ]
+    },
+    "heading-date": {
+      "type": "Heading",
+      "props": {
+        "text": "2026-06-30",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Poisoned cron-state success rates reset after 2-month delay. All 14 skills were showing 2-18% success rates despite running at 100% health for 61 days — the April auth outage (Apr 16-30) inflated historical failure counts that never got cleaned up."
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "Documented in MEMORY.md as a needed fix since late April. Heartbeat and skill-leaderboard read these rates for health assessment — misleading data masks actual system health."
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-change1",
+        "text-change2"
+      ]
+    },
+    "text-change1": {
+      "type": "Text",
+      "props": {
+        "text": "cron-state.json: Reset total_failures and recalculated success_rate for all 14 skills. 12 skills now show 100% (all outage-era failures cleared). repo-actions shows 97% (1 post-outage failure May 14). feature shows 98% (1 post-outage failure May 30)."
+      },
+      "children": []
+    },
+    "text-change2": {
+      "type": "Text",
+      "props": {
+        "text": "self-improve SKILL.md: Added Step 0.5 \"Counter hygiene\" — auto-detects poisoned rates (rate < 50%, no recent failures, last_failed > 30 days ago) and resets them. Prevents future outages from permanently corrupting health data."
+      },
+      "children": []
+    },
+    "text-pr20": {
+      "type": "Text",
+      "props": {
+        "text": "Also merged: PR #20 (weekly-shiplog afternoon slot fix, stalled 48h)."
+      },
+      "children": []
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "Health monitoring now reflects reality. Future outage recoveries will auto-clean within 2 days (next self-improve run)."
+      },
+      "children": []
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "storylink-pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #21",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/21",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}

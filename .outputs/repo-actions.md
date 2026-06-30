@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-06-28*
-Generated from analysis of aaronjmars/MiroShark (1,347 stars · 281 forks · 0 open PRs · 3 consecutive quiet days).
+*Repo Action Ideas — 2026-06-30*
+Q2 closes today. Three hyperstitions expire in 15 days (1,500 stars, HN front page, external deployment). Five ideas targeted at each pressure point.
 
-1. Simulation Badge API (Feature/Growth, Small)
-   `GET /api/simulation/:id/badge.svg` returns a shields.io-compatible SVG badge — embeddable anywhere, turns every operator README into a passive CTA back to MiroShark.
+1. Show HN Launch Kit (Growth, Small)
+   Pre-written title, body, FAQ, timing guide, and demo checklist — turns the HN submission from an impulsive post into a deliberate launch.
 
-2. Python SDK Package (Integration/DX, Medium)
-   `pip install miroshark` — a PyPI-listed pure-stdlib Python SDK that puts MiroShark in Python ecosystem search indexes and makes simulations callable from notebooks and scripts in 5 lines.
+2. Simulation Data Bundle Export (Feature, Small)
+   `GET /api/simulation/:id/bundle.zip` — one curl command returns every artifact (signal.json, agents.json, trajectory.json, transcripts) in a single ZIP for research reproducibility and tutorial creation.
 
-3. CLI `list` Subcommand (Feature/DX, Small)
-   The CRUD verb that closes the loop — `miroshark list [--status] [--json]` shows all simulations and makes the CLI fully scriptable alongside simulate/wait/stop/cost.
+3. API Rate Limiting & Usage Headers (Feature/Security, Medium)
+   X-RateLimit headers + 429 responses + per-IP sliding window (pure stdlib, no Redis) — makes public deployments safe to share without fear of abuse.
 
-4. Webhook Event Delivery (Integration, Medium)
-   HMAC-signed push notifications on simulation completion — unlocks Zapier, Make, and n8n automations without polling; turns any deployed MiroShark instance into a workflow tool.
+4. Simulation Replay Stepper (Feature, Medium)
+   Round-by-round belief evolution viewer built on existing trajectory.json — the dynamic story behind every result, ideal for blog posts and HN demos.
 
-5. Tutorial Workshop Kit (Community/DX, Small)
-   `docs/workshop/` with step-by-step tutorial files and a creator brief — makes MiroShark tutorial-writing mechanical for the 281 passive forks, directly targeting the '5 creators publish tutorials by Aug 15' hyperstition.
+5. One-Click Cloud Deploy Templates (DX/Community, Small)
+   Fly.io and Google Cloud Run ready-to-run deploy scripts in `deploy/` — lowers activation energy for the external deployment hyperstition from "figure it out" to one command.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-28.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-30.md
