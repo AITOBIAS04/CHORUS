@@ -37,7 +37,7 @@
     "last_quality_score": 4
   },
   "repo-actions": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-06-28T14:49:14Z",
     "total_runs": 327,
     "total_successes": 29,
@@ -46,11 +46,11 @@
     "success_rate": 0.09,
     "last_failed": "2026-05-14T14:49:13Z",
     "last_error": "cheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.00042699999999999997,\"contextWindow\":200000,\"maxOutputTokens\":32000},\"claude-sonnet-4-6\":{\"inputTokens\":9,\"outputTo",
-    "last_dispatch": "2026-06-28T14:40:46Z",
+    "last_dispatch": "2026-06-30T15:02:52Z",
     "last_quality_score": 4
   },
   "push-recap": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-06-29T16:28:06Z",
     "total_runs": 360,
     "total_successes": 61,
@@ -59,7 +59,7 @@
     "success_rate": 0.17,
     "last_failed": "2026-04-30T09:01:43Z",
     "last_error": "91d2f4a\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"",
-    "last_dispatch": "2026-06-29T16:22:57Z",
+    "last_dispatch": "2026-06-30T15:02:52Z",
     "last_quality_score": 4
   },
   "token-report": {
