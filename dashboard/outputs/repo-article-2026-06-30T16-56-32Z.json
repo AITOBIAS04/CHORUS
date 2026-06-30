@@ -1,0 +1,39 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading-1",
+        "text-1",
+        "story-1"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: Four Shell Commands Run a Hundred-Agent Simulation End to End. The Rest of the Industry Still Ships Dashboards.",
+        "level": "h2"
+      }
+    },
+    "text-1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark shipped four CLI subcommands in one week — simulate, wait, stop, cost — completing its automation lifecycle. In a year where 30+ AI CLIs exist for developers, MiroShark is one of the few that lets you script a multi-agent opinion simulation end to end, no browser required. 102 days from first commit to CLI-complete, 1,353 stars.",
+        "variant": "body"
+      }
+    },
+    "story-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Four Shell Commands Run a Hundred-Agent Simulation End to End. The Rest of the Industry Still Ships Dashboards.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-30.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
