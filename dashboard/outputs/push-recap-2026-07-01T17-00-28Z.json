@@ -1,0 +1,382 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-01"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "miroshark_section",
+        "sep1",
+        "aeon_section",
+        "sep2",
+        "stats_section",
+        "sep3",
+        "recap_link"
+      ]
+    },
+    "miroshark_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "miroshark_heading",
+        "miroshark_meta",
+        "pr_link",
+        "pr_details",
+        "sep_inner1",
+        "changes_heading",
+        "change_1",
+        "change_2",
+        "change_3",
+        "sep_inner2",
+        "models_heading",
+        "model_grid",
+        "sep_inner3",
+        "pricing_heading",
+        "pricing_text",
+        "pricing_stats"
+      ]
+    },
+    "miroshark_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      }
+    },
+    "miroshark_meta": {
+      "type": "Text",
+      "props": {
+        "text": "1 substantive commit by aaronjmars (9 automation commits filtered)",
+        "variant": "caption"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Model Lineup Overhaul (PR #223)",
+        "href": "https://github.com/aaronjmars/MiroShark/pull/223",
+        "source": "MiroShark"
+      }
+    },
+    "pr_details": {
+      "type": "Text",
+      "props": {
+        "text": "Default Cloud preset replaced entirely. Base persona/sim-config slot moved from Xiaomi Mimo V2.5 to Inception Mercury 2 (diffusion LLM picked for raw speed). Wonderwall simulation loop (850+ calls/run) and web search slot both move to DeepSeek V4 Flash. Smart and NER stay on Gemini 3 Flash.",
+        "variant": "body"
+      }
+    },
+    "sep_inner1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "config.py: All 4 model slots now carry explicit defaults instead of empty-string inherit — operators get per-slot defaults, set empty to inherit base",
+        "variant": "body"
+      }
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "run_summary.py: Live OpenRouter pricing added for Mercury 2 ($0.25/$0.75) and DeepSeek V4 Flash ($0.098/$0.196)",
+        "variant": "body"
+      }
+    },
+    "change_3": {
+      "type": "Text",
+      "props": {
+        "text": "12 files updated across config, settings preset, .env.example, docs (EN+ZH MODELS/INSTALL/CONFIGURATION), frontend SettingsPanel placeholder",
+        "variant": "body"
+      }
+    },
+    "sep_inner2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "models_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Model Configuration",
+        "level": "h3"
+      }
+    },
+    "model_grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "model_1",
+        "model_2",
+        "model_3"
+      ]
+    },
+    "model_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_mercury",
+        "text_mercury"
+      ]
+    },
+    "badge_mercury": {
+      "type": "Badge",
+      "props": {
+        "text": "Inception Mercury 2",
+        "variant": "secondary"
+      }
+    },
+    "text_mercury": {
+      "type": "Text",
+      "props": {
+        "text": "Base persona/sim-config slot",
+        "variant": "body"
+      }
+    },
+    "model_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_deepseek",
+        "text_deepseek"
+      ]
+    },
+    "badge_deepseek": {
+      "type": "Badge",
+      "props": {
+        "text": "DeepSeek V4 Flash",
+        "variant": "secondary"
+      }
+    },
+    "text_deepseek": {
+      "type": "Text",
+      "props": {
+        "text": "Wonderwall simulation loop (850+ calls/run) & web search slot",
+        "variant": "body"
+      }
+    },
+    "model_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_gemini",
+        "text_gemini"
+      ]
+    },
+    "badge_gemini": {
+      "type": "Badge",
+      "props": {
+        "text": "Gemini 3 Flash",
+        "variant": "secondary"
+      }
+    },
+    "text_gemini": {
+      "type": "Text",
+      "props": {
+        "text": "Smart and NER",
+        "variant": "body"
+      }
+    },
+    "sep_inner3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pricing_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pricing Comparison",
+        "level": "h3"
+      }
+    },
+    "pricing_text": {
+      "type": "Text",
+      "props": {
+        "text": "DeepSeek V4 Flash is cheaper at $0.098/$0.196 per M tokens vs Xiaomi Mimo's $0.14/$0.28",
+        "variant": "body"
+      }
+    },
+    "pricing_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_deepseek",
+        "stat_mimo",
+        "stat_mercury",
+        "stat_mimo_full"
+      ]
+    },
+    "stat_deepseek": {
+      "type": "Stat",
+      "props": {
+        "label": "DeepSeek V4 Flash",
+        "value": "$0.098 / $0.196 per M tokens"
+      }
+    },
+    "stat_mimo": {
+      "type": "Stat",
+      "props": {
+        "label": "Xiaomi Mimo V2.5",
+        "value": "$0.14 / $0.28 per M tokens"
+      }
+    },
+    "stat_mercury": {
+      "type": "Stat",
+      "props": {
+        "label": "Mercury 2 (OpenRouter)",
+        "value": "$0.25 / $0.75"
+      }
+    },
+    "stat_mimo_full": {
+      "type": "Stat",
+      "props": {
+        "label": "DeepSeek Flash (OpenRouter)",
+        "value": "$0.098 / $0.196"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "aeon_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_heading",
+        "aeon_meta"
+      ]
+    },
+    "aeon_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "miroshark-aeon",
+        "level": "h2"
+      }
+    },
+    "aeon_meta": {
+      "type": "Text",
+      "props": {
+        "text": "9 automation commits only (token-report, heartbeat, tweet-digest state)",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats_heading",
+        "stats_grid"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Overall Statistics",
+        "level": "h2"
+      }
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_added",
+        "stat_removed"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "12"
+      }
+    },
+    "stat_added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "57"
+      }
+    },
+    "stat_removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Removed",
+        "value": "52"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Push Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-01.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
