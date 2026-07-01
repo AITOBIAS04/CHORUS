@@ -1,9 +1,7 @@
-Done. Logged `FETCH_TWEETS_NO_NEW` to `memory/logs/2026-06-30.md` — no notification sent.
+*Top Tweets — MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark (2026-07-01)*
 
-## Summary
+XAI_API_KEY not available; results compiled via WebSearch
 
-- Ran 6 WebSearch queries across multiple angles (contract address, cashtag, GitHub URL, account handles, recent date filters)
-- Collected dedup set of 18 tweet URLs from the last 3 days (Jun 27–29)
-- Every MIROSHARK/MiroShark-relevant tweet returned by WebSearch was already in that set
-- No new tweets found after deduplication → skill stops here per instructions, no `./notify` call
-- XAI_API_KEY remains unset; WebSearch fallback strongly favours high-engagement older tweets, which have all rotated through the dedup window over the past 3 days
+1. x.com/github_repo — GitHub Trending bot picked up MiroShark: multi-agent simulation engine that generates hundreds of AI agents with unique personalities to simulate public reaction on social media — posts, arguments, opinion shifts
+Likes: n/a | RTs: n/a
+[View tweet](https://x.com/github_repo/status/2043803689907786095)
