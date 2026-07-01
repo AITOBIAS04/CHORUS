@@ -1,0 +1,107 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse"
+      },
+      "children": [
+        "text-meta",
+        "separator-1",
+        "stat-stars",
+        "stat-forks",
+        "separator-2",
+        "heading-stargazers",
+        "link-stargazer",
+        "separator-3",
+        "heading-forks",
+        "stack-forks"
+      ]
+    },
+    "text-meta": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark • 2026-07-01",
+        "variant": "muted"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1353",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "284",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-stargazers": {
+      "type": "Heading",
+      "props": {
+        "text": "New stargazers",
+        "level": "h3"
+      }
+    },
+    "link-stargazer": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/JJH-92",
+        "href": "https://github.com/JJH-92"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-forks": {
+      "type": "Heading",
+      "props": {
+        "text": "New forks",
+        "level": "h3"
+      }
+    },
+    "stack-forks": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-fork-1",
+        "link-fork-2"
+      ]
+    },
+    "link-fork-1": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Zarbel974/MiroShark",
+        "href": "https://github.com/Zarbel974/MiroShark"
+      }
+    },
+    "link-fork-2": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/benderwope/MiroShark",
+        "href": "https://github.com/benderwope/MiroShark"
+      }
+    }
+  }
+}
