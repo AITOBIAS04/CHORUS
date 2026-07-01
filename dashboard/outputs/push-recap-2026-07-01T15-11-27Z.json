@@ -1,0 +1,182 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-01"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_section",
+        "sep1",
+        "pr_header_stack",
+        "description",
+        "changes_heading",
+        "changes_stack",
+        "sep2",
+        "stats_heading",
+        "stat_files",
+        "sep3",
+        "link_section"
+      ]
+    },
+    "repo_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo_heading",
+        "repo_info"
+      ]
+    },
+    "repo_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "repo_info": {
+      "type": "Text",
+      "props": {
+        "text": "1 substantive commit by 1 author (9 automation commits filtered)",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "pr_header_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "pr_title",
+        "pr_link"
+      ]
+    },
+    "pr_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Model Lineup Overhaul",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "PR #223",
+        "href": "https://github.com/aaronjmars/MiroShark/pull/223"
+      },
+      "children": []
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "The entire default Cloud preset has been replaced. Mimo V2.5 is out across the board — the base persona slot now runs inception/mercury-2:nitro (a diffusion LLM picked for speed), and the Wonderwall simulation loop (850+ calls/run) plus web search both move to deepseek/deepseek-v4-flash. Smart and NER stay on Gemini 3 Flash. This is the first time MiroShark has run three distinct model families in its default stack.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "changes_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "config.py: All four model slots now carry explicit defaults instead of empty-string inherit — operators who left slots blank will get per-slot models instead of falling through to the base LLM",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "run_summary.py: New pricing entries for Mercury 2 ($0.25/$0.75 per M) and DeepSeek V4 Flash ($0.098/$0.196 per M) keep cost estimates accurate",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "12 files updated: backend config, settings preset, docs (EN+ZH), .env.example, frontend placeholder",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "12",
+        "delta": "+57/-52 lines"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "link_section": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-01.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
