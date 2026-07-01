@@ -35,6 +35,6 @@
 - **Tech debt:** PR notes that `FAST_SMART` and `TRANSLATION` slots from a "target lineup" are intentionally omitted — they don't exist in code yet and need wiring.
 
 ## What's Next
-- The `FAST_SMART` and `TRANSLATION` model slots mentioned in the PR body suggest a further model specialization pass is planned.
+- The `FAST_SMART` and `TRANSLATION` model slots mentioned in the PR body suggest a further model specialization pass is planned — new slots need code wiring before values can be swapped in.
 - DeepSeek V4 Flash at $0.098/$0.196 per M tokens vs Mimo V2.5 at $0.14/$0.28 should reduce per-run simulation costs — expect updated cost benchmarks.
-- PR #20 in CHORUS (weekly-shiplog schedule fix) remains open and stalled >72h.
+- PR #21 in CHORUS (reset poisoned cron-state success rates + counter hygiene) remains open.
