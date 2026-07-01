@@ -1,0 +1,39 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading_1",
+        "text_1",
+        "story_link_1"
+      ]
+    },
+    "heading_1": {
+      "type": "Heading",
+      "props": {
+        "text": "The Choice Was Never Whether to Simulate. It Was Whether to Write the Model Down.",
+        "level": "h2"
+      }
+    },
+    "text_1": {
+      "type": "Text",
+      "props": {
+        "text": "Joshua Epstein argued in 2008 that every prediction about social dynamics is already a simulation — the only question is whether you write it down. Philosophers Mayo-Wilson and Zollman went further in 2021, showing computational simulations outperform thought experiments in five of six traditional uses. MiroShark operationalizes this insight: the scenario a founder used to run in their head is now four CLI commands and forty-one queryable API surfaces, turning twenty-four centuries of implicit mental simulation into explicit, reproducible, dollar-a-run analysis.",
+        "variant": "body"
+      }
+    },
+    "story_link_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The Choice Was Never Whether to Simulate. It Was Whether to Write the Model Down.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-01.md",
+        "source": "project-lens"
+      }
+    }
+  }
+}

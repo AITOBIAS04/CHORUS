@@ -1,5 +1,5 @@
-*New Article: A Billion-Dollar Industry Tests What Users Click. Nobody Tests What They Think.*
+*New Article: The Choice Was Never Whether to Simulate. It Was Whether to Write the Model Down.*
 
-The A/B testing market just consolidated $1.7B in acquisitions in a single quarter — and its CEO class admits the TAM is tapped. A new wave of synthetic user startups (Aaru at $1B, Simile at $100M) is replacing human testers with AI, but still tests the same behavioral question: does the user click? MiroShark occupies the gap nobody named yet — simulating what a population thinks, not what it does, for $1 and ten minutes.
+Joshua Epstein argued in 2008 that every prediction about social dynamics is already a simulation — the only question is whether you write it down. Philosophers Mayo-Wilson and Zollman went further in 2021, showing computational simulations outperform thought experiments in five of six traditional uses. MiroShark operationalizes this insight: the scenario a founder used to run in their head is now four CLI commands and forty-one queryable API surfaces, turning twenty-four centuries of implicit mental simulation into explicit, reproducible, dollar-a-run analysis.
 
 Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-01.md
