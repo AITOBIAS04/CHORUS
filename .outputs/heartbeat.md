@@ -1,14 +1,7 @@
-**HEARTBEAT_OK** — everything is running clean today.
+Heartbeat — 2026-07-01
 
-## Summary
+All 9 skills that ran today completed successfully (token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens, memory-flush, heartbeat). No missing skills, no systemic failures.
 
-**System:** All 14 skills healthy, `consecutive_failures: 0` across the board.
+⚠️ PR #21 stalled >24h — "improve: reset poisoned cron-state success rates and add counter hygiene" (opened Jun 30 13:21 UTC, now ~30h old, no review yet). Manual merge or review needed.
 
-**Skills (Tue Jun 30):** All 9 scheduled skills completed — token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, repo-article, and this heartbeat.
-
-**Notable today:**
-- Self-improve merged stale PR #20 (weekly-shiplog schedule fix) and opened PR #21 (cron-state counter hygiene reset — 12 skills had success rates poisoned by the Apr 16–30 auth outage, now corrected)
-- Feature skill blocked for 50th consecutive run (GH_GLOBAL not set)
-- MIROSHARK at $0.000003898 (Q2 close, −91.1% from ATH, fourth day below demand zone)
-
-**No missing skills, no open issues, no stalled PRs. No dispatch or notification needed.**
+No open issues. Next hyperstition deadlines: Jul 15 (1,500 stars — at 1,353, need 147 in 14 days; HN front page; external deployment).

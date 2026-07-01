@@ -1,0 +1,183 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-07-01"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skills_section",
+        "separator_1",
+        "pr_alert",
+        "separator_2",
+        "issues_section",
+        "separator_3",
+        "deadlines_section"
+      ]
+    },
+    "skills_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skills_heading",
+        "skills_text"
+      ]
+    },
+    "skills_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skills Status",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "skills_text": {
+      "type": "Text",
+      "props": {
+        "text": "All 9 skills completed successfully: token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens, memory-flush, heartbeat. No missing skills, no systemic failures."
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "PR #21 Stalled >24h",
+        "message": "\"improve: reset poisoned cron-state success rates and add counter hygiene\" opened Jun 30 13:21 UTC (~30h old, no review yet). Manual merge or review needed.",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "issues_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "issues_heading",
+        "issues_text"
+      ]
+    },
+    "issues_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Issues",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "issues_text": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues"
+      },
+      "children": []
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "deadlines_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "deadlines_heading",
+        "deadline_jul15_label",
+        "deadline_stars_group",
+        "deadline_hn",
+        "deadline_deploy"
+      ]
+    },
+    "deadlines_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Next Hyperstition Deadlines",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "deadline_jul15_label": {
+      "type": "Badge",
+      "props": {
+        "text": "Jul 15",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "deadline_stars_group": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "deadline_stars_text",
+        "deadline_stars_progress"
+      ]
+    },
+    "deadline_stars_text": {
+      "type": "Text",
+      "props": {
+        "text": "1,500 stars (currently 1,353, need 147 in 14 days)"
+      },
+      "children": []
+    },
+    "deadline_stars_progress": {
+      "type": "Progress",
+      "props": {
+        "value": 1353,
+        "max": 1500
+      },
+      "children": []
+    },
+    "deadline_hn": {
+      "type": "Text",
+      "props": {
+        "text": "HN front page"
+      },
+      "children": []
+    },
+    "deadline_deploy": {
+      "type": "Text",
+      "props": {
+        "text": "External deployment"
+      },
+      "children": []
+    }
+  }
+}
