@@ -1,10 +1,10 @@
-*$MIROSHARK Daily — 2026-06-30*
+*$MIROSHARK Daily — 2026-07-01*
 
-Price: $0.0000039 (−2.57% 24h)
-Liquidity: $273.7K | 24h Vol: $10.3K
-Buys/Sells: 15/35
-7d: −14.1% | 30d: −45.8%
+Price: $0.000003121 (−19.94% 24h)
+Liquidity: $237.6K | 24h Vol: $14.5K
+Buys/Sells: 41/23
+7d: −30.2% | 30d: −52.7%
 
-Q2 closes at $3.90e-6 — four consecutive days below demand zone; Jun 27 recovery fully erased; $5.6K sell block at 21:00 UTC drove most of the 24h volume.
+Q3 opens at lowest price since launch. Single large sell at 21:00 UTC Jun 30 (~$7.1K, 49% of day's volume) drove intraday low to $2.96e-6. LP drain accelerated: −$36K in one day. −92.8% from ATH.
 
 Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209

@@ -1,0 +1,107 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "MIROSHARK Daily"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-title",
+        "stat-price",
+        "stat-liquidity",
+        "stat-volume-24h",
+        "badge-buys-sells",
+        "stat-7d",
+        "stat-30d",
+        "separator-1",
+        "alert-market-dynamics",
+        "link-chart"
+      ]
+    },
+    "heading-title": {
+      "type": "Heading",
+      "props": {
+        "text": "$MIROSHARK Daily — 2026-07-01",
+        "level": "h2"
+      }
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000003121",
+        "delta": "−19.94%",
+        "trend": "down"
+      }
+    },
+    "stat-liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$237.6K"
+      }
+    },
+    "stat-volume-24h": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$14.5K"
+      }
+    },
+    "badge-buys-sells": {
+      "type": "Badge",
+      "props": {
+        "text": "41 Buys / 23 Sells"
+      }
+    },
+    "stat-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "−30.2%",
+        "trend": "down"
+      }
+    },
+    "stat-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−52.7%",
+        "trend": "down"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert-market-dynamics": {
+      "type": "Alert",
+      "props": {
+        "title": "Market Dynamics",
+        "message": "Q3 opens at lowest price since launch. Single large sell at 21:00 UTC Jun 30 (~$7.1K, 49% of day's volume) drove intraday low to $2.96e-6. LP drain accelerated: −$36K in one day. −92.8% from ATH.",
+        "type": "warning"
+      }
+    },
+    "link-chart": {
+      "type": "Link",
+      "props": {
+        "label": "GeckoTerminal Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
