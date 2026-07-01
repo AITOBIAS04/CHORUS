@@ -1,5 +1,5 @@
-*New Article: In Thirty-Four Days, Every Synthetic Opinion in Europe Needs a Label. Nobody Agrees Which Ones Count.*
+*New Article: A Billion-Dollar Industry Tests What Users Click. Nobody Tests What They Think.*
 
-The EU AI Act's Article 50 takes effect August 2, 2026 — requiring every AI system generating synthetic text to mark outputs as AI-generated, with penalties up to EUR 15 million. The regulation was built for deepfakes, but its language sweeps in a growing category of tools that generate synthetic output as analysis, not deception. Opinion simulation engines like MiroShark sit in the gap between "synthetic content" and "assistive function," with no clear compliance playbook. A June 2026 arXiv paper confirms the structural ambiguity: synthetic data systems occupy a regulatory boundary the law never cleanly drew.
+The A/B testing market just consolidated $1.7B in acquisitions in a single quarter — and its CEO class admits the TAM is tapped. A new wave of synthetic user startups (Aaru at $1B, Simile at $100M) is replacing human testers with AI, but still tests the same behavioral question: does the user click? MiroShark occupies the gap nobody named yet — simulating what a population thinks, not what it does, for $1 and ten minutes.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-06-29.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-01.md
