@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-06-28*
+*Last consolidated: 2026-07-01*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -13,8 +13,6 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
-| 2026-06-17 | Everybody Spent More on AI This Year. Almost Nobody Knows Where It Went. | Technical deep-dive; enterprise AI cost opacity; 483% budget growth; 280x per-token cost drop; only 22% of orgs track spend by transaction; $2.5T global AI spending; AI cost observability vendor explosion; 1,300 stars |
-| 2026-06-18 | Fifty-Two Million Downloads Chose to Run AI Locally. Most Tools Didn't Build for Them. | Model portability/vendor independence; SearXNG+Firecrawl PR #178 (dan-and); 52M Ollama downloads; 81% enterprises multi-model; orchestration lock-in fastest-growing AI risk; cost.json 40th surface; French i18n complete; 1,311 stars |
 | 2026-06-19 | Eighty-Eight Percent of AI Agents Never Ship. The Survivors Have Fewer Dependencies, Not More. | Contrarian take; 88% agent production failure rate ($340K avg cost); Datadog framework adoption doubled YoY (9%→18%); 30-40% TIE drift after framework upgrades; "60 lines vs 5,000" framework tax; MiroShark zero framework deps (40 surfaces, pure-stdlib Python); 1,314 stars |
 | 2026-06-20 | Forty-Seven Percent of AI Agent Releases Roll Back. Automated Testing Cuts That to Nine. | AI agent testing gap; only 38% of production agents have automated evals; 47% rollback vs 9% with tests; 37% lab-to-production gap; 61% multi-agent failures at boundaries; MiroShark 1,372 tests across 41 surfaces; smoke tests for real output (#183/#196); mocked LLM client (#165); CI gate (#180); pure-stdlib testability; $10.3B AI simulation market; 1,317 stars |
 | 2026-06-22 | It Took 64,000 People to Forecast the Weather. It Takes Twelve Agents to Forecast an Opinion. | Historical parallel; Richardson's 1922 Forecast Factory (64K human computers); ENIAC first numerical weather prediction (1950); ensemble forecasting via perturbed initial conditions; MiroShark multi-agent simulation as modern forecast factory; confidence trajectory + stance flip as perturbation tracking; pre-run estimator as resource planning; 1,322 stars |
@@ -27,12 +25,12 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-06-28 | token-report | $0.000004329 (−11.83% 24h); FDV $432.9K; LP $287.7K; Jun 27 recovery fully reversed by single large sell at 06:00 UTC; price back below $4.4e-6 demand zone; −90.1% from ATH |
-| 2026-06-27 | token-report | $0.000005034 (+14.13% 24h); FDV $503.4K; LP $312.7K; first LP gain since Jun 13 peak; strong single-candle recovery broke back above $5.0e-6 |
-| 2026-06-26 | token-report | $0.000004466 (-0.03% 24h); FDV $446.6K; LP $292.8K; 7d -11.8%; 30d -52.1%; intraday dip to $4.06e-6 recovered; still in $4.4-5.0e-6 demand zone; first report in 6 days (ISS-002); XAI_API_KEY not set |
-| 2026-06-24 | push-recap | CLI `wait` subcommand (#215); thinking model robustness (#209/#211/#210, Daniel Andersen); token-report xai=skip/quiet split (#75); 5 commits, 2 authors |
-| 2026-06-23 | push-recap | Model migration mimo-v2-flash→v2.5 (#207/#210); branding refresh — miroshark.xyz tagline (#206); CLI cost subcommand (#208); 680-line quality cleanup (#205); ~81 file changes, +735/-1,226 lines; 1,329 stars |
-| 2026-06-22 | push-recap | New docs-sync skill (#71); attribution fix (#73); notification cleanup (#72); Dependabot dependency sweep; 16 file changes, +318/-14 lines; 1,322 stars |
+| 2026-07-01 | token-report | $0.000003121 (−19.94% 24h); FDV $312.1K; LP $237.6K; Q3 2026 open; single large sell ~$7.1K pushed price to $2.96e-6 intraday low; LP drain accelerated (−$36.1K in one day); −92.8% from ATH |
+| 2026-07-01 | push-recap | PR #223 model overhaul: Mercury 2 (base) + DeepSeek V4 Flash (Wonderwall + web search) replaces Mimo V2.5; Gemini 3 Flash stays for Smart/NER; 12 files changed |
+| 2026-06-30 | token-report | $0.000003898 (−2.57% 24h); FDV $389.8K; LP $273.7K; Q2 2026 close; concentrated sell at ~21:00 UTC Jun 29 drove most daily volume; −91.1% from ATH |
+| 2026-06-30 | push-recap | Aeon sync: +9 skills added, -8 removed, catalog parity with source; products.md created; shiplog redesign; 10 substantive commits, +2,287/-1,904 lines |
+| 2026-06-29 | token-report | $0.000004106 (−4.22% 24h); FDV $410.6K; LP $280.1K; third consecutive day below $4.4e-6 demand zone; Jun 27 bounce fully reversed; −90.6% from ATH |
+| 2026-06-29 | push-recap | Frontend deps bump (axios 1.18.1, vue 3.5.39, vite 8.1.0); CI actions bump (checkout v7, docker/login-action v4); 7 substantive commits |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -60,7 +58,7 @@
 - Feature/repo-actions skills can waste CI runs building duplicate PRs — fixed with open PR dedup checks
 - Auth credentials (ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN) can expire silently — all skills fail immediately with "Not logged in"; 15-day outage Apr 16–30 (ISS-001). Monitor consecutive_failures in cron-state.json.
 - GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 45 consecutive blocks May 1–Jun 22 (latest skip: feature blocked Jun 22; 40 features stuck as local commits)
-- Cron-state success rates can be poisoned by extended auth outages (15-day Apr 16–30 outage left 1–7% rates on all skills despite 100% health since May 1); reset counters in cron-state.json when consecutive_failures = 0 post-outage
+- Cron-state success rates can be poisoned by extended auth outages (15-day Apr 16–30 outage left 1–7% rates on all skills despite 100% health since May 1); fixed 2026-06-30 (PR #21): counters reset, Step 0.5 counter hygiene added to self-improve SKILL.md for automatic future detection
 - Heartbeat auto-dispatch requires `actions: write` scope; aeon.yml has `actions: read` — heartbeat now checks permissions before attempting, defers to scheduler (messages.yml) on 403
 - Tweet allocator can hit bankr agent timeout (>64s polling ceiling) causing TWEET_ALLOCATOR_EMPTY drift; fix: increase iterations 8→14 and add agent-timeout status (self-improve PR #43 2026-05-20)
 - Feature skill now has push-access preflight: exits early if GH_GLOBAL not set before doing expensive work (self-improve PR #13 in CHORUS, PR #53 in miroshark-aeon — both merged 2026-06-06/07)
@@ -72,13 +70,14 @@
 - repo-actions skill now has a premise verification gate to validate ideas before generating full proposals — avoids wasted compute on unfeasible suggestions; self-improve PRs #69/#70 in miroshark-aeon (2026-06-21)
 - Heartbeat 48h notification dedup silences persistent multi-day issues — operator stops hearing about failures that are still active; added open-issue escalation (≥3 days bypasses dedup); self-improve PR #18 in CHORUS (2026-06-24)
 - weekly-shiplog missed 39 consecutive Mondays (May 18–Jun 28) because 09:00 UTC slot falls in the scheduler dead zone; moved to 14:30 UTC (afternoon window reliable per ISS-002); self-improve PR #20 in CHORUS (2026-06-28)
-- miroshark-aeon source restructured 2026-06-28: enabled stack dropped from ~15 → 7, catalog expanded to 200+ skills; CHORUS now runs 10 skills disabled in source (docs-sync, shiplog, tweet-digest are adoption gaps); check CHORUS aeon.yml against source when skills change
+- miroshark-aeon source restructured 2026-06-28: enabled stack dropped from ~15 → 7, catalog expanded to 200+ skills; CHORUS synced to catalog parity 2026-06-30 (+9 skills added, -8 removed via PRs #77–#86); check CHORUS aeon.yml against source when skills change
+- MiroShark model lineup overhauled 2026-07-01 (PR #223): Mimo V2.5 → Mercury 2 (base) + DeepSeek V4 Flash (Wonderwall + web search); Gemini 3 Flash stays for Smart/NER; update any skill prompts that reference model names
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000004329 as of 2026-06-28 (-11.83% 24h; FDV $432.9K; LP $287.7K; -90.1% from ATH)
-- Hyperstition: Will 5 independent Aeon forks ship custom skills by 2026-06-30? (filed 2026-05-02)
-- Hyperstition: Will MiroShark be featured on a Chinese dev platform by 2026-06-15? (filed 2026-05-02)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000003121 as of 2026-07-01 (-19.94% 24h; FDV $312.1K; LP $237.6K; -92.8% from ATH)
+- Hyperstition: Will 5 independent Aeon forks ship custom skills by 2026-06-30? (filed 2026-05-02) — NOT CLEARED (deadline passed)
+- Hyperstition: Will MiroShark be featured on a Chinese dev platform by 2026-06-15? (filed 2026-05-02) — NOT CLEARED (deadline passed)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
 - Hyperstition: Will $MIROSHARK LP depth exceed $1M by July 1, 2026? (filed 2026-05-16) — CLEARED 2026-05-20; LP at $1.02M (first sustained $1M+)
 - Hyperstition: Will MiroShark receive 10 merged PRs from community contributors (non-bot, non-core-team) by August 1, 2026? (filed 2026-05-23) — 5+/10 as of 2026-05-27 (Nurstar PR #109, shak PR #114 among recent)
@@ -107,3 +106,4 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Feature candidates (repo-actions 2026-06-24): CLI simulate subcommand, OG social cards, campaign series tracker, tags & labels, contributor leaderboard
 - Feature candidates (repo-actions 2026-06-26): Agent Communication Transcript Export, Round-Level State Snapshot API, GitHub Actions Workflow Template, Jupyter Notebook Research Gallery, Topic Autocomplete API
 - Feature candidates (repo-actions 2026-06-28): Simulation Badge API, Python SDK Package miroshark-py, CLI list subcommand, Webhook Event Delivery, Tutorial Workshop Kit
+- Feature candidates (repo-actions 2026-06-30): Show HN Launch Kit (#1), Simulation Data Bundle Export (#2), API Rate Limiting & Usage Headers (#3), Simulation Replay Stepper (#4), One-Click Cloud Deploy Templates (#5)
