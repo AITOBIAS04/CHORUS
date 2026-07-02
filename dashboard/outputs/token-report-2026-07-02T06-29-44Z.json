@@ -1,0 +1,138 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$MIROSHARK Daily"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "date_text",
+        "price_stat",
+        "metrics_stack",
+        "buys_sells_text",
+        "changes_stack",
+        "commentary_text",
+        "sep",
+        "chart_link"
+      ]
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-02",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "price_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000003199",
+        "delta": "+3.17%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "metrics_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "liquidity_stat",
+        "volume_stat"
+      ]
+    },
+    "liquidity_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$256.0K"
+      },
+      "children": []
+    },
+    "volume_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$12.2K"
+      },
+      "children": []
+    },
+    "buys_sells_text": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 25/46",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "changes_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "7d_stat",
+        "30d_stat"
+      ]
+    },
+    "7d_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "−28.8%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "30d_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "−48.0%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "commentary_text": {
+      "type": "Text",
+      "props": {
+        "text": "Slight stabilization after Jul 1's −19.94% drop. LP recovered +$18.4K to $256K — first gain since Jun 27. Sell pressure persists (1.8:1 ratio); price still well below $4.4e-6 demand zone. ATH: −92.7%.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      },
+      "children": []
+    }
+  }
+}
