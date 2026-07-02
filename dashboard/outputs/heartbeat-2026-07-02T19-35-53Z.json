@@ -1,0 +1,55 @@
+{
+  "root": "card_heartbeat",
+  "state": {},
+  "elements": {
+    "card_heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-07-02"
+      },
+      "children": [
+        "alert_missed",
+        "alert_dispatch",
+        "sep1",
+        "text_other_skills",
+        "text_no_issues"
+      ]
+    },
+    "alert_missed": {
+      "type": "Alert",
+      "props": {
+        "title": "project-lens missed scheduled run",
+        "message": "16:00 UTC Wednesday slot missed (3.5h overdue). Not in today's runs or log.",
+        "type": "warning"
+      }
+    },
+    "alert_dispatch": {
+      "type": "Alert",
+      "props": {
+        "title": "Dispatch unavailable",
+        "message": "Read-only actions. Manual re-run or scope upgrade needed.",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_other_skills": {
+      "type": "Text",
+      "props": {
+        "text": "All other skills ran cleanly",
+        "variant": "lead"
+      }
+    },
+    "text_no_issues": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues",
+        "variant": "body"
+      }
+    }
+  }
+}
