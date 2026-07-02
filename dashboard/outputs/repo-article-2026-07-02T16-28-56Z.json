@@ -1,0 +1,143 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Three Hundred Fifteen Thousand Dollars to Switch an AI Model. Or Twelve Files."
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "metrics_grid",
+        "summary_text",
+        "technologies_section",
+        "article_link"
+      ]
+    },
+    "metrics_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_cost",
+        "stat_time",
+        "stat_failure"
+      ]
+    },
+    "stat_cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Enterprise migration cost",
+        "value": "$315,000"
+      }
+    },
+    "stat_time": {
+      "type": "Stat",
+      "props": {
+        "label": "Average migration time",
+        "value": "3 months"
+      }
+    },
+    "stat_failure": {
+      "type": "Stat",
+      "props": {
+        "label": "Enterprise migrations that fail",
+        "value": "58%"
+      }
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "Enterprises average $315K and three months to migrate AI platforms. MiroShark swapped its entire LLM backbone — Mimo V2.5 out, Mercury 2 and DeepSeek V4 Flash in — with a single 12-file PR. The article explores why model-agnostic architecture through OpenRouter lets a 104-day-old project do what 58% of enterprise migrations fail at.",
+        "variant": "body"
+      }
+    },
+    "technologies_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tech_heading",
+        "badges_row"
+      ]
+    },
+    "tech_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Technologies",
+        "level": "h4"
+      }
+    },
+    "badges_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_miroshark",
+        "badge_mimo",
+        "badge_mercury",
+        "badge_deepseek",
+        "badge_openrouter"
+      ]
+    },
+    "badge_miroshark": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark",
+        "variant": "default"
+      }
+    },
+    "badge_mimo": {
+      "type": "Badge",
+      "props": {
+        "text": "Mimo V2.5",
+        "variant": "secondary"
+      }
+    },
+    "badge_mercury": {
+      "type": "Badge",
+      "props": {
+        "text": "Mercury 2",
+        "variant": "secondary"
+      }
+    },
+    "badge_deepseek": {
+      "type": "Badge",
+      "props": {
+        "text": "DeepSeek V4 Flash",
+        "variant": "secondary"
+      }
+    },
+    "badge_openrouter": {
+      "type": "Badge",
+      "props": {
+        "text": "OpenRouter",
+        "variant": "secondary"
+      }
+    },
+    "article_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-02.md",
+        "source": "CHORUS Repository"
+      }
+    }
+  }
+}

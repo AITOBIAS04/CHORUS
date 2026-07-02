@@ -1,5 +1,5 @@
-*New Article: Four Shell Commands Run a Hundred-Agent Simulation End to End. The Rest of the Industry Still Ships Dashboards.*
+*New Article: Three Hundred Fifteen Thousand Dollars to Switch an AI Model. Or Twelve Files.*
 
-MiroShark shipped four CLI subcommands in one week — simulate, wait, stop, cost — completing its automation lifecycle. In a year where 30+ AI CLIs exist for developers, MiroShark is one of the few that lets you script a multi-agent opinion simulation end to end, no browser required. 102 days from first commit to CLI-complete, 1,353 stars.
+Enterprises average $315K and three months to migrate AI platforms. MiroShark swapped its entire LLM backbone — Mimo V2.5 out, Mercury 2 and DeepSeek V4 Flash in — with a single 12-file PR. The article explores why model-agnostic architecture through OpenRouter lets a 104-day-old project do what 58% of enterprise migrations fail at.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-06-30.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-02.md
