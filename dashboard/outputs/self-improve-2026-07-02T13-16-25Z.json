@@ -1,0 +1,177 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-07-02"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-subtitle",
+        "text-intro",
+        "sep-1",
+        "section-why",
+        "sep-2",
+        "section-changes",
+        "sep-3",
+        "section-impact",
+        "sep-4",
+        "pr-link"
+      ]
+    },
+    "heading-subtitle": {
+      "type": "Heading",
+      "props": {
+        "text": "Cron-state counter reset and future-proofing",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "All 14 skill success rates were stuck at 2-19% despite 63 days of perfect health — poisoned by the Apr 16-30 auth outage that inflated total_failures. PR #21 attempted this fix on Jun 30 but developed merge conflicts. This is a clean re-implementation.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-why",
+        "text-why"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "Poisoned success_rate values (e.g. heartbeat at 19%, weekly-shiplog at 2%) make health monitoring unreliable — skill-health, skill-leaderboard, and heartbeat cannot distinguish real degradation from legacy noise.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-changes",
+        "text-change-1",
+        "text-change-2"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-change-1": {
+      "type": "Text",
+      "props": {
+        "text": "memory/cron-state.json: Reset 12 skills to 100% (last_failed ≤ Apr 30). Kept 1 post-outage failure each for repo-actions (97%) and feature (98%). Cleared garbled last_error strings.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-change-2": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Added Step 0.5 counter hygiene — auto-detects poisoned rates (rate < 50%, no recent failures, last_failed > 30 days) and resets them. Future outages will self-heal.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-impact",
+        "text-impact"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "Health monitoring now reflects reality. Skill-leaderboard, heartbeat, and skill-health will report accurate success rates. Future outages cannot permanently poison the data.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #22",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/22"
+      },
+      "children": []
+    }
+  }
+}
