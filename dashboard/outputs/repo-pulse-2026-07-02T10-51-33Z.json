@@ -1,0 +1,119 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse"
+      },
+      "children": [
+        "heading_repo",
+        "stats_container",
+        "separator1",
+        "section_stargazers",
+        "section_forks"
+      ]
+    },
+    "heading_repo": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stats_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1353",
+        "delta": "+1",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "285",
+        "delta": "+1",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_stargazers": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_stargazers",
+        "link_stargazer"
+      ]
+    },
+    "heading_stargazers": {
+      "type": "Heading",
+      "props": {
+        "text": "New stargazers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "link_stargazer": {
+      "type": "Link",
+      "props": {
+        "label": "oldasianrobot",
+        "href": "https://github.com/oldasianrobot"
+      },
+      "children": []
+    },
+    "section_forks": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_forks",
+        "link_fork"
+      ]
+    },
+    "heading_forks": {
+      "type": "Heading",
+      "props": {
+        "text": "New forks",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "link_fork": {
+      "type": "Link",
+      "props": {
+        "label": "Waleeeeed88/MiroShark",
+        "href": "https://github.com/Waleeeeed88/MiroShark"
+      },
+      "children": []
+    }
+  }
+}
