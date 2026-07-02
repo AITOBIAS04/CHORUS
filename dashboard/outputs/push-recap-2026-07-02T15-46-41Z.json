@@ -1,0 +1,223 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-02"
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "repos",
+        "sep2",
+        "details",
+        "sep3",
+        "stats",
+        "sep4",
+        "full-recap"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day across both watched repos.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo1",
+        "repo2"
+      ]
+    },
+    "repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "repo1-name",
+        "repo1-stat"
+      ]
+    },
+    "repo1-name": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h3"
+      }
+    },
+    "repo1-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "0"
+      }
+    },
+    "repo2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo2-name",
+        "repo2-stats",
+        "repo2-detail"
+      ]
+    },
+    "repo2-name": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/miroshark-aeon",
+        "level": "h3"
+      }
+    },
+    "repo2-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "repo2-commits",
+        "repo2-automation"
+      ]
+    },
+    "repo2-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Substantive Commits",
+        "value": "0"
+      }
+    },
+    "repo2-automation": {
+      "type": "Badge",
+      "props": {
+        "text": "16 automation commits filtered",
+        "variant": "secondary"
+      }
+    },
+    "repo2-detail": {
+      "type": "Text",
+      "props": {
+        "text": "All automation: cron state markers, scheduler updates, and auto-committed skill outputs from token-report, repo-pulse, shiplog, heartbeat, and tweet-digest. No code changes landed.",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "details-heading",
+        "detail1",
+        "detail2",
+        "detail3"
+      ]
+    },
+    "details-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key details:",
+        "level": "h4"
+      }
+    },
+    "detail1": {
+      "type": "Text",
+      "props": {
+        "text": "Repo-pulse logged 1 new star (oldasianrobot) and 1 new fork (Waleeeeed88) — verdict STEADY",
+        "variant": "body"
+      }
+    },
+    "detail2": {
+      "type": "Text",
+      "props": {
+        "text": "All skills ran healthy — zero failures across the daily schedule",
+        "variant": "body"
+      }
+    },
+    "detail3": {
+      "type": "Alert",
+      "props": {
+        "message": "Feature skill still blocked (GH_GLOBAL not set, 50th+ consecutive skip)",
+        "type": "warning"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats-heading",
+        "stat-files",
+        "stat-lines"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats:",
+        "level": "h4"
+      }
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "1"
+      }
+    },
+    "stat-lines": {
+      "type": "Text",
+      "props": {
+        "text": "+11/-0 lines (log entry only)",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-02.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
