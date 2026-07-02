@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-06-30*
-Q2 closes today. Three hyperstitions expire in 15 days (1,500 stars, HN front page, external deployment). Five ideas targeted at each pressure point.
+*Repo Action Ideas — 2026-07-02*
+Generated from analysis of aaronjmars/MiroShark (1,354 stars · 285 forks) — these are ideas that could be autonomously built by the feature skill tomorrow.
 
-1. Show HN Launch Kit (Growth, Small)
-   Pre-written title, body, FAQ, timing guide, and demo checklist — turns the HN submission from an impulsive post into a deliberate launch.
+1. OG Social Preview Cards (Growth, Small)
+   Backend Flask route returns crawler-readable HTML with og:title/og:description/og:image so simulation URLs generate rich cards on Twitter, LinkedIn, Discord, and Slack.
 
-2. Simulation Data Bundle Export (Feature, Small)
-   `GET /api/simulation/:id/bundle.zip` — one curl command returns every artifact (signal.json, agents.json, trajectory.json, transcripts) in a single ZIP for research reproducibility and tutorial creation.
+2. Simulation Narrative Export (Feature, Small)
+   GET /api/simulation/:id/narrative — Mercury 2 generates a 3-paragraph prose summary of any completed simulation; cached 24h; copy-paste ready for blog posts and Discord updates.
 
-3. API Rate Limiting & Usage Headers (Feature/Security, Medium)
-   X-RateLimit headers + 429 responses + per-IP sliding window (pure stdlib, no Redis) — makes public deployments safe to share without fear of abuse.
+3. CLI `estimate` Subcommand (DX, Small)
+   `miroshark estimate --agents 20 --rounds 5` wraps the existing /api/estimate endpoint (#41 surface, already deployed) — completes the pre-flight CLI workflow with zero backend changes.
 
-4. Simulation Replay Stepper (Feature, Medium)
-   Round-by-round belief evolution viewer built on existing trajectory.json — the dynamic story behind every result, ideal for blog posts and HN demos.
+4. Trending Topics Discovery Feed (Feature/Growth, Small)
+   GET /api/topics/trending + /trending frontend page shows most-simulated topics by 7d/30d/all-time with consensus direction signals — passive social proof for new visitors.
 
-5. One-Click Cloud Deploy Templates (DX/Community, Small)
-   Fly.io and Google Cloud Run ready-to-run deploy scripts in `deploy/` — lowers activation energy for the external deployment hyperstition from "figure it out" to one command.
+5. Build-Your-Own-Surface Guide (Community, Small)
+   Annotated service stub + CONTRIBUTING-SURFACE.md + labeled GH issue with 3 specific surface ideas — direct mechanism for the 'community contributor ships a surface by July 15' hyperstition.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-06-30.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-02.md

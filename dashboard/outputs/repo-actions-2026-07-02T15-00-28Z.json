@@ -1,0 +1,322 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "text_date",
+        "text_repo",
+        "separator1",
+        "idea1_stack",
+        "separator2",
+        "idea2_stack",
+        "separator3",
+        "idea3_stack",
+        "separator4",
+        "idea4_stack",
+        "separator5",
+        "idea5_stack",
+        "separator6",
+        "link_details"
+      ]
+    },
+    "text_date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-02",
+        "variant": "muted"
+      }
+    },
+    "text_repo": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,354 stars · 285 forks) — these are ideas that could be autonomously built by the feature skill tomorrow.",
+        "variant": "body"
+      }
+    },
+    "separator1": {
+      "type": "Separator"
+    },
+    "idea1_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_title",
+        "idea1_badges",
+        "idea1_desc"
+      ]
+    },
+    "idea1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "OG Social Preview Cards",
+        "level": "h3"
+      }
+    },
+    "idea1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1_growth",
+        "badge1_small"
+      ]
+    },
+    "badge1_growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "secondary"
+      }
+    },
+    "badge1_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Backend Flask route returns crawler-readable HTML with og:title/og:description/og:image so simulation URLs generate rich cards on Twitter, LinkedIn, Discord, and Slack.",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator"
+    },
+    "idea2_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_title",
+        "idea2_badges",
+        "idea2_desc"
+      ]
+    },
+    "idea2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Narrative Export",
+        "level": "h3"
+      }
+    },
+    "idea2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge2_feature",
+        "badge2_small"
+      ]
+    },
+    "badge2_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge2_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/narrative — Mercury 2 generates a 3-paragraph prose summary of any completed simulation; cached 24h; copy-paste ready for blog posts and Discord updates.",
+        "variant": "body"
+      }
+    },
+    "separator3": {
+      "type": "Separator"
+    },
+    "idea3_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_title",
+        "idea3_badges",
+        "idea3_desc"
+      ]
+    },
+    "idea3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "CLI `estimate` Subcommand",
+        "level": "h3"
+      }
+    },
+    "idea3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge3_dx",
+        "badge3_small"
+      ]
+    },
+    "badge3_dx": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      }
+    },
+    "badge3_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "`miroshark estimate --agents 20 --rounds 5` wraps the existing /api/estimate endpoint (#41 surface, already deployed) — completes the pre-flight CLI workflow with zero backend changes.",
+        "variant": "body"
+      }
+    },
+    "separator4": {
+      "type": "Separator"
+    },
+    "idea4_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_title",
+        "idea4_badges",
+        "idea4_desc"
+      ]
+    },
+    "idea4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Trending Topics Discovery Feed",
+        "level": "h3"
+      }
+    },
+    "idea4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge4_feature_growth",
+        "badge4_small"
+      ]
+    },
+    "badge4_feature_growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Growth",
+        "variant": "secondary"
+      }
+    },
+    "badge4_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/topics/trending + /trending frontend page shows most-simulated topics by 7d/30d/all-time with consensus direction signals — passive social proof for new visitors.",
+        "variant": "body"
+      }
+    },
+    "separator5": {
+      "type": "Separator"
+    },
+    "idea5_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_title",
+        "idea5_badges",
+        "idea5_desc"
+      ]
+    },
+    "idea5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Build-Your-Own-Surface Guide",
+        "level": "h3"
+      }
+    },
+    "idea5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge5_community",
+        "badge5_small"
+      ]
+    },
+    "badge5_community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      }
+    },
+    "badge5_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Annotated service stub + CONTRIBUTING-SURFACE.md + labeled GH issue with 3 specific surface ideas — direct mechanism for the 'community contributor ships a surface by July 15' hyperstition.",
+        "variant": "body"
+      }
+    },
+    "separator6": {
+      "type": "Separator"
+    },
+    "link_details": {
+      "type": "Link",
+      "props": {
+        "label": "Full details on GitHub",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-02.md"
+      }
+    }
+  }
+}
