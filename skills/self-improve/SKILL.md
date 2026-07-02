@@ -26,7 +26,19 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      ```
    - **Skip** if the PR has review comments requesting changes — a human has weighed in, leave it for them.
 
-   Log all merge/close actions to `memory/logs/${today}.md`. If any PRs were merged, include them in the final notification. Then continue to step 1.
+   Log all merge/close actions to `memory/logs/${today}.md`. If any PRs were merged, include them in the final notification. Then continue to step 0.5.
+
+0.5. **Counter hygiene** — Detect and fix poisoned cron-state success rates left over from past outages:
+   Read `memory/cron-state.json`. For each skill, check if ALL of these are true:
+   - `success_rate` < 0.50
+   - `consecutive_failures` == 0
+   - `last_failed` is more than 30 days ago
+   If so, the rate is poisoned by stale failures that no longer reflect reality. Fix it:
+   - Set `total_runs` = `total_successes`
+   - Set `total_failures` = 0
+   - Set `success_rate` = 1.0
+   - Clear `last_error` to `""`
+   Commit and push the fix if any resets were made. Log the action. Then continue to step 1.
 
 1. **Assess what needs improving** (in this priority order):
    a. If `${var}` is set, work on that specific improvement.
