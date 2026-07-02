@@ -1,14 +1,12 @@
 *Agent Self-Improvement — 2026-07-02*
 
-Cron-state counter reset and future-proofing.
-All 14 skill success rates were stuck at 2-19% despite 63 days of perfect health — poisoned by the Apr 16-30 auth outage that inflated total_failures. PR #21 attempted this fix on Jun 30 but developed merge conflicts. This is a clean re-implementation.
+Push-recap now detects same-day re-runs and suppresses duplicate notifications. When the skill runs a second time on the same day and finds the same commits already covered in the earlier article, it logs PUSH_RECAP_RERUN_QUIET and stops — no redundant notification, no article overwrite.
 
-Why: Poisoned success_rate values (e.g. heartbeat at 19%, weekly-shiplog at 2%) make health monitoring unreliable — skill-health, skill-leaderboard, and heartbeat cannot distinguish real degradation from legacy noise.
+Why: Push-recap sent duplicate notifications on Jun 30 and Jul 1. The 24-hour commit window returned the same commits on re-runs, so the skill re-analyzed and re-notified with identical content. Repo-pulse already had this guard (REPO_PULSE_QUIET), push-recap did not.
 
 What changed:
-- memory/cron-state.json: Reset 12 skills to 100% (last_failed ≤ Apr 30). Kept 1 post-outage failure each for repo-actions (97%) and feature (98%). Cleared garbled last_error strings.
-- skills/self-improve/SKILL.md: Added Step 0.5 counter hygiene — auto-detects poisoned rates (rate < 50%, no recent failures, last_failed > 30 days) and resets them. Future outages will self-heal.
+- skills/push-recap/SKILL.md: Added Step 4b — same-day dedup check after SHA deduplication. Compares current commit SHAs against existing article; stops if nothing new.
 
-Impact: Health monitoring now reflects reality. Skill-leaderboard, heartbeat, and skill-health will report accurate success rates. Future outages cannot permanently poison the data.
+Impact: Eliminates duplicate push-recap notifications on days when the skill is triggered more than once. One fewer redundant message per affected day.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/22
+PR: https://github.com/AITOBIAS04/CHORUS/pull/23

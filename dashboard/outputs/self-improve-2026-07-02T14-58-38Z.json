@@ -1,0 +1,133 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-02"
+      },
+      "children": [
+        "text_summary",
+        "sep1",
+        "section_why",
+        "sep2",
+        "section_changes",
+        "sep3",
+        "section_impact",
+        "sep4",
+        "pr_link"
+      ]
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "Push-recap now detects same-day re-runs and suppresses duplicate notifications. When the skill runs a second time on the same day and finds the same commits already covered in the earlier article, it logs PUSH_RECAP_RERUN_QUIET and stops — no redundant notification, no article overwrite."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_why",
+        "text_why"
+      ]
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "Push-recap sent duplicate notifications on Jun 30 and Jul 1. The 24-hour commit window returned the same commits on re-runs, so the skill re-analyzed and re-notified with identical content. Repo-pulse already had this guard (REPO_PULSE_QUIET), push-recap did not."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_changes",
+        "text_changes"
+      ]
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text_changes": {
+      "type": "Text",
+      "props": {
+        "text": "skills/push-recap/SKILL.md: Added Step 4b — same-day dedup check after SHA deduplication. Compares current commit SHAs against existing article; stops if nothing new."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_impact",
+        "text_impact"
+      ]
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates duplicate push-recap notifications on days when the skill is triggered more than once. One fewer redundant message per affected day."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #23: Push-recap same-day dedup",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/23",
+        "source": "GitHub"
+      }
+    }
+  }
+}
