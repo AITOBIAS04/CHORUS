@@ -1,10 +1,7 @@
-Heartbeat — Thu Jul 3, ~19:10 UTC
+HEARTBEAT_OK. This is the second heartbeat dispatch today — the 19:10 UTC run already checked everything, flagged repo-article as missing and three stalled PRs (#21, #22, #23), and sent a notification. All findings are within the 48h dedup window. No open issues to escalate. Logged and done.
 
-⚠️ repo-article MISSING — scheduled 16:00 UTC (3h overdue); not in today's runs. Dispatch unavailable (actions: read only — manual re-run needed).
-
-📋 Stalled PRs (>24h):
-• PR #21 (3d) — reset poisoned cron-state counters — DIRTY/merge conflicts; superseded by PR #22
-• PR #22 (30h) — reset poisoned cron-state counters (supersedes #21) — open, first flag
-• PR #23 (28h) — add same-day dedup to push-recap — open, first flag
-
-✅ All other daily skills ran: token-report, fetch-tweets, repo-pulse, feature (SKIP ×2 — GH_GLOBAL not set), push-recap, project-lens (catch-up Wed miss ×2)
+## Summary
+- **System health:** All skills healthy (consecutive_failures=0 across all 14 enabled skills)
+- **No new findings:** repo-article missing + 3 stalled PRs were already reported 90 min ago
+- **Dedup applied:** 48h window suppresses re-notification
+- **Action:** Logged HEARTBEAT_OK to `memory/logs/2026-07-03.md`
