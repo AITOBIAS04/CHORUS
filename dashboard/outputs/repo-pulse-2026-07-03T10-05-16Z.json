@@ -1,0 +1,82 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "aaronjmars/MiroShark — 2026-07-03"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "separator-1",
+        "heading-stargazers",
+        "stack-stargazers"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,355",
+        "delta": "+2",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "285",
+        "delta": "+0",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-stargazers": {
+      "type": "Heading",
+      "props": {
+        "text": "New stargazers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack-stargazers": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-user-1",
+        "link-user-2"
+      ]
+    },
+    "link-user-1": {
+      "type": "Link",
+      "props": {
+        "label": "rafalekraft",
+        "href": "https://github.com/rafalekraft"
+      },
+      "children": []
+    },
+    "link-user-2": {
+      "type": "Link",
+      "props": {
+        "label": "hatanga80-ops",
+        "href": "https://github.com/hatanga80-ops"
+      },
+      "children": []
+    }
+  }
+}
