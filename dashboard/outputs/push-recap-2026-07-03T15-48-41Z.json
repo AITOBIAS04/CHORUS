@@ -1,0 +1,330 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-03"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "project-summary",
+        "sep-1",
+        "french-i18n",
+        "sep-2",
+        "dependabot",
+        "sep-3",
+        "typescript",
+        "sep-4",
+        "key-changes",
+        "sep-5",
+        "stats-section",
+        "sep-6",
+        "link-recap"
+      ]
+    },
+    "project-summary": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "project-1",
+        "project-2"
+      ]
+    },
+    "project-1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 2 substantive commits by 2 authors",
+        "variant": "lead"
+      }
+    },
+    "project-2": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 11 substantive commits by 3 authors (12 automation filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "french-i18n": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "french-heading",
+        "french-text"
+      ]
+    },
+    "french-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "French Internationalization (PR #222)",
+        "level": "h2"
+      }
+    },
+    "french-text": {
+      "type": "Text",
+      "props": {
+        "text": "Zarbel974 delivered full French localization — 1,627 tr() calls translated across 32 Vue components, plus a new CI scanner (scan_i18n.py) that gates i18n quality on every PR. Also fixed 320 runtime ReferenceErrors from using the template-only backslash alias in script scope.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dependabot": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dependabot-heading",
+        "dependabot-text",
+        "dependabot-list"
+      ]
+    },
+    "dependabot-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependabot Enablement and Dependency Sweep",
+        "level": "h2"
+      }
+    },
+    "dependabot-text": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars enabled Dependabot on miroshark-aeon, triggering 9 dependency PRs merged within hours:",
+        "variant": "body"
+      }
+    },
+    "dependabot-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dep-1",
+        "dep-2",
+        "dep-3",
+        "dep-4",
+        "dep-5",
+        "dep-6"
+      ]
+    },
+    "dep-1": {
+      "type": "Text",
+      "props": {
+        "text": "TypeScript 5.9 to 6.0 (major, required tsconfig node type fixes)",
+        "variant": "body"
+      }
+    },
+    "dep-2": {
+      "type": "Text",
+      "props": {
+        "text": "React 19.2.7",
+        "variant": "body"
+      }
+    },
+    "dep-3": {
+      "type": "Text",
+      "props": {
+        "text": "Next.js 16.2.10",
+        "variant": "body"
+      }
+    },
+    "dep-4": {
+      "type": "Text",
+      "props": {
+        "text": "Tailwind 4.3",
+        "variant": "body"
+      }
+    },
+    "dep-5": {
+      "type": "Text",
+      "props": {
+        "text": "json-render 0.19",
+        "variant": "body"
+      }
+    },
+    "dep-6": {
+      "type": "Text",
+      "props": {
+        "text": "CI actions bumped to latest (checkout v7, setup-node v6)",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "typescript": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "typescript-heading",
+        "typescript-text"
+      ]
+    },
+    "typescript-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TypeScript 6.0 Migration",
+        "level": "h2"
+      }
+    },
+    "typescript-text": {
+      "type": "Text",
+      "props": {
+        "text": "All three monorepo packages (mcp-server, a2a-server, dashboard) upgraded from TS 5.9 to 6.0. NodeNext module resolution no longer auto-includes @types/node — fixed by adding \"types\": [\"node\"] to tsconfig. Co-authored by Claude.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key-heading",
+        "key-1",
+        "key-2",
+        "key-3"
+      ]
+    },
+    "key-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "key-1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark now supports 4 languages (EN, ZH-CN, DE, FR) with CI-gated quality",
+        "variant": "body"
+      }
+    },
+    "key-2": {
+      "type": "Text",
+      "props": {
+        "text": "TypeScript 6.0 across the miroshark-aeon monorepo",
+        "variant": "body"
+      }
+    },
+    "key-3": {
+      "type": "Text",
+      "props": {
+        "text": "13 npm packages updated including json-render 0.15 to 0.19 (4 minor versions of the dashboard renderer)",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats-heading",
+        "stats-grid"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats-grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-additions",
+        "stat-deletions"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "~50"
+      }
+    },
+    "stat-additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "+2,301"
+      }
+    },
+    "stat-deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "-1,752"
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-recap": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-03.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-03.md"
+      }
+    }
+  }
+}

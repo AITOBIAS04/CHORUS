@@ -355,3 +355,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-03,feature,claude-opus-4-6,8,1233,235854,22029
 2026-07-03,repo-pulse,claude-sonnet-4-6,12,6150,457277,34639
 2026-07-03,feature,claude-opus-4-6,6,1168,165477,23924
+2026-07-03,push-recap,claude-opus-4-6,21,14558,1220842,60906
