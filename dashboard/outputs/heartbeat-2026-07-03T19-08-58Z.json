@@ -1,0 +1,138 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — Thu Jul 3, ~19:10 UTC"
+      },
+      "children": [
+        "alert-missing",
+        "sep1",
+        "prs-heading",
+        "prs-list",
+        "sep2",
+        "skills-alert"
+      ]
+    },
+    "alert-missing": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "repo-article MISSING",
+        "message": "Scheduled 16:00 UTC (3h overdue); not in today's runs. Dispatch unavailable (actions: read only — manual re-run needed)."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "prs-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs (>24h)",
+        "level": "h3"
+      }
+    },
+    "prs-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr21",
+        "pr22",
+        "pr23"
+      ]
+    },
+    "pr21": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr21-title",
+        "pr21-status"
+      ]
+    },
+    "pr21-title": {
+      "type": "Text",
+      "props": {
+        "text": "PR #21 (3d) — reset poisoned cron-state counters",
+        "variant": "lead"
+      }
+    },
+    "pr21-status": {
+      "type": "Text",
+      "props": {
+        "text": "DIRTY/merge conflicts; superseded by PR #22",
+        "variant": "muted"
+      }
+    },
+    "pr22": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr22-title",
+        "pr22-status"
+      ]
+    },
+    "pr22-title": {
+      "type": "Text",
+      "props": {
+        "text": "PR #22 (30h) — reset poisoned cron-state counters (supersedes #21)",
+        "variant": "lead"
+      }
+    },
+    "pr22-status": {
+      "type": "Text",
+      "props": {
+        "text": "open, first flag",
+        "variant": "muted"
+      }
+    },
+    "pr23": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr23-title",
+        "pr23-status"
+      ]
+    },
+    "pr23-title": {
+      "type": "Text",
+      "props": {
+        "text": "PR #23 (28h) — add same-day dedup to push-recap",
+        "variant": "lead"
+      }
+    },
+    "pr23-status": {
+      "type": "Text",
+      "props": {
+        "text": "open, first flag",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "skills-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "title": "Daily Skills Status",
+        "message": "All other daily skills ran: token-report, fetch-tweets, repo-pulse, feature (SKIP ×2 — GH_GLOBAL not set), push-recap, project-lens (catch-up Wed miss ×2)"
+      }
+    }
+  }
+}
