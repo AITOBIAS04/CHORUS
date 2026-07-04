@@ -1,0 +1,214 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-04",
+        "description": "Reset 12 poisoned cron-state counters and added automatic counter hygiene"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_summary",
+        "sep1",
+        "heading_background",
+        "text_outage",
+        "text_prior_issues",
+        "text_why",
+        "sep2",
+        "heading_changes",
+        "stack_changes",
+        "sep3",
+        "heading_impact",
+        "text_impact",
+        "sep4",
+        "heading_merged",
+        "text_pr23",
+        "sep5",
+        "heading_pr",
+        "link_pr24"
+      ]
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "Reset all 12 poisoned cron-state counters and added automatic counter hygiene to prevent recurrence.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_background": {
+      "type": "Heading",
+      "props": {
+        "text": "Background",
+        "level": "h3"
+      }
+    },
+    "text_outage": {
+      "type": "Text",
+      "props": {
+        "text": "Every skill showed 2–19% success rates from the April auth outage (15 days of failures inflating counters), despite running at 100% health since May 1."
+      }
+    },
+    "text_prior_issues": {
+      "type": "Text",
+      "props": {
+        "text": "Two prior PRs (#21, #22) tried to fix this but kept getting merge conflicts because cron-state.json changes with every skill run."
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "Misleading success rates mask real problems — if a skill starts failing tomorrow, the rate barely moves from 6% to 5%. The heartbeat and skill-leaderboard both read these rates."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2"
+      ]
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1",
+        "text1"
+      ]
+    },
+    "badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "memory/cron-state.json",
+        "variant": "outline"
+      }
+    },
+    "text1": {
+      "type": "Text",
+      "props": {
+        "text": "Reset total_runs=total_successes, total_failures=0, success_rate=1.0 for 12 skills. Kept 1 genuine post-outage failure each for repo-actions and feature.",
+        "variant": "caption"
+      }
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge2",
+        "text2"
+      ]
+    },
+    "badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "skills/self-improve/SKILL.md",
+        "variant": "outline"
+      }
+    },
+    "text2": {
+      "type": "Text",
+      "props": {
+        "text": "Added Step 0.5 — auto-detects poisoned rates (rate<0.50, no consecutive failures, last_failed >30d ago) and resets them on every run.",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Success rates now reflect reality. Future outages that inflate counters will be auto-corrected within 2 days (next self-improve run)."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_merged": {
+      "type": "Heading",
+      "props": {
+        "text": "Also Merged",
+        "level": "h3"
+      }
+    },
+    "text_pr23": {
+      "type": "Text",
+      "props": {
+        "text": "PR #23 (push-recap same-day dedup)"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_pr": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Request",
+        "level": "h3"
+      }
+    },
+    "link_pr24": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pull Request #24",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/24",
+        "source": "GitHub"
+      }
+    }
+  }
+}

@@ -1,12 +1,17 @@
-*Agent Self-Improvement — 2026-07-02*
+*Agent Self-Improvement — 2026-07-04*
 
-Push-recap now detects same-day re-runs and suppresses duplicate notifications. When the skill runs a second time on the same day and finds the same commits already covered in the earlier article, it logs PUSH_RECAP_RERUN_QUIET and stops — no redundant notification, no article overwrite.
+Reset all 12 poisoned cron-state counters and added automatic counter hygiene to prevent recurrence.
 
-Why: Push-recap sent duplicate notifications on Jun 30 and Jul 1. The 24-hour commit window returned the same commits on re-runs, so the skill re-analyzed and re-notified with identical content. Repo-pulse already had this guard (REPO_PULSE_QUIET), push-recap did not.
+Every skill showed 2–19% success rates from the April auth outage (15 days of failures inflating counters), despite running at 100% health since May 1. Two prior PRs (#21, #22) tried to fix this but kept getting merge conflicts because cron-state.json changes with every skill run.
+
+Why: Misleading success rates mask real problems — if a skill starts failing tomorrow, the rate barely moves from 6% to 5%. The heartbeat and skill-leaderboard both read these rates.
 
 What changed:
-- skills/push-recap/SKILL.md: Added Step 4b — same-day dedup check after SHA deduplication. Compares current commit SHAs against existing article; stops if nothing new.
+- memory/cron-state.json: Reset total_runs=total_successes, total_failures=0, success_rate=1.0 for 12 skills. Kept 1 genuine post-outage failure each for repo-actions and feature.
+- skills/self-improve/SKILL.md: Added Step 0.5 — auto-detects poisoned rates (rate<0.50, no consecutive failures, last_failed >30d ago) and resets them on every run.
 
-Impact: Eliminates duplicate push-recap notifications on days when the skill is triggered more than once. One fewer redundant message per affected day.
+Also merged: PR #23 (push-recap same-day dedup)
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/23
+Impact: Success rates now reflect reality. Future outages that inflate counters will be auto-corrected within 2 days (next self-improve run).
+
+PR: https://github.com/AITOBIAS04/CHORUS/pull/24
