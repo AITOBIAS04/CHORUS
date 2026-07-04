@@ -1,0 +1,289 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-07-04",
+        "description": "Will MiroShark support 5 languages (merged, production) by September 1, 2026?"
+      },
+      "children": [
+        "heading-prediction",
+        "sep-1",
+        "section-coordination",
+        "sep-2",
+        "section-status",
+        "sep-3",
+        "section-why-now",
+        "sep-4",
+        "section-resolution",
+        "sep-5",
+        "section-scores",
+        "sep-6",
+        "footer-link"
+      ]
+    },
+    "heading-prediction": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark support 5 languages (merged, production) by September 1, 2026?",
+        "level": "h2"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-coordination",
+        "text-coordination-p1",
+        "text-coordination-p2"
+      ]
+    },
+    "heading-coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h3"
+      }
+    },
+    "text-coordination-p1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark just merged its third language — French, contributed by Zarbel974 in PR #222, touching 32 Vue components with 1,627 tr() calls. The pattern is now proven and frictionless: one dictionary file, zero component changes. Two more languages need to land. Any bilingual developer who has forked the repo (285 of them) can ship a language in a weekend. The market turns \"I could contribute\" into \"I should contribute before someone else claims my language.\"",
+        "variant": "body"
+      }
+    },
+    "text-coordination-p2": {
+      "type": "Text",
+      "props": {
+        "text": "Key metrics: PR #222 touched 32 Vue components with 1,627 tr() calls. 285 developers have forked the repo.",
+        "variant": "caption"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-status",
+        "grid-status-stats"
+      ]
+    },
+    "heading-status": {
+      "type": "Heading",
+      "props": {
+        "text": "Current Status",
+        "level": "h3"
+      }
+    },
+    "grid-status-stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-languages",
+        "stat-stars",
+        "stat-token-change"
+      ]
+    },
+    "stat-languages": {
+      "type": "Stat",
+      "props": {
+        "label": "Languages (Target: 5)",
+        "value": "3",
+        "delta": "+1 (French)",
+        "trend": "up"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "1,400"
+      }
+    },
+    "stat-token-change": {
+      "type": "Stat",
+      "props": {
+        "label": "Token Price Change",
+        "value": "+17%",
+        "trend": "up"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-why-now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-why-now",
+        "text-why-now"
+      ]
+    },
+    "heading-why-now": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h3"
+      }
+    },
+    "text-why-now": {
+      "type": "Text",
+      "props": {
+        "text": "French i18n merged July 3. The dictionary-only architecture means the barrier to the next language is the lowest it has ever been. Meanwhile, the repo just crossed 1,400 stars with zero non-English community content beyond this PR. The token is bouncing (+17% today) and LP is recovering — the project has momentum but the international community has no on-ramp. This market creates one.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-resolution",
+        "text-resolution-criteria",
+        "table-resolution-status"
+      ]
+    },
+    "heading-resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution Criteria",
+        "level": "h3"
+      }
+    },
+    "text-resolution-criteria": {
+      "type": "Text",
+      "props": {
+        "text": "Five distinct language locales with merged PRs in aaronjmars/MiroShark, each with a complete dictionary file (95%+ key coverage), verified via the repo's i18n scanner (scan_i18n.py). Currently at 3 (English, Chinese, French). YES if 2+ more merge by end of day September 1, 2026 UTC.",
+        "variant": "body"
+      }
+    },
+    "table-resolution-status": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Language",
+          "Status",
+          "PR"
+        ],
+        "rows": [
+          [
+            "English",
+            "Merged",
+            "Base"
+          ],
+          [
+            "Chinese",
+            "Merged",
+            "Legacy"
+          ],
+          [
+            "French",
+            "Merged",
+            "#222"
+          ],
+          [
+            "Language 4",
+            "Needed",
+            "Pending"
+          ],
+          [
+            "Language 5",
+            "Needed",
+            "Pending"
+          ]
+        ]
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-scores",
+        "progress-reflexivity",
+        "progress-viral"
+      ]
+    },
+    "heading-scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "progress-reflexivity": {
+      "type": "Progress",
+      "props": {
+        "label": "Reflexivity",
+        "value": 4,
+        "max": 5
+      }
+    },
+    "progress-viral": {
+      "type": "Progress",
+      "props": {
+        "label": "Viral",
+        "value": 4,
+        "max": 5
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View on Hyperstitions",
+        "href": "https://www.hyperstitions.com/",
+        "source": "hyperstitions.com"
+      }
+    }
+  }
+}
