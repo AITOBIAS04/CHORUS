@@ -1,0 +1,337 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-07-04",
+        "description": "Generated from analysis of aaronjmars/MiroShark. Ideas target two hyperstitions: 5 languages by Sep 1 (3/5) and a public case study by Sep 1."
+      },
+      "children": [
+        "repo-context",
+        "sep1",
+        "hyperstitions-section",
+        "sep2",
+        "ideas-section",
+        "sep3",
+        "link-section"
+      ]
+    },
+    "repo-context": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "stat-issues"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,355"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "286"
+      }
+    },
+    "stat-issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Open Issues",
+        "value": "0"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "hyperstitions-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "hyper-heading",
+        "hyper1-stack",
+        "hyper2"
+      ]
+    },
+    "hyper-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Hyperstitions Filed",
+        "level": "h3"
+      }
+    },
+    "hyper1-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "hyper1-title",
+        "hyper1-progress"
+      ]
+    },
+    "hyper1-title": {
+      "type": "Text",
+      "props": {
+        "text": "5 languages by Sep 1",
+        "variant": "body"
+      }
+    },
+    "hyper1-progress": {
+      "type": "Progress",
+      "props": {
+        "value": 3,
+        "max": 5,
+        "label": "3/5"
+      }
+    },
+    "hyper2": {
+      "type": "Text",
+      "props": {
+        "text": "Public case study by Sep 1",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ideas-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ideas-heading",
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5"
+      ]
+    },
+    "ideas-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Action Ideas",
+        "level": "h3"
+      }
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1-title",
+        "idea1-cat",
+        "idea1-desc"
+      ]
+    },
+    "idea1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. i18n Language Contribution Kit",
+        "level": "h4"
+      }
+    },
+    "idea1-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX, Small",
+        "variant": "secondary"
+      }
+    },
+    "idea1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Step-by-step guide + starter dictionary template for adding language #4; the French PR proved the pattern — this formalizes it with a labeled GitHub issue calling for Spanish, German, Japanese, Portuguese, or Korean contributors.",
+        "variant": "body"
+      }
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2-title",
+        "idea2-cat",
+        "idea2-desc"
+      ]
+    },
+    "idea2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Simulation RSS / Atom Feed",
+        "level": "h4"
+      }
+    },
+    "idea2-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Growth, Small",
+        "variant": "secondary"
+      }
+    },
+    "idea2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulations/feed.rss returns the 20 most recent published simulations as RSS 2.0; passive distribution to Feedly and newsletter aggregators, zero operator action needed after initial deploy.",
+        "variant": "body"
+      }
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3-title",
+        "idea3-cat",
+        "idea3-desc"
+      ]
+    },
+    "idea3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation Comparison API",
+        "level": "h4"
+      }
+    },
+    "idea3-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "secondary"
+      }
+    },
+    "idea3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulations/compare?ids=a,b,c returns side-by-side signal data for up to 10 simulations — the structured before/after tool for operators producing case studies and researchers building pre-prints.",
+        "variant": "body"
+      }
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4-title",
+        "idea4-cat",
+        "idea4-desc"
+      ]
+    },
+    "idea4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. GitHub Discussions Activation & Seeding",
+        "level": "h4"
+      }
+    },
+    "idea4-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community, Small",
+        "variant": "secondary"
+      }
+    },
+    "idea4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Enable GitHub Discussions on the repo and seed three threads: Show & Tell (usage stories), Feature Requests (idea intake), Research & Papers (academic citation tracking).",
+        "variant": "body"
+      }
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5-title",
+        "idea5-cat",
+        "idea5-desc"
+      ]
+    },
+    "idea5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Community Showcase Page",
+        "level": "h4"
+      }
+    },
+    "idea5-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/Growth, Medium",
+        "variant": "secondary"
+      }
+    },
+    "idea5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "/showcase page with curated real-world decision stories submitted via GitHub Issue template; the mechanism that turns 286 silent forks into visible proof-of-use.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-label",
+        "full-details-link"
+      ]
+    },
+    "link-label": {
+      "type": "Text",
+      "props": {
+        "text": "Full details:",
+        "variant": "muted"
+      }
+    },
+    "full-details-link": {
+      "type": "Link",
+      "props": {
+        "label": "repo-actions-2026-07-04.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-04.md"
+      }
+    }
+  }
+}

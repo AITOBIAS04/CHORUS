@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-07-02*
-Generated from analysis of aaronjmars/MiroShark (1,354 stars · 285 forks) — these are ideas that could be autonomously built by the feature skill tomorrow.
+*Repo Action Ideas — 2026-07-04*
+Generated from analysis of aaronjmars/MiroShark (1,355 stars, 286 forks, 0 open issues). Two new hyperstitions filed today — 5 languages by Sep 1 (3/5) and a public case study by Sep 1. Ideas target those gaps directly.
 
-1. OG Social Preview Cards (Growth, Small)
-   Backend Flask route returns crawler-readable HTML with og:title/og:description/og:image so simulation URLs generate rich cards on Twitter, LinkedIn, Discord, and Slack.
+1. i18n Language Contribution Kit (Community/DX, Small)
+   Step-by-step guide + starter dictionary template for adding language #4; the French PR proved the pattern — this formalizes it with a labeled GitHub issue calling for Spanish, German, Japanese, Portuguese, or Korean contributors.
 
-2. Simulation Narrative Export (Feature, Small)
-   GET /api/simulation/:id/narrative — Mercury 2 generates a 3-paragraph prose summary of any completed simulation; cached 24h; copy-paste ready for blog posts and Discord updates.
+2. Simulation RSS / Atom Feed (Feature/Growth, Small)
+   GET /api/simulations/feed.rss returns the 20 most recent published simulations as RSS 2.0; passive distribution to Feedly and newsletter aggregators, zero operator action needed after initial deploy.
 
-3. CLI `estimate` Subcommand (DX, Small)
-   `miroshark estimate --agents 20 --rounds 5` wraps the existing /api/estimate endpoint (#41 surface, already deployed) — completes the pre-flight CLI workflow with zero backend changes.
+3. Simulation Comparison API (Feature, Small)
+   GET /api/simulations/compare?ids=a,b,c returns side-by-side signal data for up to 10 simulations — the structured before/after tool for operators producing case studies and researchers building pre-prints.
 
-4. Trending Topics Discovery Feed (Feature/Growth, Small)
-   GET /api/topics/trending + /trending frontend page shows most-simulated topics by 7d/30d/all-time with consensus direction signals — passive social proof for new visitors.
+4. GitHub Discussions Activation & Seeding (Community, Small)
+   Enable GitHub Discussions on the repo and seed three threads: Show & Tell (usage stories), Feature Requests (idea intake), Research & Papers (academic citation tracking).
 
-5. Build-Your-Own-Surface Guide (Community, Small)
-   Annotated service stub + CONTRIBUTING-SURFACE.md + labeled GH issue with 3 specific surface ideas — direct mechanism for the 'community contributor ships a surface by July 15' hyperstition.
+5. Community Showcase Page (Community/Growth, Medium)
+   /showcase page with curated real-world decision stories submitted via GitHub Issue template; the mechanism that turns 286 silent forks into visible proof-of-use.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-02.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-04.md
