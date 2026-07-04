@@ -1,0 +1,158 @@
+{
+  "root": "card_hyperstitions",
+  "state": {},
+  "elements": {
+    "card_hyperstitions": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea",
+        "description": "2026-07-04"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_prediction",
+        "sep_1",
+        "heading_coordination",
+        "text_coordination",
+        "sep_2",
+        "heading_why",
+        "text_why",
+        "sep_3",
+        "heading_resolution",
+        "text_resolution",
+        "sep_4",
+        "heading_scores",
+        "stack_scores",
+        "sep_5",
+        "story_hyperstitions"
+      ]
+    },
+    "heading_prediction": {
+      "type": "Heading",
+      "props": {
+        "text": "Will someone publish a public case study of a real decision informed by a MiroShark simulation by September 1, 2026?",
+        "level": "h2"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The coordination play",
+        "level": "h3"
+      }
+    },
+    "text_coordination": {
+      "type": "Text",
+      "props": {
+        "text": "Someone needs to run a MiroShark simulation about an actual decision they face — a product launch, a feature bet, a market entry — then write up what the agents said and whether it changed their mind. The market makes 285 fork-holders think \"I have a decision like that right now, and the writeup would get attention.\" An AI agent cannot use the product for a real human decision or publish the story. Only a founder with a genuine question can.",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h3"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "Six articles in two weeks built the \"opinion simulation for solopreneurs\" narrative (41M solo founders, 4 CLI commands, $1/run). French i18n proved community contribution works. Token bouncing +17%. 285 forks and 1,354 stars — but zero public proof anyone used it for something real. The gap between \"interesting tool\" and \"tool people use\" is exactly one case study.",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "YES if, by September 1 2026, a publicly accessible post (blog, X thread ≥5 posts, HN submission, or YouTube video) by a non-MiroShark-team member describes running a MiroShark simulation for a genuine decision and shows the output. Must include the simulation topic, agent count, and at least one quoted result. Self-promotion posts that only link the repo without showing real usage do not count.",
+        "variant": "body"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "stack_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_reflexivity",
+        "stat_viral"
+      ]
+    },
+    "stat_reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      }
+    },
+    "stat_viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_hyperstitions": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Hyperstitions",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}

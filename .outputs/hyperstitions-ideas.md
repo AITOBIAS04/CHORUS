@@ -1,13 +1,13 @@
 *Hyperstitions Idea — 2026-07-04*
 
-"Will MiroShark support 5 languages (merged, production) by September 1, 2026?"
+"Will someone publish a public case study of a real decision informed by a MiroShark simulation by September 1, 2026?"
 
-The coordination play: MiroShark just merged its third language — French, contributed by Zarbel974 in PR #222, touching 32 Vue components with 1,627 tr() calls. The pattern is now proven and frictionless: one dictionary file, zero component changes. Two more languages need to land. Any bilingual developer who has forked the repo (285 of them) can ship a language in a weekend. The market turns "I could contribute" into "I should contribute before someone else claims my language."
+The coordination play: Someone needs to run a MiroShark simulation about an actual decision they face — a product launch, a feature bet, a market entry — then write up what the agents said and whether it changed their mind. The market makes 285 fork-holders think "I have a decision like that right now, and the writeup would get attention." An AI agent cannot use the product for a real human decision or publish the story. Only a founder with a genuine question can.
 
-Why now: French i18n merged July 3. The dictionary-only architecture means the barrier to the next language is the lowest it has ever been. Meanwhile, the repo just crossed 1,400 stars with zero non-English community content beyond this PR. The token is bouncing (+17% today) and LP is recovering — the project has momentum but the international community has no on-ramp. This market creates one.
+Why now: Six articles in two weeks built the "opinion simulation for solopreneurs" narrative (41M solo founders, 4 CLI commands, $1/run). French i18n proved community contribution works. Token bouncing +17%. 285 forks and 1,354 stars — but zero public proof anyone used it for something real. The gap between "interesting tool" and "tool people use" is exactly one case study.
 
-Resolution: Five distinct language locales with merged PRs in aaronjmars/MiroShark, each with a complete dictionary file (95%+ key coverage), verified via the repo's i18n scanner (scan_i18n.py). Currently at 3 (English, Chinese, French). YES if 2+ more merge by end of day September 1, 2026 UTC.
+Resolution: YES if, by September 1 2026, a publicly accessible post (blog, X thread ≥5 posts, HN submission, or YouTube video) by a non-MiroShark-team member describes running a MiroShark simulation for a genuine decision and shows the output. Must include the simulation topic, agent count, and at least one quoted result. Self-promotion posts that only link the repo without showing real usage do not count.
 
-Scores: Reflexivity 4/5 | Viral 4/5
+Scores: Reflexivity 5/5 | Viral 4/5
 
 Soon on https://www.hyperstitions.com/ ?
