@@ -1,0 +1,329 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-04",
+        "description": "MiroShark — 9 substantive commits by 3 authors (12 automation commits filtered)"
+      },
+      "children": [
+        "security-section",
+        "sep1",
+        "community-section",
+        "sep2",
+        "bugfixes-section",
+        "sep3",
+        "key-changes-section",
+        "sep4",
+        "stats-section",
+        "sep5",
+        "link-section"
+      ]
+    },
+    "security-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "security-heading",
+        "security-desc",
+        "security-details"
+      ]
+    },
+    "security-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Security & Dependency Hardening",
+        "level": "h2"
+      }
+    },
+    "security-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Four-commit sweep patching 20+ CVEs across the Python backend. All transitive or dev-only — zero application code changes, full test suite green."
+      }
+    },
+    "security-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dep-starlette",
+        "dep-cryptography",
+        "dep-pytest",
+        "dep-other"
+      ]
+    },
+    "dep-starlette": {
+      "type": "Text",
+      "props": {
+        "text": "starlette: 0.50 → 1.3.1"
+      }
+    },
+    "dep-cryptography": {
+      "type": "Text",
+      "props": {
+        "text": "cryptography: 46 → 49"
+      }
+    },
+    "dep-pytest": {
+      "type": "Text",
+      "props": {
+        "text": "pytest: 8 → 9.1.1"
+      }
+    },
+    "dep-other": {
+      "type": "Text",
+      "props": {
+        "text": "13 additional patch/minor bumps: werkzeug, requests, urllib3, pillow, flask, and more"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "community-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "community-heading",
+        "community-desc",
+        "community-details"
+      ]
+    },
+    "community-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Community & Governance",
+        "level": "h2"
+      }
+    },
+    "community-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Complete governance stack landed for 1,355-star milestone. Community docs consolidated under .github/. LICENSE moved back to repo root after GitHub licensee detection broke."
+      }
+    },
+    "community-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "doc-security",
+        "doc-contributing",
+        "doc-funding"
+      ]
+    },
+    "doc-security": {
+      "type": "Badge",
+      "props": {
+        "text": "SECURITY.md",
+        "variant": "outline"
+      }
+    },
+    "doc-contributing": {
+      "type": "Badge",
+      "props": {
+        "text": "CONTRIBUTING.md (EN + ZH-CN)",
+        "variant": "outline"
+      }
+    },
+    "doc-funding": {
+      "type": "Badge",
+      "props": {
+        "text": "FUNDING.yml",
+        "variant": "outline"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "bugfixes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "bugfixes-heading",
+        "bugfixes-desc",
+        "bugfixes-details"
+      ]
+    },
+    "bugfixes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Bug Fixes",
+        "level": "h2"
+      }
+    },
+    "bugfixes-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Docker persistence and cross-provider LLM message filtering improvements."
+      }
+    },
+    "bugfixes-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "bug-docker",
+        "bug-llm",
+        "bug-daniel"
+      ]
+    },
+    "bug-docker": {
+      "type": "Text",
+      "props": {
+        "text": "Docker compose files now persist backend/data/ so Nemotron demographic datasets (hundreds of MB) survive container recreation."
+      }
+    },
+    "bug-llm": {
+      "type": "Text",
+      "props": {
+        "text": "Fixed cross-provider LLM message filtering issue where Gemini and Azure had conflicting requirements for tool_calls."
+      }
+    },
+    "bug-daniel": {
+      "type": "Text",
+      "props": {
+        "text": "Daniel Andersen landed his 9th merged PR fixing the LLM filtering issue."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-heading",
+        "key-list"
+      ]
+    },
+    "key-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "key-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key-1",
+        "key-2",
+        "key-3"
+      ]
+    },
+    "key-1": {
+      "type": "Text",
+      "props": {
+        "text": "20+ CVEs patched across backend deps (starlette, cryptography, pyjwt, pillow, werkzeug)"
+      }
+    },
+    "key-2": {
+      "type": "Text",
+      "props": {
+        "text": "SECURITY.md + CONTRIBUTING.md + FUNDING.yml = complete community governance"
+      }
+    },
+    "key-3": {
+      "type": "Text",
+      "props": {
+        "text": "Nemotron data persistence fix prevents re-downloading 100s of MB on container updates"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-additions",
+        "stat-deletions"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "~29"
+      }
+    },
+    "stat-additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+757"
+      }
+    },
+    "stat-deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Deleted",
+        "value": "-542"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "link-full"
+      ]
+    },
+    "link-full": {
+      "type": "Link",
+      "props": {
+        "label": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-04.md"
+      }
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "self-improve",
+        "description": "Agent Self-Improvement — 2026-07-04"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "main-summary",
+        "separator-1",
+        "why-section",
+        "separator-2",
+        "what-section",
+        "separator-3",
+        "impact-section",
+        "separator-4",
+        "pr-section"
+      ]
+    },
+    "main-summary": {
+      "type": "Text",
+      "props": {
+        "text": "Reset poisoned cron-state counters and added automatic counter hygiene. All 14 tracked skills showed 2-19% success rates despite 65+ days of perfect health — the 15-day auth outage (Apr 16-30) permanently inflated failure counts. PRs #21 and #22 attempted this fix but both developed merge conflicts from daily state updates. Both closed; clean replacement created.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "why-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why-heading",
+        "why-text"
+      ]
+    },
+    "why-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "why-text": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat and skill-leaderboard have been reporting misleading health data since May 1. Any skill showing 2% success rate when it has zero consecutive failures is a monitoring blind spot.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "what-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "what-heading",
+        "what-item-1",
+        "what-item-2"
+      ]
+    },
+    "what-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "what-item-1": {
+      "type": "Text",
+      "props": {
+        "text": "memory/cron-state.json: Reset total_runs=total_successes, total_failures=0, success_rate=1.0 for all 14 skills. Cleared stale error strings.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "what-item-2": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Added Step 0.5 \"Counter hygiene\" — future self-improve runs auto-detect poisoned rates (rate < 50%, consecutive_failures=0, last_failed > 30 days ago) and reset them inline.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact-heading",
+        "impact-text"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat, skill-leaderboard, and any monitoring that reads cron-state.json now sees accurate 100% health instead of misleading 2-19% rates. Future outages will be auto-corrected within one self-improve cycle.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-heading",
+        "pr-link-element"
+      ]
+    },
+    "pr-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "PR",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "pr-link-element": {
+      "type": "Link",
+      "props": {
+        "label": "#25",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/25"
+      },
+      "children": []
+    }
+  }
+}
