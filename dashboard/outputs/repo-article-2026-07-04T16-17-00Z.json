@@ -1,0 +1,79 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "badge",
+        "heading",
+        "text1",
+        "stats-container",
+        "text2",
+        "link"
+      ]
+    },
+    "badge": {
+      "type": "Badge",
+      "props": {
+        "text": "New Article",
+        "variant": "default"
+      }
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Sixty-Six Thousand CVEs Will Drop This Year. One AI Project Fixed Twenty of Them in a Day.",
+        "level": "h2"
+      }
+    },
+    "text1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark patched 20+ known vulnerabilities in a single day — including a major Starlette version jump and cryptography library upgrades — while the industry average sits at 205 days per critical patch."
+      }
+    },
+    "stats-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat1",
+        "stat2"
+      ]
+    },
+    "stat1": {
+      "type": "Stat",
+      "props": {
+        "label": "Vulnerabilities patched in one day",
+        "value": "20+"
+      }
+    },
+    "stat2": {
+      "type": "Stat",
+      "props": {
+        "label": "Industry average per critical patch",
+        "value": "205 days"
+      }
+    },
+    "text2": {
+      "type": "Text",
+      "props": {
+        "text": "The same push shipped SECURITY.md, CONTRIBUTING.md, and FUNDING.yml, building the governance layer that separates maintained projects from abandoned ones."
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-04.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
