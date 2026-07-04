@@ -1,7 +1,10 @@
-HEARTBEAT_OK. This is the second heartbeat dispatch today — the 19:10 UTC run already checked everything, flagged repo-article as missing and three stalled PRs (#21, #22, #23), and sent a notification. All findings are within the 48h dedup window. No open issues to escalate. Logged and done.
+🫀 Heartbeat — 2026-07-04 19:30 UTC
 
-## Summary
-- **System health:** All skills healthy (consecutive_failures=0 across all 14 enabled skills)
-- **No new findings:** repo-article missing + 3 stalled PRs were already reported 90 min ago
-- **Dedup applied:** 48h window suppresses re-notification
-- **Action:** Logged HEARTBEAT_OK to `memory/logs/2026-07-03.md`
+✅ All systems healthy (consecutive_failures=0 for all 14 skills). No open issues.
+
+❌ Missing: project-lens (scheduled 16:00 UTC Fri, ~3.5h overdue; not in today's workflow runs)
+↳ Dispatch unavailable (actions: read only; 403 confirmed). Manual re-run needed.
+
+⚠️ Duplicate self-improve PRs: #24 (13:08 UTC) and #25 (14:54 UTC) — both fix the same poisoned cron-state counters. One should be closed before merge.
+
+ℹ️ MiroShark PR #239 open (<1h): feat(i18n) French translations 86.9% — community contribution, still fresh.
