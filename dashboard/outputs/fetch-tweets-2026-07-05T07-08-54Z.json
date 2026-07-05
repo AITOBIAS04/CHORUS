@@ -1,0 +1,147 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — $MIROSHARK / MiroShark"
+      },
+      "children": [
+        "alert-api",
+        "separator-1",
+        "tweets-stack"
+      ]
+    },
+    "alert-api": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "XAI_API_KEY not available; results compiled via WebSearch."
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "tweets-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet-item-1",
+        "tweet-item-2",
+        "tweet-item-3",
+        "tweet-item-4"
+      ]
+    },
+    "tweet-item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-1",
+        "link-1"
+      ]
+    },
+    "tweet-1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "giottodf",
+        "handle": "giottodf",
+        "text": "Ranked $MIROSHARK as #2 in a list of most disappointing crypto projects (token down 92.8% from ATH). Sentiment is blunt but the mention is real."
+      }
+    },
+    "link-1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/giottodf/status/2073384933641646287"
+      }
+    },
+    "tweet-item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-2",
+        "link-2"
+      ]
+    },
+    "tweet-2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "LLuciano_BTC",
+        "handle": "LLuciano_BTC",
+        "text": "High-engagement post about $MIROSHARK (69K views, 85 replies as of Jul 4)."
+      }
+    },
+    "link-2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/LLuciano_BTC/status/2073406727077470417"
+      }
+    },
+    "tweet-item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-3",
+        "link-3"
+      ]
+    },
+    "tweet-3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "CryptoUttar",
+        "handle": "CryptoUttar",
+        "text": "Shared a link referencing $MIROSHARK on Base."
+      }
+    },
+    "link-3": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/CryptoUttar/status/2073006056893210643"
+      }
+    },
+    "tweet-item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-4",
+        "link-4"
+      ]
+    },
+    "tweet-4": {
+      "type": "TweetCard",
+      "props": {
+        "author": "Thefrgcoin",
+        "handle": "Thefrgcoin",
+        "text": "FRG Universe Validator posted about $MIROSHARK."
+      }
+    },
+    "link-4": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/Thefrgcoin/status/2073419762521055430"
+      }
+    }
+  }
+}

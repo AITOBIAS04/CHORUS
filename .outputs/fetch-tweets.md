@@ -1,16 +1,19 @@
-Done. Here's the summary:
+*Top Tweets — $MIROSHARK / MiroShark (2026-07-05)*
 
-## Summary
+XAI\_API\_KEY not available; results compiled via WebSearch.
 
-**Skill:** fetch-tweets | **Result:** FETCH_TWEETS_NO_NEW
+1. x.com/giottodf — Ranked $MIROSHARK as #2 in a list of most disappointing crypto projects (token down 92.8% from ATH). Sentiment is blunt but the mention is real.
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/giottodf/status/2073384933641646287)
 
-**What happened:**
-- Read memory and soul files (soul files are empty — neutral tone)
-- Collected the dedup set: 19 previously-reported tweet URLs from the Jul 1 and Jul 3 logs
-- Confirmed XAI_API_KEY not set → used WebSearch (Path B)
-- Ran 8 searches across multiple angles: `$MIROSHARK Base chain`, `MiroShark github`, `after:2026-06-27`, `miroshark_ account`, `aaronjmars model/Mercury/DeepSeek`, and more
-- Every tweet URL returned by WebSearch was already in the previously-reported list — WebSearch's bias toward high-engagement older tweets means fresh posts from the last 48–72h don't surface
+2. x.com/LLuciano\_BTC — High-engagement post about $MIROSHARK (69K views, 85 replies as of Jul 4).
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/LLuciano_BTC/status/2073406727077470417)
 
-**Action taken:** No notification sent. Logged `FETCH_TWEETS_NO_NEW` to `memory/logs/2026-07-04.md`.
+3. x.com/CryptoUttar — Shared a link referencing $MIROSHARK on Base.
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/CryptoUttar/status/2073006056893210643)
 
-**Side observation:** Repo is now at **1.4k stars** (up from 1,355 on Jul 3) and the Jul 3 commits brought French i18n, a GitHub Sponsor button, community docs (SECURITY/CONTRIBUTING), and several dependency/bug fixes — but no tweet announcing these has surfaced in WebSearch yet.
+4. x.com/Thefrgcoin — FRG Universe Validator posted about $MIROSHARK.
+Likes: N/A | RTs: N/A
+[View tweet](https://x.com/Thefrgcoin/status/2073419762521055430)
