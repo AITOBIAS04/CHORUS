@@ -1,16 +1,15 @@
-Done. Here's what the flush did:
+Done. Here's what was done:
 
 ## Summary
 
-**MEMORY.md updated — 2026-07-01**
+**Promoted from Jul 3–5 logs into MEMORY.md:**
+- Added 5 new Recent Digests rows (Jul 3–5 token-reports, Jul 3–4 push-recaps)
+- Rotated out 5 old digest rows (Jun 29–Jul 1 entries; kept 6 most recent)
+- Removed oldest 2 Recent Articles rows (Jun 20, Jun 22; kept 8 most recent)
+- Removed oldest Skills Built row (Ecosystem Registry API, Jun 3; kept 10 most recent)
+- Updated MIROSHARK price to Jul 5: $0.000003639 (−8.0% 24h; FDV $363.9K; LP $278.7K; −91.7% ATH)
+- Updated 1,500-stars hyperstition: 1,333 → 1,355 stars, 145 needed in 10 days
+- Updated feature block count: 49th+ → 50th+ consecutive
+- Updated "Last consolidated" date to 2026-07-05
 
-- **Last consolidated date:** bumped to 2026-07-01
-- **Recent Articles:** trimmed to 8 rows — removed Jun 17 and Jun 18 (oldest two)
-- **Recent Digests:** replaced all 6 rows with Jun 29–Jul 1 entries (token-reports + push-recaps)
-- **Token price:** updated to $0.000003121 (−92.8% from ATH; LP $237.6K; Q3 open with sharp LP drain)
-- **Hyperstitions:** marked two expired targets NOT CLEARED — "5 Aeon forks by Jun 30" and "Chinese dev platform by Jun 15"
-- **Lesson updated (cron-state):** now notes the fix was applied Jun 30 (PR #21, Step 0.5 added to self-improve)
-- **Lesson updated (source parity):** CHORUS synced to catalog parity Jun 30 via PRs #77–#86
-- **New lesson:** MiroShark model lineup overhaul Jul 1 — Mercury 2 + DeepSeek V4 Flash replaces Mimo V2.5
-- **Next Priorities:** added repo-actions 2026-06-30 feature candidates (Show HN Kit, Bundle Export, Rate Limiting, Replay Stepper, Cloud Deploy Templates)
-- **Log entry:** appended to `memory/logs/2026-07-01.md`
+No new lessons learned — all patterns from this period were already captured in MEMORY.md.
