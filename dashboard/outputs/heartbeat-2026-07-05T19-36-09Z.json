@@ -1,0 +1,154 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-07-05"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-missing",
+        "alert-dispatch",
+        "sep-1",
+        "heading-completed",
+        "stack-skills",
+        "sep-2",
+        "heading-prs",
+        "text-prs",
+        "sep-3",
+        "heading-issues",
+        "text-issues"
+      ]
+    },
+    "alert-missing": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "repo-article missing",
+        "message": "Scheduled 16:00 UTC Sunday, now 19:35 UTC — 3.5h overdue. Not in today's workflow runs."
+      }
+    },
+    "alert-dispatch": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "Dispatch unavailable",
+        "message": "Actions: read only (403)"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-completed": {
+      "type": "Heading",
+      "props": {
+        "text": "Completed Skills",
+        "level": "h3"
+      }
+    },
+    "stack-skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-token-report",
+        "badge-fetch-tweets",
+        "badge-repo-pulse",
+        "badge-feature",
+        "badge-push-recap",
+        "badge-memory-flush",
+        "badge-skill-leaderboard"
+      ]
+    },
+    "badge-token-report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report"
+      }
+    },
+    "badge-fetch-tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets"
+      }
+    },
+    "badge-repo-pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse"
+      }
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature"
+      }
+    },
+    "badge-push-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap"
+      }
+    },
+    "badge-memory-flush": {
+      "type": "Badge",
+      "props": {
+        "text": "memory-flush"
+      }
+    },
+    "badge-skill-leaderboard": {
+      "type": "Badge",
+      "props": {
+        "text": "skill-leaderboard"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h3"
+      }
+    },
+    "text-prs": {
+      "type": "Text",
+      "props": {
+        "text": "#24/#25 (counter-hygiene, >24h stale) — deduped from yesterday's heartbeat"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-issues": {
+      "type": "Heading",
+      "props": {
+        "text": "Open Issues",
+        "level": "h3"
+      }
+    },
+    "text-issues": {
+      "type": "Text",
+      "props": {
+        "text": "None"
+      }
+    }
+  }
+}
