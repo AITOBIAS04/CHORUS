@@ -1,19 +1,16 @@
-Done. Here's what was executed:
+Skill leaderboard complete. Here's what was done:
 
-## Summary
+**Results:**
 
-**Skill:** `skill-leaderboard` — 2026-06-28
+- **36 active MiroShark forks** scanned (pushed in last 30 days) — down from 38 last week, 2 aged out
+- **1 active Aeon runtime fork** (AITOBIAS04/CHORUS, pushed today) — unchanged
+- **CHORUS enabled skills:** 14 (all at 100%) — no changes from 2026-06-28
+- **Source (miroshark-aeon) enabled skills:** 7 — no changes
+- **Adoption gaps:** 3 (docs-sync, shiplog, tweet-digest) — unchanged
+- **CHORUS-only extras:** 10 — unchanged
 
-**Fleet scan:**
-- Primary target (`aaronjmars/MiroShark`): **38 active forks** in the 30-day window — all sim-tool forks with no `aeon.yml` (expected)
-- Aeon runtime (`aaronjmars/miroshark-aeon`): **1 active fork** — AITOBIAS04/CHORUS (pushed today)
+**Notification:** Skipped — `SKILL_LEADERBOARD_INSUFFICIENT_DATA` for the 9th consecutive week (only 1 Aeon fork with readable `aeon.yml`, threshold requires ≥2).
 
-**CHORUS skill stack (14 enabled — unchanged):** token-report, fetch-tweets, repo-pulse, push-recap, project-lens, repo-actions, repo-article, self-improve, weekly-shiplog, hyperstitions-ideas, feature, heartbeat, memory-flush, skill-leaderboard
-
-**Big story this week:** The source repo (`aaronjmars/miroshark-aeon`) underwent a major restructure. Its enabled-by-default stack shrank from ~15 → 7 skills (dropping push-recap, repo-actions, repo-article, self-improve, project-lens, feature, star-milestone, star-momentum, thread-formatter) while adding `docs-sync` and expanding the total skill catalog to 200+. CHORUS now runs 10 skills that the source has disabled — up from 3 last week. The source has shifted to a "minimal core + opt-in" philosophy.
-
-**Adoption gaps (source enabled, not in CHORUS):** `docs-sync` (new), `shiplog`, `tweet-digest`
-
-**Notification:** Skipped — SKILL_LEADERBOARD_INSUFFICIENT_DATA (need ≥2 Aeon forks, found 1, eighth consecutive week)
-
-**Files written:** `articles/skill-leaderboard-2026-06-28.md`, `memory/logs/2026-06-28.md` (appended)
+**Files written:**
+- `articles/skill-leaderboard-2026-07-05.md`
+- Appended to `memory/logs/2026-07-05.md`
