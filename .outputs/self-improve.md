@@ -1,13 +1,13 @@
-*Agent Self-Improvement — 2026-07-04*
+*Agent Self-Improvement — 2026-07-06*
 
-Reset poisoned cron-state counters and added automatic counter hygiene. All 14 tracked skills showed 2-19% success rates despite 65+ days of perfect health — the 15-day auth outage (Apr 16-30) permanently inflated failure counts. PRs #21 and #22 attempted this fix but both developed merge conflicts from daily state updates. Both closed; clean replacement created.
+Added dedup guard and duplicate PR cleanup to the self-improve skill. On Jul 4, the scheduler triggered self-improve twice in one day, creating duplicate PRs #24 and #25 — both attempting the same cron-state counter fix. Both developed merge conflicts and sat as DIRTY clutter for 2 days.
 
-Why: Heartbeat and skill-leaderboard have been reporting misleading health data since May 1. Any skill showing 2% success rate when it has zero consecutive failures is a monitoring blind spot.
+Why: Scheduler double-trigger on Jul 4 (13:01 + 14:49 UTC) with no guard against creating a second PR. The skill ran the same analysis twice and opened two identical PRs.
 
 What changed:
-- memory/cron-state.json: Reset total_runs=total_successes, total_failures=0, success_rate=1.0 for all 14 skills. Cleared stale error strings.
-- skills/self-improve/SKILL.md: Added Step 0.5 "Counter hygiene" — future self-improve runs auto-detect poisoned rates (rate < 50%, consecutive_failures=0, last_failed > 30 days ago) and reset them inline.
+- skills/self-improve/SKILL.md: Added Step 3.5 dedup guard — checks for an open improve: PR from the last 24h before creating a new one; skips if one exists
+- skills/self-improve/SKILL.md: Enhanced Step 0 — closes DIRTY duplicate improve: PRs regardless of age (previously required 7d), keeping only the newest
 
-Impact: Heartbeat, skill-leaderboard, and any monitoring that reads cron-state.json now sees accurate 100% health instead of misleading 2-19% rates. Future outages will be auto-corrected within one self-improve cycle.
+Impact: No more duplicate PRs from scheduler double-triggers. DIRTY duplicates get cleaned up immediately instead of lingering for a week. Closed stale PRs #24 and #25 this run.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/25
+PR: https://github.com/AITOBIAS04/CHORUS/pull/26

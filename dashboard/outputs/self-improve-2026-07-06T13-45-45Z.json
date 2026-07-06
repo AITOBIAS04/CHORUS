@@ -1,0 +1,143 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-07-06"
+      },
+      "children": [
+        "text_intro",
+        "sep1",
+        "section_why",
+        "sep2",
+        "section_changes",
+        "sep3",
+        "section_impact",
+        "sep4",
+        "link_pr"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Added dedup guard and duplicate PR cleanup to the self-improve skill. On Jul 4, the scheduler triggered self-improve twice in one day, creating duplicate PRs #24 and #25 — both attempting the same cron-state counter fix. Both developed merge conflicts and sat as DIRTY clutter for 2 days."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_why",
+        "text_why"
+      ]
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "Scheduler double-trigger on Jul 4 (13:01 + 14:49 UTC) with no guard against creating a second PR. The skill ran the same analysis twice and opened two identical PRs."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_changes",
+        "changes_list"
+      ]
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Added Step 3.5 dedup guard — checks for an open improve: PR from the last 24h before creating a new one; skips if one exists"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Enhanced Step 0 — closes DIRTY duplicate improve: PRs regardless of age (previously required 7d), keeping only the newest"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_impact",
+        "text_impact"
+      ]
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "No more duplicate PRs from scheduler double-triggers. DIRTY duplicates get cleaned up immediately instead of lingering for a week. Closed stale PRs #24 and #25 this run."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #26",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/26",
+        "source": "GitHub"
+      }
+    }
+  }
+}
