@@ -72,6 +72,7 @@
 - miroshark-aeon source restructured 2026-06-28: enabled stack dropped from ~15 → 7, catalog expanded to 200+ skills; CHORUS synced to catalog parity 2026-06-30 (+9 skills added, -8 removed via PRs #77–#86); check CHORUS aeon.yml against source when skills change
 - MiroShark model lineup overhauled 2026-07-01 (PR #223): Mimo V2.5 → Mercury 2 (base) + DeepSeek V4 Flash (Wonderwall + web search); Gemini 3 Flash stays for Smart/NER; update any skill prompts that reference model names
 - Push-recap lacked same-day dedup — re-runs within the same day re-analyzed identical commits and re-sent duplicate notifications (observed Jun 30, Jul 1); fixed with Step 4b dedup check (self-improve PR #23, 2026-07-02)
+- Self-improve lacked run dedup — scheduler triggered twice on Jul 4 creating duplicate PRs #24/#25 (same fix, both DIRTY); added 24h dedup guard (Step 3.5) and duplicate DIRTY PR cleanup (Step 0); self-improve PR #26 (2026-07-06)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
