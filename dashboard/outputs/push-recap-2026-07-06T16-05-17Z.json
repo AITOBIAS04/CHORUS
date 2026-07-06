@@ -1,0 +1,411 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-06"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_section",
+        "sep1",
+        "pr_section",
+        "sep2",
+        "key_changes_section",
+        "sep3",
+        "summary_stats",
+        "sep4",
+        "recap_link"
+      ]
+    },
+    "repo_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo_name",
+        "commit_info"
+      ]
+    },
+    "repo_name": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "commit_info": {
+      "type": "Badge",
+      "props": {
+        "text": "1 substantive commit by Abel (Zarbel974) + Aaron Mars"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_header",
+        "pr_description",
+        "pr_stats",
+        "pr_details"
+      ]
+    },
+    "pr_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "pr_title",
+        "pr_badge"
+      ]
+    },
+    "pr_title": {
+      "type": "Heading",
+      "props": {
+        "text": "French i18n Completion Sprint",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "pr_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #239",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "pr_description": {
+      "type": "Text",
+      "props": {
+        "text": "Zarbel974 pushed French translation coverage from ~70% to 86.9%, adding 263 new fr: entries across 20 Vue components. The largest single file was EmbedDialog.vue (247 translations covering all 41 API surface descriptions and developer-facing embed copy). The PR went through two AI-assisted review rounds — fixing stance/position consistency and a parser bug that truncated 47 French strings at apostrophe elisions.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "pr_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_coverage",
+        "stat_new_entries",
+        "stat_components"
+      ]
+    },
+    "stat_coverage": {
+      "type": "Stat",
+      "props": {
+        "label": "Coverage",
+        "value": "86.9%",
+        "delta": "+16.9%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_new_entries": {
+      "type": "Stat",
+      "props": {
+        "label": "New Entries",
+        "value": "263"
+      },
+      "children": []
+    },
+    "stat_components": {
+      "type": "Stat",
+      "props": {
+        "label": "Vue Components",
+        "value": "20"
+      },
+      "children": []
+    },
+    "pr_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "detail1",
+        "detail2",
+        "detail3",
+        "detail4"
+      ]
+    },
+    "detail1": {
+      "type": "Text",
+      "props": {
+        "text": "EmbedDialog.vue: 247 translations covering all 41 API surface descriptions",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "detail2": {
+      "type": "Text",
+      "props": {
+        "text": "Developer-facing embed copy fully localized",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "detail3": {
+      "type": "Text",
+      "props": {
+        "text": "2 AI-assisted review rounds completed",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "detail4": {
+      "type": "Text",
+      "props": {
+        "text": "Fixed: stance/position consistency; parser bug truncating 47 French strings at apostrophe elisions",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "change1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1_title",
+        "change1_desc",
+        "change1_diff"
+      ]
+    },
+    "change1_title": {
+      "type": "Text",
+      "props": {
+        "text": "EmbedDialog.vue: 247 new FR translations",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "change1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Every embed/share/curl string now localized",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "change1_diff": {
+      "type": "Badge",
+      "props": {
+        "text": "+247/-247 lines",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "change2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change2_title",
+        "change2_desc",
+        "change2_diff"
+      ]
+    },
+    "change2_title": {
+      "type": "Text",
+      "props": {
+        "text": "WhatIfPanel.vue: counterfactual analysis UI fully translated",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "change2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Impact labels, consensus round, bullish share fully localized",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "change2_diff": {
+      "type": "Badge",
+      "props": {
+        "text": "+15/-15 lines",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "change3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change3_title",
+        "change3_desc",
+        "change3_diff"
+      ]
+    },
+    "change3_title": {
+      "type": "Text",
+      "props": {
+        "text": "Home.vue: landing page tagline + all section headers localized",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "change3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Full landing page localization completed",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "change3_diff": {
+      "type": "Badge",
+      "props": {
+        "text": "+12/-12 lines",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "summary_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_row"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Summary Stats",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stats_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_added",
+        "stat_removed"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "20"
+      },
+      "children": []
+    },
+    "stat_added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+344"
+      },
+      "children": []
+    },
+    "stat_removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Removed",
+        "value": "-344"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-06.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
