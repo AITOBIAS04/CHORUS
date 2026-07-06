@@ -1,0 +1,318 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-07-06",
+        "description": "MiroShark got its papers in order: new model brain, French translations, 20+ CVEs patched, and a complete governance stack — all in one week."
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-shipped",
+        "separator-1",
+        "stack-items",
+        "separator-2",
+        "heading-stats",
+        "stack-stats",
+        "separator-3",
+        "link-full"
+      ]
+    },
+    "heading-shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4"
+      ]
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-item-1",
+        "stack-badges-1"
+      ]
+    },
+    "text-item-1": {
+      "type": "Text",
+      "props": {
+        "text": "Model lineup overhauled — Mercury 2 + DeepSeek V4 Flash replaces Mimo V2.5 across 12 files"
+      },
+      "children": []
+    },
+    "stack-badges-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-pr-223"
+      ]
+    },
+    "badge-pr-223": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #223"
+      },
+      "children": []
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-item-2",
+        "stack-badges-2"
+      ]
+    },
+    "text-item-2": {
+      "type": "Text",
+      "props": {
+        "text": "French i18n to 86.9% — community contributor Zarbel974 delivered 1,723 translations across 32 Vue components"
+      },
+      "children": []
+    },
+    "stack-badges-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-pr-222",
+        "badge-pr-239"
+      ]
+    },
+    "badge-pr-222": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #222"
+      },
+      "children": []
+    },
+    "badge-pr-239": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #239"
+      },
+      "children": []
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-item-3",
+        "stack-badges-3"
+      ]
+    },
+    "text-item-3": {
+      "type": "Text",
+      "props": {
+        "text": "20+ CVEs patched in one day — starlette 0.50→1.3.1, cryptography 46→49, pytest 8→9"
+      },
+      "children": []
+    },
+    "stack-badges-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-pr-229",
+        "badge-pr-230",
+        "badge-pr-231"
+      ]
+    },
+    "badge-pr-229": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #229"
+      },
+      "children": []
+    },
+    "badge-pr-230": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #230"
+      },
+      "children": []
+    },
+    "badge-pr-231": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #231"
+      },
+      "children": []
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-item-4",
+        "stack-badges-4"
+      ]
+    },
+    "text-item-4": {
+      "type": "Text",
+      "props": {
+        "text": "Governance stack shipped — SECURITY.md, CONTRIBUTING.md (EN+ZH), FUNDING.yml"
+      },
+      "children": []
+    },
+    "stack-badges-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-pr-235",
+        "badge-pr-236",
+        "badge-pr-237"
+      ]
+    },
+    "badge-pr-235": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #235"
+      },
+      "children": []
+    },
+    "badge-pr-236": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #236"
+      },
+      "children": []
+    },
+    "badge-pr-237": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #237"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-commits",
+        "stat-prs",
+        "stat-lines",
+        "stat-stars"
+      ]
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "~38"
+      },
+      "children": []
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "13"
+      },
+      "children": []
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+6,000 / -4,750"
+      },
+      "children": []
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,357",
+        "delta": "+7",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link-full": {
+      "type": "Link",
+      "props": {
+        "label": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-07-06.md"
+      },
+      "children": []
+    }
+  }
+}

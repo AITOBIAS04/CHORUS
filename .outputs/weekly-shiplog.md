@@ -1,12 +1,12 @@
-*Weekly Shiplog — 2026-06-29*
+*Weekly Shiplog — 2026-07-06*
 
-The CLI learned to wait, stop, and tell you what it cost. MiroShark can now be automated end-to-end.
+MiroShark got its papers in order: new model brain, French translations, 20+ CVEs patched, and a complete governance stack — all in one week.
 
 Shipped:
-- CLI automation lifecycle complete — cost, wait, stop subcommands landed in 4 days
-- Thinking model robustness — 8-file sweep eliminates silent failures with reasoning LLMs
-- i18n locale persistence — non-English sims no longer drift back to English
-- 680-line dead code cleanup — codebase got smaller, not bigger
+- Model lineup overhauled — Mercury 2 + DeepSeek V4 Flash replaces Mimo V2.5 across 12 files (PR #223)
+- French i18n to 86.9% — community contributor Zarbel974 delivered 1,723 translations across 32 Vue components (PRs #222, #239)
+- 20+ CVEs patched in one day — starlette 0.50→1.3.1, cryptography 46→49, pytest 8→9 (PRs #229-231)
+- Governance stack shipped — SECURITY.md, CONTRIBUTING.md (EN+ZH), FUNDING.yml (PRs #235-237)
 
-Stats: 24 commits, 22 PRs merged, +1,968/-1,410 lines, 1,350 stars (+28)
-Full update: https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/weekly-shiplog-2026-06-29.md
+Stats: ~38 commits, 13 PRs merged, ~+6,000/-4,750 lines, 1,357 stars (+7)
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-07-06.md
