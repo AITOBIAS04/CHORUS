@@ -1,1 +1,8 @@
-Heartbeat 2026-07-05 — 1 finding: repo-article missing (scheduled 16:00 UTC Sunday, now 19:35 UTC — 3.5h overdue; not in today's workflow runs). Dispatch unavailable (actions: read only, 403). All other Sunday skills completed: token-report, fetch-tweets, repo-pulse, feature, push-recap, memory-flush, skill-leaderboard. No open issues. PRs #24/#25 (counter-hygiene, >24h stale) — deduped from yesterday's heartbeat.
+## Summary
+
+**HEARTBEAT_OK** — Monday, July 6, 2026.
+
+All 9 scheduled skills for today completed successfully:
+- token-report, fetch-tweets, repo-pulse, feature (SKIP — GH_GLOBAL), self-improve, repo-actions, weekly-shiplog, push-recap, project-lens — all ✅
+
+No systemic failures (all 13 skills at consecutive_failures=0). No open issues. No stalled PRs (PR #26 is only ~5h old). No skills missing. No notification sent.
