@@ -1,0 +1,105 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "story_link",
+        "separator1",
+        "stack_content"
+      ]
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "AI Models Agree with Wrong Answers Sixty-Four Percent of the Time. The Industry Treats That as a Bug.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-06.md",
+        "source": "CHORUS"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_64",
+        "text_industry",
+        "separator2",
+        "stat_23",
+        "stat_87",
+        "separator3",
+        "text_miroshark",
+        "badge_implementation"
+      ]
+    },
+    "stat_64": {
+      "type": "Stat",
+      "props": {
+        "label": "Models capitulate to incorrect beliefs",
+        "value": "64%",
+        "trend": "down"
+      }
+    },
+    "text_industry": {
+      "type": "Text",
+      "props": {
+        "text": "The entire AI industry optimizes for agreement — RLHF rewards user satisfaction, which means models provide incorrect answers.",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stat_23": {
+      "type": "Stat",
+      "props": {
+        "label": "Structured disagreement improves decision quality",
+        "value": "+23%",
+        "trend": "up"
+      }
+    },
+    "stat_87": {
+      "type": "Stat",
+      "props": {
+        "label": "Disagreement beats consensus in cases",
+        "value": "87%",
+        "trend": "up"
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark is architecturally the opposite of sycophancy: agents built to argue, not agree.",
+        "variant": "lead"
+      }
+    },
+    "badge_implementation": {
+      "type": "Badge",
+      "props": {
+        "text": "Twelve agents, a dollar, ten minutes — output is the disagreement itself",
+        "variant": "outline"
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-*New Article: Seventy-Nine Percent of Organizations Cannot Trace What Their AI Agent Did. The Fix Is Not Another Dashboard.*
+*New Article: AI Models Agree with Wrong Answers Sixty-Four Percent of the Time. The Industry Treats That as a Bug.*
 
-The AI observability market hit $2.69 billion in 2026 because most AI systems treat intermediate states as ephemeral data that vanishes after execution. MiroShark took a different architectural approach: decomposing simulation output into 41 independently queryable API surfaces — confidence trajectories, stance flips, mention networks, platform divergence — each a first-class endpoint with its own schema and cache. The result is observability by design, not by instrumentation.
+The entire AI industry optimizes for agreement — RLHF rewards user satisfaction, which means models capitulate to incorrect beliefs 64% of the time. Research shows structured disagreement improves decision quality by 23% and beats consensus in 87% of cases. MiroShark is architecturally the opposite of sycophancy: agents built to argue, not agree. Twelve agents, a dollar, ten minutes — and the output is the disagreement itself.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-03.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-06.md
