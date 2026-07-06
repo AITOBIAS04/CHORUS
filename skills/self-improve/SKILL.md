@@ -26,6 +26,13 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      ```
    - **Skip** if the PR has review comments requesting changes — a human has weighed in, leave it for them.
 
+   **Duplicate cleanup:** If multiple open `improve:` PRs have `mergeStateStatus: DIRTY`, they are redundant (a newer run supersedes). Close all but the newest:
+   ```bash
+   gh pr list --state open --json number,title,createdAt,mergeStateStatus \
+     --jq '[.[] | select(.title | startswith("improve:")) | select(.mergeStateStatus == "DIRTY")] | sort_by(.createdAt) | .[:-1]'
+   ```
+   Close each with: `gh pr close NUMBER --comment "Closing: superseded by a newer self-improve PR that also has this fix."`
+
    Log all merge/close actions to `memory/logs/${today}.md`. If any PRs were merged, include them in the final notification. Then continue to step 1.
 
 1. **Assess what needs improving** (in this priority order):
@@ -54,6 +61,14 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
    - `dashboard/` — dashboard code
    - `memory/` — memory files
    - `notify` script template in workflows
+
+3.5. **Dedup guard** — Before creating a branch, check if an open `improve:` PR already exists from the last 24 hours:
+   ```bash
+   CUTOFF_24H=$(date -u -d "24 hours ago" +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-24H +%Y-%m-%dT%H:%M:%SZ)
+   EXISTING=$(gh pr list --state open --json number,title,createdAt \
+     --jq "[.[] | select(.title | startswith(\"improve:\")) | select(.createdAt > \"$CUTOFF_24H\")] | length")
+   ```
+   If `EXISTING > 0`, log "SELF_IMPROVE_DEDUP: skipping — open improve PR from last 24h already exists" to `memory/logs/${today}.md` and **stop here**. Do not create a duplicate PR. This prevents duplicate PRs when the scheduler triggers the skill multiple times in one day.
 
 4. **Create a branch, commit, and push**:
    ```bash
