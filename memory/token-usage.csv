@@ -378,3 +378,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-05,skill-leaderboard,claude-sonnet-4-6,10,4972,346680,34556
 2026-07-05,heartbeat,claude-sonnet-4-6,10,8903,408822,41259
 2026-07-06,token-report,claude-sonnet-4-6,12,17580,691420,70772
+2026-07-06,repo-pulse,claude-sonnet-4-6,11,3427,397762,30797
