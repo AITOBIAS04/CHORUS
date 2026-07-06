@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-07-04*
-Generated from analysis of aaronjmars/MiroShark (1,355 stars, 286 forks, 0 open issues). Two new hyperstitions filed today — 5 languages by Sep 1 (3/5) and a public case study by Sep 1. Ideas target those gaps directly.
+*Repo Action Ideas — 2026-07-06*
+Generated from analysis of aaronjmars/MiroShark (1,357 stars · 286 forks · 0 open issues).
 
-1. i18n Language Contribution Kit (Community/DX, Small)
-   Step-by-step guide + starter dictionary template for adding language #4; the French PR proved the pattern — this formalizes it with a labeled GitHub issue calling for Spanish, German, Japanese, Portuguese, or Korean contributors.
+1. French i18n Completion Sprint (DX/Community, Small)
+   PR #239 pushed French to 86.9% (1,723/1,984 strings) — 261 remain; complete them before language #4 contributions open.
 
-2. Simulation RSS / Atom Feed (Feature/Growth, Small)
-   GET /api/simulations/feed.rss returns the 20 most recent published simulations as RSS 2.0; passive distribution to Feedly and newsletter aggregators, zero operator action needed after initial deploy.
+2. GitHub Actions Workflow Template (DX/Community, Small)
+   Copy-paste .github/workflows/ template for fork holders to run scheduled simulations via cron — 10-min setup, no server required.
 
-3. Simulation Comparison API (Feature, Small)
-   GET /api/simulations/compare?ids=a,b,c returns side-by-side signal data for up to 10 simulations — the structured before/after tool for operators producing case studies and researchers building pre-prints.
+3. Jupyter Notebook Research Gallery (Community/DX, Medium)
+   3 example .ipynb notebooks (belief drift, multi-run comparison, topic stats) with copy-paste BibTeX citation for academic use.
 
-4. GitHub Discussions Activation & Seeding (Community, Small)
-   Enable GitHub Discussions on the repo and seed three threads: Show & Tell (usage stories), Feature Requests (idea intake), Research & Papers (academic citation tracking).
+4. Operator Usage Analytics API (Feature/DX, Small)
+   GET /api/analytics/overview (localhost/key-gated) — aggregate sim counts, cost totals, agent/rounds distributions, top topics.
 
-5. Community Showcase Page (Community/Growth, Medium)
-   /showcase page with curated real-world decision stories submitted via GitHub Issue template; the mechanism that turns 286 silent forks into visible proof-of-use.
+5. Topic Autocomplete API (Feature/DX, Small)
+   GET /api/topics/suggest?q=... returning prefix+fuzzy-matched historical topics with latest direction signals; integrated into simulation setup form.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-04.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-06.md

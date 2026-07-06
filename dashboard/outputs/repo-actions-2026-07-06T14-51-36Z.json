@@ -1,0 +1,290 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-07-06"
+      },
+      "children": [
+        "desc_repo",
+        "sep1",
+        "action1",
+        "action2",
+        "action3",
+        "action4",
+        "action5",
+        "sep2",
+        "link_details"
+      ]
+    },
+    "desc_repo": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,357 stars · 286 forks · 0 open issues).",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "action1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action1_title",
+        "action1_meta",
+        "action1_desc"
+      ]
+    },
+    "action1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. French i18n Completion Sprint",
+        "level": "h4"
+      }
+    },
+    "action1_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action1_category",
+        "action1_size"
+      ]
+    },
+    "action1_category": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Community"
+      }
+    },
+    "action1_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "PR #239 pushed French to 86.9% (1,723/1,984 strings) — 261 remain; complete them before language #4 contributions open."
+      }
+    },
+    "action2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action2_title",
+        "action2_meta",
+        "action2_desc"
+      ]
+    },
+    "action2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. GitHub Actions Workflow Template",
+        "level": "h4"
+      }
+    },
+    "action2_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action2_category",
+        "action2_size"
+      ]
+    },
+    "action2_category": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Community"
+      }
+    },
+    "action2_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Copy-paste .github/workflows/ template for fork holders to run scheduled simulations via cron — 10-min setup, no server required."
+      }
+    },
+    "action3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action3_title",
+        "action3_meta",
+        "action3_desc"
+      ]
+    },
+    "action3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Jupyter Notebook Research Gallery",
+        "level": "h4"
+      }
+    },
+    "action3_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action3_category",
+        "action3_size"
+      ]
+    },
+    "action3_category": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX"
+      }
+    },
+    "action3_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "action3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "3 example .ipynb notebooks (belief drift, multi-run comparison, topic stats) with copy-paste BibTeX citation for academic use."
+      }
+    },
+    "action4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action4_title",
+        "action4_meta",
+        "action4_desc"
+      ]
+    },
+    "action4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Operator Usage Analytics API",
+        "level": "h4"
+      }
+    },
+    "action4_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action4_category",
+        "action4_size"
+      ]
+    },
+    "action4_category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX"
+      }
+    },
+    "action4_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/analytics/overview (localhost/key-gated) — aggregate sim counts, cost totals, agent/rounds distributions, top topics."
+      }
+    },
+    "action5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action5_title",
+        "action5_meta",
+        "action5_desc"
+      ]
+    },
+    "action5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Topic Autocomplete API",
+        "level": "h4"
+      }
+    },
+    "action5_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action5_category",
+        "action5_size"
+      ]
+    },
+    "action5_category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX"
+      }
+    },
+    "action5_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/topics/suggest?q=... returning prefix+fuzzy-matched historical topics with latest direction signals; integrated into simulation setup form."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_details": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-06.md"
+      }
+    }
+  }
+}
