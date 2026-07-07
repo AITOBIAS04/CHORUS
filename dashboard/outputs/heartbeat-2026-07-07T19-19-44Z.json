@@ -1,0 +1,127 @@
+{
+  "root": "card_heartbeat",
+  "state": {},
+  "elements": {
+    "card_heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — Jul 7",
+        "description": "Daily activity and system health"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_stalled_pr",
+        "separator_1",
+        "issues_section",
+        "separator_2",
+        "skills_section",
+        "system_section"
+      ]
+    },
+    "alert_stalled_pr": {
+      "type": "Alert",
+      "props": {
+        "title": "Stalled PR #26",
+        "message": "improve: add dedup guard to self-improve skill (miroshark-aeon) — stalled at 29h with no review activity. Was <24h at last heartbeat.",
+        "type": "warning"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "issues_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "issues_heading",
+        "issue_240"
+      ]
+    },
+    "issues_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Issues",
+        "level": "h3"
+      }
+    },
+    "issue_240": {
+      "type": "StoryLink",
+      "props": {
+        "title": "offline huggingface-models for air-gapped environments",
+        "source": "MiroShark #240 — Jul 6 (no urgent label)",
+        "href": "#"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "skills_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skills_heading",
+        "skills_stat"
+      ]
+    },
+    "skills_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Daily Skills",
+        "level": "h3"
+      }
+    },
+    "skills_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Scheduled runs",
+        "value": "5/5",
+        "trend": "up"
+      }
+    },
+    "system_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "system_heading",
+        "system_text"
+      ]
+    },
+    "system_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "System Health",
+        "level": "h3"
+      }
+    },
+    "system_text": {
+      "type": "Text",
+      "props": {
+        "text": "No systemic failures, no missing skills"
+      }
+    }
+  }
+}
