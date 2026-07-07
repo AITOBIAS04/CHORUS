@@ -1,0 +1,106 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-07"
+      },
+      "children": [
+        "commit-info",
+        "sep-1",
+        "bug-fix-heading",
+        "bug-fix-desc",
+        "key-changes-heading",
+        "key-changes-list",
+        "sep-2",
+        "stats-text",
+        "full-recap-link"
+      ]
+    },
+    "commit-info": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 1 substantive commit by Daniel Andersen (9 automation commits filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "bug-fix-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Bug Fix — DeepSeek-V4-Flash Tool Call Repair",
+        "level": "h2"
+      }
+    },
+    "bug-fix-desc": {
+      "type": "Text",
+      "props": {
+        "text": "DeepSeek-V4-Flash has been appending stray trailing data after valid JSON in tool_call arguments (e.g. {}\"\"), causing CAMEL to silently drop 10–20% of agent actions per simulation round. PR #241 adds a repair layer that intercepts responses before CAMEL sees them, extracts the first valid JSON value via raw_decode(), and discards the trailing garbage. Unrecoverable failures now log the raw model output instead of an opaque JSONDecodeError."
+      }
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "key-changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "• New repair_tool_call_arguments() in llm_message_filter.py — dep-free stdlib helper using json.JSONDecoder().raw_decode() to salvage trailing-garbage JSON"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "• SocialAgent._handle_batch_response() wraps CAMEL parsing with repair-first, surfaces raw tool_calls/content/reasoning_content on failure"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "• 4 new unit tests covering the DeepSeek regression case, valid passthrough, reserialization, and unrecoverable arguments"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-text": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 3 files changed, +128/-5 lines"
+      }
+    },
+    "full-recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-07.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
