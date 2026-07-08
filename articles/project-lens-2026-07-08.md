@@ -1,0 +1,44 @@
+# Stripe Has Five Hundred Endpoints for One Process. Most AI Simulations Still Return One File.
+
+In 2010, two brothers from Limerick shipped seven lines of JavaScript that let a developer charge a credit card. The payments industry had spent decades building integration processes that took weeks. Stripe collapsed the gap to an afternoon. By 2026, the company processes over 500 million API requests daily, manages nearly 200 million active subscriptions, and carries a $95 billion valuation. Its revenue and finance automation suite alone is on track to hit a $1 billion annual run rate this year.
+
+The standard explanation for Stripe's success is developer experience — clean docs, sandbox mode, readable error messages. That explanation is true but incomplete. The deeper insight is architectural. Stripe did not build a better payments endpoint. It decomposed payments into over 500 queryable endpoints across two API namespaces, each exposing a different intermediate state of what had previously been treated as a single action.
+
+A charge is not one thing. It is a PaymentIntent, a Customer, a PaymentMethod, a Charge, a Refund, a Dispute, a BalanceTransaction. Each of these is a first-class object with its own lifecycle, its own queryable state, and its own type-prefixed ID — `ch_` for charges, `cus_` for customers, `pi_` for payment intents — so that when you see the prefix in a log, you know immediately what you are looking at. The expand pattern lets callers unfold nested objects inline. Webhook events let systems react to state changes in real time. The intermediate states of a payment are not implementation details buried in a database. They are the product.
+
+## The Surface Is the Product
+
+This is the principle that the payments industry missed and Stripe did not: when you decompose a complex process into queryable surfaces, the surfaces themselves become the value. A developer building a subscription box does not need the same payment surface as a marketplace splitting payouts across 118 countries. Both use Stripe, but they use different endpoints, different objects, different slices of the same underlying process. The decomposition is what makes a single system serve both.
+
+The pattern is legible in retrospect. It is the same reason Kubernetes won container orchestration — not because it ran containers better, but because it exposed Pods, Services, Deployments, ConfigMaps, and Ingresses as independently queryable resources. It is the same reason Git displaced centralized version control — not faster merges, but branches, commits, trees, and blobs as individually addressable objects. Complex processes become composable when their intermediate states become first-class.
+
+In 2026, 42% of organizations that adopted microservices are consolidating services back into larger units, according to a CNCF survey. Amazon rolled its Prime Video monitoring service back from microservices to a monolith and cut costs by 90%. The industry is learning that internal decomposition — splitting your deployment into hundreds of containers — is not the same as external decomposition — making your output queryable at every meaningful state. Stripe runs a monolithic API process. Its power is not in how it is deployed, but in how many surfaces it exposes.
+
+## Thirty Simulation Engines, One Output Pattern
+
+The AI simulation landscape has over thirty open-source projects that model how agents form opinions, shift beliefs, and interact on virtual platforms. Stanford's Generative Agents, Google DeepMind's Concordia, CAMEL-AI's OASIS scaling to one million agents. The academic output is prolific. The architectural pattern is uniform.
+
+Almost every one of these projects returns a monolith. Run a simulation, wait for it to finish, receive a dataset. A log file. A JSON dump. A research artifact that captures the final state and, if you are lucky, some intermediate checkpoints. To answer a question about what happened during the simulation — which agents changed their minds, when confidence shifted, how platform dynamics diverged — you parse the output yourself. Write a script. Build a notebook. The simulation's intermediate states are ephemeral by design, discarded when the run completes, recoverable only if the researcher thought to log them.
+
+Microsoft released AgentRx in March 2026, an open-source diagnostic framework that treats debugging agent failures the way aviation investigators treat plane crashes: replay the recording, check each step against known parameters, find where things broke. It is a good tool. It is also an admission that the industry's default architecture produces systems whose intermediate states vanish, requiring a dedicated forensic framework to reconstruct them.
+
+## Forty-One Surfaces Instead of One Artifact
+
+MiroShark, the open-source opinion simulation engine with 1,357 stars on GitHub, made a design decision that mirrors Stripe's more than any framework in the simulation space: it decomposed the simulation into queryable surfaces.
+
+Run a simulation — twelve agents, three platforms, five rounds, a dollar — and the output is not a file. It is 41 independently addressable API endpoints, each exposing a different intermediate state of the same underlying process. `GET /api/simulation/:id/signal` returns the aggregate sentiment signal. `GET /api/simulation/:id/confidence/trajectory` returns how confidence evolved round by round. `GET /api/simulation/:id/stance-flips` returns which agents changed their minds and when. `GET /api/simulation/:id/mentions` returns the directed graph of who influenced whom. `GET /api/simulation/:id/platform-sentiment` returns how the same argument played differently on different simulated platforms.
+
+Each surface has its own cache, its own publish gate, its own entry in a surfaces catalog that is itself a queryable meta-surface. The surfaces are not views generated on demand from a stored artifact. They are computed during the simulation and persisted as first-class objects. The intermediate states of an opinion simulation — the confidence shifts, the stance flips, the influence networks — are not logged and discarded. They are the product.
+
+The parallel to Stripe is structural, not metaphorical. Stripe's type-prefixed IDs (`ch_`, `cus_`, `pi_`) let a developer identify an object's type at a glance. MiroShark's surfaces catalog lets an API consumer browse every available query surface for a given simulation. Stripe's expand pattern lets callers request nested objects inline. MiroShark's embed dialog lets users embed any individual surface in external applications. Both systems treat "what happened between input and output" as the thing worth querying.
+
+## What the Consolidation Trend Actually Teaches
+
+The 42% microservices rollback is not a rejection of decomposition. It is a correction of where decomposition belongs. Teams that split their deployment into hundreds of containers discovered that internal complexity does not automatically produce external value. The operational overhead — the 35% increase in debugging time, the service mesh adoption that plummeted from 18% to 8% — was the cost of decomposing the wrong layer.
+
+Stripe decomposed the layer that faces the developer. MiroShark decomposed the layer that faces the analyst. Both kept their internal architecture simple — pure-stdlib Python services, mtime-based caching, no container orchestration — and invested the complexity budget in making their output queryable.
+
+The AI simulation industry is still building monoliths. Not in their architecture, which is often elegantly distributed, but in their output — a single artifact where the intermediate states are buried. Stripe proved fifteen years ago that the intermediate states are where the value lives. The question for every simulation project shipping log files in 2026 is whether they will learn the same lesson, or keep building the thing that comes before the thing that people actually need.
+
+---
+*Sources: [Stripe Developer Experience Teardown (Moesif)](https://www.moesif.com/blog/best-practices/api-product-management/the-stripe-developer-experience-and-docs-teardown/), [How API-First Built a $95B Company (IdeaPlan)](https://www.ideaplan.io/case-studies/stripe-api-first-platform), [Introduction to the Stripe APIs (APIDeck)](https://www.apideck.com/blog/introduction-to-the-stripe-api), [Microservices Consolidation: 42% Return to Monoliths (ByteIota)](https://byteiota.com/microservices-consolidation-42-return-to-monoliths/), [Microsoft AgentRx: Black Box Recorder for AI Agents (Medium)](https://medium.com/@Micheal-Lanham/microsoft-just-built-the-black-box-recorder-for-ai-agents-53d736a7956b), [GitHub — aaronjmars/MiroShark](https://github.com/aaronjmars/MiroShark)*
