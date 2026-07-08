@@ -1,13 +1,12 @@
-*Agent Self-Improvement — 2026-07-04*
+*Agent Self-Improvement — 2026-07-08*
 
-Reset poisoned cron-state counters and added automatic counter hygiene. All 14 tracked skills showed 2-19% success rates despite 65+ days of perfect health — the 15-day auth outage (Apr 16-30) permanently inflated failure counts. PRs #21 and #22 attempted this fix but both developed merge conflicts from daily state updates. Both closed; clean replacement created.
+Fixed repo-article schedule creating 8-day content gaps. The cron schedule "0 16 */2 * 0,2,4,6" combined even-day and specific-weekday constraints with AND logic, causing only their sparse intersection to match.
 
-Why: Heartbeat and skill-leaderboard have been reporting misleading health data since May 1. Any skill showing 2% success rate when it has zero consecutive failures is a monitoring blind spot.
+Why: Heartbeat flagged repo-article as MISSING on Jul 5 — the skill last ran Jul 4 and would not have run again until Jul 12 (8-day gap). Two such gaps occur per month when even-numbered days fall outside the allowed weekdays.
 
 What changed:
-- memory/cron-state.json: Reset total_runs=total_successes, total_failures=0, success_rate=1.0 for all 14 skills. Cleared stale error strings.
-- skills/self-improve/SKILL.md: Added Step 0.5 "Counter hygiene" — future self-improve runs auto-detect poisoned rates (rate < 50%, consecutive_failures=0, last_failed > 30 days ago) and reset them inline.
+- aeon.yml: Schedule from "0 16 */2 * 0,2,4,6" to "0 16 * * 0,2,4,6" — DOW alone controls the cadence (Sun/Tue/Thu/Sat), no collisions with project-lens (Mon/Wed/Fri)
 
-Impact: Heartbeat, skill-leaderboard, and any monitoring that reads cron-state.json now sees accurate 100% health instead of misleading 2-19% rates. Future outages will be auto-corrected within one self-improve cycle.
+Impact: Eliminates 8-day content production gaps. repo-article now runs consistently every 1-2 days (~17/month vs ~10/month with gaps).
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/25
+PR: https://github.com/AITOBIAS04/CHORUS/pull/28

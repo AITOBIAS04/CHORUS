@@ -1,0 +1,226 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-08"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "heading-issue",
+        "alert-problem",
+        "sep-1",
+        "section-why",
+        "sep-2",
+        "section-what",
+        "sep-3",
+        "section-impact",
+        "sep-4",
+        "link-pr"
+      ]
+    },
+    "heading-issue": {
+      "type": "Heading",
+      "props": {
+        "text": "Fixed repo-article schedule creating 8-day content gaps",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "alert-problem": {
+      "type": "Alert",
+      "props": {
+        "title": "Schedule Conflict",
+        "message": "The cron schedule combined even-day and specific-weekday constraints with AND logic, causing only their sparse intersection to match.",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-why",
+        "text-why-heartbeat",
+        "text-why-gaps"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-why-heartbeat": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat flagged repo-article as MISSING on Jul 5 — the skill last ran Jul 4 and would not have run again until Jul 12 (8-day gap).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-why-gaps": {
+      "type": "Text",
+      "props": {
+        "text": "Two such gaps occur per month when even-numbered days fall outside the allowed weekdays.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-what": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-what",
+        "text-file",
+        "stack-schedules"
+      ]
+    },
+    "heading-what": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-file": {
+      "type": "Text",
+      "props": {
+        "text": "aeon.yml: Schedule updated",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "stack-schedules": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-old",
+        "text-new"
+      ]
+    },
+    "text-old": {
+      "type": "Text",
+      "props": {
+        "text": "From: \"0 16 */2 * 0,2,4,6\"",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-new": {
+      "type": "Text",
+      "props": {
+        "text": "To: \"0 16 * * 0,2,4,6\" — DOW alone controls the cadence (Sun/Tue/Thu/Sat), no collisions with project-lens (Mon/Wed/Fri)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-impact",
+        "text-summary",
+        "stat-gap",
+        "stat-frequency"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-summary": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates 8-day content production gaps. repo-article now runs consistently every 1-2 days.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "stat-gap": {
+      "type": "Stat",
+      "props": {
+        "label": "Content gap eliminated",
+        "value": "8 days"
+      },
+      "children": []
+    },
+    "stat-frequency": {
+      "type": "Stat",
+      "props": {
+        "label": "Monthly runs",
+        "value": "~17 runs",
+        "delta": "+70%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link-pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #28: Fix repo-article schedule",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/28",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
