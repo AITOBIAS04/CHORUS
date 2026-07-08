@@ -2,8 +2,6 @@
 
 **FEATURE_SKIP: no push access to aaronjmars/MiroShark (GH_GLOBAL secret not set).**
 
-The pre-flight check (`gh api repos/aaronjmars/MiroShark --jq '.permissions.push'`) returned `false`. Per the skill's instructions, stopped immediately without picking a feature, cloning the repo, or sending any notification. This is the 51st consecutive skip — all features since June 3 remain stuck as local commits.
+Pre-flight check (`gh api repos/aaronjmars/MiroShark --jq '.permissions.push'`) returned `false`. Per skill step 2, stopped immediately — no feature selected, no repo cloned, no notification sent. This is the 51st+ consecutive skip since May 1, 2026. Logged to `memory/logs/2026-07-08.md`.
 
-The top candidate from yesterday's repo-actions was the **French i18n Completion Sprint** (261 of 1,984 tr() calls still untranslated after PR #239 brought coverage to 86.9%).
-
-**Follow-up needed:** Set the `GH_GLOBAL` secret to unblock push access to the watched repo.
+**To unblock:** set the `GH_GLOBAL` secret with a PAT that has push access to `aaronjmars/MiroShark`. This would also unblock 40+ previously built features stuck as local commits.
