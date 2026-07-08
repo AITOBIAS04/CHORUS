@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-07-06*
-Generated from analysis of aaronjmars/MiroShark (1,357 stars · 286 forks · 0 open issues).
+*Repo Action Ideas — 2026-07-08*
+Generated from analysis of aaronjmars/MiroShark (1,356 stars, 286 forks, 1 open issue).
 
-1. French i18n Completion Sprint (DX/Community, Small)
-   PR #239 pushed French to 86.9% (1,723/1,984 strings) — 261 remain; complete them before language #4 contributions open.
+1. Air-Gapped HuggingFace Cache Polish (Feature/DX, Small)
+   dan-and opened issue #240 with a working `feat/offline-hf-cache` branch — reranker + Twitter BERT loaded from disk. This polishes his UX into two commands (preload + import) and lands the PR.
 
-2. GitHub Actions Workflow Template (DX/Community, Small)
-   Copy-paste .github/workflows/ template for fork holders to run scheduled simulations via cron — 10-min setup, no server required.
+2. CLI `list` Subcommand (Feature/DX, Small)
+   Completes the CLI lifecycle: simulate/wait/stop/cost already exist; `list` lets operators browse simulation history from the terminal without opening a browser.
 
-3. Jupyter Notebook Research Gallery (Community/DX, Medium)
-   3 example .ipynb notebooks (belief drift, multi-run comparison, topic stats) with copy-paste BibTeX citation for academic use.
+3. Simulation RSS Feed (Integration, Small)
+   `GET /api/feed.rss` — RSS 2.0 over recent public simulations. Enables Feedly, Zapier, Make.com triggers and counts as an external integration surface for the deployment hyperstition.
 
-4. Operator Usage Analytics API (Feature/DX, Small)
-   GET /api/analytics/overview (localhost/key-gated) — aggregate sim counts, cost totals, agent/rounds distributions, top topics.
+4. Python SDK miroshark-py (DX/Integration, Medium)
+   `pip install miroshark-py` — typed Python client with `client.simulate().wait()` blocking semantics. PyPI presence creates discoverability outside GitHub. Pairs with the Jupyter notebooks from Jul 06.
 
-5. Topic Autocomplete API (Feature/DX, Small)
-   GET /api/topics/suggest?q=... returning prefix+fuzzy-matched historical topics with latest direction signals; integrated into simulation setup form.
+5. Show HN Launch Kit (Growth/Community, Small)
+   7 days left on the HN front page hyperstition. Auto-generates submission text, timing guide, pre-written comment responses to anticipated questions, and a pre-submission checklist.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-06.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-08.md

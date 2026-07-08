@@ -1,0 +1,205 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-07-08"
+      },
+      "children": [
+        "metadata",
+        "separator1",
+        "action1",
+        "action2",
+        "action3",
+        "action4",
+        "action5",
+        "separator2",
+        "details-link"
+      ]
+    },
+    "metadata": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,356 stars, 286 forks, 1 open issue).",
+        "variant": "caption"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action1-title",
+        "action1-tag",
+        "action1-desc"
+      ]
+    },
+    "action1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Air-Gapped HuggingFace Cache Polish",
+        "level": "h3"
+      }
+    },
+    "action1-tag": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX, Small"
+      }
+    },
+    "action1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "dan-and opened issue #240 with a working `feat/offline-hf-cache` branch — reranker + Twitter BERT loaded from disk. This polishes his UX into two commands (preload + import) and lands the PR."
+      }
+    },
+    "action2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action2-title",
+        "action2-tag",
+        "action2-desc"
+      ]
+    },
+    "action2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. CLI `list` Subcommand",
+        "level": "h3"
+      }
+    },
+    "action2-tag": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX, Small"
+      }
+    },
+    "action2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Completes the CLI lifecycle: simulate/wait/stop/cost already exist; `list` lets operators browse simulation history from the terminal without opening a browser."
+      }
+    },
+    "action3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action3-title",
+        "action3-tag",
+        "action3-desc"
+      ]
+    },
+    "action3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation RSS Feed",
+        "level": "h3"
+      }
+    },
+    "action3-tag": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration, Small"
+      }
+    },
+    "action3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`GET /api/feed.rss` — RSS 2.0 over recent public simulations. Enables Feedly, Zapier, Make.com triggers and counts as an external integration surface for the deployment hyperstition."
+      }
+    },
+    "action4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action4-title",
+        "action4-tag",
+        "action4-desc"
+      ]
+    },
+    "action4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Python SDK miroshark-py",
+        "level": "h3"
+      }
+    },
+    "action4-tag": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Integration, Medium"
+      }
+    },
+    "action4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`pip install miroshark-py` — typed Python client with `client.simulate().wait()` blocking semantics. PyPI presence creates discoverability outside GitHub. Pairs with the Jupyter notebooks from Jul 06."
+      }
+    },
+    "action5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action5-title",
+        "action5-tag",
+        "action5-desc"
+      ]
+    },
+    "action5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Show HN Launch Kit",
+        "level": "h3"
+      }
+    },
+    "action5-tag": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth/Community, Small"
+      }
+    },
+    "action5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "7 days left on the HN front page hyperstition. Auto-generates submission text, timing guide, pre-written comment responses to anticipated questions, and a pre-submission checklist."
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-08.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
