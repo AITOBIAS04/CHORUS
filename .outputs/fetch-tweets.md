@@ -1,17 +1,11 @@
-Done. Here's what happened:
-
 ## Summary
 
-**Skill:** `fetch-tweets` | **Query:** MIROSHARK crypto token on Base chain + GitHub repo
+**fetch-tweets** ran for query: `MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark`
 
-**Result:** `FETCH_TWEETS_EMPTY` — no notification sent.
+- **Path:** WebSearch fallback (XAI_API_KEY not set)
+- **Dedup set:** 4 previously-reported URLs from July 5 (same 4 as yesterday)
+- **Result:** `FETCH_TWEETS_EMPTY` — 10+ WebSearch queries returned only old high-engagement tweets from March–May 2026; no new posts found within the last 7 days
+- **Notification:** suppressed (skill rules: no new content → no notification)
+- **Logged to:** `memory/logs/2026-07-08.md`
 
-**What I searched:**
-- 12 WebSearch queries targeting `$MIROSHARK`, `MiroShark`, `aaronjmars`, recent dates (Jul 4–7)
-- Direct X.com profile/search fetches → blocked (HTTP 402)
-- Nitter mirror instances → down (403 / ECONNREFUSED)
-- AIXBT, Sotwe, OpenFlows, CoinGecko, Trendshift → no social post data
-
-**Why empty:** WebSearch surfaces high-engagement older content for this query. All results found were from March–May 2026 and most were already logged in the June 6 entry. The truly recent tweet IDs (~2073 range, Jul 5) from `giottodf`, `LLuciano_BTC`, `CryptoUttar`, `Thefrgcoin` were already in the Jul 5 log. No new, in-window (last 7 days) tweets could be confirmed.
-
-**Root cause:** `XAI_API_KEY` not set + X.com requires auth for unauthenticated search. Setting `XAI_API_KEY` would resolve this and unlock the Grok live-search path.
+This is the same outcome as the July 7 run. The pattern is consistent: without `XAI_API_KEY`, WebSearch can't surface low-engagement recent tweets — only viral older content appears. Setting `XAI_API_KEY` would unblock the Grok live search path and fix this.
