@@ -1,0 +1,163 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-08"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "header-stack",
+        "sep-1",
+        "change-stack",
+        "sep-2",
+        "stats-stack",
+        "sep-3",
+        "recap-link"
+      ]
+    },
+    "header-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "repo-badge",
+        "author-badge",
+        "commits-badge"
+      ]
+    },
+    "repo-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark",
+        "variant": "default"
+      }
+    },
+    "author-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "@aaronjmars",
+        "variant": "secondary"
+      }
+    },
+    "commits-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "1 substantive (12 automation filtered)",
+        "variant": "outline"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "change-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-heading",
+        "change-desc",
+        "key-changes-label",
+        "change-detail",
+        "pr-link"
+      ]
+    },
+    "change-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Maintenance: RootAI profile image updated in ECOSYSTEM.md",
+        "level": "h3"
+      }
+    },
+    "change-desc": {
+      "type": "Text",
+      "props": {
+        "text": "The Twitter/X avatar CDN URL was swapped to reflect RootAI's current branding. No code or functional changes — just keeping the partner directory visually accurate.",
+        "variant": "body"
+      }
+    },
+    "key-changes-label": {
+      "type": "Text",
+      "props": {
+        "text": "Key changes:",
+        "variant": "lead"
+      }
+    },
+    "change-detail": {
+      "type": "Text",
+      "props": {
+        "text": "Updated RootAI (<img src>) URL in ECOSYSTEM.md ecosystem partner table (+1/-1 lines)",
+        "variant": "caption"
+      }
+    },
+    "pr-link": {
+      "type": "Link",
+      "props": {
+        "label": "#242",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/242"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-lines"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "1"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines",
+        "value": "+1 / -1"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap-link": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-08.md"
+      }
+    }
+  }
+}
