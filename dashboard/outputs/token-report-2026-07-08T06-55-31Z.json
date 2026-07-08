@@ -1,0 +1,103 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "$MIROSHARK Daily — 2026-07-08"
+      },
+      "children": [
+        "price-stat",
+        "metrics-grid",
+        "time-changes",
+        "narrative",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price (24h)",
+        "value": "$0.000002900",
+        "delta": "-9.86%",
+        "trend": "down"
+      }
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat",
+        "buysells-stat"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$245.7K"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Vol",
+        "value": "$12.9K"
+      }
+    },
+    "buysells-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "35/50"
+      }
+    },
+    "time-changes": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "7d-stat",
+        "30d-stat"
+      ]
+    },
+    "7d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "-16.9%",
+        "trend": "down"
+      }
+    },
+    "30d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "-49.3%",
+        "trend": "down"
+      }
+    },
+    "narrative": {
+      "type": "Text",
+      "props": {
+        "text": "Jul 4 surge fully retraced; new post-surge low as systematic seller (0x4c8a2d) dumped ~498M tokens at open. LP shed $18.5K to $245.7K — −39.6% from Jun 13 peak.",
+        "variant": "body"
+      }
+    },
+    "chart-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
