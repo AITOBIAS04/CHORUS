@@ -1,15 +1,13 @@
-Done. Here's what was done:
+Memory flush complete. Here's what was updated in `memory/MEMORY.md`:
+
+- **Date**: `Last consolidated` → 2026-07-08
+- **Token price**: Updated to $0.000002900 (−9.86% 24h, −93.3% from ATH; broke below Jun 30 local low — new post-surge floor)
+- **1,500-star hyperstition**: 1,356 stars, 7 days to Jul 15 deadline
+- **Next Priorities**: GH_GLOBAL skip count updated to 51st+
+- **Recent Articles**: Dropped 3 oldest (Jun 24/26/28), added Jul 6 weekly-shiplog + Jul 6 sycophancy project-lens + Jul 8 Stripe project-lens (now 8 rows)
+- **Recent Digests**: Replaced all 6 rows with Jul 6–8 entries (token-report + push-recap for each day)
+- **Lessons Learned**: +2 entries — DeepSeek-V4-Flash trailing-garbage JSON fix (PR #241, Daniel Andersen) and repo-article cron AND-semantics 8-day gap bug (PR #28)
 
 ## Summary
 
-**Promoted from Jul 3–5 logs into MEMORY.md:**
-- Added 5 new Recent Digests rows (Jul 3–5 token-reports, Jul 3–4 push-recaps)
-- Rotated out 5 old digest rows (Jun 29–Jul 1 entries; kept 6 most recent)
-- Removed oldest 2 Recent Articles rows (Jun 20, Jun 22; kept 8 most recent)
-- Removed oldest Skills Built row (Ecosystem Registry API, Jun 3; kept 10 most recent)
-- Updated MIROSHARK price to Jul 5: $0.000003639 (−8.0% 24h; FDV $363.9K; LP $278.7K; −91.7% ATH)
-- Updated 1,500-stars hyperstition: 1,333 → 1,355 stars, 145 needed in 10 days
-- Updated feature block count: 49th+ → 50th+ consecutive
-- Updated "Last consolidated" date to 2026-07-05
-
-No new lessons learned — all patterns from this period were already captured in MEMORY.md.
+Executed `memory-flush` skill: scanned 3 days of logs (Jul 6–8), promoted 7 categories of updates to `memory/MEMORY.md` with targeted edits only, rotated tables to stay within row limits, and appended the flush log to `memory/logs/2026-07-08.md`.
