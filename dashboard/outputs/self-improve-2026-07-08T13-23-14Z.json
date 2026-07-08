@@ -1,0 +1,161 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-07-08"
+      },
+      "children": [
+        "stack_problem",
+        "sep1",
+        "stack_why",
+        "sep2",
+        "stack_changed",
+        "sep3",
+        "stack_impact",
+        "sep4",
+        "storylink_pr"
+      ]
+    },
+    "stack_problem": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_problem",
+        "text_problem_desc"
+      ]
+    },
+    "heading_problem": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h3"
+      }
+    },
+    "text_problem_desc": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets WebSearch fallback was burning 10-12 queries per run with zero results. Three consecutive days of FETCH_TWEETS_EMPTY (Jul 6-8) — WebSearch returns only older tweets from March-May, and additional query variations beyond the first few have near-zero marginal return."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_why",
+        "text_why_desc"
+      ]
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text_why_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Observed 10x and 12x WebSearch attempts in Jul 7 and Jul 8 logs respectively, all returning nothing new. The skill was spending significant compute trying different phrasings of the same failed search."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_changed": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_changed",
+        "text_changed_details"
+      ]
+    },
+    "heading_changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text_changed_details": {
+      "type": "Text",
+      "props": {
+        "text": "skills/fetch-tweets/SKILL.md: Added 3-query cap to WebSearch fallback path with strategic query guidance (primary keyword, alternate terms, handle-based). Saves ~7-9 wasted tool calls per daily run while maintaining the same effective coverage."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_impact",
+        "stat_impact",
+        "text_impact_coverage"
+      ]
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "stat_impact": {
+      "type": "Stat",
+      "props": {
+        "label": "Compute Reduction (runs without XAI_API_KEY)",
+        "value": "~70%",
+        "trend": "up"
+      }
+    },
+    "text_impact_coverage": {
+      "type": "Text",
+      "props": {
+        "text": "No loss in coverage — the first 3 queries capture everything WebSearch can find."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pull Request #27: fetch-tweets optimization",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/27",
+        "source": "GitHub"
+      }
+    }
+  }
+}

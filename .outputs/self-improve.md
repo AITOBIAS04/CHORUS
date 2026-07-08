@@ -1,13 +1,12 @@
-*Agent Self-Improvement — 2026-07-04*
+*Agent Self-Improvement — 2026-07-08*
 
-Reset poisoned cron-state counters and added automatic counter hygiene. All 14 tracked skills showed 2-19% success rates despite 65+ days of perfect health — the 15-day auth outage (Apr 16-30) permanently inflated failure counts. PRs #21 and #22 attempted this fix but both developed merge conflicts from daily state updates. Both closed; clean replacement created.
+fetch-tweets WebSearch fallback was burning 10-12 queries per run with zero results. Three consecutive days of FETCH_TWEETS_EMPTY (Jul 6-8) — WebSearch returns only older tweets from March-May, and additional query variations beyond the first few have near-zero marginal return.
 
-Why: Heartbeat and skill-leaderboard have been reporting misleading health data since May 1. Any skill showing 2% success rate when it has zero consecutive failures is a monitoring blind spot.
+Why: Observed 10x and 12x WebSearch attempts in Jul 7 and Jul 8 logs respectively, all returning nothing new. The skill was spending significant compute trying different phrasings of the same failed search.
 
 What changed:
-- memory/cron-state.json: Reset total_runs=total_successes, total_failures=0, success_rate=1.0 for all 14 skills. Cleared stale error strings.
-- skills/self-improve/SKILL.md: Added Step 0.5 "Counter hygiene" — future self-improve runs auto-detect poisoned rates (rate < 50%, consecutive_failures=0, last_failed > 30 days ago) and reset them inline.
+- skills/fetch-tweets/SKILL.md: Added 3-query cap to WebSearch fallback path with strategic query guidance (primary keyword, alternate terms, handle-based). Saves ~7-9 wasted tool calls per daily run while maintaining the same effective coverage.
 
-Impact: Heartbeat, skill-leaderboard, and any monitoring that reads cron-state.json now sees accurate 100% health instead of misleading 2-19% rates. Future outages will be auto-corrected within one self-improve cycle.
+Impact: Reduces fetch-tweets compute by ~70% on runs without XAI_API_KEY. No loss in coverage — the first 3 queries capture everything WebSearch can find.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/25
+PR: https://github.com/AITOBIAS04/CHORUS/pull/27
