@@ -72,6 +72,7 @@
 - miroshark-aeon source restructured 2026-06-28: enabled stack dropped from ~15 → 7, catalog expanded to 200+ skills; CHORUS synced to catalog parity 2026-06-30 (+9 skills added, -8 removed via PRs #77–#86); check CHORUS aeon.yml against source when skills change
 - MiroShark model lineup overhauled 2026-07-01 (PR #223): Mimo V2.5 → Mercury 2 (base) + DeepSeek V4 Flash (Wonderwall + web search); Gemini 3 Flash stays for Smart/NER; update any skill prompts that reference model names
 - Push-recap lacked same-day dedup — re-runs within the same day re-analyzed identical commits and re-sent duplicate notifications (observed Jun 30, Jul 1); fixed with Step 4b dedup check (self-improve PR #23, 2026-07-02)
+- Scheduler AND logic trap: cron schedules with both DOM (`*/2`) and DOW (`0,2,4,6`) constraints use AND logic in messages.yml, creating sparse intersection matches (e.g., 8-day gaps in repo-article). When intent is "run on specific weekdays," use `*` for DOM and control frequency via DOW only; self-improve PR #27 (2026-07-08)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
