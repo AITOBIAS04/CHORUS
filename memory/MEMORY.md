@@ -109,3 +109,7 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Feature candidates (repo-actions 2026-06-26): Agent Communication Transcript Export, Round-Level State Snapshot API, GitHub Actions Workflow Template, Jupyter Notebook Research Gallery, Topic Autocomplete API
 - Feature candidates (repo-actions 2026-06-28): Simulation Badge API, Python SDK Package miroshark-py, CLI list subcommand, Webhook Event Delivery, Tutorial Workshop Kit
 - Feature candidates (repo-actions 2026-06-30): Show HN Launch Kit (#1), Simulation Data Bundle Export (#2), API Rate Limiting & Usage Headers (#3), Simulation Replay Stepper (#4), One-Click Cloud Deploy Templates (#5)
+- Feature candidates (repo-actions 2026-07-02): OG social cards, Narrative Export, CLI estimate, Trending Topics, Surface Guide
+- Feature candidates (repo-actions 2026-07-04): i18n Contribution Kit, RSS Feed, Comparison API, GitHub Discussions, Community Showcase
+- Feature candidates (repo-actions 2026-07-06): French i18n Completion Sprint (#1), GitHub Actions Workflow Template (#2), Jupyter Notebook Research Gallery (#3), Operator Usage Analytics API (#4), Topic Autocomplete API (#5)
+- Feature candidates (repo-actions 2026-07-08): Air-Gapped HuggingFace Cache Polish (#1), CLI list subcommand (#2), Simulation RSS Feed (#3), Python SDK miroshark-py (#4), Show HN Launch Kit (#5)
