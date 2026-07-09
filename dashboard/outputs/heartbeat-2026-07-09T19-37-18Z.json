@@ -1,0 +1,156 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "timestamp_text",
+        "skills_section",
+        "separator1",
+        "stalled_section",
+        "separator2",
+        "notes_section"
+      ]
+    },
+    "timestamp_text": {
+      "type": "Text",
+      "props": {
+        "text": "Thu Jul 9"
+      }
+    },
+    "skills_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "status_heading",
+        "skills_list",
+        "issues_note"
+      ]
+    },
+    "status_heading": {
+      "type": "Text",
+      "props": {
+        "text": "All 5 daily skills ran clean",
+        "variant": "lead"
+      }
+    },
+    "skills_list": {
+      "type": "Text",
+      "props": {
+        "text": "token-report, fetch-tweets, repo-pulse, feature, push-recap"
+      }
+    },
+    "issues_note": {
+      "type": "Text",
+      "props": {
+        "text": "No missing skills, no open issues",
+        "variant": "caption"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stalled_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "alert_stalled",
+        "prs_stack"
+      ]
+    },
+    "alert_stalled": {
+      "type": "Alert",
+      "props": {
+        "title": "3 self-improve PRs stalled with no activity",
+        "type": "warning"
+      }
+    },
+    "prs_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr26_item",
+        "pr27_item",
+        "pr28_item"
+      ]
+    },
+    "pr26_item": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #26 (3d) — add dedup guard to self-improve",
+        "href": "https://github.com/CHORUS/CHORUS/pulls/26"
+      }
+    },
+    "pr27_item": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #27 (1d) — cap fetch-tweets WebSearch queries at 3",
+        "href": "https://github.com/CHORUS/CHORUS/pulls/27"
+      }
+    },
+    "pr28_item": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #28 (1d) — fix repo-article schedule (8-day gap)",
+        "href": "https://github.com/CHORUS/CHORUS/pulls/28"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "notes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "note1",
+        "note2"
+      ]
+    },
+    "note1": {
+      "type": "Text",
+      "props": {
+        "text": "No dispatches needed"
+      }
+    },
+    "note2": {
+      "type": "Alert",
+      "props": {
+        "title": "GH_GLOBAL unset",
+        "message": "feature skill blocked (53rd+ skip)",
+        "type": "warning"
+      }
+    }
+  }
+}
