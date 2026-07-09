@@ -1,0 +1,253 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-09"
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "repos_section",
+        "sep2",
+        "activity_section",
+        "sep3",
+        "stats_section",
+        "sep4",
+        "link_section"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day: 0 substantive commits across 2 repos (15 automation commits filtered)"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "repos_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repos_heading",
+        "repo1",
+        "repo2"
+      ]
+    },
+    "repos_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Status",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "repo1": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark — no commits"
+      },
+      "children": []
+    },
+    "repo2": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/miroshark-aeon — 15 automation-only commits"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "activity_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "activity_heading",
+        "automation_label",
+        "automation_types",
+        "activity_note"
+      ]
+    },
+    "activity_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Activity",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "automation_label": {
+      "type": "Text",
+      "props": {
+        "text": "Automation commits filtered:",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "automation_types": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "auto1",
+        "auto2",
+        "auto3",
+        "auto4",
+        "auto5",
+        "auto6"
+      ]
+    },
+    "auto1": {
+      "type": "Badge",
+      "props": {
+        "text": "cron state",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "auto2": {
+      "type": "Badge",
+      "props": {
+        "text": "auto-commits for shiplog",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "auto3": {
+      "type": "Badge",
+      "props": {
+        "text": "docs-sync",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "auto4": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "auto5": {
+      "type": "Badge",
+      "props": {
+        "text": "heartbeat",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "auto6": {
+      "type": "Badge",
+      "props": {
+        "text": "tweet-digest",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "activity_note": {
+      "type": "Text",
+      "props": {
+        "text": "No features, fixes, or PRs merged today. Normal cron housekeeping continued uninterrupted."
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_table"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stats_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Metric",
+          "Count"
+        ],
+        "rows": [
+          [
+            "Files changed",
+            "0"
+          ],
+          [
+            "Lines added",
+            "0"
+          ],
+          [
+            "Lines removed",
+            "0"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "link"
+      ]
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap: Push Recap 2026-07-09",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-09.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
