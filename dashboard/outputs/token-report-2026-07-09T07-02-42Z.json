@@ -1,0 +1,150 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "MIROSHARK Daily — 2026-07-09"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "sep_1",
+        "stack_trading_metrics",
+        "sep_2",
+        "stack_period_changes",
+        "sep_3",
+        "alert_dump",
+        "sep_4",
+        "link_chart"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000002101",
+        "delta": "−25.7%",
+        "trend": "down"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_trading_metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_liquidity",
+        "stat_24h_vol",
+        "stat_buys_sells"
+      ]
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$213.1K"
+      }
+    },
+    "stat_24h_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$15.3K"
+      }
+    },
+    "stat_buys_sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "83/40"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_period_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_7d",
+        "stat_30d",
+        "stat_ath"
+      ]
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "−39.3%",
+        "trend": "down"
+      }
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−70.5%",
+        "trend": "down"
+      }
+    },
+    "stat_ath": {
+      "type": "Stat",
+      "props": {
+        "label": "From ATH",
+        "value": "−95.2%",
+        "trend": "down"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_dump": {
+      "type": "Alert",
+      "props": {
+        "title": "638.5M Token Dump at 06:07 UTC",
+        "message": "638.5M token dump ($1,341) hit a new session low. LP now $213K — lowest since late April.",
+        "type": "warning"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_chart": {
+      "type": "Link",
+      "props": {
+        "label": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
