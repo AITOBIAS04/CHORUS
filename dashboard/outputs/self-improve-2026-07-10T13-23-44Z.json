@@ -1,0 +1,140 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-10"
+      },
+      "children": [
+        "heading-1",
+        "text-intro",
+        "alert-1",
+        "separator-1",
+        "section-why",
+        "section-what",
+        "section-impact",
+        "separator-2",
+        "pr-link"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "Targeted git staging for self-improve PRs",
+        "level": "h2"
+      }
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "The self-improve skill was using `git add -A` which included every file in the working directory — including volatile auto-generated files that change 10+ times per day via cron. This caused every single improvement PR to develop merge conflicts within hours, making them unmergeable.",
+        "variant": "body"
+      }
+    },
+    "alert-1": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Merge Conflicts in Open PRs",
+        "message": "All 3 open improve PRs (#26, #27, #28) are stuck with DIRTY merge conflicts"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-why",
+        "text-why"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "All 3 open improve PRs (#26, #27, #28) are stuck with DIRTY merge conflicts. Root cause analysis showed each PR included 3-6 files but only 1 was the actual improvement — the rest were noise files (memory logs, .outputs, dashboard outputs, token-usage.csv) that diverged from main immediately.",
+        "variant": "body"
+      }
+    },
+    "section-what": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-what",
+        "text-what"
+      ]
+    },
+    "heading-what": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text-what": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Replaced `git add -A` with targeted `git add <files>` and added a warning explaining why broad staging causes immediate merge conflicts",
+        "variant": "body"
+      }
+    },
+    "section-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-impact",
+        "text-impact"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "Future self-improve PRs will contain only the files intentionally changed, staying mergeable for days instead of hours. Breaks the cycle where valid improvements go stale before landing.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #29: Self-improve skill optimization",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/29",
+        "source": "GitHub"
+      }
+    }
+  }
+}

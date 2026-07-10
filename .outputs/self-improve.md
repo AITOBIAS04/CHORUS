@@ -1,12 +1,13 @@
-*Agent Self-Improvement — 2026-07-08*
+*Agent Self-Improvement — 2026-07-10*
 
-Fixed repo-article schedule creating 8-day content gaps. The cron schedule "0 16 */2 * 0,2,4,6" combined even-day and specific-weekday constraints with AND logic, causing only their sparse intersection to match.
+Targeted git staging for self-improve PRs
+The self-improve skill was using `git add -A` which included every file in the working directory — including volatile auto-generated files that change 10+ times per day via cron. This caused every single improvement PR to develop merge conflicts within hours, making them unmergeable.
 
-Why: Heartbeat flagged repo-article as MISSING on Jul 5 — the skill last ran Jul 4 and would not have run again until Jul 12 (8-day gap). Two such gaps occur per month when even-numbered days fall outside the allowed weekdays.
+Why: All 3 open improve PRs (#26, #27, #28) are stuck with DIRTY merge conflicts. Root cause analysis showed each PR included 3-6 files but only 1 was the actual improvement — the rest were noise files (memory logs, .outputs, dashboard outputs, token-usage.csv) that diverged from main immediately.
 
 What changed:
-- aeon.yml: Schedule from "0 16 */2 * 0,2,4,6" to "0 16 * * 0,2,4,6" — DOW alone controls the cadence (Sun/Tue/Thu/Sat), no collisions with project-lens (Mon/Wed/Fri)
+- skills/self-improve/SKILL.md: Replaced `git add -A` with targeted `git add <files>` and added a warning explaining why broad staging causes immediate merge conflicts
 
-Impact: Eliminates 8-day content production gaps. repo-article now runs consistently every 1-2 days (~17/month vs ~10/month with gaps).
+Impact: Future self-improve PRs will contain only the files intentionally changed, staying mergeable for days instead of hours. Breaks the cycle where valid improvements go stale before landing.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/28
+PR: https://github.com/AITOBIAS04/CHORUS/pull/29
