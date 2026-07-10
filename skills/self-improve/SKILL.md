@@ -58,10 +58,11 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
 4. **Create a branch, commit, and push**:
    ```bash
    git checkout -b improve/short-description
-   git add -A
+   git add <files-you-changed>   # ONLY the improvement files — see note below
    git commit -m "improve: description of what was changed"
    git push -u origin improve/short-description
    ```
+   **IMPORTANT — targeted staging only.** Use `git add <file1> <file2> ...` with the specific files you modified for the improvement (skill files, aeon.yml, workflow files, etc.). Do NOT use `git add -A` or `git add .` — these include volatile files that change on every cron run (memory/logs/, .outputs/, dashboard/outputs/, memory/token-usage.csv) and cause immediate merge conflicts, making the PR unmergeable within hours.
 
 5. **Open a PR** on this repo:
    ```bash
