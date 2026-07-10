@@ -1,0 +1,129 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$MiroShark Daily — 2026-07-10"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price-stat",
+        "metrics-grid",
+        "separator",
+        "narrative",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000002315",
+        "delta": "+9.62%",
+        "trend": "up"
+      }
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "left-metrics",
+        "right-metrics"
+      ]
+    },
+    "left-metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$221.6K"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$5.2K"
+      }
+    },
+    "right-metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ratio-stat",
+        "change-7d",
+        "change-30d"
+      ]
+    },
+    "ratio-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "40/9"
+      }
+    },
+    "change-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "−43.9%",
+        "trend": "down"
+      }
+    },
+    "change-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−68.5%",
+        "trend": "down"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "narrative": {
+      "type": "Text",
+      "props": {
+        "text": "Lightest volume in 3 days ($5.2K) as sell pressure eases after yesterday's 638M-token cascade. First green session since Jul 6.",
+        "variant": "body"
+      }
+    },
+    "chart-link": {
+      "type": "Link",
+      "props": {
+        "label": "View Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
