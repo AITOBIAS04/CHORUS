@@ -1,0 +1,120 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "article_link",
+        "sep_1",
+        "text_problem",
+        "text_solution",
+        "sep_2",
+        "text_evolution",
+        "stats_grid",
+        "sep_3",
+        "text_conclusion"
+      ]
+    },
+    "article_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The First Delphi Study Was Classified. Seventy-Five Years Later, the Same Idea Costs a Dollar.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-10.md",
+        "source": "CHORUS"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_problem": {
+      "type": "Text",
+      "props": {
+        "text": "In 1951, two RAND Corporation researchers invented the Delphi method to fix a fundamental problem: putting experts in a room together produced terrible forecasts because group dynamics distorted individual judgment.",
+        "variant": "lead"
+      }
+    },
+    "text_solution": {
+      "type": "Text",
+      "props": {
+        "text": "Their solution — anonymous rounds, iterative feedback, statistical aggregation — became the gold standard for expert consensus.",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_evolution": {
+      "type": "Text",
+      "props": {
+        "text": "Seventy-five years later, MiroShark runs the same structural pattern with AI agents instead of human panelists, in ten minutes instead of twelve months, for a dollar instead of tens of thousands.",
+        "variant": "lead"
+      }
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_timeline",
+        "stat_cost",
+        "stat_correlation"
+      ]
+    },
+    "stat_timeline": {
+      "type": "Stat",
+      "props": {
+        "label": "Timeline",
+        "value": "10 minutes"
+      }
+    },
+    "stat_cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost",
+        "value": "$1"
+      }
+    },
+    "stat_correlation": {
+      "type": "Stat",
+      "props": {
+        "label": "LLM correlation",
+        "value": "0.87–0.95"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_conclusion": {
+      "type": "Text",
+      "props": {
+        "text": "A 2026 paper on 'Scalable Delphi' found LLM panels correlate 0.87–0.95 with human expert benchmarks, suggesting the method's power was always in the structure, not the experts.",
+        "variant": "body"
+      }
+    }
+  }
+}

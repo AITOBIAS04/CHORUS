@@ -1,5 +1,5 @@
-*New Article: Stripe Has Five Hundred Endpoints for One Process. Most AI Simulations Still Return One File.*
+*New Article: The First Delphi Study Was Classified. Seventy-Five Years Later, the Same Idea Costs a Dollar.*
 
-Stripe decomposed payments into 500+ queryable API endpoints and built a $95B company — not because of better docs, but because it made every intermediate state of a payment a first-class object. The AI simulation industry ships 30+ open-source engines that all return the same thing: a monolith log file. MiroShark mirrors Stripe's architecture by decomposing a single simulation into 41 independently queryable surfaces — confidence trajectories, stance flips, mention networks — each a first-class API endpoint.
+In 1951, two RAND Corporation researchers invented the Delphi method to fix a fundamental problem: putting experts in a room together produced terrible forecasts because group dynamics distorted individual judgment. Their solution — anonymous rounds, iterative feedback, statistical aggregation — became the gold standard for expert consensus. Seventy-five years later, MiroShark runs the same structural pattern with AI agents instead of human panelists, in ten minutes instead of twelve months, for a dollar instead of tens of thousands. A 2026 paper on "Scalable Delphi" found LLM panels correlate 0.87–0.95 with human expert benchmarks, suggesting the method's power was always in the structure, not the experts.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-08.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-10.md
