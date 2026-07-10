@@ -1,0 +1,272 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-10"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "projects-status",
+        "sep1",
+        "dependency-section",
+        "sep2",
+        "changes-section",
+        "sep3",
+        "stats-section",
+        "sep4",
+        "recap-link"
+      ]
+    },
+    "projects-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "project-miroshark-aeon",
+        "project-miroshark"
+      ]
+    },
+    "project-miroshark-aeon": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-miroshark-aeon",
+        "text-commit-1"
+      ]
+    },
+    "badge-miroshark-aeon": {
+      "type": "Badge",
+      "props": {
+        "text": "miroshark-aeon",
+        "variant": "secondary"
+      }
+    },
+    "text-commit-1": {
+      "type": "Text",
+      "props": {
+        "text": "1 substantive commit by dependabot[bot]"
+      }
+    },
+    "project-miroshark": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-miroshark",
+        "text-commit-2"
+      ]
+    },
+    "badge-miroshark": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark",
+        "variant": "secondary"
+      }
+    },
+    "text-commit-2": {
+      "type": "Text",
+      "props": {
+        "text": "No commits (second consecutive quiet day)",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dependency-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dep-heading",
+        "dep-intro",
+        "dep-bumps"
+      ]
+    },
+    "dep-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Maintenance (PR #98)",
+        "level": "h3"
+      }
+    },
+    "dep-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot grouped three dev-dependency bumps into a single auto-merged PR. All devDependencies only — zero production impact.",
+        "variant": "body"
+      }
+    },
+    "dep-bumps": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "bump-types-node",
+        "bump-tsx",
+        "bump-wrangler"
+      ]
+    },
+    "bump-types-node": {
+      "type": "Text",
+      "props": {
+        "text": "@types/node patched to 26.1.1 (type corrections)"
+      }
+    },
+    "bump-tsx": {
+      "type": "Text",
+      "props": {
+        "text": "tsx bumped to 4.23.0 (minor TypeScript execution improvements)"
+      }
+    },
+    "bump-wrangler": {
+      "type": "Text",
+      "props": {
+        "text": "wrangler patched to 4.107.1 (Cloudflare Workers CLI fix)"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes-heading",
+        "changes-list"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-dashboard",
+        "change-webhook",
+        "change-filtered"
+      ]
+    },
+    "change-dashboard": {
+      "type": "Text",
+      "props": {
+        "text": "apps/dashboard: @types/node 26.1.0→26.1.1, tsx 4.22.5→4.23.0"
+      }
+    },
+    "change-webhook": {
+      "type": "Text",
+      "props": {
+        "text": "apps/webhook: wrangler 4.107.0→4.107.1"
+      }
+    },
+    "change-filtered": {
+      "type": "Text",
+      "props": {
+        "text": "12 automation commits filtered (cron state, auto-commits)",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats-heading",
+        "stats-container"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-lines"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "3"
+      }
+    },
+    "stat-lines": {
+      "type": "Text",
+      "props": {
+        "text": "+11/-11 lines"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "push-recap-2026-07-10.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-10.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
