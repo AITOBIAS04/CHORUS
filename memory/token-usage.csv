@@ -413,4 +413,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-10,push-recap,claude-opus-4-6,10,2763,350463,28690
 2026-07-10,heartbeat,claude-sonnet-4-6,11,9105,437785,38866
 2026-07-10,heartbeat,claude-sonnet-4-6,210,5227,262639,34474
-2026-07-11,fetch-tweets,claude-sonnet-4-6,1027,4568,398340,31827
+2026-07-11,token-report,claude-sonnet-4-6,20,12232,1339701,66324
