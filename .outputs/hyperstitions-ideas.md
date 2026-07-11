@@ -1,12 +1,12 @@
-*Hyperstitions Idea — 2026-07-04*
+*Hyperstitions Idea — 2026-07-11*
 
-"Will someone publish a public case study of a real decision informed by a MiroShark simulation by September 1, 2026?"
+"Will MiroShark hold its first public community call or Twitter Space with 3+ distinct speakers by September 1, 2026?"
 
-The coordination play: Someone needs to run a MiroShark simulation about an actual decision they face — a product launch, a feature bet, a market entry — then write up what the agents said and whether it changed their mind. The market makes 285 fork-holders think "I have a decision like that right now, and the writeup would get attention." An AI agent cannot use the product for a real human decision or publish the story. Only a founder with a genuine question can.
+The coordination play: MiroShark has 1,358 stars, 288 forks, and named contributors (aaronjmars, Daniel Andersen, Zarbel974) — but every single interaction has been asynchronous. PRs, commits, GitHub issues. Zero live conversation, ever. Someone needs to schedule a Space, invite speakers, and show up. The market is the scheduling pressure — its existence turns "we should do a call sometime" into "who is booking the room?"
 
-Why now: Six articles in two weeks built the "opinion simulation for solopreneurs" narrative (41M solo founders, 4 CLI commands, $1/run). French i18n proved community contribution works. Token bouncing +17%. 285 forks and 1,354 stars — but zero public proof anyone used it for something real. The gap between "interesting tool" and "tool people use" is exactly one case study.
+Why now: Four Jul 15 hyperstitions expire in 4 days — 1,500 stars, HN front page, community surface, public instance — and none will clear. Stars are growing at +1/day. Social mentions have been dead for 5 consecutive days. The token sits at -94.7% from ATH with sell-side exhaustion. The project ships faster than almost any open-source repo (41 surfaces in 6 weeks, 8 articles in 10 days) but has zero human-to-human touchpoints. The next unlock is not another feature — it is the first real-time conversation between the people building this.
 
-Resolution: YES if, by September 1 2026, a publicly accessible post (blog, X thread ≥5 posts, HN submission, or YouTube video) by a non-MiroShark-team member describes running a MiroShark simulation for a genuine decision and shows the output. Must include the simulation topic, agent count, and at least one quoted result. Self-promotion posts that only link the repo without showing real usage do not count.
+Resolution: YES if a publicly accessible recording or archive exists of a live session (Twitter/X Space, Discord stage, YouTube/Twitch live, podcast, or video call) about MiroShark with at least 3 distinct speakers, by September 1, 2026. Verified by public link.
 
 Scores: Reflexivity 5/5 | Viral 4/5
 

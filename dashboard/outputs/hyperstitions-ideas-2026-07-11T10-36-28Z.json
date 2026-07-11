@@ -1,0 +1,271 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea",
+        "description": "2026-07-11"
+      },
+      "children": [
+        "heading_main",
+        "sep1",
+        "stack_coordination",
+        "sep2",
+        "stack_why_now",
+        "sep3",
+        "stack_resolution",
+        "sep4",
+        "stack_scores",
+        "sep5",
+        "link_hyperstitions"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark hold its first public community call or Twitter Space with 3+ distinct speakers by September 1, 2026?",
+        "level": "h2"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_coordination",
+        "text_coordination_1",
+        "text_coordination_2",
+        "grid_miroshark_stats"
+      ]
+    },
+    "heading_coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The coordination play",
+        "level": "h3"
+      }
+    },
+    "text_coordination_1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark has 1,358 stars, 288 forks, and named contributors (aaronjmars, Daniel Andersen, Zarbel974) — but every single interaction has been asynchronous. PRs, commits, GitHub issues. Zero live conversation, ever."
+      }
+    },
+    "text_coordination_2": {
+      "type": "Text",
+      "props": {
+        "text": "Someone needs to schedule a Space, invite speakers, and show up. The market is the scheduling pressure — its existence turns \"we should do a call sometime\" into \"who is booking the room?\""
+      }
+    },
+    "grid_miroshark_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "1,358"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "288"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_why_now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_why_now",
+        "text_why_now_1",
+        "text_why_now_2",
+        "grid_metrics"
+      ]
+    },
+    "heading_why_now": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h3"
+      }
+    },
+    "text_why_now_1": {
+      "type": "Text",
+      "props": {
+        "text": "Four Jul 15 hyperstitions expire in 4 days — 1,500 stars, HN front page, community surface, public instance — and none will clear. Stars are growing at +1/day. Social mentions have been dead for 5 consecutive days. The token sits at -94.7% from ATH with sell-side exhaustion."
+      }
+    },
+    "text_why_now_2": {
+      "type": "Text",
+      "props": {
+        "text": "The project ships faster than almost any open-source repo (41 surfaces in 6 weeks, 8 articles in 10 days) but has zero human-to-human touchpoints. The next unlock is not another feature — it is the first real-time conversation between the people building this."
+      }
+    },
+    "grid_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_star_growth",
+        "stat_token_change",
+        "stat_articles",
+        "stat_surfaces"
+      ]
+    },
+    "stat_star_growth": {
+      "type": "Stat",
+      "props": {
+        "label": "Star Growth Rate",
+        "value": "+1/day"
+      }
+    },
+    "stat_token_change": {
+      "type": "Stat",
+      "props": {
+        "label": "Token from ATH",
+        "value": "-94.7%",
+        "trend": "down"
+      }
+    },
+    "stat_articles": {
+      "type": "Stat",
+      "props": {
+        "label": "Articles in 10 days",
+        "value": "8"
+      }
+    },
+    "stat_surfaces": {
+      "type": "Stat",
+      "props": {
+        "label": "Surfaces in 6 weeks",
+        "value": "41"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_resolution",
+        "text_resolution"
+      ]
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "YES if a publicly accessible recording or archive exists of a live session (Twitter/X Space, Discord stage, YouTube/Twitch live, podcast, or video call) about MiroShark with at least 3 distinct speakers, by September 1, 2026. Verified by public link."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_scores",
+        "grid_scores"
+      ]
+    },
+    "heading_scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "grid_scores": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_reflexivity",
+        "stat_viral"
+      ]
+    },
+    "stat_reflexivity": {
+      "type": "Progress",
+      "props": {
+        "label": "Reflexivity",
+        "value": 5,
+        "max": 5
+      }
+    },
+    "stat_viral": {
+      "type": "Progress",
+      "props": {
+        "label": "Viral",
+        "value": 4,
+        "max": 5
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_hyperstitions": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Hyperstitions",
+        "href": "https://www.hyperstitions.com/",
+        "source": "hyperstitions.com"
+      }
+    }
+  }
+}
