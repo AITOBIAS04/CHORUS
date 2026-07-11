@@ -1,16 +1,10 @@
-**HEARTBEAT_OK**
+HEARTBEAT_OK
 
-All checks passed for Saturday, July 11, 2026:
+All 13 skills healthy (`consecutive_failures: 0`). All 6 expected Saturday skills ran on schedule. No open issues, no urgent GitHub issues, no missing skills. Stalled PRs #26–#29 are within the 48h dedup window (flagged in today's first heartbeat run). No notification sent.
 
-**System health:** All 13 skills at `consecutive_failures: 0` — no systemic or individual failures.
+## Summary
 
-**Skills today (Saturday):** All 7 expected skills ran on schedule:
-- token-report ✓, fetch-tweets ✓, repo-pulse ✓, hyperstitions-ideas ✓ (Saturday slot), feature ✓, push-recap ✓, heartbeat 🔄 this run.
-
-**Open issues:** None. No escalations.
-
-**Open PRs:** #26 (5d), #27 (3d), #28 (3d), #29 (1d) — all stalled improve branches. Dedup applies (flagged in Jul 9 heartbeat, within 48h window).
-
-**repo-article:** Last ran Jul 4 (7-day gap). Next run scheduled for Jul 12 via current `*/2 + DOW` schedule — the known 8-day gap bug (tracked in open PR #28). No action needed.
-
-No notification sent. Log entry appended to `memory/logs/2026-07-11.md`.
+- Read `memory/MEMORY.md`, `memory/cron-state.json`, `memory/issues/INDEX.md`, and last 2 days of logs
+- Checked `aeon.yml` schedules, `gh pr list`, and `gh issue list --label urgent`
+- Result: **HEARTBEAT_OK** — second clean pass today, no new findings
+- Logged entry to `memory/logs/2026-07-11.md`
