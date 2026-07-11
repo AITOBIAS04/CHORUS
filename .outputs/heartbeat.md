@@ -1,9 +1,16 @@
-## Summary
+**HEARTBEAT_OK**
 
-**HEARTBEAT_OK** — no action needed.
+All checks passed for Saturday, July 11, 2026:
 
-- **System health:** All 13 skills at `consecutive_failures = 0`. No systemic issues.
-- **Skills:** All 8 expected Friday skills ran on schedule (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens).
-- **Open PRs:** #26 (4d), #27 (2d), #28 (2d) remain stalled/dirty — all within the 48h dedup window, already flagged in today's automated 19:15 UTC run. PR #29 (targeted git staging fix) created today, not yet 24h old.
-- **Open issues:** None. No escalations.
-- **Notification:** Suppressed — state is clean and unchanged from the automated run earlier today.
+**System health:** All 13 skills at `consecutive_failures: 0` — no systemic or individual failures.
+
+**Skills today (Saturday):** All 7 expected skills ran on schedule:
+- token-report ✓, fetch-tweets ✓, repo-pulse ✓, hyperstitions-ideas ✓ (Saturday slot), feature ✓, push-recap ✓, heartbeat 🔄 this run.
+
+**Open issues:** None. No escalations.
+
+**Open PRs:** #26 (5d), #27 (3d), #28 (3d), #29 (1d) — all stalled improve branches. Dedup applies (flagged in Jul 9 heartbeat, within 48h window).
+
+**repo-article:** Last ran Jul 4 (7-day gap). Next run scheduled for Jul 12 via current `*/2 + DOW` schedule — the known 8-day gap bug (tracked in open PR #28). No action needed.
+
+No notification sent. Log entry appended to `memory/logs/2026-07-11.md`.
