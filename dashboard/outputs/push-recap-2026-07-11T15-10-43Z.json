@@ -1,0 +1,478 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-11",
+        "description": "miroshark-aeon — 9 substantive commits by 2 authors"
+      },
+      "children": [
+        "project_header",
+        "sep1",
+        "framework_section",
+        "sep2",
+        "hygiene_section",
+        "sep3",
+        "deps_section",
+        "sep4",
+        "key_changes_section",
+        "sep5",
+        "stats_section",
+        "sep6",
+        "footer_section"
+      ]
+    },
+    "project_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "commits_stat",
+        "authors_text"
+      ]
+    },
+    "commits_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Substantive commits",
+        "value": "9"
+      },
+      "children": []
+    },
+    "authors_text": {
+      "type": "Text",
+      "props": {
+        "text": "Authors: aaronjmars, dependabot"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "framework_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "framework_heading",
+        "framework_desc",
+        "framework_stats_row",
+        "framework_details"
+      ]
+    },
+    "framework_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Framework Migration (aeon v0.1.0)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "framework_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The biggest change in weeks — miroshark-aeon migrated onto the canonical aeon template. 7 active skills preserved, 165 stale files removed. Instance identity (soul/, memory/) preserved intact.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "framework_stats_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_skills_collapsed",
+        "stat_files_changed",
+        "stat_ci_guards",
+        "stat_stale_removed"
+      ]
+    },
+    "stat_skills_collapsed": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills collapsed",
+        "value": "203 → 61"
+      },
+      "children": []
+    },
+    "stat_files_changed": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "300"
+      },
+      "children": []
+    },
+    "stat_ci_guards": {
+      "type": "Stat",
+      "props": {
+        "label": "CI guard workflows",
+        "value": "6"
+      },
+      "children": []
+    },
+    "stat_stale_removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Stale files removed",
+        "value": "165"
+      },
+      "children": []
+    },
+    "framework_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "framework_pr_badge",
+        "framework_workflows_badge"
+      ]
+    },
+    "framework_pr_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #102 — 300 files changed in single PR",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "framework_workflows_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "CI workflows: agents-md, okf, packs-json, skill-category, skills-json, tests",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "hygiene_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "hygiene_heading",
+        "hygiene_desc",
+        "hygiene_prs"
+      ]
+    },
+    "hygiene_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Hygiene (runtime artifacts)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "hygiene_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Three PRs solve the persistent problem of runtime files (secretcurl, notify-token-report.md, chain outputs) being re-committed by the runner's git add -A. Root cause: missing .gitignore rules. Now properly ignored + token-movers writes to /tmp instead of repo root.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "hygiene_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "hygiene_pr107",
+        "hygiene_pr108",
+        "hygiene_pr111"
+      ]
+    },
+    "hygiene_pr107": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #107",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "hygiene_pr108": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #108",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "hygiene_pr111": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #111",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "deps_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "deps_heading",
+        "deps_typescript",
+        "deps_versions",
+        "deps_strategy"
+      ]
+    },
+    "deps_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Management",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "deps_typescript": {
+      "type": "Text",
+      "props": {
+        "text": "TypeScript 7.0.2 adopted for mcp-server (builds with raw tsc), deliberately blocked for dashboard (Next.js 16.2.x incompatible)"
+      },
+      "children": []
+    },
+    "deps_versions": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_cache",
+        "badge_wrangler",
+        "badge_tsx",
+        "badge_types_node"
+      ]
+    },
+    "badge_cache": {
+      "type": "Badge",
+      "props": {
+        "text": "actions/cache v4 → v6",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_wrangler": {
+      "type": "Badge",
+      "props": {
+        "text": "Wrangler 4.110.0",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_tsx": {
+      "type": "Badge",
+      "props": {
+        "text": "tsx 4.23.0",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_types_node": {
+      "type": "Badge",
+      "props": {
+        "text": "@types/node 26.1.1",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "deps_strategy": {
+      "type": "Text",
+      "props": {
+        "text": "Split TypeScript strategy: TS7 for mcp-server, TS6 for dashboard (documented in dependabot.yml)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key_heading",
+        "key_item_1",
+        "key_item_2",
+        "key_item_3"
+      ]
+    },
+    "key_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "key_item_1": {
+      "type": "Text",
+      "props": {
+        "text": "Skills 203→61 with CI validation gates ensuring structural integrity",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "key_item_2": {
+      "type": "Text",
+      "props": {
+        "text": "Runtime artifact pollution permanently fixed (3-commit sequence)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "key_item_3": {
+      "type": "Text",
+      "props": {
+        "text": "Split TypeScript strategy: TS7 for mcp-server, TS6 for dashboard (documented in dependabot.yml)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_grid"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stats_grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_files",
+        "stat_added",
+        "stat_removed",
+        "stat_miroshark"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "~318"
+      },
+      "children": []
+    },
+    "stat_added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+26,641"
+      },
+      "children": []
+    },
+    "stat_removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "-73,025"
+      },
+      "children": []
+    },
+    "stat_miroshark": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark commits",
+        "value": "0"
+      },
+      "children": []
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "footer_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "footer_note",
+        "recap_link"
+      ]
+    },
+    "footer_note": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark: 0 commits (third consecutive quiet day)",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "recap_link": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-11.md"
+      },
+      "children": []
+    }
+  }
+}
