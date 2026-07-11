@@ -1,0 +1,92 @@
+{
+  "root": "card_repo_pulse",
+  "state": {},
+  "elements": {
+    "card_repo_pulse": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-07-11"
+      },
+      "children": [
+        "repo_name",
+        "stats_section",
+        "separator",
+        "new_forks_heading",
+        "forks_list"
+      ]
+    },
+    "repo_name": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,358",
+        "delta": "+0",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "288",
+        "delta": "+1",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "new_forks_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New forks",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "forks_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "fork_link"
+      ]
+    },
+    "fork_link": {
+      "type": "Link",
+      "props": {
+        "label": "agproproducts-web/MiroShark",
+        "href": "https://github.com/agproproducts-web/MiroShark"
+      },
+      "children": []
+    }
+  }
+}
