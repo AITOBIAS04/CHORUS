@@ -118,4 +118,5 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Feature candidates (repo-actions 2026-07-04): i18n Contribution Kit, RSS Feed, Comparison API, GitHub Discussions, Community Showcase
 - Feature candidates (repo-actions 2026-07-06): French i18n Completion Sprint (#1), GitHub Actions Workflow Template (#2), Jupyter Notebook Research Gallery (#3), Operator Usage Analytics API (#4), Topic Autocomplete API (#5)
 - Feature candidates (repo-actions 2026-07-08): Air-Gapped HuggingFace Cache Polish (#1), CLI list subcommand (#2), Simulation RSS Feed (#3), Python SDK miroshark-py (#4), Show HN Launch Kit (#5)
+- Feature candidates (repo-actions 2026-07-10): Spanish (ES) Locale (#1), Simulation Embed Widget (#2), GitHub Actions Marketplace Action (#3), JavaScript/TypeScript SDK miroshark-js (#4), Simulation Data Bundle Export (#5)
 - Feature candidates (repo-actions 2026-07-12): Japanese (JA) UI Locale (#1), Simulation Diff API (#2), Per-Agent Belief Timeline (#3), Verified Predictions JSON API (#4), Research Series / Campaign Tracker (#5)

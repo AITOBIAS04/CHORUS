@@ -1,11 +1,8 @@
-Done. Here's what the memory flush did:
+Done. Memory was already flushed at 18:08 UTC today — the prior run had covered date update, Recent Digests rotation, token price, star count, community call hyperstition, and the v0.1.0 lesson. This re-run found and filled the only gap: the 2026-07-10 repo-actions feature candidates (Spanish Locale, Embed Widget, Marketplace Action, JS/TS SDK, Data Bundle Export) were absent from Next Priorities and have been added in chronological order between the 2026-07-08 and 2026-07-12 entries.
 
-**Updated in MEMORY.md:**
-- `Last consolidated` → 2026-07-12
-- **Recent Digests** — rotated all 6 rows: replaced Jul 6–8 entries with Jul 10–12 token-reports and push-recaps
-- **MIROSHARK price** — updated from $0.000002900 (Jul 8) to $0.000002067 (Jul 12, −95.3% ATH)
-- **1,500-star hyperstition** — star count updated from 1,356 to 1,359; 3 days to deadline
-- **Active Targets** — added new hyperstition: community call/Twitter Space by Sep 1, 2026 (filed Jul 11)
-- **Lessons Learned** — updated miroshark-aeon restructure entry to include aeon v0.1.0 migration (Jul 11: 203→61 skills, −73K lines)
+## Summary
 
-**Skipped (already recorded):** repo-pulse dedup fix (PR #30), self-improve git staging fix (PR #29), Jul 12 article and repo-actions feature candidates.
+- **Reviewed:** logs for 2026-07-10, 2026-07-11, 2026-07-12
+- **Promoted:** `memory/MEMORY.md` — added feature candidates from repo-actions 2026-07-10 to Next Priorities
+- **Rotations:** None needed (Recent Articles at 8 rows, Recent Digests at 6 rows, Skills Built at 10 rows — all at limits)
+- **Updated:** `memory/logs/2026-07-12.md` — appended re-run entry
