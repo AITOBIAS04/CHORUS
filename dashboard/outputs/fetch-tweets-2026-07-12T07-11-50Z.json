@@ -1,0 +1,49 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK crypto token on Base chain (2026-07-12)"
+      },
+      "children": [
+        "note_api",
+        "stack_content"
+      ]
+    },
+    "note_api": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "XAI_API_KEY not available; results compiled via WebSearch — 1 new tweet found"
+      }
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet_1",
+        "link_view_tweet_1"
+      ]
+    },
+    "tweet_1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "founder shares what he calls the best prediction markets article he's ever seen, thanking milianstx for documenting hyperstitions"
+      }
+    },
+    "link_view_tweet_1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2075229681935110410"
+      }
+    }
+  }
+}
