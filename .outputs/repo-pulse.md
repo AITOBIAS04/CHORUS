@@ -1,8 +1,8 @@
 *Repo Pulse — 2026-07-12*
-[aaronjmars/MiroShark]
+aaronjmars/MiroShark
 
-Stars: 1,359 total (+1 new)
-Forks: 288 total (+0 new)
+Stars: 1359 total (+1 new)
+Forks: 288 total
 
 New stargazers:
-(username unavailable — stargazers timestamp API returned 403)
+(username unavailable — stargazers timestamps API returned 403)

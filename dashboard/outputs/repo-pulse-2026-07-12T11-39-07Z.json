@@ -1,0 +1,49 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-07-12"
+      },
+      "children": [
+        "repo_heading",
+        "stars_stat",
+        "forks_stat",
+        "stargazers_alert"
+      ]
+    },
+    "repo_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h3"
+      }
+    },
+    "stars_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1359",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "forks_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "288"
+      }
+    },
+    "stargazers_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "New stargazers",
+        "message": "username unavailable — stargazers timestamps API returned 403",
+        "type": "warning"
+      }
+    }
+  }
+}
