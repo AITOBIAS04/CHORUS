@@ -1,0 +1,196 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-12"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_commits",
+        "text_meta",
+        "separator_1",
+        "section_dep_maint",
+        "separator_2",
+        "section_scorer_fix",
+        "separator_3",
+        "section_key_changes",
+        "separator_4",
+        "stat_changes",
+        "story_recap"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Substantive Commits",
+        "value": "2"
+      }
+    },
+    "text_meta": {
+      "type": "Text",
+      "props": {
+        "text": "2 authors • 15 automation commits filtered",
+        "variant": "caption"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_dep_maint": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_dep",
+        "text_dep",
+        "link_pr244"
+      ]
+    },
+    "heading_dep": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Maintenance",
+        "level": "h3"
+      }
+    },
+    "text_dep": {
+      "type": "Text",
+      "props": {
+        "text": "dependabot bumped soupsieve 2.8 → 2.8.4 in MiroShark's backend lockfile. Indirect dependency via BeautifulSoup4 — 10 months of upstream patches, routine maintenance.",
+        "variant": "body"
+      }
+    },
+    "link_pr244": {
+      "type": "Link",
+      "props": {
+        "label": "PR #244",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/244"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_scorer_fix": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_scorer",
+        "text_scorer1",
+        "text_scorer2",
+        "link_pr112"
+      ]
+    },
+    "heading_scorer": {
+      "type": "Heading",
+      "props": {
+        "text": "Scorer Accuracy Fix",
+        "level": "h3"
+      }
+    },
+    "text_scorer1": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars fixed false-positive failure flags in the aeon skill scorer. The scorer was reading entire run logs instead of final output, penalizing legitimate no-ops (empty inboxes, clean scans) as empty_output failures.",
+        "variant": "body"
+      }
+    },
+    "text_scorer2": {
+      "type": "Text",
+      "props": {
+        "text": "Now flags evaluate only the final result.",
+        "variant": "body"
+      }
+    },
+    "link_pr112": {
+      "type": "Link",
+      "props": {
+        "label": "PR #112",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/112"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_key_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_changes",
+        "change_1",
+        "change_2"
+      ]
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": ".github/workflows/aeon.yml: tightened empty_output and api_error flag definitions in scorer prompt (+4 lines)",
+        "variant": "body"
+      }
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "backend/uv.lock: soupsieve 2.8 → 2.8.4, lock revision 2 → 3 (+4/-4 lines)",
+        "variant": "body"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stat_changes": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "2",
+        "delta": "+8/-4 lines"
+      }
+    },
+    "story_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Push Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-12.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}
