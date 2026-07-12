@@ -1,0 +1,73 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-07-12"
+      },
+      "children": [
+        "repo_name",
+        "sep1",
+        "metrics_stack",
+        "sep2",
+        "stargazers_note"
+      ]
+    },
+    "repo_name": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark",
+        "source": "GitHub"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "metrics_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,359",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "288",
+        "delta": "+0",
+        "trend": "neutral"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stargazers_note": {
+      "type": "Alert",
+      "props": {
+        "title": "New stargazers",
+        "message": "Username unavailable — stargazers timestamp API returned 403",
+        "type": "warning"
+      }
+    }
+  }
+}
