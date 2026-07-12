@@ -1,0 +1,220 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-07-12"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo-info",
+        "sep1",
+        "actions-section",
+        "sep2",
+        "details-link"
+      ]
+    },
+    "repo-info": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from live analysis of aaronjmars/MiroShark (1,359 stars · 288 forks · 0 open PRs). Targeting September hyperstitions: 5 languages (4/5 now), peer-review citation, public case study."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "actions-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "action1",
+        "action2",
+        "action3",
+        "action4",
+        "action5"
+      ]
+    },
+    "action1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action1-heading",
+        "action1-badge",
+        "action1-text"
+      ]
+    },
+    "action1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Japanese (JA) UI Locale",
+        "level": "h3"
+      }
+    },
+    "action1-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "action1-text": {
+      "type": "Text",
+      "props": {
+        "text": "README.ja.md already exists; adding JA to the UI switcher closes the September '5 languages' hyperstition using the same dictionary pattern as FR/DE."
+      }
+    },
+    "action2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action2-heading",
+        "action2-badge",
+        "action2-text"
+      ]
+    },
+    "action2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Simulation Diff API",
+        "level": "h3"
+      }
+    },
+    "action2-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "action2-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/diff?a={id}&b={id} returns structured delta (direction, yes_pct, confidence, per-platform sentiment) — the minimum viable 'two-run comparison' for research methodology."
+      }
+    },
+    "action3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action3-heading",
+        "action3-badge",
+        "action3-text"
+      ]
+    },
+    "action3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Per-Agent Belief Timeline",
+        "level": "h3"
+      }
+    },
+    "action3-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "action3-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/agent/{agent_id}/timeline — per-round belief arc for a single agent; trajectory.json is aggregate, this is per-agent and rounds out the agent observability stack."
+      }
+    },
+    "action4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action4-heading",
+        "action4-badge",
+        "action4-text"
+      ]
+    },
+    "action4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Verified Predictions JSON API",
+        "level": "h3"
+      }
+    },
+    "action4-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "action4-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/verified — machine-readable version of the existing /verified page with accuracy meta block; one API call to cite 'MiroShark accuracy across N verified predictions.'"
+      }
+    },
+    "action5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action5-heading",
+        "action5-badge",
+        "action5-text"
+      ]
+    },
+    "action5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Research Series / Campaign Tracker",
+        "level": "h3"
+      }
+    },
+    "action5-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Medium"
+      }
+    },
+    "action5-text": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/series + GET /api/series/{slug} — named collection of simulations with yes_pct trend tracking; enables longitudinal research and is the direct path to the 'public case study' hyperstition."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "details-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-12.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

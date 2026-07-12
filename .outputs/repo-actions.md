@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-07-10*
-Fresh ideas from aaronjmars/MiroShark analysis (1,358 stars · 287 forks · 0 open PRs).
+*Repo Action Ideas — 2026-07-12*
+Generated from live analysis of aaronjmars/MiroShark (1,359 stars · 288 forks · 0 open PRs). Targeting September hyperstitions: 5 languages (4/5 now), peer-review citation, public case study.
 
-1. Spanish (ES) Locale (Feature, Small)
-   Language #4 of 5 needed for the September hyperstition — same dictionary pattern as French, 100% coverage at launch, takes MiroShark to 4/5 languages with 8 weeks to close the last slot.
+1. Japanese (JA) UI Locale (Feature, Small)
+   README.ja.md already exists; adding JA to the UI switcher closes the September '5 languages' hyperstition using the same dictionary pattern as FR/DE.
 
-2. Simulation Embed Widget (Integration, Small)
-   /embed/{id} iframe page + <miroshark-card> web component; self-contained result card embeddable on any site — the lowest-friction path to the external-deployment hyperstition.
+2. Simulation Diff API (Feature, Small)
+   GET /api/simulation/diff?a={id}&b={id} returns structured delta (direction, yes_pct, confidence, per-platform sentiment) — the minimum viable 'two-run comparison' for research methodology.
 
-3. GitHub Actions Marketplace Action (Integration, Medium)
-   miroshark-simulate-action published to the GitHub Actions Marketplace; enables CI-driven simulations with structured BULLISH/BEARISH/NEUTRAL outputs; independent discoverability from stars or npm.
+3. Per-Agent Belief Timeline (Feature, Small)
+   GET /api/simulation/{id}/agent/{agent_id}/timeline — per-round belief arc for a single agent; trajectory.json is aggregate, this is per-agent and rounds out the agent observability stack.
 
-4. JavaScript/TypeScript SDK (miroshark-js) (DX, Medium)
-   npm package, native fetch, zero dependencies, TypeScript types; targets frontend/Node.js/Observable notebook developers — parallel to the Python SDK, different ecosystem.
+4. Verified Predictions JSON API (Feature, Small)
+   GET /api/verified — machine-readable version of the existing /verified page with accuracy meta block; one API call to cite 'MiroShark accuracy across N verified predictions.'
 
-5. Simulation Data Bundle Export (Feature, Small)
-   GET /api/simulation/{id}/bundle.zip packs all 41 surface artifacts into a single download; reduces a researcher's methodology section from 10 API calls to one; Zenodo-compatible format for citable dataset submissions.
+5. Research Series / Campaign Tracker (Feature, Medium)
+   POST /api/series + GET /api/series/{slug} — named collection of simulations with yes_pct trend tracking; enables longitudinal research and is the direct path to the 'public case study' hyperstition.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-10.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-12.md
