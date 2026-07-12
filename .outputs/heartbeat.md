@@ -1,10 +1,9 @@
-HEARTBEAT_OK
+**HEARTBEAT_OK**
 
-All 13 skills healthy (`consecutive_failures: 0`). All 6 expected Saturday skills ran on schedule. No open issues, no urgent GitHub issues, no missing skills. Stalled PRs #26–#29 are within the 48h dedup window (flagged in today's first heartbeat run). No notification sent.
+All 10 expected skills ran on schedule today (Sunday Jul 12). System is healthy — all 14 skills at `consecutive_failures: 0`, no open issues, no missing runs. PRs #26/#27/#28 remain stalled with conflicts but were already reported in the last 48h. No notification sent; no dispatches needed.
 
 ## Summary
-
-- Read `memory/MEMORY.md`, `memory/cron-state.json`, `memory/issues/INDEX.md`, and last 2 days of logs
-- Checked `aeon.yml` schedules, `gh pr list`, and `gh issue list --label urgent`
-- Result: **HEARTBEAT_OK** — second clean pass today, no new findings
-- Logged entry to `memory/logs/2026-07-11.md`
+- Read `memory/MEMORY.md`, last 2 days of logs, `cron-state.json`, and `memory/issues/INDEX.md`
+- Verified all 10 scheduled skills for Sunday Jul 12 ran successfully
+- Confirmed no systemic failures, no open issues, no missing dispatches required
+- Logged `HEARTBEAT_OK` to `memory/logs/2026-07-12.md`
