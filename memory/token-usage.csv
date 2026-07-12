@@ -431,3 +431,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-12,repo-actions,claude-sonnet-4-6,20,16138,1078744,56778
 2026-07-12,push-recap,claude-opus-4-6,20,6380,847529,34663
 2026-07-12,repo-actions,claude-sonnet-4-6,8,2092,261589,33743
+2026-07-12,repo-article,claude-opus-4-6,827,11740,1391840,64333

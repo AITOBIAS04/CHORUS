@@ -1,0 +1,146 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Self-Improving Agents Gained Thirty-Six Points on a Benchmark. One Diagnosed Why All Its Own Pull Requests Were Dying."
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-sica",
+        "stat-sica-benchmark",
+        "text-sica-context",
+        "separator-1",
+        "heading-aeon-agent",
+        "stat-aeon-days",
+        "text-aeon-diagnosis",
+        "separator-2",
+        "heading-framework",
+        "stack-framework-stats",
+        "text-framework-migration",
+        "separator-3",
+        "storylink-article"
+      ]
+    },
+    "heading-sica": {
+      "type": "Heading",
+      "props": {
+        "text": "SICA",
+        "level": "h3"
+      }
+    },
+    "stat-sica-benchmark": {
+      "type": "Stat",
+      "props": {
+        "label": "SWE-Bench Score",
+        "value": "53%",
+        "delta": "+36%",
+        "trend": "up"
+      }
+    },
+    "text-sica-context": {
+      "type": "Text",
+      "props": {
+        "text": "Climbed from 17% to 53% by editing its own code — but it improved on a test suite.",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-aeon-agent": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark's aeon Agent",
+        "level": "h3"
+      }
+    },
+    "stat-aeon-days": {
+      "type": "Stat",
+      "props": {
+        "label": "Running Duration",
+        "value": "109 days"
+      }
+    },
+    "text-aeon-diagnosis": {
+      "type": "Text",
+      "props": {
+        "text": "Last week diagnosed why every PR it filed was developing merge conflicts within hours: git add -A was including volatile cron files. Traced the root cause and fixed it.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-framework": {
+      "type": "Heading",
+      "props": {
+        "text": "aeon Framework v0.1.0",
+        "level": "h3"
+      }
+    },
+    "stack-framework-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-framework-stars",
+        "stat-framework-forks"
+      ]
+    },
+    "stat-framework-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "573"
+      }
+    },
+    "stat-framework-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Forks",
+        "value": "209"
+      }
+    },
+    "text-framework-migration": {
+      "type": "Text",
+      "props": {
+        "text": "Just migrated to v0.1.0, consolidating from 203 skills to 61.",
+        "variant": "body"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-12.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

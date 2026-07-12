@@ -1,5 +1,5 @@
-*New Article: Sixty-Six Thousand CVEs Will Drop This Year. One AI Project Fixed Twenty of Them in a Day.*
+*New Article: Self-Improving Agents Gained Thirty-Six Points on a Benchmark. One Diagnosed Why All Its Own Pull Requests Were Dying.*
 
-MiroShark patched 20+ known vulnerabilities in a single day — including a major Starlette version jump and cryptography library upgrades — while the industry average sits at 205 days per critical patch. The same push shipped SECURITY.md, CONTRIBUTING.md, and FUNDING.yml, building the governance layer that separates maintained projects from abandoned ones.
+SICA climbed from 17% to 53% on SWE-Bench by editing its own code — but it improved on a test suite. MiroShark's aeon agent has been running for 109 days and last week diagnosed why every PR it filed was developing merge conflicts within hours: git add -A was including volatile cron files. It traced the root cause and fixed it. The aeon framework (573 stars, 209 forks) just migrated to v0.1.0, consolidating from 203 skills to 61.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-04.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-12.md
