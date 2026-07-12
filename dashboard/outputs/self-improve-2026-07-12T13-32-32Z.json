@@ -1,0 +1,182 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "date",
+        "main-result",
+        "sep1",
+        "problem-section",
+        "sep2",
+        "why-section",
+        "sep3",
+        "changes-section",
+        "sep4",
+        "impact-section",
+        "sep5",
+        "pr-section"
+      ]
+    },
+    "date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-12",
+        "variant": "muted"
+      }
+    },
+    "main-result": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo-pulse re-runs now skip duplicate notifications",
+        "level": "h2"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "problem-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "problem-heading",
+        "problem-text"
+      ]
+    },
+    "problem-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "The Problem",
+        "level": "h3"
+      }
+    },
+    "problem-text": {
+      "type": "Text",
+      "props": {
+        "text": "When repo-pulse ran twice on the same day, both runs sent identical notifications (e.g. Jul 12: two notifications both reporting 1359 stars, 288 forks). The skill lacked the same-day dedup guard that push-recap already has since PR #23."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "why-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why-heading",
+        "why-text"
+      ]
+    },
+    "why-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why-text": {
+      "type": "Text",
+      "props": {
+        "text": "Jul 12 logs show two \"Notification sent: yes\" entries for repo-pulse with identical data — operator receives the same update twice for no reason."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes-heading",
+        "changes-text",
+        "changes-details"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "changes-text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/repo-pulse/SKILL.md: Added Step 5 dedup guard — checks if today's log already has a Repo Pulse entry with the same star/fork counts; short-circuits with REPO_PULSE_RERUN_QUIET if unchanged."
+      }
+    },
+    "changes-details": {
+      "type": "Text",
+      "props": {
+        "text": "Also merged: PR #29 (targeted git staging to prevent merge conflicts) — squash-merged as part of Step 0 stale-PR cleanup.",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact-heading",
+        "impact-text"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates duplicate repo-pulse notifications on re-runs, reducing notification noise. Same pattern as the push-recap dedup fix."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-link"
+      ]
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #30",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/30",
+        "source": "GitHub"
+      }
+    }
+  }
+}
