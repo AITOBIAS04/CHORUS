@@ -1,5 +1,5 @@
-*New Article: The First Delphi Study Was Classified. Seventy-Five Years Later, the Same Idea Costs a Dollar.*
+*New Article: She Had Forty-Eight Hours Before Launch. A Focus Group Would Have Taken Six Weeks.*
 
-In 1951, two RAND Corporation researchers invented the Delphi method to fix a fundamental problem: putting experts in a room together produced terrible forecasts because group dynamics distorted individual judgment. Their solution — anonymous rounds, iterative feedback, statistical aggregation — became the gold standard for expert consensus. Seventy-five years later, MiroShark runs the same structural pattern with AI agents instead of human panelists, in ten minutes instead of twelve months, for a dollar instead of tens of thousands. A 2026 paper on "Scalable Delphi" found LLM panels correlate 0.87–0.95 with human expert benchmarks, suggesting the method's power was always in the structure, not the experts.
+A solo founder with $340 in her account and two days before launch runs a $1 MiroShark simulation instead of a $12,000 focus group. Twelve AI agents — from DAO governance leads to skeptical academics — disagree on her product across five rounds, and the stance flips and confidence trajectories reveal that her real market is first-time voters, not power users. The article follows her 27-minute research session at 2 AM and connects it to the validation gap killing 43% of startups.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-10.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-13.md

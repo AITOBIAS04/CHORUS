@@ -443,3 +443,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-13,repo-pulse,claude-sonnet-4-6,12,3362,446054,30507
 2026-07-13,weekly-shiplog,claude-opus-4-6,1000,8295,754735,83340
 2026-07-13,push-recap,claude-opus-4-6,15,4845,625370,37564
+2026-07-13,project-lens,claude-opus-4-6,957,7535,1016962,54419

@@ -1,0 +1,147 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading-1",
+        "separator-1",
+        "grid-details",
+        "separator-2",
+        "stack-content"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "She Had Forty-Eight Hours Before Launch. A Focus Group Would Have Taken Six Weeks.",
+        "level": "h3"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "grid-details": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-founder",
+        "stat-launch",
+        "stat-sim-cost",
+        "stat-group-cost",
+        "stat-agents",
+        "stat-rounds"
+      ]
+    },
+    "stat-founder": {
+      "type": "Stat",
+      "props": {
+        "label": "Founder's Account",
+        "value": "$340"
+      }
+    },
+    "stat-launch": {
+      "type": "Stat",
+      "props": {
+        "label": "Time to Launch",
+        "value": "48 Hours"
+      }
+    },
+    "stat-sim-cost": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Cost",
+        "value": "$1"
+      }
+    },
+    "stat-group-cost": {
+      "type": "Stat",
+      "props": {
+        "label": "Focus Group Cost",
+        "value": "$12,000"
+      }
+    },
+    "stat-agents": {
+      "type": "Stat",
+      "props": {
+        "label": "AI Agents",
+        "value": "12"
+      }
+    },
+    "stat-rounds": {
+      "type": "Stat",
+      "props": {
+        "label": "Feedback Rounds",
+        "value": "5"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-description",
+        "storylink-1",
+        "stack-findings"
+      ]
+    },
+    "text-description": {
+      "type": "Text",
+      "props": {
+        "text": "A solo founder with $340 in her account and two days before launch runs a $1 MiroShark simulation instead of a $12,000 focus group. Twelve AI agents — from DAO governance leads to skeptical academics — disagree on her product across five rounds, and the stance flips and confidence trajectories reveal that her real market is first-time voters, not power users.",
+        "variant": "body"
+      }
+    },
+    "storylink-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-13.md",
+        "source": "project-lens"
+      }
+    },
+    "stack-findings": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-session",
+        "text-gap"
+      ]
+    },
+    "text-session": {
+      "type": "Text",
+      "props": {
+        "text": "Research session: 27 minutes at 2 AM",
+        "variant": "caption"
+      }
+    },
+    "text-gap": {
+      "type": "Text",
+      "props": {
+        "text": "Validation gap kills 43% of startups",
+        "variant": "caption"
+      }
+    }
+  }
+}
