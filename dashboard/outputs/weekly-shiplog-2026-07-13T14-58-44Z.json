@@ -1,0 +1,151 @@
+{
+  "root": "card-weekly-shiplog",
+  "state": {},
+  "elements": {
+    "card-weekly-shiplog": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog",
+        "description": "2026-07-13"
+      },
+      "children": [
+        "intro-text",
+        "sep-1",
+        "shipped-heading",
+        "shipped-stack",
+        "sep-2",
+        "stats-heading",
+        "stats-grid",
+        "sep-3",
+        "full-update-link"
+      ]
+    },
+    "intro-text": {
+      "type": "Text",
+      "props": {
+        "text": "The agent that ships the code spent this week fixing the machinery that ships the code.",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "shipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h2"
+      }
+    },
+    "shipped-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "shipped-1",
+        "shipped-2",
+        "shipped-3",
+        "shipped-4"
+      ]
+    },
+    "shipped-1": {
+      "type": "Text",
+      "props": {
+        "text": "aeon v0.1.0 migration — 203→61 skills, -73K lines, new CI guards, template alignment"
+      }
+    },
+    "shipped-2": {
+      "type": "Text",
+      "props": {
+        "text": "DeepSeek-V4-Flash tool call repair — fixes 10-20% silent action drops (PR #241, Daniel Andersen)"
+      }
+    },
+    "shipped-3": {
+      "type": "Text",
+      "props": {
+        "text": "Agent self-debugging trilogy — runtime artifact pollution, scorer false positives, self-improve PR contamination"
+      }
+    },
+    "shipped-4": {
+      "type": "Text",
+      "props": {
+        "text": "TypeScript 7 for mcp-server, blocked for dashboard; actions/cache v4→v6; frontend dep bumps"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-commits",
+        "stat-prs",
+        "stat-lines",
+        "stat-stars"
+      ]
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "15"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "15"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines",
+        "value": "+27K/−73K"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,360",
+        "delta": "+3",
+        "trend": "up"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full-update-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-07-13.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
