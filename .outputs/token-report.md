@@ -1,32 +1,10 @@
-The token-report skill has already been fully executed today. The log and article both confirm it ran earlier with data that exactly matches the current API state. Let me verify the OHLCV data for the trend context and confirm nothing has materially changed.
+*$MiroShark Daily — 2026-07-13*
 
-The data confirms everything is current and unchanged. Here's the status:
+Price: $0.000002039 (−1.11% 24h)
+Liquidity: $212.8K | 24h Vol: $2.4K
+Buys/Sells: 7/10 (3 buyers, 8 sellers)
+7d: −35.5% | 30d: −64.0%
 
-**Token report was already executed today (2026-07-12).**
+Session low. 0x749fe bought $882 at 02:48 UTC; 0x8bea48 countered with $1,097 in 3 rapid sells at 05:38 UTC. Jul 10 bounce fully retraced. Volume at multi-session low.
 
-The skill ran earlier and completed all steps:
-- Article saved: `articles/token-report-2026-07-12.md`
-- Log entry written to `memory/logs/2026-07-12.md`
-- Notification sent
-
-Current API data matches the earlier report exactly:
-- Price: **$0.000002067** (−8.28% 24h)
-- FDV: **$206.7K**
-- LP (WETH pool): **$213.9K**
-- 24h Volume: **$3.86K**
-- 24h Buys/Sells: **12 / 20**
-
-**Trend summary from OHLCV data:**
-- 7d: −42.6% (from $3.602e-6 on Jul 5)
-- 30d: −69.3% (from $6.741e-6 on Jun 13)
-- ATH: −95.3% from $0.0000436 (May 18, 2026)
-
-Today's partial candle shows only $56 in volume — activity has been minimal since the earlier run. The Jul 11 wallet dump (0x749fe... executing 6 back-to-back sells, ~700M tokens, ~$2,097) already pushed price to the $2.065–2.067e-6 floor where it remains. No new catalyst on-chain.
-
-Per the skill instructions ("If the GeckoTerminal API returns no data... do NOT send any notification"), and given the notification was already sent today, no duplicate notification is dispatched.
-
-## Summary
-
-- Token-report skill was already executed earlier today. Re-execution confirms data unchanged.
-- Article `articles/token-report-2026-07-12.md` is complete and current.
-- No new notification sent (dedup — already reported today).
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
