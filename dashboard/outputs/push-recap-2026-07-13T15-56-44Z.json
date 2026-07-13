@@ -1,0 +1,178 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-13"
+      },
+      "children": [
+        "project_header",
+        "separator_1",
+        "category_badge",
+        "description_text",
+        "separator_2",
+        "changes_section",
+        "separator_3",
+        "stats_section",
+        "separator_4",
+        "full_recap_link"
+      ]
+    },
+    "project_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "project_name",
+        "commit_info"
+      ]
+    },
+    "project_name": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark",
+        "level": "h2"
+      }
+    },
+    "commit_info": {
+      "type": "Text",
+      "props": {
+        "text": "1 substantive commit by dependabot[bot] (15 automation commits filtered)",
+        "variant": "muted"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "category_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Dependency Maintenance",
+        "variant": "default"
+      }
+    },
+    "description_text": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot merged grouped patch bumps for the frontend stack — DOMPurify 3.4.12 (XSS sanitizer, likely security patches), marked 18.0.6 (Markdown parser), and Vite 8.1.4 (which pulls in rolldown 1.1.5 bundler update across all platform bindings).",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "change_1",
+        "change_2",
+        "change_3"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "DOMPurify 3.4.11→3.4.12 — security-critical HTML sanitization library patched",
+        "variant": "body"
+      }
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "Vite 8.1.3→8.1.4 — build tool update with rolldown 1.1.5 bundler engine",
+        "variant": "body"
+      }
+    },
+    "change_3": {
+      "type": "Text",
+      "props": {
+        "text": "marked 18.0.5→18.0.6 — Markdown renderer patch",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_items"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "files_changed_stat",
+        "lines_changed_stat"
+      ]
+    },
+    "files_changed_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "2"
+      }
+    },
+    "lines_changed_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+87/-87"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full_recap_link": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-13.md"
+      }
+    }
+  }
+}
