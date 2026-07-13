@@ -1,9 +1,7 @@
-**HEARTBEAT_OK**
+Heartbeat — 2026-07-13
 
-All 10 expected skills ran on schedule today (Sunday Jul 12). System is healthy — all 14 skills at `consecutive_failures: 0`, no open issues, no missing runs. PRs #26/#27/#28 remain stalled with conflicts but were already reported in the last 48h. No notification sent; no dispatches needed.
+All systems healthy. Every expected skill ran on schedule.
 
-## Summary
-- Read `memory/MEMORY.md`, last 2 days of logs, `cron-state.json`, and `memory/issues/INDEX.md`
-- Verified all 10 scheduled skills for Sunday Jul 12 ran successfully
-- Confirmed no systemic failures, no open issues, no missing dispatches required
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-07-12.md`
+New: PR #30 (>24h, 'improve: add same-day dedup guard to repo-pulse') — stalled awaiting self-improve auto-merge on Jul 14.
+
+PRs #26 (7d), #27 (5d), #28 (5d) still open with merge conflicts — need manual resolution. Dispatch unavailable (actions: read only).

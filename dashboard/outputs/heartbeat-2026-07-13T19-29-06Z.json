@@ -1,0 +1,213 @@
+{
+  "root": "card_heartbeat",
+  "state": {},
+  "elements": {
+    "card_heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat",
+        "description": "2026-07-13"
+      },
+      "children": [
+        "alert_healthy",
+        "sep1",
+        "section_new_pr",
+        "sep2",
+        "section_stalled_prs",
+        "sep3",
+        "alert_dispatch"
+      ]
+    },
+    "alert_healthy": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "message": "All systems healthy. Every expected skill ran on schedule."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_new_pr": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_new_pr",
+        "pr30_content"
+      ]
+    },
+    "heading_new_pr": {
+      "type": "Heading",
+      "props": {
+        "text": "New: PR #30",
+        "level": "h3"
+      }
+    },
+    "pr30_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr30_link",
+        "pr30_status",
+        "pr30_note"
+      ]
+    },
+    "pr30_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "improve: add same-day dedup guard to repo-pulse",
+        "href": "https://github.com/CHORUS/CHORUS/pull/30"
+      }
+    },
+    "pr30_status": {
+      "type": "Badge",
+      "props": {
+        "text": ">24h old",
+        "variant": "outline"
+      }
+    },
+    "pr30_note": {
+      "type": "Text",
+      "props": {
+        "text": "Stalled awaiting self-improve auto-merge on Jul 14",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_stalled_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_stalled",
+        "stalled_prs_list",
+        "stalled_status_alert"
+      ]
+    },
+    "heading_stalled": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs",
+        "level": "h3"
+      }
+    },
+    "stalled_prs_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr26_item",
+        "pr27_item",
+        "pr28_item"
+      ]
+    },
+    "pr26_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "pr26_link",
+        "pr26_age"
+      ]
+    },
+    "pr26_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #26",
+        "href": "https://github.com/CHORUS/CHORUS/pull/26"
+      }
+    },
+    "pr26_age": {
+      "type": "Badge",
+      "props": {
+        "text": "7d",
+        "variant": "secondary"
+      }
+    },
+    "pr27_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "pr27_link",
+        "pr27_age"
+      ]
+    },
+    "pr27_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #27",
+        "href": "https://github.com/CHORUS/CHORUS/pull/27"
+      }
+    },
+    "pr27_age": {
+      "type": "Badge",
+      "props": {
+        "text": "5d",
+        "variant": "secondary"
+      }
+    },
+    "pr28_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "pr28_link",
+        "pr28_age"
+      ]
+    },
+    "pr28_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #28",
+        "href": "https://github.com/CHORUS/CHORUS/pull/28"
+      }
+    },
+    "pr28_age": {
+      "type": "Badge",
+      "props": {
+        "text": "5d",
+        "variant": "secondary"
+      }
+    },
+    "stalled_status_alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Merge conflicts",
+        "message": "Need manual resolution"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "alert_dispatch": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "Dispatch unavailable (actions: read only)"
+      }
+    }
+  }
+}
