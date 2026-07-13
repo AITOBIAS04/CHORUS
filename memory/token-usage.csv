@@ -440,3 +440,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-12,memory-flush,claude-sonnet-4-6,9,5987,321414,32435
 2026-07-13,token-report,claude-sonnet-4-6,11,11106,516592,55608
 2026-07-13,fetch-tweets,claude-sonnet-4-6,3123,4190,472211,38734
+2026-07-13,feature,claude-opus-4-6,8,1529,258105,28764
