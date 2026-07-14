@@ -1,0 +1,72 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK / MiroShark (2026-07-14)"
+      },
+      "children": [
+        "text-note",
+        "sep-1",
+        "tweet-1",
+        "tweet-2",
+        "tweet-3",
+        "tweet-4",
+        "tweet-5"
+      ]
+    },
+    "text-note": {
+      "type": "Text",
+      "props": {
+        "text": "Note: XAI_API_KEY not set — results via WebSearch (high-engagement, not guaranteed fresh)",
+        "variant": "caption"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "tweet-1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "Updated roadmap: miroshark on X + API still on track; token-launch runtime + aeon v4 demo merged into new aeon focus"
+      }
+    },
+    "tweet-2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "\"Another mind blow moment\" — aeon did something extraordinary to MiroShark today, beyond its usual daily UI/perf additions"
+      }
+    },
+    "tweet-3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "miroshark_",
+        "handle": "miroshark_",
+        "text": "MiroShark just hit top 10 in Reinforcement Learning on oosmetrics 🦈"
+      }
+    },
+    "tweet-4": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "Community distribution: share the MiroShark GitHub to earn $MIROSHARK rewards. \"MiroFish have 56k stars — MiroShark is easily 10x\""
+      }
+    },
+    "tweet-5": {
+      "type": "TweetCard",
+      "props": {
+        "author": "RoundtableSpace",
+        "handle": "RoundtableSpace",
+        "text": "\"MIROSHARK IS BUILDING A SIMULATION FRAMEWORK THAT LETS AI MODEL HOW REDDIT, X, AND SOON POLYMARKET WOULD REACT TO AN IDEA.\""
+      }
+    }
+  }
+}
