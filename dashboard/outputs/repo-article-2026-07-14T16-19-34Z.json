@@ -1,0 +1,38 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading-article",
+        "text-description",
+        "link-article"
+      ]
+    },
+    "heading-article": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: Fifty-Four Percent of Solo Founders Burn Out. One Made the Project Outlast the Person.",
+        "level": "h3"
+      }
+    },
+    "text-description": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark moved from a personal GitHub account to an organization the same week its autonomous agent framework cut 73,000 lines and 142 skills. The article connects the 54% solo-founder burnout rate to the structural bet that open-source infrastructure should outlast its creator — with parallels to GitHub deprecating personal-to-org conversion and Microsoft consolidating two agent frameworks into one."
+      }
+    },
+    "link-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-14.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
