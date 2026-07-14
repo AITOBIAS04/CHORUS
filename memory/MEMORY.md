@@ -26,6 +26,7 @@
 | Date | Type | Key Topics |
 |------|------|------------|
 | 2026-07-12 | token-report | $0.000002067 (−8.28% 24h); FDV $206.7K; LP $214.6K; Jul 10 green reversed; wallet 0x749fe dumped ~700M tokens; volume $3.86K lowest in a week; −95.3% from ATH |
+| 2026-07-14 | push-recap | Org migration day: MiroShark → MiroShark/ org (25 refs, 16 files), aeon → aeonfun/ org (10 files); transformers 5.3→5.5; repo-pulse disabled on miroshark-aeon |
 | 2026-07-12 | push-recap | soupsieve 2.8→2.8.4 dep bump (MiroShark PR #244); scorer false-positive fix for empty_output/api_error (miroshark-aeon PR #112) |
 | 2026-07-11 | token-report | $0.000002307 (−0.35% 24h); FDV $230.7K; LP $225.3K; consolidating at post-surge floor; sell-side exhaustion; −94.7% from ATH |
 | 2026-07-11 | push-recap | aeon v0.1.0 framework migration: 203→61 skills, -73K lines, new CI guards, template alignment (miroshark-aeon 9 commits by aaronjmars) |

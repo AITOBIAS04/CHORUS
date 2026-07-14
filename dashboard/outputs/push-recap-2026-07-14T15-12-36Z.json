@@ -1,0 +1,208 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-14",
+        "description": "MiroShark + miroshark-aeon — 4 substantive commits by 2 authors (12 automation filtered)"
+      },
+      "children": [
+        "org-section",
+        "sep-1",
+        "infra-section",
+        "sep-2",
+        "key-section",
+        "sep-3",
+        "stats-section"
+      ]
+    },
+    "org-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "org-heading",
+        "org-desc"
+      ]
+    },
+    "org-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Org Migration & Link Canonicalization",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "org-desc": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark transferred to the MiroShark/ GitHub org. All 25 in-repo references (backend, frontend, docs, deploy buttons) updated from aaronjmars/MiroShark → MiroShark/MiroShark. Same treatment for the aeon framework — 10 files updated from aaronjmars/aeon → aeonfun/aeon. Two stale ecosystem slugs also corrected (AntFleet/miroshark-bench → bench-miroshark, OriginTrail/dkg-v9 → dkg).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "infra-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "infra-heading",
+        "infra-desc"
+      ]
+    },
+    "infra-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infrastructure Housekeeping",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "infra-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot bumped transformers 5.3.0 → 5.5.0 (indirect backend dep). repo-pulse skill disabled on miroshark-aeon — monitoring may be consolidating to CHORUS.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "key-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-heading",
+        "key-items"
+      ]
+    },
+    "key-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "key-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key-1",
+        "key-2",
+        "key-3",
+        "key-4"
+      ]
+    },
+    "key-1": {
+      "type": "Text",
+      "props": {
+        "text": "• 16 files across backend/frontend/docs canonicalized to MiroShark/MiroShark org URL",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "key-2": {
+      "type": "Text",
+      "props": {
+        "text": "• 10 files in miroshark-aeon tooling/catalog updated to aeonfun/aeon",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "key-3": {
+      "type": "Text",
+      "props": {
+        "text": "• Deploy buttons (Railway, Render, Cloudflare) now point at correct org URLs",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "key-4": {
+      "type": "Text",
+      "props": {
+        "text": "• repo-pulse toggled off in miroshark-aeon aeon.yml",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stats-content"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stats-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-stat",
+        "recap-link"
+      ]
+    },
+    "stats-stat": {
+      "type": "Text",
+      "props": {
+        "text": "28 files changed, +44/-44 lines",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-14.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}

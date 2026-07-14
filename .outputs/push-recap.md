@@ -1,12 +1,15 @@
-*Push Recap — 2026-07-13*
-MiroShark — 1 substantive commit by dependabot[bot] (15 automation commits filtered)
+*Push Recap — 2026-07-14*
+MiroShark + miroshark-aeon — 4 substantive commits by 2 authors (12 automation filtered)
 
-Dependency Maintenance: Dependabot merged grouped patch bumps for the frontend stack — DOMPurify 3.4.12 (XSS sanitizer, likely security patches), marked 18.0.6 (Markdown parser), and Vite 8.1.4 (which pulls in rolldown 1.1.5 bundler update across all platform bindings).
+Org Migration & Link Canonicalization: MiroShark transferred to the MiroShark/ GitHub org. All 25 in-repo references (backend, frontend, docs, deploy buttons) updated from aaronjmars/MiroShark → MiroShark/MiroShark. Same treatment for the aeon framework — 10 files updated from aaronjmars/aeon → aeonfun/aeon. Two stale ecosystem slugs also corrected (AntFleet/miroshark-bench → bench-miroshark, OriginTrail/dkg-v9 → dkg).
+
+Infrastructure Housekeeping: Dependabot bumped transformers 5.3.0 → 5.5.0 (indirect backend dep). repo-pulse skill disabled on miroshark-aeon — monitoring may be consolidating to CHORUS.
 
 Key changes:
-- DOMPurify 3.4.11→3.4.12 — security-critical HTML sanitization library patched
-- Vite 8.1.3→8.1.4 — build tool update with rolldown 1.1.5 bundler engine
-- marked 18.0.5→18.0.6 — Markdown renderer patch
+- 16 files across backend/frontend/docs canonicalized to MiroShark/MiroShark org URL
+- 10 files in miroshark-aeon tooling/catalog updated to aeonfun/aeon
+- Deploy buttons (Railway, Render, Cloudflare) now point at correct org URLs
+- repo-pulse toggled off in miroshark-aeon aeon.yml
 
-Stats: 2 files changed, +87/-87 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-13.md
+Stats: 28 files changed, +44/-44 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-14.md
