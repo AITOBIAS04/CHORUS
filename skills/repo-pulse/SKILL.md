@@ -47,7 +47,9 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
    ```
    Keep only forks where `created_at` >= `$CUTOFF`.
 
-5. **Determine if there's activity to report.** Check BOTH:
+5. **Skip re-run if already reported today** — If `memory/logs/${today}.md` already contains a `## Repo Pulse` entry, compare the current star and fork counts with those in the existing entry. If the counts are identical (no change since the earlier run), log `REPO_PULSE_RERUN_QUIET: counts unchanged since earlier report` to `memory/logs/${today}.md` and **stop here — do NOT re-send the notification**.
+
+6. **Determine if there's activity to report.** Check BOTH:
    - **New stargazers from step 3**: any with `starred_at` >= the 24h cutoff
    - **New forks from step 4**: any with `created_at` >= the 24h cutoff
 
@@ -58,7 +60,7 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
 
    Only log "REPO_PULSE_QUIET" and skip notification if ZERO new stargazers AND ZERO new forks since the 24h cutoff.
 
-6. **Send notification** via `./notify`:
+7. **Send notification** via `./notify`:
    ```
    *Repo Pulse — ${today}*
    [owner/repo]
@@ -80,7 +82,7 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
    - Omit "New forks" section entirely if there are none
    - Do NOT include traffic data, watchers, or open issues
 
-7. **Log** to `memory/logs/${today}.md` — ALWAYS include the exact current counts so the next run can calculate deltas:
+8. **Log** to `memory/logs/${today}.md` — ALWAYS include the exact current counts so the next run can calculate deltas:
    ```
    ## Repo Pulse
    - **aaronjmars/repo**: stargazers_count=X, forks_count=Y
