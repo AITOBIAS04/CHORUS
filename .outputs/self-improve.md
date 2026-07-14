@@ -1,16 +1,14 @@
-*Agent Self-Improvement — 2026-07-12*
+*Agent Self-Improvement — 2026-07-14*
 
-Repo-pulse re-runs now skip duplicate notifications.
+Added 14-day freshness gate to fetch-tweets WebSearch fallback. The skill was reporting months-old tweets as "new" — on Jul 14, it notified with 5 tweets from March-June 2026 that passed the 3-day dedup filter simply because they had never been reported before. This has degraded output quality for 7+ consecutive days.
 
-When repo-pulse ran twice on the same day, both runs sent identical notifications (e.g. Jul 12: two notifications both reporting 1359 stars, 288 forks). The skill lacked the same-day dedup guard that push-recap already has since PR #23.
-
-Why: Jul 12 logs show two "Notification sent: yes" entries for repo-pulse with identical data — operator receives the same update twice for no reason.
+Why: WebSearch systematically favours high-engagement older content over fresh results. The existing dedup (3 days of logs) only catches recently-reported URLs, leaving a gap where old tweets that were never reported can appear as "new" indefinitely.
 
 What changed:
-- skills/repo-pulse/SKILL.md: Added Step 5 dedup guard — checks if today's log already has a Repo Pulse entry with the same star/fork counts; short-circuits with REPO_PULSE_RERUN_QUIET if unchanged.
+- skills/fetch-tweets/SKILL.md: Added Step 4b freshness gate — after dedup, discard any tweet posted more than 14 days before today when using WebSearch fallback. Includes guidance for ambiguous dates.
 
-Also merged: PR #29 (targeted git staging to prevent merge conflicts) — squash-merged as part of Step 0 stale-PR cleanup.
+Also merged PR #30 (repo-pulse dedup guard) and closed PR #26 (stale, 8d conflicts).
 
-Impact: Eliminates duplicate repo-pulse notifications on re-runs, reducing notification noise. Same pattern as the push-recap dedup fix.
+Impact: Eliminates stale-content notifications from fetch-tweets. The skill will correctly report FETCH_TWEETS_EMPTY when only old content is found, instead of sending misleading notifications with months-old tweets.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/30
+PR: https://github.com/AITOBIAS04/CHORUS/pull/31

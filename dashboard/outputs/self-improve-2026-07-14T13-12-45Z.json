@@ -1,0 +1,181 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-14"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-degradation",
+        "sep1",
+        "why-section",
+        "sep2",
+        "changes-section",
+        "sep3",
+        "impact-section",
+        "sep4",
+        "pr-section"
+      ]
+    },
+    "alert-degradation": {
+      "type": "Alert",
+      "props": {
+        "title": "Quality Degradation",
+        "message": "The skill was reporting months-old tweets as \"new\" — on Jul 14, it notified with 5 tweets from March-June 2026 that passed the 3-day dedup filter simply because they had never been reported before. This degradation has lasted 7+ consecutive days.",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "why-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-why",
+        "text-why"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "WebSearch systematically favours high-engagement older content over fresh results. The existing dedup (3 days of logs) only catches recently-reported URLs, leaving a gap where old tweets that were never reported can appear as \"new\" indefinitely."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-changes",
+        "text-changes"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text-changes": {
+      "type": "Text",
+      "props": {
+        "text": "skills/fetch-tweets/SKILL.md: Added Step 4b freshness gate — after dedup, discard any tweet posted more than 14 days before today when using WebSearch fallback. Includes guidance for ambiguous dates."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-impact",
+        "text-impact"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates stale-content notifications from fetch-tweets. The skill will correctly report FETCH_TWEETS_EMPTY when only old content is found, instead of sending misleading notifications with months-old tweets."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-pr",
+        "pr-main",
+        "text-also",
+        "pr-30",
+        "pr-26"
+      ]
+    },
+    "heading-pr": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h3"
+      }
+    },
+    "pr-main": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #31: fetch-tweets 14-day freshness gate",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/31",
+        "source": "GitHub"
+      }
+    },
+    "text-also": {
+      "type": "Text",
+      "props": {
+        "text": "Also merged and closed:",
+        "variant": "caption"
+      }
+    },
+    "pr-30": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #30: repo-pulse dedup guard (merged)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/30",
+        "source": "GitHub"
+      }
+    },
+    "pr-26": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #26: stale, 8d conflicts (closed)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/26",
+        "source": "GitHub"
+      }
+    }
+  }
+}
