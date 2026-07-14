@@ -4,24 +4,24 @@
 
 | Metric | Value | 24h Change |
 |--------|-------|------------|
-| Price | $0.000002138 | +5.96% |
-| Liquidity (WETH pool) | $216.8K | — |
-| 24h Volume | $8.9K | — |
-| 24h Buys/Sells | 12 / 56 | — |
-| 24h High/Low | $0.000002249 / $0.000001916 | — |
-| FDV | $213.8K | — |
+| Price | $0.000001873 | −7.55% |
+| Liquidity (WETH pool) | $204.9K | — |
+| 24h Volume | $13.7K | — |
+| 24h Buys/Sells | 17 / 57 | — |
+| 24h High/Low | $0.000002249 / $0.000001872 | — |
+| FDV | $187.3K | — |
 
 ## Trend
 
-- **24h:** Price broke down to $1.916e-6 on a 598.5M-token dump at 09:30 UTC (0xf73af0, $1,188), then recovered sharply to $2.249e-6 on back-to-back large buys at 16:51–16:54 UTC by wallet 0x7f06db ($1,923 + $1,913 = $3,836 total). Settled at $2.138e-6 — first close above $2.100e-6 in three sessions.
-- **7-day:** −34.4% (Jul 7 close: $3.258e-6 → current $2.138e-6)
-- **30-day:** −62.3% (Jun 14 close: $5.665e-6 → current $2.138e-6)
+- **24h:** Opened around $2.025e-6, climbed to a session high of $2.249e-6 on the 0x7f06db buys from late Jul 13 UTC (two $1,920 transactions, ~1.818B tokens). Two large dumps hit at 07:44–07:50 UTC today — 0x4d12... sold $2,386 and 0xc1d9... sold $2,164 in consecutive blocks — driving price to session low $1.872e-6. Price has not recovered.
+- **7-day:** −42.5% (Jul 7 close: ~$3.258e-6 → current $1.873e-6)
+- **30-day:** −66.9% (Jun 14 close: ~$5.665e-6 → current $1.873e-6)
 
 ## Volume & Liquidity
 
-24h volume of $8.9K is the highest since Jul 9 ($15.3K) and nearly 4× yesterday's $2.4K. The spike is almost entirely explained by the 0x7f06db buys — two transactions totaling ~1.818B tokens for $3,836 compressed into three minutes at 16:51–16:54 UTC Jul 13. That single wallet accounted for ~43% of all 24h volume. The 0x749fe1 bot ran its usual fractured sell pattern (45+ micro-sells averaging $10–25 each, totaling ~$1,500) while also buying back ~$1,169, net-selling ~$330.
+24h volume of $13.7K is the highest in five days (last comparable: $15.3K Jul 9), but nearly all of it is concentrated in large whale transactions — the 0x7f06db buys (~$3,836) and the two Jul 14 morning sells (~$4,550) together account for ~61% of all 24h volume. Retail activity remains thin.
 
-LP flat at $216.8K, up fractionally from $212.8K at Jul 13's report snapshot. Main pool remains the Uniswap v4 MiroShark/WETH pair.
+LP dropped to $204.9K from $216.8K at the morning snapshot — a $11.9K decline as the price sold off. Sell count (57) remains elevated by the 0x749fe1 bot micro-sells, though buyer/seller wallet counts are more balanced: 13 buyers vs. 15 sellers.
 
 ## Social Pulse
 
@@ -29,10 +29,10 @@ XAI_API_KEY not set — social data unavailable.
 
 ## Context
 
-The 0x7f06db wallet is unrecognized in prior logs — not the regular bot (0x749fe1) and not the Jul 12 dump wallet (0x749fe1). Two identical-sized buys in three minutes (~$1,920 each) carrying the price from $2.045e-6 to $2.249e-6 before bot-driven selling pulled it back to $2.138e-6. Structure is constructive: LP holding, price above the Jul 12–13 floor, volume elevated. Jul 15 is the deadline for four open hyperstitions (1,500 stars, HN front page, community surface, public instance).
+The Jul 13 recovery (first green close in three sessions, +5.96%) has been fully reversed. Two unknown wallets sold into the overnight strength within the same two-minute window this morning — coordinated timing but different addresses. FDV now below $190K, a new multi-week low. Jul 15 is the deadline for four open hyperstitions: 1,500 GitHub stars, Hacker News front page, community surface merge, and public MiroShark instance. Stars sit at 1,360 with 140 needed by tomorrow; none of the other three have clear catalyst.
 
 ---
 *Data: GeckoTerminal | Chain: Base*
 *Contract: 0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3*
 *Pool: MiroShark/WETH (Uniswap v4, 0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209)*
-*ATH: $0.0000436 (May 18, 2026) — current −95.1% from ATH*
+*ATH: $0.0000436 (May 18, 2026) — current −95.7% from ATH*
