@@ -1,0 +1,403 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "header-section",
+        "repo-info",
+        "separator-1",
+        "ideas-section",
+        "separator-2",
+        "footer-section"
+      ]
+    },
+    "header-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "title",
+        "metadata"
+      ]
+    },
+    "title": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Action Ideas — 2026-07-14",
+        "level": "h2"
+      }
+    },
+    "metadata": {
+      "type": "Text",
+      "props": {
+        "text": "July 15 hyperstitions expire today unclosed — pivot is full to the September cluster.",
+        "variant": "lead"
+      }
+    },
+    "repo-info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo-name",
+        "repo-stats-group"
+      ]
+    },
+    "repo-name": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "variant": "body"
+      }
+    },
+    "repo-stats-group": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "stat-prs"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,364"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "290"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Open PRs",
+        "value": "0"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ideas-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "idea-1",
+        "idea-2",
+        "idea-3",
+        "idea-4",
+        "idea-5"
+      ]
+    },
+    "idea-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-1-title",
+        "idea-1-tags",
+        "idea-1-desc"
+      ]
+    },
+    "idea-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Community Events & Calls Hub",
+        "level": "h3"
+      }
+    },
+    "idea-1-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-1-cat",
+        "idea-1-size"
+      ]
+    },
+    "idea-1-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "outline"
+      }
+    },
+    "idea-1-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GitHub Discussion template + /community page + notify script — scaffolding to schedule and publicize the first Twitter Space with 3+ speakers (community call hyperstition).",
+        "variant": "body"
+      }
+    },
+    "idea-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-2-title",
+        "idea-2-tags",
+        "idea-2-desc"
+      ]
+    },
+    "idea-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Simulation Cron Scheduler API",
+        "level": "h3"
+      }
+    },
+    "idea-2-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-2-cat",
+        "idea-2-size"
+      ]
+    },
+    "idea-2-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "outline"
+      }
+    },
+    "idea-2-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "idea-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulation/schedule with a cron expression auto-fires a topic on a cadence and appends each run to a Research Series — turns weekly manual work into a standing longitudinal study.",
+        "variant": "body"
+      }
+    },
+    "idea-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-3-title",
+        "idea-3-tags",
+        "idea-3-desc"
+      ]
+    },
+    "idea-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Portuguese (PT) UI Locale",
+        "level": "h3"
+      }
+    },
+    "idea-3-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-3-cat",
+        "idea-3-size"
+      ]
+    },
+    "idea-3-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "outline"
+      }
+    },
+    "idea-3-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "5th-language backup if JA (Jul 12) can't ship via GH_GLOBAL; Brazil's 3M+ Python devs are the exact audience for a Twitter swarm simulation tool — PT at 100% coverage ready to merge.",
+        "variant": "body"
+      }
+    },
+    "idea-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-4-title",
+        "idea-4-tags",
+        "idea-4-desc"
+      ]
+    },
+    "idea-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Webhook Delivery Dashboard",
+        "level": "h3"
+      }
+    },
+    "idea-4-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-4-cat",
+        "idea-4-size"
+      ]
+    },
+    "idea-4-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "outline"
+      }
+    },
+    "idea-4-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "webhook_service.py and WEBHOOKS.md exist but the UX is curl-only; a /webhooks management page (register, inspect deliveries, replay failures) makes webhook integration discoverable and completable in under 5 minutes.",
+        "variant": "body"
+      }
+    },
+    "idea-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-5-title",
+        "idea-5-tags",
+        "idea-5-desc"
+      ]
+    },
+    "idea-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Template Gallery",
+        "level": "h3"
+      }
+    },
+    "idea-5-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-5-cat",
+        "idea-5-size"
+      ]
+    },
+    "idea-5-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "outline"
+      }
+    },
+    "idea-5-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "preset_templates/ and templates.py exist in the backend — a /templates gallery with category filters, cost/time estimates, and one-click pre-population of the sim form lowers the barrier to first run for researchers.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "footer-label",
+        "full-details-link"
+      ]
+    },
+    "footer-label": {
+      "type": "Text",
+      "props": {
+        "text": "Full details:",
+        "variant": "muted"
+      }
+    },
+    "full-details-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "repo-actions-2026-07-14.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-14.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
