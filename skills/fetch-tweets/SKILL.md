@@ -45,7 +45,9 @@ Today is ${today}. Search X for tweets matching **${var}**.
    - Remove any tweet that was already reported in the last 3 days.
    - If ALL tweets found are already in the recent logs: log "FETCH_TWEETS_NO_NEW: all results already reported" to `memory/logs/${today}.md` and **stop here — do NOT send any notification**.
 
-5. **If no relevant tweets found** (no results, API error, or empty after dedup): log "FETCH_TWEETS_EMPTY" to `memory/logs/${today}.md` and **stop here — do NOT send any notification**.
+4b. **Freshness gate (WebSearch only).** WebSearch favours high-engagement older content — tweets from months ago routinely pass the dedup filter because they were never reported recently. After dedup, check each remaining tweet's posted date (from the WebSearch snippet date, tweet text, or surrounding context). **Discard any tweet posted more than 14 days before ${today}.** Log discarded stale tweets: "Excluded N stale tweets (older than 14d): [URLs]". If you cannot determine a tweet's date and it looks like older high-engagement content (e.g. status IDs much lower than recent tweets, topics from months ago), discard it. If all remaining tweets are stale, proceed to step 5 (treated as empty).
+
+5. **If no relevant tweets found** (no results, API error, or empty after dedup/freshness filtering): log "FETCH_TWEETS_EMPTY" to `memory/logs/${today}.md` and **stop here — do NOT send any notification**.
 
 6. **Save the results** (new tweets only) to `memory/logs/${today}.md`.
 
