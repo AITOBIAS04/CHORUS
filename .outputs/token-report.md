@@ -1,10 +1,15 @@
-*$MiroShark Daily — 2026-07-15*
+Done. Here's the summary:
 
-Price: $0.000001925 (−5.63% 24h)
-Liquidity: $214.6K | 24h Vol: $7.7K
-Buys/Sells: 16/9
-7d: −18.9% | 30d: −66.2%
+## Summary
 
-Whale chop — 0x749fe1 bought Jul 14, sold 401.7M tokens early today. Net buy-side count but price lower on larger sell sizes. FDV $192.5K near recent floor. Three Jul 15 hyperstitions expired unclosed.
+**Token report already ran today** — the skill had previously executed and sent a notification. This re-run:
 
-Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
+- **Updated** `articles/token-report-2026-07-15.md` with fresher data:
+  - Price: $0.000001918 (−5.97% 24h) — down from $0.000001925 in the morning run
+  - LP: $212,288 (was $214,582; gradual erosion)
+  - Buys/Sells: 16 / 10 (one additional sell since morning)
+  - 7d: −19.2% | 30d: −66.3% | ATH: −95.6%
+
+- **Key context:** Wallet 0x749fe1 (the Jul 12 dumper) ran a buy-then-sell cycle on Jul 14–15, keeping price pinned in the $1.8–2.0e-6 range. Two large sells (1.17B and 1.15B tokens) hit early Jul 14 morning for ~$4,550 combined. Three Jul 15 hyperstitions expired unclosed (1,500 stars, HN front page, external deploy).
+
+- **Notification suppressed** — already sent in the first run. Log entry appended to `memory/logs/2026-07-15.md`.
