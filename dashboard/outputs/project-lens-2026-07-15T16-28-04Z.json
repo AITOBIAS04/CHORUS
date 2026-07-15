@@ -1,0 +1,54 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "story_link",
+        "separator1",
+        "content_stack"
+      ]
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "A Billion-Dollar Startup Says It Can Replace Voters with AI. The Honest Version Costs a Dollar.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-15.md",
+        "source": "project-lens"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "para1",
+        "para2"
+      ]
+    },
+    "para1": {
+      "type": "Text",
+      "props": {
+        "text": "The synthetic polling industry crossed a billion-dollar valuation in 2026, with companies like Aaru selling AI-generated \"synthetic voters\" as substitutes for real survey respondents. Nate Silver called them fake polls. UK campaigns are using them anyway."
+      }
+    },
+    "para2": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark does something structurally similar — spawning AI agents to simulate opinion — but makes the opposite claim: its 41 queryable API surfaces expose every intermediate state of the deliberation instead of hiding it behind a topline number. With EU AI Act enforcement starting August 2, the difference between opaque prediction and transparent simulation is about to matter."
+      }
+    }
+  }
+}

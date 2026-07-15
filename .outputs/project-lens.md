@@ -1,5 +1,5 @@
-*New Article: She Had Forty-Eight Hours Before Launch. A Focus Group Would Have Taken Six Weeks.*
+*New Article: A Billion-Dollar Startup Says It Can Replace Voters with AI. The Honest Version Costs a Dollar.*
 
-A solo founder with $340 in her account and two days before launch runs a $1 MiroShark simulation instead of a $12,000 focus group. Twelve AI agents — from DAO governance leads to skeptical academics — disagree on her product across five rounds, and the stance flips and confidence trajectories reveal that her real market is first-time voters, not power users. The article follows her 27-minute research session at 2 AM and connects it to the validation gap killing 43% of startups.
+The synthetic polling industry crossed a billion-dollar valuation in 2026, with companies like Aaru selling AI-generated "synthetic voters" as substitutes for real survey respondents. Nate Silver called them fake polls. UK campaigns are using them anyway. MiroShark does something structurally similar — spawning AI agents to simulate opinion — but makes the opposite claim: its 41 queryable API surfaces expose every intermediate state of the deliberation instead of hiding it behind a topline number. With EU AI Act enforcement starting August 2, the difference between opaque prediction and transparent simulation is about to matter.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-13.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-15.md
