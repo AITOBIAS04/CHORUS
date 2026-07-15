@@ -64,15 +64,15 @@
   },
   "token-report": {
     "last_dispatch": "2026-07-15T06:08:47Z",
-    "last_status": "dispatched",
+    "last_status": "success",
     "last_failed": "2026-04-30T09:01:43Z",
-    "total_runs": 327,
-    "total_successes": 56,
+    "total_runs": 328,
+    "total_successes": 57,
     "total_failures": 271,
     "consecutive_failures": 0,
     "success_rate": 0.17,
     "last_error": "f30cde2\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"",
-    "last_success": "2026-07-14T07:59:59Z",
+    "last_success": "2026-07-15T06:13:04Z",
     "last_quality_score": 4
   },
   "fetch-tweets": {
