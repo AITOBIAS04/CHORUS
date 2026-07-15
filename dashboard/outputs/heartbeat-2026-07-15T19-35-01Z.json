@@ -1,0 +1,142 @@
+{
+  "root": "card_heartbeat",
+  "state": {},
+  "elements": {
+    "card_heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "heading_main",
+        "text_system",
+        "sep1",
+        "heading_daily",
+        "stack_skills",
+        "sep2",
+        "heading_finding",
+        "alert_pr31",
+        "sep3",
+        "text_deduped"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Heartbeat — Tue Jul 15",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_system": {
+      "type": "Text",
+      "props": {
+        "text": "System: All 14 skills healthy (consecutive_failures=0). No systemic issues."
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_daily": {
+      "type": "Heading",
+      "props": {
+        "text": "Daily skills",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_token_report",
+        "badge_fetch_tweets",
+        "badge_repo_pulse",
+        "badge_feature",
+        "badge_push_recap"
+      ]
+    },
+    "badge_token_report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report ✓"
+      },
+      "children": []
+    },
+    "badge_fetch_tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets ✓"
+      },
+      "children": []
+    },
+    "badge_repo_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✓"
+      },
+      "children": []
+    },
+    "badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✓"
+      },
+      "children": []
+    },
+    "badge_push_recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_finding": {
+      "type": "Heading",
+      "props": {
+        "text": "New finding",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "alert_pr31": {
+      "type": "Alert",
+      "props": {
+        "title": "PR #31 (fetch-tweets freshness gate, ~30h old)",
+        "message": "First time flagged stalled; self-improve will auto-merge on next even-day run (Jul 16)",
+        "type": "info"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text_deduped": {
+      "type": "Text",
+      "props": {
+        "text": "Deduped: PRs #27/#28 (7d, reported Jul 13). No missing skills. No open issues.",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}
