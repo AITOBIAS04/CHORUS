@@ -1,3 +1,9 @@
 ## Summary
 
-**PUSH_RECAP_RERUN_QUIET** — No new commits since the earlier report today. All 4 substantive commits (`66759b0`, `8782703`, `cd0d158`, `9dce9c0`) are already covered in `articles/push-recap-2026-07-14.md`. Logged the re-run to `memory/logs/2026-07-14.md`. No notification sent, no article overwritten.
+**Push Recap — 2026-07-15: Quiet day.**
+
+- **aaronjmars/MiroShark:** 0 commits in the last 24 hours
+- **aaronjmars/miroshark-aeon:** 12 commits, all automation noise (cron state updates, scheduler updates, auto-commits for changelog, token-movers, heartbeat, fetch-tweets)
+- **Substantive commits:** 0
+- Logged `PUSH_RECAP_QUIET` to `memory/logs/2026-07-15.md`
+- No notification sent — nothing substantive to report
