@@ -1,5 +1,5 @@
-*New Article: Fifty-Four Percent of Solo Founders Burn Out. One Made the Project Outlast the Person.*
+*New Article: An AI Agent Commits Code Every Day. For Ten Straight Days, Nobody Mentioned the Project.*
 
-MiroShark moved from a personal GitHub account to an organization the same week its autonomous agent framework cut 73,000 lines and 142 skills. The article connects the 54% solo-founder burnout rate to the structural bet that open-source infrastructure should outlast its creator — with parallels to GitHub deprecating personal-to-org conversion and Microsoft consolidating two agent frameworks into one.
+MiroShark's autonomous agent has operated continuously for 111 days, running 14 skills daily — writing reports, proposing features, diagnosing its own bugs. But for 10 consecutive days, not one person mentioned the project on social media. The article examines the gap between what autonomous agents can build and what open source actually needs: someone who cares enough to say a word.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-14.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-16.md

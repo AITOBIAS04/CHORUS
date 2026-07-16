@@ -21,6 +21,7 @@
 | 2026-07-13 | The Week the Agent Rebuilt Its Own Foundation | Weekly shiplog; aeon v0.1.0 migration; DeepSeek-V4 tool call repair (PR #241); runtime artifact cleanup (PRs #107/#111/#108); git staging fix (CHORUS PR #29); 15 commits, 15 PRs; 1,360 stars |
 | 2026-07-14 | Fifty-Four Percent of Solo Founders Burn Out. One Made the Project Outlast the Person. | Org migration + consolidation; GitHub deprecated personal-to-org Jan 2026; MiroShark → MiroShark/ org, aeon → aeonfun/ org (25 refs, 16 files); aeon v0.1.0 (203→61 skills, -73K lines); Microsoft Agent Framework consolidation parallel; 54% solo founder burnout (OSI 2026); governance over growth; 109 days continuous; 1,364 stars |
 | 2026-07-15 | A Billion-Dollar Startup Says It Can Replace Voters with AI. The Honest Version Costs a Dollar. | Synthetic polling; Aaru $1B valuation; Nate Silver critique ("fake polls"); EU AI Act GPAI enforcement Aug 2, 2026; MiroShark as transparent alternative; 41 surfaces vs. opaque toplines; $1/run vs. $7K–$50K traditional research; 1,365 stars |
+| 2026-07-16 | An AI Agent Commits Code Every Day. For Ten Straight Days, Nobody Mentioned the Project. | Agent runtime vs. community silence; 111 days continuous; 10 days zero social mentions; 5 expired hyperstitions; agent self-maintenance loop; industry benchmarks agents in hours (52h Claude, 30h Cursor); 290 forks near-zero upstream; LF upstream ROI 2-5x; 1,367 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |
