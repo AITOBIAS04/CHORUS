@@ -17,7 +17,7 @@ skills:
 
   # --- Every 2 days: Content & Meta ---
   repo-actions: { enabled: true, schedule: "0 14 */2 * *", model: "claude-sonnet-4-6" }
-  repo-article: { enabled: true, schedule: "0 16 */2 * 0,2,4,6" }  # Off-days from project-lens
+  repo-article: { enabled: true, schedule: "0 16 * * 0,2,4,6" }  # Off-days from project-lens
   self-improve: { enabled: true, schedule: "0 13 */2 * *" }
 
   # --- Weekly ---
