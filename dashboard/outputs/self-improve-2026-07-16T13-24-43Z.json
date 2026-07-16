@@ -1,0 +1,260 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-16"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "section-cleanup",
+        "sep1",
+        "section-bugfix",
+        "sep2",
+        "section-why",
+        "sep3",
+        "section-changes",
+        "sep4",
+        "section-impact",
+        "sep5",
+        "section-pr"
+      ]
+    },
+    "section-cleanup": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h-cleanup",
+        "t-cleanup-merged",
+        "t-cleanup-closed"
+      ]
+    },
+    "h-cleanup": {
+      "type": "Heading",
+      "props": {
+        "text": "Stale PR Cleanup",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "t-cleanup-merged": {
+      "type": "Text",
+      "props": {
+        "text": "Merged: ",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link-pr31": {
+      "type": "Link",
+      "props": {
+        "label": "PR #31 (fetch-tweets freshness gate)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/31"
+      },
+      "children": []
+    },
+    "t-cleanup-closed": {
+      "type": "Text",
+      "props": {
+        "text": "Closed (merge conflicts, superseded): PR #27 and PR #28",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-bugfix": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h-bugfix",
+        "t-bugfix"
+      ]
+    },
+    "h-bugfix": {
+      "type": "Heading",
+      "props": {
+        "text": "Fixed Repo-Article Scheduling Bug",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "t-bugfix": {
+      "type": "Text",
+      "props": {
+        "text": "The cron expression used AND semantics between day-of-month (*/2) and day-of-week (0,2,4,6), which halved article output from ~4 runs/week to ~2. Removed the day-of-month constraint so only the day-of-week field controls scheduling.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h-why",
+        "t-why"
+      ]
+    },
+    "h-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Root Cause",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "t-why": {
+      "type": "Text",
+      "props": {
+        "text": "PR #28 identified this exact bug on Jul 8 but went stale from merge conflicts (cron-generated files were included in the diff). The fix never landed. Re-applied with targeted staging.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h-changes",
+        "t-changes-file",
+        "t-changes-from",
+        "t-changes-to"
+      ]
+    },
+    "h-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "t-changes-file": {
+      "type": "Text",
+      "props": {
+        "text": "aeon.yml: repo-article schedule",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "t-changes-from": {
+      "type": "Text",
+      "props": {
+        "text": "From: '0 16 */2 * 0,2,4,6'",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "t-changes-to": {
+      "type": "Text",
+      "props": {
+        "text": "To: '0 16 * * 0,2,4,6'",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "alert-impact"
+      ]
+    },
+    "alert-impact": {
+      "type": "Alert",
+      "props": {
+        "title": "Impact",
+        "message": "repo-article now fires on all 4 intended days (Sun/Tue/Thu/Sat) instead of only the subset that also falls on even-numbered days of the month. Doubles content output frequency.",
+        "type": "success"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-pr": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h-pr",
+        "story-pr32"
+      ]
+    },
+    "h-pr": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Request",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "story-pr32": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #32",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/32",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
