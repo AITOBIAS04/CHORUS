@@ -1,0 +1,170 @@
+{
+  "root": "root",
+  "state": {},
+  "elements": {
+    "root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-1",
+        "alert-1",
+        "sep-1",
+        "solution-section",
+        "sep-2",
+        "context-section",
+        "sep-3",
+        "changed-section",
+        "sep-4",
+        "impact-section",
+        "pr-link"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Self-Improvement — 2026-07-16",
+        "level": "h2"
+      }
+    },
+    "alert-1": {
+      "type": "Alert",
+      "props": {
+        "title": "WebSearch Query Overuse",
+        "message": "fetch-tweets skill runs 6–7 WebSearch queries each execution when XAI_API_KEY is not set. For 10 consecutive days (Jul 7–16), every query has returned zero fresh tweets — the WebSearch fallback consistently surfaces months-old high-engagement content that gets filtered by the freshness gate.",
+        "type": "warning"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "solution-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-2",
+        "text-1"
+      ]
+    },
+    "heading-2": {
+      "type": "Heading",
+      "props": {
+        "text": "Solution: Cap at 3 Queries",
+        "level": "h3"
+      }
+    },
+    "text-1": {
+      "type": "Text",
+      "props": {
+        "text": "Adding a hard cap of 3 queries per run cuts wasted compute by ~50% with no output loss. The 3 queries follow a diversity strategy: one broad, one date-constrained, one variant."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "context-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-3",
+        "text-2"
+      ]
+    },
+    "heading-3": {
+      "type": "Heading",
+      "props": {
+        "text": "Context",
+        "level": "h3"
+      }
+    },
+    "text-2": {
+      "type": "Text",
+      "props": {
+        "text": "PR #27 attempted this fix on Jul 8 but was auto-closed on Jul 16 due to merge conflicts (DIRTY from volatile file staging — the same issue PR #29 fixed). The 10-day empty streak confirmed the pattern: more queries do not find more tweets when WebSearch cannot surface fresh content."
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changed-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-4",
+        "text-3"
+      ]
+    },
+    "heading-4": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "text-3": {
+      "type": "Text",
+      "props": {
+        "text": "skills/fetch-tweets/SKILL.md: Added query cap to WebSearch fallback path — max 3 queries with guidance on diversity (one broad, one date-constrained, one variant)"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-5",
+        "text-4"
+      ]
+    },
+    "heading-5": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-4": {
+      "type": "Text",
+      "props": {
+        "text": "Reduces fetch-tweets compute by ~50% during dry spells. When XAI_API_KEY is eventually set, Path A (Grok) has no cap and will resume full search. This only constrains the less-effective WebSearch fallback."
+      }
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #33: Cap fetch-tweets WebSearch queries at 3 per run",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/33",
+        "source": "GitHub"
+      }
+    }
+  }
+}

@@ -78,6 +78,7 @@
 - Repo-pulse lacked same-day dedup — re-runs within the same day re-analyzed identical data and re-sent duplicate notifications (observed Jul 12); fixed with Step 5 dedup check (self-improve PR #30, 2026-07-12)
 - Fetch-tweets WebSearch fallback reports months-old tweets as "new" — dedup only checks last 3 days of logs, so old high-engagement content that was never reported passes through; Jul 14 sent 5 tweets from Mar-Jun 2026; fixed with 14-day freshness gate in Step 4b (self-improve PR #31, 2026-07-14; merged 2026-07-16)
 - repo-article cron `"0 16 */2 * 0,2,4,6"` AND semantics between DOM and DOW halves output from ~4/week to ~2/week; original fix PR #28 (2026-07-08) went DIRTY from cron-state conflicts; re-applied as PR #32 (2026-07-16) with targeted staging to `"0 16 * * 0,2,4,6"`
+- fetch-tweets WebSearch fallback burns 6–7 queries per run with zero results (10 consecutive empty days Jul 7–16); original cap PR #27 went DIRTY; re-applied as PR #33 (2026-07-16) — max 3 queries per execution with diversity guidance (broad, date-constrained, variant)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
