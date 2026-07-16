@@ -1,0 +1,129 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "💓 Heartbeat — 2026-07-16"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_missing_skills",
+        "sep1",
+        "text_system_health",
+        "stat_health",
+        "text_health_note",
+        "sep2",
+        "text_prs_title",
+        "pr_32",
+        "pr_33",
+        "text_prs_note",
+        "sep3",
+        "text_memory_issues",
+        "sep4",
+        "alert_action"
+      ]
+    },
+    "alert_missing_skills": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "2 Missing Skills (Dispatch Unavailable)",
+        "message": "• project-lens — scheduled Wed 16:00 UTC, now 3h+ overdue; not in today's run list\n• memory-flush — scheduled Wed 18:00 UTC, now 1h+ overdue; not in run list (housekeeping — skip auto-trigger)"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text_system_health": {
+      "type": "Text",
+      "props": {
+        "text": "System Health",
+        "variant": "lead"
+      }
+    },
+    "stat_health": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive failures (all 14 skills)",
+        "value": "0",
+        "trend": "up"
+      }
+    },
+    "text_health_note": {
+      "type": "Text",
+      "props": {
+        "text": "No systemic failure",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text_prs_title": {
+      "type": "Text",
+      "props": {
+        "text": "Open PRs",
+        "variant": "lead"
+      }
+    },
+    "pr_32": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#32: repo-article schedule fix",
+        "href": "https://github.com/aeon/CHORUS/pull/32",
+        "source": "6h ago"
+      }
+    },
+    "pr_33": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#33: fetch-tweets query cap",
+        "href": "https://github.com/aeon/CHORUS/pull/33",
+        "source": "4h ago"
+      }
+    },
+    "text_prs_note": {
+      "type": "Text",
+      "props": {
+        "text": "Both <24h old, not stalled",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text_memory_issues": {
+      "type": "Text",
+      "props": {
+        "text": "No open memory issues",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "alert_action": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "title": "Action Required",
+        "message": "Manual re-run or actions: write scope needed to dispatch missing skills"
+      }
+    }
+  }
+}

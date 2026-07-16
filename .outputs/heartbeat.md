@@ -1,10 +1,12 @@
-Heartbeat — Tue Jul 15
+💓 Heartbeat — 2026-07-16
 
-System: All 14 skills healthy (consecutive_failures=0). No systemic issues.
+2 missing skills (dispatch unavailable — actions: read only):
 
-Daily skills: token-report ✓ fetch-tweets ✓ repo-pulse ✓ feature ✓ push-recap ✓
+• project-lens — scheduled Wed 16:00 UTC, now 3h+ overdue; not in today's run list
+• memory-flush — scheduled Wed 18:00 UTC, now 1h+ overdue; not in run list (housekeeping — skip auto-trigger)
 
-New finding:
-• PR #31 (fetch-tweets freshness gate, ~30h old) — first time flagged stalled; self-improve will auto-merge on next even-day run (Jul 16)
+System health: all 14 skills at consecutive_failures=0. No systemic failure.
+Open PRs: #32 (repo-article schedule fix, 6h) and #33 (fetch-tweets query cap, 4h) — both <24h, not stalled.
+No open memory issues.
 
-Deduped: PRs #27/#28 (7d, reported Jul 13). No missing skills. No open issues.
+Manual re-run or actions: write scope needed to dispatch missing skills.
