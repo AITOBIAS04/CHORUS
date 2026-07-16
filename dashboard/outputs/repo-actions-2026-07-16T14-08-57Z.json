@@ -1,0 +1,371 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "heading_date",
+        "metadata_stack",
+        "sep1",
+        "actions_stack",
+        "sep2",
+        "link_details"
+      ]
+    },
+    "heading_date": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Action Ideas — 2026-07-16",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "metadata_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_repo",
+        "text_stats",
+        "text_target"
+      ]
+    },
+    "text_repo": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "1,367 stars • 290 forks • 0 open PRs",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "text_target": {
+      "type": "Text",
+      "props": {
+        "text": "All ideas target the September hyperstition cluster",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "actions_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "action1",
+        "action2",
+        "action3",
+        "action4",
+        "action5"
+      ]
+    },
+    "action1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h1",
+        "badges1",
+        "desc1"
+      ]
+    },
+    "h1": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Korean (KO) UI Locale",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "badges1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1a",
+        "badge1b"
+      ]
+    },
+    "badge1a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge1b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "desc1": {
+      "type": "Text",
+      "props": {
+        "text": "Dictionary-based 5th language via the proven FR/DE pattern — closes the 'five languages' hyperstition at 5/5 (EN, ZH-CN, DE, FR, KO) and targets Korea's Samsung/Kakao/Naver developer ecosystem.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "action2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h2",
+        "badges2",
+        "desc2"
+      ]
+    },
+    "h2": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Simulation Narrative Export",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "badges2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge2a",
+        "badge2b"
+      ]
+    },
+    "badge2a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge2b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "desc2": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/export/narrative — produces a structured Markdown report with BibTeX citation block, agent quotes, and academic methodology section; the packaging researchers need to cite MiroShark in a paper.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "action3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h3",
+        "badges3",
+        "desc3"
+      ]
+    },
+    "h3": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Multi-Simulation Comparison View",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "badges3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge3a",
+        "badge3b"
+      ]
+    },
+    "badge3a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge3b": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "desc3": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/compare?a={id}&b={id} + CompareView.vue — consensus delta, trajectory correlation, platform sentiment gap side by side; turns MiroShark into a research platform that supports control/treatment designs.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "action4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h4",
+        "badges4",
+        "desc4"
+      ]
+    },
+    "h4": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Contributor Recognition Wall",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "badges4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge4a",
+        "badge4b"
+      ]
+    },
+    "badge4a": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/Growth",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge4b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "desc4": {
+      "type": "Text",
+      "props": {
+        "text": "/contributors page with GitHub avatars, merged PR links, and 'Contributor since {date}'; makes social recognition explicit and converts uncertain contributors — targeting the 10 community PRs hyperstition (at 5+/10).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "action5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h5",
+        "badges5",
+        "desc5"
+      ]
+    },
+    "h5": {
+      "type": "Heading",
+      "props": {
+        "text": "5. GitHub Discussions + Show & Tell Template",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "badges5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge5a",
+        "badge5b"
+      ]
+    },
+    "badge5a": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/Growth",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge5b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "desc5": {
+      "type": "Text",
+      "props": {
+        "text": "Enable Discussions, create Show & Tell + Research Use Cases categories with structured templates — the lowest-friction venue for the 'public case study' hyperstition; one user posting their experience closes it.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "link_details": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-16.md"
+      },
+      "children": []
+    }
+  }
+}

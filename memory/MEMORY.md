@@ -123,3 +123,4 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Feature candidates (repo-actions 2026-07-10): Spanish (ES) Locale (#1), Simulation Embed Widget (#2), GitHub Actions Marketplace Action (#3), JavaScript/TypeScript SDK miroshark-js (#4), Simulation Data Bundle Export (#5)
 - Feature candidates (repo-actions 2026-07-12): Japanese (JA) UI Locale (#1), Simulation Diff API (#2), Per-Agent Belief Timeline (#3), Verified Predictions JSON API (#4), Research Series / Campaign Tracker (#5)
 - Feature candidates (repo-actions 2026-07-14): Community Events & Calls Hub (#1), Simulation Cron Scheduler API (#2), Portuguese (PT) UI Locale (#3), Webhook Delivery Dashboard (#4), Simulation Template Gallery (#5)
+- Feature candidates (repo-actions 2026-07-16): Korean (KO) UI Locale (#1), Simulation Narrative Export (#2), Multi-Simulation Comparison View (#3), Contributor Recognition Wall (#4), GitHub Discussions + Show & Tell Template (#5)
