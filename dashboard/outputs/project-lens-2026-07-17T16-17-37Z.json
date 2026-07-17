@@ -1,0 +1,338 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading-main",
+        "text-intro",
+        "separator-1",
+        "heading-landscape",
+        "stat-projects",
+        "stat-startup",
+        "stat-frameworks",
+        "separator-2",
+        "heading-worlds",
+        "stack-worlds",
+        "separator-3",
+        "heading-ecosystem",
+        "grid-details",
+        "separator-4",
+        "storylink-article"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Thirty-Seven Projects Simulate How People Think. They Occupy Four Different Worlds.",
+        "level": "h2"
+      }
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "The AI simulation landscape encompasses at least 37 open-source projects, a billion-dollar synthetic polling startup, and three major orchestration frameworks—but they occupy four distinct worlds."
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-landscape": {
+      "type": "Heading",
+      "props": {
+        "text": "Landscape Overview",
+        "level": "h3"
+      }
+    },
+    "stat-projects": {
+      "type": "Stat",
+      "props": {
+        "label": "Open-Source Projects",
+        "value": "37"
+      }
+    },
+    "stat-startup": {
+      "type": "Stat",
+      "props": {
+        "label": "Synthetic Polling Market",
+        "value": "$1 Billion"
+      }
+    },
+    "stat-frameworks": {
+      "type": "Stat",
+      "props": {
+        "label": "Major Orchestration Frameworks",
+        "value": "3"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-worlds": {
+      "type": "Heading",
+      "props": {
+        "text": "Four Distinct Worlds",
+        "level": "h3"
+      }
+    },
+    "stack-worlds": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "world-1",
+        "world-2",
+        "world-3",
+        "world-4"
+      ]
+    },
+    "world-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-1",
+        "text-1"
+      ]
+    },
+    "badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Agent Frameworks",
+        "variant": "secondary"
+      }
+    },
+    "text-1": {
+      "type": "Text",
+      "props": {
+        "text": "AutoGen (42K stars) and CrewAI (31K stars) solve plumbing"
+      }
+    },
+    "world-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-2",
+        "text-2"
+      ]
+    },
+    "badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Academic Sandboxes",
+        "variant": "secondary"
+      }
+    },
+    "text-2": {
+      "type": "Text",
+      "props": {
+        "text": "Stanford, DeepMind, and CAMEL-AI produce papers"
+      }
+    },
+    "world-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-3",
+        "text-3"
+      ]
+    },
+    "badge-3": {
+      "type": "Badge",
+      "props": {
+        "text": "Commercial Platforms",
+        "variant": "secondary"
+      }
+    },
+    "text-3": {
+      "type": "Text",
+      "props": {
+        "text": "Aaru sells black-box predictions"
+      }
+    },
+    "world-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-4",
+        "text-4"
+      ]
+    },
+    "badge-4": {
+      "type": "Badge",
+      "props": {
+        "text": "Open-Source Simulation",
+        "variant": "secondary"
+      }
+    },
+    "text-4": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark (1,368 stars, 41 queryable API surfaces) sits alone—open-source simulation with every intermediate state as a first-class endpoint"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-ecosystem": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Projects & Ecosystem",
+        "level": "h3"
+      }
+    },
+    "grid-details": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "proj-autogen",
+        "proj-crewai",
+        "proj-miroshark",
+        "proj-ecosystem"
+      ]
+    },
+    "proj-autogen": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "label-autogen",
+        "stat-autogen"
+      ]
+    },
+    "label-autogen": {
+      "type": "Text",
+      "props": {
+        "text": "AutoGen",
+        "variant": "lead"
+      }
+    },
+    "stat-autogen": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "42K"
+      }
+    },
+    "proj-crewai": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "label-crewai",
+        "stat-crewai"
+      ]
+    },
+    "label-crewai": {
+      "type": "Text",
+      "props": {
+        "text": "CrewAI",
+        "variant": "lead"
+      }
+    },
+    "stat-crewai": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "31K"
+      }
+    },
+    "proj-miroshark": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "label-miroshark",
+        "stat-miroshark",
+        "detail-miroshark"
+      ]
+    },
+    "label-miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark",
+        "variant": "lead"
+      }
+    },
+    "stat-miroshark": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "1,368"
+      }
+    },
+    "detail-miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "41 queryable API surfaces",
+        "variant": "caption"
+      }
+    },
+    "proj-ecosystem": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "label-ecosystem",
+        "stat-ecosystem"
+      ]
+    },
+    "label-ecosystem": {
+      "type": "Text",
+      "props": {
+        "text": "Building on MiroShark",
+        "variant": "lead"
+      }
+    },
+    "stat-ecosystem": {
+      "type": "Stat",
+      "props": {
+        "label": "Ecosystem Projects",
+        "value": "13"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "storylink-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-17.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
