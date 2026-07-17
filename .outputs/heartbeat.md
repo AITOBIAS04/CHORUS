@@ -1,15 +1,9 @@
-Heartbeat — 2026-07-17
+HEARTBEAT_OK. All findings from this run were already reported by the prior heartbeat at 19:03 UTC today — three missing skills (self-improve, repo-actions, repo-article) and two stalled PRs (#32, #33) are all within the 48h dedup window. No open issues require escalation. Logged to `memory/logs/2026-07-17.md`.
 
-3 skills missed their windows; 2 PRs stalled >24h.
+## Summary
 
-Missing (all confirmed >2h overdue):
-• self-improve — due 13:00 UTC, ~6h ago (schedule: */2 odd days)
-• repo-actions — due 14:00 UTC, ~5h ago (schedule: */2 odd days)
-• repo-article — due 16:00 UTC, ~3h ago (schedule: */2 odd days + Thu DOW)
-
-Stalled PRs (no merge activity):
-• PR #32: fix repo-article schedule AND-semantics bug (~30h)
-• PR #33: cap fetch-tweets WebSearch queries at 3/run (~28h)
-
-Dispatch unavailable (actions: read only — manual re-run needed).
-System health: all 14 skills consecutive_failures=0. No open issues.
+- **System health:** All 14 skills healthy (`consecutive_failures = 0`). No systemic failure.
+- **Skills:** token-report, fetch-tweets, repo-pulse, feature, push-recap all ran as expected. self-improve, repo-actions, repo-article remain missing (already flagged in prior 19:03 UTC heartbeat; dispatch unavailable — `actions: read` only).
+- **PRs:** #32 and #33 still open and stalled >24h — already reported, deduped.
+- **No open issues** requiring escalation.
+- **No notification sent** — all findings within 48h dedup window.
