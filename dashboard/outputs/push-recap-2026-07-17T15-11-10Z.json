@@ -1,0 +1,163 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "text_date",
+        "text_repo_summary",
+        "separator_1",
+        "heading_org_migration",
+        "text_org_migration_content",
+        "separator_2",
+        "heading_ecosystem",
+        "text_ecosystem_content",
+        "separator_3",
+        "heading_config",
+        "text_config_content",
+        "separator_4",
+        "heading_key_changes",
+        "text_key_changes_1",
+        "text_key_changes_2",
+        "text_key_changes_3",
+        "separator_5",
+        "text_stats",
+        "link_full_recap"
+      ]
+    },
+    "text_date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-17",
+        "variant": "muted"
+      }
+    },
+    "text_repo_summary": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark + miroshark-aeon — 7 substantive commits by aaronjmars (9 automation commits filtered)"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_org_migration": {
+      "type": "Heading",
+      "props": {
+        "text": "Org Migration Cleanup",
+        "level": "h3"
+      }
+    },
+    "text_org_migration_content": {
+      "type": "Text",
+      "props": {
+        "text": "Retargeted README badges to new org paths (MiroShark/MiroShark and aeonfun/aeon) and removed Star History chart embeds across both repos. Badges now show correct star/fork counts post-transfer."
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_ecosystem": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Pruning",
+        "level": "h3"
+      }
+    },
+    "text_ecosystem_content": {
+      "type": "Text",
+      "props": {
+        "text": "Removed SyntheticsAI from the ecosystem page and backend catalog — the synthetic-user pipeline project appears inactive. Blue Agent is now the sole agent-category partner."
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_config": {
+      "type": "Heading",
+      "props": {
+        "text": "Config",
+        "level": "h3"
+      }
+    },
+    "text_config_content": {
+      "type": "Text",
+      "props": {
+        "text": "Minor YAML reformatting of the changelog skill entry in miroshark-aeon aeon.yml."
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_key_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "text_key_changes_1": {
+      "type": "Text",
+      "props": {
+        "text": ".github/README.md badges retargeted in both repos (aaronjmars → MiroShark/ and aeonfun/ orgs)"
+      }
+    },
+    "text_key_changes_2": {
+      "type": "Text",
+      "props": {
+        "text": "ECOSYSTEM.md + ecosystem_catalog.py: SyntheticsAI entry removed (-10 lines)"
+      }
+    },
+    "text_key_changes_3": {
+      "type": "Text",
+      "props": {
+        "text": "Star History section removed from both READMEs (stale post-migration)"
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 5 files changed, +11/-23 lines"
+      }
+    },
+    "link_full_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-17.md"
+      }
+    }
+  }
+}
