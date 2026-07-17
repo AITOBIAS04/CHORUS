@@ -1,0 +1,82 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-07-17"
+      },
+      "children": [
+        "storylink_repo",
+        "separator_1",
+        "stack_stats",
+        "separator_2",
+        "alert_api"
+      ]
+    },
+    "storylink_repo": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1368",
+        "delta": "+3",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "290",
+        "delta": "+0",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "alert_api": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "New stargazer usernames unavailable — stargazers API returned 403"
+      },
+      "children": []
+    }
+  }
+}
