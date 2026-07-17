@@ -1,0 +1,212 @@
+{
+  "root": "card_heartbeat",
+  "state": {},
+  "elements": {
+    "card_heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-07-17"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_summary",
+        "sep_1",
+        "missing_section",
+        "sep_2",
+        "stalled_section",
+        "sep_3",
+        "dispatch_section",
+        "sep_4",
+        "health_section"
+      ]
+    },
+    "alert_summary": {
+      "type": "Alert",
+      "props": {
+        "title": "Issues Detected",
+        "message": "3 skills missed their windows; 2 PRs stalled >24h",
+        "type": "warning"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "missing_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "missing_heading",
+        "missing_items"
+      ]
+    },
+    "missing_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing (all confirmed >2h overdue)",
+        "level": "h3"
+      }
+    },
+    "missing_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "missing_1",
+        "missing_2",
+        "missing_3"
+      ]
+    },
+    "missing_1": {
+      "type": "Text",
+      "props": {
+        "text": "self-improve — due 13:00 UTC, ~6h ago (schedule: */2 odd days)",
+        "variant": "body"
+      }
+    },
+    "missing_2": {
+      "type": "Text",
+      "props": {
+        "text": "repo-actions — due 14:00 UTC, ~5h ago (schedule: */2 odd days)",
+        "variant": "body"
+      }
+    },
+    "missing_3": {
+      "type": "Text",
+      "props": {
+        "text": "repo-article — due 16:00 UTC, ~3h ago (schedule: */2 odd days + Thu DOW)",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stalled_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stalled_heading",
+        "stalled_items"
+      ]
+    },
+    "stalled_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs (no merge activity)",
+        "level": "h3"
+      }
+    },
+    "stalled_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stalled_1",
+        "stalled_2"
+      ]
+    },
+    "stalled_1": {
+      "type": "Text",
+      "props": {
+        "text": "PR #32: fix repo-article schedule AND-semantics bug (~30h)",
+        "variant": "body"
+      }
+    },
+    "stalled_2": {
+      "type": "Text",
+      "props": {
+        "text": "PR #33: cap fetch-tweets WebSearch queries at 3/run (~28h)",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dispatch_section": {
+      "type": "Alert",
+      "props": {
+        "title": "Dispatch Unavailable",
+        "message": "actions: read only — manual re-run needed",
+        "type": "info"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "health_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "health_heading",
+        "health_items"
+      ]
+    },
+    "health_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "System Health",
+        "level": "h3"
+      }
+    },
+    "health_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "health_stat",
+        "health_badge"
+      ]
+    },
+    "health_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "All skills",
+        "value": "14",
+        "delta": "consecutive_failures=0"
+      }
+    },
+    "health_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "No open issues",
+        "variant": "default"
+      }
+    }
+  }
+}
