@@ -1,10 +1,15 @@
+Done. Here's the run summary:
+
 ## Summary
 
-**fetch-tweets** ran for `MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark` on 2026-07-16.
+**Skill:** fetch-tweets | **Query:** MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark
 
-- **Path:** WebSearch fallback (XAI_API_KEY not set)
-- **Searches run:** 7 queries across multiple angle combinations
-- **Result:** FETCH_TWEETS_EMPTY — all WebSearch results returned pre-July-2 tweets (status IDs 2034–2057 range), none within the 14-day freshness window. All known fresh tweets were already in the dedup set from the last 3 days of logs.
-- **10th consecutive empty day** (Jul 7–16, with minor exceptions on Jul 12 and Jul 14)
-- **Notification:** suppressed per skill step 5
-- **Log:** `memory/logs/2026-07-16.md` created and committed
+**Result: FETCH_TWEETS_EMPTY — no notification sent.**
+
+- XAI_API_KEY not set; used WebSearch (Path B, 3-query cap per PR #33)
+- 3 queries run; returned 5 new URLs not in the dedup list
+- All 5 failed the **14-day freshness gate**: estimated March–June 2026 based on status ID ranges (2036xxx–2062xxx)
+- This is the **11th consecutive empty day** (Jul 7–17)
+- Log written to `memory/logs/2026-07-17.md`
+
+The root pattern remains: WebSearch surfaces high-engagement older content rather than fresh tweets, and without XAI_API_KEY there's no path to real-time results. Setting `XAI_API_KEY` is the only fix for this skill returning useful output.
