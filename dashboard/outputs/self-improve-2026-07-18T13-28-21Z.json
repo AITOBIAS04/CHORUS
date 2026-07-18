@@ -1,0 +1,115 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_date",
+        "text_main_summary",
+        "heading_why",
+        "text_why_detail",
+        "text_stale_prs",
+        "heading_what",
+        "text_what_detail",
+        "heading_impact",
+        "text_impact_detail",
+        "separator_1",
+        "heading_pr",
+        "link_pr_34"
+      ]
+    },
+    "text_date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-18",
+        "variant": "caption"
+      }
+    },
+    "text_main_summary": {
+      "type": "Text",
+      "props": {
+        "text": "Added prolonged silence escalation to the fetch-tweets skill. After 7 consecutive days with zero fresh tweets found, the skill now sends a single notification alerting that social monitoring is dark — and repeats every 7 days until resolved."
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text_why_detail": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets has been empty for 12 consecutive days (Jul 7–18) with zero notifications sent. The \"suppress when empty\" logic (correct for occasional gaps) made the entire social monitoring dimension invisible to the operator. The only way to know was manually reading logs."
+      }
+    },
+    "text_stale_prs": {
+      "type": "Text",
+      "props": {
+        "text": "Stale PRs merged first: PR #32 (repo-article schedule fix) and PR #33 (fetch-tweets query cap) — both >48h old, both clean."
+      }
+    },
+    "heading_what": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "text_what_detail": {
+      "type": "Text",
+      "props": {
+        "text": "skills/fetch-tweets/SKILL.md: Added silence escalation in step 5 — counts consecutive FETCH_TWEETS_EMPTY days from recent logs, sends one notification on every 7th consecutive empty day with actionable guidance (set XAI_API_KEY)"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact_detail": {
+      "type": "Text",
+      "props": {
+        "text": "Operator now gets visibility when social monitoring goes blind for extended periods, instead of silent degradation. Notification cadence (every 7 days) avoids spam while ensuring the gap is noticed."
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_pr": {
+      "type": "Heading",
+      "props": {
+        "text": "PR",
+        "level": "h3"
+      }
+    },
+    "link_pr_34": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #34",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/34",
+        "source": "GitHub"
+      }
+    }
+  }
+}
