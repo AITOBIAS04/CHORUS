@@ -1,16 +1,19 @@
-The repo-actions skill already ran today. Here's the summary:
+*Repo Action Ideas — 2026-07-18*
+Generated from analysis of aaronjmars/MiroShark (1,375 stars · 291 forks · FDV $163K all-time low · 12 days zero social mentions).
 
-## Summary
+1. Simulation OG Image API (Feature/Growth, Small)
+   Dynamically generated PNG card for sim links — makes unfurls work on Twitter/LinkedIn/Discord, directly attacking the 12-day social silence.
 
-**Skill:** repo-actions — duplicate invocation detected, skipped.
+2. Air-Gapped HuggingFace Cache (DX/Feature, Small)
+   prefetch-models.sh + HUGGING_FACE_HUB_OFFLINE support closes issue #240 and unblocks enterprise/research institution deployments.
 
-**Earlier run (same day):** Analyzed `aaronjmars/MiroShark` (1,367 stars, 290 forks, 1 open issue), generated 5 ideas targeting the September hyperstition cluster, wrote `articles/repo-actions-2026-07-16.md`, and sent notification.
+3. Python SDK miroshark-py (Integration/DX, Medium)
+   pip install miroshark — typed Pydantic client for batch simulation workflows in Jupyter notebooks; required for academic adoption.
 
-**Ideas already generated today:**
-1. **Korean (KO) UI Locale** — Feature/Small — closes September "5 languages" hyperstition
-2. **Simulation Narrative Export** — Feature/DX/Small — BibTeX + methodology output for academic citation
-3. **Multi-Simulation Comparison View** — Feature/DX/Medium — control/treatment research surface
-4. **Contributor Recognition Wall** — Community/Growth/Small — social recognition lever for 10-PR hyperstition
-5. **GitHub Discussions + Show & Tell Template** — Community/Growth/Small — lowest-friction venue for public case studies
+4. i18n Contribution Kit (Community/DX, Small)
+   scripts/i18n-audit.py + CONTRIBUTING-i18n.md drops language contribution barrier to 30 minutes — activates community path to the Sep '5 languages' hyperstition.
 
-**Action:** Logged duplicate invocation to `memory/logs/2026-07-16.md`. No article overwrite, no duplicate notification sent.
+5. Simulation RSS Feed (Feature/Integration, Small)
+   GET /api/simulations/rss — Atom feed enables passive discovery via Feedly, Discord RSS bots, and aeon's own daily notification loop.
+
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-18.md
