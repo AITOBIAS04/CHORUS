@@ -1,9 +1,9 @@
-HEARTBEAT_OK. All findings from this run were already reported by the prior heartbeat at 19:03 UTC today — three missing skills (self-improve, repo-actions, repo-article) and two stalled PRs (#32, #33) are all within the 48h dedup window. No open issues require escalation. Logged to `memory/logs/2026-07-17.md`.
+HEARTBEAT_OK. All 9 expected skills for Saturday Jul 18 ran on schedule, all 14 skills show zero consecutive failures, PR #35 is only 4 hours old (not stalled), and no open memory issues require escalation.
 
 ## Summary
 
-- **System health:** All 14 skills healthy (`consecutive_failures = 0`). No systemic failure.
-- **Skills:** token-report, fetch-tweets, repo-pulse, feature, push-recap all ran as expected. self-improve, repo-actions, repo-article remain missing (already flagged in prior 19:03 UTC heartbeat; dispatch unavailable — `actions: read` only).
-- **PRs:** #32 and #33 still open and stalled >24h — already reported, deduped.
-- **No open issues** requiring escalation.
-- **No notification sent** — all findings within 48h dedup window.
+- **System health:** Clean — all 14 skills at `consecutive_failures=0`
+- **Skills check:** Every Saturday-expected skill ran (token-report through repo-article); no missing runs
+- **Open PRs:** PR #35 (fetch-tweets escalation, filed today — not yet stalled)
+- **Open issues:** None
+- **Action taken:** Logged `HEARTBEAT_OK` to `memory/logs/2026-07-18.md`; no notification sent
