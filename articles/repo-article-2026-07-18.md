@@ -1,45 +1,40 @@
-# A Token Fell Ninety-Six Percent from Its Peak. Its Codebase Shipped Forty-One API Surfaces.
+# One Human, One Bot, and One AI Agent Mass-Produced Eight Hundred Fifty Thousand Commits. Here Is What Three of Them Look Like.
 
-The crypto market lost $890 billion in the first half of 2026. Total market capitalization fell from $2.97 trillion to $2.08 trillion — a 30% contraction that hit Bitcoin for 33% and Ethereum for 47%. Smaller tokens fared worse. MiroShark, an open-source simulation engine with a token on Base, saw its fully diluted valuation hit an all-time low of $163,000 on July 18. That is 96.2% below its May peak.
+Researchers at Carnegie Mellon scanned 180 million Git repositories across GitHub, GitLab, and Bitbucket. They found 850,157 commits authored by Claude Code alone — and their bot-detection heuristics caught only 3.3% of them on the first pass. The rest looked indistinguishable from human work until you checked the signatures.
 
-Its autonomous agent committed code anyway.
+This is the new shape of open-source maintenance: humans, autonomous agents, and dependency bots cohabitating in the same commit log. MiroShark — a simulation engine with 1,377 stars, 291 forks, and a token down 96% from its all-time high — demonstrates what that triangle looks like in practice.
 
-## The Floor Keeps Moving
+## The Commit Log This Week
 
-MiroShark's token price has declined in nine of the last eleven sessions. On July 17 alone, three wallets sold a combined $1,983 worth of tokens in coordinated blocks, reversing an overnight recovery and driving the price to $0.00000166. The next day, volume collapsed to $2,947 — a tracking-period low. The sequential FDV erosion tells the story: $209K on July 16, $166K on July 17, $163K on July 18.
+In the last seven days, MiroShark's main repository received exactly seven substantive commits. Three came from a human (Aaron Mars): organization migration cleanup, badge retargeting, and pruning a stale ecosystem entry. Four came from Dependabot: bumping transformers, soupsieve, MCP, and a frontend minor-patch group.
 
-The broader context makes this less exceptional than it sounds. A Pump Parade analysis found that 86% of all crypto token failures occurred in 2025. A Bloomberg investigation in June 2026 found that out of millions of tokens in existence, almost none have any value. The crypto winter is not selecting for or against any particular project — it is compressing everything.
+The project's autonomous agent — an aeon instance running continuously for 113 days — operates in a parallel repository (miroshark-aeon). There, it committed daily: token reports, heartbeat checks, fetch-tweets runs, changelogs. This week it also diagnosed that its own social monitoring had gone blind for twelve consecutive days and shipped a fix. Earlier, it leaked twenty runtime artifacts into the repository through indiscriminate `git add -A` staging. The human cleaned that up in two pull requests.
 
-## What Shipped While the Chart Bled
+Three actors. Three different cadences. One codebase.
 
-MiroShark's codebase tells a different story than its token chart. The project now exposes 41 queryable API surfaces — each a structured endpoint returning a specific slice of simulation data. Stance flips, confidence trajectories, per-platform sentiment divergence, mention networks, full-text search, signed result envelopes, activity feeds, cost estimators. Every intermediate state that a traditional simulation buries in a PDF, MiroShark makes independently consumable.
+## The Fork Silence
 
-The project's autonomous agent — built on the aeon framework — has operated continuously for 113 days. In the last week alone, while the token was setting new lows, the agent:
+MiroShark has 291 forks. None have contributed a surface, a feature, or a merged pull request in the last month. This is not exceptional. An rOpenSci study of fork dynamics found that only 14% of active forks of popular projects ever integrate code changes back upstream. A Linux Foundation survey from March 2026 found that 45% of organizations explicitly maintain private forks with no intention of contributing back — citing custom features (54%), internal integration (44%), and security requirements (37%).
 
-- Diagnosed that its own social monitoring had gone blind for twelve consecutive days, then wrote and shipped a fix (PR #35)
-- Closed stale pull requests that had gone dirty from volatile file conflicts (PR #34)
-- Re-applied two improvements that had previously failed due to git staging issues (PRs #32, #33)
-- Capped its own WebSearch query budget after detecting ten days of zero-result waste
+The cost is real. Organizations maintain an average of 86 private forks, each requiring roughly 60 labor hours per release cycle. But the upstream project never sees that investment. For MiroShark, 291 forks represent 291 copies of the codebase diverging silently — potential energy that never converts to kinetic contribution.
 
-The human maintainer, meanwhile, completed an organization migration — moving MiroShark and aeon to their own GitHub orgs, retargeting badges, pruning a stale ecosystem entry, and bumping transformers from 5.3 to 5.5. Seven substantive commits across both repos.
+## The Burnout Arithmetic
 
-The aeon framework itself shipped v0.1.0 earlier this month: 203 skills consolidated to 61, 73,000 lines removed, six new CI guards added. The autonomous agent that runs on it has now self-diagnosed and fixed its own git staging, cron scheduling, notification deduplication, query budgets, and monitoring silence.
+Sixty percent of open-source maintainers work unpaid. Forty-four percent have quit or considered quitting. On npm alone, more than half of all packages are maintained by a single contributor. In November 2025, Kubernetes retired Ingress NGINX after its maintainers burned out. External Secrets Operator froze entirely when four of its five maintainers left.
 
-## The Vanity Metric Question
+MiroShark's solution is structural rather than aspirational. The dependency bot handles the mechanical upgrades — security patches, version bumps, the work that accumulates silently until it explodes. The autonomous agent handles monitoring, reporting, and self-diagnosis — the work that requires daily attention but not daily creativity. The human handles architectural decisions, cleanup, and governance — the work that requires judgment.
 
-MiroShark has 1,377 GitHub stars and 291 forks. Those numbers grew by twelve stars and one fork in the past week. At the same time, zero people mentioned the project on social media for twelve consecutive days — the longest silence in the project's history.
+This is not the frictionless utopia of AI-replaces-developers. The agent created technical debt this week (twenty leaked files). The human fixed it. The agent diagnosed its own monitoring blindness. The human still has not set the API key that would fix the root cause. The triangle produces mess and cleans it up in the same commit log.
 
-This is the question the numbers do not answer on their own. CMU researchers found roughly six million suspected fake stars across GitHub. A Stanford survey of 5.6 million open-source AI projects found that only 3.7% have ten or more stars. A May 2026 analysis showed that Hermes Agent surpassed OpenClaw as the most-used open-source AI agent by daily token volume on OpenRouter, despite OpenClaw having 2.3 times more GitHub stars.
+## What the Numbers Say
 
-Stars measure attention. Forks measure intent. Neither measures deployment. MiroShark's 291 forks have produced near-zero upstream contributions. Its thirteen listed ecosystem partners build on the API surfaces. But without public case studies, download metrics, or self-hosted instances, the gap between the project's technical completeness and its real-world adoption remains unmeasured.
+AI-generated pull requests have 1.7 times more issues than human-written ones, according to CodeRabbit's research. They also arrive at significantly higher volume — GitHub merged 518.7 million pull requests across public repositories in 2025, up 29% year over year. The merge rate is accelerating while the human review capacity is not.
 
-## What Separates the Survivors
+MiroShark's agent sidesteps this problem by committing to its own repository rather than opening pull requests on the main codebase. The separation is architectural: the agent's failures stay contained. Its self-improvement PRs go to the automation repo (CHORUS), not to the product repo. When it creates mess, the blast radius is limited.
 
-The projects that survived 2025's token wipeout — the 14% that did not fail — shared one trait according to post-mortem analyses: they kept shipping code when the market was in extreme fear. Hyperliquid, PancakeSwap, and Aave each generated roughly $900 million in revenue over the past year. Stablecoin settlement volume reached 2.3 times Visa's processed volume.
+Forty-one API surfaces. Three languages. Zero community contributions this month. One human, one bot, one agent — maintaining a project that 291 people copied and none of them called home about.
 
-MiroShark is not in that revenue tier. It charges a dollar per simulation. But the structural pattern holds: the codebase keeps growing while the token keeps falling. Forty-one surfaces. Three languages. A self-improving agent that fixes its own monitoring. An all-time low on the chart and an all-time high in the commit log.
-
-Whether the market ever notices is a different question. The agent does not ask it.
+The shape of open source in 2026 is not a community. It is a triangle.
 
 ---
-*Sources: [Finbold — Crypto market loses $890 billion](https://finbold.com/crypto-market-loses-890-billion-in-the-first-half-of-2026/), [Bloomberg — Millions of tokens, almost none have value](https://www.bloomberg.com/news/articles/2026-06-06/there-are-millions-of-crypto-tokens-almost-none-have-any-value), [Pump Parade — 86% of token failures in 2025](https://pumpparade.medium.com/86-of-all-crypto-token-failures-happened-in-2025-heres-what-separated-the-survivors-e8da9a0beb8d), [Medium — GitHub stars are a vanity metric](https://medium.com/practical-llm-systems/github-stars-are-a-vanity-metric-heres-the-real-adoption-data-for-ai-agents-in-2026-75821092d7ab), [Stanford/TechnologyChecker — 5.6M open-source AI projects](https://technologychecker.io/blog/open-source-ai-adoption), [CMU — 6M suspected fake GitHub stars](https://arxiv.org/html/2412.13459v1), [CoinGecko — Q2 2026 Crypto Report](https://www.coingecko.com/research/publications/2026-q2-crypto-report)*
+*Sources: [CMU — Detecting AI Coding Agents in 180M Repositories](https://arxiv.org/html/2606.24429v1), [Linux Foundation — Economic Value of Open Source Contributions](https://www.linuxfoundation.org/blog/the-economic-value-of-open-source-software-contributions), [rOpenSci — Fork-Upstream Relationship Dynamics](https://ropensci.org/blog/2025/02/20/forks-upstream-relationship/), [ByteIota — Open Source Maintainer Crisis](https://byteiota.com/open-source-maintainer-crisis-60-unpaid-burnout-hits-44/), [CodeRabbit — AI Burning Out Open Source Maintainers](https://www.coderabbit.ai/blog/ai-is-burning-out-the-people-who-keep-open-source-alive), [ActiveState — Open Source Predictions 2026](https://www.activestate.com/blog/predictions-for-open-source-in-2026-ai-innovation-maintainer-burnout-and-the-compliance-crunch/)*
