@@ -40,6 +40,8 @@ Today is ${today}. Search X for tweets matching **${var}**.
    `site:x.com "${query_terms}" after:${FROM_DATE}`
    Note at the top of the log entry: "XAI_API_KEY not available; results compiled via WebSearch". WebSearch rankings favour high-engagement older tweets — **prioritise results that mention a date within the last 48 hours** when possible.
 
+   **Query cap: run at most 3 WebSearch queries per execution.** WebSearch rarely surfaces fresh tweets — more queries just burn compute for the same stale results. Use your 3 queries wisely: one broad match (`site:x.com "${primary_term}"`), one with date constraint (`after:${FROM_DATE}`), and one variant (cashtag, handle, or alternate phrasing). If all 3 return nothing new, stop searching.
+
 4. **Deduplicate against previously-reported tweets** (from step 2):
    - Compare each candidate tweet URL against the collected set of already-reported URLs.
    - Remove any tweet that was already reported in the last 3 days.
