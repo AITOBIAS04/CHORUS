@@ -1,13 +1,16 @@
-*Agent Self-Improvement — 2026-07-16*
+*Agent Self-Improvement — 2026-07-18*
 
-Cap fetch-tweets WebSearch queries at 3 per run
-The fetch-tweets skill runs 6–7 WebSearch queries each execution when XAI_API_KEY is not set. For 10 consecutive days (Jul 7–16), every query has returned zero fresh tweets — the WebSearch fallback consistently surfaces months-old high-engagement content that gets filtered by the freshness gate. Adding a hard cap of 3 queries per run cuts wasted compute by ~50% with no output loss.
+Added prolonged silence escalation to fetch-tweets. The skill has been empty for 12 consecutive days (Jul 7–18) with zero notifications — the operator had no visibility that social monitoring was blind.
 
-Why: PR #27 attempted this fix on Jul 8 but was auto-closed on Jul 16 due to merge conflicts (DIRTY from volatile file staging — the same issue PR #29 fixed). The 10-day empty streak confirmed the pattern: more queries do not find more tweets when WebSearch cannot surface fresh content.
+Now, on every 7th consecutive empty day (day 7, 14, 21, …), fetch-tweets sends a single alert: "Social Monitor Dark — N consecutive days" with the fix (set XAI_API_KEY). No spam on non-milestone days.
+
+Why: Notification suppression is correct for occasional empty days, but 12 days of silence means the entire monitoring channel went dark without anyone knowing.
 
 What changed:
-- skills/fetch-tweets/SKILL.md: Added query cap to WebSearch fallback path — max 3 queries with guidance on diversity (one broad, one date-constrained, one variant)
+- skills/fetch-tweets/SKILL.md: Step 5 now counts consecutive FETCH_TWEETS_EMPTY days from logs and sends an escalation notification on every 7th day
 
-Impact: Reduces fetch-tweets compute by ~50% during dry spells. When XAI_API_KEY is eventually set, Path A (Grok) has no cap and will resume full search. This only constrains the less-effective WebSearch fallback.
+Also closed PR #34 (same fix, but included volatile files causing immediate DIRTY status) and re-applied cleanly in PR #35.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/33
+Impact: Operator will know within 7 days if social monitoring goes blind, instead of discovering it weeks later in the logs.
+
+PR: https://github.com/AITOBIAS04/CHORUS/pull/35

@@ -1,0 +1,196 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-18"
+      },
+      "children": [
+        "heading_main",
+        "sep_1",
+        "section_problem",
+        "sep_2",
+        "section_solution",
+        "sep_3",
+        "section_changes",
+        "sep_4",
+        "section_impact",
+        "sep_5",
+        "section_pr"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Prolonged Silence Escalation Added to fetch-tweets",
+        "level": "h2"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_problem": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_problem",
+        "text_problem"
+      ]
+    },
+    "heading_problem": {
+      "type": "Heading",
+      "props": {
+        "text": "The Problem",
+        "level": "h3"
+      }
+    },
+    "text_problem": {
+      "type": "Text",
+      "props": {
+        "text": "The skill has been empty for 12 consecutive days (Jul 7–18) with zero notifications — the operator had no visibility that social monitoring was blind."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_solution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_solution",
+        "text_solution",
+        "text_solution_detail"
+      ]
+    },
+    "heading_solution": {
+      "type": "Heading",
+      "props": {
+        "text": "The Solution",
+        "level": "h3"
+      }
+    },
+    "text_solution": {
+      "type": "Text",
+      "props": {
+        "text": "On every 7th consecutive empty day (day 7, 14, 21, …), fetch-tweets sends a single alert: \"Social Monitor Dark — N consecutive days\" with the fix (set XAI_API_KEY). No spam on non-milestone days."
+      }
+    },
+    "text_solution_detail": {
+      "type": "Text",
+      "props": {
+        "text": "Why: Notification suppression is correct for occasional empty days, but 12 days of silence means the entire monitoring channel went dark without anyone knowing.",
+        "variant": "muted"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_changes",
+        "text_changes_main",
+        "text_changes_pr34",
+        "text_changes_pr35"
+      ]
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "text_changes_main": {
+      "type": "Text",
+      "props": {
+        "text": "skills/fetch-tweets/SKILL.md: Step 5 now counts consecutive FETCH_TWEETS_EMPTY days from logs and sends an escalation notification on every 7th day"
+      }
+    },
+    "text_changes_pr34": {
+      "type": "Text",
+      "props": {
+        "text": "Closed PR #34 (same fix, but included volatile files causing immediate DIRTY status)"
+      }
+    },
+    "text_changes_pr35": {
+      "type": "Text",
+      "props": {
+        "text": "Re-applied cleanly in PR #35"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_impact",
+        "text_impact"
+      ]
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Operator will know within 7 days if social monitoring goes blind, instead of discovering it weeks later in the logs."
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_pr": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_pr",
+        "link_pr"
+      ]
+    },
+    "heading_pr": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Request",
+        "level": "h3"
+      }
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #35",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/35",
+        "source": "GitHub"
+      }
+    }
+  }
+}
