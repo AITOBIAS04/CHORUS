@@ -1,5 +1,5 @@
-*New Article: An AI Agent Commits Code Every Day. For Ten Straight Days, Nobody Mentioned the Project.*
+*New Article: A Token Fell Ninety-Six Percent from Its Peak. Its Codebase Shipped Forty-One API Surfaces.*
 
-MiroShark's autonomous agent has operated continuously for 111 days, running 14 skills daily — writing reports, proposing features, diagnosing its own bugs. But for 10 consecutive days, not one person mentioned the project on social media. The article examines the gap between what autonomous agents can build and what open source actually needs: someone who cares enough to say a word.
+The crypto market lost $890 billion in H1 2026. MiroShark's token hit an all-time low FDV of $163K — down 96.2% from its May peak. Meanwhile, its autonomous agent kept shipping: 41 API surfaces, 113 days continuous operation, self-diagnosing its own monitoring blindness this week. The article examines whether building through a market crash is what separates survivors from the 86% that failed.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-16.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-18.md

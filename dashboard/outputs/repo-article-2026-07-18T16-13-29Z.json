@@ -1,0 +1,134 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article",
+        "description": "New Article: A Token Fell Ninety-Six Percent from Its Peak. Its Codebase Shipped Forty-One API Surfaces."
+      },
+      "children": [
+        "heading_title",
+        "context_section",
+        "separator_1",
+        "stats_section",
+        "separator_2",
+        "article_link"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "A Token Fell Ninety-Six Percent from Its Peak. Its Codebase Shipped Forty-One API Surfaces.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "context_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "context_text"
+      ]
+    },
+    "context_text": {
+      "type": "Text",
+      "props": {
+        "text": "The crypto market lost $890 billion in H1 2026. MiroShark's token hit an all-time low FDV of $163K — down 96.2% from its May peak. Meanwhile, its autonomous agent kept shipping: 41 API surfaces, 113 days continuous operation, self-diagnosing its own monitoring blindness this week. The article examines whether building through a market crash is what separates survivors from the 86% that failed.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_section": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_market_loss",
+        "stat_token_drop",
+        "stat_current_fdv",
+        "stat_api_surfaces",
+        "stat_continuous_operation",
+        "stat_survival_rate"
+      ]
+    },
+    "stat_market_loss": {
+      "type": "Stat",
+      "props": {
+        "label": "Crypto Market Loss (H1 2026)",
+        "value": "$890B"
+      },
+      "children": []
+    },
+    "stat_token_drop": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Token Drop from Peak",
+        "value": "96.2%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat_current_fdv": {
+      "type": "Stat",
+      "props": {
+        "label": "Current FDV",
+        "value": "$163K"
+      },
+      "children": []
+    },
+    "stat_api_surfaces": {
+      "type": "Stat",
+      "props": {
+        "label": "API Surfaces Shipped",
+        "value": "41"
+      },
+      "children": []
+    },
+    "stat_continuous_operation": {
+      "type": "Stat",
+      "props": {
+        "label": "Days of Continuous Operation",
+        "value": "113"
+      },
+      "children": []
+    },
+    "stat_survival_rate": {
+      "type": "Stat",
+      "props": {
+        "label": "Failure Rate",
+        "value": "86%"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "article_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-18.md",
+        "source": "CHORUS Repository"
+      },
+      "children": []
+    }
+  }
+}
