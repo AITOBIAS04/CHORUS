@@ -1,12 +1,12 @@
-*Hyperstitions Idea — 2026-07-11*
+*Hyperstitions Idea — 2026-07-18*
 
-"Will MiroShark hold its first public community call or Twitter Space with 3+ distinct speakers by September 1, 2026?"
+"Will 5 distinct non-team accounts mention MiroShark on X/Twitter in any single calendar week by September 1, 2026?"
 
-The coordination play: MiroShark has 1,358 stars, 288 forks, and named contributors (aaronjmars, Daniel Andersen, Zarbel974) — but every single interaction has been asynchronous. PRs, commits, GitHub issues. Zero live conversation, ever. Someone needs to schedule a Space, invite speakers, and show up. The market is the scheduling pressure — its existence turns "we should do a call sometime" into "who is booking the room?"
+The coordination play: 1,368 people starred the repo. 290 forked it. For twelve consecutive days, not one of them mentioned the project anywhere public. This market surfaces that gap — and the easiest possible ask: just tweet. Tag the project, share a simulation, react to an article. Five people, one week. The AI agent ships code every day. It cannot tweet for you.
 
-Why now: Four Jul 15 hyperstitions expire in 4 days — 1,500 stars, HN front page, community surface, public instance — and none will clear. Stars are growing at +1/day. Social mentions have been dead for 5 consecutive days. The token sits at -94.7% from ATH with sell-side exhaustion. The project ships faster than almost any open-source repo (41 surfaces in 6 weeks, 8 articles in 10 days) but has zero human-to-human touchpoints. The next unlock is not another feature — it is the first real-time conversation between the people building this.
+Why now: Twelve consecutive days of zero social mentions (Jul 7–18) while the agent runs continuously and the project was just mapped as the only open-source queryable simulation layer among 37 AI simulation projects. FDV hit all-time low at $163K today. Technical completeness and social presence have never been further apart.
 
-Resolution: YES if a publicly accessible recording or archive exists of a live session (Twitter/X Space, Discord stage, YouTube/Twitch live, podcast, or video call) about MiroShark with at least 3 distinct speakers, by September 1, 2026. Verified by public link.
+Resolution: At least 5 unique X/Twitter accounts (excluding @miroshark_ and @aaronjmars) post an original tweet or quote tweet containing "MiroShark" or "$MIROSHARK" within any Monday 00:00 UTC to Sunday 23:59 UTC window. Verified via X search. Deadline: September 1, 2026.
 
 Scores: Reflexivity 5/5 | Viral 4/5
 
