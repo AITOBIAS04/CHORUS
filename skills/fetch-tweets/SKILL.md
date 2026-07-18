@@ -49,7 +49,18 @@ Today is ${today}. Search X for tweets matching **${var}**.
 
 4b. **Freshness gate (WebSearch only).** WebSearch favours high-engagement older content — tweets from months ago routinely pass the dedup filter because they were never reported recently. After dedup, check each remaining tweet's posted date (from the WebSearch snippet date, tweet text, or surrounding context). **Discard any tweet posted more than 14 days before ${today}.** Log discarded stale tweets: "Excluded N stale tweets (older than 14d): [URLs]". If you cannot determine a tweet's date and it looks like older high-engagement content (e.g. status IDs much lower than recent tweets, topics from months ago), discard it. If all remaining tweets are stale, proceed to step 5 (treated as empty).
 
-5. **If no relevant tweets found** (no results, API error, or empty after dedup/freshness filtering): log "FETCH_TWEETS_EMPTY" to `memory/logs/${today}.md` and **stop here — do NOT send any notification**.
+5. **If no relevant tweets found** (no results, API error, or empty after dedup/freshness filtering): log "FETCH_TWEETS_EMPTY" to `memory/logs/${today}.md`.
+
+   **Prolonged silence escalation:** Count consecutive days with FETCH_TWEETS_EMPTY by checking the last 14 days of `memory/logs/` for that marker. If today is the 7th, 14th, or 21st consecutive empty day (i.e. `consecutive_empty_days % 7 == 0`), send a single escalation notification via `./notify`:
+   ```
+   ⚠️ Social monitoring dark — ${consecutive_empty_days} consecutive days with zero fresh tweets found for ${var}.
+
+   The WebSearch fallback cannot surface recent tweets reliably. To restore coverage:
+   → Set XAI_API_KEY secret (enables direct X/Twitter search via Grok)
+
+   Last tweet reported: [date from logs, or "unknown"]
+   ```
+   If the count is NOT a multiple of 7, do NOT send any notification (stop here silently as before).
 
 6. **Save the results** (new tweets only) to `memory/logs/${today}.md`.
 
