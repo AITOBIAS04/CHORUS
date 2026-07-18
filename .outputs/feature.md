@@ -1,7 +1,5 @@
-Today's log already has a feature entry from an earlier run. The result is the same — no push access. This is the 54th consecutive block.
-
 ## Summary
 
-**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` (GH_GLOBAL secret not set). Stopped before picking a feature or cloning the repo, per the skill's preflight check. No notification sent.
+**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not set. This is the 54th consecutive block. Logged the skip to `memory/logs/2026-07-18.md` and stopped early per skill instructions (no feature picked, no repo cloned, no notification sent).
 
-This has been blocked since May 1 — the `GH_GLOBAL` secret needs to be configured with a PAT that has push access to the watched repo to unblock feature builds.
+To unblock: set the `GH_GLOBAL` repository secret with a PAT that has push access to `aaronjmars/MiroShark`. This would unblock 40+ features that have been built as local commits since June 3.
