@@ -1,0 +1,93 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-18",
+        "description": "miroshark-aeon — 2 substantive commits by aaronjmars (12 automation commits filtered)"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_section1",
+        "text_description",
+        "text_key_changes",
+        "pr_114",
+        "pr_115",
+        "validator_note",
+        "separator1",
+        "stat_files",
+        "link_full_recap"
+      ]
+    },
+    "heading_section1": {
+      "type": "Heading",
+      "props": {
+        "text": "Runtime Artifact Purge & .gitignore Hardening",
+        "level": "h3"
+      }
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "The agent's auto-commit uses git add -A, which had swept 20 transient files into the tree over time — notify body payloads (token reports, tweet digests, shiplogs, repo-pulse, changelogs) and 15 xAI API scratch JSONs. Two back-to-back PRs cleaned it all out and widened .gitignore so it can't recur."
+      }
+    },
+    "text_key_changes": {
+      "type": "Text",
+      "props": {
+        "text": "Key changes:",
+        "variant": "lead"
+      }
+    },
+    "pr_114": {
+      "type": "Text",
+      "props": {
+        "text": "PR #114: Removed stray memory/tweet-digest-notify.md that was breaking ci-okf validation (no type: frontmatter in a validated OKF root); added memory-scoped ignore rules"
+      }
+    },
+    "pr_115": {
+      "type": "Text",
+      "props": {
+        "text": "PR #115: Comprehensive sweep — replaced narrow root-anchored .gitignore rules with un-anchored globs (*-notify.md, .*-notify.md, notify-*.md, xai-*.json) that catch dated, dotfile, and subdirectory forms; purged all 20 accumulated strays"
+      }
+    },
+    "validator_note": {
+      "type": "Text",
+      "props": {
+        "text": "ci-okf validator unblocked: 131 OKF concepts now conform"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "22 files",
+        "delta": "+26/-82 lines"
+      }
+    },
+    "link_full_recap": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-18.md"
+      }
+    }
+  }
+}
