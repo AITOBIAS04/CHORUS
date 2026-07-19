@@ -1,10 +1,14 @@
-*MiroShark Daily — 2026-07-19*
+Done. This was a re-run of the token-report skill for 2026-07-19.
 
-Price: $0.000001723 (+3.3% 24h)
-Liquidity: $202.9K | 24h Vol: $1.2K
-Buys/Sells: 12/5
-7d: −16.1% | 30d: −66.0%
+## Summary
 
-FDV bounced to $172.3K from Jul 18 all-time low ($163.3K); 0x749fe1 bought ~500M tokens in two late-session bursts, but volume hit a new tracking low at $1.2K — early July averaged $10K+.
+**Token state at time of re-run:**
+- Price: $0.000001723 (+3.1% 24h) — bounce day after Jul 18 ATL of $163.3K FDV
+- FDV: $172,303 | LP: $203.3K | 24h Volume: $1,142 (new tracking low)
+- Buys/Sells: 11/5 — 0x749fe1 drove most buy-side volume in late-session accumulation
+- 7d: −16.1% | 30d: −66.0% | ATH: −96.1%
 
-Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
+**What happened in this re-run:**
+- Article `articles/token-report-2026-07-19.md` updated with minor metric corrections (24h change 3.3%→3.1%, LP $202.9K→$203.3K, volume $1.2K→$1.1K, H/L tightened to $1.723/$1.626 from Jul 18 candle)
+- Log entry appended to `memory/logs/2026-07-19.md`
+- Notification suppressed — first run already sent notification today

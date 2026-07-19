@@ -4,11 +4,11 @@
 
 | Metric | Value | 24h Change |
 |--------|-------|------------|
-| Price | $0.000001723 | +3.3% |
-| Liquidity | $202.9K | — |
-| 24h Volume | $1.2K | — |
-| 24h Buys/Sells | 12 / 5 | — |
-| 24h High/Low | $0.000001750 / $0.000001589 | — |
+| Price | $0.000001723 | +3.1% |
+| Liquidity | $203.3K | — |
+| 24h Volume | $1.1K | — |
+| 24h Buys/Sells | 11 / 5 | — |
+| 24h High/Low | $0.000001723 / $0.000001626 | — |
 | FDV | $172.3K | — |
 
 ## Trend
