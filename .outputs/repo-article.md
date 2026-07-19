@@ -1,5 +1,5 @@
-*New Article: One Human, One Bot, and One AI Agent Mass-Produced Eight Hundred Fifty Thousand Commits. Here Is What Three of Them Look Like.*
+*New Article: Twelve Hundred Dollars Traded in Twenty-Four Hours. Fourteen People Starred the Repo in the Same Window.*
 
-Researchers found 850,157 AI-authored commits across 180M repositories. MiroShark shows what the three-body maintenance triangle looks like in practice: one human doing architecture, one bot doing dependency bumps, one autonomous agent doing daily monitoring — and 291 forks that never contribute back. The shape of open source in 2026 is not a community. It is a triangle.
+MiroShark's token posted its lowest daily volume ever ($1,200) on the same day 14 developers starred the repo. The article explores the widening gap between speculative markets and utility signals — stars climbing through a 96% drawdown while crypto spot volume hits multi-year lows.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-18.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-19.md

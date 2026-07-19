@@ -1,0 +1,37 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Twelve Hundred Dollars Traded in Twenty-Four Hours. Fourteen People Starred the Repo in the Same Window."
+      },
+      "children": [
+        "text-p1",
+        "text-p2",
+        "story-link"
+      ]
+    },
+    "text-p1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's token posted its lowest daily volume ever ($1,200) on the same day 14 developers starred the repo."
+      }
+    },
+    "text-p2": {
+      "type": "Text",
+      "props": {
+        "text": "The article explores the widening gap between speculative markets and utility signals — stars climbing through a 96% drawdown while crypto spot volume hits multi-year lows."
+      }
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "repo-article-2026-07-19.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-19.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
