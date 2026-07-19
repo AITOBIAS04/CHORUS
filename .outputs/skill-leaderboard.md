@@ -1,15 +1,19 @@
+Done. Here's the summary:
+
 ## Summary
 
-Skill-leaderboard ran and confirmed data from the earlier execution today:
+**Skill Leaderboard — 2026-07-19**
 
-**Fleet state (2026-07-12):**
-- **Active Aeon forks:** 1 — `AITOBIAS04/CHORUS` (pushed today at 18:55 UTC)
-- **CHORUS enabled skills:** 14 (unchanged — token-report, fetch-tweets, repo-pulse, push-recap, project-lens, repo-actions, repo-article, self-improve, weekly-shiplog, hyperstitions-ideas, feature, heartbeat, memory-flush, skill-leaderboard)
-- **Source enabled skills:** 7 — repo-pulse, token-movers, changelog, fetch-tweets, shiplog, memory-flush, heartbeat
-- **Adoption gaps (in source, not CHORUS):** 3 — `token-movers`, `changelog`, `shiplog`
-- **CHORUS extras:** 10 skills enabled beyond what source runs
-- **MiroShark sim forks:** ~31 active (30d window); none have `aeon.yml` — expected
+**Fleet scan results:**
+- **MiroShark sim-tool forks:** 29 active in the 30-day window (down from 32 last week). New entrants: swarm-ai-research and Afristrat (both pushed today), Codeblackbyshazzy (Jul 17), Niklas-Schmidt (Jul 18).
+- **Aeon runtime forks (miroshark-aeon):** 1 active fork — AITOBIAS04/CHORUS, 14 skills enabled, unchanged.
 
-**Notification:** Not sent — `SKILL_LEADERBOARD_INSUFFICIENT_DATA` (need ≥2 Aeon forks with readable `aeon.yml`; fleet is still a single-instance operation). Eleventh consecutive week at threshold.
+**Key finding this week:** The source repo (`aaronjmars/miroshark-aeon`) disabled `repo-pulse`, dropping from 7 to 6 enabled skills. CHORUS still runs it daily. This pushed CHORUS's extra-vs-source count from 10 to 11.
 
-The existing article `articles/skill-leaderboard-2026-07-12.md` was accurate; no overwrite needed. Log updated with re-run confirmation.
+**Adoption gaps remain 3:** `token-movers`, `changelog`, and `shiplog` — same composition as last week.
+
+**Notification:** Skipped (SKILL_LEADERBOARD_INSUFFICIENT_DATA — requires ≥2 Aeon forks with readable `aeon.yml`; 11th consecutive week at threshold).
+
+**Files created/modified:**
+- `articles/skill-leaderboard-2026-07-19.md` — full leaderboard article
+- `memory/logs/2026-07-19.md` — appended skill-leaderboard log entry

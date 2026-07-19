@@ -512,3 +512,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-19,push-recap,claude-opus-4-6,17,10964,942277,62688
 2026-07-19,repo-article,claude-opus-4-6,22,6871,990502,46112
 2026-07-19,push-recap,claude-opus-4-6,9,3422,330295,33595
+2026-07-19,skill-leaderboard,claude-sonnet-4-6,1562,10843,906447,46936
