@@ -1,12 +1,14 @@
-*Push Recap — 2026-07-18*
-miroshark-aeon — 2 substantive commits by aaronjmars (12 automation commits filtered)
+*Push Recap — 2026-07-19*
+miroshark-aeon — 2 substantive commits by aaronjmars (9 automation filtered)
 
-Runtime Artifact Purge & .gitignore Hardening: The agent's auto-commit uses git add -A, which had swept 20 transient files into the tree over time — notify body payloads (token reports, tweet digests, shiplogs, repo-pulse, changelogs) and 15 xAI API scratch JSONs. Two back-to-back PRs cleaned it all out and widened .gitignore so it can't recur.
+Runtime Artifact Purge & .gitignore Hardening: Two PRs cleaned out 20 stray files that had leaked into the repo via git add -A auto-commits — notify body payloads, xAI API scratch JSON, and dated digests. The .gitignore was widened from narrow root-anchored rules to un-anchored glob patterns that catch all current and future variants, including dated filenames, dotfiles, and subdirectory forms.
+
+CI Validator Unblocked: A transient notify body (tweet-digest-notify.md) in memory/ lacked the type: frontmatter required by ci-okf (OKF v0.1 §9.1), breaking the validator. Removed the stray file and added .gitignore guards so notify bodies can never leak into validated OKF roots again. 131 concepts now conform.
 
 Key changes:
-- PR #114: Removed stray memory/tweet-digest-notify.md that was breaking ci-okf validation (no type: frontmatter in a validated OKF root); added memory-scoped ignore rules
-- PR #115: Comprehensive sweep — replaced narrow root-anchored .gitignore rules with un-anchored globs (*-notify.md, .*-notify.md, notify-*.md, xai-*.json) that catch dated, dotfile, and subdirectory forms; purged all 20 accumulated strays
-- ci-okf validator unblocked: 131 OKF concepts now conform
+- Removed 20 files: 5 notify bodies (token-report, tweet-digest, shiplog, changelog, repo-pulse), 13 xAI API request/response JSON, 2 xAI scratch in memory/
+- .gitignore: root-anchored /notify-token-report.md replaced with un-anchored *-notify.md, .*-notify.md, notify-*.md + new xai-*.json pattern
+- ci-okf validator green at 131 concepts
 
 Stats: 22 files changed, +26/-82 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-18.md
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-19.md

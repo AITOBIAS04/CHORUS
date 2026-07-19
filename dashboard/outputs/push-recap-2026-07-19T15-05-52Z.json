@@ -1,0 +1,188 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-19"
+      },
+      "children": [
+        "byline",
+        "sep1",
+        "section1_heading",
+        "section1_desc",
+        "section1_details",
+        "sep2",
+        "section2_heading",
+        "section2_desc",
+        "sep3",
+        "changes_heading",
+        "changes_items",
+        "sep4",
+        "stats_section",
+        "sep5",
+        "link_section"
+      ]
+    },
+    "byline": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 2 substantive commits by aaronjmars (9 automation filtered)",
+        "variant": "caption"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Runtime Artifact Purge & .gitignore Hardening",
+        "level": "h2"
+      }
+    },
+    "section1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Two PRs cleaned out 20 stray files that had leaked into the repo via git add -A auto-commits — notify body payloads, xAI API scratch JSON, and dated digests. The .gitignore was widened from narrow root-anchored rules to un-anchored glob patterns that catch all current and future variants, including dated filenames, dotfiles, and subdirectory forms."
+      }
+    },
+    "section1_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "section1_detail1",
+        "section1_detail2"
+      ]
+    },
+    "section1_detail1": {
+      "type": "Text",
+      "props": {
+        "text": "Removed: notify body payloads, xAI API scratch JSON, dated digests",
+        "variant": "body"
+      }
+    },
+    "section1_detail2": {
+      "type": "Text",
+      "props": {
+        "text": ".gitignore improvements: from narrow root-anchored rules to un-anchored glob patterns that catch all current and future variants, including dated filenames, dotfiles, and subdirectory forms."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CI Validator Unblocked",
+        "level": "h2"
+      }
+    },
+    "section2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "A transient notify body (tweet-digest-notify.md) in memory/ lacked the type: frontmatter required by ci-okf (OKF v0.1 §9.1), breaking the validator. Removed the stray file and added .gitignore guards so notify bodies can never leak into validated OKF roots again. 131 concepts now conform."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h2"
+      }
+    },
+    "changes_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "Removed 20 files: 5 notify bodies (token-report, tweet-digest, shiplog, changelog, repo-pulse), 13 xAI API request/response JSON, 2 xAI scratch in memory/",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": ".gitignore: root-anchored /notify-token-report.md replaced with un-anchored *-notify.md, .*-notify.md, notify-*.md + new xai-*.json pattern",
+        "variant": "body"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "ci-okf validator green at 131 concepts",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat1",
+        "stat2"
+      ]
+    },
+    "stat1": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "22"
+      }
+    },
+    "stat2": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines",
+        "value": "+26/-82"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_section": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-19.md"
+      }
+    }
+  }
+}
