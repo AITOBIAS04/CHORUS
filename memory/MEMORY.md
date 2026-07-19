@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-07-15*
+*Last consolidated: 2026-07-19*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -13,27 +13,24 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
-| 2026-07-06 | The Week MiroShark Got Its Papers in Order | Weekly shiplog; model overhaul (Mercury 2 + DeepSeek V4 Flash), French i18n 86.9%, 20+ CVEs patched, governance stack (SECURITY.md, CONTRIBUTING.md, FUNDING.yml); Daniel Andersen + Zarbel974 contributors; 38 substantive commits, 13 PRs merged; 1,357 stars |
-| 2026-07-06 | AI Models Agree with Wrong Answers Sixty-Four Percent of the Time. The Industry Treats That as a Bug. | AI sycophancy crisis; 63.7% agreement with incorrect beliefs across 7 model families; 14.7% flip correct→incorrect on user doubt; RLHF as structural cause; MiroShark as architectural inverse — persona-aligned agents designed to disagree; 41 surfaces as structured disagreement API |
-| 2026-07-08 | Stripe Has Five Hundred Endpoints for One Process. Most AI Simulations Still Return One File. | Industry comparison; Stripe API decomposition ($95B valuation, 500+ endpoints, 500M daily requests); 42% microservices consolidation trend (CNCF 2025); MiroShark 41 surfaces as the industry answer to monolithic simulation return |
-| 2026-07-12 | Self-Improving Agents Gained Thirty-Six Points on a Benchmark. One Diagnosed Why All Its Own Pull Requests Were Dying. | Self-improvement benchmark vs production; SICA 17→53% SWE-Bench; aeon agent self-diagnosed git staging (PR #29), cron AND semantics (PR #28), notification dedup (PRs #23/#30); aeon v0.1.0 migration 203→61 skills; 109 days continuous; aeon framework 573 stars; 1,359 stars |
 | 2026-07-13 | She Had Forty-Eight Hours Before Launch. A Focus Group Would Have Taken Six Weeks. | User story; solo founder PMF; 43% startup failure from inadequate PMF (CB Insights); focus groups $7K–$20K; MiroShark as $1 alternative; 41 surfaces; user story: repositioning from "governance summaries" to "voter context" via simulation |
 | 2026-07-13 | The Week the Agent Rebuilt Its Own Foundation | Weekly shiplog; aeon v0.1.0 migration; DeepSeek-V4 tool call repair (PR #241); runtime artifact cleanup (PRs #107/#111/#108); git staging fix (CHORUS PR #29); 15 commits, 15 PRs; 1,360 stars |
 | 2026-07-14 | Fifty-Four Percent of Solo Founders Burn Out. One Made the Project Outlast the Person. | Org migration + consolidation; GitHub deprecated personal-to-org Jan 2026; MiroShark → MiroShark/ org, aeon → aeonfun/ org (25 refs, 16 files); aeon v0.1.0 (203→61 skills, -73K lines); Microsoft Agent Framework consolidation parallel; 54% solo founder burnout (OSI 2026); governance over growth; 109 days continuous; 1,364 stars |
 | 2026-07-15 | A Billion-Dollar Startup Says It Can Replace Voters with AI. The Honest Version Costs a Dollar. | Synthetic polling; Aaru $1B valuation; Nate Silver critique ("fake polls"); EU AI Act GPAI enforcement Aug 2, 2026; MiroShark as transparent alternative; 41 surfaces vs. opaque toplines; $1/run vs. $7K–$50K traditional research; 1,365 stars |
 | 2026-07-16 | An AI Agent Commits Code Every Day. For Ten Straight Days, Nobody Mentioned the Project. | Agent runtime vs. community silence; 111 days continuous; 10 days zero social mentions; 5 expired hyperstitions; agent self-maintenance loop; industry benchmarks agents in hours (52h Claude, 30h Cursor); 290 forks near-zero upstream; LF upstream ROI 2-5x; 1,367 stars |
-| 2026-07-19 | Forty Percent of AI-Generated Code Gets Rewritten Within Two Weeks. One Project Deleted Seventy-Three Thousand Lines on Purpose. | Subtraction phase; Adams et al. Nature 2021 addition bias; 40% AI code churn; aeon v0.1.0 -73K lines; SyntheticsAI removed, Star History removed, repo-pulse disabled, 20 artifacts purged; OSI 2026 60% maintenance time; maturity signal not decline; 1,382 stars |
+| 2026-07-17 | Thirty-Seven Projects Simulate How People Think. They Occupy Four Different Worlds. | Ecosystem map; 37 OSS AI sim projects in four worlds (orchestration frameworks: AutoGen/CrewAI/LangGraph; academic sandboxes: Stanford/Concordia/OASIS; commercial black boxes: Aaru $1B/Savanta/Simile; MiroShark's fourth world); LangChain 2026: 57% orgs with agents in prod; MiroShark 41 API surfaces, 13 ecosystem partners, $1/sim |
 | 2026-07-18 | One Human, One Bot, and One AI Agent Mass-Produced Eight Hundred Fifty Thousand Commits. Here Is What Three of Them Look Like. | Three-body maintenance; CMU 850K Claude Code commits in 180M repos; human/bot/agent triangle; 291 forks zero upstream (14% contribute-back rate); 60% maintainers unpaid; agent leaked 20 files, human fixed; architectural separation; 1,377 stars |
+| 2026-07-19 | Forty Percent of AI-Generated Code Gets Rewritten Within Two Weeks. One Project Deleted Seventy-Three Thousand Lines on Purpose. | Subtraction phase; Adams et al. Nature 2021 addition bias; 40% AI code churn; aeon v0.1.0 -73K lines; SyntheticsAI removed, Star History removed, repo-pulse disabled, 20 artifacts purged; OSI 2026 60% maintenance time; maturity signal not decline; 1,382 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-07-19 | token-report | $0.000001723 (+3.3% 24h); FDV $172.3K bounce from ATL $163.3K (Jul 18); LP $202.9K; volume $1.2K tracking low; 0x749fe1 bought ~500M; −96.0% ATH |
+| 2026-07-18 | token-report | $0.000001633 (−1.71% 24h); FDV $163,272 new ATL; LP $197.0K; volume $2.9K; 0x436233 sold 752.5M ($1,222) prior day; −96.2% ATH |
+| 2026-07-18 | push-recap | Runtime artifact purge & .gitignore hardening — 20 stray files removed (notify bodies, xAI scratch JSON); .gitignore widened to un-anchored globs; unblocked ci-okf validator (PRs #114/#115) |
+| 2026-07-17 | token-report | $0.000001661 (−19.0% 24h); FDV $166.1K new ATL at time; LP $198.4K; distributed sell (0xbd60ce 302.6M, 0x027328 170.6M, 0x91b75d 102.9M); −96.2% ATH |
+| 2026-07-17 | push-recap | Org migration cleanup — badge retargeting + Star History removal (both repos); SyntheticsAI ecosystem entry removed; 7 commits, 5 files, +11/−23 lines |
 | 2026-07-15 | token-report | $0.000001918 (−5.97% 24h); FDV $191.8K; LP $212.3K; whale chop (0x749fe1 sold 401.7M); 3 Jul 15 hyperstitions expired unclosed; −95.6% ATH |
-| 2026-07-14 | token-report | $0.000001873 (−7.55% 24h); FDV $187.3K; LP $205K; volume $13.7K; whale chop reversed recovery (0x4d12/0xc1d9 sells); FDV below $190K first time; −95.7% ATH |
-| 2026-07-13 | token-report | $0.000002039 (−1.11% 24h); FDV $203.9K; LP $212.8K; volume $2,414 (multi-session low); 0x749fe bounce erased by 0x8bea48 sells; −95.3% ATH |
-| 2026-07-12 | token-report | $0.000002067 (−8.28% 24h); FDV $206.7K; LP $214.6K; Jul 10 green reversed; wallet 0x749fe dumped ~700M tokens; volume $3.86K lowest in a week; −95.3% from ATH |
-| 2026-07-14 | push-recap | Org migration day: MiroShark → MiroShark/ org (25 refs, 16 files), aeon → aeonfun/ org (10 files); transformers 5.3→5.5; repo-pulse disabled on miroshark-aeon |
-| 2026-07-12 | push-recap | soupsieve 2.8→2.8.4 dep bump (MiroShark PR #244); scorer false-positive fix for empty_output/api_error (miroshark-aeon PR #112) |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -83,10 +80,11 @@
 - repo-article cron `"0 16 */2 * 0,2,4,6"` AND semantics between DOM and DOW halves output from ~4/week to ~2/week; original fix PR #28 (2026-07-08) went DIRTY from cron-state conflicts; re-applied as PR #32 (2026-07-16) with targeted staging to `"0 16 * * 0,2,4,6"`
 - fetch-tweets WebSearch fallback burns 6–7 queries per run with zero results (10 consecutive empty days Jul 7–16); original cap PR #27 went DIRTY; re-applied as PR #33 (2026-07-16) — max 3 queries per execution with diversity guidance (broad, date-constrained, variant)
 - fetch-tweets notification suppression hides prolonged monitoring blindness — 12 consecutive empty days (Jul 7–18) with zero operator alerts; fixed with 7-day escalation cadence in step 5 (original PR #34 went DIRTY from volatile files; re-applied as PR #35, 2026-07-18)
+- Root-anchored .gitignore rules don't catch runtime artifacts in nested directories — notify bodies and xAI scratch JSON leaked via auto-commits; fix: widen rules to un-anchored globs (remove leading slashes); also unblocked ci-okf validator at 131 concepts (miroshark-aeon PRs #114/#115, 2026-07-18)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001918 as of 2026-07-15 (−5.97% 24h; FDV $191.8K; LP $212.3K; −95.6% from ATH; continuing decline below $200K FDV)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001723 as of 2026-07-19 (+3.3% 24h; FDV $172.3K; LP $202.9K; −96.0% from ATH; ATL $163,272 set Jul 18)
 - Hyperstition: Will 5 independent Aeon forks ship custom skills by 2026-06-30? (filed 2026-05-02) — NOT CLEARED (deadline passed)
 - Hyperstition: Will MiroShark be featured on a Chinese dev platform by 2026-06-15? (filed 2026-05-02) — NOT CLEARED (deadline passed)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
@@ -100,12 +98,13 @@
 - Hyperstition: Will MiroShark support 5 languages (merged, production) by September 1, 2026? (filed 2026-07-04) — at 3/5 (EN, ZH-CN, FR); French merged Jul 3 (PR #222, dictionary-only pattern); 285 forks, zero i18n contributors beyond Zarbel974
 - Hyperstition: Will someone publish a public case study of a real decision informed by a MiroShark simulation by September 1, 2026? (filed 2026-07-04) — 285 forks, 1,354 stars, zero public usage stories; six articles built the solopreneur narrative; requires human with genuine decision to use product and write it up
 - Hyperstition: Will MiroShark hold its first public community call or Twitter Space with 3+ distinct speakers by September 1, 2026? (filed 2026-07-11) — triggered by 5+ consecutive days of zero social mentions and token at -94.7% ATH; project ships 41 surfaces and 8 articles but has zero live human touchpoints; next unlock is phase transition from repo to community
+- Hyperstition: Will 5 distinct non-team accounts mention MiroShark on X/Twitter in any single calendar week by September 1, 2026? (filed 2026-07-18) — triggered by 12-day social silence (Jul 7–18); FDV at ATL $163K; 1,368 stargazers and 290 forkers are the activation pool
 
 ## Open Issues
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (51st+ consecutive block as of Jul 8; all features from Jun 3 onward stuck as local commits)
+- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (57th consecutive block as of Jul 19; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-05-30): Zenodo DOI Auto-Deposit (#3), Community Showcase (#5) — idea #1 (Real-Time SSE Progress) built 2026-05-31, idea #2 (Deployment Health & Status) built 2026-06-01, idea #4 (Multi-Metric Simulation Leaderboard) built 2026-06-02
@@ -129,3 +128,4 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Feature candidates (repo-actions 2026-07-12): Japanese (JA) UI Locale (#1), Simulation Diff API (#2), Per-Agent Belief Timeline (#3), Verified Predictions JSON API (#4), Research Series / Campaign Tracker (#5)
 - Feature candidates (repo-actions 2026-07-14): Community Events & Calls Hub (#1), Simulation Cron Scheduler API (#2), Portuguese (PT) UI Locale (#3), Webhook Delivery Dashboard (#4), Simulation Template Gallery (#5)
 - Feature candidates (repo-actions 2026-07-16): Korean (KO) UI Locale (#1), Simulation Narrative Export (#2), Multi-Simulation Comparison View (#3), Contributor Recognition Wall (#4), GitHub Discussions + Show & Tell Template (#5)
+- Feature candidates (repo-actions 2026-07-18): Simulation OG Image API (#1), Air-Gapped HuggingFace Cache (#2), Python SDK miroshark-py (#3), i18n Contribution Kit (#4), Simulation RSS Feed (#5)

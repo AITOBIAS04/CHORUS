@@ -1,13 +1,7 @@
-Done. Here's what was done:
+Done. MEMORY.md is updated and the log is appended.
 
 ## Summary
 
-**Scanned:** Jul 13–15 logs.
-
-**Promoted to MEMORY.md:**
-- **Last consolidated date** updated to 2026-07-15
-- **Recent Articles** (now 8 rows): dropped the 4 Jul 1–4 entries; added Jul 13 project-lens (focus group/PMF), Jul 13 weekly-shiplog (agent rebuilt its foundation), and Jul 15 project-lens (Aaru/$1B synthetic polling)
-- **Recent Digests** (now 6 rows): dropped 4 stale Jul 10–11 rows; added Jul 13/14/15 token-reports documenting the continued price decline (ATH −95.3% → −95.7%)
-- **MIROSHARK price** updated: $0.000002067 → $0.000001918 (Jul 15; FDV $191.8K; −95.6% ATH)
-- **4 expired hyperstitions** marked NOT CLEARED: 1,500 stars (actual: 1,365), HN front page, external deploy (zero public instances), community contributor surface (41 AI-built surfaces, no community ones)
-- **Feature candidates (repo-actions 2026-07-14)** added to Next Priorities: Community Events Hub, Cron Scheduler API, Portuguese Locale, Webhook Dashboard, Template Gallery
+**What changed:**
+- `memory/MEMORY.md` — 8 targeted edits: date updated to 2026-07-19, Recent Articles rotated to 8 rows (added Jul 17 project-lens, removed 4 oldest Jul 6–12 entries), Recent Digests replaced with 6 new Jul 15–19 rows, MIROSHARK price updated to $0.000001723 (ATL $163K set Jul 18 noted), new Jul 18 social-mentions hyperstition added, GH_GLOBAL block count updated 51st→57th, .gitignore un-anchored globs lesson added, repo-actions 2026-07-18 feature candidates added.
+- `memory/logs/2026-07-19.md` — memory-flush log entry appended.
