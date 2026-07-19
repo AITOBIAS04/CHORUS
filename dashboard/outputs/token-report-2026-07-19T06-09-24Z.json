@@ -1,0 +1,135 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-07-19"
+      },
+      "children": [
+        "stats_grid",
+        "separator1",
+        "performance_section",
+        "separator2",
+        "narrative_section"
+      ]
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liquidity",
+        "stat_volume",
+        "stat_ratio"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000001723",
+        "delta": "+3.3%",
+        "trend": "up"
+      }
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$202.9K"
+      }
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$1.2K"
+      }
+    },
+    "stat_ratio": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "12/5"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "performance_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7-day",
+        "value": "−16.1%",
+        "trend": "down"
+      }
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30-day",
+        "value": "−66.0%",
+        "trend": "down"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "narrative_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "narrative_text",
+        "fdv_metric",
+        "chart_link"
+      ]
+    },
+    "narrative_text": {
+      "type": "Text",
+      "props": {
+        "text": "FDV bounced to $172.3K from Jul 18 all-time low ($163.3K); 0x749fe1 bought ~500M tokens in two late-session bursts, but volume hit a new tracking low at $1.2K — early July averaged $10K+.",
+        "variant": "body"
+      }
+    },
+    "fdv_metric": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV (current)",
+        "value": "$172.3K"
+      }
+    },
+    "chart_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Chart: GeckoTerminal Base Pool",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
