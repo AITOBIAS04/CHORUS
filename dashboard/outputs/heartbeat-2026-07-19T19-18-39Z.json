@@ -1,0 +1,107 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-07-19 19:00 UTC"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "health_stack",
+        "separator1",
+        "pr_alert",
+        "separator2",
+        "summary_stack"
+      ]
+    },
+    "health_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skills_stat",
+        "consecutive_failures_text",
+        "sunday_skills_text"
+      ]
+    },
+    "skills_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Healthy",
+        "value": "14/14"
+      }
+    },
+    "consecutive_failures_text": {
+      "type": "Text",
+      "props": {
+        "text": "Consecutive failures: 0",
+        "variant": "caption"
+      }
+    },
+    "sunday_skills_text": {
+      "type": "Text",
+      "props": {
+        "text": "All expected Sunday skills ran",
+        "variant": "body"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "PR Stalled >24h: #35",
+        "message": "improve: add prolonged silence escalation to fetch-tweets — open since Jul 18 15:00 UTC (~28h). Waiting for merge. No conflicts. Self-improve auto-merge threshold is 48h, so eligible tomorrow."
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "summary_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "no_missing_text",
+        "no_issues_text"
+      ]
+    },
+    "no_missing_text": {
+      "type": "Text",
+      "props": {
+        "text": "No missing skills",
+        "variant": "body"
+      }
+    },
+    "no_issues_text": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues",
+        "variant": "body"
+      }
+    }
+  }
+}

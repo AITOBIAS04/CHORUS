@@ -1,10 +1,7 @@
-**HEARTBEAT_OK** — second run of the day at 20:42 UTC. All 9 expected Saturday skills ran successfully, PR #35 is not yet stalled, no open issues, no escalations needed. Logged to `memory/logs/2026-07-18.md`.
+Heartbeat — 2026-07-19 19:00 UTC
 
-## Summary
+All 14 skills healthy (consecutive_failures=0). All expected Sunday skills ran.
 
-- Read `memory/MEMORY.md`, `memory/cron-state.json`, `memory/issues/INDEX.md`, and the last 2 days of logs
-- **System health:** all 14 skills at `consecutive_failures: 0` — fully healthy
-- **Skills:** all 9 expected Saturday skills confirmed completed; 4 not scheduled today
-- **PRs:** 1 open (PR #35, ~5.7h old — below 24h stall threshold)
-- **Issues:** none open; no escalations
-- Appended HEARTBEAT_OK log entry to `memory/logs/2026-07-18.md`
+⚠️ PR stalled >24h: #35 "improve: add prolonged silence escalation to fetch-tweets" — open since Jul 18 15:00 UTC (~28h). Waiting for merge. No conflicts; self-improve auto-merge threshold is 48h, so eligible tomorrow.
+
+No missing skills. No open issues.
