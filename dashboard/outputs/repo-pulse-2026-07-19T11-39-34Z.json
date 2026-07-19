@@ -1,0 +1,96 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-07-19"
+      },
+      "children": [
+        "repo-name",
+        "stats-section",
+        "separator",
+        "new-forks-heading",
+        "new-forks-list"
+      ]
+    },
+    "repo-name": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stars-stat",
+        "forks-stat"
+      ]
+    },
+    "stars-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1381",
+        "delta": "+13",
+        "trend": "up"
+      }
+    },
+    "forks-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "292",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "new-forks-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New forks",
+        "level": "h3"
+      }
+    },
+    "new-forks-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "fork-1",
+        "fork-2"
+      ]
+    },
+    "fork-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "veridian69/miroshark",
+        "href": "https://github.com/veridian69/miroshark",
+        "source": "GitHub"
+      }
+    },
+    "fork-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Niklas-Schmidt/miroshark",
+        "href": "https://github.com/Niklas-Schmidt/miroshark",
+        "source": "GitHub"
+      }
+    }
+  }
+}
