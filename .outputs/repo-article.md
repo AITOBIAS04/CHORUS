@@ -1,5 +1,5 @@
-*New Article: Twelve Hundred Dollars Traded in Twenty-Four Hours. Fourteen People Starred the Repo in the Same Window.*
+*New Article: Forty Percent of AI-Generated Code Gets Rewritten Within Two Weeks. One Project Deleted Seventy-Three Thousand Lines on Purpose.*
 
-MiroShark's token posted its lowest daily volume ever ($1,200) on the same day 14 developers starred the repo. The article explores the widening gap between speculative markets and utility signals — stars climbing through a 96% drawdown while crypto spot volume hits multi-year lows.
+A Nature study found people systematically default to addition — even when subtraction is the better solution. MiroShark spent its quietest week doing the opposite: cutting 73,000 lines in aeon v0.1.0, removing a phantom ecosystem partner, stripping vanity metrics from the README, and purging twenty leaked runtime artifacts. The project got lighter without getting smaller — a maturity signal that addition bias makes almost impossible to see.
 
 Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-19.md

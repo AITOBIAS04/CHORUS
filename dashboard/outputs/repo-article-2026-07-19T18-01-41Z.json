@@ -1,0 +1,53 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article"
+      },
+      "children": [
+        "heading_title",
+        "separator_1",
+        "text_description",
+        "separator_2",
+        "story_link"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Forty Percent of AI-Generated Code Gets Rewritten Within Two Weeks. One Project Deleted Seventy-Three Thousand Lines on Purpose.",
+        "level": "h2"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "A Nature study found people systematically default to addition — even when subtraction is the better solution. MiroShark spent its quietest week doing the opposite: cutting 73,000 lines in aeon v0.1.0, removing a phantom ecosystem partner, stripping vanity metrics from the README, and purging twenty leaked runtime artifacts. The project got lighter without getting smaller — a maturity signal that addition bias makes almost impossible to see.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-19.md",
+        "source": "repo-article"
+      }
+    }
+  }
+}
