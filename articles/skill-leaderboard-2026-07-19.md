@@ -42,27 +42,27 @@ With one active Aeon fork, all 14 enabled skills qualify at 100% adoption. CHORU
 - **Housekeeping:** heartbeat, memory-flush
 - **Self-monitoring:** skill-leaderboard
 
-CHORUS now runs 11 skills that are disabled in the source — up from 10 last week, as the source dropped `repo-pulse`.
+CHORUS now runs 11 skills that are disabled in the source — repo-pulse, changelog, and token-report all departed the source stack this week or prior.
 
 ---
 
 ## Adoption Gaps
 
-Skills enabled in the source (`aaronjmars/miroshark-aeon`) but not enabled in CHORUS — **3 total** (same count as last week; same composition):
+Skills enabled in the source (`aaronjmars/miroshark-aeon`) but not enabled in CHORUS — **2 total** (down from 3 last week; changelog dropped from source):
 
 | Skill | Notes |
 |-------|-------|
 | `token-movers` | Source's market-movers skill (CoinGecko scan + single-token deep report). CHORUS retains the older `token-report` instead. |
-| `changelog` | Converts newly-merged PRs into changelog entries; pushes to miroshark-website. Present in CHORUS aeon.yml but disabled. Requires `GH_GLOBAL`. |
-| `shiplog` | Source's shipping log (cross-repo PR/commit digest). CHORUS uses `weekly-shiplog` (renamed equivalent, runs Monday 14:30 UTC). Functional overlap, different skill entry. |
+| `shiplog` | Source's cross-repo shipping digest (Mon/Thu). CHORUS uses `weekly-shiplog` (functional equivalent, runs Monday 14:30 UTC). Different skill entry, same purpose. |
 
 **Source skill changes since 2026-07-12:**
 
 | Change | Skill |
 |--------|-------|
 | ➖ Disabled in source | `repo-pulse` |
+| ➖ Disabled in source | `changelog` |
 
-The source quietly disabled `repo-pulse` this week. CHORUS still runs it daily at 10:00 UTC. The source now has 6 enabled skills (down from 7).
+The source dropped two skills this week: `repo-pulse` (already noted in the Jul 12 → Jul 19 interim) and `changelog`. The source now runs 5 enabled skills, down from 7. CHORUS still runs `repo-pulse` daily; `changelog` was never enabled in CHORUS (requires `GH_GLOBAL`).
 
 ---
 
@@ -76,17 +76,17 @@ Compared to the 2026-07-12 leaderboard:
 
 **Rank changes:** None — all 14 skills hold positions
 
-**Adoption gaps:** 3 → 3 (unchanged count; same composition — token-movers, changelog, shiplog)
+**Adoption gaps:** 3 → 2 (changelog dropped from source; token-movers and shiplog remain)
 
-**CHORUS-only extras:** 10 → 11 (source dropped repo-pulse; CHORUS still runs it)
+**CHORUS-only extras:** 10 → 11 (repo-pulse departed source; CHORUS still runs it)
 
-**Source enabled skills:** 7 → 6 (repo-pulse disabled in source)
+**Source enabled skills:** 7 → 5 (repo-pulse and changelog both disabled this week)
 
-**MiroShark sim-tool forks (30d window):** 29 active (down from 32 last week — rolling window effect; new entries this week: swarm-ai-research, Afristrat, Codeblackbyshazzy, Niklas-Schmidt)
+**MiroShark sim-tool forks (30d window):** 29 active (down from 32 last week — rolling window effect; active this week: swarm-ai-research, Afristrat, Codeblackbyshazzy, Niklas-Schmidt, praxstack, nothingtosurprise, khondhaker)
 
-**Stars / forks:** 1,382 stars, 290+ forks (up from ~1,377 / ~288 as of Jul 12)
+**Stars / forks:** 1,382 stars, 293 forks (up from ~1,377 / ~288 as of Jul 12)
 
-**Notification status:** SKILL_LEADERBOARD_INSUFFICIENT_DATA for the eleventh consecutive week (1 Aeon fork, need ≥2)
+**Notification status:** SKILL_LEADERBOARD_INSUFFICIENT_DATA for the twelfth consecutive week (1 Aeon fork, need ≥2)
 
 ---
 
@@ -94,7 +94,7 @@ Compared to the 2026-07-12 leaderboard:
 
 The leaderboard scans two layers:
 
-**Layer 1 — MiroShark sim-tool forks (`aaronjmars/MiroShark`):** 29 active forks in the 30-day window. These fork the simulation product (frontend + backend), not the Aeon agent runtime. None have `aeon.yml` — expected. Newly active this week: swarm-ai-research (pushed today), Afristrat (pushed today), Codeblackbyshazzy (Jul 17), Niklas-Schmidt (Jul 18).
+**Layer 1 — MiroShark sim-tool forks (`aaronjmars/MiroShark`):** 29 active forks in the 30-day window. These fork the simulation product (frontend + backend), not the Aeon agent runtime. None have `aeon.yml` — expected.
 
 **Layer 2 — Aeon runtime forks (`aaronjmars/miroshark-aeon`):** 1 active fork with readable `aeon.yml`:
 
@@ -102,7 +102,7 @@ The leaderboard scans two layers:
 |------|---------|----------|----------------|-----------|
 | AITOBIAS04/CHORUS | Yes | ✓ | 14 | 2026-07-19 (today) |
 
-The source repo catalogs 200+ skills but enables only 6 by default. CHORUS enables 14 — the broadest stack in the fleet.
+The source repo catalogs 200+ skills but enables only 5 by default (down from 7 last week — changelog and repo-pulse disabled). CHORUS enables 14 — the broadest stack in the fleet.
 
 ---
 
@@ -114,10 +114,10 @@ The source repo catalogs 200+ skills but enables only 6 by default. CHORUS enabl
 - **Aeon fleet (miroshark-aeon) — active forks:** 1
 - **Total skill slots enabled (Aeon fleet):** 14
 - **Unique skills seen (Aeon fleet):** 14
-- **Source skills enabled:** 6 (repo-pulse disabled; changelog added previously; rotation continues)
+- **Source skills enabled:** 5 (changelog + repo-pulse both disabled this week)
 - **Source skills catalogued:** 200+
-- **CHORUS extras (enabled in fork, disabled in source):** 11 (up from 10 — repo-pulse departed source this week)
-- **Adoption gap (source enabled, fork absent):** 3 (token-movers, changelog, shiplog)
+- **CHORUS extras (enabled in fork, disabled in source):** 11 (up from 10 — repo-pulse departed source)
+- **Adoption gap (source enabled, fork absent):** 2 (token-movers, shiplog; changelog cycled out)
 - **Forks with no `aeon.yml`:** 29 (sim-tool forks)
 - **Notification sent:** no (SKILL_LEADERBOARD_INSUFFICIENT_DATA)
 

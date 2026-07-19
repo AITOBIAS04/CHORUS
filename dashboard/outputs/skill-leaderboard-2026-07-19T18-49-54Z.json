@@ -1,0 +1,190 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "skill-leaderboard"
+      },
+      "children": [
+        "alert-status",
+        "sep-1",
+        "stack-metrics",
+        "sep-2",
+        "stack-sources",
+        "sep-3",
+        "stack-adoption"
+      ]
+    },
+    "alert-status": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "SKILL_LEADERBOARD_INSUFFICIENT_DATA",
+        "message": "Insufficient data — 1 Aeon fork active (need ≥2)"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-metrics",
+        "grid-metrics"
+      ]
+    },
+    "heading-metrics": {
+      "type": "Heading",
+      "props": {
+        "text": "Metrics",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "grid-metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-aeon",
+        "stat-chorus",
+        "stat-sources",
+        "stat-miroshark"
+      ]
+    },
+    "stat-aeon": {
+      "type": "Stat",
+      "props": {
+        "label": "Aeon forks active",
+        "value": "1",
+        "delta": "need ≥2"
+      },
+      "children": []
+    },
+    "stat-chorus": {
+      "type": "Stat",
+      "props": {
+        "label": "CHORUS skills",
+        "value": "14"
+      },
+      "children": []
+    },
+    "stat-sources": {
+      "type": "Stat",
+      "props": {
+        "label": "Enabled sources",
+        "value": "5",
+        "delta": "-2",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat-miroshark": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark sim forks active",
+        "value": "29"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-sources": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-sources",
+        "text-sources"
+      ]
+    },
+    "heading-sources": {
+      "type": "Heading",
+      "props": {
+        "text": "Sources Changed This Week",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-sources": {
+      "type": "Text",
+      "props": {
+        "text": "Dropped: changelog, repo-pulse (7 enabled → 5 enabled)"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-adoption": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-adoption",
+        "stack-badges"
+      ]
+    },
+    "heading-adoption": {
+      "type": "Heading",
+      "props": {
+        "text": "Adoption Gaps",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-token-movers",
+        "badge-shiplog"
+      ]
+    },
+    "badge-token-movers": {
+      "type": "Badge",
+      "props": {
+        "text": "token-movers",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge-shiplog": {
+      "type": "Badge",
+      "props": {
+        "text": "shiplog",
+        "variant": "outline"
+      },
+      "children": []
+    }
+  }
+}
