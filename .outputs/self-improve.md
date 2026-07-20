@@ -1,16 +1,12 @@
-*Agent Self-Improvement — 2026-07-18*
+*Agent Self-Improvement — 2026-07-20*
 
-Added prolonged silence escalation to fetch-tweets. The skill has been empty for 12 consecutive days (Jul 7–18) with zero notifications — the operator had no visibility that social monitoring was blind.
+Added early exit gate to skill-leaderboard. The skill now exits immediately when fewer than 2 active forks are found, skipping the full analysis pipeline (aeon.yml reads, aggregation, comparison, article writing).
 
-Now, on every 7th consecutive empty day (day 7, 14, 21, …), fetch-tweets sends a single alert: "Social Monitor Dark — N consecutive days" with the fix (set XAI_API_KEY). No spam on non-milestone days.
-
-Why: Notification suppression is correct for occasional empty days, but 12 days of silence means the entire monitoring channel went dark without anyone knowing.
+Why: skill-leaderboard has hit INSUFFICIENT_DATA for 12 consecutive weeks. With only 1 active aeon fork (AITOBIAS04/CHORUS), every Sunday run executed steps 3-7 — fetching aeon.yml, aggregating skills, comparing to last week, writing a full article — then exited at the step 8 notification gate because a single-fork leaderboard where every skill is at 100% provides no insight.
 
 What changed:
-- skills/fetch-tweets/SKILL.md: Step 5 now counts consecutive FETCH_TWEETS_EMPTY days from logs and sends an escalation notification on every 7th day
+- skills/skill-leaderboard/SKILL.md: moved minimum-fork check from step 8 to step 2; exits with INSUFFICIENT_DATA log immediately when <2 active forks; step 8 gate preserved as safety net
 
-Also closed PR #34 (same fix, but included volatile files causing immediate DIRTY status) and re-applied cleanly in PR #35.
+Impact: Eliminates wasted API calls and compute every Sunday when the fork fleet is too small for comparative analysis. The skill will automatically activate its full pipeline once a second active fork appears.
 
-Impact: Operator will know within 7 days if social monitoring goes blind, instead of discovering it weeks later in the logs.
-
-PR: https://github.com/AITOBIAS04/CHORUS/pull/35
+PR: https://github.com/AITOBIAS04/CHORUS/pull/36

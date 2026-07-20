@@ -1,0 +1,126 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-20"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_change",
+        "text_intro",
+        "sep_1",
+        "heading_why",
+        "alert_problem",
+        "sep_2",
+        "heading_solution",
+        "text_changes",
+        "sep_3",
+        "heading_impact",
+        "text_impact",
+        "sep_4",
+        "storylink_pr"
+      ]
+    },
+    "heading_change": {
+      "type": "Heading",
+      "props": {
+        "text": "Added early exit gate to skill-leaderboard",
+        "level": "h2"
+      }
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "The skill now exits immediately when fewer than 2 active forks are found, skipping the full analysis pipeline (aeon.yml reads, aggregation, comparison, article writing).",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "alert_problem": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "skill-leaderboard has hit INSUFFICIENT_DATA for 12 consecutive weeks",
+        "message": "With only 1 active aeon fork (AITOBIAS04/CHORUS), every Sunday run executed steps 3-7 — fetching aeon.yml, aggregating skills, comparing to last week, writing a full article — then exited at the step 8 notification gate because a single-fork leaderboard where every skill is at 100% provides no insight."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_solution": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text_changes": {
+      "type": "Text",
+      "props": {
+        "text": "skills/skill-leaderboard/SKILL.md: moved minimum-fork check from step 8 to step 2; exits with INSUFFICIENT_DATA log immediately when <2 active forks; step 8 gate preserved as safety net",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates wasted API calls and compute every Sunday when the fork fleet is too small for comparative analysis. The skill will automatically activate its full pipeline once a second active fork appears.",
+        "variant": "body"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pull Request #36",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/36",
+        "source": "GitHub"
+      }
+    }
+  }
+}
