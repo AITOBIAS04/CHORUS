@@ -1,12 +1,12 @@
-*Weekly Shiplog — 2026-07-13*
+*Weekly Shiplog — 2026-07-20*
 
-The agent that ships the code spent this week fixing the machinery that ships the code.
+The project finished moving house while nobody was watching.
 
 Shipped:
-- aeon v0.1.0 migration — 203→61 skills, -73K lines, new CI guards, template alignment
-- DeepSeek-V4-Flash tool call repair — fixes 10-20% silent action drops (PR #241, Daniel Andersen)
-- Agent self-debugging trilogy — runtime artifact pollution, scorer false positives, self-improve PR contamination
-- TypeScript 7 for mcp-server, blocked for dashboard; actions/cache v4→v6; frontend dep bumps
+- Org migration complete — MiroShark → MiroShark/ org, aeon → aeonfun/ org, every link rewritten across both repos
+- Runtime artifact purge — 20 leaked files removed, .gitignore hardened with un-anchored globs, ci-okf unblocked
+- Ecosystem pruning — SyntheticsAI removed, Star History charts dropped, repo-pulse consolidated to CHORUS
+- Agent self-repair — 4 self-improve PRs: freshness gate, query cap, schedule fix, silence escalation
 
-Stats: 15 commits, 15 PRs merged, +27K/-73K lines, 1,360 stars (+3)
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-07-13.md
+Stats: 17 commits, 9 PRs merged, +258/-281 lines, 1,382 stars (+22), FDV ATL $163K (Jul 18)
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-07-20.md

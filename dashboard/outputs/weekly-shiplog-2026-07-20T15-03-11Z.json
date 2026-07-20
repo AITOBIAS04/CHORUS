@@ -1,0 +1,143 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-07-20",
+        "description": "The project finished moving house while nobody was watching."
+      },
+      "children": [
+        "shipped-heading",
+        "shipped-items",
+        "sep1",
+        "stats-heading",
+        "stats-grid",
+        "sep2",
+        "full-update-link"
+      ]
+    },
+    "shipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h2"
+      }
+    },
+    "shipped-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4"
+      ]
+    },
+    "item1": {
+      "type": "Text",
+      "props": {
+        "text": "Org migration complete — MiroShark → MiroShark/ org, aeon → aeonfun/ org, every link rewritten across both repos"
+      }
+    },
+    "item2": {
+      "type": "Text",
+      "props": {
+        "text": "Runtime artifact purge — 20 leaked files removed, .gitignore hardened with un-anchored globs, ci-okf unblocked"
+      }
+    },
+    "item3": {
+      "type": "Text",
+      "props": {
+        "text": "Ecosystem pruning — SyntheticsAI removed, Star History charts dropped, repo-pulse consolidated to CHORUS"
+      }
+    },
+    "item4": {
+      "type": "Text",
+      "props": {
+        "text": "Agent self-repair — 4 self-improve PRs: freshness gate, query cap, schedule fix, silence escalation"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat1",
+        "stat2",
+        "stat3",
+        "stat4",
+        "stat5"
+      ]
+    },
+    "stat1": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "17"
+      }
+    },
+    "stat2": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "9"
+      }
+    },
+    "stat3": {
+      "type": "Stat",
+      "props": {
+        "label": "Changes",
+        "value": "+258/-281"
+      }
+    },
+    "stat4": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,382",
+        "delta": "+22",
+        "trend": "up"
+      }
+    },
+    "stat5": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV ATL",
+        "value": "$163K"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full-update-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-07-20.md"
+      }
+    }
+  }
+}
