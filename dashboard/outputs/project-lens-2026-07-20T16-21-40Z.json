@@ -1,0 +1,150 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading_new",
+        "story_article",
+        "sep1",
+        "text_intro",
+        "sep2",
+        "heading_insights",
+        "text_fragile",
+        "text_question",
+        "sep3",
+        "heading_case",
+        "text_crisis_intro",
+        "text_crisis_1",
+        "text_crisis_2",
+        "text_crisis_3",
+        "sep4",
+        "heading_response",
+        "text_response_1",
+        "text_response_2",
+        "text_response_3"
+      ]
+    },
+    "heading_new": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article",
+        "level": "h2"
+      }
+    },
+    "story_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Sixty Percent of Open-Source Maintainers Have Quit or Considered Quitting. What If the Architecture Is the Problem?",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-20.md"
+      }
+    },
+    "sep1": {
+      "type": "Separator"
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "This article examines open-source project fragility through Nassim Taleb's anti-fragility framework, using MiroShark as a case study.",
+        "variant": "lead"
+      }
+    },
+    "sep2": {
+      "type": "Separator"
+    },
+    "heading_insights": {
+      "type": "Heading",
+      "props": {
+        "text": "Core Insights",
+        "level": "h3"
+      }
+    },
+    "text_fragile": {
+      "type": "Text",
+      "props": {
+        "text": "Most open-source projects are fragile — they depend on sustained human attention, and when it drops, they die.",
+        "variant": "body"
+      }
+    },
+    "text_question": {
+      "type": "Text",
+      "props": {
+        "text": "The central question isn't just how to keep maintainers from quitting — it's what the project does on the day they do.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator"
+    },
+    "heading_case": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark Case Study",
+        "level": "h3"
+      }
+    },
+    "text_crisis_intro": {
+      "type": "Text",
+      "props": {
+        "text": "During its worst month:",
+        "variant": "lead"
+      }
+    },
+    "text_crisis_1": {
+      "type": "Text",
+      "props": {
+        "text": "• Token down 96%",
+        "variant": "body"
+      }
+    },
+    "text_crisis_2": {
+      "type": "Text",
+      "props": {
+        "text": "• Social mentions dark for fourteen days",
+        "variant": "body"
+      }
+    },
+    "text_crisis_3": {
+      "type": "Text",
+      "props": {
+        "text": "• Five prediction targets expired",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator"
+    },
+    "heading_response": {
+      "type": "Heading",
+      "props": {
+        "text": "Project Response: Instead of Declining",
+        "level": "h3"
+      }
+    },
+    "text_response_1": {
+      "type": "Text",
+      "props": {
+        "text": "• Deleted 73,000 lines of code",
+        "variant": "body"
+      }
+    },
+    "text_response_2": {
+      "type": "Text",
+      "props": {
+        "text": "• Shipped its most significant architectural cleanup",
+        "variant": "body"
+      }
+    },
+    "text_response_3": {
+      "type": "Text",
+      "props": {
+        "text": "• Added self-repair mechanisms",
+        "variant": "body"
+      }
+    }
+  }
+}
