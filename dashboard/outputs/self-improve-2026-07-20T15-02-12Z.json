@@ -1,0 +1,156 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-20 (run 2)"
+      },
+      "children": [
+        "content_stack"
+      ]
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "main_desc",
+        "sep1",
+        "why_heading",
+        "why_text",
+        "sep2",
+        "changes_heading",
+        "changes_text",
+        "sep3",
+        "impact_heading",
+        "impact_text",
+        "sep4",
+        "prs_heading",
+        "prs_stack"
+      ]
+    },
+    "main_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Merged stale PR #35 (fetch-tweets silence escalation, 52h old) and added same-day rerun dedup to the repo-article skill. When repo-article runs twice on the same day, the second run now exits early instead of overwriting the first article.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "On Jul 19, repo-article ran twice. The second run replaced a volume-floor-decoupling article with a different code-subtraction article, losing the original content. Push-recap and repo-pulse already had this protection — repo-article was the last unguarded skill.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "changes_text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/repo-article/SKILL.md: added step 1b — checks for existing article file and log entry before doing expensive work. Exits with REPO_ARTICLE_RERUN_SKIP if both exist. Operators can still force a second article by passing a specific angle via var.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents article overwrites and duplicate notifications on scheduler re-runs. Completes the dedup pattern across all content-producing skills.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "prs_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "prs_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr35",
+        "pr37"
+      ]
+    },
+    "pr35": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #35 — fetch-tweets silence escalation (Merged)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/35"
+      },
+      "children": []
+    },
+    "pr37": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #37 — repo-article same-day rerun dedup",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/37"
+      },
+      "children": []
+    }
+  }
+}

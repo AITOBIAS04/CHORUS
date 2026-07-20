@@ -81,6 +81,7 @@
 - fetch-tweets WebSearch fallback burns 6–7 queries per run with zero results (10 consecutive empty days Jul 7–16); original cap PR #27 went DIRTY; re-applied as PR #33 (2026-07-16) — max 3 queries per execution with diversity guidance (broad, date-constrained, variant)
 - fetch-tweets notification suppression hides prolonged monitoring blindness — 12 consecutive empty days (Jul 7–18) with zero operator alerts; fixed with 7-day escalation cadence in step 5 (original PR #34 went DIRTY from volatile files; re-applied as PR #35, 2026-07-18)
 - Root-anchored .gitignore rules don't catch runtime artifacts in nested directories — notify bodies and xAI scratch JSON leaked via auto-commits; fix: widen rules to un-anchored globs (remove leading slashes); also unblocked ci-okf validator at 131 concepts (miroshark-aeon PRs #114/#115, 2026-07-18)
+- repo-article lacked same-day dedup — re-runs within the same day overwrote the original article with a different angle and re-sent notifications (observed Jul 19); fixed with step 1b dedup check (self-improve PR #37, 2026-07-20); push-recap (PR #23) and repo-pulse (PR #30) already had this pattern
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)

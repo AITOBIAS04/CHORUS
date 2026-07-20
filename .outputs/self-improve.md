@@ -1,12 +1,13 @@
-*Agent Self-Improvement — 2026-07-20*
+*Agent Self-Improvement — 2026-07-20 (run 2)*
 
-Added early exit gate to skill-leaderboard. The skill now exits immediately when fewer than 2 active forks are found, skipping the full analysis pipeline (aeon.yml reads, aggregation, comparison, article writing).
+Merged stale PR #35 (fetch-tweets silence escalation, 52h old) and added same-day rerun dedup to the repo-article skill. When repo-article runs twice on the same day, the second run now exits early instead of overwriting the first article.
 
-Why: skill-leaderboard has hit INSUFFICIENT_DATA for 12 consecutive weeks. With only 1 active aeon fork (AITOBIAS04/CHORUS), every Sunday run executed steps 3-7 — fetching aeon.yml, aggregating skills, comparing to last week, writing a full article — then exited at the step 8 notification gate because a single-fork leaderboard where every skill is at 100% provides no insight.
+Why: On Jul 19, repo-article ran twice. The second run replaced a volume-floor-decoupling article with a different code-subtraction article, losing the original content. Push-recap and repo-pulse already had this protection — repo-article was the last unguarded skill.
 
 What changed:
-- skills/skill-leaderboard/SKILL.md: moved minimum-fork check from step 8 to step 2; exits with INSUFFICIENT_DATA log immediately when <2 active forks; step 8 gate preserved as safety net
+- skills/repo-article/SKILL.md: added step 1b — checks for existing article file and log entry before doing expensive work. Exits with REPO_ARTICLE_RERUN_SKIP if both exist. Operators can still force a second article by passing a specific angle via var.
 
-Impact: Eliminates wasted API calls and compute every Sunday when the fork fleet is too small for comparative analysis. The skill will automatically activate its full pipeline once a second active fork appears.
+Impact: Prevents article overwrites and duplicate notifications on scheduler re-runs. Completes the dedup pattern across all content-producing skills.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/36
+Merged: PR #35 (fetch-tweets escalation)
+New PR: https://github.com/AITOBIAS04/CHORUS/pull/37
