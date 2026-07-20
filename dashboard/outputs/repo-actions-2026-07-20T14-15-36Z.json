@@ -1,0 +1,326 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-07-20"
+      },
+      "children": [
+        "text-context",
+        "sep1",
+        "stats-section",
+        "sep2",
+        "ideas-stack",
+        "sep3",
+        "link-details"
+      ]
+    },
+    "text-context": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — 14-day social silence, token at near-ATL, 42 days to September hyperstition cluster.",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,397"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "295"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "ideas-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5"
+      ]
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1-heading",
+        "idea1-badges",
+        "idea1-text"
+      ]
+    },
+    "idea1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Show HN Launch Kit",
+        "level": "h3"
+      }
+    },
+    "idea1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1-badge-growth",
+        "idea1-badge-small"
+      ]
+    },
+    "idea1-badge-growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth"
+      }
+    },
+    "idea1-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea1-text": {
+      "type": "Text",
+      "props": {
+        "text": "Bundle a field-tested HN post draft, pre-written responses to 8 skeptic questions, a ready-to-run demo seed, and a press kit — turns \"I should post this someday\" into \"I can post tonight.\""
+      }
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2-heading",
+        "idea2-badges",
+        "idea2-text"
+      ]
+    },
+    "idea2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Spanish (ES) UI Locale",
+        "level": "h3"
+      }
+    },
+    "idea2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2-badge-community",
+        "idea2-badge-small"
+      ]
+    },
+    "idea2-badge-community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX"
+      }
+    },
+    "idea2-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea2-text": {
+      "type": "Text",
+      "props": {
+        "text": "Add the 5th language to close the Sep 1 hyperstition (currently 4/5); dictionary-only pattern proven by FR, 500M native speakers, Latin alphabet, no font changes needed."
+      }
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3-heading",
+        "idea3-badges",
+        "idea3-text"
+      ]
+    },
+    "idea3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Research Campaign Tracker API",
+        "level": "h3"
+      }
+    },
+    "idea3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3-badge-feature",
+        "idea3-badge-medium"
+      ]
+    },
+    "idea3-badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea3-badge-medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      }
+    },
+    "idea3-text": {
+      "type": "Text",
+      "props": {
+        "text": "Group related simulations into named research campaigns with aggregate stats, consensus variance, and a citeable URL — the primitive that converts MiroShark from a demo tool into a research methodology tool."
+      }
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4-heading",
+        "idea4-badges",
+        "idea4-text"
+      ]
+    },
+    "idea4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Operator Usage Analytics API",
+        "level": "h3"
+      }
+    },
+    "idea4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4-badge-feature",
+        "idea4-badge-medium"
+      ]
+    },
+    "idea4-badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea4-badge-medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      }
+    },
+    "idea4-text": {
+      "type": "Text",
+      "props": {
+        "text": "Aggregate deployment stats endpoint (cost, completion rate, top topics, daily volume) that gives operators a dashboard, feeds aeon's daily notification loop, and makes MiroShark feel enterprise-ready."
+      }
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5-heading",
+        "idea5-badges",
+        "idea5-text"
+      ]
+    },
+    "idea5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. GitHub Actions Marketplace Action",
+        "level": "h3"
+      }
+    },
+    "idea5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5-badge-integration",
+        "idea5-badge-medium"
+      ]
+    },
+    "idea5-badge-integration": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration"
+      }
+    },
+    "idea5-badge-medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      }
+    },
+    "idea5-text": {
+      "type": "Text",
+      "props": {
+        "text": "A `miroshark/run-simulation` Marketplace action that puts MiroShark into any CI pipeline — simulates PR reaction, release reaction, or any scenario on push/merge, visible to GitHub's 100M+ developer base."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-20.md"
+      }
+    }
+  }
+}
