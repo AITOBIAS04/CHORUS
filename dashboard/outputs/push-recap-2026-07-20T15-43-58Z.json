@@ -1,0 +1,316 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-20"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repos-section",
+        "sep1",
+        "ci-section",
+        "sep2",
+        "frontend-section",
+        "sep3",
+        "backend-section",
+        "sep4",
+        "key-changes-section",
+        "sep5",
+        "stats-section",
+        "sep6",
+        "recap-link"
+      ]
+    },
+    "repos-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repos-heading",
+        "repo1",
+        "repo2"
+      ]
+    },
+    "repos-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Commits",
+        "level": "h3"
+      }
+    },
+    "repo1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 4 substantive commits by dependabot[bot]"
+      }
+    },
+    "repo2": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 1 substantive commit by aeonframework (15 automation filtered)"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "ci-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ci-heading",
+        "ci-text",
+        "ci-details"
+      ]
+    },
+    "ci-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CI Pipeline Upgrades",
+        "level": "h3"
+      }
+    },
+    "ci-text": {
+      "type": "Text",
+      "props": {
+        "text": "actions/setup-node and actions/setup-python both bumped from v6 to v7 in the test workflow."
+      }
+    },
+    "ci-details": {
+      "type": "Text",
+      "props": {
+        "text": "Major version bumps keeping CI tooling current across all three Python setup steps and the Node setup step."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "frontend-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "frontend-heading",
+        "frontend-list"
+      ]
+    },
+    "frontend-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Frontend Dependency Updates",
+        "level": "h3"
+      }
+    },
+    "frontend-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "frontend-vue",
+        "frontend-router",
+        "frontend-vite",
+        "frontend-plugin",
+        "frontend-other"
+      ]
+    },
+    "frontend-vue": {
+      "type": "Text",
+      "props": {
+        "text": "Vue 3.5.39 → 3.5.40"
+      }
+    },
+    "frontend-router": {
+      "type": "Text",
+      "props": {
+        "text": "Vue Router 5.1.0 → 5.2.0 (adds nostics diagnostics, Vue 4/Pinia 4 forward-compat)"
+      }
+    },
+    "frontend-vite": {
+      "type": "Text",
+      "props": {
+        "text": "Vite 8.1.4 → 8.1.5"
+      }
+    },
+    "frontend-plugin": {
+      "type": "Text",
+      "props": {
+        "text": "@vitejs/plugin-vue 6.0.7 → 6.0.8"
+      }
+    },
+    "frontend-other": {
+      "type": "Text",
+      "props": {
+        "text": "Also pulls postcss, nanoid, and unplugin patches."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "backend-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "backend-heading",
+        "backend-text"
+      ]
+    },
+    "backend-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Backend MCP SDK",
+        "level": "h3"
+      }
+    },
+    "backend-text": {
+      "type": "Text",
+      "props": {
+        "text": "Python MCP SDK bumped 1.24.0 → 1.27.2, matching last week's miroshark-aeon sync."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key-changes-heading",
+        "key-changes-list"
+      ]
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "key-changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "kc1",
+        "kc2",
+        "kc3"
+      ]
+    },
+    "kc1": {
+      "type": "Text",
+      "props": {
+        "text": "vue-router 5.2.0 widens peer deps to Vue 4 + Pinia 4, adds nostics dependency"
+      }
+    },
+    "kc2": {
+      "type": "Text",
+      "props": {
+        "text": "@vue/server-renderer now depends on @vue/runtime-dom directly instead of peering with vue"
+      }
+    },
+    "kc3": {
+      "type": "Text",
+      "props": {
+        "text": "MCP SDK jumps 3 minor versions (1.24→1.27) in the backend lock"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats-heading",
+        "stats-stack"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-additions",
+        "stat-deletions"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "6"
+      }
+    },
+    "stat-additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+212"
+      }
+    },
+    "stat-deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines deleted",
+        "value": "-126"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-20.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
