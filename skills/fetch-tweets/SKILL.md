@@ -49,7 +49,18 @@ Today is ${today}. Search X for tweets matching **${var}**.
 
 4b. **Freshness gate (WebSearch only).** WebSearch favours high-engagement older content — tweets from months ago routinely pass the dedup filter because they were never reported recently. After dedup, check each remaining tweet's posted date (from the WebSearch snippet date, tweet text, or surrounding context). **Discard any tweet posted more than 14 days before ${today}.** Log discarded stale tweets: "Excluded N stale tweets (older than 14d): [URLs]". If you cannot determine a tweet's date and it looks like older high-engagement content (e.g. status IDs much lower than recent tweets, topics from months ago), discard it. If all remaining tweets are stale, proceed to step 5 (treated as empty).
 
-5. **If no relevant tweets found** (no results, API error, or empty after dedup/freshness filtering): log "FETCH_TWEETS_EMPTY" to `memory/logs/${today}.md` and **stop here — do NOT send any notification**.
+5. **If no relevant tweets found** (no results, API error, or empty after dedup/freshness filtering): log "FETCH_TWEETS_EMPTY" to `memory/logs/${today}.md`.
+
+   **Prolonged silence escalation.** After logging FETCH_TWEETS_EMPTY, count the number of consecutive days with FETCH_TWEETS_EMPTY in `memory/logs/`. Scan backward from today through recent log files — stop counting when you find a day without FETCH_TWEETS_EMPTY (or a day with actual tweet results). If the consecutive empty count is a **multiple of 7** (7, 14, 21, …), send a single notification via `./notify`:
+   ```
+   *Social Monitor Dark — ${consecutive_count} consecutive days*
+
+   fetch-tweets has found zero new mentions for ${consecutive_count} straight days.
+
+   Likely cause: XAI_API_KEY not set — WebSearch fallback rarely surfaces fresh tweets.
+   Fix: Set XAI_API_KEY in repo secrets to enable direct X/Twitter search via Grok.
+   ```
+   This ensures the operator learns the monitoring channel is blind without spamming daily. If the count is NOT a multiple of 7, **stop here — do NOT send any notification**.
 
 6. **Save the results** (new tweets only) to `memory/logs/${today}.md`.
 
