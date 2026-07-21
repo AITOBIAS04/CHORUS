@@ -1,5 +1,5 @@
-*New Article: Forty Percent of AI-Generated Code Gets Rewritten Within Two Weeks. One Project Deleted Seventy-Three Thousand Lines on Purpose.*
+*New Article: Eight Agents Audited Fifty-Three Files. Three of Them Found Nothing Safe to Change.*
 
-A Nature study found people systematically default to addition — even when subtraction is the better solution. MiroShark spent its quietest week doing the opposite: cutting 73,000 lines in aeon v0.1.0, removing a phantom ecosystem partner, stripping vanity metrics from the README, and purging twenty leaked runtime artifacts. The project got lighter without getting smaller — a maturity signal that addition bias makes almost impossible to see.
+MiroShark PR #254 merged today: eight AI research agents audited the codebase across eight dimensions of cleanup, touching 53 files and deleting 1,325 net lines. Three of the eight dimensions produced zero commits because nothing passed the safety bar — and six real bugs were found but deliberately left for separate PRs. The project gained 53 stars this week to 1,413 while social mentions stayed at zero for 15 straight days.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-19.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-21.md

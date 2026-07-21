@@ -1,0 +1,150 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Eight Agents Audited Fifty-Three Files. Three of Them Found Nothing Safe to Change."
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "description-text",
+        "sep1",
+        "stats-grid",
+        "sep2",
+        "link-element"
+      ]
+    },
+    "description-text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark PR #254 merged today: eight AI research agents audited the codebase across eight dimensions of cleanup, touching 53 files and deleting 1,325 net lines. Three of the eight dimensions produced zero commits because nothing passed the safety bar — and six real bugs were found but deliberately left for separate PRs. The project gained 53 stars this week to 1,413 while social mentions stayed at zero for 15 straight days.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-agents",
+        "stat-dimensions",
+        "stat-files",
+        "stat-lines-deleted",
+        "stat-zero-commit",
+        "stat-bugs-found",
+        "stat-stars-week",
+        "stat-total-stars",
+        "stat-social-days"
+      ]
+    },
+    "stat-agents": {
+      "type": "Stat",
+      "props": {
+        "label": "Audit Agents",
+        "value": "8"
+      },
+      "children": []
+    },
+    "stat-dimensions": {
+      "type": "Stat",
+      "props": {
+        "label": "Cleanup Dimensions",
+        "value": "8"
+      },
+      "children": []
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Touched",
+        "value": "53"
+      },
+      "children": []
+    },
+    "stat-lines-deleted": {
+      "type": "Stat",
+      "props": {
+        "label": "Net Lines Deleted",
+        "value": "1,325"
+      },
+      "children": []
+    },
+    "stat-zero-commit": {
+      "type": "Stat",
+      "props": {
+        "label": "Zero-Commit Dimensions",
+        "value": "3"
+      },
+      "children": []
+    },
+    "stat-bugs-found": {
+      "type": "Stat",
+      "props": {
+        "label": "Bugs Found",
+        "value": "6"
+      },
+      "children": []
+    },
+    "stat-stars-week": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars This Week",
+        "value": "+53",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-total-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Stars",
+        "value": "1,413"
+      },
+      "children": []
+    },
+    "stat-social-days": {
+      "type": "Stat",
+      "props": {
+        "label": "Days Zero Social Mentions",
+        "value": "15"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link-element": {
+      "type": "Link",
+      "props": {
+        "label": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-21.md"
+      },
+      "children": []
+    }
+  }
+}
