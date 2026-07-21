@@ -1,17 +1,17 @@
-*Push Recap — 2026-07-20*
-MiroShark — 4 substantive commits by dependabot[bot]
-miroshark-aeon — 1 substantive commit by aeonframework (15 automation filtered)
+*Push Recap — 2026-07-21*
+MiroShark — 3 substantive commits by aaronjmars
+miroshark-aeon — 1 substantive commit by aaronjmars (14 automation filtered)
 
-CI Pipeline Upgrades: actions/setup-node and actions/setup-python both bumped from v6 to v7 in the test workflow. Major version bumps keeping CI tooling current across all three Python setup steps and the Node setup step.
+Codebase Subtraction (PR #254): The largest single cleanup in project history — 53 files, -1,325 net lines. Collapsed 23 duplicate publish gates into one helper, unified four notification services into _notify_base.py, extracted shared utilities (sim_corpus, stance classification, CSS), and removed 17 dead methods, the Zep wait_for_processing shim, and 3 phantom env var configs. Full test suite green.
 
-Frontend Dependency Updates: Vue 3.5.39→3.5.40, Vue Router 5.1.0→5.2.0 (adds nostics diagnostics, Vue 4/Pinia 4 forward-compat), Vite 8.1.4→8.1.5, @vitejs/plugin-vue 6.0.7→6.0.8. Also pulls postcss, nanoid, and unplugin patches.
+README Badge Polish (PRs #252, #253): Added Documentation badge, then tightened all badges — "Docs" instead of "Documentation", @miroshark_ without "Follow", $miroshark ticker on Bankr badge. All 4 locales updated.
 
-Backend MCP SDK: Python MCP SDK bumped 1.24.0→1.27.2, matching last weeks miroshark-aeon sync.
+Repo-Pulse Weekly Transition (PR #116): Switched agent monitoring from disabled daily to active weekly (Mon 10:00 UTC). Rebaselined SURGE from 10 stars/day to 50 stars/week, added events pagination with truncation detection, bumped profile enrichment cap 10→15.
 
 Key changes:
-- vue-router 5.2.0 widens peer deps to Vue 4 + Pinia 4, adds nostics dependency
-- @vue/server-renderer now depends on @vue/runtime-dom directly instead of peering with vue
-- MCP SDK jumps 3 minor versions (1.24→1.27) in the backend lock
+- simulation.py lost 231 lines — publish gate consolidation is the single biggest diff
+- New shared files: app/utils/sim_corpus.py, app/utils/text.py, app-shell.css
+- railway.env.example no longer advertises dead config knobs
 
-Stats: 6 files changed, +212/-126 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-20.md
+Stats: 63 files changed, +692/-2,009 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-21.md

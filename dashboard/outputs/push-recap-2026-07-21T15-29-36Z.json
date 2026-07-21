@@ -1,0 +1,301 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap"
+      },
+      "children": [
+        "date_text",
+        "sep1",
+        "projects_stack",
+        "sep2",
+        "codebase_section",
+        "sep3",
+        "readme_section",
+        "sep4",
+        "repo_pulse_section",
+        "sep5",
+        "key_changes_section",
+        "sep6",
+        "stats_section"
+      ]
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-21",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator"
+    },
+    "projects_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "proj1",
+        "proj2"
+      ]
+    },
+    "proj1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 3 substantive commits by aaronjmars"
+      }
+    },
+    "proj2": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 1 substantive commit by aaronjmars (14 automation filtered)"
+      }
+    },
+    "sep2": {
+      "type": "Separator"
+    },
+    "codebase_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "codebase_heading",
+        "codebase_desc",
+        "codebase_link"
+      ]
+    },
+    "codebase_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Codebase Subtraction (PR #254)",
+        "level": "h2"
+      }
+    },
+    "codebase_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The largest single cleanup in project history — 53 files, -1,325 net lines. Collapsed 23 duplicate publish gates into one helper, unified four notification services into _notify_base.py, extracted shared utilities (sim_corpus, stance classification, CSS), and removed 17 dead methods, the Zep wait_for_processing shim, and 3 phantom env var configs. Full test suite green."
+      }
+    },
+    "codebase_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #254",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/254",
+        "source": "GitHub"
+      }
+    },
+    "sep3": {
+      "type": "Separator"
+    },
+    "readme_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "readme_heading",
+        "readme_desc",
+        "readme_links"
+      ]
+    },
+    "readme_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "README Badge Polish",
+        "level": "h2"
+      }
+    },
+    "readme_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Added Documentation badge, then tightened all badges — \"Docs\" instead of \"Documentation\", @miroshark_ without \"Follow\", $miroshark ticker on Bankr badge. All 4 locales updated."
+      }
+    },
+    "readme_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "readme_link1",
+        "readme_link2"
+      ]
+    },
+    "readme_link1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #252",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/252",
+        "source": "GitHub"
+      }
+    },
+    "readme_link2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #253",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/253",
+        "source": "GitHub"
+      }
+    },
+    "sep4": {
+      "type": "Separator"
+    },
+    "repo_pulse_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_pulse_heading",
+        "repo_pulse_desc",
+        "repo_pulse_link"
+      ]
+    },
+    "repo_pulse_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo-Pulse Weekly Transition (PR #116)",
+        "level": "h2"
+      }
+    },
+    "repo_pulse_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Switched agent monitoring from disabled daily to active weekly (Mon 10:00 UTC). Rebaselined SURGE from 10 stars/day to 50 stars/week, added events pagination with truncation detection, bumped profile enrichment cap 10→15."
+      }
+    },
+    "repo_pulse_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #116",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/116",
+        "source": "GitHub"
+      }
+    },
+    "sep5": {
+      "type": "Separator"
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key_changes_heading",
+        "changes_list"
+      ]
+    },
+    "key_changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "simulation.py lost 231 lines — publish gate consolidation is the single biggest diff"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "New shared files: app/utils/sim_corpus.py, app/utils/text.py, app-shell.css"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "railway.env.example no longer advertises dead config knobs"
+      }
+    },
+    "sep6": {
+      "type": "Separator"
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_row",
+        "full_recap_link"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_files",
+        "stat_additions",
+        "stat_deletions"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "63"
+      }
+    },
+    "stat_additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "+692"
+      }
+    },
+    "stat_deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "-2,009"
+      }
+    },
+    "full_recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-21.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
