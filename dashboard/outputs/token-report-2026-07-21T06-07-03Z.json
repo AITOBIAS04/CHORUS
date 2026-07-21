@@ -1,0 +1,119 @@
+{
+  "root": "root",
+  "state": {},
+  "elements": {
+    "root": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-07-21"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stack_top",
+        "text_buysells",
+        "stack_periods",
+        "sep_main",
+        "text_desc",
+        "link_chart"
+      ]
+    },
+    "stack_top": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liq",
+        "stat_vol"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000001755",
+        "delta": "+1.58%",
+        "trend": "up"
+      }
+    },
+    "stat_liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$210.6K"
+      }
+    },
+    "stat_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$6,959"
+      }
+    },
+    "text_buysells": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 24/14 (buyers: 18, sellers: 12)",
+        "variant": "body"
+      }
+    },
+    "stack_periods": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "−14.1%",
+        "trend": "down"
+      }
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−63.2%",
+        "trend": "down"
+      }
+    },
+    "sep_main": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Volume spiked 24x from the Jul 19 trough — driven by a handful of wallets, including a same-session buy-then-sell flip by 0x848a004 (~$1,381 in, ~$1,373 out in 3h). Price sits +7.5% above Jul 18 ATL, LP recovering at $210.6K.",
+        "variant": "body"
+      }
+    },
+    "link_chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
