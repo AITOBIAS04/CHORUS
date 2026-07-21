@@ -1,17 +1,1 @@
-HEARTBEAT_OK.
-
-## Summary
-
-All systems nominal on 2026-07-20 (Monday):
-
-**Step 0 — System health:** All 14 skills at `consecutive_failures = 0`. No systemic failure. No open issues in `memory/issues/INDEX.md`.
-
-**Step 1 — Standard checks:**
-- **Skills (10 expected today, all ✓):** token-report, fetch-tweets, repo-pulse, feature, self-improve, weekly-shiplog, repo-actions, push-recap, project-lens — all completed successfully. Heartbeat is the current (final) run of the day.
-- **Open PRs stalled >24h:** None. PR #36 and PR #37 are both fresh from today (~4–6h old). PR #35 (silence escalation) is gone from the open list.
-- **GitHub issues:** Issues disabled on this repo.
-- **Memory follow-ups:** GH_GLOBAL unset (58th feature block), XAI_API_KEY unset (14th empty social day) — both persistent known items, already tracked in MEMORY.md.
-
-**Open issue escalation:** No open issues. Nothing to escalate.
-
-No notification sent. Log entry appended to `memory/logs/2026-07-20.md`.
+Heartbeat — 2026-07-21 (~19:00 UTC): All 14 skills healthy (0 consecutive failures). All 7 expected daily skills ran on schedule (token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article × 2, heartbeat). ⚠️ 2 self-improve PRs stalled >24h: PR #36 (skill-leaderboard early exit, ~30h) and PR #37 (repo-article rerun dedup, ~28h) — both await operator merge. 15th consecutive empty day for fetch-tweets (XAI_API_KEY not set). Feature blocked 60 consecutive days (GH_GLOBAL not set). No open issues.

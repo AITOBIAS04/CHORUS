@@ -1,0 +1,199 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-07-21 (~19:00 UTC)"
+      },
+      "children": [
+        "health-section",
+        "separator-1",
+        "daily-skills-section",
+        "separator-2",
+        "alerts-section",
+        "separator-3",
+        "closing-section"
+      ]
+    },
+    "health-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-skills-healthy",
+        "stat-failures"
+      ]
+    },
+    "stat-skills-healthy": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills healthy",
+        "value": "14"
+      }
+    },
+    "stat-failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive failures",
+        "value": "0"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "daily-skills-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "daily-skills-heading",
+        "daily-skills-badges"
+      ]
+    },
+    "daily-skills-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "All 7 Expected Daily Skills Ran On Schedule",
+        "level": "h3"
+      }
+    },
+    "daily-skills-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-token-report",
+        "badge-fetch-tweets",
+        "badge-repo-pulse",
+        "badge-feature",
+        "badge-push-recap",
+        "badge-repo-article-1",
+        "badge-repo-article-2",
+        "badge-heartbeat"
+      ]
+    },
+    "badge-token-report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "default"
+      }
+    },
+    "badge-fetch-tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "default"
+      }
+    },
+    "badge-repo-pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "default"
+      }
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "default"
+      }
+    },
+    "badge-push-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "default"
+      }
+    },
+    "badge-repo-article-1": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article",
+        "variant": "default"
+      }
+    },
+    "badge-repo-article-2": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article",
+        "variant": "default"
+      }
+    },
+    "badge-heartbeat": {
+      "type": "Badge",
+      "props": {
+        "text": "heartbeat",
+        "variant": "default"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alerts-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-stalled-prs",
+        "alert-fetch-tweets-config",
+        "alert-feature-config"
+      ]
+    },
+    "alert-stalled-prs": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "2 Self-Improve PRs Stalled >24h",
+        "message": "PR #36 (skill-leaderboard early exit, ~30h) — awaits operator merge\nPR #37 (repo-article rerun dedup, ~28h) — awaits operator merge"
+      }
+    },
+    "alert-fetch-tweets-config": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "fetch-tweets: 15 Consecutive Empty Days",
+        "message": "XAI_API_KEY not set"
+      }
+    },
+    "alert-feature-config": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "feature: Blocked 60 Consecutive Days",
+        "message": "GH_GLOBAL not set"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "closing-section": {
+      "type": "Text",
+      "props": {
+        "text": "✓ No open issues",
+        "variant": "lead"
+      }
+    }
+  }
+}
