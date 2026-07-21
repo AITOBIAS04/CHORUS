@@ -4,20 +4,20 @@
 
 | Metric | Value | 24h Change |
 |--------|-------|------------|
-| Price | $0.000001755 | +1.58% |
-| Liquidity | $210,582.72 | — |
-| 24h Volume | $6,959.27 | — |
-| 24h Buys/Sells | 24 / 14 | — |
-| 24h Buyers/Sellers | 18 / 12 | — |
-| 24h High/Low | $0.000001902 / $0.000001666 | — |
-| FDV | $175,496 | — |
+| Price | $0.000001766 | −0.18% |
+| Liquidity | $209,112 | — |
+| 24h Volume | $6,037 | — |
+| 24h Buys/Sells | 23 / 15 | — |
+| 24h Buyers/Sellers | 17 / 12 | — |
+| 24h High/Low | $0.000001902 / $0.000001667 | — |
+| FDV | $176,576 | — |
 
 ## Trend
 
-- **24h:** Price up +1.58%, sitting mid-range between today's low of $1.666e-6 and high of $1.902e-6. Volume spiked to $6,959 — a 24x jump from Jul 19's $283 trough — driven by a concentrated burst of large trades between 13:57 and 23:56 UTC yesterday.
-- **7-day:** −14.1% (Jul 14 close: $2.042e-6)
-- **30-day:** −63.2% (Jun 21 close: $4.770e-6)
-- **ATH context:** $0.0000436 set May 18, 2026 — current price is −96.0% from peak. FDV at $175,496 sits +7.5% above the Jul 18 all-time low of $163,272.
+- **24h:** Price essentially flat (−0.18%), sitting mid-range between today's low of $1.667e-6 and high of $1.902e-6. Volume registers at $6,037 in the rolling 24h window — the spike from Jul 20 is partially rolling off as the window ticks forward.
+- **7-day:** −13.5% (Jul 14 close: $2.042e-6)
+- **30-day:** −63.0% (Jun 22 close: $4.770e-6)
+- **ATH context:** $0.0000436 set May 18, 2026 — current price is −96.0% from peak. FDV at $176,576 sits +8.1% above the Jul 18 all-time low of $163,272.
 
 ## Volume & Liquidity
 
