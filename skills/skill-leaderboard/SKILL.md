@@ -19,6 +19,8 @@ Today is ${today}. Generate a leaderboard of the most popular Aeon skills across
    ```
    If no active forks found, log "SKILL_LEADERBOARD_NO_FORKS" and stop (no notification).
 
+   **Early exit — minimum fork gate:** If fewer than 2 active forks are found, log `SKILL_LEADERBOARD_INSUFFICIENT_DATA: only N active fork(s), minimum 2 required for meaningful ranking` and **stop here** — do not read aeon.yml files, aggregate, compare, or write an article. A single-fork "leaderboard" where every skill is at 100% provides no comparative insight. This gate saves API calls and compute when the fleet is too small.
+
 3. **Read each active fork's `aeon.yml`** to extract enabled skills:
    ```bash
    gh api repos/{fork_full_name}/contents/aeon.yml --jq '.content' | base64 -d
@@ -86,7 +88,7 @@ Today is ${today}. Generate a leaderboard of the most popular Aeon skills across
 
    Full leaderboard: articles/skill-leaderboard-${today}.md
    ```
-   **Only send a notification if at least 2 active forks were found with readable aeon.yml files.** Otherwise log "SKILL_LEADERBOARD_INSUFFICIENT_DATA" and stop.
+   **Only send a notification if at least 2 active forks were found with readable aeon.yml files.** (The minimum-fork check in step 2 should already catch this, but this is a safety net in case forks had unreadable aeon.yml files.) Otherwise log "SKILL_LEADERBOARD_INSUFFICIENT_DATA" and stop.
 
 9. **Log** to `memory/logs/${today}.md`:
    ```
