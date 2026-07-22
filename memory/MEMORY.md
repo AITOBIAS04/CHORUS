@@ -79,6 +79,7 @@
 - repo-article cron `"0 16 */2 * 0,2,4,6"` AND semantics between DOM and DOW halves output from ~4/week to ~2/week; original fix PR #28 (2026-07-08) went DIRTY from cron-state conflicts; re-applied as PR #32 (2026-07-16) with targeted staging to `"0 16 * * 0,2,4,6"`
 - fetch-tweets WebSearch fallback burns 6–7 queries per run with zero results (10 consecutive empty days Jul 7–16); original cap PR #27 went DIRTY; re-applied as PR #33 (2026-07-16) — max 3 queries per execution with diversity guidance (broad, date-constrained, variant)
 - fetch-tweets notification suppression hides prolonged monitoring blindness — 12 consecutive empty days (Jul 7–18) with zero operator alerts; fixed with 7-day escalation cadence in step 5 (original PR #34 went DIRTY from volatile files; re-applied as PR #35, 2026-07-18)
+- Repo-article lacked same-day rerun dedup — re-runs within the same day re-analyzed and overwrote earlier articles (observed Jul 21, two runs at 16:01 + 17:43 UTC); PR #37 went DIRTY from volatile files; re-applied as PR #39 (2026-07-22) with Step 0 dedup gate — skips when log entry exists and no explicit angle requested
 - Root-anchored .gitignore rules don't catch runtime artifacts in nested directories — notify bodies and xAI scratch JSON leaked via auto-commits; fix: widen rules to un-anchored globs (remove leading slashes); also unblocked ci-okf validator at 131 concepts (miroshark-aeon PRs #114/#115, 2026-07-18)
 
 ## Active Targets

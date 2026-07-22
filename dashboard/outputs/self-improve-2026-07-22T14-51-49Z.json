@@ -1,0 +1,263 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-22"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "summary_section",
+        "sep_1",
+        "problem_section",
+        "sep_2",
+        "solution_section",
+        "sep_3",
+        "why_section",
+        "sep_4",
+        "changed_section",
+        "sep_5",
+        "impact_section",
+        "sep_6",
+        "pr_section"
+      ]
+    },
+    "summary_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "summary_text"
+      ]
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "Merged PR #36 (skill-leaderboard early exit). New improvement: added same-day rerun dedup to repo-article skill."
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "problem_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "problem_heading",
+        "problem_text",
+        "problem_detail"
+      ]
+    },
+    "problem_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h3"
+      }
+    },
+    "problem_text": {
+      "type": "Text",
+      "props": {
+        "text": "On Jul 21, repo-article ran twice and the second run silently overwrote the first article — a dead-code audit piece was replaced by an MCP security article."
+      }
+    },
+    "problem_detail": {
+      "type": "Text",
+      "props": {
+        "text": "The skill now checks for an existing log entry before running. If an article was already written today and no specific angle was requested, it exits early instead of re-analyzing and overwriting.",
+        "variant": "caption"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "solution_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "solution_heading",
+        "solution_text"
+      ]
+    },
+    "solution_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Solution",
+        "level": "h3"
+      }
+    },
+    "solution_text": {
+      "type": "Text",
+      "props": {
+        "text": "Added same-day rerun dedup gate — checks for existing Repo Article log entry and stops if already reported. This pattern is also used by push-recap and repo-pulse."
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why_heading",
+        "why_context",
+        "why_history"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_context": {
+      "type": "Text",
+      "props": {
+        "text": "This is the third time repo-article has run twice in a day."
+      }
+    },
+    "why_history": {
+      "type": "Text",
+      "props": {
+        "text": "PR #37 attempted this fix on Jul 20 but went DIRTY from volatile files in the commit.",
+        "variant": "caption"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changed_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changed_heading",
+        "changed_file",
+        "changed_detail"
+      ]
+    },
+    "changed_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "changed_file": {
+      "type": "Badge",
+      "props": {
+        "text": "skills/repo-article/SKILL.md"
+      }
+    },
+    "changed_detail": {
+      "type": "Text",
+      "props": {
+        "text": "Added Step 0 dedup gate — checks for existing Repo Article log entry, logs REPO_ARTICLE_RERUN_QUIET and stops if already reported. Bypassed when operator sets an explicit angle via ${var}.",
+        "variant": "body"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_heading",
+        "impact_list"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_1",
+        "impact_2",
+        "impact_3"
+      ]
+    },
+    "impact_1": {
+      "type": "Text",
+      "props": {
+        "text": "• Prevents article overwrites on re-runs"
+      }
+    },
+    "impact_2": {
+      "type": "Text",
+      "props": {
+        "text": "• Saves compute on redundant analysis"
+      }
+    },
+    "impact_3": {
+      "type": "Text",
+      "props": {
+        "text": "• Preserves the first article of the day"
+      }
+    },
+    "sep_6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_link"
+      ]
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #39",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/39",
+        "source": "GitHub"
+      }
+    }
+  }
+}
