@@ -1,0 +1,279 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-22"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "repo-heading",
+        "commits-text",
+        "sep1",
+        "security-heading",
+        "security-desc",
+        "changes-heading",
+        "changes-stack",
+        "sep2",
+        "alerts-heading",
+        "alerts-text",
+        "sep3",
+        "stats-stack",
+        "sep4",
+        "recap-link"
+      ]
+    },
+    "repo-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      }
+    },
+    "commits-text": {
+      "type": "Text",
+      "props": {
+        "text": "2 substantive commits by aaronjmars (9 automation commits filtered)",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "security-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Security: Same-Day CVE Patching",
+        "level": "h3"
+      }
+    },
+    "security-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Two dependency patches shipped within hours of advisory publication, continuing the project's pattern of same-day MTTR against the 40+ MCP-ecosystem CVEs tracked in 2026. Industry average is 74-252 days.",
+        "variant": "body"
+      }
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "changes-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change1-container",
+        "change2-container"
+      ]
+    },
+    "change1-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1-version",
+        "change1-badges",
+        "change1-desc",
+        "change1-link"
+      ]
+    },
+    "change1-version": {
+      "type": "Text",
+      "props": {
+        "text": "MCP SDK 1.27.2 → 1.28.1",
+        "variant": "lead"
+      }
+    },
+    "change1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "change1-cve",
+        "change1-cvss"
+      ]
+    },
+    "change1-cve": {
+      "type": "Badge",
+      "props": {
+        "text": "CVE-2026-59950",
+        "variant": "destructive"
+      }
+    },
+    "change1-cvss": {
+      "type": "Badge",
+      "props": {
+        "text": "CVSS 7.6"
+      }
+    },
+    "change1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "CSWSH — real attack surface for WebSocket deployments",
+        "variant": "body"
+      }
+    },
+    "change1-link": {
+      "type": "Link",
+      "props": {
+        "label": "#255",
+        "href": "https://github.com/aaronjmars/MiroShark/pull/255"
+      }
+    },
+    "change2-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change2-version",
+        "change2-badges",
+        "change2-desc",
+        "change2-link"
+      ]
+    },
+    "change2-version": {
+      "type": "Text",
+      "props": {
+        "text": "shell-quote 1.8.4 → 1.10.0",
+        "variant": "lead"
+      }
+    },
+    "change2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "change2-cve",
+        "change2-cvss"
+      ]
+    },
+    "change2-cve": {
+      "type": "Badge",
+      "props": {
+        "text": "CVE-2026-13311",
+        "variant": "destructive"
+      }
+    },
+    "change2-cvss": {
+      "type": "Badge",
+      "props": {
+        "text": "CVSS 7.5"
+      }
+    },
+    "change2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "quadratic DoS — not reachable in this codebase but defense-in-depth; override self-deactivates when concurrently upstream repins",
+        "variant": "body"
+      }
+    },
+    "change2-link": {
+      "type": "Link",
+      "props": {
+        "label": "#256",
+        "href": "https://github.com/aaronjmars/MiroShark/pull/256"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alerts-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependabot Alerts",
+        "level": "h3"
+      }
+    },
+    "alerts-text": {
+      "type": "Text",
+      "props": {
+        "text": "Alert #66 cleared; #65 (torch, low) intentionally left",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-added",
+        "stat-removed"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "3"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+10"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Removed",
+        "value": "-7"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-22.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
