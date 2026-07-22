@@ -1,9 +1,1 @@
-## Summary
-
-**HEARTBEAT_OK** — this is a second heartbeat run today (the first completed at 19:20 UTC).
-
-- **System health:** All 14 skills `consecutive_failures=0`. Clean.
-- **Skills today (Tuesday):** All expected skills ran — token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article, and now heartbeat. Zero missing.
-- **PRs stalled >24h:** PR #36 (~31.5h) and PR #37 (~30h) remain open, but these were already reported and notified in the 19:20 UTC heartbeat. Dedup suppresses re-notification.
-- **Open memory issues:** None. No escalations.
-- No notification sent. Log entry appended to `memory/logs/2026-07-21.md`.
+HEARTBEAT_OK. All 14 skills ran on schedule today with zero consecutive failures. The only minor observation is duplicate PRs #38 and #39 (same "repo-article rerun dedup" fix) created by separate self-improve runs today — neither is stalled >24h, and no action is needed from heartbeat. No open issues, no escalations, no missing skills.
