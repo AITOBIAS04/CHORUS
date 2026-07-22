@@ -1,5 +1,5 @@
-*New Article: Sixty Percent of Open-Source Maintainers Have Quit or Considered Quitting. What If the Architecture Is the Problem?*
+*New Article: Ninety-Eight Percent of Your Open-Source Community Will Never Ship a Line of Code. Build Accordingly.*
 
-Most open-source projects are fragile — they depend on sustained human attention, and when it drops, they die. This article uses Nassim Taleb's anti-fragility framework to examine why MiroShark got stronger during its worst month: token down 96%, social mentions dark for fourteen days, five prediction targets expired. Instead of declining, the project deleted 73,000 lines of code, shipped its most significant architectural cleanup, and added self-repair mechanisms. The question isn't just how to keep maintainers from quitting — it's what the project does on the day they do.
+Research shows only 2% of popular open-source project communities ever contribute code — 87% are watchers, 80% of forks never merge upstream. MiroShark, with 297 forks and near-zero PRs from them, stopped waiting for the funnel to convert and built an autonomous AI agent that ships security patches in hours, files self-improvement PRs, and runs continuously for 115+ days. The contrarian thesis: the projects that survive maintainer burnout won't be the ones that cracked community engagement — they'll be the ones that built for the 2% math.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-20.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-22.md
