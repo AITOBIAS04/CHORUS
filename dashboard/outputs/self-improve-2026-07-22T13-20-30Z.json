@@ -1,0 +1,132 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-07-22"
+      },
+      "children": [
+        "heading_intro",
+        "text_intro",
+        "sep1",
+        "heading_why",
+        "text_why",
+        "sep2",
+        "heading_changed",
+        "text_changed",
+        "sep3",
+        "heading_impact",
+        "text_impact",
+        "sep4",
+        "heading_status",
+        "text_closed_pr",
+        "link_new_pr"
+      ]
+    },
+    "heading_intro": {
+      "type": "Heading",
+      "props": {
+        "text": "Re-applied same-day rerun dedup to repo-article",
+        "level": "h2"
+      }
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "When repo-article runs twice on the same day, the second run now exits early instead of overwriting the first article with a different angle.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "On Jul 19 and Jul 21, repo-article ran twice and the second run replaced the first article entirely — a volume-floor-decoupling piece got overwritten by a subtraction-phase piece, a dead-code-audit piece got overwritten by an MCP-security piece. PR #37 applied this fix on Jul 20 but went DIRTY within hours from volatile files in the commit. This is the third time this pattern has bitten (push-recap PR #23, repo-pulse PR #30, now repo-article PR #37).",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "text_changed": {
+      "type": "Text",
+      "props": {
+        "text": "skills/repo-article/SKILL.md: added step 1b — checks for existing article file and log entry before expensive work. Exits with REPO_ARTICLE_RERUN_SKIP if both exist. Operators can still force a second article by passing a specific angle via var.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents article overwrites and duplicate notifications on scheduler re-runs. Completes the dedup guard across all content-producing skills (push-recap, repo-pulse, repo-article).",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_status": {
+      "type": "Heading",
+      "props": {
+        "text": "Status",
+        "level": "h3"
+      }
+    },
+    "text_closed_pr": {
+      "type": "Text",
+      "props": {
+        "text": "Closed: PR #37 (DIRTY — volatile files caused conflicts)",
+        "variant": "body"
+      }
+    },
+    "link_new_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #38",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/38",
+        "source": "GitHub"
+      }
+    }
+  }
+}

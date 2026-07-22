@@ -34,6 +34,8 @@ Read memory/watched-repos.md for the repo to cover.
    gh api repos/owner/repo/readme --jq '.content' | base64 -d
    ```
 
+1b. **Skip re-run if already reported today** — If `articles/repo-article-${today}.md` already exists AND `memory/logs/${today}.md` already contains a `## Repo Article` entry, log `REPO_ARTICLE_RERUN_SKIP: article already written today` to `memory/logs/${today}.md` and **stop here — do NOT overwrite the existing article or re-send a notification**. A re-run that overwrites the day's article loses the first angle; if a second angle is wanted, pass it explicitly via `${var}`.
+
 2. **Read key source files** to understand the project's architecture and current state. Look at:
    - Main entry points, config files, package.json
    - Any CHANGELOG, ROADMAP, or similar docs
