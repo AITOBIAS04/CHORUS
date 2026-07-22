@@ -1,23 +1,10 @@
-Done. Here's the summary:
+*$MiroShark Daily — 2026-07-22*
 
-## Summary
+Price: $0.000001696 (−3.97% 24h)
+Liquidity: $204.7K | 24h Vol: $3.7K
+Buys/Sells: 11/14 (8 buyers, 11 sellers)
+7d: −21.1% | 30d: −62.6%
 
-**Token-report skill executed for 2026-07-21.**
+Jul 18 bounce stalling: peak recovery of +8.6% to $1.766e-6 (Jul 21) reversed today. 0x078e5239 flipped 461M tokens for $793 net sell at 22:40 UTC — biggest move in the window. FDV $169.6K, 3.8% above ATL.
 
-A prior run had already completed this morning. Key refreshed numbers:
-
-| Metric | Value |
-|--------|-------|
-| Price | $0.000001766 (−0.18% 24h) |
-| FDV | $176,576 (+8.1% from Jul 18 ATL) |
-| LP (WETH pool) | $209,112 |
-| 24h Volume | $6,037 |
-| 24h Buys/Sells | 23 / 15 |
-| 24h High/Low | $0.000001902 / $0.000001667 |
-| 7-day | −13.5% |
-| 30-day | −63.0% |
-| vs. ATH | −96.0% |
-
-**Narrative:** Jul 20 delivered a volume spike to $6.6K (23× the Jul 19 trough of $283), driven by a handful of wallets — notably 0x848a004 running a same-session round-trip and 0x749fe1 distributing. Price peaked at $1.902e-06 intraday before settling near $1.77e-06. Today is quiet so far (~$303 in the first 8 hours). FDV has recovered 8.1% from the Jul 18 all-time low. Social monitoring remains dark (15 consecutive empty days; escalation fires at day 21, Jul 28).
-
-**Files:** Article updated at `articles/token-report-2026-07-21.md`; re-run logged to `memory/logs/2026-07-21.md`. Notification suppressed (already sent in first run today).
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
