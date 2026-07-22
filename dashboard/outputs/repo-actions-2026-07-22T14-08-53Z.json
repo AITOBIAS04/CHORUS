@@ -1,0 +1,324 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-07-22"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "project-info",
+        "sep1",
+        "action-items-stack",
+        "sep2",
+        "full-details-link"
+      ]
+    },
+    "project-info": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from live analysis of aaronjmars/MiroShark (1,413 stars · 297 forks · day 16 social silence · token FDV $169K)",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action-items-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "action-1",
+        "action-2",
+        "action-3",
+        "action-4",
+        "action-5"
+      ]
+    },
+    "action-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-title",
+        "action-1-tags",
+        "action-1-desc"
+      ]
+    },
+    "action-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Simulation Replay Stepper",
+        "level": "h3"
+      }
+    },
+    "action-1-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-cat",
+        "action-1-size"
+      ]
+    },
+    "action-1-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "secondary"
+      }
+    },
+    "action-1-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "A round-by-round timeline scrubber that replays agent stance evolution from trajectory.json — the missing screen-recordable demo primitive that shows the simulation *running*, not just the result.",
+        "variant": "body"
+      }
+    },
+    "action-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-title",
+        "action-2-tags",
+        "action-2-desc"
+      ]
+    },
+    "action-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Japanese (JA) UI Locale",
+        "level": "h3"
+      }
+    },
+    "action-2-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-cat",
+        "action-2-size"
+      ]
+    },
+    "action-2-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      }
+    },
+    "action-2-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Fifth language to close the 5-languages-by-Sep-1 hyperstition (4/5 now); 9.3M Japanese-speaking GitHub developers, dictionary-only pattern proven by FR, README stub already in repo.",
+        "variant": "body"
+      }
+    },
+    "action-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-title",
+        "action-3-tags",
+        "action-3-desc"
+      ]
+    },
+    "action-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation Data Bundle Export",
+        "level": "h3"
+      }
+    },
+    "action-3-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-cat",
+        "action-3-size"
+      ]
+    },
+    "action-3-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "action-3-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/bundle.zip — one download containing all simulation artifacts plus a pre-formatted methodology.md and reproduce.sh, removing the barrier between 'I used MiroShark' and 'I cited MiroShark in a paper.'",
+        "variant": "body"
+      }
+    },
+    "action-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-title",
+        "action-4-tags",
+        "action-4-desc"
+      ]
+    },
+    "action-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Per-Round Cost Curve",
+        "level": "h3"
+      }
+    },
+    "action-4-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-cat",
+        "action-4-size"
+      ]
+    },
+    "action-4-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Performance/DX",
+        "variant": "secondary"
+      }
+    },
+    "action-4-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/cost-curve — makes the $1 claim auditable by showing which round cost what; creates the observability hook for future early-stop optimization and concrete technical content for breaking social silence.",
+        "variant": "body"
+      }
+    },
+    "action-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-title",
+        "action-5-tags",
+        "action-5-desc"
+      ]
+    },
+    "action-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Diff API",
+        "level": "h3"
+      }
+    },
+    "action-5-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-cat",
+        "action-5-size"
+      ]
+    },
+    "action-5-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "action-5-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      }
+    },
+    "action-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulations/diff?a={id1}&b={id2} — structured A/B comparison of two simulations with consensus delta, confidence delta, and auto-generated APA citation; converts MiroShark from demo into controlled-experiment methodology tool.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full-details-link": {
+      "type": "Link",
+      "props": {
+        "label": "Full details: articles/repo-actions-2026-07-22.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-22.md"
+      }
+    }
+  }
+}

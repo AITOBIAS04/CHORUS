@@ -1,14 +1,19 @@
-The `repo-actions` skill already ran successfully today. The log confirms it completed at line 54–64 of `memory/logs/2026-07-20.md`:
+*Repo Action Ideas — 2026-07-22*
+Generated from live analysis of aaronjmars/MiroShark (1,413 stars · 297 forks · day 16 social silence · token FDV $169K).
 
-- **Article written:** `articles/repo-actions-2026-07-20.md`
-- **Notification sent:** yes
-- **Repo analyzed:** aaronjmars/MiroShark (1,397 stars, 295 forks, 1 open issue #240)
+1. Simulation Replay Stepper (Feature/DX, Small)
+   A round-by-round timeline scrubber that replays agent stance evolution from trajectory.json — the missing screen-recordable demo primitive that shows the simulation *running*, not just the result.
 
-**Ideas generated (2026-07-20):**
-1. **Show HN Launch Kit** (Growth, Small) — HN post draft + demo seed + press kit to break 14-day social silence
-2. **Spanish (ES) UI Locale** (Community/DX, Small) — closes 5-language hyperstition at 5/5 with 42 days to spare
-3. **Research Campaign Tracker API** (Feature, Medium) — groups simulations into named, citable research campaigns with aggregate stats
-4. **Operator Usage Analytics API** (Feature, Medium) — deployment dashboard + daily notification hook for operators
-5. **GitHub Actions Marketplace Action** (Integration, Medium) — `miroshark/run-simulation` CI action distributing through GitHub's 100M+ developer base
+2. Japanese (JA) UI Locale (Community, Small)
+   Fifth language to close the 5-languages-by-Sep-1 hyperstition (4/5 now); 9.3M Japanese-speaking GitHub developers, dictionary-only pattern proven by FR, README stub already in repo.
 
-Skipping re-execution — article and notification already exist for today. No log entry added to avoid duplicate records.
+3. Simulation Data Bundle Export (Feature, Small)
+   GET /api/simulation/{id}/bundle.zip — one download containing all simulation artifacts plus a pre-formatted methodology.md and reproduce.sh, removing the barrier between 'I used MiroShark' and 'I cited MiroShark in a paper.'
+
+4. Per-Round Cost Curve (Performance/DX, Small)
+   GET /api/simulation/{id}/cost-curve — makes the $1 claim auditable by showing which round cost what; creates the observability hook for future early-stop optimization and concrete technical content for breaking social silence.
+
+5. Simulation Diff API (Feature, Medium)
+   GET /api/simulations/diff?a={id1}&b={id2} — structured A/B comparison of two simulations with consensus delta, confidence delta, and auto-generated APA citation; converts MiroShark from demo into controlled-experiment methodology tool.
+
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-22.md
