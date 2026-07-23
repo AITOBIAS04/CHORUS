@@ -1,5 +1,11 @@
 ## Summary
 
-**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — `GH_GLOBAL` secret is not set (60th consecutive block). Exited early per skill instructions before feature selection, cloning, or notification. Logged to `memory/logs/2026-07-22.md`.
+**Skill:** feature
+**Result:** FEATURE_SKIP — no push access to `aaronjmars/MiroShark` (GH_GLOBAL secret not set).
 
-To unblock, set the `GH_GLOBAL` repository secret with a PAT that has push access to `aaronjmars/MiroShark`.
+Pre-flight check (`gh api repos/aaronjmars/MiroShark --jq '.permissions.push'`) returned `false`. Per skill instructions, stopped before picking a feature, cloning the repo, or sending any notification. This is the 61st consecutive block.
+
+**Files modified:**
+- `memory/logs/2026-07-23.md` — appended feature skip log entry
+
+**Follow-up:** Set the `GH_GLOBAL` secret with a PAT that has push access to `aaronjmars/MiroShark` to unblock 40+ built features and resume autonomous feature building.
