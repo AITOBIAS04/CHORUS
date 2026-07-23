@@ -1,0 +1,101 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_main",
+        "text_para1",
+        "text_para2",
+        "text_para3",
+        "separator_main",
+        "grid_stats",
+        "link_article"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Half of Open-Source AI Projects Never Reach Production. One Spent Last Week Doing Nothing But Maintenance.",
+        "level": "h2"
+      }
+    },
+    "text_para1": {
+      "type": "Text",
+      "props": {
+        "text": "Mozilla's 2026 State of Open Source AI report says 79% of developers use open models but only 51% deploy in production — the gap is maintenance, not features."
+      }
+    },
+    "text_para2": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark shipped zero new features last week: two same-day CVE patches, 1,325 lines of dead code removed, full dependency sweep. Fifty stars added anyway."
+      }
+    },
+    "text_para3": {
+      "type": "Text",
+      "props": {
+        "text": "When 93% of codebases contain zombie components, operational discipline is the moat."
+      }
+    },
+    "separator_main": {
+      "type": "Separator",
+      "props": {}
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_developers",
+        "stat_production",
+        "stat_zombies"
+      ]
+    },
+    "stat_developers": {
+      "type": "Stat",
+      "props": {
+        "label": "Developers using open models",
+        "value": "79%"
+      }
+    },
+    "stat_production": {
+      "type": "Stat",
+      "props": {
+        "label": "Deployed to production",
+        "value": "51%"
+      }
+    },
+    "stat_zombies": {
+      "type": "Stat",
+      "props": {
+        "label": "Codebases with zombie components",
+        "value": "93%"
+      }
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-23.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-*New Article: Forty CVEs Hit the Protocol That AI Agents Run On. One Project Patched the Latest Before Most Teams Read the Advisory.*
+*New Article: Half of Open-Source AI Projects Never Reach Production. One Spent Last Week Doing Nothing But Maintenance.*
 
-The MCP ecosystem has logged over forty CVEs in 2026, with the latest — a high-severity WebSocket hijacking flaw — patched in MiroShark within hours via PR #255, alongside a shell-quote DoS fix in PR #256. The industry average time to remediate a critical vulnerability is 74 to 252 days. MiroShark closed both before most teams finished reading the advisory, while its star count climbed to 1,413 through organic discovery alone.
+Mozilla's 2026 State of Open Source AI report says 79% of developers use open models but only 51% deploy in production — the gap is maintenance, not features. MiroShark shipped zero new features last week: two same-day CVE patches, 1,325 lines of dead code removed, full dependency sweep. Fifty stars added anyway. When 93% of codebases contain zombie components, operational discipline is the moat.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-21.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-23.md
