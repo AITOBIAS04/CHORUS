@@ -1,0 +1,156 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-07-23"
+      },
+      "children": [
+        "stat_price",
+        "metrics_grid",
+        "separator_1",
+        "analysis_text",
+        "separator_2",
+        "chart_link"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000001769",
+        "delta": "+4.76%",
+        "trend": "up"
+      }
+    },
+    "metrics_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_liquidity",
+        "stat_24h_vol",
+        "stat_buys",
+        "stat_sells",
+        "stat_buyers",
+        "stat_sellers",
+        "stat_24h_high",
+        "stat_24h_low",
+        "stat_7d",
+        "stat_30d",
+        "stat_ath"
+      ]
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$208.9K"
+      }
+    },
+    "stat_24h_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Vol",
+        "value": "$7.9K"
+      }
+    },
+    "stat_buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys",
+        "value": "20"
+      }
+    },
+    "stat_sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Sells",
+        "value": "22"
+      }
+    },
+    "stat_buyers": {
+      "type": "Stat",
+      "props": {
+        "label": "Buyers",
+        "value": "9"
+      }
+    },
+    "stat_sellers": {
+      "type": "Stat",
+      "props": {
+        "label": "Sellers",
+        "value": "11"
+      }
+    },
+    "stat_24h_high": {
+      "type": "Stat",
+      "props": {
+        "label": "24h High",
+        "value": "$0.000002005"
+      }
+    },
+    "stat_24h_low": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Low",
+        "value": "$0.000001688"
+      }
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "−1.9%",
+        "trend": "down"
+      }
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "−60.5%",
+        "trend": "down"
+      }
+    },
+    "stat_ath": {
+      "type": "Stat",
+      "props": {
+        "label": "ATH",
+        "value": "−96.0%",
+        "trend": "down"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "analysis_text": {
+      "type": "Text",
+      "props": {
+        "text": "Buy cluster at 11:00 UTC Jul 22 pushed to $0.000002, midnight spike tagged $0.000002005 — both unwound by the same wallets. Round-trip flow dominates; no social signal in 17+ days.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GeckoTerminal Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
