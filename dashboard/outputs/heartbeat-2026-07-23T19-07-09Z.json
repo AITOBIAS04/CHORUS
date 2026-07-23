@@ -1,0 +1,114 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "date-text",
+        "skills-header",
+        "skills-stack",
+        "separator-1",
+        "stale-prs-alert"
+      ]
+    },
+    "date-text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-23 (19:00 UTC)",
+        "variant": "muted"
+      }
+    },
+    "skills-header": {
+      "type": "Text",
+      "props": {
+        "text": "All 7 Thursday skills ran:"
+      }
+    },
+    "skills-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4",
+        "skill-5",
+        "skill-6",
+        "skill-7"
+      ]
+    },
+    "skill-1": {
+      "type": "Text",
+      "props": {
+        "text": "✓ token-report"
+      }
+    },
+    "skill-2": {
+      "type": "Text",
+      "props": {
+        "text": "✓ fetch-tweets"
+      }
+    },
+    "skill-3": {
+      "type": "Text",
+      "props": {
+        "text": "✓ repo-pulse"
+      }
+    },
+    "skill-4": {
+      "type": "Text",
+      "props": {
+        "text": "✓ feature"
+      }
+    },
+    "skill-5": {
+      "type": "Text",
+      "props": {
+        "text": "✓ push-recap"
+      }
+    },
+    "skill-6": {
+      "type": "Text",
+      "props": {
+        "text": "✓ repo-article"
+      }
+    },
+    "skill-7": {
+      "type": "Text",
+      "props": {
+        "text": "→ heartbeat (this run)"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stale-prs-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Stale PRs (>24h)",
+        "message": "#38 and #39 are duplicates — both titled improve:"
+      }
+    }
+  }
+}
