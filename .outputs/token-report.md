@@ -1,11 +1,10 @@
 *$MiroShark Daily — 2026-07-23*
 
-Price: $0.000001769 (+4.76% 24h)
-Liquidity: $208.9K | 24h Vol: $7.9K
-Buys/Sells: 20/22 | Buyers/Sellers: 9/11
-24h H/L: $0.000002005 / $0.000001688
-7d: −1.9% | 30d: −60.5% | ATH: −96.0%
+Price: $0.000001773 (+1.35% 24h)
+Liquidity: $207.8K | 24h Vol: $7,894
+Buys/Sells: 20/22
+7d: −1.7% | 30d: −60.4%
 
-Buy cluster at 11:00 UTC Jul 22 pushed to $0.000002, midnight spike tagged $0.000002005 — both unwound by the same wallets. Round-trip flow dominates; no social signal in 17+ days.
+Volatile round-trip session: coordinated buys at 11:00 UTC Jul 22 ran price to $0.000002005, then the same wallets (0x749fe1, 0x0b6694, 0x2f1ff6) unwound through the 02–07 UTC window. Net +1.35%. FDV $177K, −95.9% from ATH. 17-day social silence.
 
 Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209

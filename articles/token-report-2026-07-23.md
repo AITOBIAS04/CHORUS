@@ -4,18 +4,18 @@
 
 | Metric | Value | 24h Change |
 |--------|-------|------------|
-| Price | $0.000001769 | +4.76% |
-| Liquidity (top pool) | $208,865 | — |
-| 24h Volume | $7,921 | — |
+| Price | $0.000001773 | +1.35% |
+| Liquidity (top pool) | $207,848 | — |
+| 24h Volume | $7,894 | — |
 | 24h Buys/Sells | 20 / 22 | — |
 | 24h Buyers/Sellers | 9 / 11 | — |
 | 24h High/Low | $0.000002005 / $0.000001688 | — |
-| FDV | $176,854 | — |
-| ATH distance | −96.0% from $0.0000436 (May 18) | — |
+| FDV | $177,294 | — |
+| ATH distance | −95.9% from $0.0000436 (May 18) | — |
 
 ## Trend
 
-- **24h:** Volatile session. Coordinated buying at 10:50–11:30 UTC pushed price from ~$0.000001740 to $0.000001960 (+12%), then a second wave at 00:13 UTC briefly tagged $0.000002005 before sellers immediately unwound the move. By 05:00 UTC the price had retreated to $0.000001769. Net: +4.76% on the day.
+- **24h:** Volatile session. Coordinated buying at 10:50–11:30 UTC pushed price from ~$0.000001740 to $0.000001960 (+12%), then a second wave at 00:13 UTC briefly tagged $0.000002005 (24h high) before sellers unwound the move through the 02–07 UTC window. Price settled at $0.000001773. Net: +1.35% on the day.
 - **7-day:** −1.9% (from $0.000001803 on Jul 16 to $0.000001769 today). Sideways drift with intraday volatility but no directional trend.
 - **30-day:** −60.5% (from $0.000004473 on Jun 24). Sustained decompression from the early-July highs near $0.0000040–$0.0000050.
 
@@ -29,7 +29,7 @@ XAI_API_KEY not set — social data unavailable. Social silence has persisted si
 
 ## Context
 
-Today's +4.76% print masks a session that went nowhere: a synchronized buy cluster at 11:00 UTC Jul 22 ran the price to $0.000001960, a secondary push at midnight briefly reached $0.000002005 (the 24h high), and then the same wallets sold back down to the day's low range. With FDV at $176.9K — 1/23rd of the $4M+ level at ATH and still −96% off the May 18 peak — the token is trading on thin conviction and concentrated flow. The repo continues daily autonomous commits (aeon 116+ days), but no social or ecosystem catalysts are visible in the data.
+A synchronized buy cluster at 11:00 UTC Jul 22 ran the price to $0.000001960, a secondary push at midnight briefly tagged $0.000002005 (24h high), and then the same wallets — 0x749fe1, 0x0b6694, 0x2f1ff6, 0xaf77cb — sold back down through the 02–07 UTC window. Net result: +1.35% on the day, masking a full round-trip cycle. With FDV at $177.3K — 1/23rd of the $4M+ level at ATH and still −95.9% off the May 18 peak — the token is trading on concentrated flow with no visible organic catalyst. The repo continues daily autonomous commits (aeon 116+ days), but social silence has extended to 17+ days.
 
 ---
 *Data: GeckoTerminal | Chain: Base*
