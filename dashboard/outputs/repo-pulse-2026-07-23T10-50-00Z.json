@@ -1,0 +1,68 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "Repository metrics for 2026-07-23"
+      },
+      "children": [
+        "repo_link",
+        "date_badge",
+        "separator_1",
+        "stats_stack"
+      ]
+    },
+    "repo_link": {
+      "type": "Link",
+      "props": {
+        "label": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark"
+      }
+    },
+    "date_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2026-07-23",
+        "variant": "outline"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stars_stat",
+        "forks_stat"
+      ]
+    },
+    "stars_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1415",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "forks_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "297",
+        "delta": "+0",
+        "trend": "neutral"
+      }
+    }
+  }
+}
