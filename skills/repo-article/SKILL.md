@@ -16,6 +16,8 @@ Read memory/watched-repos.md for the repo to cover.
 
 ## Steps
 
+0. **Skip re-run if already reported today** — If `${var}` is empty (no explicit angle requested), check whether `memory/logs/${today}.md` already contains a `## Repo Article` entry. If it does, log `REPO_ARTICLE_RERUN_QUIET: article already written today — skipping re-analysis` to `memory/logs/${today}.md` and **stop here — do NOT re-run the analysis, overwrite the article, or re-send the notification**. If `${var}` is set, always proceed (the operator requested a specific angle).
+
 1. **Gather repo context** — for each watched repo:
    ```bash
    # Repo metadata
