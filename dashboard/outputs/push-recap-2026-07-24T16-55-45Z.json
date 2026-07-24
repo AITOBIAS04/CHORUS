@@ -1,0 +1,137 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-24"
+      },
+      "children": [
+        "text_repo",
+        "text_commits",
+        "separator_1",
+        "heading_security",
+        "stack_patches",
+        "separator_2",
+        "heading_changes",
+        "stack_changes",
+        "separator_3",
+        "stat_files",
+        "storylink_recap"
+      ]
+    },
+    "text_repo": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "variant": "lead"
+      }
+    },
+    "text_commits": {
+      "type": "Text",
+      "props": {
+        "text": "2 substantive commits by @aaronjmars (12 automation commits filtered)"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_security": {
+      "type": "Heading",
+      "props": {
+        "text": "Security Patches",
+        "level": "h3"
+      }
+    },
+    "stack_patches": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_torch",
+        "alert_setuptools"
+      ]
+    },
+    "alert_torch": {
+      "type": "Alert",
+      "props": {
+        "title": "torch 2.12.1 → 2.13.0",
+        "message": "Fixes GHSA-rrmf-rvhw-rf47 (memory corruption in PyTorch ≤2.12.1). Also pulls cuda-toolkit 13.0.3.0 and nvidia-cublas 13.1.1.3 with tighter platform markers.",
+        "type": "info"
+      }
+    },
+    "alert_setuptools": {
+      "type": "Alert",
+      "props": {
+        "title": "setuptools 81.0.0 → 83.0.0",
+        "message": "Resolves Dependabot security alert (high/medium severity).",
+        "type": "info"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_change1",
+        "text_change2",
+        "text_change3"
+      ]
+    },
+    "text_change1": {
+      "type": "Text",
+      "props": {
+        "text": "torch upgraded to 2.13.0 — closes memory corruption advisory; also pulls cuda-toolkit 13.0.3.0 and nvidia-cublas 13.1.1.3 with tighter platform markers"
+      }
+    },
+    "text_change2": {
+      "type": "Text",
+      "props": {
+        "text": "setuptools bumped to 83.0.0 — resolves Dependabot security alert"
+      }
+    },
+    "text_change3": {
+      "type": "Text",
+      "props": {
+        "text": "Both are lockfile-only (backend/uv.lock) — no manifest or code changes"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "1",
+        "delta": "+55/-44 lines"
+      }
+    },
+    "storylink_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-24.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

@@ -25,6 +25,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-07-24 | push-recap | Security patches: torch 2.12.1→2.13.0 (GHSA-rrmf-rvhw-rf47 memory corruption) + setuptools 81→83 (Dependabot alert); 2 commits, 1 file, +55/-44 lines |
 | 2026-07-22 | token-report | $0.000001696 (−3.97% 24h); FDV $169,560; LP $204,653; vol $3,721; net sell pressure (14 sells vs 11 buys); 0x078e5239 unwound accumulated position; −96.1% ATH |
 | 2026-07-22 | push-recap | CVE patches: MCP SDK CSWSH (CVE-2026-59950, PR #255) + shell-quote DoS (CVE-2026-13311, PR #256); 2 commits, 3 files, +10/-7 lines |
 | 2026-07-21 | token-report | $0.000001755 (+1.58% 24h); FDV $175,496; LP $210,582; vol $6,959 (24x spike from Jul 19 trough); 0x848a004f bought+sold 758M same session; −96.0% ATH |
