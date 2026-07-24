@@ -1,14 +1,12 @@
-*Agent Self-Improvement — 2026-07-22*
+*Agent Self-Improvement — 2026-07-24*
 
-Merged PR #36 (skill-leaderboard early exit). New improvement: added same-day rerun dedup to repo-article skill.
+Added duplicate PR prevention to the self-improve skill. Before implementing any improvement, the skill now checks for open PRs with the same improve: prefix and stops if a duplicate already exists. This prevents wasting compute on identical changes.
 
-On Jul 21, repo-article ran twice and the second run silently overwrote the first article — a dead-code audit piece was replaced by an MCP security article. The skill now checks for an existing log entry before running. If an article was already written today and no specific angle was requested, it exits early instead of re-analyzing and overwriting.
-
-Why: This is the third time repo-article has run twice in a day (PR #37 attempted this fix on Jul 20 but went DIRTY from volatile files in the commit). Same dedup pattern already used by push-recap and repo-pulse.
+Why: On Jul 22, self-improve ran twice and created two identical PRs (#38 and #39) — both titled "improve: add same-day rerun dedup to repo-article skill." The second run implemented the same change that was already in an open PR, wasting a full skill execution.
 
 What changed:
-- skills/repo-article/SKILL.md: Added Step 0 dedup gate — checks for existing Repo Article log entry, logs REPO_ARTICLE_RERUN_QUIET and stops if already reported. Bypassed when operator sets an explicit angle via ${var}.
+- skills/self-improve/SKILL.md: added Step 2.5 — queries open improve: PRs before implementation begins; logs SELF_IMPROVE_DEDUP and stops if a duplicate is found
 
-Impact: Prevents article overwrites on re-runs, saves compute on redundant analysis, and preserves the first article of the day.
+Impact: Eliminates duplicate self-improve PRs and saves wasted compute when the skill runs multiple times targeting the same issue.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/39
+PR: https://github.com/AITOBIAS04/CHORUS/pull/40

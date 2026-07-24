@@ -83,7 +83,7 @@
 - Repo-article lacked same-day rerun dedup — re-runs within the same day re-analyzed and overwrote earlier articles (observed Jul 21, two runs at 16:01 + 17:43 UTC); PR #37 went DIRTY from volatile files; re-applied as PR #39 (2026-07-22) with Step 0 dedup gate — skips when log entry exists and no explicit angle requested
 - Skill-leaderboard ran full 8-step pipeline for 12 consecutive INSUFFICIENT_DATA weeks — minimum-fork check was only at step 8 (notification gate), so fetch/aggregate/compare/write all ran wasted; added early exit at step 2 when fewer than 2 active forks (self-improve PR #36, 2026-07-20)
 - Root-anchored .gitignore rules don't catch runtime artifacts in nested directories — notify bodies and xAI scratch JSON leaked via auto-commits; fix: widen rules to un-anchored globs (remove leading slashes); also unblocked ci-okf validator at 131 concepts (miroshark-aeon PRs #114/#115, 2026-07-18)
-- Self-improve can create duplicate PRs when run multiple times on the same day targeting the same improvement — Jul 22 heartbeat found PR #38 (13:18 UTC) + PR #39 (14:50 UTC) both titled "improve: add same-day rerun dedup to repo-article skill"; fix: add open-PR title check before creating new ones
+- Self-improve can create duplicate PRs when run multiple times on the same day targeting the same improvement — Jul 22 heartbeat found PR #38 (13:18 UTC) + PR #39 (14:50 UTC) both titled "improve: add same-day rerun dedup to repo-article skill"; fixed with Step 2.5 duplicate PR check (self-improve PR #40, 2026-07-24)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)

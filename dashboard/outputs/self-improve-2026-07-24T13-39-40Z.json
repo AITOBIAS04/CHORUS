@@ -1,0 +1,118 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-07-24"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_intro",
+        "sep_1",
+        "heading_why",
+        "text_why_context",
+        "sep_2",
+        "heading_what",
+        "text_what_details",
+        "sep_3",
+        "heading_impact",
+        "text_impact",
+        "sep_4",
+        "link_pr"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Added duplicate PR prevention to the self-improve skill. Before implementing any improvement, the skill now checks for open PRs with the same improve: prefix and stops if a duplicate already exists. This prevents wasting compute on identical changes.",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text_why_context": {
+      "type": "Text",
+      "props": {
+        "text": "On Jul 22, self-improve ran twice and created two identical PRs (#38 and #39) — both titled \"improve: add same-day rerun dedup to repo-article skill.\" The second run implemented the same change that was already in an open PR, wasting a full skill execution.",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_what": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text_what_details": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: added Step 2.5 — queries open improve: PRs before implementation begins; logs SELF_IMPROVE_DEDUP and stops if a duplicate is found",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates duplicate self-improve PRs and saves wasted compute when the skill runs multiple times targeting the same issue.",
+        "variant": "body"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pull Request #40",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/40",
+        "source": "GitHub"
+      }
+    }
+  }
+}
