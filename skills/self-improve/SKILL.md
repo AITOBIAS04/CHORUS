@@ -46,6 +46,13 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
 
 2. **Pick ONE improvement** — the most impactful, smallest-effort fix. Don't try to do everything at once.
 
+2.5. **Duplicate PR check** — Before implementing, verify no open PR already addresses this improvement:
+   ```bash
+   gh pr list --state open --json number,title,body \
+     --jq '[.[] | select(.title | startswith("improve:"))] | .[] | "\(.number)\t\(.title)"'
+   ```
+   If any open PR targets the same files or describes the same change, log `SELF_IMPROVE_DEDUP: open PR #N already targets this area — skipping` and **stop**. Do NOT create a second PR for the same improvement.
+
 3. **Implement the improvement** directly in this repo. You have full access to:
    - `skills/*/SKILL.md` — skill prompts and instructions
    - `aeon.yml` — skill config, schedules, vars
