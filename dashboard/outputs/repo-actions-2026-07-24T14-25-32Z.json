@@ -1,0 +1,372 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-07-24"
+      },
+      "children": [
+        "context",
+        "sep1",
+        "items-container",
+        "sep2",
+        "footer"
+      ]
+    },
+    "context": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,416 stars · 297 forks · day 18 social silence · token −96.1% ATH · Sep hyperstitions 38 days out).",
+        "variant": "caption"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "items-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4",
+        "item-5"
+      ]
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-1-header",
+        "item-1-desc"
+      ]
+    },
+    "item-1-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-1-num",
+        "item-1-title",
+        "item-1-category",
+        "item-1-size"
+      ]
+    },
+    "item-1-num": {
+      "type": "Badge",
+      "props": {
+        "text": "1",
+        "variant": "secondary"
+      }
+    },
+    "item-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Korean (KO) UI Locale",
+        "level": "h4"
+      }
+    },
+    "item-1-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX",
+        "variant": "outline"
+      }
+    },
+    "item-1-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "default"
+      }
+    },
+    "item-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Closes the 5-language hyperstition at 5/5 — 9.2M Korean GitHub devs, dictionary-only pattern, zero component changes.",
+        "variant": "body"
+      }
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-2-header",
+        "item-2-desc"
+      ]
+    },
+    "item-2-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-2-num",
+        "item-2-title",
+        "item-2-category",
+        "item-2-size"
+      ]
+    },
+    "item-2-num": {
+      "type": "Badge",
+      "props": {
+        "text": "2",
+        "variant": "secondary"
+      }
+    },
+    "item-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Narrative Export",
+        "level": "h4"
+      }
+    },
+    "item-2-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Content",
+        "variant": "outline"
+      }
+    },
+    "item-2-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "default"
+      }
+    },
+    "item-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/narrative.md returns paste-ready Markdown prose: topic, round arc, consensus result, APA cite. Tutorial creators get the writeup for free.",
+        "variant": "body"
+      }
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-3-header",
+        "item-3-desc"
+      ]
+    },
+    "item-3-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-3-num",
+        "item-3-title",
+        "item-3-category",
+        "item-3-size"
+      ]
+    },
+    "item-3-num": {
+      "type": "Badge",
+      "props": {
+        "text": "3",
+        "variant": "secondary"
+      }
+    },
+    "item-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Webhook Event Delivery",
+        "level": "h4"
+      }
+    },
+    "item-3-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Integration",
+        "variant": "outline"
+      }
+    },
+    "item-3-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "default"
+      }
+    },
+    "item-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "POST webhook fires the moment a simulation publishes — CHORUS aeon gets real-time results, ecosystem partners integrate without polling.",
+        "variant": "body"
+      }
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-4-header",
+        "item-4-desc"
+      ]
+    },
+    "item-4-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-4-num",
+        "item-4-title",
+        "item-4-category",
+        "item-4-size"
+      ]
+    },
+    "item-4-num": {
+      "type": "Badge",
+      "props": {
+        "text": "4",
+        "variant": "secondary"
+      }
+    },
+    "item-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Topic Autocomplete API",
+        "level": "h4"
+      }
+    },
+    "item-4-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "outline"
+      }
+    },
+    "item-4-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "default"
+      }
+    },
+    "item-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/topics/autocomplete?q=... surfaces prior high-confidence topics + trending clusters. Eliminates the blank-topic barrier for new users; unlocks the Trending sidebar.",
+        "variant": "body"
+      }
+    },
+    "item-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-5-header",
+        "item-5-desc"
+      ]
+    },
+    "item-5-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-5-num",
+        "item-5-title",
+        "item-5-category",
+        "item-5-size"
+      ]
+    },
+    "item-5-num": {
+      "type": "Badge",
+      "props": {
+        "text": "5",
+        "variant": "secondary"
+      }
+    },
+    "item-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Template Gallery",
+        "level": "h4"
+      }
+    },
+    "item-5-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Community",
+        "variant": "outline"
+      }
+    },
+    "item-5-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "default"
+      }
+    },
+    "item-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "10 pre-built scenario templates at /templates — Corporate Crisis, Policy Change, Market Shock, etc. One-click pre-fill. Tutorial creators record using a template; 15-min tutorial, no blank-page problem.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "footer-label",
+        "footer-link"
+      ]
+    },
+    "footer-label": {
+      "type": "Text",
+      "props": {
+        "text": "Full details:",
+        "variant": "caption"
+      }
+    },
+    "footer-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-24.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-24.md"
+      }
+    }
+  }
+}

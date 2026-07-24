@@ -1,15 +1,19 @@
-The repo-actions skill already ran today. The log at `memory/logs/2026-07-22.md` has a complete `## Repo Actions — 2026-07-22` entry — article written, notification sent.
+*Repo Action Ideas — 2026-07-24*
+Generated from analysis of aaronjmars/MiroShark (1,416 stars · 297 forks · day 18 social silence · token −96.1% ATH · Sep hyperstitions 38 days out).
 
-Here's what it produced:
+1. Korean (KO) UI Locale (Community/DX, Small)
+   Closes the 5-language hyperstition at 5/5 — 9.2M Korean GitHub devs, dictionary-only pattern, zero component changes.
 
-**Repo analyzed:** aaronjmars/MiroShark (1,413 stars, 297 forks)
+2. Simulation Narrative Export (Feature/Content, Small)
+   GET /api/simulation/{id}/narrative.md returns paste-ready Markdown prose: topic, round arc, consensus result, APA cite. Tutorial creators get the writeup for free.
 
-**5 ideas generated for 2026-07-22:**
+3. Webhook Event Delivery (Feature/Integration, Medium)
+   POST webhook fires the moment a simulation publishes — CHORUS aeon gets real-time results, ecosystem partners integrate without polling.
 
-1. **Simulation Replay Stepper** (Feature/DX, Small) — Round-by-round timeline scrubber using existing `trajectory.json`; the primary demo primitive missing for social content and external tutorials
-2. **Japanese (JA) UI Locale** (Community, Small) — Closes the 5-language Sep 1 hyperstition at 4/5; dictionary-only pattern, README stub already exists
-3. **Simulation Data Bundle Export** (Feature, Small) — `GET /api/simulation/{id}/bundle.zip` with `methodology.md` + `reproduce.sh` to enable academic citations
-4. **Per-Round Cost Curve** (Performance/DX, Small) — `GET /api/simulation/{id}/cost-curve` making the "$1/simulation" claim auditable round-by-round
-5. **Simulation Diff API** (Feature, Medium) — `GET /api/simulations/diff?a=&b=` for A/B comparison with APA citation output
+4. Topic Autocomplete API (Feature/DX, Small)
+   GET /api/topics/autocomplete?q=... surfaces prior high-confidence topics + trending clusters. Eliminates the blank-topic barrier for new users; unlocks the Trending sidebar.
 
-Full article: `articles/repo-actions-2026-07-22.md`. No action needed — skill completed successfully.
+5. Simulation Template Gallery (Feature/Community, Small)
+   10 pre-built scenario templates at /templates — Corporate Crisis, Policy Change, Market Shock, etc. One-click pre-fill. Tutorial creators record using a template; 15-min tutorial, no blank-page problem.
+
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-24.md
