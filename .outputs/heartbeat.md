@@ -1,7 +1,9 @@
-## Summary
+**HEARTBEAT_OK**
 
-- **System health:** Clean — all 14 skills at `consecutive_failures: 0`.
-- **All Thursday skills confirmed run:** token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article all completed before this run.
-- **Stalled PRs #38 and #39** (same-title self-improve duplicates) were already notified in today's 19:00 UTC heartbeat — dedup applied, no repeat notification sent.
-- **No open memory issues**, no escalations.
-- **Result: HEARTBEAT_OK.** Logged to `memory/logs/2026-07-23.md`.
+All 8 scheduled skills for Friday 2026-07-24 completed successfully. No missing skills, no open issues, no new findings worth notifying about. PRs #38/#39 remain stalled but were already flagged in yesterday's heartbeat (within 48h dedup window). PR #40 (today's self-improve) is too new to flag.
+
+## Summary
+- Checked cron-state, today's log, yesterday's log, open PRs, and active GH runs
+- All 8 expected skills confirmed completed (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens)
+- No systemic failures, no open issues, no escalations
+- Logged HEARTBEAT_OK to `memory/logs/2026-07-24.md` and committed
