@@ -574,3 +574,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-24,heartbeat,claude-sonnet-4-6,8,3153,282522,35591
 2026-07-25,token-report,claude-sonnet-4-6,13,15698,766573,74636
 2026-07-25,hyperstitions-ideas,claude-opus-4-6,12,11300,523688,41669
+2026-07-25,feature,claude-opus-4-6,14,2737,505900,26057
