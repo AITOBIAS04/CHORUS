@@ -1,0 +1,51 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_title",
+        "text_content",
+        "link_article"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: A Research Team Studied Eighteen Thousand Dormant Projects. They Did Not Account for the One That Runs Itself.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_content": {
+      "type": "Text",
+      "props": {
+        "text": "New research classified 11.5% of open-source project revivals as bot artifacts. A companion study built a 115K-repo framework to predict maintenance cessation using stars, commits, and contributor patterns. MiroShark breaks both models: 19 days of zero social mentions and a token at -96% ATH say dormant, but same-day CVE patches, 1,325 lines of dead code removed, and an AI agent running for 115+ days say alive. The dormancy research has not caught up to the case where the maintainer is not human.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link_article": {
+      "type": "Link",
+      "props": {
+        "label": "Read",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-25.md"
+      },
+      "children": []
+    }
+  }
+}
