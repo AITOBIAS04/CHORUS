@@ -1,13 +1,13 @@
-*Hyperstitions Idea — 2026-07-18*
+*Hyperstitions Idea — 2026-07-25*
 
-"Will 5 distinct non-team accounts mention MiroShark on X/Twitter in any single calendar week by September 1, 2026?"
+"Will 3 of MiroShark's 297 GitHub forks open a pull request in the same calendar week by September 15, 2026?"
 
-The coordination play: 1,368 people starred the repo. 290 forked it. For twelve consecutive days, not one of them mentioned the project anywhere public. This market surfaces that gap — and the easiest possible ask: just tweet. Tag the project, share a simulation, react to an article. Five people, one week. The AI agent ships code every day. It cannot tweet for you.
+The coordination play: MiroShark has 297 forks and zero community PRs in the last month — every recent PR is from the core team or Dependabot. This market turns fork-and-forget into a synchronization challenge: can just 3 out of 297 forkers coordinate one small act of contribution in the same week? Even a typo fix, a doc improvement, or a test addition counts. The market's existence creates peer pressure — the bar is absurdly low (1% of forkers, one week), which makes inaction feel conspicuous.
 
-Why now: Twelve consecutive days of zero social mentions (Jul 7–18) while the agent runs continuously and the project was just mapped as the only open-source queryable simulation layer among 37 AI simulation projects. FDV hit all-time low at $163K today. Technical completeness and social presence have never been further apart.
+Why now: 19th consecutive day of zero social mentions. Token at $0.000001712 (−96% ATH, hovering near all-time low). The 10-community-PRs-by-Aug-1 hyperstition is about to expire with only ~5 completed. The agent has shipped code every single day for 115+ days while 297 forks sit dormant. The gap between machine persistence and human passivity has never been starker.
 
-Resolution: At least 5 unique X/Twitter accounts (excluding @miroshark_ and @aaronjmars) post an original tweet or quote tweet containing "MiroShark" or "$MIROSHARK" within any Monday 00:00 UTC to Sunday 23:59 UTC window. Verified via X search. Deadline: September 1, 2026.
+Resolution: YES if 3 distinct GitHub accounts — each owning a MiroShark fork — open a pull request to aaronjmars/MiroShark within any single Monday-to-Sunday calendar week before September 15, 2026. PRs must be non-empty (not auto-generated or blank). Verified via GitHub API.
 
-Scores: Reflexivity 5/5 | Viral 4/5
+Scores: Reflexivity 4/5 | Viral 4/5
 
 Soon on https://www.hyperstitions.com/ ?

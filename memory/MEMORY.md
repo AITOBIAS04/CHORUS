@@ -103,6 +103,7 @@
 - Hyperstition: Will someone publish a public case study of a real decision informed by a MiroShark simulation by September 1, 2026? (filed 2026-07-04) — 285 forks, 1,354 stars, zero public usage stories; six articles built the solopreneur narrative; requires human with genuine decision to use product and write it up
 - Hyperstition: Will MiroShark hold its first public community call or Twitter Space with 3+ distinct speakers by September 1, 2026? (filed 2026-07-11) — triggered by 5+ consecutive days of zero social mentions and token at -94.7% ATH; project ships 41 surfaces and 8 articles but has zero live human touchpoints; next unlock is phase transition from repo to community
 - Hyperstition: Will 5 distinct non-team accounts mention MiroShark on X/Twitter in any single calendar week by September 1, 2026? (filed 2026-07-18) — 16-day social silence (Jul 7–22); FDV $169.6K (+3.8% above ATL); 1,413 stargazers and 297 forkers are the activation pool
+- Hyperstition: Will 3 of MiroShark's 297 GitHub forks open a PR in the same calendar week by September 15, 2026? (filed 2026-07-25) — 19-day social silence; token $0.000001712 (−96% ATH); 297 forks, zero community PRs in last month; 10-PRs-by-Aug-1 hyperstition expiring at ~5/10
 
 ## Open Issues
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
