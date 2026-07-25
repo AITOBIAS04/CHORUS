@@ -1,0 +1,189 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-07-25 (Sat)"
+      },
+      "children": [
+        "health_status",
+        "sep1",
+        "completed_section",
+        "sep2",
+        "stalled_section",
+        "sep3",
+        "dispatch_section"
+      ]
+    },
+    "health_status": {
+      "type": "Stat",
+      "props": {
+        "label": "Skill Health",
+        "value": "13/13 healthy",
+        "delta": "0 consecutive failures",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "completed_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "completed_note",
+        "completed_skills"
+      ]
+    },
+    "completed_note": {
+      "type": "Text",
+      "props": {
+        "text": "Today's expected skills confirmed complete:",
+        "variant": "muted"
+      }
+    },
+    "completed_skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "skill1",
+        "skill2",
+        "skill3",
+        "skill4",
+        "skill5",
+        "skill6",
+        "skill7"
+      ]
+    },
+    "skill1": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "default"
+      }
+    },
+    "skill2": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "default"
+      }
+    },
+    "skill3": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "default"
+      }
+    },
+    "skill4": {
+      "type": "Badge",
+      "props": {
+        "text": "hyperstitions-ideas",
+        "variant": "default"
+      }
+    },
+    "skill5": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "default"
+      }
+    },
+    "skill6": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "default"
+      }
+    },
+    "skill7": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article",
+        "variant": "default"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stalled_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stalled_heading",
+        "stalled_table"
+      ]
+    },
+    "stalled_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3 Stalled PRs in CHORUS",
+        "level": "h3"
+      }
+    },
+    "stalled_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "PR",
+          "Duration",
+          "Status",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "#38",
+            "~73h",
+            "DIRTY",
+            "improve: add same-day rerun dedup to repo-article skill"
+          ],
+          [
+            "#39",
+            "~73h",
+            "DIRTY",
+            "duplicate of #38 — both need close or manual resolve"
+          ],
+          [
+            "#40",
+            "~29h",
+            "Awaiting review/merge",
+            "improve: add duplicate PR check to self-improve"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dispatch_section": {
+      "type": "Alert",
+      "props": {
+        "title": "Dispatch Status",
+        "message": "No missing skills. No open memory issues.",
+        "type": "success"
+      }
+    }
+  }
+}
