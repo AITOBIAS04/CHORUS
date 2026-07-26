@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-07-24*
-Generated from analysis of aaronjmars/MiroShark (1,416 stars · 297 forks · day 18 social silence · token −96.1% ATH · Sep hyperstitions 38 days out).
+*Repo Action Ideas — 2026-07-26*
+Generated from analysis of aaronjmars/MiroShark — ideas for the feature skill to build.
 
-1. Korean (KO) UI Locale (Community/DX, Small)
-   Closes the 5-language hyperstition at 5/5 — 9.2M Korean GitHub devs, dictionary-only pattern, zero component changes.
+1. i18n Contribution Kit (Community/DX, Small)
+   A scaffold script + LOCALES.md guide + Discussion post that turns any fork holder into a locale contributor — fastest route to community PRs before the Aug 1 deadline.
 
-2. Simulation Narrative Export (Feature/Content, Small)
-   GET /api/simulation/{id}/narrative.md returns paste-ready Markdown prose: topic, round arc, consensus result, APA cite. Tutorial creators get the writeup for free.
+2. Portuguese (PT) UI Locale (Community, Small)
+   Dictionary-only pt-BR locale (1,984 entries, informal você register) closes the 5-language hyperstition at 5/5, 37 days ahead of Sep 1 deadline; Brazil is the 5th-largest GitHub market.
 
-3. Webhook Event Delivery (Feature/Integration, Medium)
-   POST webhook fires the moment a simulation publishes — CHORUS aeon gets real-time results, ecosystem partners integrate without polling.
+3. Simulation OG Image API (Feature/Growth, Medium)
+   SVG-based social card endpoint — auto-generated rich link preview for every published simulation on X, Discord, and Slack, no external deps required.
 
-4. Topic Autocomplete API (Feature/DX, Small)
-   GET /api/topics/autocomplete?q=... surfaces prior high-confidence topics + trending clusters. Eliminates the blank-topic barrier for new users; unlocks the Trending sidebar.
+4. GitHub Discussions + Show & Tell Template (Community, Small)
+   Enable Discussions, seed with three posts, post a community-call thread — minimum viable infrastructure for the Sep 1 '3 speakers' hyperstition with zero venue today.
 
-5. Simulation Template Gallery (Feature/Community, Small)
-   10 pre-built scenario templates at /templates — Corporate Crisis, Policy Change, Market Shock, etc. One-click pre-fill. Tutorial creators record using a template; 15-min tutorial, no blank-page problem.
+5. Air-Gapped HuggingFace Cache (DX/Performance, Small)
+   prefetch-hf-models.sh + MIROSHARK_HF_CACHE_DIR env gate closes open issue #240 (20 days stale), unlocking enterprise/academic deployments for the 'academic citation' hyperstition.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-24.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-26.md

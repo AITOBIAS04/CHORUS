@@ -1,0 +1,312 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "heading_date",
+        "text_subtitle",
+        "sep1",
+        "stack_ideas",
+        "sep2",
+        "link_details"
+      ]
+    },
+    "heading_date": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Action Ideas — 2026-07-26",
+        "level": "h1"
+      }
+    },
+    "text_subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — ideas for the feature skill to build.",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_ideas": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5"
+      ]
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_heading",
+        "idea1_tags",
+        "idea1_desc"
+      ]
+    },
+    "idea1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. i18n Contribution Kit",
+        "level": "h3"
+      }
+    },
+    "idea1_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_cat",
+        "idea1_size"
+      ]
+    },
+    "idea1_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX"
+      }
+    },
+    "idea1_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "A scaffold script + LOCALES.md guide + Discussion post that turns any fork holder into a locale contributor — fastest route to community PRs before the Aug 1 deadline.",
+        "variant": "body"
+      }
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_heading",
+        "idea2_tags",
+        "idea2_desc"
+      ]
+    },
+    "idea2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Portuguese (PT) UI Locale",
+        "level": "h3"
+      }
+    },
+    "idea2_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_cat",
+        "idea2_size"
+      ]
+    },
+    "idea2_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community"
+      }
+    },
+    "idea2_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Dictionary-only pt-BR locale (1,984 entries, informal você register) closes the 5-language hyperstition at 5/5, 37 days ahead of Sep 1 deadline; Brazil is the 5th-largest GitHub market.",
+        "variant": "body"
+      }
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_heading",
+        "idea3_tags",
+        "idea3_desc"
+      ]
+    },
+    "idea3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation OG Image API",
+        "level": "h3"
+      }
+    },
+    "idea3_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_cat",
+        "idea3_size"
+      ]
+    },
+    "idea3_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Growth"
+      }
+    },
+    "idea3_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      }
+    },
+    "idea3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "SVG-based social card endpoint — auto-generated rich link preview for every published simulation on X, Discord, and Slack, no external deps required.",
+        "variant": "body"
+      }
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_heading",
+        "idea4_tags",
+        "idea4_desc"
+      ]
+    },
+    "idea4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. GitHub Discussions + Show & Tell Template",
+        "level": "h3"
+      }
+    },
+    "idea4_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_cat",
+        "idea4_size"
+      ]
+    },
+    "idea4_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community"
+      }
+    },
+    "idea4_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Enable Discussions, seed with three posts, post a community-call thread — minimum viable infrastructure for the Sep 1 '3 speakers' hyperstition with zero venue today.",
+        "variant": "body"
+      }
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_heading",
+        "idea5_tags",
+        "idea5_desc"
+      ]
+    },
+    "idea5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Air-Gapped HuggingFace Cache",
+        "level": "h3"
+      }
+    },
+    "idea5_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_cat",
+        "idea5_size"
+      ]
+    },
+    "idea5_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Performance"
+      }
+    },
+    "idea5_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "prefetch-hf-models.sh + MIROSHARK_HF_CACHE_DIR env gate closes open issue #240 (20 days stale), unlocking enterprise/academic deployments for the 'academic citation' hyperstition.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_details": {
+      "type": "Link",
+      "props": {
+        "label": "Full details: repo-actions-2026-07-26.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-26.md"
+      }
+    }
+  }
+}
