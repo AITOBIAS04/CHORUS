@@ -1,0 +1,166 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "date_text",
+        "description_text",
+        "sep1",
+        "why_heading",
+        "why_text",
+        "sep2",
+        "changed_heading",
+        "changed_text",
+        "sep3",
+        "prs_heading",
+        "prs_stack",
+        "sep4",
+        "impact_heading",
+        "impact_text",
+        "sep5",
+        "pr_link"
+      ]
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-26",
+        "variant": "caption"
+      }
+    },
+    "description_text": {
+      "type": "Text",
+      "props": {
+        "text": "Added cross-day commit deduplication to push-recap skill. The recap now checks yesterday's article for already-reported commit SHAs before analysis, preventing duplicate notifications about the same commits across consecutive days."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "Jul 24 and Jul 25 both reported the exact same 2 security patch commits (torch 2.13.0 + setuptools 83.0.0) because they landed late enough to fall within both runs' 24h fetch windows. The Jul 25 run acknowledged this in its log but still re-analyzed and re-notified."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changed_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "changed_text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/push-recap/SKILL.md: Added Step 4c (cross-day dedup) — reads yesterday's push-recap article, extracts reported SHAs, filters them from today's commit set, skips if nothing new remains"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also merged/closed stale PRs",
+        "level": "h3"
+      }
+    },
+    "prs_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_39",
+        "pr_40",
+        "pr_38"
+      ]
+    },
+    "pr_39": {
+      "type": "Text",
+      "props": {
+        "text": "PR #39 merged (repo-article same-day dedup)"
+      }
+    },
+    "pr_40": {
+      "type": "Text",
+      "props": {
+        "text": "PR #40 merged (self-improve duplicate PR check)"
+      }
+    },
+    "pr_38": {
+      "type": "Text",
+      "props": {
+        "text": "PR #38 closed (duplicate of #39, had conflicts)"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates wasted API calls, duplicate analysis, and redundant notifications when commits span the midnight boundary of adjacent recap windows."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #41",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/41"
+      }
+    }
+  }
+}
