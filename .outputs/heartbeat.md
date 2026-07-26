@@ -1,9 +1,18 @@
-## Summary
+**HEARTBEAT_OK**
 
-**HEARTBEAT_OK** — second run today, all findings already handled.
+All 10 expected Sunday skills completed successfully:
 
-- **System health**: All 13 skills at `consecutive_failures=0`. No systemic failure.
-- **Skills today (Saturday)**: All 8 expected skills ran — token-report ✓, fetch-tweets ✓, repo-pulse ✓, hyperstitions-ideas ✓, feature ✓ (SKIP, GH_GLOBAL), push-recap ✓, repo-article ✓, heartbeat ✓
-- **Open PRs**: #38, #39, #40 still stalled — already reported in today's earlier heartbeat run, dedup suppresses repeat notification
-- **Open issues**: None
-- **Notification**: Suppressed (dedup — same findings reported within past 2h)
+| Skill | Status | Time (UTC) |
+|-------|--------|-----------|
+| token-report | ✓ | 06:22 |
+| fetch-tweets | ✓ (empty, day 20) | 07:18 |
+| repo-pulse | ✓ 1415 stars / 298 forks | 10:25 |
+| feature | ✓ SKIP (GH_GLOBAL, day 61) | 11:35 |
+| self-improve | ✓ PR #41 opened | 13:42 |
+| repo-actions | ✓ 5 ideas generated | 14:23 |
+| push-recap | ✓ QUIET | 17:01 |
+| skill-leaderboard | ✓ INSUFFICIENT_DATA | 17:31 |
+| repo-article | ✓ fork entropy article | 17:54 |
+| memory-flush | ✓ consolidated | 18:20 |
+
+No stalled PRs (PR #41 is only ~5.5h old), no open issues, no missing skills. No notification needed.
