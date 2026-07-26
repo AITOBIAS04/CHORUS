@@ -1,0 +1,121 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-07-26"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price_stat",
+        "liquidity_volume_stack",
+        "buysells_text",
+        "performance_stack",
+        "separator1",
+        "narrative_text",
+        "separator2",
+        "chart_link"
+      ]
+    },
+    "price_stat": {
+      "type": "Stat",
+      "props": {
+        "value": "$0.000001809",
+        "delta": "+2.77%",
+        "trend": "up"
+      }
+    },
+    "liquidity_volume_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "liquidity_stat",
+        "volume_stat"
+      ]
+    },
+    "liquidity_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$207K"
+      }
+    },
+    "volume_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$2,029"
+      }
+    },
+    "buysells_text": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 7/8",
+        "variant": "body"
+      }
+    },
+    "performance_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "perf_7d",
+        "perf_30d"
+      ]
+    },
+    "perf_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "+8.5%",
+        "trend": "up"
+      }
+    },
+    "perf_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "−63.8%",
+        "trend": "down"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "narrative_text": {
+      "type": "Text",
+      "props": {
+        "text": "Holding +10.8% above Jul 18 ATL. Early-morning sell cluster from 0x749fe1885 (~$528) was partially absorbed by a $355 counter-buy. Volume remains thin; 20th consecutive day of zero social activity.",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "chart_link": {
+      "type": "Link",
+      "props": {
+        "label": "View chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
