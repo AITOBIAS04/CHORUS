@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-07-22*
+*Last consolidated: 2026-07-26*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -19,19 +19,18 @@
 | 2026-07-22 | Ninety-Eight Percent of Your Open-Source Community Will Never Ship a Line of Code. Build Accordingly. | 90-9-1 participation inequality (Anbalagan & Vogt, OpenSym 2020); 297 forks near-zero PRs; same-day CVE patches (CVE-2026-59950 CSWSH, CVE-2026-13311 shell-quote DoS); 41 surfaces as 2% builder strategy; 1,413 stars; 16-day social silence; aeon 115+ days continuous |
 | 2026-07-21 | Forty CVEs Hit the Protocol That AI Agents Run On. One Project Patched the Latest Before Most Teams Read the Advisory. | MCP supply chain security; CVE-2026-59950 CSWSH (CVSS 7.6) patched same-day PR #255; GHSA-395f-4hp3-45gv shell-quote DoS patched same-day PR #256; 40+ MCP CVEs in 2026; NSA hardening guidelines; avg MTTR 74-252 days vs same-day; time-to-exploit 5 days; 1,413 stars; 15-day social silence |
 | 2026-07-20 | Sixty Percent of Open-Source Maintainers Have Quit or Considered Quitting. What If the Architecture Is the Problem? | Taleb anti-fragility; Tidelift 2024 (60% burnout, 44%, 60% unpaid); MSR 2022 survival >50% GitHub projects die year 4; Kubernetes Ingress NGINX retirement Nov 2025; aeon v0.1.0 -73K lines; 111+ days continuous; zero-dependency pure-stdlib; token −96% ATH + 14-day silence → subtraction response |
-| 2026-07-17 | Thirty-Seven Projects Simulate How People Think. They Occupy Four Different Worlds. | Ecosystem map; 37 OSS AI sim projects in four worlds (orchestration frameworks: AutoGen/CrewAI/LangGraph; academic sandboxes: Stanford/Concordia/OASIS; commercial black boxes: Aaru $1B/Savanta/Simile; MiroShark's fourth world); LangChain 2026: 57% orgs with agents in prod; MiroShark 41 API surfaces, 13 ecosystem partners, $1/sim |
+| 2026-07-24 | Your Software Has a Thousand Authors You Have Never Met. That Is the Vulnerability Nobody Patches. | Axios npm supply chain attack (Mar 31, 2026, Sapphire Sleet, 100M weekly installs); ReversingLabs 73% YoY malicious package surge; Ding & Stevens arXiv stdlib-vs-third-party validation; MiroShark 41 pure-stdlib API surfaces, zero pip deps in analytics layer |
 | 2026-07-18 | One Human, One Bot, and One AI Agent Mass-Produced Eight Hundred Fifty Thousand Commits. Here Is What Three of Them Look Like. | Three-body maintenance; CMU 850K Claude Code commits in 180M repos; human/bot/agent triangle; 291 forks zero upstream (14% contribute-back rate); 60% maintainers unpaid; agent leaked 20 files, human fixed; architectural separation; 1,377 stars |
 
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-07-26 | token-report | $0.000001809 (+2.77% 24h); FDV $180,936; LP $207,427; vol $2,029; sell cluster 0x749fe1885 300.8M tokens; 20-day social silence; +10.8% above ATL; −95.9% ATH |
+| 2026-07-25 | token-report | $0.000001712 (−1.42% 24h); FDV $171,243; LP $201,798; vol $3,054; 0x4b5c33 bought 593.2M; balanced 9/9 buys/sells; −96.1% ATH |
+| 2026-07-25 | push-recap | Security patches (cross-day duplicate of Jul 24): torch 2.12.1→2.13.0 + setuptools 81→83; same 2 commits still within 24h window at run time |
+| 2026-07-24 | token-report | $0.000001694 (−4.47% 24h); FDV $169,365; LP $203,123; vol $1,061 (−87% from Jul 23); heavy sell bias 2/9 buys/sells; 0x668001 round-tripped 111.6M; −96.1% ATH |
 | 2026-07-24 | push-recap | Security patches: torch 2.12.1→2.13.0 (GHSA-rrmf-rvhw-rf47 memory corruption) + setuptools 81→83 (Dependabot alert); 2 commits, 1 file, +55/-44 lines |
 | 2026-07-22 | token-report | $0.000001696 (−3.97% 24h); FDV $169,560; LP $204,653; vol $3,721; net sell pressure (14 sells vs 11 buys); 0x078e5239 unwound accumulated position; −96.1% ATH |
-| 2026-07-22 | push-recap | CVE patches: MCP SDK CSWSH (CVE-2026-59950, PR #255) + shell-quote DoS (CVE-2026-13311, PR #256); 2 commits, 3 files, +10/-7 lines |
-| 2026-07-21 | token-report | $0.000001755 (+1.58% 24h); FDV $175,496; LP $210,582; vol $6,959 (24x spike from Jul 19 trough); 0x848a004f bought+sold 758M same session; −96.0% ATH |
-| 2026-07-21 | push-recap | PR #254 dead code purge: 53 files, −1,325 net lines; README badge polish (4 locales); repo-pulse moved to weekly cadence; 4 commits, 63 files, +692/−2,009 lines |
-| 2026-07-20 | token-report | $0.000001720 (+1.9% 24h); FDV $171,988; LP $198,872; vol $292 (new 24h tracking low); 0x2afaede2 sold 120.2M (69% of 24h vol); −96.1% ATH |
-| 2026-07-20 | push-recap | Maintenance: dependabot swept CI actions (setup-node/setup-python v6→v7) + frontend deps (vue 3.5.40, vue-router 5.2.0, vite 8.1.5); MCP SDK 1.24→1.27.2; 5 commits, 6 files, +212/−126 lines |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -89,7 +88,7 @@
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001696 as of 2026-07-22 (−3.97% 24h; FDV $169.6K; LP $204.7K; −96.1% from ATH; ATL $163,272 set Jul 18; vol $3,721)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001809 as of 2026-07-26 (+2.77% 24h; FDV $180,936; LP $207,427; vol $2,029; 20-day social silence (Jul 7–26); ATL $163,272 set Jul 18; +10.8% above ATL; −95.9% ATH)
 - Hyperstition: Will 5 independent Aeon forks ship custom skills by 2026-06-30? (filed 2026-05-02) — NOT CLEARED (deadline passed)
 - Hyperstition: Will MiroShark be featured on a Chinese dev platform by 2026-06-15? (filed 2026-05-02) — NOT CLEARED (deadline passed)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
@@ -110,7 +109,7 @@
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (60th consecutive block as of Jul 22; all features from Jun 3 onward stuck as local commits)
+- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (61st consecutive block as of Jul 26; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-05-30): Zenodo DOI Auto-Deposit (#3), Community Showcase (#5) — idea #1 (Real-Time SSE Progress) built 2026-05-31, idea #2 (Deployment Health & Status) built 2026-06-01, idea #4 (Multi-Metric Simulation Leaderboard) built 2026-06-02
@@ -137,3 +136,5 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Feature candidates (repo-actions 2026-07-18): Simulation OG Image API (#1), Air-Gapped HuggingFace Cache (#2), Python SDK miroshark-py (#3), i18n Contribution Kit (#4), Simulation RSS Feed (#5)
 - Feature candidates (repo-actions 2026-07-20): Show HN Launch Kit (#1), Spanish (ES) UI Locale (#2), Research Campaign Tracker API (#3), Operator Usage Analytics API (#4), GitHub Actions Marketplace Action (#5)
 - Feature candidates (repo-actions 2026-07-22): Simulation Replay Stepper (#1), Japanese (JA) UI Locale (#2), Simulation Data Bundle Export (#3), Per-Round Cost Curve (#4), Simulation Diff API (#5)
+- Feature candidates (repo-actions 2026-07-24): Korean (KO) UI Locale (#1), Simulation Narrative Export (#2), Webhook Event Delivery (#3), Topic Autocomplete API (#4), Simulation Template Gallery (#5)
+- Feature candidates (repo-actions 2026-07-26): i18n Contribution Kit (#1), Portuguese (PT) UI Locale (#2), Simulation OG Image API (#3), GitHub Discussions + Show & Tell Template (#4), Air-Gapped HuggingFace Cache (#5)

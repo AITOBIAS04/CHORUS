@@ -1,8 +1,10 @@
-Memory flush complete. The previous flush at 18:14 UTC had already promoted the Jul 20–22 entries and updated the "Last consolidated" date. This re-run added one new lesson: self-improve can create duplicate PRs when run multiple times on the same day targeting the same improvement (observed via the heartbeat's finding of PRs #38 and #39 both titled the same thing). All tables remain within their row limits.
+Memory flush complete. Here's what was updated in `memory/MEMORY.md`:
 
-## Summary
+- **Last consolidated:** 2026-07-22 → 2026-07-26
+- **Token price:** stale Jul 22 data replaced with $0.000001809 (Jul 26, +2.77%, +10.8% above ATL, 20-day social silence)
+- **GH_GLOBAL block count:** "60th as of Jul 22" → "61st as of Jul 26"
+- **Recent Articles:** added Jul 24 project-lens article (supply chain / stdlib-only angle); dropped Jul 17 (oldest) to stay at 8
+- **Recent Digests:** replaced 7-row table with 6-row trim — added Jul 26/25/24 token reports + Jul 25 push-recap; dropped Jul 22 push-recap and all Jul 21/20 entries
+- **Feature candidates:** appended Jul 24 and Jul 26 repo-actions idea lists
 
-- **Reviewed:** `memory/logs/2026-07-20.md`, `2026-07-21.md`, `2026-07-22.md`
-- **Promoted:** 1 new Lesson Learned — self-improve duplicate PR creation on same-day multi-runs
-- **No changes needed:** "Last consolidated" already 2026-07-22; Recent Articles (8 rows), Recent Digests (6 rows), and all other tables were already current from the 18:14 UTC flush
-- **Logged:** Appended re-run entry to `memory/logs/2026-07-22.md`
+Nothing was double-promoted — the Jul 25 hyperstition and push-recap cross-day dedup lesson (PR #41) were already present.
