@@ -1,0 +1,102 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-07-26",
+        "description": "aaronjmars/MiroShark"
+      },
+      "children": [
+        "stats-section",
+        "forks-separator",
+        "new-forks-section"
+      ]
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-grid",
+        "stars-note"
+      ]
+    },
+    "stats-grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1415",
+        "delta": "−1",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "298",
+        "delta": "+1",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stars-note": {
+      "type": "Text",
+      "props": {
+        "text": "Stargazers timestamps unavailable — API 403",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "forks-separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "new-forks-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "new-forks-heading",
+        "new-fork-link"
+      ]
+    },
+    "new-forks-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "new-fork-link": {
+      "type": "Link",
+      "props": {
+        "label": "binyangzhu000-sudo/MiroShark",
+        "href": "https://github.com/binyangzhu000-sudo/MiroShark"
+      },
+      "children": []
+    }
+  }
+}
