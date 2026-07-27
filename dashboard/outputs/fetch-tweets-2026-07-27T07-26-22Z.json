@@ -1,0 +1,93 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Social Monitor Dark — 21 consecutive days"
+      },
+      "children": [
+        "alert",
+        "sep1",
+        "diagnosis_stack",
+        "sep2",
+        "fix_stack"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "fetch-tweets Status",
+        "message": "Found zero new mentions for 21 straight days",
+        "type": "error"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "diagnosis_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "diagnosis_heading",
+        "diagnosis_cause",
+        "diagnosis_reason"
+      ]
+    },
+    "diagnosis_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Likely Cause",
+        "level": "h3"
+      }
+    },
+    "diagnosis_cause": {
+      "type": "Text",
+      "props": {
+        "text": "XAI_API_KEY not set",
+        "variant": "body"
+      }
+    },
+    "diagnosis_reason": {
+      "type": "Text",
+      "props": {
+        "text": "WebSearch fallback rarely surfaces fresh tweets",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "fix_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "fix_heading",
+        "fix_text"
+      ]
+    },
+    "fix_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fix",
+        "level": "h3"
+      }
+    },
+    "fix_text": {
+      "type": "Text",
+      "props": {
+        "text": "Set XAI_API_KEY in repo secrets to enable direct X/Twitter search via Grok",
+        "variant": "body"
+      }
+    }
+  }
+}
