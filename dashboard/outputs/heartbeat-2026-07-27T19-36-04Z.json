@@ -1,0 +1,170 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-date",
+        "text-status",
+        "sep-1",
+        "alert-pr",
+        "sep-2",
+        "heading-skills",
+        "stack-skills",
+        "sep-3",
+        "stack-metrics"
+      ]
+    },
+    "text-date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-27",
+        "variant": "muted"
+      }
+    },
+    "text-status": {
+      "type": "Text",
+      "props": {
+        "text": "All systems nominal. 7/7 Monday skills completed.",
+        "variant": "body"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert-pr": {
+      "type": "Alert",
+      "props": {
+        "title": "PR #41 Stalled",
+        "message": "PR #41 stalled 30h — \"improve: add cross-day dedup to push-recap skill\" (created Jul 26 13:40 UTC). No review activity. Self-improve auto-merge will pick it up tomorrow (Jul 28, next even-DOM run).",
+        "type": "warning"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-skills": {
+      "type": "Heading",
+      "props": {
+        "text": "Skills Completed",
+        "level": "h3"
+      }
+    },
+    "stack-skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-1",
+        "badge-2",
+        "badge-3",
+        "badge-4",
+        "badge-5",
+        "badge-6",
+        "badge-7"
+      ]
+    },
+    "badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "default"
+      }
+    },
+    "badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "default"
+      }
+    },
+    "badge-3": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "default"
+      }
+    },
+    "badge-4": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "default"
+      }
+    },
+    "badge-5": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "default"
+      }
+    },
+    "badge-6": {
+      "type": "Badge",
+      "props": {
+        "text": "weekly-shiplog",
+        "variant": "default"
+      }
+    },
+    "badge-7": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens",
+        "variant": "default"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack-metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-failures",
+        "stat-issues"
+      ]
+    },
+    "stat-failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive failures",
+        "value": "0"
+      }
+    },
+    "stat-issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Open issues",
+        "value": "0"
+      }
+    }
+  }
+}

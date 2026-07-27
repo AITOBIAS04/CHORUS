@@ -1,18 +1,9 @@
-**HEARTBEAT_OK**
+Heartbeat — 2026-07-27
 
-All 10 expected Sunday skills completed successfully:
+All systems nominal. 7/7 Monday skills completed.
 
-| Skill | Status | Time (UTC) |
-|-------|--------|-----------|
-| token-report | ✓ | 06:22 |
-| fetch-tweets | ✓ (empty, day 20) | 07:18 |
-| repo-pulse | ✓ 1415 stars / 298 forks | 10:25 |
-| feature | ✓ SKIP (GH_GLOBAL, day 61) | 11:35 |
-| self-improve | ✓ PR #41 opened | 13:42 |
-| repo-actions | ✓ 5 ideas generated | 14:23 |
-| push-recap | ✓ QUIET | 17:01 |
-| skill-leaderboard | ✓ INSUFFICIENT_DATA | 17:31 |
-| repo-article | ✓ fork entropy article | 17:54 |
-| memory-flush | ✓ consolidated | 18:20 |
+⚠️ PR #41 stalled 30h — "improve: add cross-day dedup to push-recap skill" (created Jul 26 13:40 UTC). No review activity. Self-improve auto-merge will pick it up tomorrow (Jul 28, next even-DOM run).
 
-No stalled PRs (PR #41 is only ~5.5h old), no open issues, no missing skills. No notification needed.
+Skills ✓: token-report · fetch-tweets · repo-pulse · feature · push-recap · weekly-shiplog · project-lens
+Consecutive failures: 0 across all skills.
+Open issues: none.
