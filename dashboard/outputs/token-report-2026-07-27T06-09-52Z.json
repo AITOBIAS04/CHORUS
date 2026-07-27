@@ -1,0 +1,137 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$MIROSHARK Daily"
+      },
+      "children": [
+        "date",
+        "sep1",
+        "price_stats",
+        "sep2",
+        "buys_sells",
+        "sep3",
+        "commentary",
+        "sep4",
+        "chart_link"
+      ]
+    },
+    "date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-27",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "price_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liq",
+        "stat_vol",
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000001802",
+        "delta": "+0.78%",
+        "trend": "up"
+      }
+    },
+    "stat_liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$216,506"
+      }
+    },
+    "stat_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$739"
+      }
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "+4.8%",
+        "trend": "up"
+      }
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−64.0%",
+        "trend": "down"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "buys_sells": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Buys",
+          "Sells"
+        ],
+        "rows": [
+          [
+            "3",
+            "2"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "commentary": {
+      "type": "Text",
+      "props": {
+        "text": "Flat session. Two sells (~$617 total) absorbed without a price break below $0.0000018. Price +10.4% above Jul 18 ATL. 21-day social silence continues.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Chart: GeckoTerminal Pool",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
