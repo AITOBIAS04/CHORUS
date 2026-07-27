@@ -1,0 +1,173 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-07-27",
+        "description": "The subtraction week: MiroShark got smaller, harder, and more secure."
+      },
+      "children": [
+        "shipped-section",
+        "separator-1",
+        "stats-section",
+        "separator-2",
+        "link-section"
+      ]
+    },
+    "shipped-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "shipped-heading",
+        "item-1",
+        "item-2",
+        "item-3"
+      ]
+    },
+    "shipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      }
+    },
+    "item-1": {
+      "type": "Text",
+      "props": {
+        "text": "1,325-line dead code cleanup across 53 files — largest single subtraction since v0.1.0 (-73K lines)",
+        "variant": "body"
+      }
+    },
+    "item-2": {
+      "type": "Text",
+      "props": {
+        "text": "4 same-day CVE patches (MCP CSWSH, shell-quote DoS, PyTorch memory corruption, setuptools)",
+        "variant": "body"
+      }
+    },
+    "item-3": {
+      "type": "Text",
+      "props": {
+        "text": "Agent infra tuning: repo-pulse activated weekly, changelog silenced, schedules tightened",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stats-grid"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-commits",
+        "stat-prs",
+        "stat-lines",
+        "stat-stars",
+        "stat-forks",
+        "stat-token"
+      ]
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Substantive commits",
+        "value": "12"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "15"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "-1,307",
+        "delta": "+747/-2,054"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,417",
+        "delta": "+4",
+        "trend": "up"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "298",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "stat-token": {
+      "type": "Stat",
+      "props": {
+        "label": "Token",
+        "value": "$0.000001802",
+        "delta": "+4.8%",
+        "trend": "up"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "full-update-link"
+      ]
+    },
+    "full-update-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-07-27.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
