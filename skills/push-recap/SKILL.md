@@ -34,6 +34,12 @@ Read memory/watched-repos.md for the list of repos to scan.
 
 4b. **Skip re-run if already reported today** — If `articles/push-recap-${today}.md` already exists AND `memory/logs/${today}.md` already contains a `## Push Recap` entry, compare the current set of deduplicated commit SHAs with those mentioned in the existing article. If no new SHAs appear beyond what the article already covers, log `PUSH_RECAP_RERUN_QUIET: no new commits since earlier report` to `memory/logs/${today}.md` and **stop here — do NOT re-send the notification or overwrite the article**.
 
+4c. **Cross-day dedup** — Check yesterday's push-recap article for commits already reported:
+   ```bash
+   YESTERDAY=$(date -u -d "yesterday" +%Y-%m-%d 2>/dev/null || date -u -v-1d +%Y-%m-%d)
+   ```
+   If `articles/push-recap-${YESTERDAY}.md` exists, extract all 7-character commit SHAs mentioned in it (grep for backtick-wrapped short SHAs like `` `abc1234` ``). Remove any commits from the current deduplicated set whose short SHA appears in yesterday's article. If after removal no substantive commits remain, log `PUSH_RECAP_CROSS_DAY_QUIET: all commits were already reported in yesterday's recap` to `memory/logs/${today}.md` and **stop here — do NOT send any notification**.
+
 5. **Filter automation noise** from agent/aeon repos. After deduplication, separate commits into two groups:
    - **Automation commits** — messages matching any of these patterns:
      - `chore(cron):` — cron state updates (e.g. "chore(cron): token-report success")
