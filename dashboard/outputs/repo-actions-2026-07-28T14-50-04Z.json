@@ -1,0 +1,330 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-07-28"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_intro",
+        "sep1",
+        "idea1_section",
+        "idea2_section",
+        "idea3_section",
+        "idea4_section",
+        "idea5_section",
+        "sep2",
+        "link_details"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,414 stars · 297 forks · 22-day social silence). Aug 1 community-PR deadline is 4 days away at 5+/10 — this list prioritizes direct activation over feature builds.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea1_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_title",
+        "idea1_badges",
+        "idea1_text"
+      ]
+    },
+    "idea1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Good First Issue Sprint",
+        "level": "h3"
+      }
+    },
+    "idea1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1_community",
+        "badge1_small"
+      ]
+    },
+    "badge1_community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      }
+    },
+    "badge1_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Create 8–10 labeled 'good first issue' issues targeting the 297 fork holders — locale QA reviews, doc additions, test cases — each closeable in under 2 hours. The only intervention with the right time constant to hit the Aug 1 community-PR deadline.",
+        "variant": "body"
+      }
+    },
+    "idea2_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_title",
+        "idea2_badges",
+        "idea2_text"
+      ]
+    },
+    "idea2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Show HN Launch Kit",
+        "level": "h3"
+      }
+    },
+    "idea2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge2_growth",
+        "badge2_small"
+      ]
+    },
+    "badge2_growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "secondary"
+      }
+    },
+    "badge2_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea2_text": {
+      "type": "Text",
+      "props": {
+        "text": "Comprehensive HN submission package: post text, 5-minute demo script, FAQ, tweet draft. Reaches the audience most likely to write developer tutorials before the Aug 15 deadline.",
+        "variant": "body"
+      }
+    },
+    "idea3_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_title",
+        "idea3_badges",
+        "idea3_text"
+      ]
+    },
+    "idea3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Spanish (ES) UI Locale",
+        "level": "h3"
+      }
+    },
+    "idea3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge3_community",
+        "badge3_small"
+      ]
+    },
+    "badge3_community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      }
+    },
+    "badge3_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Closes the 5-language hyperstition (3/5 → 5/5) 35 days early; second-largest developer language community on GitHub, highest tutorial production rate among remaining unbuilt locales.",
+        "variant": "body"
+      }
+    },
+    "idea4_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_title",
+        "idea4_badges",
+        "idea4_text"
+      ]
+    },
+    "idea4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Academic Citation Helper",
+        "level": "h3"
+      }
+    },
+    "idea4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge4_growth",
+        "badge4_dx",
+        "badge4_small"
+      ]
+    },
+    "badge4_growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "secondary"
+      }
+    },
+    "badge4_dx": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      }
+    },
+    "badge4_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea4_text": {
+      "type": "Text",
+      "props": {
+        "text": "CITATION.cff + /api/cite endpoint (BibTeX/RIS/Chicago) + og:citation meta tags. Converts MiroShark from 'interesting project' to 'citable research tool' — directly targets the academic citation hyperstition.",
+        "variant": "body"
+      }
+    },
+    "idea5_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_title",
+        "idea5_badges",
+        "idea5_text"
+      ]
+    },
+    "idea5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Python SDK miroshark-py",
+        "level": "h3"
+      }
+    },
+    "idea5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge5_feature",
+        "badge5_dx",
+        "badge5_medium"
+      ]
+    },
+    "badge5_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge5_dx": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      }
+    },
+    "badge5_medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "idea5_text": {
+      "type": "Text",
+      "props": {
+        "text": "pip install miroshark; runs simulations, returns DataFrames, includes a Jupyter notebook tutorial artifact. Removes the single biggest barrier for tutorial creators: needing to hand-roll an API wrapper before demonstrating anything.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_details": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-28.md"
+      }
+    }
+  }
+}
