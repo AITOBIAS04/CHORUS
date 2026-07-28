@@ -1,0 +1,126 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "MIROSHARK Daily"
+      },
+      "children": [
+        "text_date",
+        "separator_1",
+        "grid_stats",
+        "separator_2",
+        "text_narrative",
+        "separator_3",
+        "link_chart"
+      ]
+    },
+    "text_date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-28",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liquidity",
+        "stat_24h_vol",
+        "stat_buys_sells",
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000001732",
+        "delta": "−7.09%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$206.6K"
+      },
+      "children": []
+    },
+    "stat_24h_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$2,489"
+      },
+      "children": []
+    },
+    "stat_buys_sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "8/9"
+      },
+      "children": []
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "−0.75%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−54.9%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "text_narrative": {
+      "type": "Text",
+      "props": {
+        "text": "Two wallets round-tripped 194M and 100M tokens within hours — volume up but no sustained directional move. Price pulled back from $1.81 to $1.73; still +6.1% above Jul 18 ATL. 22nd consecutive day of social silence."
+      },
+      "children": []
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "link_chart": {
+      "type": "Link",
+      "props": {
+        "label": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      },
+      "children": []
+    }
+  }
+}
