@@ -41,6 +41,8 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
 
    **Why not `--paginate`?** The stargazers API returns oldest-first. Using `--paginate` fetches ALL pages (O(N) API calls as stars grow). Fetching only the last 2 pages is O(1) and covers up to 200 recent stars — more than enough for 24h changes.
 
+   **403 fallback (stargazer timestamps unavailable):** If the stargazers API returns 403, individual stargazer timestamps are unavailable. Fall back to **net star change** by comparing `stargazers_count` from step 1 against the most recent `stargazers_count` logged in the last 3 days of `memory/logs/` (grep for `stargazers_count=`). Record the net change (e.g. "+3 net" or "−1 net") and treat a **positive net change as activity** (equivalent to finding new stargazers). A zero or negative net change means no detectable new stars — do NOT treat "unknown" as activity.
+
 4. **Fetch recent forks** (sorted by newest):
    ```bash
    gh api "repos/owner/repo/forks?sort=newest&per_page=10" --jq '.[] | {owner: .owner.login, created_at: .created_at, full_name: .full_name}'
@@ -50,15 +52,16 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
 5. **Skip re-run if already reported today** — If `memory/logs/${today}.md` already contains a `## Repo Pulse` entry, compare the current star and fork counts with those in the existing entry. If the counts are identical (no change since the earlier run), log `REPO_PULSE_RERUN_QUIET: counts unchanged since earlier report` to `memory/logs/${today}.md` and **stop here — do NOT re-send the notification**.
 
 6. **Determine if there's activity to report.** Check BOTH:
-   - **New stargazers from step 3**: any with `starred_at` >= the 24h cutoff
+   - **New stargazers from step 3**: any with `starred_at` >= the 24h cutoff, OR positive net star change (403 fallback)
    - **New forks from step 4**: any with `created_at` >= the 24h cutoff
 
    **Send a notification if ANY of these are true:**
    - At least 1 new stargazer in the last 24h (unstars don't cancel this out)
+   - Positive net star change (403 fallback: current count > previous count from logs)
    - At least 1 new fork in the last 24h
    - First run (no previous data in logs)
 
-   Only log "REPO_PULSE_QUIET" and skip notification if ZERO new stargazers AND ZERO new forks since the 24h cutoff.
+   Only log "REPO_PULSE_QUIET" and skip notification if ZERO new stargazers (or zero/negative net change in 403 fallback) AND ZERO new forks since the 24h cutoff.
 
 7. **Send notification** via `./notify`:
    ```
