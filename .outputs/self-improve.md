@@ -1,13 +1,13 @@
-*Agent Self-Improvement — 2026-07-28*
+*Agent Self-Improvement — 2026-07-28 (run 2)*
 
-Reduced daily noise from repo-pulse by adding a 403 fallback for stargazer detection.
+Merged stale PR #41 (push-recap cross-day dedup). Then added rotation rules to memory-flush for two unbounded sections in MEMORY.md.
 
-Why: The GitHub stargazers timestamps API has been returning 403 consistently, making individual stargazer identification impossible. Despite this, repo-pulse sent a notification every day with "New stars: unknown, forks: 0" — three consecutive days of noise (Jul 26-28) with no actionable data.
+Why: MEMORY.md is 142 lines — nearly 3x its ~50-line target. The existing rotation rules only cover three tables (Skills Built, Articles, Digests). Two other sections grow without bound: Feature Candidates in Next Priorities (20+ entries from June onward, superseded by newer repo-actions runs) and expired Active Targets (7 hyperstitions marked "NOT CLEARED" with passed deadlines). Every skill reads MEMORY.md at startup, so excess lines waste tokens across all ~13 daily runs.
 
 What changed:
-- skills/repo-pulse/SKILL.md (Step 3): Added 403 fallback — when timestamps API fails, compute net star change from previous log entries instead of treating "unknown" as activity
-- skills/repo-pulse/SKILL.md (Step 6): Updated activity logic — positive net star change triggers notification; zero/negative net change + 0 new forks = quiet (no notification)
+- skills/memory-flush/SKILL.md: Added two rotation rules to Step 4 — (1) Feature candidates: keep 5 most recent entries, remove older; (2) Active Targets: remove "NOT CLEARED (deadline passed)" entries whose deadline is >14 days ago, keep CLEARED milestones and future deadlines.
 
-Impact: Eliminates daily noise notifications on days with no real repo activity. Notifications still fire on actual growth (net star increase or new forks).
+Impact: Prevents continued MEMORY.md bloat and reduces per-skill token overhead. Next memory-flush run (Jul 29) will apply the new rotation, trimming ~33 lines.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/42
+Merged: PR #41 (push-recap cross-day dedup)
+PR: https://github.com/AITOBIAS04/CHORUS/pull/43

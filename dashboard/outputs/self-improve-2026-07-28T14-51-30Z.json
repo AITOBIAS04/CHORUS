@@ -1,0 +1,189 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-07-28 (run 2)"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-summary",
+        "sep-1",
+        "heading-why",
+        "stack-metrics",
+        "text-why-context",
+        "sep-2",
+        "heading-changes",
+        "text-changes-intro",
+        "stack-changes",
+        "sep-3",
+        "heading-impact",
+        "stack-impact",
+        "sep-4",
+        "story-pr"
+      ]
+    },
+    "text-summary": {
+      "type": "Text",
+      "props": {
+        "text": "Merged stale PR #41 (push-recap cross-day dedup). Then added rotation rules to memory-flush for two unbounded sections in MEMORY.md.",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "stack-metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-memory-lines",
+        "stat-target"
+      ]
+    },
+    "stat-memory-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "MEMORY.md current size",
+        "value": "142 lines"
+      }
+    },
+    "stat-target": {
+      "type": "Stat",
+      "props": {
+        "label": "Target size",
+        "value": "~50 lines",
+        "delta": "3× current"
+      }
+    },
+    "text-why-context": {
+      "type": "Text",
+      "props": {
+        "text": "The existing rotation rules only cover three tables (Skills Built, Articles, Digests). Two unbounded sections: Feature Candidates in Next Priorities (20+ entries from June onward, superseded by newer repo-actions runs) and expired Active Targets (7 hyperstitions marked \"NOT CLEARED\" with passed deadlines). Every skill reads MEMORY.md at startup, so excess lines waste tokens across all ~13 daily runs."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "text-changes-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Modified: skills/memory-flush/SKILL.md — Added two rotation rules to Step 4:"
+      }
+    },
+    "stack-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-rule-1",
+        "text-rule-2"
+      ]
+    },
+    "text-rule-1": {
+      "type": "Text",
+      "props": {
+        "text": "1. Feature candidates: keep 5 most recent entries, remove older"
+      }
+    },
+    "text-rule-2": {
+      "type": "Text",
+      "props": {
+        "text": "2. Active Targets: remove \"NOT CLEARED (deadline passed)\" entries whose deadline is >14 days ago, keep CLEARED milestones and future deadlines"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "stack-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-impact-prevention",
+        "text-impact-timeline",
+        "text-impact-reduction"
+      ]
+    },
+    "text-impact-prevention": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents continued MEMORY.md bloat and reduces per-skill token overhead."
+      }
+    },
+    "text-impact-timeline": {
+      "type": "Text",
+      "props": {
+        "text": "Merged: PR #41 (push-recap cross-day dedup)"
+      }
+    },
+    "text-impact-reduction": {
+      "type": "Text",
+      "props": {
+        "text": "Next memory-flush run (Jul 29) will apply the new rotation, trimming ~33 lines."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #43",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/43",
+        "source": "GitHub"
+      }
+    }
+  }
+}
