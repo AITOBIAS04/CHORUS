@@ -1,0 +1,110 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-07-28"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_repo",
+        "separator1",
+        "stack_stars",
+        "separator2",
+        "stack_forks"
+      ]
+    },
+    "heading_repo": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_stars": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_stars",
+        "alert_stars"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1414",
+        "delta": "−2",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "alert_stars": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "Timestamps API 403 — new stars unverifiable"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_forks": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_forks",
+        "text_forks"
+      ]
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "297",
+        "delta": "−1",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "text_forks": {
+      "type": "Text",
+      "props": {
+        "text": "1 fork deleted; no new forks in 24h",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}
