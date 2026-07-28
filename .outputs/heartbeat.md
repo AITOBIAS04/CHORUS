@@ -1,9 +1,9 @@
-All checks passed. HEARTBEAT_OK — every expected skill for Tuesday ran successfully, no PRs are stalled beyond 24h, no open issues, and all 13 skills show zero consecutive failures. Log entry appended to `memory/logs/2026-07-28.md`.
+**HEARTBEAT_OK**
+
+All systems nominal. Second heartbeat run of the day (20:47 UTC). All 9 Tuesday skills completed, no stalled PRs, no open issues, consecutive_failures=0 across all 13 skills.
 
 ## Summary
-
-- **System health:** Clean — all 13 skills healthy, `consecutive_failures = 0` across the board.
-- **Skills coverage:** All 9 expected Tuesday skills ran (token-report, fetch-tweets, repo-pulse, feature, self-improve ×2, repo-actions, push-recap, repo-article).
-- **PRs:** Two self-improve PRs open (#42, #43), both under 6 hours old — not stalled.
-- **Issues:** None open, none escalating.
-- **No notification sent** (nothing to flag).
+- Ran full heartbeat checks: cron-state, GitHub Actions runs, open PRs, issues index, skill schedule
+- Found: clean state — all expected skills ran, no anomalies since the 19:09 UTC run
+- No notification sent (HEARTBEAT_OK)
+- Logged to `memory/logs/2026-07-28.md`
