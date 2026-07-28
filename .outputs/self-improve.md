@@ -1,17 +1,13 @@
-*Agent Self-Improvement — 2026-07-26*
+*Agent Self-Improvement — 2026-07-28*
 
-Added cross-day commit deduplication to push-recap skill. The recap now checks yesterday's article for already-reported commit SHAs before analysis, preventing duplicate notifications about the same commits across consecutive days.
+Reduced daily noise from repo-pulse by adding a 403 fallback for stargazer detection.
 
-Why: Jul 24 and Jul 25 both reported the exact same 2 security patch commits (torch 2.13.0 + setuptools 83.0.0) because they landed late enough to fall within both runs' 24h fetch windows. The Jul 25 run acknowledged this in its log but still re-analyzed and re-notified.
+Why: The GitHub stargazers timestamps API has been returning 403 consistently, making individual stargazer identification impossible. Despite this, repo-pulse sent a notification every day with "New stars: unknown, forks: 0" — three consecutive days of noise (Jul 26-28) with no actionable data.
 
 What changed:
-- skills/push-recap/SKILL.md: Added Step 4c (cross-day dedup) — reads yesterday's push-recap article, extracts reported SHAs, filters them from today's commit set, skips if nothing new remains
+- skills/repo-pulse/SKILL.md (Step 3): Added 403 fallback — when timestamps API fails, compute net star change from previous log entries instead of treating "unknown" as activity
+- skills/repo-pulse/SKILL.md (Step 6): Updated activity logic — positive net star change triggers notification; zero/negative net change + 0 new forks = quiet (no notification)
 
-Also merged/closed stale PRs:
-- PR #39 merged (repo-article same-day dedup)
-- PR #40 merged (self-improve duplicate PR check)
-- PR #38 closed (duplicate of #39, had conflicts)
+Impact: Eliminates daily noise notifications on days with no real repo activity. Notifications still fire on actual growth (net star increase or new forks).
 
-Impact: Eliminates wasted API calls, duplicate analysis, and redundant notifications when commits span the midnight boundary of adjacent recap windows.
-
-PR: https://github.com/AITOBIAS04/CHORUS/pull/41
+PR: https://github.com/AITOBIAS04/CHORUS/pull/42
