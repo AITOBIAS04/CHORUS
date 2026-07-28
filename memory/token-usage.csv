@@ -600,3 +600,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-27,weekly-shiplog,claude-opus-4-6,19,9497,856914,65484
 2026-07-27,project-lens,claude-opus-4-6,1014,8062,824725,44724
 2026-07-27,heartbeat,claude-sonnet-4-6,14,8245,765985,68154
+2026-07-28,fetch-tweets,claude-sonnet-4-6,1772,4990,380284,35934
