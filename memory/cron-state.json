@@ -89,8 +89,8 @@
     "last_quality_score": 4
   },
   "repo-pulse": {
-    "last_dispatch": "2026-07-28T11:49:25Z",
-    "last_status": "success",
+    "last_dispatch": "2026-07-29T10:35:13Z",
+    "last_status": "dispatched",
     "last_failed": "2026-04-30T09:01:50Z",
     "total_runs": 394,
     "total_successes": 91,
