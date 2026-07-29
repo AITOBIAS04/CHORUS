@@ -1,0 +1,239 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-29",
+        "description": "miroshark-aeon — 2 substantive commits by 2 authors"
+      },
+      "children": [
+        "sep1",
+        "security_section",
+        "sep2",
+        "framework_section",
+        "sep3",
+        "key_changes_section",
+        "sep4",
+        "stats_section",
+        "sep5",
+        "link_recap"
+      ]
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "security_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sec_heading",
+        "sec_title",
+        "postcss_info",
+        "sharp_info",
+        "npm_overrides_info"
+      ]
+    },
+    "sec_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Security",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "sec_title": {
+      "type": "Text",
+      "props": {
+        "text": "Dashboard Dependency Hardening: Two high-severity Dependabot alerts closed",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "postcss_info": {
+      "type": "Text",
+      "props": {
+        "text": "postcss patched from 8.5.15 to 8.5.25, fixing a path traversal vulnerability via crafted sourceMappingURL (GHSA-r28c-9q8g-f849)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sharp_info": {
+      "type": "Text",
+      "props": {
+        "text": "sharp bumped from 0.34.5 to 0.35.3, resolving inherited libvips CVEs (GHSA-f88m-g3jw-g9cj) — required an npm overrides entry since sharp is an optional transitive of Next.js",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "npm_overrides_info": {
+      "type": "Text",
+      "props": {
+        "text": "npm overrides block expanded to pin both postcss and sharp",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "framework_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "fw_heading",
+        "fw_title",
+        "swc_info",
+        "no_breaking_info"
+      ]
+    },
+    "fw_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Framework",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "fw_title": {
+      "type": "Text",
+      "props": {
+        "text": "Next.js Patch Bump: Routine Dependabot auto-merge bumped Next.js from 16.2.10 to 16.2.11",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "swc_info": {
+      "type": "Text",
+      "props": {
+        "text": "All 8 SWC platform binaries updated in lockstep",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "no_breaking_info": {
+      "type": "Text",
+      "props": {
+        "text": "Bug-fix release, no breaking changes",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "kc_heading",
+        "kc_list"
+      ]
+    },
+    "kc_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "kc_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "kc1",
+        "kc2",
+        "kc3"
+      ]
+    },
+    "kc1": {
+      "type": "Text",
+      "props": {
+        "text": "postcss path traversal fix — attacker could read arbitrary files via crafted CSS source map URL",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "kc2": {
+      "type": "Text",
+      "props": {
+        "text": "sharp/libvips CVE resolution — image processing vulnerabilities in native binaries",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "kc3": {
+      "type": "Text",
+      "props": {
+        "text": "npm overrides block expanded to pin both postcss and sharp",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_info"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stats_info": {
+      "type": "Text",
+      "props": {
+        "text": "2 files changed, +273/-184 lines (9 automation commits filtered)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "link_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-29.md"
+      },
+      "children": []
+    }
+  }
+}
