@@ -1,7 +1,10 @@
-Repo Pulse re-run complete. Today's log already had a Repo Pulse entry with 1414 stars / 297 forks — the current fetch returned identical counts, so per step 5 the re-run logged `REPO_PULSE_RERUN_QUIET` and no notification was sent.
-
 ## Summary
-- **Watched repo checked:** aaronjmars/MiroShark (skipped miroshark-aeon per skill config)
-- **Current counts:** 1414 stars, 297 forks
-- **Action:** No notification — counts unchanged from the earlier run at ~10:16 UTC today
-- **Log updated:** `memory/logs/2026-07-28.md` — appended `REPO_PULSE_RERUN_QUIET` entry
+
+**Repo Pulse — 2026-07-29**
+
+- Checked `aaronjmars/MiroShark` (skipped `miroshark-aeon` per config)
+- Current counts: **1,413 stars** / **296 forks**
+- Stargazers API returned 403 again — applied 403 fallback: computed net change from yesterday's log (1414→1413, −1)
+- Most recent fork (binyangzhu000-sudo/MiroShark, 2026-07-26) predates the 24h cutoff; fork count dropped 297→296 (one fork deleted)
+- **Result: REPO_PULSE_QUIET** — zero new stargazers, zero new forks. No notification sent.
+- Logged to `memory/logs/2026-07-29.md`
