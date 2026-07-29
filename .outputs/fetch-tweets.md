@@ -1,16 +1,23 @@
-Done. Here's the run summary:
-
-**fetch-tweets — 2026-07-28**
-
-- **Path:** WebSearch fallback (XAI_API_KEY not set)
-- **Queries:** 3/3 run
-  1. Broad + date-constrained: `site:x.com "MIROSHARK" OR "MiroShark" after:2026-07-14`
-  2. Cashtag variant: `site:x.com "$MIROSHARK" crypto Base chain 2026`
-  3. Handle variant: `site:x.com "aaronjmars" OR "miroshark_" July 2026`
-- **Result:** All returned URLs were either in the dedup set (reported Jul 25–27) or older than 14 days (March–April 2026). **FETCH_TWEETS_EMPTY** — 22nd consecutive empty day (Jul 7–28).
-- **Escalation:** 22 is not a multiple of 7 — no notification sent. (Next escalation threshold: day 28.)
-- **Log written:** `memory/logs/2026-07-28.md`
+Done. Here's a summary:
 
 ## Summary
 
-Ran fetch-tweets with `var=MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark`. WebSearch returned zero fresh results — all candidates were either previously reported (last 3 days dedup set) or stale March–April 2026 content excluded by the 14-day freshness gate. No notification sent (22nd consecutive empty day; escalation fires at multiples of 7, next is day 28). Log written to `memory/logs/2026-07-28.md`.
+**Skill:** fetch-tweets  
+**Query:** MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark  
+**API path:** WebSearch fallback (XAI_API_KEY not set)
+
+**Execution:**
+- Ran 3 WebSearch queries (broad date-constrained, cashtag variant, handle/variant)
+- All results returned the same stale pool of March–April 2026 tweets already seen on Jul 27–28 runs
+- Freshness gate: all candidates >14 days old, excluded
+- Dedup set: no new x.com links in the last 3 days of logs
+
+**Result:** `FETCH_TWEETS_EMPTY` — 23rd consecutive empty day (Jul 7–29). 23 is not a multiple of 7, so no escalation notification was sent.
+
+**Next escalation** will trigger on day **28** (Jul 35, i.e., Aug 4) if silence continues.
+
+**Recommended fix:** Set `XAI_API_KEY` in repo secrets to enable direct X/Twitter search via Grok — WebSearch cannot reliably surface fresh tweets.
+
+Sources:
+- [MiroShark 🦈 (@miroshark_) / Posts / X](https://x.com/miroshark_?lang=en)
+- [aaronjmars on X](https://x.com/aaronjmars)
