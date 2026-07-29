@@ -1,0 +1,51 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "badge_new",
+        "heading_article",
+        "text_description",
+        "storylink_article"
+      ]
+    },
+    "badge_new": {
+      "type": "Badge",
+      "props": {
+        "text": "New Article",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "heading_article": {
+      "type": "Heading",
+      "props": {
+        "text": "What If You Treated Every AI Agent's Opinion Like Grafana Treats a Server Metric?",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "Grafana turned infrastructure monitoring into a composable query layer — any metric, any data source, any view — and built a $9 billion company on the pattern. MiroShark applied the same architectural bet to AI simulation: 41 independently queryable API surfaces, each exposing a different intermediate state of how simulated agents form opinions. The parallel goes beyond analogy — both decouple the query from the view, both use plugin-style extensibility, and both bet that the summary is never enough.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "storylink_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-29.md",
+        "source": "project-lens"
+      },
+      "children": []
+    }
+  }
+}
