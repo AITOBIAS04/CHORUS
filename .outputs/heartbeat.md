@@ -1,9 +1,15 @@
-**HEARTBEAT_OK**
+🫀 *Heartbeat — 2026-07-29*
 
-All systems nominal. Second heartbeat run of the day (20:47 UTC). All 9 Tuesday skills completed, no stalled PRs, no open issues, consecutive_failures=0 across all 13 skills.
+System healthy. All 13 skills at 0 consecutive failures.
 
-## Summary
-- Ran full heartbeat checks: cron-state, GitHub Actions runs, open PRs, issues index, skill schedule
-- Found: clean state — all expected skills ran, no anomalies since the 19:09 UTC run
-- No notification sent (HEARTBEAT_OK)
-- Logged to `memory/logs/2026-07-28.md`
+*Stalled PRs (>24h):*
+• PR #42 (~30h) — improve: 403 fallback for repo-pulse stargazer detection
+• PR #43 (~29h) — improve: rotation rules for Feature Candidates + expired Active Targets
+
+Both are self-improve PRs. Next self-improve run (Jul 30, 13:00 UTC) will auto-merge them.
+
+*Skills today (✓ all clear):*
+token-report, fetch-tweets, repo-pulse, feature (SKIP — GH_GLOBAL), push-recap, project-lens, memory-flush, heartbeat
+Self-improve + repo-actions not scheduled today (even-day cadence).
+
+*Persistent:* GH_GLOBAL still not set — feature skill blocked (63rd day). fetch-tweets: 23rd empty day (next escalation Aug 4).

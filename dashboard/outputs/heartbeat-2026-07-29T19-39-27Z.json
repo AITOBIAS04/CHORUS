@@ -1,0 +1,157 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-07-29"
+      },
+      "children": [
+        "status_alert",
+        "sep1",
+        "stalled_section",
+        "sep2",
+        "skills_today_section",
+        "sep3",
+        "persistent_section"
+      ]
+    },
+    "status_alert": {
+      "type": "Alert",
+      "props": {
+        "message": "System healthy. All 13 skills at 0 consecutive failures.",
+        "type": "success"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stalled_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stalled_title",
+        "pr42",
+        "pr43",
+        "stalled_note"
+      ]
+    },
+    "stalled_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs (>24h)",
+        "level": "h3"
+      }
+    },
+    "pr42": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #42 (~30h) — improve: 403 fallback for repo-pulse stargazer detection",
+        "href": "https://github.com/CHORUS/CHORUS/pull/42",
+        "source": "GitHub"
+      }
+    },
+    "pr43": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #43 (~29h) — improve: rotation rules for Feature Candidates + expired Active Targets",
+        "href": "https://github.com/CHORUS/CHORUS/pull/43",
+        "source": "GitHub"
+      }
+    },
+    "stalled_note": {
+      "type": "Text",
+      "props": {
+        "text": "Both are self-improve PRs. Next self-improve run (Jul 30, 13:00 UTC) will auto-merge them.",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "skills_today_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skills_today_title",
+        "skills_today_list",
+        "skills_note"
+      ]
+    },
+    "skills_today_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Skills today (✓ all clear)",
+        "level": "h3"
+      }
+    },
+    "skills_today_list": {
+      "type": "Text",
+      "props": {
+        "text": "token-report, fetch-tweets, repo-pulse, feature (SKIP — GH_GLOBAL), push-recap, project-lens, memory-flush, heartbeat",
+        "variant": "body"
+      }
+    },
+    "skills_note": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve + repo-actions not scheduled today (even-day cadence)",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "persistent_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "persistent_title",
+        "issue1",
+        "issue2"
+      ]
+    },
+    "persistent_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Persistent",
+        "level": "h3"
+      }
+    },
+    "issue1": {
+      "type": "Alert",
+      "props": {
+        "title": "GH_GLOBAL Environment Variable",
+        "message": "Still not set — feature skill blocked (63rd day)",
+        "type": "warning"
+      }
+    },
+    "issue2": {
+      "type": "Alert",
+      "props": {
+        "title": "fetch-tweets Empty Days",
+        "message": "23rd empty day (next escalation Aug 4)",
+        "type": "warning"
+      }
+    }
+  }
+}
