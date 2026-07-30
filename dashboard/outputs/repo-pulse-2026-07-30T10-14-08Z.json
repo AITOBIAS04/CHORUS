@@ -1,0 +1,93 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-07-30"
+      },
+      "children": [
+        "repo-item",
+        "stats-section",
+        "separator",
+        "new-forks-section"
+      ]
+    },
+    "repo-item": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark",
+        "source": "GitHub"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stars-stat",
+        "forks-stat"
+      ]
+    },
+    "stars-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,414",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "forks-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "298",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "separator": {
+      "type": "Separator"
+    },
+    "new-forks-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "new-forks-heading",
+        "fork1",
+        "fork2"
+      ]
+    },
+    "new-forks-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New forks",
+        "level": "h3"
+      }
+    },
+    "fork1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "techlitinc-dev/MiroShark",
+        "href": "https://github.com/techlitinc-dev/MiroShark",
+        "source": "GitHub"
+      }
+    },
+    "fork2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "md5sha1/MiroSharkSim",
+        "href": "https://github.com/md5sha1/MiroSharkSim",
+        "source": "GitHub"
+      }
+    }
+  }
+}
