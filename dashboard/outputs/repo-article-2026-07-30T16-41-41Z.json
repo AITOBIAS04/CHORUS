@@ -1,0 +1,46 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading-main",
+        "text-content",
+        "separator-1",
+        "link-article"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: On July 27, GitHub Told Every Robot to Wait Three Days Before Upgrading a Dependency. One Project Had Already Built a Different Throttle.",
+        "level": "h2"
+      }
+    },
+    "text-content": {
+      "type": "Text",
+      "props": {
+        "text": "GitHub just added a 72-hour cooldown to Dependabot version bumps after 6,500+ npm malware advisories in the past year. MiroShark has been running a different experiment for 130 days — an AI agent doing 60+ weekly maintenance tasks, with its human operator as the throttle rather than a timer. The question is not whether machines should do maintenance. It is who decides how fast.",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-07-30.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
