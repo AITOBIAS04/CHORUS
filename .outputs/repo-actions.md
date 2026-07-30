@@ -1,19 +1,17 @@
-*Repo Action Ideas — 2026-07-30*
-Generated from analysis of aaronjmars/MiroShark (1,414 stars · 298 forks · Day 24 of social silence). Aug 15 tutorial deadline (0/5, 16 days) is now the primary target.
+The `repo-actions` skill has already run today — the article and log entry are both complete. No duplicate work needed.
 
-1. German (DE) UI Locale (Community/DX, Small)
-   Dictionary-only locale pattern applied to German; moves the 5-language hyperstition from 3/5 to 4/5 with 33 days remaining.
+## Summary
 
-2. TypeScript/JavaScript Client SDK (Feature/DX, Medium)
-   npm-installable SDK with zero external deps, browser-compatible; opens the JS dev tutorial path (Dev.to, Codepen, YouTube) that the Python SDK can't reach.
+The `repo-actions` skill already executed on 2026-07-30. Here's what it produced:
 
-3. Simulation RSS/Atom Feed (Feature/Integration, Small)
-   /api/feed.rss + /api/feed.atom with auto-discovery headers; passive distribution to feed aggregators during 24-day social silence, zero ongoing maintenance.
+**Repo analyzed:** `aaronjmars/MiroShark` (1,414 stars, 298 forks)
 
-4. CLI Live Progress Display (DX, Small)
-   Live terminal spinner/stats in `miro wait` + `--watch` flag for `miro simulate`; turns CLI demos into recordable, shareable asciinema artifacts for tutorials.
+**5 ideas generated:**
 
-5. Batch Simulation API (Feature, Medium)
-   POST /api/simulate/batch (up to 20 simulations) + GET /api/batch/{id}; research-grade parameter sweeps, SDK wrappers for Python and JS; the access pattern that earns academic citations.
+1. **German (DE) UI Locale** — Community/DX, Small — advances 5-language hyperstition from 3/5 → 4/5
+2. **TypeScript/JavaScript Client SDK** — Feature/DX, Medium — zero-install browser example unlocks JS tutorial creators ahead of Aug 15 deadline
+3. **Simulation RSS/Atom Feed** — Feature/Integration, Small — passive distribution layer during 24-day social silence
+4. **CLI Live Progress Display** — DX, Small — `--watch` flag produces demo-worthy terminal recordings
+5. **Batch Simulation API** — Feature, Medium — research-grade parameter sweeps; academic citation path
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-30.md
+Article written to `articles/repo-actions-2026-07-30.md` and notification already sent. No re-run needed.
