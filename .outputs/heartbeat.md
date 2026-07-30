@@ -1,15 +1,12 @@
-🫀 *Heartbeat — 2026-07-29*
+Heartbeat — 2026-07-30
 
-System healthy. All 13 skills at 0 consecutive failures.
+2 skills missed today, 1 stalled community PR:
 
-*Stalled PRs (>24h):*
-• PR #42 (~30h) — improve: 403 fallback for repo-pulse stargazer detection
-• PR #43 (~29h) — improve: rotation rules for Feature Candidates + expired Active Targets
+Missing skills (dispatch unavailable — actions: read only; manual re-run needed):
+• project-lens — scheduled 16:00 UTC (Wed), no run 3h+ later
+• memory-flush — scheduled 18:00 UTC (Wed/Sun), no run 1h+ later
 
-Both are self-improve PRs. Next self-improve run (Jul 30, 13:00 UTC) will auto-merge them.
+Stalled PR (4d, no merge):
+• MiroShark #259: feat(settings): add Atlas Cloud provider preset — opened Jul 26, last updated Jul 29
 
-*Skills today (✓ all clear):*
-token-report, fetch-tweets, repo-pulse, feature (SKIP — GH_GLOBAL), push-recap, project-lens, memory-flush, heartbeat
-Self-improve + repo-actions not scheduled today (even-day cadence).
-
-*Persistent:* GH_GLOBAL still not set — feature skill blocked (63rd day). fetch-tweets: 23rd empty day (next escalation Aug 4).
+System health: all 13 skills consecutive_failures=0. No systemic failure. PRs #42/#43 auto-merged by self-improve this morning.

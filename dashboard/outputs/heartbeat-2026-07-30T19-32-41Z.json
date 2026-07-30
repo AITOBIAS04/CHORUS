@@ -1,0 +1,121 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "System health report — 2026-07-30"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-summary",
+        "sep-1",
+        "heading-missing",
+        "alert-project-lens",
+        "alert-memory-flush",
+        "sep-2",
+        "heading-stalled",
+        "alert-pr",
+        "sep-3",
+        "heading-health",
+        "text-health-skills",
+        "text-health-merged"
+      ]
+    },
+    "text-summary": {
+      "type": "Text",
+      "props": {
+        "text": "2 skills missed today, 1 stalled community PR",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-missing": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing Skills",
+        "level": "h3"
+      }
+    },
+    "alert-project-lens": {
+      "type": "Alert",
+      "props": {
+        "title": "project-lens",
+        "message": "Scheduled 16:00 UTC (Wed), no run 3h+ later. Dispatch unavailable — manual re-run needed.",
+        "type": "warning"
+      }
+    },
+    "alert-memory-flush": {
+      "type": "Alert",
+      "props": {
+        "title": "memory-flush",
+        "message": "Scheduled 18:00 UTC (Wed/Sun), no run 1h+ later. Dispatch unavailable — manual re-run needed.",
+        "type": "warning"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-stalled": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled Community PR",
+        "level": "h3"
+      }
+    },
+    "alert-pr": {
+      "type": "Alert",
+      "props": {
+        "title": "MiroShark #259",
+        "message": "feat(settings): add Atlas Cloud provider preset — opened Jul 26, last updated Jul 29 (4 days without merge)",
+        "type": "warning"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-health": {
+      "type": "Heading",
+      "props": {
+        "text": "System Health",
+        "level": "h3"
+      }
+    },
+    "text-health-skills": {
+      "type": "Text",
+      "props": {
+        "text": "All 13 skills: consecutive_failures=0. No systemic failure.",
+        "variant": "body"
+      }
+    },
+    "text-health-merged": {
+      "type": "Text",
+      "props": {
+        "text": "PRs #42 & #43 auto-merged by self-improve this morning.",
+        "variant": "body"
+      }
+    }
+  }
+}
