@@ -1,0 +1,438 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas",
+        "description": "2026-07-30"
+      },
+      "children": [
+        "stack_header",
+        "sep_1",
+        "stack_items",
+        "sep_2",
+        "link_details"
+      ]
+    },
+    "stack_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_repo",
+        "grid_stats"
+      ]
+    },
+    "text_repo": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark — Day 24 of social silence",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks",
+        "stat_silence",
+        "stat_deadline"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,414"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "298"
+      },
+      "children": []
+    },
+    "stat_silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Social Silence",
+        "value": "24"
+      },
+      "children": []
+    },
+    "stat_deadline": {
+      "type": "Stat",
+      "props": {
+        "label": "Aug 15 Tutorial Deadline",
+        "value": "0/5",
+        "delta": "16 days"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stack_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
+      ]
+    },
+    "item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_1_header",
+        "item_1_desc",
+        "item_1_badges"
+      ]
+    },
+    "item_1_header": {
+      "type": "Heading",
+      "props": {
+        "text": "1. German (DE) UI Locale",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Dictionary-only locale pattern applied to German; moves the 5-language hyperstition from 3/5 to 4/5 with 33 days remaining.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1_1",
+        "badge_1_2",
+        "badge_1_3"
+      ]
+    },
+    "badge_1_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_1_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_1_3": {
+      "type": "Badge",
+      "props": {
+        "text": "Locale",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_2_header",
+        "item_2_desc",
+        "item_2_badges"
+      ]
+    },
+    "item_2_header": {
+      "type": "Heading",
+      "props": {
+        "text": "2. TypeScript/JavaScript Client SDK",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "npm-installable SDK with zero external deps, browser-compatible; opens the JS dev tutorial path (Dev.to, Codepen, YouTube) that the Python SDK can't reach.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2_1",
+        "badge_2_2",
+        "badge_2_3"
+      ]
+    },
+    "badge_2_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_2_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_2_3": {
+      "type": "Badge",
+      "props": {
+        "text": "SDK",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_3_header",
+        "item_3_desc",
+        "item_3_badges"
+      ]
+    },
+    "item_3_header": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation RSS/Atom Feed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "/api/feed.rss + /api/feed.atom with auto-discovery headers; passive distribution to feed aggregators during 24-day social silence, zero ongoing maintenance.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3_1",
+        "badge_3_2",
+        "badge_3_3"
+      ]
+    },
+    "badge_3_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Integration",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_3_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_3_3": {
+      "type": "Badge",
+      "props": {
+        "text": "Feed",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_4_header",
+        "item_4_desc",
+        "item_4_badges"
+      ]
+    },
+    "item_4_header": {
+      "type": "Heading",
+      "props": {
+        "text": "4. CLI Live Progress Display",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Live terminal spinner/stats in `miro wait` + `--watch` flag for `miro simulate`; turns CLI demos into recordable, shareable asciinema artifacts for tutorials.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4_1",
+        "badge_4_2",
+        "badge_4_3"
+      ]
+    },
+    "badge_4_1": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_4_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_4_3": {
+      "type": "Badge",
+      "props": {
+        "text": "CLI",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_5_header",
+        "item_5_desc",
+        "item_5_badges"
+      ]
+    },
+    "item_5_header": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Batch Simulation API",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulate/batch (up to 20 simulations) + GET /api/batch/{id}; research-grade parameter sweeps, SDK wrappers for Python and JS; the access pattern that earns academic citations.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5_1",
+        "badge_5_2",
+        "badge_5_3"
+      ]
+    },
+    "badge_5_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_5_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_5_3": {
+      "type": "Badge",
+      "props": {
+        "text": "API",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "link_details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details: repo-actions-2026-07-30.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-30.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}

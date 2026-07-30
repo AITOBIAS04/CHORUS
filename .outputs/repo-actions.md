@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-07-28*
-Generated from analysis of aaronjmars/MiroShark (1,414 stars · 297 forks · 22-day social silence). Aug 1 community-PR deadline is 4 days away at 5+/10 — this list prioritizes direct activation over feature builds.
+*Repo Action Ideas — 2026-07-30*
+Generated from analysis of aaronjmars/MiroShark (1,414 stars · 298 forks · Day 24 of social silence). Aug 15 tutorial deadline (0/5, 16 days) is now the primary target.
 
-1. Good First Issue Sprint (Community, Small)
-   Create 8–10 labeled 'good first issue' issues targeting the 297 fork holders — locale QA reviews, doc additions, test cases — each closeable in under 2 hours. The only intervention with the right time constant to hit the Aug 1 community-PR deadline.
+1. German (DE) UI Locale (Community/DX, Small)
+   Dictionary-only locale pattern applied to German; moves the 5-language hyperstition from 3/5 to 4/5 with 33 days remaining.
 
-2. Show HN Launch Kit (Growth, Small)
-   Comprehensive HN submission package: post text, 5-minute demo script, FAQ, tweet draft. Reaches the audience most likely to write developer tutorials before the Aug 15 deadline.
+2. TypeScript/JavaScript Client SDK (Feature/DX, Medium)
+   npm-installable SDK with zero external deps, browser-compatible; opens the JS dev tutorial path (Dev.to, Codepen, YouTube) that the Python SDK can't reach.
 
-3. Spanish (ES) UI Locale (Community, Small)
-   Closes the 5-language hyperstition (3/5 → 5/5) 35 days early; second-largest developer language community on GitHub, highest tutorial production rate among remaining unbuilt locales.
+3. Simulation RSS/Atom Feed (Feature/Integration, Small)
+   /api/feed.rss + /api/feed.atom with auto-discovery headers; passive distribution to feed aggregators during 24-day social silence, zero ongoing maintenance.
 
-4. Academic Citation Helper (Growth/DX, Small)
-   CITATION.cff + /api/cite endpoint (BibTeX/RIS/Chicago) + og:citation meta tags. Converts MiroShark from 'interesting project' to 'citable research tool' — directly targets the academic citation hyperstition.
+4. CLI Live Progress Display (DX, Small)
+   Live terminal spinner/stats in `miro wait` + `--watch` flag for `miro simulate`; turns CLI demos into recordable, shareable asciinema artifacts for tutorials.
 
-5. Python SDK miroshark-py (Feature/DX, Medium)
-   pip install miroshark; runs simulations, returns DataFrames, includes a Jupyter notebook tutorial artifact. Removes the single biggest barrier for tutorial creators: needing to hand-roll an API wrapper before demonstrating anything.
+5. Batch Simulation API (Feature, Medium)
+   POST /api/simulate/batch (up to 20 simulations) + GET /api/batch/{id}; research-grade parameter sweeps, SDK wrappers for Python and JS; the access pattern that earns academic citations.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-28.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-07-30.md
