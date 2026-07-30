@@ -1,14 +1,16 @@
-*Push Recap — 2026-07-29*
-miroshark-aeon — 2 substantive commits by 2 authors
+*Push Recap — 2026-07-30*
+miroshark-aeon — 2 substantive commits by 2 authors (9 automation filtered)
 
-Security: Dashboard Dependency Hardening: Two high-severity Dependabot alerts closed. postcss patched from 8.5.15 to 8.5.25, fixing a path traversal vulnerability via crafted sourceMappingURL (GHSA-r28c-9q8g-f849). sharp bumped from 0.34.5 to 0.35.3, resolving inherited libvips CVEs (GHSA-f88m-g3jw-g9cj) — required an npm overrides entry since sharp is an optional transitive of Next.js.
+Repo Hygiene — Output Root Cleanup: The founder removed 7 leaked skill scratch files (changelog data, push payloads, pulse digests, movers reports) that had accumulated in output/ via git add -A leaks. Added 11 new .gitignore rules covering changelog, repo-pulse, token-movers, and json-render staging patterns to prevent recurrence. −709 lines of scratch cleared.
 
-Framework: Next.js Patch Bump: Routine Dependabot auto-merge bumped Next.js from 16.2.10 to 16.2.11 with all 8 SWC platform binaries updated in lockstep. Bug-fix release, no breaking changes.
+Framework — Next.js Patch Bump: Dependabot auto-merged Next.js 16.2.11 → 16.2.12 in the dashboard app. Second consecutive day of patching — framework is now fully current.
 
 Key changes:
-- postcss path traversal fix — attacker could read arbitrary files via crafted CSS source map URL
-- sharp/libvips CVE resolution — image processing vulnerabilities in native binaries
-- npm overrides block expanded to pin both postcss and sharp
+- Removed 611-line changelog-data TypeScript export that was never meant for the agent repo
+- .gitignore now blocks output/changelog-*, output/pr-body-*.md, output/push_*.py, .pending-*.md patterns
+- All 8 SWC platform binaries updated in lockstep with Next.js 16.2.12
 
-Stats: 2 files changed, +273/-184 lines (9 automation commits filtered)
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-29.md
+MiroShark: 0 commits (second quiet day in a row)
+
+Stats: 10 files changed, +52/−750 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-30.md

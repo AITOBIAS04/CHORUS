@@ -1,0 +1,236 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-30"
+      },
+      "children": [
+        "subtitle",
+        "sep1",
+        "section-hygiene",
+        "sep2",
+        "section-framework",
+        "sep3",
+        "section-miroshark",
+        "sep4",
+        "stats-section",
+        "sep5",
+        "link-recap"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 2 substantive commits by 2 authors (9 automation filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-hygiene": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-hygiene",
+        "hygiene-detail1",
+        "hygiene-detail2",
+        "hygiene-detail3"
+      ]
+    },
+    "heading-hygiene": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Hygiene — Output Root Cleanup",
+        "level": "h2"
+      }
+    },
+    "hygiene-detail1": {
+      "type": "Text",
+      "props": {
+        "text": "The founder removed 7 leaked skill scratch files (changelog data, push payloads, pulse digests, movers reports) that had accumulated in output/ via git add -A leaks."
+      }
+    },
+    "hygiene-detail2": {
+      "type": "Text",
+      "props": {
+        "text": "Added 11 new .gitignore rules covering changelog, repo-pulse, token-movers, and json-render staging patterns to prevent recurrence."
+      }
+    },
+    "hygiene-detail3": {
+      "type": "Text",
+      "props": {
+        "text": "−709 lines of scratch cleared.",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-framework": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-framework",
+        "framework-detail1",
+        "framework-detail2",
+        "heading-changes",
+        "changes-list"
+      ]
+    },
+    "heading-framework": {
+      "type": "Heading",
+      "props": {
+        "text": "Framework — Next.js Patch Bump",
+        "level": "h2"
+      }
+    },
+    "framework-detail1": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot auto-merged Next.js 16.2.11 → 16.2.12 in the dashboard app. Second consecutive day of patching — framework is now fully current."
+      }
+    },
+    "framework-detail2": {
+      "type": "Text",
+      "props": {
+        "text": ""
+      }
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h4"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "• Removed 611-line changelog-data TypeScript export that was never meant for the agent repo"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "• .gitignore now blocks output/changelog-*, output/pr-body-*.md, output/push_*.py, .pending-*.md patterns"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "• All 8 SWC platform binaries updated in lockstep with Next.js 16.2.12"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-miroshark": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-miroshark",
+        "miroshark-detail"
+      ]
+    },
+    "heading-miroshark": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark",
+        "level": "h3"
+      }
+    },
+    "miroshark-detail": {
+      "type": "Text",
+      "props": {
+        "text": "0 commits (second quiet day in a row)"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-added",
+        "stat-removed"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "10"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+52"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "−750",
+        "trend": "down"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-30.md"
+      }
+    }
+  }
+}
