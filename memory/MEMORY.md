@@ -87,6 +87,7 @@
 - Push-recap re-reports identical commits on consecutive days when commits land late enough to fall within both runs' 24h windows (observed Jul 24→25: same 2 security patches); fixed with Step 4c cross-day dedup — checks yesterday's article for already-reported SHAs (self-improve PR #41, 2026-07-26)
 - Repo-pulse sent daily noise notifications ("New stars: unknown, forks: 0") because stargazers timestamps API returns 403 and the activity logic had no fallback — treated "unknown" as activity; fixed with 403 fallback: compute net star change from previous log entries, only notify on positive net change or new forks (self-improve PR #42, 2026-07-28)
 - MEMORY.md grew to 142 lines (~3x target of ~50) because memory-flush only rotated three tables (Skills Built, Articles, Digests) — Feature Candidates (20+ entries) and expired Active Targets (7 "NOT CLEARED" entries) grew without bound; fixed by adding rotation rules: keep 5 most recent Feature Candidates + remove expired hyperstitions >14 days past deadline (self-improve PR #43, 2026-07-28)
+- Lessons Learned section grew to 37 entries (largest MEMORY.md section) because memory-flush had no rotation rule for it — most entries describe fixes already coded into skill logic; fixed with 15-entry cap + archive to memory/topics/lessons-archive.md (self-improve PR #44, 2026-07-30)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)

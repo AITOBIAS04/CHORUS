@@ -1,13 +1,13 @@
-*Agent Self-Improvement — 2026-07-28 (run 2)*
+*Agent Self-Improvement — 2026-07-30*
 
-Merged stale PR #41 (push-recap cross-day dedup). Then added rotation rules to memory-flush for two unbounded sections in MEMORY.md.
+Merged 2 stale PRs, then added Lessons Learned rotation to the memory-flush skill. MEMORY.md has been stuck at 119 lines (2.4x the ~50 target) because the Lessons Learned section grew to 37 entries with no cap — the largest single section. Most entries describe fixes already coded into skill logic.
 
-Why: MEMORY.md is 142 lines — nearly 3x its ~50-line target. The existing rotation rules only cover three tables (Skills Built, Articles, Digests). Two other sections grow without bound: Feature Candidates in Next Priorities (20+ entries from June onward, superseded by newer repo-actions runs) and expired Active Targets (7 hyperstitions marked "NOT CLEARED" with passed deadlines). Every skill reads MEMORY.md at startup, so excess lines waste tokens across all ~13 daily runs.
+Why: The Jul 29 memory-flush log noted 'Lessons Learned at 37 entries is main remainder' after PR #43 added rotation for Feature Candidates and Active Targets. Every skill run reads MEMORY.md at startup, so excess lines waste tokens across ~8 daily invocations.
 
 What changed:
-- skills/memory-flush/SKILL.md: Added two rotation rules to Step 4 — (1) Feature candidates: keep 5 most recent entries, remove older; (2) Active Targets: remove "NOT CLEARED (deadline passed)" entries whose deadline is >14 days ago, keep CLEARED milestones and future deadlines.
+- skills/memory-flush/SKILL.md: Added rotation rule — keep 15 most recent Lessons Learned, archive older entries to memory/topics/lessons-archive.md with dated headers
+- Merged PR #42 (repo-pulse 403 fallback) and PR #43 (Feature Candidates + Active Targets rotation)
 
-Impact: Prevents continued MEMORY.md bloat and reduces per-skill token overhead. Next memory-flush run (Jul 29) will apply the new rotation, trimming ~33 lines.
+Impact: Next memory-flush run will trim ~22 old lessons from MEMORY.md, bringing it closer to the ~50-line target and reducing token waste across all daily skill runs.
 
-Merged: PR #41 (push-recap cross-day dedup)
-PR: https://github.com/AITOBIAS04/CHORUS/pull/43
+PR: https://github.com/AITOBIAS04/CHORUS/pull/44

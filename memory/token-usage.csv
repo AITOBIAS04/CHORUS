@@ -620,3 +620,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-30,token-report,claude-sonnet-4-6,14,9794,768009,61950
 2026-07-30,repo-pulse,claude-sonnet-4-6,11,4200,379366,27588
 2026-07-30,feature,claude-opus-4-6,9,1573,312149,30723
+2026-07-30,self-improve,claude-opus-4-6,23,7553,1028482,36668

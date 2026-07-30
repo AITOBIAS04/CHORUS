@@ -1,0 +1,236 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-07-30"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "summary_section",
+        "sep1",
+        "problem_section",
+        "sep2",
+        "context_section",
+        "sep3",
+        "changes_section",
+        "sep4",
+        "impact_section",
+        "sep5",
+        "pr_link"
+      ]
+    },
+    "summary_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "summary_heading",
+        "summary_item1",
+        "summary_item2"
+      ]
+    },
+    "summary_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Summary",
+        "level": "h3"
+      }
+    },
+    "summary_item1": {
+      "type": "Text",
+      "props": {
+        "text": "Merged 2 stale PRs"
+      }
+    },
+    "summary_item2": {
+      "type": "Text",
+      "props": {
+        "text": "Added Lessons Learned rotation to the memory-flush skill"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "problem_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "problem_heading",
+        "problem_item1",
+        "problem_item2",
+        "problem_item3"
+      ]
+    },
+    "problem_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h3"
+      }
+    },
+    "problem_item1": {
+      "type": "Text",
+      "props": {
+        "text": "MEMORY.md stuck at 119 lines (2.4x the ~50 target)"
+      }
+    },
+    "problem_item2": {
+      "type": "Text",
+      "props": {
+        "text": "Lessons Learned section grew to 37 entries with no cap — largest single section"
+      }
+    },
+    "problem_item3": {
+      "type": "Text",
+      "props": {
+        "text": "Most entries describe fixes already coded into skill logic"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "context_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "context_heading",
+        "context_item1",
+        "context_item2"
+      ]
+    },
+    "context_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why This Matters",
+        "level": "h3"
+      }
+    },
+    "context_item1": {
+      "type": "Text",
+      "props": {
+        "text": "Jul 29 memory-flush log noted 'Lessons Learned at 37 entries is main remainder' after PR #43 added rotation for Feature Candidates and Active Targets"
+      }
+    },
+    "context_item2": {
+      "type": "Text",
+      "props": {
+        "text": "Every skill run reads MEMORY.md at startup, so excess lines waste tokens across ~8 daily invocations"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes_heading",
+        "change_item1",
+        "change_item2"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "change_item1": {
+      "type": "Text",
+      "props": {
+        "text": "skills/memory-flush/SKILL.md: Added rotation rule — keep 15 most recent Lessons Learned, archive older entries to memory/topics/lessons-archive.md with dated headers"
+      }
+    },
+    "change_item2": {
+      "type": "Text",
+      "props": {
+        "text": "Merged PR #42 (repo-pulse 403 fallback) and PR #43 (Feature Candidates + Active Targets rotation)"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_heading",
+        "impact_item1",
+        "impact_item2"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_item1": {
+      "type": "Text",
+      "props": {
+        "text": "Next memory-flush run will trim ~22 old lessons from MEMORY.md"
+      }
+    },
+    "impact_item2": {
+      "type": "Text",
+      "props": {
+        "text": "Brings it closer to the ~50-line target and reduces token waste across all daily skill runs"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #44",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/44",
+        "source": "GitHub"
+      }
+    }
+  }
+}
