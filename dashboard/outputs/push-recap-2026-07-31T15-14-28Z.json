@@ -1,0 +1,269 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-07-31"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "section_contributors",
+        "sep1",
+        "section_atlas",
+        "sep2",
+        "section_holdings",
+        "sep3",
+        "section_telegram",
+        "sep4",
+        "section_claude5",
+        "sep5",
+        "section_keychanges",
+        "sep6",
+        "section_stats",
+        "sep7",
+        "link_fullrecap"
+      ]
+    },
+    "section_contributors": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_miroshark",
+        "text_miroshark_aeon"
+      ]
+    },
+    "text_miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 2 substantive commits by 2 authors"
+      }
+    },
+    "text_miroshark_aeon": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 10 substantive commits (14 automation filtered)"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_atlas": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_atlas",
+        "text_atlas"
+      ]
+    },
+    "heading_atlas": {
+      "type": "Heading",
+      "props": {
+        "text": "Atlas Cloud Provider Preset",
+        "level": "h3"
+      }
+    },
+    "text_atlas": {
+      "type": "Text",
+      "props": {
+        "text": "Community contributor nb213 landed the first feature PR (#259) — Atlas Cloud joins OpenRouter and Ollama as a one-click provider. The PR also fixed a key-leak bug where switching providers with a blank key carried the old provider's credentials to the new endpoint."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_holdings": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_holdings",
+        "text_holdings"
+      ]
+    },
+    "heading_holdings": {
+      "type": "Heading",
+      "props": {
+        "text": "Holdings Skill",
+        "level": "h3"
+      }
+    },
+    "text_holdings": {
+      "type": "Text",
+      "props": {
+        "text": "New weekly skill tracks MiroShark wallet balances on-chain via keyless public RPC — reports amount held, % of total supply, and 7d/30d token-amount growth from its own snapshot history. No dollar values, no API keys required."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_telegram": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_telegram",
+        "text_telegram"
+      ]
+    },
+    "heading_telegram": {
+      "type": "Heading",
+      "props": {
+        "text": "Telegram Security Fix",
+        "level": "h3"
+      }
+    },
+    "text_telegram": {
+      "type": "Text",
+      "props": {
+        "text": "Closed an access-control gap where any group member could command the bot via posted notification buttons. Added owner-user gate (TELEGRAM_ALLOWED_USER_ID) and auto-suppresses interactive buttons when Messages workflow is disabled."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_claude5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_claude5",
+        "text_claude5"
+      ]
+    },
+    "heading_claude5": {
+      "type": "Heading",
+      "props": {
+        "text": "Claude 5 Migration",
+        "level": "h3"
+      }
+    },
+    "text_claude5": {
+      "type": "Text",
+      "props": {
+        "text": "Default model bumped from Sonnet 4.6 to Sonnet 5 across all execution paths — aeon.yml, gateway script, and both workflow fallbacks."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_keychanges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_keychanges",
+        "text_keychanges1",
+        "text_keychanges2",
+        "text_keychanges3",
+        "text_keychanges4"
+      ]
+    },
+    "heading_keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "text_keychanges1": {
+      "type": "Text",
+      "props": {
+        "text": "settings.py _apply_preset now clears stale API keys when switching providers (security fix)"
+      }
+    },
+    "text_keychanges2": {
+      "type": "Text",
+      "props": {
+        "text": "skills/holdings/holdings.py — 218-line Python stdlib-only balance checker with ERC-20 balanceOf + GeckoTerminal supply"
+      }
+    },
+    "text_keychanges3": {
+      "type": "Text",
+      "props": {
+        "text": "notify.sh resolves Messages workflow state via GitHub API to gate interactive buttons"
+      }
+    },
+    "text_keychanges4": {
+      "type": "Text",
+      "props": {
+        "text": "mcp>=1.3.0,<2.0.0 pinned in requirements.txt to fix CI break from mcp 2.0.0"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_stats"
+      ]
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 26 files changed, +1,040/-174 lines"
+      }
+    },
+    "sep7": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_fullrecap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-31.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

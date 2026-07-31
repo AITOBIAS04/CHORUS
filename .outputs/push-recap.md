@@ -1,16 +1,20 @@
-*Push Recap — 2026-07-30*
-miroshark-aeon — 2 substantive commits by 2 authors (9 automation filtered)
+*Push Recap — 2026-07-31*
+MiroShark — 2 substantive commits by 2 authors
+miroshark-aeon — 10 substantive commits (14 automation filtered)
 
-Repo Hygiene — Output Root Cleanup: The founder removed 7 leaked skill scratch files (changelog data, push payloads, pulse digests, movers reports) that had accumulated in output/ via git add -A leaks. Added 11 new .gitignore rules covering changelog, repo-pulse, token-movers, and json-render staging patterns to prevent recurrence. −709 lines of scratch cleared.
+Atlas Cloud Provider Preset: Community contributor nb213 landed the first feature PR (#259) — Atlas Cloud joins OpenRouter and Ollama as a one-click provider. The PR also fixed a key-leak bug where switching providers with a blank key carried the old provider's credentials to the new endpoint.
 
-Framework — Next.js Patch Bump: Dependabot auto-merged Next.js 16.2.11 → 16.2.12 in the dashboard app. Second consecutive day of patching — framework is now fully current.
+Holdings Skill: New weekly skill tracks MiroShark wallet balances on-chain via keyless public RPC — reports amount held, % of total supply, and 7d/30d token-amount growth from its own snapshot history. No dollar values, no API keys required.
+
+Telegram Security Fix: Closed an access-control gap where any group member could command the bot via posted notification buttons. Added owner-user gate (TELEGRAM_ALLOWED_USER_ID) and auto-suppresses interactive buttons when Messages workflow is disabled.
+
+Claude 5 Migration: Default model bumped from Sonnet 4.6 to Sonnet 5 across all execution paths — aeon.yml, gateway script, and both workflow fallbacks.
 
 Key changes:
-- Removed 611-line changelog-data TypeScript export that was never meant for the agent repo
-- .gitignore now blocks output/changelog-*, output/pr-body-*.md, output/push_*.py, .pending-*.md patterns
-- All 8 SWC platform binaries updated in lockstep with Next.js 16.2.12
+- settings.py _apply_preset now clears stale API keys when switching providers (security fix)
+- skills/holdings/holdings.py — 218-line Python stdlib-only balance checker with ERC-20 balanceOf + GeckoTerminal supply
+- notify.sh resolves Messages workflow state via GitHub API to gate interactive buttons
+- mcp>=1.3.0,<2.0.0 pinned in requirements.txt to fix CI break from mcp 2.0.0
 
-MiroShark: 0 commits (second quiet day in a row)
-
-Stats: 10 files changed, +52/−750 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-30.md
+Stats: 26 files changed, +1,040/-174 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-07-31.md
