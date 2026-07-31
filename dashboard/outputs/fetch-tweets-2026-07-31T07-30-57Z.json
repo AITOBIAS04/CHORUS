@@ -1,0 +1,43 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Top Tweets — MIROSHARK / MiroShark (2026-07-31)"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet-1",
+        "link-tweet-1"
+      ]
+    },
+    "tweet-1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aaronjmars",
+        "handle": "aaronjmars",
+        "text": "SFT model training update for MiroShark: achieved ~50% improvement in simulation output quality with a Qwen3.5-9B fine-tune; pausing to collect more data before the next training run. Collaboration with x.com/thinkymachines."
+      },
+      "children": []
+    },
+    "link-tweet-1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aaronjmars/status/2078253373459923369"
+      },
+      "children": []
+    }
+  }
+}
