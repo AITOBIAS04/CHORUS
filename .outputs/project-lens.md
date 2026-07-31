@@ -1,5 +1,5 @@
-*New Article: What If You Treated Every AI Agent's Opinion Like Grafana Treats a Server Metric?*
+*New Article: Seventeen Days Apart, Two Governments Made AI Agent Impact Assessment Law. The Method Nobody Specified Costs a Dollar.*
 
-Grafana turned infrastructure monitoring into a composable query layer — any metric, any data source, any view — and built a $9 billion company on the pattern. MiroShark applied the same architectural bet to AI simulation: 41 independently queryable API surfaces, each exposing a different intermediate state of how simulated agents form opinions. The parallel goes beyond analogy — both decouple the query from the view, both use plugin-style extensibility, and both bet that the summary is never enough.
+On July 15, China enforced the world's first dedicated AI agent regulations — a three-tier decision authorization framework. On August 2, two days from now, the EU AI Act's high-risk provisions take effect with €15M penalties. Neither specifies how to predict agent impact. Four 2026 peer-reviewed papers validate multi-agent LLM simulation as the method. MiroShark operationalizes it for $1 per run with 41 queryable audit surfaces.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-29.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-31.md
