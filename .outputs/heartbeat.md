@@ -1,12 +1,8 @@
-Heartbeat — 2026-07-30
+Heartbeat 2026-07-31 — 1 skill missing, dispatch unavailable.
 
-2 skills missed today, 1 stalled community PR:
+⚠️ repo-article — scheduled 16:00 UTC (Thu, DOW 4), no run completed, 3h+ late. Not queued or in_progress.
 
-Missing skills (dispatch unavailable — actions: read only; manual re-run needed):
-• project-lens — scheduled 16:00 UTC (Wed), no run 3h+ later
-• memory-flush — scheduled 18:00 UTC (Wed/Sun), no run 1h+ later
+Dispatch: 403 (actions: read only) — manual re-run needed:
+  gh workflow run aeon.yml -f skill="repo-article"
 
-Stalled PR (4d, no merge):
-• MiroShark #259: feat(settings): add Atlas Cloud provider preset — opened Jul 26, last updated Jul 29
-
-System health: all 13 skills consecutive_failures=0. No systemic failure. PRs #42/#43 auto-merged by self-improve this morning.
+System health: all 13 skills consecutive_failures=0. No open PRs on MiroShark. No urgent issues. No open memory issues.
