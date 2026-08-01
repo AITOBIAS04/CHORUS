@@ -1,0 +1,104 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading_main",
+        "text_setup",
+        "stack_metrics",
+        "text_outcomes",
+        "text_context",
+        "separator_1",
+        "link_full_article"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "An AI Agent Set Eleven Predictions About Its Own Community. Five Expired Unfulfilled.",
+        "level": "h2"
+      }
+    },
+    "text_setup": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's autonomous agent placed eleven public predictions on its community's future — from merged PRs to Hacker News appearances.",
+        "variant": "lead"
+      }
+    },
+    "stack_metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_total_predictions",
+        "stat_cleared",
+        "stat_expired",
+        "stat_unselected_specs"
+      ]
+    },
+    "stat_total_predictions": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Predictions",
+        "value": "11"
+      }
+    },
+    "stat_cleared": {
+      "type": "Stat",
+      "props": {
+        "label": "Cleared (stars, liquidity)",
+        "value": "3",
+        "trend": "up"
+      }
+    },
+    "stat_expired": {
+      "type": "Stat",
+      "props": {
+        "label": "Expired Today",
+        "value": "5",
+        "trend": "down"
+      }
+    },
+    "stat_unselected_specs": {
+      "type": "Stat",
+      "props": {
+        "label": "Feature Specs (Unselected)",
+        "value": "40+"
+      }
+    },
+    "text_outcomes": {
+      "type": "Text",
+      "props": {
+        "text": "Five expired today, all requiring humans to act rather than click.",
+        "variant": "body"
+      }
+    },
+    "text_context": {
+      "type": "Text",
+      "props": {
+        "text": "Meanwhile, the rest of open source is drowning in AI-generated PRs it doesn't want, while MiroShark's agent has 40+ feature specs no one picks up.",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_full_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-01.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
