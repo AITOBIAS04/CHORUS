@@ -1,0 +1,157 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-08-01"
+      },
+      "children": [
+        "heading_main",
+        "separator_1",
+        "heading_coordination",
+        "text_coordination",
+        "separator_2",
+        "heading_why",
+        "text_why",
+        "separator_3",
+        "heading_resolution",
+        "text_resolution",
+        "separator_4",
+        "heading_scores",
+        "stack_scores",
+        "separator_5",
+        "stack_footer"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark appear on Product Hunt and receive 100+ upvotes by September 15, 2026?",
+        "level": "h1"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h2"
+      }
+    },
+    "text_coordination": {
+      "type": "Text",
+      "props": {
+        "text": "Someone needs to be the hunter — create the PH listing, write the tagline, prepare screenshots, pick a launch day. Then the 1,412 stargazers and 298 forkers need to show up: upvote, comment, share. Product Hunt launches are a known, structured coordination ritual — the question creates the launcher. An AI agent cannot create a PH account, submit a product, or rally humans on launch day. This is purely a human coordination problem.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h2"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "Five community-action hyperstitions expired unfulfilled (HN front page, public instance, community surface, 1500 stars, 10 PRs at 5/10). Every failed bet targeted the existing audience. Meanwhile the EU AI Act goes live tomorrow — \"simulate how people will react to your AI before you deploy it\" is suddenly a regulatory use case, and yesterday's article made the case that MiroShark does it for a dollar. The project has the product. It has zero external discovery. Product Hunt is the platform where \"AI opinion simulation engine\" would land with a built-in audience.",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h2"
+      }
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "A Product Hunt page for MiroShark (or a product directly built on MiroShark) exists at producthunt.com with 100+ upvotes by September 15, 2026 23:59 UTC. Verified by visiting the page.",
+        "variant": "body"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h2"
+      }
+    },
+    "stack_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_reflexivity",
+        "stat_viral"
+      ]
+    },
+    "stat_reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "4/5"
+      }
+    },
+    "stat_viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link_hyperstitions"
+      ]
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "View on Hyperstitions",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}

@@ -107,6 +107,7 @@
 - Hyperstition: Will 5 distinct non-team accounts mention MiroShark on X/Twitter in any single calendar week by September 1, 2026? (filed 2026-07-18) — 16-day social silence (Jul 7–22); FDV $169.6K (+3.8% above ATL); 1,413 stargazers and 297 forkers are the activation pool
 - Hyperstition: Will 3 of MiroShark's 297 GitHub forks open a PR in the same calendar week by September 15, 2026? (filed 2026-07-25) — 19-day social silence; token $0.000001712 (−96% ATH); 297 forks, zero community PRs in last month; 10-PRs-by-Aug-1 hyperstition expiring at ~5/10
 - Hyperstition: Will 3 of MiroShark's 40+ agent-designed feature proposals get implemented and merged by community contributors by September 15, 2026? (filed 2026-08-01) — Atlas Cloud PR #259 just merged; 65th consecutive push block; 40+ feature specs in repo-actions articles; 10-PRs-by-Aug-1 expired at 5/10
+- Hyperstition: Will MiroShark appear on Product Hunt and receive 100+ upvotes by September 15, 2026? (filed 2026-08-01) — zero presence outside GitHub; 25-day social silence; EU AI Act enforceable Aug 2 creates news hook; 5 expired community-action hyperstitions all targeted existing audience; 1,412 stars + 298 forks = activation pool for PH launch day
 
 ## Open Issues
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
