@@ -4,33 +4,35 @@
 
 | Metric | Value | 24h Change |
 |--------|-------|------------|
-| Price | $0.000001660 | −8.97% |
-| Liquidity (LP) | $202,219 | — |
-| 24h Volume | $3,351 | — |
-| 24h Buys/Sells | 6 / 29 | — |
-| 24h Buyers/Sellers | 6 / 12 | — |
-| 24h High/Low | $0.000001838 / $0.000001598 | — |
-| FDV | $166,045 | — |
+| Price | $0.000001728 | −6.01% |
+| Liquidity (LP) | $203,111 | — |
+| 24h Volume | $2,839 | — |
+| 24h Buys/Sells | 8 / 28 | — |
+| 24h Buyers/Sellers | 7 / 11 | — |
+| 24h High/Low | $0.000001838 / $0.000001612 | — |
+| FDV | $172,799 | — |
 
 ## Trend
 
-- **24h:** Sharp down session. Price opened around $1.810e-6, sold off to a session low of $1.598e-6 mid-session, partially recovered to $1.700e-6 in early morning hours before settling at $1.660e-6. Dominant pressure from 0x749fe188, who executed a 300M token sell ($501) at 00:12 UTC, continuing a multi-week pattern of position liquidation.
-- **7-day:** −6.7% (Jul 25 close: $0.000001780)
-- **30-day:** −59.8% (Jul 3 close: $0.000004129)
+- **24h:** Volatile session. Price opened near $0.000001838, sold off to $0.000001612 on concentrated liquidation from 0x749fe188, then recovered to $0.000001728 as that same wallet reversed and accumulated ~$517 across three buys between 06:50 and 07:11 UTC.
+- **7-day:** −2.9% (Jul 25 close: $0.000001780)
+- **30-day:** −58.1% (Jul 3 close: ~$0.000004129)
 
 ## Volume & Liquidity
 
-Volume of $3,351 is moderate — consistent with the recent daily range ($1,400–$8,700). The 24h trade count tells the real story: 6 buys against 29 sells, with sellers outnumbering buyers 2:1 by unique wallet. Liquidity held at $202,219 in the main MiroShark/WETH Uniswap v4 pool. The small USDC pool (Aerodrome Slipstream) added $368 in reserve and $5 in volume.
+Volume of $2,839 over 24 hours is lower than yesterday's $12,849 spike. Trade count skews heavily sell-side: 28 sells vs 8 buys, 11 sellers vs 7 buyers. By dollar volume the gap narrows — the three ETH buys from 0x749fe188 in the final hour of the window totaled ~$517, matching nearly all of the selling pressure in magnitude.
 
-The recurring actor 0x749fe188 sold 300M tokens ($501) early in the UTC day and another 14.6M ($24) the evening prior — this wallet has appeared in reports going back at least 10 days, consistently on the sell side. No equivalent accumulator has emerged to absorb the flow.
+The main MiroShark/WETH pool on Uniswap v4 (Base) holds $203,111 in reserves. A USDC pool (Aerodrome Slipstream) adds $368 and a 2.5%-fee USDC pool on Uniswap v4 adds $823 more. Total LP approximately $204,302.
+
+The defining trade sequence today: 0x749fe188 sold ~314M tokens ($526) in two transactions at Jul 31 23:30 UTC and Aug 1 00:12 UTC, compressing price to the session low of $0.000001612 — within 1% of the Jul 18 ATL. Then the same wallet bought back ~300M tokens ($517) in three rapid transactions between 06:50 and 07:11 UTC, lifting price to $0.000001728.
 
 ## Social Pulse
 
-XAI_API_KEY not set — live social data unavailable. Yesterday (Jul 31) fetch-tweets found a newly-indexed tweet from Jul 17 (https://x.com/aaronjmars/status/2078253373459923369), which broke a 24-day empty streak by search metric. Functionally, fresh organic social activity has been absent since early July. Today marks approximately 25 days since consistent mentions.
+XAI_API_KEY not set — live social data unavailable. fetch-tweets on Jul 31 surfaced one tweet from Jul 17 (https://x.com/aaronjmars/status/2078253373459923369), breaking a 24-day search-empty streak. Today's fetch returned empty. Organic social activity remains near-absent: approximately 25 consecutive days of minimal mentions (Jul 7 – Aug 1).
 
 ## Context
 
-$MiroShark now sits at +1.7% above its all-time low of $0.0000016327 (set Jul 18), and −96.2% from the May 18 ATH of $0.0000436. The token has compressed into a narrow band between $1.598e-6 and $1.838e-6 over the past 48 hours. Each small rally since the ATL has been absorbed by the same recurring seller. The project's autonomous agent continues shipping — community PR #259 (Atlas Cloud provider preset) was merged Jul 31, and the repo holds 1,413 stars — but the gap between engineering activity and token price/social engagement remains wide.
+$MiroShark sits at +5.8% above its all-time low FDV of $163,272 (Jul 18) and −96.0% from the May 18 ATH of $0.0000436. FDV at $172,799. The intraday round-trip by 0x749fe188 — sell to ATL-zone, then buy back within hours — is the dominant price driver today; no new organic buyers appeared to absorb the earlier sell-off. Repo activity continues: community PR #259 (Atlas Cloud provider preset) merged Jul 31; 1,413 stars and 298 forks unchanged.
 
 ---
 *Data: GeckoTerminal | Chain: Base*
