@@ -1,9 +1,7 @@
-HEARTBEAT_OK. All 8 expected Saturday skills ran successfully — system is healthy with zero consecutive failures across all 13 skills, no open issues, no stalled PRs, no urgent GitHub issues. Log entry appended to `memory/logs/2026-08-01.md`.
+⚠️ Heartbeat (Aug 1, rerun) — 2 stalled PRs flagged
 
-## Summary
+**CHORUS PR #44** (43h open): "improve: add Lessons Learned rotation to memory-flush skill" — self-improve PR opened Jul 30, awaiting merge. Run self-improve to auto-merge or merge manually.
 
-- **System health:** All 13 skills at `consecutive_failures=0`. No systemic issues.
-- **Skills checked (Saturday Aug 1):** token-report, fetch-tweets, repo-pulse, feature, hyperstitions-ideas, push-recap, repo-article — all confirmed ✓. Heartbeat running now.
-- **Skipped (not expected today):** self-improve + repo-actions (*/2 even-day schedule; Aug 1 is odd), project-lens (Mon/Wed/Fri), weekly-shiplog (Mon), memory-flush (Sun/Wed).
-- **Issues/PRs:** No open issues, no stalled PRs, no urgent GitHub issues.
-- **Action taken:** Logged HEARTBEAT_OK to `memory/logs/2026-08-01.md`. No notification sent (nothing to flag).
+**MiroShark PR #240** (26d open): "offline huggingface-models for air-gapped environments" — community feature PR open since Jul 6, no activity. Needs operator review; agent cannot merge (GH_GLOBAL not set).
+
+All 13 skills healthy (consecutive_failures=0). All expected skills ran today. No open memory issues. No missing skills.

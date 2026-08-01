@@ -1,0 +1,164 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat (Aug 1, rerun)",
+        "description": "2 stalled PRs flagged"
+      },
+      "children": [
+        "alert_stalled",
+        "separator1",
+        "stack_prs",
+        "separator2",
+        "stack_health"
+      ]
+    },
+    "alert_stalled": {
+      "type": "Alert",
+      "props": {
+        "title": "2 Stalled PRs",
+        "message": "CHORUS PR #44 (43h open) awaiting merge. MiroShark PR #240 (26d open) needs operator review.",
+        "type": "warning"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "pr_chorus_section",
+        "pr_miroshark_section"
+      ]
+    },
+    "pr_chorus_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_chorus_title",
+        "pr_chorus_meta",
+        "pr_chorus_action"
+      ]
+    },
+    "pr_chorus_title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "improve: add Lessons Learned rotation to memory-flush skill",
+        "href": "https://github.com/CHORUS/CHORUS/pull/44",
+        "source": "CHORUS PR #44"
+      }
+    },
+    "pr_chorus_meta": {
+      "type": "Text",
+      "props": {
+        "text": "43h open • awaiting merge",
+        "variant": "caption"
+      }
+    },
+    "pr_chorus_action": {
+      "type": "Text",
+      "props": {
+        "text": "Run self-improve to auto-merge or merge manually",
+        "variant": "body"
+      }
+    },
+    "pr_miroshark_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_miroshark_title",
+        "pr_miroshark_meta",
+        "pr_miroshark_action"
+      ]
+    },
+    "pr_miroshark_title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "offline huggingface-models for air-gapped environments",
+        "href": "https://github.com/MiroShark/MiroShark/pull/240",
+        "source": "MiroShark PR #240"
+      }
+    },
+    "pr_miroshark_meta": {
+      "type": "Text",
+      "props": {
+        "text": "26d open • community feature • no activity",
+        "variant": "caption"
+      }
+    },
+    "pr_miroshark_action": {
+      "type": "Text",
+      "props": {
+        "text": "Needs operator review; agent cannot merge (GH_GLOBAL not set)",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack_health": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "health_heading",
+        "health_skills",
+        "health_runs",
+        "health_issues",
+        "health_missing"
+      ]
+    },
+    "health_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Health Status",
+        "level": "h3"
+      }
+    },
+    "health_skills": {
+      "type": "Text",
+      "props": {
+        "text": "All 13 skills healthy (consecutive_failures=0)",
+        "variant": "body"
+      }
+    },
+    "health_runs": {
+      "type": "Text",
+      "props": {
+        "text": "All expected skills ran today",
+        "variant": "body"
+      }
+    },
+    "health_issues": {
+      "type": "Text",
+      "props": {
+        "text": "No open memory issues",
+        "variant": "body"
+      }
+    },
+    "health_missing": {
+      "type": "Text",
+      "props": {
+        "text": "No missing skills",
+        "variant": "body"
+      }
+    }
+  }
+}
