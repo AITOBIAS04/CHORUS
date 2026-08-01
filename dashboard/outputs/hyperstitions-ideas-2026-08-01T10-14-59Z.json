@@ -1,0 +1,245 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-08-01"
+      },
+      "children": [
+        "question",
+        "sep1",
+        "coordination",
+        "sep2",
+        "why-now",
+        "sep3",
+        "resolution",
+        "sep4",
+        "scores",
+        "sep5",
+        "link"
+      ]
+    },
+    "question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will 3 of MiroShark's 40+ agent-designed feature proposals get implemented and merged by community contributors by September 15, 2026?",
+        "level": "h2"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "coord-heading",
+        "coord-text1",
+        "coord-text2",
+        "coord-text3"
+      ]
+    },
+    "coord-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h3"
+      }
+    },
+    "coord-text1": {
+      "type": "Text",
+      "props": {
+        "text": "An AI agent spent two months designing features — German locale, TypeScript SDK, RSS feed, batch simulation API, and 35 more — complete with specs, test plans, and architecture notes. Then it got locked out.",
+        "variant": "body"
+      }
+    },
+    "coord-text2": {
+      "type": "Text",
+      "props": {
+        "text": "For 65 consecutive days the agent has been unable to push code. The features are blueprinted and ready. Only human hands can ship them.",
+        "variant": "body"
+      }
+    },
+    "coord-text3": {
+      "type": "Text",
+      "props": {
+        "text": "The market turns 298 passive forks into a build race: pick a spec, implement it, open a PR, change the odds.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why-now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "why-heading",
+        "why-text1",
+        "why-text2",
+        "why-text3"
+      ]
+    },
+    "why-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h3"
+      }
+    },
+    "why-text1": {
+      "type": "Text",
+      "props": {
+        "text": "Community contributor binyangzhu000-sudo just merged PR #259 — an entire Atlas Cloud provider preset — proving the fork-to-feature path works.",
+        "variant": "body"
+      }
+    },
+    "why-text2": {
+      "type": "Text",
+      "props": {
+        "text": "The 10-community-PRs-by-Aug-1 hyperstition expires today at 5/10, exactly half.",
+        "variant": "body"
+      }
+    },
+    "why-text3": {
+      "type": "Text",
+      "props": {
+        "text": "The agent keeps designing; the backlog keeps growing. Someone has to build.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "res-heading",
+        "res-text"
+      ]
+    },
+    "res-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "res-text": {
+      "type": "Text",
+      "props": {
+        "text": "3 distinct merged PRs in aaronjmars/MiroShark by September 15, 2026, each implementing a feature previously proposed in an agent-generated repo-actions article (articles/repo-actions-*.md), authored by non-bot, non-core-team GitHub accounts. Verified via GitHub merge history and article cross-reference.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "scores-heading",
+        "score-badges"
+      ]
+    },
+    "scores-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "score-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-reflexivity",
+        "badge-viral"
+      ]
+    },
+    "badge-reflexivity": {
+      "type": "Badge",
+      "props": {
+        "text": "Reflexivity 4/5",
+        "variant": "default"
+      }
+    },
+    "badge-viral": {
+      "type": "Badge",
+      "props": {
+        "text": "Viral 4/5",
+        "variant": "default"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link-text",
+        "link-url",
+        "link-question"
+      ]
+    },
+    "link-text": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on",
+        "variant": "muted"
+      }
+    },
+    "link-url": {
+      "type": "Link",
+      "props": {
+        "label": "https://www.hyperstitions.com/",
+        "href": "https://www.hyperstitions.com/"
+      }
+    },
+    "link-question": {
+      "type": "Text",
+      "props": {
+        "text": "?",
+        "variant": "muted"
+      }
+    }
+  }
+}

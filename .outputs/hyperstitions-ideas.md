@@ -1,12 +1,12 @@
-*Hyperstitions Idea — 2026-07-25*
+*Hyperstitions Idea — 2026-08-01*
 
-"Will 3 of MiroShark's 297 GitHub forks open a pull request in the same calendar week by September 15, 2026?"
+"Will 3 of MiroShark's 40+ agent-designed feature proposals get implemented and merged by community contributors by September 15, 2026?"
 
-The coordination play: MiroShark has 297 forks and zero community PRs in the last month — every recent PR is from the core team or Dependabot. This market turns fork-and-forget into a synchronization challenge: can just 3 out of 297 forkers coordinate one small act of contribution in the same week? Even a typo fix, a doc improvement, or a test addition counts. The market's existence creates peer pressure — the bar is absurdly low (1% of forkers, one week), which makes inaction feel conspicuous.
+The coordination play: An AI agent spent two months designing features — German locale, TypeScript SDK, RSS feed, batch simulation API, and 35 more — complete with specs, test plans, and architecture notes. Then it got locked out. For 65 consecutive days the agent has been unable to push code. The features are blueprinted and ready. Only human hands can ship them. The market turns 298 passive forks into a build race: pick a spec, implement it, open a PR, change the odds.
 
-Why now: 19th consecutive day of zero social mentions. Token at $0.000001712 (−96% ATH, hovering near all-time low). The 10-community-PRs-by-Aug-1 hyperstition is about to expire with only ~5 completed. The agent has shipped code every single day for 115+ days while 297 forks sit dormant. The gap between machine persistence and human passivity has never been starker.
+Why now: Community contributor binyangzhu000-sudo just merged PR #259 — an entire Atlas Cloud provider preset — proving the fork-to-feature path works. The 10-community-PRs-by-Aug-1 hyperstition expires today at 5/10, exactly half. The agent keeps designing; the backlog keeps growing. Someone has to build.
 
-Resolution: YES if 3 distinct GitHub accounts — each owning a MiroShark fork — open a pull request to aaronjmars/MiroShark within any single Monday-to-Sunday calendar week before September 15, 2026. PRs must be non-empty (not auto-generated or blank). Verified via GitHub API.
+Resolution: 3 distinct merged PRs in aaronjmars/MiroShark by September 15, 2026, each implementing a feature previously proposed in an agent-generated repo-actions article (articles/repo-actions-*.md), authored by non-bot, non-core-team GitHub accounts. Verified via GitHub merge history and article cross-reference.
 
 Scores: Reflexivity 4/5 | Viral 4/5
 
