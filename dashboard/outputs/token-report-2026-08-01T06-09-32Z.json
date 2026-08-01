@@ -1,0 +1,245 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-08-01"
+      },
+      "children": [
+        "price_section",
+        "separator_1",
+        "liquidity_section",
+        "separator_2",
+        "trading_section",
+        "separator_3",
+        "performance_section",
+        "separator_4",
+        "event_section",
+        "separator_5",
+        "chart_section"
+      ]
+    },
+    "price_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "price_stat"
+      ]
+    },
+    "price_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000001660",
+        "delta": "−8.97%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "liquidity_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "liquidity_stat",
+        "volume_stat"
+      ]
+    },
+    "liquidity_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$202.2K"
+      },
+      "children": []
+    },
+    "volume_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$3,351"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "trading_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "trading_header",
+        "trading_row_1",
+        "trading_row_2"
+      ]
+    },
+    "trading_header": {
+      "type": "Heading",
+      "props": {
+        "text": "Trading Activity",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "trading_row_1": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 6/29"
+      },
+      "children": []
+    },
+    "trading_row_2": {
+      "type": "Text",
+      "props": {
+        "text": "Buyers/Sellers: 6/12"
+      },
+      "children": []
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "performance_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "performance_header",
+        "performance_stats"
+      ]
+    },
+    "performance_header": {
+      "type": "Heading",
+      "props": {
+        "text": "Performance",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "performance_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "perf_7d",
+        "perf_30d",
+        "perf_ath"
+      ]
+    },
+    "perf_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "−6.7%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "perf_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−59.8%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "perf_ath": {
+      "type": "Stat",
+      "props": {
+        "label": "vs ATH",
+        "value": "−96.2%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "event_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "event_alert",
+        "price_context"
+      ]
+    },
+    "event_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Recurring Seller Activity",
+        "message": "Recurring seller 0x749fe188 dumped 300M tokens ($502) at midnight UTC, extending a multi-week unwind.",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "price_context": {
+      "type": "Text",
+      "props": {
+        "text": "Price holds +1.7% above ATL ($0.0000016327, Jul 18).",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "chart_link"
+      ]
+    },
+    "chart_link": {
+      "type": "Link",
+      "props": {
+        "label": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      },
+      "children": []
+    }
+  }
+}
