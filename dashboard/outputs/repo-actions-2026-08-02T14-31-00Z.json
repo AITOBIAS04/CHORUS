@@ -1,0 +1,391 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-08-02",
+        "description": "Generated from analysis of aaronjmars/MiroShark"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "project_info",
+        "separator1",
+        "items_stack",
+        "separator2",
+        "full_details_link"
+      ]
+    },
+    "project_info": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "repo_name",
+        "stat_stars",
+        "stat_forks",
+        "text_silence",
+        "badge_ai_act"
+      ]
+    },
+    "repo_name": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,412"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "298"
+      },
+      "children": []
+    },
+    "text_silence": {
+      "type": "Text",
+      "props": {
+        "text": "26-day social silence",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "badge_ai_act": {
+      "type": "Badge",
+      "props": {
+        "text": "EU AI Act day-1",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "items_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+      ]
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_title",
+        "item1_badges",
+        "item1_desc"
+      ]
+    },
+    "item1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Product Hunt Launch Kit",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_growth",
+        "badge_small_1"
+      ]
+    },
+    "badge_growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_small_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Maker page, tagline variants, first-comment template, gallery guide, and timing strategy for the new PH 100+ upvotes hyperstition (Sep 15, 44 days).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_title",
+        "item2_badges",
+        "item2_desc"
+      ]
+    },
+    "item2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. miro doctor CLI Health Command",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_dx",
+        "badge_small_2"
+      ]
+    },
+    "badge_dx": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_small_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Diagnostic command (flutter doctor-style) that checks API reachability, env, and model availability — the getting-started artifact tutorial creators need.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_title",
+        "item3_badges",
+        "item3_desc"
+      ]
+    },
+    "item3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Italian (IT) UI Locale",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_community",
+        "badge_small_3"
+      ]
+    },
+    "badge_community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_small_3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Dictionary-only locale for Italy (7th on GitHub globally); advances the 5-language hyperstition from 3/5 → 4/5 with EU AI Act hook in README.it.md.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_title",
+        "item4_badges",
+        "item4_desc"
+      ]
+    },
+    "item4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Interactive API Documentation / ReDoc",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_dx_2",
+        "badge_small_4"
+      ]
+    },
+    "badge_dx_2": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_small_4": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Single-page /docs route rendering all 41+ OpenAPI surfaces as a click-to-try reference — zero new dependencies, CDN JS only.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_title",
+        "item5_badges",
+        "item5_desc"
+      ]
+    },
+    "item5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Comparison API",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_feature",
+        "badge_medium"
+      ]
+    },
+    "badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/compare?a={id}&b={id} — side-by-side analytics including trajectory correlation for research use; advances the academic citation hyperstition.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "full_details_link": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-02.md"
+      },
+      "children": []
+    }
+  }
+}

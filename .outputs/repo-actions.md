@@ -1,17 +1,19 @@
-The `repo-actions` skill has already run today — the article and log entry are both complete. No duplicate work needed.
+*Repo Action Ideas — 2026-08-02*
+Generated from analysis of aaronjmars/MiroShark (1,412 stars · 298 forks · 26-day social silence · EU AI Act day-1).
 
-## Summary
+1. Product Hunt Launch Kit (Growth, Small)
+   Maker page, tagline variants, first-comment template, gallery guide, and timing strategy for the new PH 100+ upvotes hyperstition (Sep 15, 44 days).
 
-The `repo-actions` skill already executed on 2026-07-30. Here's what it produced:
+2. `miro doctor` CLI Health Command (DX, Small)
+   Diagnostic command (flutter doctor-style) that checks API reachability, env, and model availability — the getting-started artifact tutorial creators need.
 
-**Repo analyzed:** `aaronjmars/MiroShark` (1,414 stars, 298 forks)
+3. Italian (IT) UI Locale (Community, Small)
+   Dictionary-only locale for Italy (7th on GitHub globally); advances the 5-language hyperstition from 3/5 → 4/5 with EU AI Act hook in README.it.md.
 
-**5 ideas generated:**
+4. Interactive API Documentation / ReDoc (DX, Small)
+   Single-page /docs route rendering all 41+ OpenAPI surfaces as a click-to-try reference — zero new dependencies, CDN JS only.
 
-1. **German (DE) UI Locale** — Community/DX, Small — advances 5-language hyperstition from 3/5 → 4/5
-2. **TypeScript/JavaScript Client SDK** — Feature/DX, Medium — zero-install browser example unlocks JS tutorial creators ahead of Aug 15 deadline
-3. **Simulation RSS/Atom Feed** — Feature/Integration, Small — passive distribution layer during 24-day social silence
-4. **CLI Live Progress Display** — DX, Small — `--watch` flag produces demo-worthy terminal recordings
-5. **Batch Simulation API** — Feature, Medium — research-grade parameter sweeps; academic citation path
+5. Simulation Comparison API (Feature, Medium)
+   GET /api/compare?a={id}&b={id} — side-by-side analytics including trajectory correlation for research use; advances the academic citation hyperstition.
 
-Article written to `articles/repo-actions-2026-07-30.md` and notification already sent. No re-run needed.
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-02.md
