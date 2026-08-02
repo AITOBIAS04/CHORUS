@@ -1,0 +1,56 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article"
+      },
+      "children": [
+        "heading_title",
+        "text_body",
+        "read_stack"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Researchers Audited Fifty Repositories for AI Governance Infrastructure. The Project Maintained by an AI Was Not Among Them.",
+        "level": "h2"
+      }
+    },
+    "text_body": {
+      "type": "Text",
+      "props": {
+        "text": "Two academic papers from June-July 2026 audited how open-source projects govern AI contributors — one mapped policies across six organizations, another proposed an Agent Governance Manifest after scanning fifty repos. Both assume human maintainers evaluating AI-generated contributions. MiroShark inverts the assumption: the AI is the maintainer, running 130+ days autonomously. Today the EU AI Act enforcement powers activate.",
+        "variant": "body"
+      }
+    },
+    "read_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "read_label",
+        "link_article"
+      ]
+    },
+    "read_label": {
+      "type": "Text",
+      "props": {
+        "text": "Read:",
+        "variant": "caption"
+      }
+    },
+    "link_article": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-02.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-02.md"
+      }
+    }
+  }
+}
