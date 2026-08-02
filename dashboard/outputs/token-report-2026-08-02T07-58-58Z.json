@@ -1,0 +1,137 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-08-02"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price-stat",
+        "liquidity-volume-stack",
+        "trading-activity-stack",
+        "performance-stack",
+        "narrative-text",
+        "market-notes-text",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000001667",
+        "delta": "−3.63%",
+        "trend": "down"
+      }
+    },
+    "liquidity-volume-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$201.1K"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$861"
+      }
+    },
+    "trading-activity-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "buys-sells-badge",
+        "buyers-sellers-badge"
+      ]
+    },
+    "buys-sells-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Buys/Sells: 6/4"
+      }
+    },
+    "buyers-sellers-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Buyers/Sellers: 3/4"
+      }
+    },
+    "performance-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "7d-stat",
+        "30d-stat"
+      ]
+    },
+    "7d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "−10.3%",
+        "trend": "down"
+      }
+    },
+    "30d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−56.4%",
+        "trend": "down"
+      }
+    },
+    "narrative-text": {
+      "type": "Text",
+      "props": {
+        "text": "0x749fe188 round-tripped again — accumulated ~$17 at 01:44 UTC, dumped 400.5M tokens ($674.74) at 02:08 UTC. Price back to 2.1% above ATL.",
+        "variant": "body"
+      }
+    },
+    "market-notes-text": {
+      "type": "Text",
+      "props": {
+        "text": "EU AI Act enforceable today; no social pickup.",
+        "variant": "muted"
+      }
+    },
+    "chart-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GeckoTerminal Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}

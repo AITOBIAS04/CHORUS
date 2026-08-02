@@ -4,37 +4,37 @@
 
 | Metric | Value | 24h Change |
 |--------|-------|------------|
-| Price | $0.000001685 | +1.59% |
-| Liquidity | $205,117 | — |
-| 24h Volume | $1,380 | — |
-| 24h Buys/Sells | 9 / 3 | — |
-| 24h Buyers/Sellers | 4 / 3 | — |
+| Price | $0.000001667 | −3.63% |
+| Liquidity | $201,106 | — |
+| 24h Volume | $861 | — |
+| 24h Buys/Sells | 6 / 4 | — |
+| 24h Buyers/Sellers | 3 / 4 | — |
 | 24h High/Low | $0.000001731 / $0.000001658 | — |
-| FDV | $168,468 | — |
+| FDV | $166,683 | — |
 
 ## Trend
 
-- **24h:** Recovery off yesterday's lows (+1.59%), but 0x749fe1885 sold 400.5M tokens ($674.74) at 02:08 UTC this morning, capping any upside. Price settled at $0.000001685 — marginally above the Aug 1 close of $0.000001681.
-- **7-day:** −9.3% (Jul 26 close: $0.000001858). The $0.0000018 level that held from Jul 26–28 has given way as accumulated sells from 0x749fe1885 work through the order book.
-- **30-day:** −55.9% (Jul 4 close: $0.000003824). The token has retraced sharply from the mid-July period; current price sits only 3.2% above the all-time low of $0.0000016327 (Jul 18).
+- **24h:** −3.63%. 0x749fe188 bought ~$17 in three small transactions at 01:44–01:47 UTC, then unwound 400.5M tokens ($674.74) at 02:08 UTC — another round-trip that netted near zero and drove price from $0.000001731 back down below $0.000001670. Two dust sells at 06:45 UTC pushed price to the day's current close.
+- **7-day:** −10.3% (Jul 26 close: $0.000001858). The $0.0000018 floor that held through late July collapsed over the Jul 29–Aug 2 window as accumulated round-trip selling absorbed each bounce.
+- **30-day:** −56.4% (Jul 3 close: $0.000003824). The token is 56% below where it was a month ago, trading within 2.1% of its all-time low of $0.0000016327 (Jul 18).
 
 ## Volume & Liquidity
 
-Volume dropped sharply to $1,380 — a fraction of the $7,385–$12,849 daily range seen Jul 29–31. The buy side had 9 transactions across 4 wallets; the sell side had 3 transactions across 3 wallets. Despite the buy-count edge, a single 400.5M-token sell by 0x749fe1885 at 02:08 UTC ($674.74) accounted for roughly half the day's total volume and erased earlier session gains.
+Volume came in at $861 — significantly below the $7,385–$12,849 range seen Jul 29–31, and the lowest single-day reading in recent sessions. The 24h window had 6 buys across 3 wallets and 4 sells across 4 wallets. A single 400.5M-token sell by 0x749fe188 ($674.74 at 02:08 UTC) made up 78% of total volume. The remaining transactions were micro in scale: two buys at 01:44 and 01:47 UTC (~$17 combined), one buy at 11:13–11:28 UTC from independent wallets (~$4 total), one sell at 22:50 UTC Aug 1 (~$9.88), and two dust sells at 06:45 UTC (combined ~$1.09).
 
-The pattern from prior sessions continues: 0x749fe1885 accumulated ~$340 in buys across August 1 (three transactions at 06:50–07:11 UTC, one at 18:56 UTC) and two small buys early August 2 (01:44–01:47 UTC, ~$16), then exited with a single large sell — a round-trip netting near zero. Secondary buyer 0x919968a4 bought ~$170 at 06:50 UTC August 1. Two independent wallets (0x9667c68f, 0x1a5380ba) added $2–$2.38 each at 11:13–11:28 UTC — small but outside the round-tripper.
+The dominant pattern — 0x749fe188 accumulates in small tranches then exits in a single block — has repeated across at least five consecutive sessions. The wallet's activity functions as a liquidity ceiling: any organic buyers who absorb the position see the gains erased when the position is liquidated.
 
-Liquidity (LP reserve) sits at $205,117 in the main MiroShark/WETH Uniswap v4 pool. That is stable — down from the $216,506 peak on Jul 27 but consistent with the $200K–$210K range of the past week. A secondary MiroShark/USDC pool (Aerodrome) holds $369 with 2 buys and $0.03 in 24h volume.
+LP reserve: $201,106 in the primary MiroShark/WETH Uniswap v4 pool. A secondary MiroShark/USDC pool (Aerodrome) holds $370 with negligible volume.
 
 ## Social Pulse
 
-XAI_API_KEY not set — live X/Twitter data unavailable. WebSearch fallback active. The social silence streak stands at approximately 26 days (Jul 7–Aug 2). Fetch-tweets returned zero fresh results from the last 14 days yesterday (Aug 1), with all WebSearch results mapping to stale tweet IDs from the March–June 2026 period. One tweet from Jul 17 (aaronjmars, 15 days old) was the only result that cleared the freshness gate in July.
+XAI_API_KEY not set — live X/Twitter data unavailable. WebSearch fallback active. The social silence streak stands at 26 days (Jul 7–Aug 2). The last confirmed social mention was a Jul 17 tweet from @aaronjmars, surfaced by WebSearch on Jul 31. Consecutive empty fetch-tweets results: 2 days (Aug 1–2).
 
 ## Context
 
-Price is holding just above the ATL zone (+3.2% above $0.0000016327) amid 26 days of social silence and thinning volume. The dominant trading dynamic remains 0x749fe1885's round-trip activity — the wallet has been the primary price-mover for at least two weeks, alternating accumulation and distribution. This session's net effect is near-flat: buys during Aug 1 brought price from ~$0.000001658 to $0.000001731; the Aug 2 02:08 sell dropped it back to $0.000001685.
+Price is 2.1% above the Jul 18 all-time low ($0.0000016327) with no technical catalyst visible. Volume contraction (from $12,849 on Jul 31 to $861 today) suggests the round-tripper's selling pressure is diminishing, though that hasn't produced upward price movement — the bids simply aren't there to absorb even reduced supply.
 
-ATH distance remains stark: −96.1% from the $0.0000436 peak (May 18, 2026). Volume has not sustained above $5,000/day since the Jul 29–31 window, and the 7-day trend is now firmly negative after the Jul 26–27 range of $0.0000018 broke down. The EU AI Act became enforceable Aug 2, creating potential news hooks for AI simulation tools, though no pickup in social engagement has appeared yet.
+The EU AI Act's high-risk AI provisions became enforceable today (Aug 2), which creates a news hook for AI opinion simulation tools like MiroShark, but no social pickup has materialized. ATH distance: −96.2% from the $0.0000436 peak on May 18, 2026.
 
 ---
 *Data: GeckoTerminal | Chain: Base*
