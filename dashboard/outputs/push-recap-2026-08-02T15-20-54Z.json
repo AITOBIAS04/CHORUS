@@ -1,0 +1,373 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-02",
+        "description": "miroshark-aeon — 3 substantive commits by dependabot[bot]"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section_dependency",
+        "sep1",
+        "section_webhook",
+        "sep2",
+        "section_ci",
+        "sep3",
+        "section_keychanges",
+        "sep4",
+        "section_stats",
+        "sep5",
+        "section_fullrecap"
+      ]
+    },
+    "section_dependency": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_dep",
+        "text_dep",
+        "dep_list"
+      ]
+    },
+    "heading_dep": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Maintenance",
+        "level": "h2"
+      }
+    },
+    "text_dep": {
+      "type": "Text",
+      "props": {
+        "text": "React 19.2.7→19.2.8, Tailwind CSS 4.3.2→4.3.3, @types/node 26.1.1→26.1.2, and tsx 4.23.0→4.23.1 all patched in the dashboard. Six dependencies bumped in one Dependabot PR, keeping the frontend stack current.",
+        "variant": "body"
+      }
+    },
+    "dep_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dep_item_1",
+        "dep_item_2",
+        "dep_item_3",
+        "dep_item_4",
+        "dep_pr"
+      ]
+    },
+    "dep_item_1": {
+      "type": "Text",
+      "props": {
+        "text": "React: 19.2.7 → 19.2.8",
+        "variant": "caption"
+      }
+    },
+    "dep_item_2": {
+      "type": "Text",
+      "props": {
+        "text": "Tailwind CSS: 4.3.2 → 4.3.3",
+        "variant": "caption"
+      }
+    },
+    "dep_item_3": {
+      "type": "Text",
+      "props": {
+        "text": "@types/node: 26.1.1 → 26.1.2",
+        "variant": "caption"
+      }
+    },
+    "dep_item_4": {
+      "type": "Text",
+      "props": {
+        "text": "tsx: 4.23.0 → 4.23.1",
+        "variant": "caption"
+      }
+    },
+    "dep_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #126",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/126",
+        "source": "GitHub"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_webhook": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_webhook",
+        "text_webhook",
+        "webhook_pr"
+      ]
+    },
+    "heading_webhook": {
+      "type": "Heading",
+      "props": {
+        "text": "Webhook Infrastructure",
+        "level": "h2"
+      }
+    },
+    "text_webhook": {
+      "type": "Text",
+      "props": {
+        "text": "Wrangler jumped from 4.110.0 to 4.115.0 — five minor releases of Cloudflare Workers improvements for the webhook worker.",
+        "variant": "body"
+      }
+    },
+    "webhook_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #125",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/125",
+        "source": "GitHub"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_ci": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_ci",
+        "text_ci",
+        "ci_alert",
+        "ci_pr"
+      ]
+    },
+    "heading_ci": {
+      "type": "Heading",
+      "props": {
+        "text": "CI/CD Pipeline",
+        "level": "h2"
+      }
+    },
+    "text_ci": {
+      "type": "Text",
+      "props": {
+        "text": "actions/setup-node upgraded from v6 to v7 across both workflow files. Major version bump — worth monitoring CI runs for any behavior changes.",
+        "variant": "body"
+      }
+    },
+    "ci_alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Major Version Upgrade",
+        "message": "actions/setup-node v6→v7 is a major version upgrade. Monitor CI runs for behavior changes."
+      }
+    },
+    "ci_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #124",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/124",
+        "source": "GitHub"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_keychanges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_keychanges",
+        "keychange_1",
+        "keychange_2",
+        "keychange_3"
+      ]
+    },
+    "heading_keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "keychange_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_kc1",
+        "text_kc1"
+      ]
+    },
+    "badge_kc1": {
+      "type": "Badge",
+      "props": {
+        "text": "MAJOR",
+        "variant": "destructive"
+      }
+    },
+    "text_kc1": {
+      "type": "Text",
+      "props": {
+        "text": "actions/setup-node v6→v7 in aeon.yml + messages.yml (major version, most impactful)",
+        "variant": "body"
+      }
+    },
+    "keychange_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_kc2",
+        "text_kc2"
+      ]
+    },
+    "badge_kc2": {
+      "type": "Badge",
+      "props": {
+        "text": "PATCH",
+        "variant": "secondary"
+      }
+    },
+    "text_kc2": {
+      "type": "Text",
+      "props": {
+        "text": "React + Tailwind patch bumps in dashboard (routine maintenance)",
+        "variant": "body"
+      }
+    },
+    "keychange_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_kc3",
+        "text_kc3"
+      ]
+    },
+    "badge_kc3": {
+      "type": "Badge",
+      "props": {
+        "text": "TRANSITIVE",
+        "variant": "outline"
+      }
+    },
+    "text_kc3": {
+      "type": "Text",
+      "props": {
+        "text": "enhanced-resolve transitive bump 5.21.6→5.24.5 via Tailwind",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_stats",
+        "stat_files",
+        "stat_lines",
+        "stat_commits"
+      ]
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "5"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines",
+        "value": "+95 / -95"
+      }
+    },
+    "stat_commits": {
+      "type": "Text",
+      "props": {
+        "text": "3 automation commits filtered",
+        "variant": "caption"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_fullrecap": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_fullrecap"
+      ]
+    },
+    "link_fullrecap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-02.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
