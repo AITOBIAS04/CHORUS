@@ -1,0 +1,158 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-08-02"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_main",
+        "text_merged",
+        "text_added",
+        "sep1",
+        "heading_problem",
+        "text_problem",
+        "text_problem_dates",
+        "text_problem_impact",
+        "sep2",
+        "heading_solution",
+        "text_solution_file",
+        "text_solution_changes",
+        "sep3",
+        "heading_impact",
+        "text_impact",
+        "sep4",
+        "storylink_pr"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Improvements — 2026-08-02",
+        "level": "h2"
+      }
+    },
+    "text_merged": {
+      "type": "Text",
+      "props": {
+        "text": "Merged stale PR #44 (Lessons Learned rotation for memory-flush).",
+        "variant": "body"
+      }
+    },
+    "text_added": {
+      "type": "Text",
+      "props": {
+        "text": "Added same-day rerun dedup to the token-report skill — the last daily skill without this protection.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_problem": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h3"
+      }
+    },
+    "text_problem": {
+      "type": "Text",
+      "props": {
+        "text": "Token-report was running twice per day due to scheduler double-dispatch.",
+        "variant": "body"
+      }
+    },
+    "text_problem_dates": {
+      "type": "Text",
+      "props": {
+        "text": "Double-dispatch times: Aug 1: 06:06 + 07:50 UTC; Aug 2: 06:00 + 07:00 UTC.",
+        "variant": "caption"
+      }
+    },
+    "text_problem_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Each duplicate re-fetched all GeckoTerminal data (token, pools, OHLCV, trades), overwrote the article, and sent a redundant notification.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_solution": {
+      "type": "Heading",
+      "props": {
+        "text": "Solution",
+        "level": "h3"
+      }
+    },
+    "text_solution_file": {
+      "type": "Text",
+      "props": {
+        "text": "Modified: skills/token-report/SKILL.md",
+        "variant": "body"
+      }
+    },
+    "text_solution_changes": {
+      "type": "Text",
+      "props": {
+        "text": "Added Step 0 rerun dedup — checks for existing log entry with 'Notification sent: yes' before any API calls; exits early if found; logs TOKEN_REPORT_RERUN_QUIET on skip.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates duplicate daily token notifications and wasted GeckoTerminal API calls. Completes the rerun dedup pattern across all daily skills. Note: push-recap, repo-pulse, and repo-article already had rerun dedup — token-report was the final gap.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #45: Add same-day rerun dedup to token-report",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/45",
+        "source": "GitHub"
+      }
+    }
+  }
+}

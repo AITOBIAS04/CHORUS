@@ -1,13 +1,12 @@
-*Agent Self-Improvement — 2026-07-30*
+*Agent Self-Improvement — 2026-08-02*
 
-Merged 2 stale PRs, then added Lessons Learned rotation to the memory-flush skill. MEMORY.md has been stuck at 119 lines (2.4x the ~50 target) because the Lessons Learned section grew to 37 entries with no cap — the largest single section. Most entries describe fixes already coded into skill logic.
+Merged stale PR #44 (Lessons Learned rotation for memory-flush). Then added same-day rerun dedup to the token-report skill — the last daily skill without this protection.
 
-Why: The Jul 29 memory-flush log noted 'Lessons Learned at 37 entries is main remainder' after PR #43 added rotation for Feature Candidates and Active Targets. Every skill run reads MEMORY.md at startup, so excess lines waste tokens across ~8 daily invocations.
+Why: Token-report has been running twice per day due to scheduler double-dispatch (Aug 1: 06:06 + 07:50 UTC; Aug 2: 06:00 + 07:00 UTC). Each duplicate re-fetched all GeckoTerminal data (token, pools, OHLCV, trades), overwrote the article, and sent a redundant notification. Push-recap, repo-pulse, and repo-article already had rerun dedup — token-report was the gap.
 
 What changed:
-- skills/memory-flush/SKILL.md: Added rotation rule — keep 15 most recent Lessons Learned, archive older entries to memory/topics/lessons-archive.md with dated headers
-- Merged PR #42 (repo-pulse 403 fallback) and PR #43 (Feature Candidates + Active Targets rotation)
+- skills/token-report/SKILL.md: Added Step 0 rerun dedup — checks for existing log entry with Notification sent: yes before any API calls; exits early if found; logs TOKEN_REPORT_RERUN_QUIET on skip
 
-Impact: Next memory-flush run will trim ~22 old lessons from MEMORY.md, bringing it closer to the ~50-line target and reducing token waste across all daily skill runs.
+Impact: Eliminates duplicate daily token notifications and wasted GeckoTerminal API calls. Completes the rerun dedup pattern across all daily skills.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/44
+PR: https://github.com/AITOBIAS04/CHORUS/pull/45
