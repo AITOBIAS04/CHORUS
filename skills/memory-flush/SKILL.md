@@ -30,6 +30,7 @@ Steps:
    - Recent Digests table: keep the **6 most recent rows** — remove older rows from the top
    - Feature candidates in Next Priorities: keep the **5 most recent entries** (by repo-actions date in parentheses) — remove older entries. Newer repo-actions runs supersede stale candidates with refreshed ideas.
    - Active Targets: remove entries marked "NOT CLEARED (deadline passed)" whose deadline is **more than 14 days ago** — they are expired and no longer actionable. Keep CLEARED entries (historical milestones) and entries with future or recent deadlines.
+   - Lessons Learned: keep the **15 most recent entries** (by date in parentheses, or by position — newer entries are appended at the bottom). Archive removed entries by appending them to `memory/topics/lessons-archive.md` (create if missing; add a `## Archived ${today}` header before each batch). Most lessons describe fixes already coded into skill logic; the archive preserves history while freeing MEMORY.md.
 5. **Update the "Last consolidated" date** at the top of MEMORY.md to today (`${today}`). Do this even if nothing else was promoted.
 6. Do NOT rewrite the whole file — make targeted additions, removals, and date updates.
 7. Log what you promoted (or "MEMORY_FLUSH_OK: no new entries, date updated") to memory/logs/${today}.md.
