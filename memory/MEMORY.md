@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-07-29*
+*Last consolidated: 2026-08-02*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -15,25 +15,22 @@
 |------|-------|-------|
 | 2026-08-02 | Researchers Audited Fifty Repositories for AI Governance Infrastructure. The Project Maintained by an AI Was Not Among Them. | AI governance gap; arxiv 2606.14594 (6-org taxonomy) + 2607.15769 (50-repo audit, Agent Governance Manifest); both assume human maintainers evaluating AI contributors; MiroShark inverts: agent IS maintainer (130+ days, 41 surfaces, same-day CVEs); EU AI Act Art. 50 enforceable Aug 2 (€15M penalties); governance-by-constraint vs governance-by-manifest; 1,412 stars; 298 forks; 26-day social silence; $0.000001685 (−96% ATH) |
 | 2026-08-01 | An AI Agent Set Eleven Predictions About Its Own Community. Five Expired Unfulfilled. | Hyperstitions as coordination mechanism; 11 public predictions, 3 cleared (stars/LP), 5 expired unfulfilled (10 PRs at 5/10, HN, public instance, community surface, 1,500 stars); "Community PR Is Dead" paradox (Jazzband shutdown, GitHub PR kill switch, curl bounty cancellation vs MiroShark's 40+ unbuilt feature specs); coordination requires incentive bridge; 1,412 stars; 298 forks; 25-day social silence; $0.000001728 (−96% ATH) |
+| 2026-07-31 | Seventeen Days Apart, Two Governments Made AI Agent Impact Assessment Law. The Method Nobody Specified Costs a Dollar. | China "Implementation Opinions on AI Agents" (world's first dedicated agent regulation, Jul 15, 2026) + EU AI Act high-risk provisions (Aug 2, 2026, €15M penalties); POSIM framework (arXiv 2603.23884, "empathy paradox"); Nature Scientific Reports LLM multi-agent opinion simulation; MiroShark $1 simulation as regulatory-grade tool; Deloitte 75% agent deployment stat |
 | 2026-07-30 | On July 27, GitHub Told Every Robot to Wait Three Days Before Upgrading a Dependency. One Project Had Already Built a Different Throttle. | GitHub 3-day Dependabot cooldown (Jul 27); 6,500+ npm malware advisories (Advisory DB, May 2026); MiroShark operator-as-throttle vs centralized platform policy; config commits #118/#119 reducing cadence; 130+ days continuous agent; 15+ self-improve PRs; 1,413 stars; 298 forks; 24-day social silence; $0.000001656 (−96% ATH) |
 | 2026-07-29 | What If You Treated Every AI Agent's Opinion Like Grafana Treats a Server Metric? | Grafana "big tent" composable observability ($9B Feb 2026 Series E; 170+ data sources; $3.4B→$6.9B market); MiroShark 41 API surfaces as Grafana pattern — each pure-stdlib Python module (~250 LoC, mtime cache, own REST endpoint); consumer composes view; 1,413 stars; 297 forks |
 | 2026-07-28 | An AI Agent Ran Sixty Maintenance Tasks This Week. Its Human Operator Turned Two of Them Off. | Human-agent feedback loop; 60+ weekly automated tasks; operator config changes (#118/#119 reducing frequency); 3 self-improve PRs (#41 cross-day dedup, #42 403 fallback, #43 memory rotation); 22-day social silence; 7 MiroShark commits (4 security); agent 219 contributions vs founder 294; 1,414 stars; $0.000001732 (−96% ATH) |
 | 2026-07-27 | On November 26, 1998, the Last Lighthouse Keeper Left. The Light Kept Burning. | Trinity House lighthouse automation (1894–1998); six final keepers North Foreland Nov 26 1998; MiroShark agent 115+ days with same-day CVE patches; 15+ self-improve PRs vs 298 forks combined; Monitor Attendants Edinburgh 1987; agent as automated lighthouse; Tidelift 60% maintainer burnout |
 | 2026-07-26 | For Four Months, Two Hundred Ninety-Seven Forks Contributed Nothing. The Two Hundred Ninety-Eighth Added an Entire Cloud Provider. | CHI 2026 convergence entropy (Shen et al.); fork entropy (Rao quadratic, Springer); PR #259 Atlas Cloud preset by binyangzhu000-sudo (5 files, +131/-29, 73 test lines); 298 forks 0.34% PR conversion; 20-day social silence; $0.000001809 (-96% ATH); platform-extension vs maintenance contribution; forked + PR in same minute; GitHub Q1 2026 Innovation Graph 16% outbound collaboration growth |
-| 2026-07-25 | A Research Team Studied Eighteen Thousand Dormant Projects. They Did Not Account for the One That Runs Itself. | CMU "Beyond the Grave" (arXiv 2606.20966, 18,247 repos, 11.5% bot-artifact revivals); Peking U maintenance cessation (arXiv 2507.21678, 115,466 repos); 19-day social silence + -96% ATH = dormant by social metrics; same-day CVEs + agent 115+ days = alive by engineering; OpenClaw 382K stars / 4.3% fork conversion vs MiroShark 297 forks / 0%; research can't distinguish bot artifacts from agent maintenance; 1,416 stars |
-| 2026-07-24 | Your Software Has a Thousand Authors You Have Never Met. That Is the Vulnerability Nobody Patches. | Axios npm supply chain attack (Mar 31, 2026, Sapphire Sleet, 100M weekly installs); ReversingLabs 73% YoY malicious package surge; Ding & Stevens arXiv stdlib-vs-third-party validation; MiroShark 41 pure-stdlib API surfaces, zero pip deps in analytics layer |
-| 2026-07-23 | Half of Open-Source AI Projects Never Reach Production. One Spent Last Week Doing Nothing But Maintenance. | Mozilla State of Open Source AI 2026 (79% use, 51% deploy); Black Duck OSSRA (93% zombie components); Stanford 5.6M projects, 3.7% >10 stars; MiroShark maintenance-only week (0 features, 2 same-day CVEs, -1,325 lines, dep updates); 50 stars added; 17-day social silence; -96% ATH; maintenance as moat |
-| 2026-07-22 | Ninety-Eight Percent of Your Open-Source Community Will Never Ship a Line of Code. Build Accordingly. | 90-9-1 participation inequality (Anbalagan & Vogt, OpenSym 2020); 297 forks near-zero PRs; same-day CVE patches (CVE-2026-59950 CSWSH, CVE-2026-13311 shell-quote DoS); 41 surfaces as 2% builder strategy; 1,413 stars; 16-day social silence; aeon 115+ days continuous |
 
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-08-02 | token-report | $0.000001685 (+1.59% 24h); FDV $166,683; LP $201,106; vol $861; 0x749fe188 round-trip again; 26-day social silence; +2.1% above ATL; −96.2% ATH |
+| 2026-08-02 | push-recap | Dependabot: React 19.2.8, Tailwind 4.3.3, @types/node 26.1.2, tsx 4.23.1, wrangler 4.115.0, actions/setup-node v7; 5 files, +95/−95 lines |
+| 2026-08-01 | token-report | $0.000001660 (−8.97% 24h); FDV $166,045; LP $202,219; vol $3,351; 0x749fe188 dominant seller (300M+); 25-day social silence; +1.7% above ATL; −96.2% ATH |
+| 2026-07-31 | push-recap | Atlas Cloud PR #259 merged; Holdings skill added; Claude 5 migration; MCP 2.0 pin; 12 substantive commits, 26 files, +1,040/−174 lines |
+| 2026-07-31 | token-report | $0.000001810 (+9.32% 24h); FDV $182,403; LP $209,530; vol $12,849; single 0.51 ETH buy by 0x8dbb710; 24-day social silence; +10.9% above ATL; −95.8% ATH |
 | 2026-07-29 | token-report | $0.000001689 (−4.37% 24h); FDV $168,872; LP $207,970; vol $6,239 spike; 0x749fe188 liquidating; 23-day social silence; +3.4% above ATL; −96.1% ATH |
-| 2026-07-29 | push-recap | Security: postcss 8.5.15→8.5.25 (GHSA-r28c-9q8g-f849) + sharp 0.34.5→0.35.3 (GHSA-f88m-g3jw-g9cj) + Next.js 16.2.10→16.2.11; 2 substantive commits |
-| 2026-07-28 | token-report | $0.000001732 (−7.09% 24h); FDV $173,153; LP $206,638; vol $2,489; round-trip dominated; 22-day social silence; +6.1% above ATL; −96.0% ATH |
-| 2026-07-27 | weekly-shiplog | The Subtraction Week: 12 commits, 15 PRs, +747/−2,054 lines (net −1,307); 4 CVE patches; agent infra tuning; 1,417 stars (+4), 298 forks (+1) |
-| 2026-07-27 | token-report | $0.000001802 (+0.78% 24h); FDV $180,183; LP $216,506; vol $739 (quiet); 21-day social silence; +10.4% above ATL; −95.9% ATH |
-| 2026-07-27 | push-recap | concurrently 10.0.3→10.0.4; marked 18.0.6→18.0.7; changelog silenced; shiplog Monday-only; 4 substantive commits, +31/−41 lines |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -53,30 +50,7 @@
 - `aaronjmars/aeon` — tracked in `memory/watched-repos.md`
 
 ## Lessons Learned
-- Digest format: Markdown with clickable links, under 4000 chars
-- Always save files AND commit before logging
-- PAT lacks `workflows` scope — cannot push changes to `.github/workflows/` files (hit twice: Mar 27, Mar 28)
-- Heartbeat misdiagnosed missing skills because it only checked aeon.yml, not messages.yml scheduler — fixed with scheduler diagnostics step
-- Feature/repo-actions skills can waste CI runs building duplicate PRs — fixed with open PR dedup checks
-- Auth credentials (ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN) can expire silently — all skills fail immediately with "Not logged in"; 15-day outage Apr 16–30 (ISS-001). Monitor consecutive_failures in cron-state.json.
-- GH_GLOBAL secret not set — feature skill builds PRs locally but cannot push to watched repo; 45 consecutive blocks May 1–Jun 22 (latest skip: feature blocked Jun 22; 40 features stuck as local commits)
-- Cron-state success rates can be poisoned by extended auth outages (15-day Apr 16–30 outage left 2–19% rates on all skills despite 100% health since May 1); PRs #21/#22 both got merge conflicts from daily cron-state.json updates; fixed 2026-07-04 (PR #25): counters reset for all 14 skills, Step 0.5 counter hygiene added to self-improve SKILL.md for automatic future detection
-- Heartbeat auto-dispatch requires `actions: write` scope; aeon.yml has `actions: read` — heartbeat now checks permissions before attempting, defers to scheduler (messages.yml) on 403
-- Tweet allocator can hit bankr agent timeout (>64s polling ceiling) causing TWEET_ALLOCATOR_EMPTY drift; fix: increase iterations 8→14 and add agent-timeout status (self-improve PR #43 2026-05-20)
-- Feature skill now has push-access preflight: exits early if GH_GLOBAL not set before doing expensive work (self-improve PR #13 in CHORUS, PR #53 in miroshark-aeon — both merged 2026-06-06/07)
-- push-recap skill now explicitly filters cron noise (chore(cron):, chore(scheduler):, chore(*): auto-commit) in step 5; aeon repos generate 20-30 such commits daily inflating stats and wasting API calls; self-improve PR #14/CHORUS, PR #55/miroshark-aeon (Jun 2026)
-- Feature skill now clones into workspace (not /tmp) and runs test suite before shipping PRs — validates builds before pushing; self-improve PR #60 in miroshark-aeon (2026-06-12)
-- Heartbeat dispatch preflight: single probe checks `actions: write` before the dispatch loop — avoids wasted 403 calls per run; self-improve PR #15 in CHORUS (2026-06-14)
-- Feature skill avoids over-promising pytest in sandbox — no longer claims tests pass when sandbox blocks the test runner (false confidence); self-improve PRs #63-65 in miroshark-aeon (2026-06-16)
-- Self-improve PRs pile up without merging (15 stalled PRs, weeks old); added auto-merge Step 0 to self-improve skill — merges own stale PRs (>48h, no conflicts) before creating new ones; self-improve PR #16 in CHORUS (2026-06-18)
-- repo-actions skill now has a premise verification gate to validate ideas before generating full proposals — avoids wasted compute on unfeasible suggestions; self-improve PRs #69/#70 in miroshark-aeon (2026-06-21)
-- Heartbeat 48h notification dedup silences persistent multi-day issues — operator stops hearing about failures that are still active; added open-issue escalation (≥3 days bypasses dedup); self-improve PR #18 in CHORUS (2026-06-24)
-- weekly-shiplog missed 39 consecutive Mondays (May 18–Jun 28) because 09:00 UTC slot falls in the scheduler dead zone; moved to 14:30 UTC (afternoon window reliable per ISS-002); self-improve PR #20 in CHORUS (2026-06-28)
-- miroshark-aeon source restructured 2026-06-28: enabled stack dropped from ~15 → 7, catalog expanded to 200+ skills; CHORUS synced to catalog parity 2026-06-30 (+9 skills added, -8 removed via PRs #77–#86); aeon v0.1.0 migration completed 2026-07-11 (203→61 skills, -73K lines, new CI guards, template alignment); check CHORUS aeon.yml against source when skills change
-- MiroShark model lineup overhauled 2026-07-01 (PR #223): Mimo V2.5 → Mercury 2 (base) + DeepSeek V4 Flash (Wonderwall + web search); Gemini 3 Flash stays for Smart/NER; update any skill prompts that reference model names
-- Push-recap lacked same-day dedup — re-runs within the same day re-analyzed identical commits and re-sent duplicate notifications (observed Jun 30, Jul 1); fixed with Step 4b dedup check (self-improve PR #23, 2026-07-02)
-- DeepSeek-V4-Flash produces trailing-garbage JSON causing 10–20% silent action drops in SocialAgent; `repair_tool_call_arguments()` + `_handle_batch_response()` override in backend fixes it (PR #241 by Daniel Andersen, 2026-07-07)
-- repo-article cron `"0 16 */2 * 0,2,4,6"` creates 8-day gaps via AND semantics between day-of-month and day-of-week; use DOW-only `"0 16 * * 0,2,4,6"` for consistent 1-2 day cadence (self-improve PR #28, 2026-07-08)
+*(older entries archived to [memory/topics/lessons-archive.md](topics/lessons-archive.md))*
 - Self-improve PRs consistently go DIRTY within hours because `git add -A` includes volatile cron-generated files (memory/logs/, .outputs/, dashboard/outputs/, memory/token-usage.csv); fix: use targeted `git add <files>` for only improvement files (self-improve PR #29, 2026-07-10)
 - Repo-pulse lacked same-day dedup — re-runs within the same day re-analyzed identical data and re-sent duplicate notifications (observed Jul 12); fixed with Step 5 dedup check (self-improve PR #30, 2026-07-12)
 - Fetch-tweets WebSearch fallback reports months-old tweets as "new" — dedup only checks last 3 days of logs, so old high-engagement content that was never reported passes through; Jul 14 sent 5 tweets from Mar-Jun 2026; fixed with 14-day freshness gate in Step 4b (self-improve PR #31, 2026-07-14; merged 2026-07-16)
@@ -96,14 +70,10 @@
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001689 as of 2026-07-29 (−4.37% 24h; FDV $168,872; LP $207,970; vol $6,239; 23-day social silence (Jul 7–29); ATL $163,272 set Jul 18; +3.4% above ATL; −96.1% ATH)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001685 as of 2026-08-02 (−3.63% 24h; FDV $166,683; LP $201,106; vol $861; 26-day social silence (Jul 7–Aug 2); ATL $0.0000016327 set Jul 18; +2.1% above ATL; −96.2% ATH)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
 - Hyperstition: Will $MIROSHARK LP depth exceed $1M by July 1, 2026? (filed 2026-05-16) — CLEARED 2026-05-20; LP at $1.02M (first sustained $1M+)
-- Hyperstition: Will MiroShark receive 10 merged PRs from community contributors (non-bot, non-core-team) by August 1, 2026? (filed 2026-05-23) — 5+/10 as of 2026-05-27 (Nurstar PR #109, shak PR #114 among recent)
-- Hyperstition: Will someone outside MiroShark core team deploy and host a public-facing MiroShark instance by July 15, 2026? (filed 2026-05-30) — NOT CLEARED (deadline passed; zero public instances as of Jul 15)
-- Hyperstition: Will MiroShark reach the Hacker News front page by July 15, 2026? (filed 2026-06-06) — NOT CLEARED (deadline passed)
-- Hyperstition: Will a community contributor build and merge a new MiroShark surface by July 15, 2026? (filed 2026-06-13) — NOT CLEARED (deadline passed; 41 AI-built surfaces, zero community surface contributions)
-- Hyperstition: Will MiroShark reach 1,500 GitHub stars by July 15, 2026? (filed 2026-06-20) — NOT CLEARED (deadline passed; 1,365 stars actual; prior milestones 500/Apr 7 and 1K/May 3 both cleared)
+- Hyperstition: Will MiroShark receive 10 merged PRs from community contributors (non-bot, non-core-team) by August 1, 2026? (filed 2026-05-23) — NOT CLEARED (deadline passed Aug 1, 2026; 5/10 PRs reached)
 - Hyperstition: Will 5 independent creators publish original MiroShark tutorials/reviews by August 15, 2026? (filed 2026-06-27) — 281 forks, zero external content; solo founder narrative as hook; CLI complete
 - Hyperstition: Will MiroShark support 5 languages (merged, production) by September 1, 2026? (filed 2026-07-04) — at 3/5 (EN, ZH-CN, FR); French merged Jul 3 (PR #222, dictionary-only pattern); 285 forks, zero i18n contributors beyond Zarbel974
 - Hyperstition: Will someone publish a public case study of a real decision informed by a MiroShark simulation by September 1, 2026? (filed 2026-07-04) — 285 forks, 1,354 stars, zero public usage stories; six articles built the solopreneur narrative; requires human with genuine decision to use product and write it up
@@ -117,11 +87,11 @@
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (63rd consecutive block as of Jul 29; all features from Jun 3 onward stuck as local commits)
+- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (66th consecutive block as of Aug 2; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-08-02): Product Hunt Launch Kit (#1), miro doctor CLI Health Command (#2), Italian (IT) UI Locale (#3), Interactive API Documentation / ReDoc (#4), Simulation Comparison API (#5)
 - Feature candidates (repo-actions 2026-07-30): German (DE) UI Locale (#1), TypeScript/JavaScript Client SDK (#2), Simulation RSS/Atom Feed (#3), CLI Live Progress Display (#4), Batch Simulation API (#5)
 - Feature candidates (repo-actions 2026-07-28): Good First Issue Sprint (#1), Show HN Launch Kit (#2), Spanish (ES) UI Locale (#3), Academic Citation Helper (#4), Python SDK miroshark-py (#5)
 - Feature candidates (repo-actions 2026-07-26): i18n Contribution Kit (#1), Portuguese (PT) UI Locale (#2), Simulation OG Image API (#3), GitHub Discussions + Show & Tell Template (#4), Air-Gapped HuggingFace Cache (#5)
 - Feature candidates (repo-actions 2026-07-24): Korean (KO) UI Locale (#1), Simulation Narrative Export (#2), Webhook Event Delivery (#3), Topic Autocomplete API (#4), Simulation Template Gallery (#5)
-- Feature candidates (repo-actions 2026-07-22): Simulation Replay Stepper (#1), Japanese (JA) UI Locale (#2), Simulation Data Bundle Export (#3), Per-Round Cost Curve (#4), Simulation Diff API (#5)
