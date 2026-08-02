@@ -41,6 +41,8 @@ Bad examples (too generic, not project-specific):
 
 ## Steps
 
+0. **Skip re-run if already reported today** — If `${var}` is empty (no explicit theme requested), check whether `memory/logs/${today}.md` already contains a `## Hyperstitions Ideas` entry with `Notification sent: yes`. If it does, log `HYPERSTITIONS_RERUN_QUIET: idea already generated today — skipping` to `memory/logs/${today}.md` and **stop here — do NOT generate another idea or send another notification**. If `${var}` is set, always proceed (the operator requested a specific theme).
+
 1. **Understand the current project state**:
    - What was shipped recently? (push-recaps)
    - What's the token doing? (token-reports)
