@@ -91,6 +91,7 @@
 - MEMORY.md grew to 142 lines (~3x target of ~50) because memory-flush only rotated three tables (Skills Built, Articles, Digests) — Feature Candidates (20+ entries) and expired Active Targets (7 "NOT CLEARED" entries) grew without bound; fixed by adding rotation rules: keep 5 most recent Feature Candidates + remove expired hyperstitions >14 days past deadline (self-improve PR #43, 2026-07-28)
 - Lessons Learned section grew to 37 entries (largest MEMORY.md section) because memory-flush had no rotation rule for it — most entries describe fixes already coded into skill logic; fixed with 15-entry cap + archive to memory/topics/lessons-archive.md (self-improve PR #44, 2026-07-30)
 - Token-report lacked same-day rerun dedup — scheduler double-dispatch caused two full runs per day (Aug 1: 06:06 + 07:50 UTC; Aug 2: 06:00 + 07:00 UTC), each re-fetching all GeckoTerminal data, overwriting the article, and sending a duplicate notification; fixed with Step 0 dedup check (self-improve PR #45, 2026-08-02)
+- Hyperstitions-ideas lacked same-day rerun dedup — scheduler double-dispatch on Aug 1 (10:11 + 11:46 UTC) generated two distinct predictions and sent two notifications; fixed with Step 0 dedup gate (self-improve PR #46, 2026-08-02)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)

@@ -1,0 +1,180 @@
+{
+  "root": "root-card",
+  "state": {},
+  "elements": {
+    "root-card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-08-02 (run 2)"
+      },
+      "children": [
+        "root-stack"
+      ]
+    },
+    "root-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "issue-heading",
+        "issue-text",
+        "issue-alert",
+        "timing-text",
+        "sep1",
+        "why-heading",
+        "why-context",
+        "why-previous-fixes",
+        "sep2",
+        "changes-heading",
+        "changes-file",
+        "changes-implementation",
+        "sep3",
+        "impact-heading",
+        "impact-notifications",
+        "impact-memory",
+        "sep4",
+        "pr-link"
+      ]
+    },
+    "issue-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Same-Day Rerun Deduplication Added to hyperstitions-ideas",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "issue-text": {
+      "type": "Text",
+      "props": {
+        "text": "Added same-day rerun dedup to hyperstitions-ideas skill. Scheduler double-dispatch was causing two full runs per day — each generating a different prediction and sending its own notification."
+      },
+      "children": []
+    },
+    "issue-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Double-Dispatch Bug",
+        "message": "Two independent runs per day with separate outputs and notifications",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "timing-text": {
+      "type": "Text",
+      "props": {
+        "text": "Example: August 1st ran at 10:11 UTC and again at 11:46 UTC, producing two separate hyperstitions.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "why-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why This Matters",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "why-context": {
+      "type": "Text",
+      "props": {
+        "text": "This was the last enabled skill without same-day dedup. Duplicate runs caused unnecessary notifications and artificial inflation of the MEMORY.md logs."
+      },
+      "children": []
+    },
+    "why-previous-fixes": {
+      "type": "Text",
+      "props": {
+        "text": "Other skills already fixed: token-report, push-recap, repo-pulse, and repo-article. Hyperstitions-ideas was the remaining gap.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Changes Made",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "changes-file": {
+      "type": "Text",
+      "props": {
+        "text": "Modified: skills/hyperstitions-ideas/SKILL.md"
+      },
+      "children": []
+    },
+    "changes-implementation": {
+      "type": "Text",
+      "props": {
+        "text": "Added Step 0 dedup gate that: (1) checks today's log for existing entry before generating, (2) skips if found, (3) respects variable override for explicit theme requests to allow manual runs."
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "impact-notifications": {
+      "type": "Text",
+      "props": {
+        "text": "Operator receives one hyperstition per scheduled run instead of duplicates."
+      },
+      "children": []
+    },
+    "impact-memory": {
+      "type": "Text",
+      "props": {
+        "text": "Active Targets section in MEMORY.md grows at the intended rate without artificial multiplication from double-runs.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #46: Add same-day rerun dedup to hyperstitions-ideas",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/46",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}

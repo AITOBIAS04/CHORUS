@@ -1,12 +1,12 @@
-*Agent Self-Improvement — 2026-08-02*
+*Agent Self-Improvement — 2026-08-02 (run 2)*
 
-Merged stale PR #44 (Lessons Learned rotation for memory-flush). Then added same-day rerun dedup to the token-report skill — the last daily skill without this protection.
+Added same-day rerun dedup to hyperstitions-ideas skill. Scheduler double-dispatch was causing two full runs per day — each generating a different prediction and sending its own notification. Aug 1 ran at 10:11 + 11:46 UTC, producing two separate hyperstitions.
 
-Why: Token-report has been running twice per day due to scheduler double-dispatch (Aug 1: 06:06 + 07:50 UTC; Aug 2: 06:00 + 07:00 UTC). Each duplicate re-fetched all GeckoTerminal data (token, pools, OHLCV, trades), overwrote the article, and sent a redundant notification. Push-recap, repo-pulse, and repo-article already had rerun dedup — token-report was the gap.
+Why: This is the last enabled skill without dedup. Token-report, push-recap, repo-pulse, and repo-article were already fixed — hyperstitions-ideas was the remaining gap.
 
 What changed:
-- skills/token-report/SKILL.md: Added Step 0 rerun dedup — checks for existing log entry with Notification sent: yes before any API calls; exits early if found; logs TOKEN_REPORT_RERUN_QUIET on skip
+- skills/hyperstitions-ideas/SKILL.md: Added Step 0 dedup gate — checks today's log for existing entry before generating; skips if found; respects var override for explicit theme requests
 
-Impact: Eliminates duplicate daily token notifications and wasted GeckoTerminal API calls. Completes the rerun dedup pattern across all daily skills.
+Impact: Operator receives one hyperstition per scheduled run instead of duplicates. Active Targets section in MEMORY.md grows at the intended rate.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/45
+PR: https://github.com/AITOBIAS04/CHORUS/pull/46
