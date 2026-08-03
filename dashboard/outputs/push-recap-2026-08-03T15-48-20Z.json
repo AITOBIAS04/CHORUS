@@ -1,0 +1,146 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-03"
+      },
+      "children": [
+        "stack-all"
+      ]
+    },
+    "stack-all": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stack-meta",
+        "sep1",
+        "heading-deps",
+        "text-deps-intro",
+        "text-key-changes-label",
+        "text-change1",
+        "text-change2",
+        "text-change3",
+        "sep2",
+        "heading-stats",
+        "stat-files-changed",
+        "stat-added",
+        "stat-removed",
+        "sep3",
+        "storylink-recap"
+      ]
+    },
+    "stack-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-author",
+        "text-summary"
+      ]
+    },
+    "badge-author": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark"
+      }
+    },
+    "text-summary": {
+      "type": "Text",
+      "props": {
+        "text": "1 substantive commit by dependabot[bot] (6 automation commits filtered)"
+      }
+    },
+    "sep1": {
+      "type": "Separator"
+    },
+    "heading-deps": {
+      "type": "Heading",
+      "props": {
+        "text": "Frontend Dependencies",
+        "level": "h3"
+      }
+    },
+    "text-deps-intro": {
+      "type": "Text",
+      "props": {
+        "text": "axios and Vite received minor version bumps via Dependabot PR #264. Axios moved from 1.18.1 to 1.19.0 (production HTTP client) and Vite from 8.1.5 to 8.2.0 (build tool). The lockfile resolution also pruned several optional @emnapi native-addon packages, reducing install footprint."
+      }
+    },
+    "text-key-changes-label": {
+      "type": "Text",
+      "props": {
+        "text": "Key changes:",
+        "variant": "lead"
+      }
+    },
+    "text-change1": {
+      "type": "Text",
+      "props": {
+        "text": "• axios ^1.18.1→^1.19.0 — minor release with potential new request-handling features"
+      }
+    },
+    "text-change2": {
+      "type": "Text",
+      "props": {
+        "text": "• vite ^8.1.5→^8.2.0 — build tool minor update affecting dev server and production bundling"
+      }
+    },
+    "text-change3": {
+      "type": "Text",
+      "props": {
+        "text": "• Lockfile net reduction (−85 lines) from @emnapi dependency pruning"
+      }
+    },
+    "sep2": {
+      "type": "Separator"
+    },
+    "heading-stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stat-files-changed": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "2"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+128",
+        "trend": "up"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "−213",
+        "trend": "down"
+      }
+    },
+    "sep3": {
+      "type": "Separator"
+    },
+    "storylink-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-03.md"
+      }
+    }
+  }
+}
