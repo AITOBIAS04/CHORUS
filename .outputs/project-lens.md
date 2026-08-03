@@ -1,5 +1,5 @@
-*New Article: Seventeen Days Apart, Two Governments Made AI Agent Impact Assessment Law. The Method Nobody Specified Costs a Dollar.*
+*New Article: Three Hundred AI Agent Tools Exist. They Solve Three Different Problems.*
 
-On July 15, China enforced the world's first dedicated AI agent regulations — a three-tier decision authorization framework. On August 2, two days from now, the EU AI Act's high-risk provisions take effect with €15M penalties. Neither specifies how to predict agent impact. Four 2026 peer-reviewed papers validate multi-agent LLM simulation as the method. MiroShark operationalizes it for $1 per run with 41 queryable audit surfaces.
+The AI agent ecosystem hit $9.9 billion in 2026 with 300+ tools, but the category has fractured into three distinct layers: orchestration (CrewAI, LangGraph — tools that act), simulation (OASIS, NetLogo — tools that model), and prediction (tools that forecast reactions). MiroShark sits in the least populated layer — turning opinion simulation from research infrastructure into an operational product with 41 queryable API surfaces, $1 per run, and zero third-party dependencies.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-07-31.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-03.md

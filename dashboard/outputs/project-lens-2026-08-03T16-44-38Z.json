@@ -1,0 +1,282 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Three Hundred AI Agent Tools Exist. They Solve Three Different Problems."
+      },
+      "children": [
+        "story-link",
+        "sep-1",
+        "market-stack",
+        "sep-2",
+        "layers-stack",
+        "sep-3",
+        "miroshark-stack"
+      ]
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Three Hundred AI Agent Tools Exist. They Solve Three Different Problems.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-03.md",
+        "source": "project-lens"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "market-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h-market",
+        "market-grid"
+      ]
+    },
+    "h-market": {
+      "type": "Heading",
+      "props": {
+        "text": "Market Overview",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "market-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-size",
+        "stat-count"
+      ]
+    },
+    "stat-size": {
+      "type": "Stat",
+      "props": {
+        "label": "AI Agent Ecosystem (2026)",
+        "value": "$9.9 billion"
+      },
+      "children": []
+    },
+    "stat-count": {
+      "type": "Stat",
+      "props": {
+        "label": "Tools Available",
+        "value": "300+"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "layers-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h-layers",
+        "layers-grid"
+      ]
+    },
+    "h-layers": {
+      "type": "Heading",
+      "props": {
+        "text": "Three Distinct Layers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "layers-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "layer-orch",
+        "layer-sim",
+        "layer-pred"
+      ]
+    },
+    "layer-orch": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "layer-orch-h",
+        "layer-orch-t"
+      ]
+    },
+    "layer-orch-h": {
+      "type": "Heading",
+      "props": {
+        "text": "Orchestration",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "layer-orch-t": {
+      "type": "Text",
+      "props": {
+        "text": "CrewAI, LangGraph — tools that act",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "layer-sim": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "layer-sim-h",
+        "layer-sim-t"
+      ]
+    },
+    "layer-sim-h": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "layer-sim-t": {
+      "type": "Text",
+      "props": {
+        "text": "OASIS, NetLogo — tools that model",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "layer-pred": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "layer-pred-h",
+        "layer-pred-t",
+        "layer-pred-note"
+      ]
+    },
+    "layer-pred-h": {
+      "type": "Heading",
+      "props": {
+        "text": "Prediction",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "layer-pred-t": {
+      "type": "Text",
+      "props": {
+        "text": "Tools that forecast reactions",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "layer-pred-note": {
+      "type": "Badge",
+      "props": {
+        "text": "Least populated layer",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "miroshark-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h-miroshark",
+        "miroshark-desc",
+        "miroshark-stats"
+      ]
+    },
+    "h-miroshark": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark Positioning",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "miroshark-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Turning opinion simulation from research infrastructure into an operational product",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "miroshark-stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-api",
+        "stat-price",
+        "stat-deps"
+      ]
+    },
+    "stat-api": {
+      "type": "Stat",
+      "props": {
+        "label": "Queryable API Surfaces",
+        "value": "41"
+      },
+      "children": []
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Cost Per Run",
+        "value": "$1"
+      },
+      "children": []
+    },
+    "stat-deps": {
+      "type": "Stat",
+      "props": {
+        "label": "Third-Party Dependencies",
+        "value": "0"
+      },
+      "children": []
+    }
+  }
+}
