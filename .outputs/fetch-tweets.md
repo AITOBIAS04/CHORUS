@@ -1,11 +1,12 @@
-Log written. No notification sent (FETCH_TWEETS_EMPTY, 2 consecutive empty days — not a multiple of 7).
+Log written. No notification sent (3 consecutive empty days — escalation fires at multiples of 7).
 
 ## Summary
 
-- **Skill:** fetch-tweets
-- **Query:** `MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark`
-- **API path:** WebSearch fallback (XAI_API_KEY not set)
-- **Queries run:** 3/3 (broad, date-constrained, handle variant)
-- **Result:** `FETCH_TWEETS_EMPTY` — all returned tweets are either already in the dedup set (Jul 17 tweet reported Jul 31) or stale (>14 days, March–June 2026 IDs)
-- **Consecutive empty days:** 2 (Aug 1 + Aug 2); not a multiple of 7 — no escalation notification
-- **Files modified:** `memory/logs/2026-08-02.md`
+- **Path:** WebSearch fallback (XAI_API_KEY not set in sandbox)
+- **Queries run:** 3/3 (broad, date-constrained, cashtag variant)
+- **Candidates found:** 12 tweet URLs
+- **After dedup:** 11 remaining (2078253373459923369 already reported Jul 31)
+- **After freshness gate:** 0 remaining — all 11 had status IDs in the 2035M–2062M range, corresponding to March–June 2026 (> 14 days old)
+- **Result:** `FETCH_TWEETS_EMPTY` logged to `memory/logs/2026-08-03.md`
+- **Escalation:** 3 consecutive empty days (Aug 1–3), not a multiple of 7 — no notification sent
+- **Follow-up:** 27-day social silence (Jul 7–Aug 3). Set `XAI_API_KEY` in repo secrets to enable real-time Grok search; WebSearch only surfaces high-engagement historical content.
