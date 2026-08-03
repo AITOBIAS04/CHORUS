@@ -1,0 +1,244 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-08-03"
+      },
+      "children": [
+        "content_stack"
+      ]
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "intro_text",
+        "sep1",
+        "shipped_heading",
+        "shipped_stack",
+        "sep2",
+        "stats_heading",
+        "stats_stack",
+        "sep3",
+        "full_update"
+      ]
+    },
+    "intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "A community contributor shipped an Atlas Cloud provider preset (PR #259) — first feature PR from a fork in months. The agent learned to check its own wallet on-chain, migrated to Claude 5, and patched two high-severity CVEs.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "shipped_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "shipped_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_1_title",
+        "item_1_desc"
+      ]
+    },
+    "item_1_title": {
+      "type": "Text",
+      "props": {
+        "text": "Atlas Cloud preset",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "item_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Community PR, 5 files, 153 test lines",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_2_title",
+        "item_2_desc"
+      ]
+    },
+    "item_2_title": {
+      "type": "Text",
+      "props": {
+        "text": "Holdings skill",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "item_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "On-chain wallet balance queries via public Base RPC",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_3_title",
+        "item_3_desc"
+      ]
+    },
+    "item_3_title": {
+      "type": "Text",
+      "props": {
+        "text": "Claude 5 migration",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "item_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Default model + gateway remaps updated",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "item_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_4_title",
+        "item_4_desc"
+      ]
+    },
+    "item_4_title": {
+      "type": "Text",
+      "props": {
+        "text": "Telegram security",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "item_4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Owner-user gate + button suppression in public groups",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_commits",
+        "stat_prs",
+        "stat_lines"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "21"
+      },
+      "children": []
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "13"
+      },
+      "children": []
+    },
+    "stat_lines": {
+      "type": "Text",
+      "props": {
+        "text": "Lines: +1,442/-1,183",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "full_update": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-03.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}

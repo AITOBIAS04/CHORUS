@@ -1,12 +1,12 @@
-*Weekly Shiplog — 2026-07-27*
+*Weekly Shiplog — 2026-08-03*
 
-The subtraction week: MiroShark got smaller, harder, and more secure.
+A community contributor shipped an Atlas Cloud provider preset (PR #259) — first feature PR from a fork in months. The agent learned to check its own wallet on-chain, migrated to Claude 5, and patched two high-severity CVEs.
 
 Shipped:
-- 1,325-line dead code cleanup across 53 files — largest single subtraction since v0.1.0 (-73K lines)
-- 4 same-day CVE patches (MCP CSWSH, shell-quote DoS, PyTorch memory corruption, setuptools)
-- Agent infra tuning: repo-pulse activated weekly, changelog silenced, schedules tightened
+- Atlas Cloud preset — community PR, 5 files, 153 test lines
+- Holdings skill — on-chain wallet balance queries via public Base RPC
+- Claude 5 migration — default model + gateway remaps updated
+- Telegram security — owner-user gate + button suppression in public groups
 
-Stats: 12 substantive commits, 15 PRs merged, +747/-2,054 lines (net -1,307)
-Stars: 1,417 (+4) | Forks: 298 (+1) | Token: $0.000001802 (+4.8% weekly)
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-07-27.md
+Stats: 21 commits, 13 PRs merged, +1,442/-1,183 lines
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-03.md

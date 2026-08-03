@@ -666,3 +666,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-03,token-report,claude-sonnet-4-6,21,12716,937615,48142
 2026-08-03,repo-pulse,claude-sonnet-4-6,14,4539,475034,23726
 2026-08-03,feature,claude-opus-4-6,8,1403,273849,31740
+2026-08-03,weekly-shiplog,claude-opus-4-6,18,11490,960599,71398
