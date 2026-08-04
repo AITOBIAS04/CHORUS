@@ -1,0 +1,193 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-04"
+      },
+      "children": [
+        "commits_stack",
+        "separator_1",
+        "sections_stack",
+        "separator_2",
+        "stats_grid",
+        "link_recap"
+      ]
+    },
+    "commits_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "commit_miroshark",
+        "commit_aeon",
+        "commits_filtered"
+      ]
+    },
+    "commit_miroshark": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 2 substantive commits by @aaronjmars"
+      }
+    },
+    "commit_aeon": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 1 substantive commit by aeonframework"
+      }
+    },
+    "commits_filtered": {
+      "type": "Text",
+      "props": {
+        "text": "(9 automation commits filtered)",
+        "variant": "muted"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sections_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "ecosystem_section",
+        "ci_section",
+        "changes_section"
+      ]
+    },
+    "ecosystem_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ecosystem_heading",
+        "ecosystem_text"
+      ]
+    },
+    "ecosystem_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Cleanup — Noelclaw Removed",
+        "level": "h3"
+      }
+    },
+    "ecosystem_text": {
+      "type": "Text",
+      "props": {
+        "text": "Two coordinated PRs (#266 + #267) pulled the Noelclaw MCP integration from the ecosystem table, backend catalog, and both EN/ZH feature docs. The drift-guard test caught the incomplete first PR and forced the follow-up — exactly the safety net it was designed to be."
+      }
+    },
+    "ci_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ci_heading",
+        "ci_text"
+      ]
+    },
+    "ci_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CI Security — Workflow Hardening",
+        "level": "h3"
+      }
+    },
+    "ci_text": {
+      "type": "Text",
+      "props": {
+        "text": "Replaced a blanket toJSON(secrets) dump with an explicit 7-secret named list and removed ~100 lines of dead Fleet Watcher preflight/postflight code. This clears the GitHub malicious-workflow scanner hold that was blocking every workflow dispatch on the public repo."
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes_heading",
+        "change_1",
+        "change_2",
+        "change_3"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "• ALL_SECRETS switched from implicit secrets-context dump to explicit named JSON — declares exactly which secrets the workflow reads"
+      }
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "• Noelclaw removed from ECOSYSTEM.md, ecosystem_catalog.py, FEATURES.md, and FEATURES.zh-CN.md — ecosystem drops to 11 active integrations"
+      }
+    },
+    "change_3": {
+      "type": "Text",
+      "props": {
+        "text": "• Fleet Watcher preflight + postflight steps deleted (-~95 lines) — never configured on this instance, pure dead code"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_lines"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "5"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines",
+        "value": "+12/-116"
+      }
+    },
+    "link_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-04.md"
+      }
+    }
+  }
+}
