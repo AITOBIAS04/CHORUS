@@ -1,10 +1,10 @@
-$MiroShark Daily — 2026-08-03
+*$MiroShark Daily — 2026-08-04*
 
-Price: $0.000003886 (+133.1% 24h)
-Liquidity: $301.2K | 24h Vol: $233.3K
-Buys/Sells: 764/344
-7d: +118.3% | 30d: +1.6%
+Price: $0.000002630 (−36.1% 24h)
+Liquidity: $251.9K | 24h Vol: $57.3K
+Buys/Sells: 154/117
+7d: +50.7% | 30d: −20.8%
 
-Largest volume day since May ATH — multiple new wallets bought $2K+ each. ATL+138%, back to early-July levels.
+Digesting yesterday's +133% rally. Peak was $0.0000041 at 08:00 UTC, then a steady fade to $0.0000026. Volume collapsed today — thin MEV-driven trades only.
 
 Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
