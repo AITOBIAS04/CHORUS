@@ -1,0 +1,116 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "A Token Rallied One Hundred Fifty Percent in Forty-Eight Hours. Nobody Had Tweeted About It in Twenty-Eight Days."
+      },
+      "children": [
+        "heading_main",
+        "stats_section",
+        "separator_1",
+        "narrative_section",
+        "separator_2",
+        "article_link"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "MIROSHARK Surge Analysis",
+        "level": "h2"
+      }
+    },
+    "stats_section": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_surge",
+        "stat_volume",
+        "stat_silence",
+        "stat_shipping"
+      ]
+    },
+    "stat_surge": {
+      "type": "Stat",
+      "props": {
+        "label": "MIROSHARK Surge (Aug 2-3)",
+        "value": "145%",
+        "trend": "up"
+      }
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Trading Volume",
+        "value": "$233K",
+        "delta": "Biggest day since May ATH"
+      }
+    },
+    "stat_silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Social Silence Period",
+        "value": "28 days",
+        "delta": "No tweets, Reddit posts, or announcements"
+      }
+    },
+    "stat_shipping": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Agent Shipping Streak",
+        "value": "137 days"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "narrative_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_rally",
+        "text_contrast"
+      ]
+    },
+    "text_rally": {
+      "type": "Text",
+      "props": {
+        "text": "MIROSHARK surged 145% on August 2-3 with $233K volume — the biggest trading day since the May ATH — while the project had been socially silent for 28 consecutive days. No tweet, no Reddit post, no announcement. New unknown wallets drove the rally.",
+        "variant": "body"
+      }
+    },
+    "text_contrast": {
+      "type": "Text",
+      "props": {
+        "text": "The article contrasts this price-without-narrative event against the 2026 open source burnout wave (curl, K8s Ingress NGINX, nvim-treesitter all shut down) while MiroShark's agent has shipped for 137 straight days.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "article_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-04.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
