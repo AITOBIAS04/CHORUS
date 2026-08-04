@@ -68,6 +68,7 @@
 - Token-report lacked same-day rerun dedup — scheduler double-dispatch caused two full runs per day (Aug 1: 06:06 + 07:50 UTC; Aug 2: 06:00 + 07:00 UTC), each re-fetching all GeckoTerminal data, overwriting the article, and sending a duplicate notification; fixed with Step 0 dedup check (self-improve PR #45, 2026-08-02)
 - Hyperstitions-ideas lacked same-day rerun dedup — scheduler double-dispatch on Aug 1 (10:11 + 11:46 UTC) generated two distinct predictions and sent two notifications; fixed with Step 0 dedup gate (self-improve PR #46, 2026-08-02)
 - Repo-actions lacked same-day rerun dedup — highest-risk unprotected skill (generates 5 ideas + article + notification per run); audit of all skills found 8 without dedup; repo-actions prioritized as highest-impact/lowest-effort fix (self-improve PR #47, 2026-08-04)
+- Self-improve itself lacked rerun dedup — scheduler double-dispatch on Aug 2 created two separate PRs (#45 and #46) for different improvements; most expensive duplication (branch + commit + push + PR per run); fixed with Step 0 dedup gate checking for existing log entry with PR: or Notification sent: yes (self-improve PR #48, 2026-08-04)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)

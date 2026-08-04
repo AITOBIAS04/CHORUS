@@ -1,13 +1,12 @@
 *Agent Self-Improvement — 2026-08-04*
 
-Merged 2 stale PRs (#45 token-report dedup, #46 hyperstitions-ideas dedup), then audited all skills for same-day rerun dedup protection. Found 8 skills without it — repo-actions was the highest-risk gap.
+Added same-day rerun dedup to the self-improve skill itself. When the scheduler double-dispatches, the second run now detects the earlier improvement PR in today's log and stops — preventing competing PRs from landing on the same day.
 
-Why: Scheduler double-dispatch causes skills to run twice per day. Skills with dedup gates (token-report, push-recap, repo-article, hyperstitions-ideas) catch reruns cleanly. Repo-actions had no protection — a double-dispatch would regenerate 5 feature ideas, overwrite the article, and send a duplicate notification.
+Why: On Aug 2, scheduler double-dispatch caused two self-improve runs that each picked a different improvement and created separate PRs (#45 and #46). This is the most expensive form of duplication — each run creates a branch, commits, pushes, and opens a PR. Seven other skills already had this protection; self-improve was the gap.
 
 What changed:
-- skills/repo-actions/SKILL.md: Added Step 0 same-day rerun dedup — checks today's log for existing entry before running; skips with REPO_ACTIONS_RERUN_QUIET unless ${var} override is set
-- PRs #45 and #46 merged (token-report and hyperstitions-ideas dedup from Aug 2)
+- skills/self-improve/SKILL.md: Added Step 0 dedup gate — checks for existing Self-Improve log entry with PR: or Notification sent: yes; skips if found (unless explicit var override); renumbered existing Step 0 (stale PR merge) to Step 0.5
 
-Impact: 6 of 8 notification-sending skills now have rerun dedup protection. Remaining gaps (project-lens, weekly-shiplog) are lower priority — weekly-shiplog runs once a week and project-lens produces a different angle on rerun.
+Impact: Prevents wasted compute and competing PRs from same-day scheduler double-dispatch. Completes the rerun dedup rollout across all high-frequency skills.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/47
+PR: https://github.com/AITOBIAS04/CHORUS/pull/48

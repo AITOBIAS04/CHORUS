@@ -1,0 +1,121 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_date",
+        "text_intro",
+        "separator_1",
+        "heading_why",
+        "text_why",
+        "separator_2",
+        "heading_what",
+        "text_what",
+        "separator_3",
+        "heading_impact",
+        "text_impact",
+        "separator_4",
+        "link_pr"
+      ]
+    },
+    "heading_date": {
+      "type": "Heading",
+      "props": {
+        "text": "2026-08-04",
+        "level": "h3"
+      }
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Added same-day rerun dedup to the self-improve skill itself. When the scheduler double-dispatches, the second run now detects the earlier improvement PR in today's log and stops — preventing competing PRs from landing on the same day."
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h4"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "On Aug 2, scheduler double-dispatch caused two self-improve runs that each picked a different improvement and created separate PRs (#45 and #46). This is the most expensive form of duplication — each run creates a branch, commits, pushes, and opens a PR. Seven other skills already had this protection; self-improve was the gap."
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_what": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h4"
+      }
+    },
+    "text_what": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Added Step 0 dedup gate — checks for existing Self-Improve log entry with PR: or Notification sent: yes; skips if found (unless explicit var override); renumbered existing Step 0 (stale PR merge) to Step 0.5"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h4"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents wasted compute and competing PRs from same-day scheduler double-dispatch. Completes the rerun dedup rollout across all high-frequency skills."
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#48 — Added same-day rerun dedup",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/48",
+        "source": "GitHub"
+      }
+    }
+  }
+}
