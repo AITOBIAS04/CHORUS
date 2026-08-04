@@ -23,6 +23,8 @@ Read the last 7 days of memory/logs/ for previous price data to show trends.
 
 ## Steps
 
+0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a token-report entry with `Notification sent: yes` (case-insensitive search for "token-report" or "token report" followed by "notification sent: yes" in the same section), and `${var}` is empty (no explicit override), log `TOKEN_REPORT_RERUN_QUIET: report already sent today` to `memory/logs/${today}.md` and **stop here** — do NOT re-fetch data, overwrite the article, or re-send the notification. This prevents duplicate reports when the scheduler dispatches the skill twice.
+
 1. **Fetch token info** from GeckoTerminal (free, no API key needed):
    ```bash
    # Token metadata + price
