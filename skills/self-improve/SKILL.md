@@ -9,7 +9,9 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
 
 ## Steps
 
-0. **Merge stale self-improve PRs** — Before looking for new improvements, land prior improvements that have been waiting:
+0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a `## Self-Improve` entry with `PR:` or `Notification sent: yes`, and `${var}` is empty (no explicit improvement requested), log `SELF_IMPROVE_RERUN_QUIET: improvement already proposed today — skipping to avoid competing PRs` to `memory/logs/${today}.md` and **stop here**. A second run picks a different improvement and creates a competing PR, wasting compute and risking merge conflicts (observed Aug 2: PRs #45 and #46 from same-day double-dispatch). The stale PR merge step runs on the next scheduled invocation.
+
+0.5. **Merge stale self-improve PRs** — Before looking for new improvements, land prior improvements that have been waiting:
    ```bash
    CUTOFF=$(date -u -d "48 hours ago" +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-48H +%Y-%m-%dT%H:%M:%SZ)
    gh pr list --state open --json number,title,createdAt,mergeStateStatus,reviewDecision \
@@ -26,7 +28,7 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      ```
    - **Skip** if the PR has review comments requesting changes — a human has weighed in, leave it for them.
 
-   Log all merge/close actions to `memory/logs/${today}.md`. If any PRs were merged, include them in the final notification. Then continue to step 1.
+   Log all merge/close actions to `memory/logs/${today}.md`. If any PRs were merged, include them in the final notification. Then continue.
 
 1. **Assess what needs improving** (in this priority order):
    a. If `${var}` is set, work on that specific improvement.
