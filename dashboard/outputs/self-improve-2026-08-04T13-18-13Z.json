@@ -1,0 +1,127 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-08-04"
+      },
+      "children": [
+        "summary",
+        "sep_1",
+        "why_section",
+        "sep_2",
+        "changes_section",
+        "sep_3",
+        "impact_section",
+        "sep_4",
+        "pr_link"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Merged 2 stale PRs (#45 token-report dedup, #46 hyperstitions-ideas dedup), then audited all skills for same-day rerun dedup protection. Found 8 skills without it — repo-actions was the highest-risk gap."
+      }
+    },
+    "sep_1": {
+      "type": "Separator"
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_why",
+        "why_text"
+      ]
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "Scheduler double-dispatch causes skills to run twice per day. Skills with dedup gates (token-report, push-recap, repo-article, hyperstitions-ideas) catch reruns cleanly. Repo-actions had no protection — a double-dispatch would regenerate 5 feature ideas, overwrite the article, and send a duplicate notification."
+      }
+    },
+    "sep_2": {
+      "type": "Separator"
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_changes",
+        "change_1",
+        "change_2"
+      ]
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "skills/repo-actions/SKILL.md: Added Step 0 same-day rerun dedup — checks today's log for existing entry before running; skips with REPO_ACTIONS_RERUN_QUIET unless ${var} override is set"
+      }
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "PRs #45 and #46 merged (token-report and hyperstitions-ideas dedup from Aug 2)"
+      }
+    },
+    "sep_3": {
+      "type": "Separator"
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_impact",
+        "impact_text"
+      ]
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "6 of 8 notification-sending skills now have rerun dedup protection. Remaining gaps (project-lens, weekly-shiplog) are lower priority — weekly-shiplog runs once a week and project-lens produces a different angle on rerun."
+      }
+    },
+    "sep_4": {
+      "type": "Separator"
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "View PR #47",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/47"
+      }
+    }
+  }
+}
