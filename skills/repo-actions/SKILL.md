@@ -16,6 +16,8 @@ Read memory/watched-repos.md for the repo to analyze.
 
 ## Steps
 
+0. **Same-day rerun dedup** — Read `memory/logs/${today}.md`. If a `## repo-actions` or `## Repo Actions` entry already exists with `Notification sent: yes`, and `${var}` is empty, log `REPO_ACTIONS_RERUN_QUIET: already ran today — skipping rerun` and **stop**. This prevents scheduler double-dispatch from regenerating ideas and sending duplicate notifications.
+
 1. **Assess current repo state**:
    ```bash
    # Repo info
