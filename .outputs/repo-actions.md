@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-08-02*
-Generated from analysis of aaronjmars/MiroShark (1,412 stars · 298 forks · 26-day social silence · EU AI Act day-1).
+*Repo Action Ideas — 2026-08-04*
+Generated from analysis of aaronjmars/MiroShark (1,419 stars · 297 forks · day 28 social silence · token post-rally at $0.000002630). Five ideas scoped for autonomous build by the feature skill.
 
-1. Product Hunt Launch Kit (Growth, Small)
-   Maker page, tagline variants, first-comment template, gallery guide, and timing strategy for the new PH 100+ upvotes hyperstition (Sep 15, 44 days).
+1. GraphML/GEXF Agent Mention Network Export (Feature, Small)
+   Standard graph file formats (Gephi/NetworkX) for the existing agent mention network — direct prerequisite for papers citing MiroShark in social network analysis.
 
-2. `miro doctor` CLI Health Command (DX, Small)
-   Diagnostic command (flutter doctor-style) that checks API reachability, env, and model availability — the getting-started artifact tutorial creators need.
+2. CITATION.cff + docs/CITING.md (Community, Small)
+   Enables GitHub's "Cite this repository" button and Zenodo DOI registration — zero LoC, activates the academic citation pipeline for the Sep 1 hyperstition.
 
-3. Italian (IT) UI Locale (Community, Small)
-   Dictionary-only locale for Italy (7th on GitHub globally); advances the 5-language hyperstition from 3/5 → 4/5 with EU AI Act hook in README.it.md.
+3. Per-Round Webhook Events (Integration, Small)
+   Fire `simulation.round_complete` after each round (opt-in via `WEBHOOK_ROUND_EVENTS=true`) — enables real-time belief-drift monitoring without polling, serving 11 ecosystem integrations.
 
-4. Interactive API Documentation / ReDoc (DX, Small)
-   Single-page /docs route rendering all 41+ OpenAPI surfaces as a click-to-try reference — zero new dependencies, CDN JS only.
+4. Ecosystem Project Health API (Integration, Small)
+   `GET /api/ecosystem/health` returns last-commit-date, open-issue-count, and status for all 11 ecosystem projects — liveness data the static ECOSYSTEM.md can't provide.
 
-5. Simulation Comparison API (Feature, Medium)
-   GET /api/compare?a={id}&b={id} — side-by-side analytics including trajectory correlation for research use; advances the academic citation hyperstition.
+5. Feature Spec Issue Publisher (Community, Small)
+   Script + skill that files the 40+ repo-actions feature specs as labeled GitHub issues (`feature-spec` + `ready-to-implement`) — routes community contributors through the channel they actually use.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-02.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-04.md

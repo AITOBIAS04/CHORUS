@@ -1,0 +1,295 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-08-04",
+        "description": "Generated from analysis of aaronjmars/MiroShark (1,419 stars · 297 forks · day 28 social silence · token post-rally at $0.000002630)"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5",
+        "sep1",
+        "link_details"
+      ]
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_heading",
+        "idea1_tags",
+        "idea1_desc"
+      ]
+    },
+    "idea1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. GraphML/GEXF Agent Mention Network Export",
+        "level": "h3"
+      }
+    },
+    "idea1_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1a",
+        "badge1b"
+      ]
+    },
+    "badge1a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge1b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Standard graph file formats (Gephi/NetworkX) for the existing agent mention network — direct prerequisite for papers citing MiroShark in social network analysis."
+      }
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_heading",
+        "idea2_tags",
+        "idea2_desc"
+      ]
+    },
+    "idea2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. CITATION.cff + docs/CITING.md",
+        "level": "h3"
+      }
+    },
+    "idea2_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge2a",
+        "badge2b"
+      ]
+    },
+    "badge2a": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "default"
+      }
+    },
+    "badge2b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Enables GitHub's \"Cite this repository\" button and Zenodo DOI registration — zero LoC, activates the academic citation pipeline for the Sep 1 hyperstition."
+      }
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_heading",
+        "idea3_tags",
+        "idea3_desc"
+      ]
+    },
+    "idea3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Per-Round Webhook Events",
+        "level": "h3"
+      }
+    },
+    "idea3_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge3a",
+        "badge3b"
+      ]
+    },
+    "badge3a": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      }
+    },
+    "badge3b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Fire `simulation.round_complete` after each round (opt-in via `WEBHOOK_ROUND_EVENTS=true`) — enables real-time belief-drift monitoring without polling, serving 11 ecosystem integrations."
+      }
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_heading",
+        "idea4_tags",
+        "idea4_desc"
+      ]
+    },
+    "idea4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Ecosystem Project Health API",
+        "level": "h3"
+      }
+    },
+    "idea4_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge4a",
+        "badge4b"
+      ]
+    },
+    "badge4a": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      }
+    },
+    "badge4b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "`GET /api/ecosystem/health` returns last-commit-date, open-issue-count, and status for all 11 ecosystem projects — liveness data the static ECOSYSTEM.md can't provide."
+      }
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_heading",
+        "idea5_tags",
+        "idea5_desc"
+      ]
+    },
+    "idea5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Feature Spec Issue Publisher",
+        "level": "h3"
+      }
+    },
+    "idea5_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge5a",
+        "badge5b"
+      ]
+    },
+    "badge5a": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "default"
+      }
+    },
+    "badge5b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Script + skill that files the 40+ repo-actions feature specs as labeled GitHub issues (`feature-spec` + `ready-to-implement`) — routes community contributors through the channel they actually use."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_details": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-04.md"
+      }
+    }
+  }
+}
