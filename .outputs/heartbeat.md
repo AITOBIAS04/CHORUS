@@ -1,10 +1,12 @@
-HEARTBEAT_OK. All 9 expected skills for Tuesday ran cleanly. No stalled PRs, no open issues, no systemic failures. The two new self-improve PRs (#47, #48) are only hours old and not yet due for escalation.
+Heartbeat — 2026-08-05
 
-## Summary
+1 skill missed + 2 PRs stalled:
 
-- **System health:** All 13 skills at `consecutive_failures: 0`
-- **Skills confirmed:** token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, repo-article — all ran as scheduled
-- **Open PRs stalled >24h:** None (PR #47 and #48 are both <6h old)
-- **Open issues:** None, no escalations
-- **Logged:** `memory/logs/2026-08-04.md` — `## Heartbeat — 2026-08-04`
-- **Notification:** Not sent (HEARTBEAT_OK)
+repo-pulse: scheduled 10:00 UTC, no run recorded (9h overdue). Not queued or in_progress. Dispatch unavailable (actions: read only — manual re-run needed).
+
+PRs stalled >24h:
+- #47 (improve: repo-actions same-day dedup) — ~30h open
+- #48 (improve: self-improve same-day dedup) — ~28h open
+Both awaiting merge in miroshark-aeon.
+
+memory-flush currently in_progress. All other skills nominal.

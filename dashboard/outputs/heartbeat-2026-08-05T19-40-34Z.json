@@ -1,0 +1,110 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-08-05",
+        "description": "1 skill missed + 2 PRs stalled"
+      },
+      "children": [
+        "alert_missed_skill",
+        "sep1",
+        "stack_prs",
+        "sep2",
+        "stack_status"
+      ]
+    },
+    "alert_missed_skill": {
+      "type": "Alert",
+      "props": {
+        "title": "Skill Missed: repo-pulse",
+        "message": "Scheduled 10:00 UTC, no run recorded (9h overdue). Not queued or in_progress. Dispatch unavailable (actions: read only — manual re-run needed).",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_prs",
+        "pr_47",
+        "pr_48",
+        "text_pr_context"
+      ]
+    },
+    "heading_prs": {
+      "type": "Heading",
+      "props": {
+        "text": "PRs Stalled >24h",
+        "level": "h3"
+      }
+    },
+    "pr_47": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#47 — improve: repo-actions same-day dedup",
+        "href": "https://github.com/miroshark/miroshark-aeon/pull/47",
+        "source": "miroshark-aeon",
+        "score": "~30h open"
+      }
+    },
+    "pr_48": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#48 — improve: self-improve same-day dedup",
+        "href": "https://github.com/miroshark/miroshark-aeon/pull/48",
+        "source": "miroshark-aeon",
+        "score": "~28h open"
+      }
+    },
+    "text_pr_context": {
+      "type": "Text",
+      "props": {
+        "text": "Awaiting merge in miroshark-aeon",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_memory",
+        "text_nominal"
+      ]
+    },
+    "text_memory": {
+      "type": "Text",
+      "props": {
+        "text": "memory-flush currently in_progress",
+        "variant": "body"
+      }
+    },
+    "text_nominal": {
+      "type": "Text",
+      "props": {
+        "text": "All other skills nominal",
+        "variant": "body"
+      }
+    }
+  }
+}
