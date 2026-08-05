@@ -1,5 +1,5 @@
-*New Article: She Had Fourteen Days Before the Public Hearing. The Room Was Already Decided.*
+## Summary
 
-A community development director faces a contentious rezoning vote and knows the public hearing will be dominated by the same unrepresentative slice of her community — older, wealthier homeowners who overwhelmingly oppose new housing. With focus groups costing $7K–$12K per session and her annual engagement budget at $11K, she runs a MiroShark simulation with twelve agents mapped to her community's actual demographics. The stance flip data reveals which objections are load-bearing and which are decorative — the kind of structural insight a public hearing never surfaces.
-
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-05.md
+- **Skill:** project-lens (rerun)
+- **Result:** PROJECT_LENS_RERUN_QUIET — article already written today with angle #4 (User story), title "She Had Fourteen Days Before the Public Hearing. The Room Was Already Decided.", and notification already sent. Skipped to avoid overwriting the article and sending a duplicate notification.
+- **File modified:** `memory/logs/2026-08-05.md` — appended rerun skip entry
