@@ -1,0 +1,236 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-05"
+      },
+      "children": [
+        "heading-repo",
+        "stat-commits",
+        "sep1",
+        "section1",
+        "section2",
+        "section3",
+        "sep2",
+        "key-changes-heading",
+        "changes-list",
+        "sep3",
+        "stats-section",
+        "link-full-recap"
+      ]
+    },
+    "heading-repo": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      }
+    },
+    "stat-commits": {
+      "type": "Text",
+      "props": {
+        "text": "14 substantive commits by 2 authors (9 automation commits filtered from miroshark-aeon)",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h-section1",
+        "text-section1-1",
+        "text-section1-2"
+      ]
+    },
+    "h-section1": {
+      "type": "Heading",
+      "props": {
+        "text": "Visual-First README Overhaul",
+        "level": "h3"
+      }
+    },
+    "text-section1-1": {
+      "type": "Text",
+      "props": {
+        "text": "The entire MiroShark README was rebuilt from a text-heavy documentation page into an image-driven landing page. Shields.io badges replaced with 14 custom self-hosted SVG pill buttons in the purple/chrome brand style. 11 new brand images added — hero, 6 use-case cards, feature wall, and community tiles."
+      }
+    },
+    "text-section1-2": {
+      "type": "Text",
+      "props": {
+        "text": "A \"We love contributors\" section with banner and direct links was added, aimed squarely at converting the 298 forks into active PRs."
+      }
+    },
+    "section2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h-section2",
+        "text-section2-1",
+        "text-section2-2",
+        "text-section2-3"
+      ]
+    },
+    "h-section2": {
+      "type": "Heading",
+      "props": {
+        "text": "Animated Hero & Micro-Animations",
+        "level": "h3"
+      }
+    },
+    "text-section2-1": {
+      "type": "Text",
+      "props": {
+        "text": "A 156-line animated SVG hero was created from scratch — flowing pipeline comet dots, twinkling agent swarm, chrome title glow, and a shark fin wordmark refined through 6 iterative commits."
+      }
+    },
+    "text-section2-2": {
+      "type": "Text",
+      "props": {
+        "text": "All 5 header pill icons now have subtle CSS animations: star twinkle, globe spin, book rock, X pulse, coin flip."
+      }
+    },
+    "text-section2-3": {
+      "type": "Text",
+      "props": {
+        "text": "The static JPG hero was dropped in favor of the animated SVG as the sole hero."
+      }
+    },
+    "section3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h-section3",
+        "text-section3"
+      ]
+    },
+    "h-section3": {
+      "type": "Heading",
+      "props": {
+        "text": "Security Dependency",
+        "level": "h3"
+      }
+    },
+    "text-section3": {
+      "type": "Text",
+      "props": {
+        "text": "cryptography bumped 49.0.0 → 50.0.0 via Dependabot."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3",
+        "change4",
+        "change5"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": ".github/README.md rebuilt: image-per-section layout, self-hosted SVGs replacing all shields badges"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "docs/images/hero-animated.svg: new 156-line animated SVG with pipeline flow, swarm, and chrome effects"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "14 new SVG pill buttons (5 header + 9 docs nav) with individual icon animations"
+      }
+    },
+    "change4": {
+      "type": "Text",
+      "props": {
+        "text": "11 new brand images (use-case cards, community tiles, contributor banner)"
+      }
+    },
+    "change5": {
+      "type": "Text",
+      "props": {
+        "text": "cryptography 50.0.0 (major version, indirect backend dependency)"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-additions",
+        "stat-deletions"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "~30"
+      }
+    },
+    "stat-additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "+538"
+      }
+    },
+    "stat-deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "-228"
+      }
+    },
+    "link-full-recap": {
+      "type": "Link",
+      "props": {
+        "label": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-05.md"
+      }
+    }
+  }
+}
