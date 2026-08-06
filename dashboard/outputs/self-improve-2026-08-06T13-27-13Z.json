@@ -1,0 +1,138 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-08-06"
+      },
+      "children": [
+        "text_intro",
+        "sep1",
+        "heading_why",
+        "text_why",
+        "sep2",
+        "heading_changes",
+        "stack_changes",
+        "sep3",
+        "heading_impact",
+        "text_impact",
+        "sep4",
+        "link_pr"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Merged 2 stale PRs, then adjusted heartbeat stalled-PR detection to reduce false positives. The heartbeat was flagging improve: PRs as stalled after 24h, but these are auto-merged by self-improve every 48h — creating unnecessary ACTION_REQUIRED alerts each cycle.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "Aug 5 heartbeat flagged PRs #47 and #48 as stalled at 28h and 30h old. Both were auto-merged today by self-improve step 0.5, confirming the 24h threshold is too aggressive for this PR type.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_change_1",
+        "text_change_2"
+      ]
+    },
+    "text_change_1": {
+      "type": "Text",
+      "props": {
+        "text": "skills/heartbeat/SKILL.md: Split stalled PR check into two thresholds — 72h for improve: PRs (48h self-improve cycle + buffer), 24h for all other PRs",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_change_2": {
+      "type": "Text",
+      "props": {
+        "text": "PRs merged: #47 (repo-actions dedup) and #48 (self-improve dedup)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates ~3 false positive stalled-PR alerts per week from heartbeat, keeping ACTION_REQUIRED status reserved for genuine issues.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #49",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/49",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
