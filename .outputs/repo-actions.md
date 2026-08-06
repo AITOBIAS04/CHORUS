@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-08-04*
-Generated from analysis of aaronjmars/MiroShark (1,419 stars · 297 forks · day 28 social silence · token post-rally at $0.000002630). Five ideas scoped for autonomous build by the feature skill.
+*Repo Action Ideas — 2026-08-06*
+Generated from analysis of aaronjmars/MiroShark (1,426 stars · 298 forks · 30-day social silence · 9 days to tutorial deadline).
 
-1. GraphML/GEXF Agent Mention Network Export (Feature, Small)
-   Standard graph file formats (Gephi/NetworkX) for the existing agent mention network — direct prerequisite for papers citing MiroShark in social network analysis.
+1. Demo Simulation Library (Growth, Small)
+   Pre-run published simulations with tutorial angles + /demo discovery page; directly unblocks the Aug 15 tutorial hyperstition by giving writers ready-made results to reference.
 
-2. CITATION.cff + docs/CITING.md (Community, Small)
-   Enables GitHub's "Cite this repository" button and Zenodo DOI registration — zero LoC, activates the academic citation pipeline for the Sep 1 hyperstition.
+2. CLI Shell Completion Scripts (DX, Small)
+   bash/zsh/fish autocompletion via `miro completion`; makes terminal recordings look polished and is the standard for production CLI tools.
 
-3. Per-Round Webhook Events (Integration, Small)
-   Fire `simulation.round_complete` after each round (opt-in via `WEBHOOK_ROUND_EVENTS=true`) — enables real-time belief-drift monitoring without polling, serving 11 ecosystem integrations.
+3. Dutch (NL) UI Locale (Community, Small)
+   4th language toward the Sep 1 hyperstition (3/5 → 4/5); Netherlands has highest EU developer density and the EU AI Act hook is active.
 
-4. Ecosystem Project Health API (Integration, Small)
-   `GET /api/ecosystem/health` returns last-commit-date, open-issue-count, and status for all 11 ecosystem projects — liveness data the static ECOSYSTEM.md can't provide.
+4. X/Twitter Content Kit (Content, Small)
+   20 pre-drafted tweet templates + `GET /api/simulation/{id}/tweet` endpoint that auto-generates a thread from any simulation result; targets the 30-day social silence directly.
 
-5. Feature Spec Issue Publisher (Community, Small)
-   Script + skill that files the 40+ repo-actions feature specs as labeled GitHub issues (`feature-spec` + `ready-to-implement`) — routes community contributors through the channel they actually use.
+5. Operator Metrics Endpoint (Feature, Small)
+   Auth-gated `GET /api/metrics` returning 12 aggregate instance stats (total sims, cost, platform usage, most active day); enables self-hosters to understand usage without log parsing.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-04.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-06.md

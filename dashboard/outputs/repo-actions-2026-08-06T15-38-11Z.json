@@ -1,0 +1,325 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-08-06",
+        "description": "Generated from analysis of aaronjmars/MiroShark (1,426 stars · 298 forks · 30-day social silence · 9 days to tutorial deadline)"
+      },
+      "children": [
+        "separator_1",
+        "actions_stack",
+        "separator_2",
+        "full_details_section"
+      ]
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "actions_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "action_1",
+        "action_2",
+        "action_3",
+        "action_4",
+        "action_5"
+      ]
+    },
+    "action_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_1_title",
+        "action_1_badges",
+        "action_1_desc"
+      ]
+    },
+    "action_1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Demo Simulation Library",
+        "level": "h3"
+      }
+    },
+    "action_1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_growth",
+        "badge_small_1"
+      ]
+    },
+    "badge_growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "default"
+      }
+    },
+    "badge_small_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-run published simulations with tutorial angles + /demo discovery page; directly unblocks the Aug 15 tutorial hyperstition by giving writers ready-made results to reference.",
+        "variant": "body"
+      }
+    },
+    "action_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_2_title",
+        "action_2_badges",
+        "action_2_desc"
+      ]
+    },
+    "action_2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "CLI Shell Completion Scripts",
+        "level": "h3"
+      }
+    },
+    "action_2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_dx",
+        "badge_small_2"
+      ]
+    },
+    "badge_dx": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "default"
+      }
+    },
+    "badge_small_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "bash/zsh/fish autocompletion via `miro completion`; makes terminal recordings look polished and is the standard for production CLI tools.",
+        "variant": "body"
+      }
+    },
+    "action_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_3_title",
+        "action_3_badges",
+        "action_3_desc"
+      ]
+    },
+    "action_3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Dutch (NL) UI Locale",
+        "level": "h3"
+      }
+    },
+    "action_3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_community",
+        "badge_small_3"
+      ]
+    },
+    "badge_community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "default"
+      }
+    },
+    "badge_small_3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "4th language toward the Sep 1 hyperstition (3/5 → 4/5); Netherlands has highest EU developer density and the EU AI Act hook is active.",
+        "variant": "body"
+      }
+    },
+    "action_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_4_title",
+        "action_4_badges",
+        "action_4_desc"
+      ]
+    },
+    "action_4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "X/Twitter Content Kit",
+        "level": "h3"
+      }
+    },
+    "action_4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_content",
+        "badge_small_4"
+      ]
+    },
+    "badge_content": {
+      "type": "Badge",
+      "props": {
+        "text": "Content",
+        "variant": "default"
+      }
+    },
+    "badge_small_4": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action_4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "20 pre-drafted tweet templates + `GET /api/simulation/{id}/tweet` endpoint that auto-generates a thread from any simulation result; targets the 30-day social silence directly.",
+        "variant": "body"
+      }
+    },
+    "action_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_5_title",
+        "action_5_badges",
+        "action_5_desc"
+      ]
+    },
+    "action_5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Operator Metrics Endpoint",
+        "level": "h3"
+      }
+    },
+    "action_5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_feature",
+        "badge_small_5"
+      ]
+    },
+    "badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge_small_5": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action_5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Auth-gated `GET /api/metrics` returning 12 aggregate instance stats (total sims, cost, platform usage, most active day); enables self-hosters to understand usage without log parsing.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full_details_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "full_details_label",
+        "full_details_link"
+      ]
+    },
+    "full_details_label": {
+      "type": "Text",
+      "props": {
+        "text": "Full details:",
+        "variant": "caption"
+      }
+    },
+    "full_details_link": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-06.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-06.md"
+      }
+    }
+  }
+}

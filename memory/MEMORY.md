@@ -86,11 +86,11 @@
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (68th consecutive block as of Aug 5; all features from Jun 3 onward stuck as local commits)
+- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (69th consecutive block as of Aug 6; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-08-06): Demo Simulation Library (#1), CLI Shell Completion Scripts (#2), Dutch (NL) UI Locale (#3), X/Twitter Content Kit (#4), Operator Metrics Endpoint (#5)
 - Feature candidates (repo-actions 2026-08-04): GraphML/GEXF Agent Mention Export (#1), CITATION.cff + docs/CITING.md (#2), Per-Round Webhook Events (#3), Ecosystem Project Health API (#4), Feature Spec Issue Publisher (#5)
 - Feature candidates (repo-actions 2026-08-02): Product Hunt Launch Kit (#1), miro doctor CLI Health Command (#2), Italian (IT) UI Locale (#3), Interactive API Documentation / ReDoc (#4), Simulation Comparison API (#5)
 - Feature candidates (repo-actions 2026-07-30): German (DE) UI Locale (#1), TypeScript/JavaScript Client SDK (#2), Simulation RSS/Atom Feed (#3), CLI Live Progress Display (#4), Batch Simulation API (#5)
 - Feature candidates (repo-actions 2026-07-28): Good First Issue Sprint (#1), Show HN Launch Kit (#2), Spanish (ES) UI Locale (#3), Academic Citation Helper (#4), Python SDK miroshark-py (#5)
-- Feature candidates (repo-actions 2026-07-26): i18n Contribution Kit (#1), Portuguese (PT) UI Locale (#2), Simulation OG Image API (#3), GitHub Discussions + Show & Tell Template (#4), Air-Gapped HuggingFace Cache (#5)
