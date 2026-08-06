@@ -1,0 +1,123 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-06"
+      },
+      "children": [
+        "repo_header",
+        "sep1",
+        "change_section",
+        "sep2",
+        "stats_section",
+        "sep3",
+        "link_section"
+      ]
+    },
+    "repo_header": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark — 1 substantive commit by @aaronjmars (9 automation commits filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "change_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change_title",
+        "change_description",
+        "key_changes_section"
+      ]
+    },
+    "change_title": {
+      "type": "Heading",
+      "props": {
+        "text": "README Contributor Cleanup",
+        "level": "h3"
+      }
+    },
+    "change_description": {
+      "type": "Text",
+      "props": {
+        "text": "Removed the \"good first issues\" link from the contributors section. Yesterday's visual overhaul added a prominent contributor banner with both the contributing guide and good-first-issues links — today's trim drops the latter, likely because the label filter has no actively tagged issues. Keeps the section clean rather than pointing 298 forkers at an empty page."
+      }
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key_title",
+        "bullet1",
+        "bullet2",
+        "bullet3"
+      ]
+    },
+    "key_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h4"
+      }
+    },
+    "bullet1": {
+      "type": "Text",
+      "props": {
+        "text": ".github/README.md: Removed 🐛 good first issues link from contributor CTA (-1 line)"
+      }
+    },
+    "bullet2": {
+      "type": "Text",
+      "props": {
+        "text": "Contributor section now directs to contributing guide + X only"
+      }
+    },
+    "bullet3": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day after yesterday's 14-commit README sprint"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 1 file changed, +0/-1 lines"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_section": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-06.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
