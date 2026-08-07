@@ -1,9 +1,9 @@
+HEARTBEAT_OK. All 7 expected Friday skills confirmed ran, 0 open PRs, no open memory issues, no escalations. Log updated.
+
 ## Summary
 
-**HEARTBEAT_OK** — all systems nominal on 2026-08-07.
-
-- All 7 expected skills ran (token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens, heartbeat)
-- No missing skills, no systemic failures (all 13 skills at 0 consecutive failures)
-- One open PR (#49, ~30h) — within the 72h threshold for `improve:` PRs; not stalled
-- No open issues, no escalations
-- Persistent items unchanged: GH_GLOBAL not set (70th push block), XAI_API_KEY not set (WebSearch fallback), 31-day social silence on $MIROSHARK
+- **System health:** All 13 skills at 0 consecutive failures — no systemic issues.
+- **Skills coverage (Fri Aug 7):** All 7 expected skills confirmed: token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens, heartbeat. Nothing missing.
+- **PRs:** 0 open PRs on miroshark-aeon.
+- **Issues:** MiroShark GitHub #240 open (air-gapped huggingface, no urgent label). No memory issues.
+- **Action taken:** Logged HEARTBEAT_OK (rerun) to `memory/logs/2026-08-07.md`. No notification sent.
