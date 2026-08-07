@@ -1,0 +1,126 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-08-07"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "grid_metrics",
+        "separator_1",
+        "text_analysis",
+        "link_chart"
+      ]
+    },
+    "grid_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liquidity",
+        "stat_volume_24h",
+        "stat_buys_sells",
+        "stat_buy_vol",
+        "stat_sell_vol",
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000002532",
+        "delta": "+1.92%",
+        "trend": "up"
+      }
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$251K"
+      }
+    },
+    "stat_volume_24h": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$5.4K"
+      }
+    },
+    "stat_buys_sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "9/22"
+      }
+    },
+    "stat_buy_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Buy Volume",
+        "value": "$3.2K"
+      }
+    },
+    "stat_sell_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Sell Volume",
+        "value": "$2.4K"
+      }
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "+50.2%",
+        "trend": "up"
+      }
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "+15.1%",
+        "trend": "up"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_analysis": {
+      "type": "Text",
+      "props": {
+        "text": "Fifth straight volume decline from the Aug 2–3 rally ($204K→$5.4K). Price stabilizing at +55% above July ATL; first positive close in four days on thin volume.",
+        "variant": "body"
+      }
+    },
+    "link_chart": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}

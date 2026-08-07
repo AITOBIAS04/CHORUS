@@ -1,10 +1,10 @@
-*$MiroShark Daily — 2026-08-06*
+*$MiroShark Daily — 2026-08-07*
 
-Price: $0.000002476 (−17.83% 24h)
-Liquidity: $246.7K | 24h Vol: $12.3K
-Buys/Sells: 25/27
-7d: +50.5% | 30d: +4.3%
+Price: $0.000002532 (+1.92% 24h)
+Liquidity: $251K | 24h Vol: $5.4K
+Buys/Sells: 9/22 | Buy vol: $3.2K vs Sell vol: $2.4K
+7d: +50.2% | 30d: +15.1%
 
-Post-rally bleed continues. Volume in 4th straight decline since the Aug 2–3 surge. Trading near-dormant today — three bot buys at ~$1.49 each, one $167 sell. LP slowly unwinding from $301K peak.
+Fifth straight volume decline from the Aug 2–3 rally ($204K→$5.4K). Price stabilizing at +55% above July ATL; first positive close in four days on thin volume.
 
 Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
