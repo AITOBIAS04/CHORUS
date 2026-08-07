@@ -1,12 +1,9 @@
-Heartbeat — 2026-08-05
+## Summary
 
-1 skill missed + 2 PRs stalled:
+**HEARTBEAT_OK** — all systems nominal on 2026-08-07.
 
-repo-pulse: scheduled 10:00 UTC, no run recorded (9h overdue). Not queued or in_progress. Dispatch unavailable (actions: read only — manual re-run needed).
-
-PRs stalled >24h:
-- #47 (improve: repo-actions same-day dedup) — ~30h open
-- #48 (improve: self-improve same-day dedup) — ~28h open
-Both awaiting merge in miroshark-aeon.
-
-memory-flush currently in_progress. All other skills nominal.
+- All 7 expected skills ran (token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens, heartbeat)
+- No missing skills, no systemic failures (all 13 skills at 0 consecutive failures)
+- One open PR (#49, ~30h) — within the 72h threshold for `improve:` PRs; not stalled
+- No open issues, no escalations
+- Persistent items unchanged: GH_GLOBAL not set (70th push block), XAI_API_KEY not set (WebSearch fallback), 31-day social silence on $MIROSHARK
