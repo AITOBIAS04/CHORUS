@@ -1,0 +1,88 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens",
+        "description": "New Article"
+      },
+      "children": [
+        "heading-article",
+        "stats-section",
+        "separator-1",
+        "overview",
+        "miro-proof",
+        "article-link"
+      ]
+    },
+    "heading-article": {
+      "type": "Heading",
+      "props": {
+        "text": "The Most Dangerous Assumption in Software Is That a Human Will Be There When It Matters",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-93",
+        "stat-60"
+      ]
+    },
+    "stat-93": {
+      "type": "Stat",
+      "props": {
+        "label": "Codebases with untouched components (2+ years)",
+        "value": "93%"
+      },
+      "children": []
+    },
+    "stat-60": {
+      "type": "Stat",
+      "props": {
+        "label": "Maintainers quit or considering",
+        "value": "60%"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "overview": {
+      "type": "Text",
+      "props": {
+        "text": "The EU AI Act mandates human oversight of AI — but the real oversight gap is in ordinary software where humans already left. The key question: does \"how do we oversee AI?\" matter more than \"what happens to the 93% of software where humans are already gone?\"",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "miro-proof": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark is an existence proof: maintained autonomously for 140+ days with same-day CVE patches and zero pip dependencies across 41 surfaces.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-07.md",
+        "source": "CHORUS"
+      },
+      "children": []
+    }
+  }
+}
