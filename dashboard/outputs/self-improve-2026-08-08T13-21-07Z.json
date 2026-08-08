@@ -1,0 +1,241 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-08-08"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_summary",
+        "sep1",
+        "heading_project_lens",
+        "stack_project_details",
+        "sep2",
+        "heading_why",
+        "text_why",
+        "sep3",
+        "heading_what_changed",
+        "text_skill_md",
+        "badges_skills",
+        "sep4",
+        "heading_impact",
+        "text_impact",
+        "stat_dedup",
+        "sep5",
+        "link_pr"
+      ]
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "Added same-day rerun dedup to the project-lens skill — the last high-frequency skill without this protection.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_project_lens": {
+      "type": "Heading",
+      "props": {
+        "text": "Project-Lens Details",
+        "level": "h2"
+      }
+    },
+    "stack_project_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_pl_runs",
+        "text_pl_dispatch",
+        "text_pl_handling"
+      ]
+    },
+    "text_pl_runs": {
+      "type": "Text",
+      "props": {
+        "text": "Runs 3x/week and is the most expensive unprotected skill per run (3-5 WebSearch queries, 1-2 WebFetch requests, GitHub API call, notification).",
+        "variant": "body"
+      }
+    },
+    "text_pl_dispatch": {
+      "type": "Text",
+      "props": {
+        "text": "On scheduler double-dispatch, it would pick a different angle, run a full research pipeline, overwrite the first article, and send a duplicate notification.",
+        "variant": "body"
+      }
+    },
+    "text_pl_handling": {
+      "type": "Text",
+      "props": {
+        "text": "The agent handled this informally by noticing the article exists, but without explicit instructions it depended on agent judgment.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h2"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "Continuing the rerun dedup rollout across all enabled skills. 7 of 13 enabled skills already have this gate. project-lens was the highest-impact remaining target — most web queries per run, runs most frequently among unprotected skills.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_what_changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h2"
+      }
+    },
+    "text_skill_md": {
+      "type": "Text",
+      "props": {
+        "text": "skills/project-lens/SKILL.md: Added Step 0 — checks for existing Project Lens entry with Notification sent: yes in today's log before doing any work. Matches the pattern in:",
+        "variant": "body"
+      }
+    },
+    "badges_skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_token_report",
+        "badge_repo_article",
+        "badge_repo_actions",
+        "badge_repo_pulse",
+        "badge_push_recap",
+        "badge_hyperstitions",
+        "badge_self_improve"
+      ]
+    },
+    "badge_token_report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "secondary"
+      }
+    },
+    "badge_repo_article": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article",
+        "variant": "secondary"
+      }
+    },
+    "badge_repo_actions": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-actions",
+        "variant": "secondary"
+      }
+    },
+    "badge_repo_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "secondary"
+      }
+    },
+    "badge_push_recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "secondary"
+      }
+    },
+    "badge_hyperstitions": {
+      "type": "Badge",
+      "props": {
+        "text": "hyperstitions-ideas",
+        "variant": "secondary"
+      }
+    },
+    "badge_self_improve": {
+      "type": "Badge",
+      "props": {
+        "text": "self-improve",
+        "variant": "secondary"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h2"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents wasted WebSearch/WebFetch queries and duplicate notifications on double-dispatch days.",
+        "variant": "body"
+      }
+    },
+    "stat_dedup": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills with formal rerun dedup",
+        "value": "8 of 13",
+        "trend": "up"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_pr": {
+      "type": "Link",
+      "props": {
+        "label": "View PR #50",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/50"
+      }
+    }
+  }
+}
