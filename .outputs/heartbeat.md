@@ -1,8 +1,8 @@
-HEARTBEAT_OK. All 13 skills at zero consecutive failures, all 9 expected Saturday skills confirmed in today's log, no open PRs, no urgent issues, no open memory issues to escalate. No notification sent.
+**HEARTBEAT_OK** — this is a rerun. All 13 skills are healthy (0 consecutive failures), all 10 expected Saturday skills already confirmed run, no open PRs, no urgent issues, no open memory issues requiring escalation.
 
 ## Summary
-
-- **System health:** Clean — all 13 skills `consecutive_failures: 0`
-- **Skills checked:** All 9 expected Saturday skills confirmed (token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article, hyperstitions-ideas, self-improve, repo-actions)
-- **Notable today:** fetch-tweets hit 7 consecutive empty days (escalation sent); PR #50 opened for project-lens dedup; GitHub Trending hyperstition filed (Sep 15 deadline)
-- **Logged:** `memory/logs/2026-08-08.md` — HEARTBEAT_OK entry appended
+- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `memory/issues/INDEX.md`
+- Confirmed all 13 skills at `consecutive_failures: 0` — no systemic failure
+- All 10 expected Saturday skills ran (verified against today's earlier heartbeat log)
+- 0 open PRs, 0 urgent GitHub issues, 0 open memory issues
+- Logged `HEARTBEAT_OK (rerun)` entry to `memory/logs/2026-08-08.md`
