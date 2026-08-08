@@ -1,12 +1,12 @@
-*Hyperstitions Idea — 2026-08-01*
+*Hyperstitions Idea — 2026-08-08*
 
-"Will MiroShark appear on Product Hunt and receive 100+ upvotes by September 15, 2026?"
+"Will MiroShark appear on GitHub Trending (any language, daily or weekly) by September 15, 2026?"
 
-The coordination play: Someone needs to be the hunter — create the PH listing, write the tagline, prepare screenshots, pick a launch day. Then the 1,412 stargazers and 298 forkers need to show up: upvote, comment, share. Product Hunt launches are a known, structured coordination ritual — the question creates the launcher. An AI agent cannot create a PH account, submit a product, or rally humans on launch day. This is purely a human coordination problem.
+The coordination play: An AI agent can build 41 API surfaces and ship a README overhaul, but it cannot star its own repo, share it on Reddit, post it to Hacker News, or tweet about it. The market turns 1,427 passive stargazers and 298 forkers into an activation pool — each person who shares the repo to move the market also moves the repo closer to trending. GitHub Trending is self-reinforcing: visibility begets stars begets more visibility.
 
-Why now: Five community-action hyperstitions expired unfulfilled (HN front page, public instance, community surface, 1500 stars, 10 PRs at 5/10). Every failed bet targeted the existing audience. Meanwhile the EU AI Act goes live tomorrow — "simulate how people will react to your AI before you deploy it" is suddenly a regulatory use case, and yesterday's article made the case that MiroShark does it for a dollar. The project has the product. It has zero external discovery. Product Hunt is the platform where "AI opinion simulation engine" would land with a built-in audience.
+Why now: The README visual overhaul shipped August 5 — animated SVG hero, brand images, CSS micro-animations. For the first time in 140+ days of autonomous operation, the repo is visually compelling enough to convert a Trending page visitor into a star. Meanwhile, 32 days of social silence means zero organic discovery is happening. The project has the substance (1,427 stars, 298 forks, 41 surfaces) but not the signal. This market creates the signal.
 
-Resolution: A Product Hunt page for MiroShark (or a product directly built on MiroShark) exists at producthunt.com with 100+ upvotes by September 15, 2026 23:59 UTC. Verified by visiting the page.
+Resolution: YES if MiroShark appears on github.com/trending (any language filter, daily or weekly timeframe) at any point on or before September 15, 2026. Verified via GitHub Trending page snapshot or third-party archive (e.g. github-trending-repos). One appearance is sufficient.
 
 Scores: Reflexivity 4/5 | Viral 4/5
 

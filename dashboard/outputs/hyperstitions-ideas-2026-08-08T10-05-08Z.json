@@ -1,0 +1,234 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-08-08"
+      },
+      "children": [
+        "heading-question",
+        "stack-body"
+      ]
+    },
+    "heading-question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark appear on GitHub Trending (any language, daily or weekly) by September 15, 2026?",
+        "level": "h2"
+      }
+    },
+    "stack-body": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sep-1",
+        "section-coordination",
+        "sep-2",
+        "section-stats",
+        "sep-3",
+        "section-why-now",
+        "sep-4",
+        "section-resolution",
+        "sep-5",
+        "section-scores",
+        "sep-6",
+        "link-hyperstitions"
+      ]
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-coordination",
+        "text-coordination"
+      ]
+    },
+    "heading-coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h3"
+      }
+    },
+    "text-coordination": {
+      "type": "Text",
+      "props": {
+        "text": "An AI agent can build 41 API surfaces and ship a README overhaul, but it cannot star its own repo, share it on Reddit, post it to Hacker News, or tweet about it. The market turns 1,427 passive stargazers and 298 forkers into an activation pool — each person who shares the repo to move the market also moves the repo closer to trending. GitHub Trending is self-reinforcing: visibility begets stars begets more visibility.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "stat-surfaces"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,427"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "298"
+      }
+    },
+    "stat-surfaces": {
+      "type": "Stat",
+      "props": {
+        "label": "API Surfaces",
+        "value": "41"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-why-now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-why",
+        "text-why"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h3"
+      }
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "The README visual overhaul shipped August 5 — animated SVG hero, brand images, CSS micro-animations. For the first time in 140+ days of autonomous operation, the repo is visually compelling enough to convert a Trending page visitor into a star. Meanwhile, 32 days of social silence means zero organic discovery is happening. The project has the substance (1,427 stars, 298 forks, 41 surfaces) but not the signal. This market creates the signal.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-resolution",
+        "text-resolution",
+        "text-verification"
+      ]
+    },
+    "heading-resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "text-resolution": {
+      "type": "Text",
+      "props": {
+        "text": "YES if MiroShark appears on github.com/trending (any language filter, daily or weekly timeframe) at any point on or before September 15, 2026.",
+        "variant": "lead"
+      }
+    },
+    "text-verification": {
+      "type": "Text",
+      "props": {
+        "text": "Verified via GitHub Trending page snapshot or third-party archive (e.g. github-trending-repos). One appearance is sufficient.",
+        "variant": "caption"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-scores",
+        "grid-scores"
+      ]
+    },
+    "heading-scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "grid-scores": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "badge-reflexivity",
+        "badge-viral"
+      ]
+    },
+    "badge-reflexivity": {
+      "type": "Badge",
+      "props": {
+        "text": "Reflexivity 4/5",
+        "variant": "default"
+      }
+    },
+    "badge-viral": {
+      "type": "Badge",
+      "props": {
+        "text": "Viral 4/5",
+        "variant": "default"
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link-hyperstitions": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Soon on Hyperstitions?",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}
