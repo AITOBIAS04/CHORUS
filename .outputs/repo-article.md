@@ -1,5 +1,5 @@
-*New Article: A Token Rallied One Hundred Fifty Percent in Forty-Eight Hours. Nobody Had Tweeted About It in Twenty-Eight Days.*
+*New Article: A Project With 1,427 Stars Rewrote Its README in Fourteen Commits. It Hadn't Tweeted in Thirty-Two Days.*
 
-MIROSHARK surged 145% on August 2-3 with $233K volume — the biggest trading day since the May ATH — while the project had been socially silent for 28 consecutive days. No tweet, no Reddit post, no announcement. New unknown wallets drove the rally. The article contrasts this price-without-narrative event against the 2026 open source burnout wave (curl, K8s Ingress NGINX, nvim-treesitter all shut down) while MiroShark's agent has shipped for 137 straight days.
+MiroShark pushed fourteen commits in four hours on August 5 — animated SVG hero, eleven brand images, self-hosted pill buttons — transforming a text-heavy README into a visual-first landing page. Research says developers decide to star within fifteen seconds; MiroFish hit 33K stars with strong presentation. MiroShark has the product (40+ features, 41 surfaces) but thirty-two days of social silence — the README is now doing all the talking.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-04.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-08.md

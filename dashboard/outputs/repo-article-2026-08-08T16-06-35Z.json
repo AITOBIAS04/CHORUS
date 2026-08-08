@@ -1,0 +1,97 @@
+{
+  "root": "card-repo-article",
+  "state": {},
+  "elements": {
+    "card-repo-article": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: A Project With 1,427 Stars Rewrote Its README in Fourteen Commits. It Hadn't Tweeted in Thirty-Two Days."
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "metrics-grid",
+        "sep1",
+        "narrative-text",
+        "sep2",
+        "read-link"
+      ]
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "metric-commits",
+        "metric-hours",
+        "metric-stars",
+        "metric-silence"
+      ]
+    },
+    "metric-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits (Aug 5)",
+        "value": "14"
+      }
+    },
+    "metric-hours": {
+      "type": "Stat",
+      "props": {
+        "label": "Duration",
+        "value": "4 hours"
+      }
+    },
+    "metric-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Project Stars",
+        "value": "1,427"
+      }
+    },
+    "metric-silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Days Without Tweet",
+        "value": "32"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "narrative-text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark pushed fourteen commits in four hours on August 5 — animated SVG hero, eleven brand images, self-hosted pill buttons — transforming a text-heavy README into a visual-first landing page. Research says developers decide to star within fifteen seconds; MiroFish hit 33K stars with strong presentation. MiroShark has the product (40+ features, 41 surfaces) but thirty-two days of social silence — the README is now doing all the talking.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "read-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-08.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
