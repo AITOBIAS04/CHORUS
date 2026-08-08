@@ -1,0 +1,112 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Social Monitor Dark"
+      },
+      "children": [
+        "stats-row",
+        "sep1",
+        "alert",
+        "sep2",
+        "cause-heading",
+        "cause-text",
+        "sep3",
+        "fix-heading",
+        "fix-text"
+      ]
+    },
+    "stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-days",
+        "stat-mentions"
+      ]
+    },
+    "stat-days": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive Days",
+        "value": "7"
+      },
+      "children": []
+    },
+    "stat-mentions": {
+      "type": "Stat",
+      "props": {
+        "label": "New Mentions Found",
+        "value": "0",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "message": "fetch-tweets has found zero new mentions for 7 straight days."
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "cause-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Likely Cause",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "cause-text": {
+      "type": "Text",
+      "props": {
+        "text": "XAI_API_KEY not set — WebSearch fallback rarely surfaces fresh tweets.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "fix-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fix",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "fix-text": {
+      "type": "Text",
+      "props": {
+        "text": "Set XAI_API_KEY in repo secrets to enable direct X/Twitter search via Grok.",
+        "variant": "body"
+      },
+      "children": []
+    }
+  }
+}
