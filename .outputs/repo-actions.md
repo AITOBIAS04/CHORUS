@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-08-06*
-Generated from analysis of aaronjmars/MiroShark (1,426 stars · 298 forks · 30-day social silence · 9 days to tutorial deadline).
+*Repo Action Ideas — 2026-08-08*
+Generated from analysis of aaronjmars/MiroShark (1,427 stars · 298 forks · day 32 social silence · MiroFish just hit 33K stars + $4.1M funding in the same space).
 
-1. Demo Simulation Library (Growth, Small)
-   Pre-run published simulations with tutorial angles + /demo discovery page; directly unblocks the Aug 15 tutorial hyperstition by giving writers ready-made results to reference.
+1. Tutorial Seed Kit (Content, Small)
+   5 complete writing scaffolds targeting Dev.to, YouTube, academic blog, HN Show, LinkedIn — removes the blank-page blocker for tutorial creators. 7 days to the Aug 15 deadline.
 
-2. CLI Shell Completion Scripts (DX, Small)
-   bash/zsh/fish autocompletion via `miro completion`; makes terminal recordings look polished and is the standard for production CLI tools.
+2. MiroFish Comparison Page (Growth, Small)
+   docs/VERSUS.md captures peak 'MiroFish alternative' search traffic while MiroFish is viral this week. Factual comparison of MiroShark vs MiroFish vs OASIS: license, pricing, self-host, provenance, API depth.
 
-3. Dutch (NL) UI Locale (Community, Small)
-   4th language toward the Sep 1 hyperstition (3/5 → 4/5); Netherlands has highest EU developer density and the EU AI Act hook is active.
+3. Korean (KO) UI Locale (Community, Small)
+   README already shows 4/5 languages live (EN · 中文 · 日本語 · Français). Korean clears the Sep 1 language hyperstition entirely — 5.3M GitHub users, Korea AI Safety Institute hook, zero encoding edge cases.
 
-4. X/Twitter Content Kit (Content, Small)
-   20 pre-drafted tweet templates + `GET /api/simulation/{id}/tweet` endpoint that auto-generates a thread from any simulation result; targets the 30-day social silence directly.
+4. Social Preview Card (Content, Small)
+   1280×640 SVG for GitHub's social preview setting — makes every shared repo URL show a branded link preview instead of GitHub's generic card. Direct support for the GitHub Trending hyperstition (filed today).
 
-5. Operator Metrics Endpoint (Feature, Small)
-   Auth-gated `GET /api/metrics` returning 12 aggregate instance stats (total sims, cost, platform usage, most active day); enables self-hosters to understand usage without log parsing.
+5. Simulation Short URL Service (Feature, Small)
+   GET /s/{8chars} compresses 62-char share URLs to 26. Enables tweet-friendly links, readable QR codes, slide-embeddable URLs. Adds short_url field to signal.json and reproduce.json.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-06.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-08.md

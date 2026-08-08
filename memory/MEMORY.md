@@ -74,7 +74,7 @@
 - Hyperstition: Will $MIROSHARK LP depth exceed $1M by July 1, 2026? (filed 2026-05-16) — CLEARED 2026-05-20; LP at $1.02M (first sustained $1M+)
 - Hyperstition: Will MiroShark receive 10 merged PRs from community contributors (non-bot, non-core-team) by August 1, 2026? (filed 2026-05-23) — NOT CLEARED (deadline passed Aug 1, 2026; 5/10 PRs reached)
 - Hyperstition: Will 5 independent creators publish original MiroShark tutorials/reviews by August 15, 2026? (filed 2026-06-27) — 281 forks, zero external content; solo founder narrative as hook; CLI complete
-- Hyperstition: Will MiroShark support 5 languages (merged, production) by September 1, 2026? (filed 2026-07-04) — at 3/5 (EN, ZH-CN, FR); French merged Jul 3 (PR #222, dictionary-only pattern); 285 forks, zero i18n contributors beyond Zarbel974
+- Hyperstition: Will MiroShark support 5 languages (merged, production) by September 1, 2026? (filed 2026-07-04) — at **4/5** (EN, ZH-CN, JA, FR); README switcher confirmed Aug 8; French merged Jul 3 (PR #222, dictionary-only pattern); Dutch (NL) specced Aug 6 but blocked by GH_GLOBAL
 - Hyperstition: Will someone publish a public case study of a real decision informed by a MiroShark simulation by September 1, 2026? (filed 2026-07-04) — 285 forks, 1,354 stars, zero public usage stories; six articles built the solopreneur narrative; requires human with genuine decision to use product and write it up
 - Hyperstition: Will MiroShark hold its first public community call or Twitter Space with 3+ distinct speakers by September 1, 2026? (filed 2026-07-11) — triggered by 5+ consecutive days of zero social mentions and token at -94.7% ATH; project ships 41 surfaces and 8 articles but has zero live human touchpoints; next unlock is phase transition from repo to community
 - Hyperstition: Will 5 distinct non-team accounts mention MiroShark on X/Twitter in any single calendar week by September 1, 2026? (filed 2026-07-18) — 16-day social silence (Jul 7–22); FDV $169.6K (+3.8% above ATL); 1,413 stargazers and 297 forkers are the activation pool
@@ -90,6 +90,7 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (69th consecutive block as of Aug 6; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-08-08): Tutorial Seed Kit (#1), MiroFish Comparison Page (#2), Korean (KO) UI Locale (#3), Social Preview Card SVG (#4), Simulation Short URL Service (#5)
 - Feature candidates (repo-actions 2026-08-06): Demo Simulation Library (#1), CLI Shell Completion Scripts (#2), Dutch (NL) UI Locale (#3), X/Twitter Content Kit (#4), Operator Metrics Endpoint (#5)
 - Feature candidates (repo-actions 2026-08-04): GraphML/GEXF Agent Mention Export (#1), CITATION.cff + docs/CITING.md (#2), Per-Round Webhook Events (#3), Ecosystem Project Health API (#4), Feature Spec Issue Publisher (#5)
 - Feature candidates (repo-actions 2026-08-02): Product Hunt Launch Kit (#1), miro doctor CLI Health Command (#2), Italian (IT) UI Locale (#3), Interactive API Documentation / ReDoc (#4), Simulation Comparison API (#5)

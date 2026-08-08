@@ -1,0 +1,339 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-08-08"
+      },
+      "children": [
+        "text-context",
+        "separator-1",
+        "items-stack",
+        "separator-2",
+        "story-link-details"
+      ]
+    },
+    "text-context": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,427 stars · 298 forks · day 32 social silence · MiroFish just hit 33K stars + $4.1M funding in the same space).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "items-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4",
+        "item-5"
+      ]
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-1-heading",
+        "item-1-badges",
+        "item-1-text"
+      ]
+    },
+    "item-1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Tutorial Seed Kit",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-content-1",
+        "badge-small-1"
+      ]
+    },
+    "badge-content-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Content",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge-small-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item-1-text": {
+      "type": "Text",
+      "props": {
+        "text": "5 complete writing scaffolds targeting Dev.to, YouTube, academic blog, HN Show, LinkedIn — removes the blank-page blocker for tutorial creators. 7 days to the Aug 15 deadline.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-2-heading",
+        "item-2-badges",
+        "item-2-text"
+      ]
+    },
+    "item-2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. MiroFish Comparison Page",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-growth",
+        "badge-small-2"
+      ]
+    },
+    "badge-growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge-small-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item-2-text": {
+      "type": "Text",
+      "props": {
+        "text": "docs/VERSUS.md captures peak 'MiroFish alternative' search traffic while MiroFish is viral this week. Factual comparison of MiroShark vs MiroFish vs OASIS: license, pricing, self-host, provenance, API depth.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-3-heading",
+        "item-3-badges",
+        "item-3-text"
+      ]
+    },
+    "item-3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Korean (KO) UI Locale",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-community",
+        "badge-small-3"
+      ]
+    },
+    "badge-community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge-small-3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item-3-text": {
+      "type": "Text",
+      "props": {
+        "text": "README already shows 4/5 languages live (EN · 中文 · 日本語 · Français). Korean clears the Sep 1 language hyperstition entirely — 5.3M GitHub users, Korea AI Safety Institute hook, zero encoding edge cases.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-4-heading",
+        "item-4-badges",
+        "item-4-text"
+      ]
+    },
+    "item-4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Social Preview Card",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-content-2",
+        "badge-small-4"
+      ]
+    },
+    "badge-content-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Content",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge-small-4": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item-4-text": {
+      "type": "Text",
+      "props": {
+        "text": "1280×640 SVG for GitHub's social preview setting — makes every shared repo URL show a branded link preview instead of GitHub's generic card. Direct support for the GitHub Trending hyperstition (filed today).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-5-heading",
+        "item-5-badges",
+        "item-5-text"
+      ]
+    },
+    "item-5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Short URL Service",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-feature",
+        "badge-small-5"
+      ]
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge-small-5": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item-5-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /s/{8chars} compresses 62-char share URLs to 26. Enables tweet-friendly links, readable QR codes, slide-embeddable URLs. Adds short_url field to signal.json and reproduce.json.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "story-link-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-08.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
