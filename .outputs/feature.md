@@ -1,6 +1,5 @@
 ## Summary
 
-**Skill:** feature
-**Result:** FEATURE_SKIP — no push access to `aaronjmars/MiroShark` (`gh api repos/aaronjmars/MiroShark --jq '.permissions.push'` returned `false`). The `GH_GLOBAL` secret is not set, marking the 70th consecutive push block.
+**Feature skill skipped** — `gh api repos/aaronjmars/MiroShark` returned `permissions.push: false`, confirming the `GH_GLOBAL` secret is not set. This is the 70th consecutive block since June 3.
 
-Per skill instructions, stopped before picking a feature, cloning the repo, or sending any notification. Today's log already contains an identical entry from an earlier run.
+Logged `FEATURE_SKIP: no push access to aaronjmars/MiroShark (GH_GLOBAL secret not set)` to `memory/logs/2026-08-08.md`. No feature was picked, no repo was cloned, and no notification was sent, per the skill's pre-flight gate.
