@@ -29,6 +29,8 @@ If `${var}` is empty, pick from the angle categories below. **Never repeat an an
 
 ## Steps
 
+0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a `## Project Lens` entry with `Notification sent: yes`, and `${var}` is empty (no explicit angle requested), log `PROJECT_LENS_RERUN_QUIET: article already written today — skipping to avoid duplicate research and notifications` to `memory/logs/${today}.md` and **stop here** — do NOT re-fetch repo data, pick a new angle, run WebSearch queries, or re-send the notification. This prevents wasted WebSearch/WebFetch queries and duplicate articles when the scheduler dispatches the skill twice.
+
 1. **Understand the project's current state** — read recent articles, push-recaps, and repo metadata:
    ```bash
    gh api repos/owner/repo --jq '{name, description, stargazers_count, forks_count, open_issues_count, updated_at}'
