@@ -1,0 +1,188 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "heading-date",
+        "text-status",
+        "skills-section",
+        "stat-failures",
+        "separator-1",
+        "stalled-section",
+        "summary-text"
+      ]
+    },
+    "heading-date": {
+      "type": "Heading",
+      "props": {
+        "text": "Heartbeat — 2026-08-09",
+        "level": "h2"
+      }
+    },
+    "text-status": {
+      "type": "Text",
+      "props": {
+        "text": "All 8 expected Sunday skills ran cleanly",
+        "variant": "lead"
+      }
+    },
+    "skills-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skills-heading",
+        "skills-grid"
+      ]
+    },
+    "skills-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skills Executed",
+        "level": "h4"
+      }
+    },
+    "skills-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "sm"
+      },
+      "children": [
+        "badge-token-report",
+        "badge-fetch-tweets",
+        "badge-repo-pulse",
+        "badge-feature",
+        "badge-push-recap",
+        "badge-repo-article",
+        "badge-skill-leaderboard",
+        "badge-memory-flush"
+      ]
+    },
+    "badge-token-report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "default"
+      }
+    },
+    "badge-fetch-tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "default"
+      }
+    },
+    "badge-repo-pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "default"
+      }
+    },
+    "badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "default"
+      }
+    },
+    "badge-push-recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "default"
+      }
+    },
+    "badge-repo-article": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article",
+        "variant": "default"
+      }
+    },
+    "badge-skill-leaderboard": {
+      "type": "Badge",
+      "props": {
+        "text": "skill-leaderboard",
+        "variant": "default"
+      }
+    },
+    "badge-memory-flush": {
+      "type": "Badge",
+      "props": {
+        "text": "memory-flush",
+        "variant": "default"
+      }
+    },
+    "stat-failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive Failures (across 13 skills)",
+        "value": "0",
+        "trend": "neutral"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stalled-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stalled-heading",
+        "stalled-prs-stack"
+      ]
+    },
+    "stalled-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled PRs",
+        "level": "h4"
+      }
+    },
+    "stalled-prs-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-49",
+        "pr-50"
+      ]
+    },
+    "pr-49": {
+      "type": "Text",
+      "props": {
+        "text": "PR #49 (3 days) — improve: use 72h stale threshold for improve: PRs in heartbeat"
+      }
+    },
+    "pr-50": {
+      "type": "Text",
+      "props": {
+        "text": "PR #50 (~30h) — improve: add same-day rerun dedup to project-lens skill"
+      }
+    },
+    "summary-text": {
+      "type": "Text",
+      "props": {
+        "text": "No missing skills, no open issues.",
+        "variant": "muted"
+      }
+    }
+  }
+}
