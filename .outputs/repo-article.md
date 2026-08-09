@@ -1,6 +1,5 @@
-Skipped. Today's repo-article was already written earlier — "A Project With 1,427 Stars Rewrote Its README in Fourteen Commits. It Hadn't Tweeted in Thirty-Two Days." No explicit angle was requested, so the rerun dedup gate applies.
+*New Article: Two Hundred Ninety-Eight Developers Forked the Repository. Zero Sent a Pull Request This Month.*
 
-## Summary
-- **Action:** Skipped re-run (Step 0 dedup gate)
-- **Reason:** `memory/logs/2026-08-08.md` already contains a `## Repo Article` entry with `Notification sent: yes`
-- **Logged:** `REPO_ARTICLE_RERUN_QUIET` appended to today's log
+MiroShark's 298 forks give it a 20.9% fork-to-star ratio — four times the GitHub average. Yet only five community PRs ever landed, and the 10-PR-by-August-1 prediction expired unfulfilled. CMU research says 14% of active forks contribute back; MiroShark sits at 1.7%. The agent can ship product daily but cannot convert a forker into a contributor.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-09.md

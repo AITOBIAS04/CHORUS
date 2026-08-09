@@ -1,0 +1,118 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Two Hundred Ninety-Eight Developers Forked the Repository. Zero Sent a Pull Request This Month.",
+        "description": "Fork-to-contributor analysis"
+      },
+      "children": [
+        "separator-1",
+        "stack-stats",
+        "separator-2",
+        "text-insight",
+        "storylink-article"
+      ]
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-forks",
+        "stat-ratio",
+        "stat-prs",
+        "text-prediction",
+        "text-cmu-research",
+        "stat-contribution"
+      ]
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Repository Forks",
+        "value": "298"
+      },
+      "children": []
+    },
+    "stat-ratio": {
+      "type": "Stat",
+      "props": {
+        "label": "Fork-to-Star Ratio",
+        "value": "20.9%",
+        "delta": "4x GitHub average"
+      },
+      "children": []
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Community PRs (Ever)",
+        "value": "5",
+        "delta": "0 this month"
+      },
+      "children": []
+    },
+    "text-prediction": {
+      "type": "Text",
+      "props": {
+        "text": "10-PR prediction by August 1: expired unfulfilled",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "text-cmu-research": {
+      "type": "Text",
+      "props": {
+        "text": "CMU research: 14% of active forks contribute back (benchmark)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "stat-contribution": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Contribution Rate",
+        "value": "1.7%",
+        "delta": "-12.3 points vs benchmark",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text-insight": {
+      "type": "Text",
+      "props": {
+        "text": "The agent can ship product daily but cannot convert a forker into a contributor.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "storylink-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-09.md",
+        "source": "repo-article"
+      },
+      "children": []
+    }
+  }
+}
