@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-08-05*
+*Last consolidated: 2026-08-09*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -25,12 +25,12 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-08-09 | token-report | $0.000002528 (−1.91% 24h); FDV $252K; LP $248K; vol $1,488; 7-session vol collapse 99.4% ($233K→$1.5K); 33-day social silence |
+| 2026-08-08 | token-report | $0.000002510 (−2.78% 24h); FDV $251K; LP $250K; vol $5,662; 6th consecutive vol decline; 32-day social silence |
+| 2026-08-07 | token-report | $0.000002532 (+1.92% 24h); FDV $253K; LP $251K; vol $5,435; 5th consecutive vol decline; 31-day social silence |
 | 2026-08-05 | push-recap | README visual overhaul; 14 substantive commits; 30 files +538/−228; animated SVG hero (156-line pipeline flow); CSS micro-animations; 11 new brand images; 14 SVG pill buttons; cryptography 50.0.0 |
 | 2026-08-05 | token-report | $0.000003004 (+16.73% 24h); FDV $300,353; LP $266,135; vol $29,282; 29-day social silence; +84.0% above ATL; −93.1% ATH |
 | 2026-08-04 | push-recap | MiroShark: Noelclaw ecosystem removal (PRs #266/#267); miroshark-aeon: CI secret-exfil fix + Fleet Watcher removal; 5 files +12/−116 |
-| 2026-08-04 | token-report | $0.000002630 (−36.1% 24h); FDV $269,849; LP $251,872; vol $57,296; post-rally hangover; MEV activity 0x599c5aab; 28-day social silence |
-| 2026-08-03 | weekly-shiplog | Atlas Cloud PR #259; Holdings skill; Claude 5 migration; Telegram security hardening PR #123; 2 CVEs (postcss, sharp); MCP 2.0 pin; ~21 commits, 13 PRs, 57 files +1,442/−1,183 |
-| 2026-08-03 | push-recap | dependabot: axios 1.19.0, Vite 8.2.0; 2 files +128/−213 |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -51,7 +51,6 @@
 
 ## Lessons Learned
 *(older entries archived to [memory/topics/lessons-archive.md](topics/lessons-archive.md))*
-- repo-article cron `"0 16 */2 * 0,2,4,6"` AND semantics between DOM and DOW halves output from ~4/week to ~2/week; original fix PR #28 (2026-07-08) went DIRTY from cron-state conflicts; re-applied as PR #32 (2026-07-16) with targeted staging to `"0 16 * * 0,2,4,6"`
 - fetch-tweets WebSearch fallback burns 6–7 queries per run with zero results (10 consecutive empty days Jul 7–16); original cap PR #27 went DIRTY; re-applied as PR #33 (2026-07-16) — max 3 queries per execution with diversity guidance (broad, date-constrained, variant)
 - fetch-tweets notification suppression hides prolonged monitoring blindness — 12 consecutive empty days (Jul 7–18) with zero operator alerts; fixed with 7-day escalation cadence in step 5 (original PR #34 went DIRTY from volatile files; re-applied as PR #35, 2026-07-18)
 - Repo-article lacked same-day rerun dedup — re-runs within the same day re-analyzed and overwrote earlier articles (observed Jul 21, two runs at 16:01 + 17:43 UTC); PR #37 went DIRTY from volatile files; re-applied as PR #39 (2026-07-22) with Step 0 dedup gate — skips when log entry exists and no explicit angle requested
@@ -66,10 +65,11 @@
 - Hyperstitions-ideas lacked same-day rerun dedup — scheduler double-dispatch on Aug 1 (10:11 + 11:46 UTC) generated two distinct predictions and sent two notifications; fixed with Step 0 dedup gate (self-improve PR #46, 2026-08-02)
 - Repo-actions lacked same-day rerun dedup — highest-risk unprotected skill (generates 5 ideas + article + notification per run); audit of all skills found 8 without dedup; repo-actions prioritized as highest-impact/lowest-effort fix (self-improve PR #47, 2026-08-04)
 - Self-improve itself lacked rerun dedup — scheduler double-dispatch on Aug 2 created two separate PRs (#45 and #46) for different improvements; most expensive duplication (branch + commit + push + PR per run); fixed with Step 0 dedup gate checking for existing log entry with PR: or Notification sent: yes (self-improve PR #48, 2026-08-04)
+- Project-lens lacked same-day rerun dedup — 3–5 WebSearch + 1–2 WebFetch per run risked double-dispatch triggering a second full research pipeline with a different angle, overwriting the article, and sending a duplicate notification; fixed with Step 0 dedup gate (self-improve PR #50, 2026-08-08)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000003004 as of 2026-08-05 (+16.73% 24h; FDV $300,353; LP $266,135; vol $29,282; 29-day social silence (Jul 7–Aug 5); ATL $0.0000016327 set Jul 18; +84.0% above ATL; −93.1% ATH)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000002528 as of 2026-08-09 (−1.91% 24h; FDV $252,825; LP $248,440; vol $1,488; 33-day social silence (Jul 7–Aug 9); ATL $0.0000016327 set Jul 18; +54.8% above ATL; −94.2% ATH)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
 - Hyperstition: Will $MIROSHARK LP depth exceed $1M by July 1, 2026? (filed 2026-05-16) — CLEARED 2026-05-20; LP at $1.02M (first sustained $1M+)
 - Hyperstition: Will MiroShark receive 10 merged PRs from community contributors (non-bot, non-core-team) by August 1, 2026? (filed 2026-05-23) — NOT CLEARED (deadline passed Aug 1, 2026; 5/10 PRs reached)
@@ -87,7 +87,7 @@
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (69th consecutive block as of Aug 6; all features from Jun 3 onward stuck as local commits)
+- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (71st consecutive block as of Aug 9; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-08-08): Tutorial Seed Kit (#1), MiroFish Comparison Page (#2), Korean (KO) UI Locale (#3), Social Preview Card SVG (#4), Simulation Short URL Service (#5)
@@ -95,4 +95,3 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Feature candidates (repo-actions 2026-08-04): GraphML/GEXF Agent Mention Export (#1), CITATION.cff + docs/CITING.md (#2), Per-Round Webhook Events (#3), Ecosystem Project Health API (#4), Feature Spec Issue Publisher (#5)
 - Feature candidates (repo-actions 2026-08-02): Product Hunt Launch Kit (#1), miro doctor CLI Health Command (#2), Italian (IT) UI Locale (#3), Interactive API Documentation / ReDoc (#4), Simulation Comparison API (#5)
 - Feature candidates (repo-actions 2026-07-30): German (DE) UI Locale (#1), TypeScript/JavaScript Client SDK (#2), Simulation RSS/Atom Feed (#3), CLI Live Progress Display (#4), Batch Simulation API (#5)
-- Feature candidates (repo-actions 2026-07-28): Good First Issue Sprint (#1), Show HN Launch Kit (#2), Spanish (ES) UI Locale (#3), Academic Citation Helper (#4), Python SDK miroshark-py (#5)

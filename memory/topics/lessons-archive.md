@@ -27,6 +27,10 @@
 - DeepSeek-V4-Flash produces trailing-garbage JSON causing 10–20% silent action drops in SocialAgent; `repair_tool_call_arguments()` + `_handle_batch_response()` override in backend fixes it (PR #241 by Daniel Andersen, 2026-07-07)
 - repo-article cron `"0 16 */2 * 0,2,4,6"` creates 8-day gaps via AND semantics between day-of-month and day-of-week; use DOW-only `"0 16 * * 0,2,4,6"` for consistent 1-2 day cadence (self-improve PR #28, 2026-07-08)
 
+## Archived 2026-08-09
+
+- repo-article cron `"0 16 */2 * 0,2,4,6"` AND semantics between DOM and DOW halves output from ~4/week to ~2/week; original fix PR #28 (2026-07-08) went DIRTY from cron-state conflicts; re-applied as PR #32 (2026-07-16) with targeted staging to `"0 16 * * 0,2,4,6"`
+
 ## Archived 2026-08-05
 
 - Self-improve PRs consistently go DIRTY within hours because `git add -A` includes volatile cron-generated files (memory/logs/, .outputs/, dashboard/outputs/, memory/token-usage.csv); fix: use targeted `git add <files>` for only improvement files (self-improve PR #29, 2026-07-10)
