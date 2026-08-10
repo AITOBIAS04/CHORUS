@@ -1,0 +1,173 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog"
+      },
+      "children": [
+        "heading_main",
+        "text_hook",
+        "sep1",
+        "heading_shipped",
+        "stack_shipped",
+        "sep2",
+        "heading_stats",
+        "grid_stats",
+        "sep3",
+        "storylink_full"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Weekly Shiplog — 2026-08-10",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_hook": {
+      "type": "Text",
+      "props": {
+        "text": "The README got a makeover; the token got a hangover.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_shipped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item_readme",
+        "item_ecosystem",
+        "item_security",
+        "item_agents"
+      ]
+    },
+    "item_readme": {
+      "type": "Text",
+      "props": {
+        "text": "Visual-first README overhaul — 14-commit sprint rebuilt the entire landing page with animated SVG hero, custom pill buttons, brand images, and CSS micro-animations"
+      },
+      "children": []
+    },
+    "item_ecosystem": {
+      "type": "Text",
+      "props": {
+        "text": "Ecosystem cleanup — Noelclaw removed from catalog (2 PRs, drift-guard test caught the inconsistency)"
+      },
+      "children": []
+    },
+    "item_security": {
+      "type": "Text",
+      "props": {
+        "text": "CI security hardening — secret-exfil signature eliminated, Fleet Watcher dead code removed (~100 lines)"
+      },
+      "children": []
+    },
+    "item_agents": {
+      "type": "Text",
+      "props": {
+        "text": "4 agent self-improve PRs merged — rerun dedup for repo-actions, self-improve, project-lens + heartbeat threshold fix"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "stat_commits",
+        "stat_prs",
+        "stat_lines",
+        "stat_stars"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "22"
+      },
+      "children": []
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs Merged",
+        "value": "19"
+      },
+      "children": []
+    },
+    "stat_lines": {
+      "type": "Text",
+      "props": {
+        "text": "Lines: +764 / -644"
+      },
+      "children": []
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,428",
+        "delta": "+15",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "storylink_full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full weekly shiplog",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-10.md",
+        "source": "CHORUS"
+      },
+      "children": []
+    }
+  }
+}

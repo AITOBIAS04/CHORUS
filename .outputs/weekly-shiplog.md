@@ -1,12 +1,12 @@
-*Weekly Shiplog — 2026-08-03*
+*Weekly Shiplog — 2026-08-10*
 
-A community contributor shipped an Atlas Cloud provider preset (PR #259) — first feature PR from a fork in months. The agent learned to check its own wallet on-chain, migrated to Claude 5, and patched two high-severity CVEs.
+The README got a makeover; the token got a hangover.
 
 Shipped:
-- Atlas Cloud preset — community PR, 5 files, 153 test lines
-- Holdings skill — on-chain wallet balance queries via public Base RPC
-- Claude 5 migration — default model + gateway remaps updated
-- Telegram security — owner-user gate + button suppression in public groups
+- Visual-first README overhaul — 14-commit sprint rebuilt the entire landing page with animated SVG hero, custom pill buttons, brand images, and CSS micro-animations
+- Ecosystem cleanup — Noelclaw removed from catalog (2 PRs, drift-guard test caught the inconsistency)
+- CI security hardening — secret-exfil signature eliminated, Fleet Watcher dead code removed (~100 lines)
+- 4 agent self-improve PRs merged — rerun dedup for repo-actions, self-improve, project-lens + heartbeat threshold fix
 
-Stats: 21 commits, 13 PRs merged, +1,442/-1,183 lines
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-03.md
+Stats: 22 commits, 19 PRs merged, +764/-644 lines, +15 stars (1,413→1,428)
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-10.md
