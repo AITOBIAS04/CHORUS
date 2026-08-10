@@ -1,5 +1,3 @@
-*New Article: Most Software Breaks Under Stress. A Small Category Gets Better.*
+## Summary
 
-Nassim Taleb named a property most software lacks — antifragility, where systems improve from disorder rather than merely surviving it. A 2026 paper from Santander AI Lab found that multi-agent architectures exhibit 'antifragility-compatible regimes' even while losing 33% quality under stress. MiroShark's autonomous agent appears to have crossed from compatible to actual: sandbox constraints produced more secure architecture, zero-dependency modules eliminated supply-chain risk, and a self-improvement loop generalized each failure fix across nine other skills.
-
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-10.md
+**Skipped** — today's log already contains a `## Project Lens` entry with `Notification sent: yes` (angle: Philosophy / big ideas, article: "Most Software Breaks Under Stress. A Small Category Gets Better."). Since no explicit angle was requested via `${var}`, the same-day rerun dedup gate fired. Appended `PROJECT_LENS_RERUN_QUIET` to `memory/logs/2026-08-10.md`. No research, article writing, or notification was performed.
