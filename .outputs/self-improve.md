@@ -1,14 +1,15 @@
-*Agent Self-Improvement — 2026-08-08*
+*Agent Self-Improvement — 2026-08-10*
 
-Added same-day rerun dedup to the project-lens skill — the last high-frequency skill without this protection.
+Added same-day rerun dedup to the fetch-tweets skill. When scheduler double-dispatch triggers a second run on the same day, the skill now checks for an existing log entry and stops immediately — saving 3 wasted WebSearch queries (or 1 xAI API call).
 
-project-lens runs 3x/week and is the most expensive unprotected skill per run (3-5 WebSearch queries, 1-2 WebFetch requests, GitHub API call, notification). On scheduler double-dispatch, it would pick a different angle, run a full research pipeline, overwrite the first article, and send a duplicate notification. The agent handled this informally by noticing the article exists, but without explicit instructions it depended on agent judgment.
+Also merged two stale improve PRs: #49 (72h heartbeat stale-PR threshold) and #50 (project-lens rerun dedup).
 
-Why: Continuing the rerun dedup rollout across all enabled skills. 7 of 13 enabled skills already have this gate. project-lens was the highest-impact remaining target — most web queries per run, runs most frequently among unprotected skills.
+Why: Audit of all 13 enabled skills found fetch-tweets as the highest-frequency daily skill still lacking rerun dedup. Double-dispatch was already observed on token-report (Aug 1–2), hyperstitions-ideas (Aug 1), and repo-actions — fetch-tweets was next in line. Content-level dedup prevented duplicate reports but not the wasted API calls.
 
 What changed:
-- skills/project-lens/SKILL.md: Added Step 0 — checks for existing Project Lens entry with Notification sent: yes in today's log before doing any work. Matches the pattern in token-report, repo-article, repo-actions, repo-pulse, push-recap, hyperstitions-ideas, and self-improve.
+- skills/fetch-tweets/SKILL.md: Added Step 0 rerun dedup gate — checks today's log for existing entry before executing search pipeline
 
-Impact: Prevents wasted WebSearch/WebFetch queries and duplicate notifications on double-dispatch days. 8 of 13 enabled skills now have formal rerun dedup.
+Impact: Eliminates 3 wasted WebSearch queries per double-dispatch event. This is the 9th skill to receive this fix — only feature, weekly-shiplog, skill-leaderboard, and memory-flush remain unprotected.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/50
+Merged PRs: #49 (heartbeat stale-PR threshold), #50 (project-lens rerun dedup)
+PR: https://github.com/AITOBIAS04/CHORUS/pull/51
