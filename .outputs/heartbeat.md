@@ -1,9 +1,9 @@
-**HEARTBEAT_OK** — all 10 expected skills for Monday Aug 10 confirmed, no stalled PRs (PR #51 is an `improve:` PR at ~5h, well within the 72h threshold), no open issues, all `consecutive_failures = 0`. No notification needed.
+HEARTBEAT_OK. All 13 skills are healthy, all 10 expected Monday skills ran, PR #51 is within its 72h threshold, no open issues or escalations. Rerun entry logged.
 
 ## Summary
 
-- Read memory, cron-state, today's and yesterday's logs, issues index, aeon.yml, and queried GitHub
-- Verified all 10 scheduled skills ran as expected today (Mon Aug 10)
-- PR #51 exists but is only ~5h old — `improve:` threshold is 72h, not stalled
-- No open memory issues, no escalations
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-08-10.md`
+- **System health:** All skills at 0 consecutive failures — no systemic issues.
+- **Skills:** All 10 expected for Monday Aug 10 confirmed (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, weekly-shiplog, project-lens, heartbeat).
+- **PRs:** PR #51 (`improve:` prefix, ~5h old) — within 72h threshold, not stalled.
+- **Issues:** None open; no escalations.
+- **Action:** Logged rerun entry to `memory/logs/2026-08-10.md`. No notification sent.
