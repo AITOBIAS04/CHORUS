@@ -66,6 +66,7 @@
 - Repo-actions lacked same-day rerun dedup — highest-risk unprotected skill (generates 5 ideas + article + notification per run); audit of all skills found 8 without dedup; repo-actions prioritized as highest-impact/lowest-effort fix (self-improve PR #47, 2026-08-04)
 - Self-improve itself lacked rerun dedup — scheduler double-dispatch on Aug 2 created two separate PRs (#45 and #46) for different improvements; most expensive duplication (branch + commit + push + PR per run); fixed with Step 0 dedup gate checking for existing log entry with PR: or Notification sent: yes (self-improve PR #48, 2026-08-04)
 - Project-lens lacked same-day rerun dedup — 3–5 WebSearch + 1–2 WebFetch per run risked double-dispatch triggering a second full research pipeline with a different angle, overwriting the article, and sending a duplicate notification; fixed with Step 0 dedup gate (self-improve PR #50, 2026-08-08)
+- Fetch-tweets lacked same-day rerun dedup — 3 WebSearch queries per run (or 1 xAI API call); content-level dedup prevented duplicate reports but not wasted API calls; fixed with Step 0 dedup gate (self-improve PR #51, 2026-08-10)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
