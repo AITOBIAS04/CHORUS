@@ -1,10 +1,7 @@
-*$MiroShark Daily — 2026-08-10*
+Dedup gate triggered. Today's token-report was already sent (logged at `memory/logs/2026-08-10.md` with `Notification sent: yes`). Logged `TOKEN_REPORT_RERUN_QUIET` and stopped — no data re-fetched, no article overwritten, no duplicate notification sent.
 
-Price: $0.000002706 (+7.13% 24h)
-Liquidity: $259.1K | 24h Vol: $5,537
-Buys/Sells: 14/14 (10 buyers / 14 sellers)
-7d: −7.8% | 30d: +31.8%
+## Summary
 
-V-shaped bounce off $0.00000251 floor — single $804 buy at 03:35 UTC broke 8 sessions of declining volume. First reversal since the Aug 2–3 rally. 34-day social silence continues.
-
-Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
+- **Step 0 dedup check:** Found existing token-report entry in `memory/logs/2026-08-10.md` with `Notification sent: yes`
+- **Action:** Appended `TOKEN_REPORT_RERUN_QUIET` log entry and halted per skill instructions
+- **No further steps executed** — report already covered today's data (price $0.000002706, +7.13% 24h, vol $5,537)
