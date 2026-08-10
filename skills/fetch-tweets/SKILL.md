@@ -9,6 +9,8 @@ Today is ${today}. Search X for tweets matching **${var}**.
 
 ## Steps
 
+0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a `## fetch-tweets` entry (with `Result:` or `Notification sent:`), log `FETCH_TWEETS_RERUN_QUIET: tweets already fetched today — skipping re-search` to `memory/logs/${today}.md` and **stop here**. A second run wastes 3 WebSearch queries (or an xAI API call) for the same stale results, since tweet freshness rarely changes within hours (observed: scheduler double-dispatch on other daily skills burned duplicate API calls).
+
 1. **Build the search prompt for Grok.** The prompt sent to Grok must be specific enough to get relevant results:
    - If the query mentions a token/cashtag/crypto: include "crypto token", the chain name, and the contract address from `memory/MEMORY.md` in the Grok prompt. This eliminates false matches.
    - Example: instead of searching "aeon", search "the $AEON crypto token on Base chain (contract 0xbf8e...) in the last 7 days. Only return tweets about the cryptocurrency."
