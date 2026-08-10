@@ -1,0 +1,328 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-08-10"
+      },
+      "children": [
+        "stack_ideas",
+        "separator_final",
+        "link_full"
+      ]
+    },
+    "stack_ideas": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stack_idea_1",
+        "separator_1",
+        "stack_idea_2",
+        "separator_2",
+        "stack_idea_3",
+        "separator_3",
+        "stack_idea_4",
+        "separator_4",
+        "stack_idea_5"
+      ]
+    },
+    "stack_idea_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_idea_1",
+        "badges_stack_1",
+        "text_idea_1"
+      ]
+    },
+    "heading_idea_1": {
+      "type": "Heading",
+      "props": {
+        "text": "Portuguese (PT-BR) Locale",
+        "level": "h3"
+      }
+    },
+    "badges_stack_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_category_1",
+        "badge_size_1"
+      ]
+    },
+    "badge_category_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      }
+    },
+    "badge_size_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "text_idea_1": {
+      "type": "Text",
+      "props": {
+        "text": "Clears the 5-language hyperstition (4/5→5/5) with 22 days to spare before Sep 1 deadline; Brazil's 1.3M+ GitHub users + Marco Legal de IA regulatory hook; no encoding complexity.",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_idea_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_idea_2",
+        "badges_stack_2",
+        "text_idea_2"
+      ]
+    },
+    "heading_idea_2": {
+      "type": "Heading",
+      "props": {
+        "text": "Fork Activation Guide",
+        "level": "h3"
+      }
+    },
+    "badges_stack_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_category_2",
+        "badge_size_2"
+      ]
+    },
+    "badge_category_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      }
+    },
+    "badge_size_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "text_idea_2": {
+      "type": "Text",
+      "props": {
+        "text": "docs/FORK_GUIDE.md with 10+ concrete build ideas at three difficulty tiers and a PR checklist; directly targets the 3-community-PRs-by-Sep-15 hyperstition (1/3, 36 days left).",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_idea_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_idea_3",
+        "badges_stack_3",
+        "text_idea_3"
+      ]
+    },
+    "heading_idea_3": {
+      "type": "Heading",
+      "props": {
+        "text": "CSV + Markdown Export",
+        "level": "h3"
+      }
+    },
+    "badges_stack_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_category_3",
+        "badge_size_3"
+      ]
+    },
+    "badge_category_3": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge_size_3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "text_idea_3": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/export?format=csv|markdown — structured output for the Aug 15 tutorial deadline (0/5, 5 days); tutorial writers paste the Markdown table directly into posts without screenshots.",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_idea_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_idea_4",
+        "badges_stack_4",
+        "text_idea_4"
+      ]
+    },
+    "heading_idea_4": {
+      "type": "Heading",
+      "props": {
+        "text": "GitHub Actions Integration Example",
+        "level": "h3"
+      }
+    },
+    "badges_stack_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_category_4",
+        "badge_size_4"
+      ]
+    },
+    "badge_category_4": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      }
+    },
+    "badge_size_4": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "text_idea_4": {
+      "type": "Text",
+      "props": {
+        "text": "examples/github-actions-simulate.yml + docs/CI_INTEGRATION.md — makes MiroShark a CI/CD opinion simulation layer; drop-in template for 298 fork holders who run GitHub Actions; generates compelling tutorial content.",
+        "variant": "body"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_idea_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_idea_5",
+        "badges_stack_5",
+        "text_idea_5"
+      ]
+    },
+    "heading_idea_5": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Quality Score",
+        "level": "h3"
+      }
+    },
+    "badges_stack_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_category_5",
+        "badge_size_5"
+      ]
+    },
+    "badge_category_5": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge_size_5": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "text_idea_5": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/quality — four-dimension score (completion, consensus, diversity, reproducibility) with A–F grade; enables Demo Library curation and gives tutorial writers a programmatic 'is this worth writing about?' signal.",
+        "variant": "body"
+      }
+    },
+    "separator_final": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-10.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
