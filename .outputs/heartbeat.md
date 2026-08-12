@@ -1,8 +1,9 @@
-HEARTBEAT_OK. All 7 expected skills for Tuesday Aug 11 ran successfully. No missing skills, no stalled PRs beyond threshold, no open issues. Log entry appended.
+HEARTBEAT_OK. All 10 Wednesday skills ran successfully, no stalled PRs, no open issues, no notifications needed.
 
 ## Summary
 
-- **System health:** All skills `consecutive_failures: 0` — no systemic failure
-- **Skills confirmed:** token-report, fetch-tweets, repo-pulse, feature (SKIP/GH_GLOBAL), push-recap, repo-article — all ran as scheduled
-- **Notable signals:** 35-day social silence; 73rd consecutive feature push block (GH_GLOBAL still unset); PR #51 (`improve:`) at 29h, within 72h auto-merge window
-- **Action taken:** None required — logged HEARTBEAT_OK to `memory/logs/2026-08-11.md`
+- **System health:** All skills at 0 consecutive failures — clean.
+- **Skills coverage:** All 10 Wednesday-scheduled skills completed (token-report through memory-flush); heartbeat is this run.
+- **PRs:** #51 (fetch-tweets dedup, ~53h) and #52 (weekly-shiplog dedup, ~5h) both within the 72h `improve:` threshold — not stalled.
+- **Issues:** None open, none escalating.
+- **Action taken:** Logged `HEARTBEAT_OK` to `memory/logs/2026-08-12.md`. No notification sent.
