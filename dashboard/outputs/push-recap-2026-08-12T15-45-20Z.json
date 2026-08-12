@@ -1,0 +1,221 @@
+{
+  "root": "card_push_recap",
+  "state": {},
+  "elements": {
+    "card_push_recap": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-12"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_main",
+        "text_repos",
+        "sep1",
+        "alert_security",
+        "sep2",
+        "heading_hygiene",
+        "text_hygiene",
+        "stat_files_cleaned",
+        "text_gitignore",
+        "sep3",
+        "heading_token",
+        "text_token_verdict",
+        "stat_price",
+        "stat_volume",
+        "stat_whales",
+        "text_token_band",
+        "sep4",
+        "heading_key_changes",
+        "text_key1",
+        "text_key2",
+        "text_key3",
+        "sep5",
+        "heading_stats",
+        "text_stats",
+        "sep6",
+        "link_full_recap"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Push Recap — 2026-08-12",
+        "level": "h1"
+      }
+    },
+    "text_repos": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 1 substantive commit | miroshark-aeon — 2 substantive commits (9 automation filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_security": {
+      "type": "Alert",
+      "props": {
+        "title": "Security Patch",
+        "message": "nanoid bumped 3.3.16 → 3.3.18 via Dependabot PR #286, closing published advisories on the frontend's transitive dependency chain. Lockfile-only — no app code touched.",
+        "type": "success"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_hygiene": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Hygiene",
+        "level": "h2"
+      }
+    },
+    "text_hygiene": {
+      "type": "Text",
+      "props": {
+        "text": "Operator cleaned 21 leaked scratch files from the agent repo root — xAI API responses, shiplog/tokenmetrics/notify tmp files that skills committed via git add -A. Added .gitignore rules to prevent recurrence."
+      }
+    },
+    "stat_files_cleaned": {
+      "type": "Stat",
+      "props": {
+        "value": "21",
+        "label": "Scratch Files Cleaned"
+      }
+    },
+    "text_gitignore": {
+      "type": "Text",
+      "props": {
+        "text": ".gitignore rules added: /.xai-*, /tmp-*",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_token": {
+      "type": "Heading",
+      "props": {
+        "text": "Token Monitoring",
+        "level": "h2"
+      }
+    },
+    "text_token_verdict": {
+      "type": "Text",
+      "props": {
+        "text": "MIROSHARK daily report committed with QUIET verdict"
+      }
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "value": "−0.4%",
+        "label": "Price Change",
+        "trend": "down"
+      }
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "value": "$637",
+        "label": "Volume (0.13× 7d avg)"
+      }
+    },
+    "stat_whales": {
+      "type": "Stat",
+      "props": {
+        "value": "0",
+        "label": "Whale Trades"
+      }
+    },
+    "text_token_band": {
+      "type": "Text",
+      "props": {
+        "text": "Token consolidation continues in $0.0000025–0.0000027 band"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_key_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "text_key1": {
+      "type": "Text",
+      "props": {
+        "text": "• 21 scratch files purged from miroshark-aeon root + .gitignore hardened"
+      }
+    },
+    "text_key2": {
+      "type": "Text",
+      "props": {
+        "text": "• nanoid 3.3.16 → 3.3.18 (CVE fix, transitive dep)"
+      }
+    },
+    "text_key3": {
+      "type": "Text",
+      "props": {
+        "text": "• Token consolidation continues in $0.0000025–0.0000027 band"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "25 files changed, +47/−52 lines"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_full_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-12.md"
+      }
+    }
+  }
+}
