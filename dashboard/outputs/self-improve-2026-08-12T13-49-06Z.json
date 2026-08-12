@@ -1,0 +1,103 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "heading-title",
+        "text-intro",
+        "sep-1",
+        "heading-why",
+        "text-why",
+        "sep-2",
+        "heading-changed",
+        "text-changed",
+        "sep-3",
+        "heading-impact",
+        "text-impact",
+        "sep-4",
+        "pr-link"
+      ]
+    },
+    "heading-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Self-Improvement — 2026-08-12",
+        "level": "h2"
+      }
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Added same-day rerun dedup to weekly-shiplog skill. If the scheduler double-dispatches weekly-shiplog, the second run now exits immediately instead of re-fetching a full week of commits, overwriting the article, and sending a duplicate notification."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "Systematic audit of all 13 enabled skills found weekly-shiplog was the most compute-expensive skill still lacking this protection. All other high-compute skills already have it — this is the 10th skill to receive the fix."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "text-changed": {
+      "type": "Text",
+      "props": {
+        "text": "skills/weekly-shiplog/SKILL.md: Added Step 0 dedup gate — checks for existing Weekly Shiplog log entry before executing the pipeline"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents wasted API calls (7+ days of paginated commit fetching) and duplicate notifications on double-dispatch. Completes the rerun dedup rollout across all enabled content-producing skills."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #52",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/52",
+        "source": "GitHub"
+      }
+    }
+  }
+}

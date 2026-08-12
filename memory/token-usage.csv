@@ -745,3 +745,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-12,token-report,claude-sonnet-4-6,14,8467,616106,45424
 2026-08-12,repo-pulse,claude-sonnet-4-6,12,3783,445911,29613
 2026-08-12,feature,claude-opus-4-6,7,1335,220222,25255
+2026-08-12,self-improve,claude-opus-4-6,27,11231,1713118,60795
