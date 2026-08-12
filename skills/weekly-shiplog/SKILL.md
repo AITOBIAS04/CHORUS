@@ -10,6 +10,8 @@ Read memory/watched-repos.md for repos to cover.
 
 ## Steps
 
+0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a `## Weekly Shiplog` entry with `Article:` or `Notification sent:`, log `WEEKLY_SHIPLOG_RERUN_QUIET: shiplog already written today — skipping to avoid duplicate article and notification` to `memory/logs/${today}.md` and **stop here**. Double-dispatch would re-fetch 7 days of commits, re-read diffs, overwrite the article, and re-send the notification.
+
 1. **Gather the full week of activity** for each watched repo:
    ```bash
    # Commits from the last 7 days
