@@ -27,12 +27,12 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-08-12 | token-report | $0.000002576 (−0.49% 24h); FDV $257.6K; LP $249.1K; vol $637; 5/14 buys/sells; 10-session $0.0000025 floor hold; 36-day social silence |
+| 2026-08-11 | token-report | $0.000002586 (−4.74% 24h); FDV $258.6K; LP $248K; vol $522; V-bounce gave back all gains; 35-day social silence |
+| 2026-08-10 | token-report | $0.000002706 (+7.13% 24h); FDV $270.6K; LP $259K; vol $5,537; V-shaped bounce off $0.00000251 floor; 34-day social silence |
 | 2026-08-09 | token-report | $0.000002528 (−1.91% 24h); FDV $252K; LP $248K; vol $1,488; 7-session vol collapse 99.4% ($233K→$1.5K); 33-day social silence |
 | 2026-08-08 | token-report | $0.000002510 (−2.78% 24h); FDV $251K; LP $250K; vol $5,662; 6th consecutive vol decline; 32-day social silence |
-| 2026-08-07 | token-report | $0.000002532 (+1.92% 24h); FDV $253K; LP $251K; vol $5,435; 5th consecutive vol decline; 31-day social silence |
 | 2026-08-05 | push-recap | README visual overhaul; 14 substantive commits; 30 files +538/−228; animated SVG hero (156-line pipeline flow); CSS micro-animations; 11 new brand images; 14 SVG pill buttons; cryptography 50.0.0 |
-| 2026-08-05 | token-report | $0.000003004 (+16.73% 24h); FDV $300,353; LP $266,135; vol $29,282; 29-day social silence; +84.0% above ATL; −93.1% ATH |
-| 2026-08-04 | push-recap | MiroShark: Noelclaw ecosystem removal (PRs #266/#267); miroshark-aeon: CI secret-exfil fix + Fleet Watcher removal; 5 files +12/−116 |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -72,7 +72,7 @@
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000002528 as of 2026-08-09 (−1.91% 24h; FDV $252,825; LP $248,440; vol $1,488; 33-day social silence (Jul 7–Aug 9); ATL $0.0000016327 set Jul 18; +54.8% above ATL; −94.2% ATH)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000002576 as of 2026-08-12 (−0.49% 24h; FDV $257.6K; LP $249.1K; vol $637; 36-day social silence (Jul 7–Aug 12); ATL $0.0000016327 set Jul 18; +57.8% above ATL; −94.1% ATH)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
 - Hyperstition: Will $MIROSHARK LP depth exceed $1M by July 1, 2026? (filed 2026-05-16) — CLEARED 2026-05-20; LP at $1.02M (first sustained $1M+)
 - Hyperstition: Will MiroShark receive 10 merged PRs from community contributors (non-bot, non-core-team) by August 1, 2026? (filed 2026-05-23) — NOT CLEARED (deadline passed Aug 1, 2026; 5/10 PRs reached)

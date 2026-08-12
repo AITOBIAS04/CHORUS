@@ -1,0 +1,145 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-08-12"
+      },
+      "children": [
+        "price_section",
+        "sep1",
+        "metrics_section",
+        "sep2",
+        "ratio_section",
+        "sep3",
+        "periods_section",
+        "sep4",
+        "analysis",
+        "sep5",
+        "chart_link"
+      ]
+    },
+    "price_section": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000002576",
+        "delta": "-0.49%",
+        "trend": "down"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "metrics_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "liquidity_stat",
+        "volume_stat"
+      ]
+    },
+    "liquidity_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$249.1K"
+      }
+    },
+    "volume_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$637"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "ratio_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "buys_stat",
+        "sells_stat"
+      ]
+    },
+    "buys_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys",
+        "value": "5"
+      }
+    },
+    "sells_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Sells",
+        "value": "14"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "periods_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "period_7d",
+        "period_30d"
+      ]
+    },
+    "period_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "-1.2%",
+        "trend": "down"
+      }
+    },
+    "period_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "+26.1%",
+        "trend": "up"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "analysis": {
+      "type": "Text",
+      "props": {
+        "text": "Steady drift lower all session — no large-wallet catalyst, sell pressure light but persistent. Price holding above the $0.0000025 floor for 10 consecutive sessions.",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "chart_link": {
+      "type": "Link",
+      "props": {
+        "label": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
