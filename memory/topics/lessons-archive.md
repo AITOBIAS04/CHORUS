@@ -31,6 +31,11 @@
 
 - repo-article cron `"0 16 */2 * 0,2,4,6"` AND semantics between DOM and DOW halves output from ~4/week to ~2/week; original fix PR #28 (2026-07-08) went DIRTY from cron-state conflicts; re-applied as PR #32 (2026-07-16) with targeted staging to `"0 16 * * 0,2,4,6"`
 
+## Archived 2026-08-12
+
+- fetch-tweets WebSearch fallback burns 6–7 queries per run with zero results (10 consecutive empty days Jul 7–16); original cap PR #27 went DIRTY; re-applied as PR #33 (2026-07-16) — max 3 queries per execution with diversity guidance (broad, date-constrained, variant)
+- fetch-tweets notification suppression hides prolonged monitoring blindness — 12 consecutive empty days (Jul 7–18) with zero operator alerts; fixed with 7-day escalation cadence in step 5 (original PR #34 went DIRTY from volatile files; re-applied as PR #35, 2026-07-18)
+
 ## Archived 2026-08-05
 
 - Self-improve PRs consistently go DIRTY within hours because `git add -A` includes volatile cron-generated files (memory/logs/, .outputs/, dashboard/outputs/, memory/token-usage.csv); fix: use targeted `git add <files>` for only improvement files (self-improve PR #29, 2026-07-10)
