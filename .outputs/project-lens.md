@@ -1,3 +1,5 @@
-## Summary
+*New Article: In 1950, the Air Force Asked a Roomful of Experts How Many Bombs the Soviets Had. Then It Took Away the Room.*
 
-**Skipped** — today's log already contains a `## Project Lens` entry with `Notification sent: yes` (angle: Philosophy / big ideas, article: "Most Software Breaks Under Stress. A Small Category Gets Better."). Since no explicit angle was requested via `${var}`, the same-day rerun dedup gate fired. Appended `PROJECT_LENS_RERUN_QUIET` to `memory/logs/2026-08-10.md`. No research, article writing, or notification was performed.
+In 1950, RAND Corporation researchers invented the Delphi method — anonymous, iterative expert panels that turned individual opinions into collective intelligence. For seventy years the method remained locked behind its cost: weeks of expert recruitment, thousands of dollars per study. MiroShark carries the same architectural DNA — anonymous agents, multi-round deliberation, structured feedback — but automates what Delphi required a facilitator to do by hand, dropping the cost from five figures to one dollar. The article traces the lineage from Cold War bomb estimates to ten-minute opinion simulations, and argues the real shift is not cheaper consensus but visible disagreement.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-12.md
