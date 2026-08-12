@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-08-10*
-Generated from analysis of aaronjmars/MiroShark — five ideas that can be autonomously built by the feature skill.
+*Repo Action Ideas — 2026-08-12*
+Generated from analysis of aaronjmars/MiroShark (1,428 stars · 298 forks · 36-day social silence · 73rd push block). Three days to the Aug 15 tutorial deadline (0/5); 20 days to the Sep 1 language hyperstition (4/5).
 
-1. Portuguese (PT-BR) Locale (Community, Small)
-   Clears the 5-language hyperstition (4/5→5/5) with 22 days to spare before Sep 1 deadline; Brazil's 1.3M+ GitHub users + Marco Legal de IA regulatory hook; no encoding complexity.
+1. Spanish (ES-419) UI Locale (Community, Small)
+   Clears the 5-language hyperstition (5/5) with 20 days to spare — LATAM's 650M+ Spanish speakers, 4th-largest GitHub language, Spain AI Regulation hook. Frontend currently serves DE not JA (README discrepancy); ES establishes the clean 5th locale.
 
-2. Fork Activation Guide (Community, Small)
-   docs/FORK_GUIDE.md with 10+ concrete build ideas at three difficulty tiers and a PR checklist; directly targets the 3-community-PRs-by-Sep-15 hyperstition (1/3, 36 days left).
+2. Simulation Replay Stream (Feature, Medium)
+   SSE endpoint replays a completed simulation round-by-round at configurable speed — enables screen-recording for YouTube tutorials without re-running a live sim. Tutorial mode (?mode=tutorial) adds 0.5× speed + recording banner.
 
-3. CSV + Markdown Export (Feature, Small)
-   GET /api/simulation/{id}/export?format=csv|markdown — structured output for the Aug 15 tutorial deadline (0/5, 5 days); tutorial writers paste the Markdown table directly into posts without screenshots.
+3. Per-Agent Timeline API (Feature, Small)
+   GET /api/simulation/{id}/agents/{name}/timeline — one agent's full round-by-round journey with post excerpts, stance changes, and mentions received. Includes 'Agent Story' plain-text export for copy-paste narrative content in text tutorials.
 
-4. GitHub Actions Integration Example (DX, Small)
-   examples/github-actions-simulate.yml + docs/CI_INTEGRATION.md — makes MiroShark a CI/CD opinion simulation layer; drop-in template for 298 fork holders who run GitHub Actions; generates compelling tutorial content.
+4. Embed Light/Dark Theme Toggle (DX, Small)
+   ?theme=light on the embed URL renders white background + dark text — makes the embed native on Substack, Medium, Ghost, and any light-background platform. ?theme=auto respects the visitor's system preference.
 
-5. Simulation Quality Score (Feature, Small)
-   GET /api/simulation/{id}/quality — four-dimension score (completion, consensus, diversity, reproducibility) with A–F grade; enables Demo Library curation and gives tutorial writers a programmatic 'is this worth writing about?' signal.
+5. Simulation Atom Feed (Feature/Integration, Small)
+   GET /api/feed.xml — Atom 1.0, 20 most recent published simulations, public/unauthenticated, 15-min cache. Enables feed reader subscriptions and ecosystem integrator polling. Auto-detected by browser feed extensions via index.html link tag.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-10.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-12.md

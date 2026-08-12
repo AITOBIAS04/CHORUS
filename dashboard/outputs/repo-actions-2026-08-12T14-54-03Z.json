@@ -1,0 +1,358 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-08-12"
+      },
+      "children": [
+        "intro_text",
+        "sep1",
+        "action1",
+        "sep2",
+        "action2",
+        "sep3",
+        "action3",
+        "sep4",
+        "action4",
+        "sep5",
+        "action5",
+        "sep6",
+        "details_link"
+      ]
+    },
+    "intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,428 stars · 298 forks · 36-day social silence · 73rd push block). Three days to the Aug 15 tutorial deadline (0/5); 20 days to the Sep 1 language hyperstition (4/5).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action1_title",
+        "action1_badges",
+        "action1_desc"
+      ]
+    },
+    "action1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Spanish (ES-419) UI Locale",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1_community",
+        "badge1_small"
+      ]
+    },
+    "badge1_community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge1_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "action1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Clears the 5-language hyperstition (5/5) with 20 days to spare — LATAM's 650M+ Spanish speakers, 4th-largest GitHub language, Spain AI Regulation hook. Frontend currently serves DE not JA (README discrepancy); ES establishes the clean 5th locale.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action2_title",
+        "action2_badges",
+        "action2_desc"
+      ]
+    },
+    "action2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Replay Stream",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge2_feature",
+        "badge2_medium"
+      ]
+    },
+    "badge2_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge2_medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "action2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "SSE endpoint replays a completed simulation round-by-round at configurable speed — enables screen-recording for YouTube tutorials without re-running a live sim. Tutorial mode (?mode=tutorial) adds 0.5× speed + recording banner.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action3_title",
+        "action3_badges",
+        "action3_desc"
+      ]
+    },
+    "action3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Per-Agent Timeline API",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge3_feature",
+        "badge3_small"
+      ]
+    },
+    "badge3_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge3_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "action3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/agents/{name}/timeline — one agent's full round-by-round journey with post excerpts, stance changes, and mentions received. Includes 'Agent Story' plain-text export for copy-paste narrative content in text tutorials.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action4_title",
+        "action4_badges",
+        "action4_desc"
+      ]
+    },
+    "action4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Embed Light/Dark Theme Toggle",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge4_dx",
+        "badge4_small"
+      ]
+    },
+    "badge4_dx": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge4_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "action4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "?theme=light on the embed URL renders white background + dark text — makes the embed native on Substack, Medium, Ghost, and any light-background platform. ?theme=auto respects the visitor's system preference.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action5_title",
+        "action5_badges",
+        "action5_desc"
+      ]
+    },
+    "action5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Atom Feed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge5_feature",
+        "badge5_integration",
+        "badge5_small"
+      ]
+    },
+    "badge5_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge5_integration": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge5_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "action5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/feed.xml — Atom 1.0, 20 most recent published simulations, public/unauthenticated, 15-min cache. Enables feed reader subscriptions and ecosystem integrator polling. Auto-detected by browser feed extensions via index.html link tag.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "details_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-12.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
