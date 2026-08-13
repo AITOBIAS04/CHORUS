@@ -1,0 +1,168 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-13"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "author_text",
+        "separator1",
+        "security_heading",
+        "security_details",
+        "separator2",
+        "changes_heading",
+        "changes_list",
+        "separator3",
+        "stats_heading",
+        "files_stat",
+        "recap_link"
+      ]
+    },
+    "author_text": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 1 substantive commit by 1 author (9 automation commits filtered)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "security_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Security",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "security_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "cve_text",
+        "companion_text"
+      ]
+    },
+    "cve_text": {
+      "type": "Text",
+      "props": {
+        "text": "nanoid CVE-2026-67213: The operator merged PR #127 to bump nanoid 3.3.16 → 3.3.18 in the dashboard lockfile.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "companion_text": {
+      "type": "Text",
+      "props": {
+        "text": "This is the companion patch to yesterday's MiroShark fix (PR #286) — same CVE, different repo. Both repositories are now clear of the nanoid advisory.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change_1",
+        "change_2",
+        "change_3"
+      ]
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "apps/dashboard/package-lock.json: nanoid 3.3.16 → 3.3.18 (+3/−3 lines)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "Lockfile-only — no runtime behavior change, build toolchain dependency only",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "change_3": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark had zero commits today (quiet between Dependabot patches)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "files_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "1",
+        "delta": "+3/−3 lines"
+      },
+      "children": []
+    },
+    "recap_link": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-13.md"
+      },
+      "children": []
+    }
+  }
+}
