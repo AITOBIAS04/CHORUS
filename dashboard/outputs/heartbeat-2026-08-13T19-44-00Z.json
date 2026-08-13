@@ -1,0 +1,226 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat Aug 13"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "status_summary",
+        "separator_1",
+        "skills_section",
+        "separator_2",
+        "pr_flag_section",
+        "separator_3",
+        "health_section"
+      ]
+    },
+    "status_summary": {
+      "type": "Stat",
+      "props": {
+        "label": "Daily skills executed",
+        "value": "6/6",
+        "trend": "up"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "skills_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skills_label",
+        "skills_badges"
+      ]
+    },
+    "skills_label": {
+      "type": "Text",
+      "props": {
+        "text": "All skills ran clean:",
+        "variant": "lead"
+      }
+    },
+    "skills_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_token_report",
+        "badge_fetch_tweets",
+        "badge_repo_pulse",
+        "badge_feature",
+        "badge_push_recap",
+        "badge_repo_article"
+      ]
+    },
+    "badge_token_report": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "default"
+      }
+    },
+    "badge_fetch_tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "default"
+      }
+    },
+    "badge_repo_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "default"
+      }
+    },
+    "badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "default"
+      }
+    },
+    "badge_push_recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap",
+        "variant": "default"
+      }
+    },
+    "badge_repo_article": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article",
+        "variant": "default"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_flag_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_alert",
+        "pr_link",
+        "pr_meta",
+        "pr_note"
+      ]
+    },
+    "pr_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "PR age threshold exceeded",
+        "message": "PR #51 is ~77 hours old, past the 72-hour threshold for improve: PRs",
+        "type": "warning"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "improve: add same-day rerun dedup to fetch-tweets skill",
+        "href": "https://github.com/CHORUS/pulls/51",
+        "source": "GitHub PR #51"
+      }
+    },
+    "pr_meta": {
+      "type": "Text",
+      "props": {
+        "text": "Opened Aug 10",
+        "variant": "caption"
+      }
+    },
+    "pr_note": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve runs tomorrow (Aug 14) and should auto-merge it",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "health_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "health_label",
+        "health_badges"
+      ]
+    },
+    "health_label": {
+      "type": "Text",
+      "props": {
+        "text": "System health:",
+        "variant": "lead"
+      }
+    },
+    "health_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_no_issues",
+        "badge_no_missing",
+        "badge_no_failures"
+      ]
+    },
+    "badge_no_issues": {
+      "type": "Badge",
+      "props": {
+        "text": "No open issues",
+        "variant": "default"
+      }
+    },
+    "badge_no_missing": {
+      "type": "Badge",
+      "props": {
+        "text": "No missing skills",
+        "variant": "default"
+      }
+    },
+    "badge_no_failures": {
+      "type": "Badge",
+      "props": {
+        "text": "No systemic failures",
+        "variant": "default"
+      }
+    }
+  }
+}
