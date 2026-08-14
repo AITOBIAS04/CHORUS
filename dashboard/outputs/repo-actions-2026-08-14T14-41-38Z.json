@@ -1,0 +1,316 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "heading_main",
+        "text_stats",
+        "sep_1",
+        "stack_ideas",
+        "sep_2",
+        "link_details"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Action Ideas — 2026-08-14",
+        "level": "h2"
+      }
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,430 stars · 298 forks · OrcaRouter preset just landed · day 38 social silence)"
+      }
+    },
+    "sep_1": {
+      "type": "Separator"
+    },
+    "stack_ideas": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "idea_1",
+        "idea_2",
+        "idea_3",
+        "idea_4",
+        "idea_5"
+      ]
+    },
+    "idea_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_1_title",
+        "idea_1_badges",
+        "idea_1_desc"
+      ]
+    },
+    "idea_1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Japanese (JA) UI Locale",
+        "level": "h3"
+      }
+    },
+    "idea_1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1_cat",
+        "badge_1_size"
+      ]
+    },
+    "badge_1_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX",
+        "variant": "secondary"
+      }
+    },
+    "badge_1_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "README advertises 日本語 but the frontend serves German — README.ja.md exists but locales/ja.js doesn't; one PR fixes the inconsistency and clears the 5-language hyperstition (4/5 → 5/5, 18 days before Sep 1 deadline).",
+        "variant": "body"
+      }
+    },
+    "idea_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_2_title",
+        "idea_2_badges",
+        "idea_2_desc"
+      ]
+    },
+    "idea_2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Demographic Cohort Analysis API",
+        "level": "h3"
+      }
+    },
+    "idea_2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2_cat",
+        "badge_2_size"
+      ]
+    },
+    "badge_2_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge_2_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/demographics/slice — filter agents by age range, platform, or initial stance and return bullish/bearish/neutral split for that cohort; re-uses existing trajectory.json data, no new computation.",
+        "variant": "body"
+      }
+    },
+    "idea_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_3_title",
+        "idea_3_badges",
+        "idea_3_desc"
+      ]
+    },
+    "idea_3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation Ground-Truth Accuracy Score",
+        "level": "h3"
+      }
+    },
+    "idea_3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3_cat",
+        "badge_3_size"
+      ]
+    },
+    "badge_3_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge_3_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulation/{id}/accuracy — accepts real-world poll percentages as POST body, returns direction match, confidence delta, stance MAE, and a 0–100 accuracy score; stateless, enables formal researcher benchmarking.",
+        "variant": "body"
+      }
+    },
+    "idea_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_4_title",
+        "idea_4_badges",
+        "idea_4_desc"
+      ]
+    },
+    "idea_4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. OrcaRouter Lite Self-Host Docs + Config Probe",
+        "level": "h3"
+      }
+    },
+    "idea_4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4_cat",
+        "badge_4_size"
+      ]
+    },
+    "badge_4_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Integration",
+        "variant": "secondary"
+      }
+    },
+    "badge_4_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea_4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Add OrcaRouter Lite (MIT, self-hosted) section to docs/MODELS.md + a miroshark config probe CLI command that validates all four model slots are reachable before a simulation run; timely given PR #287 landing today.",
+        "variant": "body"
+      }
+    },
+    "idea_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_5_title",
+        "idea_5_badges",
+        "idea_5_desc"
+      ]
+    },
+    "idea_5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Built-With Ecosystem Badge Generator",
+        "level": "h3"
+      }
+    },
+    "idea_5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5_cat",
+        "badge_5_size"
+      ]
+    },
+    "badge_5_cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "secondary"
+      }
+    },
+    "badge_5_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea_5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/badge/{style} — inline SVG shields for the 12 ECOSYSTEM.md projects to embed in their READMEs; each back-link is a persistent GitHub Discovery signal feeding the GitHub Trending hyperstition (Sep 15, 32 days).",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator"
+    },
+    "link_details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-14.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
