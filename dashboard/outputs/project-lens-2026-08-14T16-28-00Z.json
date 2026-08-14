@@ -1,0 +1,218 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens",
+        "description": "Prediction Markets at Scale"
+      },
+      "children": [
+        "heading_main",
+        "sep1",
+        "stats_stack",
+        "sep2",
+        "comparison_section",
+        "sep3",
+        "article_link"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Polymarket Processes Twenty-Four Billion Dollars a Month. It Cannot Answer Your Question.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_volume",
+        "stat_concentration",
+        "stat_accuracy"
+      ]
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Monthly Trading Volume (April 2026)",
+        "value": "$24B"
+      },
+      "children": []
+    },
+    "stat_concentration": {
+      "type": "Stat",
+      "props": {
+        "label": "Trading Concentration",
+        "value": "91%",
+        "delta": "in Sports, Politics, Crypto"
+      },
+      "children": []
+    },
+    "stat_accuracy": {
+      "type": "Stat",
+      "props": {
+        "label": "Accuracy (Under $10K Volume Contracts)",
+        "value": "61%"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "comparison_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "comp_heading",
+        "comparison_grid",
+        "insight_section"
+      ]
+    },
+    "comp_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Market Approaches",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "comparison_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "polymarket_card",
+        "miroshark_card"
+      ]
+    },
+    "polymarket_card": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "poly_badge",
+        "poly_text"
+      ]
+    },
+    "poly_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Polymarket",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "poly_text": {
+      "type": "Text",
+      "props": {
+        "text": "Aggregates real crowd opinion with real money",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "miroshark_card": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "miro_badge",
+        "miro_text"
+      ]
+    },
+    "miro_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "miro_text": {
+      "type": "Text",
+      "props": {
+        "text": "Simulates opinion with AI agents for a dollar",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "insight_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "insight_heading",
+        "insight_text1",
+        "insight_text2"
+      ]
+    },
+    "insight_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Insight",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "insight_text1": {
+      "type": "Text",
+      "props": {
+        "text": "The structural gap is not accuracy — it is availability.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "insight_text2": {
+      "type": "Text",
+      "props": {
+        "text": "Most questions that matter to specific decision-makers will never attract a market.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "article_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-14.md",
+        "source": "CHORUS"
+      },
+      "children": []
+    }
+  }
+}

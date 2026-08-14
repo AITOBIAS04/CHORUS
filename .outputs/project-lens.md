@@ -1,5 +1,5 @@
-*New Article: In 1950, the Air Force Asked a Roomful of Experts How Many Bombs the Soviets Had. Then It Took Away the Room.*
+*New Article: Polymarket Processes Twenty-Four Billion Dollars a Month. It Cannot Answer Your Question.*
 
-In 1950, RAND Corporation researchers invented the Delphi method — anonymous, iterative expert panels that turned individual opinions into collective intelligence. For seventy years the method remained locked behind its cost: weeks of expert recruitment, thousands of dollars per study. MiroShark carries the same architectural DNA — anonymous agents, multi-round deliberation, structured feedback — but automates what Delphi required a facilitator to do by hand, dropping the cost from five figures to one dollar. The article traces the lineage from Cold War bomb estimates to ten-minute opinion simulations, and argues the real shift is not cheaper consensus but visible disagreement.
+Prediction markets hit $24B monthly volume in April 2026, but 91% of trading concentrates in three categories — sports, politics, crypto. Contracts under $10K in volume drop to 61% accuracy. This article compares how Polymarket and MiroShark answer the same fundamental question from opposite ends: one aggregates real crowd opinion with real money, the other simulates opinion with AI agents for a dollar. The structural gap is not accuracy — it is availability. Most questions that matter to specific decision-makers will never attract a market.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-12.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-14.md
