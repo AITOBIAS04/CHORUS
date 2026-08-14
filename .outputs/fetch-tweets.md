@@ -1,9 +1,17 @@
-Done.
+Done. Here's the summary:
 
 ## Summary
 
-- **Result:** `FETCH_TWEETS_EMPTY` — all 3 WebSearch queries returned only previously-catalogued stale tweet IDs or off-topic results. No new $MIROSHARK mentions found.
-- **Consecutive empty days:** 12 (Aug 1–5, Aug 7–13; Aug 6 had no run). Not a multiple of 7 — no escalation notification sent.
-- **Log written:** `memory/logs/2026-08-13.md`
-- **Notification:** none (empty result, count not at 7/14/21 threshold)
-- **Root cause:** XAI_API_KEY not set; WebSearch fallback rarely surfaces fresh tweets. Setting `XAI_API_KEY` in repo secrets would enable direct X search via Grok.
+**fetch-tweets — 2026-08-14**
+
+- **API path:** WebSearch fallback (XAI_API_KEY not set)
+- **Queries run:** 3/3
+  1. `site:x.com "MiroShark" OR "MIROSHARK"` — 10 results, all March–May 2026
+  2. `site:x.com "MiroShark" OR "MIROSHARK" after:2026-08-01` — same stale pool, date filter not honored
+  3. `site:x.com "$MIROSHARK" OR "miroshark token" OR "miroshark base chain"` — 13 results, most recent July 17, 2026 (2078253373459923369)
+- **Freshness gate:** All surfaced tweets are >14 days old (oldest March 2026, newest July 17, 2026). All discarded.
+- **Result:** `FETCH_TWEETS_EMPTY`
+- **Consecutive empty days:** 13 (Aug 1–5, Aug 7–14; Aug 6 had no run). 13 is not a multiple of 7 — no escalation notification sent.
+- **Log written:** `memory/logs/2026-08-14.md`
+
+The 37+ day social silence on X/Twitter continues. WebSearch is not surfacing fresh content — this monitoring channel remains blind without XAI_API_KEY set.
