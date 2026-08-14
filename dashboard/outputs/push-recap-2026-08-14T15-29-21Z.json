@@ -1,0 +1,276 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap",
+        "description": "2026-08-14"
+      },
+      "children": [
+        "stack_commits",
+        "sep_1",
+        "section_orcarouter",
+        "sep_2",
+        "section_ci",
+        "sep_3",
+        "section_token",
+        "sep_4",
+        "section_changes",
+        "sep_5",
+        "stack_footer"
+      ]
+    },
+    "stack_commits": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_miroshark",
+        "stat_miroshark_aeon"
+      ]
+    },
+    "stat_miroshark": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark",
+        "value": "2 substantive commits by 2 authors"
+      }
+    },
+    "stat_miroshark_aeon": {
+      "type": "Stat",
+      "props": {
+        "label": "miroshark-aeon",
+        "value": "1 substantive commit (+ 9 automation filtered)"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_orcarouter": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_orcarouter",
+        "text_orcarouter_pr",
+        "text_orcarouter_apikey",
+        "text_orcarouter_docs",
+        "text_orcarouter_contribution"
+      ]
+    },
+    "heading_orcarouter": {
+      "type": "Heading",
+      "props": {
+        "text": "OrcaRouter Cloud Gateway",
+        "level": "h3"
+      }
+    },
+    "text_orcarouter_pr": {
+      "type": "Text",
+      "props": {
+        "text": "Marc-oss-hub landed PR #287, making OrcaRouter the 4th officially supported cloud provider."
+      }
+    },
+    "text_orcarouter_apikey": {
+      "type": "Text",
+      "props": {
+        "text": "One API key covers all slots — operators can mix vendors per slot (Anthropic for reports, OpenAI for the sim loop)."
+      }
+    },
+    "text_orcarouter_docs": {
+      "type": "Text",
+      "props": {
+        "text": "Full English and Chinese docs across .env.example, INSTALL, MODELS, and CONFIGURATION."
+      }
+    },
+    "text_orcarouter_contribution": {
+      "type": "Text",
+      "props": {
+        "text": "First merged community contribution in weeks, from a fork created yesterday."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_ci": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_ci",
+        "text_ci_1",
+        "text_ci_2",
+        "text_ci_3"
+      ]
+    },
+    "heading_ci": {
+      "type": "Heading",
+      "props": {
+        "text": "CI Fix (openai 3.0)",
+        "level": "h3"
+      }
+    },
+    "text_ci_1": {
+      "type": "Text",
+      "props": {
+        "text": "openai 3.0.0 swapped its transitive dep from httpx to httpx2, breaking oracle_seed.py which imports httpx directly."
+      }
+    },
+    "text_ci_2": {
+      "type": "Text",
+      "props": {
+        "text": "Unit tests failed silently — httpx resolved to None, so resolve_oracle_tools() returned empty string."
+      }
+    },
+    "text_ci_3": {
+      "type": "Text",
+      "props": {
+        "text": "PR #288 pins httpx>=0.28,<1.0 as an explicit dependency in both requirements.txt and the CI workflow."
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_token": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_token",
+        "text_token_verdict",
+        "stat_price",
+        "text_volume",
+        "text_floor"
+      ]
+    },
+    "heading_token": {
+      "type": "Heading",
+      "props": {
+        "text": "Token Analysis",
+        "level": "h3"
+      }
+    },
+    "text_token_verdict": {
+      "type": "Text",
+      "props": {
+        "text": "Agent repo shipped the daily CONSOLIDATING verdict."
+      }
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "$MIROSHARK",
+        "value": "$0.000002015",
+        "delta": "−17.1%",
+        "trend": "down"
+      }
+    },
+    "text_volume": {
+      "type": "Text",
+      "props": {
+        "text": "Volume hit 1.98x average, just under the 2.0x BREAKDOWN threshold."
+      }
+    },
+    "text_floor": {
+      "type": "Text",
+      "props": {
+        "text": "$0.0000025 floor broken for the 2nd consecutive day."
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_changes",
+        "text_changes_1",
+        "text_changes_2",
+        "text_changes_3"
+      ]
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "text_changes_1": {
+      "type": "Text",
+      "props": {
+        "text": "8 docs/config files touched for OrcaRouter — .env.example, INSTALL, MODELS, CONFIGURATION (EN + ZH)"
+      }
+    },
+    "text_changes_2": {
+      "type": "Text",
+      "props": {
+        "text": "httpx now an explicit dep — guards against openai SDK migration breaking direct importers"
+      }
+    },
+    "text_changes_3": {
+      "type": "Text",
+      "props": {
+        "text": "NER reasoning caveat clarified: OrcaRouter does not inject reasoning:{enabled:false}, LLMClient strips <think> blocks client-side"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "link_recap"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Stats",
+        "value": "12 files changed, +189/−9 lines"
+      }
+    },
+    "link_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-14.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
