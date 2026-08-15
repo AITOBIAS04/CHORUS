@@ -1,0 +1,80 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "fetch-tweets",
+        "description": "Social Monitor Dark — 14 consecutive days"
+      },
+      "children": [
+        "alert",
+        "sep",
+        "cause",
+        "fix"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "Zero new mentions for 14 consecutive days"
+      }
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {}
+    },
+    "cause": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "cause-heading",
+        "cause-text"
+      ]
+    },
+    "cause-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Likely cause",
+        "level": "h4"
+      }
+    },
+    "cause-text": {
+      "type": "Text",
+      "props": {
+        "text": "XAI_API_KEY not set — WebSearch fallback rarely surfaces fresh tweets.",
+        "variant": "body"
+      }
+    },
+    "fix": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "fix-heading",
+        "fix-text"
+      ]
+    },
+    "fix-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fix",
+        "level": "h4"
+      }
+    },
+    "fix-text": {
+      "type": "Text",
+      "props": {
+        "text": "Set XAI_API_KEY in repo secrets to enable direct X/Twitter search via Grok.",
+        "variant": "body"
+      }
+    }
+  }
+}
