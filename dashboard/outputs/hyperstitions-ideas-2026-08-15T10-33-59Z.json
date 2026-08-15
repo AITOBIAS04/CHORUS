@@ -1,0 +1,94 @@
+{
+  "root": "card_hyperstition",
+  "state": {},
+  "elements": {
+    "card_hyperstition": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-08-15"
+      },
+      "children": [
+        "heading_question",
+        "text_coordination",
+        "text_why_now",
+        "text_resolution",
+        "separator1",
+        "stack_scores",
+        "separator2",
+        "link_hyperstitions"
+      ]
+    },
+    "heading_question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will a non-fork GitHub repository that depends on or integrates MiroShark be created by September 15, 2026?",
+        "level": "h3"
+      }
+    },
+    "text_coordination": {
+      "type": "Text",
+      "props": {
+        "text": "The coordination play: 298 accounts forked the repository. Zero built anything downstream. The tutorial hyperstition expired today at 0/5 — the community will not write about MiroShark, but they might build with it. OrcaRouter cloud preset landed yesterday (PR #287, community contributor), lowering the deployment barrier. Someone needs to take a use case — election modeling, product-launch sentiment, DAO governance polling — spin up a MiroShark instance, and publish their simulation config as a standalone repo. The market frames first-mover prestige: who creates the first project in the MiroShark ecosystem?",
+        "variant": "body"
+      }
+    },
+    "text_why_now": {
+      "type": "Text",
+      "props": {
+        "text": "Why now: The 5-tutorials-by-Aug-15 hyperstition hit its deadline today at 0/5. Content creation asks failed. Meanwhile PR #287 (OrcaRouter cloud preset by Marc-oss-hub) proves the fork-to-contributor pipeline works and makes cloud deployment a one-config operation. Token at $0.000002025, crashed through its $0.0000025 floor for the third straight day. 39-day social silence. The project needs builders, not writers.",
+        "variant": "body"
+      }
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "Resolution: YES if a public GitHub repository — not a fork of aaronjmars/MiroShark, created by a non-core-team account — references MiroShark in its code, README, or dependencies and contains at least one simulation configuration, published on or before September 15, 2026. Verified via GitHub code search.",
+        "variant": "body"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_reflexivity",
+        "stat_viral"
+      ]
+    },
+    "stat_reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "4/5"
+      }
+    },
+    "stat_viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "Soon on hyperstitions.com",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}
