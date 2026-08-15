@@ -1,0 +1,41 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Open Source Is Drowning in Pull Requests. This Project Can't Get One."
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-description",
+        "link-read"
+      ]
+    },
+    "text-description": {
+      "type": "Text",
+      "props": {
+        "text": "GitHub merged 90M pull requests last month — maintainers are auto-closing AI-generated contributions. MiroShark has the opposite problem: 298 forks, 1,430 stars, and exactly one community PR this week. The tutorial hyperstition expired today at 0/5. An AI agent has been the most reliable contributor for 140 days straight."
+      },
+      "children": []
+    },
+    "link-read": {
+      "type": "Link",
+      "props": {
+        "label": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-15.md"
+      },
+      "children": []
+    }
+  }
+}

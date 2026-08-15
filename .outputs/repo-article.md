@@ -1,5 +1,5 @@
-*New Article: Ten Days of Perfect Automation. Then the Floor Gave Way.*
+*New Article: Open Source Is Drowning in Pull Requests. This Project Can't Get One.*
 
-For ten trading sessions, MiroShark held above $0.0000025 while every automated system ran on schedule — security patches, dependency bumps, daily reports, health checks. On the eleventh day, four wallets sold in a twelve-minute cascade and the floor broke. The article traces Sidney Dekker's "drift into failure" pattern: 74 days without a feature shipping, 37 days of social silence, and a maintenance-perfect codebase that gives no one a reason to buy.
+GitHub merged 90M pull requests last month — maintainers are auto-closing AI-generated contributions. MiroShark has the opposite problem: 298 forks, 1,430 stars, and exactly one community PR this week. The tutorial hyperstition expired today at 0/5. An AI agent has been the most reliable contributor for 140 days straight.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-13.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-15.md
