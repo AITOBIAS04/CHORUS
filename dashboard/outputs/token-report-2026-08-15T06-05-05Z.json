@@ -1,0 +1,165 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-08-15"
+      },
+      "children": [
+        "price_stat",
+        "sep1",
+        "metrics_grid",
+        "sep2",
+        "changes_grid",
+        "sep3",
+        "analysis_stack",
+        "sep4",
+        "chart_stack"
+      ]
+    },
+    "price_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000002025",
+        "delta": "+1.3%",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "metrics_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "liquidity_stat",
+        "volume_stat",
+        "buys_stat",
+        "sells_stat"
+      ]
+    },
+    "liquidity_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$225.2K"
+      }
+    },
+    "volume_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$940"
+      }
+    },
+    "buys_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys",
+        "value": "9"
+      }
+    },
+    "sells_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Sells",
+        "value": "8"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changes_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "change_7d",
+        "change_30d"
+      ]
+    },
+    "change_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7 Day",
+        "value": "−20.2%",
+        "trend": "down"
+      }
+    },
+    "change_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30 Day",
+        "value": "+23.9%",
+        "trend": "up"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "analysis_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "analysis_text",
+        "social_silence_badge"
+      ]
+    },
+    "analysis_text": {
+      "type": "Text",
+      "props": {
+        "text": "Thin recovery after the Aug 13–14 crash — price bouncing in the $0.000001983–$0.000002080 range, $0.0000025 floor broken for 3rd day."
+      }
+    },
+    "social_silence_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "39-day social silence",
+        "variant": "secondary"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "chart_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "chart_heading",
+        "chart_link"
+      ]
+    },
+    "chart_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Chart",
+        "level": "h4"
+      }
+    },
+    "chart_link": {
+      "type": "Link",
+      "props": {
+        "label": "GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
