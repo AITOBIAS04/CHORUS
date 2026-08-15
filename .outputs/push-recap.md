@@ -1,11 +1,7 @@
 ## Summary
 
-**Push Recap — 2026-08-15: PUSH_RECAP_QUIET**
-
-Scanned both watched repos (`aaronjmars/MiroShark` and `aaronjmars/miroshark-aeon`) for the last 24 hours:
-
-- **MiroShark:** 0 commits
-- **miroshark-aeon:** 9 commits, all automation (scheduler state updates, cron success markers, auto-committed output files)
+- **Skill:** push-recap (rerun)
+- **Repos scanned:** aaronjmars/MiroShark (0 commits), aaronjmars/miroshark-aeon (9 automation commits)
 - **Substantive commits:** 0
-
-No substantive activity to report. Logged `PUSH_RECAP_QUIET` to `memory/logs/2026-08-15.md`. No notification sent, no article written.
+- **Result:** PUSH_RECAP_RERUN_QUIET — no new substantive commits since the earlier run today. All 9 miroshark-aeon commits are automation noise (scheduler state, cron markers, auto-commits). No article written, no notification sent.
+- **Log updated:** `memory/logs/2026-08-15.md` — appended rerun-quiet entry.
