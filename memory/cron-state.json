@@ -63,8 +63,8 @@
     "last_quality_score": 4
   },
   "token-report": {
-    "last_dispatch": "2026-08-15T06:00:53Z",
-    "last_status": "success",
+    "last_dispatch": "2026-08-15T07:51:00Z",
+    "last_status": "dispatched",
     "last_failed": "2026-04-30T09:01:43Z",
     "total_runs": 367,
     "total_successes": 96,
