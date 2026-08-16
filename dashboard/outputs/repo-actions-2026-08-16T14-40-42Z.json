@@ -1,0 +1,369 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-08-16"
+      },
+      "children": [
+        "section_repo_meta",
+        "separator_1",
+        "stack_items",
+        "separator_2",
+        "section_details"
+      ]
+    },
+    "section_repo_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_source_label",
+        "stack_stats"
+      ]
+    },
+    "text_source_label": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "variant": "lead"
+      }
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_stars",
+        "badge_forks",
+        "badge_push_block",
+        "badge_silence"
+      ]
+    },
+    "badge_stars": {
+      "type": "Badge",
+      "props": {
+        "text": "1,430 stars"
+      }
+    },
+    "badge_forks": {
+      "type": "Badge",
+      "props": {
+        "text": "298 forks"
+      }
+    },
+    "badge_push_block": {
+      "type": "Badge",
+      "props": {
+        "text": "76th push block"
+      }
+    },
+    "badge_silence": {
+      "type": "Badge",
+      "props": {
+        "text": "40-day social silence"
+      }
+    },
+    "separator_1": {
+      "type": "Separator"
+    },
+    "stack_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
+      ]
+    },
+    "item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_1",
+        "stack_badges_1",
+        "text_desc_1"
+      ]
+    },
+    "heading_1": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Arabic (AR) UI Locale",
+        "level": "h3"
+      }
+    },
+    "stack_badges_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1_category",
+        "badge_1_size"
+      ]
+    },
+    "badge_1_category": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX"
+      }
+    },
+    "badge_1_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "text_desc_1": {
+      "type": "Text",
+      "props": {
+        "text": "First RTL locale — requires dir='rtl' toggle + CSS logical property rewrites. 35M+ Arabic-speaking GitHub devs, 48% MENA growth YoY. Backup 5th-locale path if previous proposals remain blocked.",
+        "variant": "body"
+      }
+    },
+    "item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_2",
+        "stack_badges_2",
+        "text_desc_2"
+      ]
+    },
+    "heading_2": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Product Hunt Launch Kit",
+        "level": "h3"
+      }
+    },
+    "stack_badges_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2_category",
+        "badge_2_size"
+      ]
+    },
+    "badge_2_category": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth"
+      }
+    },
+    "badge_2_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_desc_2": {
+      "type": "Text",
+      "props": {
+        "text": "Pure documentation, no GH_GLOBAL needed. 12-item checklist, 3 tagline options, 249-char description, first comment template, hunter outreach, hourly timeline. Next optimal PH day: Tuesday Aug 19 (3 days). Targets the 100+ upvotes hyperstition (Sep 15).",
+        "variant": "body"
+      }
+    },
+    "item_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_3",
+        "stack_badges_3",
+        "text_desc_3"
+      ]
+    },
+    "heading_3": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation Comparison API",
+        "level": "h3"
+      }
+    },
+    "stack_badges_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3_category",
+        "badge_3_size"
+      ]
+    },
+    "badge_3_category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "badge_3_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_desc_3": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/compare?id1=X&id2=Y — direction match/mismatch, confidence delta, stance shift, verdict sentence. Stateless (reads signal.json). Serves Towards AI + Crucible Sim research audience; foundation for trending-topics view.",
+        "variant": "body"
+      }
+    },
+    "item_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_4",
+        "stack_badges_4",
+        "text_desc_4"
+      ]
+    },
+    "heading_4": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Interactive API Docs via Scalar",
+        "level": "h3"
+      }
+    },
+    "stack_badges_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4_category",
+        "badge_4_size"
+      ]
+    },
+    "badge_4_category": {
+      "type": "Badge",
+      "props": {
+        "text": "DX"
+      }
+    },
+    "badge_4_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_desc_4": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/docs serves Scalar explorer. One Python route, 15 LoC, CDN-served. All 40+ endpoints try-able in browser without curl. On-ramp for Towards AI coverage audience who won't write code.",
+        "variant": "body"
+      }
+    },
+    "item_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_5",
+        "stack_badges_5",
+        "text_desc_5"
+      ]
+    },
+    "heading_5": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Completion Webhook",
+        "level": "h3"
+      }
+    },
+    "stack_badges_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5_category",
+        "badge_5_size"
+      ]
+    },
+    "badge_5_category": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration"
+      }
+    },
+    "badge_5_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "text_desc_5": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulation/{id}/webhook registers callback_url — fires once on publish. HMAC signature, SSRF prevention. Eliminates polling in CI/CD pipelines. Enables Zapier/Make.com. Distinct from Per-Round Webhook (off-limits).",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator"
+    },
+    "section_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_full_details",
+        "link_details"
+      ]
+    },
+    "text_full_details": {
+      "type": "Text",
+      "props": {
+        "text": "Full details:",
+        "variant": "caption"
+      }
+    },
+    "link_details": {
+      "type": "Link",
+      "props": {
+        "label": "repo-actions-2026-08-16.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-16.md"
+      }
+    }
+  }
+}
