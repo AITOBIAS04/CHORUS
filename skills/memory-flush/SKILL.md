@@ -12,6 +12,7 @@ Read memory/MEMORY.md for current memory state.
 Read the last 3 days of memory/logs/ for recent activity.
 
 Steps:
+0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a `## Memory Flush` entry (case-insensitive match on the heading), and `${var}` is empty (no explicit topic requested), log `MEMORY_FLUSH_RERUN_QUIET: flush already ran today — skipping to avoid double-rotation` to `memory/logs/${today}.md` and **stop here**. Step 4's rotation rules are not idempotent — a second run in the same day could over-trim tables (e.g., first run trims Skills Built from 12→10, promotions add 2 back, second run trims 12→10 again, losing entries the first run intentionally kept).
 1. Scan recent logs for entries worth promoting to long-term memory:
    - New lessons learned (errors encountered, workarounds found)
    - Topics covered (articles, digests) — add to the recent articles/digests tables
@@ -24,7 +25,7 @@ Steps:
    - Add brief entries to MEMORY.md
    - If a topic needs more detail, write to `memory/topics/<topic>.md` instead
    - Update the Recent Digests table with any new token-report or push-recap entries from logs
-4. **Rotate old entries to keep MEMORY.md under ~50 lines:**
+4. **Rotate old entries to keep MEMORY.md concise (~100 lines):**
    - Skills Built table: keep the **10 most recent rows** — remove older rows from the top
    - Recent Articles table: keep the **8 most recent rows** — remove older rows from the top
    - Recent Digests table: keep the **6 most recent rows** — remove older rows from the top
