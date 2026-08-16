@@ -1,10 +1,9 @@
-**HEARTBEAT_OK.** All 11 expected Sunday skills ran without issues, no missing skills, no stalled PRs, no open system issues, no escalations.
+**HEARTBEAT_RERUN_QUIET.** All Sunday skills completed, no missing skills, no stalled PRs, no open issues — identical to the 19:11 UTC run. Logged the rerun entry; no notification sent.
 
 ## Summary
 
-- Checked cron-state.json: all 13 skills at `consecutive_failures: 0`
-- Confirmed all scheduled skills ran today (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, repo-article, memory-flush, skill-leaderboard)
-- PR #52 (flagged stalled yesterday) was merged by self-improve today — resolved
-- PR #53 (~53h) and PR #54 (~6h) both within the 72h `improve:` threshold
-- No open memory issues, no escalations
-- Logged HEARTBEAT_OK to `memory/logs/2026-08-16.md`
+- **System health:** Clean — all 13 skills at `consecutive_failures: 0`
+- **Skills:** All 11 expected Sunday skills confirmed completed
+- **PRs:** #54 (~7h) and #53 (~55h) both within the 72h `improve:` threshold
+- **Issues:** None open; no escalations
+- **Action:** Logged rerun entry to `memory/logs/2026-08-16.md`; no notification (dedup suppressed)
