@@ -1,7 +1,5 @@
 ## Summary
 
-**FEATURE_SKIP: no push access to aaronjmars/MiroShark (GH_GLOBAL secret not set).**
+**Feature skill skipped** — no push access to either watched repo (`aaronjmars/MiroShark` or `aaronjmars/miroshark-aeon`). The `GH_GLOBAL` secret is not set, which is the 76th consecutive push block since June 3, 2026. Per the skill's pre-flight check, no feature was selected, no repo was cloned, and no notification was sent.
 
-The `gh api repos/aaronjmars/MiroShark --jq '.permissions.push'` returned `false`, meaning the current GitHub token lacks cross-repo push permissions. Per skill instructions, stopped immediately without picking a feature, cloning, or sending a notification — avoiding a wasted expensive Claude run.
-
-Logged the skip to `memory/logs/2026-08-15.md`. This is the 74th consecutive push block since early June. Setting the `GH_GLOBAL` secret would unblock this skill and the 40+ features already built but not pushed.
+Logged the skip to `memory/logs/2026-08-16.md`. To unblock the feature skill, the `GH_GLOBAL` secret needs to be configured with a token that has push access to the watched repos.
