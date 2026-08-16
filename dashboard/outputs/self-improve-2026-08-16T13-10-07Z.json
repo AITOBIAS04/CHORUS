@@ -1,0 +1,209 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-08-16",
+        "description": "Fixed memory-flush scheduler dedup and line target"
+      },
+      "children": [
+        "context-stack",
+        "sep1",
+        "why-stack",
+        "sep2",
+        "changes-stack",
+        "sep3",
+        "impact-stack",
+        "sep4",
+        "prs-stack"
+      ]
+    },
+    "context-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-context",
+        "context-text",
+        "stale-pr-badge"
+      ]
+    },
+    "heading-context": {
+      "type": "Heading",
+      "props": {
+        "text": "Context",
+        "level": "h2"
+      }
+    },
+    "context-text": {
+      "type": "Text",
+      "props": {
+        "text": "Memory-flush was the last enabled skill without same-day rerun dedup. Its rotation rules are non-idempotent, so a scheduler double-dispatch could over-trim MEMORY.md tables (e.g., Skills Built trimmed 12→10, promotions restore 2, second run trims again, losing kept entries). Also fixed the impossible ~50 line target — retention rules require ~82+ lines minimum, updated to ~100.",
+        "variant": "body"
+      }
+    },
+    "stale-pr-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Stale PR #52 merged (weekly-shiplog dedup, 4 days old, CLEAN)",
+        "variant": "secondary"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-why",
+        "why-text"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why-text": {
+      "type": "Text",
+      "props": {
+        "text": "Memory-flush runs Sun+Wed. Every other enabled skill already has dedup. Scheduler double-dispatch is documented (observed Aug 1–2 across token-report, hyperstitions-ideas, self-improve). Memory-flush was the last gap.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-changes",
+        "change-item"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h2"
+      }
+    },
+    "change-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-path",
+        "change-details"
+      ]
+    },
+    "change-path": {
+      "type": "Text",
+      "props": {
+        "text": "skills/memory-flush/SKILL.md",
+        "variant": "lead"
+      }
+    },
+    "change-details": {
+      "type": "Text",
+      "props": {
+        "text": "Added Step 0 rerun dedup gate; fixed line target from ~50 to ~100",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-impact",
+        "impact-text"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h2"
+      }
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents data loss from double-rotation on scheduler double-dispatch days. Eliminates contradiction between line target and retention rules that could cause over-aggressive pruning.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-prs",
+        "pr-54",
+        "pr-52-merged"
+      ]
+    },
+    "heading-prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h2"
+      }
+    },
+    "pr-54": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #54 - Self-improve fixes",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/54",
+        "source": "GitHub"
+      }
+    },
+    "pr-52-merged": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #52 - Weekly-shiplog dedup (merged)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/52",
+        "source": "GitHub"
+      }
+    }
+  }
+}
