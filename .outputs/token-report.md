@@ -1,6 +1,10 @@
-Token-report already ran today — `Notification sent: yes` was found in the existing `2026-08-15` log entry (price $0.000002025, +1.3% 24h). Per Step 0 same-day rerun dedup, logged `TOKEN_REPORT_RERUN_QUIET` and stopped — no data re-fetch, no article overwrite, no duplicate notification.
+*$MiroShark Daily — 2026-08-16*
 
-## Summary
-- **Action:** Dedup gate triggered — token-report already completed today with notification sent.
-- **File modified:** `memory/logs/2026-08-15.md` — appended `TOKEN_REPORT_RERUN_QUIET` entry.
-- **No follow-up needed.**
+Price: $0.000002082 (+6.21% 24h)
+Liquidity: $227.9K | 24h Vol: $1,727
+Buys/Sells: 7/7
+7d: −22.4% | 30d: +20.8%
+
+Recovery holding below the broken $0.0000025 floor. Five-wallet buy cluster yesterday (19:21–20:54 UTC) absorbed the Aug 13–14 crash and lifted price from $0.000001983 to $0.000002138. Today quiet — one $1.90 dust sell. 40-day social silence continues.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
