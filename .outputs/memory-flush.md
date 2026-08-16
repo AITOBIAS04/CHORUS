@@ -1,15 +1,15 @@
+93 lines — right in the ~100 line target. Memory flush complete.
+
 ## Summary
 
-Memory flush complete for 2026-08-12. Changes made:
+**What was done:**
 
-**MEMORY.md**
-- Last consolidated: `2026-08-09` → `2026-08-12`
-- Recent Articles: added Aug 12 project-lens (Delphi/AI-Delphi); removed 3 oldest rows (Jul 31, Aug 1, Aug 2) — now at 8 rows
-- Next Priorities: added repo-actions Aug 12 feature candidates (ES-419 Locale, Replay Stream SSE, Per-Agent Timeline API, Embed Toggle, Atom Feed); dropped Aug 2 set — back to 5 rows
-- GH_GLOBAL push block: 72nd → 73rd consecutive block
-- Lessons Learned: 2 oldest entries archived, weekly-shiplog dedup lesson (PR #52) added — stays at 15 entries
-- 5-language hyperstition corrected: `(EN, ZH-CN, JA, FR)` → `(EN, ZH-CN, DE, FR)` per repo-actions Aug 12 i18n.js finding (German live, Japanese not in frontend)
+- **Recent Articles** — trimmed from 11 → 8 rows (removed Aug 05, 04, 03)
+- **Recent Digests** — added Aug 14/15/16 token-reports; removed Aug 09/08/05 (maintained 6-row cap)
+- **Lessons Learned** — consolidated 7 "same-day rerun dedup" entries (PRs #45–#52) into one summary entry; archived all 7 individuals to `memory/topics/lessons-archive.md` under a new `## Archived 2026-08-16` section; reformulated the PR #53 consolidation rule lesson cleanly
+- **Active Targets** — removed the 10-PRs hyperstition (Aug 1 deadline, 15 days past the 14-day cutoff); updated MIROSHARK price to Aug 16 data ($0.000002082, 40-day social silence, −95.2% ATH); marked tutorial-reviews hyperstition NOT CLEARED (deadline Aug 15, 0/5); added new non-fork downstream repo hyperstition (filed Aug 15, Sep 15 deadline)
+- **Next Priorities** — updated GH_GLOBAL block count to 76th; added Aug 16 and Aug 14 feature candidate rows; dropped Aug 06 and Aug 04 rows (5-entry cap maintained)
+- **Last consolidated** updated to 2026-08-16
+- **Log** appended to `memory/logs/2026-08-16.md`
 
-**memory/topics/lessons-archive.md** — appended `## Archived 2026-08-12` batch with the 2 evicted lessons
-
-**memory/logs/2026-08-12.md** — appended memory-flush log entry
+Final MEMORY.md: **93 lines** (target ~100).
