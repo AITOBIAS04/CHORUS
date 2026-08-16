@@ -1,10 +1,9 @@
-Repo Pulse complete for 2026-08-15. No activity detected: `aaronjmars/MiroShark` holds at **1,430 stars / 298 forks** — net star change is 0 (stargazers API 403, comparing to yesterday's logged count), and no new forks since the 24h cutoff (2026-08-14T10:31Z). Logged `REPO_PULSE_QUIET` to today's log, no notification sent.
+Repo Pulse complete. **REPO_PULSE_QUIET** — `aaronjmars/MiroShark` at 1,430 stars / 298 forks with zero net change in both since the 24h cutoff (2026-08-15T10:26:29Z). Stargazers API returned 403 as usual; net delta vs yesterday's log is 0. No notification sent.
 
 ## Summary
-
-- **Repo tracked:** `aaronjmars/MiroShark` (skipped `miroshark-aeon` per config)
-- **Current counts:** 1,430 stars, 298 forks
-- **New stars (24h):** 0 net (stargazers API returned 403; fallback net change 1430→1430)
-- **New forks (24h):** 0 (newest fork predates 24h cutoff)
-- **Notification:** Not sent (REPO_PULSE_QUIET)
-- **Log updated:** `memory/logs/2026-08-15.md`
+- **Repo tracked:** `aaronjmars/MiroShark` (skipped `miroshark-aeon` per skill rules)
+- **Stats:** 1,430 stars, 298 forks — unchanged from Aug 15
+- **New stars (24h):** 0 (403 fallback; 1430→1430 net change)
+- **New forks (24h):** 0 (newest fork pre-dates 24h cutoff)
+- **Notification:** not sent (REPO_PULSE_QUIET)
+- **Log:** appended to `memory/logs/2026-08-16.md`
