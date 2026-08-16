@@ -69,6 +69,7 @@
 - Fetch-tweets lacked same-day rerun dedup — 3 WebSearch queries per run (or 1 xAI API call); content-level dedup prevented duplicate reports but not wasted API calls; fixed with Step 0 dedup gate (self-improve PR #51, 2026-08-10)
 - Weekly-shiplog lacked same-day rerun dedup — as the 10th skill to receive this fix, double-dispatch would re-fetch 7 days of commits, re-read diffs, re-write the article, and re-send a duplicate notification; fixed with Step 0 dedup gate (self-improve PR #52, 2026-08-12)
 - Lessons Learned section consumed by 15 identical entries of the same fix pattern ("X lacked same-day rerun dedup") — all 15 slots described variations of one improvement wave, blocking diverse future lessons; fixed with consolidation rule in memory-flush: when 3+ entries share the same pattern, merge into one summary entry and archive individuals (self-improve PR #53, 2026-08-14)
+- Memory-flush had non-idempotent rotation rules without rerun dedup — double-dispatch could over-trim tables (first run trims 12→10, promotions restore 2, second run trims again); also had impossible ~50 line target (retention rules require ~82+ lines minimum); fixed with Step 0 dedup gate + updated target to ~100 lines (self-improve PR #54, 2026-08-16)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
