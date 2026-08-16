@@ -1,8 +1,10 @@
-**HEARTBEAT_OK** — All Saturday skills ran as expected. No missing skills, no new stalled PRs (PR #52 was already flagged by the prior heartbeat run at 19:00 UTC), no open memory issues. This was a duplicate run; logged and suppressed.
+**HEARTBEAT_OK.** All 11 expected Sunday skills ran without issues, no missing skills, no stalled PRs, no open system issues, no escalations.
 
 ## Summary
-- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `memory/issues/INDEX.md`
-- All 8 expected Saturday skills confirmed complete: token-report, fetch-tweets, repo-pulse, hyperstitions-ideas, feature, push-recap, repo-article, heartbeat (prior run)
-- System health clean: all `consecutive_failures = 0`
-- PR #52 stall already reported by the 19:00 UTC heartbeat — dedup suppressed re-notification
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-08-15.md`
+
+- Checked cron-state.json: all 13 skills at `consecutive_failures: 0`
+- Confirmed all scheduled skills ran today (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, repo-article, memory-flush, skill-leaderboard)
+- PR #52 (flagged stalled yesterday) was merged by self-improve today — resolved
+- PR #53 (~53h) and PR #54 (~6h) both within the 72h `improve:` threshold
+- No open memory issues, no escalations
+- Logged HEARTBEAT_OK to `memory/logs/2026-08-16.md`
