@@ -1,0 +1,173 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-17"
+      },
+      "children": [
+        "text_repo",
+        "sep1",
+        "heading_breakout",
+        "text_breakout_desc",
+        "stack_metrics",
+        "sep2",
+        "heading_changes",
+        "stack_changes",
+        "sep3",
+        "heading_stats",
+        "stack_stats"
+      ]
+    },
+    "text_repo": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 1 substantive commit by aeonframework (23 automation commits filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_breakout": {
+      "type": "Heading",
+      "props": {
+        "text": "Token-Movers BREAKOUT",
+        "level": "h2"
+      }
+    },
+    "text_breakout_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The token-movers skill flagged $MIROSHARK as a breakout. Price up 11.5% to $0.000002385 on 2.2x average volume ($7,654 vs $3,525 7d avg). Buy/sell ratio flipped to 3:1 (30 buys / 10 sells), the strongest buy-side skew since Aug 10. No whale trades — largest single buy was $940, so this reads as broad-based accumulation. Liquidity rose 5.7% to $240.8K."
+      }
+    },
+    "stack_metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_volume",
+        "stat_ratio",
+        "stat_liquidity"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000002385",
+        "delta": "+11.5%",
+        "trend": "up"
+      }
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "$7,654",
+        "delta": "+2.2x vs 7d avg ($3,525)"
+      }
+    },
+    "stat_ratio": {
+      "type": "Stat",
+      "props": {
+        "label": "Buy/Sell Ratio",
+        "value": "3:1 (30 buys / 10 sells)",
+        "delta": "Strongest since Aug 10",
+        "trend": "up"
+      }
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$240.8K",
+        "delta": "+5.7%",
+        "trend": "up"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_change1",
+        "text_change2",
+        "text_change3"
+      ]
+    },
+    "text_change1": {
+      "type": "Text",
+      "props": {
+        "text": "New BREAKOUT article with full metrics table, trend analysis, and accumulation narrative"
+      }
+    },
+    "text_change2": {
+      "type": "Text",
+      "props": {
+        "text": "First breakout-grade signal since price broke the $0.0000025 floor on Aug 14"
+      }
+    },
+    "text_change3": {
+      "type": "Text",
+      "props": {
+        "text": "30d trend: +46.1% — well above mid-July base despite 7d still −12.1%"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_files",
+        "link_full"
+      ]
+    },
+    "text_files": {
+      "type": "Text",
+      "props": {
+        "text": "2 files changed, +39/-0 lines"
+      }
+    },
+    "link_full": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-17.md"
+      }
+    }
+  }
+}
