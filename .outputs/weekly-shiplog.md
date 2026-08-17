@@ -1,12 +1,12 @@
-*Weekly Shiplog — 2026-08-10*
+*Weekly Shiplog — 2026-08-17*
 
-The README got a makeover; the token got a hangover.
+A stranger opened a pull request. Everything else was maintenance.
 
 Shipped:
-- Visual-first README overhaul — 14-commit sprint rebuilt the entire landing page with animated SVG hero, custom pill buttons, brand images, and CSS micro-animations
-- Ecosystem cleanup — Noelclaw removed from catalog (2 PRs, drift-guard test caught the inconsistency)
-- CI security hardening — secret-exfil signature eliminated, Fleet Watcher dead code removed (~100 lines)
-- 4 agent self-improve PRs merged — rerun dedup for repo-actions, self-improve, project-lens + heartbeat threshold fix
+- OrcaRouter cloud gateway preset — 4th supported provider, community contribution by Marc-oss-hub (PR #287)
+- OpenAI 3.0 httpx transitive dependency fix — CI restored after SDK swap broke oracle tools (PR #288)
+- nanoid CVE-2026-67213 patched across both repos (PRs #286, #127)
 
-Stats: 22 commits, 19 PRs merged, +764/-644 lines, +15 stars (1,413→1,428)
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-10.md
+Stats: 11 commits, 7 PRs merged, +322/-147 lines across 2 repos
+Token: $0.00000238 (+14.6% 24h, recovering from mid-week crash through $0.0000025 floor)
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-17.md

@@ -1,0 +1,135 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-08-17"
+      },
+      "children": [
+        "text_tagline",
+        "sep_1",
+        "heading_shipped",
+        "shipped_stack",
+        "sep_2",
+        "heading_stats",
+        "stats_grid",
+        "link_full_update"
+      ]
+    },
+    "text_tagline": {
+      "type": "Text",
+      "props": {
+        "text": "A stranger opened a pull request. Everything else was maintenance.",
+        "variant": "lead"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      }
+    },
+    "shipped_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "shipped_1",
+        "shipped_2",
+        "shipped_3"
+      ]
+    },
+    "shipped_1": {
+      "type": "Text",
+      "props": {
+        "text": "OrcaRouter cloud gateway preset — 4th supported provider, community contribution by Marc-oss-hub (PR #287)"
+      }
+    },
+    "shipped_2": {
+      "type": "Text",
+      "props": {
+        "text": "OpenAI 3.0 httpx transitive dependency fix — CI restored after SDK swap broke oracle tools (PR #288)"
+      }
+    },
+    "shipped_3": {
+      "type": "Text",
+      "props": {
+        "text": "nanoid CVE-2026-67213 patched across both repos (PRs #286, #127)"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_commits",
+        "stat_prs",
+        "stat_lines",
+        "stat_token"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "11"
+      }
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "7"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed (across 2 repos)",
+        "value": "+322/-147"
+      }
+    },
+    "stat_token": {
+      "type": "Stat",
+      "props": {
+        "label": "Token",
+        "value": "$0.00000238",
+        "delta": "+14.6% 24h, recovering from mid-week crash through $0.0000025 floor",
+        "trend": "up"
+      }
+    },
+    "link_full_update": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-17.md"
+      }
+    }
+  }
+}

@@ -795,4 +795,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-17,fetch-tweets,claude-sonnet-4-6,2732,3677,326111,36696
 2026-08-17,repo-pulse,claude-sonnet-4-6,10,3295,355400,30483
 2026-08-17,feature,claude-opus-4-6,7,1480,218119,24720
-2026-08-17,push-recap,claude-opus-4-6,15,6086,629574,34346
+2026-08-17,weekly-shiplog,claude-opus-4-6,3814,10667,975213,82677
