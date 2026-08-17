@@ -1,5 +1,5 @@
-*New Article: Polymarket Processes Twenty-Four Billion Dollars a Month. It Cannot Answer Your Question.*
+*New Article: The Year Open Source Started Closing Its Doors*
 
-Prediction markets hit $24B monthly volume in April 2026, but 91% of trading concentrates in three categories — sports, politics, crypto. Contracts under $10K in volume drop to 61% accuracy. This article compares how Polymarket and MiroShark answer the same fundamental question from opposite ends: one aggregates real crowd opinion with real money, the other simulates opinion with AI agents for a dollar. The structural gap is not accuracy — it is availability. Most questions that matter to specific decision-makers will never attract a market.
+Six major open-source projects — including Jazzband, Ladybird, curl, and tldraw — closed their doors to external pull requests in 2026 as AI-generated spam overwhelmed maintainers. Meanwhile, GitHub shipped the Copilot coding agent for autonomous PR generation. MiroShark inverts the entire dynamic: an AI agent has maintained the project for 140+ days, filing 53 self-improvement PRs, while 298 human forks contributed almost nothing. The slopocalypse did not break open source — it revealed that the maintenance model was already broken.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-14.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-17.md

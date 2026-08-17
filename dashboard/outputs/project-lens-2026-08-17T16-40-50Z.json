@@ -1,0 +1,54 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "article-link",
+        "separator1",
+        "paragraph1",
+        "paragraph2",
+        "insight"
+      ]
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The Year Open Source Started Closing Its Doors",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-17.md",
+        "source": "project-lens"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "paragraph1": {
+      "type": "Text",
+      "props": {
+        "text": "Six major open-source projects — including Jazzband, Ladybird, curl, and tldraw — closed their doors to external pull requests in 2026 as AI-generated spam overwhelmed maintainers.",
+        "variant": "body"
+      }
+    },
+    "paragraph2": {
+      "type": "Text",
+      "props": {
+        "text": "Meanwhile, GitHub shipped the Copilot coding agent for autonomous PR generation. MiroShark inverts the entire dynamic: an AI agent has maintained the project for 140+ days, filing 53 self-improvement PRs, while 298 human forks contributed almost nothing.",
+        "variant": "body"
+      }
+    },
+    "insight": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "The slopocalypse did not break open source — it revealed that the maintenance model was already broken."
+      }
+    }
+  }
+}

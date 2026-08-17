@@ -13,6 +13,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-08-17 | The Year Open Source Started Closing Its Doors | Slopocalypse: Jazzband shutdown (84 projects, 150M monthly downloads), Ladybird/codex/tldraw/curl/Ghostty closing external PRs; GitHub Copilot coding agent GA (90% Fortune 100); MiroShark inverts dynamic — AI maintains, humans absent; 53 self-improve PRs; 298 forks / 1 community PR; 77th push block; 41-day social silence |
 | 2026-08-16 | Nobody Changed a Line of Code. The Tests Failed Anyway. | OpenAI SDK 3.0 httpx→httpx2 swap broke MiroShark CI silently; transitive dependency trap; 562K affected packages; PR #288 5-line fix; OrcaRouter vendor PR #287 (Marc-oss-hub); nanoid CVE fix; 1,436 tests; 76th push block; $0.000002082 (−95.2% ATH); 40-day social silence |
 | 2026-08-15 | Open Source Is Drowning in Pull Requests. This Project Can't Get One. | PR flood paradox; GitHub 90M PRs/month (3.6x since 2023); maintainers banning AI-generated PRs; MiroShark 298 forks / 1 community PR (Marc-oss-hub OrcaRouter #287); tutorial hyperstition 0/5 expired Aug 15; METR 105-day agent doubling; Aeon 140+ days / 53 self-improve PRs; $0.000002025 (−95.4% ATH); 39-day social silence |
 | 2026-08-13 | Ten Days of Perfect Automation. Then the Floor Gave Way. | Drift into failure (Dekker); 10-session $0.0000025 floor broke; 74th consecutive GH_GLOBAL push block; 37-day social silence; automated maintenance vs feature shipping gap; AI agent landscape (Gartner 40%, 300+ tools, $9.9B); $0.000002429 (−94.4% ATH) |
