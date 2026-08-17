@@ -1,0 +1,136 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-08-17"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price_stat",
+        "liquidity_volume_row",
+        "buys_sells_row",
+        "perf_row",
+        "sep1",
+        "analysis_text",
+        "chart_link"
+      ]
+    },
+    "price_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00000238507",
+        "delta": "+14.57%",
+        "trend": "up"
+      }
+    },
+    "liquidity_volume_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "liquidity_stat",
+        "volume_stat"
+      ]
+    },
+    "liquidity_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$240.9K"
+      }
+    },
+    "volume_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$7,654"
+      }
+    },
+    "buys_sells_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "buys_stat",
+        "sells_stat"
+      ]
+    },
+    "buys_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys",
+        "value": "30"
+      }
+    },
+    "sells_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Sells",
+        "value": "10"
+      }
+    },
+    "perf_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "perf_7d",
+        "perf_30d"
+      ]
+    },
+    "perf_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "−7.9%",
+        "trend": "down"
+      }
+    },
+    "perf_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "+43.1%",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "analysis_text": {
+      "type": "Text",
+      "props": {
+        "text": "Strongest buy-side session since Aug 10 — 0x796effe3 accumulated ~$1,600 in 2 minutes at 05:09–05:11 UTC. Price approaching the broken $0.0000025 floor (now overhead resistance). 41-day social silence continues.",
+        "variant": "body"
+      }
+    },
+    "chart_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
