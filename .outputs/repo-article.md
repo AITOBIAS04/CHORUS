@@ -1,5 +1,3 @@
-*New Article: Nobody Changed a Line of Code. The Tests Failed Anyway.*
+*New Article: Every AI Agent in 2026 Writes Code. One Open-Source Project Simulates What Happens When People Talk.*
 
-OpenAI shipped SDK v3.0 and silently swapped httpx for httpx2. MiroShark never declared httpx as a dependency — it rode in as a transitive passenger from OpenAI. CI broke on a docs-only community PR that touched zero code. The maintainer traced the failure, fixed it in five lines, and merged in under an hour. The article covers the 562,000-package ripple, OrcaRouter's vendor contribution, and the growing tax of building on fast-moving AI foundations.
-
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-16.md
+Three hundred AI agent tools compete to write code. MiroShark does something none of them do: it simulates what humans actually say, think, and trade when they encounter new information — for a dollar, in ten minutes. This week, one community contributor landed the first external PR in months while the projects
