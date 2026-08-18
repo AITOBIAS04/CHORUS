@@ -1,0 +1,313 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "title_heading",
+        "repo_context",
+        "sep1",
+        "action_1",
+        "action_2",
+        "action_3",
+        "action_4",
+        "action_5",
+        "sep2",
+        "details_link"
+      ]
+    },
+    "title_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Action Ideas — 2026-08-18",
+        "level": "h2"
+      }
+    },
+    "repo_context": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,430 stars · 298 forks · day 42 of social silence · 77th push block).",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action_1_title",
+        "action_1_badges",
+        "action_1_desc"
+      ]
+    },
+    "action_1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Simulation ZIP Export",
+        "level": "h3"
+      }
+    },
+    "action_1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_1_badge_1",
+        "action_1_badge_2"
+      ]
+    },
+    "action_1_badge_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "action_1_badge_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "One endpoint downloads all simulation artifacts as a single ZIP — signal.json, trajectory.json, reproduce.json, signed-result.json, per-platform actions.jsonl — making results archivable and citable in one action.",
+        "variant": "body"
+      }
+    },
+    "action_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action_2_title",
+        "action_2_badges",
+        "action_2_desc"
+      ]
+    },
+    "action_2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Open Graph Share Cards",
+        "level": "h3"
+      }
+    },
+    "action_2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_2_badge_1",
+        "action_2_badge_2"
+      ]
+    },
+    "action_2_badge_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "default"
+      }
+    },
+    "action_2_badge_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Per-simulation OG meta + generated SVG result card so every shared /sim/{id} link shows topic + direction + confidence in the link preview on X, Discord, LinkedIn.",
+        "variant": "body"
+      }
+    },
+    "action_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action_3_title",
+        "action_3_badges",
+        "action_3_desc"
+      ]
+    },
+    "action_3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Agent Response Transcript API",
+        "level": "h3"
+      }
+    },
+    "action_3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_3_badge_1",
+        "action_3_badge_2"
+      ]
+    },
+    "action_3_badge_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "action_3_badge_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/transcript returns the full simulation as a unified chronological array of agent actions across all platforms — the story of the simulation, currently buried in multiple actions.jsonl files.",
+        "variant": "body"
+      }
+    },
+    "action_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action_4_title",
+        "action_4_badges",
+        "action_4_desc"
+      ]
+    },
+    "action_4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Topic Template Library",
+        "level": "h3"
+      }
+    },
+    "action_4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_4_badge_1",
+        "action_4_badge_2"
+      ]
+    },
+    "action_4_badge_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "default"
+      }
+    },
+    "action_4_badge_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action_4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/topics/templates + Step 1 UI gallery of 25 curated simulation topics across 5 categories (Policy, Finance, Tech, Social, Product) — removes the blank-page problem for new users from the Towards AI coverage.",
+        "variant": "body"
+      }
+    },
+    "action_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action_5_title",
+        "action_5_badges",
+        "action_5_desc"
+      ]
+    },
+    "action_5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Offline HuggingFace Bundle",
+        "level": "h3"
+      }
+    },
+    "action_5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_5_badge_1",
+        "action_5_badge_2"
+      ]
+    },
+    "action_5_badge_1": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "default"
+      }
+    },
+    "action_5_badge_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "action_5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-download script + docker-compose.offline.yml + docs/OFFLINE.md — closes issue #240 (43 days open, 4 comments, air-gapped environments) and adds HPC/enterprise viability.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-18.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

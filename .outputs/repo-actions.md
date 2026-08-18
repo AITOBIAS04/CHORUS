@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-08-16*
-Generated from analysis of aaronjmars/MiroShark (1,430 stars · 298 forks · 76th push block · 40-day social silence).
+*Repo Action Ideas — 2026-08-18*
+Generated from analysis of aaronjmars/MiroShark (1,430 stars · 298 forks · day 42 of social silence · 77th push block).
 
-1. Arabic (AR) UI Locale (Community/DX, Medium)
-   First RTL locale — requires dir='rtl' toggle + CSS logical property rewrites. 35M+ Arabic-speaking GitHub devs, 48% MENA growth YoY. Backup 5th-locale path if previous proposals remain blocked.
+1. Simulation ZIP Export (Feature, Small)
+   One endpoint downloads all simulation artifacts as a single ZIP — signal.json, trajectory.json, reproduce.json, signed-result.json, per-platform actions.jsonl — making results archivable and citable in one action.
 
-2. Product Hunt Launch Kit (Growth, Small)
-   Pure documentation, no GH_GLOBAL needed. 12-item checklist, 3 tagline options, 249-char description, first comment template, hunter outreach, hourly timeline. Next optimal PH day: Tuesday Aug 19 (3 days). Targets the 100+ upvotes hyperstition (Sep 15).
+2. Open Graph Share Cards (Growth, Small)
+   Per-simulation OG meta + generated SVG result card so every shared /sim/{id} link shows topic + direction + confidence in the link preview on X, Discord, LinkedIn.
 
-3. Simulation Comparison API (Feature, Small)
-   GET /api/simulation/compare?id1=X&id2=Y — direction match/mismatch, confidence delta, stance shift, verdict sentence. Stateless (reads signal.json). Serves Towards AI + Crucible Sim research audience; foundation for trending-topics view.
+3. Agent Response Transcript API (Feature, Small)
+   GET /api/simulation/{id}/transcript returns the full simulation as a unified chronological array of agent actions across all platforms — the story of the simulation, currently buried in multiple actions.jsonl files.
 
-4. Interactive API Docs via Scalar (DX, Small)
-   GET /api/docs serves Scalar explorer. One Python route, 15 LoC, CDN-served. All 40+ endpoints try-able in browser without curl. On-ramp for Towards AI coverage audience who won't write code.
+4. Topic Template Library (Community, Small)
+   GET /api/topics/templates + Step 1 UI gallery of 25 curated simulation topics across 5 categories (Policy, Finance, Tech, Social, Product) — removes the blank-page problem for new users from the Towards AI coverage.
 
-5. Simulation Completion Webhook (Integration, Small)
-   POST /api/simulation/{id}/webhook registers callback_url — fires once on publish. HMAC signature, SSRF prevention. Eliminates polling in CI/CD pipelines. Enables Zapier/Make.com. Distinct from Per-Round Webhook (off-limits).
+5. Offline HuggingFace Bundle (DX, Medium)
+   Pre-download script + docker-compose.offline.yml + docs/OFFLINE.md — closes issue #240 (43 days open, 4 comments, air-gapped environments) and adds HPC/enterprise viability.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-16.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-18.md
