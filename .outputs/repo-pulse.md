@@ -2,9 +2,9 @@ Done.
 
 ## Summary
 
-- **Repo tracked:** `aaronjmars/MiroShark` (skipped `miroshark-aeon` as per config)
-- **Counts:** 1,430 stars / 298 forks — unchanged from Aug 15–16
-- **Stars (24h):** Stargazers API returned 403 again; net change vs Aug 16 log = 0 (1430→1430)
-- **Forks (24h):** Newest fork (Marc-oss-hub, Aug 13) predates the 24h cutoff (Aug 16 ~10:20 UTC)
-- **Result:** REPO_PULSE_QUIET — no notification sent
-- **Logged:** `memory/logs/2026-08-17.md` updated with Repo Pulse entry
+- **Repo checked:** `aaronjmars/MiroShark` (skipped `miroshark-aeon` per config)
+- **Current stats:** 1,430 stars, 298 forks — unchanged from Aug 17 log
+- **New stargazers (24h):** 0 — stargazers API returned 403; net change vs previous log is 0
+- **New forks (24h):** 0 — newest fork (Marc-oss-hub/MiroShark) was created Aug 13, before the 24h cutoff (Aug 17T10:11Z)
+- **Notification:** not sent (REPO_PULSE_QUIET)
+- **Logged** to `memory/logs/2026-08-18.md`
