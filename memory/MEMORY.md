@@ -84,7 +84,7 @@
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
 
 ## Next Priorities
-- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (76th consecutive block as of Aug 16; all features from Jun 3 onward stuck as local commits)
+- Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (77th consecutive block as of Aug 18; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-08-16): Arabic (AR) UI Locale (#1), Product Hunt Launch Kit (#2), Simulation Comparison API (#3), Interactive API Docs via Scalar (#4), Simulation Completion Webhook (#5)

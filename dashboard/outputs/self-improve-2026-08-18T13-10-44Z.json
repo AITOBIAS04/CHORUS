@@ -1,0 +1,222 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-08-18"
+      },
+      "children": [
+        "heading-merged",
+        "sep1",
+        "stack-issue",
+        "sep2",
+        "stack-what-changed",
+        "sep3",
+        "stack-impact",
+        "sep4",
+        "pr-link"
+      ]
+    },
+    "heading-merged": {
+      "type": "Heading",
+      "props": {
+        "text": "Merged PR #53: Lessons Learned consolidation rule for memory-flush",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-issue": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-issue",
+        "text-issue-api",
+        "text-issue-example",
+        "text-issue-pr53",
+        "text-issue-behavior"
+      ]
+    },
+    "heading-issue": {
+      "type": "Heading",
+      "props": {
+        "text": "Issue: Silent PR Merge Failures",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-issue-api": {
+      "type": "Text",
+      "props": {
+        "text": "The GitHub API sometimes returns mergeStateStatus: UNKNOWN for PRs instead of the actual status.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-issue-example": {
+      "type": "Text",
+      "props": {
+        "text": "Today, PR #53 showed UNKNOWN from gh pr list, but returned CLEAN when re-queried via gh pr view.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-issue-pr53": {
+      "type": "Text",
+      "props": {
+        "text": "PR #53: 77 hours old, flagged as stalled by heartbeat yesterday.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-issue-behavior": {
+      "type": "Text",
+      "props": {
+        "text": "The self-improve instructions had no handling for UNKNOWN status — PRs silently fell through all merge/close/skip conditions, getting ignored until heartbeat flagged them as stalled after 72h.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-what-changed": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-what-changed",
+        "text-file",
+        "text-step",
+        "text-solution",
+        "text-fallback"
+      ]
+    },
+    "heading-what-changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-file": {
+      "type": "Text",
+      "props": {
+        "text": "File modified: skills/self-improve/SKILL.md",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-step": {
+      "type": "Text",
+      "props": {
+        "text": "Added UNKNOWN mergeStateStatus handling to Step 0.5",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-solution": {
+      "type": "Text",
+      "props": {
+        "text": "Re-queries individual PRs via gh pr view to get the computed merge status",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-fallback": {
+      "type": "Text",
+      "props": {
+        "text": "Named fallback log entry (SELF_IMPROVE_MERGE_UNKNOWN) if status remains UNKNOWN",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-impact",
+        "text-impact-silent",
+        "text-impact-alerts",
+        "text-impact-merges"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-impact-silent": {
+      "type": "Text",
+      "props": {
+        "text": "PRs will no longer be silently ignored when the GitHub API returns stale merge status.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-impact-alerts": {
+      "type": "Text",
+      "props": {
+        "text": "Reduces unnecessary heartbeat stalled-PR alerts.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-impact-merges": {
+      "type": "Text",
+      "props": {
+        "text": "Ensures timely auto-merges of ready PRs.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Fix PR #55",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/55",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
