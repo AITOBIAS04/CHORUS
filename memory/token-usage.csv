@@ -811,3 +811,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-18,repo-article,claude-opus-4-6,11765,10215,948942,47048
 2026-08-18,repo-article,claude-opus-4-6,6,1013,165448,21821
 2026-08-18,heartbeat,claude-sonnet-4-6,7,3731,229504,33010
+2026-08-18,heartbeat,claude-sonnet-4-6,8,3445,268167,31250
