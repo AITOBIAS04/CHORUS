@@ -18,6 +18,11 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      --jq "[.[] | select(.title | startswith(\"improve:\")) | select(.createdAt < \"$CUTOFF\")] | sort_by(.number)"
    ```
    For each qualifying PR (oldest first, cap at 5 per run):
+   - **Re-query if `UNKNOWN`:** The list API sometimes returns `mergeStateStatus: UNKNOWN` before GitHub computes it. If a PR shows `UNKNOWN`, re-query it individually to get the actual status:
+     ```bash
+     gh pr view NUMBER --json mergeStateStatus,mergeable,reviewDecision
+     ```
+     Use the re-queried values for the merge/close/skip decision below. If still `UNKNOWN` after re-query, log `SELF_IMPROVE_MERGE_UNKNOWN: PR #NUMBER mergeStateStatus still UNKNOWN after re-query — skipping` and move to the next PR.
    - **Merge** if `mergeStateStatus` is `CLEAN` or `UNSTABLE` and `reviewDecision` is NOT `CHANGES_REQUESTED`:
      ```bash
      gh pr merge NUMBER --squash --delete-branch
