@@ -1,12 +1,18 @@
-*Push Recap — 2026-08-17*
-miroshark-aeon — 1 substantive commit by aeonframework (23 automation commits filtered)
+*Push Recap — 2026-08-18*
+miroshark-aeon — 14 substantive commits by 3 authors
+MiroShark — 1 Dependabot commit
 
-Token-Movers BREAKOUT: The token-movers skill flagged $MIROSHARK as a breakout — price up 11.5% to $0.000002385 on 2.2x average volume ($7,654 vs $3,525 7d avg). Buy/sell ratio flipped to 3:1 (30 buys / 10 sells), the strongest buy-side skew since Aug 10. No whale trades — largest single buy was $940, so this reads as broad-based accumulation. Liquidity rose 5.7% to $240.8K.
+Canon Framework Sync: miroshark-aeon rebased onto aeonfun/aeon canon — 300 files, +32.8K/-6.6K lines. Adopts multi-harness architecture (six AI backends: Claude, Codex, Grok, Kimi, Pi, Vibe), eyebrow skill-integrity gating (hash-locked skill files block tampering), plugin marketplace, 19 new framework skills, and a full dashboard/MCP OAuth overhaul. OKF removed entirely. Weekly aeon-update cron enabled so future syncs arrive as incremental PRs.
+
+Reliability Fixes: Four targeted production fixes — notify script no longer broadcasts --help text to all channels; cron push loop widened to 10 retries with jittered backoff to desync concurrent writers; harness timeout doubled to 30 minutes for long-running skills; ./scripts/skill-runs granted in base tool tier, resolving the ISS-001 root cause (skill-health 30m timeouts from permission denials).
+
+Observability: New cacheeconomics trace sidecar captures per-run 5m vs 1h cache write split — enables accurate cost attribution against Anthropic invoices (1h writes bill 2x, 5m writes 1.25x).
 
 Key changes:
-- New BREAKOUT article with full metrics table, trend analysis, and accumulation narrative
-- First breakout-grade signal since price broke the $0.0000025 floor on Aug 14
-- 30d trend: +46.1% — well above mid-July base despite 7d still −12.1%
+- harness-adapter/ directory with 6 AI backend adapters (+1,613 lines)
+- eyebrowlock.json skill integrity manifest (+2,312 lines)
+- .claude/skills/aeon/ operator skill (+1,535 lines across 9 files)
+- Jittered backoff on cron push contention (RANDOM % 4 + i)
 
-Stats: 2 files changed, +39/-0 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-17.md
+Stats: ~320 files changed, +34,473/-6,639 lines (15 substantive commits, 9 automation filtered)
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-18.md

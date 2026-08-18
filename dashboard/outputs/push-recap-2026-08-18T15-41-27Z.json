@@ -1,0 +1,202 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-18"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-repo1",
+        "text-repo2",
+        "sep1",
+        "heading-canon",
+        "text-canon-desc",
+        "sep2",
+        "heading-reliability",
+        "text-reliability-desc",
+        "sep3",
+        "heading-observability",
+        "text-observability",
+        "sep4",
+        "heading-keychanges",
+        "stack-keychanges",
+        "sep5",
+        "heading-stats",
+        "stat-files",
+        "stat-lines",
+        "stat-commits",
+        "sep6",
+        "link-fullrecap"
+      ]
+    },
+    "text-repo1": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 14 substantive commits by 3 authors"
+      }
+    },
+    "text-repo2": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 1 Dependabot commit"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-canon": {
+      "type": "Heading",
+      "props": {
+        "text": "Canon Framework Sync",
+        "level": "h2"
+      }
+    },
+    "text-canon-desc": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon rebased onto aeonfun/aeon canon — 300 files, +32.8K/-6.6K lines. Adopts multi-harness architecture (six AI backends: Claude, Codex, Grok, Kimi, Pi, Vibe), eyebrow skill-integrity gating (hash-locked skill files block tampering), plugin marketplace, 19 new framework skills, and a full dashboard/MCP OAuth overhaul. OKF removed entirely. Weekly aeon-update cron enabled so future syncs arrive as incremental PRs.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-reliability": {
+      "type": "Heading",
+      "props": {
+        "text": "Reliability Fixes",
+        "level": "h2"
+      }
+    },
+    "text-reliability-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Four targeted production fixes — notify script no longer broadcasts --help text to all channels; cron push loop widened to 10 retries with jittered backoff to desync concurrent writers; harness timeout doubled to 30 minutes for long-running skills; ./scripts/skill-runs granted in base tool tier, resolving the ISS-001 root cause (skill-health 30m timeouts from permission denials).",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-observability": {
+      "type": "Heading",
+      "props": {
+        "text": "Observability",
+        "level": "h2"
+      }
+    },
+    "text-observability": {
+      "type": "Text",
+      "props": {
+        "text": "New cacheeconomics trace sidecar captures per-run 5m vs 1h cache write split — enables accurate cost attribution against Anthropic invoices (1h writes bill 2x, 5m writes 1.25x).",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h2"
+      }
+    },
+    "stack-keychanges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-keychange1",
+        "text-keychange2",
+        "text-keychange3",
+        "text-keychange4"
+      ]
+    },
+    "text-keychange1": {
+      "type": "Text",
+      "props": {
+        "text": "harness-adapter/ directory with 6 AI backend adapters (+1,613 lines)"
+      }
+    },
+    "text-keychange2": {
+      "type": "Text",
+      "props": {
+        "text": "eyebrowlock.json skill integrity manifest (+2,312 lines)"
+      }
+    },
+    "text-keychange3": {
+      "type": "Text",
+      "props": {
+        "text": ".claude/skills/aeon/ operator skill (+1,535 lines across 9 files)"
+      }
+    },
+    "text-keychange4": {
+      "type": "Text",
+      "props": {
+        "text": "Jittered backoff on cron push contention (RANDOM % 4 + i)"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "~320"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+34,473 / -6,639"
+      }
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "15 substantive, 9 automation filtered"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link-fullrecap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-18.md"
+      }
+    }
+  }
+}
