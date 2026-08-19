@@ -1,7 +1,10 @@
-Step 0 triggered: today's token-report was already sent (price $0.000002025, −9.7% 24h, notification confirmed). Logged `TOKEN_REPORT_RERUN_QUIET` to the daily log and stopped — no re-fetch, no duplicate notification.
+$MiroShark Daily — 2026-08-19
 
-## Summary
+Price: $0.000002070 (+4.76% 24h)
+Liquidity: $226.7K | 24h Vol: $15.3K
+Buys/Sells: 33/20
+7d: -22.1% | 30d: +18.7%
 
-- **Action:** Same-day rerun dedup (Step 0) fired — `memory/logs/2026-08-18.md` already contained a token-report entry with `Notification sent: yes`.
-- **Result:** Logged `TOKEN_REPORT_RERUN_QUIET` to today's log; no data was re-fetched, no article was overwritten, no notification was re-sent.
-- **Prior run data:** $MIROSHARK at $0.000002025 (−9.7% 24h), FDV $202.5K, LP $223.8K, vol $16,613, 40/19 buys/sells, 42-day social silence.
+Recovery bounce off $0.0000019 lows; $4.3K buy at ~07:00 UTC drove price back to $0.000002070. $0.0000025 overhead. 43-day social silence.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
