@@ -1,0 +1,266 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-19",
+        "description": "miroshark-aeon — 8 substantive commits by 1 author (15 automation filtered)"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "auth_section",
+        "sep1",
+        "security_section",
+        "sep2",
+        "framework_section",
+        "sep3",
+        "infra_section",
+        "sep4",
+        "key_changes_section",
+        "sep5",
+        "stats_section",
+        "sep6",
+        "link_section"
+      ]
+    },
+    "auth_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "auth_heading",
+        "auth_text"
+      ]
+    },
+    "auth_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Auth Token Fallback Hardening",
+        "level": "h3"
+      }
+    },
+    "auth_text": {
+      "type": "Text",
+      "props": {
+        "text": "Three skills (bd-radar, fleet-control, fleet-scorecard) were raising false alarms about a missing GH_READ_PAT. The fix adds GH_GLOBAL to the fallback chain and rewrites docs to clarify the single-key setup is normal, not degraded.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "security_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "security_heading",
+        "security_text"
+      ]
+    },
+    "security_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Security — Secret Store Narrowing",
+        "level": "h3"
+      }
+    },
+    "security_text": {
+      "type": "Text",
+      "props": {
+        "text": "The messages.yml workflow was dumping the entire GitHub secret store via toJSON(secrets) into an env var for MCP preflight. Replaced with an explicit named allowlist of ~50 secrets, closing the exposure and clearing GitHub's public-repo malicious-workflow hold.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "framework_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "framework_heading",
+        "framework_text"
+      ]
+    },
+    "framework_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Framework Updater — 3-Way Merge",
+        "level": "h3"
+      }
+    },
+    "framework_text": {
+      "type": "Text",
+      "props": {
+        "text": "aeon-update previously treated any operator-customized file as a CONFLICT. Now it runs git merge-file 3-way — disjoint edits merge automatically, only true overlaps surface as conflicts. Also adds an eyebrow lock fail-safe so new upstream skills never land a CI-red PR. Pinned to claude-opus-4-8.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "infra_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "infra_heading",
+        "infra_text"
+      ]
+    },
+    "infra_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infrastructure",
+        "level": "h3"
+      }
+    },
+    "infra_text": {
+      "type": "Text",
+      "props": {
+        "text": "Scheduler cron tripled from */5 to */15 (288→96 runs/day); LLM gateway provider set to auto.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key_heading",
+        "key_item1",
+        "key_item2",
+        "key_item3"
+      ]
+    },
+    "key_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "key_item1": {
+      "type": "Text",
+      "props": {
+        "text": "messages.yml ALL_SECRETS switched from toJSON(secrets) to hand-enumerated named allowlist (~50 secrets)",
+        "variant": "body"
+      }
+    },
+    "key_item2": {
+      "type": "Text",
+      "props": {
+        "text": "aeon-update SKILL.md gains S6 3-way merge block with git merge-file + eyebrow binary download fail-safe (+35 lines)",
+        "variant": "body"
+      }
+    },
+    "key_item3": {
+      "type": "Text",
+      "props": {
+        "text": "bd-radar/fleet-control/fleet-scorecard all add GH_GLOBAL to auth fallback chain, stop alarming on unset GH_READ_PAT",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_additions",
+        "stat_deletions"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "7"
+      }
+    },
+    "stat_additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "70"
+      }
+    },
+    "stat_deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines deleted",
+        "value": "27"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_link"
+      ]
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "push-recap-2026-08-19",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-19.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}

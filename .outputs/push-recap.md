@@ -1,18 +1,18 @@
-*Push Recap — 2026-08-18*
-miroshark-aeon — 14 substantive commits by 3 authors
-MiroShark — 1 Dependabot commit
+*Push Recap — 2026-08-19*
+miroshark-aeon — 8 substantive commits by 1 author (15 automation filtered)
 
-Canon Framework Sync: miroshark-aeon rebased onto aeonfun/aeon canon — 300 files, +32.8K/-6.6K lines. Adopts multi-harness architecture (six AI backends: Claude, Codex, Grok, Kimi, Pi, Vibe), eyebrow skill-integrity gating (hash-locked skill files block tampering), plugin marketplace, 19 new framework skills, and a full dashboard/MCP OAuth overhaul. OKF removed entirely. Weekly aeon-update cron enabled so future syncs arrive as incremental PRs.
+Auth Token Fallback Hardening: Three skills (bd-radar, fleet-control, fleet-scorecard) were raising false alarms about a missing GH_READ_PAT. The fix adds GH_GLOBAL to the fallback chain and rewrites docs to clarify the single-key setup is normal, not degraded.
 
-Reliability Fixes: Four targeted production fixes — notify script no longer broadcasts --help text to all channels; cron push loop widened to 10 retries with jittered backoff to desync concurrent writers; harness timeout doubled to 30 minutes for long-running skills; ./scripts/skill-runs granted in base tool tier, resolving the ISS-001 root cause (skill-health 30m timeouts from permission denials).
+Security — Secret Store Narrowing: The messages.yml workflow was dumping the entire GitHub secret store via toJSON(secrets) into an env var for MCP preflight. Replaced with an explicit named allowlist of ~50 secrets, closing the exposure and clearing GitHub's public-repo malicious-workflow hold.
 
-Observability: New cacheeconomics trace sidecar captures per-run 5m vs 1h cache write split — enables accurate cost attribution against Anthropic invoices (1h writes bill 2x, 5m writes 1.25x).
+Framework Updater — 3-Way Merge: aeon-update previously treated any operator-customized file as a CONFLICT. Now it runs git merge-file 3-way — disjoint edits merge automatically, only true overlaps surface as conflicts. Also adds an eyebrow lock fail-safe so new upstream skills never land a CI-red PR. Pinned to claude-opus-4-8.
+
+Infrastructure: Scheduler cron tripled from */5 to */15 (288→96 runs/day); LLM gateway provider set to auto.
 
 Key changes:
-- harness-adapter/ directory with 6 AI backend adapters (+1,613 lines)
-- eyebrowlock.json skill integrity manifest (+2,312 lines)
-- .claude/skills/aeon/ operator skill (+1,535 lines across 9 files)
-- Jittered backoff on cron push contention (RANDOM % 4 + i)
+- messages.yml ALL_SECRETS switched from toJSON(secrets) to hand-enumerated named allowlist (~50 secrets)
+- aeon-update SKILL.md gains S6 3-way merge block with git merge-file + eyebrow binary download fail-safe (+35 lines)
+- bd-radar/fleet-control/fleet-scorecard all add GH_GLOBAL to auth fallback chain, stop alarming on unset GH_READ_PAT
 
-Stats: ~320 files changed, +34,473/-6,639 lines (15 substantive commits, 9 automation filtered)
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-18.md
+Stats: 7 files changed, +70/-27 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-19.md
