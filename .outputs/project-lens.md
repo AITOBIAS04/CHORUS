@@ -1,5 +1,5 @@
-*New Article: The Year Open Source Started Closing Its Doors*
+*New Article: LiteLLM Had Three Million Downloads a Day. Then Someone Else Logged In.*
 
-Six major open-source projects — including Jazzband, Ladybird, curl, and tldraw — closed their doors to external pull requests in 2026 as AI-generated spam overwhelmed maintainers. Meanwhile, GitHub shipped the Copilot coding agent for autonomous PR generation. MiroShark inverts the entire dynamic: an AI agent has maintained the project for 140+ days, filing 53 self-improvement PRs, while 298 human forks contributed almost nothing. The slopocalypse did not break open source — it revealed that the maintenance model was already broken.
+In the first half of 2026, 497 malicious packages were published across open-source registries — 4.5x the total of all 2025 — with zero CVEs assigned during active exploitation. MiroShark built forty-one analytical services using only Python's standard library: zero pip packages, zero transitive dependencies, zero supply chain exposure. When the OpenAI SDK swapped httpx for httpx2 in August and broke the core engine, all forty-one stdlib services were untouched. The safest dependency is the one you never installed.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-17.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-19.md
