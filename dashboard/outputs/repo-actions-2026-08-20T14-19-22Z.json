@@ -1,0 +1,312 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas 2026-08-20"
+      },
+      "children": [
+        "stack-items",
+        "separator-1",
+        "link-details"
+      ]
+    },
+    "stack-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4",
+        "item-5"
+      ]
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-1-heading",
+        "item-1-badges",
+        "item-1-description"
+      ]
+    },
+    "item-1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Vietnamese Locale",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-1-category",
+        "badge-1-size"
+      ]
+    },
+    "badge-1-category": {
+      "type": "Badge",
+      "props": {
+        "text": "DX"
+      },
+      "children": []
+    },
+    "badge-1-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "item-1-description": {
+      "type": "Text",
+      "props": {
+        "text": "5th locale for Sep 1 hyperstition",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-2-heading",
+        "item-2-badges",
+        "item-2-description"
+      ]
+    },
+    "item-2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Social Sharing Deep Links",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-2-category",
+        "badge-2-size"
+      ]
+    },
+    "badge-2-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth"
+      },
+      "children": []
+    },
+    "badge-2-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "item-2-description": {
+      "type": "Text",
+      "props": {
+        "text": "/share-links endpoint for one-click X/LinkedIn sharing",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-3-heading",
+        "item-3-badges",
+        "item-3-description"
+      ]
+    },
+    "item-3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Prometheus Metrics",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-3-category",
+        "badge-3-size"
+      ]
+    },
+    "badge-3-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration"
+      },
+      "children": []
+    },
+    "badge-3-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "item-3-description": {
+      "type": "Text",
+      "props": {
+        "text": "/metrics endpoint for self-hosters",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-4-heading",
+        "item-4-badges",
+        "item-4-description"
+      ]
+    },
+    "item-4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Tagging",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-4-category",
+        "badge-4-size"
+      ]
+    },
+    "badge-4-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      },
+      "children": []
+    },
+    "badge-4-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "item-4-description": {
+      "type": "Text",
+      "props": {
+        "text": "organize simulations by tag",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-5-heading",
+        "item-5-badges",
+        "item-5-description"
+      ]
+    },
+    "item-5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Cost Receipt API",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-5-category",
+        "badge-5-size"
+      ]
+    },
+    "badge-5-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      },
+      "children": []
+    },
+    "badge-5-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "item-5-description": {
+      "type": "Text",
+      "props": {
+        "text": "itemized per-simulation token and USD cost",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-20.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
