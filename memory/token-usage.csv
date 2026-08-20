@@ -827,3 +827,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-20,fetch-tweets,claude-sonnet-4-6,564,4461,300304,29089
 2026-08-20,token-report,claude-sonnet-4-6,6,950,163891,22543
 2026-08-20,repo-pulse,claude-sonnet-4-6,13,3502,495028,30310
+2026-08-20,feature,claude-opus-4-6,1395,1351,217675,24910
