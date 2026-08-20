@@ -42,7 +42,9 @@ Today is ${today}. Search X for tweets matching **${var}**.
    `site:x.com "${query_terms}" after:${FROM_DATE}`
    Note at the top of the log entry: "XAI_API_KEY not available; results compiled via WebSearch". WebSearch rankings favour high-engagement older tweets — **prioritise results that mention a date within the last 48 hours** when possible.
 
-   **Query cap: run at most 3 WebSearch queries per execution.** WebSearch rarely surfaces fresh tweets — more queries just burn compute for the same stale results. Use your 3 queries wisely: one broad match (`site:x.com "${primary_term}"`), one with date constraint (`after:${FROM_DATE}`), and one variant (cashtag, handle, or alternate phrasing). If all 3 return nothing new, stop searching.
+   **Query cap and backoff:** By default, run at most 3 WebSearch queries per execution — one broad match (`site:x.com "${primary_term}"`), one with date constraint (`after:${FROM_DATE}`), and one variant (cashtag, handle, or alternate phrasing). If all 3 return nothing new, stop searching.
+
+   **Prolonged silence backoff:** Before running queries, count consecutive FETCH_TWEETS_EMPTY days from `memory/logs/` (same count used in step 5). If `consecutive_empty >= 7`, reduce to **1 query only** — use the date-constrained query (`site:x.com "${primary_term}" after:${FROM_DATE}`) as it's most likely to surface fresh content. Log: `WebSearch backoff: 1 query (${consecutive_empty} consecutive empty days; 3→1 to reduce waste)`. This saves 2 queries per day during known-silent periods — WebSearch returns the same stale IDs regardless of query count (observed: identical ~10 stale IDs returned across all 3 queries for 19+ days). The backoff resets automatically when a fresh tweet is found (consecutive_empty drops to 0).
 
 4. **Deduplicate against previously-reported tweets** (from step 2):
    - Compare each candidate tweet URL against the collected set of already-reported URLs.
