@@ -1,0 +1,153 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-08-20"
+      },
+      "children": [
+        "price_stat",
+        "sep1",
+        "liquidity_volume_stack",
+        "sep2",
+        "buysells_stack",
+        "sep3",
+        "timeframes_stack",
+        "sep4",
+        "analysis_text",
+        "sep5",
+        "chart_link"
+      ]
+    },
+    "price_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000002483",
+        "delta": "+26.83%",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "liquidity_volume_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "liquidity_stat",
+        "volume_stat"
+      ]
+    },
+    "liquidity_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$268K"
+      }
+    },
+    "volume_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$31,956"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "buysells_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "buysells_text",
+        "buyerssellers_text"
+      ]
+    },
+    "buysells_text": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 92/80"
+      }
+    },
+    "buyerssellers_text": {
+      "type": "Text",
+      "props": {
+        "text": "Buyers/Sellers: 57/34"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "timeframes_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "7d_stat",
+        "30d_stat"
+      ]
+    },
+    "7d_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "+9.7%",
+        "trend": "up"
+      }
+    },
+    "30d_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "+31.9%",
+        "trend": "up"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "analysis_text": {
+      "type": "Text",
+      "props": {
+        "text": "Bounced off $1.93e-6 lows; buyer wave at 14:00–16:00 UTC Aug 19 pushed to $2.678e-6 peak on ~$17K in two hours. Consolidating at $2.44–2.48e-6. Next resistance: $2.60e-6 (yesterday's close) then the broken $0.0000025 floor. 44-day social silence continues.",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
