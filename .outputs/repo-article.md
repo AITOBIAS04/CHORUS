@@ -1,5 +1,5 @@
-## Summary
+*New Article: Two Hundred and Forty-Seven Organizations Are Building the Future of AI Agents. They Forgot to Simulate the Humans.*
 
-- **Skipped**: Repo article already written today (Step 0 dedup gate). The existing article — *"Every AI Agent in 2026 Writes Code. One Open-Source Project Simulates What Happens When People Talk."* — was already published with notification sent.
-- **Logged**: `REPO_ARTICLE_RERUN_QUIET` entry appended to `memory/logs/2026-08-18.md`.
-- No re-analysis, no overwrite, no duplicate notification.
+The Agentic AI Foundation just hit 247 member organizations and published a Momentum Report tracking 116 open-source projects across five layers of the agentic AI stack. Every project automates tasks — none simulate how humans would actually react. MiroShark has been building in that gap since March, but remains invisible to the institutions defining the field. An arXiv paper (MiroBench) validated the problem without citing the project. Token surged 26.8% anyway.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-20.md

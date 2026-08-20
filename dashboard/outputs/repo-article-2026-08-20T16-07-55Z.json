@@ -1,0 +1,133 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading",
+        "stats_grid",
+        "separator1",
+        "narrative",
+        "separator2",
+        "link"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Two Hundred and Forty-Seven Organizations Are Building the Future of AI Agents. They Forgot to Simulate the Humans.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat1",
+        "stat2",
+        "stat3",
+        "stat4"
+      ]
+    },
+    "stat1": {
+      "type": "Stat",
+      "props": {
+        "label": "Agentic AI Foundation Members",
+        "value": "247"
+      },
+      "children": []
+    },
+    "stat2": {
+      "type": "Stat",
+      "props": {
+        "label": "Open-Source Projects Tracked",
+        "value": "116"
+      },
+      "children": []
+    },
+    "stat3": {
+      "type": "Stat",
+      "props": {
+        "label": "AI Stack Layers",
+        "value": "5"
+      },
+      "children": []
+    },
+    "stat4": {
+      "type": "Stat",
+      "props": {
+        "label": "Token Surge",
+        "value": "26.8%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "narrative": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text1",
+        "text2",
+        "text3"
+      ]
+    },
+    "text1": {
+      "type": "Text",
+      "props": {
+        "text": "The Agentic AI Foundation just hit 247 member organizations and published a Momentum Report tracking 116 open-source projects across five layers of the agentic AI stack. Every project automates tasks — none simulate how humans would actually react.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text2": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark has been building in that gap since March, but remains invisible to the institutions defining the field. An arXiv paper (MiroBench) validated the problem without citing the project.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text3": {
+      "type": "Text",
+      "props": {
+        "text": "Token surged 26.8% anyway.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-20.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
