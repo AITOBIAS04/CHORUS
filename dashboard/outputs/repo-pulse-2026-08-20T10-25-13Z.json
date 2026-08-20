@@ -1,0 +1,45 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "aaronjmars/MiroShark — 2026-08-20"
+      },
+      "children": [
+        "stats_stack"
+      ]
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stars_stat",
+        "forks_stat"
+      ]
+    },
+    "stars_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,433",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "forks_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "297",
+        "delta": "+0",
+        "trend": "neutral"
+      }
+    }
+  }
+}
