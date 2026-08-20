@@ -1,18 +1,13 @@
-*Push Recap — 2026-08-19*
-miroshark-aeon — 8 substantive commits by 1 author (15 automation filtered)
+*Push Recap — 2026-08-20*
+miroshark-aeon — 1 substantive commit by aeonframework (11 automation commits filtered)
+MiroShark — 0 commits (79th consecutive push block)
 
-Auth Token Fallback Hardening: Three skills (bd-radar, fleet-control, fleet-scorecard) were raising false alarms about a missing GH_READ_PAT. The fix adds GH_GLOBAL to the fallback chain and rewrites docs to clarify the single-key setup is normal, not degraded.
-
-Security — Secret Store Narrowing: The messages.yml workflow was dumping the entire GitHub secret store via toJSON(secrets) into an env var for MCP preflight. Replaced with an explicit named allowlist of ~50 secrets, closing the exposure and clearing GitHub's public-repo malicious-workflow hold.
-
-Framework Updater — 3-Way Merge: aeon-update previously treated any operator-customized file as a CONFLICT. Now it runs git merge-file 3-way — disjoint edits merge automatically, only true overlaps surface as conflicts. Also adds an eyebrow lock fail-safe so new upstream skills never land a CI-red PR. Pinned to claude-opus-4-8.
-
-Infrastructure: Scheduler cron tripled from */5 to */15 (288→96 runs/day); LLM gateway provider set to auto.
+Token Movers Scan: The token-movers skill logged a CoinGecko top-100 market scan showing broad risk-on conditions — 80/100 coins green, median +7.3% 24h. Large-cap momentum from ETH (+17.7%) and XRP (+20.7%). CASHCAT led at +34.4% but flagged as pump-risk. This broader rally context explains MiroShark's own +26.83% bounce.
 
 Key changes:
-- messages.yml ALL_SECRETS switched from toJSON(secrets) to hand-enumerated named allowlist (~50 secrets)
-- aeon-update SKILL.md gains S6 3-way merge block with git merge-file + eyebrow binary download fail-safe (+35 lines)
-- bd-radar/fleet-control/fleet-scorecard all add GH_GLOBAL to auth fallback chain, stop alarming on unset GH_READ_PAT
+- memory/logs/2026-08-20.md — appended CoinGecko movers scan: winners (CASHCAT, TEL, HYPE, XRP), losers (BTW, H, GENIUS), trending (BULLBALLS, HYPE, ERG, XRP)
+- 11 automation commits filtered (cron markers, scheduler state, auto-commits)
+- MiroShark main repo: zero activity, GH_GLOBAL still unset
 
-Stats: 7 files changed, +70/-27 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-19.md
+Stats: 1 file changed, +10/-0 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-20.md

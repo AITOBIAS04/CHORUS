@@ -1,0 +1,464 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-20"
+      },
+      "children": [
+        "repo_activity_section",
+        "separator_1",
+        "token_movers_section",
+        "separator_2",
+        "key_changes_section",
+        "separator_3",
+        "stats_section",
+        "separator_4",
+        "full_recap_section"
+      ]
+    },
+    "repo_activity_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_heading",
+        "miroshark_aeon",
+        "miroshark_repo"
+      ]
+    },
+    "repo_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Activity",
+        "level": "h2"
+      }
+    },
+    "miroshark_aeon": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 1 substantive commit by aeonframework (11 automation commits filtered)"
+      }
+    },
+    "miroshark_repo": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 0 commits (79th consecutive push block)"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "token_movers_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "token_movers_heading",
+        "token_movers_description",
+        "market_overview_stack",
+        "large_cap_stack",
+        "cashcat_alert",
+        "winners_stack",
+        "losers_stack",
+        "trending_stack",
+        "miroshark_context"
+      ]
+    },
+    "token_movers_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Token Movers Scan",
+        "level": "h2"
+      }
+    },
+    "token_movers_description": {
+      "type": "Text",
+      "props": {
+        "text": "CoinGecko top-100 market scan showing broad risk-on conditions. This broader rally context explains MiroShark's own +26.83% bounce."
+      }
+    },
+    "market_overview_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "market_green_stat",
+        "market_median_stat"
+      ]
+    },
+    "market_green_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Coins Green (out of 100)",
+        "value": "80"
+      }
+    },
+    "market_median_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Median 24h Change",
+        "value": "+7.3%",
+        "trend": "up"
+      }
+    },
+    "large_cap_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "large_cap_heading",
+        "eth_stat",
+        "xrp_stat"
+      ]
+    },
+    "large_cap_heading": {
+      "type": "Text",
+      "props": {
+        "text": "Large-cap momentum:",
+        "variant": "lead"
+      }
+    },
+    "eth_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "ETH",
+        "value": "+17.7%",
+        "trend": "up"
+      }
+    },
+    "xrp_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "XRP",
+        "value": "+20.7%",
+        "trend": "up"
+      }
+    },
+    "cashcat_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "CASHCAT",
+        "message": "+34.4% — flagged as pump-risk (market leader)",
+        "type": "warning"
+      }
+    },
+    "winners_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "winners_heading",
+        "winners_badges"
+      ]
+    },
+    "winners_heading": {
+      "type": "Text",
+      "props": {
+        "text": "Winners:",
+        "variant": "lead"
+      }
+    },
+    "winners_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "cashcat_winner_badge",
+        "tel_badge",
+        "hype_winner_badge",
+        "xrp_winner_badge"
+      ]
+    },
+    "cashcat_winner_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "CASHCAT",
+        "variant": "default"
+      }
+    },
+    "tel_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "TEL",
+        "variant": "default"
+      }
+    },
+    "hype_winner_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "HYPE",
+        "variant": "default"
+      }
+    },
+    "xrp_winner_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "XRP",
+        "variant": "default"
+      }
+    },
+    "losers_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "losers_heading",
+        "losers_badges"
+      ]
+    },
+    "losers_heading": {
+      "type": "Text",
+      "props": {
+        "text": "Losers:",
+        "variant": "lead"
+      }
+    },
+    "losers_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "btw_badge",
+        "h_badge",
+        "genius_badge"
+      ]
+    },
+    "btw_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "BTW",
+        "variant": "destructive"
+      }
+    },
+    "h_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "H",
+        "variant": "destructive"
+      }
+    },
+    "genius_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "GENIUS",
+        "variant": "destructive"
+      }
+    },
+    "trending_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "trending_heading",
+        "trending_badges"
+      ]
+    },
+    "trending_heading": {
+      "type": "Text",
+      "props": {
+        "text": "Trending:",
+        "variant": "lead"
+      }
+    },
+    "trending_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "bullballs_badge",
+        "hype_trending_badge",
+        "erg_badge",
+        "xrp_trending_badge"
+      ]
+    },
+    "bullballs_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "BULLBALLS",
+        "variant": "outline"
+      }
+    },
+    "hype_trending_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "HYPE",
+        "variant": "outline"
+      }
+    },
+    "erg_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "ERG",
+        "variant": "outline"
+      }
+    },
+    "xrp_trending_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "XRP",
+        "variant": "outline"
+      }
+    },
+    "miroshark_context": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark Bounce Context",
+        "value": "+26.83%",
+        "trend": "up"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key_changes_heading",
+        "changes_list"
+      ]
+    },
+    "key_changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change_1",
+        "change_2",
+        "change_3"
+      ]
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "memory/logs/2026-08-20.md — appended CoinGecko movers scan: winners (CASHCAT, TEL, HYPE, XRP), losers (BTW, H, GENIUS), trending (BULLBALLS, HYPE, ERG, XRP)"
+      }
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "11 automation commits filtered (cron markers, scheduler state, auto-commits)"
+      }
+    },
+    "change_3": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark main repo: zero activity, GH_GLOBAL still unset"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_stack"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "files_changed_stat",
+        "lines_stat"
+      ]
+    },
+    "files_changed_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "1"
+      }
+    },
+    "lines_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added/Removed",
+        "value": "+10 / -0"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "full_recap_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "full_recap_heading",
+        "full_recap_link"
+      ]
+    },
+    "full_recap_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Full Recap",
+        "level": "h3"
+      }
+    },
+    "full_recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "push-recap-2026-08-20.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-20.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
