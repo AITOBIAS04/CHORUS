@@ -1,0 +1,248 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-21"
+      },
+      "children": [
+        "subtitle",
+        "sep1",
+        "section1",
+        "sep2",
+        "section2",
+        "sep3",
+        "section3",
+        "sep4",
+        "key_changes_heading",
+        "key_changes_stack",
+        "sep5",
+        "stats",
+        "sep6",
+        "full_recap_link"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 5 substantive commits by aaronjmars (9 automation filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h1_dashboard",
+        "badges_142_143_144",
+        "text_dashboard"
+      ]
+    },
+    "h1_dashboard": {
+      "type": "Heading",
+      "props": {
+        "text": "Dashboard Layout Fixes",
+        "level": "h3"
+      }
+    },
+    "badges_142_143_144": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_142",
+        "badge_143",
+        "badge_144"
+      ]
+    },
+    "badge_142": {
+      "type": "Badge",
+      "props": {
+        "text": "#142",
+        "variant": "default"
+      }
+    },
+    "badge_143": {
+      "type": "Badge",
+      "props": {
+        "text": "#143",
+        "variant": "default"
+      }
+    },
+    "badge_144": {
+      "type": "Badge",
+      "props": {
+        "text": "#144",
+        "variant": "default"
+      }
+    },
+    "text_dashboard": {
+      "type": "Text",
+      "props": {
+        "text": "Three-PR series fixed the 288px feed panel where token prices, stat labels, and card content were overflowing and shattering into unreadable vertical letters. Progressive fix: overflow-wrap containment, content-aware grid column sizing (measures Stat values to auto-collapse long-number rows), and flex-wrap with basis constraints on horizontal stat stacks.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h2_security",
+        "badge_141",
+        "text_security"
+      ]
+    },
+    "h2_security": {
+      "type": "Heading",
+      "props": {
+        "text": "Supply-Chain Security",
+        "level": "h3"
+      }
+    },
+    "badge_141": {
+      "type": "Badge",
+      "props": {
+        "text": "#141",
+        "variant": "default"
+      }
+    },
+    "text_security": {
+      "type": "Text",
+      "props": {
+        "text": "SHA-pinned every GitHub Action across all 15 workflow files (mutable tags → immutable commit SHAs), added --ignore-scripts to codex npm install, and SHA256-verified the eyebrow binary with a scrubbed env (env -i) so even a compromised binary cannot read run secrets.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h3_scorer",
+        "badge_145",
+        "text_scorer"
+      ]
+    },
+    "h3_scorer": {
+      "type": "Heading",
+      "props": {
+        "text": "Scorer Quality + Distribution",
+        "level": "h3"
+      }
+    },
+    "badge_145": {
+      "type": "Badge",
+      "props": {
+        "text": "#145",
+        "variant": "default"
+      }
+    },
+    "text_scorer": {
+      "type": "Text",
+      "props": {
+        "text": "Scorer now reads head+tail of long outputs instead of a flat 3KB head-truncate that missed conclusions. Rubric injects STRATEGY.md for strategic alignment grading. Meta-skill skip is frontmatter-driven (scorable: false) replacing a drifted hardcoded regex. Invalid judge scores skip the write instead of recording a 0. New Codex plugin manifest + llms.txt doc map extend discoverability.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key_changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "key_changes_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3",
+        "change4"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "SpecNode.tsx rewritten 3x: min-w-0/overflow-hidden on all components, content-aware grid minmax(), flex-wrap with data-stat basis",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "15 workflow files SHA-pinned (checkout, setup-node, cache, attest-build-provenance)",
+        "variant": "body"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "Eyebrow binary download now SHA256-verified + runs in scrubbed env",
+        "variant": "body"
+      }
+    },
+    "change4": {
+      "type": "Text",
+      "props": {
+        "text": "3 new distribution files: .agents/plugins/marketplace.json, llms.txt, plugin/.codex-plugin/plugin.json",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "25",
+        "delta": "+278/-76 lines"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "full_recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-21.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
