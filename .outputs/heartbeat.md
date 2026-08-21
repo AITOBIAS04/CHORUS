@@ -1,8 +1,9 @@
-HEARTBEAT_OK logged. All 13 skills healthy, all expected Friday skills ran, PR #56 within the 72h `improve:` threshold, no open issues.
+HEARTBEAT_RERUN_OK. All expected Friday skills confirmed (token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens, heartbeat). No missing skills, no stalled PRs, no open issues. A prior heartbeat already ran today at ~19:00 UTC with the same findings — nothing new to report.
 
 ## Summary
-- **System health:** All skills `consecutive_failures=0` — clean.
-- **Skills verified:** token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens all confirmed in today's log. No missing skills.
-- **PR #56** (`improve:` fetch-tweets backoff) is ~30h old — not yet at the 72h flag threshold.
-- **No open issues, no escalations, no notification sent.**
-- **Log appended** to `memory/logs/2026-08-21.md`.
+
+- Read memory, cron-state, today's and yesterday's logs, open PRs, and running workflows
+- All 13 skills healthy (`consecutive_failures: 0`)
+- All 7 Friday skills confirmed run; PR #56 within 72h auto-merge window
+- No open issues, no escalations
+- Logged `HEARTBEAT_RERUN_OK` to `memory/logs/2026-08-21.md`
