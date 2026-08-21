@@ -835,3 +835,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-20,repo-article,claude-opus-4-6,6,1519,212622,45475
 2026-08-20,heartbeat,claude-sonnet-4-6,7,2940,230910,33209
 2026-08-20,heartbeat,claude-sonnet-4-6,8,3365,286278,36747
+2026-08-21,token-report,claude-sonnet-4-6,3712,10397,888355,48583
