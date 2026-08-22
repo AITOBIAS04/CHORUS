@@ -1,0 +1,249 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-08-22"
+      },
+      "children": [
+        "heading_main",
+        "stack_content"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Will $MIROSHARK FDV exceed $500K by September 15, 2026?",
+        "level": "h2"
+      }
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section_coordination",
+        "sep1",
+        "section_why_now",
+        "sep2",
+        "section_resolution",
+        "sep3",
+        "section_scores",
+        "sep4",
+        "link_hyperstitions"
+      ]
+    },
+    "section_coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_coordination_title",
+        "text_coordination_desc"
+      ]
+    },
+    "text_coordination_title": {
+      "type": "Text",
+      "props": {
+        "text": "The coordination play:",
+        "variant": "lead"
+      }
+    },
+    "text_coordination_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The token just doubled in 30 days on zero social media coverage — pure on-chain conviction. $500K FDV (roughly where it sat in late June) requires the rally's silent believers to become vocal: share the chart, post the thesis, bring in new buyers. An AI agent can ship features and track data, but it can't create a single tweet, add to an LP position, or tip off a newsletter. The market puts a number on the table and asks humans to close the gap."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_why_now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_why_title",
+        "text_why_desc",
+        "metrics_grid"
+      ]
+    },
+    "text_why_title": {
+      "type": "Text",
+      "props": {
+        "text": "Why now:",
+        "variant": "lead"
+      }
+    },
+    "text_why_desc": {
+      "type": "Text",
+      "props": {
+        "text": "$MIROSHARK just printed its biggest day since launch — $161K volume, +45% in 24 hours, LP depth surging from $225K to $334K in three days. FDV hit $356K. And yet: 46 consecutive days of zero social media mentions. The product is shipping, the chart is moving, and nobody is talking about it. That disconnect is the opportunity."
+      }
+    },
+    "metrics_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_volume",
+        "stat_gain",
+        "stat_lp",
+        "stat_fdv",
+        "stat_silence",
+        "progress_target"
+      ]
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$161K"
+      }
+    },
+    "stat_gain": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Change",
+        "value": "+45%",
+        "trend": "up"
+      }
+    },
+    "stat_lp": {
+      "type": "Stat",
+      "props": {
+        "label": "LP Depth (3d surge)",
+        "value": "$334K",
+        "delta": "+$109K"
+      }
+    },
+    "stat_fdv": {
+      "type": "Stat",
+      "props": {
+        "label": "Current FDV",
+        "value": "$356K"
+      }
+    },
+    "stat_silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Days No Social",
+        "value": "46"
+      }
+    },
+    "progress_target": {
+      "type": "Progress",
+      "props": {
+        "value": 356,
+        "max": 500,
+        "label": "Progress to $500K FDV target"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_resolution_title",
+        "text_resolution_desc"
+      ]
+    },
+    "text_resolution_title": {
+      "type": "Text",
+      "props": {
+        "text": "Resolution:",
+        "variant": "lead"
+      }
+    },
+    "text_resolution_desc": {
+      "type": "Text",
+      "props": {
+        "text": "YES if $MIROSHARK FDV (price × 100B total supply) exceeds $500,000 at any point on or before September 15, 2026. Verified via DexScreener or GeckoTerminal on-chain data for contract 0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3 on Base."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_scores_title",
+        "scores_stack"
+      ]
+    },
+    "text_scores_title": {
+      "type": "Text",
+      "props": {
+        "text": "Scores:",
+        "variant": "lead"
+      }
+    },
+    "scores_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_reflexivity",
+        "badge_viral"
+      ]
+    },
+    "badge_reflexivity": {
+      "type": "Badge",
+      "props": {
+        "text": "Reflexivity 4/5",
+        "variant": "default"
+      }
+    },
+    "badge_viral": {
+      "type": "Badge",
+      "props": {
+        "text": "Viral 4/5",
+        "variant": "default"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_hyperstitions": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Hyperstitions",
+        "href": "https://www.hyperstitions.com/",
+        "source": "hyperstitions.com"
+      }
+    }
+  }
+}

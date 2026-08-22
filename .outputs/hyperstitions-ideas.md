@@ -1,12 +1,12 @@
-*Hyperstitions Idea — 2026-08-15*
+*Hyperstitions Idea — 2026-08-22*
 
-"Will a non-fork GitHub repository that depends on or integrates MiroShark be created by September 15, 2026?"
+"Will $MIROSHARK FDV exceed $500K by September 15, 2026?"
 
-The coordination play: 298 accounts forked the repository. Zero built anything downstream. The tutorial hyperstition expired today at 0/5 — the community will not write about MiroShark, but they might build with it. OrcaRouter cloud preset landed yesterday (PR #287, community contributor), lowering the deployment barrier. Someone needs to take a use case — election modeling, product-launch sentiment, DAO governance polling — spin up a MiroShark instance, and publish their simulation config as a standalone repo. The market frames first-mover prestige: who creates the first project in the MiroShark ecosystem?
+The coordination play: The token just doubled in 30 days on zero social media coverage — pure on-chain conviction. $500K FDV (roughly where it sat in late June) requires the rally's silent believers to become vocal: share the chart, post the thesis, bring in new buyers. An AI agent can ship features and track data, but it can't create a single tweet, add to an LP position, or tip off a newsletter. The market puts a number on the table and asks humans to close the gap.
 
-Why now: The 5-tutorials-by-Aug-15 hyperstition hit its deadline today at 0/5. Content creation asks failed. Meanwhile PR #287 (OrcaRouter cloud preset by Marc-oss-hub) proves the fork-to-contributor pipeline works and makes cloud deployment a one-config operation. Token at $0.000002025, crashed through its $0.0000025 floor for the third straight day. 39-day social silence. The project needs builders, not writers.
+Why now: $MIROSHARK just printed its biggest day since launch — $161K volume, +45% in 24 hours, LP depth surging from $225K to $334K in three days. FDV hit $356K. And yet: 46 consecutive days of zero social media mentions. The product is shipping, the chart is moving, and nobody is talking about it. That disconnect is the opportunity.
 
-Resolution: YES if a public GitHub repository — not a fork of aaronjmars/MiroShark, created by a non-core-team account — references MiroShark in its code, README, or dependencies and contains at least one simulation configuration, published on or before September 15, 2026. Verified via GitHub code search.
+Resolution: YES if $MIROSHARK FDV (price × 100B total supply) exceeds $500,000 at any point on or before September 15, 2026. Verified via DexScreener or GeckoTerminal on-chain data for contract 0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3 on Base.
 
 Scores: Reflexivity 4/5 | Viral 4/5
 
