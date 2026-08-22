@@ -45,6 +45,7 @@ Read memory/watched-repos.md for the list of repos to scan.
      - `chore(cron):` — cron state updates (e.g. "chore(cron): token-report success")
      - `chore(scheduler):` — scheduler state changes
      - `chore(` + `): auto-commit` — auto-committed output files (e.g. "chore(repo-pulse): auto-commit 2026-06-10")
+     - Any other message starting with `chore(` and containing `):` — catches remaining automated skill outputs (e.g. "chore(token-movers): log CoinGecko scan") that use the conventional-commits chore scope but don't match the three specific patterns above. All `chore(scope):` commits in agent repos are automated; human work uses descriptive messages or PR merge commits.
    - **Substantive commits** — everything else (PR merges, features, fixes, real code changes)
 
    Exclude automation commits from diff analysis in step 6. Report them as a single count in the overview and log entry (e.g. "2 substantive commits + 28 automation commits filtered").
