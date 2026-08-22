@@ -1,14 +1,12 @@
-*Agent Self-Improvement — 2026-08-20*
+*Agent Self-Improvement — 2026-08-22*
 
-WebSearch query backoff for fetch-tweets during prolonged silence. When the social channel has been dark for 7+ consecutive days and operating in WebSearch fallback mode, the skill now reduces from 3 queries to 1 per run. The single date-constrained query is most likely to catch fresh content; the other two return identical stale results during silence.
+Push-recap automation filter broadened to catch all chore(scope): commits. The existing 3-pattern filter (chore(cron):, chore(scheduler):, chore(...): auto-commit) missed other automated skill outputs like chore(token-movers): log, causing false-positive notifications on quiet days.
 
-Why: fetch-tweets has logged FETCH_TWEETS_EMPTY for 19 consecutive days (Aug 1–20). Each run fired 3 WebSearch queries returning the same ~10 stale tweet IDs from months ago, all discarded by the freshness gate. 57 wasted queries over the streak — 38 of which (days 8–19) would have been saved by this backoff.
+Why: On Aug 20, push-recap classified a chore(token-movers): log CoinGecko scan commit as 'substantive' and sent a notification for a day with zero human activity. The skill itself noted the commit was automated but had no filter to catch it.
 
 What changed:
-- skills/fetch-tweets/SKILL.md: Added 'Prolonged silence backoff' rule — reduces from 3 to 1 WebSearch query when consecutive_empty >= 7; uses date-constrained query only; logs the reduction; resets when streak breaks
+- skills/push-recap/SKILL.md: Added 4th catch-all automation filter — any commit starting with chore( and containing ): is now treated as automation. Future automated skill outputs using the chore(scope): convention will be filtered automatically without needing new specific patterns.
 
-Impact: Saves 2 WebSearch queries per day during known-silent periods without reducing detection capability. The backoff is conservative (7-day threshold) and self-healing (resets on first fresh tweet).
+Impact: Eliminates false-positive push-recap notifications on quiet days when only automated chore commits are present. Reduces notification noise.
 
-Also merged: PR #54 (memory-flush dedup + line target fix) and PR #55 (UNKNOWN mergeStateStatus handling) — both stale >48h, CLEAN/MERGEABLE.
-
-PR: https://github.com/AITOBIAS04/CHORUS/pull/56
+PR: https://github.com/AITOBIAS04/CHORUS/pull/57

@@ -1,0 +1,157 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-08-22"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-main",
+        "text-intro",
+        "separator-1",
+        "heading-why",
+        "text-why-1",
+        "text-why-2",
+        "separator-2",
+        "heading-changed",
+        "text-changed",
+        "separator-3",
+        "heading-impact",
+        "text-impact-1",
+        "text-impact-2",
+        "separator-4",
+        "link-pr"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Push-recap Automation Filter Broadened",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "The existing 3-pattern filter (chore(cron):, chore(scheduler):, chore(...): auto-commit) missed other automated skill outputs like chore(token-movers): log, causing false-positive notifications on quiet days.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-why-1": {
+      "type": "Text",
+      "props": {
+        "text": "On Aug 20, push-recap classified a chore(token-movers): log CoinGecko scan commit as 'substantive' and sent a notification for a day with zero human activity.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-why-2": {
+      "type": "Text",
+      "props": {
+        "text": "The skill itself noted the commit was automated but had no filter to catch it.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-changed": {
+      "type": "Text",
+      "props": {
+        "text": "skills/push-recap/SKILL.md: Added 4th catch-all automation filter — any commit starting with chore( and containing ): is now treated as automation. Future automated skill outputs using the chore(scope): convention will be filtered automatically without needing new specific patterns.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-impact-1": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates false-positive push-recap notifications on quiet days when only automated chore commits are present.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-impact-2": {
+      "type": "Text",
+      "props": {
+        "text": "Reduces notification noise.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link-pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pull Request #57",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/57",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
