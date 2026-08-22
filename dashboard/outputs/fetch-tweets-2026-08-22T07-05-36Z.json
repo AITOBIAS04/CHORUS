@@ -1,0 +1,48 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "fetch-tweets",
+        "description": "Social Monitor Dark — 21 consecutive days"
+      },
+      "children": [
+        "alert_issue",
+        "separator1",
+        "text_cause",
+        "alert_fix"
+      ]
+    },
+    "alert_issue": {
+      "type": "Alert",
+      "props": {
+        "title": "No New Mentions",
+        "message": "fetch-tweets has found zero new mentions for 21 straight days.",
+        "type": "error"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_cause": {
+      "type": "Text",
+      "props": {
+        "text": "Likely cause: XAI_API_KEY not set — WebSearch fallback rarely surfaces fresh tweets.",
+        "variant": "body"
+      }
+    },
+    "alert_fix": {
+      "type": "Alert",
+      "props": {
+        "title": "Recommended Fix",
+        "message": "Set XAI_API_KEY in repo secrets to enable direct X/Twitter search via Grok.",
+        "type": "warning"
+      }
+    }
+  }
+}
