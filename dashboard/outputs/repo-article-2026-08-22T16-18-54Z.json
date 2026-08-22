@@ -1,0 +1,107 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "One Hundred and Sixty-One Thousand Dollars Changed Hands. Nobody Tweeted About It."
+      },
+      "children": [
+        "badge_new",
+        "text_lead",
+        "stack_stats",
+        "separator_1",
+        "text_context",
+        "link_article"
+      ]
+    },
+    "badge_new": {
+      "type": "Badge",
+      "props": {
+        "text": "New Article",
+        "variant": "default"
+      }
+    },
+    "text_lead": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's token posted its largest single-day volume ever, while the project's social accounts have been silent for 46 consecutive days.",
+        "variant": "lead"
+      }
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_volume",
+        "stat_price_24h",
+        "stat_price_30d",
+        "stat_social_silence",
+        "stat_media_traffic"
+      ]
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume (single-day record)",
+        "value": "$161,684"
+      }
+    },
+    "stat_price_24h": {
+      "type": "Stat",
+      "props": {
+        "label": "Price change (24h)",
+        "value": "+45%",
+        "trend": "up"
+      }
+    },
+    "stat_price_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "Price change (30d)",
+        "value": "+107%",
+        "trend": "up"
+      }
+    },
+    "stat_social_silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive days without social posts",
+        "value": "46"
+      }
+    },
+    "stat_media_traffic": {
+      "type": "Stat",
+      "props": {
+        "label": "Crypto media traffic decline (2026 trend)",
+        "value": "-33%",
+        "trend": "down"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_context": {
+      "type": "Text",
+      "props": {
+        "text": "The gap between on-chain activity and social presence mirrors a broader 2026 trend: crypto media traffic fell 33% while on-chain volume kept growing. MiroShark, the project that simulates what happens when people talk, is surrounded by people who do not.",
+        "variant": "body"
+      }
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article on GitHub",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-22.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}

@@ -1,6 +1,5 @@
-Repo-article already ran today — logged `REPO_ARTICLE_RERUN_QUIET` and stopped. No re-analysis, no overwrite, no notification sent.
+*New Article: One Hundred and Sixty-One Thousand Dollars Changed Hands. Nobody Tweeted About It.*
 
-## Summary
-- **Action:** Dedup gate triggered — today's log already had a `## Repo Article` entry (article: "Two Hundred and Forty-Seven Organizations Are Building the Future of AI Agents. They Forgot to Simulate the Humans.")
-- **File modified:** `memory/logs/2026-08-20.md` — appended rerun-quiet entry
-- **No follow-up needed**
+MiroShark's token posted its largest single-day volume ever — $161,684, with price up 45% in 24 hours and 107% in 30 days — while the project's social accounts have been silent for 46 consecutive days. The gap between on-chain activity and social presence mirrors a broader 2026 trend: crypto media traffic fell 33% while on-chain volume kept growing. MiroShark, the project that simulates what happens when people talk, is surrounded by people who do not.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-22.md
