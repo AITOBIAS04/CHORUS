@@ -1,0 +1,167 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-08-22"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-price",
+        "stack-metrics",
+        "separator-1",
+        "stack-pct-changes",
+        "separator-2",
+        "text-analysis",
+        "separator-3",
+        "link-chart"
+      ]
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000003561",
+        "delta": "+45.08%",
+        "trend": "up"
+      }
+    },
+    "stack-metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat-liquidity",
+        "stat-volume",
+        "stack-buys-sells",
+        "stack-highs"
+      ]
+    },
+    "stat-liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$334.5K"
+      }
+    },
+    "stat-volume": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$161.7K"
+      }
+    },
+    "stack-buys-sells": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-buys",
+        "stat-sells"
+      ]
+    },
+    "stat-buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys",
+        "value": "254"
+      }
+    },
+    "stat-sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Sells",
+        "value": "160"
+      }
+    },
+    "stack-highs": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-high",
+        "stat-low"
+      ]
+    },
+    "stat-high": {
+      "type": "Stat",
+      "props": {
+        "label": "High",
+        "value": "$0.00000470"
+      }
+    },
+    "stat-low": {
+      "type": "Stat",
+      "props": {
+        "label": "Low",
+        "value": "$0.00000233"
+      }
+    },
+    "separator-1": {
+      "type": "Separator"
+    },
+    "stack-pct-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-7d",
+        "badge-30d"
+      ]
+    },
+    "badge-7d": {
+      "type": "Badge",
+      "props": {
+        "text": "7d: +66.6%",
+        "variant": "secondary"
+      }
+    },
+    "badge-30d": {
+      "type": "Badge",
+      "props": {
+        "text": "30d: +107.8%",
+        "variant": "secondary"
+      }
+    },
+    "separator-2": {
+      "type": "Separator"
+    },
+    "text-analysis": {
+      "type": "Text",
+      "props": {
+        "text": "Concentrated two-hour buy burst (19:00–21:00 UTC Aug 21) on $108K volume pushed price to $0.00000470 peak. Morning drift back to $0.00000356 on profit-selling. Now +118% above Jul 18 ATL. 46-day social silence.",
+        "variant": "body"
+      }
+    },
+    "separator-3": {
+      "type": "Separator"
+    },
+    "link-chart": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
