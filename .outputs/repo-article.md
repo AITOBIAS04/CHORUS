@@ -1,5 +1,6 @@
-*New Article: One Hundred and Sixty-One Thousand Dollars Changed Hands. Nobody Tweeted About It.*
+## Summary
 
-MiroShark's token posted its largest single-day volume ever — $161,684, with price up 45% in 24 hours and 107% in 30 days — while the project's social accounts have been silent for 46 consecutive days. The gap between on-chain activity and social presence mirrors a broader 2026 trend: crypto media traffic fell 33% while on-chain volume kept growing. MiroShark, the project that simulates what happens when people talk, is surrounded by people who do not.
-
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-22.md
+- **Skipped:** Repo article already written today (Step 0 dedup gate triggered)
+- **Log entry:** `REPO_ARTICLE_RERUN_QUIET` appended to `memory/logs/2026-08-22.md`
+- **Existing article:** `articles/repo-article-2026-08-22.md` — "$161K single-day volume rally during 46-day social silence" angle, ~780 words
+- **No re-analysis, no overwrite, no re-notification**
