@@ -1,0 +1,114 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-23"
+      },
+      "children": [
+        "text_repo",
+        "text_commits",
+        "separator_1",
+        "heading_commit",
+        "text_description",
+        "separator_2",
+        "heading_changes",
+        "stack_changes",
+        "separator_3",
+        "text_stats",
+        "storylink_recap"
+      ]
+    },
+    "text_repo": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon",
+        "variant": "muted"
+      }
+    },
+    "text_commits": {
+      "type": "Text",
+      "props": {
+        "text": "1 substantive commit by aaronjmars (9 automation commits filtered)"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_commit": {
+      "type": "Heading",
+      "props": {
+        "text": "Reliability — Memory-Flush Deterministic Prep",
+        "level": "h2"
+      }
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "The memory-flush skill's bookkeeping (scan-window calculation, log rotation, watermark management) was being done inside the LLM context every run — costly, fragile, and untestable. This commit extracts it all into scripts/memory_prep.py with a structured JSON watermark, automatic log archival, and 16 unit tests wired into CI. The model is now left with only judgment work: what to promote, dedup, and prune."
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_change1",
+        "text_change2",
+        "text_change3"
+      ]
+    },
+    "text_change1": {
+      "type": "Text",
+      "props": {
+        "text": "New scripts/memory_prep.py (+278 lines): two subcommands — window (pre-pass: resolve watermark, compute scan window, rotate old months) and stamp (post-pass: write structured watermark + mirror to MEMORY.md)"
+      }
+    },
+    "text_change2": {
+      "type": "Text",
+      "props": {
+        "text": "New scripts/tests/test_memory_prep.py (+179 lines): 16 unit tests covering watermark parsing, window computation, rotation logic, stamp idempotency, and full I/O integration"
+      }
+    },
+    "text_change3": {
+      "type": "Text",
+      "props": {
+        "text": "skills/memory-flush/SKILL.md restructured: steps 0 and 8 now call the script; manual watermark and rotation instructions removed"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 4 files changed, +489/-29 lines"
+      }
+    },
+    "storylink_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-23.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
