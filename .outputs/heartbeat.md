@@ -1,5 +1,6 @@
-## Summary
+Heartbeat — PR #56 stalled (82h, past 72h threshold)
 
-**HEARTBEAT_OK** — all 8 expected skills for Sunday Aug 23 confirmed completed, no missing skills, no stalled PRs (both open `improve:` PRs are within the 72h auto-merge window), no open issues, all 13 skills at zero consecutive failures.
+improve: add WebSearch query backoff to fetch-tweets during prolonged silence
+Status: MERGEABLE / CLEAN — awaiting self-improve (next run Aug 24)
 
-Log entry appended to `memory/logs/2026-08-23.md`. No notification sent.
+All 13 skills nominal (consecutive_failures=0). All expected Sunday skills confirmed. No open system issues.

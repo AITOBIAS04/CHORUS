@@ -1,0 +1,114 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "alert-pr-stalled",
+        "separator-1",
+        "stack-improvement",
+        "separator-2",
+        "stack-status"
+      ]
+    },
+    "alert-pr-stalled": {
+      "type": "Alert",
+      "props": {
+        "title": "PR #56 stalled",
+        "message": "82h elapsed, past 72h threshold",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-improvement": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-improve-label",
+        "text-improve-status"
+      ]
+    },
+    "text-improve-label": {
+      "type": "Text",
+      "props": {
+        "text": "improve: add WebSearch query backoff to fetch-tweets during prolonged silence",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "text-improve-status": {
+      "type": "Text",
+      "props": {
+        "text": "Status: MERGEABLE / CLEAN — awaiting self-improve (next run Aug 24)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-skills",
+        "text-failures",
+        "text-confirmed",
+        "text-no-issues"
+      ]
+    },
+    "stat-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills nominal",
+        "value": "13"
+      },
+      "children": []
+    },
+    "text-failures": {
+      "type": "Text",
+      "props": {
+        "text": "consecutive_failures=0",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "text-confirmed": {
+      "type": "Text",
+      "props": {
+        "text": "All expected Sunday skills confirmed",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-no-issues": {
+      "type": "Text",
+      "props": {
+        "text": "No open system issues",
+        "variant": "body"
+      },
+      "children": []
+    }
+  }
+}
