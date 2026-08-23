@@ -1,0 +1,58 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "New Article"
+      },
+      "children": [
+        "heading-main",
+        "separator-1",
+        "text-body",
+        "separator-2",
+        "story-link"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "One Commit to the Product. Fourteen to the Machine That Runs It.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text-body": {
+      "type": "Text",
+      "props": {
+        "text": "This week MiroShark got one automated Dependabot commit. Its agent infrastructure got fourteen substantive commits — deterministic memory management, security hardening, dashboard fixes, scorer overhaul. Gartner says 89% of AI agent pilots never scale. MiroShark's builder is spending more time on the scaffolding than the product, and that may be exactly why the agent is still running after 140 days.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-23.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
