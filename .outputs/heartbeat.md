@@ -1,6 +1,9 @@
-Heartbeat — PR #56 stalled (82h, past 72h threshold)
+HEARTBEAT_OK.
 
-improve: add WebSearch query backoff to fetch-tweets during prolonged silence
-Status: MERGEABLE / CLEAN — awaiting self-improve (next run Aug 24)
+All 9 skills scheduled for Monday Aug 24 ran successfully. No stalled PRs (PR #57 at ~54h and PR #58 at ~6h, both under the 72h `improve:` threshold). No open issues. No urgent GitHub issues. No action required.
 
-All 13 skills nominal (consecutive_failures=0). All expected Sunday skills confirmed. No open system issues.
+## Summary
+- Read memory, cron-state, issues index, today's log, and aeon.yml schedule.
+- Verified all 9 expected skills ran: token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, weekly-shiplog, push-recap, project-lens.
+- No failing skills, no stalled PRs, no open issues.
+- Logged `HEARTBEAT_OK` to `memory/logs/2026-08-24.md`.
