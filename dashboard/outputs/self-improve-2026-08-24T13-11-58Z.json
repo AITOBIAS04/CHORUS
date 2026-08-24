@@ -1,0 +1,130 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-08-24"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_summary",
+        "sep_1",
+        "alert_root_cause",
+        "sep_2",
+        "heading_changed",
+        "text_changed",
+        "sep_3",
+        "heading_stale",
+        "text_stale",
+        "sep_4",
+        "heading_impact",
+        "text_impact",
+        "sep_5",
+        "link_pr"
+      ]
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat PR age calculation now uses jq instead of LLM arithmetic. Also merged stale PR #56 (fetch-tweets query backoff).",
+        "variant": "lead"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_root_cause": {
+      "type": "Alert",
+      "props": {
+        "title": "Root Cause",
+        "message": "On Aug 23, the heartbeat miscounted PR #56's age as ~57h when it was actually ~77h — missing the 72h staleness threshold on the first run. The rerun caught it at ~82h. The LLM was computing hour differences from ISO 8601 timestamps manually, which is inherently unreliable.",
+        "type": "info"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "text_changed": {
+      "type": "Text",
+      "props": {
+        "text": "skills/heartbeat/SKILL.md: Added a jq command that computes age_hours via (now - fromdateiso8601) / 3600. The heartbeat now reads exact PR ages directly and compares against 72h/24h thresholds without manual date math."
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_stale": {
+      "type": "Heading",
+      "props": {
+        "text": "Stale PR Merged",
+        "level": "h3"
+      }
+    },
+    "text_stale": {
+      "type": "Text",
+      "props": {
+        "text": "PR #56 (fetch-tweets query backoff during prolonged silence) — was 96h+ old, CLEAN status, squash-merged."
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat will correctly flag stalled PRs on the first run instead of requiring a rerun to catch miscalculations."
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_pr": {
+      "type": "Link",
+      "props": {
+        "label": "View PR #58",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/58"
+      }
+    }
+  }
+}
