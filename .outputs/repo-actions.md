@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-08-22*
-Generated from analysis of aaronjmars/MiroShark — concrete ideas the feature skill can autonomously build tomorrow.
+*Repo Action Ideas — 2026-08-24*
+Generated from analysis of aaronjmars/MiroShark (1,437 stars · 298 forks · FDV $402,895 · 48-day social silence · 81st GH_GLOBAL block).
 
-1. Hindi (HI) UI Locale (Community/DX, Small)
-   Full Devanagari locale targeting India's 13M+ GitHub developers; 10 days to the Sep 1 five-language deadline — EN + ZH-CN + DE + FR + HI = 5/5.
+1. Italian (IT) UI Locale (Community/DX, Small)
+   8 days to the Sep 1 five-language hyperstition — EN + ZH-CN + DE + FR + IT = 5/5. Italy's 12th-largest GitHub dev community, Piano Nazionale per l'Intelligenza Artificiale hook, zero RTL complexity.
 
-2. Trending Simulations Feed (Feature/Growth, Small)
-   GET /api/trending returns the most recently published simulations with topic, direction, and confidence; homepage panel shows 'Recently simulated ↓' with topic pre-fill to reduce first-simulation friction.
+2. Live Simulation Progress Stream (Feature/DX, Small)
+   SSE endpoint streams round-by-round belief updates during active simulation execution — replaces the spinner with a live belief chart. Distinct from Replay SSE: this is in-flight streaming, not playback. Shareable live link is the first in-product social hook in 48 days.
 
-3. Simulation Narration API (Feature/DX, Small)
-   GET /api/simulation/{id}/narration generates a 3–4 sentence plain-English summary of the simulation (no LLM calls — template rendering from trajectory.json); paste-ready for journalists, PMs, and policy audiences.
+3. Agent Influence Score API (Feature/DX, Small)
+   Belief-delta-weighted attribution: who caused the outcome? Agents posting in high-shift rounds get proportional credit, normalized 0–100. Complements Agent Mention Network + Stance Flip Report. Key metric for the paper citation hyperstition (Sep 30).
 
-4. Daily Digest Report Endpoint (Feature/DX, Small)
-   GET /api/digest/daily?date=YYYY-MM-DD returns a Markdown table of every simulation completed that day — direction, confidence, cost; Accept: text/markdown makes it pipe-ready for Slack, GitHub Gists, and email.
+4. Recurring Simulation Scheduler (Feature/Integration, Medium)
+   POST /api/schedule with cron syntax triggers recurring runs — weekly MIROSHARK sentiment tracking, monthly EU AI Act monitoring. Background threading.Thread, pure stdlib, no external deps. Longitudinal tooling for operators and researchers.
 
-5. Simulation Result SVG Badge (Growth/Integration, Small)
-   GET /api/simulation/{id}/badge.svg returns a Shields.io-style SVG: 'MiroShark · BULLISH · 78%'; README-embeddable backlink for researchers citing simulations in their own repos — steps toward the non-fork dependent repo hyperstition (Sep 15).
+5. Agent Debate Summary API (Feature/DX, Small)
+   Extracts top 3 bullish + 3 bearish verbatim agent arguments from actions.jsonl — ranked by content richness, no LLM calls. The paste-ready artifact for journalists and researchers: actual simulated arguments, not template prose. Step3: two-column Debate panel.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-22.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-24.md

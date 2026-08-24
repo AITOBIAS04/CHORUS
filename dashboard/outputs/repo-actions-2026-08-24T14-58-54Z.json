@@ -1,0 +1,225 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-08-24"
+      },
+      "children": [
+        "subtitle",
+        "sep1",
+        "items"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,437 stars · 298 forks · FDV $402,895 · 48-day social silence · 81st GH_GLOBAL block).",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5",
+        "sep2",
+        "footer"
+      ]
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_title",
+        "item1_badge",
+        "item1_text"
+      ]
+    },
+    "item1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Italian (IT) UI Locale",
+        "level": "h4"
+      }
+    },
+    "item1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX, Small",
+        "variant": "secondary"
+      }
+    },
+    "item1_text": {
+      "type": "Text",
+      "props": {
+        "text": "8 days to the Sep 1 five-language hyperstition — EN + ZH-CN + DE + FR + IT = 5/5. Italy's 12th-largest GitHub dev community, Piano Nazionale per l'Intelligenza Artificiale hook, zero RTL complexity.",
+        "variant": "body"
+      }
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_title",
+        "item2_badge",
+        "item2_text"
+      ]
+    },
+    "item2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Live Simulation Progress Stream",
+        "level": "h4"
+      }
+    },
+    "item2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX, Small",
+        "variant": "secondary"
+      }
+    },
+    "item2_text": {
+      "type": "Text",
+      "props": {
+        "text": "SSE endpoint streams round-by-round belief updates during active simulation execution — replaces the spinner with a live belief chart. Distinct from Replay SSE: this is in-flight streaming, not playback. Shareable live link is the first in-product social hook in 48 days.",
+        "variant": "body"
+      }
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_title",
+        "item3_badge",
+        "item3_text"
+      ]
+    },
+    "item3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Influence Score API",
+        "level": "h4"
+      }
+    },
+    "item3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX, Small",
+        "variant": "secondary"
+      }
+    },
+    "item3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Belief-delta-weighted attribution: who caused the outcome? Agents posting in high-shift rounds get proportional credit, normalized 0–100. Complements Agent Mention Network + Stance Flip Report. Key metric for the paper citation hyperstition (Sep 30).",
+        "variant": "body"
+      }
+    },
+    "item4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_title",
+        "item4_badge",
+        "item4_text"
+      ]
+    },
+    "item4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Recurring Simulation Scheduler",
+        "level": "h4"
+      }
+    },
+    "item4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Integration, Medium",
+        "variant": "secondary"
+      }
+    },
+    "item4_text": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/schedule with cron syntax triggers recurring runs — weekly MIROSHARK sentiment tracking, monthly EU AI Act monitoring. Background threading.Thread, pure stdlib, no external deps. Longitudinal tooling for operators and researchers.",
+        "variant": "body"
+      }
+    },
+    "item5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_title",
+        "item5_badge",
+        "item5_text"
+      ]
+    },
+    "item5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Debate Summary API",
+        "level": "h4"
+      }
+    },
+    "item5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX, Small",
+        "variant": "secondary"
+      }
+    },
+    "item5_text": {
+      "type": "Text",
+      "props": {
+        "text": "Extracts top 3 bullish + 3 bearish verbatim agent arguments from actions.jsonl — ranked by content richness, no LLM calls. The paste-ready artifact for journalists and researchers: actual simulated arguments, not template prose. Step3: two-column Debate panel.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-24.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
