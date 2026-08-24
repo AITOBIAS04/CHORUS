@@ -1,10 +1,10 @@
-*$MiroShark Daily — 2026-08-23*
+*$MiroShark Daily — 2026-08-24*
 
-Price: $0.000003388 (−8.49% 24h)
-Liquidity: $329K | 24h Vol: $61K
-Buys/Sells: 124/84
-7d: +61.8% | 30d: +90.3%
+Price: $0.000004029 (+15.33% 24h)
+Liquidity: $359K | 24h Vol: $69K
+Buys/Sells: 146/95
+7d: +111.7% | 30d: +116.8%
 
-Post-rally cooldown after yesterday's record $161K session. Price pulling back ~16% from Aug 22 close, settling into the $3.3–3.4 range with light but persistent sell pressure. LP holding at $329K — structural floor has moved up from the broken $225K level. 47-day social silence.
+Recovery bounce after yesterday's cooldown — price holding above $4.00e-6, LP grew $329K→$359K, FDV $402.9K approaching $500K target. Quiet session so far.
 
 Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
