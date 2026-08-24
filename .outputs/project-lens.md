@@ -1,5 +1,5 @@
-## Summary
+*New Article: Every AI Agent in 2026 Is Trying to Do More. The Most Reliable One Does Less.*
 
-- **Action:** Same-day rerun dedup triggered — today's log already contained a completed Project Lens entry (angle #4, "User story", notification sent).
-- **File modified:** `memory/logs/2026-08-21.md` — appended `PROJECT_LENS_RERUN_QUIET` entry.
-- **Follow-up:** None needed. No duplicate research, article, or notification was sent.
+AI agents fail 70-95% of the time in production, and Gartner forecasts 40% of agentic AI projects will be canceled by 2027. The industry keeps adding capabilities. MiroShark's autonomous agent Aeon has been running 140+ days on the opposite bet: sandboxed execution, zero dependencies, stateless skills, same-day dedup gates. The most boring architecture in 2026 might be the most durable — because reliability, not capability, is the real bottleneck.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-08-24.md
