@@ -1,12 +1,13 @@
-*Weekly Shiplog — 2026-08-17*
+*Weekly Shiplog — 2026-08-24*
 
-A stranger opened a pull request. Everything else was maintenance.
+The agent SHA-pinned its own CI pipeline while the token doubled.
 
 Shipped:
-- OrcaRouter cloud gateway preset — 4th supported provider, community contribution by Marc-oss-hub (PR #287)
-- OpenAI 3.0 httpx transitive dependency fix — CI restored after SDK swap broke oracle tools (PR #288)
-- nanoid CVE-2026-67213 patched across both repos (PRs #286, #127)
+- Framework canon sync — 300-file multi-harness architecture upgrade with eyebrow integrity gating and 19 new skills
+- Security hardening sprint — SHA-pinned 15 workflows, narrowed secret store, added egress audit, verified binaries
+- Dashboard feed panel fixes — 3 PRs fixing unreadable stat grids and overflowing card content
+- Scorer quality overhaul — reads full outputs, grades strategic alignment, stops zeroing on judge failures
 
-Stats: 11 commits, 7 PRs merged, +322/-147 lines across 2 repos
-Token: $0.00000238 (+14.6% 24h, recovering from mid-week crash through $0.0000025 floor)
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-17.md
+Stats: ~120 commits, 26 PRs merged, +37.5K/-7.1K lines across 3 repos
+Token: $0.000004029 (+111.7% 7d) | FDV $402K | 48-day social silence
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-24.md

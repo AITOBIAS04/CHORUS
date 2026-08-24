@@ -1,0 +1,195 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-08-24"
+      },
+      "children": [
+        "tagline-text",
+        "sep1",
+        "shipped-section",
+        "sep2",
+        "stats-section",
+        "sep3",
+        "footer-link"
+      ]
+    },
+    "tagline-text": {
+      "type": "Text",
+      "props": {
+        "text": "The agent SHA-pinned its own CI pipeline while the token doubled.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "shipped-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "shipped-heading",
+        "shipped-items"
+      ]
+    },
+    "shipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "shipped-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "shipped-1",
+        "shipped-2",
+        "shipped-3",
+        "shipped-4"
+      ]
+    },
+    "shipped-1": {
+      "type": "Text",
+      "props": {
+        "text": "Framework canon sync — 300-file multi-harness architecture upgrade with eyebrow integrity gating and 19 new skills"
+      },
+      "children": []
+    },
+    "shipped-2": {
+      "type": "Text",
+      "props": {
+        "text": "Security hardening sprint — SHA-pinned 15 workflows, narrowed secret store, added egress audit, verified binaries"
+      },
+      "children": []
+    },
+    "shipped-3": {
+      "type": "Text",
+      "props": {
+        "text": "Dashboard feed panel fixes — 3 PRs fixing unreadable stat grids and overflowing card content"
+      },
+      "children": []
+    },
+    "shipped-4": {
+      "type": "Text",
+      "props": {
+        "text": "Scorer quality overhaul — reads full outputs, grades strategic alignment, stops zeroing on judge failures"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stats-container"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stats-container": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-commits",
+        "stat-prs",
+        "stat-lines",
+        "stat-token",
+        "stat-fdv",
+        "stat-silence"
+      ]
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "~120"
+      },
+      "children": []
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "26"
+      },
+      "children": []
+    },
+    "stat-lines": {
+      "type": "Text",
+      "props": {
+        "text": "+37.5K / -7.1K lines across 3 repos"
+      },
+      "children": []
+    },
+    "stat-token": {
+      "type": "Stat",
+      "props": {
+        "label": "Token",
+        "value": "$0.000004029",
+        "delta": "+111.7%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-fdv": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV",
+        "value": "$402K"
+      },
+      "children": []
+    },
+    "stat-silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Social silence",
+        "value": "48 days"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "footer-link": {
+      "type": "Link",
+      "props": {
+        "label": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-24.md"
+      },
+      "children": []
+    }
+  }
+}
