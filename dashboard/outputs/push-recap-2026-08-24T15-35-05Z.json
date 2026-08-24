@@ -1,0 +1,283 @@
+{
+  "root": "push-recap-card",
+  "state": {},
+  "elements": {
+    "push-recap-card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-24"
+      },
+      "children": [
+        "header-info",
+        "sep1",
+        "security-section",
+        "sep2",
+        "framework-section",
+        "sep3",
+        "maintenance-section",
+        "sep4",
+        "key-changes-section",
+        "sep5",
+        "stats-section",
+        "sep6",
+        "recap-link-section"
+      ]
+    },
+    "header-info": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 3 substantive commits by 2 authors (30 automation commits filtered)",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "security-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "security-heading-stack",
+        "security-desc"
+      ]
+    },
+    "security-heading-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "security-heading",
+        "security-pr-link"
+      ]
+    },
+    "security-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Security — Egress Audit Hardening",
+        "level": "h3"
+      }
+    },
+    "security-pr-link": {
+      "type": "Link",
+      "props": {
+        "label": "PR #147",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/147"
+      }
+    },
+    "security-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Full egress control pipeline ported from canon. P1 blocks cloud metadata via iptables. P2-P3 route all skill HTTP through iron-proxy with per-skill allowlists from eyebrowlock.json. P4 feeds rejected hosts into the health system as egress_blocked flags. Opt-in (EGRESS_AUDIT=1), fail-open, warn-only by default."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "framework-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "framework-heading-stack",
+        "framework-desc"
+      ]
+    },
+    "framework-heading-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "framework-heading",
+        "framework-pr-link"
+      ]
+    },
+    "framework-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Framework — Upstream Canon Sync",
+        "level": "h3"
+      }
+    },
+    "framework-pr-link": {
+      "type": "Link",
+      "props": {
+        "label": "PR #146",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/146"
+      }
+    },
+    "framework-desc": {
+      "type": "Text",
+      "props": {
+        "text": "43 upstream commits synced — new fx.sh harness adapter, machine-readable harnesses.json registry with CI validation, dashboard workflow-secrets module, webhook replay-guard tests, 4 new operational scripts (audit, dry-run, chain_when, reactive_when), and plugin packaging (LICENSE/README/SECURITY)."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "maintenance-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "maintenance-heading",
+        "maintenance-desc"
+      ]
+    },
+    "maintenance-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Maintenance — Memory Consolidation",
+        "level": "h3"
+      }
+    },
+    "maintenance-desc": {
+      "type": "Text",
+      "props": {
+        "text": "First run of the deterministic memory_prep.py pipeline (shipped yesterday). Promoted repo rename, token rally, holdings skill, and tweet-digest into MEMORY.md. Archived July logs automatically."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key-changes-heading",
+        "key-changes-list"
+      ]
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "key-changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "keychange-1",
+        "keychange-2",
+        "keychange-3"
+      ]
+    },
+    "keychange-1": {
+      "type": "Text",
+      "props": {
+        "text": "• New .github/actions/egress-audit/ composite action: iron-proxy MITM audit proxy with cached binary, ephemeral CA, and fail-open health checks"
+      }
+    },
+    "keychange-2": {
+      "type": "Text",
+      "props": {
+        "text": "• New .github/scripts/iron-config.mjs: allowlist generator from baseline + gateway + eyebrowlock sources"
+      }
+    },
+    "keychange-3": {
+      "type": "Text",
+      "props": {
+        "text": "• 85 files synced from aeonfun/aeon including fx harness, harnesses.json, and webhook hardening"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stats-grid"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-added",
+        "stat-removed"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "~90"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+3,700"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "-200"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "recap-link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "recap-link"
+      ]
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-24.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
