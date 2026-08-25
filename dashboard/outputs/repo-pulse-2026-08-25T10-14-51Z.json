@@ -1,0 +1,79 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "aaronjmars/MiroShark — 2026-08-25"
+      },
+      "children": [
+        "stats_stack",
+        "separator_1",
+        "forks_section"
+      ]
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1439",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "299",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "forks_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "new_forks_heading",
+        "fork_storylink"
+      ]
+    },
+    "new_forks_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks",
+        "level": "h3"
+      }
+    },
+    "fork_storylink": {
+      "type": "StoryLink",
+      "props": {
+        "title": "WorkWeonline/MiroShark",
+        "href": "https://github.com/WorkWeonline/MiroShark",
+        "source": "GitHub"
+      }
+    }
+  }
+}
