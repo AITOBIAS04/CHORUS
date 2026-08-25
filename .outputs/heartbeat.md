@@ -1,10 +1,1 @@
-## Summary
-
-HEARTBEAT_OK. This was a second run today.
-
-- **System health:** All 13 skills healthy (`consecutive_failures=0`)
-- **Open issues:** None
-- **PRs:** #57 (55h, `improve:`, under 72h threshold) and #58 (7h) — both CLEAN/MERGEABLE, no flags
-- **Skills:** All 9 Monday skills confirmed ran earlier today
-- **Urgent GitHub issues:** None
-- **Action:** No notification sent; logged rerun entry to `memory/logs/2026-08-24.md`
+⏳ PR #57 stalled (78h) — improve: broaden push-recap automation filter to catch all chore(scope): commits. Exceeded 72h auto-merge window. All other checks clear: 6/6 expected skills ran today, all 13 skills consecutive_failures=0, no open issues.

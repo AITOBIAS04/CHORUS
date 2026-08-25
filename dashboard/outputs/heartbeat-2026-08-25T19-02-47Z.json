@@ -1,0 +1,84 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "alert_stalled",
+        "sep1",
+        "status_section"
+      ]
+    },
+    "alert_stalled": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "PR #57 Stalled (78h)",
+        "message": "improve: broaden push-recap automation filter to catch all chore(scope): commits.\n\nExceeded 72h auto-merge window."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "status_heading",
+        "checks_stack"
+      ]
+    },
+    "status_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Status Checks (Clear)",
+        "level": "h3"
+      }
+    },
+    "checks_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "check_1",
+        "check_2",
+        "check_3"
+      ]
+    },
+    "check_1": {
+      "type": "Stat",
+      "props": {
+        "label": "Expected skills ran today",
+        "value": "6/6",
+        "trend": "up"
+      }
+    },
+    "check_2": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills with zero consecutive failures",
+        "value": "13/13",
+        "trend": "up"
+      }
+    },
+    "check_3": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "message": "No open issues"
+      }
+    }
+  }
+}
