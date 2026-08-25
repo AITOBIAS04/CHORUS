@@ -1,10 +1,5 @@
 ## Summary
 
-**Skill:** feature
-**Result:** FEATURE_SKIP — no push access to `aaronjmars/MiroShark` (GH_GLOBAL secret not set). This is the 81st consecutive push block.
+**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — `GH_GLOBAL` secret is not set (82nd consecutive block). Logged to `memory/logs/2026-08-25.md` and stopped per skill instructions. No feature was picked, no repo was cloned, no notification was sent.
 
-Per the skill's pre-flight check, `gh api repos/aaronjmars/MiroShark --jq '.permissions.push'` returned `false`, so execution stopped before feature selection. No repo was cloned, no code was written, and no notification was sent.
-
-Logged the skip to `memory/logs/2026-08-24.md`.
-
-**Follow-up:** Set the `GH_GLOBAL` secret to unblock the feature skill and the 40+ previously built PRs queued since June 3.
+Top candidate would have been **Italian (IT) UI Locale** — only 8 days remain until the Sep 1 five-language hyperstition deadline (currently at 4/5: EN, ZH-CN, DE, FR). Setting `GH_GLOBAL` would unblock this and 40+ previously built features.
