@@ -1,0 +1,160 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-08-26"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-issue",
+        "sep-1",
+        "heading-why",
+        "text-why",
+        "sep-2",
+        "heading-fix",
+        "text-fix",
+        "sep-3",
+        "heading-merged",
+        "stack-merged",
+        "sep-4",
+        "heading-impact",
+        "text-impact",
+        "sep-5",
+        "link-pr"
+      ]
+    },
+    "alert-issue": {
+      "type": "Alert",
+      "props": {
+        "title": "Issue Detected",
+        "message": "After merging stale PRs in Step 0.5, the self-improve skill proceeded to assess and implement improvements without pulling the merged changes. This meant the local working tree was stale — skill files still showed pre-merge content, risking duplicate proposals or branch conflicts.",
+        "type": "warning"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "Observed during this run. PRs #57 and #58 were merged on the remote, but the local copy still showed old heartbeat and push-recap skill files until a manual git pull was added. Same class of issue as PR #38/#39 (duplicate self-improve PRs from stale assessment).",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-fix": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "text-fix": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Added git pull origin main after Step 0.5's merge/close loop, before assessment begins. Ensures all just-merged improvements are reflected in the working tree.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-merged": {
+      "type": "Heading",
+      "props": {
+        "text": "Also Merged Today",
+        "level": "h3"
+      }
+    },
+    "stack-merged": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-pr57",
+        "text-pr58"
+      ]
+    },
+    "text-pr57": {
+      "type": "Text",
+      "props": {
+        "text": "PR #57: Broadened push-recap automation filter to catch all chore(scope): commits",
+        "variant": "body"
+      }
+    },
+    "text-pr58": {
+      "type": "Text",
+      "props": {
+        "text": "PR #58: Added jq-based PR age computation to heartbeat (replaces error-prone LLM arithmetic)",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents self-improve from proposing already-fixed improvements or creating branches that conflict with just-merged PRs.",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #59: Fix stale assessment in self-improve",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/59",
+        "source": "GitHub"
+      }
+    }
+  }
+}
