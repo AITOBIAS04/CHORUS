@@ -1,15 +1,15 @@
-*Push Recap — 2026-08-25*
-MiroShark — 2 commits by dependabot[bot]
-miroshark-aeon — 1 commit by aaronjmars (+ 9 automation commits filtered)
+*Push Recap — 2026-08-26*
+miroshark-aeon — 3 substantive commits by aaronjmars (16 automation commits filtered)
 
-Dependency Maintenance: Dependabot merged two PRs bumping dompurify (3.4.14, sanitizer patch), marked (18.0.10), vite (8.2.2 — pulls rolldown 1.2.5 with new Android ARM target), and concurrently (10.0.5). Standard supply-chain hygiene, no behavioral changes.
+Security Hardening — Notify Credential Boundary: The notification system was architecturally split. notify.sh is now a pure queue-writer; a new post-run notify-deliver.sh is the only place channel tokens are consumed. 11 credential env vars removed from the skill runtime, ALL_SECRETS shrank 51→40 keys. A failed skill now still delivers its queued notifications (!cancelled() gate). Shellcheck CI lint gate added.
 
-CI Reliability — Foundry Fix: The deploy-uni-hook skill was silently failing on shared runners because foundryup's unauthenticated GitHub API call hit per-IP rate limits, and the failure was swallowed by >/dev/null 2>&1 || true. Replaced with SHA-pinned foundry-rs/foundry-toolchain action (token-authed, cached). Ports a proven fix from the canon repo.
+Upstream Canon Sync — 25 Commits: Fork synced to 8b8d719. Two new skills (skill-article: publish-ready launch articles from any skill; rightstack: Web3 stack advisor). fx (Vercel) added as 7th agent harness. Dashboard aeon.yml edits now serialized via withFileLock() — fixes a race where concurrent config changes silently clobbered each other. cron-due.sh works on macOS without workarounds.
 
 Key changes:
-- DOMPurify 3.4.13→3.4.14 (sanitization library — always worth staying current)
-- Foundry install moved from fragile curl|bash to official GitHub Action with token auth
-- Old curl fallback retained but un-silenced — now logs its failure instead of hiding it
+- scripts/notify.sh rewritten to queue-writer only (+58/-210); scripts/notify-deliver.sh delivers post-run (+205 new)
+- withFileLock() mutex on dashboard aeon.yml editing — 5 call sites were racing
+- skill-article + rightstack skills added (catalog now 76)
+- AI_GATEWAY_API_KEY + VERCEL_OIDC_TOKEN added to secrets allowlist for fx harness
 
-Stats: 5 files changed, +119/-90 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-25.md
+Stats: 80 files changed, +1,602/-705 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-26.md
