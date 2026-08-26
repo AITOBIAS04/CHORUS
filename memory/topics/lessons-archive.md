@@ -51,3 +51,7 @@
 - Project-lens lacked same-day rerun dedup — 3–5 WebSearch + 1–2 WebFetch per run risked double-dispatch triggering a second full research pipeline with a different angle, overwriting the article, and sending a duplicate notification; fixed with Step 0 dedup gate (self-improve PR #50, 2026-08-08)
 - Fetch-tweets lacked same-day rerun dedup — 3 WebSearch queries per run (or 1 xAI API call); content-level dedup prevented duplicate reports but not wasted API calls; fixed with Step 0 dedup gate (self-improve PR #51, 2026-08-10)
 - Weekly-shiplog lacked same-day rerun dedup — as the 10th skill to receive this fix, double-dispatch would re-fetch 7 days of commits, re-read diffs, re-write the article, and re-send a duplicate notification; fixed with Step 0 dedup gate (self-improve PR #52, 2026-08-12)
+
+## Archived 2026-08-26
+
+- Repo-article lacked same-day rerun dedup — re-runs within the same day re-analyzed and overwrote earlier articles (observed Jul 21, two runs at 16:01 + 17:43 UTC); PR #37 went DIRTY from volatile files; re-applied as PR #39 (2026-07-22) with Step 0 dedup gate — skips when log entry exists and no explicit angle requested
