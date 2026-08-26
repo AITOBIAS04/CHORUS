@@ -20,9 +20,13 @@ Read `memory/cron-state.json`. For each skill, note `consecutive_failures` and `
 - Check `memory/issues/INDEX.md` — if an open issue matches what you're seeing, update its status rather than filing a duplicate.
 
 ### 1. Standard checks
-- [ ] Any open PRs stalled? (use `gh pr list` to check)
-  - PRs with titles starting with `improve:` are auto-merged by self-improve (runs every 2 days) — only flag these after **72h**, not 24h.
-  - All other PRs: flag after **24h**.
+- [ ] Any open PRs stalled? Compute exact PR ages using jq (do NOT estimate hours from timestamps manually — LLM date math is error-prone):
+  ```bash
+  gh pr list --state open --json number,title,createdAt --jq '.[] | {number, title, age_hours: ((now - (.createdAt | fromdateiso8601)) / 3600 | floor)}'
+  ```
+  Use the `age_hours` value directly for threshold checks:
+  - PRs with titles starting with `improve:` are auto-merged by self-improve (runs every 2 days) — only flag these after **72h** (`age_hours >= 72`), not 24h.
+  - All other PRs: flag after **24h** (`age_hours >= 24`).
 - [ ] Anything flagged in memory that needs follow-up?
 - [ ] Check recent GitHub issues for anything labeled urgent (use `gh issue list`)
 - [ ] Scan aeon.yml for enabled scheduled skills — cross-reference with today's log (`memory/logs/${today}.md`) to find any that haven't run when expected.
