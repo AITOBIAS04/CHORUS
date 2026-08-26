@@ -1,0 +1,317 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-08-26"
+      },
+      "children": [
+        "subtitle",
+        "context",
+        "sep1",
+        "stack_items",
+        "sep2",
+        "link_details"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — ideas that could be autonomously built by the feature skill.",
+        "variant": "muted"
+      }
+    },
+    "context": {
+      "type": "Text",
+      "props": {
+        "text": "5 actionable feature and community ideas with implementation scope"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+      ]
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_heading",
+        "item1_tags",
+        "item1_body"
+      ]
+    },
+    "item1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Turkish (TR) UI Locale",
+        "level": "h3"
+      }
+    },
+    "item1_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge1a",
+        "badge1b"
+      ]
+    },
+    "badge1a": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX",
+        "variant": "secondary"
+      }
+    },
+    "badge1b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "item1_body": {
+      "type": "Text",
+      "props": {
+        "text": "Sep 1 is 6 days away — Turkish is the Latin-script LTR backup to Italian (Aug 24); 2.1M+ Turkish GitHub developers; either locale merged before Sep 1 clears the five-language hyperstition."
+      }
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_heading",
+        "item2_tags",
+        "item2_body"
+      ]
+    },
+    "item2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Simulation Forking API",
+        "level": "h3"
+      }
+    },
+    "item2_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge2a",
+        "badge2b"
+      ]
+    },
+    "badge2a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "secondary"
+      }
+    },
+    "badge2b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "item2_body": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulation/{id}/fork — one-click stability rerun with identical config; forked_from tracking enables A/B comparison; fixes the broken 'run it again' workflow."
+      }
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_heading",
+        "item3_tags",
+        "item3_body"
+      ]
+    },
+    "item3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Time-to-Consensus Convergence Report",
+        "level": "h3"
+      }
+    },
+    "item3_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge3a",
+        "badge3b"
+      ]
+    },
+    "badge3a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "secondary"
+      }
+    },
+    "badge3b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "item3_body": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/convergence — which round crossed each confidence threshold (50/60/70/80/90%); convergence_speed score; research-grade metric for paper citation hyperstition."
+      }
+    },
+    "item4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_heading",
+        "item4_tags",
+        "item4_body"
+      ]
+    },
+    "item4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Agent Persona Template Library",
+        "level": "h3"
+      }
+    },
+    "item4_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge4a",
+        "badge4b"
+      ]
+    },
+    "badge4a": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/DX",
+        "variant": "secondary"
+      }
+    },
+    "badge4b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "item4_body": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/templates — 5 static presets (Crypto Twitter/Policy Council/Startup Ecosystem/Academic Debate/Consumer Pulse); Step2 quick-setup grid; eliminates new-user blank-form friction."
+      }
+    },
+    "item5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_heading",
+        "item5_tags",
+        "item5_body"
+      ]
+    },
+    "item5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Cross-Simulation Topic Trend API",
+        "level": "h3"
+      }
+    },
+    "item5_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge5a",
+        "badge5b"
+      ]
+    },
+    "badge5a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "secondary"
+      }
+    },
+    "badge5b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "item5_body": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/trend?topic=QUERY — time-series of direction + confidence across all matching published simulations; chronological + trend classification (rising/falling/stable); longitudinal research data product."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details: repo-actions-2026-08-26.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-26.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

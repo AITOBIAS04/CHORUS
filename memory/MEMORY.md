@@ -90,6 +90,7 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (80th+ consecutive block as of Aug 23; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-08-26): Turkish (TR) UI Locale (#1), Simulation Forking API (#2), Time-to-Consensus Convergence Report (#3), Agent Persona Template Library (#4), Cross-Simulation Topic Trend API (#5)
 - Feature candidates (repo-actions 2026-08-22): Hindi (HI) UI Locale (#1), Trending Simulations Feed (#2), Simulation Narration API (#3), Daily Digest Report Endpoint (#4), Simulation Result SVG Badge (#5)
 - Feature candidates (repo-actions 2026-08-18): Simulation ZIP Export (#1), Open Graph Simulation Share Cards (#2), Agent Response Transcript API (#3), Topic Template Library (#4), Offline HuggingFace Bundle (closes #240) (#5)
 - Feature candidates (repo-actions 2026-08-16): Arabic (AR) UI Locale (#1), Product Hunt Launch Kit (#2), Simulation Comparison API (#3), Interactive API Docs via Scalar (#4), Simulation Completion Webhook (#5)

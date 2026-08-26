@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-08-24*
-Generated from analysis of aaronjmars/MiroShark (1,437 stars · 298 forks · FDV $402,895 · 48-day social silence · 81st GH_GLOBAL block).
+*Repo Action Ideas — 2026-08-26*
+Generated from analysis of aaronjmars/MiroShark — ideas that could be autonomously built by the feature skill.
 
-1. Italian (IT) UI Locale (Community/DX, Small)
-   8 days to the Sep 1 five-language hyperstition — EN + ZH-CN + DE + FR + IT = 5/5. Italy's 12th-largest GitHub dev community, Piano Nazionale per l'Intelligenza Artificiale hook, zero RTL complexity.
+1. Turkish (TR) UI Locale (Community/DX, Small)
+   Sep 1 is 6 days away — Turkish is the Latin-script LTR backup to Italian (Aug 24); 2.1M+ Turkish GitHub developers; either locale merged before Sep 1 clears the five-language hyperstition.
 
-2. Live Simulation Progress Stream (Feature/DX, Small)
-   SSE endpoint streams round-by-round belief updates during active simulation execution — replaces the spinner with a live belief chart. Distinct from Replay SSE: this is in-flight streaming, not playback. Shareable live link is the first in-product social hook in 48 days.
+2. Simulation Forking API (Feature/DX, Small)
+   POST /api/simulation/{id}/fork — one-click stability rerun with identical config; forked_from tracking enables A/B comparison; fixes the broken 'run it again' workflow.
 
-3. Agent Influence Score API (Feature/DX, Small)
-   Belief-delta-weighted attribution: who caused the outcome? Agents posting in high-shift rounds get proportional credit, normalized 0–100. Complements Agent Mention Network + Stance Flip Report. Key metric for the paper citation hyperstition (Sep 30).
+3. Time-to-Consensus Convergence Report (Feature/DX, Small)
+   GET /api/simulation/{id}/convergence — which round crossed each confidence threshold (50/60/70/80/90%); convergence_speed score; research-grade metric for paper citation hyperstition.
 
-4. Recurring Simulation Scheduler (Feature/Integration, Medium)
-   POST /api/schedule with cron syntax triggers recurring runs — weekly MIROSHARK sentiment tracking, monthly EU AI Act monitoring. Background threading.Thread, pure stdlib, no external deps. Longitudinal tooling for operators and researchers.
+4. Agent Persona Template Library (Community/DX, Small)
+   GET /api/templates — 5 static presets (Crypto Twitter/Policy Council/Startup Ecosystem/Academic Debate/Consumer Pulse); Step2 quick-setup grid; eliminates new-user blank-form friction.
 
-5. Agent Debate Summary API (Feature/DX, Small)
-   Extracts top 3 bullish + 3 bearish verbatim agent arguments from actions.jsonl — ranked by content richness, no LLM calls. The paste-ready artifact for journalists and researchers: actual simulated arguments, not template prose. Step3: two-column Debate panel.
+5. Cross-Simulation Topic Trend API (Feature/DX, Small)
+   GET /api/trend?topic=QUERY — time-series of direction + confidence across all matching published simulations; chronological + trend classification (rising/falling/stable); longitudinal research data product.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-24.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-26.md
