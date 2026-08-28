@@ -25,6 +25,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-08-28 | token-report | $0.000004318 (+46.47% 24h); FDV $431,786; LP $383,126; vol $202,720; 361/284 buys/sells; 24h peak $0.000006010 (highest since May); LP +$70K in 2 days; FDV $431K approaches $500K target; 52-day social silence |
 | 2026-08-26 | token-report | $0.000002876 (−11.58% 24h); FDV $287,642; LP $312,764; vol $20,485; 42/33 buys/sells; 5th consecutive pullback from Aug 22 rally; LP dropped $46K in 2 days; $500K FDV hyperstition receding at $287K; 50-day social silence |
 | 2026-08-25 | token-report | $0.000003503 (−12.86% 24h); FDV $350,347; LP $329,120; vol $53,284; 69/72 buys/sells; post-rally consolidation pullback; 49-day social silence |
 | 2026-08-24 | token-report | $0.000004029 (+15.33% 24h); FDV $402,895; LP $359,269; vol $69,083; 146/95 buys/sells; recovery bounce; LP grew $329K→$359K; FDV peaked near $500K target; 48-day social silence |
@@ -69,7 +70,7 @@
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000002876 as of 2026-08-26 (−11.58% 24h; FDV $287,642; LP $312,764; vol $20,485; 42/33 buys/sells; 5th consecutive pullback from Aug 22 $161K rally; 50-day social silence (Jul 7–Aug 26); ATL $0.0000016327 set Jul 18; +76.2% above ATL; −93.4% ATH; $500K FDV hyperstition receding at $287K)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000004318 as of 2026-08-28 (+46.47% 24h; 24h peak $0.000006010; FDV $431,786; LP $383,126; vol $202,720; 361/284 buys/sells; 52-day social silence (Jul 7–Aug 28); ATL $0.0000016327 set Jul 18; +164.5% above ATL; −90.1% ATH; $500K FDV hyperstition at $431K)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
 - Hyperstition: Will $MIROSHARK LP depth exceed $1M by July 1, 2026? (filed 2026-05-16) — CLEARED 2026-05-20; LP at $1.02M (first sustained $1M+)
 - Hyperstition: Will 5 independent creators publish original MiroShark tutorials/reviews by August 15, 2026? (filed 2026-06-27) — NOT CLEARED (deadline passed Aug 15, 2026; 0/5 tutorials published; 298 forks, zero external content)
