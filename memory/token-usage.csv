@@ -901,3 +901,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-26,project-lens,claude-opus-4-6,1683,11622,1186276,59712
 2026-08-26,project-lens,claude-opus-4-6,6,1506,169714,23994
 2026-08-26,memory-flush,claude-sonnet-4-6,15,21170,789535,47454
+2026-08-28,fetch-tweets,claude-sonnet-4-6,10,6610,234665,29200
