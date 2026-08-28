@@ -1,9 +1,11 @@
-HEARTBEAT_OK. All 10 Wednesday skills accounted for, no stalled PRs (PR #59 is only 6h old), no open issues. Log entry written to `memory/logs/2026-08-26.md`.
+Heartbeat — Thu Aug 28: 4 skills missed their scheduled windows today.
 
-## Summary
+Missing (confirmed not in today's GH Actions runs, all 2h+ past schedule):
+• repo-pulse — daily 10:00 UTC (9h overdue)
+• feature — daily 11:00 UTC (8h overdue)
+• push-recap — daily 15:00 UTC (4h overdue)
+• repo-article — Thu 16:00 UTC (3h overdue)
 
-- **System:** All 13 skills healthy (consecutive_failures=0)
-- **PRs:** 1 open (PR #59, 6h old — under threshold)
-- **Missing skills:** None
-- **Open issues:** None
-- **Action:** No notification needed; logged HEARTBEAT_OK
+Dispatch unavailable (actions: read only — 403 on preflight). Manual re-run or scope upgrade needed to recover these runs.
+
+No open issues. PR #59 (improve: pull latest main after merge) is 54h old — under 72h auto-merge threshold.

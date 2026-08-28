@@ -1,0 +1,123 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — Thu Aug 28",
+        "description": "4 skills missed their scheduled windows today"
+      },
+      "children": [
+        "missing-section",
+        "separator1",
+        "dispatch-section",
+        "separator2",
+        "status-section"
+      ]
+    },
+    "missing-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "missing-heading",
+        "missing-context",
+        "missing-table"
+      ]
+    },
+    "missing-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing Skills",
+        "level": "h3"
+      }
+    },
+    "missing-context": {
+      "type": "Text",
+      "props": {
+        "text": "Confirmed not in today's GH Actions runs, all 2h+ past schedule",
+        "variant": "caption"
+      }
+    },
+    "missing-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Schedule",
+          "Overdue"
+        ],
+        "rows": [
+          [
+            "repo-pulse",
+            "daily 10:00 UTC",
+            "9h overdue"
+          ],
+          [
+            "feature",
+            "daily 11:00 UTC",
+            "8h overdue"
+          ],
+          [
+            "push-recap",
+            "daily 15:00 UTC",
+            "4h overdue"
+          ],
+          [
+            "repo-article",
+            "Thu 16:00 UTC",
+            "3h overdue"
+          ]
+        ]
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dispatch-section": {
+      "type": "Alert",
+      "props": {
+        "title": "Dispatch Unavailable",
+        "message": "actions: read only — 403 on preflight. Manual re-run or scope upgrade needed to recover these runs.",
+        "type": "warning"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "no-issues-text",
+        "pr-text"
+      ]
+    },
+    "no-issues-text": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues",
+        "variant": "body"
+      }
+    },
+    "pr-text": {
+      "type": "Text",
+      "props": {
+        "text": "PR #59 (improve: pull latest main after merge) is 54h old — under 72h auto-merge threshold",
+        "variant": "body"
+      }
+    }
+  }
+}
