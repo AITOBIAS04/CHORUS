@@ -1,0 +1,146 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-08-29"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-system-status",
+        "separator-1",
+        "alert-pr-stale",
+        "separator-2",
+        "heading-missing-new",
+        "stack-missing-new",
+        "separator-3",
+        "heading-missing-deduped",
+        "text-missing-deduped",
+        "separator-4",
+        "alert-dispatch"
+      ]
+    },
+    "text-system-status": {
+      "type": "Text",
+      "props": {
+        "text": "All skills consecutive_failures=0. No systemic issues.",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert-pr-stale": {
+      "type": "Alert",
+      "props": {
+        "title": "PR #59 stale (79h)",
+        "message": "Improve: pull latest main after merging stale PRs in self-improve [threshold: 72h]. Self-improve is also missing today, so auto-merge is delayed.",
+        "type": "warning"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-missing-new": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing skills (new today, not previously reported)",
+        "level": "h3"
+      }
+    },
+    "stack-missing-new": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-skill-1",
+        "text-skill-2",
+        "text-skill-3",
+        "text-skill-4",
+        "text-skill-5"
+      ]
+    },
+    "text-skill-1": {
+      "type": "Text",
+      "props": {
+        "text": "token-report (sched 06:00 UTC)"
+      }
+    },
+    "text-skill-2": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets (sched 06:30 UTC)"
+      }
+    },
+    "text-skill-3": {
+      "type": "Text",
+      "props": {
+        "text": "self-improve (sched 13:00 UTC, day 29/2)"
+      }
+    },
+    "text-skill-4": {
+      "type": "Text",
+      "props": {
+        "text": "repo-actions (sched 14:00 UTC, day 29/2)"
+      }
+    },
+    "text-skill-5": {
+      "type": "Text",
+      "props": {
+        "text": "project-lens (sched 16:00 UTC, Fri)"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-missing-deduped": {
+      "type": "Heading",
+      "props": {
+        "text": "Deduped (reported yesterday, still missing)",
+        "level": "h3"
+      }
+    },
+    "text-missing-deduped": {
+      "type": "Text",
+      "props": {
+        "text": "repo-pulse, feature, push-recap"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert-dispatch": {
+      "type": "Alert",
+      "props": {
+        "title": "Dispatch unavailable",
+        "message": "actions: read only — 403. Manual re-run or scope upgrade needed.",
+        "type": "error"
+      }
+    }
+  }
+}

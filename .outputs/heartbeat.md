@@ -1,11 +1,16 @@
-Heartbeat — Thu Aug 28: 4 skills missed their scheduled windows today.
+Heartbeat — 2026-08-29
 
-Missing (confirmed not in today's GH Actions runs, all 2h+ past schedule):
-• repo-pulse — daily 10:00 UTC (9h overdue)
-• feature — daily 11:00 UTC (8h overdue)
-• push-recap — daily 15:00 UTC (4h overdue)
-• repo-article — Thu 16:00 UTC (3h overdue)
+System: All skills consecutive_failures=0. No systemic issues.
 
-Dispatch unavailable (actions: read only — 403 on preflight). Manual re-run or scope upgrade needed to recover these runs.
+⚠️ PR #59 stale (79h) — improve: pull latest main after merging stale PRs in self-improve [threshold: 72h]. Self-improve is also missing today, so auto-merge is delayed.
 
-No open issues. PR #59 (improve: pull latest main after merge) is 54h old — under 72h auto-merge threshold.
+Missing skills (new today, not previously reported):
+- token-report (sched 06:00 UTC)
+- fetch-tweets (sched 06:30 UTC)
+- self-improve (sched 13:00 UTC, day 29/2)
+- repo-actions (sched 14:00 UTC, day 29/2)
+- project-lens (sched 16:00 UTC, Fri)
+
+Deduped (reported yesterday, still missing): repo-pulse, feature, push-recap.
+
+Dispatch: unavailable (actions: read only — 403). Manual re-run or scope upgrade needed.
