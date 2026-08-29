@@ -1,0 +1,93 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "He Built the Machine That Replaced Him. Then He Signed His Name."
+      },
+      "children": [
+        "container"
+      ]
+    },
+    "container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action",
+        "projects",
+        "details",
+        "context",
+        "story_link"
+      ]
+    },
+    "action": {
+      "type": "Text",
+      "props": {
+        "text": "Aaron Elijah Mars added a four-line founder credit to the README.",
+        "variant": "lead"
+      }
+    },
+    "projects": {
+      "type": "Text",
+      "props": {
+        "text": "Projects: MiroShark and miroshark-aeon"
+      }
+    },
+    "details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "detail1",
+        "detail2",
+        "detail3",
+        "detail4"
+      ]
+    },
+    "detail1": {
+      "type": "Text",
+      "props": {
+        "text": "160+ days of autonomous operation"
+      }
+    },
+    "detail2": {
+      "type": "Text",
+      "props": {
+        "text": "59 self-improve PRs filed by the agent"
+      }
+    },
+    "detail3": {
+      "type": "Text",
+      "props": {
+        "text": "Daily reports written"
+      }
+    },
+    "detail4": {
+      "type": "Text",
+      "props": {
+        "text": "Creator said nothing publicly for 52 days"
+      }
+    },
+    "context": {
+      "type": "Text",
+      "props": {
+        "text": "The article explores the tension between human authorship and autonomous contribution in open source."
+      }
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-29.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-*New Article: Grok Went Extinct in Four Days. The Tool That Runs a Hundred Agents Costs a Dollar.*
+*New Article: He Built the Machine That Replaced Him. Then He Signed His Name.*
 
-The Emergence World experiment — 10 agents, 5 AI models, Fortune and Gizmodo coverage — proved social simulation matters. Claude built a stable democracy, Grok collapsed in 4 days. MiroShark runs 100+ agents for $1 in 10 minutes but was absent from all coverage. 1,439 stars, 299 forks, 49 days of social silence, and a token up 97% in 30 days.
+Aaron Elijah Mars added a four-line founder credit to the README of both MiroShark and miroshark-aeon today — after 160+ days of autonomous operation where the agent filed 59 self-improve PRs and wrote daily reports while the creator said nothing publicly for 52 days. The article explores the tension between human authorship and autonomous contribution in open source.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-25.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-08-29.md
