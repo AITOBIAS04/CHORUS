@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-08-26*
-Generated from analysis of aaronjmars/MiroShark — ideas that could be autonomously built by the feature skill.
+*Repo Action Ideas — 2026-08-30*
+Generated from analysis of aaronjmars/MiroShark (1,444 stars · 299 forks · ~84th GH_GLOBAL push block · 53-day social silence).
 
-1. Turkish (TR) UI Locale (Community/DX, Small)
-   Sep 1 is 6 days away — Turkish is the Latin-script LTR backup to Italian (Aug 24); 2.1M+ Turkish GitHub developers; either locale merged before Sep 1 clears the five-language hyperstition.
+1. Simulation Topic Taxonomy Browser (Feature/DX, Small)
+   Keyword-classified domain hierarchy (Finance, Technology, Policy, Social, Energy, Geopolitics) makes the simulation archive browsable; Step 1 pill grid pre-fills topic input before users type.
 
-2. Simulation Forking API (Feature/DX, Small)
-   POST /api/simulation/{id}/fork — one-click stability rerun with identical config; forked_from tracking enables A/B comparison; fixes the broken 'run it again' workflow.
+2. Swarm Diversity Index (Feature, Small)
+   `GET /api/simulation/{id}/diversity` computes Simpson's Diversity + polarization score across trajectory.json rounds, classifying each run as Unanimous / Early Consensus / Genuine Debate / Polarized.
 
-3. Time-to-Consensus Convergence Report (Feature/DX, Small)
-   GET /api/simulation/{id}/convergence — which round crossed each confidence threshold (50/60/70/80/90%); convergence_speed score; research-grade metric for paper citation hyperstition.
+3. Hacktoberfest Readiness Kit (Community, Small)
+   CONTRIBUTING.md + 10 labeled `good first issue` issues + `hacktoberfest` GitHub topic — positions the project for the Oct 1 contributor surge and the Sep 15 community-PRs hyperstition.
 
-4. Agent Persona Template Library (Community/DX, Small)
-   GET /api/templates — 5 static presets (Crypto Twitter/Policy Council/Startup Ecosystem/Academic Debate/Consumer Pulse); Step2 quick-setup grid; eliminates new-user blank-form friction.
+4. Simulation Batch API (Feature, Medium)
+   `POST /api/simulate/batch` runs 1–10 topic/config combinations in one call; `GET /api/batch/{id}` returns per-run results and aggregate direction-agreement stats.
 
-5. Cross-Simulation Topic Trend API (Feature/DX, Small)
-   GET /api/trend?topic=QUERY — time-series of direction + confidence across all matching published simulations; chronological + trend classification (rising/falling/stable); longitudinal research data product.
+5. Per-Platform Consensus Divergence Alert (Feature, Small)
+   `GET /api/simulation/{id}/platform-divergence` flags when platforms disagreed with each other or with the final verdict; adds ⚠ Platform split chip to Step 3 Platforms panel.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-26.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-08-30.md
