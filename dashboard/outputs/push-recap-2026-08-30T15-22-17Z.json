@@ -1,0 +1,128 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-30"
+      },
+      "children": [
+        "subtitle",
+        "sep1",
+        "heading-attribution",
+        "text-attribution",
+        "sep2",
+        "heading-changes",
+        "changes-stack",
+        "sep3",
+        "stats-row",
+        "sep4",
+        "recap-link"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark + miroshark-aeon — 2 substantive commits by @aaronjmars",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator"
+    },
+    "heading-attribution": {
+      "type": "Heading",
+      "props": {
+        "text": "Founder Attribution",
+        "level": "h2"
+      }
+    },
+    "text-attribution": {
+      "type": "Text",
+      "props": {
+        "text": "Aaron Elijah Mars added a personal credit line to the README of both repos — identical 4-line patches appending 'Built by Aaron Elijah Mars, founder of Aeon and MiroShark' with a link to aaronjmars.com. First human-authored commits in weeks on repos maintained almost entirely by Dependabot and agent automation."
+      }
+    },
+    "sep2": {
+      "type": "Separator"
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "changes-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark .github/README.md: founder credit block below AGPL-3.0 license footer (+4 lines)"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon .github/README.md: identical founder credit block below MIT license footer (+4 lines)"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "9 automation commits filtered (scheduler state, cron markers, auto-commits)",
+        "variant": "muted"
+      }
+    },
+    "sep3": {
+      "type": "Separator"
+    },
+    "stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-lines"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "2"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+8"
+      }
+    },
+    "sep4": {
+      "type": "Separator"
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Push Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-30.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
