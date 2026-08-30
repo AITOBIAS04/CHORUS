@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-08-26*
+*Last consolidated: 2026-08-30*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -31,7 +31,6 @@
 | 2026-08-24 | token-report | $0.000004029 (+15.33% 24h); FDV $402,895; LP $359,269; vol $69,083; 146/95 buys/sells; recovery bounce; LP grew $329K→$359K; FDV peaked near $500K target; 48-day social silence |
 | 2026-08-23 | token-report | $0.000003388 (−8.49% 24h); FDV $338,834; LP $329,344; vol $61,000; 124/84 buys/sells; post-rally cooldown after Aug 22 $161K session; 47-day social silence |
 | 2026-08-22 | token-report | $0.000003561 (+45.08% 24h); FDV $356,124; LP $334,545; vol $161,684 (largest ever); 254/160 buys/sells; rally 19:00–21:00 UTC; LP surged $225K→$334K; 46-day social silence |
-| 2026-08-21 | token-report | $0.000002463 (−0.47% 24h); FDV $246,334; LP $281,227; vol $24,836; 49/30 buys/sells; post-rally consolidation; $0.0000025 zone as support; 45-day social silence |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -73,7 +72,6 @@
 - MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000004318 as of 2026-08-28 (+46.47% 24h; 24h peak $0.000006010; FDV $431,786; LP $383,126; vol $202,720; 361/284 buys/sells; 52-day social silence (Jul 7–Aug 28); ATL $0.0000016327 set Jul 18; +164.5% above ATL; −90.1% ATH; $500K FDV hyperstition at $431K)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
 - Hyperstition: Will $MIROSHARK LP depth exceed $1M by July 1, 2026? (filed 2026-05-16) — CLEARED 2026-05-20; LP at $1.02M (first sustained $1M+)
-- Hyperstition: Will 5 independent creators publish original MiroShark tutorials/reviews by August 15, 2026? (filed 2026-06-27) — NOT CLEARED (deadline passed Aug 15, 2026; 0/5 tutorials published; 298 forks, zero external content)
 - Hyperstition: Will MiroShark support 5 languages (merged, production) by September 1, 2026? (filed 2026-07-04) — at **4/5** (EN, ZH-CN, DE, FR); i18n.js confirmed Aug 12 (German live, Japanese NOT in frontend despite README advertising JA); Spanish (ES-419) is top candidate for 5th; Dutch (NL) specced Aug 6 but blocked by GH_GLOBAL
 - Hyperstition: Will someone publish a public case study of a real decision informed by a MiroShark simulation by September 1, 2026? (filed 2026-07-04) — 285 forks, 1,354 stars, zero public usage stories; six articles built the solopreneur narrative; requires human with genuine decision to use product and write it up
 - Hyperstition: Will MiroShark hold its first public community call or Twitter Space with 3+ distinct speakers by September 1, 2026? (filed 2026-07-11) — triggered by 5+ consecutive days of zero social mentions and token at -94.7% ATH; project ships 41 surfaces and 8 articles but has zero live human touchpoints; next unlock is phase transition from repo to community
@@ -92,8 +90,8 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (80th+ consecutive block as of Aug 23; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-08-30): Simulation Topic Taxonomy Browser (#1), Swarm Diversity Index (#2), Hacktoberfest Readiness Kit (#3), Simulation Batch API (#4), Per-Platform Consensus Divergence Alert (#5)
 - Feature candidates (repo-actions 2026-08-26): Turkish (TR) UI Locale (#1), Simulation Forking API (#2), Time-to-Consensus Convergence Report (#3), Agent Persona Template Library (#4), Cross-Simulation Topic Trend API (#5)
 - Feature candidates (repo-actions 2026-08-24): Italian (IT) UI Locale (#1), Live Simulation Progress Stream (SSE) (#2), Agent Influence Score API (#3), Recurring Simulation Scheduler (#4), Agent Debate Summary API (#5)
 - Feature candidates (repo-actions 2026-08-22): Hindi (HI) UI Locale (#1), Trending Simulations Feed (#2), Simulation Narration API (#3), Daily Digest Report Endpoint (#4), Simulation Result SVG Badge (#5)
 - Feature candidates (repo-actions 2026-08-18): Simulation ZIP Export (#1), Open Graph Simulation Share Cards (#2), Agent Response Transcript API (#3), Topic Template Library (#4), Offline HuggingFace Bundle (closes #240) (#5)
-- Feature candidates (repo-actions 2026-08-16): Arabic (AR) UI Locale (#1), Product Hunt Launch Kit (#2), Simulation Comparison API (#3), Interactive API Docs via Scalar (#4), Simulation Completion Webhook (#5)
