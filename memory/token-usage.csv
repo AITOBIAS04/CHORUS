@@ -909,3 +909,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-08-30,repo-actions,claude-sonnet-4-6,14,20497,657772,58202
 2026-08-30,memory-flush,claude-sonnet-4-6,11,5128,335966,25555
 2026-08-31,token-report,claude-sonnet-4-6,13,10800,535682,47652
+2026-08-31,push-recap,claude-opus-4-6,14,10427,600891,53328

@@ -1,0 +1,303 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-08-31"
+      },
+      "children": [
+        "contributors-section",
+        "sep1",
+        "glm-section",
+        "dep-section",
+        "sep2",
+        "key-changes-section",
+        "sep3",
+        "stats-section",
+        "full-recap-link"
+      ]
+    },
+    "contributors-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "contributor-heading",
+        "contributors-stack"
+      ]
+    },
+    "contributor-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Contributors",
+        "level": "h2"
+      }
+    },
+    "contributors-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-aaron",
+        "badge-dependabot",
+        "badge-automation"
+      ]
+    },
+    "badge-aaron": {
+      "type": "Badge",
+      "props": {
+        "text": "Aaron Elijah Mars: 3 commits (miroshark-aeon)",
+        "variant": "default"
+      }
+    },
+    "badge-dependabot": {
+      "type": "Badge",
+      "props": {
+        "text": "dependabot: 2 commits (MiroShark)",
+        "variant": "default"
+      }
+    },
+    "badge-automation": {
+      "type": "Badge",
+      "props": {
+        "text": "46 automation commits filtered",
+        "variant": "secondary"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "glm-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "glm-heading",
+        "glm-text1",
+        "glm-text2",
+        "glm-text3"
+      ]
+    },
+    "glm-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "GLM Gateway Integration",
+        "level": "h3"
+      }
+    },
+    "glm-text1": {
+      "type": "Text",
+      "props": {
+        "text": "Claude subscription exhausted. The founder ported a GLM gateway from canonical PRs, pinned it as the primary provider, and added tiered model mapping.",
+        "variant": "body"
+      }
+    },
+    "glm-text2": {
+      "type": "Text",
+      "props": {
+        "text": "The agent now routes through Z.AI's Anthropic-compatible API instead of Anthropic directly.",
+        "variant": "body"
+      }
+    },
+    "glm-text3": {
+      "type": "Text",
+      "props": {
+        "text": "Per-tier vars (GLM_MODEL_OPUS/SONNET/HAIKU) let different skill tiers use appropriately-sized models.",
+        "variant": "body"
+      }
+    },
+    "dep-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dep-heading",
+        "dep-text1",
+        "dep-text2"
+      ]
+    },
+    "dep-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Maintenance",
+        "level": "h3"
+      }
+    },
+    "dep-text1": {
+      "type": "Text",
+      "props": {
+        "text": "Two routine Dependabot merges — MCP SDK patch in the backend, and a 4-package frontend batch (axios, marked, vue, vue-router).",
+        "variant": "body"
+      }
+    },
+    "dep-text2": {
+      "type": "Text",
+      "props": {
+        "text": "vue-router 5.3.0 dropped 3 deps, trimming the tree.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-heading",
+        "change1",
+        "change2",
+        "change3",
+        "change4"
+      ]
+    },
+    "key-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "scripts/llm-gateway.sh: full glm provider arm + tiered model case/esac (+30/-4 lines)",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "aeon.yml: gateway.provider pinned from auto → glm",
+        "variant": "body"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": ".github/workflows/aeon.yml: GLM secrets + model vars wired into all 3 job envs",
+        "variant": "body"
+      }
+    },
+    "change4": {
+      "type": "Alert",
+      "props": {
+        "title": "High Skill Failure Rate",
+        "message": "token-movers, holdings, changelog, shiplog, repo-pulse, aeon-update — likely GLM secrets not yet configured",
+        "type": "warning"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stats-grid"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Statistics",
+        "level": "h3"
+      }
+    },
+    "stats-grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-adds",
+        "stat-deletes",
+        "stat-meaningful"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "6"
+      }
+    },
+    "stat-adds": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "+124",
+        "trend": "up"
+      }
+    },
+    "stat-deletes": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "-190",
+        "trend": "down"
+      }
+    },
+    "stat-meaningful": {
+      "type": "Stat",
+      "props": {
+        "label": "Meaningful Lines",
+        "value": "52"
+      }
+    },
+    "full-recap-link": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "recap-label",
+        "recap-storylink"
+      ]
+    },
+    "recap-label": {
+      "type": "Text",
+      "props": {
+        "text": "Full Details:",
+        "variant": "caption"
+      }
+    },
+    "recap-storylink": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Push Recap Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-08-31.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
