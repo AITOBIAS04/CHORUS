@@ -1,0 +1,152 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-08-31"
+      },
+      "children": [
+        "narrative",
+        "sep1",
+        "shipped-section",
+        "sep2",
+        "stats-section",
+        "sep3",
+        "full-update"
+      ]
+    },
+    "narrative": {
+      "type": "Text",
+      "props": {
+        "text": "The agent locked the door from the inside. Notification credentials now live behind a process boundary — skills write to a queue, a separate dispatcher delivers.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "shipped-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "shipped-heading",
+        "item1",
+        "item2",
+        "item3",
+        "item4"
+      ]
+    },
+    "shipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      }
+    },
+    "item1": {
+      "type": "Text",
+      "props": {
+        "text": "Security: notify credential boundary — 11 channel tokens removed from skill env, queue-writer + post-run dispatcher split"
+      }
+    },
+    "item2": {
+      "type": "Text",
+      "props": {
+        "text": "Framework sync: 25 upstream commits — 7th harness (fx/Vercel), dashboard file locking, 2 new skills, catalog at 76"
+      }
+    },
+    "item3": {
+      "type": "Text",
+      "props": {
+        "text": "GLM gateway pin — tiered model mapping for multi-harness routing"
+      }
+    },
+    "item4": {
+      "type": "Text",
+      "props": {
+        "text": "Founder credit — Aaron Elijah Mars signed both repos"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stats-row",
+        "stats-note"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-commits",
+        "stat-prs",
+        "stat-lines"
+      ]
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Substantive commits",
+        "value": "14"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "10"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+2,166 / -741"
+      }
+    },
+    "stats-note": {
+      "type": "Text",
+      "props": {
+        "text": "across 2 repos",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "full-update": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-31.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

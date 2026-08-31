@@ -1,13 +1,12 @@
-*Weekly Shiplog — 2026-08-24*
+*Weekly Shiplog — 2026-08-31*
 
-The agent SHA-pinned its own CI pipeline while the token doubled.
+The agent locked the door from the inside. Notification credentials now live behind a process boundary — skills write to a queue, a separate dispatcher delivers.
 
 Shipped:
-- Framework canon sync — 300-file multi-harness architecture upgrade with eyebrow integrity gating and 19 new skills
-- Security hardening sprint — SHA-pinned 15 workflows, narrowed secret store, added egress audit, verified binaries
-- Dashboard feed panel fixes — 3 PRs fixing unreadable stat grids and overflowing card content
-- Scorer quality overhaul — reads full outputs, grades strategic alignment, stops zeroing on judge failures
+- Security: notify credential boundary — 11 channel tokens removed from skill env, queue-writer + post-run dispatcher split
+- Framework sync: 25 upstream commits — 7th harness (fx/Vercel), dashboard file locking, 2 new skills, catalog at 76
+- GLM gateway pin — tiered model mapping for multi-harness routing
+- Founder credit — Aaron Elijah Mars signed both repos
 
-Stats: ~120 commits, 26 PRs merged, +37.5K/-7.1K lines across 3 repos
-Token: $0.000004029 (+111.7% 7d) | FDV $402K | 48-day social silence
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-24.md
+Stats: 14 substantive commits, 10 PRs merged, +2,166/-741 lines across 2 repos
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-31.md
