@@ -33,7 +33,13 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      ```
    - **Skip** if the PR has review comments requesting changes — a human has weighed in, leave it for them.
 
-   Log all merge/close actions to `memory/logs/${today}.md`. If any PRs were merged, include them in the final notification. Then continue.
+   Log all merge/close actions to `memory/logs/${today}.md`. If any PRs were merged, include them in the final notification.
+
+   **Pull merged changes** — After merging/closing stale PRs, sync the local working tree so subsequent steps assess and branch from current main:
+   ```bash
+   git pull origin main
+   ```
+   Without this, Steps 1–5 run against stale code: the assessment may propose improvements that were just merged, and the branch created in Step 4 may immediately conflict with the just-landed PRs.
 
 1. **Assess what needs improving** (in this priority order):
    a. If `${var}` is set, work on that specific improvement.
