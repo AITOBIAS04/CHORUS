@@ -1,14 +1,13 @@
 ## Summary
 
-**fetch-tweets run complete — 2026-08-28**
+**fetch-tweets completed — FETCH_TWEETS_EMPTY.**
 
-- **Step 0 — Rerun dedup:** No prior entry for today — proceeded.
-- **Step 1 — Search prompt:** Targeted MIROSHARK crypto token on Base (contract `0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3`).
-- **Step 2 — Dedup set:** 7 previously-reported URLs loaded from Aug 26 log.
-- **Step 3 — Search:** Backoff active (consecutive_empty ≥ 7) — 1 date-constrained query run: `site:x.com "MIROSHARK" OR "MiroShark" after:2026-08-21`.
-- **Step 4 — Dedup + freshness gate:** 8 tweets returned; 7 already in dedup set, 1 new URL (`/aaronjmars/status/2045134558186664267`) excluded — Snowflake ID places it before May 21, 2026, well outside the 14-day window. All excluded.
-- **Step 5 — FETCH_TWEETS_EMPTY:** Consecutive empty days = 22 (Aug 7–Aug 28). 22 is not a multiple of 7 — no escalation notification sent.
-- **Log written:** `memory/logs/2026-08-28.md`
-- **Notification sent:** no
+- **Step 0:** No prior fetch-tweets entry in today's log — proceeded.
+- **Step 1:** Query built around MIROSHARK token on Base chain (contract `0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3`) + GitHub repo.
+- **Step 2:** Loaded 8 previously-reported stale tweet URLs from Aug 28 log.
+- **Step 3:** Backoff applied (22+ consecutive empty days as of Aug 28) — 1 date-constrained WebSearch query run: `site:x.com "MIROSHARK" OR "MiroShark" after:2026-08-17`.
+- **Steps 4–4b:** WebSearch returned identical stale pool — all 8 tweet URLs already in the dedup set, all pre-May 2026. Zero new or fresh results.
+- **Step 5:** Logged `FETCH_TWEETS_EMPTY`. Consecutive count = 1 (Aug 29–30 broke the log chain; social silence continues at 53+ days). Not a multiple of 7 — no escalation notification.
+- **Steps 6–7:** No new tweets to save or notify about.
 
-The social silence around MIROSHARK/MiroShark continues — 22 days and counting since the last fresh tweet. No action needed until day 28 (next multiple of 7).
+**File written:** `memory/logs/2026-08-31.md`
