@@ -1,0 +1,181 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-09-01"
+      },
+      "children": [
+        "text_header",
+        "sep1",
+        "heading_fleet",
+        "text_fleet",
+        "heading_glm",
+        "text_glm",
+        "heading_holdings",
+        "text_holdings",
+        "sep2",
+        "heading_keychanges",
+        "stack_changes",
+        "sep3",
+        "text_stats",
+        "link_fullrecap"
+      ]
+    },
+    "text_header": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 3 substantive commits by 2 authors"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_fleet": {
+      "type": "Heading",
+      "props": {
+        "text": "10th-Gen Harness Fleet (upstream sync #161)",
+        "level": "h2"
+      }
+    },
+    "text_fleet": {
+      "type": "Text",
+      "props": {
+        "text": "The big one. 34 upstream commits synced, bringing the harness count from 7 to 10 — Cursor, Hermes, and GLM now join Claude, Grok, Codex, Pi, Vibe, Kimi, and fx. The MCP server's blocking spawnSync was replaced with async spawn + a single-flight queue, so skill runs no longer freeze the event loop. Telegram notifications from the same skill now thread under each other via reply_to_message_id. The HTML chunker was rewritten to split rendered HTML at tag boundaries. Two new skills: cortx-reliability (x402 endpoint checker) and rightstack (Web3 stack advisor), catalog now at 77.",
+        "variant": "body"
+      }
+    },
+    "heading_glm": {
+      "type": "Heading",
+      "props": {
+        "text": "GLM Reasoning Effort",
+        "level": "h2"
+      }
+    },
+    "text_glm": {
+      "type": "Text",
+      "props": {
+        "text": "Reasoning depth pinned to high by default for the GLM gateway, with a GLM_REASONING_EFFORT var override. Verified: low ~2.4k think chars, high ~15.3k, max ~32.7k.",
+        "variant": "body"
+      }
+    },
+    "heading_holdings": {
+      "type": "Heading",
+      "props": {
+        "text": "Holdings Snapshot",
+        "level": "h2"
+      }
+    },
+    "text_holdings": {
+      "type": "Text",
+      "props": {
+        "text": "Fifth consecutive accumulating snapshot — 11.78B tokens (11.78%), +507.7M in 7d (+4.50%), +1.06B in ~30d (+9.90%).",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_change1",
+        "text_change2",
+        "text_change3",
+        "text_change4",
+        "text_change5",
+        "text_change6",
+        "text_change7"
+      ]
+    },
+    "text_change1": {
+      "type": "Text",
+      "props": {
+        "text": "MCP server async rewrite — skill runs no longer block the Node event loop for up to 10 minutes",
+        "variant": "body"
+      }
+    },
+    "text_change2": {
+      "type": "Text",
+      "props": {
+        "text": "wrap_raw_output now rejects (exit 3) instead of wrapping broken output as SUCCESS — silent-failure path closed",
+        "variant": "body"
+      }
+    },
+    "text_change3": {
+      "type": "Text",
+      "props": {
+        "text": "Chain runner uses unique dispatch IDs — no more mismatched run lookups on concurrent dispatches",
+        "variant": "body"
+      }
+    },
+    "text_change4": {
+      "type": "Text",
+      "props": {
+        "text": "deploy-uni-hook: Labs routing rules + fleet audit defect catalog codified in skill spec",
+        "variant": "body"
+      }
+    },
+    "text_change5": {
+      "type": "Text",
+      "props": {
+        "text": "skill-health/skill-repair: new fix-pending lifecycle — repair PRs tracked through merge/close",
+        "variant": "body"
+      }
+    },
+    "text_change6": {
+      "type": "Text",
+      "props": {
+        "text": "secretcurl: built-in 3-attempt retry for x.ai Responses endpoint",
+        "variant": "body"
+      }
+    },
+    "text_change7": {
+      "type": "Text",
+      "props": {
+        "text": "Dashboard GitHub auth API + aeon auth --github — one-command GH_GLOBAL setup",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: ~100 files changed, +2,519/-487 lines (44 automation commits filtered)",
+        "variant": "body"
+      }
+    },
+    "link_fullrecap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-09-01.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
