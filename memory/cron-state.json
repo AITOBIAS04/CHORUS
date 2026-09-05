@@ -127,12 +127,12 @@
     "last_quality_score": 4
   },
   "repo-article": {
-    "last_status": "dispatched",
-    "last_failed": "2026-09-03T17:49:18Z",
-    "total_runs": 370,
+    "last_status": "failed",
+    "last_failed": "2026-09-05T17:44:34Z",
+    "total_runs": 371,
     "total_successes": 63,
-    "total_failures": 307,
-    "consecutive_failures": 1,
+    "total_failures": 308,
+    "consecutive_failures": 2,
     "success_rate": 0.17,
     "last_error": "\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"is_error\":true,\"num_turns\":1,\"su",
     "last_dispatch": "2026-09-03T20:09:23Z",
