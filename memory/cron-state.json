@@ -103,14 +103,14 @@
   },
   "feature": {
     "last_dispatch": "2026-09-05T12:56:08Z",
-    "last_status": "dispatched",
-    "last_failed": "2026-05-30T11:30:52Z",
-    "total_runs": 426,
+    "last_status": "failed",
+    "last_failed": "2026-09-05T12:56:32Z",
+    "total_runs": 428,
     "total_successes": 120,
-    "total_failures": 306,
-    "consecutive_failures": 0,
+    "total_failures": 308,
+    "consecutive_failures": 2,
     "success_rate": 0.28,
-    "last_error": "7547f52\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"",
+    "last_error": "\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"is_error\":true,\"num_turns\":1,\"su",
     "last_success": "2026-08-30T11:02:58Z"
   },
   "self-improve": {
