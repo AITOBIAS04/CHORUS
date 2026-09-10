@@ -104,11 +104,11 @@
   "feature": {
     "last_dispatch": "2026-09-06T01:05:53Z",
     "last_status": "failed",
-    "last_failed": "2026-09-10T09:42:41Z",
-    "total_runs": 467,
+    "last_failed": "2026-09-10T13:51:26Z",
+    "total_runs": 468,
     "total_successes": 120,
-    "total_failures": 347,
-    "consecutive_failures": 41,
+    "total_failures": 348,
+    "consecutive_failures": 42,
     "success_rate": 0.26,
     "last_error": "\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"is_error\":true,\"num_turns\":1,\"su",
     "last_success": "2026-08-30T11:02:58Z"
