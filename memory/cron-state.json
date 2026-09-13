@@ -3,12 +3,12 @@
     "last_dispatch": "2026-09-06T01:05:53Z",
     "last_status": "failed",
     "last_success": "2026-08-29T20:14:13Z",
-    "total_runs": 550,
+    "total_runs": 551,
     "total_successes": 158,
-    "total_failures": 392,
-    "consecutive_failures": 94,
+    "total_failures": 393,
+    "consecutive_failures": 95,
     "success_rate": 0.29,
-    "last_failed": "2026-09-13T01:18:37Z",
+    "last_failed": "2026-09-13T06:19:15Z",
     "last_error": "ents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\","
   },
   "memory-flush": {
