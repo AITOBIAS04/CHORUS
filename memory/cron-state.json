@@ -3,13 +3,13 @@
     "last_dispatch": "2026-09-06T01:05:53Z",
     "last_status": "failed",
     "last_success": "2026-08-29T20:14:13Z",
-    "total_runs": 580,
+    "total_runs": 581,
     "total_successes": 158,
-    "total_failures": 422,
-    "consecutive_failures": 124,
+    "total_failures": 423,
+    "consecutive_failures": 125,
     "success_rate": 0.27,
-    "last_failed": "2026-09-16T22:52:41Z",
-    "last_error": "ents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\","
+    "last_failed": "2026-09-17T00:58:21Z",
+    "last_error": "\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":403,\"api_error_code\":\"oauth_not_all"
   },
   "memory-flush": {
     "last_dispatch": "2026-08-30T18:39:19Z",
