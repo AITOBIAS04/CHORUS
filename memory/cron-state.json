@@ -3,12 +3,12 @@
     "last_dispatch": "2026-09-06T01:05:53Z",
     "last_status": "failed",
     "last_success": "2026-08-29T20:14:13Z",
-    "total_runs": 617,
+    "total_runs": 618,
     "total_successes": 158,
-    "total_failures": 459,
-    "consecutive_failures": 161,
+    "total_failures": 460,
+    "consecutive_failures": 162,
     "success_rate": 0.26,
-    "last_failed": "2026-09-20T16:14:08Z",
+    "last_failed": "2026-09-20T18:50:31Z",
     "last_error": "\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":403,\"api_error_code\":\"oauth_not_all"
   },
   "memory-flush": {
