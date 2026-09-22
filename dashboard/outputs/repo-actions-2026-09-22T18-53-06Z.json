@@ -1,0 +1,391 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-09-22"
+      },
+      "children": [
+        "header",
+        "repo-stats",
+        "sep1",
+        "actions-container",
+        "footer"
+      ]
+    },
+    "header": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo-name"
+      ]
+    },
+    "repo-name": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark",
+        "variant": "muted"
+      }
+    },
+    "repo-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "status-sep",
+        "deadline-badge",
+        "citation-badge",
+        "hacktoberfest-badge"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,453"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "300"
+      }
+    },
+    "status-sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "vertical"
+      }
+    },
+    "deadline-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Sep 15 deadlines expired",
+        "variant": "outline"
+      }
+    },
+    "citation-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Paper citation closes Sep 30",
+        "variant": "outline"
+      }
+    },
+    "hacktoberfest-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Hacktoberfest Oct 1",
+        "variant": "outline"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "actions-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "action-1",
+        "action-2",
+        "action-3",
+        "action-4",
+        "action-5"
+      ]
+    },
+    "action-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-title",
+        "action-1-desc",
+        "action-1-tags"
+      ]
+    },
+    "action-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Python SDK `miroshark-client`",
+        "level": "h3"
+      }
+    },
+    "action-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pip-installable client wrapping the 5 core API endpoints — the only mechanism that directly clears the non-fork dependent repo hyperstition.",
+        "variant": "body"
+      }
+    },
+    "action-1-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-category",
+        "action-1-size"
+      ]
+    },
+    "action-1-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration/Growth",
+        "variant": "secondary"
+      }
+    },
+    "action-1-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      }
+    },
+    "action-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-title",
+        "action-2-desc",
+        "action-2-tags"
+      ]
+    },
+    "action-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Calibration Ledger",
+        "level": "h3"
+      }
+    },
+    "action-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`POST /api/simulation/{id}/resolve` + `GET /api/calibration` tracks prediction accuracy with Brier score by domain — paper citation hook 8 days out.",
+        "variant": "body"
+      }
+    },
+    "action-2-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-category",
+        "action-2-size"
+      ]
+    },
+    "action-2-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Research",
+        "variant": "secondary"
+      }
+    },
+    "action-2-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-title",
+        "action-3-desc",
+        "action-3-tags"
+      ]
+    },
+    "action-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "LLM Tool-Calling Schema",
+        "level": "h3"
+      }
+    },
+    "action-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`GET /api/llm-tools.json` exports all major endpoints as OpenAI-compatible function definitions; static copy at repo root makes MiroShark searchable in agent tool repos.",
+        "variant": "body"
+      }
+    },
+    "action-3-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-category",
+        "action-3-size"
+      ]
+    },
+    "action-3-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration/Growth",
+        "variant": "secondary"
+      }
+    },
+    "action-3-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-title",
+        "action-4-desc",
+        "action-4-tags"
+      ]
+    },
+    "action-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Population Pressure Gauge",
+        "level": "h3"
+      }
+    },
+    "action-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`GET /api/simulation/{id}/pressure` classifies what drove consensus: immediate_consensus, convergence, reversal, or sustained_debate — completes the four-pillar analytics framework.",
+        "variant": "body"
+      }
+    },
+    "action-4-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-category",
+        "action-4-size"
+      ]
+    },
+    "action-4-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "action-4-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-title",
+        "action-5-desc",
+        "action-5-tags"
+      ]
+    },
+    "action-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Leaderboard",
+        "level": "h3"
+      }
+    },
+    "action-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`GET /api/leaderboard` + `/leaderboard` page ranks the archive by 5 dimensions: highest confidence, most contested, fastest consensus, most polarized, recently resolved.",
+        "variant": "body"
+      }
+    },
+    "action-5-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-category",
+        "action-5-size"
+      ]
+    },
+    "action-5-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Community",
+        "variant": "secondary"
+      }
+    },
+    "action-5-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sep2",
+        "details-link"
+      ]
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details-link": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-09-22.md"
+      }
+    }
+  }
+}
