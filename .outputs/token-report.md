@@ -1,10 +1,10 @@
-MiroShark Daily — 2026-08-31
+*MiroShark Daily — 2026-09-22*
 
-Price: $0.000003256 (-5.22% 24h)
-Liquidity: $326.8K | 24h Vol: $8.5K
-Buys/Sells: 27/25
-7d: -2.46% | 30d: +93.7%
+Price: $0.000003256 (+19.39% 24h)
+Liquidity: $3.11M | 24h Vol: $49.6K
+Buys/Sells: 79/68
+7d: +32.2% | 30d: −2.5%
 
-Post-rally bleed continues — four declining-volume sessions since the Aug 27 spike to $0.000006; LP dropped 14.6% from peak, FDV at $325K vs $500K hyperstition target. 55-day social silence.
+mmETH pool (Sep 14) added $2.76M LP — total liquidity now $3.1M, a structural shift. Price spiked to $3.68 intraday before settling at $3.26. 77-day social silence continues.
 
 Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209

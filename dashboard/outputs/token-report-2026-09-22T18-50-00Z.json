@@ -1,0 +1,142 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-09-22"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "grid_key_metrics",
+        "separator1",
+        "pool_section",
+        "separator2",
+        "chart_link"
+      ]
+    },
+    "grid_key_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liquidity",
+        "stat_volume",
+        "stat_buys_sells",
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000003256",
+        "delta": "+19.39%",
+        "trend": "up"
+      }
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$3.11M"
+      }
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$49.6K"
+      }
+    },
+    "stat_buys_sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "79/68"
+      }
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Performance",
+        "value": "+32.2%",
+        "trend": "up"
+      }
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Performance",
+        "value": "−2.5%",
+        "trend": "down"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pool_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pool_info_text",
+        "price_movement_text",
+        "social_text"
+      ]
+    },
+    "pool_info_text": {
+      "type": "Text",
+      "props": {
+        "text": "mmETH pool (Sep 14) added $2.76M LP — total liquidity now $3.1M, a structural shift.",
+        "variant": "body"
+      }
+    },
+    "price_movement_text": {
+      "type": "Text",
+      "props": {
+        "text": "Price spiked to $3.68 intraday before settling at $3.26.",
+        "variant": "body"
+      }
+    },
+    "social_text": {
+      "type": "Text",
+      "props": {
+        "text": "77-day social silence continues.",
+        "variant": "muted"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart_link": {
+      "type": "Link",
+      "props": {
+        "label": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
