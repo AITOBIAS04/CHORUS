@@ -1,0 +1,148 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog"
+      },
+      "children": [
+        "heading_date",
+        "text_description",
+        "heading_shipped",
+        "shipped_items",
+        "separator_1",
+        "heading_stats",
+        "stats_section",
+        "separator_2",
+        "link_full"
+      ]
+    },
+    "heading_date": {
+      "type": "Heading",
+      "props": {
+        "text": "2026-09-22",
+        "level": "h3"
+      }
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "The agent learned to audit smart contracts. A 19-commit upstream sync brought a complete Solidity security audit skill, two new dev loop scripts (proof and repair), and a CI gate workflow — expanding the autonomous toolchain from code review into security and self-healing."
+      }
+    },
+    "heading_shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h4"
+      }
+    },
+    "shipped_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "item_1": {
+      "type": "Text",
+      "props": {
+        "text": "Smart contract audit skill — 691-line security audit pipeline with Foundry fixtures and hook checklist"
+      }
+    },
+    "item_2": {
+      "type": "Text",
+      "props": {
+        "text": "Dev loop proof + repair scripts — three-stage autonomous development pipeline (review, prove, repair)"
+      }
+    },
+    "item_3": {
+      "type": "Text",
+      "props": {
+        "text": "CI gate workflow — automated quality enforcement before merge"
+      }
+    },
+    "item_4": {
+      "type": "Text",
+      "props": {
+        "text": "Chain runner expansion — largest update of the year (+186 lines) for complex skill compositions"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h4"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_commits",
+        "stat_prs",
+        "stat_lines",
+        "stat_files"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "97"
+      }
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "4"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+2,799/-264"
+      }
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "59"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-09-22.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

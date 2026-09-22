@@ -1,12 +1,12 @@
-*Weekly Shiplog — 2026-08-31*
+*Weekly Shiplog — 2026-09-22*
 
-The agent locked the door from the inside. Notification credentials now live behind a process boundary — skills write to a queue, a separate dispatcher delivers.
+The agent learned to audit smart contracts. A 19-commit upstream sync brought a complete Solidity security audit skill, two new dev loop scripts (proof and repair), and a CI gate workflow — expanding the autonomous toolchain from code review into security and self-healing.
 
 Shipped:
-- Security: notify credential boundary — 11 channel tokens removed from skill env, queue-writer + post-run dispatcher split
-- Framework sync: 25 upstream commits — 7th harness (fx/Vercel), dashboard file locking, 2 new skills, catalog at 76
-- GLM gateway pin — tiered model mapping for multi-harness routing
-- Founder credit — Aaron Elijah Mars signed both repos
+- Smart contract audit skill — 691-line security audit pipeline with Foundry fixtures and hook checklist
+- Dev loop proof + repair scripts — three-stage autonomous development pipeline (review, prove, repair)
+- CI gate workflow — automated quality enforcement before merge
+- Chain runner expansion — largest update of the year (+186 lines) for complex skill compositions
 
-Stats: 14 substantive commits, 10 PRs merged, +2,166/-741 lines across 2 repos
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-08-31.md
+Stats: 97 commits, 4 PRs merged, +2,799/-264 lines across 59 files
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-09-22.md
