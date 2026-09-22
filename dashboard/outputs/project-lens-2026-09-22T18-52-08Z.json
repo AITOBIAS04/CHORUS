@@ -1,0 +1,165 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens",
+        "description": "New Article: Fifteen Companies Will Sell You a Simulated Focus Group. One Gives You the Engine."
+      },
+      "children": [
+        "heading_main",
+        "separator_1",
+        "stack_market_context",
+        "separator_2",
+        "stack_miroshark",
+        "separator_3",
+        "link_article"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Fifteen Companies Will Sell You a Simulated Focus Group. One Gives You the Engine.",
+        "level": "h2"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_market_context": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_market_overview",
+        "grid_market_metrics"
+      ]
+    },
+    "text_market_overview": {
+      "type": "Text",
+      "props": {
+        "text": "The synthetic research market attracted significant venture capital in 2026, with multiple platforms now selling simulated focus groups as a service. However, every market map shares one structural gap: no open-source category exists.",
+        "variant": "body"
+      }
+    },
+    "grid_market_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_vc_2026",
+        "stat_simile",
+        "stat_aaru"
+      ]
+    },
+    "stat_vc_2026": {
+      "type": "Stat",
+      "props": {
+        "label": "VC in 2026",
+        "value": "$1.5B+"
+      }
+    },
+    "stat_simile": {
+      "type": "Stat",
+      "props": {
+        "label": "Simile Valuation",
+        "value": "$2B"
+      }
+    },
+    "stat_aaru": {
+      "type": "Stat",
+      "props": {
+        "label": "Aaru Valuation",
+        "value": "$1B"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_miroshark": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_miroshark_intro",
+        "grid_miroshark_metrics",
+        "text_miroshark_value"
+      ]
+    },
+    "text_miroshark_intro": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark, with its unique position, is the only self-hosted social simulation engine — and the only one where you own the infrastructure, not just the output.",
+        "variant": "lead"
+      }
+    },
+    "grid_miroshark_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "badge_opensource",
+        "stat_stars",
+        "stat_price"
+      ]
+    },
+    "badge_opensource": {
+      "type": "Badge",
+      "props": {
+        "text": "Open-Source Self-Hosted",
+        "variant": "secondary"
+      }
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "1,453"
+      }
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$1"
+      }
+    },
+    "text_miroshark_value": {
+      "type": "Text",
+      "props": {
+        "text": "While fifteen platforms now sell simulated focus groups as a service, MiroShark uniquely offers self-hosted ownership of both the engine and the infrastructure.",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-09-22.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}

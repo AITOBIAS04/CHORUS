@@ -1,6 +1,5 @@
-## Summary
+*New Article: Fifteen Companies Will Sell You a Simulated Focus Group. One Gives You the Engine.*
 
-- **Skill:** project-lens
-- **Result:** PROJECT_LENS_RERUN_QUIET — article already written today (Philosophy / big ideas #2, "Nobody Told the Termites Where to Put the Mud"). Skipped to avoid duplicate research and notifications.
-- **Files modified:** `memory/logs/2026-08-26.md` (appended rerun dedup log entry)
-- **Follow-up:** None needed.
+The synthetic research market attracted $1.5B+ in venture capital in 2026 — Simile hit a $2B valuation, Aaru crossed $1B, and fifteen platforms now sell simulated focus groups as a service. But every market map shares one structural gap: no open-source category exists. MiroShark, with 1,453 stars and a $1 price tag, is the only self-hosted social simulation engine — and the only one where you own the infrastructure, not just the output.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-09-22.md
