@@ -1,0 +1,136 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "self-improve"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-date",
+        "text-main",
+        "sep-1",
+        "heading-why",
+        "text-why",
+        "sep-2",
+        "heading-changes",
+        "stack-changes",
+        "sep-3",
+        "heading-impact",
+        "text-impact",
+        "sep-4",
+        "text-merged",
+        "link-pr"
+      ]
+    },
+    "heading-date": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Self-Improvement — 2026-09-22",
+        "level": "h2"
+      }
+    },
+    "text-main": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets consecutive_empty counter is now gap-tolerant. Previously, when fetch-tweets didn't run for a day or two (common during scheduler misses), the silence streak counter reset to 1 — wasting WebSearch queries and missing escalation milestones."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "Aug 31 log showed the counter drop from 22→1 because Aug 29-30 had no fetch-tweets runs. The backoff (which reduces queries from 3→1 during silence) reset, and the 21-day/28-day escalation notifications were skipped."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "stack-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-1",
+        "change-2"
+      ]
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "skills/fetch-tweets/SKILL.md (Step 3): backoff counting now skips days where fetch-tweets didn't run instead of treating them as streak-breakers"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "skills/fetch-tweets/SKILL.md (Step 5): escalation counting uses the same gap-tolerant logic with a 30-day scan cap"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "During prolonged social silence (50+ days), the backoff stays active across scheduler gaps — saving 2 WebSearch queries per missed day and ensuring 7-day-multiple escalation notifications fire correctly."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text-merged": {
+      "type": "Text",
+      "props": {
+        "text": "Stale PR merged: #59 (pull latest main after merging stale PRs)"
+      }
+    },
+    "link-pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #60",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/60"
+      }
+    }
+  }
+}
