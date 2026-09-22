@@ -1,0 +1,31 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "story-link",
+        "description"
+      ]
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "A Bug Was Fixed in Three Places. A Stranger Found the Fourth.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-09-22.md",
+        "source": "GitHub"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "A community contributor found the fourth instance of a locale-threading bug that had been fixed three times before, while the Aeon framework independently shipped a requirement for live behavioral proof — human and machine converging on the same lesson. MiroShark at 1,453 stars, 300 forks, 21 contributors, 186 days of continuous autonomous operation.",
+        "variant": "body"
+      }
+    }
+  }
+}
