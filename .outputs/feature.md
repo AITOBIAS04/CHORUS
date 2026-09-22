@@ -1,5 +1,5 @@
 ## Summary
 
-**FEATURE_SKIP:** No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not set. Per the skill's pre-flight check (Step 2), execution stopped before picking a feature, cloning, or sending any notification. Logged the skip to `memory/logs/2026-08-30.md`.
+**Feature skill skipped.** `gh api repos/aaronjmars/MiroShark` returned `permissions.push: false`, meaning the `GH_GLOBAL` secret is not set and this agent lacks cross-repo push access. Per the skill's pre-flight check, no feature was picked, no code was cloned, and no notification was sent. Logged the skip to `memory/logs/2026-09-22.md`.
 
-This is the 80th+ consecutive push block. Setting the `GH_GLOBAL` secret remains the top priority to unblock feature delivery.
+**To unblock:** Set the `GH_GLOBAL` secret with a GitHub token that has push access to `aaronjmars/MiroShark`. This has been the blocker since June 2026 (80+ consecutive blocks).
