@@ -1,16 +1,9 @@
-Heartbeat — 2026-08-29
+🔴 SYSTEMIC FAILURE — All 14 skills down (~21 days)
 
-System: All skills consecutive_failures=0. No systemic issues.
+Root cause: ANTHROPIC_API_KEY returning HTTP 403 (oauth_not_allowed). Zero tokens consumed on every run — key expired or revoked. Last successes: push-recap + repo-pulse on Sep 1.
 
-⚠️ PR #59 stale (79h) — improve: pull latest main after merging stale PRs in self-improve [threshold: 72h]. Self-improve is also missing today, so auto-merge is delayed.
+Action required: renew ANTHROPIC_API_KEY in GitHub repo secrets (Settings → Secrets → Actions), then manually re-run missed skills.
 
-Missing skills (new today, not previously reported):
-- token-report (sched 06:00 UTC)
-- fetch-tweets (sched 06:30 UTC)
-- self-improve (sched 13:00 UTC, day 29/2)
-- repo-actions (sched 14:00 UTC, day 29/2)
-- project-lens (sched 16:00 UTC, Fri)
+Also: PR #59 (improve: pull latest main after merging stale PRs) is 653h stale (threshold: 72h) — pending self-improve re-run after key is restored.
 
-Deduped (reported yesterday, still missing): repo-pulse, feature, push-recap.
-
-Dispatch: unavailable (actions: read only — 403). Manual re-run or scope upgrade needed.
+Issue filed: ISS-003 (critical).

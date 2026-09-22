@@ -1,0 +1,253 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "System health status report"
+      },
+      "children": [
+        "alert-failure",
+        "sep1",
+        "section-root-cause",
+        "sep2",
+        "section-action",
+        "sep3",
+        "section-pr",
+        "sep4",
+        "section-issue"
+      ]
+    },
+    "alert-failure": {
+      "type": "Alert",
+      "props": {
+        "title": "🔴 SYSTEMIC FAILURE",
+        "message": "All 14 skills down (~21 days)",
+        "type": "error"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-root-cause": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-root",
+        "grid-stats",
+        "stack-root-details"
+      ]
+    },
+    "heading-root": {
+      "type": "Heading",
+      "props": {
+        "text": "Root Cause",
+        "level": "h2"
+      }
+    },
+    "grid-stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-skills",
+        "stat-duration"
+      ]
+    },
+    "stat-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Down",
+        "value": "14",
+        "trend": "down"
+      }
+    },
+    "stat-duration": {
+      "type": "Stat",
+      "props": {
+        "label": "Downtime Duration",
+        "value": "~21 days",
+        "trend": "down"
+      }
+    },
+    "stack-root-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-root1",
+        "text-root2",
+        "text-root3"
+      ]
+    },
+    "text-root1": {
+      "type": "Text",
+      "props": {
+        "text": "ANTHROPIC_API_KEY returning HTTP 403 (oauth_not_allowed)",
+        "variant": "body"
+      }
+    },
+    "text-root2": {
+      "type": "Text",
+      "props": {
+        "text": "Zero tokens consumed on every run — key expired or revoked",
+        "variant": "body"
+      }
+    },
+    "text-root3": {
+      "type": "Text",
+      "props": {
+        "text": "Last successes: push-recap + repo-pulse on Sep 1",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-action": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-action",
+        "stack-action-details"
+      ]
+    },
+    "heading-action": {
+      "type": "Heading",
+      "props": {
+        "text": "Action Required",
+        "level": "h2"
+      }
+    },
+    "stack-action-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-action1",
+        "text-action2"
+      ]
+    },
+    "text-action1": {
+      "type": "Text",
+      "props": {
+        "text": "Renew ANTHROPIC_API_KEY in GitHub repo secrets (Settings → Secrets → Actions)",
+        "variant": "body"
+      }
+    },
+    "text-action2": {
+      "type": "Text",
+      "props": {
+        "text": "Manually re-run missed skills",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-pr": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-pr",
+        "text-pr-title",
+        "stat-pr-staleness",
+        "text-pr-threshold",
+        "text-pr-status"
+      ]
+    },
+    "heading-pr": {
+      "type": "Heading",
+      "props": {
+        "text": "Stale PR",
+        "level": "h2"
+      }
+    },
+    "text-pr-title": {
+      "type": "Text",
+      "props": {
+        "text": "PR #59: improve: pull latest main after merging stale PRs",
+        "variant": "lead"
+      }
+    },
+    "stat-pr-staleness": {
+      "type": "Stat",
+      "props": {
+        "label": "Staleness",
+        "value": "653 hours",
+        "trend": "down"
+      }
+    },
+    "text-pr-threshold": {
+      "type": "Text",
+      "props": {
+        "text": "Threshold: 72 hours",
+        "variant": "caption"
+      }
+    },
+    "text-pr-status": {
+      "type": "Text",
+      "props": {
+        "text": "Pending self-improve re-run after key is restored",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-issue": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-issue",
+        "badge-issue"
+      ]
+    },
+    "heading-issue": {
+      "type": "Heading",
+      "props": {
+        "text": "Issue Filed",
+        "level": "h2"
+      }
+    },
+    "badge-issue": {
+      "type": "Badge",
+      "props": {
+        "text": "ISS-003 (critical)",
+        "variant": "destructive"
+      }
+    }
+  }
+}

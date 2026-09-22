@@ -2,7 +2,9 @@
 
 ## Open Issues
 
-*(none)*
+| ID | Title | Status | Severity | Detected |
+|----|-------|--------|----------|---------|
+| [ISS-003](ISS-003.md) | All skills failing — ANTHROPIC_API_KEY OAuth 403 | open | critical | 2026-09-22 |
 
 ## Resolved Issues
 
