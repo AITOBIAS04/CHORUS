@@ -1,5 +1,18 @@
-Done. The skill-leaderboard ran and hit the early-exit gate at step 2.
+Done. Here's a summary of what ran:
 
-**Result: SKILL_LEADERBOARD_INSUFFICIENT_DATA**
+## Summary
 
-Only 1 active fork found in the last 30 days — `AITOBIAS04/CHORUS` (pushed today, 2026-08-30). The minimum is 2 forks for a meaningful ranking. Per the skill's early-exit rule added in self-improve PR #36, execution stopped here — no aeon.yml reads, no aggregation, no article written, no notification sent. This is the 17th consecutive week at insufficient data. Logged to `memory/logs/2026-08-30.md`.
+**Skill Leaderboard — 2026-09-22**
+
+- **Target repos:** `aaronjmars/MiroShark` (sim-tool) + `aaronjmars/miroshark-aeon` (Aeon runtime)
+- **Active MiroShark forks (30d window):** 13 — none have `aeon.yml` (expected)
+- **Active Aeon runtime forks:** 1 — `AITOBIAS04/CHORUS`, pushed today
+- **CHORUS enabled skills:** 14 (unchanged from 2026-08-23)
+- **Source enabled skills:** 9 (unchanged)
+- **Adoption gaps:** 5 (token-movers, holdings, changelog, shiplog, aeon-update)
+- **MiroShark:** 1,453 stars / 300 forks (+18 stars, +2 forks since last run)
+- **Notification:** skipped — `SKILL_LEADERBOARD_INSUFFICIENT_DATA` for the **17th consecutive week** (1 Aeon fork, minimum 2 required)
+
+**Files created:**
+- `articles/skill-leaderboard-2026-09-22.md`
+- `memory/logs/2026-09-22.md`
