@@ -1,0 +1,162 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-09-23"
+      },
+      "children": [
+        "price_stack",
+        "sep1",
+        "liquidity_stack",
+        "sep2",
+        "performance_stack",
+        "sep3",
+        "details_stack",
+        "sep4",
+        "chart_link"
+      ]
+    },
+    "price_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "price_stat",
+        "change_24h"
+      ]
+    },
+    "price_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000003199"
+      }
+    },
+    "change_24h": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Change",
+        "value": "+4.41%",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "liquidity_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "liquidity_stat",
+        "volume_stat",
+        "ratio_stat"
+      ]
+    },
+    "liquidity_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Liquidity",
+        "value": "$3.1M"
+      }
+    },
+    "volume_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$43.8K"
+      }
+    },
+    "ratio_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "70/59"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "performance_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "perf_7d",
+        "perf_30d"
+      ]
+    },
+    "perf_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Performance",
+        "value": "+34.9%",
+        "trend": "up"
+      }
+    },
+    "perf_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Performance",
+        "value": "+8.3%",
+        "trend": "up"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "details_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "holding",
+        "pool",
+        "silence"
+      ]
+    },
+    "holding": {
+      "type": "Text",
+      "props": {
+        "text": "Holding $0.0000032 after spiking to $0.0000037 earlier today."
+      }
+    },
+    "pool": {
+      "type": "Text",
+      "props": {
+        "text": "mmETH pool added $2.76M in LP since Sep 14 but trades quietly."
+      }
+    },
+    "silence": {
+      "type": "Text",
+      "props": {
+        "text": "78 days social silence."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "chart_link": {
+      "type": "Link",
+      "props": {
+        "label": "View Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
