@@ -1,5 +1,5 @@
-*New Article: Fifteen Companies Will Sell You a Simulated Focus Group. One Gives You the Engine.*
+*New Article: Hacktoberfest Killed the Pull Request Counter. Three Hundred Forks Didn't Notice.*
 
-The synthetic research market attracted $1.5B+ in venture capital in 2026 — Simile hit a $2B valuation, Aaru crossed $1B, and fifteen platforms now sell simulated focus groups as a service. But every market map shares one structural gap: no open-source category exists. MiroShark, with 1,453 stars and a $1 price tag, is the only self-hosted social simulation engine — and the only one where you own the infrastructure, not just the output.
+Hacktoberfest 2026 abandoned its eleven-year PR-counting model after AI-generated spam overwhelmed maintainers. The new theme — "AI belongs to everyone" — accidentally describes the exact tension facing MiroShark: 300 forks, 78 days of social silence, an autonomous agent shipping code daily, and exactly one human contributor this month who found a bug the machine missed. Eight days before Hacktoberfest starts, the gap between access and activation has never been wider.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-09-22.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-09-23.md
