@@ -1,0 +1,163 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-09-23"
+      },
+      "children": [
+        "recovery-section",
+        "sep1",
+        "missed-section",
+        "sep2",
+        "pr-section"
+      ]
+    },
+    "recovery-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "recovery-alert",
+        "recovery-stats"
+      ]
+    },
+    "recovery-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "title": "✅ RECOVERY: ISS-003 Resolved",
+        "message": "All 14 skills are healthy. The ~21-day ANTHROPIC_API_KEY OAuth 403 outage (Sep 1–22) cleared — key was renewed and all skills recovered in the Sep 22 batch run. ISS-003 closed."
+      }
+    },
+    "recovery-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-skills",
+        "stat-failures",
+        "stat-outage"
+      ]
+    },
+    "stat-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Healthy",
+        "value": "14"
+      }
+    },
+    "stat-failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive Failures",
+        "value": "0"
+      }
+    },
+    "stat-outage": {
+      "type": "Stat",
+      "props": {
+        "label": "Outage Duration",
+        "value": "21 days"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "missed-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "missed-alert",
+        "missed-table",
+        "missed-note"
+      ]
+    },
+    "missed-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "⚠️ 3 Daily Skills Missed Schedule",
+        "message": "Dispatch unavailable — actions: read only"
+      }
+    },
+    "missed-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Scheduled Time",
+          "Status"
+        ],
+        "rows": [
+          [
+            "repo-pulse",
+            "10:00 UTC",
+            ">9h overdue"
+          ],
+          [
+            "feature",
+            "11:00 UTC",
+            ">8h overdue; skips on no GH_GLOBAL"
+          ],
+          [
+            "push-recap",
+            "15:00 UTC",
+            ">4h overdue"
+          ]
+        ]
+      }
+    },
+    "missed-note": {
+      "type": "Text",
+      "props": {
+        "text": "Manual re-run via GitHub Actions UI or actions:write scope upgrade needed to auto-dispatch.",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-link",
+        "pr-detail"
+      ]
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #60: improve fetch-tweets gap-tolerant counter",
+        "href": "https://github.com/CHORUS/CHORUS/pull/60",
+        "source": "GitHub"
+      }
+    },
+    "pr-detail": {
+      "type": "Text",
+      "props": {
+        "text": "25h old, 72h threshold, not stale",
+        "variant": "caption"
+      }
+    }
+  }
+}
