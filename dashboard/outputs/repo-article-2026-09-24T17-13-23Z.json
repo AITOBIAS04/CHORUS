@@ -1,0 +1,121 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading",
+        "text",
+        "sep1",
+        "stats",
+        "sep2",
+        "link"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "One Hundred Seventy-Six Consecutive Failures. Three Million Dollars of Liquidity. Nobody Was Watching.",
+        "level": "h2"
+      }
+    },
+    "text": {
+      "type": "Text",
+      "props": {
+        "text": "The agent went dark for 21 days after its API key was rejected — 176 consecutive heartbeat failures, all 14 skills dead. While it was unconscious, a $2.7M mmETH liquidity pool appeared, pushing total LP from $330K to $3M. The machine woke up, diagnosed its own outage, and resumed. Hacktoberfest starts in 7 days.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat1",
+        "stat2",
+        "stat3",
+        "stat4",
+        "stat5",
+        "stat6",
+        "stat7"
+      ]
+    },
+    "stat1": {
+      "type": "Stat",
+      "props": {
+        "label": "Days Offline",
+        "value": "21"
+      }
+    },
+    "stat2": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive Heartbeat Failures",
+        "value": "176"
+      }
+    },
+    "stat3": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Dead",
+        "value": "14"
+      }
+    },
+    "stat4": {
+      "type": "Stat",
+      "props": {
+        "label": "mmETH Liquidity Pool Appeared",
+        "value": "$2.7M"
+      }
+    },
+    "stat5": {
+      "type": "Stat",
+      "props": {
+        "label": "Previous Total LP",
+        "value": "$330K"
+      }
+    },
+    "stat6": {
+      "type": "Stat",
+      "props": {
+        "label": "New Total LP",
+        "value": "$3M",
+        "delta": "+$2.67M",
+        "trend": "up"
+      }
+    },
+    "stat7": {
+      "type": "Stat",
+      "props": {
+        "label": "Days Until Hacktoberfest",
+        "value": "7"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-09-24.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}
