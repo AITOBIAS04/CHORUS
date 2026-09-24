@@ -1,0 +1,229 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-09-24"
+      },
+      "children": [
+        "alert_missed",
+        "sep1",
+        "section_new",
+        "sep2",
+        "section_repeat",
+        "sep3",
+        "section_success",
+        "sep4",
+        "pr_status",
+        "sep5",
+        "issues_status"
+      ]
+    },
+    "alert_missed": {
+      "type": "Alert",
+      "props": {
+        "title": "4 skills missed scheduled windows",
+        "message": "Dispatch unavailable — actions: read only",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_new": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_new",
+        "missed_project_lens",
+        "missed_memory_flush"
+      ]
+    },
+    "heading_new": {
+      "type": "Heading",
+      "props": {
+        "text": "NEW today",
+        "level": "h3"
+      }
+    },
+    "missed_project_lens": {
+      "type": "Text",
+      "props": {
+        "text": "project-lens (Wed 16:00 UTC) — 4.5h past, no run",
+        "variant": "body"
+      }
+    },
+    "missed_memory_flush": {
+      "type": "Text",
+      "props": {
+        "text": "memory-flush (Wed 18:00 UTC) — 2.5h past, no run",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_repeat": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_repeat",
+        "missed_repo_pulse",
+        "missed_push_recap"
+      ]
+    },
+    "heading_repeat": {
+      "type": "Heading",
+      "props": {
+        "text": "Repeat (2nd consecutive day)",
+        "level": "h3"
+      }
+    },
+    "missed_repo_pulse": {
+      "type": "Text",
+      "props": {
+        "text": "repo-pulse (daily 10:00 UTC) — 10.5h past, no run",
+        "variant": "body"
+      }
+    },
+    "missed_push_recap": {
+      "type": "Text",
+      "props": {
+        "text": "push-recap (daily 15:00 UTC) — 5.5h past, no run",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_success": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_success",
+        "badges_success"
+      ]
+    },
+    "heading_success": {
+      "type": "Heading",
+      "props": {
+        "text": "Ran fine",
+        "level": "h3"
+      }
+    },
+    "badges_success": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_token",
+        "badge_tweets",
+        "badge_feature",
+        "badge_article",
+        "badge_heartbeat"
+      ]
+    },
+    "badge_token": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report",
+        "variant": "default"
+      }
+    },
+    "badge_tweets": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets",
+        "variant": "default"
+      }
+    },
+    "badge_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "feature",
+        "variant": "default"
+      }
+    },
+    "badge_article": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article",
+        "variant": "default"
+      }
+    },
+    "badge_heartbeat": {
+      "type": "Badge",
+      "props": {
+        "text": "heartbeat",
+        "variant": "default"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_pr",
+        "pr_info"
+      ]
+    },
+    "heading_pr": {
+      "type": "Heading",
+      "props": {
+        "text": "Open PR",
+        "level": "h3"
+      }
+    },
+    "pr_info": {
+      "type": "Text",
+      "props": {
+        "text": "PR #60 (improve: fetch-tweets consecutive_empty gap-tolerance) — 49h, not stale (72h threshold)",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "issues_status": {
+      "type": "Alert",
+      "props": {
+        "title": "No open issues",
+        "type": "success"
+      }
+    }
+  }
+}

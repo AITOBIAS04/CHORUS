@@ -1,12 +1,15 @@
-Heartbeat — 2026-09-23
+Heartbeat — 2026-09-24
 
-✅ RECOVERY: ISS-003 resolved. All 14 skills are healthy (0 consecutive failures). The ~21-day ANTHROPIC_API_KEY OAuth 403 outage (Sep 1–22) cleared — key was renewed and all skills recovered in the Sep 22 batch run. ISS-003 closed.
+4 skills missed their scheduled windows today (dispatch unavailable — actions: read only):
 
-⚠️ 3 daily skills missed today's schedule (dispatch unavailable — actions: read only):
-• repo-pulse — 10:00 UTC (>9h overdue)
-• feature — 11:00 UTC (>8h overdue; skips on no GH_GLOBAL anyway)
-• push-recap — 15:00 UTC (>4h overdue)
+NEW today:
+- project-lens (Wed 16:00 UTC) — 4.5h past, no run
+- memory-flush (Wed 18:00 UTC) — 2.5h past, no run
 
-Manual re-run via GitHub Actions UI or actions:write scope upgrade needed to auto-dispatch.
+Repeat (2nd consecutive day):
+- repo-pulse (daily 10:00 UTC) — 10.5h past, no run
+- push-recap (daily 15:00 UTC) — 5.5h past, no run
 
-PR #60 (improve: fetch-tweets gap-tolerant counter) — 25h old, 72h threshold, not stale.
+Ran fine: token-report, fetch-tweets, feature, repo-article, heartbeat
+PR #60 (improve: fetch-tweets consecutive_empty gap-tolerance) — 49h, not stale (72h threshold)
+No open issues.
