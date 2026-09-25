@@ -1,1 +1,7 @@
-Heartbeat — 2 new missing skills (dispatch unavailable). self-improve and repo-actions both missed their Sep 23 run and again today Sep 25 (odd-day schedule, last success Sep 22). PR #60 (improve: fetch-tweets consecutive_empty gap-tolerance) is now 72h old — stale threshold reached. Deduped: repo-pulse and push-recap still missing (3rd consecutive day, reported Sep 23+24). All consecutive_failures=0; no open issues. Actions scope is read-only — manual re-run or scope upgrade needed to recover missing skills.
+⚠️ Heartbeat — 2026-09-25 (run 2)
+
+New miss: repo-article — scheduled Thu 16:00 UTC, now ~4.7h late, no GH Actions run found today.
+
+Still missing (deduped — flagged earlier): repo-pulse (4th day), push-recap (4th day), self-improve, repo-actions.
+
+Dispatch unavailable: actions: read only (403 confirmed). Manual re-run needed for all missing skills.

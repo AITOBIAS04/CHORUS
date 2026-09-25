@@ -1,0 +1,107 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-09-25 (run 2)"
+      },
+      "children": [
+        "alert_new_miss",
+        "sep1",
+        "stack_still_missing",
+        "sep2",
+        "alert_dispatch"
+      ]
+    },
+    "alert_new_miss": {
+      "type": "Alert",
+      "props": {
+        "title": "New Miss",
+        "message": "repo-article — scheduled Thu 16:00 UTC, now ~4.7h late, no GH Actions run found today.",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_still_missing": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_still_missing",
+        "badges_stack"
+      ]
+    },
+    "heading_still_missing": {
+      "type": "Heading",
+      "props": {
+        "text": "Still missing (deduped — flagged earlier)",
+        "level": "h3"
+      }
+    },
+    "badges_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_repo_pulse",
+        "badge_push_recap",
+        "badge_self_improve",
+        "badge_repo_actions"
+      ]
+    },
+    "badge_repo_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse (4th day)",
+        "variant": "outline"
+      }
+    },
+    "badge_push_recap": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap (4th day)",
+        "variant": "outline"
+      }
+    },
+    "badge_self_improve": {
+      "type": "Badge",
+      "props": {
+        "text": "self-improve",
+        "variant": "outline"
+      }
+    },
+    "badge_repo_actions": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-actions",
+        "variant": "outline"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_dispatch": {
+      "type": "Alert",
+      "props": {
+        "title": "Dispatch Unavailable",
+        "message": "actions: read only (403 confirmed). Manual re-run needed for all missing skills.",
+        "type": "error"
+      }
+    }
+  }
+}
