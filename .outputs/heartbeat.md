@@ -1,15 +1,1 @@
-Heartbeat — 2026-09-24
-
-4 skills missed their scheduled windows today (dispatch unavailable — actions: read only):
-
-NEW today:
-- project-lens (Wed 16:00 UTC) — 4.5h past, no run
-- memory-flush (Wed 18:00 UTC) — 2.5h past, no run
-
-Repeat (2nd consecutive day):
-- repo-pulse (daily 10:00 UTC) — 10.5h past, no run
-- push-recap (daily 15:00 UTC) — 5.5h past, no run
-
-Ran fine: token-report, fetch-tweets, feature, repo-article, heartbeat
-PR #60 (improve: fetch-tweets consecutive_empty gap-tolerance) — 49h, not stale (72h threshold)
-No open issues.
+Heartbeat — 2 new missing skills (dispatch unavailable). self-improve and repo-actions both missed their Sep 23 run and again today Sep 25 (odd-day schedule, last success Sep 22). PR #60 (improve: fetch-tweets consecutive_empty gap-tolerance) is now 72h old — stale threshold reached. Deduped: repo-pulse and push-recap still missing (3rd consecutive day, reported Sep 23+24). All consecutive_failures=0; no open issues. Actions scope is read-only — manual re-run or scope upgrade needed to recover missing skills.

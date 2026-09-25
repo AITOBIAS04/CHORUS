@@ -1,0 +1,142 @@
+{
+  "root": "card_heartbeat",
+  "state": {},
+  "elements": {
+    "card_heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "alert_missing_skills",
+        "sep1",
+        "section_missing_details",
+        "sep2",
+        "alert_stale_pr",
+        "sep3",
+        "section_deduped",
+        "sep4",
+        "section_status",
+        "sep5",
+        "alert_scope"
+      ]
+    },
+    "alert_missing_skills": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "2 new missing skills",
+        "message": "Dispatch unavailable"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_missing_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_missing_1",
+        "text_missing_2"
+      ]
+    },
+    "text_missing_1": {
+      "type": "Text",
+      "props": {
+        "text": "self-improve: missed Sep 23 run and again today Sep 25 (odd-day schedule, last success Sep 22)"
+      }
+    },
+    "text_missing_2": {
+      "type": "Text",
+      "props": {
+        "text": "repo-actions: missed Sep 23 run and again today Sep 25 (odd-day schedule, last success Sep 22)"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_stale_pr": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Stale PR detected",
+        "message": "PR #60 (improve: fetch-tweets consecutive_empty gap-tolerance) is now 72h old — stale threshold reached"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_deduped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_deduped",
+        "text_deduped"
+      ]
+    },
+    "heading_deduped": {
+      "type": "Heading",
+      "props": {
+        "text": "Deduped (recurring)",
+        "level": "h3"
+      }
+    },
+    "text_deduped": {
+      "type": "Text",
+      "props": {
+        "text": "repo-pulse and push-recap still missing (3rd consecutive day, reported Sep 23+24)"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_status"
+      ]
+    },
+    "text_status": {
+      "type": "Text",
+      "props": {
+        "text": "All consecutive_failures=0; no open issues"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_scope": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Scope limitation",
+        "message": "Actions scope is read-only — manual re-run or scope upgrade needed to recover missing skills"
+      }
+    }
+  }
+}
