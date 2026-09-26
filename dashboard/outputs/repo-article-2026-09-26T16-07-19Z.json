@@ -1,0 +1,47 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading_title",
+        "text_body",
+        "separator_main",
+        "storylink_article"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "One Line in a README. Eight Thousand Decisions Made Public.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_body": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's founder added one commit this week — a HuggingFace dataset badge linking 8,201 agent decisions from 16 simulations, published under MIT. The project shifted from simulation engine to open data source, just as academic benchmarks (MiroBench) reveal current simulators remain mismatched with real human behavior. Hacktoberfest 2026 starts in 5 days with 301 dormant forks and an \"AI belongs to everyone\" theme."
+      },
+      "children": []
+    },
+    "separator_main": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "storylink_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-09-26.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
