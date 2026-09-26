@@ -1,12 +1,12 @@
-*Hyperstitions Idea — 2026-09-22*
+*Hyperstitions Idea — 2026-09-26*
 
-"Will MiroShark receive 10 Hacktoberfest-qualifying PRs from distinct non-team contributors by October 31, 2026?"
+"Will MiroShark receive 10 Hacktoberfest-qualified PRs during October 2026?"
 
-The coordination play: Hacktoberfest starts in 9 days and MiroShark has 300 forks with exactly zero community PRs — ever. The agent has designed 40+ features it literally cannot ship because it lacks push access. Someone needs to set GH_GLOBAL, tag the repo with the hacktoberfest topic, label issues as good-first-issue, and share it in Hacktoberfest channels. The market existing makes people look at the repo during the one month when open-source contribution is gamified and incentivized globally.
+The coordination play: Three hundred forks. Zero pull requests. Hacktoberfest starts in five days with free swag for contributors — and the repo has 40+ agent-designed feature specs sitting unclaimed. The market turns a silent fork into a to-do list. Anyone holding MIROSHARK now has a reason to dust off their fork, pick a spec, and ship code. An AI agent wrote the blueprints. It needs humans to build them.
 
-Why now: MiroShark just crossed 300 forks — a round number that masks a 0% conversion rate. The agent has been autonomously designing features for 190+ days but has been push-blocked for 83+ consecutive runs. Hacktoberfest is the only annual event that turns passive forkers into active contributors at scale, and the window to prepare is closing (Oct 1 deadline for repo readiness).
+Why now: Hacktoberfest 2026 launches October 1 with the theme "AI belongs to everyone." MiroShark has 1,451 stars, 300 forks, and a 0% community PR conversion rate — the largest untapped contributor pool in its history. Six previous community-action hyperstitions all expired unfulfilled. This time there is an external incentive structure (badges, swag, status) layered on top of the market.
 
-Resolution: YES if 10 or more merged PRs from 10 distinct GitHub accounts (excluding aaronjmars, aeonframework, dependabot) land in aaronjmars/MiroShark between October 1–31, 2026. PRs must not be spam or trivial (consistent with Hacktoberfest rules).
+Resolution: YES if 10 or more pull requests opened by non-core contributors (not aaronjmars or aeonframework) are merged or approved as Hacktoberfest-qualified in the aaronjmars/MiroShark repository during October 1–31, 2026. Verified via GitHub PR search with Hacktoberfest label or merged status.
 
 Scores: Reflexivity 5/5 | Viral 4/5
 

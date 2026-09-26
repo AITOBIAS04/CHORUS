@@ -1,0 +1,216 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-09-26"
+      },
+      "children": [
+        "heading_main",
+        "sep1",
+        "section_coordination",
+        "sep2",
+        "section_why_now",
+        "sep3",
+        "section_resolution",
+        "sep4",
+        "section_scores",
+        "sep5",
+        "link_hyperstitions"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark receive 10 Hacktoberfest-qualified PRs during October 2026?",
+        "level": "h2"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_coordination",
+        "text_coordination"
+      ]
+    },
+    "heading_coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The coordination play",
+        "level": "h3"
+      }
+    },
+    "text_coordination": {
+      "type": "Text",
+      "props": {
+        "text": "Three hundred forks. Zero pull requests. Hacktoberfest starts in five days with free swag for contributors — and the repo has 40+ agent-designed feature specs sitting unclaimed. The market turns a silent fork into a to-do list. Anyone holding MIROSHARK now has a reason to dust off their fork, pick a spec, and ship code. An AI agent wrote the blueprints. It needs humans to build them."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_why_now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_why_now",
+        "text_why_now",
+        "grid_stats"
+      ]
+    },
+    "heading_why_now": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h3"
+      }
+    },
+    "text_why_now": {
+      "type": "Text",
+      "props": {
+        "text": "Hacktoberfest 2026 launches October 1 with the theme \"AI belongs to everyone.\" MiroShark has 1,451 stars, 300 forks, and a 0% community PR conversion rate — the largest untapped contributor pool in its history. Six previous community-action hyperstitions all expired unfulfilled. This time there is an external incentive structure (badges, swag, status) layered on top of the market."
+      }
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks",
+        "stat_pr_rate",
+        "stat_specs"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "1,451"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "300"
+      }
+    },
+    "stat_pr_rate": {
+      "type": "Stat",
+      "props": {
+        "label": "Community PR Conversion Rate",
+        "value": "0%"
+      }
+    },
+    "stat_specs": {
+      "type": "Stat",
+      "props": {
+        "label": "Agent-Designed Feature Specs",
+        "value": "40+"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_resolution",
+        "text_resolution"
+      ]
+    },
+    "heading_resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "text_resolution": {
+      "type": "Text",
+      "props": {
+        "text": "YES if 10 or more pull requests opened by non-core contributors (not aaronjmars or aeonframework) are merged or approved as Hacktoberfest-qualified in the aaronjmars/MiroShark repository during October 1–31, 2026. Verified via GitHub PR search with Hacktoberfest label or merged status."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_scores",
+        "grid_scores"
+      ]
+    },
+    "heading_scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "grid_scores": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "score_reflexivity",
+        "score_viral"
+      ]
+    },
+    "score_reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      }
+    },
+    "score_viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "Soon on hyperstitions.com",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}
