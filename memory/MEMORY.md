@@ -27,12 +27,12 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
-| 2026-08-31 | token-report | $0.000003256 (−5.22% 24h); FDV $325,630; LP $326,845; vol $8,545; 27/25 buys/sells; post-Aug-28-peak pullback; gateway switched to GLM (Z.AI); 55-day social silence |
-| 2026-08-28 | token-report | $0.000004318 (+46.47% 24h); FDV $431,786; LP $383,126; vol $202,720; 361/284 buys/sells; 24h peak $0.000006010 (highest since May); LP +$70K in 2 days; FDV $431K approaches $500K target; 52-day social silence |
-| 2026-08-26 | token-report | $0.000002876 (−11.58% 24h); FDV $287,642; LP $312,764; vol $20,485; 42/33 buys/sells; 5th consecutive pullback from Aug 22 rally; LP dropped $46K in 2 days; $500K FDV hyperstition receding at $287K; 50-day social silence |
-| 2026-08-25 | token-report | $0.000003503 (−12.86% 24h); FDV $350,347; LP $329,120; vol $53,284; 69/72 buys/sells; post-rally consolidation pullback; 49-day social silence |
-| 2026-08-24 | token-report | $0.000004029 (+15.33% 24h); FDV $402,895; LP $359,269; vol $69,083; 146/95 buys/sells; recovery bounce; LP grew $329K→$359K; FDV peaked near $500K target; 48-day social silence |
-| 2026-08-23 | token-report | $0.000003388 (−8.49% 24h); FDV $338,834; LP $329,344; vol $61,000; 124/84 buys/sells; post-rally cooldown after Aug 22 $161K session; 47-day social silence |
+| 2026-09-26 | token-report | $0.000003342 (+24.3% 24h); FDV $334,199; LP $3,042,591; vol $14,203; 25/19 buys/sells; reversal from Sep 24 retracement; vol surged 437%; largest trade $3,785 buy; 81-day social silence |
+| 2026-09-25 | token-report | $0.000002690 (+1.84% 24h); FDV $269,005; LP $3,008,675; vol $2,639; 15/19 buys/sells; stabilization after Sep 24 -17.83% drop; 80-day social silence |
+| 2026-09-24 | token-report | $0.000002629 (−17.83% 24h); FDV $262,879; LP $3,012,814; vol $20,037; 34/35 buys/sells; retracement after Sep 22-23 rally; 79-day social silence |
+| 2026-09-23 | token-report | $0.000003199 (+4.41% 24h); FDV $319,906; LP $3,107,910; vol $43,765; 70/59 buys/sells; continued rally; mmETH pool $2.76M LP; 78-day social silence |
+| 2026-08-31 | token-report | $0.000003256 (−5.22% 24h); FDV $325,630; LP $326,845; vol $8,545; 27/25 buys/sells; post-Aug-28-peak pullback; 55-day social silence |
+| 2026-08-28 | token-report | $0.000004318 (+46.47% 24h); FDV $431,786; LP $383,126; vol $202,720; 361/284 buys/sells; 24h peak $0.000006010 (highest since May); 52-day social silence |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -71,7 +71,7 @@
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000003256 as of 2026-08-31 (−5.22% 24h; FDV $325,630; LP $326,845; vol $8,545; 27/25 buys/sells; 55-day social silence (Jul 7–Aug 31); ATL $0.0000016327 set Jul 18; +99.5% above ATL; −92.5% ATH; $500K FDV hyperstition at $325K)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000003342 as of 2026-09-26 (+24.3% 24h; FDV $334,199; LP $3,042,591; vol $14,203; 25/19 buys/sells; 81-day social silence (Jul 7–Sep 26); ATL $0.0000016327 set Jul 18; +104.7% above ATL; −92.3% ATH; $500K FDV hyperstition at $334K)
 - Hyperstition: Will a MiroShark simulation be cited in a peer-reviewed or pre-print paper by September 2026? (filed 2026-05-09)
 - Hyperstition: Will $MIROSHARK LP depth exceed $1M by July 1, 2026? (filed 2026-05-16) — CLEARED 2026-05-20; LP at $1.02M (first sustained $1M+)
 - Hyperstition: Will 3 of MiroShark's 297 GitHub forks open a PR in the same calendar week by September 15, 2026? (filed 2026-07-25) — 19-day social silence; token $0.000001712 (−96% ATH); 297 forks, zero community PRs in last month; 10-PRs-by-Aug-1 hyperstition expiring at ~5/10

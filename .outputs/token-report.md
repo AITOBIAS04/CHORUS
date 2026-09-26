@@ -1,10 +1,10 @@
-*MiroShark Daily — 2026-09-25*
+$MIROSHARK Daily — 2026-09-26
 
-Price: $0.000002690 (+1.84% 24h)
-Liquidity: $3.01M | 24h Vol: $2.6K
-Buys/Sells: 15/19
-7d: +10.6% | 30d: −48.4% (vs Aug 22 peak)
+Price: $0.000003342 (+24.3% 24h)
+Liquidity: $3.04M | 24h Vol: $14,203
+Buys/Sells: 25/19
+7d: +38.0% | 30d: -35.6%
 
-Quiet stabilization after yesterday's −17.84% retracement. Volume thin; mmETH pool holds $2.69M LP but nearly idle. FDV $269K.
+Strong reversal from Sep 24 retracement — FDV climbs back to $334K on 437% volume surge. Largest trade: $3,785 buy. Hacktoberfest Oct 1 in 5 days.
 
 Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209

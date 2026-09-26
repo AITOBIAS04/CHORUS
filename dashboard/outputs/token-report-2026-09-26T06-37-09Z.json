@@ -1,0 +1,154 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "$MIROSHARK Daily — 2026-09-26"
+      },
+      "children": [
+        "metrics_grid",
+        "sep1",
+        "performance_grid",
+        "sep2",
+        "analysis_stack",
+        "sep3",
+        "chart_link"
+      ]
+    },
+    "metrics_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liquidity",
+        "stat_volume_24h",
+        "stat_buys",
+        "stat_sells"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000003342",
+        "delta": "+24.3%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$3.04M"
+      },
+      "children": []
+    },
+    "stat_volume_24h": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$14,203"
+      },
+      "children": []
+    },
+    "stat_buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys",
+        "value": "25"
+      },
+      "children": []
+    },
+    "stat_sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Sells",
+        "value": "19"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "performance_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7 Day",
+        "value": "+38.0%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30 Day",
+        "value": "-35.6%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "analysis_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_analysis"
+      ]
+    },
+    "text_analysis": {
+      "type": "Text",
+      "props": {
+        "text": "Strong reversal from Sep 24 retracement — FDV climbs back to $334K on 437% volume surge. Largest trade: $3,785 buy. Hacktoberfest Oct 1 in 5 days.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GeckoTerminal Pool Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      },
+      "children": []
+    }
+  }
+}
