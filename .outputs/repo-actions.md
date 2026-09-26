@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-09-22*
-Generated from analysis of aaronjmars/MiroShark (1,453 stars · 300 forks · Sep 15 deadlines expired · paper citation closes Sep 30 · Hacktoberfest Oct 1).
+*Repo Action Ideas — 2026-09-26*
+Generated from analysis of aaronjmars/MiroShark (1,456 stars · 301 forks · Hacktoberfest Oct 1 in 5 days).
 
-1. Python SDK `miroshark-client` (Integration/Growth, Medium)
-   Pip-installable client wrapping the 5 core API endpoints — the only mechanism that directly clears the non-fork dependent repo hyperstition.
+1. HuggingFace Live Dataset Sync (Integration, Small)
+   PR #311 linked the dataset; this automates pushing each new published simulation as a structured row to MiroShark/social-prediction-market-sim — turns a static badge into a growing live data stream.
 
-2. Simulation Calibration Ledger (Feature/Research, Small)
-   `POST /api/simulation/{id}/resolve` + `GET /api/calibration` tracks prediction accuracy with Brier score by domain — paper citation hook 8 days out.
+2. Webhook Subscription System (Integration, Medium)
+   POST/GET/DELETE /api/webhooks with HMAC-signed callbacks on simulation.complete — eliminates the poll-or-miss gap and ships a docs/WEBHOOKS.md with 5 named Hacktoberfest integration targets (Discord, Slack, PagerDuty, Zapier, n8n).
 
-3. LLM Tool-Calling Schema (Integration/Growth, Small)
-   `GET /api/llm-tools.json` exports all major endpoints as OpenAI-compatible function definitions; static copy at repo root makes MiroShark searchable in agent tool repos.
+3. Simulation Comparison API (Feature, Small)
+   GET /api/compare?ids=id1,id2,... returns trajectory overlap score, max divergence, direction agreement, and a plain-English diff — the first cross-simulation analytical tool and a paper citation hook (Sep 30, 4 days).
 
-4. Agent Population Pressure Gauge (Feature, Small)
-   `GET /api/simulation/{id}/pressure` classifies what drove consensus: immediate_consensus, convergence, reversal, or sustained_debate — completes the four-pillar analytics framework.
+4. Hacktoberfest Issue Filer (Community, Small)
+   scripts/gen-hacktoberfest-issues.sh reads the 40+ built-but-blocked feature specs and files each as a labeled GitHub issue (hacktoberfest + good first issue) — the missing step after the Readiness Kit, now timed for Oct 1.
 
-5. Simulation Leaderboard (Feature/Community, Small)
-   `GET /api/leaderboard` + `/leaderboard` page ranks the archive by 5 dimensions: highest confidence, most contested, fastest consensus, most polarized, recently resolved.
+5. Simulation Agent Demographics (Feature, Small)
+   GET /api/simulation/{id}/demographics breaks down the agent pool by profession, platform, age bracket, and location — answers 'who drove the consensus?' and chains with Comparison (#3) via GET /api/compare-demographics.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-09-22.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-09-26.md

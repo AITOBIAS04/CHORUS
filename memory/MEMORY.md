@@ -88,6 +88,7 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (80th+ consecutive block as of Aug 23; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-09-26): HuggingFace Live Dataset Sync (#1), Webhook Subscription System (#2), Simulation Comparison API (#3), Hacktoberfest Issue Filer (#4), Simulation Agent Demographics (#5)
 - Feature candidates (repo-actions 2026-08-30): Simulation Topic Taxonomy Browser (#1), Swarm Diversity Index (#2), Hacktoberfest Readiness Kit (#3), Simulation Batch API (#4), Per-Platform Consensus Divergence Alert (#5)
 - Feature candidates (repo-actions 2026-08-26): Turkish (TR) UI Locale (#1), Simulation Forking API (#2), Time-to-Consensus Convergence Report (#3), Agent Persona Template Library (#4), Cross-Simulation Topic Trend API (#5)
 - Feature candidates (repo-actions 2026-08-24): Italian (IT) UI Locale (#1), Live Simulation Progress Stream (SSE) (#2), Agent Influence Score API (#3), Recurring Simulation Scheduler (#4), Agent Debate Summary API (#5)

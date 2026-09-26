@@ -1,0 +1,236 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas",
+        "description": "Generated from analysis of aaronjmars/MiroShark (1,456 stars · 301 forks · Hacktoberfest Oct 1 in 5 days)"
+      },
+      "children": [
+        "items_container",
+        "separator",
+        "footer_link"
+      ]
+    },
+    "items_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "item1_card",
+        "item2_card",
+        "item3_card",
+        "item4_card",
+        "item5_card"
+      ]
+    },
+    "item1_card": {
+      "type": "Card",
+      "props": {},
+      "children": [
+        "item1_header",
+        "item1_desc"
+      ]
+    },
+    "item1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "item1_title",
+        "item1_badge"
+      ]
+    },
+    "item1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "HuggingFace Live Dataset Sync",
+        "level": "h4"
+      }
+    },
+    "item1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration, Small"
+      }
+    },
+    "item1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "PR #311 linked the dataset; this automates pushing each new published simulation as a structured row to MiroShark/social-prediction-market-sim — turns a static badge into a growing live data stream."
+      }
+    },
+    "item2_card": {
+      "type": "Card",
+      "props": {},
+      "children": [
+        "item2_header",
+        "item2_desc"
+      ]
+    },
+    "item2_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "item2_title",
+        "item2_badge"
+      ]
+    },
+    "item2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Webhook Subscription System",
+        "level": "h4"
+      }
+    },
+    "item2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration, Medium"
+      }
+    },
+    "item2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "POST/GET/DELETE /api/webhooks with HMAC-signed callbacks on simulation.complete — eliminates the poll-or-miss gap and ships a docs/WEBHOOKS.md with 5 named Hacktoberfest integration targets (Discord, Slack, PagerDuty, Zapier, n8n)."
+      }
+    },
+    "item3_card": {
+      "type": "Card",
+      "props": {},
+      "children": [
+        "item3_header",
+        "item3_desc"
+      ]
+    },
+    "item3_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "item3_title",
+        "item3_badge"
+      ]
+    },
+    "item3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Comparison API",
+        "level": "h4"
+      }
+    },
+    "item3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "item3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/compare?ids=id1,id2,... returns trajectory overlap score, max divergence, direction agreement, and a plain-English diff — the first cross-simulation analytical tool and a paper citation hook (Sep 30, 4 days)."
+      }
+    },
+    "item4_card": {
+      "type": "Card",
+      "props": {},
+      "children": [
+        "item4_header",
+        "item4_desc"
+      ]
+    },
+    "item4_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "item4_title",
+        "item4_badge"
+      ]
+    },
+    "item4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Hacktoberfest Issue Filer",
+        "level": "h4"
+      }
+    },
+    "item4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Community, Small"
+      }
+    },
+    "item4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "scripts/gen-hacktoberfest-issues.sh reads the 40+ built-but-blocked feature specs and files each as a labeled GitHub issue (hacktoberfest + good first issue) — the missing step after the Readiness Kit, now timed for Oct 1."
+      }
+    },
+    "item5_card": {
+      "type": "Card",
+      "props": {},
+      "children": [
+        "item5_header",
+        "item5_desc"
+      ]
+    },
+    "item5_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "item5_title",
+        "item5_badge"
+      ]
+    },
+    "item5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Agent Demographics",
+        "level": "h4"
+      }
+    },
+    "item5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "item5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/demographics breaks down the agent pool by profession, platform, age bracket, and location — answers 'who drove the consensus?' and chains with Comparison (#3) via GET /api/compare-demographics."
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-09-26.md",
+        "source": "repo-actions"
+      }
+    }
+  }
+}
