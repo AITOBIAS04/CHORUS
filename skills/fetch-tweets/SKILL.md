@@ -44,7 +44,7 @@ Today is ${today}. Search X for tweets matching **${var}**.
 
    **Query cap and backoff:** By default, run at most 3 WebSearch queries per execution — one broad match (`site:x.com "${primary_term}"`), one with date constraint (`after:${FROM_DATE}`), and one variant (cashtag, handle, or alternate phrasing). If all 3 return nothing new, stop searching.
 
-   **Prolonged silence backoff:** Before running queries, count consecutive FETCH_TWEETS_EMPTY days from `memory/logs/` (same count used in step 5). If `consecutive_empty >= 7`, reduce to **1 query only** — use the date-constrained query (`site:x.com "${primary_term}" after:${FROM_DATE}`) as it's most likely to surface fresh content. Log: `WebSearch backoff: 1 query (${consecutive_empty} consecutive empty days; 3→1 to reduce waste)`. This saves 2 queries per day during known-silent periods — WebSearch returns the same stale IDs regardless of query count (observed: identical ~10 stale IDs returned across all 3 queries for 19+ days). The backoff resets automatically when a fresh tweet is found (consecutive_empty drops to 0).
+   **Prolonged silence backoff:** Before running queries, count consecutive FETCH_TWEETS_EMPTY runs from `memory/logs/` (same counting logic as step 5 — skip days where fetch-tweets didn't run; only break on days with actual results). If `consecutive_empty >= 7`, reduce to **1 query only** — use the date-constrained query (`site:x.com "${primary_term}" after:${FROM_DATE}`) as it's most likely to surface fresh content. Log: `WebSearch backoff: 1 query (${consecutive_empty} consecutive empty runs; 3→1 to reduce waste)`. This saves 2 queries per day during known-silent periods — WebSearch returns the same stale IDs regardless of query count (observed: identical ~10 stale IDs returned across all 3 queries for 19+ days). The backoff resets automatically when a fresh tweet is found (consecutive_empty drops to 0).
 
 4. **Deduplicate against previously-reported tweets** (from step 2):
    - Compare each candidate tweet URL against the collected set of already-reported URLs.
@@ -55,7 +55,11 @@ Today is ${today}. Search X for tweets matching **${var}**.
 
 5. **If no relevant tweets found** (no results, API error, or empty after dedup/freshness filtering): log "FETCH_TWEETS_EMPTY" to `memory/logs/${today}.md`.
 
-   **Prolonged silence escalation.** After logging FETCH_TWEETS_EMPTY, count the number of consecutive days with FETCH_TWEETS_EMPTY in `memory/logs/`. Scan backward from today through recent log files — stop counting when you find a day without FETCH_TWEETS_EMPTY (or a day with actual tweet results). If the consecutive empty count is a **multiple of 7** (7, 14, 21, …), send a single notification via `./notify`:
+   **Prolonged silence escalation.** After logging FETCH_TWEETS_EMPTY, count consecutive empty fetch-tweets runs in `memory/logs/`. Scan backward from today through recent log files (up to 30 days). For each day:
+   - If the log contains `FETCH_TWEETS_EMPTY`: increment the count.
+   - If the log contains fetch-tweets results (actual tweets found, not empty): **stop** — the streak is broken.
+   - If the log has **no fetch-tweets entry at all** (skill didn't run that day): **skip** that day and continue scanning backward. Days where the skill didn't run do not break the streak.
+   If the consecutive empty count is a **multiple of 7** (7, 14, 21, …), send a single notification via `./notify`:
    ```
    *Social Monitor Dark — ${consecutive_count} consecutive days*
 
