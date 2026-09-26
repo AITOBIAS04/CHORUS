@@ -1,13 +1,12 @@
 ## Summary
 
-- **Skill:** fetch-tweets
-- **Query:** MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark
-- **Path:** WebSearch fallback (XAI_API_KEY not set)
-- **Backoff:** consecutive_empty = 1 → 3 queries run
-- **Queries:** 3 standard queries run (broad, date-constrained, cashtag variant)
-- **Result:** FETCH_TWEETS_EMPTY — all candidate tweets were either in the dedup set (9 known URLs from Sep 22–24), profile pages, or failed the freshness/relevance gates
-- **New exclusions:** TommyBeFamous $AEON trade call (wrong token); Chuksdakingz Base chain post (~130 days old, not MIROSHARK-specific)
-- **Escalation:** consecutive_empty = 1, not a multiple of 7 — no notification sent
-- **Social silence:** 80+ days (Jul 7 – Sep 25)
-- **Log written:** `memory/logs/2026-09-25.md`
-- **Follow-up:** Set `XAI_API_KEY` in repo secrets to enable direct Grok search; WebSearch consistently returns the same stale pool with no fresh results during extended silence periods
+**fetch-tweets — 2026-09-26**
+
+- No same-day rerun detected; proceeded with full run.
+- XAI_API_KEY not set — WebSearch fallback used.
+- Consecutive empty count: **2** (Sep 25 EMPTY, Sep 24 EMPTY; Sep 23 was NO_NEW, breaks chain). Below the 7-day escalation threshold.
+- Ran 3 WebSearch queries against `MIROSHARK crypto token on Base chain (0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3)`.
+- All returned URLs were either already in the 3-day dedup set (9 previously-reported) or failed the 14-day freshness gate (3 stale tweets from Mar–May 2026: status IDs 2036818584937095581, 2045134558186664267, 2055301173578457241).
+- **Result: FETCH_TWEETS_EMPTY** — no notification sent.
+- Log written to `memory/logs/2026-09-26.md`.
+- Social silence remains at 81+ days. Setting XAI_API_KEY would enable direct X/Twitter search via Grok for fresher results.
