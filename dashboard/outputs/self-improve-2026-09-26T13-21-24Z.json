@@ -1,0 +1,134 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-09-26"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_intro",
+        "sep_1",
+        "heading_why",
+        "text_why",
+        "sep_2",
+        "heading_what_changed",
+        "text_what_changed_file",
+        "text_what_changed_desc",
+        "sep_3",
+        "heading_merged",
+        "text_merged",
+        "sep_4",
+        "heading_impact",
+        "text_impact",
+        "sep_5",
+        "link_pr"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Replaced the heartbeat dispatch permission probe with a non-triggering API check. The heartbeat skill tests whether it can dispatch missing skills by probing the workflow dispatch endpoint — but the old probe (gh workflow run aeon.yml -f skill=\"heartbeat\") was a live dispatch that would create an unwanted duplicate heartbeat run whenever actions: write permissions are available."
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "The bug is currently masked by the 403 response (actions: read only), but would cause wasted compute and recursive heartbeat dispatching once permissions are upgraded. Identified by reading the heartbeat skill logic during routine assessment."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_what_changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text_what_changed_file": {
+      "type": "Text",
+      "props": {
+        "text": "skills/heartbeat/SKILL.md: Replaced self-dispatch probe with gh api .../dispatches -X POST -f ref=__permission_probe__ — sends a dispatch request with an invalid ref so no workflow run is created. A 403 means no write access (skip dispatch); a 422 means access confirmed (proceed). Added explicit warning against using gh workflow run as probe."
+      }
+    },
+    "text_what_changed_desc": {
+      "type": "Text",
+      "props": {
+        "text": "",
+        "variant": "caption"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_merged": {
+      "type": "Heading",
+      "props": {
+        "text": "Also merged",
+        "level": "h3"
+      }
+    },
+    "text_merged": {
+      "type": "Text",
+      "props": {
+        "text": "PR #60 (fetch-tweets consecutive_empty counter gap-tolerant)"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents duplicate heartbeat workflow runs and wasted compute when dispatch permissions are restored. One less source of unnecessary GitHub Actions minutes."
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #61",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/61",
+        "source": "GitHub"
+      }
+    }
+  }
+}

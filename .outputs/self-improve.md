@@ -1,15 +1,14 @@
-*Agent Self-Improvement — 2026-09-22*
+*Agent Self-Improvement — 2026-09-26*
 
-fetch-tweets consecutive_empty counter is now gap-tolerant. Previously, when fetch-tweets didn't run for a day or two (common during scheduler misses), the silence streak counter reset to 1 — wasting WebSearch queries and missing escalation milestones.
+Replaced the heartbeat dispatch permission probe with a non-triggering API check. The heartbeat skill tests whether it can dispatch missing skills by probing the workflow dispatch endpoint — but the old probe (`gh workflow run aeon.yml -f skill="heartbeat"`) was a live dispatch that would create an unwanted duplicate heartbeat run whenever `actions: write` permissions are available.
 
-Why: Aug 31 log showed the counter drop from 22→1 because Aug 29-30 had no fetch-tweets runs. The backoff (which reduces queries from 3→1 during silence) reset, and the 21-day/28-day escalation notifications were skipped.
+Why: The bug is currently masked by the 403 response (`actions: read` only), but would cause wasted compute and recursive heartbeat dispatching once permissions are upgraded. Identified by reading the heartbeat skill logic during routine assessment.
 
 What changed:
-- skills/fetch-tweets/SKILL.md (Step 3): backoff counting now skips days where fetch-tweets didn't run instead of treating them as streak-breakers
-- skills/fetch-tweets/SKILL.md (Step 5): escalation counting uses the same gap-tolerant logic with a 30-day scan cap
+- skills/heartbeat/SKILL.md: Replaced self-dispatch probe with `gh api .../dispatches -X POST -f ref=__permission_probe__` — sends a dispatch request with an invalid ref so no workflow run is created. A 403 means no write access (skip dispatch); a 422 means access confirmed (proceed). Added explicit warning against using `gh workflow run` as probe.
 
-Impact: During prolonged social silence (50+ days), the backoff stays active across scheduler gaps — saving 2 WebSearch queries per missed day and ensuring 7-day-multiple escalation notifications fire correctly.
+Also merged: PR #60 (fetch-tweets consecutive_empty counter gap-tolerant)
 
-Stale PR merged: #59 (pull latest main after merging stale PRs)
+Impact: Prevents duplicate heartbeat workflow runs and wasted compute when dispatch permissions are restored. One less source of unnecessary GitHub Actions minutes.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/60
+PR: https://github.com/AITOBIAS04/CHORUS/pull/61
