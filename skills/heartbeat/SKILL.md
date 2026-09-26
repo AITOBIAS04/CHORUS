@@ -75,11 +75,17 @@ If something needs attention:
 1. **Auto-trigger missing skills** — for each skill confirmed missing (not just stalled PRs or issues), dispatch it if not already running:
 
    **Permissions preflight — check ONCE before any dispatch attempts:**
-   The workflow token may only have `actions: read` scope (check aeon.yml `permissions:` block). Probe with a single dry-run:
+   The workflow token may only have `actions: read` scope (check aeon.yml `permissions:` block). Probe for write access without triggering a real workflow run — send a dispatch request with an invalid ref:
    ```bash
-   gh workflow run aeon.yml -f skill="heartbeat" 2>&1 || true
+   OWNER_REPO=$(gh repo view --json nameWithOwner -q .nameWithOwner)
+   PROBE=$(gh api "repos/$OWNER_REPO/actions/workflows/aeon.yml/dispatches" \
+     -X POST -f ref=__permission_probe__ 2>&1 || true)
    ```
-   If this returns a 403/permission error, **skip ALL dispatch attempts** for this run — just list missing skills with a note: "dispatch unavailable (actions: read only; manual re-run or scope upgrade needed)". Do NOT attempt individual dispatches; they will all fail the same way.
+   The invalid ref ensures no workflow run is created. Check the response:
+   - If `PROBE` contains `403` or `Resource not accessible`: **skip ALL dispatch attempts** for this run — just list missing skills with a note: "dispatch unavailable (actions: read only; manual re-run or scope upgrade needed)". Do NOT attempt individual dispatches; they will all fail the same way.
+   - If `PROBE` contains `422` or `Unprocessable Entity`: write access is confirmed (ref is invalid but permissions are sufficient). Proceed to dispatch.
+
+   **Do NOT** use `gh workflow run aeon.yml -f skill="heartbeat"` as the probe — that creates a real workflow run and wastes compute.
 
    **If dispatch IS available**, proceed:
 
