@@ -1,3 +1,9 @@
 ## Summary
 
-**Push Recap — 2026-09-27:** Quiet day. Scanned both watched repos (aaronjmars/MiroShark, aaronjmars/miroshark-aeon). MiroShark had zero commits. miroshark-aeon had 9 commits, all automation (scheduler state updates, cron success markers, auto-commits for token-movers, heartbeat, and fetch-tweets). Zero substantive commits — no article written, no notification sent. Logged `PUSH_RECAP_QUIET` to `memory/logs/2026-09-27.md`.
+**Push Recap — 2026-09-27 (run 2): PUSH_RECAP_RERUN_QUIET**
+
+- **aaronjmars/MiroShark:** 0 commits in last 24h
+- **aaronjmars/miroshark-aeon:** 9 commits — all automation (`chore(cron)`, `chore(scheduler)`, `chore(token-movers)`, `chore(heartbeat)`, `chore(fetch-tweets)`)
+- **Substantive commits:** 0
+- No new commits since the earlier run today — no article written, no notification sent
+- **File updated:** `memory/logs/2026-09-27.md`
