@@ -1,18 +1,16 @@
-Done. Here's a summary of what ran:
+Log updated. Now attempt to send the notification (it will be skipped since notification threshold isn't met, but I should call `./notify` as a no-op or just skip per step 8's instruction).
+
+Per step 8: "Only send a notification if at least 2 active forks were found with readable aeon.yml files. Otherwise log SKILL_LEADERBOARD_INSUFFICIENT_DATA and stop." — logged. No notification sent.
+
+---
 
 ## Summary
 
-**Skill Leaderboard — 2026-09-22**
+**Skill Leaderboard — 2026-09-27 complete.**
 
-- **Target repos:** `aaronjmars/MiroShark` (sim-tool) + `aaronjmars/miroshark-aeon` (Aeon runtime)
-- **Active MiroShark forks (30d window):** 13 — none have `aeon.yml` (expected)
-- **Active Aeon runtime forks:** 1 — `AITOBIAS04/CHORUS`, pushed today
-- **CHORUS enabled skills:** 14 (unchanged from 2026-08-23)
-- **Source enabled skills:** 9 (unchanged)
-- **Adoption gaps:** 5 (token-movers, holdings, changelog, shiplog, aeon-update)
-- **MiroShark:** 1,453 stars / 300 forks (+18 stars, +2 forks since last run)
-- **Notification:** skipped — `SKILL_LEADERBOARD_INSUFFICIENT_DATA` for the **17th consecutive week** (1 Aeon fork, minimum 2 required)
-
-**Files created:**
-- `articles/skill-leaderboard-2026-09-22.md`
-- `memory/logs/2026-09-22.md`
+- **Fleet scanned:** 12 active MiroShark sim-tool forks (none with aeon.yml, as expected) + 1 active Aeon runtime fork (`AITOBIAS04/CHORUS`, pushed today)
+- **CHORUS skills:** 14 enabled (unchanged from last week)
+- **Source (miroshark-aeon) change:** `changelog` disabled → source now has 8 enabled skills (was 9); adoption gaps dropped from 5 → 4
+- **Notification:** skipped — SKILL_LEADERBOARD_INSUFFICIENT_DATA (18th consecutive week; need ≥2 Aeon forks to publish)
+- **Article written:** `articles/skill-leaderboard-2026-09-27.md`
+- **Log appended:** `memory/logs/2026-09-27.md`
