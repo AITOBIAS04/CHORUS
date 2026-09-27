@@ -1,0 +1,75 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "⚠️ Heartbeat — 2026-09-27"
+      },
+      "children": [
+        "content_stack"
+      ]
+    },
+    "content_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "missing_skill_alert",
+        "schedule_info",
+        "dispatch_alert",
+        "other_skills_text",
+        "issues_text",
+        "pr_61_link"
+      ]
+    },
+    "missing_skill_alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Missing skill",
+        "message": "hyperstitions-ideas"
+      }
+    },
+    "schedule_info": {
+      "type": "Text",
+      "props": {
+        "text": "Scheduled: Saturdays 10:00 UTC | Last ran: Sep 26 (Fri) | Overdue ~9h",
+        "variant": "body"
+      }
+    },
+    "dispatch_alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Dispatch unavailable",
+        "message": "actions: read only (manual re-run or scope upgrade needed)"
+      }
+    },
+    "other_skills_text": {
+      "type": "Text",
+      "props": {
+        "text": "All other skills ran as expected.",
+        "variant": "body"
+      }
+    },
+    "issues_text": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues.",
+        "variant": "body"
+      }
+    },
+    "pr_61_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #61: improve: heartbeat dispatch probe",
+        "href": "https://github.com/CHORUS/CHORUS/pull/61",
+        "source": "29h old, within 72h auto-merge window"
+      }
+    }
+  }
+}

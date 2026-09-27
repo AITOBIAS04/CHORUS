@@ -1,15 +1,8 @@
-**HEARTBEAT_OK**
+⚠️ Heartbeat — 2026-09-27
 
----
+Missing skill: hyperstitions-ideas
+Scheduled: Saturdays 10:00 UTC | Last ran: Sep 26 (Fri) | Overdue ~9h
 
-## Summary
+Dispatch unavailable — actions: read only (manual re-run or scope upgrade needed).
 
-**System health:** All 13 skills at `consecutive_failures: 0` — no systemic failures.
-
-**Scheduled skills (Saturday):** All confirmed run today (token-report, fetch-tweets, repo-pulse, hyperstitions-ideas, feature, self-improve, repo-actions, push-recap, repo-article). Not scheduled today: project-lens, weekly-shiplog, memory-flush.
-
-**PRs:** PR #61 (`improve: replace heartbeat dispatch probe with non-triggering API check`) — 7h old, `improve:` prefix → 72h threshold → not stale.
-
-**Open issues:** None.
-
-This was a second heartbeat run for the day; the first already logged HEARTBEAT_OK at ~19:17 UTC. No notification sent, no action required.
+All other skills ran as expected. No open issues. PR #61 (improve: heartbeat dispatch probe) — 29h old, within 72h auto-merge window.
