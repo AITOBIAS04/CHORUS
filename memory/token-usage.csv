@@ -951,3 +951,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-09-27,skill-leaderboard,claude-sonnet-4-6,17,13317,757305,49783
 2026-09-27,repo-article,claude-opus-4-6,6,1364,173406,30841
 2026-09-27,memory-flush,claude-sonnet-4-6,15,9891,618901,38871
+2026-09-27,skill-leaderboard,claude-sonnet-4-6,14,5163,440522,22619
