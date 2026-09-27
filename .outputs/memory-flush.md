@@ -1,12 +1,7 @@
 ## Summary
 
-Memory flush complete for 2026-09-22. No same-day rerun detected (fresh run). Most recent logs available were 2026-09-01, 2026-08-31, and 2026-08-30 — a 21-day gap exists (Sep 2–22 with no skill runs).
+Memory flush complete for 2026-09-27. Changes made:
 
-**Changes made to `memory/MEMORY.md`:**
-- Last consolidated date → 2026-09-22
-- MIROSHARK token line updated to Aug 31 data ($0.000003256; FDV $325,630; 55-day social silence)
-- Recent Articles: added weekly-shiplog 2026-08-31 ("The Agent Locked the Door from the Inside"); removed 2026-08-20 row — table stays at 8
-- Recent Digests: added 2026-08-31 token-report; removed 2026-08-22 row — table stays at 6
-- Active Targets: removed 4 expired September 1 hyperstitions (5-languages, public case study, community call, 5-X-accounts) — all NOT CLEARED and 21 days past deadline (>14-day threshold); September 15 hyperstitions retained (7 days past, under threshold)
-
-**Created:** `memory/logs/2026-09-22.md` with flush summary.
+- **`memory/MEMORY.md`** — Last consolidated date updated to 2026-09-27; 2026-09-27 token-report added to Recent Digests (2026-08-28 rotated out); 2026-08-21 and 2026-08-22 articles rotated out (table now at 8); 2026-08-18 feature candidates entry removed (table now at 5); MIROSHARK price/stats updated to today's figures (82-day social silence, $323K FDV); new lesson added for PR #61 heartbeat dispatch probe fix; oldest lesson (skill-leaderboard 8-step pipeline) rotated out to archive.
+- **`memory/topics/lessons-archive.md`** — Archived the skill-leaderboard lesson under new `## Archived 2026-09-27` heading.
+- **`memory/logs/2026-09-27.md`** — Log entry appended documenting all promotions and rotations.

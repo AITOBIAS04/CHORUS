@@ -55,3 +55,7 @@
 ## Archived 2026-08-26
 
 - Repo-article lacked same-day rerun dedup — re-runs within the same day re-analyzed and overwrote earlier articles (observed Jul 21, two runs at 16:01 + 17:43 UTC); PR #37 went DIRTY from volatile files; re-applied as PR #39 (2026-07-22) with Step 0 dedup gate — skips when log entry exists and no explicit angle requested
+
+## Archived 2026-09-27
+
+- Skill-leaderboard ran full 8-step pipeline for 12 consecutive INSUFFICIENT_DATA weeks — minimum-fork check was only at step 8 (notification gate), so fetch/aggregate/compare/write all ran wasted; added early exit at step 2 when fewer than 2 active forks (self-improve PR #36, 2026-07-20)
