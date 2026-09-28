@@ -29,10 +29,23 @@ Read `memory/cron-state.json`. For each skill, note `consecutive_failures` and `
   - All other PRs: flag after **24h** (`age_hours >= 24`).
 - [ ] Anything flagged in memory that needs follow-up?
 - [ ] Check recent GitHub issues for anything labeled urgent (use `gh issue list`)
-- [ ] Scan aeon.yml for enabled scheduled skills — cross-reference with today's log (`memory/logs/${today}.md`) to find any that haven't run when expected.
+- [ ] Check which enabled skills should have run today but didn't.
 
-  **Matching skill names to log entries:**
-  Skills log under `## Headers` that may use the kebab-case name or a human-readable variant. To check if a skill ran, do **two case-insensitive searches**: one for the original name (with hyphens) and one with hyphens replaced by spaces. A match on either confirms the skill ran. Examples for all enabled skills:
+  **Step A — Compute today's expected skills (day-of-week filter):**
+  ```bash
+  DOW=$(date -u +%w)   # 0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat
+  echo "Today is day-of-week: $DOW"
+  ```
+  Read `aeon.yml` and build a list of only the `enabled: true` skills whose cron schedule includes today's `$DOW`:
+  - `* * *` (positions 3-5 end with `*` for day-of-week) → runs every day → **include**
+  - `*/2 * *` (day-of-month varies, day-of-week is `*`) → runs every day of week → **include**
+  - `* * 1,3,5` (day-of-week is a list) → include only if `$DOW` appears in the list
+  - `* * 6` (single day-of-week) → include only if `$DOW` equals that number
+
+  **CRITICAL: Only check skills that pass this day-of-week filter.** A Saturday-only skill (`0 10 * * 6`) must NOT be flagged on Sunday. If a skill is not in today's expected list, skip it entirely — do not mention it as missing or overdue.
+
+  **Step B — Cross-reference expected skills with today's log:**
+  For each skill that passed the day-of-week filter, check if it ran by searching `memory/logs/${today}.md`. Do **two case-insensitive searches**: the original name (with hyphens) and with hyphens replaced by spaces. A match on either confirms the skill ran. Examples:
   - `token-report` → search for "token-report" OR "token report" (matches `## Token Report — $MiroShark`)
   - `push-recap` → search for "push-recap" OR "push recap" (matches `## Push Recap — 2026-...`)
   - `fetch-tweets` → search for "fetch-tweets" OR "fetch tweets" (matches `## fetch-tweets — MIROSHARK`)
@@ -48,11 +61,10 @@ Read `memory/cron-state.json`. For each skill, note `consecutive_failures` and `
   - `self-improve` → search for "self-improve" OR "self improve" OR "agent self-improvement"
   - `heartbeat` → search for "heartbeat" (matches `## Heartbeat — ...`)
 
-  **Timing rules (avoid false positives):**
+  **Step C — Timing rules (avoid false positives):**
   - GitHub Actions cron has ±10 min jitter and skills take 5-15 min to complete.
   - Only flag a skill as missing if its scheduled time was **more than 2 hours ago**.
   - Also check `gh run list --workflow=aeon.yml --created=$(date -u +%Y-%m-%d) --json displayTitle,status` — if the skill is currently `in_progress` or `queued`, don't flag it.
-  - For day-of-week schedules (e.g. `0 20 * * 0` for Sundays), only check on the matching day.
 
 Before sending any notification, grep the last 48h of logs for the same issue. If the same missing-skill or stalled-PR was already reported, skip it. Batch all findings into a single notification.
 

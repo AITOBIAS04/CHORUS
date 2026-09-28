@@ -1,0 +1,178 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-09-28"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_main",
+        "text_intro",
+        "sep_1",
+        "stack_why",
+        "sep_2",
+        "stack_changes",
+        "sep_3",
+        "stack_impact",
+        "sep_4",
+        "link_pr"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Heartbeat missing-skill check now pre-filters by day-of-week",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "The detection was restructured from a single scan-and-cross-reference into three explicit steps: compute today's day of week, filter to only today's expected skills, then cross-reference with logs.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_why",
+        "text_why"
+      ]
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "On Sep 27 (Sunday), heartbeat flagged hyperstitions-ideas as \"missing\" and \"overdue ~9h\" — a false positive. The skill is Saturday-only (0 10 * * 6) and had correctly run on Sep 26. The day-of-week rule existed but was a buried bullet point that the LLM overlooked during the scan. Second heartbeat run caught the error, but the false notification had already been sent.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_changes",
+        "text_changes_1",
+        "text_changes_2"
+      ]
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_changes_1": {
+      "type": "Text",
+      "props": {
+        "text": "skills/heartbeat/SKILL.md: Replaced monolithic missing-skill check with 3-step process — Step A uses `date -u +%w` to compute day-of-week and filters aeon.yml skills to only those scheduled today; Step B cross-references filtered list with log entries; Step C applies timing thresholds.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_changes_2": {
+      "type": "Text",
+      "props": {
+        "text": "Added CRITICAL callout that skills not matching today's day-of-week must not be flagged.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack_impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_impact",
+        "text_impact"
+      ]
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates false-positive \"missing skill\" alerts for day-of-week-restricted skills (hyperstitions-ideas on non-Saturdays, project-lens on non-Mon/Wed/Fri, weekly-shiplog on non-Mondays, etc.).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #62: Heartbeat day-of-week pre-filter",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/62",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
