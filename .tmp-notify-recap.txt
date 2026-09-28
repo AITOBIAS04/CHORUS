@@ -1,0 +1,18 @@
+*Push Recap — 2026-09-28*
+miroshark-aeon — 1 substantive commit by 2 authors (26 automation commits filtered)
+
+HivemindOS Gateway: Tenth LLM provider added. Runs Claude Code against a credit balance instead of an API key. A custom CCR transformer handles idempotency keys, SSE replay from non-streamed responses, per-call credit holds (capped at 4096 tokens vs Claude Code's default 32k ask), and prompt caching. Default model: inclusionai/ling-3.0-flash at 0.00003 USD/cached turn.
+
+Arc Studio Skill: New skill drives Circle Arc Studio testnet turns from a headless runner. Starts turns detached, polls on later runs, handles needs_input prompts. State persists via committed JSON. Pinned CLI cached in GitHub Actions. Catalog 83 → 84. Disabled by default.
+
+Hunter-22 Expiration Gate: Bounty matches now pipe through a deterministic filter before the model sees them. Expired and malformed deadlines are dropped; rejected candidates still enter the dedup window. Eliminates false-positive notifications for dead listings.
+
+Community Pack Ecosystem: Claim Audit pack listed (richard7463) — audits whether an instance's own notification claims are true. Pack-submit skill updated for table migration to docs/community-skill-packs.md. Installers now normalize human-readable schedules to cron.
+
+Key changes:
+- scripts/ccr-hivemindos.js: 188-line transformer solving 4 credit-billed endpoint problems (idempotency, streaming, reasoning flags, credit holds)
+- scripts/arc-studio-turn.mjs: 364-line one-shot driver with safety preamble ("testnet only, no secrets")
+- scripts/hunter-22-filter.mjs: 87-line stdin gate with --now test override
+
+Stats: 45 files changed, +1,821/-253 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-09-28.md
