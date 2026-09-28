@@ -1,0 +1,323 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-09-28",
+        "description": "Generated from analysis of aaronjmars/MiroShark (1,457 stars · 300 forks · Hacktoberfest opens Oct 1 in 3 days)"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea_1",
+        "separator_1",
+        "idea_2",
+        "separator_2",
+        "idea_3",
+        "separator_3",
+        "idea_4",
+        "separator_4",
+        "idea_5",
+        "separator_5",
+        "link_details"
+      ]
+    },
+    "idea_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_1_heading",
+        "idea_1_badges",
+        "idea_1_text"
+      ]
+    },
+    "idea_1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Replay Visualizer",
+        "level": "h3"
+      }
+    },
+    "idea_1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1_type",
+        "badge_1_size"
+      ]
+    },
+    "badge_1_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "badge_1_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea_1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Animated round-by-round belief player with GIF export — turns trajectory.json into a shareable screen-recordable replay that community members can post without being asked.",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_2_heading",
+        "idea_2_badges",
+        "idea_2_text"
+      ]
+    },
+    "idea_2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Air-Gap Bundle Generator",
+        "level": "h3"
+      }
+    },
+    "idea_2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2_type",
+        "badge_2_size"
+      ]
+    },
+    "badge_2_type": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Community"
+      }
+    },
+    "badge_2_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "idea_2_text": {
+      "type": "Text",
+      "props": {
+        "text": "Closes issue #240 (84 days stale, 4 comments): make air-gap-bundle pre-downloads all HuggingFace model weights into a portable bundle for enterprise/government air-gapped deployments.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_3_heading",
+        "idea_3_badges",
+        "idea_3_text"
+      ]
+    },
+    "idea_3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "JSON-LD Structured Data for Simulations",
+        "level": "h3"
+      }
+    },
+    "idea_3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3_type",
+        "badge_3_size"
+      ]
+    },
+    "badge_3_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth"
+      }
+    },
+    "badge_3_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea_3_text": {
+      "type": "Text",
+      "props": {
+        "text": "schema.org/Dataset + ClaimReview markup injected into every simulation result page — makes all 8,201+ simulations findable by AI search engines (Perplexity, ChatGPT Search) with zero new infrastructure.",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_4_heading",
+        "idea_4_badges",
+        "idea_4_text"
+      ]
+    },
+    "idea_4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "First-PR Welcome Automation",
+        "level": "h3"
+      }
+    },
+    "idea_4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4_type",
+        "badge_4_size"
+      ]
+    },
+    "badge_4_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Community"
+      }
+    },
+    "badge_4_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea_4_text": {
+      "type": "Text",
+      "props": {
+        "text": "GitHub Actions workflow fires on every first-time contributor PR — welcomes by name, links docs, explains CI — using only built-in GITHUB_TOKEN (no GH_GLOBAL needed). Live for Hacktoberfest Oct 1.",
+        "variant": "body"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_5_heading",
+        "idea_5_badges",
+        "idea_5_text"
+      ]
+    },
+    "idea_5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Difficulty Score",
+        "level": "h3"
+      }
+    },
+    "idea_5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5_type",
+        "badge_5_size"
+      ]
+    },
+    "badge_5_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Research"
+      }
+    },
+    "badge_5_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea_5_text": {
+      "type": "Text",
+      "props": {
+        "text": "difficulty_score (0.0–1.0) appended to signal.json: 0.35×round_fraction + 0.45×consensus_tightness + 0.20×stance_volatility. Missing quality dimension for the paper citation hyperstition (Sep 30) and the HuggingFace dataset.",
+        "variant": "body"
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_details": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-09-28.md"
+      }
+    }
+  }
+}

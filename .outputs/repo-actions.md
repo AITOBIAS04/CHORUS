@@ -1,9 +1,19 @@
-**REPO_ACTIONS_RERUN_QUIET: already ran today — skipping rerun.**
+*Repo Action Ideas — 2026-09-28*
+Generated from analysis of aaronjmars/MiroShark (1,457 stars · 300 forks · Hacktoberfest opens Oct 1 in 3 days).
 
-Today's log already has a completed `## Repo Actions` entry with `Notification sent: yes`. The skill's Step 0 dedup gate triggered — no new ideas generated, no duplicate notification sent.
+1. Simulation Replay Visualizer (Feature, Small)
+   Animated round-by-round belief player with GIF export — turns trajectory.json into a shareable screen-recordable replay that community members can post without being asked.
 
-## Summary
+2. Air-Gap Bundle Generator (DX/Community, Medium)
+   Closes issue #240 (84 days stale, 4 comments): make air-gap-bundle pre-downloads all HuggingFace model weights into a portable bundle for enterprise/government air-gapped deployments.
 
-- **Action:** Detected same-day rerun via Step 0 dedup gate
-- **Files modified:** `memory/logs/2026-09-26.md` — appended skip entry
-- **Follow-up:** None needed; the earlier run (ideas: HuggingFace Live Dataset Sync, Webhook Subscription System, Simulation Comparison API, Hacktoberfest Issue Filer, Simulation Agent Demographics) is already logged and notified
+3. JSON-LD Structured Data for Simulations (Growth, Small)
+   schema.org/Dataset + ClaimReview markup injected into every simulation result page — makes all 8,201+ simulations findable by AI search engines (Perplexity, ChatGPT Search) with zero new infrastructure.
+
+4. First-PR Welcome Automation (Community, Small)
+   GitHub Actions workflow fires on every first-time contributor PR — welcomes by name, links docs, explains CI — using only built-in GITHUB_TOKEN (no GH_GLOBAL needed). Live for Hacktoberfest Oct 1.
+
+5. Simulation Difficulty Score (Feature/Research, Small)
+   difficulty_score (0.0–1.0) appended to signal.json: 0.35×round_fraction + 0.45×consensus_tightness + 0.20×stance_volatility. Missing quality dimension for the paper citation hyperstition (Sep 30) and the HuggingFace dataset.
+
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-09-28.md
