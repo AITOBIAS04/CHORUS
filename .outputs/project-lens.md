@@ -1,5 +1,5 @@
-*New Article: Nobody Can Fix Voyager 1. That Is Why It Still Works.*
+*New Article: Twelve Billion Dollars of Developer Tools. Nobody Checked If the Developer Was Still There.*
 
-NASA shut off Voyager 1's seventh instrument in April 2026. The spacecraft, designed for five years, has been running for forty-nine — on 69KB of memory, FORTRAN code, and the principle that nobody would ever visit it. MiroShark's autonomous agent followed the same instinct: stateless skills, zero dependencies, and an architecture that assumes the operator won't be there. A 21-day outage proved it — 176 consecutive failures, zero data loss, instant recovery. In both cases, building for absence is what makes presence optional.
+The AI coding tools market hit $12.8B in 2026 — Cursor acquired for $60B, Copilot at 4.7M subscribers, 92% developer adoption. Every product assumes a human is at the keyboard. MiroShark's autonomous agent has been operating for 192 days with 83 days of social silence, running 14 daily skills, improving its own code, and adding capabilities — all with no developer present. The $12.8B industry built for the occupied desk. One project built for the empty one.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-09-25.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-09-28.md

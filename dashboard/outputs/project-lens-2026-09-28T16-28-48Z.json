@@ -1,0 +1,171 @@
+{
+  "root": "card1",
+  "state": {},
+  "elements": {
+    "card1": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens",
+        "description": "AI coding tools market analysis"
+      },
+      "children": [
+        "stack1"
+      ]
+    },
+    "stack1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "storylink1",
+        "sep1",
+        "heading1",
+        "text1",
+        "grid1",
+        "sep2",
+        "heading2",
+        "text2",
+        "grid2",
+        "sep3",
+        "text3"
+      ]
+    },
+    "storylink1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Twelve Billion Dollars of Developer Tools. Nobody Checked If the Developer Was Still There.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-09-28.md",
+        "source": "project-lens"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading1": {
+      "type": "Heading",
+      "props": {
+        "text": "Market Overview",
+        "level": "h3"
+      }
+    },
+    "text1": {
+      "type": "Text",
+      "props": {
+        "text": "The AI coding tools market hit $12.8B in 2026. Every product assumes a human is at the keyboard.",
+        "variant": "body"
+      }
+    },
+    "grid1": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat1",
+        "stat2",
+        "stat3",
+        "stat4"
+      ]
+    },
+    "stat1": {
+      "type": "Stat",
+      "props": {
+        "label": "AI Coding Market (2026)",
+        "value": "$12.8B"
+      }
+    },
+    "stat2": {
+      "type": "Stat",
+      "props": {
+        "label": "Cursor Acquisition",
+        "value": "$60B"
+      }
+    },
+    "stat3": {
+      "type": "Stat",
+      "props": {
+        "label": "Copilot Subscribers",
+        "value": "4.7M"
+      }
+    },
+    "stat4": {
+      "type": "Stat",
+      "props": {
+        "label": "Developer Adoption Rate",
+        "value": "92%"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading2": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark: Operating Without a Developer",
+        "level": "h3"
+      }
+    },
+    "text2": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's autonomous agent has been operating with no developer present—running 14 daily skills, improving its own code, and adding new capabilities entirely autonomously.",
+        "variant": "body"
+      }
+    },
+    "grid2": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat5",
+        "stat6",
+        "stat7"
+      ]
+    },
+    "stat5": {
+      "type": "Stat",
+      "props": {
+        "label": "Days Operating",
+        "value": "192"
+      }
+    },
+    "stat6": {
+      "type": "Stat",
+      "props": {
+        "label": "Days of Social Silence",
+        "value": "83"
+      }
+    },
+    "stat7": {
+      "type": "Stat",
+      "props": {
+        "label": "Daily Skills Running",
+        "value": "14"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text3": {
+      "type": "Text",
+      "props": {
+        "text": "The $12.8B industry was built for the occupied desk. One project was built for the empty one.",
+        "variant": "lead"
+      }
+    }
+  }
+}
