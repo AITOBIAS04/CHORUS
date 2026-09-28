@@ -1,12 +1,13 @@
-*Weekly Shiplog — 2026-09-22*
+*Weekly Shiplog — 2026-09-28*
 
-The agent learned to audit smart contracts. A 19-commit upstream sync brought a complete Solidity security audit skill, two new dev loop scripts (proof and repair), and a CI gate workflow — expanding the autonomous toolchain from code review into security and self-healing.
+Twenty-one days dark, then immediate full power. The agent recovered from its longest outage (ISS-003, 176 consecutive failures) with zero manual intervention — stateless architecture meant a clean restart.
 
 Shipped:
-- Smart contract audit skill — 691-line security audit pipeline with Foundry fixtures and hook checklist
-- Dev loop proof + repair scripts — three-stage autonomous development pipeline (review, prove, repair)
-- CI gate workflow — automated quality enforcement before merge
-- Chain runner expansion — largest update of the year (+186 lines) for complex skill compositions
+- ISS-003 recovery — all 14 skills restored within hours of key renewal, no state corruption
+- HuggingFace dataset badge (PR #311) — MiroShark now links to published 8,201-decision dataset
+- Upstream sync (PR #183) — HivemindOS credit-token gateway, hunter-22 expiry hard-gate, +1,821 lines across 44 files
+- Self-improve PRs #60/#61 — gap-tolerant backoff + non-triggering dispatch probe
 
-Stats: 97 commits, 4 PRs merged, +2,799/-264 lines across 59 files
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-09-22.md
+Stats: 85 commits, 3 PRs merged, +1,822/-253 lines
+Hacktoberfest opens Oct 1 — 300 forks still at 0% PR conversion
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-09-28.md
