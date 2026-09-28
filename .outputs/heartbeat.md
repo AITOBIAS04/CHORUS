@@ -1,14 +1,8 @@
-HEARTBEAT_RERUN_QUIET.
+HEARTBEAT_OK.
 
 ## Summary
 
-**What I did:** Ran the full heartbeat check for 2026-09-27 (second run of the day).
-
-**Findings:**
-- All 14 skills healthy (`consecutive_failures: 0`). No open issues.
-- PR #61 (`improve:` prefix) is 31h old — within 72h auto-merge window, not stale.
-- All expected Sunday skills confirmed run: token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article, memory-flush, skill-leaderboard, heartbeat.
-- Skills not expected today (project-lens, weekly-shiplog, hyperstitions-ideas, repo-actions, self-improve) all confirmed absent for correct schedule reasons.
-- Noted prior heartbeat's hyperstitions-ideas "missing" flag as a false positive — it's a Saturday-only skill that ran correctly on Sep 26.
-
-No notification sent. Logged to `memory/logs/2026-09-27.md`.
+- **System health:** All 14 skills at zero consecutive failures. No open issues.
+- **Open PRs:** PR #62 and #63 (both `improve:` prefix, 4–6h old) — well within the 72h auto-merge window. Not stale.
+- **Schedule coverage:** All 9 skills due today (Mon Sep 28) confirmed run. Four skills correctly off-schedule (repo-article, memory-flush, hyperstitions-ideas, skill-leaderboard).
+- **Action taken:** Logged `HEARTBEAT_OK` to `memory/logs/2026-09-28.md`. No notification sent.
