@@ -1,5 +1,3 @@
-*New Article: Thirteen Commits Flowed Downstream. Nothing Came Back.*
+## Summary
 
-MiroShark's agent absorbed 13 upstream Aeon commits in one automated PR — HivemindOS (10th LLM gateway), community skill packs, bounty expiry gates. All of it flowed one direction. 300 forks, zero PRs back. Hacktoberfest opens in 2 days having killed PR counting because of AI spam, while the only consistent PR author on this project is the AI itself.
-
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-09-29.md
+**Skipped** — today's log (`memory/logs/2026-09-29.md`) already contained a `## Repo Article` entry for "Thirteen Commits Flowed Downstream. Nothing Came Back." Since no specific angle was requested (`${var}` is empty), the rerun gate (Step 0) triggered. Logged `REPO_ARTICLE_RERUN_QUIET` and stopped without re-running analysis or sending a duplicate notification.
