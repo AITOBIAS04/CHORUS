@@ -1,0 +1,46 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading_1",
+        "text_1",
+        "separator_1",
+        "link_1"
+      ]
+    },
+    "heading_1": {
+      "type": "Heading",
+      "props": {
+        "text": "Thirteen Commits Flowed Downstream. Nothing Came Back.",
+        "level": "h2"
+      }
+    },
+    "text_1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's agent absorbed 13 upstream Aeon commits in one automated PR — HivemindOS (10th LLM gateway), community skill packs, bounty expiry gates. All of it flowed one direction. 300 forks, zero PRs back. Hacktoberfest opens in 2 days having killed PR counting because of AI spam, while the only consistent PR author on this project is the AI itself.",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-09-29.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
