@@ -1,0 +1,255 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-09-29"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-projects",
+        "sep-1",
+        "heading-frontend",
+        "text-frontend",
+        "sep-2",
+        "heading-token",
+        "badge-consolidating",
+        "stack-token-details",
+        "sep-3",
+        "heading-keychanges",
+        "stack-keychanges",
+        "sep-4",
+        "heading-summary",
+        "stat-files",
+        "storylink-recap"
+      ]
+    },
+    "text-projects": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 1 commit by dependabot[bot] | miroshark-aeon — 1 substantive + 9 automation",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-frontend": {
+      "type": "Heading",
+      "props": {
+        "text": "Frontend Security & Tooling",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-frontend": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot grouped PR #312 bumped dompurify (3.4.16 — XSS sanitizer patch), marked (18.0.14), and vite (8.3.1 + rolldown 1.2.11 cascade). Routine but security-relevant — DOMPurify patches should land same-day."
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-token": {
+      "type": "Heading",
+      "props": {
+        "text": "Token Intelligence — Whale Sell",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "badge-consolidating": {
+      "type": "Badge",
+      "props": {
+        "text": "CONSOLIDATING"
+      },
+      "children": []
+    },
+    "stack-token-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-whale-summary",
+        "grid-whale-stats"
+      ]
+    },
+    "text-whale-summary": {
+      "type": "Text",
+      "props": {
+        "text": "A single actor drove the entire -11.9% move. Order flow actually flipped buy-skewed (18/11 ratio 1.64) — headline drop is one actor, not broad selling."
+      },
+      "children": []
+    },
+    "grid-whale-stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-sell-amount",
+        "stat-tokens",
+        "stat-24h-move",
+        "stat-wallet",
+        "stat-buy-sell-ratio",
+        "stat-flow-index"
+      ]
+    },
+    "stat-sell-amount": {
+      "type": "Stat",
+      "props": {
+        "label": "Sell Order Amount",
+        "value": "$8.3K"
+      },
+      "children": []
+    },
+    "stat-tokens": {
+      "type": "Stat",
+      "props": {
+        "label": "Token Volume",
+        "value": "3.0B"
+      },
+      "children": []
+    },
+    "stat-24h-move": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Price Change",
+        "value": "-11.9%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat-wallet": {
+      "type": "Stat",
+      "props": {
+        "label": "Wallet Address",
+        "value": "0x73d3…9c5"
+      },
+      "children": []
+    },
+    "stat-buy-sell-ratio": {
+      "type": "Stat",
+      "props": {
+        "label": "Buy/Sell Ratio",
+        "value": "18/11",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-flow-index": {
+      "type": "Stat",
+      "props": {
+        "label": "Order Flow Index",
+        "value": "1.64"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack-keychanges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-change-dompurify",
+        "text-change-liquidity",
+        "text-change-hacktoberfest"
+      ]
+    },
+    "text-change-dompurify": {
+      "type": "Text",
+      "props": {
+        "text": "dompurify 3.4.15→3.4.16 (security patch for HTML sanitizer)"
+      },
+      "children": []
+    },
+    "text-change-liquidity": {
+      "type": "Text",
+      "props": {
+        "text": "GT/DS liquidity divergence now 14 consecutive sessions ($320.6K vs $140.2K)"
+      },
+      "children": []
+    },
+    "text-change-hacktoberfest": {
+      "type": "Text",
+      "props": {
+        "text": "Hacktoberfest in 2 days — 300 forks, 0% PR conversion"
+      },
+      "children": []
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-summary": {
+      "type": "Heading",
+      "props": {
+        "text": "Summary",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "4",
+        "delta": "+120/-83 lines"
+      },
+      "children": []
+    },
+    "storylink-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Push Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-09-29.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
