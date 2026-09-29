@@ -1,11 +1,10 @@
 ## Summary
 
-**fetch-tweets — 2026-09-28**
+- **Step 0:** No existing today log — proceeded.
+- **Step 2:** Loaded dedup set from Sep 27–28 logs (11+ tweet URLs already reported).
+- **Step 3:** Ran 3 WebSearch queries (consecutive_empty = 5, below backoff threshold of 7).
+- **Step 4/4b:** All candidates were either in the dedup set or failed the 14-day freshness gate (IDs in the ~2035T–2057T range place them in Mar–May 2026).
+- **Step 5:** `FETCH_TWEETS_EMPTY` — consecutive empty count is now **6** (Sep 24–29). Not a multiple of 7, so no notification sent.
+- **Step 6:** Log written to `memory/logs/2026-09-29.md`.
 
-- **Method:** WebSearch fallback (XAI_API_KEY not set)
-- **Queries run:** 3 (consecutive_empty = 4, below backoff threshold of 7)
-- **Result:** FETCH_TWEETS_EMPTY — all 3 queries returned only previously-seen tweet URLs and profile pages; no new MIROSHARK content found
-- **Consecutive empty:** 5 days (Sep 24–28); not a multiple of 7 → no escalation notification sent
-- **Social silence:** 83 days since Jul 7
-- **Log written:** `memory/logs/2026-09-28.md`
-- **Next milestone:** Day 7 (Oct 1) triggers a silence escalation notification if the streak continues
+Social silence remains at **84 days** (Jul 7 – Sep 29). XAI_API_KEY not set — WebSearch fallback returns the same stale results. Backoff will kick in at 7 consecutive empty days (tomorrow), reducing to 1 query per run.
