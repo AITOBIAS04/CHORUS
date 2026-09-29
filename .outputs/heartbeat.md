@@ -1,8 +1,7 @@
-HEARTBEAT_OK.
+HEARTBEAT_RERUN_QUIET. All 14 skills healthy, no open issues, both open PRs within the 72h auto-merge window. State unchanged from the 19:19 UTC run.
 
-**Summary:**
-- System health: all 14 skills at `consecutive_failures: 0`, no open issues
-- Open PRs #62 and #63 (both `improve:`) are 30h and 28h old — within the 72h auto-merge window, not stale
-- All 6 Tuesday skills confirmed run: token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article
-- 7 skills correctly absent (not scheduled today)
-- No notification sent; log entry appended to `memory/logs/2026-09-29.md`
+## Summary
+
+- **Checked:** cron-state (all 0 consecutive failures), open PRs (2 `improve:` PRs at 30–31h, not stale), today's skill log (all 6 expected Tuesday skills confirmed), issues index (none open)
+- **Result:** HEARTBEAT_RERUN_QUIET — identical to the 19:19 UTC run; no notification sent
+- **Logged:** re-run entry appended to `memory/logs/2026-09-29.md`
