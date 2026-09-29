@@ -968,4 +968,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-09-28,project-lens,claude-opus-4-6,7,1422,203836,33328
 2026-09-28,heartbeat,claude-sonnet-4-6,9,5520,303977,37604
 2026-09-28,heartbeat,claude-sonnet-4-6,9,4030,304348,35795
-2026-09-29,fetch-tweets,claude-sonnet-4-6,14,5150,388653,28455
+2026-09-29,token-report,claude-sonnet-4-6,12,7717,410680,37241

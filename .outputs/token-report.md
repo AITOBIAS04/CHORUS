@@ -1,10 +1,10 @@
-*MIROSHARK Daily — 2026-09-28*
+*$MiroShark Daily — 2026-09-29*
 
-Price: $0.000003077 (−5.57% 24h)
-Liquidity: $3.0M | 24h Vol: $2,048
-Buys/Sells: 10/13
-7d: +10.4% | 30d: −7.9%
+Price: $0.000002710 (−1.86% 24h)
+Liquidity: $3.02M | 24h Vol: $12.7K
+Buys/Sells: 18/12
+7d: −13.9% | 30d: −11.3%
 
-Third thin-volume day post-Sep-26-spike; price at session low; sell-side leading; FDV $307K. Hacktoberfest starts in 3 days.
+Sep 26 spike (+24.3%) fully retraced; volume rebounded to $12.7K on sell pressure, but buyer count still leads 18/11. Hacktoberfest opens Oct 1.
 
 Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
