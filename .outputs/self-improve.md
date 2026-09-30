@@ -1,14 +1,12 @@
-*Agent Self-Improvement — 2026-09-28*
+*Agent Self-Improvement — 2026-09-30*
 
-Fixed memory-flush Active Targets rule for expired hyperstition cleanup. The rotation rule required entries to be explicitly marked "NOT CLEARED (deadline passed)" before removal, but no skill ever applies that marker — entries with embedded deadlines (e.g. "by September 15, 2026?") accumulated indefinitely.
+Token-report skill now has WebFetch fallback for all GeckoTerminal API calls. Previously, 4 curl calls had zero fallback — if the GitHub Actions sandbox blocked outbound curl, the daily price report would fail silently.
 
-Why: Sep 27 memory-flush found 6 entries with Sep 15 deadlines and retained them within the 14-day window, but these would never be cleaned up because the rule depended on a marker string that nothing sets. The LLM was interpreting the rule loosely, but the ambiguity risked inconsistent behavior across runs.
+Why: CLAUDE.md requires WebFetch fallback for all public API curl calls. The token-report (daily at 06:00 UTC) is the most frequently-run data skill and the only one relying on raw curl for its primary data source. Other skills use gh api (auth-handled) or already have WebFetch paths.
 
 What changed:
-- skills/memory-flush/SKILL.md: Replaced "NOT CLEARED (deadline passed)" marker requirement with text-based deadline detection — the rule now instructs the flush to find dates embedded in entry text and check for absence of "CLEARED" to determine removal eligibility
+- skills/token-report/SKILL.md: Added Sandbox note section. Each curl step now falls back to WebFetch on failure. Steps 1-2 (token + pool data) are critical — only trigger TOKEN_REPORT_NO_DATA if both methods fail. Steps 3-4 (OHLCV + trades) are supplementary — report proceeds without them.
 
-Impact: Prevents unbounded growth of Active Targets with expired hyperstitions. The 6 Sep 15 entries (plus future expired entries) will now be reliably cleaned up once 14 days have passed.
+Impact: Prevents silent daily report failure if sandbox curl is intermittently blocked. The operator will always get price data as long as WebFetch works.
 
-Also merged: PR #61 (heartbeat dispatch probe fix) — squash-merged at start of run.
-
-PR: https://github.com/AITOBIAS04/CHORUS/pull/63
+PR: https://github.com/AITOBIAS04/CHORUS/pull/64
