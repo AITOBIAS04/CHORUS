@@ -21,6 +21,10 @@ This skill reads the token to track from the "Tracked Token" section in `memory/
 Read memory/MEMORY.md for the tracked token.
 Read the last 7 days of memory/logs/ for previous price data to show trends.
 
+## Sandbox note
+
+All GeckoTerminal API calls use `curl` against a public API (no auth). In the GitHub Actions sandbox, `curl` may fail intermittently. **For every `curl` call in steps 1–4, if `curl` returns an error, empty response, or non-JSON output, retry the same URL using the built-in WebFetch tool as a fallback.** WebFetch bypasses the sandbox network restrictions. Only log `TOKEN_REPORT_NO_DATA` if both `curl` AND WebFetch fail for the critical calls (steps 1–2).
+
 ## Steps
 
 0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a token-report entry with `Notification sent: yes` (case-insensitive search for "token-report" or "token report" followed by "notification sent: yes" in the same section), and `${var}` is empty (no explicit override), log `TOKEN_REPORT_RERUN_QUIET: report already sent today` to `memory/logs/${today}.md` and **stop here** — do NOT re-fetch data, overwrite the article, or re-send the notification. This prevents duplicate reports when the scheduler dispatches the skill twice.
@@ -30,12 +34,14 @@ Read the last 7 days of memory/logs/ for previous price data to show trends.
    # Token metadata + price
    curl -s "https://api.geckoterminal.com/api/v2/networks/base/tokens/CONTRACT_ADDRESS"
    ```
+   If curl fails or returns empty/non-JSON: use WebFetch for the same URL.
 
 2. **Fetch pool data** for the token (top liquidity pools):
    ```bash
    # Top pools for this token
    curl -s "https://api.geckoterminal.com/api/v2/networks/base/tokens/CONTRACT_ADDRESS/pools?page=1"
    ```
+   If curl fails or returns empty/non-JSON: use WebFetch for the same URL.
 
 3. **Fetch OHLCV data** for trend analysis:
    ```bash
@@ -46,11 +52,13 @@ Read the last 7 days of memory/logs/ for previous price data to show trends.
    # Hourly candles for the last 24h
    curl -s "https://api.geckoterminal.com/api/v2/networks/base/pools/POOL_ADDRESS/ohlcv/hour?aggregate=1&limit=24"
    ```
+   If either curl call fails: use WebFetch for the same URL. OHLCV data is supplementary — if both curl and WebFetch fail for these, proceed with steps 1–2 data only (skip trend section).
 
 4. **Fetch recent trades** for activity signal:
    ```bash
    curl -s "https://api.geckoterminal.com/api/v2/networks/base/pools/POOL_ADDRESS/trades"
    ```
+   If curl fails: use WebFetch for the same URL. Trade data is supplementary — if both fail, proceed without it (skip buy/sell ratio and notable trades).
 
 5. **Search for social sentiment** (optional — requires XAI_API_KEY):
    If `XAI_API_KEY` is set, search X for mentions of $TOKEN in the last 24h:
