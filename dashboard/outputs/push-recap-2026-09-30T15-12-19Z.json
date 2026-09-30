@@ -1,0 +1,214 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-09-30",
+        "description": "miroshark-aeon — 5 substantive commits by 2 authors (9 automation filtered)"
+      },
+      "children": [
+        "sep1",
+        "liquidity-heading",
+        "liquidity-text",
+        "liquidity-stats",
+        "sep2",
+        "deps-heading",
+        "deps-intro",
+        "deps-table",
+        "sep3",
+        "changes-heading",
+        "changes-stack",
+        "sep4",
+        "stats-text",
+        "recap-link"
+      ]
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "liquidity-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pool Liquidity Convergence",
+        "level": "h2"
+      }
+    },
+    "liquidity-text": {
+      "type": "Text",
+      "props": {
+        "text": "The 14-session GeckoTerminal/DexScreener liquidity divergence snapped shut — GT pool reserve dropped 57% overnight ($320.6K→$137.9K) to land within 0.07% of DS, with no swap large enough to explain it (LP-side move). Reframes the last two weeks: DS was likely closer to true reserve all along.",
+        "variant": "body"
+      }
+    },
+    "liquidity-stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-reserve-drop",
+        "stat-price",
+        "stat-fdv",
+        "stat-gap",
+        "stat-7d-decline"
+      ]
+    },
+    "stat-reserve-drop": {
+      "type": "Stat",
+      "props": {
+        "label": "GT Reserve Drop",
+        "value": "57%",
+        "delta": "$320.6K → $137.9K",
+        "trend": "down"
+      }
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Current Price",
+        "value": "$0.000002569",
+        "delta": "-5.2%",
+        "trend": "down"
+      }
+    },
+    "stat-fdv": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV",
+        "value": "$256.9K"
+      }
+    },
+    "stat-gap": {
+      "type": "Stat",
+      "props": {
+        "label": "GT/DS Gap",
+        "value": "0.07%"
+      }
+    },
+    "stat-7d-decline": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Decline",
+        "value": "-20.2%",
+        "trend": "down"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "deps-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Updates",
+        "level": "h2"
+      }
+    },
+    "deps-intro": {
+      "type": "Text",
+      "props": {
+        "text": "4 Dependabot PRs merged"
+      }
+    },
+    "deps-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Package",
+          "From",
+          "To",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "sharp",
+            "0.35.2",
+            "0.35.4",
+            ""
+          ],
+          [
+            "wrangler",
+            "4.127.1",
+            "4.143.1",
+            "Full Cloudflare workerd runtime refresh to Sep 26 build"
+          ],
+          [
+            "fast-uri",
+            "3.1.7",
+            "3.1.8",
+            "2 packages"
+          ],
+          [
+            "ip-address",
+            "10.4.0",
+            "10.7.2",
+            "Largest single-dep version leap today"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "changes-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "GT/DS liquidity gap (14 sessions, 2–2.5x ratio) closed by GT converging down — operator decision on canonical source now actionable"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "Wrangler cascades through entire @cloudflare stack including workerd runtime to 1.20260926.1"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "ip-address jumped 3 minor versions (10.4→10.7), largest single-dep version leap today"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-text": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 6 files changed, +216/-174 lines"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-09-30.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
