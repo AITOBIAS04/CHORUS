@@ -1,0 +1,329 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas",
+        "description": "Generated from analysis of aaronjmars/MiroShark — ideas sized for autonomous build by the feature skill. Hacktoberfest starts tomorrow. • 2026-09-30"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-1",
+        "sep-1",
+        "item-2",
+        "sep-2",
+        "item-3",
+        "sep-3",
+        "item-4",
+        "sep-4",
+        "item-5",
+        "sep-5",
+        "link-details"
+      ]
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-1",
+        "badges-1",
+        "desc-1"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "Hacktoberfest Progress Dashboard",
+        "level": "h3"
+      }
+    },
+    "badges-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-1a",
+        "badge-1b"
+      ]
+    },
+    "badge-1a": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/Growth",
+        "variant": "default"
+      }
+    },
+    "badge-1b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "desc-1": {
+      "type": "Text",
+      "props": {
+        "text": "Public scoreboard at /hacktoberfest showing issue completion, contributor leaderboard, and dynamic README badge — the missing public face of the event launching Oct 1.",
+        "variant": "body"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-2",
+        "badges-2",
+        "desc-2"
+      ]
+    },
+    "heading-2": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Bulk CSV Export",
+        "level": "h3"
+      }
+    },
+    "badges-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-2a",
+        "badge-2b"
+      ]
+    },
+    "badge-2a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "default"
+      }
+    },
+    "badge-2b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "desc-2": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulations/export?format=csv returns a ZIP of per-simulation CSVs with round-by-round agent data — turns MiroShark into a live research data feed beyond the static HuggingFace snapshot.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-3",
+        "badges-3",
+        "desc-3"
+      ]
+    },
+    "heading-3": {
+      "type": "Heading",
+      "props": {
+        "text": "Similar Simulations Discovery",
+        "level": "h3"
+      }
+    },
+    "badges-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-3a",
+        "badge-3b"
+      ]
+    },
+    "badge-3a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge-3b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "desc-3": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/similar surfaces 5 topically adjacent simulations via TF-IDF cosine similarity (pure stdlib, no ML API) — drives session depth and internal discovery across 8,000+ sims.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-4",
+        "badges-4",
+        "desc-4"
+      ]
+    },
+    "heading-4": {
+      "type": "Heading",
+      "props": {
+        "text": "Interactive OpenAPI Explorer",
+        "level": "h3"
+      }
+    },
+    "badges-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-4a",
+        "badge-4b"
+      ]
+    },
+    "badge-4a": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Growth",
+        "variant": "default"
+      }
+    },
+    "badge-4b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "desc-4": {
+      "type": "Text",
+      "props": {
+        "text": "Mount Swagger UI at /api/docs over the existing 40+ surface OpenAPI spec — for FastAPI this is near-zero effort; gives Hacktoberfest contributors a polished interactive API playground on day one.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-5",
+        "badges-5",
+        "desc-5"
+      ]
+    },
+    "heading-5": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Hot Topics Feed",
+        "level": "h3"
+      }
+    },
+    "badges-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-5a",
+        "badge-5b"
+      ]
+    },
+    "badge-5a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Growth",
+        "variant": "default"
+      }
+    },
+    "badge-5b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "desc-5": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/topics/hot?hours=24 returns top-N topics by simulation count with aggregated direction + confidence — enables Discord/Telegram bots and third-party dashboards to distribute MiroShark signal passively.",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-09-30.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
