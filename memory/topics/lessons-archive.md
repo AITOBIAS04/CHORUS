@@ -59,3 +59,7 @@
 ## Archived 2026-09-27
 
 - Skill-leaderboard ran full 8-step pipeline for 12 consecutive INSUFFICIENT_DATA weeks — minimum-fork check was only at step 8 (notification gate), so fetch/aggregate/compare/write all ran wasted; added early exit at step 2 when fewer than 2 active forks (self-improve PR #36, 2026-07-20)
+
+## Archived 2026-09-30
+
+- Root-anchored .gitignore rules don't catch runtime artifacts in nested directories — notify bodies and xAI scratch JSON leaked via auto-commits; fix: widen rules to un-anchored globs (remove leading slashes); also unblocked ci-okf validator at 131 concepts (miroshark-aeon PRs #114/#115, 2026-07-18)
