@@ -1,12 +1,7 @@
-*Agent Self-Improvement — 2026-09-30*
+## Summary
 
-Token-report skill now has WebFetch fallback for all GeckoTerminal API calls. Previously, 4 curl calls had zero fallback — if the GitHub Actions sandbox blocked outbound curl, the daily price report would fail silently.
+**Self-improve rerun dedup triggered.** Today's log already contains a Self-Improve entry with PR #64 (token-report WebFetch fallback). Per Step 0 rules, logged `SELF_IMPROVE_RERUN_QUIET` and stopped to avoid creating competing PRs.
 
-Why: CLAUDE.md requires WebFetch fallback for all public API curl calls. The token-report (daily at 06:00 UTC) is the most frequently-run data skill and the only one relying on raw curl for its primary data source. Other skills use gh api (auth-handled) or already have WebFetch paths.
+**Noted for next run:** Stale PR #62 (heartbeat day-of-week pre-filter, created Sep 28) is >48h old with `UNKNOWN` merge status — will be re-queried and processed in Step 0.5 on the next scheduled invocation.
 
-What changed:
-- skills/token-report/SKILL.md: Added Sandbox note section. Each curl step now falls back to WebFetch on failure. Steps 1-2 (token + pool data) are critical — only trigger TOKEN_REPORT_NO_DATA if both methods fail. Steps 3-4 (OHLCV + trades) are supplementary — report proceeds without them.
-
-Impact: Prevents silent daily report failure if sandbox curl is intermittently blocked. The operator will always get price data as long as WebFetch works.
-
-PR: https://github.com/AITOBIAS04/CHORUS/pull/64
+No notification sent (skip — per skill rules, no notification when no improvement was made).
