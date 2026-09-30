@@ -1,10 +1,10 @@
-HEARTBEAT_OK. All 9 skills scheduled for today ran on time, no stale PRs, no open issues, no systemic failures.
-
 ## Summary
 
-- Read `memory/MEMORY.md`, `memory/cron-state.json`, today's log, and `memory/issues/INDEX.md`
-- Confirmed all 14 enabled skills have `consecutive_failures: 0`
-- All 9 skills due today (Wed) completed: token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens, memory-flush
-- 3 open `improve:` PRs (#62, #63, #64) — all under 72h threshold, not flagged
-- No open issues requiring escalation
-- Logged HEARTBEAT_OK to `memory/logs/2026-09-30.md`
+**HEARTBEAT_OK** — no action required.
+
+- All 14 skills healthy (`consecutive_failures: 0` across the board)
+- All 9 skills expected on Wednesday confirmed ran
+- 3 open `improve:` PRs (#62 56h, #63 55h, #64 8h) — none stale (72h threshold)
+- No open issues
+- Heartbeat had 2 transient failures after the 19:19 UTC success (internal runner crash, not auth); this run recovered cleanly
+- No notification sent (state unchanged from the prior HEARTBEAT_OK at 19:19 UTC)
