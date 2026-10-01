@@ -1,10 +1,13 @@
-## Summary
+⚠️ Heartbeat — 2026-10-01
 
-**HEARTBEAT_OK** — no action required.
+**Stale PRs (>72h):**
+- PR #62 (77h): improve: add explicit day-of-week pre-filter to heartbeat missing-skill check
+- PR #63 (76h): improve: fix memory-flush Active Targets rule to detect embedded deadlines
+→ Both exceed 72h auto-merge threshold; self-improve should pick these up on next run.
 
-- All 14 skills healthy (`consecutive_failures: 0` across the board)
-- All 9 skills expected on Wednesday confirmed ran
-- 3 open `improve:` PRs (#62 56h, #63 55h, #64 8h) — none stale (72h threshold)
-- No open issues
-- Heartbeat had 2 transient failures after the 19:19 UTC success (internal runner crash, not auth); this run recovered cleanly
-- No notification sent (state unchanged from the prior HEARTBEAT_OK at 19:19 UTC)
+**Missing skills:**
+- self-improve — scheduled 13:00 UTC (*/2, day 1 of month); not in today's run list
+- repo-actions — scheduled 14:00 UTC (*/2, day 1 of month); not in today's run list
+→ Dispatch unavailable (actions: read only; 403). Manual re-run or scope upgrade needed.
+
+System health: all 14 skills at consecutive_failures: 0. No open issues.

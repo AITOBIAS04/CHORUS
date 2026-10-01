@@ -1,0 +1,179 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "⚠️ Heartbeat — 2026-10-01"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section-prs",
+        "sep1",
+        "section-skills",
+        "sep2",
+        "section-health"
+      ]
+    },
+    "section-prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-prs",
+        "pr-list",
+        "note-prs"
+      ]
+    },
+    "heading-prs": {
+      "type": "Heading",
+      "props": {
+        "text": "Stale PRs (>72h)",
+        "level": "h3"
+      }
+    },
+    "pr-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-62",
+        "pr-63"
+      ]
+    },
+    "pr-62": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #62 (77h): improve: add explicit day-of-week pre-filter to heartbeat missing-skill check",
+        "href": "https://github.com/CHORUS/CHORUS/pull/62",
+        "source": "GitHub"
+      }
+    },
+    "pr-63": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #63 (76h): improve: fix memory-flush Active Targets rule to detect embedded deadlines",
+        "href": "https://github.com/CHORUS/CHORUS/pull/63",
+        "source": "GitHub"
+      }
+    },
+    "note-prs": {
+      "type": "Alert",
+      "props": {
+        "message": "Both exceed 72h auto-merge threshold; self-improve should pick these up on next run.",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-skills",
+        "skill-list",
+        "note-skills"
+      ]
+    },
+    "heading-skills": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing skills",
+        "level": "h3"
+      }
+    },
+    "skill-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill-improve",
+        "skill-repo"
+      ]
+    },
+    "skill-improve": {
+      "type": "Text",
+      "props": {
+        "text": "self-improve — scheduled 13:00 UTC (*/2, day 1 of month); not in today's run list",
+        "variant": "body"
+      }
+    },
+    "skill-repo": {
+      "type": "Text",
+      "props": {
+        "text": "repo-actions — scheduled 14:00 UTC (*/2, day 1 of month); not in today's run list",
+        "variant": "body"
+      }
+    },
+    "note-skills": {
+      "type": "Alert",
+      "props": {
+        "message": "Dispatch unavailable (actions: read only; 403). Manual re-run or scope upgrade needed.",
+        "type": "error"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-health": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-health",
+        "stat-health",
+        "note-health"
+      ]
+    },
+    "heading-health": {
+      "type": "Heading",
+      "props": {
+        "text": "System health",
+        "level": "h3"
+      }
+    },
+    "stat-health": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills operational",
+        "value": "14",
+        "delta": "0 consecutive failures"
+      }
+    },
+    "note-health": {
+      "type": "Alert",
+      "props": {
+        "message": "No open issues.",
+        "type": "success"
+      }
+    }
+  }
+}
