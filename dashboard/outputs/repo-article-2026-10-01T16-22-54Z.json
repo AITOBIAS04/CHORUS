@@ -1,0 +1,88 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Fifty Million Dollars in Machine Payments. The Simulation Engine Wired In."
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "para1",
+        "para2",
+        "para3",
+        "stats_section",
+        "link_read"
+      ]
+    },
+    "para1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark added its x402aff builder-code affiliation kit to the ecosystem registry — connecting the simulation engine to the x402 protocol, which has processed 150M+ transactions (~$50M) in agent-to-agent payments."
+      }
+    },
+    "para2": {
+      "type": "Text",
+      "props": {
+        "text": "The same day, the founder switched the LLM gateway from hardcoded Claude to \"auto,\" giving the agent ten AI providers to route through."
+      }
+    },
+    "para3": {
+      "type": "Text",
+      "props": {
+        "text": "On Hacktoberfest Day 1, the event that dropped PR counting celebrates \"AI belongs to everyone\" — while the AI that actually maintains an open-source project got a wallet and a choice of brains."
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_transactions",
+        "stat_value",
+        "stat_providers"
+      ]
+    },
+    "stat_transactions": {
+      "type": "Stat",
+      "props": {
+        "label": "Transactions (x402)",
+        "value": "150M+"
+      }
+    },
+    "stat_value": {
+      "type": "Stat",
+      "props": {
+        "label": "Payment Value",
+        "value": "~$50M"
+      }
+    },
+    "stat_providers": {
+      "type": "Stat",
+      "props": {
+        "label": "AI Providers",
+        "value": "10"
+      }
+    },
+    "link_read": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-01.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
