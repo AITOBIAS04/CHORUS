@@ -1,0 +1,252 @@
+{
+  "root": "card_push_recap",
+  "state": {},
+  "elements": {
+    "card_push_recap": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap",
+        "description": "2026-10-01"
+      },
+      "children": [
+        "commits_stack",
+        "sep1",
+        "ecosystem_stack",
+        "backend_stack",
+        "config_stack",
+        "infra_stack",
+        "sep2",
+        "keychanges_stack",
+        "sep3",
+        "stats_stack"
+      ]
+    },
+    "commits_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "commits_heading",
+        "miroshark_text",
+        "miroshark_aeon_text"
+      ]
+    },
+    "commits_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Commits",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "miroshark_text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 3 substantive commits by 2 authors"
+      },
+      "children": []
+    },
+    "miroshark_aeon_text": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 4 substantive commits by 2 authors (17 automation filtered)"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "ecosystem_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ecosystem_heading",
+        "ecosystem_text"
+      ]
+    },
+    "ecosystem_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Expansion",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "ecosystem_text": {
+      "type": "Text",
+      "props": {
+        "text": "x402aff builder-code affiliation kit added to the ecosystem registry and catalog API — 14th ecosystem entry, first new tool-category addition since Crucible Sim. On-chain affiliate splits now discoverable via GET /api/ecosystem.json."
+      },
+      "children": []
+    },
+    "backend_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "backend_heading",
+        "backend_text"
+      ]
+    },
+    "backend_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Backend Dependencies",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "backend_text": {
+      "type": "Text",
+      "props": {
+        "text": "sentence-transformers 5.3→5.6 (3 minor versions, ML embedding library for sim search), PyJWT 2.15.0, tornado 6.5.9, urllib3 2.8.0 — all lockfile-only."
+      },
+      "children": []
+    },
+    "config_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "config_heading",
+        "config_text"
+      ]
+    },
+    "config_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Configuration",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "config_text": {
+      "type": "Text",
+      "props": {
+        "text": "LLM gateway switched from hard-pinned claude to auto mode via Bankr gateway — first multi-provider routing setup."
+      },
+      "children": []
+    },
+    "infra_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "infra_heading",
+        "infra_text"
+      ]
+    },
+    "infra_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Infrastructure",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "infra_text": {
+      "type": "Text",
+      "props": {
+        "text": "aeon-connect[bot] added .mcp.json with Base blockchain MCP server endpoint (mcp.base.org), establishing the first MCP config in the repo. Model briefly toggled Sonnet 5 → Opus 4.8 → Sonnet 5 (~70s round-trip)."
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "keychanges_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "keychanges_heading",
+        "keychanges_item1",
+        "keychanges_item2",
+        "keychanges_item3"
+      ]
+    },
+    "keychanges_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "keychanges_item1": {
+      "type": "Text",
+      "props": {
+        "text": ".mcp.json added — Base chain MCP connection (requires MCP_BASE_TOKEN secret)"
+      },
+      "children": []
+    },
+    "keychanges_item2": {
+      "type": "Text",
+      "props": {
+        "text": "gateway.provider: claude → auto — multi-provider LLM routing enabled"
+      },
+      "children": []
+    },
+    "keychanges_item3": {
+      "type": "Text",
+      "props": {
+        "text": "x402aff in ecosystem catalog — affiliate kit now API-discoverable"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_text",
+        "recap_link"
+      ]
+    },
+    "stats_text": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 7 files changed, +49/-40 lines across 7 substantive commits"
+      },
+      "children": []
+    },
+    "recap_link": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-01.md"
+      },
+      "children": []
+    }
+  }
+}

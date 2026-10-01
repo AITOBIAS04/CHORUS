@@ -1,9 +1,9 @@
 # Push Recap — 2026-10-01
 
 ## Overview
-4 substantive commits by 2 authors (Aaron Elijah Mars, dependabot[bot]) across both watched repos, plus 13 automation commits filtered from miroshark-aeon. The day's headline is an ecosystem expansion: MiroShark's registry gained x402aff — the builder-code affiliation kit that powers MiroShark's on-chain affiliate splits. Backend dependencies caught up on four Python packages, and miroshark-aeon's LLM gateway switched from hard-pinned Claude to auto-routing.
+7 substantive commits by 3 authors (Aaron Elijah Mars, dependabot[bot], aeon-connect[bot]) across both watched repos, plus 17 automation commits filtered from miroshark-aeon. The day's headline is an ecosystem expansion: MiroShark's registry gained x402aff — the builder-code affiliation kit that powers MiroShark's on-chain affiliate splits. Backend dependencies caught up on four Python packages, miroshark-aeon's LLM gateway switched from hard-pinned Claude to auto-routing, and aeon-connect[bot] added a Base blockchain MCP server configuration while briefly toggling the agent's model between Opus 4.8 and Sonnet 5.
 
-**Stats:** 6 files changed, +36/-38 lines across 4 substantive commits
+**Stats:** 7 files changed, +49/-40 lines across 7 substantive commits
 
 ---
 
@@ -50,8 +50,26 @@
 
 **Impact:** This is a configuration shift for the agent's LLM backend. With `auto` routing, the agent can potentially use alternative providers through the Bankr gateway when Claude is unavailable or when cost optimization is desired. The practical effect depends on which providers the gateway has configured, but it removes a hard dependency on a single LLM provider for the agent's daily operations.
 
-### Automation Commits (13 filtered)
-Dependabot PRs (4): bumped tsx/yaml in apps/cli (#192), next/react/react-dom and 5 others in apps/dashboard (#191), @modelcontextprotocol/sdk and @types/node in apps/mcp-server (#190), and alexverify/eyebrow/action in CI with a version-skew fix (#189). Scheduler state updates (3), cron success markers for token-movers/heartbeat/fetch-tweets (3), auto-commits for token-movers/heartbeat/fetch-tweets (3). Standard skill execution cycle.
+### Agent Infrastructure: Base MCP Server & Model Toggling
+**Summary:** aeon-connect[bot] pushed three rapid-fire configuration changes — a new MCP server endpoint for the Base blockchain, and a model toggle that briefly switched from claude-sonnet-5 to claude-opus-4-8 before reverting. The net effect: the agent gained a Base chain MCP connection and the model stayed on Sonnet 5.
+
+**Commits:**
+- `2346c51` — chore: set model to claude-opus-4-8
+  - Changed `aeon.yml`: Model field switched from `claude-sonnet-5` to `claude-opus-4-8` — the more capable but slower/costlier model (+1, -1 lines)
+  - This was immediately reverted ~70 seconds later by commit `763582b`
+
+- `15dc1f8` — chore: add .mcp.json from dashboard
+  - New file `.mcp.json`: Added a Model Context Protocol server configuration pointing to `https://mcp.base.org` with Bearer token authentication via `${MCP_BASE_TOKEN}` environment variable (+11 lines)
+  - This connects the agent to Base blockchain infrastructure through MCP, enabling on-chain queries and interactions via the standardized protocol
+
+- `763582b` — chore: set model to claude-sonnet-5
+  - Changed `aeon.yml`: Reverted model from `claude-opus-4-8` back to `claude-sonnet-5` (+1, -1 lines)
+  - Combined with `2346c51`, this is a toggle-and-revert — likely a configuration management operation or brief test by aeon-connect[bot]
+
+**Impact:** The `.mcp.json` addition is the substantive change here — it gives the aeon agent a direct MCP channel to Base chain infrastructure (`mcp.base.org`). This is the first MCP server configuration file in the repo, establishing the pattern for future MCP integrations. The model toggle (Sonnet 5 → Opus 4.8 → Sonnet 5) left no net change but shows active configuration management from the dashboard. The MCP connection requires `MCP_BASE_TOKEN` to be set as a secret.
+
+### Automation Commits (17 filtered)
+Dependabot PRs (4): bumped tsx/yaml in apps/cli (#192), next/react/react-dom and 5 others in apps/dashboard (#191), @modelcontextprotocol/sdk and @types/node in apps/mcp-server (#190), and alexverify/eyebrow/action in CI with a version-skew fix (#189). Scheduler state updates (3), cron success markers for token-movers/heartbeat/fetch-tweets/shiplog (5), auto-commits for token-movers/heartbeat/fetch-tweets/shiplog (5). Standard skill execution cycle.
 
 Notable: PR #189 (eyebrow bump) included a real CI fix — Dependabot moved the action ref to v0.5.6 but left the step's version input on v0.4.2, causing a version skew. aaronjmars and Claude Opus 5.5 co-authored a follow-up commit in the same PR to align the version input, update the aeon-update script's derivation logic, and refresh the eyebrowlock.json hashes.
 
@@ -59,14 +77,17 @@ Notable: PR #189 (eyebrow bump) included a real CI fix — Dependabot moved the 
 
 ## Developer Notes
 - **New dependencies:** None new; version bumps only (PyJWT 2.15.0, sentence-transformers 5.6.0, tornado 6.5.9, urllib3 2.8.0)
+- **New configuration:** `.mcp.json` added to miroshark-aeon — first MCP server config file in the repo (Base blockchain endpoint)
 - **Breaking changes:** None
-- **Architecture shifts:** LLM gateway provider changed from `claude` to `auto` — first time the agent has been configured for multi-provider routing
+- **Architecture shifts:** LLM gateway provider changed from `claude` to `auto` — first time the agent has been configured for multi-provider routing; `.mcp.json` establishes the MCP server configuration pattern
 - **Tech debt:** None introduced. YAML formatting cleanup in aeon.yml reduced visual noise.
 
 ## What's Next
 - Hacktoberfest Day 1 — 302 forks at 0% upstream PR conversion rate; watch for first-time contributor PRs
 - The sentence-transformers 5.3→5.6 jump may affect embedding quality/behavior in simulation similarity search; worth monitoring if search results shift
 - The `auto` gateway setting is new — first few days of operation will reveal whether provider switching causes any behavioral differences in skill outputs
+- `.mcp.json` requires `MCP_BASE_TOKEN` secret to be set — until then the Base MCP connection will fail silently or error
+- The model toggle (Sonnet 5 ↔ Opus 4.8) suggests active experimentation with model selection from the dashboard; watch for further changes
 - GH_GLOBAL secret still blocks all feature work; 90+ consecutive blocks
 - 3 improve PRs (#62, #63, #64) still open from Sep 28–30
 - Eyebrow CI action bump to v0.5.6 — verify CI runs pass with the new version
