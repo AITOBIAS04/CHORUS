@@ -1,0 +1,307 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap"
+      },
+      "children": [
+        "header_info",
+        "sep1",
+        "ecosystem_section",
+        "sep2",
+        "dependencies_section",
+        "sep3",
+        "config_section",
+        "sep4",
+        "key_changes_section",
+        "sep5",
+        "stats_section",
+        "sep6",
+        "recap_link_section"
+      ]
+    },
+    "header_info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "date_text",
+        "authors_text",
+        "automation_text"
+      ]
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-10-01",
+        "variant": "muted"
+      }
+    },
+    "authors_text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 3 substantive commits by 2 authors",
+        "variant": "body"
+      }
+    },
+    "automation_text": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 1 substantive commit + 13 automation filtered",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ecosystem_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ecosystem_heading",
+        "ecosystem_text"
+      ]
+    },
+    "ecosystem_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Expansion",
+        "level": "h3"
+      }
+    },
+    "ecosystem_text": {
+      "type": "Text",
+      "props": {
+        "text": "x402aff — the builder-code affiliation kit behind MiroShark's x402 API affiliate splits — joined the ecosystem registry. Added to ECOSYSTEM.md, the programmatic catalog endpoint, and both EN/ZH feature docs. 14th ecosystem entry, second tool-category project after Crucible Sim.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dependencies_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dependencies_heading",
+        "dependencies_intro",
+        "deps_list"
+      ]
+    },
+    "dependencies_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Backend Dependencies",
+        "level": "h3"
+      }
+    },
+    "dependencies_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Four Python packages updated:",
+        "variant": "body"
+      }
+    },
+    "deps_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dep1",
+        "dep2",
+        "dep3",
+        "dep4"
+      ]
+    },
+    "dep1": {
+      "type": "Text",
+      "props": {
+        "text": "• sentence-transformers jumped 3 minor versions (5.3→5.6, the ML embedding library for sim similarity search)",
+        "variant": "body"
+      }
+    },
+    "dep2": {
+      "type": "Text",
+      "props": {
+        "text": "• PyJWT 2.13→2.15 (auth)",
+        "variant": "body"
+      }
+    },
+    "dep3": {
+      "type": "Text",
+      "props": {
+        "text": "• tornado 6.5.8→6.5.9",
+        "variant": "body"
+      }
+    },
+    "dep4": {
+      "type": "Text",
+      "props": {
+        "text": "• urllib3 2.7→2.8",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "config_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "config_heading",
+        "config_text"
+      ]
+    },
+    "config_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Configuration",
+        "level": "h3"
+      }
+    },
+    "config_text": {
+      "type": "Text",
+      "props": {
+        "text": "LLM gateway switched from hard-pinned claude to auto mode, enabling multi-provider routing through the Bankr gateway. First time the agent has been configured for provider-agnostic operation.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key_changes_heading",
+        "changes_list"
+      ]
+    },
+    "key_changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "• x402aff ecosystem catalog entry with website, repo, and claims dashboard links (+10 lines to ecosystem_catalog.py)",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "• sentence-transformers 5.3→5.6 — largest dependency jump, may affect embedding behavior",
+        "variant": "body"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "• aeon.yml gateway.provider: claude → auto — shifts agent off single-provider dependency",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_content"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats_content": {
+      "type": "Text",
+      "props": {
+        "text": "6 files changed, +36/-38 lines",
+        "variant": "body"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap_link_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "recap_link"
+      ]
+    },
+    "recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-01.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
