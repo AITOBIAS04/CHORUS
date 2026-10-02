@@ -1,3 +1,5 @@
-## Summary
+*New Article: One Word in a Config File. Ten Brains Behind It.*
 
-**Skipped** — today's project-lens article was already written earlier (angle category 5, contrarian take: "Eighty-Five Days Without a Tweet. The Liquidity Pool Didn't Care."). Logged `PROJECT_LENS_RERUN_QUIET` to `memory/logs/2026-09-30.md` to record the dedup skip. No duplicate research, article, or notification was sent.
+MiroShark's autonomous agent ran on a single LLM provider for 193 days — until a one-word config change unlocked a 10-provider gateway cascade. The article explains what LLM gateways are, why the industry considers single-provider lock-in an architectural liability, and how a 56× cost difference between the cheapest and most expensive provider path makes multi-model routing not just a cost optimization but a survival mechanism for autonomous agents.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-10-02.md
