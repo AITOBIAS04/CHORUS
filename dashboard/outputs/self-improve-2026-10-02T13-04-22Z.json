@@ -1,0 +1,148 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-10-02"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "finding_alert",
+        "explanation_text",
+        "separator_1",
+        "why_heading",
+        "why_text",
+        "separator_2",
+        "whatchanged_heading",
+        "whatchanged_text",
+        "separator_3",
+        "merged_heading",
+        "merged_text",
+        "separator_4",
+        "impact_heading",
+        "impact_text",
+        "separator_5",
+        "pr_link"
+      ]
+    },
+    "finding_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Heartbeat false positives on */2 scheduled skills fixed",
+        "type": "success"
+      }
+    },
+    "explanation_text": {
+      "type": "Text",
+      "props": {
+        "text": "The heartbeat skill now understands day-of-month step patterns in cron schedules. Previously, it only filtered by day-of-week — skills with */2 day-of-month schedules (self-improve, repo-actions) were incorrectly flagged as \"missing\" on odd-numbered days because the heartbeat did not check whether the day matched the step.",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "Oct 1 heartbeat reported self-improve and repo-actions as missing with \"dispatch unavailable\" — both correctly skipped day 1 (their */2 schedule runs on even days only). PR #62 addressed a related day-of-week issue but has conflicts and does not cover day-of-month patterns.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "whatchanged_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "whatchanged_text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/heartbeat/SKILL.md: Added day-of-month step rule — computes TODAY_DOM % N and skips skills where the step does not match, preventing false positives on off-days",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "merged_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also merged",
+        "level": "h3"
+      }
+    },
+    "merged_text": {
+      "type": "Text",
+      "props": {
+        "text": "PR #63: fix memory-flush Active Targets rule to detect embedded deadlines (was pending 4 days, merged cleanly)",
+        "variant": "body"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates recurring false positive alerts for every-other-day skills, reducing noise in heartbeat notifications.",
+        "variant": "body"
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #65",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/65",
+        "source": "GitHub"
+      }
+    }
+  }
+}
