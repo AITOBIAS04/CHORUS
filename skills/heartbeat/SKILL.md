@@ -53,6 +53,11 @@ Read `memory/cron-state.json`. For each skill, note `consecutive_failures` and `
   - Only flag a skill as missing if its scheduled time was **more than 2 hours ago**.
   - Also check `gh run list --workflow=aeon.yml --created=$(date -u +%Y-%m-%d) --json displayTitle,status` — if the skill is currently `in_progress` or `queued`, don't flag it.
   - For day-of-week schedules (e.g. `0 20 * * 0` for Sundays), only check on the matching day.
+  - **For day-of-month step schedules** (e.g. `*/2` in the day-of-month field): compute whether today's day matches the step pattern. Use:
+    ```bash
+    TODAY_DOM=$(date -u +%-d)
+    ```
+    A cron field `*/N` matches when `TODAY_DOM % N == 0`. For example, `*/2` runs on days 2, 4, 6, … but NOT on days 1, 3, 5, …. If the skill's schedule has a `*/N` day-of-month field and `TODAY_DOM % N != 0`, **skip that skill entirely** — do not flag it as missing. (Observed false positive: Oct 1 heartbeat flagged self-improve and repo-actions as missing, but both use `*/2` and Oct 1 is day 1.)
 
 Before sending any notification, grep the last 48h of logs for the same issue. If the same missing-skill or stalled-PR was already reported, skip it. Batch all findings into a single notification.
 
