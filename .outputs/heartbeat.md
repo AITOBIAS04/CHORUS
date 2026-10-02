@@ -1,8 +1,11 @@
-HEARTBEAT_OK. All 14 skills ran as scheduled today, no missing skills, no new issues. PR #62 remains stale at 102h but was already reported in yesterday's heartbeat — deduped.
+HEARTBEAT_OK.
+
+All 14 skills healthy (`consecutive_failures: 0`), all scheduled skills for Friday ran successfully, no open issues, and the one stale PR (#62, 103h) is already deduped against yesterday's report. No notification needed.
 
 ## Summary
 
-- **System health:** Clean — all 14 skills at `consecutive_failures: 0`, no open issues
-- **Skills:** All 8 skills scheduled for Friday Oct 2 confirmed ran; 5 correctly not scheduled today
-- **Open PRs:** PR #62 (102h, stale) already reported within 48h → deduped; PR #64 (54h) and PR #65 (6h) within threshold
-- **Action taken:** Logged HEARTBEAT_OK to `memory/logs/2026-10-02.md`; no notification sent
+- Checked system health: all skills at 0 consecutive failures, no open issues
+- Verified all 8 skills scheduled for Friday Oct 2 ran (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens)
+- Reviewed 3 open PRs: #65 (7h) and #64 (55h) within threshold, #62 (103h) stale but already reported
+- No escalating issues, no missing skills, no notification sent
+- Logged rerun entry to `memory/logs/2026-10-02.md`
