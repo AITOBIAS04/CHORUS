@@ -1,0 +1,244 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-10-02",
+        "description": "Generated from analysis of aaronjmars/MiroShark — ideas for the feature skill to build."
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea_1",
+        "sep_1",
+        "idea_2",
+        "sep_2",
+        "idea_3",
+        "sep_3",
+        "idea_4",
+        "sep_4",
+        "idea_5",
+        "sep_5",
+        "link_section"
+      ]
+    },
+    "idea_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_1_heading",
+        "idea_1_badge",
+        "idea_1_text"
+      ]
+    },
+    "idea_1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "RSS/Atom Feed for Published Simulations",
+        "level": "h3"
+      }
+    },
+    "idea_1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration, Small"
+      }
+    },
+    "idea_1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Standards-compliant Atom feed at GET /api/feed.xml so every aggregator, RSS bot, and automation tool can subscribe to new simulation results without API keys.",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_2_heading",
+        "idea_2_badge",
+        "idea_2_text"
+      ]
+    },
+    "idea_2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "x402 Pay-Per-Simulation Endpoint",
+        "level": "h3"
+      }
+    },
+    "idea_2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration, Medium"
+      }
+    },
+    "idea_2_text": {
+      "type": "Text",
+      "props": {
+        "text": "Payment-gated POST /api/simulate/pay using the x402 protocol — lets AI agents autonomously commission and pay for simulations on Base, following up on PR #313's ecosystem registry listing.",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_3_heading",
+        "idea_3_badge",
+        "idea_3_text"
+      ]
+    },
+    "idea_3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Jupyter Notebook Export",
+        "level": "h3"
+      }
+    },
+    "idea_3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Research, Small"
+      }
+    },
+    "idea_3_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/notebook downloads a runnable .ipynb with simulation data pre-loaded and analysis cells ready to execute — removes schema spelunking for researchers.",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_4_heading",
+        "idea_4_badge",
+        "idea_4_text"
+      ]
+    },
+    "idea_4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Cross-Topic Consensus Heatmap API",
+        "level": "h3"
+      }
+    },
+    "idea_4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Analytics, Small"
+      }
+    },
+    "idea_4_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/analytics/consensus-map returns historical consensus profiles by keyword cluster (e.g. all BTC simulations: 61% bullish / 25% bearish / 74% avg confidence) — the aggregate signal across 8,000+ sims.",
+        "variant": "body"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_5_heading",
+        "idea_5_badge",
+        "idea_5_text"
+      ]
+    },
+    "idea_5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Social Card Image Generator",
+        "level": "h3"
+      }
+    },
+    "idea_5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth, Small"
+      }
+    },
+    "idea_5_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/card.png generates a 1200x630 PNG preview card so every simulation shared as a URL shows a branded direction+confidence preview on Discord, Twitter, and iMessage.",
+        "variant": "body"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_details"
+      ]
+    },
+    "link_details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details: repo-actions-2026-10-02.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-02.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
