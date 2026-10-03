@@ -1025,4 +1025,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-03,token-report,claude-sonnet-4-6,6,903,137827,19092
 2026-10-03,hyperstitions-ideas,claude-opus-4-6,8,3272,252525,31930
 2026-10-03,feature,claude-opus-4-6,9,1477,244656,16696
-2026-10-03,push-recap,claude-opus-4-6,7,2613,195651,22373
+2026-10-03,repo-article,claude-opus-4-6,20,8797,926214,62442

@@ -1,0 +1,57 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Article"
+      },
+      "children": [
+        "heading",
+        "content",
+        "link"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Three Hundred Two Forks. Zero Pull Requests. Hacktoberfest Stopped Counting.",
+        "level": "h2"
+      }
+    },
+    "content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "para1",
+        "para2"
+      ]
+    },
+    "para1": {
+      "type": "Text",
+      "props": {
+        "text": "Hacktoberfest 2026 dropped PR counting because AI slop overwhelmed open source — curl shut down its bug bounty, HashiCorp is closing external PRs.",
+        "variant": "body"
+      }
+    },
+    "para2": {
+      "type": "Text",
+      "props": {
+        "text": "Meanwhile MiroShark has 302 forks and zero community pull requests ever. The event stopped measuring the thing none of them have produced. The project's most active contributor is a machine that can't submit upstream.",
+        "variant": "body"
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-03.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
