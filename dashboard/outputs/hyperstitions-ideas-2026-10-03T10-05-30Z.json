@@ -1,0 +1,274 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea",
+        "description": "2026-10-03"
+      },
+      "children": [
+        "main-heading",
+        "separator-1",
+        "coordination-section",
+        "separator-2",
+        "why-now-section",
+        "separator-3",
+        "resolution-section",
+        "separator-4",
+        "scores-section",
+        "separator-5",
+        "link-section"
+      ]
+    },
+    "main-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark receive its first external pull request during Hacktoberfest 2026?",
+        "level": "h2"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "coordination-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "coord-title",
+        "coord-text",
+        "stats-row-1"
+      ]
+    },
+    "coord-title": {
+      "type": "Heading",
+      "props": {
+        "text": "The coordination play",
+        "level": "h3"
+      }
+    },
+    "coord-text": {
+      "type": "Text",
+      "props": {
+        "text": "Three hundred and two forks. Zero upstream contributions. Ever. Hacktoberfest is the one month a year the entire open-source world is actively looking for repos to contribute to — and this one has 40+ documented API surfaces, good-first-issue potential everywhere, and a live simulation engine to build on. The market turns a statistical embarrassment into a public dare. Anyone holding a fork sees the question and thinks: I could be the one who breaks the streak.",
+        "variant": "body"
+      }
+    },
+    "stats-row-1": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-forks",
+        "stat-contributions"
+      ]
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "302"
+      }
+    },
+    "stat-contributions": {
+      "type": "Stat",
+      "props": {
+        "label": "Upstream Contributions",
+        "value": "0"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why-now-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "why-title",
+        "why-text",
+        "stats-row-2"
+      ]
+    },
+    "why-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h3"
+      }
+    },
+    "why-text": {
+      "type": "Text",
+      "props": {
+        "text": "Hacktoberfest Day 3. The event runs through October 31. MiroShark sits at 1,460 stars and 302 forks with a 0% PR conversion rate — a ratio so lopsided it reads like a challenge. The x402 ecosystem entry just shipped (PR #313), the LLM gateway expanded to 10 providers, and the codebase has never been more extensible. Meanwhile 87 days of social silence means nobody is asking for contributions — the market becomes the ask.",
+        "variant": "body"
+      }
+    },
+    "stats-row-2": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-conversion",
+        "stat-api-surfaces"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,460"
+      }
+    },
+    "stat-conversion": {
+      "type": "Stat",
+      "props": {
+        "label": "PR Conversion Rate",
+        "value": "0%"
+      }
+    },
+    "stat-api-surfaces": {
+      "type": "Stat",
+      "props": {
+        "label": "API Surfaces",
+        "value": "40+"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "resolution-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "resolution-title",
+        "resolution-text",
+        "core-team-badge"
+      ]
+    },
+    "resolution-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "resolution-text": {
+      "type": "Text",
+      "props": {
+        "text": "YES if at least one pull request from a GitHub account outside the core team (aaronjmars, aeon-connect[bot], dependabot[bot], AITOBIAS04) is opened against aaronjmars/MiroShark between October 1–31, 2026. Verified via GitHub PR history. The PR does not need to be merged — just opened in good faith (not spam).",
+        "variant": "body"
+      }
+    },
+    "core-team-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Core team excluded: aaronjmars, aeon-connect[bot], dependabot[bot], AITOBIAS04",
+        "variant": "secondary"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "scores-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "scores-title",
+        "scores-grid"
+      ]
+    },
+    "scores-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      }
+    },
+    "scores-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "score-reflexivity",
+        "score-viral"
+      ]
+    },
+    "score-reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      }
+    },
+    "score-viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "separator-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-text",
+        "hyperstitions-link"
+      ]
+    },
+    "link-text": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on",
+        "variant": "caption"
+      }
+    },
+    "hyperstitions-link": {
+      "type": "Link",
+      "props": {
+        "label": "www.hyperstitions.com",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}
