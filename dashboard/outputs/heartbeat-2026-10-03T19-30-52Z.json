@@ -1,0 +1,76 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "🔔 Heartbeat",
+        "description": "2026-10-03"
+      },
+      "children": [
+        "stale-section",
+        "separator",
+        "status-section"
+      ]
+    },
+    "stale-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stale-heading",
+        "pr-64",
+        "self-improve-note"
+      ]
+    },
+    "stale-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stale PR flagged",
+        "level": "h3"
+      }
+    },
+    "pr-64": {
+      "type": "StoryLink",
+      "props": {
+        "title": "improve: add WebFetch fallback to token-report curl calls",
+        "href": "#64",
+        "source": "PR #64",
+        "score": "78h"
+      }
+    },
+    "self-improve-note": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve runs on even days; next window is Oct 4.",
+        "variant": "caption"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "status-text"
+      ]
+    },
+    "status-text": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "message": "All today's skills ran on schedule. No open issues."
+      }
+    }
+  }
+}
