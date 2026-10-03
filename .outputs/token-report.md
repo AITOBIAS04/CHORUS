@@ -1,10 +1,10 @@
-*MiroShark Daily — 2026-10-02*
+*MiroShark Daily — 2026-10-03*
 
-Price: $0.000002614 (+1.14% 24h)
-Liquidity: ~$2.83M | 24h Vol: $2.79K
-Buys/Sells: 7/13
-7d: −2.8% | 30d: −8.9%
+Price: $0.0000024859 (−6.71% 24h)
+Liquidity: $2.83M | 24h Vol: $13,009
+Buys/Sells: 46/11 (23 buyers)
+7d: −23.1% | 30d: −9.7%
 
-First positive 24h close in four sessions — Sep 30 floor holding, volume stays thin at $2.8K. 87-day social silence continues.
+Sharp intraday drop to $0.00000223 then partial bounce; Sep 26 spike fully unwound. Buyers outnumber sellers 4:1 by trade count.
 
 Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
