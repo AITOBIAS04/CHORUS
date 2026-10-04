@@ -1,5 +1,3 @@
 ## Summary
 
-**FEATURE_SKIP**: No push access to either watched repo (`aaronjmars/MiroShark` and `aaronjmars/miroshark-aeon`). The `GH_GLOBAL` secret is not set, so cross-repo push permissions are unavailable. Logged the skip to `memory/logs/2026-10-03.md` and stopped without picking a feature, cloning, or sending notifications — as the skill instructs.
-
-This is the 80th+ consecutive block for the feature skill. All features from June 3 onward remain stuck as local commits pending the `GH_GLOBAL` secret.
+**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — `gh api repos/aaronjmars/MiroShark --jq '.permissions.push'` returned `false`. The `GH_GLOBAL` secret remains unset (90+ consecutive blocks since Jun 3). Per skill instructions, stopped before picking a feature, cloning, or sending notifications. Logged to `memory/logs/2026-10-04.md`. Top candidate would have been **RSS/Atom Feed** (#1 from repo-actions 2026-10-02).
