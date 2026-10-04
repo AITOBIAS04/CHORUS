@@ -1,0 +1,229 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Skill Leaderboard",
+        "description": "2026-10-04"
+      },
+      "children": [
+        "heading-date",
+        "table-skills",
+        "sep-1",
+        "section-consensus",
+        "sep-2",
+        "section-gaps",
+        "sep-3",
+        "section-milestone",
+        "sep-4",
+        "section-newfork",
+        "sep-5",
+        "section-link"
+      ]
+    },
+    "heading-date": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Skills Across 2 Active Aeon Forks",
+        "level": "h2"
+      }
+    },
+    "table-skills": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Rank",
+          "Skill",
+          "Forks",
+          "Adoption"
+        ],
+        "rows": [
+          [
+            "1",
+            "fetch-tweets",
+            "2",
+            "100%"
+          ],
+          [
+            "2",
+            "heartbeat",
+            "2",
+            "100%"
+          ],
+          [
+            "3",
+            "memory-flush",
+            "2",
+            "100%"
+          ],
+          [
+            "4",
+            "repo-pulse",
+            "2",
+            "100%"
+          ],
+          [
+            "5",
+            "aeon-update",
+            "1",
+            "50%"
+          ]
+        ]
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-consensus": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-consensus",
+        "text-consensus"
+      ]
+    },
+    "heading-consensus": {
+      "type": "Heading",
+      "props": {
+        "text": "Consensus",
+        "level": "h3"
+      }
+    },
+    "text-consensus": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets, heartbeat, memory-flush, repo-pulse (all at 100%)"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-gaps": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-gaps",
+        "text-gaps"
+      ]
+    },
+    "heading-gaps": {
+      "type": "Heading",
+      "props": {
+        "text": "Adoption Gaps",
+        "level": "h3"
+      }
+    },
+    "text-gaps": {
+      "type": "Text",
+      "props": {
+        "text": "None — all source skills appear in at least one fork"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-milestone": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-milestone",
+        "text-milestone"
+      ]
+    },
+    "heading-milestone": {
+      "type": "Heading",
+      "props": {
+        "text": "Milestone",
+        "level": "h3"
+      }
+    },
+    "text-milestone": {
+      "type": "Text",
+      "props": {
+        "text": "First leaderboard with ≥2 active Aeon forks after 19 weeks of insufficient data"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-newfork": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-newfork",
+        "text-newfork"
+      ]
+    },
+    "heading-newfork": {
+      "type": "Heading",
+      "props": {
+        "text": "New Fork",
+        "level": "h3"
+      }
+    },
+    "text-newfork": {
+      "type": "Text",
+      "props": {
+        "text": "elegarmco/miroshark-aeon (mirrors source config exactly; pushed 2026-10-03)"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-link": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-full",
+        "link-full"
+      ]
+    },
+    "text-full": {
+      "type": "Text",
+      "props": {
+        "text": "Full leaderboard:",
+        "variant": "body"
+      }
+    },
+    "link-full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Skill Leaderboard 2026-10-04",
+        "href": "articles/skill-leaderboard-2026-10-04.md",
+        "source": "Aeon"
+      }
+    }
+  }
+}
