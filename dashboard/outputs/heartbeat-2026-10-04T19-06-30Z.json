@@ -1,0 +1,184 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat 2026-10-04"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "health-section",
+        "sep1",
+        "missing-section",
+        "sep2",
+        "prs-section",
+        "sep3",
+        "issues-section"
+      ]
+    },
+    "health-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "health-heading",
+        "health-text"
+      ]
+    },
+    "health-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Skill Health",
+        "level": "h3"
+      }
+    },
+    "health-text": {
+      "type": "Text",
+      "props": {
+        "text": "All 14 skills healthy (0 consecutive failures)",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "missing-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "missing-heading",
+        "missing-status",
+        "missing-detail"
+      ]
+    },
+    "missing-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing Skills",
+        "level": "h3"
+      }
+    },
+    "missing-status": {
+      "type": "Badge",
+      "props": {
+        "text": "No missing skills",
+        "variant": "default"
+      }
+    },
+    "missing-detail": {
+      "type": "Text",
+      "props": {
+        "text": "memory-flush queued, all others confirmed ran",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "prs-heading",
+        "pr-item"
+      ]
+    },
+    "prs-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Requests",
+        "level": "h3"
+      }
+    },
+    "pr-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-link",
+        "pr-status-alert",
+        "pr-meta"
+      ]
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#62 — improve: add explicit day-of-week pre-filter to heartbeat missing-skill check",
+        "href": "https://github.com/chorus/chorus/pull/62",
+        "source": "GitHub"
+      }
+    },
+    "pr-status-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "DIRTY/CONFLICTING",
+        "type": "error"
+      }
+    },
+    "pr-meta": {
+      "type": "Text",
+      "props": {
+        "text": "Stale (150h) • Self-improve deferred closure (under 7-day threshold, eligible Oct 6)",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "issues-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "issues-heading",
+        "issues-status"
+      ]
+    },
+    "issues-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Open Issues",
+        "level": "h3"
+      }
+    },
+    "issues-status": {
+      "type": "Badge",
+      "props": {
+        "text": "No open issues",
+        "variant": "default"
+      }
+    }
+  }
+}
