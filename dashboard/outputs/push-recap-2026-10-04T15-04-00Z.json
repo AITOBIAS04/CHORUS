@@ -1,0 +1,268 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-04"
+      },
+      "children": [
+        "meta-stack",
+        "sep-1",
+        "doc-section",
+        "sep-2",
+        "token-section",
+        "sep-3",
+        "changes-section",
+        "sep-4",
+        "stats-section",
+        "sep-5",
+        "recap-link"
+      ]
+    },
+    "meta-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo-text",
+        "commits-badge",
+        "authors-badge",
+        "automation-badge"
+      ]
+    },
+    "repo-text": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon"
+      }
+    },
+    "commits-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2 substantive commits",
+        "variant": "secondary"
+      }
+    },
+    "authors-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2 authors",
+        "variant": "secondary"
+      }
+    },
+    "automation-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "9 automation filtered",
+        "variant": "outline"
+      }
+    },
+    "sep-1": {
+      "type": "Separator"
+    },
+    "doc-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "doc-heading",
+        "pr-link",
+        "author-text",
+        "overview-text",
+        "aeon-connect-line",
+        "paths-text",
+        "updates-text"
+      ]
+    },
+    "doc-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Documentation Overhaul",
+        "level": "h3"
+      }
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #193",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/193",
+        "source": "GitHub"
+      }
+    },
+    "author-text": {
+      "type": "Text",
+      "props": {
+        "text": "Aaron Elijah Mars rewrote the README and quickstart to reframe miroshark-aeon as a live Aeon instance, not a starting point."
+      }
+    },
+    "overview-text": {
+      "type": "Text",
+      "props": {
+        "text": "Browser-first onboarding, no clone needed."
+      }
+    },
+    "aeon-connect-line": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon-connect-text",
+        "aeon-connect-link"
+      ]
+    },
+    "aeon-connect-text": {
+      "type": "Text",
+      "props": {
+        "text": "New users are redirected to Aeon Connect:"
+      }
+    },
+    "aeon-connect-link": {
+      "type": "Link",
+      "props": {
+        "label": "www.aeon.fun/connect",
+        "href": "https://www.aeon.fun/connect"
+      }
+    },
+    "paths-text": {
+      "type": "Text",
+      "props": {
+        "text": "The quickstart now offers three paths: browser (recommended), coding agent one-liner, or terminal."
+      }
+    },
+    "updates-text": {
+      "type": "Text",
+      "props": {
+        "text": "Hero and llms.txt updated to reflect 85 skills across 9 harnesses (added fx, Cursor, Hermes)."
+      }
+    },
+    "sep-2": {
+      "type": "Separator"
+    },
+    "token-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "token-heading",
+        "token-text"
+      ]
+    },
+    "token-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Token Report",
+        "level": "h3"
+      }
+    },
+    "token-text": {
+      "type": "Text",
+      "props": {
+        "text": "Daily MIROSHARK token-movers report ran (QUIET — no significant movement)."
+      }
+    },
+    "sep-3": {
+      "type": "Separator"
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes-heading",
+        "changes-list"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "README now opens with a 'this is a live instance' banner linking to Aeon Connect",
+        "variant": "body"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "Quickstart rewritten from clone-and-run to three-path model (browser/agent/terminal)",
+        "variant": "body"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "llms.txt updated: 7→9 harnesses, aeon.fun→www.aeon.fun, new 'Get your own agent' line",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator"
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stats-stat"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "6",
+        "delta": "+51 / -17"
+      }
+    },
+    "sep-5": {
+      "type": "Separator"
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-04.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
