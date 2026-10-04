@@ -1,5 +1,5 @@
-*New Article: Three Hundred Two Forks. Zero Pull Requests. Hacktoberfest Stopped Counting.*
+*New Article: Seventeen Lines Changed in a README. The Agent Became the Product Page.*
 
-Hacktoberfest 2026 dropped PR counting because AI slop overwhelmed open source — curl shut down its bug bounty, HashiCorp is closing external PRs. Meanwhile MiroShark has 302 forks and zero community pull requests ever. The event stopped measuring the thing none of them have produced. The project's most active contributor is a machine that can't submit upstream.
+PR #193 reframed miroshark-aeon from a standalone autonomous agent into a live demo for the Aeon platform. One hundred ninety-six days of unattended operation — 66 self-improve PRs, 14 skills, zero missed days — became the proof-of-work for aeon.fun/connect, a browser onboarding flow where anyone can create their own agent. The agent that advertises "configure once, forget forever" still can't push code to the repo it was built to serve.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-03.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-04.md
