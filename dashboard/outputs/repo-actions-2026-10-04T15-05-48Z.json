@@ -1,0 +1,308 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-10-04",
+        "description": "aaronjmars/MiroShark (1,458 stars · 302 forks · Hacktoberfest Day 4 · 88-day social silence)"
+      },
+      "children": [
+        "separator1",
+        "items_stack",
+        "separator2",
+        "details_link"
+      ]
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "items_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+      ]
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_title",
+        "item1_badges",
+        "item1_desc"
+      ]
+    },
+    "item1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Replay GIF Export",
+        "level": "h3"
+      }
+    },
+    "item1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_type",
+        "item1_size"
+      ]
+    },
+    "item1_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Growth",
+        "variant": "default"
+      }
+    },
+    "item1_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Frame-by-frame animated GIF of belief drift per round — auto-plays in Discord/Telegram/Twitter without a browser click; permanent disk cache, shareable as a standalone file.",
+        "variant": "body"
+      }
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_title",
+        "item2_badges",
+        "item2_desc"
+      ]
+    },
+    "item2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Topic Autocomplete API",
+        "level": "h3"
+      }
+    },
+    "item2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_type",
+        "item2_size"
+      ]
+    },
+    "item2_type": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Feature",
+        "variant": "default"
+      }
+    },
+    "item2_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Prefix search over 8,000+ prior simulation topics for the Step 1 input — reduces blank-page abandonment by surfacing direction-labeled suggestions as the user types.",
+        "variant": "body"
+      }
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_title",
+        "item3_badges",
+        "item3_desc"
+      ]
+    },
+    "item3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "GitHub Discussions Auto-Publisher",
+        "level": "h3"
+      }
+    },
+    "item3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_type",
+        "item3_size"
+      ]
+    },
+    "item3_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/Growth",
+        "variant": "default"
+      }
+    },
+    "item3_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "New skill using GITHUB_TOKEN (not GH_GLOBAL) that auto-creates a Discussion thread per published simulation — Google-indexed, commentable, zero human action required.",
+        "variant": "body"
+      }
+    },
+    "item4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_title",
+        "item4_badges",
+        "item4_desc"
+      ]
+    },
+    "item4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Digest Markdown Export",
+        "level": "h3"
+      }
+    },
+    "item4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_type",
+        "item4_size"
+      ]
+    },
+    "item4_type": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Integration",
+        "variant": "default"
+      }
+    },
+    "item4_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/digest.md returns paste-ready Markdown (Unicode belief bar, platform table, top agents) for READMEs, newsletters, and GitHub Discussion bodies.",
+        "variant": "body"
+      }
+    },
+    "item5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_title",
+        "item5_badges",
+        "item5_desc"
+      ]
+    },
+    "item5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Confidence Distribution Analytics",
+        "level": "h3"
+      }
+    },
+    "item5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_type",
+        "item5_size"
+      ]
+    },
+    "item5_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Analytics",
+        "variant": "default"
+      }
+    },
+    "item5_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/analytics/confidence-distribution — histogram + median/p75/p90 across all published simulations; the calibration layer that gives every confidence score context.",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-04.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
