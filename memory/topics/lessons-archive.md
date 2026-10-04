@@ -63,3 +63,8 @@
 ## Archived 2026-09-30
 
 - Root-anchored .gitignore rules don't catch runtime artifacts in nested directories — notify bodies and xAI scratch JSON leaked via auto-commits; fix: widen rules to un-anchored globs (remove leading slashes); also unblocked ci-okf validator at 131 concepts (miroshark-aeon PRs #114/#115, 2026-07-18)
+
+## Archived 2026-10-04
+
+- Self-improve can create duplicate PRs when run multiple times on the same day targeting the same improvement — Jul 22 heartbeat found PR #38 (13:18 UTC) + PR #39 (14:50 UTC) both titled "improve: add same-day rerun dedup to repo-article skill"; fixed with Step 2.5 duplicate PR check (self-improve PR #40, 2026-07-24)
+- Push-recap re-reports identical commits on consecutive days when commits land late enough to fall within both runs' 24h windows (observed Jul 24→25: same 2 security patches); fixed with Step 4c cross-day dedup — checks yesterday's article for already-reported SHAs (self-improve PR #41, 2026-07-26)

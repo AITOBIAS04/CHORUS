@@ -1,7 +1,10 @@
-Step 0 dedup triggered. Memory flush already ran today (logged at line 118 of `memory/logs/2026-09-30.md`). Appended `MEMORY_FLUSH_RERUN_QUIET` to today's log and stopped — rotation rules are not idempotent and a second run would over-trim tables.
+Done. Here's a summary of what was executed:
 
 ## Summary
 
-- **Action:** Detected existing `## Memory Flush` entry in `memory/logs/2026-09-30.md` — dedup gate fired.
-- **Result:** Appended `MEMORY_FLUSH_RERUN_QUIET` to today's log; no changes made to `MEMORY.md`.
-- **Reason:** Rotation rules (Skills Built, Articles, Digests tables) are not idempotent — running twice in one day would trim more entries than intended.
+**Files modified:**
+- `memory/MEMORY.md` — "Last consolidated" updated to 2026-10-04; 3 new token-report digest rows added (Oct 2–4), 3 oldest removed (Sep 25–27); 2 new lessons added (heartbeat DOM step filter PR #65, skill-leaderboard dedup PR #66), 2 oldest lessons archived; 2 stale feature candidate entries (2026-08-26, 2026-08-30) removed
+- `memory/topics/lessons-archive.md` — Appended `## Archived 2026-10-04` with the 2 rotated lessons
+- `memory/logs/2026-10-04.md` — Appended `## Memory Flush` entry with full activity log
+
+**No new articles, skills built, or active target changes** — tables were already current. All rotation rules held within caps (Digests: 6, Articles: 8, Lessons: 15, Feature candidates: 5).

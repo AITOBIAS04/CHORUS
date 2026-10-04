@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-09-30*
+*Last consolidated: 2026-10-04*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -25,12 +25,12 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-04 | token-report | $0.000002398 (−1.64% 24h); FDV $239,840; LP ~$2,833,322; vol $2,552; 8/10 buys/sells; Sep 26 rally fully unwound; 8 consecutive lower closes; LP stable at 12× FDV; 88-day social silence |
+| 2026-10-03 | token-report | $0.0000024859 (−6.71% 24h); FDV $248,588; LP ~$2,831,911; vol $13,009; 46/11 buys/sells; sharp intraday sell-off −17% followed by partial recovery; Sep 26 spike fully unwound; 87-day social silence |
+| 2026-10-02 | token-report | $0.000002614 (+1.14% 24h); FDV $261,368; LP ~$2,834,506; vol $2,794; 7/13 buys/sells; first positive 24h close in four sessions; Sep 30 appears local floor; 87-day social silence |
 | 2026-09-30 | token-report | $0.000002569 (−6.9% 24h); FDV $256,917; LP ~$2,831,257; vol $3,584; 14/11 buys/sells; Sep 22–23 rally fully unwound; vol collapsed 86%+ from highs; Hacktoberfest starts Oct 1; 85-day social silence |
 | 2026-09-29 | token-report | $0.000002710 (−1.86% 24h); FDV $271,001; LP $3,022,485; vol $12,729; 18/12 buys/sells; Sep 26 spike fully retraced; vol rebounded on $9.4K sell candle; 84-day social silence |
 | 2026-09-28 | token-report | $0.000003077 (−5.57% 24h); FDV $307,686; LP $2,996,394; vol $2,048; 10/13 buys/sells; third consecutive thin-volume day post-Sep-26-spike; 83-day social silence |
-| 2026-09-27 | token-report | $0.000003233 (−3.43% 24h); FDV $323,266; LP $3,050,126; vol $2,013; 27/18 buys/sells; pullback after Sep 26 spike; vol collapsed 86%; 82-day social silence |
-| 2026-09-26 | token-report | $0.000003342 (+24.3% 24h); FDV $334,199; LP $3,042,591; vol $14,203; 25/19 buys/sells; reversal from Sep 24 retracement; vol surged 437%; largest trade $3,785 buy; 81-day social silence |
-| 2026-09-25 | token-report | $0.000002690 (+1.84% 24h); FDV $269,005; LP $3,008,675; vol $2,639; 15/19 buys/sells; stabilization after Sep 24 -17.83% drop; 80-day social silence |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -51,8 +51,6 @@
 
 ## Lessons Learned
 *(older entries archived to [memory/topics/lessons-archive.md](topics/lessons-archive.md))*
-- Self-improve can create duplicate PRs when run multiple times on the same day targeting the same improvement — Jul 22 heartbeat found PR #38 (13:18 UTC) + PR #39 (14:50 UTC) both titled "improve: add same-day rerun dedup to repo-article skill"; fixed with Step 2.5 duplicate PR check (self-improve PR #40, 2026-07-24)
-- Push-recap re-reports identical commits on consecutive days when commits land late enough to fall within both runs' 24h windows (observed Jul 24→25: same 2 security patches); fixed with Step 4c cross-day dedup — checks yesterday's article for already-reported SHAs (self-improve PR #41, 2026-07-26)
 - Repo-pulse sent daily noise notifications ("New stars: unknown, forks: 0") because stargazers timestamps API returns 403 and the activity logic had no fallback — treated "unknown" as activity; fixed with 403 fallback: compute net star change from previous log entries, only notify on positive net change or new forks (self-improve PR #42, 2026-07-28)
 - MEMORY.md grew to 142 lines (~3x target of ~50) because memory-flush only rotated three tables (Skills Built, Articles, Digests) — Feature Candidates (20+ entries) and expired Active Targets (7 "NOT CLEARED" entries) grew without bound; fixed by adding rotation rules: keep 5 most recent Feature Candidates + remove expired hyperstitions >14 days past deadline (self-improve PR #43, 2026-07-28)
 - Lessons Learned section grew to 37 entries (largest MEMORY.md section) because memory-flush had no rotation rule for it — most entries describe fixes already coded into skill logic; fixed with 15-entry cap + archive to memory/topics/lessons-archive.md (self-improve PR #44, 2026-07-30)
@@ -66,6 +64,8 @@
 - self-improve Step 0.5 merges PRs remotely but never pulled changes locally — subsequent assessment and branching used stale code; fixed with `git pull origin main` inserted after the merge/close loop (self-improve PR #59, 2026-08-26)
 - Heartbeat dispatch preflight used `gh workflow run aeon.yml` as the permissions probe — a live dispatch that would create duplicate runs when `actions: write` is restored; replaced with non-triggering API check using invalid ref (`__permission_probe__`) where 403 = no access, 422 = access confirmed (self-improve PR #61, 2026-09-26)
 - memory-flush Active Targets rotation rule required an explicit `NOT CLEARED (deadline passed)` marker before removing expired entries, but no skill ever set that marker — hyperstitions with deadlines embedded in question text accumulated indefinitely; fixed by detecting deadline dates from embedded text and checking for absence of "CLEARED" marker (self-improve PR #63, 2026-09-28)
+- heartbeat missing-skill check had no day-of-month step filter — skills scheduled on `*/2` days (self-improve, repo-actions) were false-positived as missing on non-step days; fixed with DOM % N check and bash snippet (self-improve PR #65, 2026-10-02)
+- skill-leaderboard was the only enabled skill without a same-day rerun dedup gate after the Aug 2026 wave — scheduler double-dispatch would re-fetch all fork data, re-write the article, and re-send a duplicate notification; fixed with Step 0 dedup gate (self-improve PR #66, 2026-10-04)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
@@ -85,5 +85,3 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Feature candidates (repo-actions 2026-09-30): Hacktoberfest Progress Dashboard (#1), Simulation Bulk CSV Export (#2), Similar Simulations Discovery (#3), Interactive OpenAPI Explorer (#4), Simulation Hot Topics Feed (#5)
 - Feature candidates (repo-actions 2026-09-28): Simulation Replay Visualizer (#1), Air-Gap Bundle Generator (#2), JSON-LD Structured Data for Simulations (#3), First-PR Welcome Automation (#4), Simulation Difficulty Score (#5)
 - Feature candidates (repo-actions 2026-09-26): HuggingFace Live Dataset Sync (#1), Webhook Subscription System (#2), Simulation Comparison API (#3), Hacktoberfest Issue Filer (#4), Simulation Agent Demographics (#5)
-- Feature candidates (repo-actions 2026-08-30): Simulation Topic Taxonomy Browser (#1), Swarm Diversity Index (#2), Hacktoberfest Readiness Kit (#3), Simulation Batch API (#4), Per-Platform Consensus Divergence Alert (#5)
-- Feature candidates (repo-actions 2026-08-26): Turkish (TR) UI Locale (#1), Simulation Forking API (#2), Time-to-Consensus Convergence Report (#3), Agent Persona Template Library (#4), Cross-Simulation Topic Trend API (#5)
