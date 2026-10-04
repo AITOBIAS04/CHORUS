@@ -1,0 +1,135 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-10-04"
+      },
+      "children": [
+        "text_merged",
+        "sep1",
+        "heading_why",
+        "text_why",
+        "sep2",
+        "heading_changed",
+        "text_changed",
+        "sep3",
+        "heading_merged",
+        "stack_prs",
+        "sep4",
+        "heading_impact",
+        "text_impact",
+        "sep5",
+        "link_pr"
+      ]
+    },
+    "text_merged": {
+      "type": "Text",
+      "props": {
+        "text": "Merged 2 stale PRs and added same-day rerun dedup to the skill-leaderboard skill — the only enabled skill that was missing this protection.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text_why": {
+      "type": "Text",
+      "props": {
+        "text": "All 14 enabled skills need same-day rerun dedup gates to prevent scheduler double-dispatch from wasting API calls and sending duplicate notifications. The Aug 2026 dedup wave (PRs #45–#52) fixed 7 skills, but skill-leaderboard was missed — it runs weekly on Sundays, so the gap was less visible."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "text_changed": {
+      "type": "Text",
+      "props": {
+        "text": "skills/skill-leaderboard/SKILL.md: Added Step 0 dedup gate — checks for existing Skill Leaderboard log entry before proceeding, logs SKILL_LEADERBOARD_RERUN_QUIET on rerun"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_merged": {
+      "type": "Heading",
+      "props": {
+        "text": "Also Merged",
+        "level": "h3"
+      }
+    },
+    "stack_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_64",
+        "pr_65"
+      ]
+    },
+    "pr_64": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #64: WebFetch fallback for token-report curl calls",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/64"
+      }
+    },
+    "pr_65": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #65: day-of-month step filter for heartbeat missing-skill check",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/65"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents wasted fork-scanning API calls and duplicate leaderboard notifications on scheduler double-dispatch. All 14 enabled skills now have rerun protection."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View PR #66",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/66"
+      }
+    }
+  }
+}
