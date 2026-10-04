@@ -152,16 +152,16 @@
     "last_success": "2026-10-03T11:58:47Z"
   },
   "skill-leaderboard": {
-    "last_status": "dispatched",
+    "last_status": "success",
     "last_failed": "2026-09-22T15:03:10Z",
-    "total_runs": 367,
-    "total_successes": 28,
+    "total_runs": 368,
+    "total_successes": 29,
     "total_failures": 339,
     "consecutive_failures": 0,
     "success_rate": 0.08,
     "last_error": "\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":403,\"api_error_code\":\"oauth_not_all",
     "last_dispatch": "2026-10-04T17:57:35Z",
-    "last_success": "2026-09-27T18:49:59Z",
+    "last_success": "2026-10-04T18:00:53Z",
     "last_quality_score": 4
   },
   "weekly-shiplog": {
