@@ -1,7 +1,10 @@
-Dedup gate triggered. The token-report already ran successfully today (price $0.0000024859, −6.71% 24h, notification sent). Logged `TOKEN_REPORT_RERUN_QUIET` and stopped — no re-fetch, no article overwrite, no duplicate notification.
+*$MIROSHARK Daily — 2026-10-04*
 
-## Summary
+Price: $0.000002398 (−1.64% 24h)
+Liquidity: $2.83M | 24h Vol: $2.6K
+Buys/Sells: 8/10
+7d: −23.3% | 30d: −6.3%
 
-- **Dedup check (Step 0):** `memory/logs/2026-10-03.md` already contained a `token-report` entry with `Notification sent: yes`.
-- **Action taken:** Appended `TOKEN_REPORT_RERUN_QUIET` entry to today's log.
-- **No further action:** Data fetch, article write, and notification all skipped to prevent duplicates.
+Sep 26 rally fully unwound. Eight straight days of drift lower, volume staying thin. LP at $2.83M holds 12× FDV coverage.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
