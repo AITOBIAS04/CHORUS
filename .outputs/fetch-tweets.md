@@ -1,12 +1,11 @@
 ## Summary
 
-**fetch-tweets — 2026-10-04**
+**fetch-tweets** ran for 2026-10-05 with `var=MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark`.
 
-- Applied 1-query backoff (10 consecutive empty runs → 1 date-constrained query)
-- Query: `site:x.com "MIROSHARK" after:2026-09-27`
-- All 10 results were profile pages, in the dedup set from Oct 1–3, or stale (>14 days old)
-- Consecutive empty count: **11** (not a multiple of 7 → no notification)
-- Result: `FETCH_TWEETS_EMPTY`
-- Log written to `memory/logs/2026-10-04.md` and committed
+- **Path used:** WebSearch fallback (XAI_API_KEY not set), 1-query backoff active (12 consecutive empty days)
+- **Query:** `site:x.com "MIROSHARK" after:2026-09-28`
+- **Results:** All 10 results were either in the dedup set (same stale IDs returned for weeks), profile pages, or previously-excluded stale tweets
+- **Outcome:** `FETCH_TWEETS_EMPTY` — consecutive count now **12** (not a multiple of 7, no notification sent)
+- **Log committed:** `memory/logs/2026-10-05.md`
 
-The 88-day social silence on MiroShark continues. Next silence notification fires at 14 consecutive empty days.
+Next multiple-of-7 silence notification fires at **14 consecutive empty days** (Oct 7 if the streak continues).
