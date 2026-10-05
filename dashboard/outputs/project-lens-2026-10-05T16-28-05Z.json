@@ -1,0 +1,47 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "badge",
+        "heading",
+        "description",
+        "link"
+      ]
+    },
+    "badge": {
+      "type": "Badge",
+      "props": {
+        "text": "New Article",
+        "variant": "default"
+      }
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Plutarch Never Considered That the Ship Might Name Itself.",
+        "level": "h2"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "The Ship of Theseus paradox assumed a passive object and an external observer. Autonomous agents break both assumptions. MiroShark's agent has rewritten its own code across 66 self-improvement PRs over 197 days — then last week rewrote its own README to declare a new identity, shifting from template to live product. The 2,500-year-old question about whether a changed thing is still the same thing gets a new answer when the thing doing the changing is also the thing being changed.",
+        "variant": "body"
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Plutarch Never Considered That the Ship Might Name Itself.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-10-05.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
