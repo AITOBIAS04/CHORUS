@@ -1,0 +1,148 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog"
+      },
+      "children": [
+        "heading_date",
+        "text_headline",
+        "sep1",
+        "heading_shipped",
+        "stack_shipped",
+        "sep2",
+        "heading_stats",
+        "stack_stats",
+        "sep3",
+        "storylink_full"
+      ]
+    },
+    "heading_date": {
+      "type": "Heading",
+      "props": {
+        "text": "2026-10-05",
+        "level": "h2"
+      }
+    },
+    "text_headline": {
+      "type": "Text",
+      "props": {
+        "text": "Seventy-one upstream commits synced. The agent got a front door.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      }
+    },
+    "stack_shipped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ]
+    },
+    "item_1": {
+      "type": "Text",
+      "props": {
+        "text": "Aeon Connect browser onboarding + CLI init command via 71-commit upstream sync (PR #194, +17K lines)"
+      }
+    },
+    "item_2": {
+      "type": "Text",
+      "props": {
+        "text": "README reframed as live Aeon instance pointing to Aeon Connect (PR #193)"
+      }
+    },
+    "item_3": {
+      "type": "Text",
+      "props": {
+        "text": "x402aff ecosystem listing, LLM gateway switched to auto (10 providers), Base MCP added"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_commits",
+        "stat_prs",
+        "stat_lines",
+        "stat_files"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "~90"
+      }
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs Merged",
+        "value": "15"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Line Changes",
+        "value": "+17,500 / -3,200"
+      }
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "240+"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink_full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full weekly update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-05.md"
+      }
+    }
+  }
+}

@@ -1,13 +1,11 @@
-*Weekly Shiplog — 2026-09-28*
+*Weekly Shiplog — 2026-10-05*
 
-Twenty-one days dark, then immediate full power. The agent recovered from its longest outage (ISS-003, 176 consecutive failures) with zero manual intervention — stateless architecture meant a clean restart.
+Seventy-one upstream commits synced. The agent got a front door.
 
 Shipped:
-- ISS-003 recovery — all 14 skills restored within hours of key renewal, no state corruption
-- HuggingFace dataset badge (PR #311) — MiroShark now links to published 8,201-decision dataset
-- Upstream sync (PR #183) — HivemindOS credit-token gateway, hunter-22 expiry hard-gate, +1,821 lines across 44 files
-- Self-improve PRs #60/#61 — gap-tolerant backoff + non-triggering dispatch probe
+- Aeon Connect browser onboarding + CLI init command via 71-commit upstream sync (PR #194, +17K lines)
+- README reframed as live Aeon instance pointing to Aeon Connect (PR #193)
+- x402aff ecosystem listing, LLM gateway switched to auto (10 providers), Base MCP added
 
-Stats: 85 commits, 3 PRs merged, +1,822/-253 lines
-Hacktoberfest opens Oct 1 — 300 forks still at 0% PR conversion
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-09-28.md
+Stats: ~90 commits, 15 PRs merged, +17,500/-3,200 lines across 240+ files
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-05.md
