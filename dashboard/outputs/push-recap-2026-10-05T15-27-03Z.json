@@ -1,0 +1,305 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-05"
+      },
+      "children": [
+        "text_author",
+        "separator_1",
+        "section_upstream",
+        "separator_2",
+        "section_token",
+        "separator_3",
+        "section_dependency",
+        "separator_4",
+        "section_keychanges",
+        "separator_5",
+        "section_stats",
+        "separator_6",
+        "section_recap"
+      ]
+    },
+    "text_author": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 2 substantive commits + MiroShark 1 commit (25 automation filtered)",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_upstream": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_upstream",
+        "storylink_pr194",
+        "text_pr_desc"
+      ]
+    },
+    "heading_upstream": {
+      "type": "Heading",
+      "props": {
+        "text": "Upstream Sync",
+        "level": "h3"
+      }
+    },
+    "storylink_pr194": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #194 — 71-commit sync from aeonfun/aeon",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/194",
+        "source": "GitHub"
+      }
+    },
+    "text_pr_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The largest merge in repo history. Brings Aeon Connect, a full browser-based onboarding dashboard that replaces the clone-and-run setup with sign-in → connect model → pick skills → runs itself. Also adds `aeon init` CLI command, overhauls all 9 harness adapters with shared sandbox isolation and MCP translation, switches the LLM gateway from single-provider to auto multi-provider with failover, and nearly doubles the test suite count.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_token": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_token",
+        "badge_rallying",
+        "text_token_context",
+        "stat_price",
+        "text_whale_activity"
+      ]
+    },
+    "heading_token": {
+      "type": "Heading",
+      "props": {
+        "text": "Token Tracking",
+        "level": "h3"
+      }
+    },
+    "badge_rallying": {
+      "type": "Badge",
+      "props": {
+        "text": "RALLYING",
+        "variant": "secondary"
+      }
+    },
+    "text_token_context": {
+      "type": "Text",
+      "props": {
+        "text": "First positive session in 8 days.",
+        "variant": "body"
+      }
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Token Price",
+        "value": "$0.000002578",
+        "delta": "+7.5%",
+        "trend": "up"
+      }
+    },
+    "text_whale_activity": {
+      "type": "Text",
+      "props": {
+        "text": "Two whale buys ($1.98K + $1.42K) — first whale activity since Oct 1. 2× average volume.",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_dependency": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_dependency",
+        "storylink_dependabot"
+      ]
+    },
+    "heading_dependency": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency",
+        "level": "h3"
+      }
+    },
+    "storylink_dependabot": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #316 — MiroShark vite 8.3.1→8.3.2 patch bump via dependabot",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/316",
+        "source": "dependabot"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_keychanges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_keychanges",
+        "text_change1",
+        "text_change2",
+        "text_change3",
+        "text_change4",
+        "text_change5"
+      ]
+    },
+    "heading_keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "text_change1": {
+      "type": "Text",
+      "props": {
+        "text": "ConnectModal replaces 3 old auth modals; 10 new dashboard test files (+1,300 lines)",
+        "variant": "body"
+      }
+    },
+    "text_change2": {
+      "type": "Text",
+      "props": {
+        "text": "gateways.json registry + gateway-failover.sh — agent no longer tied to one LLM provider",
+        "variant": "body"
+      }
+    },
+    "text_change3": {
+      "type": "Text",
+      "props": {
+        "text": "harness_cli_smoke.sh (438 lines) + ci-harness-cli.yml smoke-test all 9 adapters in CI",
+        "variant": "body"
+      }
+    },
+    "text_change4": {
+      "type": "Text",
+      "props": {
+        "text": "scheduler.yml rewritten (+157/-135 lines)",
+        "variant": "body"
+      }
+    },
+    "text_change5": {
+      "type": "Text",
+      "props": {
+        "text": "26 sync paths held for manual review",
+        "variant": "body"
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_stats",
+        "stat_files",
+        "stat_lines_added",
+        "stat_lines_removed"
+      ]
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "305"
+      }
+    },
+    "stat_lines_added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+17,222"
+      }
+    },
+    "stat_lines_removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Removed",
+        "value": "-2,945"
+      }
+    },
+    "separator_6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_recap": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_recap",
+        "storylink_fullrecap"
+      ]
+    },
+    "heading_recap": {
+      "type": "Heading",
+      "props": {
+        "text": "Full Recap",
+        "level": "h3"
+      }
+    },
+    "storylink_fullrecap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "articles/push-recap-2026-10-05.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-05.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
