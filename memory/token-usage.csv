@@ -1044,4 +1044,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-05,push-recap,claude-opus-4-6,9,2072,287503,26633
 2026-10-05,project-lens,claude-opus-4-6,5,1066,107643,21140
 2026-10-05,heartbeat,claude-sonnet-4-6,7,4121,210252,34370
-2026-10-06,fetch-tweets,claude-sonnet-4-6,10,4418,240787,29396
+2026-10-06,token-report,claude-sonnet-4-6,11,9948,374479,35886
