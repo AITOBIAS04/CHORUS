@@ -10,6 +10,8 @@ Today is ${today}. Generate a leaderboard of the most popular Aeon skills across
 
 ## Steps
 
+0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a `## Skill Leaderboard` entry (case-insensitive match for "skill leaderboard" or "skill-leaderboard") with `Notification sent:`, and `${var}` is empty (no explicit target requested), log `SKILL_LEADERBOARD_RERUN_QUIET: leaderboard already generated today — skipping to avoid duplicate API calls and notifications` to `memory/logs/${today}.md` and **stop here**. A rerun would re-fetch aeon.yml from every active fork (O(N) API calls), re-write the article, and re-send the notification — wasted compute with identical output on the same day.
+
 1. **Determine the target repo.** If `${var}` is set, use that. Otherwise read `memory/watched-repos.md` and use the first watched repo. Store as `TARGET_REPO`.
 
 2. **Fetch all active forks** (pushed within the last 30 days):
