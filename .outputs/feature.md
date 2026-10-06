@@ -1,3 +1,5 @@
+The feature skip has already been logged from an earlier run today. No further action needed — the skill exits here because `GH_GLOBAL` is not set and push access to `aaronjmars/MiroShark` is blocked.
+
 ## Summary
 
-**Feature skill skipped** — `gh api repos/aaronjmars/MiroShark` returned `push: false`, meaning the `GH_GLOBAL` secret is not set and cross-repo push is blocked. Logged `FEATURE_SKIP` to `memory/logs/2026-10-06.md`. No feature was picked, no repo was cloned, and no notification was sent, per the skill's pre-flight gate.
+**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` (`GH_GLOBAL` secret not set). Per skill instructions, stopped before picking a feature, cloning, or sending any notification. This is the 90+ consecutive block — all features from Jun 3 onward remain stuck as local commits until the `GH_GLOBAL` secret is configured.
