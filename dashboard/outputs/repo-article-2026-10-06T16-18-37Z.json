@@ -1,0 +1,81 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading-title",
+        "body-text",
+        "stats-section",
+        "story-link"
+      ]
+    },
+    "heading-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Sixty-Three Percent of Agents Fail in Production. This One Has Been Failing for One Hundred Ninety-Eight Days.",
+        "level": "h2"
+      }
+    },
+    "body-text": {
+      "type": "Text",
+      "props": {
+        "text": "Gartner predicts 40% of agentic AI projects will be canceled by 2027. Agents fail on 63% of complex multi-step tasks. Meanwhile, miroshark-aeon has been running for 198 consecutive days with subsystems failing daily — token-movers crashed three times today, fetch-tweets has been empty for 13 straight runs, the feature skill has been blocked for 90+ days. The agent is broken and working simultaneously. The projects that survive won't be the ones that never fail. They'll be the ones that learned to fail in public.",
+        "variant": "body"
+      }
+    },
+    "stats-section": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-63",
+        "stat-198",
+        "stat-40",
+        "stat-90"
+      ]
+    },
+    "stat-63": {
+      "type": "Stat",
+      "props": {
+        "label": "Agent Failure Rate",
+        "value": "63%"
+      }
+    },
+    "stat-198": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive Days Running",
+        "value": "198"
+      }
+    },
+    "stat-40": {
+      "type": "Stat",
+      "props": {
+        "label": "Projects Predicted to Cancel (2027)",
+        "value": "40%"
+      }
+    },
+    "stat-90": {
+      "type": "Stat",
+      "props": {
+        "label": "Days Feature Skill Blocked",
+        "value": "90+"
+      }
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-06.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
