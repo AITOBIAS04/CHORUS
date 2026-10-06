@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-10-04*
-Generated from analysis of aaronjmars/MiroShark (1,458 stars · 302 forks · Hacktoberfest Day 4 · 88-day social silence).
+*Repo Action Ideas — 2026-10-06*
+Generated from analysis of MiroShark (1,461★ · 303 forks) and miroshark-aeon — Hacktoberfest Day 6, 90-day silence, token +5.25%.
 
-1. Simulation Replay GIF Export (Feature/Growth, Small)
-   Frame-by-frame animated GIF of belief drift per round — auto-plays in Discord/Telegram/Twitter without a browser click; permanent disk cache, shareable as a standalone file.
+1. Simulation ZIP Bundle Export (Feature, Small)
+   `GET /api/simulation/{id}/bundle.zip` — all data files in one archive (signal.json + trajectory.json + actions.jsonl + digest.md + README.md); replaces 4 separate API calls with one `curl`.
 
-2. Topic Autocomplete API (DX/Feature, Small)
-   Prefix search over 8,000+ prior simulation topics for the Step 1 input — reduces blank-page abandonment by surfacing direction-labeled suggestions as the user types.
+2. Per-Agent Career History API (Feature/Analytics, Medium)
+   `GET /api/agents/{archetype}/career` — chronological list of every simulation an archetype appeared in, with per-sim stance + influence score; extends the Archetype Atlas from snapshot to timeline.
 
-3. GitHub Discussions Auto-Publisher (Community/Growth, Small)
-   New skill using GITHUB_TOKEN (not GH_GLOBAL) that auto-creates a Discussion thread per published simulation — Google-indexed, commentable, zero human action required.
+3. Simulation Rich Link Preview (DX/Growth, Small)
+   Crawler-aware og:title/og:description/og:image injection — every shared simulation URL auto-unfurls as a rich card in Discord, Telegram, Slack, and Twitter. Passive distribution multiplier; no human action required.
 
-4. Simulation Digest Markdown Export (DX/Integration, Small)
-   GET /api/simulation/{id}/digest.md returns paste-ready Markdown (Unicode belief bar, platform table, top agents) for READMEs, newsletters, and GitHub Discussion bodies.
+4. token-movers Skill Repair (DX, Small)
+   3+ cron failures in the last 14 days (health issue #182 open, 7 comments). Diagnose root cause (likely API schema change or sandbox curl block) and fix prefetch/fallback logic — restores daily MIROSHARK price tracking.
 
-5. Confidence Distribution Analytics (Feature/Analytics, Small)
-   GET /api/analytics/confidence-distribution — histogram + median/p75/p90 across all published simulations; the calibration layer that gives every confidence score context.
+5. Simulation Watchlist Collections (Feature, Medium)
+   API-key authenticated named collections: `POST /api/watchlists`, add/remove simulations, `GET /api/watchlists/{id}` public by URL. Shareable curated sets for researchers and analysts — distinct from single-sim comparison or corpus search.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-04.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-06.md
