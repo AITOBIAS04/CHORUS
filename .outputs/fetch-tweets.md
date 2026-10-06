@@ -1,11 +1,10 @@
 ## Summary
 
-**fetch-tweets** ran for 2026-10-05 with `var=MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark`.
+**fetch-tweets** ran for 2026-10-06 against `MIROSHARK crypto token on Base chain AND https://github.com/aaronjmars/MiroShark`.
 
-- **Path used:** WebSearch fallback (XAI_API_KEY not set), 1-query backoff active (12 consecutive empty days)
-- **Query:** `site:x.com "MIROSHARK" after:2026-09-28`
-- **Results:** All 10 results were either in the dedup set (same stale IDs returned for weeks), profile pages, or previously-excluded stale tweets
-- **Outcome:** `FETCH_TWEETS_EMPTY` — consecutive count now **12** (not a multiple of 7, no notification sent)
-- **Log committed:** `memory/logs/2026-10-05.md`
-
-Next multiple-of-7 silence notification fires at **14 consecutive empty days** (Oct 7 if the streak continues).
+- **Path:** WebSearch fallback (XAI_API_KEY not set), backoff mode (1 query — 12 prior consecutive empty runs)
+- **Query:** `site:x.com "MIROSHARK" after:2026-09-29`
+- **Results:** 10 URLs returned — all either profile pages, already in the 3-day dedup set, or stale (>14d). One new candidate (`miroshark_/status/2053611376703131963`) was from ~May 2026, excluded by the 14d freshness gate.
+- **Result:** `FETCH_TWEETS_EMPTY` — consecutive empty streak now at **13** (Sep 24–Oct 6)
+- **Notification:** Not sent (13 is not a multiple of 7; next escalation notification fires at run 14)
+- **Log written:** `memory/logs/2026-10-06.md`
