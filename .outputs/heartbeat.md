@@ -1,10 +1,8 @@
-HEARTBEAT_OK. All 8 expected skills ran today, no stale PRs, no open issues, all systems healthy.
+HEARTBEAT_OK. All 14 skills healthy, no missing skills, no stalled PRs above threshold, no open issues. PR #67 is 7 hours old — well under the 72h `improve:` threshold. This was a rerun of a heartbeat that already completed earlier today; logged accordingly.
 
 ## Summary
 
-- Read `memory/MEMORY.md` and last 2 days of logs for context
-- Checked `memory/cron-state.json`: all 14 skills at `consecutive_failures: 0`, no systemic failure
-- Verified all 8 skills scheduled for today (Tue DOM=6) ran successfully
-- PR #67 (5h) is within the 72h auto-merge threshold — no flag
-- No open issues in `memory/issues/INDEX.md`
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-10-06.md`
+- **Checked:** system health (cron-state), open PRs, scheduled skills vs today's log, open issues escalation
+- **Findings:** none — everything is running cleanly
+- **Log updated:** `memory/logs/2026-10-06.md` with rerun entry
+- **No notification sent** (HEARTBEAT_OK, no actionable findings)
