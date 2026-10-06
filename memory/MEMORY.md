@@ -67,6 +67,7 @@
 - memory-flush Active Targets rotation rule required an explicit `NOT CLEARED (deadline passed)` marker before removing expired entries, but no skill ever set that marker — hyperstitions with deadlines embedded in question text accumulated indefinitely; fixed by detecting deadline dates from embedded text and checking for absence of "CLEARED" marker (self-improve PR #63, 2026-09-28)
 - heartbeat missing-skill check had no day-of-month step filter — skills scheduled on `*/2` days (self-improve, repo-actions) were false-positived as missing on non-step days; fixed with DOM % N check and bash snippet (self-improve PR #65, 2026-10-02)
 - skill-leaderboard was the only enabled skill without a same-day rerun dedup gate after the Aug 2026 wave — scheduler double-dispatch would re-fetch all fork data, re-write the article, and re-send a duplicate notification; fixed with Step 0 dedup gate (self-improve PR #66, 2026-10-04)
+- fetch-tweets log entries during prolonged silence (~13+ consecutive empty runs) listed every dedup URL individually (~15-20 lines/day of unchanged stale URLs); query backoff already reduced API waste but log verbosity wasn't addressed; fixed with compact log format instruction: count-based summaries when consecutive_empty >= 7, full URL logging preserved when tweets are found (self-improve PR #67, 2026-10-06)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)

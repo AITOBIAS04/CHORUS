@@ -1,0 +1,223 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "summary_text",
+        "sep1",
+        "why_section",
+        "sep2",
+        "what_changed_section",
+        "sep3",
+        "also_section",
+        "sep4",
+        "impact_section",
+        "sep5",
+        "pr_section"
+      ]
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "Condensed fetch-tweets log output during prolonged social silence. The skill was producing ~15-20 lines of repetitive dedup URL listings every day for 13+ consecutive empty runs — the same stale URLs listed individually, cluttering logs that heartbeat and memory-flush scan through daily.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why_heading",
+        "why_text"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets query backoff (3→1 queries) was already saving API calls during silence, but the log verbosity was not addressed. With 90+ days of social silence, the daily URL-by-URL dedup listing added noise without diagnostic value.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "what_changed_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "what_heading",
+        "change_items"
+      ]
+    },
+    "what_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "change_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change_file",
+        "change_desc"
+      ]
+    },
+    "change_file": {
+      "type": "Text",
+      "props": {
+        "text": "skills/fetch-tweets/SKILL.md:",
+        "variant": "lead"
+      }
+    },
+    "change_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Added \"Compact log format during silence\" instruction — when consecutive_empty >= 7, log dedup summaries as counts instead of individual URLs. Full URL logging preserved during active periods for dedup verification.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "also_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "also_heading",
+        "also_items"
+      ]
+    },
+    "also_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also this run",
+        "level": "h3"
+      }
+    },
+    "also_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "also_item_1",
+        "also_item_2"
+      ]
+    },
+    "also_item_1": {
+      "type": "Text",
+      "props": {
+        "text": "Merged PR #66 (skill-leaderboard dedup gate)",
+        "variant": "body"
+      }
+    },
+    "also_item_2": {
+      "type": "Text",
+      "props": {
+        "text": "Closed PR #62 (heartbeat DOW filter — conflicts after 8 days)",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_heading",
+        "impact_text"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Cleaner daily logs during prolonged silence (~15 lines saved per run), reducing scan overhead for downstream skills.",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_label",
+        "pr_link"
+      ]
+    },
+    "pr_label": {
+      "type": "Text",
+      "props": {
+        "text": "PR:",
+        "variant": "muted"
+      }
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/AITOBIAS04/CHORUS/pull/67",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/67"
+      }
+    }
+  }
+}
