@@ -68,3 +68,7 @@
 
 - Self-improve can create duplicate PRs when run multiple times on the same day targeting the same improvement — Jul 22 heartbeat found PR #38 (13:18 UTC) + PR #39 (14:50 UTC) both titled "improve: add same-day rerun dedup to repo-article skill"; fixed with Step 2.5 duplicate PR check (self-improve PR #40, 2026-07-24)
 - Push-recap re-reports identical commits on consecutive days when commits land late enough to fall within both runs' 24h windows (observed Jul 24→25: same 2 security patches); fixed with Step 4c cross-day dedup — checks yesterday's article for already-reported SHAs (self-improve PR #41, 2026-07-26)
+
+## Archived 2026-10-07
+
+- Repo-pulse sent daily noise notifications ("New stars: unknown, forks: 0") because stargazers timestamps API returns 403 and the activity logic had no fallback — treated "unknown" as activity; fixed with 403 fallback: compute net star change from previous log entries, only notify on positive net change or new forks (self-improve PR #42, 2026-07-28)
