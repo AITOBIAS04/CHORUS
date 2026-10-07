@@ -1,0 +1,100 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "fetch-tweets",
+        "description": "Social Monitor Dark — 14 consecutive days"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_issue",
+        "separator1",
+        "section_cause",
+        "separator2",
+        "section_fix"
+      ]
+    },
+    "alert_issue": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "Zero new mentions — 14 consecutive days",
+        "message": "fetch-tweets has found zero new mentions for 14 straight days."
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_cause": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_cause",
+        "text_cause"
+      ]
+    },
+    "heading_cause": {
+      "type": "Heading",
+      "props": {
+        "text": "Likely cause",
+        "level": "h3"
+      }
+    },
+    "text_cause": {
+      "type": "Text",
+      "props": {
+        "text": "XAI_API_KEY not set — WebSearch fallback rarely surfaces fresh tweets.",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_fix": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_fix",
+        "text_fix"
+      ]
+    },
+    "heading_fix": {
+      "type": "Heading",
+      "props": {
+        "text": "Fix",
+        "level": "h3"
+      }
+    },
+    "text_fix": {
+      "type": "Text",
+      "props": {
+        "text": "Set XAI_API_KEY in repo secrets to enable direct X/Twitter search via Grok.",
+        "variant": "body"
+      }
+    }
+  }
+}
