@@ -1,8 +1,7 @@
-HEARTBEAT_OK. All 14 skills healthy, no missing skills, no stalled PRs above threshold, no open issues. PR #67 is 7 hours old — well under the 72h `improve:` threshold. This was a rerun of a heartbeat that already completed earlier today; logged accordingly.
+HEARTBEAT_OK. All 14 skills healthy, all Wednesday-scheduled skills ran, one open PR (#67, 29h, under the 72h improve: threshold). No notifications needed, no issues to escalate.
 
 ## Summary
 
-- **Checked:** system health (cron-state), open PRs, scheduled skills vs today's log, open issues escalation
-- **Findings:** none — everything is running cleanly
-- **Log updated:** `memory/logs/2026-10-06.md` with rerun entry
-- **No notification sent** (HEARTBEAT_OK, no actionable findings)
+- **Checked:** cron-state.json (all 14 skills at consecutive_failures: 0), last 2 days of logs, open PRs, open GitHub issues, aeon.yml schedules
+- **Result:** Clean — every skill expected on Wednesday Oct 7 ran; no stalled PRs beyond threshold; no open issues
+- **Logged:** HEARTBEAT_OK to `memory/logs/2026-10-07.md`
