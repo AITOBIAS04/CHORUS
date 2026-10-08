@@ -1,16 +1,9 @@
-**HEARTBEAT_OK** (rerun).
-
-All checks pass:
-- **System health:** All 14 skills at `consecutive_failures: 0`. No systemic failure.
-- **Skills:** All expected skills ran today (token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens, memory-flush). Remaining skills (repo-actions, self-improve, repo-article, weekly-shiplog, hyperstitions-ideas, skill-leaderboard) are not scheduled on Wednesdays/odd DOM.
-- **Open PRs:** PR #67 at 31h — well under the 72h threshold for `improve:` PRs.
-- **Open issues:** None.
-
-No notification needed.
+HEARTBEAT_OK. All 8 skills scheduled for today (Thursday, DOM=8) ran successfully. Both open PRs are `improve:` type well under the 72h threshold. No open issues and no systemic failures — `consecutive_failures: 0` across all 13 tracked skills.
 
 ## Summary
 
-- Read `memory/MEMORY.md`, `memory/cron-state.json`, and last 2 days of logs for context.
-- Confirmed this is a rerun — prior heartbeat at 19:21Z found HEARTBEAT_OK.
-- Verified current state: PR #67 now at 31h (still under 72h threshold), all today's scheduled skills completed, no open issues.
-- Appended rerun log entry to `memory/logs/2026-10-07.md`.
+- Read `memory/MEMORY.md`, `memory/cron-state.json`, today's log, `memory/issues/INDEX.md`, and `aeon.yml` schedules.
+- **System health:** Clean — all skills at 0 consecutive failures, no open issues.
+- **PRs:** #68 (5h) and #67 (53h) both `improve:` type, neither stale at 72h threshold.
+- **Skill coverage:** All 8 skills due today ran; 4 correctly skipped (wrong day-of-week/DOM).
+- **Action taken:** Logged `HEARTBEAT_OK` to `memory/logs/2026-10-08.md`. No notifications needed.
