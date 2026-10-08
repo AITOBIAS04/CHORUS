@@ -1,0 +1,169 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-10-08"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-main",
+        "intro-text",
+        "sep-1",
+        "why-section",
+        "sep-2",
+        "what-section",
+        "sep-3",
+        "impact-section",
+        "sep-4",
+        "pr-link"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Added WebFetch fallback to hyperstitions-ideas Polymarket API call",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "intro-text": {
+      "type": "Text",
+      "props": {
+        "text": "The hyperstitions-ideas skill fetches trending Polymarket data via curl for inspiration on prediction market questions. This curl call had no fallback — if the GitHub Actions sandbox blocked outbound network (which it does intermittently), the data was silently lost. All other enabled skills already had WebFetch fallbacks or used sandbox-safe gh api calls.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "why-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-why",
+        "why-text"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "why-text": {
+      "type": "Text",
+      "props": {
+        "text": "CLAUDE.md mandates WebFetch fallbacks for all public API curl calls. PR #64 (Oct 4) fixed this in token-report but hyperstitions-ideas was missed — it was the last enabled skill without sandbox resilience on its curl calls.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "what-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-what",
+        "what-text"
+      ]
+    },
+    "heading-what": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "what-text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/hyperstitions-ideas/SKILL.md: Added Sandbox note section documenting the fallback pattern; added inline WebFetch fallback to step 2 with graceful degradation (skip Polymarket data if both curl and WebFetch fail)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-impact",
+        "impact-text"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "All 14 enabled skills now follow the sandbox-resilient pattern — curl with WebFetch fallback for public APIs, gh api for GitHub calls. No more bare curl calls that silently fail in sandboxed environments.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #68",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/68",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
