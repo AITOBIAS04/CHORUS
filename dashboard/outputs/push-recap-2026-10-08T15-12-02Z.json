@@ -1,0 +1,255 @@
+{
+  "root": "card-recap",
+  "state": {},
+  "elements": {
+    "card-recap": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-08"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-grid",
+        "sep-1",
+        "section-security",
+        "sep-2",
+        "section-cicd",
+        "sep-3",
+        "section-docs",
+        "sep-4",
+        "section-keychanges",
+        "sep-5",
+        "text-stats",
+        "link-recap"
+      ]
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-miroshark",
+        "stat-miroshark-aeon"
+      ]
+    },
+    "stat-miroshark": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark",
+        "value": "3 substantive commits"
+      }
+    },
+    "stat-miroshark-aeon": {
+      "type": "Stat",
+      "props": {
+        "label": "miroshark-aeon",
+        "value": "2 substantive + 14 automation filtered"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-security": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-security",
+        "alert-vuln",
+        "text-security-patch",
+        "text-security-aeon"
+      ]
+    },
+    "heading-security": {
+      "type": "Heading",
+      "props": {
+        "text": "Security & Dependency Hygiene",
+        "level": "h3"
+      }
+    },
+    "alert-vuln": {
+      "type": "Alert",
+      "props": {
+        "title": "Dependabot Alerts Patched",
+        "message": "shell-quote (critical command injection), source-map-js (high), fsspec (high), Werkzeug (medium)",
+        "type": "error"
+      }
+    },
+    "text-security-patch": {
+      "type": "Text",
+      "props": {
+        "text": "shell-quote 1.9.0 → 1.12.0 fixes critical command injection CVE in dev tooling",
+        "variant": "body"
+      }
+    },
+    "text-security-aeon": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon deleted entire dependabot.yml (114 lines) since version-update PRs duplicated those from canon repo. Security alerts remain active.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-cicd": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-cicd",
+        "text-cicd-intro",
+        "text-cicd-rules",
+        "text-cicd-fix"
+      ]
+    },
+    "heading-cicd": {
+      "type": "Heading",
+      "props": {
+        "text": "CI/CD — Ruff Linter",
+        "level": "h3"
+      }
+    },
+    "text-cicd-intro": {
+      "type": "Text",
+      "props": {
+        "text": "New Python lint job added to MiroShark CI using ruff (pinned 0.15.11).",
+        "variant": "body"
+      }
+    },
+    "text-cicd-rules": {
+      "type": "Text",
+      "props": {
+        "text": "Ruleset catches only real bugs — syntax errors, undefined names, unused imports/variables. No formatting enforced.",
+        "variant": "body"
+      }
+    },
+    "text-cicd-fix": {
+      "type": "Text",
+      "props": {
+        "text": "Fixed four existing issues it found, including missing TYPE_CHECKING imports in env.py that could have caused runtime NameError.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-docs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-docs",
+        "text-docs"
+      ]
+    },
+    "heading-docs": {
+      "type": "Heading",
+      "props": {
+        "text": "Documentation",
+        "level": "h3"
+      }
+    },
+    "text-docs": {
+      "type": "Text",
+      "props": {
+        "text": "Install guides (EN + ZH) updated from claude-haiku-4-5 to claude-haiku-5-5.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-keychanges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-keychanges",
+        "text-change-1",
+        "text-change-2",
+        "text-change-3"
+      ]
+    },
+    "heading-keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "text-change-1": {
+      "type": "Text",
+      "props": {
+        "text": "• shell-quote 1.9.0 → 1.12.0 fixes a critical command injection CVE in dev tooling",
+        "variant": "body"
+      }
+    },
+    "text-change-2": {
+      "type": "Text",
+      "props": {
+        "text": "• ruff.toml added with minimal bug-catching rules — every Python push now linted",
+        "variant": "body"
+      }
+    },
+    "text-change-3": {
+      "type": "Text",
+      "props": {
+        "text": "• miroshark-aeon deps now flow exclusively through aeon-update from canon",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-stats": {
+      "type": "Text",
+      "props": {
+        "text": "13 files changed, +87/-137 lines",
+        "variant": "lead"
+      }
+    },
+    "link-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-08.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
