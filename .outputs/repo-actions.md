@@ -1,19 +1,8 @@
-*Repo Action Ideas — 2026-10-08*
-Generated from analysis of aaronjmars/MiroShark — 1,464 stars · 303 forks · 3 bugs filed today. Three open issues (first multi-issue wave in 199 days), no open PRs.
+**Step 0 dedup triggered.** The `repo-actions` skill already ran today (2026-10-08) with `Notification sent: yes`. Skipping to avoid regenerating ideas and sending a duplicate notification. Logged `REPO_ACTIONS_RERUN_QUIET` to today's log.
 
-1. SQLite Resume Data Safety Fix (DX, Small)
-   Fixes #322 — CREATE TABLE IF NOT EXISTS + ROLLBACK wrapper prevents data loss on failed resume retries.
+## Summary
 
-2. Report API Race Condition Fix (Performance, Small)
-   Fixes #323 — return 202+Retry-After while generating instead of 400; atomic status record swap kills the force_regenerate race.
-
-3. Provider Capability Matrix (Feature, Small)
-   GET /api/providers/capabilities — surfaces which NLP features each provider supports and known issues (e.g. #321 NER crash on claude-code) before a simulation runs.
-
-4. Agent Diversity Score (Analytics, Small)
-   GET /api/simulation/{id}/diversity — composite score (stance entropy + archetype variety + platform spread) measuring whether the ensemble was heterogeneous enough to trust.
-
-5. Simulation Embedding API (Analytics, Small)
-   GET /api/simulation/{id}/embedding — 384-dim sentence-transformer vector; includes GET /api/simulations/similar?to={id} semantic search as a direct consequence.
-
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-08.md
+- **Checked** `memory/logs/2026-10-08.md` — found an existing `## repo-actions` entry with `Notification sent: yes`
+- **Action:** Halted per Step 0 same-day rerun dedup gate
+- **Logged:** `REPO_ACTIONS_RERUN_QUIET: already ran today — skipping rerun` appended to today's log
+- **No new article, no notification sent**
