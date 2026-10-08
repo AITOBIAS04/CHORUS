@@ -1,18 +1,19 @@
-The log shows a `## repo-actions` entry with `Notification sent: yes` already exists for today. Per Step 0's dedup rule, this run should be skipped.
+*Repo Action Ideas — 2026-10-08*
+Generated from analysis of aaronjmars/MiroShark — 1,464 stars · 303 forks · 3 bugs filed today. Three open issues (first multi-issue wave in 199 days), no open PRs.
 
-**REPO_ACTIONS_RERUN_QUIET: already ran today — skipping rerun**
+1. SQLite Resume Data Safety Fix (DX, Small)
+   Fixes #322 — CREATE TABLE IF NOT EXISTS + ROLLBACK wrapper prevents data loss on failed resume retries.
 
-The repo-actions skill already executed today (2026-10-06) and sent a notification. The 5 ideas generated were:
-1. Simulation ZIP Bundle Export (Feature, Small)
-2. Per-Agent Career History API (Feature/Analytics, Medium)
-3. Simulation Rich Link Preview / Open Graph (DX/Growth, Small)
-4. token-movers Skill Repair (DX, Small)
-5. Simulation Watchlist Collections (Feature, Medium)
+2. Report API Race Condition Fix (Performance, Small)
+   Fixes #323 — return 202+Retry-After while generating instead of 400; atomic status record swap kills the force_regenerate race.
 
-No duplicate run needed.
+3. Provider Capability Matrix (Feature, Small)
+   GET /api/providers/capabilities — surfaces which NLP features each provider supports and known issues (e.g. #321 NER crash on claude-code) before a simulation runs.
 
-## Summary
+4. Agent Diversity Score (Analytics, Small)
+   GET /api/simulation/{id}/diversity — composite score (stance entropy + archetype variety + platform spread) measuring whether the ensemble was heterogeneous enough to trust.
 
-- **Action:** Checked today's log (`memory/logs/2026-10-06.md`) per Step 0 dedup gate.
-- **Result:** A `## repo-actions` entry with `Notification sent: yes` already exists — skipped to prevent duplicate notification and idea regeneration.
-- **Files modified:** None.
+5. Simulation Embedding API (Analytics, Small)
+   GET /api/simulation/{id}/embedding — 384-dim sentence-transformer vector; includes GET /api/simulations/similar?to={id} semantic search as a direct consequence.
+
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-08.md

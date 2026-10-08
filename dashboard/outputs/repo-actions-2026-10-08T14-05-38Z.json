@@ -1,0 +1,309 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-10-08"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "context-text",
+        "sep-1",
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4",
+        "item-5",
+        "sep-2",
+        "footer-link"
+      ]
+    },
+    "context-text": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — 1,464 stars · 303 forks · 3 bugs filed today. Three open issues (first multi-issue wave in 199 days), no open PRs.",
+        "variant": "muted"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-1-title",
+        "item-1-badges",
+        "item-1-desc"
+      ]
+    },
+    "item-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. SQLite Resume Data Safety Fix",
+        "level": "h4"
+      }
+    },
+    "item-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-1-badge-dx",
+        "item-1-badge-small"
+      ]
+    },
+    "item-1-badge-dx": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "outline"
+      }
+    },
+    "item-1-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Fixes #322 — CREATE TABLE IF NOT EXISTS + ROLLBACK wrapper prevents data loss on failed resume retries."
+      }
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-2-title",
+        "item-2-badges",
+        "item-2-desc"
+      ]
+    },
+    "item-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Report API Race Condition Fix",
+        "level": "h4"
+      }
+    },
+    "item-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-2-badge-perf",
+        "item-2-badge-small"
+      ]
+    },
+    "item-2-badge-perf": {
+      "type": "Badge",
+      "props": {
+        "text": "Performance",
+        "variant": "outline"
+      }
+    },
+    "item-2-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Fixes #323 — return 202+Retry-After while generating instead of 400; atomic status record swap kills the force_regenerate race."
+      }
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-3-title",
+        "item-3-badges",
+        "item-3-desc"
+      ]
+    },
+    "item-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Provider Capability Matrix",
+        "level": "h4"
+      }
+    },
+    "item-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-3-badge-feat",
+        "item-3-badge-small"
+      ]
+    },
+    "item-3-badge-feat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "outline"
+      }
+    },
+    "item-3-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/providers/capabilities — surfaces which NLP features each provider supports and known issues (e.g. #321 NER crash on claude-code) before a simulation runs."
+      }
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-4-title",
+        "item-4-badges",
+        "item-4-desc"
+      ]
+    },
+    "item-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Agent Diversity Score",
+        "level": "h4"
+      }
+    },
+    "item-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-4-badge-analytics",
+        "item-4-badge-small"
+      ]
+    },
+    "item-4-badge-analytics": {
+      "type": "Badge",
+      "props": {
+        "text": "Analytics",
+        "variant": "outline"
+      }
+    },
+    "item-4-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/diversity — composite score (stance entropy + archetype variety + platform spread) measuring whether the ensemble was heterogeneous enough to trust."
+      }
+    },
+    "item-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-5-title",
+        "item-5-badges",
+        "item-5-desc"
+      ]
+    },
+    "item-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Embedding API",
+        "level": "h4"
+      }
+    },
+    "item-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item-5-badge-analytics",
+        "item-5-badge-small"
+      ]
+    },
+    "item-5-badge-analytics": {
+      "type": "Badge",
+      "props": {
+        "text": "Analytics",
+        "variant": "outline"
+      }
+    },
+    "item-5-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "item-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/{id}/embedding — 384-dim sentence-transformer vector; includes GET /api/simulations/similar?to={id} semantic search as a direct consequence."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer-link": {
+      "type": "Link",
+      "props": {
+        "label": "Full details: repo-actions-2026-10-08.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-08.md"
+      }
+    }
+  }
+}
