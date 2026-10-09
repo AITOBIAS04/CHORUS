@@ -1,0 +1,233 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-09"
+      },
+      "children": [
+        "repo-info",
+        "bug-fix-section",
+        "sep1",
+        "issue-325",
+        "issue-324",
+        "issue-326",
+        "sep2",
+        "key-changes",
+        "sep3",
+        "stats",
+        "sep4",
+        "full-recap-link"
+      ]
+    },
+    "repo-info": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark — 3 substantive commits by Aaron Elijah Mars (9 automation filtered)",
+        "variant": "lead"
+      }
+    },
+    "bug-fix-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "bug-fix-heading",
+        "bug-fix-text"
+      ]
+    },
+    "bug-fix-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Bug Fix Sprint",
+        "level": "h3"
+      }
+    },
+    "bug-fix-text": {
+      "type": "Text",
+      "props": {
+        "text": "All three user-filed issues from Oct 8 (#321, #322, #323) resolved in a single push. Each fix includes a thorough test suite."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "issue-325": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "issue-325-title",
+        "issue-325-text"
+      ]
+    },
+    "issue-325-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Report Lookup Ordering (#325)",
+        "level": "h3"
+      }
+    },
+    "issue-325-text": {
+      "type": "Text",
+      "props": {
+        "text": "get_report_by_simulation returned the first match from os.listdir order, so force_regenerate could leave the old report shadowing the new one. Rewritten to collect all matches and return the newest by created_at, with a prefer_completed option for chat and generate callers."
+      }
+    },
+    "issue-324": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "issue-324-title",
+        "issue-324-text"
+      ]
+    },
+    "issue-324-title": {
+      "type": "Heading",
+      "props": {
+        "text": "ClaudeCodeClient NER Failure (#324)",
+        "level": "h3"
+      }
+    },
+    "issue-324-text": {
+      "type": "Text",
+      "props": {
+        "text": "chat_json rejected repair_truncated, so claude-code mode NER silently raised TypeError on every chunk → 0-node graphs marked successful. Fix mirrors LLMClient signature, adds 0-node failure guard in graph.py."
+      }
+    },
+    "issue-326": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "issue-326-title",
+        "issue-326-text"
+      ]
+    },
+    "issue-326-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Resume Safety (#326)",
+        "level": "h3"
+      }
+    },
+    "issue-326-text": {
+      "type": "Text",
+      "props": {
+        "text": "26 SQL schema files lacked IF NOT EXISTS, crashing on resume. A resumed run that died early saved current_round=0, corrupting state. New _seed_resumed_progress carries prior round progress; 409 response prevents resuming with nothing to resume from."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-changes-heading",
+        "key-changes-list"
+      ]
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "key-changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "• 26 .sql files made idempotent (IF NOT EXISTS) across both social_media and social_platform schemas"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "• 0-node graph builds now explicitly fail instead of reporting success"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "• New 409 API response for resume with no completed rounds (breaking change for callers)"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-added",
+        "stat-removed"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "36"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+537"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "-47"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "full-recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-09.md"
+      }
+    }
+  }
+}
