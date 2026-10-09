@@ -1,0 +1,90 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading",
+        "content-stack",
+        "separator",
+        "article-link"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: Ninety-Three Percent of Your Dependencies Haven't Been Touched in Two Years",
+        "level": "h2"
+      }
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "findings-text",
+        "stats-grid"
+      ]
+    },
+    "findings-text": {
+      "type": "Text",
+      "props": {
+        "text": "The 2026 Black Duck report found 93% of commercial codebases carry zombie components — dependencies with no development activity in two years. A January preprint argues AI-assisted development is accelerating the crisis by breaking the engagement loops that sustain maintainers. Meanwhile, one open-source project fixed three user-filed bugs in nine hours flat — and has had daily commits for over two hundred consecutive days, partly through an autonomous AI agent handling maintenance.",
+        "variant": "body"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-zombie",
+        "stat-bugs",
+        "stat-days"
+      ]
+    },
+    "stat-zombie": {
+      "type": "Stat",
+      "props": {
+        "label": "Zombie components in codebases",
+        "value": "93%"
+      }
+    },
+    "stat-bugs": {
+      "type": "Stat",
+      "props": {
+        "label": "Bugs fixed in 9 hours",
+        "value": "3"
+      }
+    },
+    "stat-days": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive days with commits",
+        "value": "200+"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-10-09.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}

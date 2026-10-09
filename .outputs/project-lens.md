@@ -1,5 +1,5 @@
-## Summary
+*New Article: Ninety-Three Percent of Your Dependencies Haven't Been Touched in Two Years.*
 
-- **Skipped:** Project Lens already ran today (angle category 4 — User story, title "You Deploy an AI Agent on Tuesday. Nobody Tells You What Wednesday Looks Like.")
-- **Action:** Logged `PROJECT_LENS_RERUN_QUIET` to `memory/logs/2026-10-07.md` to record the dedup
-- **No duplicate research, article, or notification sent**
+The 2026 Black Duck report found 93% of commercial codebases carry zombie components — dependencies with no development activity in two years. A January preprint argues AI-assisted development is accelerating the crisis by breaking the engagement loops that sustain maintainers. Meanwhile, one open-source project fixed three user-filed bugs in nine hours flat — and has had daily commits for over two hundred consecutive days, partly through an autonomous AI agent handling maintenance.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-10-09.md
