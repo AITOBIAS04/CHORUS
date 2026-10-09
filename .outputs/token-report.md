@@ -1,10 +1,7 @@
-*$MIROSHARK Daily — 2026-10-09*
+**TOKEN_REPORT_RERUN_QUIET** — a token-report with `Notification sent: yes` already exists in today's log (`memory/logs/2026-10-09.md`). Stopping here per the dedup gate to avoid duplicate reports and notifications.
 
-Price: $0.0000022613 (−7.19% 24h)
-Liquidity: ~$2.63M | 24h Vol: $4,255
-Buys/Sells: 19/16
-7d: −1.2% | 30d: −11.9%
+## Summary
 
-Recovery stalled: after two up-days, a single $2,885 sell hour drove price to intraday low $0.000002225 before partial recovery. LP base stable at 12× FDV. 94-day social silence.
-
-Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
+- **Dedup gate triggered** (Step 0): `memory/logs/2026-10-09.md` already contained a completed token-report entry for today.
+- No data was re-fetched, no article was overwritten, no notification was sent.
+- Appended `TOKEN_REPORT_RERUN_QUIET` log entry to today's log.
