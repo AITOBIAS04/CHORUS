@@ -1,10 +1,11 @@
-**HEARTBEAT_OK** — rerun. No action needed.
+⚠️ Heartbeat — 2026-10-09 (Friday)
 
-- All 13 skills healthy (`consecutive_failures: 0`)
-- PR #67 at 55h, PR #68 at 7h — both under the 72h improve: threshold
-- All expected Thursday skills ran; none missing
-- No open issues to escalate
+Stale PR:
+- #67 (improve: condense fetch-tweets log output) — 77h old (threshold: 72h for improve: PRs)
+  Self-improve runs tomorrow (DOM=10) and should auto-merge.
 
-## Summary
-
-Ran the heartbeat skill for 2026-10-08. This was a rerun (prior heartbeat completed at ~19:17 UTC). All standard checks passed clean: system fully healthy, no stale PRs, no missing skills, no open issues. Logged `HEARTBEAT_OK` rerun entry to `memory/logs/2026-10-08.md`.
+All clear:
+- System health: 13/13 skills at consecutive_failures: 0
+- No missing skills (DOM=9: self-improve & repo-actions skip today; repo-article/weekly-shiplog/hyperstitions/memory-flush/skill-leaderboard not scheduled Fri)
+- PR #68 (improve: add WebFetch fallback) — 29h, under threshold
+- No urgent GitHub issues; no open issues in INDEX.md

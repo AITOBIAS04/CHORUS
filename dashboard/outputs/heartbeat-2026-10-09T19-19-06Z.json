@@ -1,0 +1,86 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "date_heading",
+        "stale_alert",
+        "separator1",
+        "clear_section"
+      ]
+    },
+    "date_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2026-10-09 (Friday)",
+        "level": "h2"
+      }
+    },
+    "stale_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Stale PR: #67",
+        "message": "improve: condense fetch-tweets log output — 77h old (threshold: 72h for improve: PRs). Self-improve runs tomorrow (DOM=10) and should auto-merge.",
+        "type": "warning"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "clear_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "clear_heading",
+        "health_stat",
+        "missing_skills",
+        "pr68_item",
+        "github_issues"
+      ]
+    },
+    "clear_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "All clear",
+        "level": "h3"
+      }
+    },
+    "health_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "System health",
+        "value": "13/13 skills",
+        "delta": "0 consecutive failures"
+      }
+    },
+    "missing_skills": {
+      "type": "Text",
+      "props": {
+        "text": "No missing skills (DOM=9: self-improve & repo-actions skip today; repo-article/weekly-shiplog/hyperstitions/memory-flush/skill-leaderboard not scheduled Fri)"
+      }
+    },
+    "pr68_item": {
+      "type": "Text",
+      "props": {
+        "text": "PR #68 (improve: add WebFetch fallback) — 29h, under threshold"
+      }
+    },
+    "github_issues": {
+      "type": "Text",
+      "props": {
+        "text": "No urgent GitHub issues; no open issues in INDEX.md"
+      }
+    }
+  }
+}
