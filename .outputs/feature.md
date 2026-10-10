@@ -1,3 +1,3 @@
 ## Summary
 
-**FEATURE_SKIP**: No push access to `aaronjmars/miroshark-aeon` (GH_GLOBAL secret not set). Per skill instructions, stopped before picking a feature or cloning the repo. Logged the skip to `memory/logs/2026-10-09.md`. No notification sent.
+**Feature skill skipped** — `gh api repos/aaronjmars/MiroShark` returned `push: false`, meaning the `GH_GLOBAL` secret is not set. Logged `FEATURE_SKIP` to `memory/logs/2026-10-10.md`. No feature was picked, no repo was cloned, and no notification was sent, per the skill's pre-flight rules.
