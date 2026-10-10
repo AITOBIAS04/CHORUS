@@ -1,0 +1,163 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea",
+        "description": "2026-10-10"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-question",
+        "sep-1",
+        "section-coordination",
+        "sep-2",
+        "section-why",
+        "sep-3",
+        "section-resolution",
+        "sep-4",
+        "section-scores",
+        "sep-5",
+        "link-hyperstitions"
+      ]
+    },
+    "heading-question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will $MIROSHARK's social silence reach 100 consecutive days unbroken (October 15, 2026)?",
+        "level": "h2"
+      }
+    },
+    "sep-1": {
+      "type": "Separator"
+    },
+    "section-coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-coordination",
+        "text-coordination"
+      ]
+    },
+    "heading-coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The coordination play:",
+        "level": "h3"
+      }
+    },
+    "text-coordination": {
+      "type": "Text",
+      "props": {
+        "text": "This market self-destructs by circulating. Anyone who shares the question on social media is tweeting about MIROSHARK — which breaks the very silence the market asks about. If you think the answer is NO, you tweet to break it. If you think YES, you stay quiet — but sharing the bet IS the tweet. The market turns 95 days of silence into a coordination event that no AI agent can trigger. Only humans can break this."
+      }
+    },
+    "sep-2": {
+      "type": "Separator"
+    },
+    "section-why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-why",
+        "text-why"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now:",
+        "level": "h3"
+      }
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "Social silence hits 95 days today. Five days to the century mark. The agent shipped its 200th consecutive day of autonomous operation on October 8 — code every single day while zero humans mentioned it publicly. An AI that won't stop working. A community that won't start talking. The contrast is the hook."
+      }
+    },
+    "sep-3": {
+      "type": "Separator"
+    },
+    "section-resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-resolution",
+        "text-resolution"
+      ]
+    },
+    "heading-resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution:",
+        "level": "h3"
+      }
+    },
+    "text-resolution": {
+      "type": "Text",
+      "props": {
+        "text": "YES if no original human-authored tweet mentioning $MIROSHARK or the MiroShark project is posted on X between July 7 and October 15, 2026 23:59 UTC. NO if any such tweet is posted. Retweets and bot posts excluded."
+      }
+    },
+    "sep-4": {
+      "type": "Separator"
+    },
+    "section-scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-reflexivity",
+        "stat-viral"
+      ]
+    },
+    "stat-reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      }
+    },
+    "stat-viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "sep-5": {
+      "type": "Separator"
+    },
+    "link-hyperstitions": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Soon on Hyperstitions",
+        "href": "https://www.hyperstitions.com/",
+        "source": "hyperstitions.com"
+      }
+    }
+  }
+}
