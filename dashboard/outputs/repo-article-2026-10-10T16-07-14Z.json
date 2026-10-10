@@ -1,0 +1,131 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "The Issue Queue Is Empty. That's the Hardest Part to Automate."
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "miroshark-header",
+        "stats-row",
+        "separator-1",
+        "findings-stack",
+        "separator-2",
+        "article-link"
+      ]
+    },
+    "miroshark-header": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark",
+        "level": "h3"
+      }
+    },
+    "stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "stat-issues"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,467"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "304"
+      }
+    },
+    "stat-issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Open Issues",
+        "value": "0"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "findings-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "bugfix-text",
+        "nextjs-text",
+        "fixedbench-text",
+        "pr-text"
+      ]
+    },
+    "bugfix-text": {
+      "type": "Text",
+      "props": {
+        "text": "Three bugs filed October 8 were fixed within 48 hours.",
+        "variant": "body"
+      }
+    },
+    "nextjs-text": {
+      "type": "Text",
+      "props": {
+        "text": "Next.js manages 1,500 open issues with agent-assisted triage.",
+        "variant": "body"
+      }
+    },
+    "fixedbench-text": {
+      "type": "Text",
+      "props": {
+        "text": "FixedBench research: agents edit already-correct code 35–65% of the time.",
+        "variant": "body"
+      }
+    },
+    "pr-text": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon filed its 69th self-improvement PR on day 202 of continuous operation.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The Issue Queue Is Empty. That's the Hardest Part to Automate.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-10.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
