@@ -1,10 +1,7 @@
-*MIROSHARK Daily — 2026-10-10*
+**TOKEN_REPORT_RERUN_QUIET** — token-report already ran today with `Notification sent: yes` (price $0.000002268, −0.09% 24h, FDV $226,815, LP ~$2.63M). Logged the rerun and stopped — no data re-fetched, no article overwritten, no notification sent.
 
-Price: $0.000002268 (−0.09% 24h)
-Liquidity: ~$2,634K | 24h Vol: $1,274
-Buys/Sells: 13/8
-7d: −5.0% | 30d: −5.7%
+## Summary
 
-Flat session — lowest volume in 1+ week as post-rally sell pressure fades; LP holds at ~11.6× FDV.
-
-Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
+- **Dedup gate triggered** (Step 0): `memory/logs/2026-10-10.md` already contains a completed token-report entry with `Notification sent: yes`
+- **Action taken:** Appended `TOKEN_REPORT_RERUN_QUIET` entry to today's log
+- **No further actions:** no API calls, no article write, no notification
