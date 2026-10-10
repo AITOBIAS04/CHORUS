@@ -1,0 +1,315 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-10-10"
+      },
+      "children": [
+        "summary-text",
+        "sep-1",
+        "features-stack",
+        "sep-2",
+        "details-link"
+      ]
+    },
+    "summary-text": {
+      "type": "Text",
+      "props": {
+        "text": "All 3 bugs from Oct 8 fixed in 48h — resume data loss, report 400 race, NER crash. Issue queue empty. 1,467 stars · 304 forks · 95-day silence.",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "features-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "feature-1",
+        "feature-2",
+        "feature-3",
+        "feature-4",
+        "feature-5"
+      ]
+    },
+    "feature-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "f1-title",
+        "f1-badges",
+        "f1-desc"
+      ]
+    },
+    "f1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Webhook Delivery Log",
+        "level": "h3"
+      }
+    },
+    "f1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "f1-badge-1",
+        "f1-badge-2"
+      ]
+    },
+    "f1-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "f1-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "f1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Append-only delivery log + `GET /api/webhooks/deliveries` — operators can see success rate, latency, and retry history for every webhook dispatch.",
+        "variant": "body"
+      }
+    },
+    "feature-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "f2-title",
+        "f2-badges",
+        "f2-desc"
+      ]
+    },
+    "f2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Cross-Provider Performance Telemetry",
+        "level": "h3"
+      }
+    },
+    "f2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "f2-badge-1",
+        "f2-badge-2"
+      ]
+    },
+    "f2-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Observability",
+        "variant": "default"
+      }
+    },
+    "f2-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "f2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Roll up existing llm_call events into `GET /api/observability/providers` — p50/p95 latency, error rate, and avg cost per provider across the last 7 days.",
+        "variant": "body"
+      }
+    },
+    "feature-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "f3-title",
+        "f3-badges",
+        "f3-desc"
+      ]
+    },
+    "f3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Input Provenance",
+        "level": "h3"
+      }
+    },
+    "f3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "f3-badge-1",
+        "f3-badge-2"
+      ]
+    },
+    "f3-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "f3-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "f3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "SHA-256 hash of canonical inputs at `GET /api/simulation/{id}/provenance` — makes MiroShark results scientifically citable; distinct from Signed Result JSON (Jun 8) which signs outputs.",
+        "variant": "body"
+      }
+    },
+    "feature-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "f4-title",
+        "f4-badges",
+        "f4-desc"
+      ]
+    },
+    "f4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "CLI Live Progress Stream",
+        "level": "h3"
+      }
+    },
+    "f4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "f4-badge-1",
+        "f4-badge-2"
+      ]
+    },
+    "f4-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "default"
+      }
+    },
+    "f4-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "f4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`--live` flag connects `miro run` to the existing SSE event stream and renders a real-time progress bar + cost ticker; zero new backend code.",
+        "variant": "body"
+      }
+    },
+    "feature-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "f5-title",
+        "f5-badges",
+        "f5-desc"
+      ]
+    },
+    "f5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Opinion Leader Influence Score",
+        "level": "h3"
+      }
+    },
+    "f5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "f5-badge-1",
+        "f5-badge-2"
+      ]
+    },
+    "f5-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "f5-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "f5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`GET /api/simulation/{id}/opinion-leaders` correlates @-mentions with subsequent stance flips to produce a causal influence score per agent — synthesizes the Jun 12 mention network and Jun 13 stance-flip data.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-10.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
