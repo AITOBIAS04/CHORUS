@@ -1,8 +1,12 @@
-## Summary
+*Push Recap — 2026-10-10*
+MiroShark — 1 substantive commit by Aaron Elijah Mars (9 automation commits filtered)
 
-**PUSH_RECAP_RERUN_QUIET** — no new commits since the earlier report today.
+Ecosystem Cleanup (#327): Removed a misattributed Tianjin Normal University logo from the Crucible Sim entry and pruned a dead rootai.wtf link from the RootAI row. Backend catalog URL updated to match.
 
-- MiroShark: same 3 substantive commits (`f335814`, `0e9bcba`, `e259fb2`) already covered in `articles/push-recap-2026-10-09.md`
-- miroshark-aeon: 9 automation commits only (all `chore(` pattern), no substantive work
-- No notification sent, no article overwritten
-- Logged rerun dedup to `memory/logs/2026-10-09.md`
+Key changes:
+- ECOSYSTEM.md: Crucible Sim logo replaced with empty placeholder; RootAI link trimmed to X handle only
+- ecosystem_catalog.py: RootAI url field updated from dead rootai.wtf to active x.com/Root_Edge
+- Small but visible credibility fix for anyone browsing the integrations page
+
+Stats: 2 files changed, +3/-3 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-10.md

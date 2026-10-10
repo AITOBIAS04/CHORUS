@@ -1,0 +1,159 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-10"
+      },
+      "children": [
+        "summary-text",
+        "separator-1",
+        "commit-stack",
+        "separator-2",
+        "key-changes-stack",
+        "separator-3",
+        "stats-stack",
+        "separator-4",
+        "links-stack"
+      ]
+    },
+    "summary-text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 1 substantive commit by Aaron Elijah Mars (9 automation commits filtered)",
+        "variant": "lead"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "commit-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "commit-title",
+        "commit-desc"
+      ]
+    },
+    "commit-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Cleanup (#327)",
+        "level": "h3"
+      }
+    },
+    "commit-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Removed a misattributed Tianjin Normal University logo from the Crucible Sim entry and pruned a dead rootai.wtf link from the RootAI row. Backend catalog URL updated to match."
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key-changes-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-changes-heading",
+        "changes-items"
+      ]
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h4"
+      }
+    },
+    "changes-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-item-1",
+        "change-item-2",
+        "change-item-3"
+      ]
+    },
+    "change-item-1": {
+      "type": "Text",
+      "props": {
+        "text": "ECOSYSTEM.md: Crucible Sim logo replaced with empty placeholder; RootAI link trimmed to X handle only"
+      }
+    },
+    "change-item-2": {
+      "type": "Text",
+      "props": {
+        "text": "ecosystem_catalog.py: RootAI url field updated from dead rootai.wtf to active x.com/Root_Edge"
+      }
+    },
+    "change-item-3": {
+      "type": "Text",
+      "props": {
+        "text": "Small but visible credibility fix for anyone browsing the integrations page"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stat-item"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h4"
+      }
+    },
+    "stat-item": {
+      "type": "Text",
+      "props": {
+        "text": "2 files changed, +3/-3 lines"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "links-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "recap-link"
+      ]
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-10.md"
+      }
+    }
+  }
+}
