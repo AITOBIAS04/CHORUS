@@ -1,0 +1,148 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-10-10"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "summary_text",
+        "sep1",
+        "why_section",
+        "sep2",
+        "what_section",
+        "sep3",
+        "impact_section",
+        "sep4",
+        "pr_link"
+      ]
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "Merged stale PR #67 (condense fetch-tweets log output). Added age-based merge fallback for PRs stuck at UNKNOWN mergeStateStatus in self-improve Step 0.5.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why_heading",
+        "why_text"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "PR #68 has been at UNKNOWN merge status for 48+ hours after re-query. The current UNKNOWN handler skips the PR indefinitely — it will never be CLEAN, DIRTY, or any actionable status. This creates a dead-end where valid PRs sit in limbo forever, never merged or closed.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "what_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "what_heading",
+        "what_text"
+      ]
+    },
+    "what_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "what_text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Split the UNKNOWN handler into two paths. Under 72h: skip (give GitHub time). Over 72h: attempt merge anyway — gh pr merge fails safely on conflicts, then falls through to close-if-stale logic. Added jq-based age computation to avoid LLM date math errors.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_heading",
+        "impact_text"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "PRs with perpetually UNKNOWN status will now be resolved automatically after 72h instead of accumulating indefinitely. No risk of merging conflicted code — the merge command itself validates.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #69",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/69",
+        "source": "GitHub"
+      }
+    }
+  }
+}
