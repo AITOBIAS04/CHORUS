@@ -39,6 +39,10 @@ Bad examples (too generic, not project-specific):
 4. **Memetic potential** — the question itself is shareable and makes people want to weigh in.
 5. **Clear resolution** — unambiguous YES/NO with a specific deadline and criteria.
 
+## Sandbox note
+
+The Polymarket API call in step 2 uses `curl` against a public API (no auth). In the GitHub Actions sandbox, `curl` may fail intermittently. If `curl` fails or returns empty/non-JSON, use the built-in WebFetch tool for the same URL as a fallback. Polymarket data is supplementary (for inspiration on format and trending themes) — if both curl and WebFetch fail, proceed without it.
+
 ## Steps
 
 0. **Skip re-run if already reported today** — If `${var}` is empty (no explicit theme requested), check whether `memory/logs/${today}.md` already contains a `## Hyperstitions Ideas` entry with `Notification sent: yes`. If it does, log `HYPERSTITIONS_RERUN_QUIET: idea already generated today — skipping` to `memory/logs/${today}.md` and **stop here — do NOT generate another idea or send another notification**. If `${var}` is set, always proceed (the operator requested a specific theme).
@@ -54,6 +58,7 @@ Bad examples (too generic, not project-specific):
    ```bash
    curl -s "https://gamma-api.polymarket.com/markets?limit=20&order=volume24hr&ascending=false&active=true" | jq '[.[] | {question, volume24hr: .volume24hr}]'
    ```
+   If curl fails or returns empty/non-JSON: use WebFetch for the same URL (`https://gamma-api.polymarket.com/markets?limit=20&order=volume24hr&ascending=false&active=true`) and parse the JSON response to extract market questions and volumes. If both curl and WebFetch fail, skip Polymarket inspiration and proceed to step 3.
 
 3. **Identify the highest-leverage coordination gap** — what's the one thing that, if the community rallied around it, would most accelerate the project? Think about:
    - Growth: holders, stars, forks, contributors
