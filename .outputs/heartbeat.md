@@ -1,10 +1,11 @@
-HEARTBEAT_OK — logged to `memory/logs/2026-10-10.md`.
+HEARTBEAT_OK — this is a rerun. All 14 skills at `consecutive_failures: 0`, no open issues, no stale PRs (PR #68 at 55h, PR #69 at 7h — both under the 72h improve: threshold). All expected Saturday skills confirmed run. No action needed.
 
 ## Summary
 
-All Saturday checks passed cleanly:
-- **System health:** 14/14 skills at zero consecutive failures
+- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `memory/issues/INDEX.md`
+- **System health:** Clean — all 14 skills at consecutive_failures: 0
 - **Open issues:** None
-- **PRs:** #68 (53h) and #69 (6h) — both under the 72h `improve:` threshold
-- **Skills:** All 9 skills expected to run today ran; 4 correctly skipped (wrong day-of-week/DOM)
-- No notification sent, no auto-triggers needed
+- **PRs:** #68 at 55h (threshold 72h — fine), #69 at 7h (fine)
+- **Missing skills:** None — all Saturday skills already ran
+- Logged rerun entry to `memory/logs/2026-10-10.md`
+- No notification needed (no new findings vs earlier run)
