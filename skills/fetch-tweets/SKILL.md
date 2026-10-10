@@ -59,6 +59,8 @@ Today is ${today}. Search X for tweets matching **${var}**.
    - If the log contains `FETCH_TWEETS_EMPTY`: increment the count.
    - If the log contains fetch-tweets results (actual tweets found, not empty): **stop** — the streak is broken.
    - If the log has **no fetch-tweets entry at all** (skill didn't run that day): **skip** that day and continue scanning backward. Days where the skill didn't run do not break the streak.
+   **Compact log format during silence.** When `consecutive_empty >= 7`, keep the log entry concise — do NOT list individual dedup set URLs or individual exclusions. Instead, summarize as counts (e.g. "Dedup set: 9 URLs from last 3 days; 4 matched in results and excluded; 3 excluded as stale >14d"). Full URL-by-URL logging is valuable when new tweets are being found (to verify dedup correctness), but during prolonged silence the same stale URLs repeat daily, adding ~15 lines of noise per run that downstream skills (heartbeat, memory-flush) must scan through.
+
    If the consecutive empty count is a **multiple of 7** (7, 14, 21, …), send a single notification via `./notify`:
    ```
    *Social Monitor Dark — ${consecutive_count} consecutive days*
