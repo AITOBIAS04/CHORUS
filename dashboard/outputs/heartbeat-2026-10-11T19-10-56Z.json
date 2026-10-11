@@ -1,0 +1,205 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "2026-10-11"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "alert_stale_pr",
+        "sep_1",
+        "section_pr_details",
+        "sep_2",
+        "section_skills_status"
+      ]
+    },
+    "alert_stale_pr": {
+      "type": "Alert",
+      "props": {
+        "title": "Stale PR",
+        "message": "PR #68 has exceeded the threshold for improve: PRs",
+        "type": "warning"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_pr_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_pr",
+        "stack_pr_info"
+      ]
+    },
+    "heading_pr": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Request",
+        "level": "h3"
+      }
+    },
+    "stack_pr_info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_pr_68",
+        "text_pr_title",
+        "grid_pr_metrics",
+        "text_pr_note"
+      ]
+    },
+    "link_pr_68": {
+      "type": "Link",
+      "props": {
+        "label": "PR #68",
+        "href": "https://github.com/CHORUS/CHORUS/pull/68"
+      }
+    },
+    "text_pr_title": {
+      "type": "Text",
+      "props": {
+        "text": "improve: add WebFetch fallback to hyperstitions-ideas Polymarket curl call",
+        "variant": "body"
+      }
+    },
+    "grid_pr_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_age",
+        "stat_threshold"
+      ]
+    },
+    "stat_age": {
+      "type": "Stat",
+      "props": {
+        "label": "Age",
+        "value": "77h"
+      }
+    },
+    "stat_threshold": {
+      "type": "Stat",
+      "props": {
+        "label": "Threshold",
+        "value": "72h"
+      }
+    },
+    "text_pr_note": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve next runs tomorrow (DOM=12, even day) — will attempt merge then.",
+        "variant": "caption"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_skills_status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_skills",
+        "stack_skills_info"
+      ]
+    },
+    "heading_skills": {
+      "type": "Heading",
+      "props": {
+        "text": "Skills Status",
+        "level": "h3"
+      }
+    },
+    "stack_skills_info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_no_missing",
+        "badge_no_issues",
+        "badge_all_clean",
+        "grid_skills_metrics"
+      ]
+    },
+    "badge_no_missing": {
+      "type": "Badge",
+      "props": {
+        "text": "No missing skills",
+        "variant": "secondary"
+      }
+    },
+    "badge_no_issues": {
+      "type": "Badge",
+      "props": {
+        "text": "No open issues",
+        "variant": "secondary"
+      }
+    },
+    "badge_all_clean": {
+      "type": "Badge",
+      "props": {
+        "text": "All running clean",
+        "variant": "secondary"
+      }
+    },
+    "grid_skills_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_total_skills",
+        "stat_consecutive_failures"
+      ]
+    },
+    "stat_total_skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Skills",
+        "value": "14"
+      }
+    },
+    "stat_consecutive_failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive Failures",
+        "value": "0",
+        "trend": "neutral"
+      }
+    }
+  }
+}
