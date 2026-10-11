@@ -1,16 +1,13 @@
-*Skill Leaderboard — 2026-10-04*
+## Summary
 
-Top skills across 2 active Aeon forks:
-1. fetch-tweets — 2 forks (100%)
-2. heartbeat — 2 forks (100%)
-3. memory-flush — 2 forks (100%)
-4. repo-pulse — 2 forks (100%)
-5. aeon-update — 1 fork (50%)
+**Skill Leaderboard — 2026-10-11**
 
-Consensus: fetch-tweets, heartbeat, memory-flush, repo-pulse (all at 100%)
-Adoption gaps: none — all source skills appear in at least one fork
+- **Target repo:** `aaronjmars/MiroShark` (first entry in `memory/watched-repos.md`)
+- **Active forks scanned:** 22 (pushed within last 30 days, out of 304 total)
+- **Forks with readable `aeon.yml`:** 0
 
-First leaderboard with ≥2 active Aeon forks after 19 weeks of insufficient data.
-New fork: elegarmco/miroshark-aeon (mirrors source config exactly; pushed 2026-10-03).
+All 22 active forks are forks of `aaronjmars/MiroShark`, a simulation engine / frontend repo — not an Aeon agent instance. Forks of it don't carry `aeon.yml` skill configs, so there's no skill adoption data to rank.
 
-Full leaderboard: articles/skill-leaderboard-2026-10-04.md
+Per the skill's safety net (step 8): fewer than 2 readable `aeon.yml` files → `SKILL_LEADERBOARD_INSUFFICIENT_DATA` logged, no article written, no notification sent.
+
+The leaderboard skill would produce meaningful data if the watched repos list led with an Aeon instance repo (like `aaronjmars/miroshark-aeon`) that other operators fork and customize.
