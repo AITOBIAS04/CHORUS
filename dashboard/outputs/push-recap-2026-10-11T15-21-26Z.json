@@ -1,0 +1,205 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-11"
+      },
+      "children": [
+        "summary",
+        "repos",
+        "activity",
+        "stats",
+        "recap-link"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day — 0 substantive commits across both watched repos (9 automation commits filtered).",
+        "variant": "lead"
+      }
+    },
+    "repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "miroshark-section",
+        "aeon-section"
+      ]
+    },
+    "miroshark-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "miroshark-title",
+        "miroshark-no-commits",
+        "miroshark-pr"
+      ]
+    },
+    "miroshark-title": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h4"
+      }
+    },
+    "miroshark-no-commits": {
+      "type": "Text",
+      "props": {
+        "text": "No commits.",
+        "variant": "body"
+      }
+    },
+    "miroshark-pr": {
+      "type": "Text",
+      "props": {
+        "text": "Repo clean after yesterday's ecosystem cleanup PR #327.",
+        "variant": "body"
+      }
+    },
+    "aeon-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon-title",
+        "aeon-commits",
+        "aeon-details",
+        "aeon-note"
+      ]
+    },
+    "aeon-title": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/miroshark-aeon",
+        "level": "h4"
+      }
+    },
+    "aeon-commits": {
+      "type": "Text",
+      "props": {
+        "text": "9 automation-only commits",
+        "variant": "body"
+      }
+    },
+    "aeon-details": {
+      "type": "Text",
+      "props": {
+        "text": "(3 cron updates, 3 scheduler updates, 3 auto-commits for token-movers, heartbeat, fetch-tweets)",
+        "variant": "caption"
+      }
+    },
+    "aeon-note": {
+      "type": "Text",
+      "props": {
+        "text": "No human-authored or feature work.",
+        "variant": "muted"
+      }
+    },
+    "activity": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "activity-heading",
+        "activity-text"
+      ]
+    },
+    "activity-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Next Activity",
+        "level": "h4"
+      }
+    },
+    "activity-text": {
+      "type": "Text",
+      "props": {
+        "text": "self-improve merges pending PRs #68/#69 on Oct 12 run.",
+        "variant": "body"
+      }
+    },
+    "stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-heading",
+        "stats-grid"
+      ]
+    },
+    "stats-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Statistics",
+        "level": "h4"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-lines"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "0"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Changed",
+        "value": "+0/-0"
+      }
+    },
+    "recap-link": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "recap-heading",
+        "recap-story"
+      ]
+    },
+    "recap-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Full Recap",
+        "level": "h4"
+      }
+    },
+    "recap-story": {
+      "type": "StoryLink",
+      "props": {
+        "title": "push-recap-2026-10-11",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-11.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
