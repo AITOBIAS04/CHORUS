@@ -1,0 +1,51 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_title",
+        "text_description",
+        "link_read"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Four Security Patches. One Linter. Zero Tweets.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark patched a critical command injection CVE (shell-quote, 214M monthly downloads) alongside three other dependency alerts, added ruff linting to CI, and hardened its secret tripwire — all during its 96th consecutive day of social silence. The invisible maintenance sprint nobody requested, and why the half of open source you don't notice is the half that keeps the rest from collapsing.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link_read": {
+      "type": "Link",
+      "props": {
+        "label": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-11.md"
+      },
+      "children": []
+    }
+  }
+}
