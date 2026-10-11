@@ -1,13 +1,7 @@
+Dedup gate triggered. The skill-leaderboard already ran today (log entry at line 67–74 shows a full run with `Notification sent: no`). Logged `SKILL_LEADERBOARD_RERUN_QUIET` and stopped — no API calls made, no duplicate notification sent.
+
 ## Summary
 
-**Skill Leaderboard — 2026-10-11**
-
-- **Target repo:** `aaronjmars/MiroShark` (first entry in `memory/watched-repos.md`)
-- **Active forks scanned:** 22 (pushed within last 30 days, out of 304 total)
-- **Forks with readable `aeon.yml`:** 0
-
-All 22 active forks are forks of `aaronjmars/MiroShark`, a simulation engine / frontend repo — not an Aeon agent instance. Forks of it don't carry `aeon.yml` skill configs, so there's no skill adoption data to rank.
-
-Per the skill's safety net (step 8): fewer than 2 readable `aeon.yml` files → `SKILL_LEADERBOARD_INSUFFICIENT_DATA` logged, no article written, no notification sent.
-
-The leaderboard skill would produce meaningful data if the watched repos list led with an Aeon instance repo (like `aaronjmars/miroshark-aeon`) that other operators fork and customize.
+- **Step 0 dedup gate fired**: `memory/logs/2026-10-11.md` already contained a `## Skill Leaderboard` entry with `Notification sent:` from an earlier run today.
+- **Action taken**: Appended `SKILL_LEADERBOARD_RERUN_QUIET` log entry to today's log and stopped.
+- **No files created**, no API calls made, no notifications sent — consistent with the dedup gate's purpose of avoiding redundant O(N) fork scans.
