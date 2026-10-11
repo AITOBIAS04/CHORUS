@@ -1,5 +1,9 @@
-Heartbeat — 2026-10-11
+HEARTBEAT_OK. This is a rerun — all findings deduped against the earlier heartbeat that already ran today. PR #68 (79h, stale) was flagged and notified in the first run. All 8 Sunday skills completed. No open issues, no systemic failures.
 
-PR #68 is stale (77h). Title: improve: add WebFetch fallback to hyperstitions-ideas Polymarket curl call. Threshold for improve: PRs is 72h. Self-improve next runs tomorrow (DOM=12, even day) — will attempt merge then.
+## Summary
 
-No missing skills. No open issues. All 14 skills running clean (consecutive_failures: 0).
+- **System health:** All skills healthy, `consecutive_failures: 0` across the board
+- **Open issues:** None
+- **PRs:** PR #68 stale (79h) already flagged and notified earlier today — deduped; PR #69 within threshold
+- **Skills:** All expected Sunday skills ran; `*/2` and day-specific skills correctly skipped
+- **Result:** HEARTBEAT_OK (rerun)
