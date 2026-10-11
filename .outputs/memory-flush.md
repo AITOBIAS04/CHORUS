@@ -1,10 +1,7 @@
+Memory flush already ran today. Per the same-day rerun dedup rule (Step 0), skipped to avoid double-rotating tables. Logged `MEMORY_FLUSH_RERUN_QUIET` to `memory/logs/2026-10-11.md`.
+
 ## Summary
 
-Memory flush complete for 2026-10-11:
-
-- **Recent Digests**: Added Oct 9, 10, 11 token-report entries; dropped Oct 2–4 (kept 6 most recent)
-- **Recent Articles**: Removed 2026-09-30 and 2026-10-01 entries (kept 8 most recent)
-- **Feature candidates**: Removed 2026-09-28 batch (kept 5 most recent)
-- **Active Targets**: Added new hyperstition — Will $MIROSHARK's social silence reach 100 consecutive days unbroken by October 15, 2026?
-- **Last consolidated** date updated to 2026-10-11
-- No new lessons to promote; no expired uncleared targets to remove
+- **Checked:** `memory/logs/2026-10-11.md` — found existing `## Memory Flush` entry (from earlier today's run that promoted Oct 9–11 digest entries, rotated articles/feature candidates, added the 100-day silence hyperstition, and updated the consolidated date)
+- **Action:** Appended `MEMORY_FLUSH_RERUN_QUIET` entry to today's log; no table rotations performed (non-idempotent operations skipped)
+- **No follow-up needed**
