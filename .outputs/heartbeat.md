@@ -1,17 +1,7 @@
-HEARTBEAT_OK.
-
-**System health:** All 14 skills at `consecutive_failures: 0` — no issues.
-
-**Today's skill coverage (Monday, DOM=12):** All 9 expected skills ran — token-report, fetch-tweets, repo-pulse, feature, repo-actions, self-improve, weekly-shiplog, push-recap, project-lens. Remaining 4 skills (repo-article, memory-flush, skill-leaderboard, hyperstitions-ideas) not scheduled today.
-
-**PRs:** Two fresh improve: PRs (#70 at 6h, #71 at 4h) — both under the 72h auto-merge threshold.
-
-**Issues:** None open, none escalating.
-
-**Notable:** Hyperstition tracking — 97-day MIROSHARK social silence as of today. 3 days remain until the 100-day milestone on Oct 15.
+HEARTBEAT_OK. All 14 skills healthy (consecutive_failures: 0), no open issues, no stale PRs (PR #70 at 7h and PR #71 at 5h both well under the 72h improve: threshold), and all expected Monday skills ran. No notification sent — this was a re-run with no new findings since the earlier heartbeat today.
 
 ## Summary
-- Read memory, cron-state, last 2 days of logs
-- Verified all enabled skills against today's schedule (Monday, DOM=12)
-- Confirmed no stale PRs, no missing skills, no open issues
-- Logged HEARTBEAT_OK to `memory/logs/2026-10-12.md`
+
+- **Files modified:** `memory/logs/2026-10-12.md` — appended re-run heartbeat entry
+- **Result:** HEARTBEAT_OK — system clean, all skills on schedule, no stale PRs, no open issues
+- **Follow-up:** Hyperstition milestone watch — 97-day social silence; 3 days remaining to reach 100-day mark by Oct 15
