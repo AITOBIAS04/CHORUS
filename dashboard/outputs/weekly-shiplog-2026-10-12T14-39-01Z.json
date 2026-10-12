@@ -1,0 +1,119 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-10-12",
+        "description": "The hardening sprint nobody asked for. No new features — every commit went toward reliability."
+      },
+      "children": [
+        "sep1",
+        "shipped_heading",
+        "shipped_items",
+        "sep2",
+        "stats_heading",
+        "stats_section",
+        "sep3",
+        "full_update"
+      ]
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "shipped_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h2"
+      }
+    },
+    "shipped_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3"
+      ]
+    },
+    "item1": {
+      "type": "Text",
+      "props": {
+        "text": "Three user-filed bugs (#321-#323) fixed in <48 hours — simulation resume, report lookup, and claude-code NER"
+      }
+    },
+    "item2": {
+      "type": "Text",
+      "props": {
+        "text": "Security: cleared all 4 Dependabot alerts including critical shell-quote CVE; patched secret tripwire for new GitHub token format"
+      }
+    },
+    "item3": {
+      "type": "Text",
+      "props": {
+        "text": "CI: added ruff Python linter + harness snapshot to prevent mid-run crashes from upstream syncs"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat1",
+        "stat2",
+        "stat3"
+      ]
+    },
+    "stat1": {
+      "type": "Stat",
+      "props": {
+        "label": "Substantive commits",
+        "value": "18"
+      }
+    },
+    "stat2": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "17"
+      }
+    },
+    "stat3": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+629/-197"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "full_update": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-12.md"
+      }
+    }
+  }
+}

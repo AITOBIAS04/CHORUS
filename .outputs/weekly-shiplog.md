@@ -1,11 +1,11 @@
-*Weekly Shiplog — 2026-10-05*
+*Weekly Shiplog — 2026-10-12*
 
-Seventy-one upstream commits synced. The agent got a front door.
+The hardening sprint nobody asked for. No new features — every commit went toward reliability.
 
 Shipped:
-- Aeon Connect browser onboarding + CLI init command via 71-commit upstream sync (PR #194, +17K lines)
-- README reframed as live Aeon instance pointing to Aeon Connect (PR #193)
-- x402aff ecosystem listing, LLM gateway switched to auto (10 providers), Base MCP added
+- Three user-filed bugs (#321-#323) fixed in <48 hours — simulation resume, report lookup, and claude-code NER
+- Security: cleared all 4 Dependabot alerts including critical shell-quote CVE; patched secret tripwire for new GitHub token format
+- CI: added ruff Python linter + harness snapshot to prevent mid-run crashes from upstream syncs
 
-Stats: ~90 commits, 15 PRs merged, +17,500/-3,200 lines across 240+ files
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-05.md
+Stats: 18 substantive commits, 17 PRs merged, +629/-197 lines (original work)
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-12.md
