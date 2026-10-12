@@ -67,6 +67,7 @@
 - skill-leaderboard was the only enabled skill without a same-day rerun dedup gate after the Aug 2026 wave — scheduler double-dispatch would re-fetch all fork data, re-write the article, and re-send a duplicate notification; fixed with Step 0 dedup gate (self-improve PR #66, 2026-10-04)
 - fetch-tweets log entries during prolonged silence (~13+ consecutive empty runs) listed every dedup URL individually (~15-20 lines/day of unchanged stale URLs); query backoff already reduced API waste but log verbosity wasn't addressed; fixed with compact log format instruction: count-based summaries when consecutive_empty >= 7, full URL logging preserved when tweets are found (self-improve PR #67, 2026-10-06)
 - self-improve Step 0.5 UNKNOWN handler skipped PRs indefinitely — PRs with perpetually UNKNOWN mergeStateStatus (observed: PR #68, 48h+) could never be auto-merged or closed; fixed with age-based fallback: under 72h skip (give GitHub time), over 72h attempt merge anyway (gh pr merge fails safely on conflicts, then falls through to close-if-stale) (self-improve PR #69, 2026-10-10)
+- fetch-tweets silence escalation relied on LLM mental modular arithmetic — at consecutive_empty=21 the LLM incorrectly assessed "21 is not a multiple of 7", missing the 3-week escalation notification; same error class as PR #58 (LLM date math); fixed with explicit bash modulo check `$((CONSEC % 7))` (self-improve PR #71, 2026-10-12)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)
