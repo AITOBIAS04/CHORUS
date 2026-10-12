@@ -1,9 +1,17 @@
-HEARTBEAT_OK. This is a rerun — all findings deduped against the earlier heartbeat that already ran today. PR #68 (79h, stale) was flagged and notified in the first run. All 8 Sunday skills completed. No open issues, no systemic failures.
+HEARTBEAT_OK.
+
+**System health:** All 14 skills at `consecutive_failures: 0` — no issues.
+
+**Today's skill coverage (Monday, DOM=12):** All 9 expected skills ran — token-report, fetch-tweets, repo-pulse, feature, repo-actions, self-improve, weekly-shiplog, push-recap, project-lens. Remaining 4 skills (repo-article, memory-flush, skill-leaderboard, hyperstitions-ideas) not scheduled today.
+
+**PRs:** Two fresh improve: PRs (#70 at 6h, #71 at 4h) — both under the 72h auto-merge threshold.
+
+**Issues:** None open, none escalating.
+
+**Notable:** Hyperstition tracking — 97-day MIROSHARK social silence as of today. 3 days remain until the 100-day milestone on Oct 15.
 
 ## Summary
-
-- **System health:** All skills healthy, `consecutive_failures: 0` across the board
-- **Open issues:** None
-- **PRs:** PR #68 stale (79h) already flagged and notified earlier today — deduped; PR #69 within threshold
-- **Skills:** All expected Sunday skills ran; `*/2` and day-specific skills correctly skipped
-- **Result:** HEARTBEAT_OK (rerun)
+- Read memory, cron-state, last 2 days of logs
+- Verified all enabled skills against today's schedule (Monday, DOM=12)
+- Confirmed no stale PRs, no missing skills, no open issues
+- Logged HEARTBEAT_OK to `memory/logs/2026-10-12.md`
