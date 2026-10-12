@@ -1,7 +1,5 @@
-Today's log already has the feature skip entry recorded from an earlier run. The result is the same — no push access.
-
 ## Summary
 
-- **FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` (GH_GLOBAL secret not set)
-- No feature picked, no repo cloned, no notification sent
-- This is the same result as the earlier run today — the skip was already logged to `memory/logs/2026-10-11.md`
+**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not set, so cross-repo push permissions are unavailable. Logged the skip to `memory/logs/2026-10-12.md`. No feature was picked, no repo was cloned, and no notification was sent, per the skill's pre-flight instructions.
+
+This is the 80th+ consecutive block of the feature skill due to the missing `GH_GLOBAL` secret.
