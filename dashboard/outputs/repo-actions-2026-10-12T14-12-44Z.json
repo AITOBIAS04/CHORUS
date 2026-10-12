@@ -1,0 +1,354 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas",
+        "description": "Generated from analysis of aaronjmars/MiroShark — ideas scoped for autonomous build by the feature skill."
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1_container",
+        "sep1",
+        "item2_container",
+        "sep2",
+        "item3_container",
+        "sep3",
+        "item4_container",
+        "sep4",
+        "item5_container",
+        "sep5",
+        "footer_link"
+      ]
+    },
+    "item1_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_header",
+        "item1_badges",
+        "item1_text"
+      ]
+    },
+    "item1_header": {
+      "type": "Heading",
+      "props": {
+        "text": "1. GitHub Codespaces DevContainer Config",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item1_badge1",
+        "item1_badge2"
+      ]
+    },
+    "item1_badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item1_badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Adds .devcontainer/devcontainer.json with Neo4j service — turns 60-min setup into a 3-min click; directly targets the 304-forks / 0-PRs conversion gap.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item2_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_header",
+        "item2_badges",
+        "item2_text"
+      ]
+    },
+    "item2_header": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Agent Demographic Stance Breakdown",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item2_badge1",
+        "item2_badge2"
+      ]
+    },
+    "item2_badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item2_badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item2_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/subgroups returns final stance split by profession group, age bracket, and platform — turns '73% BULLISH' into 'crypto-native 91% / retail 44%'.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item3_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_header",
+        "item3_badges",
+        "item3_text"
+      ]
+    },
+    "item3_header": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Consensus Convergence Round",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item3_badge1",
+        "item3_badge2"
+      ]
+    },
+    "item3_badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item3_badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Adds convergence_round + consensus_stability to signal.json — the round at which ≥75% of agents first reached consensus, surfacing how contested a topic was throughout the run.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item4_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_header",
+        "item4_badges",
+        "item4_text"
+      ]
+    },
+    "item4_header": {
+      "type": "Heading",
+      "props": {
+        "text": "4. LLM Provider Fallback Chain",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item4_badge1",
+        "item4_badge2"
+      ]
+    },
+    "item4_badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item4_badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item4_text": {
+      "type": "Text",
+      "props": {
+        "text": "PROVIDER_FALLBACK_CHAIN env var routes retry traffic to the next provider on 429/5xx — prevents simulation failures from single-provider outages, natural follow-on to the Oct 10 LLM client hardening.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item5_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_header",
+        "item5_badges",
+        "item5_text"
+      ]
+    },
+    "item5_header": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Post-Simulation Outcome Annotation",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item5_badge1",
+        "item5_badge2"
+      ]
+    },
+    "item5_badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item5_badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "item5_text": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulation/:id/annotations lets users record real-world outcomes after events resolve — closes the prediction/ground-truth feedback loop, no prior batch has touched this.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "footer_link": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-12.md"
+      },
+      "children": []
+    }
+  }
+}

@@ -1,5 +1,19 @@
-The log shows a `## Repo Actions` entry with `Notification sent: yes` already exists for today. Per Step 0 of the skill, I should stop.
+*Repo Action Ideas — 2026-10-12*
+Generated from analysis of aaronjmars/MiroShark — ideas scoped for autonomous build by the feature skill.
 
-**REPO_ACTIONS_RERUN_QUIET: already ran today — skipping rerun.**
+1. GitHub Codespaces DevContainer Config (DX, Small)
+   Adds .devcontainer/devcontainer.json with Neo4j service — turns 60-min setup into a 3-min click; directly targets the 304-forks / 0-PRs conversion gap.
 
-The `repo-actions` skill already executed today (2026-10-10) and sent its notification. The log entry at line 77–87 confirms it analyzed `aaronjmars/MiroShark` and `aaronjmars/miroshark-aeon`, generated 5 ideas (Webhook Delivery Log, Cross-Provider Performance Telemetry, Simulation Input Provenance, CLI Live Progress Stream, Opinion Leader Influence Score), wrote `articles/repo-actions-2026-10-10.md`, and marked `Notification sent: yes`. No duplicate run needed.
+2. Agent Demographic Stance Breakdown (Feature, Medium)
+   GET /api/simulation/:id/subgroups returns final stance split by profession group, age bracket, and platform — turns '73% BULLISH' into 'crypto-native 91% / retail 44%'.
+
+3. Consensus Convergence Round (Feature, Small)
+   Adds convergence_round + consensus_stability to signal.json — the round at which ≥75% of agents first reached consensus, surfacing how contested a topic was throughout the run.
+
+4. LLM Provider Fallback Chain (Integration, Medium)
+   PROVIDER_FALLBACK_CHAIN env var routes retry traffic to the next provider on 429/5xx — prevents simulation failures from single-provider outages, natural follow-on to the Oct 10 LLM client hardening.
+
+5. Post-Simulation Outcome Annotation (Feature, Small)
+   POST /api/simulation/:id/annotations lets users record real-world outcomes after events resolve — closes the prediction/ground-truth feedback loop, no prior batch has touched this.
+
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-12.md
