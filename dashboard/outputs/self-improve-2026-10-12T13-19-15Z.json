@@ -1,0 +1,223 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-10-12"
+      },
+      "children": [
+        "intro",
+        "sep1",
+        "problem_section",
+        "sep2",
+        "merged_section",
+        "sep3",
+        "why_section",
+        "sep4",
+        "changes_section",
+        "sep5",
+        "impact_section",
+        "sep6",
+        "pr"
+      ]
+    },
+    "intro": {
+      "type": "Text",
+      "props": {
+        "text": "Skill-leaderboard now scans all watched repos instead of only the first one listed.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "problem_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "problem_h",
+        "problem_text"
+      ]
+    },
+    "problem_h": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h3"
+      }
+    },
+    "problem_text": {
+      "type": "Text",
+      "props": {
+        "text": "Previously, the skill followed \"use the first watched repo\" from watched-repos.md, which pointed to aaronjmars/MiroShark — a simulation engine whose forks never carry aeon.yml. The agent repo (miroshark-aeon), listed second, was skipped entirely, even though its forks are the actual Aeon instances."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "merged_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "merged_h",
+        "merged_text"
+      ]
+    },
+    "merged_h": {
+      "type": "Heading",
+      "props": {
+        "text": "Merged PRs",
+        "level": "h3"
+      }
+    },
+    "merged_text": {
+      "type": "Text",
+      "props": {
+        "text": "Merged PRs #68 (WebFetch fallback for hyperstitions-ideas) and #69 (age-based UNKNOWN merge fallback) before implementing."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "why_h",
+        "why_text1",
+        "why_text2"
+      ]
+    },
+    "why_h": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text1": {
+      "type": "Text",
+      "props": {
+        "text": "On Oct 11, skill-leaderboard scanned 22 MiroShark forks, found 0 with aeon.yml, and returned INSUFFICIENT_DATA — burning 22 API calls for nothing. On Oct 4, the agent went beyond the literal instruction and scanned both repos, producing the first useful leaderboard in 19 weeks. The root cause was the \"first repo only\" instruction."
+      }
+    },
+    "why_text2": {
+      "type": "Text",
+      "props": {
+        "text": "This confirms that following literal instructions without context leads to alternating useful and useless results."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes_h",
+        "changes_list"
+      ]
+    },
+    "changes_h": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "skills/skill-leaderboard/SKILL.md: Step 1 changed from \"use the first watched repo\" to \"use all repos listed\""
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "Step 2 loops and deduplicates across all repos"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_h",
+        "impact_text"
+      ]
+    },
+    "impact_h": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "The leaderboard will consistently produce useful output by always scanning both project forks and agent-instance forks. No more alternating between useful and empty results depending on whether the agent follows the instruction literally."
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #70: Fix skill-leaderboard to scan all repos",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/70",
+        "source": "GitHub"
+      }
+    }
+  }
+}
