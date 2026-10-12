@@ -22,7 +22,13 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      ```bash
      gh pr view NUMBER --json mergeStateStatus,mergeable,reviewDecision
      ```
-     Use the re-queried values for the merge/close/skip decision below. If still `UNKNOWN` after re-query, log `SELF_IMPROVE_MERGE_UNKNOWN: PR #NUMBER mergeStateStatus still UNKNOWN after re-query — skipping` and move to the next PR.
+     Use the re-queried values for the merge/close/skip decision below. If still `UNKNOWN` after re-query:
+     - If the PR is **older than 72h**, attempt merge anyway — `gh pr merge` will fail safely with an explicit error if there are actual conflicts. Some PRs stay UNKNOWN indefinitely (observed: PR #68 was UNKNOWN for 48h+ and would never have been auto-merged). If the merge attempt fails, fall through to the close-if-stale logic below (the 7-day DIRTY check). Compute PR age with jq (do NOT estimate manually — LLM date math is error-prone):
+       ```bash
+       AGE_H=$(gh pr view NUMBER --json createdAt --jq '((now - (.createdAt | fromdateiso8601)) / 3600 | floor)')
+       ```
+       Log `SELF_IMPROVE_MERGE_UNKNOWN_FORCE: PR #NUMBER still UNKNOWN after ${AGE_H}h — attempting merge`.
+     - If the PR is **under 72h**, log `SELF_IMPROVE_MERGE_UNKNOWN: PR #NUMBER mergeStateStatus still UNKNOWN after re-query — skipping (under 72h, giving GitHub time)` and move to the next PR.
    - **Merge** if `mergeStateStatus` is `CLEAN` or `UNSTABLE` and `reviewDecision` is NOT `CHANGES_REQUESTED`:
      ```bash
      gh pr merge NUMBER --squash --delete-branch
