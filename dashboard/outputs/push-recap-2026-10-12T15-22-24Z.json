@@ -1,0 +1,264 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-12",
+        "description": "MiroShark — 1 commit | miroshark-aeon — 1 substantive + 26 automation filtered"
+      },
+      "children": [
+        "summary-badges",
+        "sep-1",
+        "mcp-section",
+        "sep-2",
+        "biome-section",
+        "sep-3",
+        "haiku-section",
+        "sep-4",
+        "key-changes-section",
+        "sep-5",
+        "stats-section",
+        "sep-6",
+        "full-recap"
+      ]
+    },
+    "summary-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-miroshark",
+        "badge-miroshark-aeon"
+      ]
+    },
+    "badge-miroshark": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark — 1 commit",
+        "variant": "default"
+      }
+    },
+    "badge-miroshark-aeon": {
+      "type": "Badge",
+      "props": {
+        "text": "1 substantive + 26 automation filtered",
+        "variant": "secondary"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "mcp-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "mcp-heading",
+        "mcp-text"
+      ]
+    },
+    "mcp-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Hosted MCP Server",
+        "level": "h2"
+      }
+    },
+    "mcp-text": {
+      "type": "Text",
+      "props": {
+        "text": "The upstream sync lands a remote MCP server at aeon.fun/connect/mcp — OAuth 2.1 with PKCE and GitHub sign-in, ~20 tools for skill management, memory reading, and soul/strategy editing. Any MCP-compatible client (ChatGPT, Claude Desktop, Cursor) can now drive an Aeon agent remotely.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "biome-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "biome-heading",
+        "biome-text"
+      ]
+    },
+    "biome-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Biome Formatting",
+        "level": "h2"
+      }
+    },
+    "biome-text": {
+      "type": "Text",
+      "props": {
+        "text": "New biome.json config standardizes the entire apps/ directory — 120-char lines, consistent quotes, trailing commas. Accounts for most of the 8,300+ added lines. One-time formatting pass for long-term diff cleanliness.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "haiku-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "haiku-heading",
+        "haiku-text"
+      ]
+    },
+    "haiku-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Haiku 5.5 & Plugin Cleanup",
+        "level": "h2"
+      }
+    },
+    "haiku-text": {
+      "type": "Text",
+      "props": {
+        "text": "Haiku tier upgraded from 4.5 to 5.5 across the stack. MiniMax and agent-plugins.org manifests dropped — plugin now ships Claude Code + Codex only.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-changes-heading",
+        "key-changes-list"
+      ]
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h2"
+      }
+    },
+    "key-changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-1",
+        "change-2",
+        "change-3",
+        "change-4"
+      ]
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "apps/mcp-server/src/skill-executor.ts: YAML parser for aeon.yml skill configs with comment stripping (+176/-57)",
+        "variant": "caption"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "apps/dashboard/lib/connect-detect.ts: MCP OAuth connection detection expanded (+159/-49)",
+        "variant": "caption"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "biome.json: New formatter config, linter disabled, scoped quote-style overrides",
+        "variant": "caption"
+      }
+    },
+    "change-4": {
+      "type": "Text",
+      "props": {
+        "text": "ECOSYSTEM.md: Sparkleware URLs fixed to use www prefix",
+        "variant": "caption"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-added",
+        "stat-removed"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "156"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+8,373"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "-3,591"
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-12.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
