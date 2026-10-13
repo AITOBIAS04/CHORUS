@@ -1,0 +1,317 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-13"
+      },
+      "children": [
+        "summary_text",
+        "separator_1",
+        "ci_section",
+        "separator_2",
+        "security_section",
+        "separator_3",
+        "token_section",
+        "separator_4",
+        "key_changes_section",
+        "separator_5",
+        "stats_section",
+        "separator_6",
+        "full_recap_link"
+      ]
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 2 substantive commits + miroshark-aeon — 1 substantive commit (9 automation filtered)",
+        "variant": "lead"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "ci_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ci_heading",
+        "ci_pr_link",
+        "ci_text"
+      ]
+    },
+    "ci_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CI Modernization",
+        "level": "h2"
+      }
+    },
+    "ci_pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #332",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/332"
+      }
+    },
+    "ci_text": {
+      "type": "Text",
+      "props": {
+        "text": "Migrates the entire CI test pipeline from pip to uv and replaces pip-installed ruff with astral-sh/ruff-action standalone binary. Cross-run wheel caching (including torch) should cut cold-start times significantly. --no-config flag ensures uv resolves identically to pip."
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "security_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "security_heading",
+        "security_pr_link",
+        "security_intro",
+        "dependencies_list"
+      ]
+    },
+    "security_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Security & Dependencies",
+        "level": "h2"
+      }
+    },
+    "security_pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #331",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/331"
+      }
+    },
+    "security_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Bundles dependabot bumps"
+      }
+    },
+    "dependencies_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dep_1",
+        "dep_2",
+        "dep_3",
+        "dep_4",
+        "dep_5"
+      ]
+    },
+    "dep_1": {
+      "type": "Text",
+      "props": {
+        "text": "• shell-quote 1.9.0→1.12.0 closes CVE-2026-9277 (critical injection vuln, 214M monthly downloads)"
+      }
+    },
+    "dep_2": {
+      "type": "Text",
+      "props": {
+        "text": "• vue-router 5.4.0"
+      }
+    },
+    "dep_3": {
+      "type": "Text",
+      "props": {
+        "text": "• vite 8.3.4"
+      }
+    },
+    "dep_4": {
+      "type": "Text",
+      "props": {
+        "text": "• rolldown 1.2.13"
+      }
+    },
+    "dep_5": {
+      "type": "Text",
+      "props": {
+        "text": "• magic-string major bump to 1.4.3"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "token_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "token_heading",
+        "token_verdict_text",
+        "token_stat",
+        "token_details"
+      ]
+    },
+    "token_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Token Analytics",
+        "level": "h2"
+      }
+    },
+    "token_verdict_text": {
+      "type": "Text",
+      "props": {
+        "text": "First BREAKDOWN verdict since Aug 18"
+      }
+    },
+    "token_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "$MIROSHARK Price",
+        "value": "-12.1%",
+        "trend": "down"
+      }
+    },
+    "token_details": {
+      "type": "Text",
+      "props": {
+        "text": "On 2.0x average volume, driven by a single $2.84K sell at 14:41 UTC.",
+        "variant": "caption"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key_changes_heading",
+        "changes_list"
+      ]
+    },
+    "key_changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change_1",
+        "change_2",
+        "change_3"
+      ]
+    },
+    "change_1": {
+      "type": "Text",
+      "props": {
+        "text": "• .github/workflows/tests.yml: 3 jobs migrated pip→uv with setup-uv caching, ruff job now zero-Python-setup"
+      }
+    },
+    "change_2": {
+      "type": "Text",
+      "props": {
+        "text": "• package-lock.json: shell-quote 1.12.0 (CVE fix), concurrently 10.0.6"
+      }
+    },
+    "change_3": {
+      "type": "Text",
+      "props": {
+        "text": "• token-report-2026-10-13.md: BREAKDOWN verdict with volume/price analysis"
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "stats_grid"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats_grid": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "files_stat",
+        "additions_stat",
+        "deletions_stat"
+      ]
+    },
+    "files_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "7"
+      }
+    },
+    "additions_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Added",
+        "value": "+286",
+        "trend": "up"
+      }
+    },
+    "deletions_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Deleted",
+        "value": "-139",
+        "trend": "down"
+      }
+    },
+    "separator_6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "full_recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap: articles/push-recap-2026-10-13.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-13.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

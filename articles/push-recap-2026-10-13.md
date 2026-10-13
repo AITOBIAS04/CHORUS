@@ -1,13 +1,25 @@
 # Push Recap — 2026-10-13
 
 ## Overview
-2 substantive commits by 2 authors across both watched repos (9 automation commits filtered). Today's work is a bundled dependency update on MiroShark — headlined by shell-quote jumping from 1.9.0 to 1.12.0 (the critical CVE-2026-9277 fix) alongside vue-router, vite, and build tooling bumps — plus the agent's token-movers skill issuing its first BREAKDOWN verdict since August 18.
+3 substantive commits by 2 authors across both watched repos (9 automation commits filtered). Today's work spans a CI modernization (migrating pip to uv and ruff-action), a bundled dependency update headlined by the shell-quote CVE-2026-9277 fix, and the agent's token-movers skill issuing its first BREAKDOWN verdict since August 18.
 
-**Stats:** 6 files changed, +245/-122 lines across 2 substantive commits
+**Stats:** 7 files changed, +286/-139 lines across 3 substantive commits
 
 ---
 
 ## aaronjmars/MiroShark
+
+### CI Modernization: uv & ruff-action
+**Summary:** PR #332 migrates the entire CI test pipeline from pip to uv for Python dependency installation and replaces the manual ruff install with the official ruff-action GitHub Action. This is a speed and caching overhaul — uv is significantly faster than pip, and ruff-action ships a standalone binary that eliminates the need for a Python setup step entirely.
+
+**Commits:**
+- `6dc5856` — ci: install Python deps with uv, run ruff via ruff-action (#332)
+  - Changed `.github/workflows/tests.yml`: Three jobs modified (+41, -17 lines):
+    - **Unit test job:** Replaced `pip install` with `uv pip install --system --no-config`. Added `astral-sh/setup-uv@v10.3.0` with cross-run wheel caching (prune-cache: false preserves torch wheels, cache-suffix "unit" isolates from other jobs, cache-dependency-glob tracks requirements.txt + pyproject.toml + the workflow file itself)
+    - **Camel integration test job:** Same pip→uv migration. Torch installed first alone from the CPU-only index so later installs see it already satisfied (prevents pulling CUDA wheels from PyPI). `--no-config` flag skips `[tool.uv]` overrides in pyproject.toml so resolution matches the pip behavior it replaces
+    - **Ruff lint job:** Dropped `actions/setup-python` and `pip install ruff==0.15.11` entirely. Replaced with `astral-sh/ruff-action@v4.1.0` pinned to version 0.15.11 — standalone binary download, no Python interpreter needed
+
+**Impact:** CI cold-start times should improve measurably — uv installs are typically 10-100× faster than pip, and the caching configuration means wheels (including the ~2GB torch CPU wheel) persist across runs. The ruff job becomes the leanest: no Python setup, no pip, just a direct binary download and lint. The `--no-config` flag throughout is a deliberate safety choice — it prevents uv's own config (pillow/tiktoken overrides in pyproject.toml) from changing dependency resolution relative to what pip previously installed.
 
 ### Dependency Updates & Security Hardening
 **Summary:** A single bundled PR (#331) rolls up two Dependabot PRs — one for the root monorepo (concurrently) and one for the frontend (marked, vue-router, vite). The transitive dependency tree pulls in significant version jumps across the build toolchain.
@@ -42,11 +54,12 @@
 ## Developer Notes
 - **New dependencies:** None added — all changes are version bumps of existing packages
 - **Breaking changes:** vue-router 5.4.0's transitive dependency ast-walker-scope 0.10.0 now requires Node `^22.18.0 || >=24.11.0` (up from `>=20.19.0`). MiroShark already requires Node >=22.0.0, so no practical impact.
-- **Architecture shifts:** None
-- **Tech debt:** The shell-quote override in root `package.json` (`"shell-quote@<1.11.0": "^1.11.0"`) is now redundant since concurrently 10.0.6 pins shell-quote 1.12.0 directly — could be cleaned up
+- **Architecture shifts:** CI fully migrated from pip to uv for Python dependency management; ruff lint now uses standalone binary action instead of pip-installed package
+- **Tech debt:** The shell-quote override in root `package.json` (`"shell-quote@<1.11.0": "^1.11.0"`) is now redundant since concurrently 10.0.6 pins shell-quote 1.12.0 directly — could be cleaned up. The `[tool.uv]` overrides in `pyproject.toml` are intentionally bypassed by `--no-config` in CI to maintain pip-equivalent resolution — if uv becomes the default installer, these overrides may need revisiting.
 
 ## What's Next
 - The shell-quote override in `package.json` can be removed now that concurrently ships 1.12.0 natively
+- With uv in CI, local dev could also migrate from pip to uv for consistency — but `--no-config` usage suggests the pyproject.toml uv config needs alignment first
 - Self-improve PRs #70 and #71 are still open — should merge in the next cycle
 - Token BREAKDOWN verdict may warrant closer monitoring if the downtrend continues (price down 25% over 7d and 30d)
 - GH_GLOBAL secret still unset — continues to block 40+ built PRs and all new feature work

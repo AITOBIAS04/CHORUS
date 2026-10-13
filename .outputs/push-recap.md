@@ -1,15 +1,16 @@
-*Push Recap — 2026-10-13*
-MiroShark — 1 substantive commit by Aaron Elijah Mars
-miroshark-aeon — 1 substantive commit by aeonframework (9 automation filtered)
+*Push Recap — 2026-10-13 (updated)*
+MiroShark — 2 substantive commits + miroshark-aeon — 1 substantive commit (9 automation filtered)
 
-Dependency Security: Bundled Dependabot PR #331 lands the shell-quote 1.9.0→1.12.0 upgrade inside concurrently — this closes CVE-2026-9277, the critical injection vulnerability affecting 214M monthly npm downloads. Also bumps vue-router to 5.4.0 (pulls @babel/parser v8 and ast-walker-scope v0.10 into the tree), vite to 8.3.4 (with rolldown 1.2.13), and marked to 18.1.0.
+CI Modernization: PR #332 migrates the entire CI test pipeline from pip to uv and replaces pip-installed ruff with astral-sh/ruff-action standalone binary. Cross-run wheel caching (including torch) should cut cold-start times significantly. --no-config flag ensures uv resolves identically to pip.
 
-Token BREAKDOWN Signal: The token-movers skill issued its first BREAKDOWN verdict since August 18. MIROSHARK dropped 12.1% to $0.000002041 on $5.95K volume (2.0× the 7-day average), triggered by a single $2.84K sell. Price now down 25% over both 7d and 30d windows.
+Security & Dependencies: PR #331 bundles dependabot bumps — shell-quote 1.9.0→1.12.0 closes CVE-2026-9277 (critical injection vuln, 214M monthly downloads). vue-router 5.4.0, vite 8.3.4, rolldown 1.2.13, magic-string major bump to 1.4.3.
+
+Token Analytics: First BREAKDOWN verdict since Aug 18 — $MIROSHARK -12.1% on 2.0x average volume, driven by a single $2.84K sell at 14:41 UTC.
 
 Key changes:
-- shell-quote 1.9.0→1.12.0 (CVE-2026-9277 critical fix, via concurrently 10.0.6)
-- vue-router 5.3.1→5.4.0 with transitive @babel v8 upgrade
-- First BREAKDOWN token-movers verdict in ~2 months
+- .github/workflows/tests.yml: 3 jobs migrated pip→uv with setup-uv caching, ruff job now zero-Python-setup
+- package-lock.json: shell-quote 1.12.0 (CVE fix), concurrently 10.0.6
+- token-report-2026-10-13.md: BREAKDOWN verdict with volume/price analysis
 
-Stats: 6 files changed, +245/-122 lines
+Stats: 7 files changed, +286/-139 lines
 Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-13.md
