@@ -1,12 +1,10 @@
-HEARTBEAT_OK
-
-All clear for 2026-10-13:
-
-- **System health**: All 13 enabled skills at `consecutive_failures=0`, no systemic issues
-- **Open PRs**: #70 and #71 both `improve:` prefix at 28–29h — under the 72h auto-merge threshold, no action needed
-- **Open issues**: None
-- **Skills audit**: Every skill scheduled for today (token-report, fetch-tweets, repo-pulse, push-recap, feature, repo-article) ran successfully; all others not scheduled on Tuesdays with DOM=13
+HEARTBEAT_OK — this is a rerun of today's earlier check. All 14 skills healthy, no open issues, two `improve:` PRs (#70, #71) both well under the 72h auto-merge threshold, all expected Tuesday skills ran. 100-day social silence milestone arrives in 2 days (Oct 15).
 
 ## Summary
 
-Ran all heartbeat checks. Everything healthy — no missing skills, no stalled PRs, no open issues. Logged `HEARTBEAT_OK` to `memory/logs/2026-10-13.md`.
+- Read memory, cron-state, soul files, issues index, today's and yesterday's logs
+- Verified: all 14 enabled skills at consecutive_failures=0; no systemic failures
+- Open PRs #70 and #71 both `improve:` prefix at 29–31h (threshold 72h — no action)
+- All scheduled Tuesday skills confirmed run; step-skipped skills correctly not run (DOM=13 odd)
+- No open issues, no escalations
+- Appended rerun entry to `memory/logs/2026-10-13.md`
