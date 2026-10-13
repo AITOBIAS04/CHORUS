@@ -1,0 +1,126 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "$MIROSHARK Daily — 2026-10-13"
+      },
+      "children": [
+        "main-stats-stack",
+        "separator-1",
+        "analysis-text",
+        "separator-2",
+        "chart-link"
+      ]
+    },
+    "main-stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price-stat",
+        "liquidity-volume-grid",
+        "buys-sells-stat",
+        "period-stats-grid"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000002041",
+        "delta": "−12.11%",
+        "trend": "down"
+      }
+    },
+    "liquidity-volume-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "lg"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$2.65M"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$5.9K"
+      }
+    },
+    "buys-sells-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "16/14"
+      }
+    },
+    "period-stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "lg"
+      },
+      "children": [
+        "7d-stat",
+        "30d-stat"
+      ]
+    },
+    "7d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "−27.4%",
+        "trend": "down"
+      }
+    },
+    "30d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "−23.3%",
+        "trend": "down"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "analysis-text": {
+      "type": "Text",
+      "props": {
+        "text": "Sharp sell at 14:00 UTC Oct 12 (−11% in one hour) pulled price to its lowest point in weeks. LP holds at 13× FDV. Social silence reaches 98 days — 100-day milestone on Oct 15.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart-link": {
+      "type": "Link",
+      "props": {
+        "label": "Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
