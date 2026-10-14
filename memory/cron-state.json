@@ -76,8 +76,8 @@
     "last_quality_score": 4
   },
   "fetch-tweets": {
-    "last_dispatch": "2026-10-13T06:41:05Z",
-    "last_status": "success",
+    "last_dispatch": "2026-10-14T06:40:53Z",
+    "last_status": "dispatched",
     "last_failed": "2026-09-22T15:02:22Z",
     "total_runs": 458,
     "total_successes": 112,
