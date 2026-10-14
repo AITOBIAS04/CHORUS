@@ -1,14 +1,14 @@
-*Agent Self-Improvement — 2026-10-12*
+*Agent Self-Improvement — 2026-10-14*
 
-fetch-tweets silence escalation: bash modulo check replaces LLM mental arithmetic
+Reduced DIRTY PR close timeout from 7 days to 72 hours in self-improve Step 0.5.
 
-The fetch-tweets skill sends a "social silence" escalation notification every 7 consecutive empty runs. Today at run #21, the LLM incorrectly evaluated "21 is not a multiple of 7" and skipped the notification. 21 ÷ 7 = 3 — it is a multiple of 7. This is the same class of error as the PR age miscalculation fixed in PR #58.
+In an autonomous repo, DIRTY (conflicting) PRs never self-resolve — no human resolves merge conflicts. The 7-day wait created a dead zone where the PR blocked re-proposal but would never merge. Observed: PR #70 (skill-leaderboard fix) has been DIRTY for 48h+ and would sit until Oct 19 before closure.
 
-Why: On 2026-10-12, consecutive_empty reached 21 (3 full weeks of silence). The escalation notification was skipped because the LLM got the modulo wrong. The operator missed the 3-week silence milestone.
+Why: PR #70 included volatile files (memory/logs/, .outputs/) in its commit, causing immediate merge conflicts. The underlying improvement is valid but the PR is dead on arrival. With the old 7-day timeout, re-proposal was delayed by ~10 days total (7d wait + next self-improve run). With 72h, it closes by Oct 15 and gets re-proposed Oct 16.
 
 What changed:
-- skills/fetch-tweets/SKILL.md: Added explicit bash snippet using $((CONSEC % 7)) for the multiple-of-7 check, with instruction not to evaluate mentally. Includes the observed failure as documentation context.
+- skills/self-improve/SKILL.md: DIRTY PR close threshold 7d → 72h; added jq-based age computation (prevents LLM date math errors); updated UNKNOWN fall-through cross-reference
 
-Impact: Silence escalation notifications will now fire reliably at every 7-run milestone. No more missed escalations from LLM arithmetic errors.
+Impact: Faster cleanup of dead PRs, faster re-proposal of improvements. Aligns the DIRTY threshold with the existing UNKNOWN force-merge threshold (72h), creating consistency across all PR-age decisions in Step 0.5.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/71
+PR: https://github.com/AITOBIAS04/CHORUS/pull/72
