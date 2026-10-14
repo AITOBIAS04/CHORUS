@@ -1,0 +1,157 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-14"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section_miroshark",
+        "separator_1",
+        "section_miroshark_aeon",
+        "separator_2",
+        "stats_section"
+      ]
+    },
+    "section_miroshark": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_miroshark",
+        "text_miroshark_intro",
+        "text_pr_summary",
+        "text_description",
+        "heading_changes",
+        "text_changes_detail",
+        "text_alignment"
+      ]
+    },
+    "heading_miroshark": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark",
+        "level": "h2"
+      }
+    },
+    "text_miroshark_intro": {
+      "type": "Text",
+      "props": {
+        "text": "1 substantive commit by Aaron Elijah Mars (9 automation commits filtered)"
+      }
+    },
+    "text_pr_summary": {
+      "type": "Text",
+      "props": {
+        "text": "Security Reporting Email Fallback: PR #333"
+      }
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "Adds aaron@aeon.fun as an alternative contact for private security disclosures. Reporters who cannot access the GitHub Security Advisory form now have an email fallback — completing the security policy with a second intake channel."
+      }
+    },
+    "heading_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "text_changes_detail": {
+      "type": "Text",
+      "props": {
+        "text": ".github/SECURITY.md: email fallback inserted between advisory instructions and the \"please include\" checklist (+2 lines)"
+      }
+    },
+    "text_alignment": {
+      "type": "Text",
+      "props": {
+        "text": "Aligns with RFC 9116 (security.txt) and the security.txt endpoint feature candidate surfaced today"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_miroshark_aeon": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_miroshark_aeon",
+        "text_miroshark_aeon_content"
+      ]
+    },
+    "heading_miroshark_aeon": {
+      "type": "Heading",
+      "props": {
+        "text": "miroshark-aeon",
+        "level": "h2"
+      }
+    },
+    "text_miroshark_aeon_content": {
+      "type": "Text",
+      "props": {
+        "text": "9 automation commits only (scheduler, cron, auto-commits) — no substantive changes"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_stats",
+        "text_stats",
+        "link_full_recap"
+      ]
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "text_stats": {
+      "type": "Text",
+      "props": {
+        "text": "1 file changed, +2/-0 lines"
+      }
+    },
+    "link_full_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-14.md"
+      }
+    }
+  }
+}

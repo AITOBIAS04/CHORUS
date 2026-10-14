@@ -1,16 +1,13 @@
-*Push Recap — 2026-10-13 (updated)*
-MiroShark — 2 substantive commits + miroshark-aeon — 1 substantive commit (9 automation filtered)
+*Push Recap — 2026-10-14*
+MiroShark — 1 substantive commit by Aaron Elijah Mars (9 automation commits filtered)
 
-CI Modernization: PR #332 migrates the entire CI test pipeline from pip to uv and replaces pip-installed ruff with astral-sh/ruff-action standalone binary. Cross-run wheel caching (including torch) should cut cold-start times significantly. --no-config flag ensures uv resolves identically to pip.
-
-Security & Dependencies: PR #331 bundles dependabot bumps — shell-quote 1.9.0→1.12.0 closes CVE-2026-9277 (critical injection vuln, 214M monthly downloads). vue-router 5.4.0, vite 8.3.4, rolldown 1.2.13, magic-string major bump to 1.4.3.
-
-Token Analytics: First BREAKDOWN verdict since Aug 18 — $MIROSHARK -12.1% on 2.0x average volume, driven by a single $2.84K sell at 14:41 UTC.
+Security Reporting Email Fallback: PR #333 adds aaron@aeon.fun as an alternative contact for private security disclosures. Reporters who cannot access the GitHub Security Advisory form now have an email fallback — completing the security policy with a second intake channel.
 
 Key changes:
-- .github/workflows/tests.yml: 3 jobs migrated pip→uv with setup-uv caching, ruff job now zero-Python-setup
-- package-lock.json: shell-quote 1.12.0 (CVE fix), concurrently 10.0.6
-- token-report-2026-10-13.md: BREAKDOWN verdict with volume/price analysis
+- .github/SECURITY.md: email fallback inserted between advisory instructions and the "please include" checklist (+2 lines)
+- Aligns with RFC 9116 (security.txt) and the security.txt endpoint feature candidate surfaced today
 
-Stats: 7 files changed, +286/-139 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-13.md
+miroshark-aeon: 9 automation commits only (scheduler, cron, auto-commits) — no substantive changes
+
+Stats: 1 file changed, +2/-0 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-14.md
