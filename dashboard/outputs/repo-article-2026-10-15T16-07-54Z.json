@@ -1,0 +1,86 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "article-title",
+        "intro-text",
+        "separator-1",
+        "metrics-section",
+        "separator-2",
+        "read-link"
+      ]
+    },
+    "article-title": {
+      "type": "Heading",
+      "props": {
+        "text": "One Hundred Days of Silence. The Code Never Stopped.",
+        "level": "h2"
+      }
+    },
+    "intro-text": {
+      "type": "Text",
+      "props": {
+        "text": "On July 7 the last $MIROSHARK tweet appeared on X. Today — October 15 — marks 100 consecutive days of total social silence for a token with $2.5M in liquidity. Meanwhile, eight commits shipped this week: security hardening, CI modernization, three user-reported bugs fixed. The autonomous agent that tracks the silence just confirmed its own prediction."
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "metrics-section": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "days-stat",
+        "liquidity-stat",
+        "commits-stat"
+      ]
+    },
+    "days-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Days of Silence",
+        "value": "100"
+      }
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$2.5M"
+      }
+    },
+    "commits-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits This Week",
+        "value": "8"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "read-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-15.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
