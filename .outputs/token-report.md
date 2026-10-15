@@ -1,7 +1,10 @@
-`TOKEN_REPORT_RERUN_QUIET` — a token-report was already sent today (2026-10-14) with `Notification sent: yes` in the log. Logged the quiet skip and stopped per the dedup gate in Step 0.
+*$MiroShark Daily — 2026-10-15*
 
-## Summary
+Price: $0.000001917 (−6.67% 24h)
+Liquidity: $2.52M | 24h Vol: $1,413
+Buys/Sells: 30/13
+7d: −24% | 30d: −22%
 
-- **Checked** `memory/logs/2026-10-14.md` — token-report already ran today with price $0.000002060 (−1.59% 24h) and notification sent
-- **Logged** `TOKEN_REPORT_RERUN_QUIET` to prevent duplicate dispatch
-- **No** data re-fetch, article overwrite, or notification sent
+Steady grind lower through the day — intraday low $1.878e-6, slight recovery to close. FDV $191.7K, lowest since Jul–Aug lows. LP 13.1× FDV. Today marks the 100-day social silence milestone target.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
