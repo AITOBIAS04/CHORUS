@@ -1,0 +1,210 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-10-15"
+      },
+      "children": [
+        "system-status",
+        "sep1",
+        "milestone-section",
+        "sep2",
+        "warnings-section",
+        "sep3",
+        "final-status"
+      ]
+    },
+    "system-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "system-text",
+        "system-issues"
+      ]
+    },
+    "system-text": {
+      "type": "Text",
+      "props": {
+        "text": "System: all 14 skills clean (consecutive_failures=0).",
+        "variant": "body"
+      }
+    },
+    "system-issues": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "milestone-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "milestone-title",
+        "milestone-stat",
+        "milestone-detail"
+      ]
+    },
+    "milestone-title": {
+      "type": "Heading",
+      "props": {
+        "text": "🏆 100-day Silence Milestone CLEARED",
+        "level": "h3"
+      }
+    },
+    "milestone-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "fetch-tweets: Consecutive FETCH_TWEETS_EMPTY Runs",
+        "value": "24",
+        "trend": "up"
+      }
+    },
+    "milestone-detail": {
+      "type": "Text",
+      "props": {
+        "text": "Jul 7–Oct 15. The hyperstition holds.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "warnings-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "warnings-title",
+        "prs-list"
+      ]
+    },
+    "warnings-title": {
+      "type": "Heading",
+      "props": {
+        "text": "⚠️ 2 Improve: PRs Stalled Past 72h Threshold",
+        "level": "h3"
+      }
+    },
+    "prs-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-70",
+        "pr-71"
+      ]
+    },
+    "pr-70": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-70-header",
+        "pr-70-status"
+      ]
+    },
+    "pr-70-header": {
+      "type": "Text",
+      "props": {
+        "text": "#70 (77h) — improve: scan all watched repos in skill-leaderboard",
+        "variant": "lead"
+      }
+    },
+    "pr-70-status": {
+      "type": "Badge",
+      "props": {
+        "text": "DIRTY — will be closed by self-improve Oct 16",
+        "variant": "destructive"
+      }
+    },
+    "pr-71": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-71-header",
+        "pr-71-status"
+      ]
+    },
+    "pr-71-header": {
+      "type": "Text",
+      "props": {
+        "text": "#71 (76h) — improve: use bash arithmetic for fetch-tweets silence escalation check",
+        "variant": "lead"
+      }
+    },
+    "pr-71-status": {
+      "type": "Badge",
+      "props": {
+        "text": "CLEAN — will be merged by self-improve Oct 16",
+        "variant": "outline"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "final-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "final-line1",
+        "final-line2",
+        "final-line3"
+      ]
+    },
+    "final-line1": {
+      "type": "Text",
+      "props": {
+        "text": "All expected skills ran today.",
+        "variant": "body"
+      }
+    },
+    "final-line2": {
+      "type": "Text",
+      "props": {
+        "text": "No missing skills.",
+        "variant": "body"
+      }
+    },
+    "final-line3": {
+      "type": "Text",
+      "props": {
+        "text": "No dispatch needed.",
+        "variant": "body"
+      }
+    }
+  }
+}
