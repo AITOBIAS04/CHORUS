@@ -1,0 +1,185 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-10-16"
+      },
+      "children": [
+        "heading-issue",
+        "text-issue-desc",
+        "sep-1",
+        "heading-cause",
+        "text-cause-detail",
+        "sep-2",
+        "heading-solution",
+        "text-solution-detail",
+        "sep-3",
+        "heading-files",
+        "text-files-detail",
+        "sep-4",
+        "heading-prstatus",
+        "text-pr-intro",
+        "text-pr73-item",
+        "text-pr71-item",
+        "text-pr70-item",
+        "text-pr72-item",
+        "sep-5",
+        "heading-impact",
+        "alert-impact",
+        "sep-6",
+        "storylink-pr73"
+      ]
+    },
+    "heading-issue": {
+      "type": "Heading",
+      "props": {
+        "text": "Issue Fixed",
+        "level": "h2"
+      }
+    },
+    "text-issue-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Fixed repo-pulse duplicate notifications on scheduler double-dispatch. The rerun dedup gate only compared star/fork counts, but counts change between runs as new stars arrive — causing two notifications per day for the same metric."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-cause": {
+      "type": "Heading",
+      "props": {
+        "text": "Root Cause",
+        "level": "h2"
+      }
+    },
+    "text-cause-detail": {
+      "type": "Text",
+      "props": {
+        "text": "Observed Oct 14 and Oct 16 — both days sent two repo-pulse notifications because stars incremented by +1 between the two scheduler dispatches. Other skills (token-report, push-recap) already check \"Notification sent: yes\" and skip reruns correctly."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-solution": {
+      "type": "Heading",
+      "props": {
+        "text": "Solution",
+        "level": "h2"
+      }
+    },
+    "text-solution-detail": {
+      "type": "Text",
+      "props": {
+        "text": "Replaced count-comparison dedup with notification-sent check. Reruns now check for prior \"Notification sent: yes\" and skip re-notification. Updated counts are still logged for next-day delta computation."
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-files": {
+      "type": "Heading",
+      "props": {
+        "text": "Files Modified",
+        "level": "h2"
+      }
+    },
+    "text-files-detail": {
+      "type": "Text",
+      "props": {
+        "text": "skills/repo-pulse/SKILL.md: Replaced count-comparison dedup with notification-sent check."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-prstatus": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Request Status",
+        "level": "h2"
+      }
+    },
+    "text-pr-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Merge Results:"
+      }
+    },
+    "text-pr73-item": {
+      "type": "Text",
+      "props": {
+        "text": "PR #73: Merged"
+      }
+    },
+    "text-pr71-item": {
+      "type": "Text",
+      "props": {
+        "text": "PR #71: Merged (bash arithmetic for fetch-tweets silence escalation)"
+      }
+    },
+    "text-pr70-item": {
+      "type": "Text",
+      "props": {
+        "text": "PR #70: Skipped (DIRTY, under 7-day threshold)"
+      }
+    },
+    "text-pr72-item": {
+      "type": "Text",
+      "props": {
+        "text": "PR #72: Skipped (UNKNOWN, under 72h)"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h2"
+      }
+    },
+    "alert-impact": {
+      "type": "Alert",
+      "props": {
+        "message": "Eliminates ~50% of daily repo-pulse notification noise from double-dispatch.",
+        "type": "success"
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink-pr73": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #73",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/73",
+        "source": "GitHub"
+      }
+    }
+  }
+}
