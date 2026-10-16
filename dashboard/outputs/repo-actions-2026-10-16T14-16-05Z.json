@@ -1,0 +1,288 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-10-16"
+      },
+      "children": [
+        "header-info",
+        "sep1",
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5",
+        "sep2",
+        "more-link"
+      ]
+    },
+    "header-info": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,473 stars · 304 forks · 0 open issues) — ideas ready for the feature skill to build."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1-heading",
+        "idea1-badges",
+        "idea1-desc"
+      ]
+    },
+    "idea1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. /api/health Deep-Check Endpoint",
+        "level": "h3"
+      }
+    },
+    "idea1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1-badge1",
+        "idea1-badge2"
+      ]
+    },
+    "idea1-badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "DX"
+      }
+    },
+    "idea1-badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Structured JSON health probe for all dependencies — Neo4j, LLM provider, disk — enabling load-balancer checks and uptime monitoring for self-hosted deployments."
+      }
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea2-heading",
+        "idea2-badges",
+        "idea2-desc"
+      ]
+    },
+    "idea2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Simulation Tagging System",
+        "level": "h3"
+      }
+    },
+    "idea2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2-badge1",
+        "idea2-badge2"
+      ]
+    },
+    "idea2-badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea2-badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Up to 5 custom tags per simulation at creation time, with tag-filter search and clickable chips in the gallery — turns a flat list into an organized library."
+      }
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea3-heading",
+        "idea3-badges",
+        "idea3-desc"
+      ]
+    },
+    "idea3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation Cost Breakdown Receipt",
+        "level": "h3"
+      }
+    },
+    "idea3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3-badge1",
+        "idea3-badge2"
+      ]
+    },
+    "idea3-badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea3-badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      }
+    },
+    "idea3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Itemized cost ledger by phase (ontology, agents, rounds, report) with a collapsible receipt panel — builds trust in the $1 claim and lets users optimize spend."
+      }
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea4-heading",
+        "idea4-badges",
+        "idea4-desc"
+      ]
+    },
+    "idea4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Multi-Scenario Batch Runner",
+        "level": "h3"
+      }
+    },
+    "idea4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4-badge1",
+        "idea4-badge2"
+      ]
+    },
+    "idea4-badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea4-badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      }
+    },
+    "idea4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "CLI command that runs N scenarios sequentially and emits a summary CSV/JSON — accelerates A/B research workflows without manual one-by-one execution."
+      }
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea5-heading",
+        "idea5-badges",
+        "idea5-desc"
+      ]
+    },
+    "idea5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Python SDK on PyPI",
+        "level": "h3"
+      }
+    },
+    "idea5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5-badge1",
+        "idea5-badge2"
+      ]
+    },
+    "idea5-badge1": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration"
+      }
+    },
+    "idea5-badge2": {
+      "type": "Badge",
+      "props": {
+        "text": "Large"
+      }
+    },
+    "idea5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "pip install miroshark wrapping the public REST API with sync/async interfaces — unlocks the data science community and pairs with the existing HuggingFace dataset."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "more-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-16.md"
+      }
+    }
+  }
+}

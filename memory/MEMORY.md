@@ -83,6 +83,7 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (80th+ consecutive block as of Aug 23; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-10-16): /api/health Deep-Check Endpoint (#1), Simulation Tagging System (#2), Simulation Cost Breakdown Receipt (#3), Multi-Scenario Batch Runner (#4), Python SDK on PyPI (#5)
 - Feature candidates (repo-actions 2026-10-14): Cross-Simulation Topic Trend Feed (#1), Confidence Std-Dev Bands (#2), security.txt Endpoint (#3), Simulation Author Attribution (#4), Topic Subscription Webhooks (#5)
 - Feature candidates (repo-actions 2026-10-12): GitHub Codespaces DevContainer Config (#1), Agent Demographic Stance Breakdown (#2), Consensus Convergence Round (#3), LLM Provider Fallback Chain (#4), Post-Simulation Outcome Annotation (#5)
 - Feature candidates (repo-actions 2026-10-10): Webhook Delivery Log (#1), Cross-Provider Performance Telemetry (#2), Simulation Input Provenance (#3), CLI Live Progress Stream (#4), Opinion Leader Influence Score (#5)

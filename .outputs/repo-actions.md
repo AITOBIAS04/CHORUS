@@ -1,12 +1,19 @@
-**Step 0 check:** A `## repo-actions` entry already exists in today's log (2026-10-14) with `Notification sent: yes` and no `${var}` is set.
+*Repo Action Ideas — 2026-10-16*
+Generated from analysis of aaronjmars/MiroShark (1,473 stars · 304 forks · 0 open issues) — ideas ready for the feature skill to build.
 
-```
-REPO_ACTIONS_RERUN_QUIET: already ran today — skipping rerun
-```
+1. /api/health Deep-Check Endpoint (DX, Small)
+   Structured JSON health probe for all dependencies — Neo4j, LLM provider, disk — enabling load-balancer checks and uptime monitoring for self-hosted deployments.
 
-Repo-actions already executed today with a full notification sent. The dedup gate prevents a duplicate run. No further action needed.
+2. Simulation Tagging System (Feature, Small)
+   Up to 5 custom tags per simulation at creation time, with tag-filter search and clickable chips in the gallery — turns a flat list into an organized library.
 
-## Summary
+3. Simulation Cost Breakdown Receipt (Feature, Small)
+   Itemized cost ledger by phase (ontology, agents, rounds, report) with a collapsible receipt panel — builds trust in the $1 claim and lets users optimize spend.
 
-- Read `memory/logs/2026-10-14.md` and found an existing `## repo-actions` entry with `Notification sent: yes`.
-- Dedup gate triggered: `REPO_ACTIONS_RERUN_QUIET` — skipping to prevent duplicate idea generation and notification.
+4. Multi-Scenario Batch Runner (Feature, Medium)
+   CLI command that runs N scenarios sequentially and emits a summary CSV/JSON — accelerates A/B research workflows without manual one-by-one execution.
+
+5. Python SDK on PyPI (Integration, Large)
+   pip install miroshark wrapping the public REST API with sync/async interfaces — unlocks the data science community and pairs with the existing HuggingFace dataset.
+
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-16.md
