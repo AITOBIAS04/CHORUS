@@ -1,0 +1,114 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "alert_recovery",
+        "separator_1",
+        "stack_stats",
+        "separator_2",
+        "stack_details"
+      ]
+    },
+    "alert_recovery": {
+      "type": "Alert",
+      "props": {
+        "title": "RECOVERY",
+        "message": "ISS-004 resolved. All 13 affected skills back online.",
+        "type": "success"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_skills",
+        "stat_duration"
+      ]
+    },
+    "stat_skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Affected Skills Back Online",
+        "value": "13"
+      }
+    },
+    "stat_duration": {
+      "type": "Stat",
+      "props": {
+        "label": "Outage Duration",
+        "value": "~30 min"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_timeline",
+        "text_cause",
+        "text_security",
+        "story_pr",
+        "text_issues"
+      ]
+    },
+    "text_timeline": {
+      "type": "Text",
+      "props": {
+        "text": "Timeline: 13:56 failure batch → 14:15 recovery",
+        "variant": "body"
+      }
+    },
+    "text_cause": {
+      "type": "Text",
+      "props": {
+        "text": "Resolution: Self-resolved",
+        "variant": "body"
+      }
+    },
+    "text_security": {
+      "type": "Text",
+      "props": {
+        "text": "Security: No credential rotation needed",
+        "variant": "body"
+      }
+    },
+    "story_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #74: improve retry logic for sequential merges",
+        "href": "https://github.com/CHORUS/CHORUS/pull/74",
+        "source": "4h old, not stale"
+      }
+    },
+    "text_issues": {
+      "type": "Text",
+      "props": {
+        "text": "Open issues: none",
+        "variant": "body"
+      }
+    }
+  }
+}
