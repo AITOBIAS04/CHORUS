@@ -1,7 +1,14 @@
-Dedup gate triggered. The skill-leaderboard already ran today (log entry at line 67–74 shows a full run with `Notification sent: no`). Logged `SKILL_LEADERBOARD_RERUN_QUIET` and stopped — no API calls made, no duplicate notification sent.
+*Skill Leaderboard — 2026-10-19*
 
-## Summary
+Top skills across 2 active Aeon forks:
+1. fetch-tweets — 2 forks (100%)
+2. heartbeat — 2 forks (100%)
+3. memory-flush — 2 forks (100%)
+4. repo-pulse — 2 forks (100%)
+5. aeon-update — 1 fork (50%)
 
-- **Step 0 dedup gate fired**: `memory/logs/2026-10-11.md` already contained a `## Skill Leaderboard` entry with `Notification sent:` from an earlier run today.
-- **Action taken**: Appended `SKILL_LEADERBOARD_RERUN_QUIET` log entry to today's log and stopped.
-- **No files created**, no API calls made, no notifications sent — consistent with the dedup gate's purpose of avoiding redundant O(N) fork scans.
+Consensus: fetch-tweets, heartbeat, memory-flush, repo-pulse
+Adoption gaps: none (all source skills appear in at least one fork)
+Week-over-week: fleet stable — identical rankings to Oct 4 (22 MiroShark forks scanned, 0 with aeon.yml; 2 Aeon forks, both unchanged in skill config)
+
+Full leaderboard: articles/skill-leaderboard-2026-10-19.md

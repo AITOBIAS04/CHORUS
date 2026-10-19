@@ -1,0 +1,180 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Skill Leaderboard — 2026-10-19"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-top",
+        "table-skills",
+        "sep-1",
+        "consensus-section",
+        "sep-2",
+        "adoption-section",
+        "sep-3",
+        "wow-section",
+        "link-full"
+      ]
+    },
+    "heading-top": {
+      "type": "Heading",
+      "props": {
+        "text": "Top skills across 2 active Aeon forks",
+        "level": "h2"
+      }
+    },
+    "table-skills": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Rank",
+          "Skill",
+          "Forks",
+          "Adoption"
+        ],
+        "rows": [
+          [
+            "1",
+            "fetch-tweets",
+            "2",
+            "100%"
+          ],
+          [
+            "2",
+            "heartbeat",
+            "2",
+            "100%"
+          ],
+          [
+            "3",
+            "memory-flush",
+            "2",
+            "100%"
+          ],
+          [
+            "4",
+            "repo-pulse",
+            "2",
+            "100%"
+          ],
+          [
+            "5",
+            "aeon-update",
+            "1",
+            "50%"
+          ]
+        ]
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "consensus-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "consensus-label",
+        "consensus-text"
+      ]
+    },
+    "consensus-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Consensus",
+        "level": "h3"
+      }
+    },
+    "consensus-text": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets, heartbeat, memory-flush, repo-pulse"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "adoption-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "adoption-label",
+        "adoption-text"
+      ]
+    },
+    "adoption-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Adoption gaps",
+        "level": "h3"
+      }
+    },
+    "adoption-text": {
+      "type": "Text",
+      "props": {
+        "text": "none (all source skills appear in at least one fork)"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "wow-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "wow-label",
+        "wow-text"
+      ]
+    },
+    "wow-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Week-over-week",
+        "level": "h3"
+      }
+    },
+    "wow-text": {
+      "type": "Text",
+      "props": {
+        "text": "fleet stable — identical rankings to Oct 4 (22 MiroShark forks scanned, 0 with aeon.yml; 2 Aeon forks, both unchanged in skill config)"
+      }
+    },
+    "link-full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full leaderboard",
+        "href": "articles/skill-leaderboard-2026-10-19.md"
+      }
+    }
+  }
+}
