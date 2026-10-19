@@ -1,0 +1,195 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "self-improve",
+        "description": "Agent Self-Improvement — 2026-10-19"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_main",
+        "text_main",
+        "sep1",
+        "why_heading",
+        "why_text",
+        "sep2",
+        "what_heading",
+        "what_text",
+        "sep3",
+        "impact_heading",
+        "impact_text",
+        "sep4",
+        "prs_section"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Sequential PR Merge Retry Logic Added",
+        "level": "h2"
+      }
+    },
+    "text_main": {
+      "type": "Text",
+      "props": {
+        "text": "Sequential PR merge retry logic added to self-improve Step 0.5. When merging multiple CLEAN PRs in a batch, the second merge now retries automatically after the expected 'Base branch was modified' error, instead of silently deferring to the next run."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "Observed today — PR #73 failed immediately after PR #72 was merged because the base branch changed. This happens every time 2+ PRs are queued. Without retry, the second PR waited 2 more days unnecessarily."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "what_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "what_text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Added retry-on-failure instruction — wait 5s and retry once on 'Base branch was modified' error; log and move on if retry also fails"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Improvements land in the same run instead of being deferred 2 days. Reduces the merge backlog that builds up when multiple PRs are ready simultaneously."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "merged_heading",
+        "merged_list",
+        "closed_heading",
+        "closed_list",
+        "pr_link"
+      ]
+    },
+    "merged_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also Merged",
+        "level": "h3"
+      }
+    },
+    "merged_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_72",
+        "pr_73"
+      ]
+    },
+    "pr_72": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #72",
+        "source": "DIRTY PR 72h timeout",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/72"
+      }
+    },
+    "pr_73": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #73",
+        "source": "repo-pulse dedup fix",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/73"
+      }
+    },
+    "closed_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Closed",
+        "level": "h3"
+      }
+    },
+    "closed_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_70"
+      ]
+    },
+    "pr_70": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #70",
+        "source": "conflicts, 168h old",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/70"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #74 — Self-Improve Retry Logic",
+        "source": "github.com/AITOBIAS04/CHORUS",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/74"
+      }
+    }
+  }
+}
