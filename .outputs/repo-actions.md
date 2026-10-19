@@ -1,19 +1,19 @@
-*Repo Action Ideas — 2026-10-16*
-Generated from analysis of aaronjmars/MiroShark (1,473 stars · 304 forks · 0 open issues) — ideas ready for the feature skill to build.
+*Repo Action Ideas — 2026-10-19*
+Generated from analysis of aaronjmars/MiroShark (1,477 stars · 306 forks) — these are ideas that could be autonomously built by the feature skill tomorrow.
 
-1. /api/health Deep-Check Endpoint (DX, Small)
-   Structured JSON health probe for all dependencies — Neo4j, LLM provider, disk — enabling load-balancer checks and uptime monitoring for self-hosted deployments.
+1. OpenGraph Social Preview for Simulation Share URLs (Growth, Small)
+   Add OG meta tags + a server-rendered SVG to simulation permalinks so Twitter/LinkedIn shares generate rich preview cards — free distribution every time a result is shared.
 
-2. Simulation Tagging System (Feature, Small)
-   Up to 5 custom tags per simulation at creation time, with tag-filter search and clickable chips in the gallery — turns a flat list into an organized library.
+2. Wonderwall Broadcast Discovery Feed (Feature, Medium)
+   Build on the recent PR #335 Wonderwall wiring with a /api/broadcast/feed endpoint + gallery tab, turning broadcast from a silent push signal into a pull-based simulation discovery mechanism.
 
-3. Simulation Cost Breakdown Receipt (Feature, Small)
-   Itemized cost ledger by phase (ontology, agents, rounds, report) with a collapsible receipt panel — builds trust in the $1 claim and lets users optimize spend.
+3. Simulation Trajectory CSV Export (Feature, Small)
+   One-click "Download CSV" button exporting per-agent, per-round belief time series — removes the friction blocking data scientists and researchers from using MiroShark in academic work.
 
-4. Multi-Scenario Batch Runner (Feature, Medium)
-   CLI command that runs N scenarios sequentially and emits a summary CSV/JSON — accelerates A/B research workflows without manual one-by-one execution.
+4. Community Examples Directory (Community/DX, Small)
+   Add examples/ with 5–7 pre-configured scenario JSONs (crypto, election, climate, etc.) plus a README to give 306 forks a zero-friction first run without having to configure agents from scratch.
 
-5. Python SDK on PyPI (Integration, Large)
-   pip install miroshark wrapping the public REST API with sync/async interfaces — unlocks the data science community and pairs with the existing HuggingFace dataset.
+5. OpenRouter Attribution Header CI Lint Guard (DX/Security, Small)
+   Enforce the PR #337 shared-constant refactor with a grep-based CI check that fails if any new LLM call site in llm/ or wonderwall/ omits the attribution header import.
 
-Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-16.md
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-19.md
