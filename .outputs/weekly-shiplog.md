@@ -1,11 +1,11 @@
-*Weekly Shiplog — 2026-10-12*
+*Weekly Shiplog — 2026-10-19*
 
-The hardening sprint nobody asked for. No new features — every commit went toward reliability.
+Both repos got eyes. Coordinated observability upgrades landed across MiroShark and miroshark-aeon — Langfuse tracing for the agent pipeline, OpenRouter Broadcast for simulation LLM calls, Blacksmith bare-metal CI runners.
 
 Shipped:
-- Three user-filed bugs (#321-#323) fixed in <48 hours — simulation resume, report lookup, and claude-code NER
-- Security: cleared all 4 Dependabot alerts including critical shell-quote CVE; patched secret tripwire for new GitHub token format
-- CI: added ruff Python linter + harness snapshot to prevent mid-run crashes from upstream syncs
+- Dual-layer observability — Langfuse agent tracing (PRs #205-207, #212) + OpenRouter Broadcast simulation traces (#335, #337)
+- CI on bare metal — Blacksmith runners (#334, #211), uv + ruff-action (#332), job consolidation (#336)
+- Infrastructure hardening — 42-commit upstream sync (#216), Git auth fix (#217), repo org move (#210), security contact (#333), shell-quote CVE fix (#331)
 
-Stats: 18 substantive commits, 17 PRs merged, +629/-197 lines (original work)
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-12.md
+Stats: ~19 commits, 18 PRs merged, +4,900/-1,000 lines
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-19.md

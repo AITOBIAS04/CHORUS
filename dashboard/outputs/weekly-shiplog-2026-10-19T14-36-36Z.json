@@ -1,0 +1,146 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-10-19"
+      },
+      "children": [
+        "text_overview",
+        "sep_1",
+        "heading_shipped",
+        "stack_shipped",
+        "sep_2",
+        "heading_stats",
+        "stack_stats",
+        "sep_3",
+        "link_full"
+      ]
+    },
+    "text_overview": {
+      "type": "Text",
+      "props": {
+        "text": "Both repos got eyes. Coordinated observability upgrades landed across MiroShark and miroshark-aeon — Langfuse tracing for the agent pipeline, OpenRouter Broadcast for simulation LLM calls, Blacksmith bare-metal CI runners.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_shipped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item_observability",
+        "item_ci",
+        "item_hardening"
+      ]
+    },
+    "item_observability": {
+      "type": "Text",
+      "props": {
+        "text": "Dual-layer observability — Langfuse agent tracing (PRs #205-207, #212) + OpenRouter Broadcast simulation traces (#335, #337)"
+      },
+      "children": []
+    },
+    "item_ci": {
+      "type": "Text",
+      "props": {
+        "text": "CI on bare metal — Blacksmith runners (#334, #211), uv + ruff-action (#332), job consolidation (#336)"
+      },
+      "children": []
+    },
+    "item_hardening": {
+      "type": "Text",
+      "props": {
+        "text": "Infrastructure hardening — 42-commit upstream sync (#216), Git auth fix (#217), repo org move (#210), security contact (#333), shell-quote CVE fix (#331)"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_commits",
+        "stat_prs",
+        "stat_lines"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "~19"
+      },
+      "children": []
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "18"
+      },
+      "children": []
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+4,900 / -1,000"
+      },
+      "children": []
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-19.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
