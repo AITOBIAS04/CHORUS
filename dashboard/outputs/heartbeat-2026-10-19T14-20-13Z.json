@@ -1,0 +1,128 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat: Systemic Failures Detected",
+        "description": "ISS-004 filed — multiple skill failures detected"
+      },
+      "children": [
+        "alert-critical",
+        "sep1",
+        "metrics-stack",
+        "sep2",
+        "diagnosis-stack",
+        "sep3",
+        "action-items-stack"
+      ]
+    },
+    "alert-critical": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "ISS-004 Filed: Systemic Skill Failures",
+        "message": "12/14 skills failing with identical is_error: true in Claude Code session output. All failed today at 13:56 UTC."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "metrics-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-failures",
+        "text-outage"
+      ]
+    },
+    "stat-failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Failing",
+        "value": "12 of 14",
+        "trend": "down"
+      }
+    },
+    "text-outage": {
+      "type": "Text",
+      "props": {
+        "text": "Last bulk successes Oct 15–16 (~3-day outage)",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "diagnosis-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-root-cause",
+        "badge-heartbeat",
+        "alert-dispatch"
+      ]
+    },
+    "alert-root-cause": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Root Cause Pattern Match",
+        "message": "Matches ISS-003 (ANTHROPIC_API_KEY expiry) — check repo secrets"
+      }
+    },
+    "badge-heartbeat": {
+      "type": "Badge",
+      "props": {
+        "text": "Heartbeat succeeded this run",
+        "variant": "secondary"
+      }
+    },
+    "alert-dispatch": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Dispatch Unavailable",
+        "message": "Actions: read only"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action-items-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-stale"
+      ]
+    },
+    "pr-stale": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #73: improve: repo-pulse dedup fix",
+        "href": "https://github.com/CHORUS/CHORUS/pull/73",
+        "source": "GitHub",
+        "score": "73h stale — self-improve failing, manual merge needed"
+      }
+    }
+  }
+}

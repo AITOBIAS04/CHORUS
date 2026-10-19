@@ -2,7 +2,9 @@
 
 ## Open Issues
 
-None.
+| ID | Title | Severity | Status | Detected | Affected Skills |
+|----|-------|----------|--------|----------|-----------------|
+| [ISS-004](ISS-004.md) | Systemic skill failures — 12/14 skills failing with is_error: true | high | open | 2026-10-19 | token-report, fetch-tweets, repo-pulse, push-recap, feature, repo-actions, repo-article, self-improve, heartbeat, memory-flush, hyperstitions-ideas, skill-leaderboard, project-lens |
 
 ## Resolved Issues
 
