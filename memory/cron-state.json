@@ -33,7 +33,7 @@
     "success_rate": 0.16,
     "last_failed": "2026-10-16T21:29:16Z",
     "last_error": "subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":",
-    "last_dispatch": "2026-10-16T21:29:02Z",
+    "last_dispatch": "2026-10-19T16:23:44Z",
     "last_quality_score": 4
   },
   "repo-actions": {
