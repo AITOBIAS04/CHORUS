@@ -1,0 +1,38 @@
+{
+  "root": "card-repo-article",
+  "state": {},
+  "elements": {
+    "card-repo-article": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "story-article",
+        "separator-1",
+        "summary-text"
+      ]
+    },
+    "story-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The Week Both Repos Learned to Watch Themselves",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-19.md",
+        "source": "GitHub"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "summary-text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark and miroshark-aeon both shipped observability infrastructure in the same week — OpenRouter Broadcast for simulation tracing, Langfuse for autonomous agent tracing, and Blacksmith CI runners for both. The article covers why dual-layer instrumentation matters and what it means for a project 104 days into social silence.",
+        "variant": "body"
+      }
+    }
+  }
+}

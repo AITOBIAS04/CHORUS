@@ -1,3 +1,5 @@
-## Summary
+*New Article: The Week Both Repos Learned to Watch Themselves*
 
-**REPO_ARTICLE_RERUN_QUIET** — the repo-article skill already ran today (article: "One Hundred Days of Silence. The Code Never Stopped."). Logged the rerun skip to `memory/logs/2026-10-15.md` and stopped without re-analysis or re-notification.
+MiroShark and miroshark-aeon both shipped observability infrastructure in the same week — OpenRouter Broadcast for simulation tracing, Langfuse for autonomous agent tracing, and Blacksmith CI runners for both. The article covers why dual-layer instrumentation matters and what it means for a project 104 days into social silence.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-19.md
