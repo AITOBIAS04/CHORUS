@@ -49,7 +49,10 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
    ```
    Keep only forks where `created_at` >= `$CUTOFF`.
 
-5. **Skip re-run if already reported today** — If `memory/logs/${today}.md` already contains a `## Repo Pulse` entry, compare the current star and fork counts with those in the existing entry. If the counts are identical (no change since the earlier run), log `REPO_PULSE_RERUN_QUIET: counts unchanged since earlier report` to `memory/logs/${today}.md` and **stop here — do NOT re-send the notification**.
+5. **Skip re-run if already notified today** — If `memory/logs/${today}.md` already contains a `## Repo Pulse` entry:
+   - If that entry contains `Notification sent: yes` — a notification was already delivered today. Log `REPO_PULSE_RERUN_QUIET: notification already sent today — logging updated counts` with the current `stargazers_count` and `forks_count` to `memory/logs/${today}.md`, then **stop here**. Do NOT re-send the notification even if counts changed since the earlier run. (Scheduler double-dispatch reliably produces +1 star between runs, causing duplicate notifications — observed Oct 14, Oct 16.)
+   - If that entry contains `Notification sent: no` (or `REPO_PULSE_QUIET`) — the earlier run found no activity and did not notify. Continue to Step 6 to evaluate whether this run should notify.
+   - If no prior `## Repo Pulse` entry exists — first run today, continue normally.
 
 6. **Determine if there's activity to report.** Check BOTH:
    - **New stargazers from step 3**: any with `starred_at` >= the 24h cutoff, OR positive net star change (403 fallback)
