@@ -65,12 +65,12 @@
   "token-report": {
     "last_dispatch": "2026-10-17T07:42:06Z",
     "last_status": "failed",
-    "last_failed": "2026-10-19T11:03:38Z",
-    "total_runs": 625,
+    "last_failed": "2026-10-19T11:22:01Z",
+    "total_runs": 626,
     "total_successes": 147,
-    "total_failures": 478,
-    "consecutive_failures": 138,
-    "success_rate": 0.24,
+    "total_failures": 479,
+    "consecutive_failures": 139,
+    "success_rate": 0.23,
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
     "last_success": "2026-10-16T07:49:43Z",
     "last_quality_score": 4
