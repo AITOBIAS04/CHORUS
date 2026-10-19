@@ -78,3 +78,7 @@
 - MEMORY.md grew to 142 lines (~3x target of ~50) because memory-flush only rotated three tables (Skills Built, Articles, Digests) — Feature Candidates (20+ entries) and expired Active Targets (7 "NOT CLEARED" entries) grew without bound; fixed by adding rotation rules: keep 5 most recent Feature Candidates + remove expired hyperstitions >14 days past deadline (self-improve PR #43, 2026-07-28)
 - Lessons Learned section grew to 37 entries (largest MEMORY.md section) because memory-flush had no rotation rule for it — most entries describe fixes already coded into skill logic; fixed with 15-entry cap + archive to memory/topics/lessons-archive.md (self-improve PR #44, 2026-07-30)
 - Same-day rerun dedup wave (Aug 2026): 7 skills lacked dedup gates — token-report, hyperstitions-ideas, repo-actions, self-improve, project-lens, fetch-tweets, weekly-shiplog; scheduler double-dispatch caused duplicate articles, notifications, and PRs; fixed with Step 0 dedup gates across PRs #45–#52 (2026-08-02 to 2026-08-12); all 14 enabled skills now protected (individuals archived to lessons-archive.md 2026-08-16)
+
+## Archived 2026-10-19
+
+- Lessons Learned consolidation rule: when 3+ entries share the same underlying fix pattern, merge into one summary entry and archive individuals to memory/topics/lessons-archive.md; prevents a single improvement wave from consuming all 15 slots (self-improve PR #53, 2026-08-14)
