@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-10-17T09:32:03Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-19T14:15:38Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-15T20:40:32Z",
     "total_runs": 976,
     "total_successes": 200,
@@ -12,8 +12,8 @@
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num"
   },
   "memory-flush": {
-    "last_dispatch": "2026-10-14T19:41:12Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-19T14:15:38Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-14T19:42:34Z",
     "total_runs": 498,
     "total_successes": 54,
@@ -37,7 +37,7 @@
     "last_quality_score": 4
   },
   "repo-actions": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-10-16T14:16:56Z",
     "total_runs": 773,
     "total_successes": 86,
@@ -46,11 +46,11 @@
     "success_rate": 0.11,
     "last_failed": "2026-10-19T13:56:26Z",
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
-    "last_dispatch": "2026-10-17T09:32:03Z",
+    "last_dispatch": "2026-10-19T14:15:38Z",
     "last_quality_score": 4
   },
   "push-recap": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_success": "2026-10-15T16:52:46Z",
     "total_runs": 865,
     "total_successes": 181,
@@ -59,12 +59,12 @@
     "success_rate": 0.21,
     "last_failed": "2026-10-19T13:56:23Z",
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
-    "last_dispatch": "2026-10-16T20:22:11Z",
+    "last_dispatch": "2026-10-19T14:15:38Z",
     "last_quality_score": 3
   },
   "token-report": {
-    "last_dispatch": "2026-10-17T07:42:06Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-19T14:15:38Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-19T13:56:12Z",
     "total_runs": 636,
     "total_successes": 147,
@@ -76,8 +76,8 @@
     "last_quality_score": 4
   },
   "fetch-tweets": {
-    "last_dispatch": "2026-10-17T09:32:03Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-19T14:15:38Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-19T13:56:21Z",
     "total_runs": 721,
     "total_successes": 115,
@@ -89,8 +89,8 @@
     "last_quality_score": 4
   },
   "repo-pulse": {
-    "last_dispatch": "2026-10-16T11:43:33Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-19T14:15:38Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-19T13:56:19Z",
     "total_runs": 877,
     "total_successes": 173,
@@ -102,8 +102,8 @@
     "last_quality_score": 4
   },
   "feature": {
-    "last_dispatch": "2026-10-16T12:51:22Z",
-    "last_status": "failed",
+    "last_dispatch": "2026-10-19T14:15:38Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-19T13:56:44Z",
     "total_runs": 880,
     "total_successes": 156,
@@ -115,7 +115,7 @@
     "last_quality_score": 2
   },
   "self-improve": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_failed": "2026-10-19T13:56:36Z",
     "total_runs": 704,
     "total_successes": 86,
@@ -123,12 +123,12 @@
     "consecutive_failures": 133,
     "success_rate": 0.12,
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
-    "last_dispatch": "2026-10-16T14:31:01Z",
+    "last_dispatch": "2026-10-19T14:15:38Z",
     "last_success": "2026-10-16T14:31:49Z",
     "last_quality_score": 4
   },
   "repo-article": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_failed": "2026-10-19T13:56:30Z",
     "total_runs": 764,
     "total_successes": 87,
@@ -136,12 +136,12 @@
     "consecutive_failures": 232,
     "success_rate": 0.11,
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
-    "last_dispatch": "2026-10-15T17:41:19Z",
+    "last_dispatch": "2026-10-19T14:15:38Z",
     "last_success": "2026-10-15T17:42:18Z",
     "last_quality_score": 3
   },
   "hyperstitions-ideas": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_failed": "2026-10-19T13:56:40Z",
     "total_runs": 609,
     "total_successes": 30,
@@ -149,11 +149,11 @@
     "consecutive_failures": 273,
     "success_rate": 0.05,
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
-    "last_dispatch": "2026-10-10T11:52:13Z",
+    "last_dispatch": "2026-10-19T14:15:38Z",
     "last_success": "2026-10-10T11:53:29Z"
   },
   "skill-leaderboard": {
-    "last_status": "failed",
+    "last_status": "dispatched",
     "last_failed": "2026-10-19T13:56:56Z",
     "total_runs": 459,
     "total_successes": 31,
@@ -161,7 +161,7 @@
     "consecutive_failures": 89,
     "success_rate": 0.07,
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
-    "last_dispatch": "2026-10-11T18:55:06Z",
+    "last_dispatch": "2026-10-19T14:15:38Z",
     "last_success": "2026-10-11T18:55:51Z",
     "last_quality_score": 4
   },
