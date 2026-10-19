@@ -33,6 +33,11 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      ```bash
      gh pr merge NUMBER --squash --delete-branch
      ```
+     **Retry on base-branch update:** When merging multiple PRs in sequence, the second merge often fails with `Base branch was modified. Review and try the merge again.` because the prior merge just changed `main`. If this error occurs, wait 5 seconds and retry the same merge command once:
+     ```bash
+     sleep 5 && gh pr merge NUMBER --squash --delete-branch
+     ```
+     If the retry also fails, log the error and move to the next PR (the PR will be retried on the next scheduled run).
    - **Close with comment** if `mergeStateStatus` is `DIRTY` (conflicts) and the PR is older than 72 hours. In an autonomous repo, DIRTY PRs never self-resolve — no human resolves merge conflicts — so waiting longer just delays re-proposal. Compute age with jq (do NOT estimate manually):
      ```bash
      AGE_H=$(gh pr view NUMBER --json createdAt --jq '((now - (.createdAt | fromdateiso8601)) / 3600 | floor)')
