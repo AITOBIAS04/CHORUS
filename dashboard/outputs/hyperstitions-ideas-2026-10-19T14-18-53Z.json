@@ -1,0 +1,170 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "hyperstitions-ideas",
+        "description": "2026-10-19"
+      },
+      "children": [
+        "heading",
+        "coordination-play",
+        "sep1",
+        "why-now",
+        "sep2",
+        "resolution",
+        "sep3",
+        "scores-stack",
+        "footer"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark receive a pull request from an external contributor (not the creator or the autonomous agent) by December 31, 2026?",
+        "level": "h2"
+      }
+    },
+    "coordination-play": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "cp-label",
+        "cp-text"
+      ]
+    },
+    "cp-label": {
+      "type": "Heading",
+      "props": {
+        "text": "The coordination play",
+        "level": "h3"
+      }
+    },
+    "cp-text": {
+      "type": "Text",
+      "props": {
+        "text": "304 people forked this repo. Zero opened a pull request. The autonomous agent has filed 73 self-improvement PRs and built 40+ features solo. The latest repo-actions skill just listed 5 new feature ideas — health endpoint, simulation tagging, cost breakdown, batch runner, Python SDK — sitting there unclaimed. The market turns \"304 forks, 0 PRs\" from a curiosity into a dare. Someone reading this thinks: I could be the first."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why-now": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "wn-label",
+        "wn-text"
+      ]
+    },
+    "wn-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h3"
+      }
+    },
+    "wn-text": {
+      "type": "Text",
+      "props": {
+        "text": "The 100-day silence milestone cleared on Oct 15, proving the project can sustain radical non-engagement on marketing. But code contribution is a different kind of silence. 304 forks and zero human PRs against 73 agent-authored ones is the next structural anomaly. Five fresh feature ideas dropped Oct 16 with nobody to build them."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "res-label",
+        "res-text"
+      ]
+    },
+    "res-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "res-text": {
+      "type": "Text",
+      "props": {
+        "text": "A pull request from a GitHub user other than @aaronjmars or the miroshark-aeon bot, opened and merged into aaronjmars/MiroShark by December 31, 2026 23:59 UTC. Must contain substantive code or documentation changes (not a typo fix or empty commit)."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "scores-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "score-reflexivity",
+        "score-viral"
+      ]
+    },
+    "score-reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      }
+    },
+    "score-viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "footer-text",
+        "hyperstitions-link"
+      ]
+    },
+    "footer-text": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on"
+      }
+    },
+    "hyperstitions-link": {
+      "type": "Link",
+      "props": {
+        "label": "https://www.hyperstitions.com/",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}
