@@ -23,7 +23,7 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      gh pr view NUMBER --json mergeStateStatus,mergeable,reviewDecision
      ```
      Use the re-queried values for the merge/close/skip decision below. If still `UNKNOWN` after re-query:
-     - If the PR is **older than 72h**, attempt merge anyway — `gh pr merge` will fail safely with an explicit error if there are actual conflicts. Some PRs stay UNKNOWN indefinitely (observed: PR #68 was UNKNOWN for 48h+ and would never have been auto-merged). If the merge attempt fails, fall through to the close-if-stale logic below (the 7-day DIRTY check). Compute PR age with jq (do NOT estimate manually — LLM date math is error-prone):
+     - If the PR is **older than 72h**, attempt merge anyway — `gh pr merge` will fail safely with an explicit error if there are actual conflicts. Some PRs stay UNKNOWN indefinitely (observed: PR #68 was UNKNOWN for 48h+ and would never have been auto-merged). If the merge attempt fails, fall through to the close-if-stale logic below (the 72h DIRTY check). Compute PR age with jq (do NOT estimate manually — LLM date math is error-prone):
        ```bash
        AGE_H=$(gh pr view NUMBER --json createdAt --jq '((now - (.createdAt | fromdateiso8601)) / 3600 | floor)')
        ```
@@ -33,9 +33,13 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      ```bash
      gh pr merge NUMBER --squash --delete-branch
      ```
-   - **Close with comment** if `mergeStateStatus` is `DIRTY` (conflicts) and the PR is older than 7 days — it's stale and superseded:
+   - **Close with comment** if `mergeStateStatus` is `DIRTY` (conflicts) and the PR is older than 72 hours. In an autonomous repo, DIRTY PRs never self-resolve — no human resolves merge conflicts — so waiting longer just delays re-proposal. Compute age with jq (do NOT estimate manually):
      ```bash
-     gh pr close NUMBER --comment "Closing: conflicts with main after newer improvements landed. The fix may be re-proposed in a future self-improve run."
+     AGE_H=$(gh pr view NUMBER --json createdAt --jq '((now - (.createdAt | fromdateiso8601)) / 3600 | floor)')
+     ```
+     If `AGE_H >= 72`, close it:
+     ```bash
+     gh pr close NUMBER --comment "Closing: conflicts with main after newer improvements landed (${AGE_H}h old). The fix may be re-proposed in a future self-improve run."
      ```
    - **Skip** if the PR has review comments requesting changes — a human has weighed in, leave it for them.
 
