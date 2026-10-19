@@ -1,0 +1,113 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens",
+        "description": "New Article: The Twenty-Six Billion Dollar Assumption That Developers Need to Be Told"
+      },
+      "children": [
+        "heading-article",
+        "separator-1",
+        "stack-stats",
+        "separator-2",
+        "text-argument",
+        "separator-3",
+        "link-article"
+      ]
+    },
+    "heading-article": {
+      "type": "Heading",
+      "props": {
+        "text": "The Twenty-Six Billion Dollar Assumption That Developers Need to Be Told",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stack-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-market",
+        "stat-budget",
+        "stat-miroshark-silence",
+        "stat-miroshark-growth"
+      ]
+    },
+    "stat-market": {
+      "type": "Stat",
+      "props": {
+        "label": "Developer tools market raised",
+        "value": "$26.8B"
+      },
+      "children": []
+    },
+    "stat-budget": {
+      "type": "Stat",
+      "props": {
+        "label": "Marketing teams growing budgets in 2026",
+        "value": "62%"
+      },
+      "children": []
+    },
+    "stat-miroshark-silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Days since MiroShark posted on social media",
+        "value": "104"
+      },
+      "children": []
+    },
+    "stat-miroshark-growth": {
+      "type": "Stat",
+      "props": {
+        "label": "Average stars gained per day (MiroShark)",
+        "value": "~1 per day"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text-argument": {
+      "type": "Text",
+      "props": {
+        "text": "This article argues that developer marketing exists to fill the silence between code updates, and when maintenance is autonomous and continuous, that silence never arrives. The commit history becomes the content calendar.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The Twenty-Six Billion Dollar Assumption That Developers Need to Be Told",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-10-19.md",
+        "source": "project-lens"
+      },
+      "children": []
+    }
+  }
+}
