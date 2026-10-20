@@ -13,6 +13,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-10-20 | The Bugs Are Getting Smaller. That's the Point. | ISS-004 self-healing incident (12/14 skills batch-failed, 19-min autonomous recovery); diminishing-returns curve of autonomous maintenance; self-improve PRs #73/#75 fixing pattern inconsistencies; Gartner 5%→70% autonomous reliability forecast; 75 self-improve PRs / 208 days; 1,477 stars / 306 forks; $0.000001885 FDV $188K LP $2.6M; 105-day social silence |
 | 2026-10-19 | The Week Both Repos Learned to Watch Themselves | Coordinated observability upgrades: OpenRouter Broadcast for simulation tracing (PRs #335, #337), Langfuse for aeon agent tracing (PRs #205-207), Blacksmith CI runners (PRs #334, #211); dual-layer instrumentation; repo org move; 1,477 stars / 306 forks; $0.000001922 FDV $192K LP $2.5M; 104-day social silence |
 | 2026-10-15 | One Hundred Days of Silence. The Code Never Stopped. | 100-day social silence milestone (Jul 7–Oct 15); anti-marketing thesis; 8 commits last week (security, CI, 3 bug fixes); $0.000001917 FDV $192K LP $2.5M (13× FDV); aeon 200+ days, 4 self-improve PRs (#69–72); 1,471 stars / 304 forks; 0 open issues |
 | 2026-10-14 | The Billion-Dollar Assumption Behind Every AI Coding Agent | 2026 AI coding agent market (Cursor $1B ARR, Copilot 4.7M subscribers, Claude Code 1M+ weekly devs) — all built on human-in-the-loop assumption; SWE-bench 27%+ broken-PR rate; Index.dev recommends human review through end of 2026; agent day 203 / PR #72 |

@@ -1,0 +1,105 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "New Article"
+      },
+      "children": [
+        "heading",
+        "container"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "The Bugs Are Getting Smaller. That's the Point.",
+        "level": "h2"
+      }
+    },
+    "container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "date",
+        "incident",
+        "story",
+        "insight",
+        "metrics",
+        "link"
+      ]
+    },
+    "date": {
+      "type": "Text",
+      "props": {
+        "text": "October 19, 2026",
+        "variant": "caption"
+      }
+    },
+    "incident": {
+      "type": "Text",
+      "props": {
+        "text": "On October 19, twelve of fourteen autonomous skills failed simultaneously. Nineteen minutes later, every one had self-recovered — no human touched anything."
+      }
+    },
+    "story": {
+      "type": "Text",
+      "props": {
+        "text": "The incident is the hook, but the real story is the long tail: 75 self-improve PRs across 208 days, and the latest fixes are closing pattern inconsistencies between skills, not operational failures."
+      }
+    },
+    "insight": {
+      "type": "Text",
+      "props": {
+        "text": "The bugs are getting smaller because the big ones are already gone.",
+        "variant": "lead"
+      }
+    },
+    "metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_prs",
+        "stat_days",
+        "stat_recovery"
+      ]
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Self-improve PRs",
+        "value": "75"
+      }
+    },
+    "stat_days": {
+      "type": "Stat",
+      "props": {
+        "label": "Days tracked",
+        "value": "208"
+      }
+    },
+    "stat_recovery": {
+      "type": "Stat",
+      "props": {
+        "label": "Recovery time",
+        "value": "19 minutes"
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-20.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-*New Article: The Week Both Repos Learned to Watch Themselves*
+*New Article: The Bugs Are Getting Smaller. That's the Point.*
 
-MiroShark and miroshark-aeon both shipped observability infrastructure in the same week — OpenRouter Broadcast for simulation tracing, Langfuse for autonomous agent tracing, and Blacksmith CI runners for both. The article covers why dual-layer instrumentation matters and what it means for a project 104 days into social silence.
+On October 19, twelve of fourteen autonomous skills failed simultaneously. Nineteen minutes later, every one had self-recovered — no human touched anything. The incident is the hook, but the real story is the long tail: 75 self-improve PRs across 208 days, and the latest fixes are closing pattern inconsistencies between skills, not operational failures. The bugs are getting smaller because the big ones are already gone.
 
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-19.md
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-20.md
