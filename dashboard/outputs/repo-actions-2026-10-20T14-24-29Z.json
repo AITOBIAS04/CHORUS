@@ -1,0 +1,340 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-10-20",
+        "description": "Generated from analysis of aaronjmars/MiroShark — ideas that could be autonomously built by the feature skill tomorrow."
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea_1",
+        "sep_1",
+        "idea_2",
+        "sep_2",
+        "idea_3",
+        "sep_3",
+        "idea_4",
+        "sep_4",
+        "idea_5",
+        "sep_5",
+        "link_full_details"
+      ]
+    },
+    "idea_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_1_heading",
+        "idea_1_badges",
+        "idea_1_text"
+      ]
+    },
+    "idea_1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Observability Live Trace Panel",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea_1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1_feature",
+        "badge_1_medium"
+      ]
+    },
+    "badge_1_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      },
+      "children": []
+    },
+    "badge_1_medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium"
+      },
+      "children": []
+    },
+    "idea_1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Subscribe to the live SSE event stream inside Step3Simulation.vue so users can watch agent posts, LLM calls, and cost increments in real time — the observability API is already built, this is the UI cap."
+      },
+      "children": []
+    },
+    "idea_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_2_heading",
+        "idea_2_badges",
+        "idea_2_text"
+      ]
+    },
+    "idea_2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation A/B Compare Endpoint",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea_2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2_feature",
+        "badge_2_small"
+      ]
+    },
+    "badge_2_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      },
+      "children": []
+    },
+    "badge_2_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "idea_2_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/compare?a={id1}&b={id2} returns structured diffs (stance delta, confidence delta, rounds-to-consensus delta, top-3 divergent agents) across two runs of the same topic."
+      },
+      "children": []
+    },
+    "idea_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_3_heading",
+        "idea_3_badges",
+        "idea_3_text"
+      ]
+    },
+    "idea_3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Polymarket Context Lookup",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea_3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3_integration",
+        "badge_3_small"
+      ]
+    },
+    "badge_3_integration": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration"
+      },
+      "children": []
+    },
+    "badge_3_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "idea_3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Surface polymarket_service.py as GET /api/simulation/:id/polymarket, returning the top 3 matching Polymarket prediction markets alongside the swarm outcome so users can cross-reference real-money prices."
+      },
+      "children": []
+    },
+    "idea_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_4_heading",
+        "idea_4_badges",
+        "idea_4_text"
+      ]
+    },
+    "idea_4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Bio Card API",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea_4_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4_feature",
+        "badge_4_small"
+      ]
+    },
+    "badge_4_feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      },
+      "children": []
+    },
+    "badge_4_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "idea_4_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/agents/:agent_name/bio returns a structured character sheet — demographic, stance arc, influence score, top mentions, signature phrase — making agents feel like characters instead of data points."
+      },
+      "children": []
+    },
+    "idea_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea_5_heading",
+        "idea_5_badges",
+        "idea_5_text"
+      ]
+    },
+    "idea_5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Embed Widget",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea_5_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5_growth",
+        "badge_5_small"
+      ]
+    },
+    "badge_5_growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth"
+      },
+      "children": []
+    },
+    "badge_5_small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small"
+      },
+      "children": []
+    },
+    "idea_5_text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/ecosystem/embed.js returns a <2KB self-contained JS snippet that partners paste into any page to show a live latest-simulation card, turning ECOSYSTEM.md relationships into active distribution channels."
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_full_details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-20.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
