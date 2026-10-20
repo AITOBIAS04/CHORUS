@@ -1,0 +1,189 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-20"
+      },
+      "children": [
+        "repo_header",
+        "sep1",
+        "dep_section",
+        "sep2",
+        "automation_section",
+        "sep3",
+        "changes_section",
+        "sep4",
+        "stats_section"
+      ]
+    },
+    "repo_header": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 1 substantive commit by dependabot[bot]",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "dep_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dep_heading",
+        "dep_text1",
+        "dep_link",
+        "dep_text2"
+      ]
+    },
+    "dep_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Maintenance",
+        "level": "h3"
+      }
+    },
+    "dep_text1": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot merged a grouped patch bump of 4 frontend packages. All semver-patch updates:"
+      }
+    },
+    "dep_link": {
+      "type": "Link",
+      "props": {
+        "label": "PR #338",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/338"
+      }
+    },
+    "dep_text2": {
+      "type": "Text",
+      "props": {
+        "text": "dompurify 3.4.16→3.4.17 (XSS sanitizer), marked 18.1.0→18.1.1 (Markdown parser), vue 3.5.43→3.5.44, and @vitejs/plugin-vue 6.0.9→6.0.10. The Vite plugin update also widens its Vue peer dep to include ^3.6.0-rc.10, signaling forward compatibility with the upcoming Vue 3.6 RC."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "automation_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "automation_heading",
+        "automation_text"
+      ]
+    },
+    "automation_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "miroshark-aeon Automation",
+        "level": "h3"
+      }
+    },
+    "automation_text": {
+      "type": "Text",
+      "props": {
+        "text": "8 automation commits filtered (cron state updates for skill failures and scheduler state)."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "changes_list"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "dompurify patch keeps XSS sanitizer current — security hygiene"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "Vue 3.5.44 + full @vue/* sub-package lockstep update"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "@vitejs/plugin-vue now forward-compatible with Vue 3.6 RC"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_lines",
+        "link_full"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "2"
+      }
+    },
+    "stat_lines": {
+      "type": "Text",
+      "props": {
+        "text": "Lines: +79 / -79"
+      }
+    },
+    "link_full": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-20.md"
+      }
+    }
+  }
+}
