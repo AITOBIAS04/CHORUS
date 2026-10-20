@@ -1,7 +1,9 @@
-HEARTBEAT_OK. All systems nominal — no stalled PRs, no missing skills, no open issues. The earlier ISS-004 transient outage was already resolved and logged.
+**HEARTBEAT_OK**
 
-## Summary
+All systems nominal for 2026-10-20 (Tuesday, DOM=20):
 
-- **Checked:** cron-state (all `consecutive_failures: 0`), open PRs (PR #74 at 6h, well under 72h threshold), issues index (empty), today's skill coverage
-- **Result:** Everything clean — no action needed
-- **Logged:** HEARTBEAT_OK entry appended to `memory/logs/2026-10-19.md`
+- **System health:** All 14 skills at `consecutive_failures: 0`. No open issues (ISS-004 resolved yesterday).
+- **Open PRs:** #74 (28h) and #75 (5h) — both `improve:` PRs, well under the 72h threshold. No stalled PRs.
+- **Skills run today:** token-report ✓, fetch-tweets ✓, repo-pulse ✓, feature ✓, self-improve ✓, repo-actions ✓, push-recap ✓, repo-article ✓, heartbeat (now) ✓
+- **Skipped (schedule mismatch):** project-lens (Mon/Wed/Fri), weekly-shiplog (Mon), hyperstitions-ideas (Sat), memory-flush (Sun/Wed), skill-leaderboard (Sun)
+- **No notification sent** — nothing needs operator attention.
