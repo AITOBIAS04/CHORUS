@@ -1,0 +1,118 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-10-20",
+        "description": "Feature skill rerun dedup gate added"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_overview",
+        "separator_1",
+        "heading_why",
+        "text_why_body",
+        "separator_2",
+        "heading_changed",
+        "text_changed_body",
+        "separator_3",
+        "heading_impact",
+        "text_impact_body",
+        "separator_4",
+        "link_pr"
+      ]
+    },
+    "text_overview": {
+      "type": "Text",
+      "props": {
+        "text": "The feature skill was the last enabled skill without a same-day rerun dedup gate. Scheduler double-dispatch ran it twice daily — each rerun wasted a full Claude Opus session on an identical FEATURE_SKIP outcome. Today's logs showed both runs producing identical output.",
+        "variant": "lead"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text_why_body": {
+      "type": "Text",
+      "props": {
+        "text": "Observed in today's logs — ## feature and ## feature (rerun) entries with identical FEATURE_SKIP output. The Aug 2026 dedup wave (PRs #45–#66) added gates to every other enabled skill but missed the feature skill.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text_changed_body": {
+      "type": "Text",
+      "props": {
+        "text": "skills/feature/SKILL.md: Added Step 0 same-day rerun dedup gate — checks if a ## feature entry already exists in today's log before proceeding. Skips rerun when var is empty. Matches the exact pattern used by token-report, repo-pulse, repo-actions, and all other enabled skills.",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text_impact_body": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates one wasted Claude Opus session per day on double-dispatch days. Completes the rerun dedup coverage across all 14 enabled skills — no gaps remain.",
+        "variant": "body"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #75: Feature skill rerun dedup gate",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/75",
+        "source": "GitHub"
+      }
+    }
+  }
+}
