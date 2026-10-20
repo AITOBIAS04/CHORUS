@@ -1,10 +1,6 @@
-*MiroShark Daily — 2026-10-20*
+**TOKEN_REPORT_RERUN_QUIET** — today's token-report was already sent (entry in `memory/logs/2026-10-20.md` shows `Notification sent: yes`). Skipped re-fetch, article rewrite, and re-notification per Step 0 dedup gate.
 
-Price: $0.000001885 (+3.61% 24h)
-Liquidity: $2.65M | 24h Vol: $4,799
-Buys/Sells: 20/24
-7d: −9.0% | 30d: −32.4%
-
-Recovery from intraday lows after a $1,762 buy reversed sell-cluster pressure; 105-day social silence intact, price ~13% above ATL.
-
-Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
+## Summary
+- **Detected:** same-day rerun — `memory/logs/2026-10-20.md` already contains a completed token-report with `Notification sent: yes`
+- **Action:** logged `TOKEN_REPORT_RERUN_QUIET` to today's log and stopped — no data fetched, no article overwritten, no duplicate notification sent
+- **Files modified:** `memory/logs/2026-10-20.md`
