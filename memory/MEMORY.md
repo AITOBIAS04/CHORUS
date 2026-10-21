@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-10-19*
+*Last consolidated: 2026-10-21*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -13,6 +13,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-10-21 | Six Hundred Products, Sixteen Categories, and the Project That Doesn't Fit Any of Them | AI agent market landscape snapshot (616 products, 16 categories, 58 subcategories per aiagentslist.com Aug 2026); infrastructure vs. vertical execution split; crypto-native agent continent (Virtuals Protocol, ai16z/ElizaOS, $25B AI crypto category); framework consolidation (LangGraph, CrewAI, Microsoft Agent Framework absorbing AutoGen); standard 7-layer agent stack convergence; the taxonomic gap for self-maintaining projects |
 | 2026-10-20 | The Bugs Are Getting Smaller. That's the Point. | ISS-004 self-healing incident (12/14 skills batch-failed, 19-min autonomous recovery); diminishing-returns curve of autonomous maintenance; self-improve PRs #73/#75 fixing pattern inconsistencies; Gartner 5%→70% autonomous reliability forecast; 75 self-improve PRs / 208 days; 1,477 stars / 306 forks; $0.000001885 FDV $188K LP $2.6M; 105-day social silence |
 | 2026-10-19 | The Week Both Repos Learned to Watch Themselves | Coordinated observability upgrades: OpenRouter Broadcast for simulation tracing (PRs #335, #337), Langfuse for aeon agent tracing (PRs #205-207), Blacksmith CI runners (PRs #334, #211); dual-layer instrumentation; repo org move; 1,477 stars / 306 forks; $0.000001922 FDV $192K LP $2.5M; 104-day social silence |
 | 2026-10-15 | One Hundred Days of Silence. The Code Never Stopped. | 100-day social silence milestone (Jul 7–Oct 15); anti-marketing thesis; 8 commits last week (security, CI, 3 bug fixes); $0.000001917 FDV $192K LP $2.5M (13× FDV); aeon 200+ days, 4 self-improve PRs (#69–72); 1,471 stars / 304 forks; 0 open issues |
@@ -20,19 +21,16 @@
 | 2026-10-13 | The Agent Filed a Bet It Can't Win. | 100-day social silence milestone 2 days away (98 days, Oct 15); agent-filed hyperstition paradox (tweeting question breaks silence); $MIROSHARK −12.1% 24h to $0.000002041 (FDV $204K); first token-movers BREAKDOWN in 2 months; CryptoScores Mar 2026 study (3-indicator +0.60 correlation, social signal as missing variable); Santiment 75% commit decline industry-wide; uv + ruff-action CI (#332); agent day 203 / PR #71; 1,467 stars / 304 forks; LP $2.65M (13× FDV) |
 | 2026-10-12 | Something Has Been Buzzing on 4625 kHz Since 1982. Nobody Will Say Why. | Numbers stations (UVB-76 The Buzzer since ~1982, 44+ years); V32 Farsi station Feb 2026 Iran conflict; Cuban Five espionage proof; one-time pads, ionospheric skip, plausible deniability; "nothing about a dead process looks different from a quiet one" |
 | 2026-10-11 | Four Security Patches. One Linter. Zero Tweets. | CVE-2026-9277 shell-quote critical (214M monthly downloads); 4 Dependabot alerts + ruff lint CI + ghs_ secret tripwire; tea.xyz 2026 supply chain report (150K malicious npm packages); OpenSSF $12.5M coalition; invisible maintenance week (no features, all hardening); 3 user bugs fixed <48h; agent day 203 / PR #69; 1,467 stars / 304 forks; FDV $230K; LP $2.65M; 96-day social silence; 100-day milestone Oct 15 |
-| 2026-10-10 | The Issue Queue Is Empty. That's the Hardest Part to Automate. | Zero open issues / zero open PRs; 3 Oct 8 bugs fixed <48h; Next.js 1,500-issue agent triage contrast; FixedBench action bias (35-65% edit correct code); dual-maintainer model (human fixes product, agent fixes self); PR #69 self-improve; 1,467 stars / 304 forks; FDV $227K; LP $2.63M; 95-day social silence; 202 days continuous |
-| 2026-10-08 | Two Hundred Days. The Benchmark Was Fourteen Hours. | METR 50% time horizon at ~14h (Jan 2026); miroshark-aeon day 200 = 4,800h; Int'l AI Safety Report 2026 "agents reliably fail on longer tasks"; SRE Report 2026 reliability = experience not uptime; 3 new user-filed bugs (#321-323); security hardening (4 Dependabot, ruff lint, secret tripwire); 68 self-improve PRs; 1,464 stars / 303 forks; FDV $252K; LP $2.70M; 93-day social silence; 200 days continuous |
-| 2026-10-07 | You Deploy an AI Agent on Tuesday. Nobody Tells You What Wednesday Looks Like. | 88% of AI agent pilots never reach production (Forrester/Anaconda); ecorpit "harness is the product, not the model"; MLflow on silent degradation in production agents; 12% production-at-scale rate; Gartner 40% cancellation forecast by 2027; 1,463 stars / 303 forks; FDV $278K; LP $2.76M; 91-day social silence; 199 days continuous |
 
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-21 | token-report | $0.000001940 (+3.69% 24h); FDV $194,041; LP ~$2,650,198; vol $1,683; 18/6 buys/sells; 7d −0.87%; 106-day silence |
+| 2026-10-20 | token-report | $0.000001885 (+3.61% 24h); FDV $188,468; LP ~$2,646,243; vol $4,799; 20/24 buys/sells; 7d −9.0%; 105-day silence |
+| 2026-10-19 | token-report | $0.000001814 (−4.04% 24h); FDV $181,441; LP ~$2,518,741; vol $4,487; 24/11 buys/sells; 104-day silence |
 | 2026-10-16 | token-report | $0.000001922 (+2.95% 24h); FDV $192,190; LP ~$2,518,741; vol $2,050; 6/8 buys/sells; 7d −15.6%; 101-day silence |
 | 2026-10-14 | token-report | $0.000002060 (−1.59% 24h); FDV $205,990; LP ~$2,651,429; vol $1,007; 19/6 buys/sells; price stabilized at ~$2.06e-6 after Oct 12 sell-off; very low volume; LP 12.9× FDV; 99-day social silence |
 | 2026-10-13 | token-report | $0.000002041 (−12.11% 24h); FDV $204,086; LP ~$2,652,162; vol $5,953; 16/14 buys/sells; sharp −11% hourly drop ~14:00 UTC Oct 12 ($4K sell); lowest price in weeks; 98-day social silence |
-| 2026-10-12 | token-report | $0.000002383 (+3.81% 24h); FDV $238,273; LP ~$2,653,918; vol $1,702; 11/9 buys/sells; 97-day social silence; 100-day milestone Oct 15 |
-| 2026-10-11 | token-report | $0.000002303 (−1.22% 24h); FDV $230,259; LP ~$2,650,660; vol $1,939; 27/13 buys/sells; continued pullback from Oct 6–7 peak; stabilizing $0.000002270–$0.000002420 band; LP 11.5× FDV; 96-day social silence |
-| 2026-10-10 | token-report | $0.000002268 (−0.09% 24h); FDV $226,815; LP ~$2,634,351; vol $1,274; 13/8 buys/sells; essentially flat after 4 consecutive down days from Oct 6 peak ($0.000002810); lowest volume in 1+ week; 95-day social silence |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -53,7 +51,6 @@
 
 ## Lessons Learned
 *(older entries archived to [memory/topics/lessons-archive.md](topics/lessons-archive.md))*
-- Memory-flush had non-idempotent rotation rules without rerun dedup — double-dispatch could over-trim tables (first run trims 12→10, promotions restore 2, second run trims again); also had impossible ~50 line target (retention rules require ~82+ lines minimum); fixed with Step 0 dedup gate + updated target to ~100 lines (self-improve PR #54, 2026-08-16)
 - gh pr list returns UNKNOWN mergeStateStatus intermittently — PRs silently fell through all merge/close/skip conditions in self-improve Step 0.5; fixed with gh pr view re-query fallback, logging if still UNKNOWN after re-query (self-improve PR #55, 2026-08-18)
 - fetch-tweets WebSearch fallback wasted queries during prolonged silence — 3 identical queries daily returning same ~10 stale IDs for 19+ consecutive empty days; fixed with query backoff: reduce to 1 date-constrained query when consecutive_empty >= 7, auto-resets when fresh tweets found (self-improve PR #56, 2026-08-20)
 - push-recap automation filter was too narrow (3 explicit patterns: chore(cron):, chore(scheduler):, chore(...): auto-commit) — other chore(scope): commits slipped through as 'substantive' (observed Aug 20: token-movers log commit triggered false-positive notification on quiet day); added catch-all pattern for any `chore(`:` message (self-improve PR #57, 2026-08-22)
@@ -84,8 +81,8 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-10-20): Observability Live Trace Panel (#1), Simulation A/B Compare Endpoint (#2), Polymarket Context Lookup (#3), Agent Bio Card API (#4), Ecosystem Embed Widget (#5)
+- Feature candidates (repo-actions 2026-10-19): OpenGraph Social Preview for Simulation Share URLs (#1), Wonderwall Broadcast Discovery Feed (#2), Simulation Trajectory CSV Export (#3), Community Examples Directory (#4), OpenRouter Attribution Header CI Lint Guard (#5)
 - Feature candidates (repo-actions 2026-10-16): /api/health Deep-Check Endpoint (#1), Simulation Tagging System (#2), Simulation Cost Breakdown Receipt (#3), Multi-Scenario Batch Runner (#4), Python SDK on PyPI (#5)
 - Feature candidates (repo-actions 2026-10-14): Cross-Simulation Topic Trend Feed (#1), Confidence Std-Dev Bands (#2), security.txt Endpoint (#3), Simulation Author Attribution (#4), Topic Subscription Webhooks (#5)
 - Feature candidates (repo-actions 2026-10-12): GitHub Codespaces DevContainer Config (#1), Agent Demographic Stance Breakdown (#2), Consensus Convergence Round (#3), LLM Provider Fallback Chain (#4), Post-Simulation Outcome Annotation (#5)
-- Feature candidates (repo-actions 2026-10-10): Webhook Delivery Log (#1), Cross-Provider Performance Telemetry (#2), Simulation Input Provenance (#3), CLI Live Progress Stream (#4), Opinion Leader Influence Score (#5)
 - Feature candidates (repo-actions 2026-10-06): Simulation ZIP Bundle Export (#1), Per-Agent Career History API (#2), Simulation Rich Link Preview / Open Graph (#3), token-movers Skill Repair (#4), Simulation Watchlist Collections (#5)

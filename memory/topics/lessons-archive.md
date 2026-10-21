@@ -82,3 +82,7 @@
 ## Archived 2026-10-19
 
 - Lessons Learned consolidation rule: when 3+ entries share the same underlying fix pattern, merge into one summary entry and archive individuals to memory/topics/lessons-archive.md; prevents a single improvement wave from consuming all 15 slots (self-improve PR #53, 2026-08-14)
+
+## Archived 2026-10-21
+
+- Memory-flush had non-idempotent rotation rules without rerun dedup — double-dispatch could over-trim tables (first run trims 12→10, promotions restore 2, second run trims again); also had impossible ~50 line target (retention rules require ~82+ lines minimum); fixed with Step 0 dedup gate + updated target to ~100 lines (self-improve PR #54, 2026-08-16)
