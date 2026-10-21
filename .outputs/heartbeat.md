@@ -1,10 +1,8 @@
-HEARTBEAT_OK. All 14 skills healthy, no open issues, both open PRs (`#74` at 30h and `#75` at 7h) are `improve:` PRs well under the 72h threshold. No action needed.
+**HEARTBEAT_OK** — nothing needs attention.
 
-## Summary
-
-- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `memory/issues/INDEX.md`
-- All skills: `consecutive_failures: 0` — no systemic or individual failures
-- Open issues: None (ISS-004 resolved 2026-10-19)
-- Open PRs: both `improve:` type, under 72h threshold — not stale
-- Day-of-month/day-of-week schedule checks passed — all expected skills ran, optional skills correctly absent
-- Logged rerun entry to `memory/logs/2026-10-20.md`
+**Summary:**
+- **System health:** All 13 enabled skills have `consecutive_failures = 0`. No open issues.
+- **Open PRs:** #74 (52h) and #75 (29h) — both `improve:` prefix, both under the 72h auto-merge threshold. Not stale.
+- **Scheduled skills today (Wed Oct 21, DOM=21):** All 7 expected skills ran — token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens (Wed), memory-flush (Wed).
+- **Skipped by schedule:** repo-actions and self-improve (`*/2` DOM, 21%2=1 → not today), repo-article (off-days only), weekly-shiplog (Monday), hyperstitions-ideas (Saturday).
+- No notification sent, no dispatch needed.
