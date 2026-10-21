@@ -1,0 +1,204 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-21"
+      },
+      "children": [
+        "badge-author",
+        "separator1",
+        "heading-upstream",
+        "text-upstream",
+        "heading-gateway",
+        "text-gateway",
+        "heading-dashboard",
+        "text-dashboard",
+        "heading-plugin",
+        "text-plugin",
+        "separator2",
+        "heading-keychanges",
+        "stack-changes",
+        "separator3",
+        "heading-stats",
+        "stack-stats",
+        "storylink-recap"
+      ]
+    },
+    "badge-author": {
+      "type": "Badge",
+      "props": {
+        "text": "miroshark-aeon — 1 substantive commit by aaronjmars (18 automation commits filtered)",
+        "variant": "secondary"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-upstream": {
+      "type": "Heading",
+      "props": {
+        "text": "Upstream Sync (PR #222)",
+        "level": "h2"
+      }
+    },
+    "text-upstream": {
+      "type": "Text",
+      "props": {
+        "text": "16 commits from aeonfun/aeon landed in one merge. The biggest change is a full rewrite of the aeon-update sync engine — the skill's shell snippets were being blocked by Claude Code's permission layer, causing runs to exit green with nothing synced. The new Python script (840 lines) handles the entire compare/classify/apply pass as a single allowed command."
+      }
+    },
+    "heading-gateway": {
+      "type": "Heading",
+      "props": {
+        "text": "Gateway Failover",
+        "level": "h2"
+      }
+    },
+    "text-gateway": {
+      "type": "Text",
+      "props": {
+        "text": "Each gateway attempt now reports a one-line failure reason instead of a cryptic timeout. Dead fallback keys fail in 2 minutes instead of 1800 seconds. OTEL spans track provider and attempt number."
+      }
+    },
+    "heading-dashboard": {
+      "type": "Heading",
+      "props": {
+        "text": "Dashboard & Config",
+        "level": "h2"
+      }
+    },
+    "text-dashboard": {
+      "type": "Text",
+      "props": {
+        "text": "Half-hour timezones (India, Nepal, Newfoundland) now show correct cron times. validate-config.js catches misspelled skill keys with did-you-mean hints — a typo like \"enabld:\" can no longer silently disable a skill."
+      }
+    },
+    "heading-plugin": {
+      "type": "Heading",
+      "props": {
+        "text": "Plugin 0.2.0",
+        "level": "h2"
+      }
+    },
+    "text-plugin": {
+      "type": "Text",
+      "props": {
+        "text": "Codex plugin connects to the hosted Aeon MCP server. New get-started onboarding skill guides first-run setup."
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "stack-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3",
+        "change4"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "scripts/aeon_update.py: 840-line Python rewrite of upstream sync engine (+tests)"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "scripts/gateway-error.sh: per-attempt error extraction for the gateway cascade"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "apps/dashboard/lib/utils.ts: UTC offset fixed from hours to minutes for half-hour zones"
+      }
+    },
+    "change4": {
+      "type": "Text",
+      "props": {
+        "text": "scripts/validate-config.js: +214 lines adding misspelled-key detection with Levenshtein hints"
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stack-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-added",
+        "stat-removed"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "files changed",
+        "value": "53"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "lines added",
+        "value": "2504",
+        "delta": "+2504",
+        "trend": "up"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "lines removed",
+        "value": "516",
+        "delta": "-516",
+        "trend": "down"
+      }
+    },
+    "storylink-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-21.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
