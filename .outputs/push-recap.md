@@ -1,7 +1,3 @@
 ## Summary
 
-**PUSH_RECAP_QUIET** — no substantive commits found across either watched repo in the last 24 hours:
-- **aaronjmars/MiroShark**: 0 commits
-- **aaronjmars/miroshark-aeon**: 11 automation-only commits (cron state updates, auto-commits for token-movers, fetch-tweets, heartbeat) — all filtered
-
-No notification sent, no article written. Logged to `memory/logs/2026-10-22.md`.
+**Push Recap — 2026-10-22 (rerun):** No substantive commits across either watched repo in the last 24 hours. MiroShark had 0 commits; miroshark-aeon had 11 automation-only commits (`chore(cron)`, `chore(scheduler)`, `chore(token-movers)`, `chore(fetch-tweets)`, `chore(heartbeat)`). Same result as the earlier run today — logged `PUSH_RECAP_RERUN_QUIET`, no notification sent.
