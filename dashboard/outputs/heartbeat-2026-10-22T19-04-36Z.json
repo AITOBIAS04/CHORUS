@@ -1,0 +1,171 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "alert_pr",
+        "sep1",
+        "pr_section",
+        "sep2",
+        "health_section"
+      ]
+    },
+    "alert_pr": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "PR #74 stalled (76h)",
+        "message": "Merge conflict detected. Status: DIRTY"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr_title",
+        "pr_meta",
+        "pr_timeline"
+      ]
+    },
+    "pr_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Improve: add retry logic for sequential PR merges",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "pr_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_dirty",
+        "badge_conflict"
+      ]
+    },
+    "badge_dirty": {
+      "type": "Badge",
+      "props": {
+        "text": "DIRTY",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_conflict": {
+      "type": "Badge",
+      "props": {
+        "text": "Merge conflict",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "pr_timeline": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stat_duration",
+        "text_selfimprove",
+        "text_closewindow"
+      ]
+    },
+    "stat_duration": {
+      "type": "Stat",
+      "props": {
+        "label": "Stalled for",
+        "value": "76 hours"
+      },
+      "children": []
+    },
+    "text_selfimprove": {
+      "type": "Text",
+      "props": {
+        "text": "self-improve ran today at 14:35 UTC when PR was 70h (under 72h close threshold)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "text_closewindow": {
+      "type": "Text",
+      "props": {
+        "text": "Next auto-close window: DOM=24 (Oct 24)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "health_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "health_title",
+        "health_stats"
+      ]
+    },
+    "health_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Health Status",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "health_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_skills",
+        "stat_issues"
+      ]
+    },
+    "stat_skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills healthy",
+        "value": "13/13"
+      },
+      "children": []
+    },
+    "stat_issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Open issues",
+        "value": "0"
+      },
+      "children": []
+    }
+  }
+}
