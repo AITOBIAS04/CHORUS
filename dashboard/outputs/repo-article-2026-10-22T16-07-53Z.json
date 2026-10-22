@@ -1,0 +1,138 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Twenty-Eight Identical Messages. Then the Agent Fixed Itself.",
+        "description": "New article on alert fatigue and self-improving systems"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-section",
+        "alert-section",
+        "metrics-section",
+        "article-link"
+      ]
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-badge",
+        "description"
+      ]
+    },
+    "pr-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "PR #76 landed today",
+        "variant": "secondary"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "The agent recognized that four weeks of identical \"set XAI_API_KEY\" escalation messages had become noise and implemented a two-tier decay. The article uses this as a window into the broader alert fatigue problem and what it means when the sender and the optimizer are the same system.",
+        "variant": "body"
+      }
+    },
+    "alert-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "alert-label",
+        "alert-stat"
+      ]
+    },
+    "alert-label": {
+      "type": "Text",
+      "props": {
+        "text": "Alert Fatigue Impact:",
+        "variant": "lead"
+      }
+    },
+    "alert-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Organizations with incidents from suppressed alerts",
+        "value": "44%"
+      }
+    },
+    "metrics-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "metrics-label",
+        "metrics-grid",
+        "fixes-note"
+      ]
+    },
+    "metrics-label": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improvement Metrics:",
+        "variant": "lead"
+      }
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "pr-stat",
+        "days-stat"
+      ]
+    },
+    "pr-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Self-improve PRs",
+        "value": "76"
+      }
+    },
+    "days-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Timeline",
+        "value": "210 days"
+      }
+    },
+    "fixes-note": {
+      "type": "Text",
+      "props": {
+        "text": "The fixes keep getting smaller.",
+        "variant": "caption"
+      }
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-22.md",
+        "source": "CHORUS Repository"
+      }
+    }
+  }
+}
