@@ -1,0 +1,369 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas",
+        "description": "2026-10-22"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-analysis",
+        "repo-stats",
+        "separator-1",
+        "idea-1",
+        "idea-2",
+        "idea-3",
+        "idea-4",
+        "idea-5",
+        "link-details"
+      ]
+    },
+    "text-analysis": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,476 stars · 304 forks · 107-day social silence) — five autonomously buildable ideas for the feature skill.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "repo-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "stat-silence"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,476"
+      },
+      "children": []
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "304"
+      },
+      "children": []
+    },
+    "stat-silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Social Silence",
+        "value": "107 days"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "idea-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-1",
+        "badges-1",
+        "text-desc-1"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Simulation Round Replay Scrubber",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "badges-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-1-cat",
+        "badge-1-size"
+      ]
+    },
+    "badge-1-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge-1-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "text-desc-1": {
+      "type": "Text",
+      "props": {
+        "text": "Step through trajectory.json round-by-round in the UI — Play/Pause/Step controls + playhead on BeliefDriftChart; no new backend needed.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "idea-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-2",
+        "badges-2",
+        "text-desc-2"
+      ]
+    },
+    "heading-2": {
+      "type": "Heading",
+      "props": {
+        "text": "2. REST API Rate Limit Headers",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "badges-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-2-cat",
+        "badge-2-size"
+      ]
+    },
+    "badge-2-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge-2-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "text-desc-2": {
+      "type": "Text",
+      "props": {
+        "text": "Add X-RateLimit-Limit/Remaining/Reset headers to every response via token-bucket middleware; gives self-hosters production-grade API plumbing.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "idea-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-3",
+        "badges-3",
+        "text-desc-3"
+      ]
+    },
+    "heading-3": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Agent Influence Force-Directed Network Graph",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "badges-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-3-cat",
+        "badge-3-size"
+      ]
+    },
+    "badge-3-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge-3-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "text-desc-3": {
+      "type": "Text",
+      "props": {
+        "text": "Render the @-mention graph from mentions_service.py as an interactive SVG force layout (no new deps) — shows information-flow structure in one screenshot.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "idea-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-4",
+        "badges-4",
+        "text-desc-4"
+      ]
+    },
+    "heading-4": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Simulation Fork / Clone Endpoint",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "badges-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-4-cat",
+        "badge-4-size"
+      ]
+    },
+    "badge-4-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge-4-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "text-desc-4": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulation/:id/fork creates a pending copy of a completed sim's config; turns MiroShark into an experiment platform and makes A/B runs one-click.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "idea-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-5",
+        "badges-5",
+        "text-desc-5"
+      ]
+    },
+    "heading-5": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Hugging Face Dataset Auto-Sync",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "badges-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-5-cat",
+        "badge-5-size"
+      ]
+    },
+    "badge-5-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge-5-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "text-desc-5": {
+      "type": "Text",
+      "props": {
+        "text": "Daily GitHub Actions job appends new public sim rows to the HF dataset (MiroShark/social-prediction-market-sim); static badge becomes a live growing counter.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details: repo-actions-2026-10-22",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-22.md",
+        "source": "CHORUS"
+      },
+      "children": []
+    }
+  }
+}
