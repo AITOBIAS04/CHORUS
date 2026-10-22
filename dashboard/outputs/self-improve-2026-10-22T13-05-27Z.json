@@ -1,0 +1,161 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-10-22"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "main-desc",
+        "sep1",
+        "why-section",
+        "sep2",
+        "what-section",
+        "sep3",
+        "impact-section",
+        "sep4",
+        "pr-section"
+      ]
+    },
+    "main-desc": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets escalation notifications now decay after prolonged silence. Instead of notifying every 7 days indefinitely, the interval doubles to bi-weekly after 3 weeks of empty results.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why-heading",
+        "why-text"
+      ]
+    },
+    "why-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why-text": {
+      "type": "Text",
+      "props": {
+        "text": "At 28 consecutive empty runs, the operator has received 4 identical \"set XAI_API_KEY\" notifications. The fix suggestion hasn't changed; weekly repetition past 3 weeks is notification fatigue, not information."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "what-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "what-heading",
+        "what-text"
+      ]
+    },
+    "what-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "what-text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/fetch-tweets/SKILL.md: Replaced fixed 7-run escalation interval with two-tier logic — weekly for runs 1–21, bi-weekly (every 14 runs) after 21. Uses bash arithmetic to avoid LLM modulo errors."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact-heading",
+        "impact-text"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "Fewer redundant escalation notifications during prolonged social silence. Escalation schedule shifts from 7/14/21/28/35/42 to 7/14/21/28/42/56 — still periodic, less noisy."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-label",
+        "pr-link"
+      ]
+    },
+    "pr-label": {
+      "type": "Text",
+      "props": {
+        "text": "PR:",
+        "variant": "caption"
+      }
+    },
+    "pr-link": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/AITOBIAS04/CHORUS/pull/76",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/76"
+      }
+    }
+  }
+}

@@ -1245,3 +1245,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-22,feature,claude-opus-4-6,9,1071,251971,20771
 2026-10-22,repo-pulse,claude-sonnet-4-6,8,1416,211292,20203
 2026-10-22,feature,claude-opus-4-6,9,1370,253776,22033
+2026-10-22,self-improve,claude-opus-4-6,25,10588,1292211,48755
