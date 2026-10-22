@@ -61,14 +61,20 @@ Today is ${today}. Search X for tweets matching **${var}**.
    - If the log has **no fetch-tweets entry at all** (skill didn't run that day): **skip** that day and continue scanning backward. Days where the skill didn't run do not break the streak.
    **Compact log format during silence.** When `consecutive_empty >= 7`, keep the log entry concise — do NOT list individual dedup set URLs or individual exclusions. Instead, summarize as counts (e.g. "Dedup set: 9 URLs from last 3 days; 4 matched in results and excluded; 3 excluded as stale >14d"). Full URL-by-URL logging is valuable when new tweets are being found (to verify dedup correctness), but during prolonged silence the same stale URLs repeat daily, adding ~15 lines of noise per run that downstream skills (heartbeat, memory-flush) must scan through.
 
-   **Check whether to escalate using bash arithmetic** — do NOT evaluate the modulo mentally (LLM arithmetic is error-prone for modular checks; observed: count=21 incorrectly assessed as "not a multiple of 7", missing the 3-week escalation notification):
+   **Check whether to escalate using bash arithmetic** — do NOT evaluate the modulo mentally (LLM arithmetic is error-prone for modular checks; observed: count=21 incorrectly assessed as "not a multiple of 7", missing the 3-week escalation notification).
+   **Two-tier escalation interval:** For the first 21 runs (3 weeks), notify every 7 runs. After 21 runs, the operator has been told 3 times to set XAI_API_KEY — switch to every 14 runs (bi-weekly) to reduce notification fatigue while still reminding periodically.
    ```bash
    CONSEC=<consecutive_empty_count>
-   if [ $((CONSEC % 7)) -eq 0 ] && [ "$CONSEC" -gt 0 ]; then
+   if [ "$CONSEC" -le 21 ]; then
+     INTERVAL=7
+   else
+     INTERVAL=14
+   fi
+   if [ $((CONSEC % INTERVAL)) -eq 0 ] && [ "$CONSEC" -gt 0 ]; then
      echo "ESCALATION_NEEDED"
    fi
    ```
-   If the bash check outputs `ESCALATION_NEEDED`, the count is a multiple of 7 — send a single notification via `./notify`:
+   If the bash check outputs `ESCALATION_NEEDED` — send a single notification via `./notify`:
    ```
    *Social Monitor Dark — ${consecutive_count} consecutive days*
 
