@@ -1,0 +1,194 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-23"
+      },
+      "children": [
+        "summary_text",
+        "sep_1",
+        "prs_stack",
+        "sep_2",
+        "key_changes_heading",
+        "key_changes_stack",
+        "stats_text",
+        "recap_link"
+      ]
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark + miroshark-aeon — 3 substantive commits by dependabot[bot] (9 automation filtered)\n\nDependency Housekeeping: Dependabot swept both repos with security and compatibility updates across Python backend, Node.js frontend, and the MCP server.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "prs_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "backend_section",
+        "frontend_section",
+        "mcp_section"
+      ]
+    },
+    "backend_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "backend_heading",
+        "backend_text"
+      ]
+    },
+    "backend_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark backend (PR #340)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "backend_text": {
+      "type": "Text",
+      "props": {
+        "text": "certifi bumped nearly a full year (2025.11.12→2026.10.19) — CA certificate bundle now current. Pillow jumped a major version (12.3.0→13.0.0), worth verifying any image processing code. nbconvert patched to 7.17.2.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "frontend_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "frontend_heading",
+        "frontend_text"
+      ]
+    },
+    "frontend_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark frontend (PR #339)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "frontend_text": {
+      "type": "Text",
+      "props": {
+        "text": "follow-redirects patched 1.16.0→1.16.1 — the 1.16.x line had a prior CVE for header leakage on cross-origin redirects. Standard security hygiene.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "mcp_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "mcp_heading",
+        "mcp_text"
+      ]
+    },
+    "mcp_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "miroshark-aeon MCP server (PR #223)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "mcp_text": {
+      "type": "Text",
+      "props": {
+        "text": "@modelcontextprotocol/sdk 1.31.0→1.32.0 — minor version bump, new protocol features available.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "key_changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "key_changes_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pillow_item",
+        "certifi_item",
+        "sdk_item"
+      ]
+    },
+    "pillow_item": {
+      "type": "Text",
+      "props": {
+        "text": "Pillow 13.0.0 major version — check for deprecated API usage in image processing",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "certifi_item": {
+      "type": "Text",
+      "props": {
+        "text": "certifi CA bundle now 11 months fresher — TLS trust store current",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sdk_item": {
+      "type": "Text",
+      "props": {
+        "text": "MCP SDK 1.32.0 — latest protocol capabilities for the skill executor",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "stats_text": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 4 files changed, +101/-96 lines",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-23.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
