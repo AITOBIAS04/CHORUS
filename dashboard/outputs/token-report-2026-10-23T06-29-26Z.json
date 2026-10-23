@@ -1,0 +1,166 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-10-23"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price-stat",
+        "separator1",
+        "liquidity-volume-grid",
+        "separator2",
+        "buys-sells-grid",
+        "separator3",
+        "changes-grid",
+        "separator4",
+        "narrative",
+        "separator5",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "$0.000002132",
+        "delta": "+9.46%",
+        "trend": "up",
+        "label": "Price"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "liquidity-volume-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "$2.63M",
+        "label": "Liquidity"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "$17,770",
+        "label": "24h Volume"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "buys-sells-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "buys-stat",
+        "sells-stat"
+      ]
+    },
+    "buys-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "36",
+        "label": "Buys"
+      }
+    },
+    "sells-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "24",
+        "label": "Sells"
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "change-7d",
+        "change-30d"
+      ]
+    },
+    "change-7d": {
+      "type": "Stat",
+      "props": {
+        "value": "+8.55%",
+        "label": "7d Change",
+        "trend": "up"
+      }
+    },
+    "change-30d": {
+      "type": "Stat",
+      "props": {
+        "value": "−17.55%",
+        "label": "30d Change",
+        "trend": "down"
+      }
+    },
+    "separator4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "narrative": {
+      "type": "Text",
+      "props": {
+        "text": "Morning sell-off to $1.756e-6 reversed by two ~$4K buys in the afternoon — price closed at weekly highs despite 108-day social silence.",
+        "variant": "body"
+      }
+    },
+    "separator5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
