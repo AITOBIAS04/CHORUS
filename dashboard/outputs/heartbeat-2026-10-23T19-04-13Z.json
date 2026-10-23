@@ -1,0 +1,151 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "alert_warning",
+        "grid_prs",
+        "section_window"
+      ]
+    },
+    "alert_warning": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Stalled PRs",
+        "message": "Multiple pull requests require immediate attention"
+      }
+    },
+    "grid_prs": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stack_pr75",
+        "stack_pr74"
+      ]
+    },
+    "stack_pr75": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_pr75",
+        "stat_pr75_time",
+        "text_pr75_action",
+        "text_pr75_threshold"
+      ]
+    },
+    "heading_pr75": {
+      "type": "Heading",
+      "props": {
+        "text": "PR #75",
+        "level": "h3"
+      }
+    },
+    "stat_pr75_time": {
+      "type": "Stat",
+      "props": {
+        "label": "Stalled for",
+        "value": "77h"
+      }
+    },
+    "text_pr75_action": {
+      "type": "Text",
+      "props": {
+        "text": "Add same-day rerun dedup gate to feature skill",
+        "variant": "body"
+      }
+    },
+    "text_pr75_threshold": {
+      "type": "Text",
+      "props": {
+        "text": "Auto-merge threshold: ≥72h",
+        "variant": "caption"
+      }
+    },
+    "stack_pr74": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_pr74",
+        "stat_pr74_time",
+        "badge_dirty",
+        "badge_conflict",
+        "text_pr74_action"
+      ]
+    },
+    "heading_pr74": {
+      "type": "Heading",
+      "props": {
+        "text": "PR #74",
+        "level": "h3"
+      }
+    },
+    "stat_pr74_time": {
+      "type": "Stat",
+      "props": {
+        "label": "Open for",
+        "value": "100h"
+      }
+    },
+    "badge_dirty": {
+      "type": "Badge",
+      "props": {
+        "text": "DIRTY",
+        "variant": "destructive"
+      }
+    },
+    "badge_conflict": {
+      "type": "Badge",
+      "props": {
+        "text": "merge conflict",
+        "variant": "destructive"
+      }
+    },
+    "text_pr74_action": {
+      "type": "Text",
+      "props": {
+        "text": "Next self-improve window will attempt close",
+        "variant": "caption"
+      }
+    },
+    "section_window": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_window",
+        "text_window"
+      ]
+    },
+    "heading_window": {
+      "type": "Heading",
+      "props": {
+        "text": "Next Self-Improve Window",
+        "level": "h3"
+      }
+    },
+    "text_window": {
+      "type": "Text",
+      "props": {
+        "text": "DOM = October 24, 2026",
+        "variant": "body"
+      }
+    }
+  }
+}
