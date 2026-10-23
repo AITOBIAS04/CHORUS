@@ -64,15 +64,15 @@
   },
   "token-report": {
     "last_dispatch": "2026-10-23T07:59:34Z",
-    "last_status": "dispatched",
+    "last_status": "success",
     "last_failed": "2026-10-19T13:56:12Z",
-    "total_runs": 643,
-    "total_successes": 154,
+    "total_runs": 644,
+    "total_successes": 155,
     "total_failures": 489,
     "consecutive_failures": 0,
     "success_rate": 0.24,
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
-    "last_success": "2026-10-23T06:30:01Z",
+    "last_success": "2026-10-23T08:00:21Z",
     "last_quality_score": 4
   },
   "fetch-tweets": {
