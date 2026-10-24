@@ -11,6 +11,8 @@ Today is ${today}. Your task is to build a new feature for the **watched repo** 
 
 ## Steps
 
+0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a `## feature` or `## Feature` entry (case-insensitive), and `${var}` is empty (no explicit feature requested), log `FEATURE_RERUN_QUIET: feature skill already ran today — skipping rerun` to `memory/logs/${today}.md` and **stop here**. The push access check, repo-actions scan, and feature selection don't change within a day, so a rerun produces the same FEATURE_SKIP or rebuilds the same feature. This prevents scheduler double-dispatch from wasting a full Claude session on an identical outcome.
+
 1. **Identify the target repo** — read `memory/watched-repos.md` to get the repo (owner/repo format).
 
 2. **Pre-flight: verify push access** before doing any expensive work:
