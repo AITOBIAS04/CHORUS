@@ -1,0 +1,221 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-10-24",
+        "description": "Will MiroShark reach 1,500 GitHub stars by November 7, 2026?"
+      },
+      "children": [
+        "heading-main",
+        "text-coordination",
+        "sep-1",
+        "heading-why",
+        "text-why",
+        "stats-why-stack",
+        "sep-2",
+        "heading-resolution",
+        "resolution-stack",
+        "sep-3",
+        "heading-scores",
+        "badges-stack",
+        "sep-4",
+        "link-hyperstitions"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark reach 1,500 GitHub stars by November 7, 2026?",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-coordination": {
+      "type": "Text",
+      "props": {
+        "text": "The coordination play: MiroShark sits at 1,479 stars — 21 away from a round-number milestone that no bot can manufacture. Each star requires a real GitHub account clicking a button because a human decided the project was worth watching. The market turns a passive counter into an active campaign: share the repo in a dev Discord, drop it in a Hacker News thread, write a post about the 210-day autonomous maintenance streak. Twenty-one people deciding to click is all it takes.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "The token just posted its strongest week in months (+20.36% 7d) while the project maintains 109 consecutive days of social silence. Two coordinated ~$4K buys on Oct 23 suggest someone is accumulating. Stars are trickling in at 1-3/day — the pace is borderline. Without community push, 1,500 arrives around Nov 9. The market question compresses that timeline.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "stats-why-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-current",
+        "stat-target",
+        "stat-distance",
+        "stat-rate"
+      ]
+    },
+    "stat-current": {
+      "type": "Stat",
+      "props": {
+        "label": "Current Stars",
+        "value": "1,479"
+      },
+      "children": []
+    },
+    "stat-target": {
+      "type": "Stat",
+      "props": {
+        "label": "Target",
+        "value": "1,500"
+      },
+      "children": []
+    },
+    "stat-distance": {
+      "type": "Stat",
+      "props": {
+        "label": "Distance",
+        "value": "21 stars"
+      },
+      "children": []
+    },
+    "stat-rate": {
+      "type": "Stat",
+      "props": {
+        "label": "Current Rate",
+        "value": "1-3/day"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "resolution-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-res-intro",
+        "link-github",
+        "text-res-criteria"
+      ]
+    },
+    "text-res-intro": {
+      "type": "Text",
+      "props": {
+        "text": "YES if",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link-github": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark"
+      },
+      "children": []
+    },
+    "text-res-criteria": {
+      "type": "Text",
+      "props": {
+        "text": "shows ≥1,500 stargazers by 23:59 UTC November 7, 2026. Verified via GitHub API. NO otherwise.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading-scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "badges-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-reflexivity",
+        "badge-viral"
+      ]
+    },
+    "badge-reflexivity": {
+      "type": "Badge",
+      "props": {
+        "text": "Reflexivity 4/5",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge-viral": {
+      "type": "Badge",
+      "props": {
+        "text": "Viral 4/5",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link-hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "View on Hyperstitions",
+        "href": "https://www.hyperstitions.com/"
+      },
+      "children": []
+    }
+  }
+}
