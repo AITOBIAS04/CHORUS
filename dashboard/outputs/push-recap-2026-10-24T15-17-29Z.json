@@ -1,0 +1,185 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap",
+        "description": "2026-10-24"
+      },
+      "children": [
+        "summary",
+        "separator1",
+        "security-stack",
+        "separator2",
+        "dependency-stack",
+        "separator3",
+        "key-changes-stack",
+        "separator4",
+        "stats-stack",
+        "separator5",
+        "links-stack"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 2 substantive commits + miroshark-aeon — 1 substantive commit (9 automation filtered)",
+        "variant": "lead"
+      }
+    },
+    "separator1": {
+      "type": "Separator"
+    },
+    "security-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "security-h2",
+        "security-p1"
+      ]
+    },
+    "security-h2": {
+      "type": "Heading",
+      "props": {
+        "text": "Security Patches (5 CVEs closed)",
+        "level": "h2"
+      }
+    },
+    "security-p1": {
+      "type": "Text",
+      "props": {
+        "text": "Both repos received targeted security fixes. MiroShark patched the MCP Python SDK from 1.28.1 to 1.30.0 (GHSA-84m7-p3x7-pcfv), pinning the floor in pyproject.toml so the lock can never regress. miroshark-aeon bundled 5 advisories in one commit — Next.js jumped from 16.3.8 to 16.4.3 covering two critical CVEs and one high, plus hono and ip-address patches in the MCP server."
+      }
+    },
+    "separator2": {
+      "type": "Separator"
+    },
+    "dependency-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dependency-h2",
+        "dependency-p1"
+      ]
+    },
+    "dependency-h2": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Maintenance",
+        "level": "h2"
+      }
+    },
+    "dependency-p1": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot grouped brotli 1.2.0→1.2.1 (CVE fix), filelock 3.x→4.x (major version), and setuptools 83→84 into a single MiroShark lockfile update. The brotli bump likely makes the standalone brotli security PR redundant."
+      }
+    },
+    "separator3": {
+      "type": "Separator"
+    },
+    "key-changes-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-changes-h2",
+        "key-changes-list"
+      ]
+    },
+    "key-changes-h2": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h2"
+      }
+    },
+    "key-changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "kc-item1",
+        "kc-item2",
+        "kc-item3"
+      ]
+    },
+    "kc-item1": {
+      "type": "Text",
+      "props": {
+        "text": "Next.js 16.4.3 closes GHSA-673q-mjm6-r5xr and GHSA-2464-fhr4-w9xw (both critical) in the dashboard"
+      }
+    },
+    "kc-item2": {
+      "type": "Text",
+      "props": {
+        "text": "MCP SDK 1.30.0 fix + explicit version pin prevents future regression below the patched version"
+      }
+    },
+    "kc-item3": {
+      "type": "Text",
+      "props": {
+        "text": "hono 4.13.13 was manually bundled (no Dependabot PR existed for alert #49)"
+      }
+    },
+    "separator4": {
+      "type": "Separator"
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-h2",
+        "stats-text"
+      ]
+    },
+    "stats-h2": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats-text": {
+      "type": "Text",
+      "props": {
+        "text": "6 files changed, +197/-153 lines"
+      }
+    },
+    "separator5": {
+      "type": "Separator"
+    },
+    "links-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "full-recap-link"
+      ]
+    },
+    "full-recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-24.md"
+      }
+    }
+  }
+}
