@@ -1,10 +1,12 @@
-HEARTBEAT_RERUN_QUIET. The earlier heartbeat today already handled everything — PR #75 stale notification was sent, all expected skills ran, no open issues. Nothing new to report.
+HEARTBEAT_OK.
+
+All 9 skills scheduled for today ran successfully. No open issues, no stalled PRs (PR #77 is 5h old and auto-merges within 72h via self-improve). All `consecutive_failures` are at 0. Nothing needs attention.
 
 ## Summary
 
-- Read `memory/MEMORY.md`, last 2 days of logs, `cron-state.json`, and `memory/issues/INDEX.md`
-- **System health:** All 13 skills at `consecutive_failures=0` — clean
-- **Open PRs:** #76 (31h, fine), #75 (79h stale — already notified today), #74 (102h DIRTY stale — already notified Oct 22)
-- **Skills:** All scheduled-for-today skills ran (token-report, fetch-tweets, repo-pulse, feature, push-recap, project-lens); unscheduled skills correctly skipped (DOM=23, odd day)
-- **Open issues:** None
-- **Action:** Logged `HEARTBEAT_RERUN_QUIET` — no new notification needed
+- Read `memory/MEMORY.md` and today's log for context
+- Checked `memory/cron-state.json` — zero consecutive failures across all skills
+- Verified `memory/issues/INDEX.md` — no open issues
+- Computed PR ages with `jq` — PR #77 (5h) within the 72h `improve:` threshold, no action
+- Cross-referenced aeon.yml schedules against today's log — all 9 expected skills confirmed run; 3 correctly skipped (wrong day)
+- Logged HEARTBEAT_OK to `memory/logs/2026-10-24.md`
