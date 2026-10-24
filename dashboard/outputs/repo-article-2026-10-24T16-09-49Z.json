@@ -1,0 +1,83 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Every Commit This Week Was a Dependency Bump. That's Not a Slow Week."
+      },
+      "children": [
+        "text_intro",
+        "stat_commits",
+        "text_performance",
+        "stat_perf",
+        "text_datadog",
+        "stat_exploitable",
+        "text_conclusion",
+        "link_read"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark shipped five commits this week — all dependency bumps, addressing multiple CVEs including an MCP SDK security advisory and Next.js critical patches."
+      },
+      "children": []
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits this week",
+        "value": "5"
+      },
+      "children": []
+    },
+    "text_performance": {
+      "type": "Text",
+      "props": {
+        "text": "Meanwhile $MIROSHARK posted its strongest seven-day performance in months at +20%."
+      },
+      "children": []
+    },
+    "stat_perf": {
+      "type": "Stat",
+      "props": {
+        "label": "$MIROSHARK 7-day performance",
+        "value": "+20%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "text_datadog": {
+      "type": "Text",
+      "props": {
+        "text": "Datadog says 87% of organizations run known-exploitable code in production."
+      },
+      "children": []
+    },
+    "stat_exploitable": {
+      "type": "Stat",
+      "props": {
+        "label": "Organizations running known-exploitable code",
+        "value": "87%"
+      },
+      "children": []
+    },
+    "text_conclusion": {
+      "type": "Text",
+      "props": {
+        "text": "This project just quietly stayed out of that statistic."
+      },
+      "children": []
+    },
+    "link_read": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-24.md"
+      },
+      "children": []
+    }
+  }
+}
