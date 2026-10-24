@@ -1,0 +1,304 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-10-24"
+      },
+      "children": [
+        "project-info",
+        "separator-1",
+        "actions-stack",
+        "separator-2",
+        "details-link"
+      ]
+    },
+    "project-info": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark (1,480 stars · 304 forks · 109-day silence). Ideas that can be autonomously built by the feature skill."
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "actions-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "action-1",
+        "action-2",
+        "action-3",
+        "action-4",
+        "action-5"
+      ]
+    },
+    "action-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-title",
+        "action-1-badges",
+        "action-1-desc"
+      ]
+    },
+    "action-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Pre-Built Scenario Template Gallery",
+        "level": "h3"
+      }
+    },
+    "action-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-1-1",
+        "badge-1-2"
+      ]
+    },
+    "badge-1-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge-1-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "A library of 12 ready-to-run simulation templates (Fed rate decision, crypto launch, earnings, etc.) with one-click setup — reduces time-to-first-result for new self-hosters."
+      }
+    },
+    "action-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-title",
+        "action-2-badges",
+        "action-2-desc"
+      ]
+    },
+    "action-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Quote Deeplink",
+        "level": "h3"
+      }
+    },
+    "action-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-2-1",
+        "badge-2-2"
+      ]
+    },
+    "badge-2-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge-2-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`GET /api/simulation/:id/quote?agent=NAME&round=N` returns the agent's post text at that round plus a permalink URL — lets researchers and journalists cite specific swarm statements."
+      }
+    },
+    "action-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-title",
+        "action-3-badges",
+        "action-3-desc"
+      ]
+    },
+    "action-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Stuck Simulation Recovery Endpoint",
+        "level": "h3"
+      }
+    },
+    "action-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-3-1",
+        "badge-3-2"
+      ]
+    },
+    "badge-3-1": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "default"
+      }
+    },
+    "badge-3-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`POST /api/admin/simulation/:id/recover` detects orphaned running simulations (stale heartbeat >15 min), marks them failed, and generates a partial report from completed rounds."
+      }
+    },
+    "action-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-title",
+        "action-4-badges",
+        "action-4-desc"
+      ]
+    },
+    "action-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Cost Cap Guard",
+        "level": "h3"
+      }
+    },
+    "action-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-4-1",
+        "badge-4-2"
+      ]
+    },
+    "badge-4-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge-4-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "A `max_cost_usd` field in simulation creation enforces a hard ceiling — the run concludes at the last completed round if the cap is hit, with `completed_at_budget_cap: true` in the result."
+      }
+    },
+    "action-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-title",
+        "action-5-badges",
+        "action-5-desc"
+      ]
+    },
+    "action-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Gallery RSS Feed",
+        "level": "h3"
+      }
+    },
+    "action-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-5-1",
+        "badge-5-2"
+      ]
+    },
+    "badge-5-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "default"
+      }
+    },
+    "badge-5-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "action-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`GET /api/gallery/feed.xml` (RSS 2.0) and `/feed.atom` (Atom 1.0) — standard subscribe-once discovery for feed readers, Zapier, n8n, and content aggregators."
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "details-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-24.md"
+      }
+    }
+  }
+}
