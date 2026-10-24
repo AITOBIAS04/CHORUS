@@ -67,6 +67,7 @@
 - repo-pulse rerun dedup only compared star/fork counts — when counts changed between scheduler double-dispatch runs (common: 1-2 stars/day), a second notification was sent for the same day; replaced with `Notification sent: yes` check matching the pattern used by token-report and push-recap (self-improve PR #73, 2026-10-16)
 - feature skill was the last enabled skill without a same-day rerun dedup gate — scheduler double-dispatch wasted a full Claude Opus session on identical FEATURE_SKIP output; added Step 0 dedup gate matching the pattern from the Aug 2026 wave (self-improve PR #75, 2026-10-20)
 - fetch-tweets escalation interval was fixed at 7 runs regardless of streak length — at 28 consecutive empty runs the operator had received 4 identical "set XAI_API_KEY" notifications becoming pure noise; added two-tier decay: weekly (7-run) for first 21 runs, then bi-weekly (14-run) to reduce fatigue while maintaining reminders (self-improve PR #76, 2026-10-22)
+- memory-flush Active Targets rotation kept CLEARED entries forever as "historical milestones" — 3 entries CLEARED 145-170+ days ago accumulated without archival; as more hyperstitions are generated and CLEARED the section grows monotonically; added 60-day archival rule to move old CLEARED entries to `memory/topics/active-targets-archive.md` (self-improve PR #77, 2026-10-24)
 
 ## Active Targets
 - Hyperstition: MiroShark 500 stars — CLEARED 2026-04-07; 1K stars — CLEARED 2026-05-03 (1,022 stars)

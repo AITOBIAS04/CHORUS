@@ -1,0 +1,203 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-10-24"
+      },
+      "children": [
+        "main_update",
+        "sep1",
+        "why_section",
+        "sep2",
+        "merged_section",
+        "sep3",
+        "changed_section",
+        "sep4",
+        "impact_section",
+        "sep5",
+        "pr_link"
+      ]
+    },
+    "main_update": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "update_text",
+        "update_details"
+      ]
+    },
+    "update_text": {
+      "type": "Heading",
+      "props": {
+        "text": "Memory-flush Active Targets rotation rule updated to archive CLEARED entries older than 60 days",
+        "level": "h2"
+      }
+    },
+    "update_details": {
+      "type": "Text",
+      "props": {
+        "text": "Three entries from April–May 2026 (145–170+ days old) have been sitting in MEMORY.md with no archival path — CLEARED milestones were kept forever by design. As more hyperstition questions get resolved, this section would grow without bound. The entries being archived are: stars milestones (Apr 7), LP depth question (May 3), and another milestone (May 20)."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "why_heading",
+        "why_content"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_content": {
+      "type": "Text",
+      "props": {
+        "text": "MEMORY.md Active Targets had 3 CLEARED entries from Apr 7, May 3, and May 20 (stars milestones, LP depth question) providing zero actionable context. Since MEMORY.md is loaded at the start of every task, dead entries dilute context quality for all 13+ skills."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "merged_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "merged_heading",
+        "merged_list"
+      ]
+    },
+    "merged_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also merged",
+        "level": "h3"
+      }
+    },
+    "merged_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr75",
+        "pr76",
+        "pr74"
+      ]
+    },
+    "pr75": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #75: Feature skill rerun dedup gate",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/75",
+        "source": "GitHub"
+      }
+    },
+    "pr76": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #76: Fetch-tweets escalation decay",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/76",
+        "source": "GitHub"
+      }
+    },
+    "pr74": {
+      "type": "Text",
+      "props": {
+        "text": "Closed PR #74 (sequential merge retry — DIRTY after 118h, will re-propose if needed)",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changed_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changed_heading",
+        "changed_content"
+      ]
+    },
+    "changed_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "changed_content": {
+      "type": "Text",
+      "props": {
+        "text": "skills/memory-flush/SKILL.md: Extended Active Targets rotation to archive CLEARED entries >60 days old to memory/topics/active-targets-archive.md (same pattern as Lessons Learned archival)"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impact_heading",
+        "impact_content"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_content": {
+      "type": "Text",
+      "props": {
+        "text": "Keeps MEMORY.md focused on current targets. Prevents monotonic growth of the Active Targets section as the agent generates and resolves more predictions over time."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #77: Memory-flush Active Targets rotation",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/77",
+        "source": "GitHub"
+      }
+    }
+  }
+}
