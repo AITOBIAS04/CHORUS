@@ -1,15 +1,8 @@
-Done. Here's the summary:
-
 ## Summary
 
-**Skill:** `repo-pulse` — 2026-10-25
+Ran repo-pulse for 2026-10-25 (rerun). Tracked `aaronjmars/MiroShark` (skipped `miroshark-aeon` per skill config).
 
-**Repo checked:** `aaronjmars/MiroShark` (skipped `miroshark-aeon` per config)
-
-**Results:**
-- Stars: 1,480 — net change vs previous log: **0** (403 fallback; stargazers API blocked)
-- Forks: 304 — most recent fork Oct 18, before the 24h cutoff
-- **No activity → REPO_PULSE_QUIET — no notification sent**
-
-**Files updated:**
-- `memory/logs/2026-10-25.md` — appended `## Repo Pulse` entry with current counts and `Notification sent: no`
+- **Stars:** 1,480 — net 0 vs. earlier run's count (stargazer timestamps API returned 403, using net-change fallback)
+- **Forks:** 304 — most recent fork `Ripnrip/miroshark` from 2026-10-18, before the 24h cutoff of `2026-10-24T11:53:16Z`
+- **No activity** — zero new stars or forks in the last 24h
+- **No notification sent** — logged `REPO_PULSE_RERUN_QUIET` to `memory/logs/2026-10-25.md`
