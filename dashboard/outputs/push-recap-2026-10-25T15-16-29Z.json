@@ -1,0 +1,120 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-25"
+      },
+      "children": [
+        "text_intro",
+        "sep_1",
+        "heading_security",
+        "text_security_main",
+        "text_zod_details",
+        "heading_key_changes",
+        "stack_changes",
+        "sep_2",
+        "text_context",
+        "stat_files",
+        "link_recap"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon — 1 substantive commit by Aaron Mars (8 automation commits filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_security": {
+      "type": "Heading",
+      "props": {
+        "text": "Security",
+        "level": "h2"
+      }
+    },
+    "text_security_main": {
+      "type": "Text",
+      "props": {
+        "text": "Bundled dependency bumps (zod, fast-uri, body-parser): PR #231 consolidated three Dependabot alerts into one commit, patching the MCP server and Remotion skill project. Zod jumped from 4.4.3 to 4.6.6/4.6.7, and a new overrides block forces Remotion Studio nested copies onto the patched version."
+      }
+    },
+    "text_zod_details": {
+      "type": "Text",
+      "props": {
+        "text": "Both repositories are current on all known Dependabot alerts."
+      }
+    },
+    "heading_key_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "stack_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change_body_parser",
+        "change_fast_uri",
+        "change_zod_override"
+      ]
+    },
+    "change_body_parser": {
+      "type": "Text",
+      "props": {
+        "text": "body-parser 2.3.0→2.4.0 in mcp-server (sub-deps: content-type, qs, iconv-lite also bumped)"
+      }
+    },
+    "change_fast_uri": {
+      "type": "Text",
+      "props": {
+        "text": "fast-uri 3.1.8→3.1.9 in both mcp-server and remotion project"
+      }
+    },
+    "change_zod_override": {
+      "type": "Text",
+      "props": {
+        "text": "zod override added to remotion package.json — prevents nested transitive resolution to vulnerable versions"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_context": {
+      "type": "Text",
+      "props": {
+        "text": "Second consecutive security day (Oct 24: Next.js/MCP SDK/brotli; Oct 25: zod/fast-uri/body-parser)."
+      }
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Impact",
+        "value": "3 files changed, +29/-26 lines"
+      }
+    },
+    "link_recap": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-25.md"
+      }
+    }
+  }
+}
