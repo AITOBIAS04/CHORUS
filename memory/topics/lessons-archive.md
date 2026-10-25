@@ -86,3 +86,8 @@
 ## Archived 2026-10-21
 
 - Memory-flush had non-idempotent rotation rules without rerun dedup — double-dispatch could over-trim tables (first run trims 12→10, promotions restore 2, second run trims again); also had impossible ~50 line target (retention rules require ~82+ lines minimum); fixed with Step 0 dedup gate + updated target to ~100 lines (self-improve PR #54, 2026-08-16)
+
+## Archived 2026-10-25
+
+- gh pr list returns UNKNOWN mergeStateStatus intermittently — PRs silently fell through all merge/close/skip conditions in self-improve Step 0.5; fixed with gh pr view re-query fallback, logging if still UNKNOWN after re-query (self-improve PR #55, 2026-08-18)
+- fetch-tweets WebSearch fallback wasted queries during prolonged silence — 3 identical queries daily returning same ~10 stale IDs for 19+ consecutive empty days; fixed with query backoff: reduce to 1 date-constrained query when consecutive_empty >= 7, auto-resets when fresh tweets found (self-improve PR #56, 2026-08-20)
