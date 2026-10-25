@@ -1284,4 +1284,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-24,repo-article,claude-opus-4-6,6,1243,177429,30478
 2026-10-24,heartbeat,claude-sonnet-4-6,8,3411,245590,30748
 2026-10-24,heartbeat,claude-sonnet-4-6,8,2729,240343,28543
-2026-10-25,fetch-tweets,claude-sonnet-4-6,9,1895,208266,25544
+2026-10-25,token-report,claude-sonnet-4-6,11,6788,435510,44285
