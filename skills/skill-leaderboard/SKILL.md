@@ -12,16 +12,19 @@ Today is ${today}. Generate a leaderboard of the most popular Aeon skills across
 
 0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a `## Skill Leaderboard` entry (case-insensitive match for "skill leaderboard" or "skill-leaderboard") with `Notification sent:`, and `${var}` is empty (no explicit target requested), log `SKILL_LEADERBOARD_RERUN_QUIET: leaderboard already generated today — skipping to avoid duplicate API calls and notifications` to `memory/logs/${today}.md` and **stop here**. A rerun would re-fetch aeon.yml from every active fork (O(N) API calls), re-write the article, and re-send the notification — wasted compute with identical output on the same day.
 
-1. **Determine the target repo.** If `${var}` is set, use that. Otherwise read `memory/watched-repos.md` and use the first watched repo. Store as `TARGET_REPO`.
+1. **Determine the target repos.** If `${var}` is set, use that single repo. Otherwise read `memory/watched-repos.md` and use **all** watched repos. Store as `TARGET_REPOS` (a list).
 
-2. **Fetch all active forks** (pushed within the last 30 days):
+   Why all repos: the watched list typically contains both the project repo (e.g. MiroShark — a simulation engine whose forks never carry aeon.yml) and the agent repo (e.g. miroshark-aeon — whose forks DO carry aeon.yml). Scanning only the first repo misses the agent forks entirely, causing persistent INSUFFICIENT_DATA when the project repo is listed first (observed: 22 of 25 weeks returned INSUFFICIENT_DATA because only MiroShark was scanned).
+
+2. **Fetch all active forks** across all target repos (pushed within the last 30 days):
    ```bash
    CUTOFF=$(date -u -d "30 days ago" +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-30d +%Y-%m-%dT%H:%M:%SZ)
-   gh api repos/${TARGET_REPO}/forks --paginate --jq "[.[] | select(.pushed_at > \"$CUTOFF\") | {owner: .owner.login, full_name: .full_name, pushed_at}]"
+   # For each repo in TARGET_REPOS:
+   gh api repos/${REPO}/forks --paginate --jq "[.[] | select(.pushed_at > \"$CUTOFF\") | {owner: .owner.login, full_name: .full_name, pushed_at, source_repo: \"${REPO}\"}]"
    ```
-   If no active forks found, log "SKILL_LEADERBOARD_NO_FORKS" and stop (no notification).
+   Combine active forks from all repos into a single list. Deduplicate by `full_name` (a fork may appear under multiple sources if cross-forked). If no active forks found across any repo, log "SKILL_LEADERBOARD_NO_FORKS" and stop (no notification).
 
-   **Early exit — minimum fork gate:** If fewer than 2 active forks are found, log `SKILL_LEADERBOARD_INSUFFICIENT_DATA: only N active fork(s), minimum 2 required for meaningful ranking` and **stop here** — do not read aeon.yml files, aggregate, compare, or write an article. A single-fork "leaderboard" where every skill is at 100% provides no comparative insight. This gate saves API calls and compute when the fleet is too small.
+   **Early exit — minimum fork gate:** After combining forks from all repos, if fewer than 2 active forks with readable aeon.yml are found (checked after Step 3), log `SKILL_LEADERBOARD_INSUFFICIENT_DATA: only N active fork(s) with aeon.yml, minimum 2 required for meaningful ranking` and **stop here** — do not aggregate, compare, or write an article. A single-fork "leaderboard" where every skill is at 100% provides no comparative insight.
 
 3. **Read each active fork's `aeon.yml`** to extract enabled skills:
    ```bash
@@ -71,7 +74,7 @@ Today is ${today}. Generate a leaderboard of the most popular Aeon skills across
    - **Forks with no aeon.yml:** N (likely template/non-running forks)
 
    ---
-   *Source: GitHub API — forks of ${TARGET_REPO}*
+   *Source: GitHub API — forks of ${TARGET_REPOS} (all watched repos)*
    ```
 
 8. **Send notification** via `./notify`:
