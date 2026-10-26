@@ -1,0 +1,136 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-10-26"
+      },
+      "children": [
+        "text_summary",
+        "separator_1",
+        "heading_shipped",
+        "stack_shipped",
+        "separator_2",
+        "heading_stats",
+        "stack_stats",
+        "separator_3",
+        "link_full_update"
+      ]
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "The week everything got patched. Every day shipped at least one dependency fix, closing 10+ security advisories across both repos. The aeon-update sync engine was rewritten from shell snippets into an 840-line Python script.",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      }
+    },
+    "stack_shipped": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item_sync_engine",
+        "item_security",
+        "item_self_improve"
+      ]
+    },
+    "item_sync_engine": {
+      "type": "Text",
+      "props": {
+        "text": "Upstream sync engine rewrite — aeon_update.py replaces fragile inline shell, fixing silent sync failures",
+        "variant": "body"
+      }
+    },
+    "item_security": {
+      "type": "Text",
+      "props": {
+        "text": "10+ security patches — Next.js criticals, MCP SDK CVE, zod, Pillow 13, certifi, hono, DOMPurify",
+        "variant": "body"
+      }
+    },
+    "item_self_improve": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve PRs #75-78 — dedup gates, escalation decay, memory archival, leaderboard multi-repo scan",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_commits",
+        "stat_prs",
+        "stat_lines"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Substantive commits",
+        "value": "~22"
+      }
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "14"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed (3 repos)",
+        "value": "+3,600 / -1,100"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_full_update": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-26.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

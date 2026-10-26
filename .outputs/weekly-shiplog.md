@@ -1,11 +1,11 @@
-*Weekly Shiplog — 2026-10-19*
+*Weekly Shiplog — 2026-10-26*
 
-Both repos got eyes. Coordinated observability upgrades landed across MiroShark and miroshark-aeon — Langfuse tracing for the agent pipeline, OpenRouter Broadcast for simulation LLM calls, Blacksmith bare-metal CI runners.
+The week everything got patched. Every day shipped at least one dependency fix, closing 10+ security advisories across both repos. The aeon-update sync engine was rewritten from shell snippets into an 840-line Python script.
 
 Shipped:
-- Dual-layer observability — Langfuse agent tracing (PRs #205-207, #212) + OpenRouter Broadcast simulation traces (#335, #337)
-- CI on bare metal — Blacksmith runners (#334, #211), uv + ruff-action (#332), job consolidation (#336)
-- Infrastructure hardening — 42-commit upstream sync (#216), Git auth fix (#217), repo org move (#210), security contact (#333), shell-quote CVE fix (#331)
+- Upstream sync engine rewrite — aeon_update.py replaces fragile inline shell, fixing silent sync failures
+- 10+ security patches — Next.js criticals, MCP SDK CVE, zod, Pillow 13, certifi, hono, DOMPurify
+- Self-improve PRs #75-78 — dedup gates, escalation decay, memory archival, leaderboard multi-repo scan
 
-Stats: ~19 commits, 18 PRs merged, +4,900/-1,000 lines
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-19.md
+Stats: ~22 substantive commits, 14 PRs merged, +3,600/-1,100 lines across 3 repos
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-26.md
