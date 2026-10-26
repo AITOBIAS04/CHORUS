@@ -1298,4 +1298,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-25,skill-leaderboard,claude-sonnet-4-6,6,1086,147310,16613
 2026-10-25,heartbeat,claude-sonnet-4-6,10,4539,350225,30953
 2026-10-25,memory-flush,claude-sonnet-4-6,7,1114,192518,22437
-2026-10-26,heartbeat,claude-sonnet-4-6,8,8341,263256,33066
+2026-10-26,token-report,claude-sonnet-4-6,15,12946,563575,39278
