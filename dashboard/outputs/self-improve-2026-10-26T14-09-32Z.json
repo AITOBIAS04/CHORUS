@@ -1,0 +1,349 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-10-26 — Skill-leaderboard fix"
+      },
+      "children": [
+        "heading_main",
+        "finding",
+        "sep1",
+        "problem_section",
+        "sep2",
+        "cause_section",
+        "sep3",
+        "stats_section",
+        "sep4",
+        "changes_section",
+        "sep5",
+        "impact_section",
+        "sep6",
+        "additional_section",
+        "sep7",
+        "pr_section"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Skill-leaderboard: Full Repo Scanning",
+        "level": "h2"
+      }
+    },
+    "finding": {
+      "type": "Text",
+      "props": {
+        "text": "Skill-leaderboard now scans all watched repos, not just the first.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "problem_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "problem_heading",
+        "problem_detail"
+      ]
+    },
+    "problem_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h3"
+      }
+    },
+    "problem_detail": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "problem_text1",
+        "problem_text2",
+        "problem_text3"
+      ]
+    },
+    "problem_text1": {
+      "type": "Text",
+      "props": {
+        "text": "The skill was only scanning forks of MiroShark (listed first in watched-repos.md) — a simulation engine whose 300+ forks never carry aeon.yml."
+      }
+    },
+    "problem_text2": {
+      "type": "Text",
+      "props": {
+        "text": "The agent repo (miroshark-aeon) was listed second and skipped entirely."
+      }
+    },
+    "problem_text3": {
+      "type": "Text",
+      "props": {
+        "text": "Result: 22 of 25 weekly runs since April returned INSUFFICIENT_DATA, wasting a Sonnet session and 20+ API calls each Sunday."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "cause_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "cause_heading",
+        "cause_detail"
+      ]
+    },
+    "cause_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Root Cause",
+        "level": "h3"
+      }
+    },
+    "cause_detail": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "cause_text1",
+        "cause_text2"
+      ]
+    },
+    "cause_text1": {
+      "type": "Text",
+      "props": {
+        "text": "Instructions said 'use the first' repo, but the LLM coincidentally scanned both repos on some runs despite the instructions limiting scope."
+      }
+    },
+    "cause_text2": {
+      "type": "Text",
+      "props": {
+        "text": "The inconsistency made the bug visible — same skill, same data, different results week to week. The 3 successful runs (Oct 4, Oct 19) happened when the LLM coincidentally scanned both repos."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_runs",
+        "stat_miro_forks",
+        "stat_active_forks",
+        "stat_api_waste"
+      ]
+    },
+    "stat_runs": {
+      "type": "Stat",
+      "props": {
+        "label": "False INSUFFICIENT_DATA runs",
+        "value": "22/25",
+        "delta": "88%",
+        "trend": "down"
+      }
+    },
+    "stat_miro_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark forks (unused)",
+        "value": "300+"
+      }
+    },
+    "stat_active_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Active miroshark-aeon forks",
+        "value": "2"
+      }
+    },
+    "stat_api_waste": {
+      "type": "Stat",
+      "props": {
+        "label": "API calls wasted per Sunday",
+        "value": "20+"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "changes_intro",
+        "changes_list"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "changes_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Modified skills/skill-leaderboard/SKILL.md:"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "Step 1 reads ALL watched repos into TARGET_REPOS (was: first repo only)"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "Step 2 iterates and combines forks across repos. Minimum fork gate applies after aeon.yml check on the combined set."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impact_heading",
+        "impact_detail"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_detail": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_text1",
+        "impact_text2"
+      ]
+    },
+    "impact_text1": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates the 88% false-INSUFFICIENT_DATA rate."
+      }
+    },
+    "impact_text2": {
+      "type": "Text",
+      "props": {
+        "text": "The 2 active miroshark-aeon forks with aeon.yml will be found consistently on every Sunday run. Re-implements the intent of PR #70 (closed as DIRTY)."
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "additional_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "additional_heading",
+        "additional_text"
+      ]
+    },
+    "additional_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also Merged",
+        "level": "h3"
+      }
+    },
+    "additional_text": {
+      "type": "Text",
+      "props": {
+        "text": "PR #77 (archive CLEARED active targets older than 60 days) — was UNKNOWN, re-queried as CLEAN."
+      }
+    },
+    "sep7": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_link"
+      ]
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "View PR #78 on GitHub",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/78"
+      }
+    }
+  }
+}
