@@ -1,0 +1,38 @@
+{
+  "root": "card-project-lens",
+  "state": {},
+  "elements": {
+    "card-project-lens": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading-article",
+        "text-body",
+        "link-read"
+      ]
+    },
+    "heading-article": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: The Last Keeper Left in 1998. The Light Never Went Out.",
+        "level": "h2"
+      }
+    },
+    "text-body": {
+      "type": "Text",
+      "props": {
+        "text": "Trinity House automated its last manned lighthouse in November 1998 — the end of a centuries-old profession. The lights kept shining. Today, 93% of commercial codebases contain open source components with no development activity in two years. MiroShark has been running autonomously for 210+ days with 78 self-improvement PRs, zero open issues, and three straight days of dependency patching this week. The lighthouse keepers weren't replaced by nothing — they were replaced by systems that could do the maintenance without sleeping. The same redistribution is happening in open source.",
+        "variant": "body"
+      }
+    },
+    "link-read": {
+      "type": "Link",
+      "props": {
+        "label": "Read",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-10-26.md"
+      }
+    }
+  }
+}
