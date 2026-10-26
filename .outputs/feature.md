@@ -1,3 +1,3 @@
 ## Summary
 
-**FEATURE_RERUN_QUIET** — The feature skill already ran today (logged `FEATURE_SKIP: no push access to aaronjmars/MiroShark`). Since no explicit feature was requested, the rerun was skipped to avoid wasting a full Claude session on an identical outcome. Logged dedup note to `memory/logs/2026-10-25.md`.
+**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not configured, so the token lacks cross-repo push permissions. Logged the skip to `memory/logs/2026-10-26.md`. No feature was built, no notification sent.
