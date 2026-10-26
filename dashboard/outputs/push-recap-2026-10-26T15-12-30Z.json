@@ -1,0 +1,245 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-10-26"
+      },
+      "children": [
+        "projects",
+        "evidence-section",
+        "hardening-section",
+        "timezone-section",
+        "deps-section",
+        "separator1",
+        "key-changes-section",
+        "separator2",
+        "stats-section",
+        "separator3",
+        "recap-link"
+      ]
+    },
+    "projects": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark + miroshark-aeon — 2 substantive commits by 2 authors",
+        "variant": "lead"
+      }
+    },
+    "evidence-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "evidence-heading",
+        "evidence-text"
+      ]
+    },
+    "evidence-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "On-chain monitor evidence system",
+        "level": "h3"
+      }
+    },
+    "evidence-text": {
+      "type": "Text",
+      "props": {
+        "text": "The biggest change today — upstream sync landed a new evidence receipt mode that writes a SHA-256 sealed JSON file after every monitoring run, recording block ranges, source statuses, event counts, and transaction hashes. An offline Node.js verifier validates receipts without network access, backed by a 25-case test suite covering tampering, credential leaks, cross-language interop, and schema violations."
+      }
+    },
+    "hardening-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "hardening-heading",
+        "hardening-text"
+      ]
+    },
+    "hardening-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "On-chain monitor hardening",
+        "level": "h3"
+      }
+    },
+    "hardening-text": {
+      "type": "Text",
+      "props": {
+        "text": "Reorg detection (checks last_block_hash before fetching, rewinds on mismatch), pinned block ranges (explicit toBlock instead of latest), ERC-721 awareness (distinguishes 3-topic ERC-20 from 4-topic NFT transfers), and recursive log-overflow splitting for busy contracts."
+      }
+    },
+    "timezone-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "timezone-heading",
+        "timezone-text"
+      ]
+    },
+    "timezone-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "State reducer timezone fix",
+        "level": "h3"
+      }
+    },
+    "timezone-text": {
+      "type": "Text",
+      "props": {
+        "text": "Events with timezone offsets like -05:00 now sort by actual UTC instant instead of string comparison, with deterministic tiebreaking for simultaneous events."
+      }
+    },
+    "deps-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "deps-heading",
+        "deps-text"
+      ]
+    },
+    "deps-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency maintenance",
+        "level": "h3"
+      }
+    },
+    "deps-text": {
+      "type": "Text",
+      "props": {
+        "text": "Vite 8.3.5, setup-uv 10.3.2, Python >=3.15 held until torch ships wheels."
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-heading",
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "key-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "New scripts/verify-onchain-evidence.mjs — offline receipt validator with credential detection"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "skills/onchain-monitor/SKILL.md rewritten with evidence mode, reorg checks, pinned ranges (+124/-14)"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "scripts/state_reduce.py — timezone-aware event sorting replaces string comparison"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-container",
+        "automation-note"
+      ]
+    },
+    "stats-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-added",
+        "stat-removed"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "19"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "671",
+        "trend": "up"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "168",
+        "trend": "down"
+      }
+    },
+    "automation-note": {
+      "type": "Text",
+      "props": {
+        "text": "20 automation commits filtered",
+        "variant": "caption"
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-10-26.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
