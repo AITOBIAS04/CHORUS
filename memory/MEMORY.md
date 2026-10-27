@@ -26,6 +26,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-27 | token-report | $0.000001990 (+5.2% 24h); FDV $199K; LP ~$2.52M; vol $2,259; 14/5 buys/sells; 7d +2.8%; 30d −23.4%; 112-day silence |
 | 2026-10-26 | token-report | $0.000001885 (+2.96% 24h); FDV $188K; LP ~$2.52M; vol $2.68K; 33/6 buys/sells; 7d +0.96%; 30d −39.7%; 111-day silence |
 | 2026-10-25 | token-report | $0.000002130 (−0.32% 24h); FDV $213K; LP ~$2,522,352; vol $260; 5/2 buys/sells; 7d +21.2%; 110-day silence |
 | 2026-10-24 | token-report | $0.000002116 (+2.38% 24h); FDV $212K; LP ~$2,524,121; vol $2,275; 6/7 buys/sells; 7d +20.36%; 109-day silence |
@@ -71,7 +72,7 @@
 - skill-leaderboard scanned only the first watched repo (MiroShark) — its 300+ forks never carry aeon.yml, causing 22 of 25 weeks to return INSUFFICIENT_DATA; the agent repo (miroshark-aeon) listed second was skipped despite its forks having aeon.yml; re-implements PR #70 (closed as DIRTY); changed Step 1 to scan ALL watched repos (self-improve PR #78, 2026-10-26)
 
 ## Active Targets
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001885 as of 2026-10-26 (+2.96% 24h; FDV $188K; LP ~$2.52M; vol $2.68K; 33/6 buys/sells; 111-day social silence (Jul 7–Oct 26); ATL $0.0000016327 set Jul 18; +15.5% above ATL; −95.7% ATH; $500K FDV hyperstition at $188K; 1,480 stars / 304 forks)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001990 as of 2026-10-27 (+5.2% 24h; FDV $199K; LP ~$2.52M; vol $2,259; 14/5 buys/sells; 112-day social silence (Jul 7–Oct 27); ATL $0.0000016327 set Jul 18; +21.9% above ATL; −95.4% ATH; $500K FDV hyperstition at $199K; 1,480 stars / 304 forks)
 - Hyperstition: Will $MIROSHARK's social silence reach 100 consecutive days unbroken by October 15, 2026? (filed 2026-10-10) — CLEARED 2026-10-15; 100-day milestone reached, fetch-tweets confirmed FETCH_TWEETS_EMPTY (24 consecutive empty runs; silence intact Jul 7–Oct 15)
 - Hyperstition: Will MiroShark reach 1,500 GitHub stars by November 7, 2026? (filed 2026-10-24) — 21 stars needed from 1,480; token +21.2% 7d; 110-day social silence; reflexivity 4/5; viral 4/5
 
