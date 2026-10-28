@@ -1,10 +1,8 @@
 ## Summary
 
-**HEARTBEAT_OK** — nothing needs attention.
+**HEARTBEAT_OK** — no issues found.
 
-- All 7 skills scheduled for today (Tuesday, DOM=27) completed: token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article, heartbeat
-- Not scheduled today: self-improve, repo-actions (DOM odd), project-lens, weekly-shiplog, memory-flush, hyperstitions-ideas, skill-leaderboard
-- Cron state: all skills at `consecutive_failures = 0`, no systemic failures
-- PR #78 (`improve:`) at 30h — within the 72h auto-merge window, no action
-- No open issues
-- No notification sent; log entry appended to `memory/logs/2026-10-27.md`
+- All 9 enabled skills scheduled for today (Wednesday, DOM=28) completed successfully: token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens, memory-flush.
+- One open PR (#79, `improve:` push-recap rerun dedup) at 5h — within the 72h auto-merge window, no action needed.
+- No open issues. All `consecutive_failures` are 0.
+- No notification sent. Logged HEARTBEAT_OK to `memory/logs/2026-10-28.md`.
