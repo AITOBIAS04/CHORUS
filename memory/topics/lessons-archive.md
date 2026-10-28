@@ -91,3 +91,8 @@
 
 - gh pr list returns UNKNOWN mergeStateStatus intermittently — PRs silently fell through all merge/close/skip conditions in self-improve Step 0.5; fixed with gh pr view re-query fallback, logging if still UNKNOWN after re-query (self-improve PR #55, 2026-08-18)
 - fetch-tweets WebSearch fallback wasted queries during prolonged silence — 3 identical queries daily returning same ~10 stale IDs for 19+ consecutive empty days; fixed with query backoff: reduce to 1 date-constrained query when consecutive_empty >= 7, auto-resets when fresh tweets found (self-improve PR #56, 2026-08-20)
+
+## Archived 2026-10-28
+
+- skill-leaderboard was the only enabled skill without a same-day rerun dedup gate after the Aug 2026 wave — scheduler double-dispatch would re-fetch all fork data, re-write the article, and re-send a duplicate notification; fixed with Step 0 dedup gate (self-improve PR #66, 2026-10-04)
+- feature skill was the last enabled skill without a same-day rerun dedup gate — scheduler double-dispatch wasted a full Claude Opus session on identical FEATURE_SKIP output; added Step 0 dedup gate matching the pattern from the Aug 2026 wave (self-improve PR #75, 2026-10-20)
