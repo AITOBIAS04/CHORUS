@@ -1,5 +1,3 @@
 ## Summary
 
-- **Action:** Same-day rerun dedup triggered — the feature skill already ran today (logged `FEATURE_SKIP: no push access` earlier).
-- **Logged:** `FEATURE_RERUN_QUIET` entry appended to `memory/logs/2026-10-27.md`.
-- **No work done:** Skipped to avoid wasting a full Claude session on an identical outcome.
+**FEATURE_SKIP** — no push access to `aaronjmars/MiroShark`. The `GH_GLOBAL` secret is not set, so the token lacks cross-repo push permissions. Logged the skip to `memory/logs/2026-10-28.md` and stopped without picking a feature, cloning, or sending a notification. This is the expected behavior per the skill's pre-flight check (Step 2).
