@@ -1,0 +1,322 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-10-28"
+      },
+      "children": [
+        "repo_info",
+        "sep1",
+        "idea1_section",
+        "sep2",
+        "idea2_section",
+        "sep3",
+        "idea3_section",
+        "sep4",
+        "idea4_section",
+        "sep5",
+        "idea5_section",
+        "sep6",
+        "full_details_link"
+      ]
+    },
+    "repo_info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo_name",
+        "repo_stats"
+      ]
+    },
+    "repo_name": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "variant": "lead"
+      }
+    },
+    "repo_stats": {
+      "type": "Text",
+      "props": {
+        "text": "1,484 stars · 305 forks · 0 open issues · 113-day social silence · 16 stars to 1,500 milestone",
+        "variant": "caption"
+      }
+    },
+    "sep1": {
+      "type": "Separator"
+    },
+    "idea1_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_title",
+        "idea1_tags",
+        "idea1_desc"
+      ]
+    },
+    "idea1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Custom Agent Roster Upload",
+        "level": "h3"
+      }
+    },
+    "idea1_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_tag_type",
+        "idea1_tag_size"
+      ]
+    },
+    "idea1_tag_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea1_tag_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Lets callers seed simulations with named agents (name, profession, initial_stance, influence_weight) to run reproducible A/B experiments — overrides the demographic generator for specified slots while filling the rest normally."
+      }
+    },
+    "sep2": {
+      "type": "Separator"
+    },
+    "idea2_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_title",
+        "idea2_tags",
+        "idea2_desc"
+      ]
+    },
+    "idea2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Webhook Payload Filter Expressions",
+        "level": "h3"
+      }
+    },
+    "idea2_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_tag_type",
+        "idea2_tag_size"
+      ]
+    },
+    "idea2_tag_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea2_tag_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "A WEBHOOK_FILTER env var (JSON Logic expression) gates webhook delivery to only the signals that match — e.g. only fire when confidence_pct >= 70 AND direction = BULLISH. Pre-dispatch evaluation in the existing webhook service, no new endpoints."
+      }
+    },
+    "sep3": {
+      "type": "Separator"
+    },
+    "idea3_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_title",
+        "idea3_tags",
+        "idea3_desc"
+      ]
+    },
+    "idea3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. CLI Tab Completion",
+        "level": "h3"
+      }
+    },
+    "idea3_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_tag_type",
+        "idea3_tag_size"
+      ]
+    },
+    "idea3_tag_type": {
+      "type": "Badge",
+      "props": {
+        "text": "DX"
+      }
+    },
+    "idea3_tag_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Adds a `miroshark completions [bash|zsh|fish]` subcommand that outputs a shell completion script. Tab-completing `--platform` to Twitter/LinkedIn/Reddit removes the most common first-time user error. Under 200 lines."
+      }
+    },
+    "sep4": {
+      "type": "Separator"
+    },
+    "idea4_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_title",
+        "idea4_tags",
+        "idea4_desc"
+      ]
+    },
+    "idea4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Simulation Fine-Tuning Dataset Export",
+        "level": "h3"
+      }
+    },
+    "idea4_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_tag_type",
+        "idea4_tag_size"
+      ]
+    },
+    "idea4_tag_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea4_tag_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/export/finetune.jsonl returns the simulation as JSONL fine-tuning data (system: persona, user: topic + round context, assistant: actual post). Compatible with OpenAI, Anthropic, and Hugging Face fine-tuning formats — positions MiroShark as a synthetic dialogue data generator."
+      }
+    },
+    "sep5": {
+      "type": "Separator"
+    },
+    "idea5_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_title",
+        "idea5_tags",
+        "idea5_desc"
+      ]
+    },
+    "idea5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Round-by-Round Summary API",
+        "level": "h3"
+      }
+    },
+    "idea5_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_tag_type",
+        "idea5_tag_size"
+      ]
+    },
+    "idea5_tag_type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature"
+      }
+    },
+    "idea5_tag_size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/rounds returns a structured summary of every completed round: direction, avg confidence, stance distribution, top posts, convergence delta. The single-call primitive for replay UIs and longitudinal charts without raw log parsing."
+      }
+    },
+    "sep6": {
+      "type": "Separator"
+    },
+    "full_details_link": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-28.md"
+      }
+    }
+  }
+}
