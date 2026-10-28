@@ -1,0 +1,52 @@
+{
+  "root": "card_repo_pulse",
+  "state": {},
+  "elements": {
+    "card_repo_pulse": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-10-28"
+      },
+      "children": [
+        "heading_repo",
+        "stack_stats"
+      ]
+    },
+    "heading_repo": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      }
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1484",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "305",
+        "delta": "+0",
+        "trend": "neutral"
+      }
+    }
+  }
+}
