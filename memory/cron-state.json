@@ -103,15 +103,15 @@
   },
   "feature": {
     "last_dispatch": "2026-10-28T12:46:37Z",
-    "last_status": "dispatched",
+    "last_status": "success",
     "last_failed": "2026-10-26T12:12:10Z",
-    "total_runs": 900,
-    "total_successes": 173,
+    "total_runs": 901,
+    "total_successes": 174,
     "total_failures": 727,
     "consecutive_failures": 0,
     "success_rate": 0.19,
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
-    "last_success": "2026-10-28T11:12:56Z",
+    "last_success": "2026-10-28T12:47:20Z",
     "last_quality_score": 2
   },
   "self-improve": {
