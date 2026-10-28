@@ -1,9 +1,8 @@
 ## Summary
 
-**Push Recap — 2026-10-28: PUSH_RECAP_QUIET**
+**Push Recap — 2026-10-28: PUSH_RECAP_RERUN_QUIET**
 
 - **aaronjmars/MiroShark**: 0 commits in last 24h
-- **aaronjmars/miroshark-aeon**: 9 automation commits (scheduler state updates, cron status, auto-commits), 0 substantive commits
-- All 9 commits matched automation patterns (`chore(scope):`) — no real code changes to report
-- No notification sent, no article written
-- Logged result to `memory/logs/2026-10-28.md`
+- **aaronjmars/miroshark-aeon**: 9 commits, all automation (3x scheduler state, 3x cron status, 3x auto-commit) — 0 substantive commits
+- No article written, no notification sent — same result as the earlier run today
+- Logged rerun to `memory/logs/2026-10-28.md`
