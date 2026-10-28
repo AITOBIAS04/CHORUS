@@ -1,0 +1,194 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-10-28"
+      },
+      "children": [
+        "problem_section",
+        "separator1",
+        "why_section",
+        "separator2",
+        "changes_section",
+        "separator3",
+        "impact_section",
+        "separator4",
+        "pr_link"
+      ]
+    },
+    "problem_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "problem_heading",
+        "problem_text"
+      ]
+    },
+    "problem_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem Identified",
+        "level": "h3"
+      }
+    },
+    "problem_text": {
+      "type": "Text",
+      "props": {
+        "text": "push-recap was the only enabled daily skill without a Step 0 rerun dedup gate. On quiet days — when all commits are automation noise — the scheduler double-dispatch caused a second run to re-fetch all commits from both repos, re-filter them, and arrive at the same PUSH_RECAP_QUIET result."
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "why_heading",
+        "why_text"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Root Cause",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "Observed Oct 27 where the rerun re-listed all 9 automation commits individually only to reach the same conclusion the first run already found. Step 4b rerun dedup required the article to exist, but quiet runs never write one — so the dedup never fired."
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "change_1_stack",
+        "change_2_stack"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "change_1_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change_1_file",
+        "change_1_text"
+      ]
+    },
+    "change_1_file": {
+      "type": "Badge",
+      "props": {
+        "text": "skills/push-recap/SKILL.md",
+        "variant": "outline"
+      }
+    },
+    "change_1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Added Step 0 same-day rerun dedup gate — catches both productive reruns (Notification sent: yes) and quiet reruns (PUSH_RECAP_QUIET) before any API calls are made"
+      }
+    },
+    "change_2_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change_2_file",
+        "change_2_text"
+      ]
+    },
+    "change_2_file": {
+      "type": "Badge",
+      "props": {
+        "text": "skills/push-recap/SKILL.md",
+        "variant": "outline"
+      }
+    },
+    "change_2_text": {
+      "type": "Text",
+      "props": {
+        "text": "Added Step 5b explicit stop when zero substantive commits remain after automation filtering, with defined log format"
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impact_heading",
+        "impact_text"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Eliminates wasted API calls and LLM compute on quiet-day reruns. Matches the dedup gate pattern used by all other enabled skills. 79th self-improve PR across 220+ days."
+      }
+    },
+    "separator4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pull Request #79",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/79",
+        "source": "GitHub"
+      }
+    }
+  }
+}
