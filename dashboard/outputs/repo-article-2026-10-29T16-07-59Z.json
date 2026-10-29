@@ -1,0 +1,96 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article",
+        "description": "New Article: Fourteen Stars Away. No One's Counting."
+      },
+      "children": [
+        "article-title",
+        "stats-group",
+        "body-text",
+        "sep1",
+        "context-text",
+        "sep2",
+        "article-link"
+      ]
+    },
+    "article-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Fourteen Stars Away. No One's Counting.",
+        "level": "h2"
+      }
+    },
+    "stats-group": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars-week",
+        "stat-silence-days",
+        "stat-to-target"
+      ]
+    },
+    "stat-stars-week": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars this week",
+        "value": "10"
+      }
+    },
+    "stat-silence-days": {
+      "type": "Stat",
+      "props": {
+        "label": "Days in social silence",
+        "value": "114"
+      }
+    },
+    "stat-to-target": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars until 1,500",
+        "value": "14"
+      }
+    },
+    "body-text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark gained 10 stars this week while 114 days deep into social silence — no tweets, no announcements, no marketing.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "context-text": {
+      "type": "Text",
+      "props": {
+        "text": "Against the backdrop of 6 million fake GitHub stars identified by an ICSE 2026 study, organic growth from dark matter developers might be the cleanest signal left on the platform.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-29.md",
+        "source": "repo-article"
+      }
+    }
+  }
+}
