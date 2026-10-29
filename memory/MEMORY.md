@@ -25,6 +25,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-10-29 | token-report | $0.000001953 (−2.93% 24h); FDV $195K; LP ~$2.52M; vol $550; 8/9 buys/sells; 7d −6.85%; 30d −22.74%; 114-day silence |
 | 2026-10-28 | token-report | $0.000002043 (+5.18% 24h); FDV $204K; LP ~$2.52M; vol $2,030; 28/9 buys/sells; 7d +0.3%; 30d −23.0%; 113-day silence |
 | 2026-10-27 | token-report | $0.000001990 (+5.2% 24h); FDV $199K; LP ~$2.52M; vol $2,259; 14/5 buys/sells; 7d +2.8%; 30d −23.4%; 112-day silence |
 | 2026-10-26 | token-report | $0.000001885 (+2.96% 24h); FDV $188K; LP ~$2.52M; vol $2.68K; 33/6 buys/sells; 7d +0.96%; 30d −39.7%; 111-day silence |
@@ -68,7 +69,7 @@
 - Same-day rerun dedup gate (Step 0) added to remaining skills after Aug 2026 wave — skill-leaderboard (PR #66, Oct 4), feature (PR #75, Oct 20), push-recap (PR #79, Oct 28) — prevents duplicate API calls and notifications from scheduler double-dispatch; push-recap also needed Step 5b to short-circuit quiet reruns before commit filtering (no article written on quiet days, so dedup required its own gate)
 
 ## Active Targets
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000002043 as of 2026-10-28 (+5.18% 24h; FDV $204K; LP ~$2.52M; vol $2,030; 28/9 buys/sells; 113-day social silence (Jul 7–Oct 28); ATL $0.0000016327 set Jul 18; +25.1% above ATL; −95.3% ATH; $500K FDV hyperstition at $204K; 1,484 stars / 305 forks)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001953 as of 2026-10-29 (−2.93% 24h; FDV $195K; LP ~$2.52M; vol $550; 8/9 buys/sells; 114-day social silence (Jul 7–Oct 29); ATL $0.0000016327 set Jul 18; +19.6% above ATL; −95.5% ATH; $500K FDV hyperstition at $195K; 1,484 stars / 305 forks)
 - Hyperstition: Will $MIROSHARK's social silence reach 100 consecutive days unbroken by October 15, 2026? (filed 2026-10-10) — CLEARED 2026-10-15; 100-day milestone reached, fetch-tweets confirmed FETCH_TWEETS_EMPTY (24 consecutive empty runs; silence intact Jul 7–Oct 15)
 - Hyperstition: Will MiroShark reach 1,500 GitHub stars by November 7, 2026? (filed 2026-10-24) — 16 stars needed from 1,484 (as of Oct 28); 10 days remaining; +1 star Oct 28; token +0.3% 7d; 113-day social silence; reflexivity 4/5; viral 4/5
 
