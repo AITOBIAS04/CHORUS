@@ -1,8 +1,5 @@
-Dedup gate triggered. Today's log already had `Notification sent: yes` from an earlier run (1484 stars, 305 forks). Logged `REPO_PULSE_RERUN_QUIET` with current counts — no re-notification sent.
+*Repo Pulse — 2026-10-29*
+[aaronjmars/MiroShark]
 
-## Summary
-
-- Checked `aaronjmars/MiroShark` (skipped `miroshark-aeon` per skill config)
-- Found existing `## Repo Pulse` entry in today's log with `Notification sent: yes`
-- Current counts unchanged: 1484 stars, 305 forks
-- Logged `REPO_PULSE_RERUN_QUIET` to `memory/logs/2026-10-28.md` — no duplicate notification
+Stars: 1,486 total (+2 net)
+Forks: 305 total
