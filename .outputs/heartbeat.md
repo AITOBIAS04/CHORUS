@@ -1,9 +1,9 @@
-HEARTBEAT_OK. All scheduled skills for 2026-10-28 ran successfully, no stalled PRs (only #79 at 7h, within the 72h `improve:` threshold), no open issues, and all `consecutive_failures` are 0 across every skill.
+HEARTBEAT_OK. All 6 expected daily skills ran today, no stale PRs (PR #79 is 29h old with `improve:` prefix — threshold is 72h), no open issues, no systemic failures.
 
 ## Summary
 
-- **System health**: Clean — all skills at 0 consecutive failures
-- **Scheduled skills today (10 total)**: all confirmed run — token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens, memory-flush, heartbeat
-- **Open PRs**: #79 only, 7h old, within threshold — no action
-- **Open issues**: none; no escalating issues
-- **Action taken**: logged `HEARTBEAT_OK (rerun)` to `memory/logs/2026-10-28.md`
+- Read memory, cron-state, today's log, and issues index
+- Checked all enabled skills against today's schedule (Thursday, DOM=29)
+- All 6 expected daily skills confirmed run; 6 others correctly not scheduled today (step/day-of-week filters)
+- No open GitHub issues, no memory issues, no escalations
+- Logged HEARTBEAT_OK to `memory/logs/2026-10-29.md`
