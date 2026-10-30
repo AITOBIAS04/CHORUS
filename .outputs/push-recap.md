@@ -1,8 +1,7 @@
 ## Summary
 
-**Push Recap — 2026-10-30: PUSH_RECAP_QUIET**
-
+**Push Recap (rerun) — 2026-10-30**: No new substantive commits since the earlier run today. Both watched repos unchanged:
 - **aaronjmars/MiroShark**: 0 commits in last 24h
-- **aaronjmars/miroshark-aeon**: 9 commits, all automation (3 scheduler state updates, 2 cron status, 2 auto-commits, 1 token-movers cron, 1 token-movers auto-commit) — 0 substantive commits
-- No article written, no notification sent
-- Log entry appended to `memory/logs/2026-10-30.md`
+- **aaronjmars/miroshark-aeon**: 9 automation commits (scheduler state updates, cron status, auto-commits), 0 substantive
+
+Logged `PUSH_RECAP_RERUN_QUIET` to `memory/logs/2026-10-30.md`. No article written, no notification sent.
