@@ -1,0 +1,46 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading1",
+        "text1",
+        "separator1",
+        "storylink1"
+      ]
+    },
+    "heading1": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: Turn Dependabot Off. Then What?",
+        "level": "h2"
+      }
+    },
+    "text1": {
+      "type": "Text",
+      "props": {
+        "text": "In February 2026, a former head of Google Go security told everyone to turn off Dependabot — the most widely deployed automated maintenance tool in software — because its false positives were making security worse. The industry drew its automation line at dependency version bumps, and even that proved too noisy. Meanwhile, an autonomous agent running on GitHub Actions has been filing self-improvement PRs that fix its own notification fatigue, detection thresholds, and operational logic for 220 days. The question was never whether to turn Dependabot off. It was what turns on next.",
+        "variant": "body"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Turn Dependabot Off. Then What?",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-10-30.md",
+        "source": "project-lens"
+      }
+    }
+  }
+}
