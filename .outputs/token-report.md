@@ -1,7 +1,10 @@
-`TOKEN_REPORT_RERUN_QUIET` — today's token-report was already sent (logged at `Notification sent: yes`). Skipped re-fetch, re-write, and re-notification per the same-day dedup gate.
+*MiroShark Daily — 2026-10-30*
 
-## Summary
+Price: $0.00000183764 (−7.73% 24h)
+Liquidity: ~$2.51M | 24h Vol: $1,981
+Buys/Sells: 13/5 (8 buyers / 4 sellers)
+7d: −8.75% | 30d: −30.24%
 
-- **Step 0 triggered:** `memory/logs/2026-10-29.md` already contained a `token-report` section with `Notification sent: yes`.
-- **Action:** Logged `TOKEN_REPORT_RERUN_QUIET` to today's log and stopped — no API calls made, no article overwritten, no notification sent.
-- **No follow-up needed.** The scheduler likely dispatched the skill twice today; the dedup gate prevented a duplicate report.
+Pullback extends into a 7th consecutive losing day; price sits +12.6% above ATL with 115-day social silence unbroken.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
