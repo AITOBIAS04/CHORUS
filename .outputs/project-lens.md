@@ -1,5 +1,3 @@
-*New Article: Turn Dependabot Off. Then What?*
+## Summary
 
-In February 2026, a former head of Google Go security told everyone to turn off Dependabot — the most widely deployed automated maintenance tool in software — because its false positives were making security worse. The industry drew its automation line at dependency version bumps, and even that proved too noisy. Meanwhile, an autonomous agent running on GitHub Actions has been filing self-improvement PRs that fix its own notification fatigue, detection thresholds, and operational logic for 220 days. The question was never whether to turn Dependabot off. It was what turns on next.
-
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-10-30.md
+**Skipped** — today's project-lens article ("Turn Dependabot Off. Then What?", angle category 3: Industry comparison) was already written and notified earlier. Logged `PROJECT_LENS_RERUN_QUIET` to `memory/logs/2026-10-30.md` to record the dedup skip. No duplicate research, article, or notification sent.
