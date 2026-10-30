@@ -81,6 +81,7 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (80th+ consecutive block as of Aug 23; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-10-30): Real-World Outcome Annotation + Calibration Score (#1), QR Code Share Surface (#2), Simulation Podcast Script Export (#3), Trending Topics Discovery Feed (#4), Simulation Confidence Leaderboard (#5)
 - Feature candidates (repo-actions 2026-10-28): Custom Agent Roster Upload (#1), Webhook Payload Filter Expressions (#2), CLI Tab Completion (#3), Simulation Fine-Tuning Dataset Export (#4), Simulation Round-by-Round Summary API (#5)
 - Feature candidates (repo-actions 2026-10-26): Simulation Lifecycle MCP Tools (#1), Recurring Simulation Scheduler (#2), Simulation Parameter Dry-Run Validator (#3), Webhook Delivery History Log (#4), Named Simulation Series (#5)
 - Feature candidates (repo-actions 2026-10-24): Pre-Built Scenario Template Gallery (#1), Agent Quote Deeplink (#2), Stuck Simulation Recovery Endpoint (#3), Cost Cap Guard (#4), Simulation Gallery RSS Feed (#5)

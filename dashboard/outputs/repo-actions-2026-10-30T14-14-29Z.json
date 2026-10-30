@@ -1,0 +1,177 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-10-30"
+      },
+      "children": [
+        "subtitle",
+        "source-info",
+        "sep-1",
+        "idea-1",
+        "idea-2",
+        "idea-3",
+        "idea-4",
+        "idea-5",
+        "sep-2",
+        "full-details"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from aaronjmars/MiroShark analysis (1,488 stars · 304 forks · 115-day social silence) — five ideas the feature skill can autonomously build tomorrow.",
+        "variant": "lead"
+      }
+    },
+    "source-info": {
+      "type": "Text",
+      "props": {
+        "text": "Five feature ideas:",
+        "variant": "body"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-1-title",
+        "idea-1-desc"
+      ]
+    },
+    "idea-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Real-World Outcome Annotation + Calibration Score",
+        "level": "h3"
+      }
+    },
+    "idea-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Feature, Small. POST /api/simulation/:id/outcome records the actual result; GET /api/accuracy/summary returns the operator's calibration score — turns MiroShark into a tracked prediction record."
+      }
+    },
+    "idea-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-2-title",
+        "idea-2-desc"
+      ]
+    },
+    "idea-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. QR Code Share Surface",
+        "level": "h3"
+      }
+    },
+    "idea-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Feature, Small. GET /api/simulation/:id/qrcode.png returns a 512px PNG QR encoding the share URL — physical-media distribution for conferences, posters, and printed reports. The 14th share surface."
+      }
+    },
+    "idea-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-3-title",
+        "idea-3-desc"
+      ]
+    },
+    "idea-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation Podcast Script Export",
+        "level": "h3"
+      }
+    },
+    "idea-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Content, Small. GET /api/simulation/:id/podcast-script generates a 400–600 word two-host dialogue from the simulation signal, cached by the LLM — drop it into ElevenLabs or read live. The 15th share surface."
+      }
+    },
+    "idea-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-4-title",
+        "idea-4-desc"
+      ]
+    },
+    "idea-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Trending Topics Discovery Feed",
+        "level": "h3"
+      }
+    },
+    "idea-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Feature/Growth, Small. GET /api/feed/trending aggregates all published simulations into a ranked topic list with direction and confidence — solves the cold-start problem for new users and powers a live landing-page widget."
+      }
+    },
+    "idea-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-5-title",
+        "idea-5-desc"
+      ]
+    },
+    "idea-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Confidence Leaderboard",
+        "level": "h3"
+      }
+    },
+    "idea-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Community/Growth, Small. GET /api/leaderboard returns top-20 by confidence and top-20 most contested — a quality-ranked showcase beyond the chronological gallery."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-10-30.md"
+      }
+    }
+  }
+}
