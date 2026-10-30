@@ -1,0 +1,143 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-10-30"
+      },
+      "children": [
+        "heading-topic",
+        "separator-1",
+        "content-problem",
+        "separator-2",
+        "section-why",
+        "separator-3",
+        "section-changes",
+        "separator-4",
+        "section-impact",
+        "separator-5",
+        "pr-link"
+      ]
+    },
+    "heading-topic": {
+      "type": "Heading",
+      "props": {
+        "text": "Heartbeat scheduled-skill detection threshold boundary fix",
+        "level": "h2"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "content-problem": {
+      "type": "Text",
+      "props": {
+        "text": "The heartbeat's missing-skill check used a strict >2h threshold, creating an exact boundary blind spot: skill-leaderboard runs at 17:00 UTC on Sundays, and the heartbeat runs at 19:00 — exactly 2 hours later. Since 2h > 2h evaluates to false, a silent skill-leaderboard failure on Sundays would go completely undetected. GitHub Actions jitter usually masked this (adding 5-10 min to heartbeat start), but the detection should be deterministic, not jitter-dependent.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-why",
+        "text-why"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text-why": {
+      "type": "Text",
+      "props": {
+        "text": "Noticed during systematic review of all enabled skill schedules vs heartbeat timing. skill-leaderboard (17:00 Sun) was the only skill sitting exactly on the threshold boundary. All other skills are 3+ hours before heartbeat.",
+        "variant": "body"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-changes",
+        "text-changes"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text-changes": {
+      "type": "Text",
+      "props": {
+        "text": "skills/heartbeat/SKILL.md: threshold from 'more than 2 hours ago' to '2 or more hours ago' with inline note explaining the skill-leaderboard boundary case",
+        "variant": "body"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-impact",
+        "text-impact"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "Ensures Sunday skill-leaderboard failures are always caught by heartbeat, regardless of jitter. Verified no false positives — memory-flush at 18:00 (1h gap) remains safely under the >=2h threshold.",
+        "variant": "body"
+      }
+    },
+    "separator-5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #80: Heartbeat scheduled-skill detection threshold boundary fix",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/80",
+        "source": "GitHub"
+      }
+    }
+  }
+}
