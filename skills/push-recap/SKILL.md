@@ -18,6 +18,13 @@ Read memory/watched-repos.md for the list of repos to scan.
 
 ## Steps
 
+0. **Same-day rerun dedup** — If `${var}` is empty and `memory/logs/${today}.md` already contains a `## Push Recap` entry (not a `(rerun)` heading):
+   - If it contains `Notification sent: yes` — the push recap was already sent. Log `PUSH_RECAP_RERUN_QUIET: notification already sent today` to `memory/logs/${today}.md` and **stop here**.
+   - If it contains `PUSH_RECAP_QUIET` — the earlier run already found no substantive commits. Log `PUSH_RECAP_RERUN_QUIET: previous run found no substantive commits — skipping re-fetch` to `memory/logs/${today}.md` and **stop here**. The 24h commit window is the same both times, and commits arriving in the brief interval between scheduler dispatches are overwhelmingly automation noise. Substantive commits will be captured in the next day's recap.
+   - Otherwise (entry exists but doesn't match either pattern) — continue normally.
+
+   This prevents scheduler double-dispatch from re-fetching commits, re-filtering automation noise, and re-arriving at the same result — observed Oct 27 where the rerun re-listed all 9 automation commits individually only to reach the same PUSH_RECAP_QUIET.
+
 1. **Fetch push events** for each watched repo from the last 24 hours:
    ```bash
    gh api repos/owner/repo/events --jq '[.[] | select(.type == "PushEvent") | {actor: .actor.login, created_at: .created_at, ref: .payload.ref, commits: [.payload.commits[] | {sha: .sha[0:7], message: .message, author: .author.name}]}]' --paginate
@@ -49,6 +56,15 @@ Read memory/watched-repos.md for the list of repos to scan.
    - **Substantive commits** — everything else (PR merges, features, fixes, real code changes)
 
    Exclude automation commits from diff analysis in step 6. Report them as a single count in the overview and log entry (e.g. "2 substantive commits + 28 automation commits filtered").
+
+5b. **Stop if all commits are automation noise** — If zero substantive commits remain after filtering (only automation commits across all repos), log to `memory/logs/${today}.md`:
+   ```
+   ## Push Recap
+   - **owner/repo**: N automation commits, 0 substantive
+   - PUSH_RECAP_QUIET: no substantive commits across watched repos — all N commits are automation noise
+   - Notification sent: no
+   ```
+   **Stop here — do NOT write an article or send a notification.** Steps 6–11 require substantive commits to analyze. Step 0 handles rerun dedup for this case by detecting PUSH_RECAP_QUIET in the log.
 
 6. **Read the actual diffs** for each substantive commit to understand what changed:
    ```bash
