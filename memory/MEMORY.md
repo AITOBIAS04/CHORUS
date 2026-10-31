@@ -72,7 +72,8 @@
 ## Active Targets
 - MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001953 as of 2026-10-29 (−2.93% 24h; FDV $195K; LP ~$2.52M; vol $550; 8/9 buys/sells; 114-day social silence (Jul 7–Oct 29); ATL $0.0000016327 set Jul 18; +19.6% above ATL; −95.5% ATH; $500K FDV hyperstition at $195K; 1,484 stars / 305 forks)
 - Hyperstition: Will $MIROSHARK's social silence reach 100 consecutive days unbroken by October 15, 2026? (filed 2026-10-10) — CLEARED 2026-10-15; 100-day milestone reached, fetch-tweets confirmed FETCH_TWEETS_EMPTY (24 consecutive empty runs; silence intact Jul 7–Oct 15)
-- Hyperstition: Will MiroShark reach 1,500 GitHub stars by November 7, 2026? (filed 2026-10-24) — 16 stars needed from 1,484 (as of Oct 28); 10 days remaining; +1 star Oct 28; token +0.3% 7d; 113-day social silence; reflexivity 4/5; viral 4/5
+- Hyperstition: Will MiroShark reach 1,500 GitHub stars by November 7, 2026? (filed 2026-10-24) — 12 stars needed from 1,488 (as of Oct 30); 7 days remaining; token +3.9% 7d; 116-day social silence; reflexivity 4/5; viral 4/5
+- Hyperstition: Will MiroShark receive its first external pull request by November 30, 2026? (filed 2026-10-31) — 304 forks, 0 external PRs; 30 days remaining; reflexivity 5/5; viral 4/5
 
 ## Open Issues
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)

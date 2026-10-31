@@ -1,0 +1,192 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-10-31"
+      },
+      "children": [
+        "question",
+        "sep1",
+        "coord_section",
+        "sep2",
+        "why_section",
+        "sep3",
+        "resolution_section",
+        "sep4",
+        "scores_section",
+        "sep5",
+        "footer"
+      ]
+    },
+    "question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark receive its first external pull request by November 30, 2026?",
+        "level": "h2"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "coord_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "coord_head",
+        "coord_body"
+      ]
+    },
+    "coord_head": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h3"
+      }
+    },
+    "coord_body": {
+      "type": "Text",
+      "props": {
+        "text": "304 forks sit on GitHub. Not one has ever submitted a PR back. This market turns \"I forked it once\" into \"I should actually contribute.\" Every developer who cloned the repo is a potential resolver — they just need a reason to come back. First-mover prestige in a zero-contribution repo is a unique flex. An AI agent can maintain the codebase, but it cannot pretend to be an outside contributor. Only a human can close this market YES."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "why_head",
+        "why_body"
+      ]
+    },
+    "why_head": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h3"
+      }
+    },
+    "why_body": {
+      "type": "Text",
+      "props": {
+        "text": "The Oct 25 article \"Three Hundred Forks. Zero Pull Requests\" crystallized the anomaly. CMU research shows 50% of forks never contribute upstream — MiroShark sits at 0% across 304 forks while an autonomous agent has filed 80 self-improve PRs in 220 days. The maintenance loop may have eliminated the perceived need, or raised the bar. Either way, 304 ghosts and not one has come back."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "resolution_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "res_head",
+        "res_body"
+      ]
+    },
+    "res_head": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      }
+    },
+    "res_body": {
+      "type": "Text",
+      "props": {
+        "text": "A pull request submitted to aaronjmars/MiroShark from a GitHub account not associated with the core team, containing substantive code changes (not typo-only or bot-generated), merged or open by 23:59 UTC November 30, 2026."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "scores_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "reflexivity",
+        "viral"
+      ]
+    },
+    "reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      }
+    },
+    "viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "footer_text",
+        "footer_link",
+        "footer_q"
+      ]
+    },
+    "footer_text": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on",
+        "variant": "muted"
+      }
+    },
+    "footer_link": {
+      "type": "Link",
+      "props": {
+        "label": "https://www.hyperstitions.com/",
+        "href": "https://www.hyperstitions.com/"
+      }
+    },
+    "footer_q": {
+      "type": "Text",
+      "props": {
+        "text": "?",
+        "variant": "muted"
+      }
+    }
+  }
+}
