@@ -1,0 +1,81 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading_article",
+        "stack_content"
+      ]
+    },
+    "heading_article": {
+      "type": "Heading",
+      "props": {
+        "text": "The Eightieth Fix Was a Greater-Than Sign.",
+        "level": "h2"
+      }
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_milestone",
+        "text_recent_fixes",
+        "text_boundary_examples",
+        "text_nasa_pattern",
+        "text_easy_bugs",
+        "separator",
+        "storylink_read"
+      ]
+    },
+    "text_milestone": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's agent hit 80 self-improvement PRs in 220 days.",
+        "variant": "body"
+      }
+    },
+    "text_recent_fixes": {
+      "type": "Text",
+      "props": {
+        "text": "The recent fixes are all boundary bugs — an off-by-one threshold, a missing dedup gate, a first-item-only scan.",
+        "variant": "body"
+      }
+    },
+    "text_boundary_examples": {
+      "type": "Text",
+      "props": {
+        "text": "NASA's reliability growth models predict exactly this: the longer you run, the subtler the bugs get.",
+        "variant": "body"
+      }
+    },
+    "text_easy_bugs": {
+      "type": "Text",
+      "props": {
+        "text": "The easy ones died months ago.",
+        "variant": "lead"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink_read": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read: The Eightieth Fix Was a Greater-Than Sign.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-10-31.md",
+        "source": "repo-article"
+      }
+    }
+  }
+}
