@@ -1,0 +1,198 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "alert",
+        "separator",
+        "body"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "⏳ Stale PR detected",
+        "message": "PR #79 (improve: add rerun dedup for push-recap quiet days) is 77h old, exceeding the 72h auto-merge window.",
+        "type": "warning"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "body": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "pr-section",
+        "window-section",
+        "schedule-section",
+        "action"
+      ]
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-heading",
+        "pr-content"
+      ]
+    },
+    "pr-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Request",
+        "level": "h3"
+      }
+    },
+    "pr-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "pr-badge",
+        "pr-title"
+      ]
+    },
+    "pr-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "#79",
+        "variant": "outline"
+      }
+    },
+    "pr-title": {
+      "type": "Text",
+      "props": {
+        "text": "improve: add rerun dedup for push-recap quiet days",
+        "variant": "body"
+      }
+    },
+    "window-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "window-heading",
+        "window-stats"
+      ]
+    },
+    "window-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Age & Auto-merge Window",
+        "level": "h3"
+      }
+    },
+    "window-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "age-stat",
+        "window-limit-stat",
+        "overflow-stat"
+      ]
+    },
+    "age-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Current age",
+        "value": "77h"
+      }
+    },
+    "window-limit-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Auto-merge window",
+        "value": "72h"
+      }
+    },
+    "overflow-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Exceeds by",
+        "value": "5h",
+        "trend": "up"
+      }
+    },
+    "schedule-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "schedule-heading",
+        "schedule-pattern",
+        "schedule-table"
+      ]
+    },
+    "schedule-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Self-improve Schedule",
+        "level": "h3"
+      }
+    },
+    "schedule-pattern": {
+      "type": "Text",
+      "props": {
+        "text": "Runs on */2 days (every 2 days)",
+        "variant": "caption"
+      }
+    },
+    "schedule-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Date",
+          "Day of Month",
+          "Parity",
+          "Action"
+        ],
+        "rows": [
+          [
+            "Nov 1",
+            "DOM=1",
+            "Odd",
+            "Skip"
+          ],
+          [
+            "Nov 2",
+            "DOM=2",
+            "Even",
+            "Run ✓"
+          ]
+        ]
+      }
+    },
+    "action": {
+      "type": "Alert",
+      "props": {
+        "title": "Action Required",
+        "message": "Should merge or close on next self-improve run (Nov 2).",
+        "type": "info"
+      }
+    }
+  }
+}
