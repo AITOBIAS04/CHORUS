@@ -1,10 +1,6 @@
-*MiroShark Daily — 2026-10-31*
+`TOKEN_REPORT_RERUN_QUIET` — a token-report with `Notification sent: yes` was already logged for today (2026-10-31), so this rerun is a no-op. No data was re-fetched and no notification was sent.
 
-Price: $0.000001904 (+1.7% 24h)
-Liquidity: $2.51M | 24h Vol: $1,762
-Buys/Sells: 9/6
-7d: +3.9% | 30d: −16.8%
+## Summary
 
-Quiet recovery above $0.0000019 on light buy-side volume; 116-day social silence intact.
-
-Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
+- **Step 0 triggered:** `memory/logs/2026-10-31.md` already contained a token-report entry with `Notification sent: yes` (price $0.000001904, +1.7% 24h, 7d +3.9%, 30d −16.8%).
+- **Action:** Logged `TOKEN_REPORT_RERUN_QUIET` to today's log and stopped — no API calls, no article overwrite, no duplicate notification.
