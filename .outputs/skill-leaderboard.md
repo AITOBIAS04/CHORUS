@@ -1,3 +1,13 @@
-## Summary
+*Skill Leaderboard — 2026-11-01*
 
-Dedup gate triggered. The `memory/logs/2026-10-25.md` already contained a `## Skill Leaderboard` entry with `Notification sent:` from an earlier run today (result: 0 forks with readable `aeon.yml`, insufficient data). Logged `SKILL_LEADERBOARD_RERUN_QUIET` and stopped — no API calls made, no duplicate notification sent.
+Top skills across 2 active Aeon forks:
+1. fetch-tweets — 2 forks (100%)
+2. heartbeat — 2 forks (100%)
+3. memory-flush — 2 forks (100%)
+4. repo-pulse — 2 forks (100%)
+5. aeon-update — 1 fork (50%)
+
+Consensus: fetch-tweets, heartbeat, memory-flush, repo-pulse (all 4 unchanged — stable for 6+ weeks)
+Adoption gaps: none (all source skills appear in at least one fork)
+
+Full leaderboard: articles/skill-leaderboard-2026-11-01.md

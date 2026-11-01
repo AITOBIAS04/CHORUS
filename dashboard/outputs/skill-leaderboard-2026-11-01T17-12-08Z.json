@@ -1,0 +1,158 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Skill Leaderboard",
+        "description": "2026-11-01"
+      },
+      "children": [
+        "heading_main",
+        "separator_1",
+        "table_top_skills",
+        "separator_2",
+        "section_consensus",
+        "section_adoption",
+        "separator_3",
+        "link_full"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Skills Across 2 Active Aeon Forks",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "table_top_skills": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Rank",
+          "Skill",
+          "Forks",
+          "Adoption"
+        ],
+        "rows": [
+          [
+            "1",
+            "fetch-tweets",
+            "2",
+            "100%"
+          ],
+          [
+            "2",
+            "heartbeat",
+            "2",
+            "100%"
+          ],
+          [
+            "3",
+            "memory-flush",
+            "2",
+            "100%"
+          ],
+          [
+            "4",
+            "repo-pulse",
+            "2",
+            "100%"
+          ],
+          [
+            "5",
+            "aeon-update",
+            "1",
+            "50%"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_consensus": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_consensus",
+        "text_consensus"
+      ]
+    },
+    "heading_consensus": {
+      "type": "Heading",
+      "props": {
+        "text": "Consensus",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_consensus": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets, heartbeat, memory-flush, repo-pulse (all 4 unchanged — stable for 6+ weeks)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "section_adoption": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_adoption",
+        "text_adoption"
+      ]
+    },
+    "heading_adoption": {
+      "type": "Heading",
+      "props": {
+        "text": "Adoption Gaps",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_adoption": {
+      "type": "Text",
+      "props": {
+        "text": "none (all source skills appear in at least one fork)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link_full": {
+      "type": "Link",
+      "props": {
+        "label": "Full leaderboard: articles/skill-leaderboard-2026-11-01.md",
+        "href": "articles/skill-leaderboard-2026-11-01.md"
+      },
+      "children": []
+    }
+  }
+}
