@@ -1,0 +1,150 @@
+{
+  "root": "card1",
+  "state": {},
+  "elements": {
+    "card1": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-01"
+      },
+      "children": [
+        "stack1"
+      ]
+    },
+    "stack1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_info",
+        "commit_info",
+        "sep1",
+        "pr_heading",
+        "pr_desc",
+        "changes_heading",
+        "changes_stack",
+        "sep2",
+        "stats_stack",
+        "sep3",
+        "full_recap_link"
+      ]
+    },
+    "repo_info": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "variant": "lead"
+      }
+    },
+    "commit_info": {
+      "type": "Text",
+      "props": {
+        "text": "1 substantive commit by Aaron Elijah Mars (9 automation commits filtered)",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CI/CD Hardening: PR #348",
+        "level": "h3"
+      }
+    },
+    "pr_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Adds job timeouts and concurrency controls to both GitHub Actions workflows. Every CI job now has an explicit timeout (30min for Docker builds, 15min for tests/lint), and the test workflow cancels in-progress runs when a new push lands on the same PR branch — preventing queue pile-ups and stuck runners during rapid iteration."
+      }
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h4"
+      }
+    },
+    "changes_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "concurrency group on tests.yml cancels superseded PR runs (main-branch builds unaffected)"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "timeout-minutes: 30 on Docker build-and-push job"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "timeout-minutes: 15 on all four test jobs (unit, frontend, camel-smoke, lint)"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_files",
+        "stat_lines"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "2"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines",
+        "value": "+9 / -0"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full_recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-01.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
