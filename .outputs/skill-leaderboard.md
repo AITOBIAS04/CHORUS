@@ -1,13 +1,8 @@
-*Skill Leaderboard — 2026-11-01*
+Step 0 dedup triggered. Today's log already contains a completed `## Skill Leaderboard` entry with `Notification sent: yes` — the leaderboard was already generated and sent earlier today. Logged `SKILL_LEADERBOARD_RERUN_QUIET` and stopped as instructed to avoid redundant API calls and duplicate notifications.
 
-Top skills across 2 active Aeon forks:
-1. fetch-tweets — 2 forks (100%)
-2. heartbeat — 2 forks (100%)
-3. memory-flush — 2 forks (100%)
-4. repo-pulse — 2 forks (100%)
-5. aeon-update — 1 fork (50%)
+## Summary
 
-Consensus: fetch-tweets, heartbeat, memory-flush, repo-pulse (all 4 unchanged — stable for 6+ weeks)
-Adoption gaps: none (all source skills appear in at least one fork)
-
-Full leaderboard: articles/skill-leaderboard-2026-11-01.md
+- **Action:** Stopped at Step 0 (same-day rerun dedup)
+- **Reason:** `memory/logs/2026-11-01.md` already contained a `## Skill Leaderboard` entry with `Notification sent: yes` from an earlier run today (2 active forks with aeon.yml scanned, top skills at 100%, notification sent)
+- **Logged:** `SKILL_LEADERBOARD_RERUN_QUIET` appended to today's log
+- **No API calls made**, no article rewritten, no notification sent — all per spec
