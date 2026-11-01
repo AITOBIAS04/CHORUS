@@ -1,0 +1,166 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-01 (updated)"
+      },
+      "children": [
+        "author-text",
+        "ci-cd-section",
+        "sep1",
+        "supply-chain-section",
+        "sep2",
+        "key-changes-section",
+        "sep3",
+        "stats-section",
+        "full-recap-link"
+      ]
+    },
+    "author-text": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark — 2 substantive commits by Aaron Elijah Mars",
+        "variant": "lead"
+      }
+    },
+    "ci-cd-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ci-cd-heading",
+        "ci-cd-description"
+      ]
+    },
+    "ci-cd-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CI/CD Hardening: PR #348",
+        "level": "h3"
+      }
+    },
+    "ci-cd-description": {
+      "type": "Text",
+      "props": {
+        "text": "Adds job timeouts (15min tests, 30min Docker) and a concurrency group that cancels superseded PR runs. Prevents zombie CI from burning Blacksmith minutes during rapid iteration."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "supply-chain-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "supply-chain-heading",
+        "supply-chain-description"
+      ]
+    },
+    "supply-chain-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Supply Chain Maintenance: PR #351",
+        "level": "h3"
+      }
+    },
+    "supply-chain-description": {
+      "type": "Text",
+      "props": {
+        "text": "Bundles two Dependabot PRs — follow-redirects 1.16.1→1.16.2 (redirect hardening patch) and tornado 6.5.9→6.6 (major minor bump, drops Python 3.9/3.10, adds free-threaded wheel support). Closes both open Dependabot PRs."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-changes-heading",
+        "kc-item1",
+        "kc-item2",
+        "kc-item3"
+      ]
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h3"
+      }
+    },
+    "kc-item1": {
+      "type": "Text",
+      "props": {
+        "text": "tests.yml gains concurrency group + 15min timeout on all 4 jobs (+8 lines)"
+      }
+    },
+    "kc-item2": {
+      "type": "Text",
+      "props": {
+        "text": "tornado 6.6 raises minimum Python to 3.11 (MiroShark already targets 3.11+)"
+      }
+    },
+    "kc-item3": {
+      "type": "Text",
+      "props": {
+        "text": "follow-redirects patch addresses redirect handling edge cases"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stats-text",
+        "miroshark-aeon-text"
+      ]
+    },
+    "stats-text": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: 4 files changed, +58/-16 lines"
+      }
+    },
+    "miroshark-aeon-text": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon: 9 automation commits filtered (scheduler, cron, auto-commits)",
+        "variant": "caption"
+      }
+    },
+    "full-recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap: 2026-11-01",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-01.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
