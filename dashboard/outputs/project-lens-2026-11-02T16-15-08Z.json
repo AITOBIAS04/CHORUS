@@ -1,0 +1,104 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-main",
+        "text-ship",
+        "text-papers",
+        "stats-container",
+        "text-miroShark",
+        "link-article"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Eighty-One Replacements. Same Ship?",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-ship": {
+      "type": "Text",
+      "props": {
+        "text": "The Ship of Theseus is twenty-five centuries old."
+      },
+      "children": []
+    },
+    "text-papers": {
+      "type": "Text",
+      "props": {
+        "text": "Two 2026 arXiv papers — Tallam on compositional drift in self-modifying agents, Perrier on identity collapse under strong self-modification — reframe the paradox for AI systems that rewrite themselves."
+      },
+      "children": []
+    },
+    "stats-container": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-prs",
+        "stat-days",
+        "stat-centuries"
+      ]
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Self-improve PRs",
+        "value": "81"
+      },
+      "children": []
+    },
+    "stat-days": {
+      "type": "Stat",
+      "props": {
+        "label": "Days elapsed",
+        "value": "230"
+      },
+      "children": []
+    },
+    "stat-centuries": {
+      "type": "Stat",
+      "props": {
+        "label": "Ship of Theseus age",
+        "value": "25 centuries"
+      },
+      "children": []
+    },
+    "text-miroShark": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's autonomous agent has filed 81 self-improve PRs in 230 days, including one this week that fixed a fix it made three days earlier. The modification loop is recursive, the fixes are getting smaller, and the question of whether it's the same system is no longer hypothetical."
+      },
+      "children": []
+    },
+    "link-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Eighty-One Replacements. Same Ship?",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-11-02.md",
+        "source": "project-lens"
+      },
+      "children": []
+    }
+  }
+}
