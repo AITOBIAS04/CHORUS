@@ -50,7 +50,7 @@ Read `memory/cron-state.json`. For each skill, note `consecutive_failures` and `
 
   **Timing rules (avoid false positives):**
   - GitHub Actions cron has ±10 min jitter and skills take 5-15 min to complete.
-  - Only flag a skill as missing if its scheduled time was **more than 2 hours ago**.
+  - Only flag a skill as missing if its scheduled time was **2 or more hours ago** (i.e. `>=2h`, not `>2h` — skill-leaderboard at 17:00 is exactly 2h before heartbeat at 19:00 and was previously invisible at the boundary).
   - Also check `gh run list --workflow=aeon.yml --created=$(date -u +%Y-%m-%d) --json displayTitle,status` — if the skill is currently `in_progress` or `queued`, don't flag it.
   - For day-of-week schedules (e.g. `0 20 * * 0` for Sundays), only check on the matching day.
   - **For day-of-month step schedules** (e.g. `*/2` in the day-of-month field): compute whether today's day matches the step pattern. Use:
