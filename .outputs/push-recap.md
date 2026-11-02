@@ -1,16 +1,16 @@
-*Push Recap — 2026-11-01 (updated)*
-MiroShark — 2 substantive commits by Aaron Elijah Mars
+*Push Recap — 2026-11-02*
+MiroShark — 1 substantive commit + miroshark-aeon — 3 substantive commits (10 automation filtered)
 
-CI/CD Hardening: PR #348 adds job timeouts (15min tests, 30min Docker) and a concurrency group that cancels superseded PR runs. Prevents zombie CI from burning Blacksmith minutes during rapid iteration.
+Supply Chain: PR #354 bundles four Dependabot bumps — axios 1.21.0, marked 18.1.2, vite-plugin-compression2 2.5.4, and setup-uv v10.3.3. Routine dependency hygiene continuing the daily cadence.
 
-Supply Chain Maintenance: PR #351 bundles two Dependabot PRs — follow-redirects 1.16.1→1.16.2 (redirect hardening patch) and tornado 6.5.9→6.6 (major minor bump, drops Python 3.9/3.10, adds free-threaded wheel support). Closes both open Dependabot PRs.
+Referral Cleanup: TwitterAPI.io referral link added to README then removed within hours. Net effect: the referral disclosure is gone from the public repo.
+
+Canon Sync: PR #234 aligns this instance with upstream (aeonfun/aeon#1307) — scheduler cron moved to off-peak minutes, Claude Code gets /tmp write access, and 34 accumulated scratch files deleted with proper .gitignore rules added.
 
 Key changes:
-- tests.yml gains concurrency group + 15min timeout on all 4 jobs (+8 lines)
-- tornado 6.6 raises minimum Python to 3.11 (MiroShark already targets 3.11+)
-- follow-redirects patch addresses redirect handling edge cases
+- 34 temp files removed from miroshark-aeon (1,174 lines of committed scratch data cleared)
+- Scheduler cron timing shifted to off-peak minutes 7/22/37/52
+- Claude Code adapter now passes --add-dir /tmp for sandbox write access
 
-miroshark-aeon: 9 automation commits filtered (scheduler, cron, auto-commits)
-
-Stats: 4 files changed, +58/-16 lines
-Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-01.md
+Stats: 42 files changed, +56/-1,193 lines
+Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-02.md

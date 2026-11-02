@@ -1,0 +1,265 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-02",
+        "description": "MiroShark — 1 substantive commit + miroshark-aeon — 3 substantive commits (10 automation filtered)"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "supply-chain-block",
+        "sep1",
+        "referral-block",
+        "sep2",
+        "canon-block",
+        "sep3",
+        "key-changes-block",
+        "sep4",
+        "stats-block",
+        "sep5",
+        "footer-link"
+      ]
+    },
+    "supply-chain-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sc-title",
+        "sc-text",
+        "sc-badges"
+      ]
+    },
+    "sc-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Supply Chain — PR #354",
+        "level": "h3"
+      }
+    },
+    "sc-text": {
+      "type": "Text",
+      "props": {
+        "text": "Four Dependabot bumps. Routine dependency hygiene continuing the daily cadence."
+      }
+    },
+    "sc-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-axios",
+        "badge-marked",
+        "badge-vite",
+        "badge-uv"
+      ]
+    },
+    "badge-axios": {
+      "type": "Badge",
+      "props": {
+        "text": "axios 1.21.0"
+      }
+    },
+    "badge-marked": {
+      "type": "Badge",
+      "props": {
+        "text": "marked 18.1.2"
+      }
+    },
+    "badge-vite": {
+      "type": "Badge",
+      "props": {
+        "text": "vite-plugin-compression2 2.5.4"
+      }
+    },
+    "badge-uv": {
+      "type": "Badge",
+      "props": {
+        "text": "setup-uv v10.3.3"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "referral-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ref-title",
+        "ref-text"
+      ]
+    },
+    "ref-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Referral Cleanup",
+        "level": "h3"
+      }
+    },
+    "ref-text": {
+      "type": "Text",
+      "props": {
+        "text": "TwitterAPI.io referral link added to README then removed within hours. Net effect: the referral disclosure is gone from the public repo."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "canon-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "canon-title",
+        "canon-text",
+        "canon-link"
+      ]
+    },
+    "canon-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Canon Sync — PR #234",
+        "level": "h3"
+      }
+    },
+    "canon-text": {
+      "type": "Text",
+      "props": {
+        "text": "Aligns this instance with upstream — scheduler cron moved to off-peak minutes, Claude Code gets /tmp write access, and 34 accumulated scratch files deleted with proper .gitignore rules added."
+      }
+    },
+    "canon-link": {
+      "type": "Link",
+      "props": {
+        "label": "aeonfun/aeon#1307",
+        "href": "https://github.com/aeonfun/aeon/pull/1307"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "kc-title",
+        "kc-items"
+      ]
+    },
+    "kc-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "kc-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "kc-1",
+        "kc-2",
+        "kc-3"
+      ]
+    },
+    "kc-1": {
+      "type": "Text",
+      "props": {
+        "text": "34 temp files removed from miroshark-aeon (1,174 lines of committed scratch data cleared)"
+      }
+    },
+    "kc-2": {
+      "type": "Text",
+      "props": {
+        "text": "Scheduler cron timing shifted to off-peak minutes 7/22/37/52"
+      }
+    },
+    "kc-3": {
+      "type": "Text",
+      "props": {
+        "text": "Claude Code adapter now passes --add-dir /tmp for sandbox write access"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-lines"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "42"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+56/-1,193"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap: Push Recap — 2026-11-02",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-02.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
