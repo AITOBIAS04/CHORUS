@@ -1,0 +1,297 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-11-02 — Push-recap rerun dedup regression fixed"
+      },
+      "children": [
+        "issue_section",
+        "sep1",
+        "root_cause_section",
+        "sep2",
+        "example_section",
+        "sep3",
+        "changes_section",
+        "sep4",
+        "impact_section",
+        "sep5",
+        "prs_section"
+      ]
+    },
+    "issue_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "issue_heading",
+        "issue_text"
+      ]
+    },
+    "issue_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Issue",
+        "level": "h2"
+      }
+    },
+    "issue_text": {
+      "type": "Text",
+      "props": {
+        "text": "Push-recap rerun dedup was blocking new commits from being detected."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "root_cause_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "root_cause_heading",
+        "root_cause_content"
+      ]
+    },
+    "root_cause_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Root Cause",
+        "level": "h2"
+      }
+    },
+    "root_cause_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "root_cause_p1",
+        "root_cause_p2",
+        "root_cause_p3"
+      ]
+    },
+    "root_cause_p1": {
+      "type": "Text",
+      "props": {
+        "text": "PR #79 (merged today) added a Step 0 rerun dedup gate to push-recap that blocks reruns when the first run already sent a notification."
+      }
+    },
+    "root_cause_p2": {
+      "type": "Text",
+      "props": {
+        "text": "This early-exit short-circuits before Step 4b, which performs proper SHA comparison. The Notification sent: yes check is too aggressive — it prevents reruns from detecting substantive commits that arrive between scheduler dispatches."
+      }
+    },
+    "root_cause_p3": {
+      "type": "Text",
+      "props": {
+        "text": "The PUSH_RECAP_QUIET check (zero substantive commits) is correct and should remain; only the notification check needs adjustment."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "example_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "example_heading",
+        "example_content"
+      ]
+    },
+    "example_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Concrete Example (Nov 1)",
+        "level": "h2"
+      }
+    },
+    "example_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "example_p1",
+        "example_p2",
+        "example_p3"
+      ]
+    },
+    "example_p1": {
+      "type": "Text",
+      "props": {
+        "text": "Push-recap's scheduled rerun correctly caught a new substantive commit (follow-redirects + tornado security bump)"
+      }
+    },
+    "example_p2": {
+      "type": "Badge",
+      "props": {
+        "text": "570efde",
+        "variant": "secondary"
+      }
+    },
+    "example_p3": {
+      "type": "Text",
+      "props": {
+        "text": "This commit arrived between scheduler dispatches. It was part of Dependabot PR #351. Under PR #79's early-exit rule, this rerun would have been blocked and the commit missed until the next day."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "changes_content"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h2"
+      }
+    },
+    "changes_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes_file",
+        "changes_detail"
+      ]
+    },
+    "changes_file": {
+      "type": "Badge",
+      "props": {
+        "text": "skills/push-recap/SKILL.md",
+        "variant": "outline"
+      }
+    },
+    "changes_detail": {
+      "type": "Text",
+      "props": {
+        "text": "Removed Notification sent: yes early-exit from Step 0. Reruns after a successful first run now proceed to Step 4b for SHA comparison instead of stopping immediately. PUSH_RECAP_QUIET check remains (correctly blocks quiet-day reruns)."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impact_heading",
+        "impact_text"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h2"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Push-recap reruns can once again detect substantive commits that arrive between scheduler dispatches, while quiet-day reruns are still correctly blocked."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "prs_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "prs_heading",
+        "prs_list"
+      ]
+    },
+    "prs_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Related PRs",
+        "level": "h2"
+      }
+    },
+    "prs_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_79",
+        "pr_80",
+        "pr_81"
+      ]
+    },
+    "pr_79": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#79 — push-recap rerun dedup (merged, caused regression)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/79",
+        "source": "GitHub"
+      }
+    },
+    "pr_80": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#80 — heartbeat boundary fix (merged)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/80",
+        "source": "GitHub"
+      }
+    },
+    "pr_81": {
+      "type": "StoryLink",
+      "props": {
+        "title": "#81 — self-improve fix (this PR)",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/81",
+        "source": "GitHub"
+      }
+    }
+  }
+}
