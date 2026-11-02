@@ -1,7 +1,10 @@
-**TOKEN_REPORT_RERUN_QUIET** — today's log already contains a token-report entry with "Notification sent: yes". The skill ran earlier today and sent its notification. Stopping here per the same-day rerun dedup rule (Step 0) — no re-fetch, no re-save, no duplicate notification sent.
+*$MIROSHARK Daily — 2026-11-02*
 
-## Summary
+Price: $0.000001846 (−1.37% 24h)
+Liquidity: ~$2.51M | 24h Vol: $822.45
+Buys/Sells: 3/10
+7d: −4.82% | 30d: −28.97%
 
-- Checked `memory/logs/2026-11-01.md` — found existing token-report section with "Notification sent: yes"
-- Logged `TOKEN_REPORT_RERUN_QUIET` to today's log
-- No data was fetched, no article was overwritten, no notification was sent
+Sell cascade of 6 consecutive trades 05:04–05:38 UTC hit the session low; 118-day social silence continues. 1,487 stars — 13 away from the Nov 7 hyperstition target.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
