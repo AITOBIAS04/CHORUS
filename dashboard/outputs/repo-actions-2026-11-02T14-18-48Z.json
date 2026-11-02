@@ -1,0 +1,329 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-02",
+        "description": "Generated from analysis of aaronjmars/MiroShark (1,488 stars · 304 forks · 0 open issues) — ideas the feature skill can autonomously build."
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-1",
+        "separator-1",
+        "idea-2",
+        "separator-2",
+        "idea-3",
+        "separator-3",
+        "idea-4",
+        "separator-4",
+        "idea-5",
+        "separator-5",
+        "article-link"
+      ]
+    },
+    "idea-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-1-title",
+        "idea-1-tags",
+        "idea-1-text"
+      ]
+    },
+    "idea-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Weekly Newsletter Digest Generator",
+        "level": "h3"
+      }
+    },
+    "idea-1-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "tag-1-1",
+        "tag-1-2"
+      ]
+    },
+    "tag-1-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Content",
+        "variant": "secondary"
+      }
+    },
+    "tag-1-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea-1-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/newsletter/digest?days=7 aggregates the past week's published simulations into a formatted Markdown/HTML digest for newsletter operators — top calls, most contested topic, sentiment shift, and stats footer.",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-2-title",
+        "idea-2-tags",
+        "idea-2-text"
+      ]
+    },
+    "idea-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Deployment Usage Stats API",
+        "level": "h3"
+      }
+    },
+    "idea-2-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "tag-2-1",
+        "tag-2-2"
+      ]
+    },
+    "tag-2-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/DX",
+        "variant": "secondary"
+      }
+    },
+    "tag-2-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea-2-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/admin/stats returns a structured usage summary for self-hosted operators: total sims run, published ratio, avg confidence, top topics, webhook success rate, and storage consumption.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-3-title",
+        "idea-3-tags",
+        "idea-3-text"
+      ]
+    },
+    "idea-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Multi-Language Simulation Mode",
+        "level": "h3"
+      }
+    },
+    "idea-3-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "tag-3-1",
+        "tag-3-2"
+      ]
+    },
+    "tag-3-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "tag-3-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      }
+    },
+    "idea-3-text": {
+      "type": "Text",
+      "props": {
+        "text": "Optional lang param on POST /api/simulate instructs agents to post in Spanish, Japanese, German, French, Chinese, Portuguese, Korean, or Arabic — opening MiroShark to non-English crypto communities without touching the analytics stack.",
+        "variant": "body"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-4-title",
+        "idea-4-tags",
+        "idea-4-text"
+      ]
+    },
+    "idea-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Bulk Simulation Archive Export",
+        "level": "h3"
+      }
+    },
+    "idea-4-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "tag-4-1",
+        "tag-4-2"
+      ]
+    },
+    "tag-4-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "tag-4-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea-4-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/export/archive?ids=... packages up to 20 simulations as a ZIP file with signal/trajectory/actions per sim plus a manifest.json index — pure stdlib zipfile, no new dependencies.",
+        "variant": "body"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-5-title",
+        "idea-5-tags",
+        "idea-5-text"
+      ]
+    },
+    "idea-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Operator Public Profile Page",
+        "level": "h3"
+      }
+    },
+    "idea-5-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "tag-5-1",
+        "tag-5-2"
+      ]
+    },
+    "tag-5-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/Growth",
+        "variant": "secondary"
+      }
+    },
+    "tag-5-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea-5-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/profile/:handle + /p/:handle frontend route gives opted-in operators a public track record page: sim count, accuracy score, top topics, and recent published calls.",
+        "variant": "body"
+      }
+    },
+    "separator-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "article-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-02.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
