@@ -1,0 +1,133 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog",
+        "description": "2026-11-02"
+      },
+      "children": [
+        "summary_text",
+        "sep_1",
+        "shipped_heading",
+        "shipped_list",
+        "sep_2",
+        "stats_heading",
+        "stats_grid",
+        "sep_3",
+        "link_full"
+      ]
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "The week only boundary bugs were left. Four self-improve PRs (#78-81), every one fixing a boundary condition — a loop that stopped early, a dedup gate too aggressive, a greater-than that needed equals, and a fix for the fix. MiroShark CI got concurrency controls and job timeouts. Ten consecutive days of dependency patching."
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "shipped_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h2"
+      }
+    },
+    "shipped_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_prs",
+        "item_ci",
+        "item_supply",
+        "item_hygiene"
+      ]
+    },
+    "item_prs": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve PRs #78-81: all boundary-class bugs in the reliability growth tail"
+      }
+    },
+    "item_ci": {
+      "type": "Text",
+      "props": {
+        "text": "CI hardening: concurrency groups + job timeouts across MiroShark workflows"
+      }
+    },
+    "item_supply": {
+      "type": "Text",
+      "props": {
+        "text": "Supply chain: tornado 6.6, follow-redirects 1.16.2, three more frontend bumps"
+      }
+    },
+    "item_hygiene": {
+      "type": "Text",
+      "props": {
+        "text": "Repo hygiene: 1,424 lines of temp files cleaned from miroshark-aeon"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h2"
+      }
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_commits",
+        "stat_prs",
+        "stat_lines"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits (8 substantive)",
+        "value": "188"
+      }
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged",
+        "value": "7"
+      }
+    },
+    "stat_lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+140 / −1,464"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_full": {
+      "type": "Link",
+      "props": {
+        "label": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-11-02.md"
+      }
+    }
+  }
+}

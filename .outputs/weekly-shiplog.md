@@ -1,11 +1,12 @@
-*Weekly Shiplog — 2026-10-26*
+*Weekly Shiplog — 2026-11-02*
 
-The week everything got patched. Every day shipped at least one dependency fix, closing 10+ security advisories across both repos. The aeon-update sync engine was rewritten from shell snippets into an 840-line Python script.
+The week only boundary bugs were left. Four self-improve PRs (#78-81), every one fixing a boundary condition — a loop that stopped early, a dedup gate too aggressive, a greater-than that needed equals, and a fix for the fix. MiroShark CI got concurrency controls and job timeouts. Ten consecutive days of dependency patching.
 
 Shipped:
-- Upstream sync engine rewrite — aeon_update.py replaces fragile inline shell, fixing silent sync failures
-- 10+ security patches — Next.js criticals, MCP SDK CVE, zod, Pillow 13, certifi, hono, DOMPurify
-- Self-improve PRs #75-78 — dedup gates, escalation decay, memory archival, leaderboard multi-repo scan
+- Self-improve PRs #78-81: all boundary-class bugs in the reliability growth tail
+- CI hardening: concurrency groups + job timeouts across MiroShark workflows
+- Supply chain: tornado 6.6, follow-redirects 1.16.2, three more frontend bumps
+- Repo hygiene: 1,424 lines of temp files cleaned from miroshark-aeon
 
-Stats: ~22 substantive commits, 14 PRs merged, +3,600/-1,100 lines across 3 repos
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-10-26.md
+Stats: ~188 commits (8 substantive), 7 PRs merged, +140/-1,464 lines
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-11-02.md
