@@ -18,12 +18,11 @@ Read memory/watched-repos.md for the list of repos to scan.
 
 ## Steps
 
-0. **Same-day rerun dedup** — If `${var}` is empty and `memory/logs/${today}.md` already contains a `## Push Recap` entry (not a `(rerun)` heading):
-   - If it contains `Notification sent: yes` — the push recap was already sent. Log `PUSH_RECAP_RERUN_QUIET: notification already sent today` to `memory/logs/${today}.md` and **stop here**.
+0. **Same-day rerun dedup (quiet days only)** — If `${var}` is empty and `memory/logs/${today}.md` already contains a `## Push Recap` entry (not a `(rerun)` heading):
    - If it contains `PUSH_RECAP_QUIET` — the earlier run already found no substantive commits. Log `PUSH_RECAP_RERUN_QUIET: previous run found no substantive commits — skipping re-fetch` to `memory/logs/${today}.md` and **stop here**. The 24h commit window is the same both times, and commits arriving in the brief interval between scheduler dispatches are overwhelmingly automation noise. Substantive commits will be captured in the next day's recap.
-   - Otherwise (entry exists but doesn't match either pattern) — continue normally.
+   - Otherwise (including `Notification sent: yes`) — continue normally. When the first run found commits and sent a notification, the rerun must still proceed to Step 4b which does SHA comparison — new substantive commits can arrive between dispatches (observed: Nov 1, rerun caught Dependabot PR #351 merged between runs).
 
-   This prevents scheduler double-dispatch from re-fetching commits, re-filtering automation noise, and re-arriving at the same result — observed Oct 27 where the rerun re-listed all 9 automation commits individually only to reach the same PUSH_RECAP_QUIET.
+   This prevents scheduler double-dispatch waste on quiet days (the majority case — most days have 0 substantive commits) while preserving the update path when new commits genuinely appear.
 
 1. **Fetch push events** for each watched repo from the last 24 hours:
    ```bash
