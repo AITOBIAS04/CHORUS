@@ -1,7 +1,10 @@
-**TOKEN_REPORT_RERUN_QUIET** — today's token-report was already sent (log entry with `Notification sent: yes` found for 2026-11-02). Per Step 0, skipping all data fetching, article writing, and notification. No duplicate report sent.
+*$MiroShark Daily — 2026-11-03*
 
-## Summary
+Price: $0.000001894 (+0.47% 24h)
+Liquidity: ~$2.51M | 24h Vol: $729.14
+Buys/Sells: 17/2
+7d: −6.38% | 30d: −26.9%
 
-- **Checked**: `memory/logs/2026-11-02.md` — token-report section present with `Notification sent: yes`
-- **Action**: Logged `TOKEN_REPORT_RERUN_QUIET` to today's log and halted per same-day dedup rule
-- **No data fetched**, no article overwritten, no notification sent
+Soft recovery after yesterday's sell cascade — three early UTC buys, buy/sell ratio 17:2. 119-day social silence. 12 stars from the 1,500 milestone with 4 days left.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
