@@ -1,0 +1,96 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Two Websites Stopped Answering. The Row Stayed."
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "dead_sites_section",
+        "sep2",
+        "research_context",
+        "sep3",
+        "read_link"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "An SEO audit found two dead ecosystem partner websites. PR #355 pruned the links but kept the rows.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dead_sites_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dead_heading",
+        "dead_site_1",
+        "dead_site_2"
+      ]
+    },
+    "dead_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dead Ecosystem Partner Websites",
+        "level": "h3"
+      }
+    },
+    "dead_site_1": {
+      "type": "Alert",
+      "props": {
+        "title": "sparkleware.fun",
+        "message": "HTTP 402",
+        "type": "error"
+      }
+    },
+    "dead_site_2": {
+      "type": "Alert",
+      "props": {
+        "title": "mnemedb.dev",
+        "message": "HTTP 530",
+        "type": "error"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "research_context": {
+      "type": "Text",
+      "props": {
+        "text": "The article explores ecosystem partner mortality around a self-maintaining core, drawing on ICSE 2025 npm abandonment research and Maven ecosystem decay studies.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "read_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-03.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}
