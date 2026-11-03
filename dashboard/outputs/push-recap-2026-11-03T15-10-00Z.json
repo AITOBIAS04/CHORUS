@@ -1,0 +1,223 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-03"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_project",
+        "sep_1",
+        "heading_upstream",
+        "text_upstream",
+        "sep_2",
+        "heading_twitter",
+        "text_twitter",
+        "sep_3",
+        "heading_supply",
+        "text_supply",
+        "sep_4",
+        "heading_key_changes",
+        "stack_key_changes",
+        "sep_5",
+        "heading_stats",
+        "stack_stats",
+        "sep_6",
+        "link_recap"
+      ]
+    },
+    "text_project": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark + miroshark-aeon — 3 substantive commits by Aaron Elijah Mars (11 automation filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_upstream": {
+      "type": "Heading",
+      "props": {
+        "text": "Upstream Canon Sync (PR #238)",
+        "level": "h2"
+      }
+    },
+    "text_upstream": {
+      "type": "Text",
+      "props": {
+        "text": "The big one. 32 upstream commits land in miroshark-aeon — 69 files touched, +2,080/-662 lines. Two new skills arrive: flovia (live crypto data via Flovia MCP — Nansen smart money, CoinGecko, chain reads, Zerion wallets) and github-filing-registry (structured tracker for upstream issues/PRs filed by the agent, prevents duplicates, provides triage). The secretcurl utility is removed from version control (292 lines)."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_twitter": {
+      "type": "Heading",
+      "props": {
+        "text": "Twitter API Migration",
+        "level": "h2"
+      }
+    },
+    "text_twitter": {
+      "type": "Text",
+      "props": {
+        "text": "reply-maker, mention-radar, and write-tweet all switch from xAI Grok x_search to twitterapi.io as primary data source. xAI drops to fallback, WebSearch to last resort. All three now require TWITTER_API_KEY. Structured JSON responses replace free-text Grok summaries."
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_supply": {
+      "type": "Heading",
+      "props": {
+        "text": "Supply Chain Hardening",
+        "level": "h2"
+      }
+    },
+    "text_supply": {
+      "type": "Text",
+      "props": {
+        "text": "vuln-scanner stages TruffleHog (v3.99.7) and osv-scanner (v2.7.0) with pinned SHA256 digests — fail-closed on mismatch. Replaces the old curl-pipe-sh TruffleHog installer."
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_key_changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "stack_key_changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_key_1",
+        "text_key_2",
+        "text_key_3",
+        "text_key_4",
+        "text_key_5"
+      ]
+    },
+    "text_key_1": {
+      "type": "Text",
+      "props": {
+        "text": "• New skill: flovia — live Nansen/CoinGecko/chain/Zerion lookups via MCP with spend discipline (≤8 calls/run)"
+      }
+    },
+    "text_key_2": {
+      "type": "Text",
+      "props": {
+        "text": "• New skill: github-filing-registry — pure gh CLI tracker with add/status/triage/sync/log subcommands"
+      }
+    },
+    "text_key_3": {
+      "type": "Text",
+      "props": {
+        "text": "• Permission denials now surface as WARNING in Langfuse traces (was DEFAULT — 17/day invisible)"
+      }
+    },
+    "text_key_4": {
+      "type": "Text",
+      "props": {
+        "text": "• @hono/node-server 2.1.0→2.1.6 security patch in MCP server (PR #239)"
+      }
+    },
+    "text_key_5": {
+      "type": "Text",
+      "props": {
+        "text": "• Dead Sparkleware/mnemedb links stripped from MiroShark ECOSYSTEM.md (PR #355)"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_files",
+        "stat_additions",
+        "stat_deletions"
+      ]
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "71"
+      }
+    },
+    "stat_additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "+2,085"
+      }
+    },
+    "stat_deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "-667"
+      }
+    },
+    "sep_6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-03.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
