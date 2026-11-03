@@ -1,3 +1,3 @@
 ## Summary
 
-Feature skill ran and stopped at Step 2 (pre-flight push access check). `gh api repos/aaronjmars/MiroShark` returned `push: false` — the `GH_GLOBAL` secret is not configured, so the agent lacks cross-repo push permissions. Logged `FEATURE_SKIP` to today's log. No feature was picked, no repo cloned, no notification sent — as specified by the skill to avoid wasting an expensive run.
+**FEATURE_RERUN_QUIET**: The feature skill already ran today (2026-11-03) and was blocked by missing push access (`GH_GLOBAL` secret not set). Since no explicit feature was requested via `var`, the rerun dedup gate stopped execution to avoid repeating the same outcome. Logged to `memory/logs/2026-11-03.md`.
