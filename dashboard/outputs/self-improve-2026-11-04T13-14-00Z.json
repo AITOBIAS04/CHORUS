@@ -1,0 +1,142 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-11-04"
+      },
+      "children": [
+        "intro_text",
+        "sep1",
+        "why_section",
+        "sep2",
+        "changed_section",
+        "sep3",
+        "impact_section",
+        "sep4",
+        "pr_section"
+      ]
+    },
+    "intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "Memory-flush now refreshes stale data in Active Targets entries. Hyperstition entries with embedded star counts, fork counts, and deadline countdowns are updated using the most recent log data each time memory-flush runs."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why_heading",
+        "why_text"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "The 1,500-star hyperstition still read \"12 stars needed from 1,488 (as of Oct 30); 7 days remaining\" when repo-pulse showed 1,489 stars and only 3 days remained (Nov 7 deadline). The ATH entry was updated by the LLM, but individual hyperstitions went stale. Downstream skills (token-report, heartbeat) propagated the stale context."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changed_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changed_heading",
+        "changed_text"
+      ]
+    },
+    "changed_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "changed_text": {
+      "type": "Text",
+      "props": {
+        "text": "skills/memory-flush/SKILL.md: Added \"Active Targets data refresh\" sub-step to Step 4 rotation rules. Covers star/fork counts from repo-pulse, days remaining via bash arithmetic (avoiding LLM date math errors), and price/FDV from token-report. Inline replacements only."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_heading",
+        "impact_text"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Active Targets section in MEMORY.md stays current between flushes (Sun + Wed). Downstream skills that read MEMORY.md for context get accurate star counts and deadline countdowns instead of week-old data."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_link"
+      ]
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "PR: https://github.com/AITOBIAS04/CHORUS/pull/82",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/82"
+      }
+    }
+  }
+}
