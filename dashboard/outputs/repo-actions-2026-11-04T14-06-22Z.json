@@ -1,0 +1,429 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-04"
+      },
+      "children": [
+        "source-text",
+        "stats-section",
+        "separator-1",
+        "actions-heading",
+        "actions-stack",
+        "separator-2",
+        "full-details-link"
+      ]
+    },
+    "source-text": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from aaronjmars/MiroShark analysis",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks",
+        "stat-issues",
+        "stat-prs",
+        "stat-deadline"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,489"
+      },
+      "children": []
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "304"
+      },
+      "children": []
+    },
+    "stat-issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Open Issues",
+        "value": "0"
+      },
+      "children": []
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Open PRs",
+        "value": "0"
+      },
+      "children": []
+    },
+    "stat-deadline": {
+      "type": "Stat",
+      "props": {
+        "label": "To 1,500 Stars",
+        "value": "3 days"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "actions-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Recommended Actions",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "actions-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "action-1",
+        "action-2",
+        "action-3",
+        "action-4",
+        "action-5"
+      ]
+    },
+    "action-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-heading",
+        "action-1-badges",
+        "action-1-text"
+      ]
+    },
+    "action-1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Tags & Collections",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-badge-1",
+        "action-1-badge-2",
+        "action-1-badge-3"
+      ]
+    },
+    "action-1-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "action-1-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "action-1-badge-3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "action-1-text": {
+      "type": "Text",
+      "props": {
+        "text": "User-defined tags + curated shareable collections (/c/:slug) turn the flat gallery into an organized research workspace — batch your Q4 crypto runs, share a curated \"best of\" portfolio.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "action-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-heading",
+        "action-2-badges",
+        "action-2-text"
+      ]
+    },
+    "action-2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Demographic Diversity Score",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-badge-1",
+        "action-2-badge-2"
+      ]
+    },
+    "action-2-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "action-2-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "action-2-text": {
+      "type": "Text",
+      "props": {
+        "text": "diversity_score (0–100) in signal.json quantifying how balanced the agent roster was across age, profession, risk tolerance, and platform — high-diversity consensus is a stronger signal than monoculture consensus.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "action-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-heading",
+        "action-3-badges",
+        "action-3-text"
+      ]
+    },
+    "action-3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Social Preview & OpenGraph Metadata",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-badge-1",
+        "action-3-badge-2",
+        "action-3-badge-3"
+      ]
+    },
+    "action-3-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "DX/Growth",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "action-3-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "action-3-badge-3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "action-3-text": {
+      "type": "Text",
+      "props": {
+        "text": "Pasting a sim URL into Discord/Telegram/Slack currently shows a generic preview; with og:image wired to the share card and og:description showing direction + confidence, every shared link becomes a visual result card.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "action-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-heading",
+        "action-4-badges",
+        "action-4-text"
+      ]
+    },
+    "action-4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Annotation & Private Notes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-badge-1",
+        "action-4-badge-2"
+      ]
+    },
+    "action-4-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "action-4-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "action-4-text": {
+      "type": "Text",
+      "props": {
+        "text": "PUT /api/simulation/:id/note stores a 500-char researcher note alongside each sim — appears in transcript exports, bulk archives, and the gallery — private, never exposed publicly.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "action-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-heading",
+        "action-5-badges",
+        "action-5-text"
+      ]
+    },
+    "action-5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Webhook Retry & Redelivery Endpoint",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "action-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-badge-1",
+        "action-5-badge-2",
+        "action-5-badge-3"
+      ]
+    },
+    "action-5-badge-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "action-5-badge-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Performance",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "action-5-badge-3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "action-5-text": {
+      "type": "Text",
+      "props": {
+        "text": "Failed webhook deliveries queued in webhook_retry.jsonl; POST /api/admin/webhooks/redeliver processes them with exponential backoff (3 attempts max) — no more silent data loss when the endpoint is momentarily down.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "full-details-link": {
+      "type": "Link",
+      "props": {
+        "label": "View full details on GitHub",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-04.md"
+      },
+      "children": []
+    }
+  }
+}
