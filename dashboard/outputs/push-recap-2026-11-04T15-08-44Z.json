@@ -1,0 +1,281 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-04",
+        "description": "Aeon push recap for miroshark-aeon"
+      },
+      "children": [
+        "project-info",
+        "sep1",
+        "sections-stack",
+        "sep2",
+        "stats-stack",
+        "sep3",
+        "link-full"
+      ]
+    },
+    "project-info": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/miroshark-aeon — 7 substantive commits by Aaron Elijah Mars (11 automation filtered)",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sections-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section-cost",
+        "section-fixes",
+        "section-sync",
+        "section-changes"
+      ]
+    },
+    "section-cost": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-cost",
+        "text-cost-gates",
+        "text-cost-fetch",
+        "text-cost-memory",
+        "text-cost-failopen"
+      ]
+    },
+    "heading-cost": {
+      "type": "Heading",
+      "props": {
+        "text": "Cost Optimization — Idle Gates",
+        "level": "h3"
+      }
+    },
+    "text-cost-gates": {
+      "type": "Text",
+      "props": {
+        "text": "Two new pre-model gates that skip paid model calls when there's nothing to do.",
+        "variant": "body"
+      }
+    },
+    "text-cost-fetch": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets checks twitterapi.io first and skips during the 120-day social silence (~$1.67/10 runs saved).",
+        "variant": "body"
+      }
+    },
+    "text-cost-memory": {
+      "type": "Text",
+      "props": {
+        "text": "memory-flush checks if any log changed since last flush.",
+        "variant": "body"
+      }
+    },
+    "text-cost-failopen": {
+      "type": "Text",
+      "props": {
+        "text": "Both fail open.",
+        "variant": "body"
+      }
+    },
+    "section-fixes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-fixes",
+        "text-fixes-retry",
+        "text-fixes-repo",
+        "text-fixes-scorer"
+      ]
+    },
+    "heading-fixes": {
+      "type": "Heading",
+      "props": {
+        "text": "Bug Fixes & Hardening",
+        "level": "h3"
+      }
+    },
+    "text-fixes-retry": {
+      "type": "Text",
+      "props": {
+        "text": "git-push-retry now handles transient GitHub server failures (\"fatal error in commit_refs\") with bounded retries.",
+        "variant": "body"
+      }
+    },
+    "text-fixes-repo": {
+      "type": "Text",
+      "props": {
+        "text": "repo-pulse shell snippets rewritten for the read-only sandbox.",
+        "variant": "body"
+      }
+    },
+    "text-fixes-scorer": {
+      "type": "Text",
+      "props": {
+        "text": "Scorer now grades the full article alongside the notification card, fixing a bias against long-form skills.",
+        "variant": "body"
+      }
+    },
+    "section-sync": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-sync",
+        "text-sync-intro",
+        "text-sync-prs",
+        "text-sync-ci",
+        "text-sync-telemetry"
+      ]
+    },
+    "heading-sync": {
+      "type": "Heading",
+      "props": {
+        "text": "Upstream Canon Sync",
+        "level": "h3"
+      }
+    },
+    "text-sync-intro": {
+      "type": "Text",
+      "props": {
+        "text": "19 held changes landed across PRs #240 and #242, reducing pending_conflicts from 40 to 27.",
+        "variant": "body"
+      }
+    },
+    "text-sync-prs": {
+      "type": "Text",
+      "props": {
+        "text": "CI workflows pinned to free ubuntu-24.04 runners.",
+        "variant": "body"
+      }
+    },
+    "text-sync-ci": {
+      "type": "Text",
+      "props": {
+        "text": "Token-movers gets a --wallet flag.",
+        "variant": "body"
+      }
+    },
+    "text-sync-telemetry": {
+      "type": "Text",
+      "props": {
+        "text": "Langfuse and OTel telemetry updated to canon.",
+        "variant": "body"
+      }
+    },
+    "section-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-changes",
+        "text-changes-1",
+        "text-changes-2",
+        "text-changes-3"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "text-changes-1": {
+      "type": "Text",
+      "props": {
+        "text": "New scripts/fetch_tweets_idle.py (345 lines) + 342-line test suite with fake HTTP server",
+        "variant": "body"
+      }
+    },
+    "text-changes-2": {
+      "type": "Text",
+      "props": {
+        "text": "Combined Idle gate step in aeon.yml handles memory-flush and fetch-tweets",
+        "variant": "body"
+      }
+    },
+    "text-changes-3": {
+      "type": "Text",
+      "props": {
+        "text": "score_output_sample() replaces flat 3KB truncate — articles now scored alongside their cards",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-additions",
+        "stat-deletions"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "~65"
+      }
+    },
+    "stat-additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "+1,746"
+      }
+    },
+    "stat-deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "-303"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-04.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
