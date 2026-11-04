@@ -1,9 +1,9 @@
+HEARTBEAT_OK. All 9 expected skills ran today (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens, memory-flush), both open PRs are under their thresholds, no open issues, and no systemic failures. No notification needed.
+
 ## Summary
 
-**HEARTBEAT_OK** — no issues found, no notification sent.
-
-- **System health:** All 14 skills at zero consecutive failures.
-- **Open PRs:** PR #81 (`improve:` prefix) is 31h old — well under the 72h threshold.
-- **Skills:** All 6 expected Tuesday skills completed (token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article). The 7 not-scheduled skills correctly skipped.
-- **Open issues:** None in INDEX.md; no escalation needed.
-- This was a rerun — first heartbeat ran at 19:07 UTC with identical findings. Logged as "Heartbeat (rerun 2)" in `memory/logs/2026-11-03.md`.
+- Checked `memory/cron-state.json`: all 13 skills at `consecutive_failures=0`
+- Verified open PRs: PR #82 (5h) and PR #81 (53h), both under the 72h `improve:` threshold
+- Confirmed all scheduled skills ran today (Wednesday, DOM=4): 9 of 13 enabled skills are scheduled today, all ran
+- Checked `memory/issues/INDEX.md`: no open issues
+- Logged `HEARTBEAT_OK` to `memory/logs/2026-11-04.md`
