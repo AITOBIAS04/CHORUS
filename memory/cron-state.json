@@ -102,8 +102,8 @@
     "last_quality_score": 4
   },
   "feature": {
-    "last_dispatch": "2026-11-03T12:37:49Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-04T11:12:49Z",
+    "last_status": "dispatched",
     "last_failed": "2026-10-26T12:12:10Z",
     "total_runs": 913,
     "total_successes": 186,
