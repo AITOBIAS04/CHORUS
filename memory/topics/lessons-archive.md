@@ -100,3 +100,8 @@
 ## Archived 2026-11-01
 
 - push-recap automation filter was too narrow (3 explicit patterns: chore(cron):, chore(scheduler):, chore(...): auto-commit) — other chore(scope): commits slipped through as 'substantive' (observed Aug 20: token-movers log commit triggered false-positive notification on quiet day); added catch-all pattern for any `chore(`:` message (self-improve PR #57, 2026-08-22)
+
+## Archived 2026-11-04
+
+- LLM date arithmetic is error-prone for PR age calculation — heartbeat missed a >72h stale PR (#57, ~77h but estimated ~57h); fixed with jq-based age computation via `fromdateiso8601` and `now` delta in `gh pr list` output (self-improve PR #58, 2026-08-24)
+- self-improve Step 0.5 merges PRs remotely but never pulled changes locally — subsequent assessment and branching used stale code; fixed with `git pull origin main` inserted after the merge/close loop (self-improve PR #59, 2026-08-26)
