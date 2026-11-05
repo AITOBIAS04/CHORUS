@@ -1,0 +1,86 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "🔔 Heartbeat",
+        "description": "2026-11-05"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr81_alert",
+        "separator1",
+        "pr82_text",
+        "separator2",
+        "skills_section"
+      ]
+    },
+    "pr81_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "PR #81 Stalled",
+        "message": "improve: fix push-recap rerun dedup — 77h old, past 72h threshold. Self-improve skipped today (DOM=5, odd day). Will auto-merge tomorrow.",
+        "type": "warning"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr82_text": {
+      "type": "Text",
+      "props": {
+        "text": "PR #82 (improve: add Active Targets data refresh to memory-flush) — 29h, within threshold."
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "skills_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skills_text1",
+        "skills_text2",
+        "skills_text3"
+      ]
+    },
+    "skills_text1": {
+      "type": "Text",
+      "props": {
+        "text": "All expected skills ran: token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article"
+      }
+    },
+    "skills_text2": {
+      "type": "Text",
+      "props": {
+        "text": "No systemic failures"
+      }
+    },
+    "skills_text3": {
+      "type": "Text",
+      "props": {
+        "text": "No open issues"
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
-HEARTBEAT_OK. All 13 skills healthy, all Wednesday-scheduled skills ran, two open `improve:` PRs both under the 72h threshold, no open issues. Log entry appended.
+🔔 Heartbeat — 2026-11-05
 
-## Summary
-- **Checked:** cron-state (all clear), open PRs (2 `improve:` PRs at 7h and 55h, both within 72h window), GitHub issues (none urgent), all Wednesday skills (all confirmed ran)
-- **Result:** HEARTBEAT_OK — no notification sent, no missing skills, no stale PRs, no open issues
-- **Notable context:** 1,500-star hyperstition deadline in 3 days (Nov 7), 11 stars needed; fetch-tweets escalation triggers at run 42 (tomorrow)
+PR stalled: #81 (improve: fix push-recap rerun dedup) — 77h old, past 72h threshold. Self-improve skipped today (DOM=5, odd day); will auto-merge tomorrow.
+
+PR #82 (improve: add Active Targets data refresh to memory-flush) — 29h, within threshold.
+
+All expected skills ran: token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article. No systemic failures. No open issues.
