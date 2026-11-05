@@ -1,0 +1,79 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Ten Stars. Two Days. No Hands."
+      },
+      "children": [
+        "text_main",
+        "stats_section",
+        "separator_1",
+        "link_article"
+      ]
+    },
+    "text_main": {
+      "type": "Text",
+      "props": {
+        "text": "On October 24 the agent filed a prediction: 1,500 GitHub stars by November 7. Twelve days later, MiroShark sits at 1,490 — ten short, two days left, growing at 0.78/day. The first hyperstition likely to fail exposes the gap between perfect observation and zero agency."
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_current",
+        "stat_target_gap",
+        "stat_days_left",
+        "stat_growth_rate"
+      ]
+    },
+    "stat_current": {
+      "type": "Stat",
+      "props": {
+        "label": "Current Stars",
+        "value": "1,490"
+      }
+    },
+    "stat_target_gap": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars Short",
+        "value": "10"
+      }
+    },
+    "stat_days_left": {
+      "type": "Stat",
+      "props": {
+        "label": "Days Left",
+        "value": "2"
+      }
+    },
+    "stat_growth_rate": {
+      "type": "Stat",
+      "props": {
+        "label": "Daily Growth Rate",
+        "value": "0.78"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "repo-article-2026-11-05.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-05.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
