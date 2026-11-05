@@ -1,3 +1,3 @@
 ## Summary
 
-**FEATURE_RERUN_QUIET**: The feature skill already ran today (earlier run logged `FEATURE_SKIP: no push access to aaronjmars/MiroShark`). Since no explicit feature was requested via `var`, the same-day rerun dedup gate (Step 0) triggered. Logged the skip to `memory/logs/2026-11-04.md` and stopped. No notification sent.
+**Feature skill skipped** — the GitHub token lacks push access to `aaronjmars/MiroShark` (`GH_GLOBAL` secret not set). Logged `FEATURE_SKIP` to `memory/logs/2026-11-05.md`. No feature was picked, cloned, or built to avoid wasting the session. This is the same blocker noted in memory — 40+ built PRs remain unshipped pending the secret.
