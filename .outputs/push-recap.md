@@ -1,3 +1,5 @@
 ## Summary
 
-**Push Recap — 2026-11-05**: Quiet day. MiroShark had 0 commits and miroshark-aeon had 8 commits, all automation noise (`chore(cron):`, `chore(scheduler):`, `chore(token-movers): auto-commit`, `chore(heartbeat): auto-commit`). Zero substantive commits found across both watched repos. Logged `PUSH_RECAP_QUIET` — no article written, no notification sent. Log committed and pushed to main.
+- **Action:** Push Recap rerun dedup (Step 0) — today's earlier run already found `PUSH_RECAP_QUIET` (8 automation commits, 0 substantive across both watched repos)
+- **Result:** Logged `PUSH_RECAP_RERUN_QUIET` to `memory/logs/2026-11-05.md` and stopped — no re-fetch, no article, no notification
+- **File modified:** `memory/logs/2026-11-05.md` (appended rerun marker)
