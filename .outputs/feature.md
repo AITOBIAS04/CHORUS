@@ -1,3 +1,3 @@
 ## Summary
 
-**Feature skill skipped** — the GitHub token lacks push access to `aaronjmars/MiroShark` (`GH_GLOBAL` secret not set). Logged `FEATURE_SKIP` to `memory/logs/2026-11-05.md`. No feature was picked, cloned, or built to avoid wasting the session. This is the same blocker noted in memory — 40+ built PRs remain unshipped pending the secret.
+**FEATURE_RERUN_QUIET**: The feature skill already ran today (earlier run hit FEATURE_SKIP due to no push access — GH_GLOBAL secret not set). Since no explicit feature was requested via `${var}`, the rerun was short-circuited to avoid wasting a full Claude session on an identical outcome. Logged to `memory/logs/2026-11-05.md`.
