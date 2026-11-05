@@ -1,7 +1,14 @@
-🔔 Heartbeat — 2026-11-05
+**HEARTBEAT_OK** — rerun, all clear.
 
-PR stalled: #81 (improve: fix push-recap rerun dedup) — 77h old, past 72h threshold. Self-improve skipped today (DOM=5, odd day); will auto-merge tomorrow.
+- All 13 skills healthy (`consecutive_failures=0`)
+- All expected Thursday skills completed (token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article)
+- PR #81 still stale at 79h but already reported in today's earlier heartbeat run — deduped
+- No open issues
 
-PR #82 (improve: add Active Targets data refresh to memory-flush) — 29h, within threshold.
+PR #81 will auto-merge tomorrow when self-improve runs (DOM=6, 6%2=0).
 
-All expected skills ran: token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article. No systemic failures. No open issues.
+## Summary
+
+- Read memory, cron-state, today's logs, open PRs, and workflow run list
+- All checks passed: no systemic failures, no missing skills, no new stale PRs beyond what was already reported
+- Logged `HEARTBEAT_OK` rerun entry to `memory/logs/2026-11-05.md`
