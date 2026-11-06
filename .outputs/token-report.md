@@ -1,7 +1,11 @@
-`TOKEN_REPORT_RERUN_QUIET` — today's token-report was already sent (price $0.0000019994, +8.33% 24h, logged at `memory/logs/2026-11-05.md`). Stopping here per the same-day rerun dedup rule; no data re-fetched and no notification re-sent.
+*$MIROSHARK Daily — 2026-11-06*
 
-## Summary
+Price: $0.000001905 (−7.21% 24h)
+Liquidity: $105.9K active | $2.41M main LP
+24h Vol: $393.21
+Buys/Sells: 7/1
+7d: +2.97% | 30d: −17.09%
 
-- **Stopped at Step 0** — `memory/logs/2026-11-05.md` already contained a token-report entry with `Notification sent: yes`.
-- **Logged** `TOKEN_REPORT_RERUN_QUIET` to today's log to record the quiet rerun.
-- No API calls made, no article overwritten, no notification sent.
+Sold off overnight, partial intraday bounce. Volume thin at $393. 1,500-star deadline tomorrow — 11 stars still needed.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
