@@ -1,0 +1,288 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap - 2026-11-06"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "header_row",
+        "sep1",
+        "supply_chain_section",
+        "sep2",
+        "upstream_section",
+        "sep3",
+        "quality_section",
+        "sep4",
+        "cost_section",
+        "sep5",
+        "key_changes_section",
+        "sep6",
+        "stats_section",
+        "sep7",
+        "full_recap_link"
+      ]
+    },
+    "header_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_miroshark",
+        "badge_miroshark_aeon"
+      ]
+    },
+    "badge_miroshark": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark - 1 substantive commit",
+        "variant": "default"
+      }
+    },
+    "badge_miroshark_aeon": {
+      "type": "Badge",
+      "props": {
+        "text": "miroshark-aeon - 3 substantive commits (8 automation filtered)",
+        "variant": "secondary"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "supply_chain_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "supply_heading",
+        "supply_text"
+      ]
+    },
+    "supply_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Supply-Chain Hardening",
+        "level": "h3"
+      }
+    },
+    "supply_text": {
+      "type": "Text",
+      "props": {
+        "text": "All GitHub Actions in MiroShark's CI pinned from floating version tags to immutable commit SHAs. Closes the tag-repointing attack vector flagged in the Starsling audit.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "upstream_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "upstream_heading",
+        "upstream_text"
+      ]
+    },
+    "upstream_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Upstream Sync (85th Skill)",
+        "level": "h3"
+      }
+    },
+    "upstream_text": {
+      "type": "Text",
+      "props": {
+        "text": "10 upstream commits synced, headlined by a new canister-audit skill for ICP Rust canister security - Semgrep rules, cargo-audit, PocketIC reproductions, test fixtures. Token-movers rewritten to save API responses to files, cutting token waste.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "quality_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "quality_heading",
+        "quality_text"
+      ]
+    },
+    "quality_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Quality Infrastructure Overhaul",
+        "level": "h3"
+      }
+    },
+    "quality_text": {
+      "type": "Text",
+      "props": {
+        "text": "Scorer now grades skills on their own SKILL.md job, not the operator's strategy. FLAGS input validated as JSON-only (security hardening). Idle skips exempt from health regressions. Error reporting uses structured envelope parsing. Em/en dashes stripped from all notification channels.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "cost_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "cost_heading",
+        "cost_text"
+      ]
+    },
+    "cost_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Cost Optimization",
+        "level": "h3"
+      }
+    },
+    "cost_text": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat downgraded from Sonnet to Haiku (~$0.22/run saved on a routine state-file check).",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key_changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "key_heading",
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "key_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "canister-audit skill added (201-line SKILL.md + fixtures + CI + Semgrep rules) - first blockchain-native audit skill",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "Scorer strategy gate prevents routine reports from being penalized for topic irrelevance",
+        "variant": "body"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "FLAGS shell injection vector closed (untrusted judge output validated before interpolation)",
+        "variant": "body"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats_heading",
+        "files_stat",
+        "lines_stat"
+      ]
+    },
+    "stats_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "files_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "74"
+      }
+    },
+    "lines_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+5,327 / -298"
+      }
+    },
+    "sep7": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "full_recap_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Push Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-06.md",
+        "source": "CHORUS"
+      }
+    }
+  }
+}
