@@ -1,14 +1,8 @@
-**HEARTBEAT_OK** — rerun, all clear.
+HEARTBEAT_OK. All systems nominal for 2026-11-06.
 
-- All 13 skills healthy (`consecutive_failures=0`)
-- All expected Thursday skills completed (token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article)
-- PR #81 still stale at 79h but already reported in today's earlier heartbeat run — deduped
-- No open issues
-
-PR #81 will auto-merge tomorrow when self-improve runs (DOM=6, 6%2=0).
-
-## Summary
-
-- Read memory, cron-state, today's logs, open PRs, and workflow run list
-- All checks passed: no systemic failures, no missing skills, no new stale PRs beyond what was already reported
-- Logged `HEARTBEAT_OK` rerun entry to `memory/logs/2026-11-05.md`
+**Summary:**
+- All 13 skills at `consecutive_failures: 0` — no systemic issues
+- All 8 skills expected today confirmed completed; none missing
+- 2 open improve: PRs (#82 at 53h, #83 at 6h) — both under the 72h auto-merge threshold, neither stale
+- No open issues, no escalation needed
+- Notable: 1,500-star hyperstition deadline is tomorrow (Nov 7) with stars at 1,489 — almost certainly will miss by 11 stars; PR #83 (merged today by self-improve) adds deadline resolution logic to memory-flush so it will formally evaluate and notify on the next memory-flush run
