@@ -1,0 +1,243 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-06"
+      },
+      "children": [
+        "intro-text",
+        "separator-1",
+        "ideas-stack",
+        "separator-2",
+        "link-section"
+      ]
+    },
+    "intro-text": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — these are ideas that could be autonomously built by the feature skill tomorrow.",
+        "variant": "lead"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ideas-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "idea-1",
+        "idea-2",
+        "idea-3",
+        "idea-4",
+        "idea-5"
+      ]
+    },
+    "idea-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-1-title",
+        "idea-1-meta",
+        "idea-1-desc"
+      ]
+    },
+    "idea-1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Simulation Comparison View",
+        "level": "h3"
+      }
+    },
+    "idea-1-meta": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "outline"
+      }
+    },
+    "idea-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Side-by-side diff of two simulations: direction, confidence delta, top differentiating agent arguments, and a consensus_delta field for A/B testing scenarios.",
+        "variant": "body"
+      }
+    },
+    "idea-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-2-title",
+        "idea-2-meta",
+        "idea-2-desc"
+      ]
+    },
+    "idea-2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Agent Activity Heatmap",
+        "level": "h3"
+      }
+    },
+    "idea-2-meta": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "outline"
+      }
+    },
+    "idea-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Round × platform post-count matrix for a completed simulation — surfaces when and where the debate peaked, with intensity coloring.",
+        "variant": "body"
+      }
+    },
+    "idea-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-3-title",
+        "idea-3-meta",
+        "idea-3-desc"
+      ]
+    },
+    "idea-3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Per-Agent Journey Replay",
+        "level": "h3"
+      }
+    },
+    "idea-3-meta": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "outline"
+      }
+    },
+    "idea-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Full chronological arc for one agent across all rounds: posts, stance history, mentions received, and stance-flip moments highlighted.",
+        "variant": "body"
+      }
+    },
+    "idea-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-4-title",
+        "idea-4-meta",
+        "idea-4-desc"
+      ]
+    },
+    "idea-4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Topic Consensus Trend",
+        "level": "h3"
+      }
+    },
+    "idea-4-meta": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "outline"
+      }
+    },
+    "idea-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Aggregates all published simulations matching a topic query string over a date window into a time-series of direction + confidence — shows how the swarm's view on a question has drifted.",
+        "variant": "body"
+      }
+    },
+    "idea-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-5-title",
+        "idea-5-meta",
+        "idea-5-desc"
+      ]
+    },
+    "idea-5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Dynamic Consensus Badge",
+        "level": "h3"
+      }
+    },
+    "idea-5-meta": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration, Small",
+        "variant": "outline"
+      }
+    },
+    "idea-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Shields.io-style SVG badge returning BULLISH/BEARISH/NEUTRAL + confidence_pct — embeds live in GitHub READMEs, Notion pages, Substack posts, or any HTML with one line.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-label",
+        "full-details-link"
+      ]
+    },
+    "link-label": {
+      "type": "Text",
+      "props": {
+        "text": "Full details:",
+        "variant": "caption"
+      }
+    },
+    "full-details-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "repo-actions-2026-11-06.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-06.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
