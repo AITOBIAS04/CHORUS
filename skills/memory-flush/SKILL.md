@@ -30,6 +30,27 @@ Steps:
    - Recent Articles table: keep the **8 most recent rows** — remove older rows from the top
    - Recent Digests table: keep the **6 most recent rows** — remove older rows from the top
    - Feature candidates in Next Priorities: keep the **5 most recent entries** (by repo-actions date in parentheses) — remove older entries. Newer repo-actions runs supersede stale candidates with refreshed ideas.
+   - **Active Targets: resolve passed deadlines** — Before removing or archiving, evaluate hyperstition entries whose deadline has arrived. For each Active Targets entry that is NOT marked CLEARED and NOT marked FAILED: extract the deadline date from the entry text (e.g. "by November 7, 2026?"). If the deadline is **today or in the past** (but within the last 14 days — entries older than 14 days are handled by the removal rule below), evaluate whether the target was met using the most relevant data source:
+     - **Star/fork targets:** check the most recent repo-pulse log for `stargazers_count` / `forks_count`.
+     - **Social silence targets:** check fetch-tweets logs for `consecutive_empty` count and whether any tweets were found.
+     - **External PR targets:** run `gh pr list -R owner/repo --json author,authorAssociation --jq '[.[] | select(.authorAssociation != "OWNER" and .authorAssociation != "MEMBER" and .authorAssociation != "BOT")]'` and check push-recap logs.
+     - **Token price/FDV targets:** check the most recent token-report log entry.
+
+     Update the entry in MEMORY.md based on the evaluation:
+     - If target was **met**: append `— CLEARED ${today}; [brief outcome, e.g. "1,502 stars reached"]`
+     - If target was **missed**: append `— FAILED ${today}; [actual value vs target, e.g. "1,490 stars at deadline (needed 1,500)"]`
+
+     **Lifecycle after resolution:** CLEARED entries follow the existing 60-day archival rule below. FAILED entries do not contain "CLEARED" so they are treated as uncleared by the 14-day removal rule below — the failure stays visible for up to 14 days past the deadline before cleanup.
+
+     **Send a resolution notification** via `./notify` for each newly resolved entry:
+     ```
+     *Hyperstition Resolved — ${today}*
+
+     "[Market question]"
+
+     Result: [CLEARED ✓ / FAILED ✗]
+     [1-2 sentences: actual outcome vs target, key data point that determined the result]
+     ```
    - Active Targets: remove **uncleared** entries whose deadline has passed by **more than 14 days**. An entry is "uncleared" if it does NOT contain the word "CLEARED". To find the deadline, look for dates embedded in the entry text (e.g. "by September 15, 2026?" or "by July 1, 2026?"). If the deadline is more than 14 days before today and the entry is not marked CLEARED, remove it — it is expired and no longer actionable. Keep entries with future or recent deadlines. Additionally, archive **CLEARED** entries whose CLEARED date is **more than 60 days old**. To find the CLEARED date, look for "CLEARED YYYY-MM-DD" in the entry text (e.g. "CLEARED 2026-04-07"). If the most recent CLEARED date in the entry is more than 60 days before today, move it to `memory/topics/active-targets-archive.md` (create if missing; append under a `## Archived ${today}` header). CLEARED milestones are historical — after 60 days they no longer provide actionable context and just accumulate, making MEMORY.md's Active Targets a graveyard of completed predictions. Keep CLEARED entries from the last 60 days.
    - Lessons Learned: keep the **15 most recent entries** (by date in parentheses, or by position — newer entries are appended at the bottom). Archive removed entries by appending them to `memory/topics/lessons-archive.md` (create if missing; add a `## Archived ${today}` header before each batch). Most lessons describe fixes already coded into skill logic; the archive preserves history while freeing MEMORY.md.
    - Lessons Learned consolidation: when **3+ entries** describe the **same underlying fix pattern** (e.g. multiple entries all containing "same-day rerun dedup" or "lacked same-day rerun dedup"), **consolidate** them into a single summary entry that names the pattern once and lists all affected skills in parentheses (e.g. "Same-day rerun dedup added across 10 skills (token-report, fetch-tweets, repo-actions, ...) to prevent duplicate API calls and notifications from scheduler double-dispatch — PRs #45–#52"). Archive the individual entries to `memory/topics/lessons-archive.md`. This prevents a single improvement wave from consuming all 15 slots, crowding out diverse lessons. Run consolidation **before** the 15-entry cap check so freed slots are immediately available for new entries.
