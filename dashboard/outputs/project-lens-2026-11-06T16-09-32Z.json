@@ -1,0 +1,50 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "heading-1",
+        "text-1",
+        "separator-1",
+        "story-link-1"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "Everyone Is Simulating Customers. Nobody Is Simulating Crowds.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-1": {
+      "type": "Text",
+      "props": {
+        "text": "The synthetic user industry hit a $2B valuation in 2026 — Simile, Vectorial, Expected Parrot all simulate how individual users react before launch. But none of them model what happens when a crowd of people with conflicting beliefs start arguing across platforms simultaneously. This article explores the gap between individual and collective simulation, and how MiroShark fills it: 100+ grounded agents debating across simulated Twitter, Reddit, and prediction markets for a dollar in ten minutes.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "story-link-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-11-06.md",
+        "source": "CHORUS"
+      },
+      "children": []
+    }
+  }
+}
