@@ -1,0 +1,291 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-11-06"
+      },
+      "children": [
+        "main_content"
+      ]
+    },
+    "main_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "summary_badge",
+        "separator_1",
+        "problem_section",
+        "separator_2",
+        "why_section",
+        "separator_3",
+        "changes_section",
+        "separator_4",
+        "impact_section",
+        "separator_5",
+        "merged_section",
+        "separator_6",
+        "pr_link"
+      ]
+    },
+    "summary_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Hyperstition deadline resolution added to memory-flush",
+        "variant": "default"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "problem_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "problem_title",
+        "problem_text"
+      ]
+    },
+    "problem_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h2"
+      }
+    },
+    "problem_text": {
+      "type": "Text",
+      "props": {
+        "text": "Active Targets entries with passed deadlines were never formally evaluated — they sat in MEMORY.md for 14 days then got silently removed. The operator never received a resolution notification. The 100-day silence hyperstition was coincidentally evaluated during a memory-flush run, but that was implicit LLM behavior, not a reliable step.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "why_title",
+        "why_alert",
+        "why_text",
+        "deadline_metrics"
+      ]
+    },
+    "why_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Why: 1,500-Star Hyperstition Deadline",
+        "level": "h3"
+      }
+    },
+    "why_alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Critical: Deadline Tomorrow (Nov 7)",
+        "message": "At ~1,490 stars with 0.78/day growth, target will likely be missed. Without fix: no CLEARED/FAILED marking, no notification, silent expiry after 14 days."
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "The outcome would go unresolved, leaving the operator without visibility into what happened.",
+        "variant": "body"
+      }
+    },
+    "deadline_metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "metric_target",
+        "metric_current",
+        "metric_growth"
+      ]
+    },
+    "metric_target": {
+      "type": "Stat",
+      "props": {
+        "label": "Target",
+        "value": "1,500 stars"
+      }
+    },
+    "metric_current": {
+      "type": "Stat",
+      "props": {
+        "label": "Current",
+        "value": "~1,490"
+      }
+    },
+    "metric_growth": {
+      "type": "Stat",
+      "props": {
+        "label": "Growth Rate",
+        "value": "0.78/day"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes_title",
+        "changes_file_ref",
+        "changes_list"
+      ]
+    },
+    "changes_title": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "changes_file_ref": {
+      "type": "Text",
+      "props": {
+        "text": "skills/memory-flush/SKILL.md: Added \"resolve passed deadlines\" sub-step to Step 4 that:",
+        "variant": "lead"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change_evaluates",
+        "change_checks",
+        "change_marks"
+      ]
+    },
+    "change_evaluates": {
+      "type": "Text",
+      "props": {
+        "text": "• Evaluates non-CLEARED/non-FAILED entries with passed deadlines",
+        "variant": "caption"
+      }
+    },
+    "change_checks": {
+      "type": "Text",
+      "props": {
+        "text": "• Checks the relevant data source (repo-pulse for stars, fetch-tweets for silence, gh pr list for external PRs, token-report for price)",
+        "variant": "caption"
+      }
+    },
+    "change_marks": {
+      "type": "Text",
+      "props": {
+        "text": "• Marks entries CLEARED or FAILED with actual values, and sends a resolution notification",
+        "variant": "caption"
+      }
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact_title",
+        "impact_text"
+      ]
+    },
+    "impact_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Every hyperstition now gets a definitive resolution when its deadline passes — the operator sees what happened (met or missed, with actual numbers), and the entry gets properly lifecycle-managed instead of silently expiring.",
+        "variant": "body"
+      }
+    },
+    "separator_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "merged_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "merged_title",
+        "merged_item"
+      ]
+    },
+    "merged_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Also Merged",
+        "level": "h3"
+      }
+    },
+    "merged_item": {
+      "type": "Text",
+      "props": {
+        "text": "PR #81: push-recap rerun dedup fix (95h old, CLEAN)",
+        "variant": "body"
+      }
+    },
+    "separator_6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #83 — Full Changes",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/83",
+        "source": "GitHub"
+      }
+    }
+  }
+}
