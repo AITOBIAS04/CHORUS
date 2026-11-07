@@ -1,3 +1,8 @@
 ## Summary
 
-**Push Recap (rerun) — 2026-11-06:** No new substantive commits since the earlier report. All 4 substantive SHAs already covered in `articles/push-recap-2026-11-06.md`. 8 new automation commits (cron state, heartbeat, fetch-tweets, token-movers) filtered. Logged `PUSH_RECAP_RERUN_QUIET` to today's log. No notification sent, no article overwritten.
+**Push Recap — 2026-11-07**: Quiet day. No substantive commits across either watched repo.
+
+- **aaronjmars/MiroShark**: 0 commits in the last 24 hours
+- **aaronjmars/miroshark-aeon**: 7 commits, all automation noise (cron state updates, scheduler updates, auto-commits for token-movers and heartbeat)
+
+Logged `PUSH_RECAP_QUIET` to `memory/logs/2026-11-07.md`. No article written, no notification sent — per skill spec, quiet days produce no output beyond the log entry.
