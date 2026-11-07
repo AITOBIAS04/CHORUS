@@ -1,0 +1,140 @@
+{
+  "root": "heartbeat-card",
+  "state": {},
+  "elements": {
+    "heartbeat-card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "System health and status"
+      },
+      "children": [
+        "alert-stalled-pr",
+        "content-stack"
+      ]
+    },
+    "alert-stalled-pr": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "PR #82 Stalled",
+        "message": "\"improve: add Active Targets data refresh to memory-flush\" stalled for 77 hours, crossed 72h improve threshold. Self-improve will handle on next run (Nov 9, DOM=8)."
+      }
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skills-status",
+        "deadline-section",
+        "processed-section",
+        "resolution-section"
+      ]
+    },
+    "skills-status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "no-missing-badge",
+        "saturday-skills-badge"
+      ]
+    },
+    "no-missing-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "✓ No missing skills",
+        "variant": "default"
+      }
+    },
+    "saturday-skills-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "✓ All Saturday skills ran",
+        "variant": "default"
+      }
+    },
+    "deadline-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "deadline-label",
+        "star-stat"
+      ]
+    },
+    "deadline-label": {
+      "type": "Text",
+      "props": {
+        "text": "1,500-star hyperstition deadline:",
+        "variant": "muted"
+      }
+    },
+    "star-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Current stars",
+        "value": "1,489",
+        "delta": "-11",
+        "trend": "down"
+      }
+    },
+    "processed-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "processed-label",
+        "processed-badges"
+      ]
+    },
+    "processed-label": {
+      "type": "Text",
+      "props": {
+        "text": "Already processed:",
+        "variant": "muted"
+      }
+    },
+    "processed-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo-article-badge",
+        "hyperstitions-badge"
+      ]
+    },
+    "repo-article-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-article",
+        "variant": "outline"
+      }
+    },
+    "hyperstitions-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "hyperstitions-ideas",
+        "variant": "outline"
+      }
+    },
+    "resolution-section": {
+      "type": "Text",
+      "props": {
+        "text": "memory-flush resolves MEMORY.md entry Sunday",
+        "variant": "caption"
+      }
+    }
+  }
+}
