@@ -1,0 +1,141 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "$MiroShark Daily"
+      },
+      "children": [
+        "heading_main",
+        "separator_1",
+        "stack_metrics",
+        "separator_2",
+        "text_narrative",
+        "separator_3",
+        "link_chart"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "$MiroShark Daily — 2026-11-07",
+        "level": "h2"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_metrics": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stack_liquidity_vol",
+        "text_buys_sells",
+        "stack_performance"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000001939",
+        "delta": "+1.9%",
+        "trend": "up"
+      }
+    },
+    "stack_liquidity_vol": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_liquidity",
+        "stat_vol"
+      ]
+    },
+    "stat_liquidity": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$2.52M"
+      }
+    },
+    "stat_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$659.47"
+      }
+    },
+    "text_buys_sells": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 11/3",
+        "variant": "body"
+      }
+    },
+    "stack_performance": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "+4.25%",
+        "trend": "up"
+      }
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "−14.87%",
+        "trend": "down"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_narrative": {
+      "type": "Text",
+      "props": {
+        "text": "Recovered from a 24h low of $0.000001856 to close at the session high, driven by a cluster of buys at 02:21 UTC. 123-day social silence continues. 1,500-star hyperstition deadline lands today with ~11 stars still needed.",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link_chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
