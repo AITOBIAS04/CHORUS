@@ -1,0 +1,122 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-11-07"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-question",
+        "sep-1",
+        "text-coordination-play",
+        "sep-2",
+        "text-why-now",
+        "sep-3",
+        "text-resolution",
+        "sep-4",
+        "stack-scores",
+        "sep-5",
+        "link-hyperstitions"
+      ]
+    },
+    "heading-question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark recover from its first missed prediction and reach 1,500 GitHub stars by December 7, 2026?",
+        "level": "h2"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-coordination-play": {
+      "type": "Text",
+      "props": {
+        "text": "The coordination play: MiroShark's first hyperstition just failed — 1,489 stars against a 1,500 target, missed by 11. The failure itself is now the story. Anyone who stars the repo becomes part of the correction arc, turning a missed prediction into a self-fulfilling recovery narrative. The agent can ship code but it cannot star its own repo — only people who find the failure interesting enough to act on can close the gap."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-why-now": {
+      "type": "Text",
+      "props": {
+        "text": "Why now: The 1,500-star deadline expires today (Nov 7) with the repo 11 stars short. The article \"Ten Stars. Two Days. No Hands.\" already framed the miss. 123 days of social silence means zero community coordination happened — this is the proof that hyperstitions need circulation to work. A 30-day recovery window resets the clock with a better catalyst: failure is more shareable than a target."
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-resolution": {
+      "type": "Text",
+      "props": {
+        "text": "Resolution: YES if aaronjmars/MiroShark reaches 1,500 stargazers_count (GitHub API) by 2026-12-07 23:59 UTC. NO otherwise."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack-scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-reflexivity",
+        "stat-viral"
+      ]
+    },
+    "stat-reflexivity": {
+      "type": "Stat",
+      "props": {
+        "label": "Reflexivity",
+        "value": "5/5"
+      }
+    },
+    "stat-viral": {
+      "type": "Stat",
+      "props": {
+        "label": "Viral",
+        "value": "4/5"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "Soon on hyperstitions.com",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}
