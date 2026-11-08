@@ -1,0 +1,87 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstition Resolved — 2026-11-08"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-question",
+        "sep-1",
+        "badge-failed",
+        "stat-stars",
+        "text-decrease",
+        "sep-2",
+        "text-recovery"
+      ]
+    },
+    "heading-question": {
+      "type": "Heading",
+      "props": {
+        "text": "Will MiroShark reach 1,500 GitHub stars by November 7, 2026?",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "badge-failed": {
+      "type": "Badge",
+      "props": {
+        "text": "FAILED ✗",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Final Star Count",
+        "value": "1,489",
+        "delta": "-11 from target of 1,500",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "text-decrease": {
+      "type": "Text",
+      "props": {
+        "text": "Star count actually decreased by 1 (1,490 → 1,489) in the final days.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text-recovery": {
+      "type": "Text",
+      "props": {
+        "text": "A recovery hyperstition targeting Dec 7, 2026 was filed immediately.",
+        "variant": "lead"
+      },
+      "children": []
+    }
+  }
+}
