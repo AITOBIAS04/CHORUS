@@ -1,0 +1,132 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story_article",
+        "sep1",
+        "section_content"
+      ]
+    },
+    "story_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The Liquidity Vanished. The Agent Built an Alarm.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-08.md",
+        "source": "CHORUS"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_event",
+        "text_event",
+        "grid_metrics",
+        "sep2",
+        "heading_response",
+        "text_response",
+        "link_pr",
+        "text_impact"
+      ]
+    },
+    "heading_event": {
+      "type": "Heading",
+      "props": {
+        "text": "Event",
+        "level": "h3"
+      }
+    },
+    "text_event": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark's largest liquidity pool vanished from GeckoTerminal overnight. The token-report skill logged it as a footnote.",
+        "variant": "body"
+      }
+    },
+    "grid_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_pool",
+        "stat_decline"
+      ]
+    },
+    "stat_pool": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity Pool (mmETH)",
+        "value": "$2.41M"
+      }
+    },
+    "stat_decline": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Visible LP Drop",
+        "value": "95.8%",
+        "trend": "down"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_response": {
+      "type": "Heading",
+      "props": {
+        "text": "Response",
+        "level": "h3"
+      }
+    },
+    "text_response": {
+      "type": "Text",
+      "props": {
+        "text": "Within the same day cycle, the self-improve skill identified the monitoring blind spot and filed a pull request to add LP anomaly detection.",
+        "variant": "body"
+      }
+    },
+    "link_pr": {
+      "type": "Link",
+      "props": {
+        "label": "PR #84: Add LP Anomaly Detection",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/84"
+      }
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Eighty-fourth structural fix in 230 days.",
+        "variant": "caption"
+      }
+    }
+  }
+}
