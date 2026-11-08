@@ -1,10 +1,9 @@
-HEARTBEAT_OK. All 10 scheduled skills ran as expected today (Sunday, DOM=8). PR #84 is fresh at 5h old, well under the 72h `improve:` threshold. No open issues. Nothing needs attention.
+HEARTBEAT_RERUN_QUIET. All findings deduped against the earlier run today — every scheduled skill ran, PR #84 is 7h old (well under the 72h `improve:` threshold), no open issues, and all skills show zero consecutive failures.
 
 ## Summary
 
-- Read `memory/MEMORY.md` and last 2 days of logs for context
-- Checked `memory/cron-state.json`: all 13 skills at `consecutive_failures: 0`
-- Verified all Sunday-scheduled skills ran: token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, repo-article, skill-leaderboard, memory-flush
-- Checked open PRs: PR #84 (5h old, `improve:` prefix, within 72h threshold)
-- Checked `memory/issues/INDEX.md`: no open issues
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-11-08.md`
+- **System health:** Clean — all skills at `consecutive_failures: 0`, no systemic issues.
+- **Open PRs:** PR #84 ("improve: add LP anomaly detection to token-report") — 7h old, not stale (72h threshold for `improve:` PRs).
+- **Skills:** All expected Sunday skills confirmed ran today (token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, repo-article, skill-leaderboard, memory-flush). None missing.
+- **Issues:** None open.
+- **Action:** No notification sent (all findings deduped vs. first heartbeat run). Appended `HEARTBEAT_RERUN_QUIET` to `memory/logs/2026-11-08.md`.
