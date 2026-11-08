@@ -1,0 +1,211 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-08"
+      },
+      "children": [
+        "metadata",
+        "sep1",
+        "ideas_stack",
+        "sep2",
+        "details_link"
+      ]
+    },
+    "metadata": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — 1,489 stars · 303 forks · 0 open issues · 0 open PRs · these are ideas that could be autonomously built by the feature skill tomorrow.",
+        "variant": "caption"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "ideas_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5"
+      ]
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_title",
+        "idea1_badge",
+        "idea1_text"
+      ]
+    },
+    "idea1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Controversy Index",
+        "level": "h3"
+      }
+    },
+    "idea1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "idea1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Adds a controversy_score (0–100) to signal.json measuring stance polarization + debate intensity — distinguishes strong consensus from contentious near-misses."
+      }
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_title",
+        "idea2_badge",
+        "idea2_text"
+      ]
+    },
+    "idea2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent Pool Pre-Filter by Profession",
+        "level": "h3"
+      }
+    },
+    "idea2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "idea2_text": {
+      "type": "Text",
+      "props": {
+        "text": "Optional agent_filter on the sim start payload weights roster toward specified professions (e.g. retail investors) while preserving a 20% minimum cross-perspective floor."
+      }
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3_title",
+        "idea3_badge",
+        "idea3_text"
+      ]
+    },
+    "idea3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Run This Scenario Embed Button",
+        "level": "h3"
+      }
+    },
+    "idea3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth, Small"
+      }
+    },
+    "idea3_text": {
+      "type": "Text",
+      "props": {
+        "text": "An SVG embed button that pre-fills the new-simulation UI with the scenario parameters — lets anyone re-run a published scenario with one click from a GitHub README or blog post."
+      }
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4_title",
+        "idea4_badge",
+        "idea4_text"
+      ]
+    },
+    "idea4_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Email Digest Export",
+        "level": "h3"
+      }
+    },
+    "idea4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "idea4_text": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/simulation/:id/digest returns a compact email-ready HTML fragment (direction badge, top 3 agent quotes, inline chart, CTA link) for pasting into Substack, Beehiiv, or Mailchimp."
+      }
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5_title",
+        "idea5_badge",
+        "idea5_text"
+      ]
+    },
+    "idea5_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Cross-Platform Divergence Alert",
+        "level": "h3"
+      }
+    },
+    "idea5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small"
+      }
+    },
+    "idea5_text": {
+      "type": "Text",
+      "props": {
+        "text": "Extends the existing platform-sentiment service to flag when two platforms' BULLISH% differ by ≥30 points — surfaces echo-chamber vs. cross-platform consensus as a signal field and gallery filter."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "details_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-08.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
