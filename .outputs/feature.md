@@ -1,3 +1,3 @@
 ## Summary
 
-**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not set, so the token lacks cross-repo push permissions. Logged to `memory/logs/2026-11-08.md` and stopped without picking a feature, cloning, or sending a notification.
+**FEATURE_RERUN_QUIET** — The feature skill already ran today (earlier run resulted in FEATURE_SKIP due to no push access). Since no explicit feature was requested via `${var}`, the rerun dedup gate triggered. Logged to `memory/logs/2026-11-08.md` and stopped.
