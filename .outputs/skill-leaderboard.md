@@ -1,8 +1,17 @@
-Step 0 dedup triggered. Today's log already contains a completed `## Skill Leaderboard` entry with `Notification sent: yes` — the leaderboard was already generated and sent earlier today. Logged `SKILL_LEADERBOARD_RERUN_QUIET` and stopped as instructed to avoid redundant API calls and duplicate notifications.
+Done. Here's the summary:
 
 ## Summary
 
-- **Action:** Stopped at Step 0 (same-day rerun dedup)
-- **Reason:** `memory/logs/2026-11-01.md` already contained a `## Skill Leaderboard` entry with `Notification sent: yes` from an earlier run today (2 active forks with aeon.yml scanned, top skills at 100%, notification sent)
-- **Logged:** `SKILL_LEADERBOARD_RERUN_QUIET` appended to today's log
-- **No API calls made**, no article rewritten, no notification sent — all per spec
+**Step 0 — Dedup check:** No prior leaderboard entry in today's log. Proceeded.
+
+**Step 1 — Target repos:** Both watched repos scanned — `aaronjmars/MiroShark` and `aaronjmars/miroshark-aeon`.
+
+**Step 2 — Active forks:** 14 total active forks (pushed in last 30 days): 13 from MiroShark, 1 from miroshark-aeon (`AITOBIAS04/CHORUS`).
+
+**Step 3 — aeon.yml check:** All 13 MiroShark forks returned 404 for `aeon.yml` (expected — it's a simulation engine, not an Aeon agent repo). Only `AITOBIAS04/CHORUS` had a readable `aeon.yml`.
+
+**Early exit triggered:** `SKILL_LEADERBOARD_INSUFFICIENT_DATA` — 1 fork with readable `aeon.yml`, minimum 2 required for a meaningful ranking. No article written, no notification sent.
+
+**Logged:** `memory/logs/2026-11-08.md` updated with the leaderboard entry.
+
+The fleet remains a single-operator deployment. A second Aeon fork actively running would unlock comparative leaderboard data.
