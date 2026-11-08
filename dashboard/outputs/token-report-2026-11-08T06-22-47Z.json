@@ -1,0 +1,113 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-11-08"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "price-stat",
+        "metrics-grid",
+        "ratio-text",
+        "performance-grid",
+        "description-text",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.000001876",
+        "delta": "+2.22%",
+        "trend": "up"
+      }
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$105.4K"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$5,454"
+      }
+    },
+    "ratio-text": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 18/6",
+        "variant": "lead"
+      }
+    },
+    "performance-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "perf-7d",
+        "perf-30d"
+      ]
+    },
+    "perf-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "−1.57%",
+        "trend": "down"
+      }
+    },
+    "perf-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−22.3%",
+        "trend": "down"
+      }
+    },
+    "description-text": {
+      "type": "Text",
+      "props": {
+        "text": "Elevated volume (4–14× recent range) with 3:1 buy pressure the morning after the 1,500-star hyperstition expired missed. mmETH LP (~$2.41M) absent from GeckoTerminal — WETH pool only visible at $105K.",
+        "variant": "body"
+      }
+    },
+    "chart-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
