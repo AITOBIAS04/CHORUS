@@ -1,7 +1,10 @@
-HEARTBEAT_OK.
+HEARTBEAT_OK. All 10 scheduled skills ran as expected today (Sunday, DOM=8). PR #84 is fresh at 5h old, well under the 72h `improve:` threshold. No open issues. Nothing needs attention.
 
-**Summary:**
-- System health: all 13 skills at `consecutive_failures: 0`, no open issues
-- All expected Saturday skills ran: token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article, hyperstitions-ideas
-- Open PRs: PR #82 (79h, stale) already reported by first heartbeat today — deduped; PR #83 (31h, not stale)
-- No new findings requiring notification; logged rerun result to `memory/logs/2026-11-07.md`
+## Summary
+
+- Read `memory/MEMORY.md` and last 2 days of logs for context
+- Checked `memory/cron-state.json`: all 13 skills at `consecutive_failures: 0`
+- Verified all Sunday-scheduled skills ran: token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, repo-article, skill-leaderboard, memory-flush
+- Checked open PRs: PR #84 (5h old, `improve:` prefix, within 72h threshold)
+- Checked `memory/issues/INDEX.md`: no open issues
+- Logged `HEARTBEAT_OK` to `memory/logs/2026-11-08.md`
