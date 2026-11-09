@@ -1,7 +1,10 @@
-`TOKEN_REPORT_RERUN_QUIET` — a token-report with `Notification sent: yes` was already logged for 2026-11-08. The dedup flag has been appended to today's log and the skill stops here without re-fetching data or re-sending the notification.
+$MiroShark Daily — 2026-11-09
 
-## Summary
+Price: $0.000001682 (−6.59% 24h)
+Liquidity: $2,505.4K (mmETH pool returned) | 24h Vol: $2.0K
+Buys/Sells: 3/9
+7d: −8.88% | 30d: −26.65%
 
-- **Action:** Same-day rerun dedup triggered (Step 0)
-- **Reason:** `memory/logs/2026-11-08.md` already contained a token-report section with `Notification sent: yes`
-- **Result:** Logged `TOKEN_REPORT_RERUN_QUIET` to today's log; no data fetched, no article overwritten, no notification sent
+mmETH pool ($2.41M) reappeared after yesterday absence; price sliding on 3:1 sell pressure as the failed star hyperstition hangover continues; 125-day social silence.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
