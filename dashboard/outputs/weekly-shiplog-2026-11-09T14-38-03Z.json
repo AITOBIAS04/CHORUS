@@ -1,0 +1,91 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-11-09",
+        "description": "The week the agent learned to save money."
+      },
+      "children": [
+        "shipped_heading",
+        "items_stack",
+        "separator1",
+        "stats",
+        "separator2",
+        "link"
+      ]
+    },
+    "shipped_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h2"
+      }
+    },
+    "items_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4"
+      ]
+    },
+    "item1": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-model idle gates for fetch-tweets and memory-flush -- skip expensive model calls when there is nothing to process, saving ~$1.67/10 runs during 125-day social silence"
+      }
+    },
+    "item2": {
+      "type": "Text",
+      "props": {
+        "text": "Scorer strategy gate -- skills graded on their own job description, not penalized for topic irrelevance to operator strategy; scorer now reads the full article, not just the 420-byte notification card"
+      }
+    },
+    "item3": {
+      "type": "Text",
+      "props": {
+        "text": "Canister-audit skill (85th in catalog) -- first blockchain-native security auditor for ICP Rust canisters, ships with test fixture and Semgrep rules"
+      }
+    },
+    "item4": {
+      "type": "Text",
+      "props": {
+        "text": "Supply chain hardening -- CI actions SHA-pinned, vuln scanner binaries verified with per-arch SHA256 digests"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats": {
+      "type": "Text",
+      "props": {
+        "text": "Stats: ~90 commits, 16 PRs merged, +9,500/-3,000 lines across 2 repos"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-11-09.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

@@ -1511,4 +1511,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-11-08,memory-flush,claude-sonnet-4-6,6,1019,152604,18310
 2026-11-08,heartbeat,claude-sonnet-4-6,12,3589,441211,27779
 2026-11-09,token-report,claude-sonnet-4-6,13,9319,589786,52390
-2026-11-09,feature,claude-opus-4-6,10,1302,291206,22350
+2026-11-09,weekly-shiplog,claude-opus-4-6,20,11304,919869,59970
