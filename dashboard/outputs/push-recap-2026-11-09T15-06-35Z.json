@@ -1,0 +1,262 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-09"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "miro-section",
+        "sep1",
+        "aeon-section",
+        "sep2",
+        "changes-section",
+        "sep3",
+        "stats-section",
+        "sep4",
+        "link-section"
+      ]
+    },
+    "miro-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "miro-title",
+        "miro-badge",
+        "supply-heading",
+        "supply-text",
+        "packages-list"
+      ]
+    },
+    "miro-title": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark",
+        "level": "h3"
+      }
+    },
+    "miro-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "1 substantive commit by dependabot[bot]",
+        "variant": "secondary"
+      }
+    },
+    "supply-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Supply Chain Maintenance",
+        "level": "h4"
+      }
+    },
+    "supply-text": {
+      "type": "Text",
+      "props": {
+        "text": "Dependabot merged PR #357, bundling four frontend patch updates. All semver-patch, no breaking changes. Keeps the dashboard build toolchain and runtime deps current."
+      }
+    },
+    "packages-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pkg1",
+        "pkg2",
+        "pkg3",
+        "pkg4"
+      ]
+    },
+    "pkg1": {
+      "type": "Text",
+      "props": {
+        "text": "d3 7.9.0 → 7.9.2",
+        "variant": "caption"
+      }
+    },
+    "pkg2": {
+      "type": "Text",
+      "props": {
+        "text": "marked 18.1.2 → 18.1.3",
+        "variant": "caption"
+      }
+    },
+    "pkg3": {
+      "type": "Text",
+      "props": {
+        "text": "Vue 3.5.44 → 3.5.45",
+        "variant": "caption"
+      }
+    },
+    "pkg4": {
+      "type": "Text",
+      "props": {
+        "text": "Vite 8.3.5 → 8.3.6",
+        "variant": "caption"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "aeon-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aeon-title",
+        "aeon-text"
+      ]
+    },
+    "aeon-title": {
+      "type": "Heading",
+      "props": {
+        "text": "miroshark-aeon",
+        "level": "h3"
+      }
+    },
+    "aeon-text": {
+      "type": "Text",
+      "props": {
+        "text": "17 automation commits (cron markers, auto-commits, scheduler updates), 0 substantive"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes-title",
+        "changes-list"
+      ]
+    },
+    "changes-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "frontend/package.json: 4 dependency patches bumped in grouped PR"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "frontend/package-lock.json: transitive tree resolution updated (+282/-281 lines)"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "No new deps, no API changes, no architecture shifts"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-add",
+        "stat-del"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "2"
+      }
+    },
+    "stat-add": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "+286"
+      }
+    },
+    "stat-del": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "-285"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "full-recap"
+      ]
+    },
+    "full-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-09.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
