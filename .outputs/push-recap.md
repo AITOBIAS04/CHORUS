@@ -1,3 +1,3 @@
 ## Summary
 
-Push recap for 2026-11-10 found **0 substantive commits** across both watched repos. The 8 miroshark-aeon commits were all automation noise (cron state updates, auto-commits). MiroShark had no commits in the 24h window. Logged `PUSH_RECAP_QUIET` — no article written, no notification sent.
+**Push Recap (rerun)** — skipped. The earlier run today already found zero substantive commits across both watched repos (8 automation commits filtered from miroshark-aeon, 0 commits from MiroShark). Logged `PUSH_RECAP_RERUN_QUIET` to `memory/logs/2026-11-10.md`. No notification sent, no article written.
