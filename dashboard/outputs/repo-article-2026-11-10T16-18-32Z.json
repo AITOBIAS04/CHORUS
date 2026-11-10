@@ -1,0 +1,56 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_1",
+        "text_1",
+        "separator_1",
+        "storylink_1"
+      ]
+    },
+    "heading_1": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: Three Hundred Forks. Zero Pull Requests. The Ghost Community.",
+        "level": "h2"
+      }
+    },
+    "text_1": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark has 303 forks and zero external pull requests in 235 days. Research says 50% of active forks never contribute back — here it's 100%. The autonomous agent has filed 85 self-improvement PRs in the same window. The system's own hyperstition now bets whether a human will break the streak by November 30.",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "storylink_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "New Article: Three Hundred Forks. Zero Pull Requests. The Ghost Community.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-10.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
