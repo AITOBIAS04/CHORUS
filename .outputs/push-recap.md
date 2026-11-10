@@ -1,3 +1,3 @@
 ## Summary
 
-**Push Recap (rerun)** — Step 4b SHA comparison found no new substantive commits since the earlier report. The existing article already covers the only substantive commit (`43b1335` — Dependabot PR #357, frontend patch bundle: d3, marked, vue, vite). All 17 miroshark-aeon commits remain automation noise. Logged `PUSH_RECAP_RERUN_QUIET` and stopped — no notification sent, no article overwritten.
+Push recap for 2026-11-10 found **0 substantive commits** across both watched repos. The 8 miroshark-aeon commits were all automation noise (cron state updates, auto-commits). MiroShark had no commits in the 24h window. Logged `PUSH_RECAP_QUIET` — no article written, no notification sent.
