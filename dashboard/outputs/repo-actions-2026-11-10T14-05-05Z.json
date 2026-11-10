@@ -1,0 +1,332 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas",
+        "description": "2026-11-10 — aaronjmars/MiroShark"
+      },
+      "children": [
+        "header_text",
+        "items_stack",
+        "separator",
+        "full_details"
+      ]
+    },
+    "header_text": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — these are ideas that could be autonomously built by the feature skill tomorrow.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "items_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
+      ]
+    },
+    "item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_1_heading",
+        "item_1_tags",
+        "item_1_desc"
+      ]
+    },
+    "item_1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Consensus Formation Speed Metric",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_1_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_1a",
+        "badge_1b"
+      ]
+    },
+    "badge_1a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_1b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Adds rounds_to_consensus to signal.json — the first round two-direction agreement topped 60% and held; enables gallery sort by \"fastest consensus\" and a vertical marker on the timeline chart.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_2_heading",
+        "item_2_tags",
+        "item_2_desc"
+      ]
+    },
+    "item_2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Post-Run Cost Breakdown",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_2_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_2a",
+        "badge_2b"
+      ]
+    },
+    "badge_2a": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_2b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Reads run_log.jsonl after a simulation completes and surfaces per-phase token counts and estimated costs; closes the loop from the pre-run estimator to actual spend.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_3_heading",
+        "item_3_tags",
+        "item_3_desc"
+      ]
+    },
+    "item_3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Agent Engagement Score",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_3_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_3a",
+        "badge_3b"
+      ]
+    },
+    "badge_3a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Analytics",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_3b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Tracks what fraction of the agent roster posted each round; exposes mean_engagement_pct, label (High/Moderate/Low), and trend (Rising/Stable/Declining) in signal.json and as a secondary overlay on the belief-drift chart.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_4_heading",
+        "item_4_tags",
+        "item_4_desc"
+      ]
+    },
+    "item_4_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Platform Lead-Lag Analysis",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_4_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_4a",
+        "badge_4b"
+      ]
+    },
+    "badge_4a": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Analytics",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_4b": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Cross-correlates per-round bullish_pct sequences across platforms to identify which platform shifts sentiment first; surfaces as \"X leads Reddit by 2 rounds (high confidence)\" in the Platforms overlay.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item_5_heading",
+        "item_5_tags",
+        "item_5_desc"
+      ]
+    },
+    "item_5_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Scenario Template Gallery",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_5_tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_5a",
+        "badge_5b"
+      ]
+    },
+    "badge_5a": {
+      "type": "Badge",
+      "props": {
+        "text": "Community/Growth",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_5b": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item_5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Operators can flag a completed published simulation as a reusable template; a keyless /api/templates endpoint and /templates gallery page let anyone browse and clone scenarios with pre-filled topic + scenario parameters.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "full_details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-10.md",
+        "source": "CHORUS GitHub"
+      },
+      "children": []
+    }
+  }
+}

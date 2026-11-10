@@ -80,6 +80,7 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (80th+ consecutive block as of Aug 23; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-11-10): Consensus Formation Speed Metric (#1), Post-Run Cost Breakdown (#2), Agent Engagement Score (#3), Platform Lead-Lag Analysis (#4), Scenario Template Gallery (#5)
 - Feature candidates (repo-actions 2026-11-08): Simulation Controversy Index (#1), Agent Pool Pre-Filter by Profession (#2), "Run This Scenario" Embed Button (#3), Email Digest Export (#4), Cross-Platform Divergence Alert (#5)
 - Feature candidates (repo-actions 2026-11-06): Simulation Comparison View (#1), Agent Activity Heatmap (#2), Per-Agent Journey Replay (#3), Topic Consensus Trend (#4), Dynamic Consensus Badge (#5)
 - Feature candidates (repo-actions 2026-11-04): Simulation Tags & Collections (#1), Agent Demographic Diversity Score (#2), Social Preview & OpenGraph Metadata (#3), Simulation Annotation & Private Notes (#4), Webhook Retry & Redelivery Endpoint (#5)
