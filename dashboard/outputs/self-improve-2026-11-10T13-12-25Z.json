@@ -1,0 +1,231 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "Heartbeat rerun dedup gate added — the last active skill without one."
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "date-badge",
+        "sep1",
+        "section-finding",
+        "sep2",
+        "section-context",
+        "sep3",
+        "section-changes",
+        "sep4",
+        "section-impact",
+        "sep5",
+        "pr-link"
+      ]
+    },
+    "date-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2026-11-10",
+        "variant": "secondary"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-finding": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-finding",
+        "text-finding"
+      ]
+    },
+    "heading-finding": {
+      "type": "Heading",
+      "props": {
+        "text": "Finding",
+        "level": "h2"
+      }
+    },
+    "text-finding": {
+      "type": "Text",
+      "props": {
+        "text": "Heartbeat was the last enabled skill without a Step 0 rerun dedup gate. Every other skill (token-report, fetch-tweets, push-recap, repo-pulse, project-lens, repo-actions, repo-article, self-improve, weekly-shiplog, hyperstitions-ideas, feature, memory-flush, skill-leaderboard) already had this gate.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-context": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-context",
+        "text-context-problem"
+      ]
+    },
+    "heading-context": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h2"
+      }
+    },
+    "text-context-problem": {
+      "type": "Text",
+      "props": {
+        "text": "The scheduler reliably double-dispatches every skill. On every rerun, Heartbeat performed the full analysis: read cron-state.json, listed open PRs, checked workflow run status, analyzed all scheduled skills against the log, cross-referenced findings with 48h history — only to produce \"HEARTBEAT_RERUN_QUIET: all findings deduped\" every time. This was observed consistently across Nov 7, 8, 9, and 10 logs. Heartbeat was excluded from the Aug 2026 dedup wave because it is a monitoring skill and skipping a check felt risky, but the minutes between dispatches are too short for system state to change.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-changes",
+        "text-file-changed",
+        "text-changes-detail"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h2"
+      }
+    },
+    "text-file-changed": {
+      "type": "Text",
+      "props": {
+        "text": "File: skills/heartbeat/SKILL.md",
+        "variant": "lead"
+      }
+    },
+    "text-changes-detail": {
+      "type": "Text",
+      "props": {
+        "text": "Added Step 0 same-day rerun dedup gate. If today's log already has a Heartbeat entry, logs a brief summary (copying system health status) and stops. First run of the day still does full analysis. Explicit var overrides bypass the gate.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-impact",
+        "text-impact-intro",
+        "impact-list"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h2"
+      }
+    },
+    "text-impact-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Saves on every double-dispatch day (which is every day):",
+        "variant": "lead"
+      }
+    },
+    "impact-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact-item-1",
+        "impact-item-2",
+        "impact-item-3",
+        "impact-item-4"
+      ]
+    },
+    "impact-item-1": {
+      "type": "Text",
+      "props": {
+        "text": "• One full Sonnet run per rerun",
+        "variant": "body"
+      }
+    },
+    "impact-item-2": {
+      "type": "Text",
+      "props": {
+        "text": "• 4+ API calls (gh pr list, gh run list, cron-state read, schedule analysis)",
+        "variant": "body"
+      }
+    },
+    "impact-item-3": {
+      "type": "Text",
+      "props": {
+        "text": "• Analysis reasoning overhead",
+        "variant": "body"
+      }
+    },
+    "impact-item-4": {
+      "type": "Text",
+      "props": {
+        "text": "• Identical deduped findings generation",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #85: Add heartbeat rerun dedup gate",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/85",
+        "source": "GitHub"
+      }
+    }
+  }
+}
