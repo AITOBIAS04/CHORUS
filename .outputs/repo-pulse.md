@@ -1,11 +1,11 @@
-Done. Here's the result:
-
 ## Summary
 
-**Repo Pulse — 2026-11-10**
+**repo-pulse — 2026-11-10 (rerun)**
 
-- **aaronjmars/MiroShark**: 1,489 stars · 303 forks (unchanged from prior 3 days)
-- Stargazer timestamps unavailable (403) — net change fallback: 1489 → 1489 = **+0**
-- Newest fork: 2026-10-26T10:43:20Z — before 24h cutoff (2026-11-09T10:06:02Z)
-- **REPO_PULSE_QUIET**: no new stars, no new forks — notification not sent
-- Logged to `memory/logs/2026-11-10.md`
+- Repo tracked: `aaronjmars/MiroShark` (skipped `miroshark-aeon` per skill config)
+- Current stats: 1,489 stars, 303 forks — unchanged from Nov 9
+- Stargazers API: 403 — used net-change fallback (1489 vs 1489 = **0 net**)
+- Newest fork: 2026-10-26T10:43:20Z — before 24h cutoff
+- Result: **REPO_PULSE_QUIET** — no new stars, no new forks in last 24 hours
+- No notification sent (prior run also quiet)
+- Logged rerun entry to `memory/logs/2026-11-10.md`
