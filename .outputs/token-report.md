@@ -1,8 +1,10 @@
-`TOKEN_REPORT_RERUN_QUIET` — the token-report already ran today (2026-11-10) and sent its notification. Logged the rerun entry and stopped per Step 0 dedup rules. No data was re-fetched, no article was overwritten, no notification was sent.
+MiroShark Daily — 2026-11-11
 
-## Summary
+Price: $0.0000016555 (-4.73% 24h)
+Liquidity: $2.50M total ($96K WETH + $2.41M mmETH stable) | 24h Vol: $210.51
+Buys/Sells: 3/2
+7d: -15.2% | 30d: -18.4%
 
-- **Action:** Rerun dedup triggered (Step 0)
-- **Reason:** `memory/logs/2026-11-10.md` already contained a token-report entry with `Notification sent: yes` from an earlier run today ($0.000001732, +2.62% 24h)
-- **Files modified:** `memory/logs/2026-11-10.md` — appended `token-report (rerun)` entry with `TOKEN_REPORT_RERUN_QUIET`
-- **Follow-up:** None needed
+Downtrend continues post-failed 1,500-star deadline. Volume at session lows. 127-day social silence intact. Replacement hyperstition: 1,500 stars by Dec 7 (26 days / 11 stars needed).
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209

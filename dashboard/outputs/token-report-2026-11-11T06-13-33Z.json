@@ -1,0 +1,130 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-11-11"
+      },
+      "children": [
+        "stat_price",
+        "sep1",
+        "stack_liquidity",
+        "sep2",
+        "grid_metrics",
+        "sep3",
+        "text_analysis",
+        "link_chart"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.0000016555",
+        "delta": "-4.73%",
+        "trend": "down"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack_liquidity": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_liquidity_label",
+        "text_total_liquidity",
+        "text_volume"
+      ]
+    },
+    "text_liquidity_label": {
+      "type": "Text",
+      "props": {
+        "text": "Liquidity:",
+        "variant": "lead"
+      }
+    },
+    "text_total_liquidity": {
+      "type": "Text",
+      "props": {
+        "text": "$2.50M total ($96K WETH + $2.41M mmETH stable)"
+      }
+    },
+    "text_volume": {
+      "type": "Text",
+      "props": {
+        "text": "24h Vol: $210.51"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "grid_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "stat_buys",
+        "stat_sells",
+        "stat_7d",
+        "stat_30d"
+      ]
+    },
+    "stat_buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys",
+        "value": "3"
+      }
+    },
+    "stat_sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Sells",
+        "value": "2"
+      }
+    },
+    "stat_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "-15.2%",
+        "trend": "down"
+      }
+    },
+    "stat_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "-18.4%",
+        "trend": "down"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text_analysis": {
+      "type": "Text",
+      "props": {
+        "text": "Downtrend continues post-failed 1,500-star deadline. Volume at session lows. 127-day social silence intact. Replacement hyperstition: 1,500 stars by Dec 7 (26 days / 11 stars needed)."
+      }
+    },
+    "link_chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      }
+    }
+  }
+}
