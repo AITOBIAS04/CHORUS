@@ -1,8 +1,5 @@
-HEARTBEAT_RERUN_QUIET. The earlier run today already found everything clean — all 13 skills healthy, no open issues, PRs #84 and #85 both within the 72h `improve:` auto-merge window. No action needed.
+Heartbeat — 2026-11-11
 
-## Summary
+⚑ PR #84 stalled at 77h — "improve: add LP anomaly detection to token-report" (improve: threshold: 72h). Self-improve runs next on Nov 12 and should auto-merge.
 
-- Read `memory/MEMORY.md`, `memory/cron-state.json`, and today's log
-- Confirmed this is a rerun: `## Heartbeat — 2026-11-10` already logged `HEARTBEAT_OK` from an earlier run
-- Current state unchanged: all skills at `consecutive_failures: 0`, open PRs #85 (7h) and #84 (55h) both within threshold, no open issues
-- Appended `## Heartbeat (rerun) — 2026-11-10` with `HEARTBEAT_RERUN_QUIET` to today's log
+System: all 13 skills healthy (consecutive_failures: 0 across all). No open issues. No missing skills today. Skills not due today: repo-actions, self-improve (*/2, DOM 11), repo-article (off-days), weekly-shiplog (Mon), hyperstitions-ideas (Sat), skill-leaderboard (Sun).

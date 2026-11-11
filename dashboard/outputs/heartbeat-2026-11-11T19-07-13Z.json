@@ -1,0 +1,192 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "System health and scheduled tasks"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-alert",
+        "sep1",
+        "system-section",
+        "sep2",
+        "skills-section"
+      ]
+    },
+    "pr-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "PR #84 Stalled",
+        "message": "improve: add LP anomaly detection to token-report — 77h elapsed (threshold: 72h). Self-improve runs next on Nov 12 and should auto-merge."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "system-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "system-heading",
+        "stats-row",
+        "badges-row"
+      ]
+    },
+    "system-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "System Status",
+        "level": "h3"
+      }
+    },
+    "stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-healthy",
+        "stat-failures"
+      ]
+    },
+    "stat-healthy": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Healthy",
+        "value": "13/13",
+        "trend": "up"
+      }
+    },
+    "stat-failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive Failures",
+        "value": "0",
+        "trend": "neutral"
+      }
+    },
+    "badges-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-issues",
+        "badge-missing"
+      ]
+    },
+    "badge-issues": {
+      "type": "Badge",
+      "props": {
+        "text": "No open issues",
+        "variant": "secondary"
+      }
+    },
+    "badge-missing": {
+      "type": "Badge",
+      "props": {
+        "text": "No missing skills",
+        "variant": "secondary"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "skills-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "skills-heading",
+        "skills-list"
+      ]
+    },
+    "skills-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Not Due Today",
+        "level": "h3"
+      }
+    },
+    "skills-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill-1",
+        "skill-2",
+        "skill-3",
+        "skill-4",
+        "skill-5",
+        "skill-6"
+      ]
+    },
+    "skill-1": {
+      "type": "Text",
+      "props": {
+        "text": "repo-actions",
+        "variant": "body"
+      }
+    },
+    "skill-2": {
+      "type": "Text",
+      "props": {
+        "text": "self-improve (*/2, DOM 11)",
+        "variant": "body"
+      }
+    },
+    "skill-3": {
+      "type": "Text",
+      "props": {
+        "text": "repo-article (off-days)",
+        "variant": "body"
+      }
+    },
+    "skill-4": {
+      "type": "Text",
+      "props": {
+        "text": "weekly-shiplog (Mon)",
+        "variant": "body"
+      }
+    },
+    "skill-5": {
+      "type": "Text",
+      "props": {
+        "text": "hyperstitions-ideas (Sat)",
+        "variant": "body"
+      }
+    },
+    "skill-6": {
+      "type": "Text",
+      "props": {
+        "text": "skill-leaderboard (Sun)",
+        "variant": "body"
+      }
+    }
+  }
+}
