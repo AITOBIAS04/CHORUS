@@ -1,0 +1,40 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens",
+        "description": "New Article"
+      },
+      "children": [
+        "title",
+        "body",
+        "link"
+      ]
+    },
+    "title": {
+      "type": "Heading",
+      "props": {
+        "text": "Every Six Hours, Someone Wound the Clockwork. Then Nobody Did.",
+        "level": "h2"
+      }
+    },
+    "body": {
+      "type": "Text",
+      "props": {
+        "text": "For two hundred years, lighthouse keepers executed a maintenance loop — winding clockwork, trimming wicks, polishing lenses, recording weather — every six hours, every day. Gustaf Dalén's 1912 sun valve automated the first task; it took 86 more years to automate the rest, ending when six keepers walked out of North Foreland in 1998. MiroShark's autonomous agent runs the same loop: fourteen skills on cron schedules, 85 self-improvement PRs, 235 consecutive days of logbook entries, 127 days since the human keeper went silent. The light does not care who winds the clockwork.",
+        "variant": "body"
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-11-11.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
