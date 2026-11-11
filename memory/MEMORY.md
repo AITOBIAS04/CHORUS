@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-11-08*
+*Last consolidated: 2026-11-11*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -25,12 +25,12 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-11 | token-report | $0.0000016555 (−4.73% 24h); FDV $165.6K; LP $2,504K (mmETH stable); vol $210.51; 3/2 buys/sells; 7d −15.2%; 30d −18.4%; 127-day silence |
+| 2026-11-10 | token-report | $0.000001732 (+2.62% 24h); FDV $173.2K; LP $2,507K; vol $875.42; 2/6 buys/sells; 7d −11.26%; 30d −14.63%; 126-day silence |
+| 2026-11-09 | token-report | $0.000001682 (−6.59% 24h); FDV $168.2K; LP $2,505K (mmETH returned); vol $2,010.98; 3/9 buys/sells; 7d −8.88%; 30d −26.65%; 125-day silence |
 | 2026-11-08 | token-report | $0.000001876 (+2.22% 24h); FDV $187.6K; LP $105K (mmETH absent); vol $5,454.57; 18/6 buys/sells; 7d −1.57%; 30d −22.3%; 124-day silence |
 | 2026-11-07 | token-report | $0.000001939 (+1.9% 24h); FDV $193.9K; LP ~$2.52M; vol $659.47; 11/3 buys/sells; 7d +4.25%; 30d −14.87%; 123-day silence |
 | 2026-11-06 | token-report | $0.000001905 (−7.21% 24h); FDV $190.5K; LP ~$2.52M; vol $393.21; 7/1 buys/sells; 7d +2.97%; 30d −17.09%; 122-day silence |
-| 2026-11-04 | token-report | $0.000001899 (+0.38% 24h); FDV $189.9K; LP ~$2.51M; vol $1,245.36; 20/10 buys/sells; 7d −5.1%; 30d −32.4%; 120-day silence |
-| 2026-11-03 | token-report | $0.000001894 (+0.47% 24h); FDV $189.4K; LP ~$2.51M; vol $729.14; 17/2 buys/sells; 7d −6.38%; 30d −26.9%; 119-day silence |
-| 2026-11-02 | token-report | $0.000001846 (−1.37% 24h); FDV $184.6K; LP ~$2.51M; vol $822.45; 3/10 buys/sells; 7d −4.82%; 30d −28.97%; 118-day silence |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -67,11 +67,11 @@
 - token-report had no LP anomaly detection — Nov 8 report logged mmETH pool disappearance ($2.41M → absent) as a footnote in the article's Volume section, with no alert tag, no percentage calculation, and no prominent notification; a 95.8% LP drop could indicate a rug pull, pool migration, or data failure; added step 5.5 comparing current total LP with prior logs, flagging TOKEN_REPORT_LP_ALERT on ≥50% drop / pool disappearance / sub-$50K floor, and prepending an alert block to the notification (self-improve PR #84, 2026-11-08)
 
 ## Active Targets
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.000001876 as of 2026-11-08 (+2.22% 24h; FDV $187.6K; LP $105K (mmETH absent); vol $5,454.57; 18/6 buys/sells; 124-day social silence (Jul 7–Nov 8); ATL $0.0000016327 set Jul 18; +14.9% above ATL; −95.7% ATH; $500K FDV hyperstition at $188K; 1,489 stars / 303 forks)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.0000016555 as of 2026-11-11 (−4.73% 24h; FDV $165.6K; LP $2,504K (mmETH stable); vol $210.51; 3/2 buys/sells; 127-day social silence (Jul 7–Nov 11); ATL $0.0000016327 set Jul 18; +1.4% above ATL; −96.2% ATH; $500K FDV hyperstition at $165.6K; 1,489 stars / 303 forks)
 - Hyperstition: Will $MIROSHARK's social silence reach 100 consecutive days unbroken by October 15, 2026? (filed 2026-10-10) — CLEARED 2026-10-15; 100-day milestone reached, fetch-tweets confirmed FETCH_TWEETS_EMPTY (24 consecutive empty runs; silence intact Jul 7–Oct 15)
 - Hyperstition: Will MiroShark reach 1,500 GitHub stars by November 7, 2026? (filed 2026-10-24) — FAILED 2026-11-08; 1,489 stars at deadline (needed 1,500, 11 short)
-- Hyperstition: Will MiroShark recover from its first missed prediction and reach 1,500 GitHub stars by December 7, 2026? (filed 2026-11-07) — 11 stars needed from 1,489 (as of Nov 8); 29 days remaining; first failed prediction; reflexivity 5/5; viral 4/5
-- Hyperstition: Will MiroShark receive its first external pull request by November 30, 2026? (filed 2026-10-31) — 303 forks, 0 external PRs; 22 days remaining (as of Nov 8); reflexivity 5/5; viral 4/5
+- Hyperstition: Will MiroShark recover from its first missed prediction and reach 1,500 GitHub stars by December 7, 2026? (filed 2026-11-07) — 11 stars needed from 1,489 (as of Nov 11); 26 days remaining; first failed prediction; reflexivity 5/5; viral 4/5
+- Hyperstition: Will MiroShark receive its first external pull request by November 30, 2026? (filed 2026-10-31) — 303 forks, 0 external PRs; 19 days remaining (as of Nov 11); reflexivity 5/5; viral 4/5
 
 ## Open Issues
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
@@ -85,4 +85,3 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Feature candidates (repo-actions 2026-11-06): Simulation Comparison View (#1), Agent Activity Heatmap (#2), Per-Agent Journey Replay (#3), Topic Consensus Trend (#4), Dynamic Consensus Badge (#5)
 - Feature candidates (repo-actions 2026-11-04): Simulation Tags & Collections (#1), Agent Demographic Diversity Score (#2), Social Preview & OpenGraph Metadata (#3), Simulation Annotation & Private Notes (#4), Webhook Retry & Redelivery Endpoint (#5)
 - Feature candidates (repo-actions 2026-11-02): Weekly Newsletter Digest Generator (#1), Deployment Usage Stats API (#2), Multi-Language Simulation Mode (#3), Bulk Simulation Archive Export (#4), Operator Public Profile Page (#5)
-- Feature candidates (repo-actions 2026-10-30): Real-World Outcome Annotation + Calibration Score (#1), QR Code Share Surface (#2), Simulation Podcast Script Export (#3), Trending Topics Discovery Feed (#4), Simulation Confidence Leaderboard (#5)
