@@ -1,5 +1,3 @@
-Pushed successfully.
-
 ## Summary
 
-**Push Recap — 2026-11-11**: No substantive commits across watched repos. MiroShark had 0 commits; miroshark-aeon had 10 automation commits (cron state updates, token-movers auto-commits, scheduler updates, heartbeat/fetch-tweets markers). Logged `PUSH_RECAP_QUIET` — no article written, no notification sent.
+**Push Recap — 2026-11-11 (rerun):** The earlier run today already found no substantive commits across both watched repos (aaronjmars/MiroShark: 0 commits, aaronjmars/miroshark-aeon: 10 automation commits only). Logged `PUSH_RECAP_RERUN_QUIET` and stopped — no notification sent, no article written. Committed and pushed the log update.
