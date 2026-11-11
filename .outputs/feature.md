@@ -1,3 +1,3 @@
 ## Summary
 
-**FEATURE_RERUN_QUIET** — Feature skill already ran today (earlier run logged `FEATURE_SKIP: no push access`). Skipped rerun to avoid duplicate work. No notification sent.
+**FEATURE_SKIP** — no push access to `aaronjmars/MiroShark` (`GH_GLOBAL` secret not set). Logged to `memory/logs/2026-11-11.md` and stopped without picking a feature or cloning the repo.
