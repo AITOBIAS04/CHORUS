@@ -1,0 +1,345 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap",
+        "description": "2026-11-12"
+      },
+      "children": [
+        "metadata",
+        "sep1",
+        "icp_section",
+        "sep2",
+        "yusa_section",
+        "sep3",
+        "notif_section",
+        "sep4",
+        "changes_section",
+        "sep5",
+        "stats_section",
+        "sep6",
+        "link_section"
+      ]
+    },
+    "metadata": {
+      "type": "Text",
+      "props": {
+        "text": "miroshark-aeon - 1 substantive commit by 2 authors (9 automation commits filtered)",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "icp_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "icp_title",
+        "icp_intro",
+        "skill1",
+        "skill2",
+        "skill3"
+      ]
+    },
+    "icp_title": {
+      "type": "Heading",
+      "props": {
+        "text": "ICP Skill Pack",
+        "level": "h2"
+      }
+    },
+    "icp_intro": {
+      "type": "Text",
+      "props": {
+        "text": "PR #251 synced 4 upstream commits from aeonfun/aeon, landing three new Internet Computer skills. All pure-stdlib Node.js with test coverage.",
+        "variant": "body"
+      }
+    },
+    "skill1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "skill1_badge",
+        "skill1_text"
+      ]
+    },
+    "skill1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "canister-status",
+        "variant": "outline"
+      }
+    },
+    "skill1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Monitors canisters for controller/module changes",
+        "variant": "body"
+      }
+    },
+    "skill2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "skill2_badge",
+        "skill2_text"
+      ]
+    },
+    "skill2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "icp-deploy-check",
+        "variant": "outline"
+      }
+    },
+    "skill2_text": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-deploy safety checklist for Rust IC canisters (7 footguns)",
+        "variant": "body"
+      }
+    },
+    "skill3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "skill3_badge",
+        "skill3_text"
+      ]
+    },
+    "skill3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "sns-digest",
+        "variant": "outline"
+      }
+    },
+    "skill3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Governance proposal digests for NNS + SNS DAOs",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "yusa_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "yusa_title",
+        "yusa_intro",
+        "yusa_list"
+      ]
+    },
+    "yusa_title": {
+      "type": "Heading",
+      "props": {
+        "text": "YUSA Security Pack",
+        "level": "h2"
+      }
+    },
+    "yusa_intro": {
+      "type": "Text",
+      "props": {
+        "text": "New community pack catalogued from yusasecurity/yusa. Detects hidden instructions in installed skills:",
+        "variant": "body"
+      }
+    },
+    "yusa_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "yusa_item1",
+        "yusa_item2",
+        "yusa_item3",
+        "yusa_item4",
+        "yusa_item5"
+      ]
+    },
+    "yusa_item1": {
+      "type": "Text",
+      "props": {
+        "text": "• Unicode TAG smuggling",
+        "variant": "body"
+      }
+    },
+    "yusa_item2": {
+      "type": "Text",
+      "props": {
+        "text": "• Zero-width splits",
+        "variant": "body"
+      }
+    },
+    "yusa_item3": {
+      "type": "Text",
+      "props": {
+        "text": "• Look-alike letters",
+        "variant": "body"
+      }
+    },
+    "yusa_item4": {
+      "type": "Text",
+      "props": {
+        "text": "• Hidden HTML",
+        "variant": "body"
+      }
+    },
+    "yusa_item5": {
+      "type": "Text",
+      "props": {
+        "text": "• Base64",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "notif_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "notif_title",
+        "notif_text"
+      ]
+    },
+    "notif_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Notification Formatting",
+        "level": "h2"
+      }
+    },
+    "notif_text": {
+      "type": "Text",
+      "props": {
+        "text": "Global em-dash to hyphen replacement across ~60 skill notification templates for Telegram/Discord rendering compatibility. eyebrowlock.json integrity hashes regenerated.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_title",
+        "changes_list"
+      ]
+    },
+    "changes_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h2"
+      }
+    },
+    "changes_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2",
+        "change3"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "• 3 new skills added (canister-status, icp-deploy-check, sns-digest) with 129-line test suite",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "• Skill catalog advances from 88 to 89 skills across all docs",
+        "variant": "body"
+      }
+    },
+    "change3": {
+      "type": "Text",
+      "props": {
+        "text": "• First ICP/Web3-governance skill pack signals upstream expanding beyond price monitoring",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat1",
+        "stat2"
+      ]
+    },
+    "stat1": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "101"
+      }
+    },
+    "stat2": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Changed",
+        "value": "+1,982/-772"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_section": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-12.md"
+      }
+    }
+  }
+}
