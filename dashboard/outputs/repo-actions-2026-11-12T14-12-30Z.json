@@ -1,0 +1,352 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-12"
+      },
+      "children": [
+        "heading_repo",
+        "grid_stats",
+        "separator_1",
+        "stack_actions",
+        "separator_2",
+        "link_details"
+      ]
+    },
+    "heading_repo": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h3"
+      }
+    },
+    "grid_stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks",
+        "text_silence",
+        "text_milestone"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,489"
+      }
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "302"
+      }
+    },
+    "text_silence": {
+      "type": "Text",
+      "props": {
+        "text": "128-day social silence",
+        "variant": "caption"
+      }
+    },
+    "text_milestone": {
+      "type": "Text",
+      "props": {
+        "text": "11 stars needed for 1,500-star hyperstition by Dec 7",
+        "variant": "caption"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stack_actions": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "action_1",
+        "action_2",
+        "action_3",
+        "action_4",
+        "action_5"
+      ]
+    },
+    "action_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_1_header",
+        "action_1_desc"
+      ]
+    },
+    "action_1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_1_title",
+        "badge_feature_1",
+        "badge_small_1"
+      ]
+    },
+    "action_1_title": {
+      "type": "Text",
+      "props": {
+        "text": "1. Simulation Volatility Score",
+        "variant": "lead"
+      }
+    },
+    "badge_feature_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge_small_1": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Measures belief oscillation round-to-round as a 0–100 score; exposes whether a simulation reached consensus via a straight-line conviction story or a series of mind-changes.",
+        "variant": "body"
+      }
+    },
+    "action_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_2_header",
+        "action_2_desc"
+      ]
+    },
+    "action_2_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_2_title",
+        "badge_feature_2",
+        "badge_medium_2"
+      ]
+    },
+    "action_2_title": {
+      "type": "Text",
+      "props": {
+        "text": "2. Agent Biography Auto-Generator",
+        "variant": "lead"
+      }
+    },
+    "badge_feature_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge_medium_2": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      }
+    },
+    "action_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "LLM-generated 2-3 sentence narrative for the top 5 most-influential agents; turns abstract agent IDs into named characters for articles and embeds.",
+        "variant": "body"
+      }
+    },
+    "action_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_3_header",
+        "action_3_desc"
+      ]
+    },
+    "action_3_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_3_title",
+        "badge_feature_integration_3",
+        "badge_small_3"
+      ]
+    },
+    "action_3_title": {
+      "type": "Text",
+      "props": {
+        "text": "3. Simulation Network Graph Export",
+        "variant": "lead"
+      }
+    },
+    "badge_feature_integration_3": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature/Integration",
+        "variant": "secondary"
+      }
+    },
+    "badge_small_3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Exports the agent @-mention network as GraphML and GEXF for direct import into Gephi, Cytoscape, and NetworkX — turns any simulation into a first-class network science dataset.",
+        "variant": "body"
+      }
+    },
+    "action_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_4_header",
+        "action_4_desc"
+      ]
+    },
+    "action_4_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_4_title",
+        "badge_dx_4",
+        "badge_small_4"
+      ]
+    },
+    "action_4_title": {
+      "type": "Text",
+      "props": {
+        "text": "4. Webhook Event Testing Playground",
+        "variant": "lead"
+      }
+    },
+    "badge_dx_4": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "secondary"
+      }
+    },
+    "badge_small_4": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action_4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "POST /api/webhooks/test sends a realistic sample payload to a provided HTTPS URL and returns HTTP status + latency; reduces webhook integration time from 10 minutes to 10 seconds.",
+        "variant": "body"
+      }
+    },
+    "action_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "action_5_header",
+        "action_5_desc"
+      ]
+    },
+    "action_5_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action_5_title",
+        "badge_feature_5",
+        "badge_small_5"
+      ]
+    },
+    "action_5_title": {
+      "type": "Text",
+      "props": {
+        "text": "5. Operator Simulation Stats API",
+        "variant": "lead"
+      }
+    },
+    "badge_feature_5": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge_small_5": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action_5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/users/:id/stats aggregates cross-simulation history — mean confidence, direction distribution, top topics, active streak — for any operator's published simulations.",
+        "variant": "body"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-12.md"
+      }
+    }
+  }
+}
