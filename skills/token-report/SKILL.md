@@ -74,6 +74,19 @@ All GeckoTerminal API calls use `curl` against a public API (no auth). In the Gi
    ```
    If `XAI_API_KEY` is not set, skip social sentiment and note it in the report.
 
+5.5. **LP anomaly detection** — After collecting pool data (step 2), compare current total LP with the most recent total LP from the last 7 days of `memory/logs/`. Grep prior logs for LP-related values (look for patterns like `LP: $`, `LP ~$`, `Total: ~$`, `Total visible: $`). Extract the most recent total LP figure and the current total LP from step 2.
+
+   **Flag `TOKEN_REPORT_LP_ALERT` if ANY of these are true:**
+   - Total visible LP decreased by **≥50%** compared to the most recent prior log entry
+   - A previously tracked pool is completely absent from the API response (was present in prior logs, now returns no data or is missing from the pool list)
+   - Total visible LP dropped below **$50,000** (absolute floor — regardless of prior value)
+
+   Compute the percentage change using the extracted values (do NOT estimate — calculate `((current - previous) / previous) * 100`). Log the comparison in step 8.
+
+   **If flagged:** The LP alert takes priority in both the article and notification — it should appear prominently, not buried in the Volume & Liquidity section. This kind of change could indicate a rug pull, pool migration, smart contract issue, or data source failure — the operator needs to see it immediately.
+
+   **If not flagged:** No action needed — proceed normally.
+
 6. **Compile the daily report**:
    ```markdown
    # Token Report — ${today}
@@ -111,8 +124,28 @@ All GeckoTerminal API calls use `curl` against a public API (no auth). In the Gi
 7. **Save** to `articles/token-report-${today}.md`
 
 8. **Log** to `memory/logs/${today}.md` including the current price (for trend comparison in future runs). **Do this before sending the notification.**
+   Always include the LP comparison line so the next run can calculate deltas:
+   ```
+   - LP comparison: $PREVIOUS_TOTAL → $CURRENT_TOTAL (DELTA%)
+   ```
+   If step 5.5 flagged an LP anomaly, also include:
+   ```
+   - TOKEN_REPORT_LP_ALERT: [description — e.g. "total LP dropped 95.8% ($2.52M → $105K); mmETH pool absent from API"]
+   ```
 
 9. **Send notification** via `./notify`:
+
+   **If `TOKEN_REPORT_LP_ALERT` was flagged in step 5.5**, prepend an alert block to the notification:
+   ```
+   ⚠ LP ALERT — $TOKEN
+
+   [Pool name] LP dropped [X%] ($PREVIOUS → $CURRENT)
+   [One sentence: what happened — pool disappeared, LP withdrawn, etc.]
+
+   ---
+   ```
+
+   Then include the standard report below the alert:
    ```
    *$TOKEN Daily — ${today}*
 
@@ -125,5 +158,7 @@ All GeckoTerminal API calls use `curl` against a public API (no auth). In the Gi
 
    Chart: https://www.geckoterminal.com/base/pools/POOL_ADDRESS
    ```
+
+   **If no LP alert**, send the standard format without the alert block.
 
 **Important:** If the GeckoTerminal API returns no data (token not found, API error, empty response), log "TOKEN_REPORT_NO_DATA" to memory and **do NOT send any notification**. Do not notify about failures or empty results.
