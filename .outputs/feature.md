@@ -1,3 +1,3 @@
 ## Summary
 
-**FEATURE_RERUN_QUIET** — The feature skill already ran today (first run hit `FEATURE_SKIP: no push access` due to missing `GH_GLOBAL` secret). Since no explicit feature was requested via `${var}`, the rerun was skipped per Step 0 dedup logic. Logged to `memory/logs/2026-11-11.md`.
+**FEATURE_SKIP** — No push access to `aaronjmars/MiroShark` (the `GH_GLOBAL` secret is not set). Logged the skip to `memory/logs/2026-11-12.md` and stopped without picking a feature, cloning the repo, or sending a notification, per the skill instructions.
