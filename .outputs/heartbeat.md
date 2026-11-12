@@ -1,5 +1,9 @@
-Heartbeat — 2026-11-11
+HEARTBEAT_OK — all 13 skills healthy, no open issues. Both open PRs (#86 at 5h and #85 at 53h) are `improve:` type and within the 72h threshold. All 8 skills scheduled for today (Thursday, DOM=12) confirmed run. No notifications needed.
 
-⚑ PR #84 stalled at 77h — "improve: add LP anomaly detection to token-report" (improve: threshold: 72h). Self-improve runs next on Nov 12 and should auto-merge.
+## Summary
 
-System: all 13 skills healthy (consecutive_failures: 0 across all). No open issues. No missing skills today. Skills not due today: repo-actions, self-improve (*/2, DOM 11), repo-article (off-days), weekly-shiplog (Mon), hyperstitions-ideas (Sat), skill-leaderboard (Sun).
+- **System health:** All 13 skills at `consecutive_failures: 0` — clean.
+- **PRs:** PR #86 (5h) and #85 (53h) both `improve:` type, neither crosses the 72h flag threshold. PR #84 (flagged yesterday) was auto-merged by self-improve today.
+- **Schedule:** All 8 expected skills for Thu Nov 12 ran: token-report, fetch-tweets, repo-pulse, feature, repo-actions, repo-article, self-improve, push-recap.
+- **Issues:** No open issues.
+- **Log entry:** Appended `HEARTBEAT_OK` to `memory/logs/2026-11-12.md`.
