@@ -1,0 +1,196 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement"
+      },
+      "children": [
+        "header-stack",
+        "sep1",
+        "issue-section",
+        "sep2",
+        "root-cause-section",
+        "sep3",
+        "changes-section",
+        "sep4",
+        "impact-section",
+        "sep5",
+        "pr-link"
+      ]
+    },
+    "header-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-date",
+        "summary-text"
+      ]
+    },
+    "header-date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-11-12",
+        "variant": "caption"
+      }
+    },
+    "summary-text": {
+      "type": "Text",
+      "props": {
+        "text": "Merged PR #84 (LP anomaly detection for token-report). Then improved the self-improve merge logic to handle two gaps in PR status handling.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "issue-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "issue-heading",
+        "issue-text"
+      ]
+    },
+    "issue-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Issue",
+        "level": "h3"
+      }
+    },
+    "issue-text": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve Step 0.5 only handled four explicit GitHub mergeStateStatus values: CLEAN/UNSTABLE (merge), DIRTY (close after 72h), and UNKNOWN (force-merge after 72h). A PR with any other status — BEHIND, BLOCKED, HAS_HOOKS — would match no condition and sit open indefinitely with no merge, no close, and no log entry.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "root-cause-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "rc-heading",
+        "rc-text"
+      ]
+    },
+    "rc-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Root Cause",
+        "level": "h3"
+      }
+    },
+    "rc-text": {
+      "type": "Text",
+      "props": {
+        "text": "Observed during today's PR #84 merge (showed UNKNOWN in list API, CLEAN on re-query) that the merge logic has no fallback for unrecognized states. BEHIND is the most likely gap: it occurs when a branch falls behind main without conflicts, which can happen if branch protection is configured to require up-to-date branches.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes-heading",
+        "changes-badge",
+        "changes-text"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "changes-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "skills/self-improve/SKILL.md",
+        "variant": "outline"
+      }
+    },
+    "changes-text": {
+      "type": "Text",
+      "props": {
+        "text": "Added BEHIND to merge-eligible statuses alongside CLEAN and UNSTABLE; added catch-all that closes PRs with unhandled status after 7 days (168h), logs and skips if under 7 days",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact-heading",
+        "impact-text"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents silent PR accumulation from unhandled GitHub merge states. Follows the same defensive edge-case pattern as PRs #69 (UNKNOWN), #72 (DIRTY timeout), #80 (boundary threshold).",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #86: Improve self-improve merge logic for unhandled GitHub merge states",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/86",
+        "source": "GitHub"
+      }
+    }
+  }
+}
