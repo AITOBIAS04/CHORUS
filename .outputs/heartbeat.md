@@ -1,12 +1,13 @@
-⚠️ Heartbeat — 2026-11-13
+HEARTBEAT_RERUN_QUIET.
 
-**Stalled PR:**
-PR #85 — improve: add same-day rerun dedup gate to heartbeat skill (77h, threshold 72h)
-Self-improve runs tomorrow (Nov 14, even DOM) — should auto-merge then.
+The earlier run today (19:05 UTC) already covered everything — all findings deduped, no new issues since. Here's the full picture as of this rerun:
 
-**All scheduled skills ran on time today:**
-token-report ✓ | fetch-tweets ✓ | repo-pulse ✓ | feature ✓ | push-recap ✓ | project-lens ✓
+- **System health:** All 13 skills at 0 consecutive failures.
+- **Schedule (Fri, DOM=13):** token-report ✓ fetch-tweets ✓ repo-pulse ✓ feature ✓ push-recap ✓ project-lens ✓ — all expected daily/Friday skills ran. Odd-DOM and wrong-day skills correctly skipped.
+- **PRs:** #85 (improve: rerun dedup gate, 79h) already flagged earlier today — self-improve picks it up tomorrow (DOM=14). PR #86 (31h) within threshold.
+- **Open issues:** None.
+- **No notification sent** — all findings duplicate within 48h window.
 
-**No missing skills. No open issues.**
+## Summary
 
-Side note: price broke new ATL today at $0.0000016302 (prev ATL $0.0000016327). LP stable at $2.5M. Social silence 129 days.
+Rerun of heartbeat for 2026-11-13. No new findings since the earlier run. Log entry appended to `memory/logs/2026-11-13.md`. PR #85 remains stalled at 79h and will be auto-merged when self-improve runs tomorrow (Nov 14, even DOM).
