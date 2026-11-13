@@ -1,0 +1,181 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-11-13"
+      },
+      "children": [
+        "alert_stalled",
+        "sep1",
+        "heading_skills",
+        "skills_stack",
+        "sep2",
+        "heading_status",
+        "status_text",
+        "sep3",
+        "text_side_note",
+        "heading_metrics",
+        "metrics_grid"
+      ]
+    },
+    "alert_stalled": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Stalled PR",
+        "message": "PR #85 — improve: add same-day rerun dedup gate to heartbeat skill (77h, threshold 72h). Self-improve runs tomorrow (Nov 14, even DOM) — should auto-merge then."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_skills": {
+      "type": "Heading",
+      "props": {
+        "text": "All scheduled skills ran on time today",
+        "level": "h3"
+      }
+    },
+    "skills_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "skill_item1",
+        "skill_item2",
+        "skill_item3",
+        "skill_item4",
+        "skill_item5",
+        "skill_item6"
+      ]
+    },
+    "skill_item1": {
+      "type": "Badge",
+      "props": {
+        "text": "token-report ✓",
+        "variant": "default"
+      }
+    },
+    "skill_item2": {
+      "type": "Badge",
+      "props": {
+        "text": "fetch-tweets ✓",
+        "variant": "default"
+      }
+    },
+    "skill_item3": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse ✓",
+        "variant": "default"
+      }
+    },
+    "skill_item4": {
+      "type": "Badge",
+      "props": {
+        "text": "feature ✓",
+        "variant": "default"
+      }
+    },
+    "skill_item5": {
+      "type": "Badge",
+      "props": {
+        "text": "push-recap ✓",
+        "variant": "default"
+      }
+    },
+    "skill_item6": {
+      "type": "Badge",
+      "props": {
+        "text": "project-lens ✓",
+        "variant": "default"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_status": {
+      "type": "Heading",
+      "props": {
+        "text": "Status",
+        "level": "h3"
+      }
+    },
+    "status_text": {
+      "type": "Text",
+      "props": {
+        "text": "No missing skills. No open issues.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_side_note": {
+      "type": "Text",
+      "props": {
+        "text": "Side note:",
+        "variant": "muted"
+      }
+    },
+    "heading_metrics": {
+      "type": "Heading",
+      "props": {
+        "text": "Metrics",
+        "level": "h3"
+      }
+    },
+    "metrics_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_lp",
+        "stat_silence"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price (ATL)",
+        "value": "$0.0000016302",
+        "delta": "New ATL (prev: $0.0000016327)",
+        "trend": "down"
+      }
+    },
+    "stat_lp": {
+      "type": "Stat",
+      "props": {
+        "label": "LP",
+        "value": "$2.5M",
+        "delta": "stable",
+        "trend": "neutral"
+      }
+    },
+    "stat_silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Social Silence",
+        "value": "129 days",
+        "trend": "neutral"
+      }
+    }
+  }
+}

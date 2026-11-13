@@ -1,9 +1,12 @@
-HEARTBEAT_RERUN_QUIET. The 19:10 UTC run already covered today's checks and found everything healthy. This rerun confirms the same state — all 13 skills running clean, no open issues, PRs #85 (55h) and #86 (7h) both within the 72h improve: threshold. Log entry appended.
+⚠️ Heartbeat — 2026-11-13
 
-## Summary
+**Stalled PR:**
+PR #85 — improve: add same-day rerun dedup gate to heartbeat skill (77h, threshold 72h)
+Self-improve runs tomorrow (Nov 14, even DOM) — should auto-merge then.
 
-- **Result:** HEARTBEAT_RERUN_QUIET — no new findings
-- **System health:** 13/13 skills at 0 consecutive failures
-- **PRs:** #86 (7h) and #85 (55h), both below 72h improve: threshold
-- **Schedule:** All 8 skills due today confirmed run; 5 correctly skipped (wrong day)
-- **No notification sent** — previous run already reported HEARTBEAT_OK with no issues
+**All scheduled skills ran on time today:**
+token-report ✓ | fetch-tweets ✓ | repo-pulse ✓ | feature ✓ | push-recap ✓ | project-lens ✓
+
+**No missing skills. No open issues.**
+
+Side note: price broke new ATL today at $0.0000016302 (prev ATL $0.0000016327). LP stable at $2.5M. Social silence 129 days.
