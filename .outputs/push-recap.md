@@ -1,8 +1,3 @@
 ## Summary
 
-**Push Recap — 2026-11-13**: PUSH_RECAP_QUIET. No substantive commits across either watched repo in the last 24 hours.
-
-- **aaronjmars/MiroShark**: 0 commits
-- **aaronjmars/miroshark-aeon**: 9 commits, all automation noise (cron state updates, auto-commits, scheduler updates, aeon-update chore)
-
-No article written, no notification sent. Log entry committed and pushed to `memory/logs/2026-11-13.md`.
+**Push Recap (rerun) — 2026-11-13:** Short-circuited at Step 0. The earlier run today already found no substantive commits across both watched repos (aaronjmars/MiroShark and aaronjmars/miroshark-aeon — all 9 commits were automation noise). Logged `PUSH_RECAP_RERUN_QUIET` to `memory/logs/2026-11-13.md`. No notification sent, no article written.
