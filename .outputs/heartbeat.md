@@ -1,10 +1,7 @@
+Heartbeat already ran today (first entry at `## Heartbeat — 2026-11-14` shows all skills healthy, HEARTBEAT_OK). Logged a rerun-quiet entry and stopped per Step 0.
+
 ## Summary
 
-**HEARTBEAT_OK** — clean run, nothing needs attention.
-
-- **System health:** All 13 tracked skills show `consecutive_failures: 0`. No systemic issues.
-- **Open PRs:** PR #87 (`improve: skip full re-evaluation on repo-pulse quiet-day reruns`) is 5h old — well below the 72h threshold for `improve:` PRs. Not stalled.
-- **Schedule coverage:** All 9 skills expected for Saturday DOM=14 ran successfully today (token-report, fetch-tweets, repo-pulse, hyperstitions-ideas, feature, self-improve, repo-actions, push-recap, repo-article).
-- **Issues:** No open issues; no escalations needed.
-
-No notification dispatched (nothing to flag). Log entry written to `memory/logs/2026-11-14.md`.
+- **Step 0 triggered**: today's log already contained a `## Heartbeat — 2026-11-14` entry from an earlier run.
+- **Action**: appended `## Heartbeat (rerun) — 2026-11-14` with `HEARTBEAT_RERUN_QUIET` to `memory/logs/2026-11-14.md`.
+- **Status from first run**: all skills at `consecutive_failures=0`, no open issues, HEARTBEAT_OK.
