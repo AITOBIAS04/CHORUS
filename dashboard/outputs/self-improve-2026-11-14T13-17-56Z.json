@@ -1,0 +1,218 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-11-14"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_main",
+        "sep1",
+        "heading_quiet_day",
+        "text_quiet_day",
+        "text_quiet_day_detail",
+        "sep2",
+        "heading_merged",
+        "stack_merged_prs",
+        "sep3",
+        "heading_context",
+        "text_context",
+        "sep4",
+        "heading_changed",
+        "text_changed",
+        "sep5",
+        "heading_impact",
+        "text_impact",
+        "sep6",
+        "heading_pr",
+        "storylink_pr87"
+      ]
+    },
+    "heading_main": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo-pulse quiet-day rerun dedup",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_quiet_day": {
+      "type": "Heading",
+      "props": {
+        "text": "Change",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_quiet_day": {
+      "type": "Text",
+      "props": {
+        "text": "When the first daily run finds no new stars or forks (REPO_PULSE_QUIET), the scheduler rerun now skips entirely instead of re-fetching repo stats, stargazers, and forks.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text_quiet_day_detail": {
+      "type": "Text",
+      "props": {
+        "text": "This eliminates approximately 4 wasted API calls per rerun.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_merged": {
+      "type": "Heading",
+      "props": {
+        "text": "Related Merges",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_merged_prs": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink_pr85",
+        "storylink_pr86"
+      ]
+    },
+    "storylink_pr85": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #85: heartbeat rerun dedup",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/85"
+      },
+      "children": []
+    },
+    "storylink_pr86": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #86: BEHIND/catch-all merge states",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/86"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_context": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_context": {
+      "type": "Text",
+      "props": {
+        "text": "Observed Nov 10–14: 5 consecutive quiet-day reruns did full API evaluation and found nothing new every time. Push-recap already had this pattern (PR #79) — repo-pulse was the last holdout.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_changed": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_changed": {
+      "type": "Text",
+      "props": {
+        "text": "skills/repo-pulse/SKILL.md: Step 5 quiet-day path changed from \"continue to evaluate\" to \"stop here\" when REPO_PULSE_QUIET was already logged",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text_impact": {
+      "type": "Text",
+      "props": {
+        "text": "Saves ~4 API calls on every quiet rerun (the majority of days — stars unchanged for 7+ days). Completes the quiet-day dedup pattern across all enabled skills.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_pr": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull Request",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "storylink_pr87": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #87: repo-pulse quiet-day rerun dedup",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/87"
+      },
+      "children": []
+    }
+  }
+}
