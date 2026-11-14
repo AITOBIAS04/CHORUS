@@ -29,10 +29,11 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
        ```
        Log `SELF_IMPROVE_MERGE_UNKNOWN_FORCE: PR #NUMBER still UNKNOWN after ${AGE_H}h — attempting merge`.
      - If the PR is **under 72h**, log `SELF_IMPROVE_MERGE_UNKNOWN: PR #NUMBER mergeStateStatus still UNKNOWN after re-query — skipping (under 72h, giving GitHub time)` and move to the next PR.
-   - **Merge** if `mergeStateStatus` is `CLEAN` or `UNSTABLE` and `reviewDecision` is NOT `CHANGES_REQUESTED`:
+   - **Merge** if `mergeStateStatus` is `CLEAN`, `UNSTABLE`, or `BEHIND` and `reviewDecision` is NOT `CHANGES_REQUESTED`:
      ```bash
      gh pr merge NUMBER --squash --delete-branch
      ```
+     `BEHIND` means the branch is behind main but has no conflicts — squash merge succeeds. Without this, a BEHIND PR would match no condition and sit indefinitely.
    - **Close with comment** if `mergeStateStatus` is `DIRTY` (conflicts) and the PR is older than 72 hours. In an autonomous repo, DIRTY PRs never self-resolve — no human resolves merge conflicts — so waiting longer just delays re-proposal. Compute age with jq (do NOT estimate manually):
      ```bash
      AGE_H=$(gh pr view NUMBER --json createdAt --jq '((now - (.createdAt | fromdateiso8601)) / 3600 | floor)')
@@ -42,6 +43,15 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
      gh pr close NUMBER --comment "Closing: conflicts with main after newer improvements landed (${AGE_H}h old). The fix may be re-proposed in a future self-improve run."
      ```
    - **Skip** if the PR has review comments requesting changes — a human has weighed in, leave it for them.
+   - **Catch-all for unhandled states** (`BLOCKED`, `HAS_HOOKS`, or any future GitHub status not listed above): compute age with jq, and if **older than 168h (7 days)**, close with comment:
+     ```bash
+     AGE_H=$(gh pr view NUMBER --json createdAt --jq '((now - (.createdAt | fromdateiso8601)) / 3600 | floor)')
+     ```
+     If `AGE_H >= 168`:
+     ```bash
+     gh pr close NUMBER --comment "Closing: unhandled mergeStateStatus '${STATUS}' after ${AGE_H}h. The fix may be re-proposed in a future self-improve run."
+     ```
+     If under 168h, log `SELF_IMPROVE_MERGE_UNHANDLED: PR #NUMBER has mergeStateStatus '${STATUS}' (${AGE_H}h old) — skipping (under 7d)` and move to the next PR. This prevents PRs with rare or new GitHub statuses from accumulating indefinitely.
 
    Log all merge/close actions to `memory/logs/${today}.md`. If any PRs were merged, include them in the final notification.
 
