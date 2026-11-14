@@ -1591,3 +1591,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-11-14,self-improve,claude-opus-4-6,7,1106,188893,22309
 2026-11-14,push-recap,claude-opus-4-6,16,7942,697958,39925
 2026-11-14,repo-actions,claude-sonnet-4-6,7,1288,181882,21308
+2026-11-14,repo-article,claude-opus-4-6,17,12577,808662,62214

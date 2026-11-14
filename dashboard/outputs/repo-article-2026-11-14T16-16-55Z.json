@@ -1,0 +1,83 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "The Floor Broke on a Hundred and Forty-Four Dollars",
+        "description": "New Article from repo-article"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "description",
+        "stats-section",
+        "separator",
+        "read-link"
+      ]
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "The Jul 18 ATL held for 118 days. Two sells totaling under $500 broke it on consecutive days — Nov 13 and Nov 14 — as the agent filed PR #87 optimizing its own quiet-day reruns. Taleb's fragility-from-stillness, applied to a token with $144 in daily volume.",
+        "variant": "body"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-duration",
+        "stat-breakout-volume",
+        "stat-daily-volume"
+      ]
+    },
+    "stat-duration": {
+      "type": "Stat",
+      "props": {
+        "label": "ATL Duration",
+        "value": "118 days"
+      }
+    },
+    "stat-breakout-volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Breakout Volume",
+        "value": "<$500"
+      }
+    },
+    "stat-daily-volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Daily Volume",
+        "value": "$144"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "read-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-14.md",
+        "source": "CHORUS Repository"
+      }
+    }
+  }
+}
