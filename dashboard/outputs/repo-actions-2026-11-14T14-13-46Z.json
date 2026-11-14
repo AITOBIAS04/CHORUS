@@ -1,0 +1,330 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-subtitle",
+        "separator-1",
+        "item-1",
+        "separator-2",
+        "item-2",
+        "separator-3",
+        "item-3",
+        "separator-4",
+        "item-4",
+        "separator-5",
+        "item-5",
+        "separator-6",
+        "link-details"
+      ]
+    },
+    "text-subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — these are ideas that could be autonomously built by the feature skill tomorrow.",
+        "variant": "muted"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-1",
+        "badges-1",
+        "desc-1"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Difficulty Rating",
+        "level": "h3"
+      }
+    },
+    "badges-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-1-cat",
+        "badge-1-size"
+      ]
+    },
+    "badge-1-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge-1-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "desc-1": {
+      "type": "Text",
+      "props": {
+        "text": "Automated polarization score based on initial stance entropy — measures how contested the topic was going in, independent of the final outcome.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-2",
+        "badges-2",
+        "desc-2"
+      ]
+    },
+    "heading-2": {
+      "type": "Heading",
+      "props": {
+        "text": "Fork Activation Landing Page",
+        "level": "h3"
+      }
+    },
+    "badges-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-2-cat",
+        "badge-2-size"
+      ]
+    },
+    "badge-2-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      }
+    },
+    "badge-2-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "desc-2": {
+      "type": "Text",
+      "props": {
+        "text": "A /contribute route + good-first-issue labeler targeting the 303 ghost fork owners; pairs a live issue list with a 30-minute first-PR walkthrough.",
+        "variant": "body"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-3",
+        "badges-3",
+        "desc-3"
+      ]
+    },
+    "heading-3": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Checkpoint & Resume",
+        "level": "h3"
+      }
+    },
+    "badges-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-3-cat",
+        "badge-3-size"
+      ]
+    },
+    "badge-3-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "badge-3-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      }
+    },
+    "desc-3": {
+      "type": "Text",
+      "props": {
+        "text": "Export any completed simulation's state at round N as a portable JSON snapshot; reimport to branch the timeline with a new director event for 'what if' analysis.",
+        "variant": "body"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-4",
+        "badges-4",
+        "desc-4"
+      ]
+    },
+    "heading-4": {
+      "type": "Heading",
+      "props": {
+        "text": "HuggingFace Dataset Auto-Sync",
+        "level": "h3"
+      }
+    },
+    "badges-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-4-cat",
+        "badge-4-size"
+      ]
+    },
+    "badge-4-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "secondary"
+      }
+    },
+    "badge-4-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      }
+    },
+    "desc-4": {
+      "type": "Text",
+      "props": {
+        "text": "After publish, auto-push signal.json + trajectory row to the HuggingFace dataset already badged in the README; grows the academic dataset without manual exports.",
+        "variant": "body"
+      }
+    },
+    "separator-5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "item-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-5",
+        "badges-5",
+        "desc-5"
+      ]
+    },
+    "heading-5": {
+      "type": "Heading",
+      "props": {
+        "text": "Operator RSS Feed",
+        "level": "h3"
+      }
+    },
+    "badges-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-5-cat",
+        "badge-5-size"
+      ]
+    },
+    "badge-5-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "secondary"
+      }
+    },
+    "badge-5-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "desc-5": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/users/:id/simulations.rss — Atom 1.0 feed of an operator's published simulations; lets followers subscribe via any RSS reader without polling the API.",
+        "variant": "body"
+      }
+    },
+    "separator-6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link-details": {
+      "type": "Link",
+      "props": {
+        "label": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-14.md"
+      }
+    }
+  }
+}
