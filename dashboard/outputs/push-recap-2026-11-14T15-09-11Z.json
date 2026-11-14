@@ -1,0 +1,195 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-14"
+      },
+      "children": [
+        "repo-header",
+        "commit-badges",
+        "sep-1",
+        "summary-section",
+        "sep-2",
+        "key-changes-section",
+        "sep-3",
+        "stats-row",
+        "sep-4",
+        "recap-link"
+      ]
+    },
+    "repo-header": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h2"
+      }
+    },
+    "commit-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-substantive",
+        "badge-filtered"
+      ]
+    },
+    "badge-substantive": {
+      "type": "Badge",
+      "props": {
+        "text": "1 substantive commit by Dependabot",
+        "variant": "default"
+      }
+    },
+    "badge-filtered": {
+      "type": "Badge",
+      "props": {
+        "text": "1 automation commit filtered",
+        "variant": "secondary"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "summary-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "summary-heading",
+        "summary-para1",
+        "summary-para2"
+      ]
+    },
+    "summary-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Update — soupsieve 2.9 → 4.0",
+        "level": "h3"
+      }
+    },
+    "summary-para1": {
+      "type": "Text",
+      "props": {
+        "text": "Major-version bump of the CSS selector engine used by BeautifulSoup4. Dependabot merged PR #358, updating backend/uv.lock with refined Python version resolution markers — soupsieve 4.0 now requires Python ≥ 3.11.5, so the resolver added a beautifulsoup4 4.6.3 fallback for older runtimes.",
+        "variant": "body"
+      }
+    },
+    "summary-para2": {
+      "type": "Text",
+      "props": {
+        "text": "The lock file also picked up ~20 NVIDIA CUDA dependency marker simplifications (cosmetic cleanup by the uv resolver) and minor platform guard removals for pexpect and uvicorn dependencies.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "key-heading",
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "key-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Changes",
+        "level": "h3"
+      }
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "soupsieve 2.9 → 4.0 in backend/uv.lock (two major versions, released Nov 3)",
+        "variant": "body"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "beautifulsoup4 now version-split: 4.14.3 for Python ≥ 3.11.5, 4.6.3 for older",
+        "variant": "body"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "NVIDIA CUDA markers simplified across cuda-bindings, cublas, cudnn, cufft, cusolver, cusparse",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-additions",
+        "stat-deletions"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files Changed",
+        "value": "1"
+      }
+    },
+    "stat-additions": {
+      "type": "Stat",
+      "props": {
+        "label": "Additions",
+        "value": "68"
+      }
+    },
+    "stat-deletions": {
+      "type": "Stat",
+      "props": {
+        "label": "Deletions",
+        "value": "36"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "recap-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-14.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
