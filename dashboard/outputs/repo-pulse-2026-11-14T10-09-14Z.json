@@ -1,0 +1,105 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-11-14"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_name",
+        "separator1",
+        "stats_section",
+        "separator2",
+        "forks_section"
+      ]
+    },
+    "repo_name": {
+      "type": "Heading",
+      "props": {
+        "text": "[aaronjmars/MiroShark]",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "stats_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_stars",
+        "stat_forks"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1489",
+        "delta": "+0",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "stat_forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "303",
+        "delta": "+1",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "forks_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "forks_heading",
+        "fork_link"
+      ]
+    },
+    "forks_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "fork_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/OMNIKORP-FAKTORY-S7/MIROSHARK-FORK",
+        "href": "https://github.com/OMNIKORP-FAKTORY-S7/MIROSHARK-FORK"
+      },
+      "children": []
+    }
+  }
+}
