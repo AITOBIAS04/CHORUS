@@ -1582,4 +1582,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-11-14,token-report,claude-sonnet-4-6,12,8351,452769,41133
 2026-11-14,fetch-tweets,claude-sonnet-4-6,12,3649,330226,28716
 2026-11-14,token-report,claude-sonnet-4-6,7,1449,193883,20839
-2026-11-14,repo-pulse,claude-sonnet-4-6,14,4103,489549,29952
+2026-11-14,hyperstitions-ideas,claude-opus-4-6,9,8628,318926,36660

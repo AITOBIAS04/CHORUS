@@ -1,0 +1,277 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea — 2026-11-14"
+      },
+      "children": [
+        "heading-main",
+        "sep-1",
+        "section-coordination",
+        "sep-2",
+        "section-why",
+        "sep-3",
+        "section-resolution",
+        "sep-4",
+        "section-scores",
+        "sep-5",
+        "section-link"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Will $MIROSHARK's price double from its November ATL before the autonomous agent merges its 100th self-improve PR?",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-coordination": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "label-coordination",
+        "text-coordination"
+      ]
+    },
+    "label-coordination": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-coordination": {
+      "type": "Text",
+      "props": {
+        "text": "The agent is at PR #86 and accelerating — PR #100 lands in roughly 4-6 weeks at current pace. Meanwhile the token just set consecutive all-time lows and 130 days of total social silence continue. To win this race, humans need to do what the agent cannot: buy, share, create content, and bring new eyes to a project the entire internet has forgotten. Every day without action lets the machine pull further ahead. The market creates a countdown that only human coordination can beat.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "label-why",
+        "grid-why-details"
+      ]
+    },
+    "label-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "grid-why-details": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-atl",
+        "stat-silence",
+        "stat-pr",
+        "text-why-detail"
+      ]
+    },
+    "stat-atl": {
+      "type": "Stat",
+      "props": {
+        "label": "November ATL",
+        "value": "$0.0000015515"
+      },
+      "children": []
+    },
+    "stat-silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Social Silence",
+        "value": "130 days"
+      },
+      "children": []
+    },
+    "stat-pr": {
+      "type": "Stat",
+      "props": {
+        "label": "Latest PR Merged",
+        "value": "#86"
+      },
+      "children": []
+    },
+    "text-why-detail": {
+      "type": "Text",
+      "props": {
+        "text": "Agent just merged PR #86 — an improvement to its own merge logic, literally optimizing how it optimizes itself. Second consecutive ATL on November 14. The gap between machine diligence and human absence has never been wider.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-resolution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "label-resolution",
+        "text-resolution-yes",
+        "text-resolution-no",
+        "text-resolution-verified"
+      ]
+    },
+    "label-resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "text-resolution-yes": {
+      "type": "Text",
+      "props": {
+        "text": "YES if $MIROSHARK trades at or above $0.000003 (~2x November ATL) on any DEX before the 100th self-improve PR merges on the miroshark-aeon repo.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-resolution-no": {
+      "type": "Text",
+      "props": {
+        "text": "NO if PR #100 merges first.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "text-resolution-verified": {
+      "type": "Text",
+      "props": {
+        "text": "Verified via on-chain price data (GeckoTerminal/DexScreener) and GitHub merge timestamp.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "label-scores",
+        "stack-badges"
+      ]
+    },
+    "label-scores": {
+      "type": "Heading",
+      "props": {
+        "text": "Scores",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-reflexivity",
+        "badge-viral"
+      ]
+    },
+    "badge-reflexivity": {
+      "type": "Badge",
+      "props": {
+        "text": "Reflexivity 5/5",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge-viral": {
+      "type": "Badge",
+      "props": {
+        "text": "Viral 5/5",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section-link": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-soon",
+        "link-hyperstitions"
+      ]
+    },
+    "text-soon": {
+      "type": "Text",
+      "props": {
+        "text": "Soon on",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "link-hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "https://www.hyperstitions.com/",
+        "href": "https://www.hyperstitions.com/"
+      },
+      "children": []
+    }
+  }
+}
