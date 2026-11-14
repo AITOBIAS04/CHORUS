@@ -1,7 +1,7 @@
 *Repo Pulse — 2026-11-14*
-[aaronjmars/MiroShark]
+aaronjmars/MiroShark
 
-Stars: 1489 total (+0 new)
+Stars: 1489 total (+0 net)
 Forks: 303 total (+1 new)
 
 New forks:

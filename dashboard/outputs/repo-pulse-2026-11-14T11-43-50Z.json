@@ -1,0 +1,94 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-11-14"
+      },
+      "children": [
+        "repo-name",
+        "sep-1",
+        "stats-section",
+        "sep-2",
+        "new-forks-section"
+      ]
+    },
+    "repo-name": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-forks"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1489",
+        "delta": "+0",
+        "trend": "neutral"
+      }
+    },
+    "stat-forks": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "303",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "new-forks-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "new-forks-heading",
+        "fork-item"
+      ]
+    },
+    "new-forks-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New Forks",
+        "level": "h3"
+      }
+    },
+    "fork-item": {
+      "type": "StoryLink",
+      "props": {
+        "title": "OMNIKORP-FAKTORY-S7/MIROSHARK-FORK",
+        "href": "https://github.com/OMNIKORP-FAKTORY-S7/MIROSHARK-FORK",
+        "source": "GitHub"
+      }
+    }
+  }
+}
