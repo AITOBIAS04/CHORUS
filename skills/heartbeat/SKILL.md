@@ -7,6 +7,18 @@ var: ""
 
 If `${var}` is set, focus checks on that specific area.
 
+### Step 0. Same-day rerun dedup
+
+If `${var}` is empty and `memory/logs/${today}.md` already contains a `## Heartbeat` entry (match the heading prefix, not rerun headings), log a brief rerun-quiet summary to `memory/logs/${today}.md` and **stop here**:
+```
+## Heartbeat (rerun) — ${today}
+
+- HEARTBEAT_RERUN_QUIET: heartbeat already ran today — skipping full re-analysis
+- [Copy the System health and HEARTBEAT_OK/notification status lines from the first entry]
+```
+Heartbeat checks current system state which rarely changes in the minutes between scheduler double-dispatches. The first run already dispatched missing skills and sent notifications; re-running the full check (cron-state read, PR listing, schedule analysis, workflow status queries) only to deduplicate identical findings wastes API calls and tokens. If a skill fails between dispatches, tomorrow's heartbeat catches it.
+
+---
 
 Read memory/MEMORY.md and the last 2 days of memory/logs/ for context.
 
