@@ -1,8 +1,10 @@
-**Step 0 triggered — TOKEN_REPORT_RERUN_QUIET.**
+$MiroShark Daily — 2026-11-14
 
-`memory/logs/2026-11-13.md` already has a token-report entry with `Notification sent: yes` from an earlier run today. Per the skill's same-day rerun dedup rule, the report was not re-fetched, re-written, or re-sent. Logged the quiet stop and halted.
+Price: $0.0000015515 (−2.99% 24h) NEW ATL
+Liquidity: $2,497.5K | 24h Vol: $143.94
+Buys/Sells: 2/5
+7d: −9.3% | 30d: −21.0%
 
-## Summary
-- **Checked:** `memory/logs/2026-11-13.md` — token-report ran earlier today ($0.0000016302, new ATL, notification sent)
-- **Action:** Logged `TOKEN_REPORT_RERUN_QUIET` to today's log, stopped without re-fetching data or re-sending notification
-- **Follow-up:** None — normal behavior for a scheduler double-dispatch
+Two consecutive ATL closes — no sharp drawdown, just steady price discovery downward with thin sell pressure and near-zero volume. Social silence at 130 days.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
