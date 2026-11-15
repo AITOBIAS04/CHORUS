@@ -1,0 +1,204 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily 2026-11-15"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price-section",
+        "sep1",
+        "metrics-grid",
+        "sep2",
+        "performance-section",
+        "sep3",
+        "status-section",
+        "sep4",
+        "chart-link"
+      ]
+    },
+    "price-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "price-stat",
+        "price-24h"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "0.0000012922"
+      }
+    },
+    "price-24h": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Change",
+        "value": "-17.16%",
+        "delta": "-17.16%",
+        "trend": "down"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "fdv-stat",
+        "volume-stat",
+        "lp-stat",
+        "buys-sells-stat"
+      ]
+    },
+    "fdv-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV",
+        "value": "129.2K"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "3736"
+      }
+    },
+    "lp-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "LP",
+        "value": "2485K"
+      }
+    },
+    "buys-sells-stat": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 12/8"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "performance-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "perf-heading",
+        "perf-grid"
+      ]
+    },
+    "perf-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Performance",
+        "level": "h3"
+      }
+    },
+    "perf-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "perf-7d",
+        "perf-30d"
+      ]
+    },
+    "perf-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7 Day",
+        "value": "-25.2%",
+        "delta": "-25.2%",
+        "trend": "down"
+      }
+    },
+    "perf-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30 Day",
+        "value": "-35.0%",
+        "delta": "-35.0%",
+        "trend": "down"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "atl-badge",
+        "social-silence-text"
+      ]
+    },
+    "atl-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "NEW ATL",
+        "variant": "destructive"
+      }
+    },
+    "social-silence-text": {
+      "type": "Text",
+      "props": {
+        "text": "Social silence: 131 days",
+        "variant": "muted"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View Chart on Geckoterminal",
+        "href": "https://geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "Geckoterminal"
+      }
+    }
+  }
+}

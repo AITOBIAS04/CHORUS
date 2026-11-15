@@ -1,0 +1,10 @@
+*$MiroShark Daily — 2026-11-15*
+
+Price: $0.0000012922 (−17.16% 24h) ⚠ New ATL
+Liquidity: $2,485K | 24h Vol: $3,736
+Buys/Sells: 12/8
+7d: −25.2% | 30d: −35.0%
+
+Price breached the Jul 18 ATL ($0.0000016327) on Nov 13–14 and is now 21% below that floor. Large selling volume drove the drop; mmETH LP stable at $2.41M. Social silence: 131 days.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
