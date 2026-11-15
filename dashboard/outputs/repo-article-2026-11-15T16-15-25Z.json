@@ -1,0 +1,91 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Everything Shrank Except the Agent"
+      },
+      "children": [
+        "text_intro",
+        "sep1",
+        "stats_container",
+        "sep2",
+        "text_context",
+        "link_article"
+      ]
+    },
+    "text_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Stars went backwards for the first time — 1,489 to 1,487."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_stars",
+        "stat_token",
+        "stat_volume"
+      ]
+    },
+    "stat_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,487",
+        "delta": "-2",
+        "trend": "down"
+      }
+    },
+    "stat_token": {
+      "type": "Stat",
+      "props": {
+        "label": "Token Price (ATL)",
+        "value": "$0.0000012549",
+        "delta": "-17%",
+        "trend": "down"
+      }
+    },
+    "stat_volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "$3,736",
+        "delta": "26x",
+        "trend": "up"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_context": {
+      "type": "Text",
+      "props": {
+        "text": "Every external metric is now contracting. The agent ran its full rotation, logged the losses, and kept improving itself."
+      }
+    },
+    "link_article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-15.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
