@@ -1,8 +1,12 @@
-Step 0 triggered. Today's log already contained a `## Skill Leaderboard` entry with `Notification sent: no` (result was INSUFFICIENT_DATA — only 1 fork with readable aeon.yml out of 14 active forks). Logged `SKILL_LEADERBOARD_RERUN_QUIET` and stopped — no duplicate API calls, no duplicate notification.
-
 ## Summary
 
-- **Action:** Halted at Step 0 (same-day rerun dedup)
-- **Reason:** `memory/logs/2026-11-08.md` already contained a `## Skill Leaderboard` entry with `Notification sent:` from an earlier run today that returned `SKILL_LEADERBOARD_INSUFFICIENT_DATA` (only 1 active fork with aeon.yml — `AITOBIAS04/CHORUS` — below the minimum 2 required)
-- **Logged:** `SKILL_LEADERBOARD_RERUN_QUIET` appended to `memory/logs/2026-11-08.md`
-- **No further action needed** — rerunning would re-fetch aeon.yml from all 14 active forks, re-evaluate, and produce identical output
+**Skill Leaderboard — 2026-11-15**
+
+- Scanned 13 active forks (pushed in last 30 days): 12 from `aaronjmars/MiroShark`, 1 from `aaronjmars/miroshark-aeon`
+- Checked all forks for `aeon.yml` — only **AITOBIAS04/CHORUS** (a miroshark-aeon fork) had one readable
+- MiroShark forks (303 total) carry no `aeon.yml` — they're simulation engine forks, not agent runners
+- **Stopped at minimum-fork gate**: only 1 fork with aeon.yml, minimum 2 required for a meaningful ranking
+- No article written, no notification sent
+- Logged `SKILL_LEADERBOARD_INSUFFICIENT_DATA` to `memory/logs/2026-11-15.md`
+
+The fleet is still essentially a single-instance operation. The leaderboard will become meaningful once a second miroshark-aeon fork (or any fork with aeon.yml enabled) is active within the 30-day window.
