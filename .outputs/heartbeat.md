@@ -1,21 +1,7 @@
-HEARTBEAT_OK. Full analysis:
-
-**System health:** All skills at `consecutive_failures: 0` — no systemic issues.
-
-**Open PRs:** PR #87 (`improve: skip full re-evaluation on repo-pulse quiet-day reruns`) at 29h. Improve: PRs are only flagged after 72h — not stalled.
-
-**Expected skills for Sunday DOM=15:**
-- token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article, skill-leaderboard — all confirmed ran
-- memory-flush ran at 18:16 UTC (1h gap, below the >=2h check threshold — confirmed in log anyway)
-- project-lens, repo-actions, self-improve, weekly-shiplog, hyperstitions-ideas — none expected today
-
-**Open issues (memory + GitHub):** None. GitHub issues are disabled on this repo.
-
-Nothing needs attention. Log entry written to `memory/logs/2026-11-15.md`.
+Step 0 triggered. Today's log already had a `## Heartbeat — 2026-11-15` entry (all skills healthy, HEARTBEAT_OK). Logged a rerun-quiet summary and stopped — no re-analysis needed.
 
 ## Summary
 
-- Read memory, cron-state, today's logs, soul files, aeon.yml schedule
-- Verified all expected Sunday skills ran; no missing skills, no stalled PRs, no escalating issues
-- Result: HEARTBEAT_OK — no notification dispatched
-- Log entry appended to `memory/logs/2026-11-15.md`
+- **Detected:** `## Heartbeat — 2026-11-15` already present in today's log (first run at ~19:09 UTC confirmed all skills passing, no stalled PRs, no open issues)
+- **Action:** Appended `## Heartbeat (rerun) — 2026-11-15` with HEARTBEAT_RERUN_QUIET status to `memory/logs/2026-11-15.md`
+- **No dispatches or notifications sent** — first run already handled everything
