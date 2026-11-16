@@ -1,0 +1,239 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-16"
+      },
+      "children": [
+        "subtitle",
+        "sep-1",
+        "ideas-stack",
+        "sep-2",
+        "link"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — these are ideas that could be autonomously built by the feature skill.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "ideas-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1",
+        "idea2",
+        "idea3",
+        "idea4",
+        "idea5"
+      ]
+    },
+    "idea1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1-heading",
+        "idea1-badge",
+        "idea1-text"
+      ]
+    },
+    "idea1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Simulation Monte Carlo Mode",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea1-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Medium",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "idea1-text": {
+      "type": "Text",
+      "props": {
+        "text": "Run the same topic N times with different seeds; return a robustness distribution — BULLISH in 8/10 is a stronger signal than BULLISH in 4/10."
+      },
+      "children": []
+    },
+    "idea2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2-heading",
+        "idea2-badge",
+        "idea2-text"
+      ]
+    },
+    "idea2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Outcome Resolution & Accuracy Tracking",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea2-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "idea2-text": {
+      "type": "Text",
+      "props": {
+        "text": "Let operators mark the actual real-world outcome after a simulation resolves; build a running calibration score (accuracy by confidence band) per operator."
+      },
+      "children": []
+    },
+    "idea3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea3-heading",
+        "idea3-badge",
+        "idea3-text"
+      ]
+    },
+    "idea3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Director Event Template Library",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea3-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "DX, Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "idea3-text": {
+      "type": "Text",
+      "props": {
+        "text": "50 curated event templates (Macro, Crypto, Geopolitics, Tech) with keyword search; a /template picker in Step 2 replaces freeform typing and enables cross-simulation analytics on shared events."
+      },
+      "children": []
+    },
+    "idea4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea4-heading",
+        "idea4-badge",
+        "idea4-text"
+      ]
+    },
+    "idea4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Simulation Consensus Stability Index",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea4-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature, Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "idea4-text": {
+      "type": "Text",
+      "props": {
+        "text": "σ of confidence_pct across the final 5 rounds — a 73% confidence that was oscillating ±20% at the end is fundamentally different from a 73% that was locked in; surfaces as a Stable/Settling/Volatile label in the signal card."
+      },
+      "children": []
+    },
+    "idea5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea5-heading",
+        "idea5-badge",
+        "idea5-text"
+      ]
+    },
+    "idea5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Model Performance Leaderboard",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "idea5-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration, Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "idea5-text": {
+      "type": "Text",
+      "props": {
+        "text": "Aggregate across all published simulations by LLM model: avg confidence, stability, controversy, cost, and duration — turns OpenRouter model selection from a guess into a data-driven choice."
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-16.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
