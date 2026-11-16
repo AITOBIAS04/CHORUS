@@ -1,0 +1,83 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-11-16"
+      },
+      "children": [
+        "heading-main",
+        "text-p1",
+        "text-p2",
+        "sep1",
+        "heading-changes",
+        "text-changes-item",
+        "sep2",
+        "text-impact",
+        "sep3",
+        "pr-link"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Weekly-shiplog now filters automation commits before analysis",
+        "level": "h2"
+      }
+    },
+    "text-p1": {
+      "type": "Text",
+      "props": {
+        "text": "The weekly-shiplog skill fetched all commits raw and left it to the LLM to separate automation noise from substantive work during synthesis. This produced inflated stats (Nov 2: \"~188 commits\" when 8 were substantive; Nov 9: \"~90\" with ~70 automation) and wasted diff API calls reading cron-state updates."
+      }
+    },
+    "text-p2": {
+      "type": "Text",
+      "props": {
+        "text": "Why: Observed across the last two weekly-shiplog articles — commit counts headline a number 10-25x larger than the actual substantive work, misleading readers and burning tokens on noise diffs."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text-changes-item": {
+      "type": "Text",
+      "props": {
+        "text": "skills/weekly-shiplog/SKILL.md: Added Step 1.5 — explicit automation commit filtering using the same patterns as push-recap Step 5 (chore(cron):, chore(scheduler):, chore(): auto-commit, general chore(scope):). Stats template updated to report \"N substantive + Z automation filtered.\""
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "text-impact": {
+      "type": "Text",
+      "props": {
+        "text": "Impact: Accurate commit stats in weekly articles, fewer wasted diff API calls, and consistent filtering logic across push-recap and weekly-shiplog."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #88",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/88",
+        "source": "GitHub"
+      }
+    }
+  }
+}
