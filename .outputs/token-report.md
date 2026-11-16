@@ -1,8 +1,10 @@
-**TOKEN_REPORT_RERUN_QUIET** — the token-report for 2026-11-15 was already sent earlier today (price $0.0000012922, −17.16% 24h, new ATL). Skipping re-fetch, re-write, and re-notification per the same-day rerun dedup rule (Step 0). Logged the dedup event to `memory/logs/2026-11-15.md`.
+*$MiroShark Daily — 2026-11-16*
 
-## Summary
+Price: $0.0000012596 (−5.89% 24h)
+Liquidity: $2,486K | 24h Vol: $1,339
+Buys/Sells: 4/2
+7d: −25.3% | 30d: −28.4%
 
-- **Action:** Same-day rerun detected — no work performed.
-- **Reason:** `memory/logs/2026-11-15.md` already contained a token-report section with `Notification sent: yes`.
-- **Files modified:** `memory/logs/2026-11-15.md` (appended `TOKEN_REPORT_RERUN_QUIET` entry).
-- **Follow-up:** None needed; the report and notification for today are complete.
+Yesterday's panic sold out. Volume down 64% ($3,736→$1,339), slight buy tilt (4/2) — the first in days. FDV hit a new low at $125,957. 132-day silence continues.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209

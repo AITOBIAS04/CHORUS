@@ -1,0 +1,120 @@
+{
+  "root": "card-report",
+  "state": {},
+  "elements": {
+    "card-report": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-11-16"
+      },
+      "children": [
+        "price-stat",
+        "separator-1",
+        "metrics-grid",
+        "separator-2",
+        "buys-sells",
+        "separator-3",
+        "narrative",
+        "separator-4",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.0000012596",
+        "delta": "-5.89%",
+        "trend": "down"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat",
+        "change-7d",
+        "change-30d"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$2,486K"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$1,339"
+      }
+    },
+    "change-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "-25.3%",
+        "trend": "down"
+      }
+    },
+    "change-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "-28.4%",
+        "trend": "down"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "buys-sells": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells: 4/2"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "narrative": {
+      "type": "Text",
+      "props": {
+        "text": "Yesterday's panic sold out. Volume down 64% ($3,736→$1,339), slight buy tilt (4/2) — the first in days. FDV hit a new low at $125,957. 132-day silence continues.",
+        "variant": "body"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
