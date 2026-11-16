@@ -1,3 +1,3 @@
 ## Summary
 
-Feature skill already ran today (logged `FEATURE_SKIP: no push access` earlier). Since no explicit feature was requested via `${var}`, the same-day rerun dedup gate triggered — logged `FEATURE_RERUN_QUIET` and stopped. No work to redo: the push access check result hasn't changed (GH_GLOBAL secret still not set).
+**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not configured, so the feature skill cannot push branches or open PRs on the watched repo. Logged to today's activity and committed. This is the same blocker noted in memory — all features since June 3 are stuck as local commits pending this secret.
