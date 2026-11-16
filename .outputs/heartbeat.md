@@ -1,7 +1,7 @@
-HEARTBEAT_OK — all 9 scheduled skills for Monday Nov 16 ran successfully, no stalled PRs, no open issues, no failures detected.
+Heartbeat already ran today. Logged a rerun-quiet entry and stopped — no further action needed.
 
 ## Summary
 
-- **Checked**: cron-state (all `consecutive_failures: 0`), today's log, open PRs, issues index, and aeon.yml schedule vs today (Monday, DOM=16)
-- **Result**: Clean — every skill scheduled for today ran; PR #88 is a 5h `improve:` PR (72h threshold); no open issues
-- **Action**: Logged `HEARTBEAT_OK` to `memory/logs/2026-11-16.md`; no notification needed
+- **Step 0 triggered**: `memory/logs/2026-11-16.md` already contained a `## Heartbeat — 2026-11-16` entry (from the 19:10 UTC run), confirming a same-day rerun.
+- **Action**: Appended a `## Heartbeat (rerun) — 2026-11-16` entry with HEARTBEAT_RERUN_QUIET status, copying the system health summary (all 13 skills consecutive_failures=0, no open issues, HEARTBEAT_OK).
+- **No dispatches or notifications sent** — the first run already completed all checks and confirmed everything healthy.
