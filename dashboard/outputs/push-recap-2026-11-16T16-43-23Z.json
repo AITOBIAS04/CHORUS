@@ -1,0 +1,107 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap"
+      },
+      "children": [
+        "heading-main",
+        "repo-info",
+        "description-text",
+        "separator-1",
+        "key-changes-heading",
+        "change-1",
+        "change-2",
+        "change-3",
+        "separator-2",
+        "stats-section",
+        "separator-3",
+        "link-recap"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Push Recap — 2026-11-16 (update)",
+        "level": "h2"
+      }
+    },
+    "repo-info": {
+      "type": "Badge",
+      "props": {
+        "text": "aaronjmars/MiroShark — 3 commits by dependabot[bot]",
+        "variant": "secondary"
+      }
+    },
+    "description-text": {
+      "type": "Text",
+      "props": {
+        "text": "Dependency Maintenance: Dependabot merged three PRs covering frontend, backend, and root packages. Five frontend deps bumped (axios 1.21.1, marked 18.2.0, vue-router 5.5.0, vite 8.3.8, plugin-vue 6.0.11), tornado patched 6.6→6.6.1 in backend, and concurrently bumped 10.0.7 at root.",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h4"
+      }
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "Frontend build toolchain updated with rolldown WASM target support via vite 8.3.8",
+        "variant": "body"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "Backend tornado patched to 6.6.1 (async networking stability/security fix)",
+        "variant": "body"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "Root concurrently dev runner patched to 10.0.7",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stat",
+      "props": {
+        "label": "Stats",
+        "value": "5 files changed, +232/-144 lines"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-recap": {
+      "type": "Link",
+      "props": {
+        "label": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-16.md"
+      }
+    }
+  }
+}

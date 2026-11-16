@@ -1,12 +1,12 @@
-*Push Recap — 2026-11-16*
-aaronjmars/MiroShark — 2 substantive commits by dependabot[bot]
+*Push Recap — 2026-11-16 (update)*
+aaronjmars/MiroShark — 3 substantive commits by dependabot[bot]
 
-Dependency Maintenance: Two Dependabot PRs merged updating six packages across frontend and root. PR #360 grouped five frontend deps — axios patch (1.21.1), marked minor (18.2.0), vue-router minor (5.5.0), vite patch (8.3.8), and plugin-vue patch (6.0.11). PR #359 patched the root concurrently runner (10.0.7).
+Dependency Maintenance: Dependabot merged three PRs covering frontend, backend, and root packages. Five frontend deps bumped (axios 1.21.1, marked 18.2.0, vue-router 5.5.0, vite 8.3.8, plugin-vue 6.0.11), tornado patched 6.6→6.6.1 in backend, and concurrently bumped 10.0.7 at root.
 
 Key changes:
-- vue-router 5.4.0 → 5.5.0 and marked 18.1.3 → 18.2.0 (minor bumps — new features available)
-- vite/rolldown toolchain bumped with new optional WASM target support
-- axios follow-redirects minimum raised to 1.16.2
+- Frontend build toolchain updated with rolldown WASM target support via vite 8.3.8
+- Backend tornado patched to 6.6.1 (async networking stability/security fix)
+- Root concurrently dev runner patched to 10.0.7
 
-Stats: 4 files changed, +184/-96 lines
+Stats: 5 files changed, +232/-144 lines
 Full recap: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-16.md

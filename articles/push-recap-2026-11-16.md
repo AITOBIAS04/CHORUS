@@ -1,9 +1,9 @@
 # Push Recap — 2026-11-16
 
 ## Overview
-2 substantive commits by 1 author (dependabot[bot]), 0 automation commits filtered. Today was pure dependency maintenance — Dependabot merged two grouped PRs updating frontend and root-level packages. No feature work, no bug fixes, no architecture changes.
+3 substantive commits by 1 author (dependabot[bot]), 0 automation commits filtered. Today was pure dependency maintenance — Dependabot merged three PRs updating frontend, backend, and root-level packages. No feature work, no bug fixes, no architecture changes.
 
-**Stats:** 4 files changed, +184/-96 lines across 2 substantive commits
+**Stats:** 5 files changed, +232/-144 lines across 3 substantive commits
 
 ---
 
@@ -28,6 +28,17 @@
 
 **Impact:** Keeps the frontend build toolchain current. The vue-router 5.5.0 minor bump and marked 18.2.0 may introduce new features available to the frontend. The vite/rolldown bump adds WASM runtime support as an optional target.
 
+### Dependency Maintenance: Backend Python Update
+**Summary:** Dependabot PR #361 bumped tornado from 6.6 to 6.6.1 in the backend's uv lock file — an indirect dependency patch update.
+
+**Commits:**
+- `a646127` — chore: bump tornado in /backend in the uv group across 1 directory (#361)
+  - Changed `backend/uv.lock`: Updated tornado from 6.6 to 6.6.1 across all platform wheels — 48 wheel URLs and hashes replaced (+48, -48 lines)
+  - Resolution markers reordered slightly (cosmetic)
+  - tornado 6.6.1 released 2026-11-09 (patch fix on top of 6.6 from 2026-10-21)
+
+**Impact:** Keeps the Python backend's async framework dependency current. Tornado is an indirect dep (likely pulled in by another package); the patch fix may address stability or security issues in the web server / async networking layer.
+
 ### Dependency Maintenance: Root Package Update
 **Summary:** Dependabot PR #359 bumped the root-level `concurrently` dev dependency — a single patch update.
 
@@ -41,7 +52,7 @@
 ---
 
 ## Developer Notes
-- **New dependencies:** None direct; rolldown gained optional WASM runtime support (`@rolldown/binding-wasm32-wasi`, `@emnapi/*`, `@napi-rs/wasm-runtime`, `tslib`) as transitive optional deps
+- **New dependencies:** None direct; rolldown gained optional WASM runtime support (`@rolldown/binding-wasm32-wasi`, `@emnapi/*`, `@napi-rs/wasm-runtime`, `tslib`) as transitive optional deps; tornado bumped 6.6 → 6.6.1 as indirect Python dep
 - **Breaking changes:** None — all updates are minor or patch level
 - **Architecture shifts:** None
 - **Tech debt:** None introduced
