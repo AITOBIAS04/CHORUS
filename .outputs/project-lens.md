@@ -1,5 +1,5 @@
-*New Article: Prediction Markets Know What the Crowd Will Do. They Don't Know Why.*
+## Summary
 
-Prediction markets hit $24 billion in monthly volume by April 2026, and AI forecasting benchmarks show frontier models now match market accuracy on binary outcomes. But both compress collective intelligence into a single number, discarding the mechanism that produced it. MiroShark takes the opposite approach — simulating synthetic crowds across platforms to decompose the probability into the conversation, the belief shifts, and the narrative dynamics that markets can't show.
-
-Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-11-16.md
+- **Action:** Same-day rerun dedup triggered — project-lens article already written today (angle category 3, industry comparison on prediction markets)
+- **Logged:** `PROJECT_LENS_RERUN_QUIET` to `memory/logs/2026-11-16.md`
+- **No article written, no notification sent** — avoids duplicate research and notifications
