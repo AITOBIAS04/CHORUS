@@ -1,0 +1,49 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Prediction Markets Know What the Crowd Will Do. They Don't Know Why."
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-body",
+        "separator-1",
+        "story-link"
+      ]
+    },
+    "text-body": {
+      "type": "Text",
+      "props": {
+        "text": "Prediction markets hit $24 billion in monthly volume by April 2026, and AI forecasting benchmarks show frontier models now match market accuracy on binary outcomes. But both compress collective intelligence into a single number, discarding the mechanism that produced it. MiroShark takes the opposite approach — simulating synthetic crowds across platforms to decompose the probability into the conversation, the belief shifts, and the narrative dynamics that markets can't show.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-11-16.md",
+        "source": "Project Lens"
+      }
+    }
+  }
+}
