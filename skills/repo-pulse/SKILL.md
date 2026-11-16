@@ -49,9 +49,9 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
    ```
    Keep only forks where `created_at` >= `$CUTOFF`.
 
-5. **Skip re-run if already notified today** — If `memory/logs/${today}.md` already contains a `## Repo Pulse` entry:
+5. **Skip re-run if already reported today** — If `memory/logs/${today}.md` already contains a `## Repo Pulse` entry:
    - If that entry contains `Notification sent: yes` — a notification was already delivered today. Log `REPO_PULSE_RERUN_QUIET: notification already sent today — logging updated counts` with the current `stargazers_count` and `forks_count` to `memory/logs/${today}.md`, then **stop here**. Do NOT re-send the notification even if counts changed since the earlier run. (Scheduler double-dispatch reliably produces +1 star between runs, causing duplicate notifications — observed Oct 14, Oct 16.)
-   - If that entry contains `Notification sent: no` (or `REPO_PULSE_QUIET`) — the earlier run found no activity and did not notify. Continue to Step 6 to evaluate whether this run should notify.
+   - If that entry contains `REPO_PULSE_QUIET` — the earlier run already found no new stars or forks. Log `REPO_PULSE_RERUN_QUIET: previous run found no activity — skipping re-fetch` to `memory/logs/${today}.md` and **stop here**. Stars and forks appearing in the brief interval between scheduler double-dispatches are extremely unlikely (observed: Nov 10–14, 5 consecutive quiet reruns found no new activity). The next day's run will catch any changes. This matches the push-recap quiet-day dedup pattern (PR #79).
    - If no prior `## Repo Pulse` entry exists — first run today, continue normally.
 
 6. **Determine if there's activity to report.** Check BOTH:
