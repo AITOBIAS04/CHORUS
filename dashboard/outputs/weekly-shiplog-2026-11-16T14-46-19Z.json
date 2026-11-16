@@ -1,0 +1,160 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog - 2026-11-16"
+      },
+      "children": [
+        "text-intro",
+        "sep1",
+        "heading-shipped",
+        "shipped-stack",
+        "sep2",
+        "heading-stats",
+        "stats-grid",
+        "sep3",
+        "link-full"
+      ]
+    },
+    "text-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Everything fell except the commit log. Token crashed 27% to new ATL ($0.0000012549), stars went backwards for the first time (1,489→1,487), social silence hit 132 days - and the agent merged four self-improve PRs without missing a beat."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-shipped": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      }
+    },
+    "shipped-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "shipped-1",
+        "shipped-2",
+        "shipped-3"
+      ]
+    },
+    "shipped-1": {
+      "type": "Text",
+      "props": {
+        "text": "ICP skill pack: 3 new Internet Computer skills + YUSA security pack via upstream sync (101 files, +1,982/-772 lines)"
+      }
+    },
+    "shipped-2": {
+      "type": "Text",
+      "props": {
+        "text": "4 self-improve PRs (#84-87): LP anomaly detection, heartbeat dedup, BEHIND merge handling, quiet-day rerun optimization"
+      }
+    },
+    "shipped-3": {
+      "type": "Text",
+      "props": {
+        "text": "Dependency maintenance: soupsieve 2→4, frontend patches, hono bump across 3 repos"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-stats": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-token",
+        "stat-stars",
+        "stat-silence",
+        "stat-commits",
+        "stat-prs",
+        "stat-lines"
+      ]
+    },
+    "stat-token": {
+      "type": "Stat",
+      "props": {
+        "label": "Token Price",
+        "value": "$0.0000012549",
+        "delta": "-27%",
+        "trend": "down"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars",
+        "value": "1,487",
+        "delta": "-2",
+        "trend": "down"
+      }
+    },
+    "stat-silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Social Silence",
+        "value": "132 days"
+      }
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "~141"
+      }
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs Merged",
+        "value": "10"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines Changed",
+        "value": "+2,307/-910"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-full": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Weekly Shiplog",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-11-16.md",
+        "source": "CHORUS Repository"
+      }
+    }
+  }
+}

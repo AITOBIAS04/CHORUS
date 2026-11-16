@@ -1,12 +1,11 @@
-*Weekly Shiplog -- 2026-11-09*
+*Weekly Shiplog - 2026-11-16*
 
-The week the agent learned to save money.
+Everything fell except the commit log. Token crashed 27% to new ATL ($0.0000012549), stars went backwards for the first time (1,489→1,487), social silence hit 132 days - and the agent merged four self-improve PRs without missing a beat.
 
 Shipped:
-- Pre-model idle gates for fetch-tweets and memory-flush -- skip expensive model calls when there is nothing to process, saving ~$1.67/10 runs during 125-day social silence
-- Scorer strategy gate -- skills graded on their own job description, not penalized for topic irrelevance to operator strategy; scorer now reads the full article, not just the 420-byte notification card
-- Canister-audit skill (85th in catalog) -- first blockchain-native security auditor for ICP Rust canisters, ships with test fixture and Semgrep rules
-- Supply chain hardening -- CI actions SHA-pinned, vuln scanner binaries verified with per-arch SHA256 digests
+- ICP skill pack: 3 new Internet Computer skills + YUSA security pack via upstream sync (101 files, +1,982/-772 lines)
+- 4 self-improve PRs (#84-87): LP anomaly detection, heartbeat dedup, BEHIND merge handling, quiet-day rerun optimization
+- Dependency maintenance: soupsieve 2→4, frontend patches, hono bump across 3 repos
 
-Stats: ~90 commits, 16 PRs merged, +9,500/-3,000 lines across 2 repos
-Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-11-09.md
+Stats: ~141 commits, 10 PRs merged, +2,307/-910 lines
+Full update: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-11-16.md
