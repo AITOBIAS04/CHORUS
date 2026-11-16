@@ -24,9 +24,19 @@ Read memory/watched-repos.md for repos to cover.
    gh api repos/owner/repo/releases --jq '[.[] | select(.published_at > (now - 604800 | strftime("%Y-%m-%dT%H:%M:%SZ"))) | {tag_name, name, published_at, body}]'
    ```
 
+1.5. **Filter automation noise** from agent/aeon repos. After gathering commits in Step 1, separate each repo's commits into two groups:
+   - **Automation commits** — messages matching any of these patterns:
+     - `chore(cron):` — cron state updates (e.g. "chore(cron): token-report success")
+     - `chore(scheduler):` — scheduler state changes
+     - `chore(` + `): auto-commit` — auto-committed output files (e.g. "chore(repo-pulse): auto-commit 2026-11-16")
+     - Any other message starting with `chore(` and containing `):` — remaining automated skill outputs (e.g. "chore(token-movers): log CoinGecko scan"). All `chore(scope):` commits in agent repos are automated; human work uses descriptive messages or PR merge commits.
+   - **Substantive commits** — everything else (PR merges, features, fixes, real code changes)
+
+   Exclude automation commits from diff analysis in Step 3 and the narrative in Step 4. Report them as a separate count in the "By the Numbers" section (e.g. "12 substantive commits + 85 automation filtered"). Without this filter, the LLM must judge each commit's nature case-by-case, leading to inflated stats (observed: Nov 2 shiplog reported "~188 commits" when only 8 were substantive; Nov 9 reported "~90" with ~70 automation) and wasted diff API calls on cron-state updates.
+
 2. **Read this week's push-recap articles** from `articles/push-recap-*.md` (last 7 days) to get detailed diff context without re-fetching everything.
 
-3. **Read diffs for the most significant commits** (top 10 by lines changed) to understand substance:
+3. **Read diffs for the most significant substantive commits** (top 10 by lines changed) to understand substance:
    ```bash
    gh api repos/owner/repo/commits/FULL_SHA --jq '{files: [.files[] | {filename, status, additions, deletions}], stats: .stats}'
    ```
@@ -63,7 +73,7 @@ Read memory/watched-repos.md for repos to cover.
    [Bullet list of notable fixes, refactors, DX improvements — brief but specific]
 
    ## By the Numbers
-   - **Commits:** N across M repos
+   - **Commits:** N substantive across M repos (+ Z automation filtered)
    - **PRs merged:** N
    - **Files changed:** N
    - **Lines:** +X / -Y
