@@ -1,9 +1,7 @@
+Heartbeat already ran today. Logged `HEARTBEAT_RERUN_QUIET` and stopped — no new issues, no duplicate dispatches or notifications needed.
+
 ## Summary
 
-**HEARTBEAT_OK** — no issues found.
-
-- **System health:** All 13 tracked skills at `consecutive_failures=0`
-- **Scheduled skills (Tue Nov 17):** All 6 scheduled skills ran — token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-article
-- **Open PRs:** PR #88 (`improve:` prefix, 29h old) — below 72h auto-merge threshold, no action needed
-- **Open issues:** None in INDEX.md, no escalations
-- Logged `HEARTBEAT_OK` to `memory/logs/2026-11-17.md`
+- **Step 0 triggered:** `memory/logs/2026-11-17.md` already contained a `## Heartbeat — 2026-11-17` entry from an earlier run.
+- **Action:** Appended `## Heartbeat (rerun) — 2026-11-17` with the quiet-summary format and stopped.
+- **Status from earlier run:** All skills healthy (`consecutive_failures=0`), no open issues, all scheduled skills for Tuesday ran, PR #88 within the 72h threshold — `HEARTBEAT_OK`.
