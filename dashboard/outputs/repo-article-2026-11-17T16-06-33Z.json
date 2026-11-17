@@ -1,0 +1,45 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "heading-1",
+        "text-1",
+        "separator-1",
+        "link-1"
+      ]
+    },
+    "heading-1": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: Every Commit Is a Bot",
+        "level": "h2"
+      }
+    },
+    "text-1": {
+      "type": "Text",
+      "props": {
+        "text": "All four MiroShark commits this week came from Dependabot. Zero human code. The 2026 wave of autonomous maintenance agents — Bob, OpenGitClaw, EasierBot — is trying to build what MiroShark stumbled into by accident: a project that stays green without human attention. But there is a ceiling. Forty-plus features sit built and blocked. The bots keep the lights on. The building is empty."
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-17.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
