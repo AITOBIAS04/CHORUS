@@ -1,0 +1,319 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-18",
+        "description": "Generated from analysis of aaronjmars/MiroShark — these are ideas that could be autonomously built by the feature skill tomorrow"
+      },
+      "children": [
+        "item-1",
+        "sep-1",
+        "item-2",
+        "sep-2",
+        "item-3",
+        "sep-3",
+        "item-4",
+        "sep-4",
+        "item-5",
+        "sep-5",
+        "link-details"
+      ]
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h1",
+        "badges-1",
+        "desc-1"
+      ]
+    },
+    "h1": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Scheduled Recurring Simulation",
+        "level": "h3"
+      }
+    },
+    "badges-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-feat-1",
+        "badge-med-1"
+      ]
+    },
+    "badge-feat-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge-med-1": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      }
+    },
+    "desc-1": {
+      "type": "Text",
+      "props": {
+        "text": "Operators configure a topic to auto-relaunch daily/weekly/biweekly; each run links to a time-series view of direction + confidence drift across runs.",
+        "variant": "body"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h2",
+        "badges-2",
+        "desc-2"
+      ]
+    },
+    "h2": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Simulation Health Score",
+        "level": "h3"
+      }
+    },
+    "badges-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-feat-2",
+        "badge-sml-2"
+      ]
+    },
+    "badge-feat-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "badge-sml-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "desc-2": {
+      "type": "Text",
+      "props": {
+        "text": "A 0–100 composite quality metric (platform coverage + depth + scale + data richness) that makes gallery quality legible at a glance — High/Moderate/Low badge on every card.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h3",
+        "badges-3",
+        "desc-3"
+      ]
+    },
+    "h3": {
+      "type": "Heading",
+      "props": {
+        "text": "3. JavaScript Embed Widget",
+        "level": "h3"
+      }
+    },
+    "badges-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-int-3",
+        "badge-sml-3"
+      ]
+    },
+    "badge-int-3": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      }
+    },
+    "badge-sml-3": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "desc-3": {
+      "type": "Text",
+      "props": {
+        "text": "A two-line script snippet renders a live simulation result card inline on any blog, Substack, or research page — direction badge, confidence bar, platform chips, shadow DOM (no style conflicts).",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h4",
+        "badges-4",
+        "desc-4"
+      ]
+    },
+    "h4": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Automated Weekly Email Digest",
+        "level": "h3"
+      }
+    },
+    "badges-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-int-4",
+        "badge-sml-4"
+      ]
+    },
+    "badge-int-4": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      }
+    },
+    "badge-sml-4": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "desc-4": {
+      "type": "Text",
+      "props": {
+        "text": "Operators subscribe to a Monday digest of all their published simulations from the prior week — auto-triggered, no manual action, uses existing email_notify.py infrastructure.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "item-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h5",
+        "badges-5",
+        "desc-5"
+      ]
+    },
+    "h5": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Trending Topics Feed",
+        "level": "h3"
+      }
+    },
+    "badges-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-grw-5",
+        "badge-sml-5"
+      ]
+    },
+    "badge-grw-5": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "default"
+      }
+    },
+    "badge-sml-5": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "desc-5": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/trending clusters topic text from recent published simulations into a live «what people are simulating» surface — drives organic discovery, pre-fills Step 1 for new operators.",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-18.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
