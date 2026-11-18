@@ -1,8 +1,8 @@
 {
   "skill": "repo-actions",
-  "last_analyzed": "2026-08-08T14:51:33Z",
+  "last_analyzed": "2026-11-18T15:45:20Z",
   "quality_score": 4,
-  "assessment": "Substantive analysis with strategic competitive intelligence, 5 actionable ideas, and clear business rationale; well-structured and immediately useful.",
+  "assessment": "Working as designed: skill properly deduped today's run and logged the decision with clear reasoning",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -12,6 +12,10 @@
     },
     {
       "date": "2026-08-08",
+      "score": 4
+    },
+    {
+      "date": "2026-11-18",
       "score": 4
     }
   ]
