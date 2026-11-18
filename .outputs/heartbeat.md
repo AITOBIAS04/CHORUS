@@ -1,9 +1,7 @@
+Heartbeat already ran today — logged `HEARTBEAT_RERUN_QUIET` and stopped. System health was clean on the first run: all skills at zero consecutive failures, all scheduled skills confirmed run, no open issues.
+
 ## Summary
 
-Heartbeat completed — HEARTBEAT_OK.
-
-- **System health:** All skills healthy, `consecutive_failures: 0` across the board.
-- **Scheduled skills:** All 9 expected skills for Wed Nov 18 (DOM=18) ran successfully: token-report, fetch-tweets, repo-pulse, feature, self-improve, repo-actions, push-recap, project-lens, memory-flush.
-- **Open PRs:** #89 (5h) and #88 (53h) — both `improve:` prefix, neither over the 72h threshold.
-- **Open issues:** None.
-- No notification sent, no auto-triggers needed.
+- Detected existing `## Heartbeat — 2026-11-18` entry in today's log (Step 0 dedup trigger)
+- Appended `## Heartbeat (rerun) — 2026-11-18` with `HEARTBEAT_RERUN_QUIET` status
+- No further action needed; first run already confirmed HEARTBEAT_OK
