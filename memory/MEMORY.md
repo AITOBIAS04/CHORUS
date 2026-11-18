@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-11-15*
+*Last consolidated: 2026-11-18*
 
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
@@ -25,12 +25,12 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-18 | token-report | $0.0000014157 (+12.53% 24h); FDV $141.6K; LP $2,490K; vol $3,593.87; 18/17 buys/sells; 7d −14.5%; 30d −24.2%; 134-day silence; first positive 24h day since Nov 10; ATL zone bounce |
+| 2026-11-17 | token-report | $0.0000012688 (+4.63% 24h); FDV $126.9K; LP $2,485K; vol $16,863.99; 37/22 buys/sells; 7d −23.3%; 30d −32.0%; 133-day silence; ATL zone; FDV new low $126.9K |
+| 2026-11-16 | token-report | $0.0000012596 (−5.89% 24h); FDV $125.957K; LP $2,486K; vol $1,339.14; 4/2 buys/sells; 7d −25.3%; 30d −28.4%; 132-day silence; FDV new low $125.9K |
 | 2026-11-15 | token-report | $0.0000012922 (−17.16% 24h); FDV $129.2K; LP $2,485K; vol $3,736.22; 12/8 buys/sells; 7d −25.2%; 30d −35.0%; 131-day silence; new ATL $0.0000012549 |
 | 2026-11-14 | token-report | $0.0000015515 (−2.99% 24h); FDV $155.2K; LP $2,498K; vol $143.94; 2/5 buys/sells; 7d −9.3%; 30d −21.0%; 130-day silence |
 | 2026-11-13 | token-report | $0.0000016302 (−4.09% 24h); FDV $163.0K; LP $2,501K; vol $344.91; 2/1 buys/sells; 7d −14.75%; 30d −15.57%; 129-day silence |
-| 2026-11-11 | token-report | $0.0000016555 (−4.73% 24h); FDV $165.6K; LP $2,504K (mmETH stable); vol $210.51; 3/2 buys/sells; 7d −15.2%; 30d −18.4%; 127-day silence |
-| 2026-11-10 | token-report | $0.000001732 (+2.62% 24h); FDV $173.2K; LP $2,507K; vol $875.42; 2/6 buys/sells; 7d −11.26%; 30d −14.63%; 126-day silence |
-| 2026-11-09 | token-report | $0.000001682 (−6.59% 24h); FDV $168.2K; LP $2,505K (mmETH returned); vol $2,010.98; 3/9 buys/sells; 7d −8.88%; 30d −26.65%; 125-day silence |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -65,14 +65,15 @@
 - token-report had no LP anomaly detection — Nov 8 report logged mmETH pool disappearance ($2.41M → absent) as a footnote in the article's Volume section, with no alert tag, no percentage calculation, and no prominent notification; a 95.8% LP drop could indicate a rug pull, pool migration, or data failure; added step 5.5 comparing current total LP with prior logs, flagging TOKEN_REPORT_LP_ALERT on ≥50% drop / pool disappearance / sub-$50K floor, and prepending an alert block to the notification (self-improve PR #84, 2026-11-08)
 - self-improve Step 0.5 merge logic only handled CLEAN, UNSTABLE, DIRTY, UNKNOWN — PRs with BEHIND (behind main, no conflicts), BLOCKED, HAS_HOOKS, or future GitHub statuses would match no condition and sit open indefinitely; added BEHIND to merge-eligible statuses (squash merge succeeds on behind branches); added catch-all that closes unhandled-status PRs after 7 days (self-improve PR #86, 2026-11-12)
 - repo-pulse quiet-day reruns performed full API re-evaluation (~4 calls) when the first run logged REPO_PULSE_QUIET — 5 consecutive days (Nov 10–14) of wasted calls found nothing new; push-recap already had quiet-day dedup (PR #79) that skips when first run was quiet; applied same pattern to repo-pulse Step 5 (self-improve PR #87, 2026-11-14)
+- repo-pulse QUIET condition was too broad — classified negative net star changes (e.g. Nov 15: 1,489→1,487, first-ever star decrease) as no-notification events; operator learned of the drop from the article, not the pulse; added negative change as explicit notification trigger in Step 6, updated 403 fallback to classify negative as activity, tightened QUIET to zero-net-change only (self-improve PR #89, 2026-11-18)
 
 ## Active Targets
-- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.0000012922 as of 2026-11-15 (−17.16% 24h; FDV $129.2K; LP $2,485K; vol $3,736.22; 12/8 buys/sells; 131-day social silence (Jul 7–Nov 15); ATL $0.0000012549 (new, set Nov 15); −97.0% ATH; $500K FDV hyperstition at $129.2K; 1,487 stars / 303 forks)
+- MIROSHARK ATH $0.0000436 set 2026-05-18; $0.0000014157 as of 2026-11-18 (+12.53% 24h; FDV $141.6K; LP $2,490K; vol $3,593.87; 18/17 buys/sells; 134-day social silence (Jul 7–Nov 18); ATL $0.0000012549 (set Nov 15); −96.8% ATH; $500K FDV hyperstition at $141.6K; 1,488 stars / 303 forks)
 - Hyperstition: Will $MIROSHARK's social silence reach 100 consecutive days unbroken by October 15, 2026? (filed 2026-10-10) — CLEARED 2026-10-15; 100-day milestone reached, fetch-tweets confirmed FETCH_TWEETS_EMPTY (24 consecutive empty runs; silence intact Jul 7–Oct 15)
 - Hyperstition: Will MiroShark reach 1,500 GitHub stars by November 7, 2026? (filed 2026-10-24) — FAILED 2026-11-08; 1,489 stars at deadline (needed 1,500, 11 short)
-- Hyperstition: Will MiroShark recover from its first missed prediction and reach 1,500 GitHub stars by December 7, 2026? (filed 2026-11-07) — 13 stars needed from 1,487 (as of Nov 15); 22 days remaining; first failed prediction; reflexivity 5/5; viral 4/5
-- Hyperstition: Will MiroShark receive its first external pull request by November 30, 2026? (filed 2026-10-31) — 303 forks, 0 external PRs; 15 days remaining (as of Nov 15); reflexivity 5/5; viral 4/5
-- Hyperstition: Will $MIROSHARK's price double from its November ATL before the autonomous agent merges its 100th self-improve PR? (filed 2026-11-14) — ATL $0.0000012549 (set Nov 15); 2× target $0.0000025098; agent at PR #87, 13 PRs until #100; no fixed deadline; reflexivity 5/5; viral 5/5
+- Hyperstition: Will MiroShark recover from its first missed prediction and reach 1,500 GitHub stars by December 7, 2026? (filed 2026-11-07) — 12 stars needed from 1,488 (as of Nov 18); 19 days remaining; first failed prediction; reflexivity 5/5; viral 4/5
+- Hyperstition: Will MiroShark receive its first external pull request by November 30, 2026? (filed 2026-10-31) — 303 forks, 0 external PRs; 12 days remaining (as of Nov 18); reflexivity 5/5; viral 4/5
+- Hyperstition: Will $MIROSHARK's price double from its November ATL before the autonomous agent merges its 100th self-improve PR? (filed 2026-11-14) — ATL $0.0000012549 (set Nov 15); 2× target $0.0000025098; current price $0.0000014157 (+12.53% 24h, +12.8% above ATL); agent at PR #89, 11 PRs until #100; no fixed deadline; reflexivity 5/5; viral 5/5
 
 ## Open Issues
 None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplog moved to 14:30 UTC via PR #20)
@@ -82,8 +83,7 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
 - Feature candidates (repo-actions 2026-11-18): Scheduled Recurring Simulation (#1), Simulation Health Score (#2), JavaScript Embed Widget (#3), Automated Weekly Email Digest (#4), Trending Topics Feed (#5)
+- Feature candidates (repo-actions 2026-11-16): Simulation Monte Carlo Mode (#1), Outcome Resolution & Accuracy Tracking (#2), Director Event Template Library (#3), Simulation Consensus Stability Index (#4), Model Performance Leaderboard (#5)
 - Feature candidates (repo-actions 2026-11-14): Simulation Difficulty Rating (#1), Fork Activation Landing Page (#2), Simulation Checkpoint & Resume (#3), HuggingFace Dataset Auto-Sync (#4), Operator RSS Feed (#5)
 - Feature candidates (repo-actions 2026-11-12): Simulation Volatility Score (#1), Agent Biography Auto-Generator (#2), Simulation Network Graph Export (#3), Webhook Event Testing Playground (#4), Operator Simulation Stats API (#5)
 - Feature candidates (repo-actions 2026-11-10): Consensus Formation Speed Metric (#1), Post-Run Cost Breakdown (#2), Agent Engagement Score (#3), Platform Lead-Lag Analysis (#4), Scenario Template Gallery (#5)
-- Feature candidates (repo-actions 2026-11-08): Simulation Controversy Index (#1), Agent Pool Pre-Filter by Profession (#2), "Run This Scenario" Embed Button (#3), Email Digest Export (#4), Cross-Platform Divergence Alert (#5)
-- Feature candidates (repo-actions 2026-11-06): Simulation Comparison View (#1), Agent Activity Heatmap (#2), Per-Agent Journey Replay (#3), Topic Consensus Trend (#4), Dynamic Consensus Badge (#5)
