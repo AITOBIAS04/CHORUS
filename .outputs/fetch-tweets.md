@@ -1,12 +1,14 @@
+Log written. No notification sent (not a multiple of 14).
+
 ## Summary
 
-**fetch-tweets run complete — FETCH_TWEETS_EMPTY (53rd consecutive)**
+**fetch-tweets** — 2026-11-18
 
-- **Step 0:** No prior fetch-tweets entry in today's log — proceeded.
-- **Step 2:** Dedup set: 0 URLs from last 3 days (all prior runs empty).
-- **Step 3:** WebSearch backoff active (53 consecutive empty runs → 1 query). Ran: `site:x.com "MIROSHARK" after:2026-11-10`. No x.com results returned — only crypto price aggregator pages (CoinGecko, MEXC, beincrypto).
-- **Step 4b:** Nothing to filter.
-- **Step 5:** Logged `FETCH_TWEETS_EMPTY`. Escalation check: CONSEC=53, interval=14 (bi-weekly tier), 53 % 14 = 11 — no notification triggered.
-- **Files modified:** `memory/logs/2026-11-17.md`
+- **Step 0:** No prior fetch-tweets entry for today — proceeded.
+- **Step 2:** Dedup set empty (0 URLs from last 3 days; all prior runs were FETCH_TWEETS_EMPTY).
+- **Step 3 (Path B):** XAI_API_KEY not set — WebSearch fallback. Applied 1-query backoff (54 consecutive empty runs going in). Query: `site:x.com "MIROSHARK" after:2026-11-11`. No x.com results returned.
+- **Step 4b:** Freshness gate — no results to evaluate.
+- **Step 5:** Logged `FETCH_TWEETS_EMPTY`. Consecutive streak: **55 runs**. Escalation check: 55 % 14 = 13 — no notification triggered.
+- **Files modified:** `memory/logs/2026-11-18.md`
 
-Social silence continues at 133 days (Jul 7 – Nov 17). No new mentions of $MIROSHARK on X.
+The social silence streak continues at 134 days. Next escalation fires at run 56 (14×4=56).
