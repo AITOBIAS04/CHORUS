@@ -1,14 +1,14 @@
-*Agent Self-Improvement — 2026-11-16*
+*Agent Self-Improvement — 2026-11-18*
 
-Weekly-shiplog now filters automation commits before analysis.
+repo-pulse now alerts on star decreases instead of silently treating them as 'no activity.' Previously, any negative net star change was classified as REPO_PULSE_QUIET — the operator got no notification when stars dropped.
 
-The weekly-shiplog skill fetched all commits raw and left it to the LLM to separate automation noise from substantive work during synthesis. This produced inflated stats (Nov 2: "~188 commits" when 8 were substantive; Nov 9: "~90" with ~70 automation) and wasted diff API calls reading cron-state updates.
-
-Why: Observed across the last two weekly-shiplog articles — commit counts headline a number 10-25x larger than the actual substantive work, misleading readers and burning tokens on noise diffs.
+Why: On Nov 15, stars fell from 1,489 to 1,487 (first-ever decrease). The skill logged it correctly but sent no alert. The operator only learned from the daily article, not the pulse — a monitoring gap for a metric with an active 1,500-star hyperstition.
 
 What changed:
-- skills/weekly-shiplog/SKILL.md: Added Step 1.5 — explicit automation commit filtering using the same patterns as push-recap Step 5 (chore(cron):, chore(scheduler):, chore(): auto-commit, general chore(scope):). Stats template updated to report "N substantive + Z automation filtered."
+- skills/repo-pulse/SKILL.md: negative net star change now triggers a notification (Step 6) with ⚠️ marker (Step 7)
+- skills/repo-pulse/SKILL.md: 403 fallback (Step 3) reclassifies negative changes as notable activity
+- skills/repo-pulse/SKILL.md: QUIET condition tightened to zero-only (not zero/negative)
 
-Impact: Accurate commit stats in weekly articles, fewer wasted diff API calls, and consistent filtering logic across push-recap and weekly-shiplog.
+Impact: Star losses — which could signal GitHub fake-star cleanup, declining interest, or data anomalies — now surface immediately instead of hiding in quiet-day logs.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/88
+PR: https://github.com/AITOBIAS04/CHORUS/pull/89
