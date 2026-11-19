@@ -1,5 +1,7 @@
-🔔 Heartbeat — 2026-11-19
+Heartbeat already ran today. Logged `HEARTBEAT_RERUN_QUIET` to `memory/logs/2026-11-19.md` and stopped — the first run already checked all skills, flagged PR #88, and sent notifications.
 
-PR #88 stalled at 77h (improve: add automation commit filtering to weekly-shiplog). Auto-merge via self-improve expected tomorrow (Nov 20, every-2-days cycle).
+## Summary
 
-All other systems nominal: 7/7 expected skills ran today, 0 consecutive failures across all skills, no open issues.
+- **Action:** Detected existing `## Heartbeat — 2026-11-19` entry in today's log (Step 0 rerun dedup triggered)
+- **Logged:** `## Heartbeat (rerun) — 2026-11-19` with `HEARTBEAT_RERUN_QUIET` status
+- **No further action:** System was healthy per first run — all skills at `consecutive_failures=0`, PR #88 stall already notified, no missing skills
