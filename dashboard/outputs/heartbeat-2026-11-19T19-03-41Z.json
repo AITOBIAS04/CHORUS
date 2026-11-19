@@ -1,0 +1,83 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "🔔 Heartbeat",
+        "description": "2026-11-19"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-pr88",
+        "separator-1",
+        "text-system-status",
+        "grid-stats"
+      ]
+    },
+    "alert-pr88": {
+      "type": "Alert",
+      "props": {
+        "title": "PR #88 Stalled",
+        "message": "Stalled at 77h. Improve: add automation commit filtering to weekly-shiplog. Auto-merge via self-improve expected tomorrow (Nov 20, every-2-days cycle).",
+        "type": "warning"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-system-status": {
+      "type": "Text",
+      "props": {
+        "text": "All other systems nominal",
+        "variant": "lead"
+      }
+    },
+    "grid-stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-skills",
+        "stat-failures",
+        "stat-issues"
+      ]
+    },
+    "stat-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Expected Skills Ran",
+        "value": "7/7"
+      }
+    },
+    "stat-failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive Failures",
+        "value": "0"
+      }
+    },
+    "stat-issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Open Issues",
+        "value": "0"
+      }
+    }
+  }
+}
