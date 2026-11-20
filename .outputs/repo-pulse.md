@@ -1,11 +1,7 @@
+The earlier run today already found no new stars or forks (stargazers_count=1489, forks_count=303, zero net change). Per the skill's Step 5 quiet-day dedup rule, this rerun logged `REPO_PULSE_RERUN_QUIET` and stopped — no re-fetch, no notification.
+
 ## Summary
 
-**Repo Pulse — 2026-11-20**
-
-Checked `aaronjmars/MiroShark` (skipped `miroshark-aeon` as an agent repo per skill config).
-
-- **Stars:** 1,489 (net change: 0 vs prior log 1,489 — stargazers API returned 403, used fallback)
-- **Forks:** 303 (net change: 0; newest fork from Nov 13, outside 24h window)
-- **Result:** `REPO_PULSE_QUIET` — no new stars, no new forks in the last 24h
-- **Notification:** not sent
-- Logged to `memory/logs/2026-11-20.md`
+- Checked `memory/logs/2026-11-20.md` — found an existing `## Repo Pulse` entry containing `REPO_PULSE_QUIET`
+- Applied the quiet-day short-circuit: appended `## Repo Pulse (rerun)` with `REPO_PULSE_RERUN_QUIET` to today's log
+- No API calls made, no notification sent — consistent with the dedup pattern from PR #87
