@@ -1,0 +1,281 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Everyone Built an Agent Framework. Almost Nobody Built a Crowd.",
+        "description": "2026 AI agent ecosystem landscape analysis"
+      },
+      "children": [
+        "heading",
+        "ecosystem-stack",
+        "sep1",
+        "miro-stack",
+        "sep2",
+        "competitors-section",
+        "sep3",
+        "insights-section",
+        "sep4",
+        "read-link"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "The Agent Ecosystem Opportunity",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "ecosystem-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-tools",
+        "ecosystem-text"
+      ]
+    },
+    "stat-tools": {
+      "type": "Stat",
+      "props": {
+        "label": "AI Agent Tools",
+        "value": "120+"
+      },
+      "children": []
+    },
+    "ecosystem-text": {
+      "type": "Text",
+      "props": {
+        "text": "Across five categories — nearly all built for single agents completing individual tasks.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "miro-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "miro-heading",
+        "miro-desc",
+        "miro-tags"
+      ]
+    },
+    "miro-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "MiroShark: The Blank Square",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "miro-desc": {
+      "type": "Text",
+      "props": {
+        "text": "MiroShark occupies a near-blank square on the map: multi-agent crowd simulation where agents hold conflicting beliefs and produce emergent opinion dynamics.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "miro-tags": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "tag-miro",
+        "tag-crowd",
+        "tag-dynamics"
+      ]
+    },
+    "tag-miro": {
+      "type": "Badge",
+      "props": {
+        "text": "MiroShark",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "tag-crowd": {
+      "type": "Badge",
+      "props": {
+        "text": "Crowd Simulation",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "tag-dynamics": {
+      "type": "Badge",
+      "props": {
+        "text": "Emergent Dynamics",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "competitors-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "comp-heading",
+        "comp-intro",
+        "comp-grid"
+      ]
+    },
+    "comp-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Competition",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "comp-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Two direct competitors launched in 2026, but neither has achieved significant traction.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "comp-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "comp1",
+        "comp2"
+      ]
+    },
+    "comp1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "comp1-tag",
+        "comp1-text"
+      ]
+    },
+    "comp1-tag": {
+      "type": "Badge",
+      "props": {
+        "text": "SimSwarm",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "comp1-text": {
+      "type": "Text",
+      "props": {
+        "text": "Launched 2026 · Single-digit stars",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "comp2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "comp2-tag",
+        "comp2-text"
+      ]
+    },
+    "comp2-tag": {
+      "type": "Badge",
+      "props": {
+        "text": "LeanSwarm",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "comp2-text": {
+      "type": "Text",
+      "props": {
+        "text": "Launched 2026 · Single-digit stars",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "insights-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "insights-heading",
+        "insights-text"
+      ]
+    },
+    "insights-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What the Article Maps",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "insights-text": {
+      "type": "Text",
+      "props": {
+        "text": "Adjacent tools, direct competitors, and what the cartographers left off the edge. Academic benchmarks validate the problem, but production tools haven't yet emerged to serve this niche.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "read-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read Full Article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-11-20.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
