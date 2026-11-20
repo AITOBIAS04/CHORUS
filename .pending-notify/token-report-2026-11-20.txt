@@ -1,0 +1,10 @@
+*$MiroShark Daily — 2026-11-20*
+
+Price: $0.0000011406 (−12.53% 24h) — new ATL
+Liquidity: $2,481K | 24h Vol: $2,293.42
+Buys/Sells: 6/27
+7d: −28.35% | 30d: −45.59%
+
+The Nov 18 bounce has fully reversed. Intraday low $0.0000011322 breaks the Nov 15 ATL floor ($0.0000012549). A new large seller (0xf6864c) dumped 930M tokens for $1,143 alongside the continuing hourly bot. 136-day social silence holds.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
