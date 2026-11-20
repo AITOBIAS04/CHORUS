@@ -41,7 +41,7 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
 
    **Why not `--paginate`?** The stargazers API returns oldest-first. Using `--paginate` fetches ALL pages (O(N) API calls as stars grow). Fetching only the last 2 pages is O(1) and covers up to 200 recent stars — more than enough for 24h changes.
 
-   **403 fallback (stargazer timestamps unavailable):** If the stargazers API returns 403, individual stargazer timestamps are unavailable. Fall back to **net star change** by comparing `stargazers_count` from step 1 against the most recent `stargazers_count` logged in the last 3 days of `memory/logs/` (grep for `stargazers_count=`). Record the net change (e.g. "+3 net" or "−1 net") and treat a **positive net change as activity** (equivalent to finding new stargazers). A zero or negative net change means no detectable new stars — do NOT treat "unknown" as activity.
+   **403 fallback (stargazer timestamps unavailable):** If the stargazers API returns 403, individual stargazer timestamps are unavailable. Fall back to **net star change** by comparing `stargazers_count` from step 1 against the most recent `stargazers_count` logged in the last 3 days of `memory/logs/` (grep for `stargazers_count=`). Record the net change (e.g. "+3 net" or "−1 net") and treat a **positive net change as activity** (equivalent to finding new stargazers). A **negative net change** means stars were lost — treat this as notable activity (see Step 6). A zero net change means no detectable new stars.
 
 4. **Fetch recent forks** (sorted by newest):
    ```bash
@@ -61,10 +61,11 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
    **Send a notification if ANY of these are true:**
    - At least 1 new stargazer in the last 24h (unstars don't cancel this out)
    - Positive net star change (403 fallback: current count > previous count from logs)
+   - Negative net star change (403 fallback: current count < previous count from logs) — star losses are rare and affect active targets (e.g. star-count hyperstitions); the operator should know when the count moves backwards
    - At least 1 new fork in the last 24h
    - First run (no previous data in logs)
 
-   Only log "REPO_PULSE_QUIET" and skip notification if ZERO new stargazers (or zero/negative net change in 403 fallback) AND ZERO new forks since the 24h cutoff.
+   Only log "REPO_PULSE_QUIET" and skip notification if ZERO net star change (403 fallback) AND ZERO new stargazers AND ZERO new forks since the 24h cutoff.
 
 7. **Send notification** via `./notify`:
    ```
@@ -81,10 +82,16 @@ Read memory/watched-repos.md for the list of repos to track. Skip any repo whose
    github.com/user1/repo | github.com/user2/repo
    ```
 
+   For **star decreases** (negative net change in 403 fallback mode), use this format instead:
+   ```
+   Stars: X total (−N net ⚠️)
+   ```
+   Omit the "New stargazers" section — there are none to list. The ⚠️ makes the decrease visually distinct from routine quiet-day reports.
+
    Format rules:
    - List stargazers on one line separated by ` | ` (not one per line)
    - Same for forks
-   - Omit "New stargazers" section entirely if there are none
+   - Omit "New stargazers" section entirely if there are none (including star decrease notifications)
    - Omit "New forks" section entirely if there are none
    - Do NOT include traffic data, watchers, or open issues
 
