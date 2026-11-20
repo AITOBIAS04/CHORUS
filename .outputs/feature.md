@@ -1,5 +1,3 @@
 ## Summary
 
-**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not set, so the feature skill cannot push branches or open PRs on the watched repo. Logged skip to `memory/logs/2026-11-20.md`. No notification sent per skill instructions.
-
-This is the same blocker noted in memory — 80+ consecutive blocks since the `GH_GLOBAL` secret was never configured.
+**FEATURE_RERUN_QUIET** — The feature skill already ran today (logged `FEATURE_SKIP: no push access to aaronjmars/MiroShark`). Since no explicit feature was requested via `${var}`, this rerun was skipped to avoid wasting a duplicate session on an identical outcome. Logged dedup entry to `memory/logs/2026-11-20.md`.
