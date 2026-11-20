@@ -1,0 +1,190 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-20"
+      },
+      "children": [
+        "repo-info",
+        "sep-1",
+        "content-stack"
+      ]
+    },
+    "repo-info": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "repo-name",
+        "repo-badge"
+      ]
+    },
+    "repo-name": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "variant": "lead"
+      }
+    },
+    "repo-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2 substantive commits by Aaron Elijah Mars"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "section-ci",
+        "sep-2",
+        "section-changes",
+        "sep-3",
+        "section-stats",
+        "sep-4",
+        "section-links"
+      ]
+    },
+    "section-ci": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-ci",
+        "text-ci"
+      ]
+    },
+    "heading-ci": {
+      "type": "Heading",
+      "props": {
+        "text": "CI & Testing Hardening",
+        "level": "h3"
+      }
+    },
+    "text-ci": {
+      "type": "Text",
+      "props": {
+        "text": "Two PRs landed that tighten CI feedback loops and kill hidden test ordering bugs. Job timeouts dropped from a blanket 15 min to measured p95 values (2–3 min), so hangs go red fast instead of silently eating runner minutes. Separately, pytest-randomly was added to shuffle test execution order — and it immediately caught a real bug: POST /api/settings was leaking Config state (API keys, provider, model) across tests, causing 15-second Neo4j retry loops in unrelated tests (~135s wasted per run on unlucky seeds).",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-changes",
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": ".github/workflows/tests.yml: timeout-minutes 15→2/2/3/2 per job, based on measured p95 since uv switch",
+        "variant": "body"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "backend/tests/test_unit_settings_presets.py: new autouse fixture snapshots and restores all Config class attrs, fixing the state leak",
+        "variant": "body"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "New dev dependency: pytest-randomly 5.1.0 (randomizes test order, prints seed for reproducibility)",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-lines"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "4"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Changes",
+        "value": "+46 / -4"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-links": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "link-full-recap"
+      ]
+    },
+    "link-full-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-20.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
