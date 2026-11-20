@@ -1,6 +1,12 @@
-*Social Monitor Dark — 56 consecutive days*
+Done. FETCH_TWEETS_EMPTY — 57 consecutive empty runs, no escalation (57 % 14 = 1, next notification at 70).
 
-fetch-tweets has found zero new mentions for 56 straight days.
+## Summary
 
-Likely cause: XAI_API_KEY not set — WebSearch fallback rarely surfaces fresh tweets.
-Fix: Set XAI_API_KEY in repo secrets to enable direct X/Twitter search via Grok.
+- **Step 0**: No prior fetch-tweets entry today — proceeded normally.
+- **Step 2**: Dedup set empty — all recent logs show FETCH_TWEETS_EMPTY with zero x.com URLs.
+- **Step 3**: WebSearch backoff active (56 consecutive empty runs going in) — ran 1 query: `site:x.com "MIROSHARK" after:2026-11-06`. Results returned only price-tracker pages, Telegram aggregator links, and unrelated SuperX profiles. Zero fresh tweets found.
+- **Step 4b**: No x.com results to freshness-gate.
+- **Step 5**: Logged `FETCH_TWEETS_EMPTY`. Consecutive count: 57. Escalation check: 57 % 14 = 1 — no notification sent.
+- **Files modified**: `memory/logs/2026-11-20.md`
+
+Social silence now 137 days and counting. Next escalation fires at run 70 (13 more empty runs).
