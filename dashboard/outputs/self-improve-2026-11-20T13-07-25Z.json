@@ -1,0 +1,230 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-11-20",
+        "description": "Added price ATL detection to token-report"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "intro",
+        "sep1",
+        "why_section",
+        "sep2",
+        "changes_section",
+        "sep3",
+        "impact_section",
+        "sep4",
+        "merged_section"
+      ]
+    },
+    "intro": {
+      "type": "Text",
+      "props": {
+        "text": "The skill already flags LP anomalies with prominent alerts (since PR #84), but new all-time lows — which directly impact the 2× ATL hyperstition — got no special treatment. Two ATL events (Nov 15, Nov 20) produced standard notifications with the ATL buried in narrative text.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "why_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "why_heading",
+        "why_text",
+        "atl_comparison"
+      ]
+    },
+    "why_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "why_text": {
+      "type": "Text",
+      "props": {
+        "text": "Nov 20 token-report logged a new ATL but the notification looked identical to any other day. LP drops get ⚠ LP ALERT blocks; price ATLs should get the same treatment.",
+        "variant": "body"
+      }
+    },
+    "atl_comparison": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "atl_nov15",
+        "atl_nov20"
+      ]
+    },
+    "atl_nov15": {
+      "type": "Stat",
+      "props": {
+        "label": "Nov 15 ATL",
+        "value": "$0.0000012549"
+      }
+    },
+    "atl_nov20": {
+      "type": "Stat",
+      "props": {
+        "label": "Nov 20 ATL (new low)",
+        "value": "$0.0000011322",
+        "trend": "down"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes_heading",
+        "changes_stack"
+      ]
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h3"
+      }
+    },
+    "changes_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change1",
+        "change2"
+      ]
+    },
+    "change1": {
+      "type": "Text",
+      "props": {
+        "text": "skills/token-report/SKILL.md: added step 5.7 — greps prior logs for ATL reference, compares 24h low, flags TOKEN_REPORT_ATL_ALERT when a new ATL is set",
+        "variant": "body"
+      }
+    },
+    "change2": {
+      "type": "Text",
+      "props": {
+        "text": "skills/token-report/SKILL.md: added ⚠ NEW ATL notification block (stacks after LP alert if both fire), plus structured log format",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impact_heading",
+        "impact_text"
+      ]
+    },
+    "impact_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact_text": {
+      "type": "Text",
+      "props": {
+        "text": "Operator gets immediate prominent alerts when price breaks to new all-time lows, matching the existing LP alert pattern. ATL events that impact active hyperstitions are no longer buried in standard report format.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "merged_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "merged_heading",
+        "merged_stack"
+      ]
+    },
+    "merged_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also Merged",
+        "level": "h3"
+      }
+    },
+    "merged_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr88_link",
+        "pr90_link"
+      ]
+    },
+    "pr88_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #88: automation commit filtering for weekly-shiplog",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/88",
+        "source": "GitHub"
+      }
+    },
+    "pr90_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #90: Price ATL detection implementation",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/90",
+        "source": "GitHub"
+      }
+    }
+  }
+}

@@ -87,6 +87,19 @@ All GeckoTerminal API calls use `curl` against a public API (no auth). In the Gi
 
    **If not flagged:** No action needed — proceed normally.
 
+5.7. **Price ATL detection** — After collecting price data (steps 1–4), check whether today's price set a new all-time low. Extract the previous ATL from `memory/logs/` by grepping for `ATL $` patterns in the last 7 days of logs — take the most recent numeric value found. If no ATL is recorded in logs, extract the lowest `24h Low` value from the last 7 days as the reference floor.
+
+   Compare today's **24h low** (from step 3 hourly candles, or step 1 if OHLCV unavailable) against the previous ATL.
+
+   **Flag `TOKEN_REPORT_ATL_ALERT` if:**
+   - Today's 24h low is **strictly below** the previous ATL
+
+   If no prior ATL reference is found in logs (first run or logs cleared), do NOT alert — just record today's low as the initial ATL reference in step 8.
+
+   **If flagged:** The ATL alert should appear prominently in both the article and notification — similar to LP alerts. A new all-time low directly impacts active price hyperstitions (e.g. 2× ATL target recalculation) and signals material market deterioration. Include both the new ATL (intraday low) and the previous ATL with the date it was set.
+
+   **If not flagged:** No action needed — proceed normally.
+
 6. **Compile the daily report**:
    ```markdown
    # Token Report — ${today}
@@ -132,6 +145,10 @@ All GeckoTerminal API calls use `curl` against a public API (no auth). In the Gi
    ```
    - TOKEN_REPORT_LP_ALERT: [description — e.g. "total LP dropped 95.8% ($2.52M → $105K); mmETH pool absent from API"]
    ```
+   If step 5.7 flagged a new ATL, also include:
+   ```
+   - TOKEN_REPORT_ATL_ALERT: new ATL $X.XXXXXXXX (prev $X.XXXXXXXX set [date]) — [context: 24h change, sell pressure, etc.]
+   ```
 
 9. **Send notification** via `./notify`:
 
@@ -159,6 +176,16 @@ All GeckoTerminal API calls use `curl` against a public API (no auth). In the Gi
    Chart: https://www.geckoterminal.com/base/pools/POOL_ADDRESS
    ```
 
-   **If no LP alert**, send the standard format without the alert block.
+   **If `TOKEN_REPORT_ATL_ALERT` was flagged in step 5.7**, prepend an alert block to the notification (after any LP alert if both are present):
+   ```
+   ⚠ NEW ATL — $TOKEN
+
+   Price hit $X.XXXXXXXX — new all-time low (prev: $X.XXXXXXXX, [date])
+   [One sentence: sell pressure, volume context, hyperstition impact]
+
+   ---
+   ```
+
+   **If no LP or ATL alert**, send the standard format without any alert block.
 
 **Important:** If the GeckoTerminal API returns no data (token not found, API error, empty response), log "TOKEN_REPORT_NO_DATA" to memory and **do NOT send any notification**. Do not notify about failures or empty results.
