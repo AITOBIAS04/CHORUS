@@ -1,0 +1,313 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-20"
+      },
+      "children": [
+        "heading-main",
+        "text-source",
+        "sep-1",
+        "action-1-stack",
+        "action-2-stack",
+        "action-3-stack",
+        "action-4-stack",
+        "action-5-stack",
+        "sep-2",
+        "link-full-details"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Action Ideas — 2026-11-20",
+        "level": "h2"
+      }
+    },
+    "text-source": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — these are ideas that could be autonomously built by the feature skill tomorrow.",
+        "variant": "muted"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "action-1-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action-1-heading",
+        "action-1-badges",
+        "action-1-desc"
+      ]
+    },
+    "action-1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. GitHub README SVG Badge",
+        "level": "h3"
+      }
+    },
+    "action-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-1-badge-growth",
+        "action-1-badge-small"
+      ]
+    },
+    "action-1-badge-growth": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "default"
+      }
+    },
+    "action-1-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Dynamic SVG endpoint serving a simulation result badge — BULLISH/BEARISH/NEUTRAL + confidence % embeddable in GitHub READMEs and wikis where JavaScript embed widgets don't work.",
+        "variant": "body"
+      }
+    },
+    "action-2-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action-2-heading",
+        "action-2-badges",
+        "action-2-desc"
+      ]
+    },
+    "action-2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Agent Stance Heatmap",
+        "level": "h3"
+      }
+    },
+    "action-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-2-badge-feature",
+        "action-2-badge-small"
+      ]
+    },
+    "action-2-badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "action-2-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "2D grid visualization (agents × rounds) showing each agent's bullishness over time — the missing temporal view that shows how consensus formed, distinct from the existing activity heatmap.",
+        "variant": "body"
+      }
+    },
+    "action-3-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action-3-heading",
+        "action-3-badges",
+        "action-3-desc"
+      ]
+    },
+    "action-3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Simulation Remix",
+        "level": "h3"
+      }
+    },
+    "action-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-3-badge-feature",
+        "action-3-badge-small"
+      ]
+    },
+    "action-3-badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "action-3-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "One-click fork of a published simulation's config to your own account — pre-fills the launch form, increments a remix counter, creates a contribution loop from the gallery.",
+        "variant": "body"
+      }
+    },
+    "action-4-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action-4-heading",
+        "action-4-badges",
+        "action-4-desc"
+      ]
+    },
+    "action-4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Fork Activity Leaderboard",
+        "level": "h3"
+      }
+    },
+    "action-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-4-badge-community",
+        "action-4-badge-small"
+      ]
+    },
+    "action-4-badge-community": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "default"
+      }
+    },
+    "action-4-badge-small": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "action-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Scan GitHub forks by recency, rank the 50 most-active fork owners — surfaces the ghost community, gives active builders visibility, directly targets the Nov 30 external PR hyperstition.",
+        "variant": "body"
+      }
+    },
+    "action-5-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action-5-heading",
+        "action-5-badges",
+        "action-5-desc"
+      ]
+    },
+    "action-5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Simulation Chain",
+        "level": "h3"
+      }
+    },
+    "action-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "action-5-badge-feature",
+        "action-5-badge-medium"
+      ]
+    },
+    "action-5-badge-feature": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      }
+    },
+    "action-5-badge-medium": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      }
+    },
+    "action-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Link simulations in sequence: Sim B gets Sim A's signal injected as an opening director event — enables reflexivity testing and multi-step scenario research, capped at 5 chain depth.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-full-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-20.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

@@ -82,6 +82,7 @@ None. (ISS-002 resolved 2026-06-26 — morning scheduler restored; weekly-shiplo
 - Set GH_GLOBAL secret — unblocks 40+ built PRs + resumes feature skill (80th+ consecutive block as of Aug 23; all features from Jun 3 onward stuck as local commits)
 - Configure notification channels (Telegram, Discord, or Slack)
 - XAI_API_KEY not set — tweet fetching falls back to WebSearch (limited freshness)
+- Feature candidates (repo-actions 2026-11-20): GitHub README SVG Badge (#1), Agent Stance Heatmap (#2), Simulation Remix (#3), Fork Activity Leaderboard (#4), Simulation Chain (#5)
 - Feature candidates (repo-actions 2026-11-18): Scheduled Recurring Simulation (#1), Simulation Health Score (#2), JavaScript Embed Widget (#3), Automated Weekly Email Digest (#4), Trending Topics Feed (#5)
 - Feature candidates (repo-actions 2026-11-16): Simulation Monte Carlo Mode (#1), Outcome Resolution & Accuracy Tracking (#2), Director Event Template Library (#3), Simulation Consensus Stability Index (#4), Model Performance Leaderboard (#5)
 - Feature candidates (repo-actions 2026-11-14): Simulation Difficulty Rating (#1), Fork Activation Landing Page (#2), Simulation Checkpoint & Resume (#3), HuggingFace Dataset Auto-Sync (#4), Operator RSS Feed (#5)
