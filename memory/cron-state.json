@@ -90,15 +90,15 @@
   },
   "repo-pulse": {
     "last_dispatch": "2026-11-21T10:10:55Z",
-    "last_status": "dispatched",
+    "last_status": "success",
     "last_failed": "2026-11-09T13:41:51Z",
-    "total_runs": 953,
-    "total_successes": 236,
+    "total_runs": 954,
+    "total_successes": 237,
     "total_failures": 717,
     "consecutive_failures": 0,
     "success_rate": 0.25,
     "last_error": "wned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num",
-    "last_success": "2026-11-20T11:41:46Z",
+    "last_success": "2026-11-21T10:12:23Z",
     "last_quality_score": 4
   },
   "feature": {
