@@ -1,0 +1,54 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "The Founder Fixed the Tests at Ninety-Five Thousand Dollars"
+      },
+      "children": [
+        "content1",
+        "content2",
+        "content3",
+        "sep",
+        "link"
+      ]
+    },
+    "content1": {
+      "type": "Text",
+      "props": {
+        "text": "The founding developer pushed two code-quality commits to MiroShark — CI hardening and a test-ordering fix — on the same day the token's FDV broke below $100K for the first time ($95,555).",
+        "variant": "body"
+      }
+    },
+    "content2": {
+      "type": "Text",
+      "props": {
+        "text": "An automated seller extracts ~$32/hour from the pool while the Aeon agent keeps filing self-improve PRs (now at 91).",
+        "variant": "body"
+      }
+    },
+    "content3": {
+      "type": "Text",
+      "props": {
+        "text": "Three actors, no coordination, no audience.",
+        "variant": "body"
+      }
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-21.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
