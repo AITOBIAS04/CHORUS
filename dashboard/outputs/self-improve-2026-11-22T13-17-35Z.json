@@ -1,0 +1,163 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-11-22"
+      },
+      "children": [
+        "alert-main",
+        "sep-1",
+        "section-why",
+        "sep-2",
+        "section-changes",
+        "sep-3",
+        "section-impact",
+        "sep-4",
+        "pr-link"
+      ]
+    },
+    "alert-main": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "message": "Reduced stale PR merge cutoff from 48h to 44h in self-improve Step 0.5, fixing a structural timing misalignment that doubled the merge cycle for every PR."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-why",
+        "text-why-1",
+        "text-why-2",
+        "text-why-3"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text-why-1": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve runs every 48h but creates PRs 1-2h after the cron trigger. When the next run starts, the PR is always 46-47h old — just under the 48h cutoff."
+      }
+    },
+    "text-why-2": {
+      "type": "Text",
+      "props": {
+        "text": "Observed today: PR #91 (CLEAN, mergeable) at 46h was skipped and won't be merged until the following run at ~94h. This affects every self-improve PR, adding 2 unnecessary days to the merge cycle."
+      }
+    },
+    "text-why-3": {
+      "type": "Text",
+      "props": {
+        "text": "Result: Timing misalignment causes all PRs to miss their merge window by 1-2 hours, forcing a full extra cycle (48h) for every merge.",
+        "variant": "muted"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-changes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-changes",
+        "text-changes"
+      ]
+    },
+    "heading-changes": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "text-changes": {
+      "type": "Text",
+      "props": {
+        "text": "skills/self-improve/SKILL.md: Step 0.5 cutoff reduced from 48h to 44h — provides 4h of execution-time buffer while preserving >36h heartbeat review window"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-impact",
+        "text-impact-1",
+        "text-impact-2",
+        "text-impact-3"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-impact-1": {
+      "type": "Text",
+      "props": {
+        "text": "CLEAN PRs from the previous self-improve run will now be caught on the very next run instead of waiting an extra cycle."
+      }
+    },
+    "text-impact-2": {
+      "type": "Text",
+      "props": {
+        "text": "Merge latency drops from ~4 days to ~2 days."
+      }
+    },
+    "text-impact-3": {
+      "type": "Text",
+      "props": {
+        "text": "The 72h DIRTY/UNKNOWN thresholds and 168h catch-all are unchanged.",
+        "variant": "muted"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #92: Self-improve timing fix",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/92"
+      }
+    }
+  }
+}

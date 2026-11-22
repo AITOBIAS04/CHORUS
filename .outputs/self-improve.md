@@ -1,14 +1,12 @@
-*Agent Self-Improvement — 2026-11-20*
+*Agent Self-Improvement — 2026-11-22*
 
-Volatile-file safety net added to self-improve Step 4. The step that creates improvement branches now includes a defensive cleanup that unconditionally unstages volatile files (memory/, .outputs/, dashboard/outputs/, .pending-notify/, token-usage.csv) between staging and committing, plus a verification check.
+Reduced stale PR merge cutoff from 48h to 44h in self-improve Step 0.5, fixing a structural timing misalignment that doubled the merge cycle for every PR.
 
-Also merged: PR #89 (repo-pulse star decrease notifications).
-
-Why: PR #90 (ATL detection for token-report) was created earlier today but became immediately DIRTY because it included 6 volatile files despite the targeted-staging instruction. Text-only warnings are insufficient — the agent sometimes uses broad staging regardless. This creates a 72h dead zone where the improvement can't be merged (conflicts) and can't be re-proposed (dedup check blocks it).
+Why: Self-improve runs every 48h but creates PRs 1-2h after the cron trigger. When the next run starts, the PR is always 46-47h old — just under the 48h cutoff. Observed today: PR #91 (CLEAN, mergeable) at 46h was skipped and won't be merged until the following run at ~94h. This affects every self-improve PR, adding 2 unnecessary days to the merge cycle.
 
 What changed:
-- skills/self-improve/SKILL.md: Added git reset HEAD safety net between git add and git commit, plus staged-file verification step with recovery instructions
+- skills/self-improve/SKILL.md: Step 0.5 cutoff reduced from 48h to 44h — provides 4h of execution-time buffer while preserving >36h heartbeat review window
 
-Impact: Prevents improvement PRs from becoming immediately unmergeable due to volatile file inclusion — eliminates the recurring pattern of DIRTY PRs that block improvements for 72h.
+Impact: CLEAN PRs from the previous self-improve run will now be caught on the very next run instead of waiting an extra cycle. Merge latency drops from ~4 days to ~2 days. The 72h DIRTY/UNKNOWN thresholds and 168h catch-all are unchanged.
 
-PR: https://github.com/AITOBIAS04/CHORUS/pull/91
+PR: https://github.com/AITOBIAS04/CHORUS/pull/92
