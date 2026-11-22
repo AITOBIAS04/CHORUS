@@ -1,8 +1,11 @@
-Heartbeat already ran today at 19:00 UTC with HEARTBEAT_OK. This is a rerun — logged the quiet summary and stopped per Step 0 dedup logic. All systems nominal, no notifications needed.
+HEARTBEAT_OK.
 
 ## Summary
 
-- **Action:** Rerun-quiet dedup triggered — `## Heartbeat — 2026-11-21` already existed in today's log
-- **System state:** All skills at `consecutive_failures=0`, no open issues, no missing skills
-- **Files modified:** `memory/logs/2026-11-21.md` — appended `## Heartbeat (rerun)` quiet entry
-- **Follow-up:** None needed; first run already confirmed HEARTBEAT_OK
+**System status: clean.** Full checks for 2026-11-22:
+
+- **System health:** 0 consecutive failures across all 13 tracked skills — no systemic issues
+- **Open PRs:** 3 open, all `improve:` prefix — PR #90 (53h), #91 (52h), #92 (5h) — all under the 72h auto-merge threshold; self-improve will process them on day 24 (Nov 24)
+- **Schedule:** All 10 skills expected today completed — daily set (token-report, fetch-tweets, repo-pulse, push-recap, feature), Sunday-specific (repo-article, memory-flush, skill-leaderboard), even-day (repo-actions, self-improve)
+- **Issues index:** None open
+- **No dispatch needed**, no notification required
