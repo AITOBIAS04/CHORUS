@@ -13,7 +13,7 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
 
 0.5. **Merge stale self-improve PRs** — Before looking for new improvements, land prior improvements that have been waiting:
    ```bash
-   CUTOFF=$(date -u -d "48 hours ago" +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-48H +%Y-%m-%dT%H:%M:%SZ)
+   CUTOFF=$(date -u -d "44 hours ago" +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -v-44H +%Y-%m-%dT%H:%M:%SZ)
    gh pr list --state open --json number,title,createdAt,mergeStateStatus,reviewDecision \
      --jq "[.[] | select(.title | startswith(\"improve:\")) | select(.createdAt < \"$CUTOFF\")] | sort_by(.number)"
    ```
