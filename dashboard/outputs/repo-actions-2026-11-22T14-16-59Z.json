@@ -1,0 +1,184 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-22"
+      },
+      "children": [
+        "context",
+        "separator1",
+        "items-stack",
+        "separator2",
+        "details-link"
+      ]
+    },
+    "context": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from aaronjmars/MiroShark analysis — Docker Hub publishing live (Nov 21), CI sprint underway, 138-day social silence, sub-$100K FDV day 2, 15 days to star hyperstition deadline.",
+        "variant": "caption"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "items-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4",
+        "item-5"
+      ]
+    },
+    "item-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-1-header",
+        "item-1-desc"
+      ]
+    },
+    "item-1-header": {
+      "type": "Text",
+      "props": {
+        "text": "1. Simulation Round Replay (Feature, Small)",
+        "variant": "lead"
+      }
+    },
+    "item-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Step through rounds 1–N with a scrubber in Step 3 — the full consensus formation arc, already captured in trajectory.json, made visible.",
+        "variant": "body"
+      }
+    },
+    "item-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-2-header",
+        "item-2-desc"
+      ]
+    },
+    "item-2-header": {
+      "type": "Text",
+      "props": {
+        "text": "2. Open Graph Share Previews (Growth, Small)",
+        "variant": "lead"
+      }
+    },
+    "item-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Inject OG/Twitter meta tags on simulation permalinks so every Slack/Discord/Twitter share unfurls with topic, direction, and confidence — not a bare URL.",
+        "variant": "body"
+      }
+    },
+    "item-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-3-header",
+        "item-3-desc"
+      ]
+    },
+    "item-3-header": {
+      "type": "Text",
+      "props": {
+        "text": "3. Side-by-Side Simulation Comparison (Feature, Small)",
+        "variant": "lead"
+      }
+    },
+    "item-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/compare?sim_a=X&sim_b=Y returns a structured diff (direction, confidence delta, platform breakdown) with a shareable split-view /compare page.",
+        "variant": "body"
+      }
+    },
+    "item-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-4-header",
+        "item-4-desc"
+      ]
+    },
+    "item-4-header": {
+      "type": "Text",
+      "props": {
+        "text": "4. Confidence Distribution Histogram (Feature, Small)",
+        "variant": "lead"
+      }
+    },
+    "item-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Bucket per-agent final-round bullish_pct into 10 bands and classify shape as unimodal/bimodal/flat — reveals whether 65% confident means strong consensus or a deeply divided agent population.",
+        "variant": "body"
+      }
+    },
+    "item-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item-5-header",
+        "item-5-desc"
+      ]
+    },
+    "item-5-header": {
+      "type": "Text",
+      "props": {
+        "text": "5. Self-Hosted Setup Healthcheck (DX, Small)",
+        "variant": "lead"
+      }
+    },
+    "item-5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/health/full runs active probes (env vars, database, storage, LLM) with actionable error messages per failed check — reduces mean-time-to-working for the 303 fork owners now that Docker Hub publish is live.",
+        "variant": "body"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-22.md"
+      }
+    }
+  }
+}
