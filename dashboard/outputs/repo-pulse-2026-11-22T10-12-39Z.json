@@ -1,0 +1,64 @@
+{
+  "root": "card-repo-pulse",
+  "state": {},
+  "elements": {
+    "card-repo-pulse": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse"
+      },
+      "children": [
+        "date-text",
+        "repo-storylink",
+        "stats-stack"
+      ]
+    },
+    "date-text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-11-22",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "repo-storylink": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aaronjmars/MiroShark",
+        "href": "https://github.com/aaronjmars/MiroShark"
+      },
+      "children": []
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stars-stat",
+        "forks-stat"
+      ]
+    },
+    "stars-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1489",
+        "delta": "−2 net",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "forks-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Forks",
+        "value": "303",
+        "delta": "+0 new",
+        "trend": "neutral"
+      },
+      "children": []
+    }
+  }
+}
