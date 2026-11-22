@@ -1,0 +1,189 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-22"
+      },
+      "children": [
+        "text-repo",
+        "separator-1",
+        "section-cicd",
+        "separator-2",
+        "section-deps",
+        "separator-3",
+        "section-keychanges",
+        "separator-4",
+        "section-stats",
+        "separator-5",
+        "link-recap"
+      ]
+    },
+    "text-repo": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark — 2 substantive commits by aaronjmars",
+        "variant": "lead"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-cicd": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-cicd",
+        "text-cicd"
+      ]
+    },
+    "heading-cicd": {
+      "type": "Heading",
+      "props": {
+        "text": "CI/CD Infrastructure Overhaul",
+        "level": "h3"
+      }
+    },
+    "text-cicd": {
+      "type": "Text",
+      "props": {
+        "text": "Docker images now publish automatically from main on every relevant push (previously tag-only). All 4 CI jobs switched from paid Blacksmith runners to free GitHub-hosted ubuntu-latest — sub-30s jobs meant queue wait was the bottleneck. Dependabot reconfigured to group ALL updates (majors included) into one weekly PR per ecosystem."
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-deps": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-deps",
+        "text-deps",
+        "text-deps-notable"
+      ]
+    },
+    "heading-deps": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Updates",
+        "level": "h3"
+      }
+    },
+    "text-deps": {
+      "type": "Text",
+      "props": {
+        "text": "Bundled Dependabot PR merges week's bumps — DOMPurify 3.4.18 (XSS patch), Marked 18.2.1, vue-router 5.5.1, setup-uv v10.4.0."
+      }
+    },
+    "text-deps-notable": {
+      "type": "Text",
+      "props": {
+        "text": "Notable transitive: chokidar 5→6 (Node >=22.22 required).",
+        "variant": "muted"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-keychanges": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-keychanges",
+        "keychange-1",
+        "keychange-2",
+        "keychange-3"
+      ]
+    },
+    "heading-keychanges": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "keychange-1": {
+      "type": "Text",
+      "props": {
+        "text": "Docker image reference moved from ghcr.io/aaronjmars/miroshark to ghcr.io/miroshark/miroshark — forks using old path will 404"
+      }
+    },
+    "keychange-2": {
+      "type": "Text",
+      "props": {
+        "text": "docker-compose.yml now has build: . fallback so compose works without a published image"
+      }
+    },
+    "keychange-3": {
+      "type": "Text",
+      "props": {
+        "text": "Blacksmith runners removed across all CI jobs (unit, frontend, camel-smoke, lint)"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-lines"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "7"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines",
+        "value": "+139/-86"
+      }
+    },
+    "separator-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-recap": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-22.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
