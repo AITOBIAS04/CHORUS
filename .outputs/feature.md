@@ -1,3 +1,5 @@
 ## Summary
 
-**FEATURE_RERUN_QUIET** — The feature skill already ran today and recorded `FEATURE_SKIP: no push access to aaronjmars/MiroShark (GH_GLOBAL secret not set)`. Since no explicit feature was requested (`var` is empty), the rerun was skipped to avoid repeating the same outcome. Logged dedup entry to `memory/logs/2026-11-21.md`.
+**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not set, so the token lacks cross-repo push permissions. Logged skip to `memory/logs/2026-11-22.md`. No feature was picked, cloned, or built to avoid wasting the session.
+
+This is the same blocker noted in MEMORY.md's "Next Priorities" — setting the `GH_GLOBAL` secret would unblock 40+ built PRs and resume the feature skill.
