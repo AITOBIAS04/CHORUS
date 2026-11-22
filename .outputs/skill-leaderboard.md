@@ -1,12 +1,7 @@
-**Step 0 triggered — skill-leaderboard already ran today.**
-
-Today's log (`memory/logs/2026-11-15.md`) already contains a `## Skill Leaderboard` entry recording `Notification sent: no` (status: `SKILL_LEADERBOARD_INSUFFICIENT_DATA` — only 1 active fork with `aeon.yml`, minimum 2 required). Re-running would re-fetch `aeon.yml` from every active fork across both watched repos, re-aggregate, and produce identical output.
-
-Logged `SKILL_LEADERBOARD_RERUN_QUIET` to today's log and stopped.
+Logged and stopped. 9 active forks scanned across both watched repos — 8 MiroShark forks carry no `aeon.yml` (expected, it's a simulation engine not an agent repo), and only AITOBIAS04/CHORUS from miroshark-aeon has one. With fewer than 2 forks meeting the minimum, no leaderboard article or notification was generated.
 
 ## Summary
 
-- **Action:** Dedup gate triggered at Step 0 — skill-leaderboard already ran earlier today
-- **Prior result:** `SKILL_LEADERBOARD_INSUFFICIENT_DATA` (1 fork with `aeon.yml`, minimum 2 required)
-- **Files modified:** `memory/logs/2026-11-15.md` (appended rerun-quiet entry)
-- **Follow-up:** No action needed — skill will run fresh tomorrow (Sunday schedule)
+- **Step 0:** No prior leaderboard entry in today's log — proceeded normally.
+- **Steps 1–3:** Scanned both watched repos. Found 9 active forks (pushed last 30 days): 8 from MiroShark, 1 from miroshark-aeon (AITOBIAS04/CHORUS). Only the miroshark-aeon fork carries `aeon.yml`.
+- **Early exit:** 1 fork with readable `aeon.yml` < minimum 2 required for a meaningful ranking. Logged `SKILL_LEADERBOARD_INSUFFICIENT_DATA` to `memory/logs/2026-11-22.md` and stopped — no article written, no notification sent.
