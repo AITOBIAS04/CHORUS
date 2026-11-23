@@ -1,0 +1,154 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-11-23"
+      },
+      "children": [
+        "price-stat",
+        "sep1",
+        "metrics-grid",
+        "sep2",
+        "performance-stack",
+        "sep3",
+        "fdv-info",
+        "sep4",
+        "deadlines-section",
+        "sep5",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.0000009792",
+        "delta": "+0.99%",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "liquidity-stat",
+        "volume-stat",
+        "buys-sells-stat"
+      ]
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "~$2,474K"
+      }
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$2,410.94"
+      }
+    },
+    "buys-sells-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "37/32"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "performance-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "perf-7d",
+        "perf-30d"
+      ]
+    },
+    "perf-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "−24.6%",
+        "trend": "down"
+      }
+    },
+    "perf-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "−46.6%",
+        "trend": "down"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "fdv-info": {
+      "type": "Text",
+      "props": {
+        "text": "Third day sub-$100K FDV ($97,916); price holding +2.5% above the ATL of $0.0000009556. Light volume, narrow range. The 0x0392b4cc resupply cycle continues.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "deadlines-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "deadline-nov30",
+        "deadline-dec7"
+      ]
+    },
+    "deadline-nov30": {
+      "type": "Text",
+      "props": {
+        "text": "Nov 30 external PR deadline in 7 days",
+        "variant": "body"
+      }
+    },
+    "deadline-dec7": {
+      "type": "Text",
+      "props": {
+        "text": "Dec 7 star target (1,489/1,500) in 14 days",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "chart-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GeckoTerminal Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
