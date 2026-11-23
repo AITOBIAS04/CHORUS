@@ -1,7 +1,1 @@
-⏳ Heartbeat — 2 stalled improve: PRs (≥72h)
-
-PR #90 (78h): add price ATL detection alert to token-report — DIRTY status; self-improve will close at next run Nov 24
-PR #91 (76h): add volatile-file safety net to self-improve Step 4 — 76h; self-improve will merge/close at next run Nov 24
-PR #92 (29h): reduce stale PR cutoff 48h→44h — under threshold, OK
-
-All 7 Monday skills ran ✓ — no missing skills, no systemic failures, no open issues.
+Heartbeat already ran today. This is a rerun — full re-analysis skipped per dedup rule. The first run confirmed: 0 consecutive failures across all 13 skills, all Monday skills completed, stalled PRs #90/#91 already flagged and notified. Logged `HEARTBEAT_RERUN_QUIET` to today's log.
