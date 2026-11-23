@@ -1,0 +1,124 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Weekly Shiplog — 2026-11-23",
+        "description": "The founder returned with a 3-day CI sprint while the token hit all-time lows."
+      },
+      "children": [
+        "shipped-heading",
+        "shipped-stack",
+        "separator-1",
+        "stats-stack",
+        "separator-2",
+        "full-link"
+      ]
+    },
+    "shipped-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "shipped-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "shipped-item-1",
+        "shipped-item-2",
+        "shipped-item-3"
+      ]
+    },
+    "shipped-item-1": {
+      "type": "Text",
+      "props": {
+        "text": "CI hardening: randomized test ordering caught a hidden Config state leak; timeouts cut from 15min to 2-3min per job",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "shipped-item-2": {
+      "type": "Text",
+      "props": {
+        "text": "Docker overhaul: continuous image publishing from main, Blacksmith→GitHub runners, Dependabot grouping simplified",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "shipped-item-3": {
+      "type": "Text",
+      "props": {
+        "text": "Agent self-improve: 3 PRs merged (#87-89), 3 filed (#90-92) — now at PR #92",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-commits",
+        "stat-prs",
+        "stat-changes"
+      ]
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Substantive commits",
+        "value": "5"
+      },
+      "children": []
+    },
+    "stat-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged (3 repos)",
+        "value": "12"
+      },
+      "children": []
+    },
+    "stat-changes": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines changed",
+        "value": "+120/-34"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "full-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full update",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/weekly-shiplog-2026-11-23.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}

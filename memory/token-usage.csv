@@ -1728,3 +1728,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-11-23,feature,claude-opus-4-6,7,942,188394,22091
 2026-11-23,repo-pulse,claude-sonnet-4-6,7,1217,192253,25204
 2026-11-23,feature,claude-opus-4-6,5,929,113711,21009
+2026-11-23,weekly-shiplog,claude-opus-4-6,24,12304,974668,46835
