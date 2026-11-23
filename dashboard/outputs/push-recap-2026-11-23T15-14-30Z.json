@@ -1,0 +1,142 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap"
+      },
+      "children": [
+        "date-text",
+        "repo-info",
+        "separator1",
+        "main-heading",
+        "description-text",
+        "key-changes-heading",
+        "key-changes-list",
+        "context-text",
+        "stats-section",
+        "separator2",
+        "link-section"
+      ]
+    },
+    "date-text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-11-23",
+        "variant": "caption"
+      }
+    },
+    "repo-info": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark — 1 substantive commit by aaronjmars",
+        "variant": "lead"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "main-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Dependency Updates: Vue 3.5.46 & Docker Builder",
+        "level": "h2"
+      }
+    },
+    "description-text": {
+      "type": "Text",
+      "props": {
+        "text": "Third consecutive day of founder activity, this time a single bundled Dependabot PR. Vue patched from 3.5.45 to 3.5.46 (compiler and reactivity fixes, no breaking changes), the Docker builder action bumped to v2.4.0, and transitive deps cascaded through all 9 @vue/* packages plus csstype and source-map-js.",
+        "variant": "body"
+      }
+    },
+    "key-changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes:",
+        "level": "h4"
+      }
+    },
+    "key-changes-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "Vue 3.5.45→3.5.46 across frontend/package.json and lock file (all @vue/* packages updated)"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "useblacksmith/setup-docker-builder v2.3.0→v2.4.0 in Docker image workflow"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "source-map-js 1.2.2→1.2.4 (Node floor raised to 6.0.0, irrelevant for Node 22+)"
+      }
+    },
+    "context-text": {
+      "type": "Text",
+      "props": {
+        "text": "This is the first PR to fully exercise yesterday's new \"all-inclusive weekly group\" Dependabot strategy — majors, minors, and patches rolling into one bundled PR. Three days of CI/dependency work (Nov 21–23) has the repo in its healthiest infrastructure state in months.",
+        "variant": "body"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat-files",
+        "stat-lines"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "3"
+      }
+    },
+    "stat-lines": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines",
+        "value": "+66/-66"
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "link-section": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full recap",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-23.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
