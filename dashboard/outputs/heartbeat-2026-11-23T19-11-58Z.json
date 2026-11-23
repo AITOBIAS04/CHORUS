@@ -1,0 +1,117 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "⏳ Heartbeat — 2 stalled improve: PRs (≥72h)"
+      },
+      "children": [
+        "pr-stack",
+        "separator",
+        "summary"
+      ]
+    },
+    "pr-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-90",
+        "pr-91",
+        "pr-92"
+      ]
+    },
+    "pr-90": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-90-title",
+        "pr-90-detail"
+      ]
+    },
+    "pr-90-title": {
+      "type": "Text",
+      "props": {
+        "text": "PR #90 (78h): add price ATL detection alert to token-report",
+        "variant": "lead"
+      }
+    },
+    "pr-90-detail": {
+      "type": "Text",
+      "props": {
+        "text": "DIRTY status; self-improve will close at next run Nov 24",
+        "variant": "caption"
+      }
+    },
+    "pr-91": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-91-title",
+        "pr-91-detail"
+      ]
+    },
+    "pr-91-title": {
+      "type": "Text",
+      "props": {
+        "text": "PR #91 (76h): add volatile-file safety net to self-improve Step 4",
+        "variant": "lead"
+      }
+    },
+    "pr-91-detail": {
+      "type": "Text",
+      "props": {
+        "text": "76h; self-improve will merge/close at next run Nov 24",
+        "variant": "caption"
+      }
+    },
+    "pr-92": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-92-title",
+        "pr-92-detail"
+      ]
+    },
+    "pr-92-title": {
+      "type": "Text",
+      "props": {
+        "text": "PR #92 (29h): reduce stale PR cutoff 48h→44h",
+        "variant": "lead"
+      }
+    },
+    "pr-92-detail": {
+      "type": "Text",
+      "props": {
+        "text": "under threshold, OK",
+        "variant": "caption"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "All 7 Monday skills ran ✓ — no missing skills, no systemic failures, no open issues.",
+        "variant": "body"
+      }
+    }
+  }
+}
