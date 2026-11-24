@@ -87,6 +87,17 @@ All GeckoTerminal API calls use `curl` against a public API (no auth). In the Gi
 
    **If not flagged:** No action needed — proceed normally.
 
+5.7. **Price ATL detection** — After collecting price and OHLCV data (steps 1–3), compare the current session's 24h low against the lowest price found in the last 30 days of `memory/logs/`. Grep prior logs for price-related values (look for patterns like `**Price:** $`, `24h High/Low:`, `ATL $`, `intraday ATL $`). Extract the lowest price value ever logged across all matching entries.
+
+   **Flag `TOKEN_REPORT_ATL_ALERT` if:**
+   - The current 24h low (from hourly OHLCV or pool data) is strictly below the lowest price found in any prior log entry within the last 30 days
+
+   Compute the percentage below prior ATL: `((current_low - prior_atl) / prior_atl) * 100`. Identify the date the prior ATL was set from the log entry it appeared in.
+
+   **If flagged:** The price ATL alert takes priority in both the article and notification — it should appear prominently, not buried in the Trend section. A new all-time low is a significant event the operator needs to see immediately.
+
+   **If not flagged:** No action needed — proceed normally. Still log the ATL comparison in step 8 for tracking.
+
 6. **Compile the daily report**:
    ```markdown
    # Token Report — ${today}
@@ -132,10 +143,28 @@ All GeckoTerminal API calls use `curl` against a public API (no auth). In the Gi
    ```
    - TOKEN_REPORT_LP_ALERT: [description — e.g. "total LP dropped 95.8% ($2.52M → $105K); mmETH pool absent from API"]
    ```
+   Always include the ATL comparison line so the next run can track the price floor:
+   ```
+   - ATL check: 24h low $X.XXXXXXX vs prior ATL $X.XXXXXXX (DATE) — [new ATL / above ATL]
+   ```
+   If step 5.7 flagged a price ATL, also include:
+   ```
+   - TOKEN_REPORT_ATL_ALERT: new ATL $X.XXXXXXX (prior ATL $X.XXXXXXX from DATE, −X.X%)
+   ```
 
 9. **Send notification** via `./notify`:
 
-   **If `TOKEN_REPORT_LP_ALERT` was flagged in step 5.5**, prepend an alert block to the notification:
+   **If `TOKEN_REPORT_ATL_ALERT` was flagged in step 5.7**, prepend a price ATL alert block to the notification (before any LP alert):
+   ```
+   🔻 NEW ATL — $TOKEN
+
+   24h low: $X.XXXXXXX (−X.X% below prior ATL $X.XXXXXXX from DATE)
+   [One sentence: context — e.g. "fourth consecutive day sub-$100K FDV"]
+
+   ---
+   ```
+
+   **If `TOKEN_REPORT_LP_ALERT` was flagged in step 5.5**, prepend an LP alert block (after any ATL alert):
    ```
    ⚠ LP ALERT — $TOKEN
 
@@ -145,7 +174,7 @@ All GeckoTerminal API calls use `curl` against a public API (no auth). In the Gi
    ---
    ```
 
-   Then include the standard report below the alert:
+   Then include the standard report below any alert blocks:
    ```
    *$TOKEN Daily — ${today}*
 
