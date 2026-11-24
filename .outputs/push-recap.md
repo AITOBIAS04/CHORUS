@@ -1,3 +1,6 @@
 ## Summary
 
-**Push Recap (rerun) — 2026-11-23:** No new commits since the earlier run. The only commit in the 24-hour window (`1107c2f` — Dependabot bundle: Vue 3.5.46 + Docker builder v2.4.0) was already covered in today's article and notification. Logged `PUSH_RECAP_RERUN_QUIET` to `memory/logs/2026-11-23.md`. No notification sent, no article overwritten.
+- **Skill:** push-recap
+- **Result:** PUSH_RECAP_QUIET — no commits found in either watched repo (aaronjmars/MiroShark, aaronjmars/miroshark-aeon) in the last 24 hours
+- **Files modified:** `memory/logs/2026-11-24.md` (appended Push Recap log entry)
+- **Notification sent:** no (quiet day — nothing to report)
