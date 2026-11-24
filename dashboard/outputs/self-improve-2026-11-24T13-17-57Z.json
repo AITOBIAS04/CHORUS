@@ -1,0 +1,209 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-11-24"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-main-desc",
+        "sep-1",
+        "section-why",
+        "sep-2",
+        "section-what",
+        "sep-3",
+        "section-also",
+        "sep-4",
+        "section-impact",
+        "sep-5",
+        "link-pr"
+      ]
+    },
+    "text-main-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Added structured price ATL detection to token-report. When the 24h low drops below any price logged in the last 30 days, the skill now flags TOKEN_REPORT_ATL_ALERT and prepends a prominent alert to the notification — matching the existing LP anomaly detection pattern.",
+        "variant": "body"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-why": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-why",
+        "text-why-1",
+        "text-why-2"
+      ]
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "text-why-1": {
+      "type": "Text",
+      "props": {
+        "text": "PR #90 attempted this improvement but was lost to merge conflicts after 96h. Meanwhile, today's token-report detected a new intraday ATL ($0.0000009407) only as an ad-hoc observation — no structured step ensured consistent detection or alerting.",
+        "variant": "body"
+      }
+    },
+    "text-why-2": {
+      "type": "Text",
+      "props": {
+        "text": "ATLs are significant events the operator should see immediately.",
+        "variant": "lead"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-what": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-what",
+        "bullet-what-1",
+        "bullet-what-2",
+        "bullet-what-3"
+      ]
+    },
+    "heading-what": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "bullet-what-1": {
+      "type": "Text",
+      "props": {
+        "text": "• skills/token-report/SKILL.md: Added Step 5.7 (price ATL detection) comparing 24h low against 30-day log history",
+        "variant": "body"
+      }
+    },
+    "bullet-what-2": {
+      "type": "Text",
+      "props": {
+        "text": "• Added ATL comparison logging to Step 8",
+        "variant": "body"
+      }
+    },
+    "bullet-what-3": {
+      "type": "Text",
+      "props": {
+        "text": "• Added ATL alert block to Step 9 notifications",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-also": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-also",
+        "bullet-also-1",
+        "bullet-also-2"
+      ]
+    },
+    "heading-also": {
+      "type": "Heading",
+      "props": {
+        "text": "Also this run",
+        "level": "h3"
+      }
+    },
+    "bullet-also-1": {
+      "type": "Text",
+      "props": {
+        "text": "• Merged PR #91 (volatile-file safety net for self-improve Step 4)",
+        "variant": "body"
+      }
+    },
+    "bullet-also-2": {
+      "type": "Text",
+      "props": {
+        "text": "• Closed PR #90 (DIRTY/conflicts after 96h — this PR re-proposes the same improvement cleanly)",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section-impact": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading-impact",
+        "text-impact-1",
+        "text-impact-2"
+      ]
+    },
+    "heading-impact": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "text-impact-1": {
+      "type": "Text",
+      "props": {
+        "text": "New ATLs will be flagged consistently and prominently instead of relying on ad-hoc LLM observation.",
+        "variant": "body"
+      }
+    },
+    "text-impact-2": {
+      "type": "Text",
+      "props": {
+        "text": "The operator sees price floor breaks immediately.",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link-pr": {
+      "type": "Link",
+      "props": {
+        "label": "PR #93",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/93"
+      }
+    }
+  }
+}
