@@ -37,10 +37,10 @@
     "last_quality_score": 4
   },
   "repo-actions": {
-    "last_status": "dispatched",
-    "last_success": "2026-11-24T14:06:28Z",
-    "total_runs": 809,
-    "total_successes": 122,
+    "last_status": "success",
+    "last_success": "2026-11-24T15:33:28Z",
+    "total_runs": 810,
+    "total_successes": 123,
     "total_failures": 687,
     "consecutive_failures": 0,
     "success_rate": 0.15,
