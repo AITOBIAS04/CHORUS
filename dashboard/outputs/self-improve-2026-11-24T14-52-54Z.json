@@ -1,0 +1,206 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-11-24"
+      },
+      "children": [
+        "summary-lead",
+        "sep-1",
+        "problem-section",
+        "sep-2",
+        "solution-section",
+        "sep-3",
+        "changes-section",
+        "sep-4",
+        "impact-section",
+        "sep-5",
+        "pr-link"
+      ]
+    },
+    "summary-lead": {
+      "type": "Text",
+      "props": {
+        "text": "Volatile-file safety net replaced with enforcing script.",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "problem-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "problem-heading",
+        "problem-detail-1",
+        "problem-detail-2",
+        "problem-detail-3"
+      ]
+    },
+    "problem-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h3"
+      }
+    },
+    "problem-detail-1": {
+      "type": "Text",
+      "props": {
+        "text": "The text-only instruction telling the LLM to run git reset HEAD after staging wasn't being followed — PR #93 (filed today) included 5 volatile files despite the instruction. Same failure class as PRs #90 and #91.",
+        "variant": "body"
+      }
+    },
+    "problem-detail-2": {
+      "type": "Text",
+      "props": {
+        "text": "Volatile files included: .outputs/, dashboard/outputs/, memory/, and token-usage.csv alongside the actual improvement file.",
+        "variant": "body"
+      }
+    },
+    "problem-detail-3": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Blocking issue",
+        "message": "These files cause immediate DIRTY status as cron jobs modify them, creating 72h+ dead zones where the PR can't be merged or re-proposed."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "solution-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "solution-heading",
+        "solution-text"
+      ]
+    },
+    "solution-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Solution",
+        "level": "h3"
+      }
+    },
+    "solution-text": {
+      "type": "Text",
+      "props": {
+        "text": "Created scripts/safe-stage.sh: a single command that stages files, strips volatile paths, verifies clean staging, and aborts if any leak through.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "changes-heading",
+        "changes-stack"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Files Changed",
+        "level": "h3"
+      }
+    },
+    "changes-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "change-1",
+        "change-2"
+      ]
+    },
+    "change-1": {
+      "type": "Badge",
+      "props": {
+        "text": "scripts/safe-stage.sh — new enforcing script",
+        "variant": "outline"
+      }
+    },
+    "change-2": {
+      "type": "Badge",
+      "props": {
+        "text": "skills/self-improve/SKILL.md — Step 4 rewritten to use script",
+        "variant": "outline"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impact-heading",
+        "impact-text"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "Self-improve PRs should stop accumulating volatile files and going DIRTY within hours. Eliminates the most common cause of wasted improvement cycles.",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #94",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/94",
+        "source": "GitHub"
+      }
+    }
+  }
+}
