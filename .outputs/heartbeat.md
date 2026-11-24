@@ -1,13 +1,7 @@
-**HEARTBEAT_OK**
-
-All clear for 2026-11-24 (Tuesday, day 24):
-
-- **System health:** 0 consecutive failures across all 13 skills
-- **Open PRs:** #93 (5h) and #94 (4h) — both `improve:` PRs well within the 72h threshold; self-improve handled yesterday's stalled PRs #90/#91
-- **Schedule:** All 8 expected skills ran — token-report, fetch-tweets, repo-pulse, feature, push-recap, repo-actions, repo-article, self-improve
-- **Open issues:** None
-- **Action:** Logged to `memory/logs/2026-11-24.md`, no notification dispatched
+Heartbeat already ran today. Logged `HEARTBEAT_RERUN_QUIET` and stopped — no re-analysis needed. System remains healthy with 0 consecutive failures and no open issues.
 
 ## Summary
 
-Ran the full heartbeat check. No anomalies found — system healthy, all skills on schedule, no stalled PRs, no open issues. Logged `HEARTBEAT_OK` to today's memory log.
+- **Action:** Detected existing `## Heartbeat — 2026-11-24` entry in today's log (Step 0 rerun dedup triggered)
+- **Files modified:** `memory/logs/2026-11-24.md` — appended `## Heartbeat (rerun) — 2026-11-24` quiet entry
+- **Status:** HEARTBEAT_OK (carried from first run) — no missing skills, no open issues, no escalating issues
