@@ -1,0 +1,343 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-24"
+      },
+      "children": [
+        "header-stack",
+        "sep-1",
+        "ideas-stack",
+        "sep-2",
+        "footer-stack"
+      ]
+    },
+    "header-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo-heading",
+        "intro-text"
+      ]
+    },
+    "repo-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "aaronjmars/MiroShark",
+        "level": "h3"
+      }
+    },
+    "intro-text": {
+      "type": "Text",
+      "props": {
+        "text": "These are ideas that could be autonomously built by the feature skill tomorrow.",
+        "variant": "muted"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ideas-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "idea-1",
+        "idea-2",
+        "idea-3",
+        "idea-4",
+        "idea-5"
+      ]
+    },
+    "idea-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-1-heading",
+        "idea-1-badges",
+        "idea-1-text"
+      ]
+    },
+    "idea-1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "One-Click Dev Environment",
+        "level": "h4"
+      }
+    },
+    "idea-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-1-cat",
+        "idea-1-size"
+      ]
+    },
+    "idea-1-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "DX improvement",
+        "variant": "outline"
+      }
+    },
+    "idea-1-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea-1-text": {
+      "type": "Text",
+      "props": {
+        "text": ".devcontainer/devcontainer.json + Gitpod .gitpod.yml lets fork owners open a full dev environment in one browser click — direct lever for the Nov 30 external PR hyperstition (6 days).",
+        "variant": "body"
+      }
+    },
+    "idea-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-2-heading",
+        "idea-2-badges",
+        "idea-2-text"
+      ]
+    },
+    "idea-2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation CSV Export",
+        "level": "h4"
+      }
+    },
+    "idea-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-2-cat",
+        "idea-2-size"
+      ]
+    },
+    "idea-2-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "outline"
+      }
+    },
+    "idea-2-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea-2-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/export.csv returns per-agent action log as a downloadable CSV (agent, round, platform, action_type, bullish_pct) for researchers doing external analysis in pandas, Excel, or R.",
+        "variant": "body"
+      }
+    },
+    "idea-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-3-heading",
+        "idea-3-badges",
+        "idea-3-text"
+      ]
+    },
+    "idea-3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Webhook Delivery Log",
+        "level": "h4"
+      }
+    },
+    "idea-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-3-cat",
+        "idea-3-size"
+      ]
+    },
+    "idea-3-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "DX improvement",
+        "variant": "outline"
+      }
+    },
+    "idea-3-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea-3-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/webhooks/:id/deliveries returns last 50 real delivery attempts with status code, latency, and retry button — audit trail for the existing webhooks system; distinct from the Nov 12 test-event playground.",
+        "variant": "body"
+      }
+    },
+    "idea-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-4-heading",
+        "idea-4-badges",
+        "idea-4-text"
+      ]
+    },
+    "idea-4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Automated CHANGELOG.md Generator",
+        "level": "h4"
+      }
+    },
+    "idea-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-4-cat",
+        "idea-4-size"
+      ]
+    },
+    "idea-4-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Content",
+        "variant": "outline"
+      }
+    },
+    "idea-4-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea-4-text": {
+      "type": "Text",
+      "props": {
+        "text": "scripts/generate-changelog.sh + GitHub Actions workflow generates a human-readable CHANGELOG.md grouped by release and commit type — makes the codebase history legible for Docker-pull operators and new contributors.",
+        "variant": "body"
+      }
+    },
+    "idea-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-5-heading",
+        "idea-5-badges",
+        "idea-5-text"
+      ]
+    },
+    "idea-5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Similar Simulations Discovery",
+        "level": "h4"
+      }
+    },
+    "idea-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-5-cat",
+        "idea-5-size"
+      ]
+    },
+    "idea-5-cat": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "outline"
+      }
+    },
+    "idea-5-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      }
+    },
+    "idea-5-text": {
+      "type": "Text",
+      "props": {
+        "text": "GET /api/simulation/:id/similar returns up to 5 published simulations with high topic overlap (Jaccard similarity, pure stdlib, cached index) — surfaces adjacent runs after completing a simulation and extends session depth.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "full-details"
+      ]
+    },
+    "full-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-24.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
