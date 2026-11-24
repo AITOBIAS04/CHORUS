@@ -98,24 +98,18 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
 4. **Create a branch, commit, and push**:
    ```bash
    git checkout -b improve/short-description
-   git add <files-you-changed>   # ONLY the improvement files — see note below
    ```
 
-   **Safety net — unstage volatile files before committing.** Even with targeted staging, the agent sometimes accidentally includes volatile files. Run this cleanup unconditionally after every `git add`:
+   **Stage files using the safe-stage script.** Do NOT use `git add` directly — use the safety script which automatically strips volatile files (memory/, .outputs/, dashboard/outputs/, .pending-notify/, token-usage.csv) and aborts if any leak through:
    ```bash
-   git reset HEAD -- memory/ .outputs/ dashboard/outputs/ .pending-notify/ memory/token-usage.csv 2>/dev/null || true
+   ./scripts/safe-stage.sh <file1> <file2> ...
    ```
-   Then verify only improvement files remain staged:
-   ```bash
-   git diff --cached --name-only
-   ```
-   If the staged list includes ANY file under `memory/`, `.outputs/`, `dashboard/outputs/`, `.pending-notify/`, or `memory/token-usage.csv`, do NOT proceed — unstage them manually and retry. If no improvement files remain staged after cleanup, the `git add` was entirely volatile files — re-stage only the intended improvement files by name.
+   The script will print the clean staged file list. If it exits with an error, fix the file list and retry. Never bypass the script with raw `git add` — prior PRs (#90, #91, #93) included volatile files despite text-only instructions, causing immediate DIRTY status and 72h+ dead zones.
 
    ```bash
    git commit -m "improve: description of what was changed"
    git push -u origin improve/short-description
    ```
-   **IMPORTANT — targeted staging only.** Use `git add <file1> <file2> ...` with the specific files you modified for the improvement (skill files, aeon.yml, workflow files, etc.). Do NOT use `git add -A` or `git add .` — these include volatile files that change on every cron run (memory/logs/, .outputs/, dashboard/outputs/, memory/token-usage.csv) and cause immediate merge conflicts, making the PR unmergeable within hours.
 
 5. **Open a PR** on this repo:
    ```bash
