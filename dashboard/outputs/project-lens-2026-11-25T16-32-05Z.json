@@ -1,0 +1,60 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "project-lens"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-title",
+        "text-description",
+        "sep-divider",
+        "storylink-article"
+      ]
+    },
+    "heading-title": {
+      "type": "Heading",
+      "props": {
+        "text": "What If the Best Infrastructure for an AI Agent Is No Infrastructure at All?",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text-description": {
+      "type": "Text",
+      "props": {
+        "text": "The AI agent infrastructure market is adding layers — vector databases, knowledge compilers, semantic layers, Kubernetes. Meanwhile, the longest-running autonomous agent in open source runs on 986 markdown files, 7 Python scripts, zero databases, and 23 megabytes of disk. This article explains why the thinnest possible stack — where the agent and the infrastructure speak the same language — may be what actually enables autonomy.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-divider": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "storylink-article": {
+      "type": "StoryLink",
+      "props": {
+        "title": "What If the Best Infrastructure for an AI Agent Is No Infrastructure at All?",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-11-25.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
