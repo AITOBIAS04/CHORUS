@@ -1,6 +1,3 @@
 ## Summary
 
-- **Action:** Push Recap rerun dedup — skipped
-- **Reason:** Today's earlier run already logged `PUSH_RECAP_QUIET` (no commits across watched repos in last 24h). The 24h commit window is the same both times, so re-fetching would be wasted work.
-- **File modified:** `memory/logs/2026-11-24.md` — appended `## Push Recap (rerun)` with `PUSH_RECAP_RERUN_QUIET`
-- **Notification sent:** no
+**Push Recap — 2026-11-25:** No commits found in either watched repo (aaronjmars/MiroShark, aaronjmars/miroshark-aeon) in the last 24 hours. Logged `PUSH_RECAP_QUIET` to `memory/logs/2026-11-25.md`. No notification sent. This is the second consecutive quiet day (Nov 24 was also quiet).
