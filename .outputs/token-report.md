@@ -1,8 +1,10 @@
-**TOKEN_REPORT_RERUN_QUIET** — a token-report with `Notification sent: yes` was already written to today's log (`memory/logs/2026-11-24.md`). Per Step 0 of the skill, this is a same-day rerun and no action was taken: no re-fetch, no article overwrite, no notification sent. The rerun marker has been appended to today's log.
+$MiroShark Daily — 2026-11-25
 
-## Summary
+Price: $0.0000009303 (−3.31% 24h) ⚠ new ATL $0.0000009060 intraday
+Liquidity: $60.9K active + $2.41M mmETH stable | 24h Vol: $234.75
+Buys/Sells: 10/4
+7d: −28.0% | 30d: −54.0%
 
-- **Action:** Stopped at Step 0 (same-day rerun dedup)
-- **Reason:** `memory/logs/2026-11-24.md` already contains a token-report entry with `Notification sent: yes`
-- **Files modified:** `memory/logs/2026-11-24.md` — appended `TOKEN_REPORT_RERUN_QUIET` marker
-- **Follow-up:** None needed; today's report ($0.0000009637, −3.33% 24h, FDV $96.4K, new ATL $0.0000009407) was already sent earlier
+New intraday all-time low today ($0.0000009060); FDV $93K, day 5 sub-$100K. 10 buys against 4 sells on thin volume. Nov 30 external PR deadline in 5 days.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209

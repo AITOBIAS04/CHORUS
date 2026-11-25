@@ -1,0 +1,130 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "$MiroShark Daily — 2026-11-25"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-price",
+        "alert-atl",
+        "grid-liquidity",
+        "grid-performance",
+        "stat-buys-sells",
+        "text-context",
+        "link-chart"
+      ]
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.0000009303",
+        "delta": "-3.31%",
+        "trend": "down"
+      }
+    },
+    "alert-atl": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "New Intraday ATL",
+        "message": "All-time low: $0.0000009060"
+      }
+    },
+    "grid-liquidity": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-liquidity-active",
+        "stat-liquidity-stable",
+        "stat-volume"
+      ]
+    },
+    "stat-liquidity-active": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity (Active)",
+        "value": "$60.9K"
+      }
+    },
+    "stat-liquidity-stable": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity (mmETH Stable)",
+        "value": "$2.41M"
+      }
+    },
+    "stat-volume": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$234.75"
+      }
+    },
+    "grid-performance": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-7d",
+        "stat-30d"
+      ]
+    },
+    "stat-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Performance",
+        "value": "-28.0%",
+        "trend": "down"
+      }
+    },
+    "stat-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Performance",
+        "value": "-54.0%",
+        "trend": "down"
+      }
+    },
+    "stat-buys-sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys / Sells",
+        "value": "10 / 4"
+      }
+    },
+    "text-context": {
+      "type": "Text",
+      "props": {
+        "text": "FDV $93K, day 5 sub-$100K. 10 buys against 4 sells on thin volume. Nov 30 external PR deadline in 5 days.",
+        "variant": "body"
+      }
+    },
+    "link-chart": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
