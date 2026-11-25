@@ -1,3 +1,3 @@
 ## Summary
 
-**FEATURE_SKIP**: No push access to `aaronjmars/MiroShark` — the `GH_GLOBAL` secret is not set, so the token lacks cross-repo push permissions. Logged skip to `memory/logs/2026-11-25.md`. No feature was selected, cloned, or built to avoid wasting the session. This is the ongoing blocker noted in MEMORY.md (80+ consecutive blocks since Aug 23).
+**FEATURE_RERUN_QUIET** — The feature skill already ran today (logged a `FEATURE_SKIP` due to no push access). Since no explicit feature was requested via `var`, the rerun was skipped to avoid wasting a duplicate Claude session on the same outcome. Logged the dedup entry to `memory/logs/2026-11-25.md`.
