@@ -1,10 +1,11 @@
-Done. No new tweets found and no notification sent.
+Done. 
 
 ## Summary
 
-- **Step 0:** No prior fetch-tweets entry for 2026-11-25 — proceeded.
-- **Step 2:** Dedup set empty — no x.com URLs in the last 3 days of logs.
-- **Step 3 (Path B):** XAI_API_KEY not set; used WebSearch fallback. Backoff active at 113 consecutive empty runs → 1 query only: `site:x.com "MIROSHARK" after:2026-11-18`.
-- **Result:** No x.com tweets returned — only price aggregator pages and Telegram links.
-- **Step 5:** Logged `FETCH_TWEETS_EMPTY` to `memory/logs/2026-11-25.md`. Consecutive empty count: 114. No escalation (114 % 14 = 2).
-- No notification sent. Social silence continues at 141 days.
+- **Step 0:** No prior fetch-tweets entry in today's log — proceeded normally.
+- **Step 1–2:** Built search prompt for MIROSHARK on Base chain (contract `0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3`). Dedup set: 0 URLs from last 3 days (all runs FETCH_TWEETS_EMPTY).
+- **Step 3:** XAI_API_KEY not set — used WebSearch fallback. Applied backoff (114 consecutive empty runs → 1 query only): `site:x.com "MIROSHARK" after:2026-11-12`
+- **Result:** No x.com results returned — only price aggregator pages (Bybit, BeInCrypto, CoinGecko, MEXC, Stocktwits).
+- **Step 4b:** Freshness gate: 0 x.com URLs to evaluate.
+- **Step 5:** `FETCH_TWEETS_EMPTY` — 115 consecutive empty runs. Escalation check: 115 % 14 = 3 → no escalation. No notification sent.
+- **Files modified:** `memory/logs/2026-11-26.md`
