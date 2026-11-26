@@ -1,0 +1,175 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement",
+        "description": "2026-11-26 • fetch-tweets counter fix"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "issue-section",
+        "sep-1",
+        "observation-section",
+        "sep-2",
+        "changes-section",
+        "sep-3",
+        "impact-section",
+        "sep-4",
+        "pr-section"
+      ]
+    },
+    "issue-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "issue-heading",
+        "issue-text"
+      ]
+    },
+    "issue-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Issue",
+        "level": "h3"
+      }
+    },
+    "issue-text": {
+      "type": "Text",
+      "props": {
+        "text": "fetch-tweets consecutive empty counter was miscounting — the count jumped from 61 to 114 in a single day (Nov 24→25) because the LLM was scanning backward through 30 days of logs and losing count. Same bug class as PR #71 (LLM arithmetic). Replaced the manual log scan with a bash grep that reads the previous count from the most recent log entry and increments by 1."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "observation-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "observation-heading",
+        "observation-text"
+      ]
+    },
+    "observation-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why",
+        "level": "h3"
+      }
+    },
+    "observation-text": {
+      "type": "Text",
+      "props": {
+        "text": "Observed count progression 52→53→56→57→58→59→60→61→114→115. The +53 jump on Nov 25 confirms LLM counting across many log entries is unreliable at scale. Affects backoff logic and escalation notification timing."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "changes-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "changes-heading",
+        "change-1",
+        "change-2",
+        "change-3"
+      ]
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What changed",
+        "level": "h3"
+      }
+    },
+    "change-1": {
+      "type": "Text",
+      "props": {
+        "text": "• skills/fetch-tweets/SKILL.md (Step 3): backoff now reads previous count via bash grep instead of LLM log scanning"
+      }
+    },
+    "change-2": {
+      "type": "Text",
+      "props": {
+        "text": "• skills/fetch-tweets/SKILL.md (Step 5): escalation count computed via bash (previous + 1) instead of full backward scan"
+      }
+    },
+    "change-3": {
+      "type": "Text",
+      "props": {
+        "text": "• skills/fetch-tweets/SKILL.md (Step 6): added explicit counter reset when tweets are found"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "impact-heading",
+        "impact-text"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      }
+    },
+    "impact-text": {
+      "type": "Text",
+      "props": {
+        "text": "Prevents future miscounts in the consecutive empty tracker. Backoff and escalation timing will be accurate going forward."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr-section": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pull Request #95",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/95"
+      }
+    }
+  }
+}
