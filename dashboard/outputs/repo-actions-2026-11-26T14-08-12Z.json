@@ -1,0 +1,329 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-26"
+      },
+      "children": [
+        "heading-generated",
+        "text-repo",
+        "separator-1",
+        "idea-1-stack",
+        "separator-2",
+        "idea-2-stack",
+        "separator-3",
+        "idea-3-stack",
+        "separator-4",
+        "idea-4-stack",
+        "separator-5",
+        "idea-5-stack",
+        "separator-6",
+        "link-details"
+      ]
+    },
+    "heading-generated": {
+      "type": "Heading",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark",
+        "level": "h3"
+      }
+    },
+    "text-repo": {
+      "type": "Text",
+      "props": {
+        "text": "These are ideas that could be autonomously built by the feature skill tomorrow.",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea-1-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-1-heading",
+        "idea-1-badges",
+        "idea-1-text"
+      ]
+    },
+    "idea-1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Good First Issue Auto-Generator",
+        "level": "h4"
+      }
+    },
+    "idea-1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-1-badge-category",
+        "idea-1-badge-size"
+      ]
+    },
+    "idea-1-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "secondary"
+      }
+    },
+    "idea-1-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea-1-text": {
+      "type": "Text",
+      "props": {
+        "text": "Files 3–5 tagged GitHub issues with implementation guidance before the Nov 30 external PR deadline — creates contribution targets for 304 fork owners who currently have nothing to reach for.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea-2-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-2-heading",
+        "idea-2-badges",
+        "idea-2-text"
+      ]
+    },
+    "idea-2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Jupyter Notebook Export",
+        "level": "h4"
+      }
+    },
+    "idea-2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-2-badge-category",
+        "idea-2-badge-size"
+      ]
+    },
+    "idea-2-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "idea-2-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea-2-text": {
+      "type": "Text",
+      "props": {
+        "text": "notebook_export.py already exists in the codebase; this surfaces it as a keyless /api/simulation/:id/notebook.ipynb endpoint + Step 3 download button — zero new data collection.",
+        "variant": "body"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea-3-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-3-heading",
+        "idea-3-badges",
+        "idea-3-text"
+      ]
+    },
+    "idea-3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "3. BibTeX Academic Citation",
+        "level": "h4"
+      }
+    },
+    "idea-3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-3-badge-category",
+        "idea-3-badge-size"
+      ]
+    },
+    "idea-3-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Growth",
+        "variant": "secondary"
+      }
+    },
+    "idea-3-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea-3-text": {
+      "type": "Text",
+      "props": {
+        "text": "bibtex_service.py already exists; expose as /api/simulation/:id/cite.bib + a Cite modal in Step 3 with BibTeX and APA tabs — cited tools get rediscovered by paper readers.",
+        "variant": "body"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea-4-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-4-heading",
+        "idea-4-badges",
+        "idea-4-text"
+      ]
+    },
+    "idea-4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "4. Simulation Lineage Visualization",
+        "level": "h4"
+      }
+    },
+    "idea-4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-4-badge-category",
+        "idea-4-badge-size"
+      ]
+    },
+    "idea-4-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "idea-4-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "outline"
+      }
+    },
+    "idea-4-text": {
+      "type": "Text",
+      "props": {
+        "text": "lineage_service.py already exists; surface it as /api/simulation/:id/lineage + an SVG tree in Step 3 showing parent/child simulation relationships — one share exposes 3–6 simulations at once.",
+        "variant": "body"
+      }
+    },
+    "separator-5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "idea-5-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea-5-heading",
+        "idea-5-badges",
+        "idea-5-text"
+      ]
+    },
+    "idea-5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "5. Gallery Trending Feed",
+        "level": "h4"
+      }
+    },
+    "idea-5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea-5-badge-category",
+        "idea-5-badge-size"
+      ]
+    },
+    "idea-5-badge-category": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "secondary"
+      }
+    },
+    "idea-5-badge-size": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "outline"
+      }
+    },
+    "idea-5-text": {
+      "type": "Text",
+      "props": {
+        "text": "New /api/feed/trending endpoint (heat score = views × 2 + clones × 5 + embeds × 3) with a 🔥 Trending tab on the gallery — surfaces high-engagement simulations to new visitors.",
+        "variant": "body"
+      }
+    },
+    "separator-6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link-details": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-26.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
