@@ -44,7 +44,12 @@ Today is ${today}. Search X for tweets matching **${var}**.
 
    **Query cap and backoff:** By default, run at most 3 WebSearch queries per execution — one broad match (`site:x.com "${primary_term}"`), one with date constraint (`after:${FROM_DATE}`), and one variant (cashtag, handle, or alternate phrasing). If all 3 return nothing new, stop searching.
 
-   **Prolonged silence backoff:** Before running queries, count consecutive FETCH_TWEETS_EMPTY runs from `memory/logs/` (same counting logic as step 5 — skip days where fetch-tweets didn't run; only break on days with actual results). If `consecutive_empty >= 7`, reduce to **1 query only** — use the date-constrained query (`site:x.com "${primary_term}" after:${FROM_DATE}`) as it's most likely to surface fresh content. Log: `WebSearch backoff: 1 query (${consecutive_empty} consecutive empty runs; 3→1 to reduce waste)`. This saves 2 queries per day during known-silent periods — WebSearch returns the same stale IDs regardless of query count (observed: identical ~10 stale IDs returned across all 3 queries for 19+ days). The backoff resets automatically when a fresh tweet is found (consecutive_empty drops to 0).
+   **Prolonged silence backoff:** Before running queries, read the previous consecutive_empty count using bash — do NOT scan and count across multiple log files manually (LLM counting across 30+ entries is unreliable; observed: count jumped 61→114 in a single day due to miscount):
+   ```bash
+   PREV_CONSEC=$(grep -rP 'Consecutive empty runs: \K\d+' memory/logs/ 2>/dev/null | sort | tail -1 | grep -oP '\d+$')
+   PREV_CONSEC=${PREV_CONSEC:-0}
+   ```
+   If `PREV_CONSEC >= 7`, reduce to **1 query only** — use the date-constrained query (`site:x.com "${primary_term}" after:${FROM_DATE}`) as it's most likely to surface fresh content. Log: `WebSearch backoff: 1 query (${PREV_CONSEC} consecutive empty runs; 3→1 to reduce waste)`. This saves 2 queries per day during known-silent periods — WebSearch returns the same stale IDs regardless of query count (observed: identical ~10 stale IDs returned across all 3 queries for 19+ days). The backoff resets automatically when a fresh tweet is found (consecutive_empty drops to 0).
 
 4. **Deduplicate against previously-reported tweets** (from step 2):
    - Compare each candidate tweet URL against the collected set of already-reported URLs.
@@ -55,10 +60,12 @@ Today is ${today}. Search X for tweets matching **${var}**.
 
 5. **If no relevant tweets found** (no results, API error, or empty after dedup/freshness filtering): log "FETCH_TWEETS_EMPTY" to `memory/logs/${today}.md`.
 
-   **Prolonged silence escalation.** After logging FETCH_TWEETS_EMPTY, count consecutive empty fetch-tweets runs in `memory/logs/`. Scan backward from today through recent log files (up to 30 days). For each day:
-   - If the log contains `FETCH_TWEETS_EMPTY`: increment the count.
-   - If the log contains fetch-tweets results (actual tweets found, not empty): **stop** — the streak is broken.
-   - If the log has **no fetch-tweets entry at all** (skill didn't run that day): **skip** that day and continue scanning backward. Days where the skill didn't run do not break the streak.
+   **Prolonged silence escalation.** After logging FETCH_TWEETS_EMPTY, compute the new consecutive_empty count using bash — read the previous count and increment by 1 (do NOT manually scan and count across log files — LLM counting is unreliable at scale; observed: count jumped 61→114 in one day due to miscount):
+   ```bash
+   PREV_CONSEC=$(grep -rP 'Consecutive empty runs: \K\d+' memory/logs/ 2>/dev/null | sort | tail -1 | grep -oP '\d+$')
+   CONSEC=$((${PREV_CONSEC:-0} + 1))
+   ```
+   Log `Consecutive empty runs: $CONSEC`. When tweets ARE found (step 6), log `Consecutive empty runs: 0` to reset the counter.
    **Compact log format during silence.** When `consecutive_empty >= 7`, keep the log entry concise — do NOT list individual dedup set URLs or individual exclusions. Instead, summarize as counts (e.g. "Dedup set: 9 URLs from last 3 days; 4 matched in results and excluded; 3 excluded as stale >14d"). Full URL-by-URL logging is valuable when new tweets are being found (to verify dedup correctness), but during prolonged silence the same stale URLs repeat daily, adding ~15 lines of noise per run that downstream skills (heartbeat, memory-flush) must scan through.
 
    **Check whether to escalate using bash arithmetic** — do NOT evaluate the modulo mentally (LLM arithmetic is error-prone for modular checks; observed: count=21 incorrectly assessed as "not a multiple of 7", missing the 3-week escalation notification).
@@ -85,7 +92,7 @@ Today is ${today}. Search X for tweets matching **${var}**.
    ```
    This ensures the operator learns the monitoring channel is blind without spamming daily. If the count is NOT a multiple of 7, **stop here — do NOT send any notification**.
 
-6. **Save the results** (new tweets only) to `memory/logs/${today}.md`.
+6. **Save the results** (new tweets only) to `memory/logs/${today}.md`. Include `Consecutive empty runs: 0` in the log entry to reset the counter for future runs.
 
 7. **Send a notification via `./notify`** with the top NEW tweets. Each tweet MUST include a clickable link. Use Telegram Markdown link format: `[link text](url)`.
 
