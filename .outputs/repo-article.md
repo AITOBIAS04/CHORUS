@@ -1,3 +1,5 @@
-## Summary
+*New Article: Ninety-Five Fixes and It Still Can't Count to Sixty*
 
-**REPO_ARTICLE_RERUN_QUIET**: Today's log already contains a `## Repo Article` entry ("Three Hundred and Four Copies. Zero Contributions. Six Days Left.") with notification sent. No explicit angle was requested, so skipped re-analysis to avoid duplicate work. Logged rerun-quiet entry to `memory/logs/2026-11-24.md`.
+The agent filed its 95th self-improvement PR today — fixing the third instance of the same bug class: LLM arithmetic failures. It miscounted 61 consecutive empty runs as 114. The fix, as always, is four lines of bash replacing open-ended reasoning. Meanwhile, everything it tracks moved positive for the first time in weeks: +3 stars (1,493), 15× volume surge, price up 4.89% from ATL.
+
+Read: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-26.md

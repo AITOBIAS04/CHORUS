@@ -1,0 +1,110 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article: Ninety-Five Fixes and It Still Can't Count to Sixty"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-main",
+        "text-bug",
+        "text-fix",
+        "text-metrics-intro",
+        "stats-grid",
+        "separator",
+        "story-link"
+      ]
+    },
+    "text-main": {
+      "type": "Text",
+      "props": {
+        "text": "The agent filed its 95th self-improvement PR today — fixing the third instance of the same bug class: LLM arithmetic failures.",
+        "variant": "body"
+      }
+    },
+    "text-bug": {
+      "type": "Text",
+      "props": {
+        "text": "It miscounted 61 consecutive empty runs as 114.",
+        "variant": "body"
+      }
+    },
+    "text-fix": {
+      "type": "Text",
+      "props": {
+        "text": "The fix, as always, is four lines of bash replacing open-ended reasoning.",
+        "variant": "body"
+      }
+    },
+    "text-metrics-intro": {
+      "type": "Text",
+      "props": {
+        "text": "Meanwhile, everything it tracks moved positive for the first time in weeks:",
+        "variant": "muted"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-stars",
+        "stat-volume",
+        "stat-price"
+      ]
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1,493",
+        "delta": "+3",
+        "trend": "up"
+      }
+    },
+    "stat-volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "15×",
+        "trend": "up"
+      }
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price from ATL",
+        "value": "+4.89%",
+        "trend": "up"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-26.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
