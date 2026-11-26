@@ -1,7 +1,10 @@
-Done. `TOKEN_REPORT_RERUN_QUIET` logged — the token-report already ran today (2026-11-25) with a notification sent. No re-fetch, no article overwrite, no re-notification.
+*$MiroShark Daily — 2026-11-26*
 
-## Summary
+Price: $0.0000009738 (+4.89% 24h)
+Liquidity: $2,474K total | 24h Vol: $3,545.53
+Buys/Sells: 24/14
+7d: −16.6% | 30d: −51.8%
 
-- **Step 0 triggered**: `memory/logs/2026-11-25.md` contained a token-report entry with `Notification sent: yes`
-- **Action taken**: Logged `TOKEN_REPORT_RERUN_QUIET` to today's log and stopped — no data was re-fetched, no article was overwritten, no notification was sent
-- **Prior run data**: Price $0.0000009303 (−3.31% 24h), FDV $93,034, new intraday ATL $0.0000009060, total LP ~$2,470,649 (no alert)
+Sharp recovery from yesterday's ATL close — 15× volume surge, net buying, FDV at $97.4K (2.7% from $100K reclaim). Social silence: 142 days.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209

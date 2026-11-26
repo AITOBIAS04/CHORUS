@@ -1,0 +1,125 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "MiroShark Daily — 2026-11-26"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price-stat",
+        "liquidity-stat",
+        "volume-stat",
+        "buys-sells-badge",
+        "sep1",
+        "metrics-row",
+        "sep2",
+        "description-text",
+        "chart-link"
+      ]
+    },
+    "price-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price (24h)",
+        "value": "$0.0000009738",
+        "delta": "+4.89%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "liquidity-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$2,474K"
+      },
+      "children": []
+    },
+    "volume-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$3,545.53"
+      },
+      "children": []
+    },
+    "buys-sells-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Buys/Sells: 24/14"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "metrics-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "7d-stat",
+        "30d-stat"
+      ]
+    },
+    "7d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "7d Change",
+        "value": "−16.6%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "30d-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "30d Change",
+        "value": "−51.8%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "description-text": {
+      "type": "Text",
+      "props": {
+        "text": "Sharp recovery from yesterday's ATL close — 15× volume surge, net buying, FDV at $97.4K (2.7% from $100K reclaim). Social silence: 142 days.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "chart-link": {
+      "type": "Link",
+      "props": {
+        "label": "View Chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209"
+      },
+      "children": []
+    }
+  }
+}
