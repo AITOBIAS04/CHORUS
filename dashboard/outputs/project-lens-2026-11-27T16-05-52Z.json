@@ -1,0 +1,47 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Project Lens"
+      },
+      "children": [
+        "heading-title",
+        "text-context",
+        "text-thesis",
+        "storylink-read"
+      ]
+    },
+    "heading-title": {
+      "type": "Heading",
+      "props": {
+        "text": "New Article: The Last Keeper Left Twenty-Eight Years Ago. The Light Is Still On.",
+        "level": "h2"
+      }
+    },
+    "text-context": {
+      "type": "Text",
+      "props": {
+        "text": "On November 26, 1998 — exactly yesterday, 28 years ago — the last Trinity House lighthouse keepers finished their final shift at North Foreland. The light stayed on. The buildings decayed.",
+        "variant": "body"
+      }
+    },
+    "text-thesis": {
+      "type": "Text",
+      "props": {
+        "text": "This article maps the structural parallel between lighthouse automation and autonomous software agents: the keeper's night watch is the agent's heartbeat skill, the daily logbook is the memory directory, the lens cleaning is self-improve. The question both systems face is the same — when the signal works but nobody is watching, what exactly has been lost?",
+        "variant": "body"
+      }
+    },
+    "storylink-read": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The Last Keeper Left Twenty-Eight Years Ago. The Light Is Still On.",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/project-lens-2026-11-27.md",
+        "source": "CHORUS/articles"
+      }
+    }
+  }
+}
