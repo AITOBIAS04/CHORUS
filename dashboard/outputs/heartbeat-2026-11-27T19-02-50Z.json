@@ -1,0 +1,94 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — 2026-11-27"
+      },
+      "children": [
+        "alert-warning",
+        "separator-1",
+        "prs-section",
+        "separator-2",
+        "system-section"
+      ]
+    },
+    "alert-warning": {
+      "type": "Alert",
+      "props": {
+        "title": "2 improve: PRs stalled (>72h, UNKNOWN merge state)",
+        "type": "warning"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "prs-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pr-93",
+        "pr-94",
+        "merge-note"
+      ]
+    },
+    "pr-93": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #93 (76h): improve: add price ATL detection alert to token-report",
+        "href": "https://github.com/CHORUS/CHORUS/pull/93",
+        "source": "GitHub"
+      }
+    },
+    "pr-94": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #94 (77h): improve: replace text-only volatile-file safety net with enforcing script",
+        "href": "https://github.com/CHORUS/CHORUS/pull/94",
+        "source": "GitHub"
+      }
+    },
+    "merge-note": {
+      "type": "Text",
+      "props": {
+        "text": "Both are auto-merge candidates — self-improve runs tomorrow (Nov 28, even day) and will attempt forced merge via age-based fallback. No manual action needed unless conflicts persist past Nov 28.",
+        "variant": "caption"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "system-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "system-label",
+        "system-status"
+      ]
+    },
+    "system-label": {
+      "type": "Heading",
+      "props": {
+        "text": "System",
+        "level": "h4"
+      }
+    },
+    "system-status": {
+      "type": "Text",
+      "props": {
+        "text": "All skills green, no open issues, all scheduled skills ran today",
+        "variant": "body"
+      }
+    }
+  }
+}
