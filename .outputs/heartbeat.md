@@ -1,9 +1,7 @@
-⚠️ Heartbeat — 2026-11-27
+**HEARTBEAT_RERUN_QUIET** — Heartbeat already ran today. The first run confirmed all 13 skills healthy (0 consecutive failures), flagged stalled PRs #93 and #94 (both >72h, UNKNOWN merge state), and sent a notification. Logged the rerun entry and stopped.
 
-2 improve: PRs stalled (>72h, UNKNOWN merge state):
-• PR #93 (76h): improve: add price ATL detection alert to token-report
-• PR #94 (77h): improve: replace text-only volatile-file safety net with enforcing script
+## Summary
 
-Both are auto-merge candidates — self-improve runs tomorrow (Nov 28, even day) and will attempt forced merge via age-based fallback. No manual action needed unless conflicts persist past Nov 28.
-
-System: all skills green, no open issues, all scheduled skills ran today.
+- **Action:** Detected existing `## Heartbeat — 2026-11-27` entry in today's log — triggered Step 0 rerun-quiet path
+- **Files modified:** `memory/logs/2026-11-27.md` — appended `## Heartbeat (rerun)` entry
+- **Status:** No new analysis needed; system healthy per earlier run; PRs #93/#94 stalled, self-improve scheduled Nov 28 will attempt forced merge
