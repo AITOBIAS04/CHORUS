@@ -1,10 +1,11 @@
-**Step 0 triggered — TOKEN_REPORT_RERUN_QUIET.**
+*$MIROSHARK Daily — 2026-11-27*
 
-Today's token-report already ran and sent its notification (price $0.0000009738, +4.89% 24h, FDV $97,378). Logged the rerun-quiet entry and stopped — no re-fetch, no duplicate notification.
+Price: $0.0000009639 (+1.95% 24h)
+Liquidity: $2.47M | 24h Vol: $10,527
+Buys/Sells: 43/25
+7d: −6.5% | 30d: −49.1%
+FDV: $96.4K (sub-$100K day 7)
 
-## Summary
+Volume 3× surge driven by 0x796eff cycling in ($2.6K buys) then out ($1.3K sells so far). Same bulk-buy resupply pattern as Nov 22. Net buy pressure on the day but price oscillates around the ATL floor.
 
-- **Action:** Rerun dedup triggered at Step 0.
-- **Files modified:** `memory/logs/2026-11-26.md` — appended `TOKEN_REPORT_RERUN_QUIET` entry.
-- **No data fetched**, no article written, no notification sent.
-- **Follow-up:** None needed; first run already completed successfully today.
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209

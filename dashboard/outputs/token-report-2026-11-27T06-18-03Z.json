@@ -1,0 +1,144 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$MIROSHARK Daily",
+        "description": "2026-11-27"
+      },
+      "children": [
+        "metrics_stack",
+        "sep1",
+        "analysis_text",
+        "sep2",
+        "chart_link"
+      ]
+    },
+    "metrics_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "price_stat",
+        "liq_vol_grid",
+        "buys_sells_stat",
+        "perf_grid",
+        "fdv_stat",
+        "fdv_note"
+      ]
+    },
+    "price_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.0000009639",
+        "delta": "+1.95%",
+        "trend": "up"
+      }
+    },
+    "liq_vol_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "liq_stat",
+        "vol_stat"
+      ]
+    },
+    "liq_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$2.47M"
+      }
+    },
+    "vol_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$10,527"
+      }
+    },
+    "buys_sells_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "43/25"
+      }
+    },
+    "perf_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "perf_7d",
+        "perf_30d"
+      ]
+    },
+    "perf_7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "−6.5%",
+        "trend": "down"
+      }
+    },
+    "perf_30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "−49.1%",
+        "trend": "down"
+      }
+    },
+    "fdv_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV",
+        "value": "$96.4K"
+      }
+    },
+    "fdv_note": {
+      "type": "Text",
+      "props": {
+        "text": "sub-$100K day 7",
+        "variant": "caption"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "analysis_text": {
+      "type": "Text",
+      "props": {
+        "text": "Volume 3× surge driven by 0x796eff cycling in ($2.6K buys) then out ($1.3K sells so far). Same bulk-buy resupply pattern as Nov 22. Net buy pressure on the day but price oscillates around the ATL floor.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GeckoTerminal Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209",
+        "source": "GeckoTerminal"
+      }
+    }
+  }
+}
