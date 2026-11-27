@@ -1,11 +1,15 @@
-Done. 
+Done. No notification sent (115 % 14 = 3, next escalation at run 126).
 
 ## Summary
 
 - **Step 0:** No prior fetch-tweets entry in today's log — proceeded normally.
-- **Step 1–2:** Built search prompt for MIROSHARK on Base chain (contract `0xd7bc6a05a56655fb2052f742b012d1dfd66e1ba3`). Dedup set: 0 URLs from last 3 days (all runs FETCH_TWEETS_EMPTY).
-- **Step 3:** XAI_API_KEY not set — used WebSearch fallback. Applied backoff (114 consecutive empty runs → 1 query only): `site:x.com "MIROSHARK" after:2026-11-12`
-- **Result:** No x.com results returned — only price aggregator pages (Bybit, BeInCrypto, CoinGecko, MEXC, Stocktwits).
-- **Step 4b:** Freshness gate: 0 x.com URLs to evaluate.
-- **Step 5:** `FETCH_TWEETS_EMPTY` — 115 consecutive empty runs. Escalation check: 115 % 14 = 3 → no escalation. No notification sent.
-- **Files modified:** `memory/logs/2026-11-26.md`
+- **Step 2:** Dedup set empty — no tweet URLs in last 3 days of logs.
+- **Step 3:** XAI_API_KEY not set; used WebSearch fallback. Backoff active (115 consecutive empty runs → 1 query only). Query: `site:x.com "MIROSHARK" after:2026-11-20`.
+- **Step 4b/5:** No x.com results returned — only market data pages (CoinGecko, Bybit, MEXC, Stocktwits) and unrelated Telegram mirrors. **FETCH_TWEETS_EMPTY.**
+- **Escalation:** CONSEC=115, INTERVAL=14, remainder=3 — no escalation. Next notification fires at run 126.
+- **Files modified:** `memory/logs/2026-11-27.md` — appended `## fetch-tweets` entry with compact silence-mode log.
+
+Sources:
+- [MIROSHARK on Stocktwits](https://stocktwits.com/coins/miroshark)
+- [MIROSHARK on CoinGecko](https://www.coingecko.com/en/coins/miroshark)
+- [MIROSHARK on BeInCrypto](https://beincrypto.com/price/miroshark/)
