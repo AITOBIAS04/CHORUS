@@ -9,7 +9,18 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
 
 ## Steps
 
-0. **Same-day rerun dedup** — If `memory/logs/${today}.md` already contains a `## Self-Improve` entry with `PR:` or `Notification sent: yes`, and `${var}` is empty (no explicit improvement requested), log `SELF_IMPROVE_RERUN_QUIET: improvement already proposed today — skipping to avoid competing PRs` to `memory/logs/${today}.md` and **stop here**. A second run picks a different improvement and creates a competing PR, wasting compute and risking merge conflicts (observed Aug 2: PRs #45 and #46 from same-day double-dispatch). The stale PR merge step runs on the next scheduled invocation.
+0. **Same-day rerun dedup** — If `${var}` is empty (no explicit improvement requested), check two guards before proceeding:
+
+   **a. Log check:** If `memory/logs/${today}.md` already contains a `## Self-Improve` entry with `PR:` or `Notification sent: yes`, log `SELF_IMPROVE_RERUN_QUIET: improvement already proposed today — skipping to avoid competing PRs` to `memory/logs/${today}.md` and **stop here**.
+
+   **b. API check (concurrent dispatch guard):** If the log check passes, also query for open `improve:` PRs created today:
+   ```bash
+   EXISTING=$(gh pr list --state open --json number,title,createdAt \
+     --jq "[.[] | select(.title | startswith(\"improve:\")) | select(.createdAt > \"${today}T00:00:00Z\")] | .[0].number // empty")
+   ```
+   If `EXISTING` is non-empty, log `SELF_IMPROVE_RERUN_CONCURRENT: open improve: PR #${EXISTING} already created today by concurrent dispatch — skipping` to `memory/logs/${today}.md` and **stop here**. This catches the race condition where the scheduler dispatches twice on separate runners: the first run creates a PR before writing the log entry, and the second runner's filesystem has no log to detect. The GitHub API is shared state that both runners can see. Without this, competing PRs are created that immediately conflict — observed twice: Aug 2 (PRs #45/#46) and Nov 24 (PRs #93/#94, both went DIRTY within hours, closed at 95h/94h).
+
+   The stale PR merge step (0.5) runs on the next scheduled invocation regardless.
 
 0.5. **Merge stale self-improve PRs** — Before looking for new improvements, land prior improvements that have been waiting:
    ```bash
