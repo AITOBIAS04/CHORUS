@@ -98,24 +98,10 @@ Today is ${today}. Your task is to improve **this agent repo** — the skills, w
 4. **Create a branch, commit, and push**:
    ```bash
    git checkout -b improve/short-description
-   git add <files-you-changed>   # ONLY the improvement files — see note below
-   ```
-
-   **Safety net — unstage volatile files before committing.** Even with targeted staging, the agent sometimes accidentally includes volatile files. Run this cleanup unconditionally after every `git add`:
-   ```bash
-   git reset HEAD -- memory/ .outputs/ dashboard/outputs/ .pending-notify/ memory/token-usage.csv 2>/dev/null || true
-   ```
-   Then verify only improvement files remain staged:
-   ```bash
-   git diff --cached --name-only
-   ```
-   If the staged list includes ANY file under `memory/`, `.outputs/`, `dashboard/outputs/`, `.pending-notify/`, or `memory/token-usage.csv`, do NOT proceed — unstage them manually and retry. If no improvement files remain staged after cleanup, the `git add` was entirely volatile files — re-stage only the intended improvement files by name.
-
-   ```bash
-   git commit -m "improve: description of what was changed"
+   ./scripts/commit-improvement.sh "improve: description of what was changed" file1 file2 ...
    git push -u origin improve/short-description
    ```
-   **IMPORTANT — targeted staging only.** Use `git add <file1> <file2> ...` with the specific files you modified for the improvement (skill files, aeon.yml, workflow files, etc.). Do NOT use `git add -A` or `git add .` — these include volatile files that change on every cron run (memory/logs/, .outputs/, dashboard/outputs/, memory/token-usage.csv) and cause immediate merge conflicts, making the PR unmergeable within hours.
+   **Use the commit script — do NOT stage and commit manually.** `commit-improvement.sh` accepts a commit message and the files you changed, then enforces volatile file exclusion automatically. It will refuse to commit if only volatile files are staged. This replaces the previous text-only safety net which the agent skipped in practice (observed: PRs #94, #96 included volatile files despite the instructions, went immediately DIRTY).
 
 5. **Open a PR** on this repo:
    ```bash
