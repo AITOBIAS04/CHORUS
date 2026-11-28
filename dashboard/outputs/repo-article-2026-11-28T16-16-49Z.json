@@ -1,0 +1,59 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "repo-article"
+      },
+      "children": [
+        "stack"
+      ]
+    },
+    "stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading",
+        "narrative",
+        "separator",
+        "link"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "He Didn't Break the Silence. He Changed the Address.",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "narrative": {
+      "type": "Text",
+      "props": {
+        "text": "After 144 days of social silence, the MiroShark founder's first substantive move was rewriting every link in the repository to a new owner — aeonfun, a GitHub account named \"Aeon\" that hosts the agent framework itself. PRs #371 and #372 prepare the repo for a full namespace transfer. Stars, forks, and issues all move. The autonomous agent keeps building regardless.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link": {
+      "type": "Link",
+      "props": {
+        "label": "Read full article",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-article-2026-11-28.md"
+      },
+      "children": []
+    }
+  }
+}
