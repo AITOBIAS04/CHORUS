@@ -1,7 +1,15 @@
-`TOKEN_REPORT_RERUN_QUIET` — the token-report was already sent today (Notification sent: yes logged at 2026-11-27). Skipped re-fetch, article overwrite, and re-notification per the same-day dedup rule. Logged the skip to `memory/logs/2026-11-27.md`.
+⚠ LP ALERT — $MiroShark
 
-## Summary
+mmETH pool LP absent from GeckoTerminal — was $2,408,203 (Nov 27), now missing entirely. Total visible LP dropped 97.4% ($2,473,957 → $63,218). Active WETH pool intact. Possible pool migration, LP withdrawal, or data failure.
 
-- **Action:** Dedup check triggered — today's log already contains a completed token-report with `Notification sent: yes`
-- **Result:** `TOKEN_REPORT_RERUN_QUIET` — no data fetched, no article overwritten, no notification sent
-- **Today's report (already sent):** MIROSHARK $0.0000009639 (+1.95% 24h), FDV $96.4K, vol $10,527 (3× surge), 43/25 buys/sells, 143-day social silence
+---
+*$MiroShark Daily — 2026-11-28*
+
+Price: $0.000000986 (+2.29% 24h)
+Liquidity: $63.2K (WETH only) | 24h Vol: $12,477
+Buys/Sells: 42/14 | FDV: $98.6K (sub-$100K day 8)
+7d: −8.0% | 30d: −47.0%
+
+Buy pressure continues; 0x796eff cycling pattern active. mmETH pool disappearance requires investigation. Nov 30 external PR hyperstition 2 days away.
+
+Chart: https://www.geckoterminal.com/base/pools/0x83a29b6619907f80e5a47d40f53d4af239a69980f22a08b10f43d357a9f06209
