@@ -1,0 +1,252 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Agent Self-Improvement — 2026-11-28",
+        "description": "GitHub API guard prevents concurrent dispatch conflicts"
+      },
+      "children": [
+        "stale-section",
+        "sep1",
+        "problem-section",
+        "sep2",
+        "solution-section",
+        "sep3",
+        "impact-section",
+        "sep4",
+        "pr-link"
+      ]
+    },
+    "stale-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stale-heading",
+        "stale-items"
+      ]
+    },
+    "stale-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stale PRs",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stale-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-95",
+        "pr-93",
+        "pr-94"
+      ]
+    },
+    "pr-95": {
+      "type": "Badge",
+      "props": {
+        "text": "#95: Merged — fetch-tweets counter fix",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "pr-93": {
+      "type": "Badge",
+      "props": {
+        "text": "#93: Closed — DIRTY/conflicting (95h)",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "pr-94": {
+      "type": "Badge",
+      "props": {
+        "text": "#94: Closed — DIRTY/conflicting (94h)",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "problem-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "problem-heading",
+        "problem-text",
+        "history-text",
+        "incident-alert"
+      ]
+    },
+    "problem-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Problem",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "problem-text": {
+      "type": "Text",
+      "props": {
+        "text": "The existing log-file dedup fails when GitHub Actions dispatches the same cron twice on separate runners — each runner has its own filesystem, so the second run creates a competing PR."
+      },
+      "children": []
+    },
+    "history-text": {
+      "type": "Text",
+      "props": {
+        "text": "Observed twice: Aug 2 (PRs #45/#46) and Nov 24 (PRs #93/#94 both went DIRTY within hours).",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "incident-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Nov 24 Double-dispatch Incident",
+        "message": "Two competing improve PRs created 95 minutes apart. Both went DIRTY immediately and sat for 4 days before being closed today. Two full improvement cycles wasted — the ATL detection alert and the volatile-file enforcement script both need to be re-proposed.",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "solution-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "solution-heading",
+        "solution-text",
+        "changes-heading",
+        "changes-detail"
+      ]
+    },
+    "solution-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Solution",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "solution-text": {
+      "type": "Text",
+      "props": {
+        "text": "Added a GitHub API-based concurrent dispatch guard to self-improve Step 0."
+      },
+      "children": []
+    },
+    "changes-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "What Changed",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "changes-detail": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "file-badge",
+        "implementation-text"
+      ]
+    },
+    "file-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "skills/self-improve/SKILL.md",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "implementation-text": {
+      "type": "Text",
+      "props": {
+        "text": "Split Step 0 into (a) log check (existing, fast) and (b) API check that queries gh pr list for open improve: PRs created today. Logs SELF_IMPROVE_RERUN_CONCURRENT when a concurrent dispatch is detected."
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "impact-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "impact-heading",
+        "impact-stat"
+      ]
+    },
+    "impact-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Impact",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "impact-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Time saved per concurrent dispatch",
+        "value": "48–96 hours",
+        "delta": "per occurrence",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #96: GitHub API-based concurrent dispatch guard",
+        "href": "https://github.com/AITOBIAS04/CHORUS/pull/96",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
