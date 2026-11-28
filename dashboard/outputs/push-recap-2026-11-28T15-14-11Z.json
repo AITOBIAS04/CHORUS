@@ -1,0 +1,249 @@
+{
+  "root": "card-recap",
+  "state": {},
+  "elements": {
+    "card-recap": {
+      "type": "Card",
+      "props": {
+        "title": "Push Recap — 2026-11-28"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo-header",
+        "separator1",
+        "pr371-section",
+        "separator2",
+        "pr372-section",
+        "separator3",
+        "keychanges-section",
+        "separator4",
+        "stats-section",
+        "separator5",
+        "footer-section"
+      ]
+    },
+    "repo-header": {
+      "type": "Text",
+      "props": {
+        "text": "aaronjmars/MiroShark — 2 substantive commits by Aaron Elijah Mars",
+        "variant": "lead"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr371-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr371-title",
+        "pr371-content",
+        "pr371-details"
+      ]
+    },
+    "pr371-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Migration (PR #371)",
+        "level": "h2"
+      }
+    },
+    "pr371-content": {
+      "type": "Text",
+      "props": {
+        "text": "Every link, badge, deploy button, Docker reference, and CI guard in the codebase rewritten from aaronjmars/MiroShark and MiroShark/MiroShark to aeonfun/MiroShark. The repo is now fully canonical under the aeonfun org."
+      }
+    },
+    "pr371-details": {
+      "type": "Text",
+      "props": {
+        "text": "22 files touched across 4 README languages, 2 install doc languages, backend services, frontend components, OpenAPI spec, and Docker configs."
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr372-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr372-title",
+        "pr372-content",
+        "pr372-details"
+      ]
+    },
+    "pr372-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Docker Image Retirement (PR #372)",
+        "level": "h2"
+      }
+    },
+    "pr372-content": {
+      "type": "Text",
+      "props": {
+        "text": "The ghcr.io publishing workflow deleted entirely. Both compose files stripped of the prebuilt image reference."
+      }
+    },
+    "pr372-details": {
+      "type": "Text",
+      "props": {
+        "text": "Self-hosters now always build from source — simpler deployment story, no more drifting :latest tag."
+      }
+    },
+    "separator3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "keychanges-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "keychanges-title",
+        "keychanges-item1",
+        "keychanges-item2"
+      ]
+    },
+    "keychanges-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Key changes",
+        "level": "h3"
+      }
+    },
+    "keychanges-item1": {
+      "type": "Text",
+      "props": {
+        "text": "24 files updated: READMEs (EN/FR/JA/ZH), SECURITY.md, INSTALL docs, OpenAPI spec, Swagger UI, Atom/RSS feeds, replay GIF watermarks, share card footers, frontend nav links"
+      }
+    },
+    "keychanges-item2": {
+      "type": "Text",
+      "props": {
+        "text": "docker-image.yml CI workflow removed (69 lines); compose files simplified"
+      }
+    },
+    "separator4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stats-title",
+        "stats-grid",
+        "founder-note"
+      ]
+    },
+    "stats-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Stats",
+        "level": "h3"
+      }
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-files",
+        "stat-added",
+        "stat-removed"
+      ]
+    },
+    "stat-files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files changed",
+        "value": "24"
+      }
+    },
+    "stat-added": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines added",
+        "value": "+42"
+      }
+    },
+    "stat-removed": {
+      "type": "Stat",
+      "props": {
+        "label": "Lines removed",
+        "value": "-115"
+      }
+    },
+    "founder-note": {
+      "type": "Text",
+      "props": {
+        "text": "Founder commit streak continues (3+ of last 8 days with direct commits) despite 144-day social silence",
+        "variant": "caption"
+      }
+    },
+    "separator5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "footer-title",
+        "footer-link"
+      ]
+    },
+    "footer-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Full recap",
+        "level": "h3"
+      }
+    },
+    "footer-link": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-28.md",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/push-recap-2026-11-28.md"
+      }
+    }
+  }
+}
