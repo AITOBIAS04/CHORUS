@@ -1,0 +1,211 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperstitions Idea",
+        "description": "2026-11-28"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "heading-question",
+        "text-question",
+        "separator-1",
+        "heading-play",
+        "text-play",
+        "separator-2",
+        "heading-why",
+        "stack-stats",
+        "text-convergence",
+        "separator-3",
+        "heading-resolution",
+        "text-resolution",
+        "separator-4",
+        "stack-scores",
+        "link-hyperstitions"
+      ]
+    },
+    "heading-question": {
+      "type": "Heading",
+      "props": {
+        "text": "The Central Question",
+        "level": "h2"
+      }
+    },
+    "text-question": {
+      "type": "Text",
+      "props": {
+        "text": "Will $MIROSHARK get mentioned by a Crypto Twitter account with ≥10,000 followers before the social silence reaches 150 days (December 4, 2026)?"
+      }
+    },
+    "separator-1": {
+      "type": "Separator"
+    },
+    "heading-play": {
+      "type": "Heading",
+      "props": {
+        "text": "The Coordination Play",
+        "level": "h2"
+      }
+    },
+    "text-play": {
+      "type": "Text",
+      "props": {
+        "text": "1,494 GitHub stars, an AI agent shipping daily, a token at $98K FDV — and zero social media presence for 144 days. Community members would need to craft compelling threads (the autonomous agent, the vanishing LP pool, the converging deadlines), tag crypto influencers, and surface this absurdity in CT discords. The market itself is the pitch: look at this silence gap, and decide whether you want to be the one who breaks it."
+      }
+    },
+    "separator-2": {
+      "type": "Separator"
+    },
+    "heading-why": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Now: Converging Signals",
+        "level": "h2"
+      }
+    },
+    "stack-stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stat-mmeth",
+        "stat-volume",
+        "stat-fdv",
+        "stat-pr-deadline",
+        "stat-stars",
+        "stat-agent-prs",
+        "stat-silence"
+      ]
+    },
+    "stat-mmeth": {
+      "type": "Stat",
+      "props": {
+        "label": "mmETH Liquidity Pool LP Drop",
+        "value": "$63K",
+        "delta": "-97.4%",
+        "trend": "down"
+      }
+    },
+    "stat-volume": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume Surge (4 days)",
+        "value": "$12.5K",
+        "delta": "+50x from $235",
+        "trend": "up"
+      }
+    },
+    "stat-fdv": {
+      "type": "Stat",
+      "props": {
+        "label": "FDV Distance to $100K",
+        "value": "$1,400",
+        "delta": "Current: $98K"
+      }
+    },
+    "stat-pr-deadline": {
+      "type": "Stat",
+      "props": {
+        "label": "Nov 30 External PR Deadline",
+        "value": "48 hours remaining"
+      }
+    },
+    "stat-stars": {
+      "type": "Stat",
+      "props": {
+        "label": "GitHub Stars to 1,500",
+        "value": "1,494",
+        "delta": "6 stars remaining",
+        "trend": "up"
+      }
+    },
+    "stat-agent-prs": {
+      "type": "Stat",
+      "props": {
+        "label": "Agent to 100th Self-Improvement PR",
+        "value": "95 PRs",
+        "delta": "5 PRs remaining",
+        "trend": "up"
+      }
+    },
+    "stat-silence": {
+      "type": "Stat",
+      "props": {
+        "label": "Days of Absolute Silence on X",
+        "value": "144 days",
+        "delta": "6 days until 150-day threshold"
+      }
+    },
+    "text-convergence": {
+      "type": "Text",
+      "props": {
+        "text": "All of these signals converging, and nobody is watching.",
+        "variant": "lead"
+      }
+    },
+    "separator-3": {
+      "type": "Separator"
+    },
+    "heading-resolution": {
+      "type": "Heading",
+      "props": {
+        "text": "Resolution Criteria",
+        "level": "h2"
+      }
+    },
+    "text-resolution": {
+      "type": "Text",
+      "props": {
+        "text": "At least one original post (not a retweet of old content) containing \"$MIROSHARK\" or \"MIROSHARK\" on X from an account with ≥10,000 followers, posted between November 28 and December 4, 2026 inclusive. Verified via X search."
+      }
+    },
+    "separator-4": {
+      "type": "Separator"
+    },
+    "stack-scores": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge-reflexivity",
+        "badge-viral",
+        "link-hyperstitions"
+      ]
+    },
+    "badge-reflexivity": {
+      "type": "Badge",
+      "props": {
+        "text": "Reflexivity 5/5"
+      }
+    },
+    "badge-viral": {
+      "type": "Badge",
+      "props": {
+        "text": "Viral 5/5"
+      }
+    },
+    "link-hyperstitions": {
+      "type": "Link",
+      "props": {
+        "label": "hyperstitions.com",
+        "href": "https://www.hyperstitions.com/"
+      }
+    }
+  }
+}
