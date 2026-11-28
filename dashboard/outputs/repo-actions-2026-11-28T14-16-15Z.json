@@ -1,0 +1,335 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Action Ideas — 2026-11-28"
+      },
+      "children": [
+        "subtitle",
+        "sep1",
+        "items-container",
+        "sep2",
+        "details-link"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "Generated from analysis of aaronjmars/MiroShark — these are ideas that could be autonomously built by the feature skill tomorrow.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "items-container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+      ]
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item1-title",
+        "item1-badges",
+        "item1-desc"
+      ]
+    },
+    "item1-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Simulation Round Annotation",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item1-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item1-badge-type",
+        "item1-badge-difficulty"
+      ]
+    },
+    "item1-badge-type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item1-badge-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Annotate specific simulation rounds with real-world event context; markers appear on the belief chart; enriches Verified Predictions with temporal precision for academic citation.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item2-title",
+        "item2-badges",
+        "item2-desc"
+      ]
+    },
+    "item2-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Python SDK `pip install miroshark`",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item2-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item2-badge-type",
+        "item2-badge-difficulty"
+      ]
+    },
+    "item2-badge-type": {
+      "type": "Badge",
+      "props": {
+        "text": "Integration",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item2-badge-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Thin typed wrapper for the HTTP API — `Client.run(scenario)` blocks until completion, returns a `SimulationResult`; also creates a PyPI discovery vector separate from GitHub search.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item3-title",
+        "item3-badges",
+        "item3-desc"
+      ]
+    },
+    "item3-title": {
+      "type": "Heading",
+      "props": {
+        "text": "CLI Export Subcommand",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item3-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item3-badge-type",
+        "item3-badge-difficulty"
+      ]
+    },
+    "item3-badge-type": {
+      "type": "Badge",
+      "props": {
+        "text": "DX",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item3-badge-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "`miroshark export <sim_id> --format json|csv|notebook|bibtex` added to existing cli.py; stdout-safe for piping; `--all` flag batch-exports every published simulation.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item4-title",
+        "item4-badges",
+        "item4-desc"
+      ]
+    },
+    "item4-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Custom Agent Demographics CSV Import",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item4-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item4-badge-type",
+        "item4-badge-difficulty"
+      ]
+    },
+    "item4-badge-type": {
+      "type": "Badge",
+      "props": {
+        "text": "Feature",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item4-badge-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Medium",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Upload a CSV of agent personas to bypass auto-generation; enterprise operators model known audience segments; population is explicit and re-runnable for reproducible research citation.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "item5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "item5-title",
+        "item5-badges",
+        "item5-desc"
+      ]
+    },
+    "item5-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem Registry Submission Form",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "item5-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "item5-badge-type",
+        "item5-badge-difficulty"
+      ]
+    },
+    "item5-badge-type": {
+      "type": "Badge",
+      "props": {
+        "text": "Community",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "item5-badge-difficulty": {
+      "type": "Badge",
+      "props": {
+        "text": "Small",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "item5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Web form at /ecosystem/submit generates a structured GitHub issue for new projects to register in ecosystem.json; surfaces builders who forked and built locally; 304 forks is a latent catalog.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "details-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full details",
+        "href": "https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-28.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}

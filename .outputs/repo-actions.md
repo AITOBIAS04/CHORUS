@@ -1,10 +1,19 @@
-`REPO_ACTIONS_RERUN_QUIET: already ran today — skipping rerun`
+*Repo Action Ideas — 2026-11-28*
+Generated from analysis of aaronjmars/MiroShark — these are ideas that could be autonomously built by the feature skill tomorrow.
 
-The repo-actions skill already ran earlier today (notification sent: yes). Logged the rerun to `memory/logs/2026-11-26.md` and stopped — no duplicate ideas or notifications generated.
+1. Simulation Round Annotation (Feature, Medium)
+   Annotate specific simulation rounds with real-world event context; markers appear on the belief chart; enriches Verified Predictions with temporal precision for academic citation.
 
-## Summary
+2. Python SDK `pip install miroshark` (Integration, Medium)
+   Thin typed wrapper for the HTTP API — `Client.run(scenario)` blocks until completion, returns a `SimulationResult`; also creates a PyPI discovery vector separate from GitHub search.
 
-- **Action:** Repo-actions rerun detected and skipped per Step 0 dedup logic
-- **Reason:** `memory/logs/2026-11-26.md` already contains a `## Repo Actions` entry with `Notification sent: yes`
-- **Files modified:** `memory/logs/2026-11-26.md` (appended rerun entry)
-- **Earlier run result (for reference):** 5 ideas generated targeting the Nov 30 external PR deadline and Dec 7 star hyperstition; article at `articles/repo-actions-2026-11-26.md`
+3. CLI Export Subcommand (DX, Small)
+   `miroshark export <sim_id> --format json|csv|notebook|bibtex` added to existing cli.py; stdout-safe for piping; `--all` flag batch-exports every published simulation.
+
+4. Custom Agent Demographics CSV Import (Feature, Medium)
+   Upload a CSV of agent personas to bypass auto-generation; enterprise operators model known audience segments; population is explicit and re-runnable for reproducible research citation.
+
+5. Ecosystem Registry Submission Form (Community, Small)
+   Web form at /ecosystem/submit generates a structured GitHub issue for new projects to register in ecosystem.json; surfaces builders who forked and built locally; 304 forks is a latent catalog.
+
+Full details: https://github.com/AITOBIAS04/CHORUS/blob/main/articles/repo-actions-2026-11-28.md
